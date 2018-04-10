@@ -1,5 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.controllers;
 
+import org.hamcrest.core.StringContains;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,5 +27,12 @@ public class HelloWorldControllerTest {
         mvc.perform(MockMvcRequestBuilders.get("/").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().string(equalTo("Greetings from Spring Boot!")));
+    }
+
+    @Test
+    public void getInformationFromRDSDatabaseCorrectly() throws Exception {
+        mvc.perform(MockMvcRequestBuilders.get("/18675").accept(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(content().string(StringContains.containsString("\"customersId\":7990")));
     }
 }

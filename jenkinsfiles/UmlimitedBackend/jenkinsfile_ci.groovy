@@ -2,21 +2,21 @@ node {
  
       def  project_name = "UmlimitedBackend"
       def  build_package_name = "unlimited-0.0.1-SNAPSHOT.jar"
-      def  project_git_url = "https://gitlab.com/luckygirlalisa/UmlimitedBackend.git"
     
       def  build_package = "${WORKSPACE}/target/${build_package_name}"  
       def  build_package_new_name = "${project_name}_${BUILD_ID}.jar"   
       def  all_build_package_dir = "~/jenkins_build_package/${project_name}" 
       
 
+      stage("PullCode") {
+
+         checkout scm
+
+      }      
+
       // Read Config From Properties File
 
-      dir("jenkinsfile") {
-
-          checkout scm
-      }
-
-      def config = readProperties  file: 'jenkinsfile/config/config.properties'
+      def config = readProperties  file: 'jenkinsfiles/config/config.properties'
 
       def  deploy_env = "DEV"
 
@@ -51,12 +51,6 @@ node {
       def  hostcertid = config.Host_Cert_ID
       def  apport = config.APP_UnlimitedBackend_Port
 
-      // Stages
-
-      stage('PullCode') { 
-           
-            checkout scm: [$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'itwye_gitlab', url: "${project_git_url}"]]]
-      }
        
       stage("Compile-Test-Package") {
            

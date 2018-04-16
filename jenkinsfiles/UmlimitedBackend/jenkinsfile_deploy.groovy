@@ -7,7 +7,7 @@ node {
 
           checkout scm
 
-          def retResult = sh([returnStdout: true, script: "python ${WORKSPACE}/scripts/getDirsName.py ${all_build_package_dir}"])
+          def retResult = sh([returnStdout: true, script: "python jenkinsfiles/scripts/getDirsName.py ${all_build_package_dir}"])
 
           def userInput = input(
                message: 'Please select the deployment parameters!', ok: 'execute', 
@@ -27,7 +27,7 @@ node {
 
         stage("Deploy-Check") {
 
-              def config = readProperties  file: 'config/config.properties'
+              def config = readProperties  file: 'jenkinsfiles/config/config.properties'
 
               def  hostnames
 

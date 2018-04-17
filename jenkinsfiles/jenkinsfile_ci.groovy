@@ -52,9 +52,21 @@ node {
       def  apport = config.APP_UnlimitedBackend_Port
 
        
-      stage("Compile-Test-Package") {
+      stage("Compile") {
            
             sh "/usr/local/bin/mvn -f pom.xml clean install"
+
+      }
+
+      stage("Test") {
+
+            echo "Test"
+
+      }
+
+      stage("Package") {
+
+            echo "Package"
 
       }
 

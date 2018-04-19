@@ -19,6 +19,9 @@ public class ResultData {
     @JsonProperty("customer")
     private Customer customer;
 
+    @JsonProperty("registrant")
+    private Registrant registrant;
+
     @JsonProperty("customer")
     public Customer getCustomer() {
         return customer;
@@ -28,4 +31,15 @@ public class ResultData {
     public void setCustomer(Customer customer) {
         this.customer = customer;
     }
+
+    @JsonProperty("registrant")
+    public Registrant getRegistrant() {
+        return registrant;
+    }
+
+    @JsonProperty("registrant")
+    public void setRegistrant(Registrant registrant) {
+        this.registrant = registrant;
+    }
+
 }

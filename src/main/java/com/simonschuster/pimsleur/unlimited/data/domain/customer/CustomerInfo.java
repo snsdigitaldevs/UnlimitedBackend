@@ -11,7 +11,7 @@ import java.util.Map;
         "result_code",
         "result_data"
 })
-public class Course {
+public class CustomerInfo {
 
     @JsonProperty("result_code")
     private Integer resultCode;

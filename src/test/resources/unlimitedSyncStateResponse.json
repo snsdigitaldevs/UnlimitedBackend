@@ -1,0 +1,9 @@
+{
+  "result_code": 1,
+  "result_data": {
+    "subCode": -9202,
+    "lastSaveId": 5,
+    "userAppStateData": "[{\"key\":\"com.ss.models::UserLessonHistory_124302_5ad555b8a5912_9781508243298_51006#furthestPlayHeadLocation\",\"value\":1243066.6734694,\"stateChangeType\":\"3U\"},{\"key\":\"com.ss.models::UserLessonHistory_124302_5ad555b8a5912_9781508243298_51006#lastPlayedDate\",\"value\":1524031492764,\"stateChangeType\":\"3U\"},{\"key\":\"com.ss.models::UserLessonHistory_124302_5ad555b8a5912_9781508243298_51006#lastPlayHeadLocation\",\"value\":1243066.6734694,\"stateChangeType\":\"3U\"},{\"key\":\"com.ss.models::UserLessonHistory_124302_5ad555b8a5912_9781508243328_331006#furthestPlayHeadLocation\",\"value\":142500.85260771,\"stateChangeType\":\"3U\"},{\"key\":\"com.ss.models::UserLessonHistory_124302_5ad555b8a5912_9781508243328_331006#lastPlayedDate\",\"value\":1524031266003,\"stateChangeType\":\"3U\"},{\"key\":\"com.ss.models::UserLessonHistory_124302_5ad555b8a5912_9781508243328_331006#lastPlayHeadLocation\",\"value\":142500.85260771,\"stateChangeType\":\"3U\"}]",
+    "lastChangeDeviceName": "ONEPLUS A5010"
+  }
+}

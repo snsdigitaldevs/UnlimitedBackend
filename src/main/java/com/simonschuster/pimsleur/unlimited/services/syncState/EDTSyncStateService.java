@@ -18,11 +18,13 @@ public class EDTSyncStateService {
     private ApplicationConfiguration config;
 
     public AggregatedSyncState getSyncStates(Integer customerId, String token) {
-
-        SyncState syncState = postToEdt(createPostBody(customerId, token,
-                config.getApiParameter("unlimitedDomain")),
-                config.getProperty("edt.api.syncStateApiUrl"), SyncState.class);
-        return null;
+        return new AggregatedSyncState(
+                postToEdt(createPostBody(customerId, token,
+                        config.getApiParameter("unlimitedDomain")),
+                        config.getProperty("edt.api.syncStateApiUrl"), SyncState.class),
+                postToEdt(createPostBody(customerId, token,
+                        config.getApiParameter("pcmDomain")),
+                        config.getProperty("edt.api.syncStateApiUrl"), SyncState.class));
     }
 
     private HttpEntity<String> createPostBody(Integer customerId, String token, String domain) {

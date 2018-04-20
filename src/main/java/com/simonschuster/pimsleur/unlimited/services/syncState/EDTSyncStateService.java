@@ -1,8 +1,8 @@
 package com.simonschuster.pimsleur.unlimited.services.syncState;
 
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
-import com.simonschuster.pimsleur.unlimited.data.domain.syncState.AggregatedSyncState;
-import com.simonschuster.pimsleur.unlimited.data.domain.syncState.SyncState;
+import com.simonschuster.pimsleur.unlimited.data.edt.syncState.AggregatedSyncState;
+import com.simonschuster.pimsleur.unlimited.data.edt.syncState.SyncState;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;

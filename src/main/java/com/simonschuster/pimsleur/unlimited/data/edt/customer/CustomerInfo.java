@@ -1,16 +1,14 @@
 
-package com.simonschuster.pimsleur.unlimited.data.domain.syncState;
+package com.simonschuster.pimsleur.unlimited.data.edt.customer;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.annotation.*;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "result_code",
-    "result_data"
+        "result_code",
+        "result_data"
 })
-public class SyncState {
+public class CustomerInfo {
 
     @JsonProperty("result_code")
     private Integer resultCode;
@@ -36,5 +34,4 @@ public class SyncState {
     public void setResultData(ResultData resultData) {
         this.resultData = resultData;
     }
-
 }

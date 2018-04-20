@@ -1,10 +1,10 @@
 package com.simonschuster.pimsleur.unlimited.services.customer;
 
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
-import com.simonschuster.pimsleur.unlimited.data.domain.customer.AggregatedCustomerInfo;
-import com.simonschuster.pimsleur.unlimited.data.domain.customer.Customer;
-import com.simonschuster.pimsleur.unlimited.data.domain.customer.CustomerInfo;
-import com.simonschuster.pimsleur.unlimited.data.domain.syncState.AggregatedSyncState;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.AggregatedCustomerInfo;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.Customer;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.CustomerInfo;
+import com.simonschuster.pimsleur.unlimited.data.edt.syncState.AggregatedSyncState;
 import com.simonschuster.pimsleur.unlimited.services.syncState.EDTSyncStateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;

@@ -1,5 +1,5 @@
 
-package com.simonschuster.pimsleur.unlimited.data.domain.syncState;
+package com.simonschuster.pimsleur.unlimited.data.edt.syncState;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;

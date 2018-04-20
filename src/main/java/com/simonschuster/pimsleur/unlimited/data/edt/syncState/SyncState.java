@@ -1,17 +1,16 @@
 
-package com.simonschuster.pimsleur.unlimited.data.domain.customer;
+package com.simonschuster.pimsleur.unlimited.data.edt.syncState;
 
-import com.fasterxml.jackson.annotation.*;
-
-import java.util.HashMap;
-import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-        "result_code",
-        "result_data"
+    "result_code",
+    "result_data"
 })
-public class CustomerInfo {
+public class SyncState {
 
     @JsonProperty("result_code")
     private Integer resultCode;
@@ -37,4 +36,5 @@ public class CustomerInfo {
     public void setResultData(ResultData resultData) {
         this.resultData = resultData;
     }
+
 }

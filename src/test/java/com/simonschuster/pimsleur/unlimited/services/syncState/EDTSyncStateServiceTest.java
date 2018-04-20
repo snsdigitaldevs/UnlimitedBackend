@@ -2,7 +2,7 @@ package com.simonschuster.pimsleur.unlimited.services.syncState;
 
 import com.github.dreamhead.moco.HttpServer;
 import com.github.dreamhead.moco.Runnable;
-import com.simonschuster.pimsleur.unlimited.data.domain.syncState.AggregatedSyncState;
+import com.simonschuster.pimsleur.unlimited.data.edt.syncState.AggregatedSyncState;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

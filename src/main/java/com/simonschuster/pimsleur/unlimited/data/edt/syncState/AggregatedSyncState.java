@@ -1,4 +1,4 @@
-package com.simonschuster.pimsleur.unlimited.data.domain.syncState;
+package com.simonschuster.pimsleur.unlimited.data.edt.syncState;
 
 public class AggregatedSyncState {
     private SyncState unlimitedSyncState;

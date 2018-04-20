@@ -1,7 +1,7 @@
-package com.simonschuster.pimsleur.unlimited.data.domain.customer;
+package com.simonschuster.pimsleur.unlimited.data.edt.customer;
 
-import com.simonschuster.pimsleur.unlimited.data.domain.syncState.AggregatedSyncState;
-import com.simonschuster.pimsleur.unlimited.data.domain.syncState.SyncState;
+import com.simonschuster.pimsleur.unlimited.data.edt.syncState.AggregatedSyncState;
+import com.simonschuster.pimsleur.unlimited.data.edt.syncState.SyncState;
 
 public class AggregatedCustomerInfo {
     private SyncState pcmSyncState;

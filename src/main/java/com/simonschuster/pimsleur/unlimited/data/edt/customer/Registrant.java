@@ -1,11 +1,9 @@
 
-package com.simonschuster.pimsleur.unlimited.data.domain.customer;
+package com.simonschuster.pimsleur.unlimited.data.edt.customer;
 
 import com.fasterxml.jackson.annotation.*;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({

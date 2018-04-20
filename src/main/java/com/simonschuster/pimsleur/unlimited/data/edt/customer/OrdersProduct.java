@@ -1,5 +1,5 @@
 
-package com.simonschuster.pimsleur.unlimited.data.domain.customer;
+package com.simonschuster.pimsleur.unlimited.data.edt.customer;
 
 import java.util.List;
 

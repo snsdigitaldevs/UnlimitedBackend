@@ -4,6 +4,7 @@ package com.simonschuster.pimsleur.unlimited.data.edt.syncState;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
@@ -49,7 +50,8 @@ public class ResultData {
     @JsonProperty("userAppStateData")
     public List<UserAppStateDatum> getUserAppStateData() throws IOException {
         ObjectMapper mapper = new ObjectMapper();
-        return mapper.readValue(userAppStateData, new ArrayList<UserAppStateDatum>().getClass());
+        return mapper.readValue(userAppStateData, new TypeReference<List<UserAppStateDatum>>() {
+        });
     }
 
 }

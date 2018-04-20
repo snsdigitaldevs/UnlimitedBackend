@@ -7,16 +7,16 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "key",
-    "value",
-    "stateChangeType"
+        "key",
+        "value",
+        "stateChangeType"
 })
 public class UserAppStateDatum {
 
     @JsonProperty("key")
     private String key;
     @JsonProperty("value")
-    private Double value;
+    private Object value;
     @JsonProperty("stateChangeType")
     private String stateChangeType;
 
@@ -31,12 +31,12 @@ public class UserAppStateDatum {
     }
 
     @JsonProperty("value")
-    public Double getValue() {
+    public Object getValue() {
         return value;
     }
 
     @JsonProperty("value")
-    public void setValue(Double value) {
+    public void setValue(Object value) {
         this.value = value;
     }
 
@@ -50,4 +50,7 @@ public class UserAppStateDatum {
         this.stateChangeType = stateChangeType;
     }
 
+    public String idPartOfKey() {
+        return this.getKey().split("#")[0];
+    }
 }

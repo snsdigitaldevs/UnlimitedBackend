@@ -2,20 +2,22 @@ package com.simonschuster.pimsleur.unlimited.data.edt.productinfo;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.util.Map;
+
 public class ResultData {
     @JsonProperty("courseConfigs")
-    private CourseConfigs courseConfigs;
+    private Map<String, String> courseConfigs;
 
     @JsonProperty("mediaSets")
     private MediaSets mediaSets;
 
     @JsonProperty("courseConfigs")
-    public CourseConfigs getCourseConfigs() {
+    public Map<String, String> getCourseConfigs() {
         return courseConfigs;
     }
 
     @JsonProperty("courseConfigs")
-    public void setCourseConfigs(CourseConfigs courseConfigs) {
+    public void setCourseConfigs(Map<String, String> courseConfigs) {
         this.courseConfigs = courseConfigs;
     }
 

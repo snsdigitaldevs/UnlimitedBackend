@@ -1,5 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.data.edt.customer;
 
+import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.CustomerInfoDTO;
 import com.simonschuster.pimsleur.unlimited.data.edt.syncState.AggregatedSyncState;
 import com.simonschuster.pimsleur.unlimited.data.edt.syncState.SyncState;
 
@@ -47,5 +48,9 @@ public class AggregatedCustomerInfo {
 
     public void setUnlimitedSyncState(SyncState unlimitedSyncState) {
         this.unlimitedSyncState = unlimitedSyncState;
+    }
+
+    public CustomerInfoDTO toDto() {
+        return null;
     }
 }

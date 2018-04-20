@@ -7,13 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
-import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
-import static java.util.Arrays.asList;
-import static org.springframework.http.MediaType.APPLICATION_JSON;
-import static org.springframework.http.MediaType.TEXT_HTML;
+import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEdt;
 
 @Service
 public class EDTCustomerInfoService {
@@ -23,29 +19,28 @@ public class EDTCustomerInfoService {
 
     public AggregatedCustomerInfo getCustomerInfos(String sub) {
         return new AggregatedCustomerInfo(
-                getCourse(sub,
+                getCustomerInfo(sub,
                         config.getApiParameter("unlimitedCustomerAction"),
                         config.getApiParameter("unlimitedDomain")),
-                getCourse(sub,
+                getCustomerInfo(sub,
                         config.getApiParameter("pcmCustomerAction"),
                         config.getApiParameter("pcmDomain"))
         );
     }
 
-    private CustomerInfo getCourse(String sub, String action, String domain) {
-        MappingJackson2HttpMessageConverter converter = new MappingJackson2HttpMessageConverter();
-        converter.setSupportedMediaTypes(asList(TEXT_HTML, APPLICATION_JSON));
+    private CustomerInfo getCustomerInfo(String sub, String action, String domain) {
+        return postToEdt(
+                createPostBody(sub, action, domain),
+                config.getProperty("edt.api.customerInfoApiUrl"),
+                CustomerInfo.class);
+    }
 
+    private HttpEntity<String> createPostBody(String sub, String action, String domain) {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
 
-        HttpEntity<String> entity = new HttpEntity<>(
+        return new HttpEntity<>(
                 String.format(config.getApiParameter("customerInfoDefaultParameters"), sub, action, domain),
                 headers);
-
-        RestTemplate restTemplate = new RestTemplate();
-        restTemplate.getMessageConverters().add(converter);
-
-        return restTemplate.postForObject(config.getProperty("edt.api.customerInfoApiUrl"), entity, CustomerInfo.class);
     }
 }

@@ -14,4 +14,4 @@ pkill java
 rm -f `ls | grep -v "${new_jar_package}" | xargs echo`
 
 # start new jar package
-java -jar ${project_home_dir}/${new_jar_package}
+java -jar ${project_home_dir}/${new_jar_package} & 

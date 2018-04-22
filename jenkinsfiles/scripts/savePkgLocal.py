@@ -6,7 +6,7 @@ import sys
 import subprocess
 
 # reserve only the latest jar package for save space
-ReservePkgNum = 4
+ReservePkgNum = 30
 
 # save build package in local
 def save(SourcePath,DestPath):

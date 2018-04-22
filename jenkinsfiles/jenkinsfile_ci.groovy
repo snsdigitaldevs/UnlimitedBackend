@@ -90,6 +90,7 @@ node {
 
                 try {
                       sshagent(["${hostcertid}"]) {
+                            sh "/usr/local/bin/ansible -i ${hostname}, all -u ${hostuser} -m file -a 'path=~/${project_name} state=directory'"
                             sh "/usr/local/bin/ansible -i ${hostname}, all -u ${hostuser} -m copy -a 'src=${build_package} dest=~/${project_name}/${build_package_new_name} mode=755 backup=yes'"
                             //sh "/usr/local/bin/ansible -i ${hostname}, all -u ${hostuser} -m shell -a 'pkill java;/usr/bin/nohup java -jar ~/${project_name}/${build_package_new_name} > /tmp/${project_name}.log 2>&1 &'"
                             sh "/usr/local/bin/ansible -i ${hostname}, all -u ${hostuser} -m script -a 'jenkinsfiles/scripts/startupApp.sh ~/${project_name} ${build_package_new_name}'"

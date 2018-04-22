@@ -11,7 +11,7 @@ cd $project_home_dir
 pkill java
 
 # delete old jar package
-rm -f `ls | grep -v "${new_jar_package}" | xargs echo`
+rm -f `ls | grep -v "${new_jar_package}" | grep jar | xargs echo`
 
 # start new jar package
 java -jar ${project_home_dir}/${new_jar_package} & 

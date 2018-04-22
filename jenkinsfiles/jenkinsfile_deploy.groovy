@@ -74,8 +74,9 @@ node {
 
                   try {
                         sshagent(["${hostcertid}"]) {
-                              sh "/usr/local/bin/ansible -i ${hostname}, all -u ${hostuser} -m copy -a 'src=${ci_build_package} dest=~/${dpkg} mode=755 backup=yes'"
-                              sh "/usr/local/bin/ansible -i ${hostname}, all -u ${hostuser} -m shell -a 'pkill java;/usr/bin/nohup java -jar ~/${dpkg} > /tmp/${project_name}.log 2>&1 &'"
+                              sh "/usr/local/bin/ansible -i ${hostname}, all -u ${hostuser} -m file -a 'path=~/${project_name} state=directory'"
+                              sh "/usr/local/bin/ansible -i ${hostname}, all -u ${hostuser} -m copy -a 'src=${ci_build_package} dest=~/${project_name}/${dpkg} mode=755 backup=yes'"
+                              sh "/usr/local/bin/ansible -i ${hostname}, all -u ${hostuser} -m script -a 'jenkinsfiles/scripts/startupApp.sh ~/${project_name} ${dpkg}'"
                         }
 
                         sleep 5

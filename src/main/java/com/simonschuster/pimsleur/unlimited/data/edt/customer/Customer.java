@@ -60,7 +60,7 @@ public class Customer {
     public List<String> getProductCodes() {
         return this.getCustomersOrders().stream()
                 .flatMap(order -> order.getOrdersProducts().stream()
-                        .map(OrdersProduct::getProductsModel))
+                        .map(product -> product.getProduct().getIsbn13().replace("-", "")))
                 .collect(toList());
 
     }

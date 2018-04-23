@@ -16,22 +16,24 @@ public class CustomerTest {
         Customer customer = new Customer();
 
         customer.setCustomersOrders(asList(
-                createOrder("SW 9781508243359"),
-                createOrder("SW 9781508243311"),
-                createOrder("SW 9781508243312")
+                createOrder("978-1-5082-4335-9"),
+                createOrder("978-1-5082-4331-1"),
+                createOrder("978-1-5082-4331-2")
         ));
 
         List<String> codes = customer.getProductCodes();
         assertThat(codes, containsInAnyOrder(
-                "SW 9781508243359",
-                "SW 9781508243311",
-                "SW 9781508243312"));
+                "9781508243359",
+                "9781508243311",
+                "9781508243312"));
     }
 
     private CustomersOrder createOrder(String productsModel) {
         CustomersOrder customersOrder = new CustomersOrder();
         OrdersProduct ordersProduct = new OrdersProduct();
-        ordersProduct.setProductsModel(productsModel);
+        Product product = new Product();
+        product.setIsbn13(productsModel);
+        ordersProduct.setProduct(product);
         customersOrder.setOrdersProducts(asList(ordersProduct));
         return customersOrder;
     }

@@ -4,6 +4,7 @@ public class ProgressDTO {
     private String productCode;
     private Integer mediaItemId;
 
+    private Boolean isCompleted = false;
     public String getSubUserID() {
         return subUserID;
     }

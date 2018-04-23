@@ -2,42 +2,35 @@ package com.simonschuster.pimsleur.unlimited.services.customer;
 
 import com.github.dreamhead.moco.HttpServer;
 import com.github.dreamhead.moco.Runnable;
+import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.CustomerInfoDTO;
+import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.ProgressDTO;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.AggregatedCustomerInfo;
-import com.simonschuster.pimsleur.unlimited.data.edt.syncState.AggregatedSyncState;
-import com.simonschuster.pimsleur.unlimited.services.syncState.EDTSyncStateService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.io.IOException;
+import java.util.List;
+
 import static com.github.dreamhead.moco.Moco.*;
-import static com.github.dreamhead.moco.Moco.eq;
 import static com.github.dreamhead.moco.Runner.running;
+import static java.util.stream.Collectors.toList;
 import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.CoreMatchers.nullValue;
 import static org.junit.Assert.assertThat;
-import static org.mockito.ArgumentMatchers.*;
-import static org.mockito.Mockito.when;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @TestPropertySource("classpath:test-config.properties")
 public class EDTCustomerInfoServiceTest {
 
-    @MockBean
-    private EDTSyncStateService syncStateService;
-
     @Autowired
     private EDTCustomerInfoService edtCustomerInfoService;
 
     @Test
     public void shouldGetUnlimitedAndPCMCustomerInfos() throws Exception {
-
-        when(syncStateService.getSyncStates(anyInt(), anyString()))
-                .thenReturn(new AggregatedSyncState(null, null));
 
         HttpServer server = httpServer(12306);
         server.post(and(
@@ -49,15 +42,29 @@ public class EDTCustomerInfoServiceTest {
                 eq(form("action"), "pcm_blmqide")))
                 .response(file("src/test/resources/pcmCustInfoResponse.json"));
 
+        server.post(and(
+                by(uri("/subscr_production_v_9/action_handlers/uxpzs.php")),
+                eq(form("store_domain"), "ss_pu")))
+                .response(file("src/test/resources/unlimitedSyncStateResponse.json"));
+        server.post(and(
+                by(uri("/subscr_production_v_9/action_handlers/uxpzs.php")),
+                eq(form("store_domain"), "")))
+                .response(file("src/test/resources/pcmSyncStateResponse.json"));
+
         running(server, new Runnable() {
             @Override
-            public void run() {
+            public void run() throws IOException {
                 AggregatedCustomerInfo customerInfos =
                         edtCustomerInfoService.getCustomerInfos("whatever");
+
                 assertThat(customerInfos.getPcmCustomerInfo().getResultCode(), is(1));
                 assertThat(customerInfos.getUnlimitedCustomerInfo().getResultCode(), is(1));
-                assertThat(customerInfos.getPcmSyncState(), nullValue());
-                assertThat(customerInfos.getUnlimitedSyncState(), nullValue());
+
+                CustomerInfoDTO customerInfoDTO = customerInfos.toDto();
+                List<ProgressDTO> currentProgresses = customerInfoDTO.getProgresses().stream()
+                        .filter(prog -> prog.getCurrent())
+                        .collect(toList());
+                assertThat(currentProgresses.size(), is(1));
             }
         });
     }

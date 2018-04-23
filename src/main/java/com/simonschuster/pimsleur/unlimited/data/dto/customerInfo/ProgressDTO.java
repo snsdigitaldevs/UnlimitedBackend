@@ -8,7 +8,7 @@ public class ProgressDTO {
     private Long lastPlayedDate;
     private Double lastPlayHeadLocation;
 
-    private Boolean isCurrent;
+    private Boolean isCurrent = false;
 
     public String getProductCode() {
         return productCode;

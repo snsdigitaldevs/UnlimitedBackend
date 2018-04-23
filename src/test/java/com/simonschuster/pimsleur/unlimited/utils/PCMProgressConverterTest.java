@@ -31,7 +31,7 @@ public class PCMProgressConverterTest {
         assertThat(progressDTO.getProductCode(), is("9781442319875"));
         assertThat(progressDTO.getMediaItemId(), is(41916));
 
-        assertThat(progressDTO.getCurrent(), nullValue());
+        assertThat(progressDTO.getCurrent(), is(false));
     }
 
     @Test

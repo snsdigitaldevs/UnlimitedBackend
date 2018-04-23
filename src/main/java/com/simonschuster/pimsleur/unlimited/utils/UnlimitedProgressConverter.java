@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 import static java.util.Arrays.asList;
 import static java.util.stream.Collectors.toList;
 
-public class UnlimitedEDT2DOTUtil {
+public class UnlimitedProgressConverter {
     private static Long currentLastPlayedDate;
     private static final String COMPLETED = "isCompleted";
     private static final String LAST_PLAYED_DATE = "lastPlayedDate";
@@ -24,7 +24,7 @@ public class UnlimitedEDT2DOTUtil {
         List<ProgressDTO> result = new ArrayList<ProgressDTO>();
         try {
             result = state.getResultData().getUserAppStateData().stream()
-                    .filter(UnlimitedEDT2DOTUtil::hasKeyWord)
+                    .filter(UnlimitedProgressConverter::hasKeyWord)
                     .collect(Collectors.groupingBy(UserAppStateDatum::idPartOfKey))
                     .values().stream()
                     .map(group -> {

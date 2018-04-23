@@ -4,7 +4,7 @@ import com.github.dreamhead.moco.HttpServer;
 import com.github.dreamhead.moco.Runnable;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.ProgressDTO;
 import com.simonschuster.pimsleur.unlimited.data.edt.syncState.AggregatedSyncState;
-import com.simonschuster.pimsleur.unlimited.utils.UnlimitedEDT2DOTUtil;
+import com.simonschuster.pimsleur.unlimited.utils.UnlimitedProgressConverter;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,7 +49,7 @@ public class EDTSyncStateServiceTest {
                 List<ProgressDTO> pcmProgressDTOS = pcmProgressToDto(syncStates.getPcmSyncState().getResultData().getUserAppStateData());
                 pcmProgressDTOS.forEach(dto -> assertThat(dto.getProductCode().length(), is(13)));
 
-                assertThat(UnlimitedEDT2DOTUtil.UnlimitedSyncState2DOT(syncStates.getUnlimitedSyncState())
+                assertThat(UnlimitedProgressConverter.UnlimitedSyncState2DOT(syncStates.getUnlimitedSyncState())
                         .get(1).getCurrent(), is(true));
                 assertThat(syncStates.getUnlimitedSyncState().getResultData()
                         .getUserAppStateData().size(), is(15));

@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 import static com.simonschuster.pimsleur.unlimited.utils.PCMProgressConverter.pcmProgressToDto;
-import static com.simonschuster.pimsleur.unlimited.utils.UnlimitedEDT2DOTUtil.UnlimitedSyncState2DOT;
+import static com.simonschuster.pimsleur.unlimited.utils.UnlimitedProgressConverter.UnlimitedSyncState2DOT;
 import static java.util.stream.Collectors.toList;
 import static java.util.stream.Stream.concat;
 

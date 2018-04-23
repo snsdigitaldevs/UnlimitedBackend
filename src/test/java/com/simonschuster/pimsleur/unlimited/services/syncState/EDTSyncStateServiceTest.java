@@ -2,7 +2,9 @@ package com.simonschuster.pimsleur.unlimited.services.syncState;
 
 import com.github.dreamhead.moco.HttpServer;
 import com.github.dreamhead.moco.Runnable;
+import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.ProgressDTO;
 import com.simonschuster.pimsleur.unlimited.data.edt.syncState.AggregatedSyncState;
+import com.simonschuster.pimsleur.unlimited.utils.UnlimitedSyncState2DOTUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +13,7 @@ import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.io.IOException;
+import java.util.List;
 
 import static com.github.dreamhead.moco.Moco.*;
 import static com.github.dreamhead.moco.Runner.running;
@@ -42,8 +45,10 @@ public class EDTSyncStateServiceTest {
             public void run() throws IOException {
                 AggregatedSyncState syncStates = edtSyncStateService
                         .getSyncStates(999, "whatever");
+                assertThat(UnlimitedSyncState2DOTUtil.UnlimitedSyncState2DOT(syncStates.getUnlimitedSyncState())
+                        .get(0).getCompleted(), is(true));
                 assertThat(syncStates.getUnlimitedSyncState().getResultData()
-                        .getUserAppStateData().size(), is(6));
+                        .getUserAppStateData().size(), is(15));
                 assertThat(syncStates.getPcmSyncState().getResultData()
                         .getUserAppStateData().size(), is(42));
             }

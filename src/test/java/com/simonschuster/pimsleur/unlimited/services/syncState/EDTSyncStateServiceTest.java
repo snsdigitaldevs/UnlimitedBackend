@@ -4,6 +4,7 @@ import com.github.dreamhead.moco.HttpServer;
 import com.github.dreamhead.moco.Runnable;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.ProgressDTO;
 import com.simonschuster.pimsleur.unlimited.data.edt.syncState.AggregatedSyncState;
+import com.simonschuster.pimsleur.unlimited.utils.PCMProgressConverter;
 import com.simonschuster.pimsleur.unlimited.utils.UnlimitedSyncState2DOTUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,6 +18,7 @@ import java.util.List;
 
 import static com.github.dreamhead.moco.Moco.*;
 import static com.github.dreamhead.moco.Runner.running;
+import static com.simonschuster.pimsleur.unlimited.utils.PCMProgressConverter.pcmProgressToDto;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
@@ -45,6 +47,9 @@ public class EDTSyncStateServiceTest {
             public void run() throws IOException {
                 AggregatedSyncState syncStates = edtSyncStateService
                         .getSyncStates(999, "whatever");
+                List<ProgressDTO> pcmProgressDTOS = pcmProgressToDto(syncStates.getPcmSyncState().getResultData().getUserAppStateData());
+                pcmProgressDTOS.forEach(dto -> assertThat(dto.getProductCode().length(), is(13)));
+
                 assertThat(UnlimitedSyncState2DOTUtil.UnlimitedSyncState2DOT(syncStates.getUnlimitedSyncState())
                         .get(0).getCompleted(), is(true));
                 assertThat(syncStates.getUnlimitedSyncState().getResultData()

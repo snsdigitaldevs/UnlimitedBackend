@@ -1,31 +1,35 @@
+
+def  retResult
+def  userInput
+def  project_name = "UmlimitedBackend"
+def  all_build_package_dir = "~/jenkins_build_package/${project_name}"
+
 node {
 
-        def  project_name = "UmlimitedBackend"
-        def  all_build_package_dir = "~/jenkins_build_package/${project_name}"
-        
-        stage("Select Parameters") {
+    checkout scm
+    def retResult = sh([returnStdout: true, script: "python jenkinsfiles/scripts/getPkgsName.py ${all_build_package_dir}"])
 
-          checkout scm
+}
 
-          def retResult = sh([returnStdout: true, script: "python jenkinsfiles/scripts/getPkgsName.py ${all_build_package_dir}"])
+stage("Select Parameters") {
 
-          def userInput = input(
-               message: 'Please select the deployment parameters!', ok: 'execute', 
-               parameters: [choice(choices: "${retResult}", description: 'Please choose to deploy which package!', name: 'dpkg'),choice(choices: 'DEV\nQA\nUAT\nPROD', description: 'Please choose to deploy which environment!', name: 'denv')], 
-               submitter: 'admin', submitterParameter: 'execUser'
-               )
-            
-          currentBuild.displayName = "${userInput['dpkg']}-${userInput['denv']}"
+    def userInput = input(
+     message: 'Please select the deployment parameters!', ok: 'execute', 
+     parameters: [choice(choices: "${retResult}", description: 'Please choose to deploy which package!', name: 'dpkg'),choice(choices: 'DEV\nQA\nUAT\nPROD', description: 'Please choose to deploy which environment!', name: 'denv')], 
+     submitter: 'admin', submitterParameter: 'execUser'
+     )
 
-          userInput.each {
+}
 
-               key,value -> env[key] = value
+node {
 
-          }
-          
-        }
+      currentBuild.displayName = "${userInput['dpkg']}-${userInput['denv']}"
 
-        stage("Deploy-Check") {
+      userInput.each {
+          key,value -> env[key] = value
+      }
+
+      stage("Deploy-Check") {
 
               def config = readProperties  file: 'jenkinsfiles/config/config.properties'
 
@@ -107,8 +111,12 @@ node {
 
 
         }
-   
+
 }
+
+
+
+
 
 
 

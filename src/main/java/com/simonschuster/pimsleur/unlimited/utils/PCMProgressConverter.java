@@ -31,7 +31,6 @@ public class PCMProgressConverter {
                 .collect(Collectors.groupingBy(UserAppStateDatum::idPartOfKey)).values().stream()
                 .map(group -> groupToDTO(group, currentMediaItem))
                 .collect(toList());
-        //todo: set current
         return dtos;
     }
 

@@ -51,7 +51,7 @@ public class MediaItem {
 
     @JsonProperty("isVisible")
     @JsonIgnoreProperties
-    private Integer isVisible;  //This field for image media is Integer
+    private Integer isVisible;  //This field for image media is String
 
     @JsonProperty("mediaSetId")
     private Integer mediaSetId;

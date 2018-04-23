@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.dreamhead.moco.HttpServer;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.CourseConfig;
+import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.MediaSet;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.ProductInformation;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -40,6 +41,14 @@ public class EDTCourseInfoServiceTest {
             assertThat(productInfo.getResultCode(),is(1));
             assertNotNull(productInfo.getResultData().getCourseConfigs());
             assertNotNull(productInfo.getResultData().getMediaSets());
+
+            MediaSet oneMediaSet = productInfo.getResultData().getMediaSets().get("9781508243328");
+            assertEquals("9781508243328_Mandarin_1_AD.csv", oneMediaSet.getMediaItems().get(0).getFilename());
+            //Test Jackson convert between String and Integer, source data has two types in different places.
+            assertEquals(new Integer(1), oneMediaSet.getMediaItems().get(0).getIsActive());
+            assertEquals(new Integer(1), oneMediaSet.getMediaItems().get(6).getIsActive());
+            assertEquals("0", oneMediaSet.getMediaItems().get(2).getFileSizeBytes());
+            assertEquals("", oneMediaSet.getMediaItems().get(0).getFileSizeBytes());
         });
     }
 

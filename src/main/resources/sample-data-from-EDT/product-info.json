@@ -71,7 +71,7 @@
             "mainLessonsThumbImagePath": "Mandarin Chinese Demo/images/thumb/",
             "mainLessonsFullImagePath": "Mandarin Chinese Demo/images/full/",
             "timeCodesDataPath": "Mandarin Chinese Demo/metadata/timecode/",
-            "mediaSetDataFile": "9781508243328_Mandarin_Chinese_1.json",
+            "mediaSetDataFile": "9781508243328_Mandarin_Chinese_1.json",  //What's inside it? Might need ask Kelly K
             "requiredDiskSpace": 685519431,
             "filesToIgnoreForExport": [
             ]

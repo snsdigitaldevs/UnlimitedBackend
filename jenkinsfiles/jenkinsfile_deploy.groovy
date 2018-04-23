@@ -7,13 +7,13 @@ def  all_build_package_dir = "~/jenkins_build_package/${project_name}"
 node {
 
     checkout scm
-    def retResult = sh([returnStdout: true, script: "python jenkinsfiles/scripts/getPkgsName.py ${all_build_package_dir}"])
+    retResult = sh([returnStdout: true, script: "python jenkinsfiles/scripts/getPkgsName.py ${all_build_package_dir}"])
 
 }
 
 stage("Select Parameters") {
 
-    def userInput = input(
+     userInput = input(
      message: 'Please select the deployment parameters!', ok: 'execute', 
      parameters: [choice(choices: "${retResult}", description: 'Please choose to deploy which package!', name: 'dpkg'),choice(choices: 'DEV\nQA\nUAT\nPROD', description: 'Please choose to deploy which environment!', name: 'denv')], 
      submitter: 'admin', submitterParameter: 'execUser'

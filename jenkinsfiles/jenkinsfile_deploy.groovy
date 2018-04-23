@@ -11,14 +11,18 @@ node {
 
 }
 
-stage("Select Parameters") {
+try {
+    stage("Select Parameters") {
 
-     userInput = input(
-     message: 'Please select the deployment parameters!', ok: 'execute', 
-     parameters: [choice(choices: "${retResult}", description: 'Please choose to deploy which package!', name: 'dpkg'),choice(choices: 'DEV\nQA\nUAT\nPROD', description: 'Please choose to deploy which environment!', name: 'denv')], 
-     submitter: 'admin', submitterParameter: 'execUser'
-     )
+         userInput = input(
+         message: 'Please select the deployment parameters!', ok: 'execute', 
+         parameters: [choice(choices: "${retResult}", description: 'Please choose to deploy which package!', name: 'dpkg'),choice(choices: 'DEV\nQA\nUAT\nPROD', description: 'Please choose to deploy which environment!', name: 'denv')], 
+         submitter: 'admin', submitterParameter: 'execUser'
+         )
 
+    }
+} catch(err) {
+     return
 }
 
 node {

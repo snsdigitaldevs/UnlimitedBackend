@@ -3,7 +3,6 @@ package com.simonschuster.pimsleur.unlimited.services.customer;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.dreamhead.moco.HttpServer;
-import com.github.dreamhead.moco.Runnable;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.CourseConfig;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.ProductInformation;
 import org.junit.Test;

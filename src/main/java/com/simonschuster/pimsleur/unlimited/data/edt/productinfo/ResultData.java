@@ -13,7 +13,7 @@ public class ResultData {
     private Map<String, String> courseConfigs;
 
     @JsonProperty("mediaSets")
-    private MediaSets mediaSets;
+    private Map<String, String> mediaSets;
 
     @JsonProperty("courseConfigs")
     public Map<String, CourseConfig> getCourseConfigs() {
@@ -35,12 +35,18 @@ public class ResultData {
     }
 
     @JsonProperty("mediaSets")
-    public MediaSets getMediaSets() {
-        return mediaSets;
-    }
+    public Map<String, MediaSet> getMediaSets() {
+        ObjectMapper mapper = new ObjectMapper();
 
-    @JsonProperty("mediaSets")
-    public void setMediaSets(MediaSets mediaSets) {
-        this.mediaSets = mediaSets;
+        Map<String, MediaSet> formattedMediaSets = new HashMap<>();
+        mediaSets.forEach((key, value) -> {
+            try {
+                MediaSet mediaSet = mapper.readerFor(MediaSet.class).readValue(value);
+                formattedMediaSets.put(key, mediaSet);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
+        return formattedMediaSets;
     }
 }

@@ -1,17 +1,22 @@
 package com.simonschuster.pimsleur.unlimited.utils;
 
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.ProgressDTO;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.CustomersOrder;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.OrdersProduct;
 import com.simonschuster.pimsleur.unlimited.data.edt.syncState.SyncState;
 
 import java.io.IOException;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UnlimitedSyncState2DOTUtil {
+public class UnlimitedEDT2DOTUtil {
     private static Long currentLastPlayedDate;
+    private static final String[] usefullKeys = {"isCompleted", "lastPlayedDate","lastPlayHeadLocation"};
 
     public static List<ProgressDTO> UnlimitedSyncState2DOT(SyncState state) {
         List<ProgressDTO> result = new ArrayList<ProgressDTO>();
+
         try {
             state.getResultData().getUserAppStateData().forEach(datum -> {
                 String[] keyArr = datum.getKey().split("#");
@@ -34,7 +39,7 @@ public class UnlimitedSyncState2DOTUtil {
                         if (unknownTypeValue instanceof Integer) {
                             value = Double.valueOf(unknownTypeValue.toString());
                         } else {
-                            value = (double) unknownTypeValue;
+                            value = (Double) unknownTypeValue;
                         }
                         getDTO(keyArr[0], result).setLastPlayHeadLocation(value);
                         break;
@@ -59,12 +64,23 @@ public class UnlimitedSyncState2DOTUtil {
                 return item;
             }
         }
-        ProgressDTO newItem = new ProgressDTO();
-        newItem.setMediaItemId(mediaItemId);
-        newItem.setProductCode(productCode);
-        newItem.setCompleted(false);
-        newItem.setCurrent(false);
+        ProgressDTO newItem = new ProgressDTO(mediaItemId, productCode, false, false);
         result.add(newItem);
-        return result.get(result.size() - 1);
+        return newItem;
     }
+
+//    public static List<String> UnlimitedProductCode2DOT(List<CustomersOrder> customersOrders){
+//        List<String> result=new ArrayList<String>() ;
+//        customersOrders.forEach(customersOrder->{
+//        });
+//        customersOrders.parallelStream()
+//                .map(customersOrder->{
+//           return customersOrder .getOrdersProducts().parallelStream()
+//                   .map(ordersProduct->{
+//              return ordersProduct.getProductsModel().split(" ")[1];
+//           });
+//        })
+//        .reduce();
+//        return null;
+//    }
 }

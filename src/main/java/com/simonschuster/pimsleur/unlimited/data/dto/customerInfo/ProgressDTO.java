@@ -5,21 +5,12 @@ public class ProgressDTO {
     private Integer mediaItemId;
 
     private Boolean isCompleted = false;
-    public String getSubUserID() {
-        return subUserID;
-    }
+    private Boolean isCurrent = false;
 
-    public void setSubUserID(String subUserID) {
-        this.subUserID = subUserID;
-    }
-
-    private String subUserID;
-
-    private Boolean isCompleted;
     private Long lastPlayedDate;
     private Double lastPlayHeadLocation;
 
-    private Boolean isCurrent = false;
+    private String subUserID;
 
     public ProgressDTO() {
     }
@@ -78,5 +69,13 @@ public class ProgressDTO {
 
     public void setCurrent(Boolean current) {
         isCurrent = current;
+    }
+
+    public String getSubUserID() {
+        return subUserID;
+    }
+
+    public void setSubUserID(String subUserID) {
+        this.subUserID = subUserID;
     }
 }

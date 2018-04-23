@@ -19,23 +19,17 @@ public class ResultData {
     public Map<String, CourseConfig> getCourseConfigs() {
         ObjectMapper mapper = new ObjectMapper();
 
-        //todo: handle several courses with related keys.
-
-        final String[] courseNames = new String[1];
-        final String[] courseConfigStringValues = new String[1];
-        courseConfigs.forEach((key, value) -> {
-            courseNames[0] = key;
-            courseConfigStringValues[0] = value;
-        });
-        CourseConfig courseConfig = null;
-        try {
-            courseConfig = mapper.readValue(courseConfigStringValues[0], new TypeReference<CourseConfig>() {
-            });
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
         HashMap<String, CourseConfig> formattedCourseConfigs = new HashMap<>();
-        formattedCourseConfigs.put(courseNames[0], courseConfig);
+        courseConfigs.forEach((key, value) -> {
+            CourseConfig courseConfig = null;
+            try {
+                courseConfig = mapper.readValue(value, new TypeReference<CourseConfig>() {
+                });
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            formattedCourseConfigs.put(key, courseConfig);
+        });
 
         return formattedCourseConfigs;
     }

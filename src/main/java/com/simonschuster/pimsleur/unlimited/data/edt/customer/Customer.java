@@ -6,6 +6,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 import java.util.List;
+import java.util.stream.Collectors;
+
+import static java.util.stream.Collectors.toList;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
@@ -54,4 +57,11 @@ public class Customer {
         this.customersOrders = customersOrders;
     }
 
+    public List<String> getProductCodes() {
+        return this.getCustomersOrders().stream()
+                .flatMap(order -> order.getOrdersProducts().stream()
+                        .map(OrdersProduct::getProductsModel))
+                .collect(toList());
+
+    }
 }

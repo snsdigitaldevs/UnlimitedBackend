@@ -8,6 +8,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 import static java.util.Arrays.asList;
+import static java.util.stream.Collectors.groupingBy;
 import static java.util.stream.Collectors.toList;
 
 public class PCMProgressConverter {
@@ -28,7 +29,7 @@ public class PCMProgressConverter {
         String currentMediaItem = findCurrentMediaItem(edtProgresses);
         List<ProgressDTO> dtos = edtProgresses.stream()
                 .filter(PCMProgressConverter::hasKeyWord)
-                .collect(Collectors.groupingBy(UserAppStateDatum::idPartOfKey)).values().stream()
+                .collect(groupingBy(UserAppStateDatum::idPartOfKey)).values().stream()
                 .map(group -> groupToDTO(group, currentMediaItem))
                 .collect(toList());
         return dtos;

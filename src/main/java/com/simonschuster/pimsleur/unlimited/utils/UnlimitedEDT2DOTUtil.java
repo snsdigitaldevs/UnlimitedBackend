@@ -1,53 +1,64 @@
 package com.simonschuster.pimsleur.unlimited.utils;
 
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.ProgressDTO;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.CustomersOrder;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.OrdersProduct;
 import com.simonschuster.pimsleur.unlimited.data.edt.syncState.SyncState;
+import com.simonschuster.pimsleur.unlimited.data.edt.syncState.UserAppStateDatum;
 
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+
+import static java.util.Arrays.asList;
+import static java.util.stream.Collectors.toList;
 
 public class UnlimitedEDT2DOTUtil {
     private static Long currentLastPlayedDate;
-    private static final String[] usefullKeys = {"isCompleted", "lastPlayedDate","lastPlayHeadLocation"};
+    private static final String COMPLETED = "isCompleted";
+    private static final String LAST_PLAYED_DATE = "lastPlayedDate";
+    private static final String LAST_PLAYED_HEAD_LOCATION = "lastPlayHeadLocation";
+    private static final List<String> keyWordsToExtract =
+            asList(COMPLETED, LAST_PLAYED_DATE, LAST_PLAYED_HEAD_LOCATION);
 
     public static List<ProgressDTO> UnlimitedSyncState2DOT(SyncState state) {
         List<ProgressDTO> result = new ArrayList<ProgressDTO>();
-
         try {
-            state.getResultData().getUserAppStateData().forEach(datum -> {
-                String[] keyArr = datum.getKey().split("#");
-                switch (keyArr[1]) {
-                    case "isCompleted":
-                        getDTO(keyArr[0], result).setCompleted((Integer) datum.getValue() == 1);
-                        break;
-                    case "lastPlayedDate":
-                        Long date = (Long) datum.getValue();
-                        ProgressDTO item = getDTO(keyArr[0], result);
-                        item.setLastPlayedDate(date);
-                        if (currentLastPlayedDate == null || date > currentLastPlayedDate) {
-                            item.setCurrent(true);
-                            currentLastPlayedDate = date;
-                        }
-                        break;
-                    case "lastPlayHeadLocation":
-                        Object unknownTypeValue = datum.getValue();
-                        double value;
-                        if (unknownTypeValue instanceof Integer) {
-                            value = Double.valueOf(unknownTypeValue.toString());
-                        } else {
-                            value = (Double) unknownTypeValue;
-                        }
-                        getDTO(keyArr[0], result).setLastPlayHeadLocation(value);
-                        break;
-                    default:
-                        // do nothing
-                        break;
+            result = state.getResultData().getUserAppStateData().stream()
+                    .filter(UnlimitedEDT2DOTUtil::hasKeyWord)
+                    .collect(Collectors.groupingBy(UserAppStateDatum::idPartOfKey))
+                    .values().stream()
+                    .map(group -> {
+                        String[] ids = group.get(0).getKey().split("#")[0].split("_");
+                        ProgressDTO progressDTO = new ProgressDTO(Integer.parseInt(ids[4]), ids[3], ids[2], false, false);
+                        group.forEach(progress -> {
+                            switch (progress.getKey().split("#")[1]) {
+                                case COMPLETED:
+                                    progressDTO.setCompleted((Integer) progress.getValue() == 1);
+                                    break;
+                                case LAST_PLAYED_DATE:
+                                    Long value = (Long) progress.getValue();
+                                    if (currentLastPlayedDate == null || value < currentLastPlayedDate) {
+                                        currentLastPlayedDate = value;
+                                    }
+                                    progressDTO.setLastPlayedDate(value);
+                                    break;
+                                case LAST_PLAYED_HEAD_LOCATION:
+                                    progressDTO.setLastPlayHeadLocation(Double.valueOf(progress.getValue().toString()));
+                                    break;
+                                default:
+                                    break;
+                            }
+                        });
+                        return progressDTO;
+                    })
+                    .collect(toList());
+            for (ProgressDTO progress : result) {
+                if (progress.getLastPlayedDate() == currentLastPlayedDate) {
+                    // do not use "equals" instead of "=="
+                    progress.setCurrent(true);
+                    break;
                 }
-            });
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -55,32 +66,7 @@ public class UnlimitedEDT2DOTUtil {
         return result;
     }
 
-    private static ProgressDTO getDTO(String keyStr, List<ProgressDTO> result) {
-        String[] keyArr = keyStr.split("_");
-        String productCode = keyArr[3];
-        Integer mediaItemId = Integer.parseInt(keyArr[4]);
-        for (ProgressDTO item : result) {
-            if (item.getProductCode().equals(productCode) && item.getMediaItemId().equals(mediaItemId)) {
-                return item;
-            }
-        }
-        ProgressDTO newItem = new ProgressDTO(mediaItemId, productCode, false, false);
-        result.add(newItem);
-        return newItem;
+    private static boolean hasKeyWord(UserAppStateDatum progress) {
+        return keyWordsToExtract.stream().anyMatch((keyWord) -> progress.getKey().contains(keyWord));
     }
-
-//    public static List<String> UnlimitedProductCode2DOT(List<CustomersOrder> customersOrders){
-//        List<String> result=new ArrayList<String>() ;
-//        customersOrders.forEach(customersOrder->{
-//        });
-//        customersOrders.parallelStream()
-//                .map(customersOrder->{
-//           return customersOrder .getOrdersProducts().parallelStream()
-//                   .map(ordersProduct->{
-//              return ordersProduct.getProductsModel().split(" ")[1];
-//           });
-//        })
-//        .reduce();
-//        return null;
-//    }
 }

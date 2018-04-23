@@ -20,9 +20,13 @@ public class ProgressDTO {
 
     private Boolean isCurrent = false;
 
-    public ProgressDTO(Integer mediaItemId, String productCode, Boolean completed, Boolean current) {
+    public ProgressDTO() {
+    }
+
+    public ProgressDTO(Integer mediaItemId, String productCode, String subUserID, Boolean completed, Boolean current) {
         this.mediaItemId = mediaItemId;
         this.productCode = productCode;
+        this.subUserID = subUserID;
         this.isCompleted = completed;
         this.isCurrent = current;
     }

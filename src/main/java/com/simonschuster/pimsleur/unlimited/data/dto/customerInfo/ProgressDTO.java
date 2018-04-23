@@ -18,7 +18,7 @@ public class ProgressDTO {
     private Long lastPlayedDate;
     private Double lastPlayHeadLocation;
 
-    private Boolean isCurrent;
+    private Boolean isCurrent = false;
 
     public ProgressDTO(Integer mediaItemId, String productCode, Boolean completed, Boolean current) {
         this.mediaItemId = mediaItemId;

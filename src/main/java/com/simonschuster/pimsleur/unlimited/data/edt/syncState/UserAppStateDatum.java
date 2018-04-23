@@ -20,6 +20,15 @@ public class UserAppStateDatum {
     @JsonProperty("stateChangeType")
     private String stateChangeType;
 
+    public UserAppStateDatum() {
+    }
+
+    public UserAppStateDatum(String key, Object value, String stateChangeType) {
+        this.key = key;
+        this.value = value;
+        this.stateChangeType = stateChangeType;
+    }
+
     @JsonProperty("key")
     public String getKey() {
         return key;

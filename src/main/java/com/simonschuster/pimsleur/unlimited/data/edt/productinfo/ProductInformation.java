@@ -3,10 +3,6 @@ package com.simonschuster.pimsleur.unlimited.data.edt.productinfo;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class ProductInformation {
-//    private Map<Integer, List<Lesson>> lessons;
-//    private CourseConfigs courseConfigs;
-//    private MediaSets mediaSets;
-
     @JsonProperty("result_code")
     private Integer resultCode;
     @JsonProperty("result_data")

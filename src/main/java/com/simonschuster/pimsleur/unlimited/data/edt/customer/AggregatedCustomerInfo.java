@@ -7,8 +7,9 @@ import com.simonschuster.pimsleur.unlimited.data.edt.syncState.SyncState;
 public class AggregatedCustomerInfo {
     private SyncState pcmSyncState;
     private SyncState unlimitedSyncState;
-    private CustomerInfo unlimitedCustomerInfo;
+
     private CustomerInfo pcmCustomerInfo;
+    private CustomerInfo unlimitedCustomerInfo;
 
     public AggregatedCustomerInfo(CustomerInfo unlimited, CustomerInfo pcm, AggregatedSyncState aggregatedSyncState) {
         unlimitedCustomerInfo = unlimited;

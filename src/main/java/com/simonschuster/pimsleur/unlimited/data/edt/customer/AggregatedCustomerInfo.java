@@ -63,10 +63,6 @@ public class AggregatedCustomerInfo {
     }
 
     public CustomerInfoDTO toDto() throws IOException {
-        List<ProgressDTO> pcmProgressDTOs = pcmProgressToDto(this.pcmSyncState.getResultData().getUserAppStateData());
-        List<ProgressDTO> unlimitedProgressDTOs = UnlimitedSyncState2DOT(this.unlimitedSyncState);
-//        pickCurrentOfTwoGroups(pcmProgressDTOs, unlimitedProgressDTOs);
-
         return new CustomerInfoDTO(
                 this.unlimitedCustomerInfo.getResultData().getCustomer().getProductCodes(),
                 this.pcmCustomerInfo.getResultData().getCustomer().getProductCodes(),
@@ -80,7 +76,6 @@ public class AggregatedCustomerInfo {
         if (pcmSyncState.hasResultData() && unlimitedSyncState.hasResultData()) {
             List<ProgressDTO> pcmProgressDTOs = pcmProgressToDto(this.pcmSyncState.getResultData().getUserAppStateData());
             List<ProgressDTO> unlimitedProgressDTOs = UnlimitedSyncState2DOT(this.unlimitedSyncState);
-            pickCurrentOfTwoGroups(pcmProgressDTOs, unlimitedProgressDTOs);
 
             return concat(pcmProgressDTOs.stream(), unlimitedProgressDTOs.stream()).collect(toList());
         }

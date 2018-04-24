@@ -61,7 +61,7 @@ public class UnlimitedProgressConverter {
                                 && progress.getLastPlayedDate() == currentLastPlayedDateMap.get(subUserID))
                         // do not use "equals" instead of "=="
                         .findFirst()
-                        .orElse(null)
+                        .orElse(new ProgressDTO())
                         .setCurrent(true);
             }
         } catch (IOException e) {

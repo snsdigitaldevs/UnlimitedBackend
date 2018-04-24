@@ -37,4 +37,7 @@ public class SyncState {
         this.resultData = resultData;
     }
 
+    public boolean hasResultData() {
+        return getResultData() != null;
+    }
 }

@@ -11,6 +11,7 @@ import java.util.Optional;
 
 import static com.simonschuster.pimsleur.unlimited.utils.PCMProgressConverter.pcmProgressToDto;
 import static com.simonschuster.pimsleur.unlimited.utils.UnlimitedProgressConverter.UnlimitedSyncState2DOT;
+import static java.util.Collections.emptyList;
 import static java.util.stream.Collectors.toList;
 import static java.util.stream.Stream.concat;
 
@@ -70,8 +71,29 @@ public class AggregatedCustomerInfo {
                 this.unlimitedCustomerInfo.getResultData().getCustomer().getProductCodes(),
                 this.pcmCustomerInfo.getResultData().getCustomer().getProductCodes(),
                 this.unlimitedCustomerInfo.getResultData().getRegistrant().getProductActivations(),
-                concat(pcmProgressDTOs.stream(), unlimitedProgressDTOs.stream()).collect(toList())
+                getProgressDTOS()
         );
+    }
+
+    private List<ProgressDTO> getProgressDTOS() throws IOException {
+        //both
+        if (pcmSyncState.hasResultData() && unlimitedSyncState.hasResultData()) {
+            List<ProgressDTO> pcmProgressDTOs = pcmProgressToDto(this.pcmSyncState.getResultData().getUserAppStateData());
+            List<ProgressDTO> unlimitedProgressDTOs = UnlimitedSyncState2DOT(this.unlimitedSyncState);
+            pickCurrentOfTwoGroups(pcmProgressDTOs, unlimitedProgressDTOs);
+
+            return concat(pcmProgressDTOs.stream(), unlimitedProgressDTOs.stream()).collect(toList());
+        }
+        //only pcm
+        else if (pcmSyncState.hasResultData()) {
+            return pcmProgressToDto(this.pcmSyncState.getResultData().getUserAppStateData());
+        }
+        //only unlimited
+        else if (unlimitedSyncState.hasResultData()) {
+            return UnlimitedSyncState2DOT(this.unlimitedSyncState);
+        }
+        //neither
+        return emptyList();
     }
 
     private void pickCurrentOfTwoGroups(List<ProgressDTO> pcmProgressDTOs, List<ProgressDTO> unlimitedProgressDTOs) {
@@ -89,4 +111,5 @@ public class AggregatedCustomerInfo {
     private Optional<ProgressDTO> getFirst(List<ProgressDTO> progressDTOs) {
         return progressDTOs.stream().filter(dto -> dto.getCurrent()).findFirst();
     }
+
 }

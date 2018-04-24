@@ -25,14 +25,7 @@ public class EDTCourseInfoServiceTest {
 
     @Test
     public void shouldGetCorrectResponseFromEDTService() throws Exception {
-        //mock edt api response
-        HttpServer server = httpServer(12306);
-        server.post(and(
-                by(uri("/subscr_production_v_9/action_handlers/qwsfrecv.php")),
-                eq(form("action"), "fgtyh"),
-                eq(form("gccfs"), "[\"9781508243328\"]")
-                ))
-                .response(file("src/test/resources/edtProductInfoResponse.json"));
+        HttpServer server = mockEDTResponseFromPU();
 
         running(server, () -> {
             AggregatedProductInfo productInfo = edtCourseInfoService.getCourseInfos("9781508243328", "");
@@ -81,6 +74,41 @@ public class EDTCourseInfoServiceTest {
     @Test
     public void shouldGetProductInfoFromPCMCorrectlyWhenNoDataFromPU() throws Exception {
         //mock edt api response
+        HttpServer server = mockEDTResponseFromPCM();
+
+        running(server, () -> {
+            AggregatedProductInfo productInfo = edtCourseInfoService.getCourseInfos("9781508243328", "auth0_user_id");
+
+            assertNull(productInfo.getProductInfoFromPU());
+            assertNotNull(productInfo.getProductInfoFromPCM());
+
+        });
+    }
+//
+//    @Test
+//    public void shouldGenerateDTOResponseCorrectlyFromPU() throws Exception {
+//
+//
+//    }
+//
+//    @Test
+//    public void shouldGenerateDTOResponseCorrectlyFromPCM() throws Exception {
+//
+//
+//    }
+
+    private HttpServer mockEDTResponseFromPU() {
+        HttpServer server = httpServer(12306);
+        server.post(and(
+                by(uri("/subscr_production_v_9/action_handlers/qwsfrecv.php")),
+                eq(form("action"), "fgtyh"),
+                eq(form("gccfs"), "[\"9781508243328\"]")
+        ))
+                .response(file("src/test/resources/edtProductInfoResponse.json"));
+        return server;
+    }
+
+    private HttpServer mockEDTResponseFromPCM() {
         HttpServer server = httpServer(12306);
         server.post(and(
                 by(uri("/subscr_production_v_9/action_handlers/qwsfrecv.php")),
@@ -92,15 +120,8 @@ public class EDTCourseInfoServiceTest {
         server.post(and(
                 by(uri("/subscr_production_v_9/action_handlers/rsovkolfqxrjl.php")),
                 eq(form("action"), "pcm_blmqide"))
-                )
+        )
                 .response(file("src/test/resources/pcmCustInfoResponse.json"));
-
-        running(server, () -> {
-            AggregatedProductInfo productInfo = edtCourseInfoService.getCourseInfos("9781508243328", "auth0_user_id");
-
-            assertNull(productInfo.getProductInfoFromPU());
-            assertNotNull(productInfo.getProductInfoFromPCM());
-
-        });
+        return server;
     }
 }

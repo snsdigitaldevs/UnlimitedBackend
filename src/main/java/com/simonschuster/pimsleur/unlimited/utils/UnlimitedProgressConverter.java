@@ -6,6 +6,7 @@ import com.simonschuster.pimsleur.unlimited.data.edt.syncState.UserAppStateDatum
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -13,7 +14,7 @@ import static java.util.Arrays.asList;
 import static java.util.stream.Collectors.toList;
 
 public class UnlimitedProgressConverter {
-    private static Long currentLastPlayedDate;
+    private static HashMap<String, Long> currentLastPlayedDateMap = new HashMap<String, Long>();
     private static final String COMPLETED = "isCompleted";
     private static final String LAST_PLAYED_DATE = "lastPlayedDate";
     private static final String LAST_PLAYED_HEAD_LOCATION = "lastPlayHeadLocation";
@@ -29,7 +30,8 @@ public class UnlimitedProgressConverter {
                     .values().stream()
                     .map(group -> {
                         String[] ids = group.get(0).getKey().split("#")[0].split("_");
-                        ProgressDTO progressDTO = new ProgressDTO(Integer.parseInt(ids[4]), ids[3], ids[2], false, false);
+                        String subUserID = ids[2];
+                        ProgressDTO progressDTO = new ProgressDTO(Integer.parseInt(ids[4]), ids[3], subUserID, false, false);
                         group.forEach(progress -> {
                             switch (progress.getKey().split("#")[1]) {
                                 case COMPLETED:
@@ -37,8 +39,9 @@ public class UnlimitedProgressConverter {
                                     break;
                                 case LAST_PLAYED_DATE:
                                     Long value = (Long) progress.getValue();
+                                    Long currentLastPlayedDate = currentLastPlayedDateMap.get(subUserID);
                                     if (currentLastPlayedDate == null || value < currentLastPlayedDate) {
-                                        currentLastPlayedDate = value;
+                                        currentLastPlayedDateMap.put(subUserID, value);
                                     }
                                     progressDTO.setLastPlayedDate(value);
                                     break;
@@ -52,12 +55,14 @@ public class UnlimitedProgressConverter {
                         return progressDTO;
                     })
                     .collect(toList());
-            for (ProgressDTO progress : result) {
-                if (progress.getLastPlayedDate() == currentLastPlayedDate) {
-                    // do not use "equals" instead of "=="
-                    progress.setCurrent(true);
-                    break;
-                }
+            for (String subUserID : currentLastPlayedDateMap.keySet()) {
+                result.stream()
+                        .filter(progress -> progress.getSubUserID().equals(subUserID)
+                                && progress.getLastPlayedDate() == currentLastPlayedDateMap.get(subUserID))
+                        // do not use "equals" instead of "=="
+                        .findFirst()
+                        .orElse(null)
+                        .setCurrent(true);
             }
         } catch (IOException e) {
             e.printStackTrace();

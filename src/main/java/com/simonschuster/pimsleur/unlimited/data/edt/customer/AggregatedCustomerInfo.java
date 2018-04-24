@@ -64,7 +64,7 @@ public class AggregatedCustomerInfo {
     public CustomerInfoDTO toDto() throws IOException {
         List<ProgressDTO> pcmProgressDTOs = pcmProgressToDto(this.pcmSyncState.getResultData().getUserAppStateData());
         List<ProgressDTO> unlimitedProgressDTOs = UnlimitedSyncState2DOT(this.unlimitedSyncState);
-        pickCurrentOfTwoGroups(pcmProgressDTOs, unlimitedProgressDTOs);
+//        pickCurrentOfTwoGroups(pcmProgressDTOs, unlimitedProgressDTOs);
 
         return new CustomerInfoDTO(
                 this.unlimitedCustomerInfo.getResultData().getCustomer().getProductCodes(),

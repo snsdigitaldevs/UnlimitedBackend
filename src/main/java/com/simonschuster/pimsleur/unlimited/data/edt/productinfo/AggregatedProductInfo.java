@@ -55,15 +55,13 @@ public class AggregatedProductInfo {
         mediaSets.forEach((currentProductCode, mediaSet) -> {
             course.setLanguageName(mediaSet.getCourseLanguageName());
             course.setLevel(mediaSet.getCourseLevel());
-            transformLessonInfo(course, mediaSet);
+            transformLessonInfoFromPU(course, mediaSet);
         });
 
-//        String languageName = "";
-//        course.setLanguageName(languageName);
         return course;
     }
 
-    private void transformLessonInfo(Course course, MediaSet mediaSet) {
+    private void transformLessonInfoFromPU(Course course, MediaSet mediaSet) {
         List<Lesson> lessons = new ArrayList<>();
         List<MediaItem> mediaItems = mediaSet.getMediaItems();
         for (int i = 1; i <= LESSON_NUMBER_OF_LEVEL; i++) {
@@ -81,7 +79,7 @@ public class AggregatedProductInfo {
             currentLessonItems.forEach(lessonItem -> {
                 if (lessonItem.getTypeId().equals("1")) {
                     lesson.setName(lessonItem.getTitle());
-                    lesson.setImage(getImage(lessonItem, mediaSet));
+                    lesson.setImage(getImageFromPU(lessonItem, mediaSet));
                     lesson.setImageDescription(lessonItem.getImageDescription());
                     lesson.setAudioLink(getAudioLink(lessonItem));
                 }
@@ -93,19 +91,22 @@ public class AggregatedProductInfo {
         course.setLessons(lessons);
     }
 
-    private Image getImage(MediaItem lessonItem, MediaSet mediaSet) {
+    private Image getImageFromPU(MediaItem lessonItem, MediaSet mediaSet) {
         Image image = new Image();
 
-        Map<String, CourseConfig> courseConfigMap = productInfoFromPU.getResultData().getCourseConfigs();
         String courseConfigKey = mediaSet.getCourseLanguageName().replace(" ", "_");
-        CourseConfig courseConfig = courseConfigMap.get(courseConfigKey);
+        CourseConfig courseConfig = productInfoFromPU.getResultData().getCourseConfigs().get(courseConfigKey);
         List<CourseLevelDef> levelDefs = courseConfig.getCourseLevelDefs();
 
         for (int i = 0; i < levelDefs.size(); i++) {
             CourseLevelDef courseLevelDef = levelDefs.get(i);
             if (courseLevelDef.getIsbn13().equals(mediaSet.getIsbn13())) {
-                String imageUrl = PREFIX_FOR_IMAGE_OF_PU + mediaSet.getCourseLanguageName().replace(" ", "").toLowerCase() + "/"
-                        + courseLevelDef.getMainLessonsFullImagePath() + lessonItem.getImageURL();
+                String imageUrl = PREFIX_FOR_IMAGE_OF_PU
+                        + mediaSet.getCourseLanguageName().replace(" ", "").toLowerCase()
+                        + "/"
+                        + courseLevelDef.getMainLessonsFullImagePath()
+                        + lessonItem.getImageURL();
+
                 image.setFullImageAddress(imageUrl);
                 break;
             }

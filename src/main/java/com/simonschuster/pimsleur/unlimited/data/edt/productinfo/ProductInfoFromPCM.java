@@ -6,6 +6,7 @@ import java.util.List;
 
 public class ProductInfoFromPCM {
     private List<OrdersProduct> ordersProductList;
+    private OrdersProduct orderProduct;
 
     public List<OrdersProduct> getOrdersProductList() {
         return ordersProductList;
@@ -13,5 +14,13 @@ public class ProductInfoFromPCM {
 
     public void setOrdersProductList(List<OrdersProduct> ordersProductList) {
         this.ordersProductList = ordersProductList;
+    }
+
+    public void setOrderProduct(OrdersProduct orderProduct) {
+        this.orderProduct = orderProduct;
+    }
+
+    public OrdersProduct getOrderProduct() {
+        return orderProduct;
     }
 }

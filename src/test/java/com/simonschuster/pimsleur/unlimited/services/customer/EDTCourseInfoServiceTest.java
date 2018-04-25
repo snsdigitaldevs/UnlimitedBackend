@@ -77,16 +77,16 @@ public class EDTCourseInfoServiceTest {
 
     @Test
     public void shouldGetProductInfoFromPCMCorrectlyWhenNoDataFromPU() throws Exception {
-        //mock edt api response
         HttpServer server = mockEDTResponseFromPCM();
         boolean isPUProductCode = false;
+        String productCode = "9781442369030";
 
         running(server, () -> {
-            AggregatedProductInfo productInfo = edtCourseInfoService.getCourseInfos(isPUProductCode, "9781508243328", "auth0_user_id");
+            AggregatedProductInfo productInfo = edtCourseInfoService.getCourseInfos(isPUProductCode, productCode, "auth0_user_id");
 
             assertNull(productInfo.getProductInfoFromPU());
             assertNotNull(productInfo.getProductInfoFromPCM());
-
+            assertEquals(productCode, productInfo.getProductInfoFromPCM().getOrderProduct().getProduct().getIsbn13().replace("-", ""));
         });
     }
 
@@ -95,7 +95,7 @@ public class EDTCourseInfoServiceTest {
         HttpServer httpServer = mockEDTResponseFromPU();
 
         running(httpServer, () -> {
-            Course productInfo = edtCourseInfoService.getCourseInfos("9781508243328", "").toDto();
+            Course productInfo = edtCourseInfoService.getCourseInfos(true, "9781508243328", "").toDto();
 
             assertEquals("Mandarin Chinese", productInfo.getLanguageName());
 
@@ -112,7 +112,18 @@ public class EDTCourseInfoServiceTest {
 
     @Test
     public void shouldGenerateDTOResponseCorrectlyFromPCM() throws Exception {
+        HttpServer server = mockEDTResponseFromPCM();
+        boolean isPUProductCode = false;
+        String productCode = "9781508205333";
 
+        running(server, () -> {
+            AggregatedProductInfo productInfo = edtCourseInfoService.getCourseInfos(isPUProductCode, productCode, "auth0_user_id");
+            Course courseDto = productInfo.toDto();
+
+            assertEquals("French", courseDto.getLanguageName());
+//            assertEquals("", courseDto.getLevel());
+//            assertEquals(courseDto.getLessons());
+        });
 
     }
 

@@ -49,7 +49,7 @@ public class EDTSyncStateServiceTest {
                 List<ProgressDTO> pcmProgressDTOS = pcmProgressToDto(syncStates.getPcmSyncState().getResultData().getUserAppStateData());
                 pcmProgressDTOS.forEach(dto -> assertThat(dto.getProductCode().length(), is(13)));
 
-                assertThat(UnlimitedProgressConverter.UnlimitedSyncState2DOT(syncStates.getUnlimitedSyncState())
+                assertThat(UnlimitedProgressConverter.UnlimitedSyncStateToDTO(syncStates.getUnlimitedSyncState().getResultData().getUserAppStateData())
                         .get(1).getCurrent(), is(true));
                 assertThat(syncStates.getUnlimitedSyncState().getResultData()
                         .getUserAppStateData().size(), is(15));

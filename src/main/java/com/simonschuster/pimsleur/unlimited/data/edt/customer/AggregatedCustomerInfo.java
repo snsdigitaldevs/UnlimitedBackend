@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 import static com.simonschuster.pimsleur.unlimited.utils.PCMProgressConverter.pcmProgressToDto;
-import static com.simonschuster.pimsleur.unlimited.utils.UnlimitedProgressConverter.UnlimitedSyncState2DOT;
+import static com.simonschuster.pimsleur.unlimited.utils.UnlimitedProgressConverter.UnlimitedSyncStateToDTO;
 import static java.util.Collections.emptyList;
 import static java.util.stream.Collectors.toList;
 import static java.util.stream.Stream.concat;
@@ -75,7 +75,7 @@ public class AggregatedCustomerInfo {
         //both
         if (pcmSyncState.hasResultData() && unlimitedSyncState.hasResultData()) {
             List<ProgressDTO> pcmProgressDTOs = pcmProgressToDto(this.pcmSyncState.getResultData().getUserAppStateData());
-            List<ProgressDTO> unlimitedProgressDTOs = UnlimitedSyncState2DOT(this.unlimitedSyncState);
+            List<ProgressDTO> unlimitedProgressDTOs = UnlimitedSyncStateToDTO(this.unlimitedSyncState.getResultData().getUserAppStateData());
 
             return concat(pcmProgressDTOs.stream(), unlimitedProgressDTOs.stream()).collect(toList());
         }
@@ -85,7 +85,7 @@ public class AggregatedCustomerInfo {
         }
         //only unlimited
         else if (unlimitedSyncState.hasResultData()) {
-            return UnlimitedSyncState2DOT(this.unlimitedSyncState);
+            return UnlimitedSyncStateToDTO(this.unlimitedSyncState.getResultData().getUserAppStateData());
         }
         //neither
         return emptyList();

@@ -99,8 +99,7 @@ public class EDTCourseInfoService {
         restTemplate.getMessageConverters().add(converter);
 
         String productInfoApiUrl = config.getProperty("edt.api.productInfoApiUrl");
-        Class<ProductInfoFromUnlimited> responseType = ProductInfoFromUnlimited.class;
-        return restTemplate.postForObject(productInfoApiUrl, requestEntity, responseType);
+        return restTemplate.postForObject(productInfoApiUrl, requestEntity, ProductInfoFromUnlimited.class);
     }
 
 }

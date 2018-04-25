@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.util.StringUtils;
 
 import static com.github.dreamhead.moco.Moco.*;
 import static com.github.dreamhead.moco.Runner.running;
@@ -94,6 +95,7 @@ public class EDTCourseInfoServiceTest {
             Course productInfo = edtCourseInfoService.getCourseInfos("9781508243328", "").toDto();
 
             assertEquals("Mandarin Chinese", productInfo.getLanguageName());
+            assertTrue(!StringUtils.isEmpty(productInfo.getLessons().get(0).getImage().getFullImageAddress()));
 
         });
     }

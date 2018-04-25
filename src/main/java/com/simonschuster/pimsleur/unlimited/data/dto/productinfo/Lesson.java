@@ -3,14 +3,19 @@ package com.simonschuster.pimsleur.unlimited.data.dto.productinfo;
 import java.util.List;
 
 public class Lesson {
-    private List<Image> images;
+    private Image image;
     private String name;
     private String audioLink;
     private Integer level;
     private String lessonNumber;
+    private String imageDescription;
 
-    public List<Image> getImages() {
-        return images;
+    public String getImageDescription() {return imageDescription;}
+
+    public void setImageDescription(String imageDescription) {this.imageDescription = imageDescription; }
+
+    public Image getImage() {
+        return image;
     }
 
     public String getName() {
@@ -29,8 +34,8 @@ public class Lesson {
         return lessonNumber;
     }
 
-    public void setImages(List<Image> images) {
-        this.images = images;
+    public void setImage(Image image) {
+        this.image = image;
     }
 
     public void setName(String name) {

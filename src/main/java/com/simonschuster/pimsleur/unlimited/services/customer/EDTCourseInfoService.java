@@ -6,6 +6,8 @@ import com.simonschuster.pimsleur.unlimited.data.edt.customer.CustomersOrder;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.AggregatedProductInfo;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.ProductInfoFromPCM;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.ProductInfoFromUnlimited;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -27,22 +29,28 @@ public class EDTCourseInfoService {
     @Autowired
     private ApplicationConfiguration config;
 
-    //todo: make PCM api call available with parameter auth0_user_id
-    //todo: make it available to get a list of product??
-    public AggregatedProductInfo getCourseInfos(String productCode, String auth0UserId) {
+    private static final Logger logger = LoggerFactory.getLogger(EDTCourseInfoService.class);
+
+    public AggregatedProductInfo getCourseInfos(boolean isPUProductCode, String productCode, String auth0UserId) {
         AggregatedProductInfo aggregatedProductInfo = new AggregatedProductInfo();
-        try {
+        if (isPUProductCode) {
             putInProductInfoFromPU(productCode, aggregatedProductInfo);
-        } catch (Exception exceptionWhenGetProductInfoFromUnlimited) {
+        } else {
             putInProductInfoFromPCM(auth0UserId, aggregatedProductInfo);
         }
         return aggregatedProductInfo;
     }
 
     private void putInProductInfoFromPU(String productCode, AggregatedProductInfo aggregatedProductInfo) {
-        ProductInfoFromUnlimited productInfoForPimsleurUnlimited
-                = getProductInfoForPimsleurUnlimited(productCode);
-        aggregatedProductInfo.setProductInfoFromPU(productInfoForPimsleurUnlimited);
+        try {
+            ProductInfoFromUnlimited productInfoForPimsleurUnlimited
+                    = getProductInfoForPimsleurUnlimited(productCode);
+            aggregatedProductInfo.setProductInfoFromPU(productInfoForPimsleurUnlimited);
+        } catch (Exception exceptionWhenGetProductInfoFromPU) {
+            logger.error("Exception occured when get product info with PU product code.");
+            exceptionWhenGetProductInfoFromPU.printStackTrace();
+            throw exceptionWhenGetProductInfoFromPU;
+        }
     }
 
     private void putInProductInfoFromPCM(String auth0UserId, AggregatedProductInfo aggregatedProductInfo) {
@@ -50,7 +58,9 @@ public class EDTCourseInfoService {
             ProductInfoFromPCM productInfoForPCM = getProductInfoForPCM(auth0UserId);
             aggregatedProductInfo.setProductInfoFromPCM(productInfoForPCM);
         } catch (Exception exceptionWhenGetProductInfoFromPCM) {
+            logger.error("Exception occured when get product info with PU product code.");
             exceptionWhenGetProductInfoFromPCM.printStackTrace();
+            throw exceptionWhenGetProductInfoFromPCM;
         }
     }
 

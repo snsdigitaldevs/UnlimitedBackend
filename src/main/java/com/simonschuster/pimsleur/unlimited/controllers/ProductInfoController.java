@@ -17,9 +17,10 @@ public class ProductInfoController {
     private EDTCourseInfoService edtCourseInfoService;
 
     @RequestMapping(value = "/productInfo", method = RequestMethod.GET)
-    public Course getCustomerInfo(@RequestParam(value = "productCode") String productCode,
+    public Course getCustomerInfo(@RequestParam("isPUProductCode") boolean isPUProductCode,
+                                  @RequestParam(value = "productCode") String productCode,
                                   @RequestParam(value = "sub") String sub)
             throws IOException {
-        return edtCourseInfoService.getCourseInfos(productCode, sub).toDto();
+        return edtCourseInfoService.getCourseInfos(isPUProductCode, productCode, sub).toDto();
     }
 }

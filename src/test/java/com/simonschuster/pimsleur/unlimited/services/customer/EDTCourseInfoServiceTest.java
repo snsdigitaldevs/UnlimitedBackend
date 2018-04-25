@@ -1,6 +1,7 @@
 package com.simonschuster.pimsleur.unlimited.services.customer;
 
 import com.github.dreamhead.moco.HttpServer;
+import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.AggregatedProductInfo;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.CourseConfig;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.MediaSet;
@@ -84,18 +85,24 @@ public class EDTCourseInfoServiceTest {
 
         });
     }
-//
-//    @Test
-//    public void shouldGenerateDTOResponseCorrectlyFromPU() throws Exception {
-//
-//
-//    }
-//
-//    @Test
-//    public void shouldGenerateDTOResponseCorrectlyFromPCM() throws Exception {
-//
-//
-//    }
+
+    @Test
+    public void shouldGenerateDTOResponseCorrectlyFromPU() throws Exception {
+        HttpServer httpServer = mockEDTResponseFromPU();
+
+        running(httpServer, () -> {
+            Course productInfo = edtCourseInfoService.getCourseInfos("9781508243328", "").toDto();
+
+            assertEquals("Mandarin Chinese", productInfo.getLanguageName());
+
+        });
+    }
+
+    @Test
+    public void shouldGenerateDTOResponseCorrectlyFromPCM() throws Exception {
+
+
+    }
 
     private HttpServer mockEDTResponseFromPU() {
         HttpServer server = httpServer(12306);

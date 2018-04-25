@@ -34,6 +34,7 @@ public class UnlimitedProgressConverter {
                     return progressDTO;
                 })
                 .collect(toList());
+
         getCurrentForEachSubUser(result);
         return result;
     }
@@ -41,11 +42,19 @@ public class UnlimitedProgressConverter {
     private static void getCurrentForEachSubUser(List<ProgressDTO> result) {
         for (String subUserID : currentLastPlayedDateMap.keySet()) {
             result.stream()
-                    .filter(progress -> progress.getSubUserID().equals(subUserID)
-                            && progress.getLastPlayedDate() == currentLastPlayedDateMap.get(subUserID))
-                    // warming: do not use "equals" instead of "=="
+                    .filter(progress -> {
+                        if (progress.getSubUserID().equals(subUserID)) {
+                            if (progress.getLastPlayedDate() == null) {
+                                return currentLastPlayedDateMap.get(subUserID) == null;
+                            } else {
+                                return progress.getLastPlayedDate().equals(currentLastPlayedDateMap.get(subUserID));
+                            }
+                        }
+                        return false;
+                    })
                     .findFirst()
-                    .orElse(new ProgressDTO())
+                    .get()
+                    // there is one and only one item after filer
                     .setCurrent(true);
         }
     }

@@ -64,7 +64,7 @@ public class EDTCustomerInfoServiceTest {
                 List<ProgressDTO> currentProgresses = customerInfoDTO.getProgresses().stream()
                         .filter(prog -> prog.getCurrent())
                         .collect(toList());
-                assertThat(currentProgresses.size(), is(1));
+                assertThat(currentProgresses.size(), is(3));
             }
         });
     }

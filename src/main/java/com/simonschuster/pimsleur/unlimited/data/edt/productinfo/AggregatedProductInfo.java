@@ -73,19 +73,17 @@ public class AggregatedProductInfo {
                 if (lessonItem.getTypeId().equals("1")) {
                     lesson.setName(lessonItem.getTitle());
 //                    lesson.setImages();
-//                    lesson.setAudioLink();
+//                    lesson.setAudioLink();  1. from product-info 2. from ***.json 3. hlfhg request
                 }
             });
 
         }
 
-
-//            private List<Image> images;
+//            private List<Image> images; Add image description.
 //            private String name;
 //            private String audioLink;
 //            private String level;
 //            private String lessonNumber;
-
 
         course.setLessons(lessons);
     }

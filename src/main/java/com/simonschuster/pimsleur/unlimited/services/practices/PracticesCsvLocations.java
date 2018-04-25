@@ -6,6 +6,22 @@ public class PracticesCsvLocations {
     private String speakEasyUrl;
     private String readingUrl;
 
+    public void setFlashCardUrl(String flashCardUrl) {
+        this.flashCardUrl = flashCardUrl;
+    }
+
+    public void setQuickMatchUrl(String quickMatchUrl) {
+        this.quickMatchUrl = quickMatchUrl;
+    }
+
+    public void setSpeakEasyUrl(String speakEasyUrl) {
+        this.speakEasyUrl = speakEasyUrl;
+    }
+
+    public void setReadingUrl(String readingUrl) {
+        this.readingUrl = readingUrl;
+    }
+
     public String getFlashCardUrl() {
         return flashCardUrl;
     }

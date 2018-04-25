@@ -1,0 +1,1498 @@
+{
+  "result_data": {
+    "fileList": {
+      "fileListId": 276,
+      "productCode": "9781442394872",
+      "enabled": 1,
+      "deployType": "MOBILE",
+      "minAppVersion": "4.022",
+      "kittedFileListsString": "",
+      "fileListItems": [
+        {
+          "fileListItemId": 5938,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/mobile/mandarinchinese/",
+          "path": "Mandarin Chinese I/metadata/timecode/9781442394872_Mandarin_1_FC.csv",
+          "size": 56316,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "metadata-timecode",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4186,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/full/MA_1_M_15.jpg",
+          "size": 348882,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4187,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/full/MA_1_M_16.jpg",
+          "size": 256104,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4188,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/full/MA_1_M_17.jpg",
+          "size": 462059,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4189,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/full/MA_1_M_18.jpg",
+          "size": 281635,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4190,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/full/MA_1_M_19.jpg",
+          "size": 293131,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4191,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/full/MA_1_M_20.jpg",
+          "size": 235427,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4192,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/full/MA_1_M_21.jpg",
+          "size": 333105,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4193,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/full/MA_1_M_22.jpg",
+          "size": 378094,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4194,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/full/MA_1_M_23.jpg",
+          "size": 271429,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4195,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/full/MA_1_M_24.jpg",
+          "size": 700048,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4196,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/full/MA_1_M_25.jpg",
+          "size": 731727,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4197,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/full/MA_1_M_26.jpg",
+          "size": 404091,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4198,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/full/MA_1_M_27.jpg",
+          "size": 556595,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4199,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/full/MA_1_M_28.jpg",
+          "size": 227180,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4200,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/full/MA_1_M_29.jpg",
+          "size": 507328,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4201,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/full/MA_1_M_30.jpg",
+          "size": 431219,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4185,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/full/MA_1_M_14.jpg",
+          "size": 225932,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4184,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/full/MA_1_M_13.jpg",
+          "size": 292432,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4183,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/full/MA_1_M_12.jpg",
+          "size": 351867,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 5937,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/mobile/mandarinchinese/",
+          "path": "Mandarin Chinese I/metadata/timecode/9781442394872_Mandarin_1_PH.csv",
+          "size": 13092,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "metadata-timecode",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 5936,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/mobile/mandarinchinese/",
+          "path": "Mandarin Chinese I/metadata/timecode/9781442394872_Mandarin_1_QZ.csv",
+          "size": 116860,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "metadata-timecode",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 5935,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/mobile/mandarinchinese/",
+          "path": "Mandarin Chinese I/metadata/timecode/9781442394872_Mandarin_1_RL.csv",
+          "size": 65964,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "metadata-timecode",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 5934,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/mobile/mandarinchinese/",
+          "path": "Mandarin Chinese I/metadata/timecode/9781442394872_Mandarin_1_RLM.csv",
+          "size": 1643,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "metadata-timecode",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 5940,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/mobile/mandarinchinese/",
+          "path": "Mandarin Chinese I/metadata/timecode/9781442394872_Mandarin_1_VC.csv",
+          "size": 39200,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "metadata-timecode",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4172,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/full/MA_1_M_01.jpg",
+          "size": 217210,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4173,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/full/MA_1_M_02.jpg",
+          "size": 321995,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4174,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/full/MA_1_M_03.jpg",
+          "size": 312832,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4175,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/full/MA_1_M_04.jpg",
+          "size": 172016,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4176,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/full/MA_1_M_05.jpg",
+          "size": 323244,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4177,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/full/MA_1_M_06.jpg",
+          "size": 462800,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4178,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/full/MA_1_M_07.jpg",
+          "size": 351877,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4179,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/full/MA_1_M_08.jpg",
+          "size": 596404,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4180,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/full/MA_1_M_09.jpg",
+          "size": 267466,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4181,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/full/MA_1_M_10.jpg",
+          "size": 792856,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4182,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/full/MA_1_M_11.jpg",
+          "size": 299866,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4202,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/thumb/MA_1_M_01.jpg",
+          "size": 36766,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4203,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/thumb/MA_1_M_02.jpg",
+          "size": 63960,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4223,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/thumb/MA_1_M_22.jpg",
+          "size": 58665,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4224,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/thumb/MA_1_M_23.jpg",
+          "size": 54996,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4225,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/thumb/MA_1_M_24.jpg",
+          "size": 104613,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4226,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/thumb/MA_1_M_25.jpg",
+          "size": 97594,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4227,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/thumb/MA_1_M_26.jpg",
+          "size": 65674,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4228,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/thumb/MA_1_M_27.jpg",
+          "size": 52516,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4229,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/thumb/MA_1_M_28.jpg",
+          "size": 39043,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4230,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/thumb/MA_1_M_29.jpg",
+          "size": 64346,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4231,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/thumb/MA_1_M_30.jpg",
+          "size": 67395,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4719,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/metadata/timecode/9781508231431_Mandarin_Chinese_1.json",
+          "size": 106765,
+          "tbd": 0,
+          "unzip": 0,
+          "location": "NULL",
+          "decrsize": 0,
+          "mimeType": "metadata-timecode",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4730,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/all_languages/",
+          "path": "intros/speak_easy_leadin.mp3",
+          "size": 525584,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4729,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/all_languages/",
+          "path": "intros/speak_easy_intro.mp3",
+          "size": 801698,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4728,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/all_languages/",
+          "path": "intros/review_screen.mp3",
+          "size": 849502,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4727,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/all_languages/",
+          "path": "intros/reading_lesson_intro.mp3",
+          "size": 761731,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4726,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/all_languages/",
+          "path": "intros/reading_audio_leadin.mp3",
+          "size": 276898,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4723,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/all_languages/",
+          "path": "intros/home_screen_intro.mp3",
+          "size": 352914,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4222,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/thumb/MA_1_M_21.jpg",
+          "size": 53247,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4221,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/thumb/MA_1_M_20.jpg",
+          "size": 34191,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4220,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/thumb/MA_1_M_19.jpg",
+          "size": 50683,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4204,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/thumb/MA_1_M_03.jpg",
+          "size": 49166,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4205,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/thumb/MA_1_M_04.jpg",
+          "size": 30735,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4206,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/thumb/MA_1_M_05.jpg",
+          "size": 45308,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4207,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/thumb/MA_1_M_06.jpg",
+          "size": 73232,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4208,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/thumb/MA_1_M_07.jpg",
+          "size": 62009,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4209,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/thumb/MA_1_M_08.jpg",
+          "size": 84525,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4210,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/thumb/MA_1_M_09.jpg",
+          "size": 53826,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4211,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/thumb/MA_1_M_10.jpg",
+          "size": 112616,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4212,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/thumb/MA_1_M_11.jpg",
+          "size": 59587,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4213,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/thumb/MA_1_M_12.jpg",
+          "size": 59735,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4214,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/thumb/MA_1_M_13.jpg",
+          "size": 67297,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4215,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/thumb/MA_1_M_14.jpg",
+          "size": 52001,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4216,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/thumb/MA_1_M_15.jpg",
+          "size": 60970,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4217,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/thumb/MA_1_M_16.jpg",
+          "size": 51247,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4218,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/thumb/MA_1_M_17.jpg",
+          "size": 65656,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4219,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/",
+          "path": "Mandarin Chinese I/images/thumb/MA_1_M_18.jpg",
+          "size": 53806,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "image-jpeg",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4722,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/all_languages/",
+          "path": "intros/audio_lesson_intro.mp3",
+          "size": 767216,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4092,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_AudioUsersGuide.mp3",
+          "size": 9698408,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4112,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Culture_Notes_19.mp3",
+          "size": 1030194,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4113,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_U01_Lesson.mp3",
+          "size": 18388036,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4114,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_U02_Lesson.mp3",
+          "size": 18402925,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4115,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_U03_Lesson.mp3",
+          "size": 18424346,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4116,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_U04_Lesson.mp3",
+          "size": 18464836,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4117,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_U05_Lesson.mp3",
+          "size": 18337097,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4118,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_U06_Lesson.mp3",
+          "size": 18467448,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4119,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_U07_Lesson.mp3",
+          "size": 18433227,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4120,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_U08_Lesson.mp3",
+          "size": 18174876,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4121,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_U09_Lesson.mp3",
+          "size": 18412852,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4122,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_U10_Lesson.mp3",
+          "size": 18265522,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4123,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_U11_Lesson.mp3",
+          "size": 18306012,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4124,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_U12_Lesson.mp3",
+          "size": 18314633,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4125,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_U13_Lesson.mp3",
+          "size": 18414943,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4126,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_U14_Lesson.mp3",
+          "size": 18449424,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4127,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_U15_Lesson.mp3",
+          "size": 18452559,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4111,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Culture_Notes_18.mp3",
+          "size": 958618,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4110,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Culture_Notes_17.mp3",
+          "size": 640447,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4109,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Culture_Notes_16.mp3",
+          "size": 624773,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4093,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Culture_Notes.pdf",
+          "size": 636344,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "pdf",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4094,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Culture_Notes_01.mp3",
+          "size": 1843907,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4095,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Culture_Notes_02.mp3",
+          "size": 579319,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4096,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Culture_Notes_03.mp3",
+          "size": 800577,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4097,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Culture_Notes_04.mp3",
+          "size": 1772593,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4098,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Culture_Notes_05.mp3",
+          "size": 1437703,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4099,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Culture_Notes_06.mp3",
+          "size": 1043254,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4100,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Culture_Notes_07.mp3",
+          "size": 1407923,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4101,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Culture_Notes_08.mp3",
+          "size": 1114568,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4102,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Culture_Notes_09.mp3",
+          "size": 797442,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4103,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Culture_Notes_10.mp3",
+          "size": 1266080,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4104,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Culture_Notes_11.mp3",
+          "size": 2576904,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4105,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Culture_Notes_12.mp3",
+          "size": 1922798,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4106,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Culture_Notes_13.mp3",
+          "size": 2574031,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4107,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Culture_Notes_14.mp3",
+          "size": 2357737,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4108,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Culture_Notes_15.mp3",
+          "size": 807108,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4128,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_U16_Lesson.mp3",
+          "size": 18254290,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4129,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_U17_Lesson.mp3",
+          "size": 18465620,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4149,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Unit07_Reading.mp3",
+          "size": 1487149,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4150,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Unit08_Reading.mp3",
+          "size": 1753806,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4151,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Unit09_Reading.mp3",
+          "size": 2137911,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4152,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Unit10_Reading.mp3",
+          "size": 1913468,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4153,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Unit11_Reading.mp3",
+          "size": 1882330,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4154,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Unit12_Reading.mp3",
+          "size": 1649527,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4155,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Unit13_Reading.mp3",
+          "size": 1753807,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4156,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Unit14_Reading.mp3",
+          "size": 1764256,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4157,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Unit15_Reading.mp3",
+          "size": 1554232,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4158,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Unit16_Reading.mp3",
+          "size": 1843669,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4159,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Unit17_Reading.mp3",
+          "size": 1787662,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4160,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Unit18_Reading.mp3",
+          "size": 1943352,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4161,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Unit19_Reading.mp3",
+          "size": 1481925,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4162,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Unit20_Reading.mp3",
+          "size": 2081905,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4163,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_PimsleurUsersGuide.pdf",
+          "size": 717096,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "pdf",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4164,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_REVIEW_AUDIO.zip",
+          "size": 12035433,
+          "tbd": 0,
+          "unzip": 1,
+          "mimeType": "zip",
+          "dlCategory": 0
+        },
+        {
+          "fileListItemId": 4148,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Unit06_Reading.mp3",
+          "size": 1689650,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4147,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Unit05_Reading.mp3",
+          "size": 1557157,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4146,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Unit04_Reading.mp3",
+          "size": 2134567,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4130,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_U18_Lesson.mp3",
+          "size": 18465098,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4131,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_U19_Lesson.mp3",
+          "size": 18374192,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4132,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_U20_Lesson.mp3",
+          "size": 18457784,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4133,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_U21_Lesson.mp3",
+          "size": 18464314,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4134,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_U22_Lesson.mp3",
+          "size": 18483906,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4135,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_U23_Lesson.mp3",
+          "size": 18236265,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4136,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_U24_Lesson.mp3",
+          "size": 18479988,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4137,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_U25_Lesson.mp3",
+          "size": 18411808,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4138,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_U26_Lesson.mp3",
+          "size": 18487041,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4139,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_U27_Lesson.mp3",
+          "size": 18463008,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4140,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_U28_Lesson.mp3",
+          "size": 18371318,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4141,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_U29_Lesson.mp3",
+          "size": 18464314,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4142,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_U30_Lesson.mp3",
+          "size": 18225294,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4143,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Unit01_Reading.mp3",
+          "size": 3010610,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4144,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Unit02_Reading.mp3",
+          "size": 1580771,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 4145,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/",
+          "path": "Mandarin Chinese I/audio/9781442394872_Mandarin_Chinese1_Unit03_Reading.mp3",
+          "size": 1894241,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "audio-mp3",
+          "dlCategory": 1
+        },
+        {
+          "fileListItemId": 5939,
+          "sourceURL": "https://install.pimsleurunlimited.com/staging_n/mobile/mandarinchinese/",
+          "path": "Mandarin Chinese I/metadata/timecode/9781442394872_Mandarin_1_AD.csv",
+          "size": 3812,
+          "tbd": 0,
+          "unzip": 0,
+          "mimeType": "metadata-timecode",
+          "dlCategory": 0
+        }
+      ],
+      "totalPayloadBytes": 664247497
+    }
+  },
+  "result_code": 1
+}

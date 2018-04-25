@@ -13,6 +13,8 @@ import java.util.stream.Collectors;
 public class AggregatedProductInfo {
     private static final int LESSON_NUMBER_OF_LEVEL = 30;
     private static final String PREFIX_FOR_IMAGE_OF_PU = "https://install.pimsleurunlimited.com/staging_n/desktop/";
+    private static final String PREFIX_FOR_AUDIO_OF_PU = "https://install.pimsleurunlimited.com/staging_n/common/";
+
 
     private ProductInfoFromUnlimited productInfoFromPU;
     private ProductInfoFromPCM productInfoFromPCM;
@@ -63,27 +65,22 @@ public class AggregatedProductInfo {
 
     private void transformLessonInfoFromPU(Course course, MediaSet mediaSet) {
         List<Lesson> lessons = new ArrayList<>();
-        List<MediaItem> mediaItems = mediaSet.getMediaItems();
-        for (int i = 1; i <= LESSON_NUMBER_OF_LEVEL; i++) {
-            final int lessonNumber = i;
 
-            List<MediaItem> currentLessonItems = mediaItems.stream()
-                    .filter((mediaItem) -> (
-                            !StringUtils.isEmpty(mediaItem.getUnit())
-                            && (Integer.parseInt(mediaItem.getUnit())) == lessonNumber))
-                    .collect(Collectors.toList());
+        //Get media items which contains 'imageDescription', we think those items are the ones contains useful info.
+        List<MediaItem> mediaItems = mediaSet.getMediaItems().stream()
+                .filter((mediaItem) -> (!StringUtils.isEmpty(mediaItem.getImageDescription())))
+                .collect(Collectors.toList());
+
+        for (int i = 0; i < mediaItems.size(); i++) {
+
+            MediaItem lessonItem = mediaItems.get(i);
 
             Lesson lesson = new Lesson();
             lesson.setLevel(course.getLevel());
-            lesson.setLessonNumber(String.valueOf(lessonNumber));
-            currentLessonItems.forEach(lessonItem -> {
-                if (lessonItem.getTypeId().equals("1")) {
-                    lesson.setName(lessonItem.getTitle());
-                    lesson.setImage(getImageFromPU(lessonItem, mediaSet));
-                    lesson.setImageDescription(lessonItem.getImageDescription());
-                    lesson.setAudioLink(getAudioLink(lessonItem));
-                }
-            });
+            lesson.setLessonNumber(lessonItem.getUnit());
+            lesson.setName(lessonItem.getTitle());
+            lesson.setImageDescription(lessonItem.getImageDescription());
+            getImageAndAudioFromPU(lesson, lessonItem, mediaSet);
 
             lessons.add(lesson);
         }
@@ -91,8 +88,9 @@ public class AggregatedProductInfo {
         course.setLessons(lessons);
     }
 
-    private Image getImageFromPU(MediaItem lessonItem, MediaSet mediaSet) {
+    private void getImageAndAudioFromPU(Lesson lesson, MediaItem lessonItem, MediaSet mediaSet) {
         Image image = new Image();
+        String audioUrl = "";
 
         String courseConfigKey = mediaSet.getCourseLanguageName().replace(" ", "_");
         CourseConfig courseConfig = productInfoFromPU.getResultData().getCourseConfigs().get(courseConfigKey);
@@ -101,25 +99,20 @@ public class AggregatedProductInfo {
         for (int i = 0; i < levelDefs.size(); i++) {
             CourseLevelDef courseLevelDef = levelDefs.get(i);
             if (courseLevelDef.getIsbn13().equals(mediaSet.getIsbn13())) {
-                String imageUrl = PREFIX_FOR_IMAGE_OF_PU
-                        + mediaSet.getCourseLanguageName().replace(" ", "").toLowerCase()
-                        + "/"
-                        + courseLevelDef.getMainLessonsFullImagePath()
-                        + lessonItem.getImageURL();
+                String pathMiddlePart = mediaSet.getCourseLanguageName().replace(" ", "").toLowerCase();
+
+                String imageUrl = PREFIX_FOR_IMAGE_OF_PU + pathMiddlePart + "/"
+                        + courseLevelDef.getMainLessonsFullImagePath() + lessonItem.getImageURL();
+                audioUrl = PREFIX_FOR_AUDIO_OF_PU + pathMiddlePart + "/"
+                        + courseLevelDef.getAudioPath() + lessonItem.getFilename();
 
                 image.setFullImageAddress(imageUrl);
                 break;
             }
         }
 
-        return image;
-    }
-
-    private String getAudioLink(MediaItem lessonItem) {
-        String mp3FileName = lessonItem.getFilename();
-        //TODO: get full url
-        //lesson.setAudioLink();  1. from product-info 2. from ***.json 3. hlfhg request
-        return mp3FileName;
+        lesson.setImage(image);
+        lesson.setAudioLink(audioUrl);
     }
 
     private Course setCourseInfoFromPCM(Course course) {

@@ -1,8 +1,7 @@
 package com.simonschuster.pimsleur.unlimited.services.customer;
 
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.CustomerInfo;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.CustomersOrder;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.*;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.AggregatedProductInfo;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.ProductInfoFromPCM;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.ProductInfoFromUnlimited;
@@ -26,6 +25,7 @@ import static org.springframework.http.MediaType.TEXT_HTML;
 
 @Service
 public class EDTCourseInfoService {
+    public static final int MP3_MEDIA_TYPE = 1;
     @Autowired
     private ApplicationConfiguration config;
 
@@ -73,6 +73,7 @@ public class EDTCourseInfoService {
                 config.getApiParameter("pcmDomain"));
 
         filterOutProductInfoForTheProductCode(productCode, productInfoFromPCM, pcmCustInfo);
+        //todo: get lesson (mp3) info
 
         return productInfoFromPCM;
     }
@@ -88,6 +89,28 @@ public class EDTCourseInfoService {
                 productInfoFromPCM.setOrderProduct(ordersProduct);
             }
         });
+
+        //Get miid(media set id)
+//        OrdersProduct theOrderProduct = productInfoFromPCM.getOrderProduct();
+//        List<OrdersProductAttribute> ordersProductsAttributes = theOrderProduct.getOrdersProductsAttributes();
+//
+//        ordersProductsAttributes.forEach(ordersProductAttribute -> {
+//            List<OrdersProductsDownload> ordersProductsDownloads = ordersProductAttribute.getOrdersProductsDownloads();
+//            ordersProductsDownloads.forEach(ordersProductsDownload -> {
+//                List<ChildMediaSet> childMediaSets = ordersProductsDownload.getMediaSet().getChildMediaSets();
+//
+//                childMediaSets.forEach(childMediaSet -> {
+//                    List<MediaItem> mediaItems = childMediaSet.getMediaItems();
+//                    mediaItems.forEach(mediaItem -> {
+//                        if (mediaItem.getMediaItemTypeId() == MP3_MEDIA_TYPE) {
+//
+//                        }
+//                        mediaItem.getMediaItemId();
+//                    });
+//                });
+//            });
+//        });
+
     }
 
     private CustomerInfo getCustomerInfo(String sub, String action, String domain) {

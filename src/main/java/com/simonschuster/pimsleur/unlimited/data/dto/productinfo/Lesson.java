@@ -1,7 +1,5 @@
 package com.simonschuster.pimsleur.unlimited.data.dto.productinfo;
 
-import java.util.List;
-
 public class Lesson {
     private Image image;
     private String name;
@@ -9,6 +7,7 @@ public class Lesson {
     private Integer level;
     private String lessonNumber;
     private String imageDescription;
+    private String mediaItemId;
 
     public String getImageDescription() {return imageDescription;}
 
@@ -52,5 +51,13 @@ public class Lesson {
 
     public void setLessonNumber(String lessonNumber) {
         this.lessonNumber = lessonNumber;
+    }
+
+    public String getMediaItemId() {
+        return mediaItemId;
+    }
+
+    public void setMediaItemId(String mediaItemId) {
+        this.mediaItemId = mediaItemId;
     }
 }

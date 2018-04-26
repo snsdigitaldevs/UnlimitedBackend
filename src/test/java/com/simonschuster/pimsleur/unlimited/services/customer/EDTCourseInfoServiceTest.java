@@ -11,7 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
-import org.springframework.util.StringUtils;
+
+import java.util.List;
 
 import static com.github.dreamhead.moco.Moco.*;
 import static com.github.dreamhead.moco.Runner.running;
@@ -95,7 +96,8 @@ public class EDTCourseInfoServiceTest {
         HttpServer httpServer = mockEDTResponseFromPU();
 
         running(httpServer, () -> {
-            Course productInfo = edtCourseInfoService.getCourseInfos(true, "9781508243328", "").toDto();
+            List<Course> productInfos = edtCourseInfoService.getCourseInfos(true, "9781508243328", "").toDto();
+            Course productInfo = productInfos.get(0);
 
             assertEquals("Mandarin Chinese", productInfo.getLanguageName());
 
@@ -118,11 +120,17 @@ public class EDTCourseInfoServiceTest {
 
         running(server, () -> {
             AggregatedProductInfo productInfo = edtCourseInfoService.getCourseInfos(isPUProductCode, productCode, "auth0_user_id");
-            Course courseDto = productInfo.toDto();
+            List<Course> courseDtos = productInfo.toDto();
+            Course courseDto = courseDtos.get(0);
 
             assertEquals("French", courseDto.getLanguageName());
 //            assertEquals("", courseDto.getLevel());
-//            assertEquals(courseDto.getLessons());
+//            assertTrue(courseDto.getLessons().get(0).getAudioLink().contains("https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442310223_Japanese_Phase_1/9781442310223_Unit_01.mp3"));
+            //value of Expires and Signature is dynamic
+//            assertTrue(courseDto.getLessons().get(0).getAudioLink().contains("Expires="));
+//            assertTrue(courseDto.getLessons().get(0).getAudioLink().contains("Signature="));
+//            assertTrue(courseDto.getLessons().get(0).getAudioLink().contains("Key-Pair-Id=APKAJRDZZRICRGT4VEOA"));
+//            assertEquals("42578", courseDto.getLessons().get(0).getMediaItemId());
         });
 
     }

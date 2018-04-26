@@ -38,21 +38,24 @@ public class AggregatedProductInfo {
         return productInfoFromPU;
     }
 
-    public Course toDto() {
-        Course course = new Course();
+    public List<Course> toDto() {
+        ArrayList<Course> courses = new ArrayList<>();
+
         if (productInfoFromPU != null) {
-            course = setCourseInfoFromPU(course, productInfoFromPU);
+            setCourseInfoFromPU(courses, productInfoFromPU);
         } else if (productInfoFromPCM != null) {
-            course = setCourseInfoFromPCM(course, productInfoFromPCM);
+            setCourseInfoFromPCM(courses, productInfoFromPCM);
         }
-        return course;
+
+        return courses;
     }
 
-    private Course setCourseInfoFromPU(Course course, ProductInfoFromUnlimited productInfoFromPU) {
+    private List<Course> setCourseInfoFromPU(List<Course> courses, ProductInfoFromUnlimited productInfoFromPU) {
         //Assumption: product code from frontend doesn't have kitted product code according to spike.
         //Spike scenario is: one user bought Mandarin level 1-5, the current product code got from customer info
         //API is a product code for one level instead of product code for level 1-5.
 
+        Course course = new Course();
         Map<String, MediaSet> mediaSets = this.productInfoFromPU.getResultData().getMediaSets();
         mediaSets.forEach((currentProductCode, mediaSet) -> {
             course.setLanguageName(mediaSet.getCourseLanguageName());
@@ -66,7 +69,9 @@ public class AggregatedProductInfo {
             }
         });
 
-        return course;
+        courses.add(course);
+
+        return courses;
     }
 
     private void transformLessonInfoFromPU(Course course, MediaSet mediaSet) throws Exception {
@@ -119,8 +124,10 @@ public class AggregatedProductInfo {
         lesson.setAudioLink(audioUrl);
     }
 
-    private Course setCourseInfoFromPCM(Course course, ProductInfoFromPCM productInfoFromPCM) {
+    private List<Course> setCourseInfoFromPCM(List<Course> courses, ProductInfoFromPCM productInfoFromPCM) {
+        Course course = new Course();
         course.setLanguageName(productInfoFromPCM.getOrderProduct().getProduct().getProductsLanguageName());
-        return course;
+        courses.add(course);
+        return courses;
     }
 }

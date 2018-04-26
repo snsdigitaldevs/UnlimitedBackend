@@ -51,7 +51,7 @@ public class OrdersProduct {
     @JsonProperty("productsOtherDiscount")
     private Integer productsOtherDiscount;
     @JsonProperty("ordersProductsAttributes")
-    private List<Object> ordersProductsAttributes = null;
+    private List<OrdersProductAttribute> ordersProductsAttributes = null;
     @JsonProperty("product")
     private Product product;
 
@@ -176,12 +176,12 @@ public class OrdersProduct {
     }
 
     @JsonProperty("ordersProductsAttributes")
-    public List<Object> getOrdersProductsAttributes() {
+    public List<OrdersProductAttribute> getOrdersProductsAttributes() {
         return ordersProductsAttributes;
     }
 
     @JsonProperty("ordersProductsAttributes")
-    public void setOrdersProductsAttributes(List<Object> ordersProductsAttributes) {
+    public void setOrdersProductsAttributes(List<OrdersProductAttribute> ordersProductsAttributes) {
         this.ordersProductsAttributes = ordersProductsAttributes;
     }
 

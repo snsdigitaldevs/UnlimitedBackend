@@ -77,7 +77,7 @@ public class UnlimitedPracticeUtil {
                 .withFirstRecordAsHeader().withQuote(null)
                 .parse(new StringReader(csvString));
         for (CSVRecord record : records) {
-            Integer unitNum = Integer.parseInt(record.get("\"Unit Num\""));
+            Integer unitNum = Integer.parseInt(record.get("\"Unit Num\"").replace("\"", ""));
             units.add(unitNum);
         }
         return units;

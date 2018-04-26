@@ -22,7 +22,7 @@ public class UnlimitedPracticeUtilTest {
 
         HttpServer server = httpServer(12306);
         server.get(by(uri("/hello.csv")))
-                .response("\"a\",\"b\",\"c\",\"c\",\"Unit Num\"" + System.lineSeparator() + "1,2,3,4,5");
+                .response("\"a\",\"b\",\"c\",\"c\",\"Unit Num\"" + System.lineSeparator() + "1,2,3,4,\"5\"");
 
         running(server, new Runnable() {
             @Override

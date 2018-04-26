@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEdt;
 
 @Service
-public class AvailablePracticesService {
+public class PuAvailablePracticesService {
     @Autowired
     private ApplicationConfiguration config;
 

@@ -8,7 +8,6 @@ import org.apache.commons.csv.CSVRecord;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
-import java.io.Reader;
 import java.io.StringReader;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -22,7 +21,7 @@ public class UnlimitedPracticeUtil {
     private static final String SPEAK_EASY = "speakEasy";
 
     public static AvailablePractices getAvailablePractices(PracticesCsvLocations paths) throws IOException {
-        Map<String, Set> unitsSetMap = new HashMap<>();
+        Map<String, Set<Integer>> unitsSetMap = new HashMap<>();
         unitsSetMap.put(FLASH_CARD, getUnitSetFromCSV(paths.getFlashCardUrl()));
         unitsSetMap.put(READING, getUnitSetFromCSV(paths.getReadingUrl()));
         unitsSetMap.put(QUICK_MATCH, getUnitSetFromCSV(paths.getQuickMatchUrl()));
@@ -30,11 +29,10 @@ public class UnlimitedPracticeUtil {
         return setPracticesInUnitFromUnitSets(unitsSetMap);
     }
 
-    private static AvailablePractices setPracticesInUnitFromUnitSets(Map<String, Set> unitsSetMap) {
+    private static AvailablePractices setPracticesInUnitFromUnitSets(Map<String, Set<Integer>> unitsSetMap) {
         AvailablePractices result = new AvailablePractices(new ArrayList<>());
         for (String key : unitsSetMap.keySet()) {
-            for (Integer unit : (Set<Integer>) unitsSetMap.get(key)) {
-                // this Set must be Integer Set
+            for (Integer unit : unitsSetMap.get(key)) {
                 PracticesInUnit practiceInUnit = result.getPracticesInUnits().stream()
                         .filter(practice -> practice.getUnitNumber().equals(unit))
                         .findFirst()
@@ -65,7 +63,7 @@ public class UnlimitedPracticeUtil {
         return result;
     }
 
-    private static Set getUnitSetFromCSV(String url) throws IOException {
+    private static Set<Integer> getUnitSetFromCSV(String url) throws IOException {
         Set<Integer> units = new HashSet<>();
         if (url == null || url.isEmpty()) {
             return units;
@@ -101,9 +99,8 @@ public class UnlimitedPracticeUtil {
             return column;
         }).collect(Collectors.toList());
 
-        String replacedCsv = String.join(",", noDuplicatedColumns) +
+        return String.join(",", noDuplicatedColumns) +
                 System.lineSeparator() +
                 headerAndBody[1];
-        return replacedCsv;
     }
 }

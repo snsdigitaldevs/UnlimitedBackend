@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Objects;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
@@ -42,16 +43,8 @@ public class UnlimitedProgressConverter {
     private static void getCurrentForEachSubUser(List<ProgressDTO> result) {
         for (String subUserID : currentLastPlayedDateMap.keySet()) {
             result.stream()
-                    .filter(progress -> {
-                        if (progress.getSubUserID().equals(subUserID)) {
-                            if (progress.getLastPlayedDate() == null) {
-                                return currentLastPlayedDateMap.get(subUserID) == null;
-                            } else {
-                                return progress.getLastPlayedDate().equals(currentLastPlayedDateMap.get(subUserID));
-                            }
-                        }
-                        return false;
-                    })
+                    .filter(progress -> progress.getSubUserID().equals(subUserID)
+                            && Objects.equals(progress.getLastPlayedDate(), currentLastPlayedDateMap.get(subUserID)))
                     .findFirst()
                     .get()
                     // there is one and only one item after filer

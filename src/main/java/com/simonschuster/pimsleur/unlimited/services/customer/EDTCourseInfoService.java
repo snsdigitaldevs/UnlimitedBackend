@@ -3,10 +3,10 @@ package com.simonschuster.pimsleur.unlimited.services.customer;
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.*;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.AggregatedProductInfo;
+import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.LessonsAudioInfo;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.ProductInfoFromPCM;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.ProductInfoFromUnlimited;
-import org.apache.commons.lang3.tuple.ImmutablePair;
-import org.apache.commons.lang3.tuple.Pair;
+import com.simonschuster.pimsleur.unlimited.mapper.productInfo.ProductInfoMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +18,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEdt;
 import static java.util.Arrays.asList;
@@ -30,6 +29,8 @@ public class EDTCourseInfoService {
     public static final int MP3_MEDIA_TYPE = 1;
     @Autowired
     private ApplicationConfiguration config;
+    @Autowired
+    private ProductInfoMapper productInfoMapper;
 
     private static final Logger logger = LoggerFactory.getLogger(EDTCourseInfoService.class);
 
@@ -40,14 +41,14 @@ public class EDTCourseInfoService {
             putInProductInfoFromPU(productCode, aggregatedProductInfo);
         } else {
             putInProductInfoFromPCM(auth0UserId, productCode, aggregatedProductInfo);
+            putInLessonsInfoFromPCM(aggregatedProductInfo);
         }
         return aggregatedProductInfo;
     }
 
     private void putInProductInfoFromPU(String productCode, AggregatedProductInfo aggregatedProductInfo) {
         try {
-            ProductInfoFromUnlimited productInfoForPimsleurUnlimited
-                    = getProductInfoForPimsleurUnlimited(productCode);
+            ProductInfoFromUnlimited productInfoForPimsleurUnlimited = getProductInfoForPimsleurUnlimited(productCode);
             aggregatedProductInfo.setProductInfoFromPU(productInfoForPimsleurUnlimited);
         } catch (Exception exceptionWhenGetProductInfoFromPU) {
             logger.error("Exception occured when get product info with PU product code.");
@@ -67,6 +68,22 @@ public class EDTCourseInfoService {
         }
     }
 
+    private void putInLessonsInfoFromPCM(AggregatedProductInfo aggregatedProductInfo) {
+        ProductInfoFromPCM productInfoFromPCM = aggregatedProductInfo.getProductInfoFromPCM();
+
+        Map<String, List<Integer>> mediaItemInfo = productInfoMapper.getMediaItemInfo(productInfoFromPCM);
+        //todo: get lesson (mp3) info from rdlss API
+        LessonsAudioInfo lessonsAudioInfo = getLessonsAudioInfoFromEDT(mediaItemInfo);
+
+        //mediasetinfo might not need to put in aggregatedProductInfo if lessonsAudioInfo contains level and mediasetid info.
+        aggregatedProductInfo.setMediaSetInfo(mediaItemInfo);
+        aggregatedProductInfo.setLessonAudioInfoFromPCM(lessonsAudioInfo);
+    }
+
+    private LessonsAudioInfo getLessonsAudioInfoFromEDT(Map<String, List<Integer>> mediaItemInfo) {
+        return null;
+    }
+
     private ProductInfoFromPCM getTheProductInfoFromPCM(String sub, String productCode) {
         ProductInfoFromPCM productInfoFromPCM = new ProductInfoFromPCM();
         productInfoFromPCM.setOrdersProductList(new ArrayList<>());
@@ -74,44 +91,9 @@ public class EDTCourseInfoService {
                 config.getApiParameter("pcmCustomerAction"),
                 config.getApiParameter("pcmDomain"));
 
-        filterOutProductInfoForTheProductCode(productCode, productInfoFromPCM, pcmCustInfo);
-        //todo: get lesson (mp3) info
+        productInfoMapper.setProductInfo(productCode, productInfoFromPCM, pcmCustInfo);
 
         return productInfoFromPCM;
-    }
-
-    private Map<String, List<Integer>> filterOutProductInfoForTheProductCode(String productCode, ProductInfoFromPCM productInfoFromPCM, CustomerInfo pcmCustInfo) {
-        List<CustomersOrder> customersOrders = pcmCustInfo.getResultData().getCustomer().getCustomersOrders();
-
-        customersOrders.forEach(customersOrder -> {
-            productInfoFromPCM.getOrdersProductList().addAll(customersOrder.getOrdersProducts());
-        });
-
-        productInfoFromPCM.getOrdersProductList().forEach(ordersProduct -> {
-            if (productCode.equals(ordersProduct.getProduct().getIsbn13().replace("-", ""))) {
-                productInfoFromPCM.setOrderProduct(ordersProduct);
-            }
-        });
-
-        //filter out ordersProductsAttributes with product options that contain 'Download'
-        return productInfoFromPCM.getOrderProduct().getOrdersProductsAttributes()
-                .stream()
-                .filter(attribute -> attribute.getProductsOptions().contains("Download"))
-                .map(attribute -> {
-                    String level = attribute.getProductsOptions().split(" ")[1];
-                    List<Integer> itemIds = attribute.getOrdersProductsDownloads()
-                            .stream()
-                            .flatMap(downloadInfo -> downloadInfo.getMediaSet().getChildMediaSets().stream())
-                            .filter(mediaSet -> mediaSet.getMediaSetTitle().contains("Units"))
-                            .flatMap(childMediaSet -> childMediaSet.getMediaItems().stream())
-                            .filter(item -> item.getMediaItemTypeId() == MP3_MEDIA_TYPE)
-                            .map(mediaItem -> mediaItem.getMediaItemId())
-                            .collect(Collectors.toList());
-                    return new ImmutablePair<>(level, itemIds);
-                })
-                .collect(Collectors.toMap(Pair::getKey, Pair::getValue));
-
-//        Pair<>(level, itemIds)
     }
 
     private CustomerInfo getCustomerInfo(String sub, String action, String domain) {

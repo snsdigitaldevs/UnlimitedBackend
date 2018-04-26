@@ -124,6 +124,7 @@ public class EDTCourseInfoServiceTest {
             Course courseDto = courseDtos.get(0);
 
             assertEquals("French", courseDto.getLanguageName());
+            assertEquals(5, productInfo.getMediaSetInfo().size());
 //            assertEquals("", courseDto.getLevel());
 //            assertTrue(courseDto.getLessons().get(0).getAudioLink().contains("https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442310223_Japanese_Phase_1/9781442310223_Unit_01.mp3"));
             //value of Expires and Signature is dynamic

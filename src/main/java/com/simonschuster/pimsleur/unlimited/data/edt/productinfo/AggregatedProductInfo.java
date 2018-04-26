@@ -21,6 +21,8 @@ public class AggregatedProductInfo {
 
     private ProductInfoFromUnlimited productInfoFromPU;
     private ProductInfoFromPCM productInfoFromPCM;
+    private Map<String, List<Integer>> mediaSetInfo;
+    private LessonsAudioInfo lessonAudioInfoFromPCM;
 
     public void setProductInfoFromPCM(ProductInfoFromPCM productInfoFromPCM) {
         this.productInfoFromPCM = productInfoFromPCM;
@@ -44,7 +46,7 @@ public class AggregatedProductInfo {
         if (productInfoFromPU != null) {
             setCourseInfoFromPU(courses, productInfoFromPU);
         } else if (productInfoFromPCM != null) {
-            setCourseInfoFromPCM(courses, productInfoFromPCM);
+            setCourseInfoFromPCM(courses, productInfoFromPCM, mediaSetInfo);
         }
 
         return courses;
@@ -124,10 +126,28 @@ public class AggregatedProductInfo {
         lesson.setAudioLink(audioUrl);
     }
 
-    private List<Course> setCourseInfoFromPCM(List<Course> courses, ProductInfoFromPCM productInfoFromPCM) {
+    private List<Course> setCourseInfoFromPCM(List<Course> courses, ProductInfoFromPCM productInfoFromPCM, Map<String, List<Integer>> mediaSetInfo) {
         Course course = new Course();
         course.setLanguageName(productInfoFromPCM.getOrderProduct().getProduct().getProductsLanguageName());
+        //todo: set level and lesson info from mediasetinfo and productInfoFromPCM
+
         courses.add(course);
         return courses;
+    }
+
+    public void setMediaSetInfo(Map<String, List<Integer>> mediaSetInfo) {
+        this.mediaSetInfo = mediaSetInfo;
+    }
+
+    public Map<String, List<Integer>> getMediaSetInfo() {
+        return mediaSetInfo;
+    }
+
+    public void setLessonAudioInfoFromPCM(LessonsAudioInfo lessonAudioInfoFromPCM) {
+        this.lessonAudioInfoFromPCM = lessonAudioInfoFromPCM;
+    }
+
+    public LessonsAudioInfo getLessonAudioInfoFromPCM() {
+        return lessonAudioInfoFromPCM;
     }
 }

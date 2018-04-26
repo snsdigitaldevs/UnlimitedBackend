@@ -5,6 +5,7 @@ import com.simonschuster.pimsleur.unlimited.data.edt.customer.*;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.AggregatedProductInfo;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.ProductInfoFromPCM;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.ProductInfoFromUnlimited;
+import javafx.util.Pair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,11 +16,12 @@ import org.springframework.http.converter.json.MappingJackson2HttpMessageConvert
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
 import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEdt;
 import static java.util.Arrays.asList;
+import static java.util.stream.Collectors.groupingBy;
 import static org.springframework.http.MediaType.APPLICATION_JSON;
 import static org.springframework.http.MediaType.TEXT_HTML;
 
@@ -55,7 +57,7 @@ public class EDTCourseInfoService {
     }
 
     private void putInProductInfoFromPCM(String auth0UserId, String productCode, AggregatedProductInfo aggregatedProductInfo) {
-        try{
+        try {
             ProductInfoFromPCM productInfoForPCM = getTheProductInfoFromPCM(auth0UserId, productCode);
             aggregatedProductInfo.setProductInfoFromPCM(productInfoForPCM);
         } catch (Exception exceptionWhenGetProductInfoFromPCM) {
@@ -78,8 +80,9 @@ public class EDTCourseInfoService {
         return productInfoFromPCM;
     }
 
-    private void filterOutProductInfoForTheProductCode(String productCode, ProductInfoFromPCM productInfoFromPCM, CustomerInfo pcmCustInfo) {
+    private Map<String, List<Integer>> filterOutProductInfoForTheProductCode(String productCode, ProductInfoFromPCM productInfoFromPCM, CustomerInfo pcmCustInfo) {
         List<CustomersOrder> customersOrders = pcmCustInfo.getResultData().getCustomer().getCustomersOrders();
+
         customersOrders.forEach(customersOrder -> {
             productInfoFromPCM.getOrdersProductList().addAll(customersOrder.getOrdersProducts());
         });
@@ -90,27 +93,23 @@ public class EDTCourseInfoService {
             }
         });
 
-        //Get miid(media set id)
-//        OrdersProduct theOrderProduct = productInfoFromPCM.getOrderProduct();
-//        List<OrdersProductAttribute> ordersProductsAttributes = theOrderProduct.getOrdersProductsAttributes();
-//
-//        ordersProductsAttributes.forEach(ordersProductAttribute -> {
-//            List<OrdersProductsDownload> ordersProductsDownloads = ordersProductAttribute.getOrdersProductsDownloads();
-//            ordersProductsDownloads.forEach(ordersProductsDownload -> {
-//                List<ChildMediaSet> childMediaSets = ordersProductsDownload.getMediaSet().getChildMediaSets();
-//
-//                childMediaSets.forEach(childMediaSet -> {
-//                    List<MediaItem> mediaItems = childMediaSet.getMediaItems();
-//                    mediaItems.forEach(mediaItem -> {
-//                        if (mediaItem.getMediaItemTypeId() == MP3_MEDIA_TYPE) {
-//
-//                        }
-//                        mediaItem.getMediaItemId();
-//                    });
-//                });
-//            });
-//        });
-
+        //filter out ordersProductsAttributes with product options that contain 'Download'
+        return productInfoFromPCM.getOrderProduct().getOrdersProductsAttributes()
+                .stream()
+                .filter(attribute -> attribute.getProductsOptions().contains("Download"))
+                .map(attribute -> {
+                    String level = attribute.getProductsOptions().split(" ")[1];
+                    List<Integer> itemIds = attribute.getOrdersProductsDownloads()
+                            .stream()
+                            .flatMap(downloadInfo -> downloadInfo.getMediaSet().getChildMediaSets().stream())
+                            .filter(mediaSet -> mediaSet.getMediaSetTitle().contains("Units"))
+                            .flatMap(childMediaSet -> childMediaSet.getMediaItems().stream())
+                            .filter(item -> item.getMediaItemTypeId() == MP3_MEDIA_TYPE)
+                            .map(mediaItem -> mediaItem.getMediaItemId())
+                            .collect(Collectors.toList());
+                    return new Pair<>(level, itemIds);
+                })
+                .collect(Collectors.toMap(it -> it.getKey(), it -> it.getValue()));
     }
 
     private CustomerInfo getCustomerInfo(String sub, String action, String domain) {

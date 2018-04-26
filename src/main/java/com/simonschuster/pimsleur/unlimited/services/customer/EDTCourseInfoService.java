@@ -5,7 +5,8 @@ import com.simonschuster.pimsleur.unlimited.data.edt.customer.*;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.AggregatedProductInfo;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.ProductInfoFromPCM;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.ProductInfoFromUnlimited;
-import javafx.util.Pair;
+import org.apache.commons.lang3.tuple.ImmutablePair;
+import org.apache.commons.lang3.tuple.Pair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +22,6 @@ import java.util.stream.Collectors;
 
 import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEdt;
 import static java.util.Arrays.asList;
-import static java.util.stream.Collectors.groupingBy;
 import static org.springframework.http.MediaType.APPLICATION_JSON;
 import static org.springframework.http.MediaType.TEXT_HTML;
 
@@ -107,9 +107,11 @@ public class EDTCourseInfoService {
                             .filter(item -> item.getMediaItemTypeId() == MP3_MEDIA_TYPE)
                             .map(mediaItem -> mediaItem.getMediaItemId())
                             .collect(Collectors.toList());
-                    return new Pair<>(level, itemIds);
+                    return new ImmutablePair<>(level, itemIds);
                 })
-                .collect(Collectors.toMap(it -> it.getKey(), it -> it.getValue()));
+                .collect(Collectors.toMap(Pair::getKey, Pair::getValue));
+
+//        Pair<>(level, itemIds)
     }
 
     private CustomerInfo getCustomerInfo(String sub, String action, String domain) {

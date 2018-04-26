@@ -6,6 +6,13 @@ public class PracticesCsvLocations {
     private String speakEasyUrl;
     private String readingUrl;
 
+    public PracticesCsvLocations(String flashCardUrl, String quickMatchUrl, String readingUrl , String  speakEasyUrl) {
+        this.flashCardUrl = flashCardUrl;
+        this.quickMatchUrl = quickMatchUrl;
+        this.speakEasyUrl = speakEasyUrl;
+        this.readingUrl = readingUrl;
+    }
+
     public String getFlashCardUrl() {
         return flashCardUrl;
     }

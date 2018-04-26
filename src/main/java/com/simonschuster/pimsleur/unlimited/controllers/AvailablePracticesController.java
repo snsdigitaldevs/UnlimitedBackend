@@ -12,6 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class AvailablePracticesController {
     @RequestMapping(value = "/product/{productCode}/availablePractices", method = RequestMethod.GET)
     public AvailablePractices getAvailablePractices(@PathVariable("productCode") String productCode) {
-        return null;
+     return null;
     }
 }

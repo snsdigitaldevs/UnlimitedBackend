@@ -1,11 +1,8 @@
 package com.simonschuster.pimsleur.unlimited.utils;
 
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.ProgressDTO;
-import com.simonschuster.pimsleur.unlimited.data.edt.syncState.SyncState;
 import com.simonschuster.pimsleur.unlimited.data.edt.syncState.UserAppStateDatum;
 
-import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Objects;

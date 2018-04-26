@@ -10,14 +10,8 @@ public class PracticesInUnit {
     private boolean hasReading;
     private boolean hasSkills;
 
-    public PracticesInUnit(Integer unitNumber, boolean hasFlashCard, boolean hasQuickMatch, boolean hasSpeakEasy, boolean hasReading, boolean hasSkills) {
+    public PracticesInUnit(Integer unitNumber) {
         this.unitNumber = unitNumber;
-
-        this.hasFlashCard = hasFlashCard;
-        this.hasQuickMatch = hasQuickMatch;
-        this.hasSpeakEasy = hasSpeakEasy;
-        this.hasReading = hasReading;
-        this.hasSkills = hasSkills;
     }
 
     public boolean isHasFlashCard() {
@@ -42,5 +36,21 @@ public class PracticesInUnit {
 
     public Integer getUnitNumber() {
         return unitNumber;
+    }
+
+    public void setHasFlashCard(boolean hasFlashCard) {
+        this.hasFlashCard = hasFlashCard;
+    }
+
+    public void setHasQuickMatch(boolean hasQuickMatch) {
+        this.hasQuickMatch = hasQuickMatch;
+    }
+
+    public void setHasSpeakEasy(boolean hasSpeakEasy) {
+        this.hasSpeakEasy = hasSpeakEasy;
+    }
+
+    public void setHasReading(boolean hasReading) {
+        this.hasReading = hasReading;
     }
 }

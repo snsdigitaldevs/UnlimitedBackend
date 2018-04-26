@@ -95,7 +95,14 @@ public class EDTCourseInfoServiceTest {
             Course productInfo = edtCourseInfoService.getCourseInfos("9781508243328", "").toDto();
 
             assertEquals("Mandarin Chinese", productInfo.getLanguageName());
-            assertTrue(!StringUtils.isEmpty(productInfo.getLessons().get(0).getImage().getFullImageAddress()));
+
+            assertEquals("https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese"
+                    + "/Mandarin Chinese Demo/images/full/MA_1_M_01.jpg",
+                    productInfo.getLessons().get(0).getImage().getFullImageAddress());
+
+            assertEquals("https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese"
+                            + "/Mandarin Chinese Demo/audio/9781508243328_Mandarin_Chinese1_U01_Lesson.mp3",
+                    productInfo.getLessons().get(0).getAudioLink());
 
         });
     }

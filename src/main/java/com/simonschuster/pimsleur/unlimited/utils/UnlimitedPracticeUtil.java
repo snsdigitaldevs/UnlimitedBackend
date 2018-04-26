@@ -20,18 +20,18 @@ public class UnlimitedPracticeUtil {
 
     public static AvailablePractices getAvailablePractices(PracticesCsvLocations paths) throws IOException {
         Map<String, Set> unitsSetMap = new HashMap<>();
-        AvailablePractices result = new AvailablePractices(new ArrayList<>());
         unitsSetMap.put(FLASH_CARD, getUnitSetFromCSV(paths.getFlashCardUrl()));
         unitsSetMap.put(READING, getUnitSetFromCSV(paths.getReadingUrl()));
         unitsSetMap.put(QUICK_MATCH, getUnitSetFromCSV(paths.getQuickMatchUrl()));
         unitsSetMap.put(SPEAK_EASY, getUnitSetFromCSV(paths.getSpeakEasyUrl()));
-        setPracticesInUnitFromUnitSets(unitsSetMap, result);
-        return result;
+        return setPracticesInUnitFromUnitSets(unitsSetMap);
     }
 
-    private static void setPracticesInUnitFromUnitSets(Map<String, Set> unitsSetMap, AvailablePractices result) {
+    private static AvailablePractices setPracticesInUnitFromUnitSets(Map<String, Set> unitsSetMap) {
+        AvailablePractices result = new AvailablePractices(new ArrayList<>());
         for (String key : unitsSetMap.keySet()) {
             for (Integer unit : (Set<Integer>) unitsSetMap.get(key)) {
+                // this Set must be Integer Set
                 PracticesInUnit practiceInUnit = result.getPracticesInUnits().stream()
                         .filter(practice -> practice.getUnitNumber().equals(unit))
                         .findFirst()
@@ -54,10 +54,12 @@ public class UnlimitedPracticeUtil {
                         practiceInUnit.setHasSpeakEasy(true);
                         break;
                     default:
+                        // do nothing
                         break;
                 }
             }
         }
+        return result;
     }
 
     private static Set getUnitSetFromCSV(String url) throws IOException {

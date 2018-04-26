@@ -3,6 +3,7 @@ package com.simonschuster.pimsleur.unlimited.controllers;
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.AvailablePractices;
 import com.simonschuster.pimsleur.unlimited.services.practices.AvailablePracticesService;
 import com.simonschuster.pimsleur.unlimited.utils.UnlimitedPracticeUtil;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -14,9 +15,13 @@ import java.io.IOException;
 
 @RestController
 public class AvailablePracticesController {
+
+    @Autowired
+    private AvailablePracticesService availablePracticesService;
+
     @RequestMapping(value = "/product/{productCode}/availablePractices", method = RequestMethod.GET)
     public AvailablePractices getAvailablePractices(@PathVariable("productCode") String productCode) throws IOException {
-        AvailablePracticesService service = new AvailablePracticesService();
-        return UnlimitedPracticeUtil.getAvailablePractices(service.getPracticeCsvLocations(productCode));
+        return UnlimitedPracticeUtil
+                .getAvailablePractices(availablePracticesService.getPracticeCsvLocations(productCode));
     }
 }

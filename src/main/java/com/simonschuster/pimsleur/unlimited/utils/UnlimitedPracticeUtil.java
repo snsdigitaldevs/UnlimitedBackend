@@ -11,6 +11,9 @@ import java.io.IOException;
 import java.io.Reader;
 import java.io.StringReader;
 import java.util.*;
+import java.util.stream.Collectors;
+
+import static java.util.Collections.frequency;
 
 public class UnlimitedPracticeUtil {
     private static final String FLASH_CARD = "flashCard";
@@ -68,13 +71,39 @@ public class UnlimitedPracticeUtil {
             return units;
         }
         RestTemplate restTemplate = new RestTemplate();
-        String forObject = restTemplate.getForObject(url, String.class);
-        Reader in = new StringReader(forObject);
-        Iterable<CSVRecord> records = CSVFormat.EXCEL.withFirstRecordAsHeader().parse(in);
+        String csvString = replaceDuplicateHeaders(restTemplate.getForObject(url, String.class));
+
+        Iterable<CSVRecord> records = CSVFormat.EXCEL
+                .withFirstRecordAsHeader().withQuote(null)
+                .parse(new StringReader(csvString));
         for (CSVRecord record : records) {
-            Integer a = Integer.parseInt(record.get("Unit Num"));
-            units.add(a);
+            Integer unitNum = Integer.parseInt(record.get("\"Unit Num\""));
+            units.add(unitNum);
         }
         return units;
+    }
+
+    private static String replaceDuplicateHeaders(String csvString) {
+        final Integer[] columnIndex = {0};
+
+        String[] headerAndBody = csvString.split(System.lineSeparator(), 2);
+        String header = headerAndBody[0];
+
+        List<String> columns = Arrays.asList(header.split(","));
+        List<String> noDuplicatedColumns = columns.stream().map((column) -> {
+            int frequency = frequency(columns, column);
+            if (frequency > 1) {
+                columnIndex[0] = columnIndex[0] + 1;
+                return column.substring(0, column.length() - 1) +
+                        columnIndex[0] +
+                        column.substring(column.length() - 1, column.length());
+            }
+            return column;
+        }).collect(Collectors.toList());
+
+        String replacedCsv = String.join(",", noDuplicatedColumns) +
+                System.lineSeparator() +
+                headerAndBody[1];
+        return replacedCsv;
     }
 }

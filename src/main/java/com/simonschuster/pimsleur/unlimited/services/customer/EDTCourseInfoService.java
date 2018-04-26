@@ -6,6 +6,8 @@ import com.simonschuster.pimsleur.unlimited.data.edt.customer.CustomersOrder;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.AggregatedProductInfo;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.ProductInfoFromPCM;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.ProductInfoFromUnlimited;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -27,47 +29,67 @@ public class EDTCourseInfoService {
     @Autowired
     private ApplicationConfiguration config;
 
-    //todo: make PCM api call available with parameter auth0_user_id
-    //todo: make it available to get a list of product??
-    public AggregatedProductInfo getCourseInfos(String productCode, String auth0UserId) {
+    private static final Logger logger = LoggerFactory.getLogger(EDTCourseInfoService.class);
+
+    public AggregatedProductInfo getCourseInfos(boolean isPUProductCode, String productCode, String auth0UserId) {
         AggregatedProductInfo aggregatedProductInfo = new AggregatedProductInfo();
-        try {
+        //Will get only one course(one level) info for the productcode
+        if (isPUProductCode) {
             putInProductInfoFromPU(productCode, aggregatedProductInfo);
-        } catch (Exception exceptionWhenGetProductInfoFromUnlimited) {
-            putInProductInfoFromPCM(auth0UserId, aggregatedProductInfo);
+        } else {
+            putInProductInfoFromPCM(auth0UserId, productCode, aggregatedProductInfo);
         }
         return aggregatedProductInfo;
     }
 
     private void putInProductInfoFromPU(String productCode, AggregatedProductInfo aggregatedProductInfo) {
-        ProductInfoFromUnlimited productInfoForPimsleurUnlimited
-                = getProductInfoForPimsleurUnlimited(productCode);
-        aggregatedProductInfo.setProductInfoFromPU(productInfoForPimsleurUnlimited);
-    }
-
-    private void putInProductInfoFromPCM(String auth0UserId, AggregatedProductInfo aggregatedProductInfo) {
-        try{
-            ProductInfoFromPCM productInfoForPCM = getProductInfoForPCM(auth0UserId);
-            aggregatedProductInfo.setProductInfoFromPCM(productInfoForPCM);
-        } catch (Exception exceptionWhenGetProductInfoFromPCM) {
-            exceptionWhenGetProductInfoFromPCM.printStackTrace();
+        try {
+            ProductInfoFromUnlimited productInfoForPimsleurUnlimited
+                    = getProductInfoForPimsleurUnlimited(productCode);
+            aggregatedProductInfo.setProductInfoFromPU(productInfoForPimsleurUnlimited);
+        } catch (Exception exceptionWhenGetProductInfoFromPU) {
+            logger.error("Exception occured when get product info with PU product code.");
+            exceptionWhenGetProductInfoFromPU.printStackTrace();
+            throw exceptionWhenGetProductInfoFromPU;
         }
     }
 
-    private ProductInfoFromPCM getProductInfoForPCM(String sub) {
+    private void putInProductInfoFromPCM(String auth0UserId, String productCode, AggregatedProductInfo aggregatedProductInfo) {
+        try{
+            ProductInfoFromPCM productInfoForPCM = getTheProductInfoFromPCM(auth0UserId, productCode);
+            aggregatedProductInfo.setProductInfoFromPCM(productInfoForPCM);
+        } catch (Exception exceptionWhenGetProductInfoFromPCM) {
+            logger.error("Exception occured when get product info with PU product code.");
+            exceptionWhenGetProductInfoFromPCM.printStackTrace();
+            throw exceptionWhenGetProductInfoFromPCM;
+        }
+    }
+
+    private ProductInfoFromPCM getTheProductInfoFromPCM(String sub, String productCode) {
         ProductInfoFromPCM productInfoFromPCM = new ProductInfoFromPCM();
         productInfoFromPCM.setOrdersProductList(new ArrayList<>());
         CustomerInfo pcmCustInfo = getCustomerInfo(sub,
                 config.getApiParameter("pcmCustomerAction"),
                 config.getApiParameter("pcmDomain"));
 
+        filterOutProductInfoForTheProductCode(productCode, productInfoFromPCM, pcmCustInfo);
+
+        return productInfoFromPCM;
+    }
+
+    private void filterOutProductInfoForTheProductCode(String productCode, ProductInfoFromPCM productInfoFromPCM, CustomerInfo pcmCustInfo) {
         List<CustomersOrder> customersOrders = pcmCustInfo.getResultData().getCustomer().getCustomersOrders();
         customersOrders.forEach(customersOrder -> {
             productInfoFromPCM.getOrdersProductList().addAll(customersOrder.getOrdersProducts());
         });
 
-        return productInfoFromPCM;
+        productInfoFromPCM.getOrdersProductList().forEach(ordersProduct -> {
+            if (productCode.equals(ordersProduct.getProduct().getIsbn13().replace("-", ""))) {
+                productInfoFromPCM.setOrderProduct(ordersProduct);
+            }
+        });
     }
+
     private CustomerInfo getCustomerInfo(String sub, String action, String domain) {
         return postToEdt(
                 createPostBody(sub, action, domain),

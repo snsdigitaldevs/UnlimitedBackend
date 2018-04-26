@@ -1,8 +1,11 @@
 package com.simonschuster.pimsleur.unlimited.data.edt.productinfo;
 
+import com.google.common.util.concurrent.UncheckedExecutionException;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Image;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Lesson;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.util.StringUtils;
 
 import java.util.ArrayList;
@@ -14,7 +17,7 @@ public class AggregatedProductInfo {
     private static final int LESSON_NUMBER_OF_LEVEL = 30;
     private static final String PREFIX_FOR_IMAGE_OF_PU = "https://install.pimsleurunlimited.com/staging_n/desktop/";
     private static final String PREFIX_FOR_AUDIO_OF_PU = "https://install.pimsleurunlimited.com/staging_n/common/";
-
+    private static final Logger logger = LoggerFactory.getLogger(AggregatedProductInfo.class);
 
     private ProductInfoFromUnlimited productInfoFromPU;
     private ProductInfoFromPCM productInfoFromPCM;
@@ -39,11 +42,8 @@ public class AggregatedProductInfo {
         Course course = new Course();
         if (productInfoFromPU != null) {
             course = setCourseInfoFromPU(course, productInfoFromPU);
-            //Assumption: product code from frontend doesn't have kitted product code according to spike.
-            //Spike scenario is: one user bought Mandarin level 1-5, the current product code got from customer info
-            //API is a product code for one level instead of product code for level 1-5.
         } else if (productInfoFromPCM != null) {
-            course = setCourseInfoFromPCM(course);
+            course = setCourseInfoFromPCM(course, productInfoFromPCM);
         }
         return course;
     }
@@ -57,13 +57,19 @@ public class AggregatedProductInfo {
         mediaSets.forEach((currentProductCode, mediaSet) -> {
             course.setLanguageName(mediaSet.getCourseLanguageName());
             course.setLevel(mediaSet.getCourseLevel());
-            transformLessonInfoFromPU(course, mediaSet);
+            try {
+                transformLessonInfoFromPU(course, mediaSet);
+            } catch (Exception e) {
+                logger.error("Error occured when convert product info from PU EDT API.");
+                e.printStackTrace();
+                throw new UncheckedExecutionException(e);
+            }
         });
 
         return course;
     }
 
-    private void transformLessonInfoFromPU(Course course, MediaSet mediaSet) {
+    private void transformLessonInfoFromPU(Course course, MediaSet mediaSet) throws Exception {
         List<Lesson> lessons = new ArrayList<>();
 
         //Get media items which contains 'imageDescription', we think those items are the ones contains useful info.
@@ -71,9 +77,7 @@ public class AggregatedProductInfo {
                 .filter((mediaItem) -> (!StringUtils.isEmpty(mediaItem.getImageDescription())))
                 .collect(Collectors.toList());
 
-        for (int i = 0; i < mediaItems.size(); i++) {
-
-            MediaItem lessonItem = mediaItems.get(i);
+        for (MediaItem lessonItem : mediaItems) {
 
             Lesson lesson = new Lesson();
             lesson.setLevel(course.getLevel());
@@ -88,7 +92,7 @@ public class AggregatedProductInfo {
         course.setLessons(lessons);
     }
 
-    private void getImageAndAudioFromPU(Lesson lesson, MediaItem lessonItem, MediaSet mediaSet) {
+    private void getImageAndAudioFromPU(Lesson lesson, MediaItem lessonItem, MediaSet mediaSet) throws Exception {
         Image image = new Image();
         String audioUrl = "";
 
@@ -115,7 +119,8 @@ public class AggregatedProductInfo {
         lesson.setAudioLink(audioUrl);
     }
 
-    private Course setCourseInfoFromPCM(Course course) {
+    private Course setCourseInfoFromPCM(Course course, ProductInfoFromPCM productInfoFromPCM) {
+        course.setLanguageName(productInfoFromPCM.getOrderProduct().getProduct().getProductsLanguageName());
         return course;
     }
 }

@@ -3,12 +3,16 @@ package com.simonschuster.pimsleur.unlimited.data.edt.productinfo;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
+import java.io.UncheckedIOException;
 import java.util.HashMap;
 import java.util.Map;
 
 public class ResultData {
+    private static final Logger logger = LoggerFactory.getLogger(ResultData.class);
     @JsonProperty("courseConfigs")
     private Map<String, String> courseConfigs;
 
@@ -16,7 +20,7 @@ public class ResultData {
     private Map<String, String> mediaSets;
 
     @JsonProperty("courseConfigs")
-    public Map<String, CourseConfig> getCourseConfigs() {
+    public Map<String, CourseConfig> getCourseConfigs() throws Exception{
         ObjectMapper mapper = new ObjectMapper();
 
         HashMap<String, CourseConfig> formattedCourseConfigs = new HashMap<>();
@@ -26,7 +30,9 @@ public class ResultData {
                 courseConfig = mapper.readValue(value, new TypeReference<CourseConfig>() {
                 });
             } catch (IOException e) {
+                logger.error("Exception when deserialize product info(courseconfig) from EDT");
                 e.printStackTrace();
+                throw new UncheckedIOException(e);
             }
             formattedCourseConfigs.put(key, courseConfig);
         });
@@ -44,7 +50,9 @@ public class ResultData {
                 MediaSet mediaSet = mapper.readerFor(MediaSet.class).readValue(value);
                 formattedMediaSets.put(key, mediaSet);
             } catch (IOException e) {
+                logger.error("Exception when deserialize product info (mediasets) from EDT");
                 e.printStackTrace();
+                throw new UncheckedIOException(e);
             }
         });
         return formattedMediaSets;

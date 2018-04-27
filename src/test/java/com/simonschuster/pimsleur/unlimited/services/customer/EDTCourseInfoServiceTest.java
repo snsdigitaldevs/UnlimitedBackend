@@ -2,6 +2,7 @@ package com.simonschuster.pimsleur.unlimited.services.customer;
 
 import com.github.dreamhead.moco.HttpServer;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
+import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Lesson;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.AggregatedProductInfo;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.CourseConfig;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.MediaSet;
@@ -13,6 +14,7 @@ import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 import static com.github.dreamhead.moco.Moco.*;
 import static com.github.dreamhead.moco.Runner.running;
@@ -121,17 +123,19 @@ public class EDTCourseInfoServiceTest {
         running(server, () -> {
             AggregatedProductInfo productInfo = edtCourseInfoService.getCourseInfos(isPUProductCode, productCode, "auth0_user_id");
             List<Course> courseDtos = productInfo.toDto();
-            Course courseDto = courseDtos.get(0);
+            Course levelOne = courseDtos.stream().filter(course -> course.getLevel() == 1).collect(Collectors.toList()).get(0);
 
-            assertEquals("French", courseDto.getLanguageName());
-            assertEquals(5, productInfo.getMediaSetInfo().size());
-//            assertEquals("", courseDto.getLevel());
-//            assertTrue(courseDto.getLessons().get(0).getAudioLink().contains("https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442310223_Japanese_Phase_1/9781442310223_Unit_01.mp3"));
-            //value of Expires and Signature is dynamic
-//            assertTrue(courseDto.getLessons().get(0).getAudioLink().contains("Expires="));
-//            assertTrue(courseDto.getLessons().get(0).getAudioLink().contains("Signature="));
-//            assertTrue(courseDto.getLessons().get(0).getAudioLink().contains("Key-Pair-Id=APKAJRDZZRICRGT4VEOA"));
-//            assertEquals("42578", courseDto.getLessons().get(0).getMediaItemId());
+            assertEquals("French", levelOne.getLanguageName());
+
+            List<Lesson> lessons = levelOne.getLessons();
+            Lesson lessonOne = lessons.stream().filter(lesson -> lesson.getName().equals("Unit 01")).collect(Collectors.toList()).get(0);
+
+//            assertEquals("https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442310223_Japanese_Phase_1/9781442310223_Unit_20.mp3?Expires=1524839994&Signature=Hw5qalqbO6a0qe4dpFcJO5xKACiYWa6kuy4pd341tFWta4yP4tZLmW4BLeHeYB4oOohcKPMn9XG8pGojntmMb37DJOyTOFaK783O5wzO5xJ7tgY-dl1fBOC1a2X9zg6CRJ-ZWtdkcK~07Ob7NSMpjBxMi3fmTxqNbD~u~61H90c_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+//                    lessonOne.getAudioLink());
+            assertEquals(new Integer(1), lessonOne.getLevel());
+            assertTrue(67226 == lessonOne.getMediaItemId());
+            assertEquals("01", lessonOne.getLessonNumber());
+            assertEquals("Unit 01", lessonOne.getName());
         });
 
     }
@@ -161,6 +165,12 @@ public class EDTCourseInfoServiceTest {
                 eq(form("action"), "pcm_blmqide"))
         )
                 .response(file("src/test/resources/pcmCustInfoResponse.json"));
+
+        server.post(and(
+                by(uri("/subscr_production_v_9/action_handlers/rdlss.php")),
+                eq(form("action"), "rdlfmix"))
+        )
+                .response(file("src/test/resources/pcmAudioLinkRequest.json"));
         return server;
     }
 }

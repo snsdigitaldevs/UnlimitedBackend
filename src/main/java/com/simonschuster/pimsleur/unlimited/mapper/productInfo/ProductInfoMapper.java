@@ -21,7 +21,6 @@ public class ProductInfoMapper {
 
         Map<String, String> entitlementTokens = new HashMap<>();
 
-
         Map<String, Map<String, Integer>> mediaItemIds = productInfoFromPCM.getOrderProduct().getOrdersProductsAttributes()
                 .stream()
                 .filter(attribute -> attribute.getProductsOptions().contains("Download"))

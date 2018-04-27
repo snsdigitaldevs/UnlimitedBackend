@@ -7,7 +7,7 @@ public class Lesson {
     private Integer level;
     private String lessonNumber;
     private String imageDescription;
-    private String mediaItemId;
+    private Integer mediaItemId;
 
     public String getImageDescription() {return imageDescription;}
 
@@ -53,11 +53,11 @@ public class Lesson {
         this.lessonNumber = lessonNumber;
     }
 
-    public String getMediaItemId() {
+    public Integer getMediaItemId() {
         return mediaItemId;
     }
 
-    public void setMediaItemId(String mediaItemId) {
+    public void setMediaItemId(Integer mediaItemId) {
         this.mediaItemId = mediaItemId;
     }
 }

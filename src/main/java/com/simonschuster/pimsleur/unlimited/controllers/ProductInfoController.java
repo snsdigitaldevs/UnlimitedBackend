@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.io.IOException;
 import java.util.List;
 
 @RestController
@@ -21,7 +20,10 @@ public class ProductInfoController {
     public List<Course> getProductInfo(@RequestParam("isPUProductCode") boolean isPUProductCode,
                                       @RequestParam(value = "productCode") String productCode,
                                       @RequestParam(value = "sub") String sub)
-            throws IOException {
+            {
+//        if (productCode == null || productCode.isEmpty()) {
+//            throw new Exception("Product code missing!");
+//        }
         return edtCourseInfoService.getCourseInfos(isPUProductCode, productCode, sub).toDto();
     }
 }

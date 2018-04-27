@@ -21,8 +21,7 @@ public class AggregatedProductInfo {
 
     private ProductInfoFromUnlimited productInfoFromPU;
     private ProductInfoFromPCM productInfoFromPCM;
-    private Map<String, Map<String, Integer>> mediaSetInfo;
-    private LessonsAudioInfo lessonAudioInfoFromPCM;
+    private Map<String, List<Lesson>> lessonAudioInfoFromPCM;
 
     public void setProductInfoFromPCM(ProductInfoFromPCM productInfoFromPCM) {
         this.productInfoFromPCM = productInfoFromPCM;
@@ -46,7 +45,7 @@ public class AggregatedProductInfo {
         if (productInfoFromPU != null) {
             setCourseInfoFromPU(courses, productInfoFromPU);
         } else if (productInfoFromPCM != null) {
-            setCourseInfoFromPCM(courses, productInfoFromPCM, mediaSetInfo);
+            setCourseInfoFromPCM(courses, productInfoFromPCM, lessonAudioInfoFromPCM);
         }
 
         return courses;
@@ -126,28 +125,24 @@ public class AggregatedProductInfo {
         lesson.setAudioLink(audioUrl);
     }
 
-    private List<Course> setCourseInfoFromPCM(List<Course> courses, ProductInfoFromPCM productInfoFromPCM, Map<String, Map<String, Integer>> mediaSetInfo) {
-        Course course = new Course();
-        course.setLanguageName(productInfoFromPCM.getOrderProduct().getProduct().getProductsLanguageName());
-        //todo: set level and lesson info from mediasetinfo and productInfoFromPCM
+    private List<Course> setCourseInfoFromPCM(List<Course> courses, ProductInfoFromPCM productInfoFromPCM, Map<String, List<Lesson>> lessonAudioInfoFromPCM) {
+        lessonAudioInfoFromPCM.forEach((level, lessonInfoForOneLevel) -> {
+            Course course = new Course();
+            course.setLanguageName(productInfoFromPCM.getOrderProduct().getProduct().getProductsLanguageName());
+            course.setLevel(Integer.parseInt(level));
+            course.setLessons(lessonInfoForOneLevel);
 
-        courses.add(course);
+            courses.add(course);
+        });
+
         return courses;
     }
 
-    public void setMediaSetInfo(Map<String, Map<String, Integer>> mediaSetInfo) {
-        this.mediaSetInfo = mediaSetInfo;
-    }
-
-    public Map<String, Map<String, Integer>> getMediaSetInfo() {
-        return mediaSetInfo;
-    }
-
-    public void setLessonAudioInfoFromPCM(LessonsAudioInfo lessonAudioInfoFromPCM) {
+    public void setLessonAudioInfoFromPCM(Map<String, List<Lesson>> lessonAudioInfoFromPCM) {
         this.lessonAudioInfoFromPCM = lessonAudioInfoFromPCM;
     }
 
-    public LessonsAudioInfo getLessonAudioInfoFromPCM() {
+    public Map getLessonAudioInfoFromPCM() {
         return lessonAudioInfoFromPCM;
     }
 }

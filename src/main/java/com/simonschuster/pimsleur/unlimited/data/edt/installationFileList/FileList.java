@@ -1,21 +1,22 @@
 
 package com.simonschuster.pimsleur.unlimited.data.edt.installationFileList;
 
-import java.util.List;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
+import java.util.List;
+
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "fileListId",
-    "productCode",
-    "enabled",
-    "deployType",
-    "minAppVersion",
-    "kittedFileListsString",
-    "fileListItems",
-    "totalPayloadBytes"
+        "fileListId",
+        "productCode",
+        "enabled",
+        "deployType",
+        "minAppVersion",
+        "kittedFileListsString",
+        "fileListItems",
+        "totalPayloadBytes"
 })
 public class FileList {
 
@@ -34,7 +35,7 @@ public class FileList {
     @JsonProperty("fileListItems")
     private List<FileListItem> fileListItems = null;
     @JsonProperty("totalPayloadBytes")
-    private Integer totalPayloadBytes;
+    private Long totalPayloadBytes;
 
     @JsonProperty("fileListId")
     public Integer getFileListId() {
@@ -107,12 +108,12 @@ public class FileList {
     }
 
     @JsonProperty("totalPayloadBytes")
-    public Integer getTotalPayloadBytes() {
+    public Long getTotalPayloadBytes() {
         return totalPayloadBytes;
     }
 
     @JsonProperty("totalPayloadBytes")
-    public void setTotalPayloadBytes(Integer totalPayloadBytes) {
+    public void setTotalPayloadBytes(Long totalPayloadBytes) {
         this.totalPayloadBytes = totalPayloadBytes;
     }
 

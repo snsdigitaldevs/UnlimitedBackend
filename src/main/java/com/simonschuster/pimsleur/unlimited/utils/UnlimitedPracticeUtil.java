@@ -13,6 +13,7 @@ import java.io.StringReader;
 import java.util.*;
 import java.util.stream.Collectors;
 
+import static java.lang.Integer.parseInt;
 import static java.util.Collections.frequency;
 
 public class UnlimitedPracticeUtil {
@@ -77,10 +78,12 @@ public class UnlimitedPracticeUtil {
                 .parse(new StringReader(csvString));
         String unitNumKey = unitNumKey(csvRecords);
         for (CSVRecord record : csvRecords) {
-            System.out.println(record);
+//            System.out.println(record);
             if (record.isSet(unitNumKey)) {
-                Integer unitNum = Integer.parseInt(record.get(unitNumKey).replace("\"", ""));
-                units.add(unitNum);
+                String unitNumString = record.get(unitNumKey).replace("\"", "");
+                if (unitNumString.length() > 0) {
+                    units.add(parseInt(unitNumString));
+                }
             }
         }
         return units;

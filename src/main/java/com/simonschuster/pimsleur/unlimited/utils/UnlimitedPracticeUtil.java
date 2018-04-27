@@ -4,6 +4,7 @@ import com.simonschuster.pimsleur.unlimited.data.dto.practices.AvailablePractice
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.PracticesInUnit;
 import com.simonschuster.pimsleur.unlimited.services.practices.PracticesCsvLocations;
 import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 import org.springframework.web.client.RestTemplate;
 
@@ -71,14 +72,25 @@ public class UnlimitedPracticeUtil {
         RestTemplate restTemplate = new RestTemplate();
         String csvString = replaceDuplicateHeaders(restTemplate.getForObject(url, String.class));
 
-        Iterable<CSVRecord> records = CSVFormat.EXCEL
+        CSVParser csvRecords = CSVFormat.EXCEL
                 .withFirstRecordAsHeader().withQuote(null)
                 .parse(new StringReader(csvString));
-        for (CSVRecord record : records) {
-            Integer unitNum = Integer.parseInt(record.get("\"Unit Num\"").replace("\"", ""));
+        String unitNumKey = unitNumKey(csvRecords);
+        for (CSVRecord record : csvRecords) {
+            System.out.println(record);
+            Integer unitNum = Integer.parseInt(record.get(unitNumKey).replace("\"", ""));
             units.add(unitNum);
         }
         return units;
+    }
+
+    private static String unitNumKey(CSVParser csvRecords) {
+        String quotedUnitNum = "\"Unit Num\"";
+        String unitNum = "Unit Num";
+        if (csvRecords.getHeaderMap().containsKey(unitNum)) {
+            return unitNum;
+        }
+        return quotedUnitNum;
     }
 
     private static String replaceDuplicateHeaders(String csvString) {

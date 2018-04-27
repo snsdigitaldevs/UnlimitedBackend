@@ -73,13 +73,15 @@ public class UnlimitedPracticeUtil {
         String csvString = replaceDuplicateHeaders(restTemplate.getForObject(url, String.class));
 
         CSVParser csvRecords = CSVFormat.EXCEL
-                .withFirstRecordAsHeader().withQuote(null)
+                .withFirstRecordAsHeader().withQuote(null).withIgnoreEmptyLines()
                 .parse(new StringReader(csvString));
         String unitNumKey = unitNumKey(csvRecords);
         for (CSVRecord record : csvRecords) {
             System.out.println(record);
-            Integer unitNum = Integer.parseInt(record.get(unitNumKey).replace("\"", ""));
-            units.add(unitNum);
+            if (record.isSet(unitNumKey)) {
+                Integer unitNum = Integer.parseInt(record.get(unitNumKey).replace("\"", ""));
+                units.add(unitNum);
+            }
         }
         return units;
     }

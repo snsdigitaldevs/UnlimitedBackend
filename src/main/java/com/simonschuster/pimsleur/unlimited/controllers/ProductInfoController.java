@@ -19,11 +19,10 @@ public class ProductInfoController {
     @RequestMapping(value = "/productInfo", method = RequestMethod.GET)
     public List<Course> getProductInfo(@RequestParam("isPUProductCode") boolean isPUProductCode,
                                       @RequestParam(value = "productCode") String productCode,
-                                      @RequestParam(value = "sub") String sub)
-            {
-//        if (productCode == null || productCode.isEmpty()) {
-//            throw new Exception("Product code missing!");
-//        }
+                                      @RequestParam(value = "sub") String sub) throws Exception {
+        if (productCode == null || productCode.isEmpty()) {
+            throw new Exception("Product code missing!");
+        }
         return edtCourseInfoService.getCourseInfos(isPUProductCode, productCode, sub).toDto();
     }
 }

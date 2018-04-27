@@ -43,7 +43,7 @@ public class AggregatedProductInfo {
         ArrayList<Course> courses = new ArrayList<>();
 
         if (productInfoFromPU != null) {
-            setCourseInfoFromPU(courses, productInfoFromPU);
+            setCourseInfoFromPU(courses);
         } else if (productInfoFromPCM != null) {
             setCourseInfoFromPCM(courses, productInfoFromPCM, lessonAudioInfoFromPCM);
         }
@@ -51,14 +51,11 @@ public class AggregatedProductInfo {
         return courses;
     }
 
-    private List<Course> setCourseInfoFromPU(List<Course> courses, ProductInfoFromUnlimited productInfoFromPU) {
-        //Assumption: product code from frontend doesn't have kitted product code according to spike.
-        //Spike scenario is: one user bought Mandarin level 1-5, the current product code got from customer info
-        //API is a product code for one level instead of product code for level 1-5.
-
-        Course course = new Course();
+    private List<Course> setCourseInfoFromPU(List<Course> courses) {
+        // If kitted product code is passed in, a list of courses will be returned.
         Map<String, MediaSet> mediaSets = this.productInfoFromPU.getResultData().getMediaSets();
         mediaSets.forEach((currentProductCode, mediaSet) -> {
+            Course course = new Course();
             course.setLanguageName(mediaSet.getCourseLanguageName());
             course.setLevel(mediaSet.getCourseLevel());
             try {
@@ -68,9 +65,8 @@ public class AggregatedProductInfo {
                 e.printStackTrace();
                 throw new UncheckedExecutionException(e);
             }
+            courses.add(course);
         });
-
-        courses.add(course);
 
         return courses;
     }

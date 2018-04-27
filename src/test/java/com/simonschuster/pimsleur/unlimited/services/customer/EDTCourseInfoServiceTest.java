@@ -58,9 +58,8 @@ public class EDTCourseInfoServiceTest {
         });
     }
 
-    //TODO: need to confirm if the courseconfigs part of response for multiple courses is the same as the test resource file.
     @Test
-    public void shouldGetCorrectResponseFromEDTServiceWithMultipleCourse() throws Exception {
+    public void shouldGetCorrectProductInfoFromPUWithKittedProductCode() throws Exception {
         //mock edt api response
         HttpServer server = httpServer(12306);
         server.post(and(
@@ -71,10 +70,16 @@ public class EDTCourseInfoServiceTest {
         boolean isPUProductCode = true;
 
         running(server, () -> {
-            AggregatedProductInfo productInfo = edtCourseInfoService.getCourseInfos(isPUProductCode, "whatever", "");
+            AggregatedProductInfo productInfo = edtCourseInfoService.getCourseInfos(isPUProductCode, "9781508260257", "");
             assertThat(productInfo.getProductInfoFromPU().getResultCode(),is(1));
             assertNotNull(productInfo.getProductInfoFromPU().getResultData().getCourseConfigs());
-            assertEquals(2, productInfo.getProductInfoFromPU().getResultData().getCourseConfigs().size());
+            assertEquals(1, productInfo.getProductInfoFromPU().getResultData().getCourseConfigs().size());
+            assertEquals(2, productInfo.getProductInfoFromPU().getResultData().getMediaSets().size());
+
+            List<Course> courses = productInfo.toDto();
+            assertEquals(2, courses.size());
+            assertEquals(new Integer(1), courses.get(0).getLevel());
+            assertEquals(new Integer(2), courses.get(1).getLevel());
         });
     }
 

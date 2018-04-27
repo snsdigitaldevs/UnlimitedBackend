@@ -15,6 +15,7 @@ import java.util.stream.Collectors;
 
 import static java.lang.Integer.parseInt;
 import static java.util.Collections.frequency;
+import static org.apache.commons.lang3.StringUtils.isNumeric;
 
 public class UnlimitedPracticeUtil {
     private static final String FLASH_CARD = "flashCard";
@@ -70,6 +71,7 @@ public class UnlimitedPracticeUtil {
         if (url == null || url.isEmpty()) {
             return units;
         }
+//        System.out.println(url);
         RestTemplate restTemplate = new RestTemplate();
         String csvString = replaceDuplicateHeaders(restTemplate.getForObject(url, String.class));
 
@@ -78,10 +80,9 @@ public class UnlimitedPracticeUtil {
                 .parse(new StringReader(csvString));
         String unitNumKey = unitNumKey(csvRecords);
         for (CSVRecord record : csvRecords) {
-//            System.out.println(record);
             if (record.isSet(unitNumKey)) {
                 String unitNumString = record.get(unitNumKey).replace("\"", "");
-                if (unitNumString.length() > 0) {
+                if (isNumeric(unitNumString)) {
                     units.add(parseInt(unitNumString));
                 }
             }

@@ -80,6 +80,8 @@ public class EDTCourseInfoServiceTest {
             assertEquals(2, courses.size());
             assertEquals(new Integer(1), courses.get(0).getLevel());
             assertEquals(new Integer(2), courses.get(1).getLevel());
+            Lesson lesson1InLevel1 = courses.get(0).getLessons().get(0);
+            assertEquals(new Integer(330006), lesson1InLevel1.getMediaItemId());
         });
     }
 
@@ -104,18 +106,21 @@ public class EDTCourseInfoServiceTest {
 
         running(httpServer, () -> {
             List<Course> productInfos = edtCourseInfoService.getCourseInfos(true, "9781508243328", "").toDto();
-            Course productInfo = productInfos.get(0);
+            Course course = productInfos.get(0);
 
-            assertEquals("Mandarin Chinese", productInfo.getLanguageName());
+            assertEquals("Mandarin Chinese", course.getLanguageName());
 
+            Lesson lesson1InLevel1 = course.getLessons().get(0);
             assertEquals("https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese"
                     + "/Mandarin Chinese Demo/images/full/MA_1_M_01.jpg",
-                    productInfo.getLessons().get(0).getImage().getFullImageAddress());
+                    lesson1InLevel1.getImage().getFullImageAddress());
 
             assertEquals("https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese"
                             + "/Mandarin Chinese Demo/audio/9781508243328_Mandarin_Chinese1_U01_Lesson.mp3",
-                    productInfo.getLessons().get(0).getAudioLink());
-
+                    lesson1InLevel1.getAudioLink());
+            assertEquals(new Integer(331006), lesson1InLevel1.getMediaItemId());
+            assertEquals("Unit 01", lesson1InLevel1.getName());
+            assertEquals("01", lesson1InLevel1.getLessonNumber());
         });
     }
 

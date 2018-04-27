@@ -86,6 +86,7 @@ public class AggregatedProductInfo {
             lesson.setLessonNumber(lessonItem.getUnit());
             lesson.setName(lessonItem.getTitle());
             lesson.setImageDescription(lessonItem.getImageDescription());
+            lesson.setMediaItemId(lessonItem.getMediaItemId());
             getImageAndAudioFromPU(lesson, lessonItem, mediaSet);
 
             lessons.add(lesson);

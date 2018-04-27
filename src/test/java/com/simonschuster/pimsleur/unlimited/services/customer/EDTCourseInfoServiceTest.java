@@ -82,6 +82,8 @@ public class EDTCourseInfoServiceTest {
             assertEquals(new Integer(2), courses.get(1).getLevel());
             Lesson lesson1InLevel1 = courses.get(0).getLessons().get(0);
             assertEquals(new Integer(330006), lesson1InLevel1.getMediaItemId());
+            assertEquals("https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/Mandarin Chinese I/images/thumb/MA_1_M_01.jpg",
+                    lesson1InLevel1.getImage().getThumbImageAddress());
         });
     }
 
@@ -121,6 +123,8 @@ public class EDTCourseInfoServiceTest {
             assertEquals(new Integer(331006), lesson1InLevel1.getMediaItemId());
             assertEquals("Unit 01", lesson1InLevel1.getName());
             assertEquals("01", lesson1InLevel1.getLessonNumber());
+            assertEquals("https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/Mandarin Chinese Demo/images/thumb/MA_1_M_01.jpg",
+                    lesson1InLevel1.getImage().getThumbImageAddress());
         });
     }
 

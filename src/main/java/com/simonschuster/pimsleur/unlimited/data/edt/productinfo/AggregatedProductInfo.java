@@ -108,12 +108,15 @@ public class AggregatedProductInfo {
             if (courseLevelDef.getIsbn13().equals(mediaSet.getIsbn13())) {
                 String pathMiddlePart = mediaSet.getCourseLanguageName().replace(" ", "").toLowerCase();
 
-                String imageUrl = PREFIX_FOR_IMAGE_OF_PU + pathMiddlePart + "/"
+                String fullImageAddress = PREFIX_FOR_IMAGE_OF_PU + pathMiddlePart + "/"
                         + courseLevelDef.getMainLessonsFullImagePath() + lessonItem.getImageURL();
+                String thumbImageAddress = PREFIX_FOR_IMAGE_OF_PU + pathMiddlePart + "/"
+                        + courseLevelDef.getMainLessonsThumbImagePath() + lessonItem.getImageURL();
                 audioUrl = PREFIX_FOR_AUDIO_OF_PU + pathMiddlePart + "/"
                         + courseLevelDef.getAudioPath() + lessonItem.getFilename();
 
-                image.setFullImageAddress(imageUrl);
+                image.setFullImageAddress(fullImageAddress);
+                image.setThumbImageAddress(thumbImageAddress);
                 break;
             }
         }

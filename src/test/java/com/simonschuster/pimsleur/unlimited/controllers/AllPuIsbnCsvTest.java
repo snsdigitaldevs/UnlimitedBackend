@@ -1,6 +1,5 @@
 package com.simonschuster.pimsleur.unlimited.controllers;
 
-import com.simonschuster.pimsleur.unlimited.data.dto.practices.AvailablePractices;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -49,7 +48,7 @@ public class AllPuIsbnCsvTest {
     // to see if some csv files would cause errors
     public void shouldGetAvailablePracticesOfAllPuISBNs() throws Exception {
         for (String puISBN : puISBNs) {
-            System.out.println(puISBNs.indexOf(puISBN));
+            System.out.println(puISBNs.indexOf(puISBN) + 1);
             System.out.println(puISBN + " will run");
             availablePracticesController.getPuAvailablePractices(puISBN);
             System.out.println(puISBN + " is ok");

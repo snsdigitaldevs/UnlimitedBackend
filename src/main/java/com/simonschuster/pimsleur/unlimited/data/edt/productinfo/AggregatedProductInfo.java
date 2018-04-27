@@ -21,7 +21,7 @@ public class AggregatedProductInfo {
 
     private ProductInfoFromUnlimited productInfoFromPU;
     private ProductInfoFromPCM productInfoFromPCM;
-    private Map<String, List<Integer>> mediaSetInfo;
+    private Map<String, Map<String, Integer>> mediaSetInfo;
     private LessonsAudioInfo lessonAudioInfoFromPCM;
 
     public void setProductInfoFromPCM(ProductInfoFromPCM productInfoFromPCM) {
@@ -126,7 +126,7 @@ public class AggregatedProductInfo {
         lesson.setAudioLink(audioUrl);
     }
 
-    private List<Course> setCourseInfoFromPCM(List<Course> courses, ProductInfoFromPCM productInfoFromPCM, Map<String, List<Integer>> mediaSetInfo) {
+    private List<Course> setCourseInfoFromPCM(List<Course> courses, ProductInfoFromPCM productInfoFromPCM, Map<String, Map<String, Integer>> mediaSetInfo) {
         Course course = new Course();
         course.setLanguageName(productInfoFromPCM.getOrderProduct().getProduct().getProductsLanguageName());
         //todo: set level and lesson info from mediasetinfo and productInfoFromPCM
@@ -135,11 +135,11 @@ public class AggregatedProductInfo {
         return courses;
     }
 
-    public void setMediaSetInfo(Map<String, List<Integer>> mediaSetInfo) {
+    public void setMediaSetInfo(Map<String, Map<String, Integer>> mediaSetInfo) {
         this.mediaSetInfo = mediaSetInfo;
     }
 
-    public Map<String, List<Integer>> getMediaSetInfo() {
+    public Map<String, Map<String, Integer>> getMediaSetInfo() {
         return mediaSetInfo;
     }
 

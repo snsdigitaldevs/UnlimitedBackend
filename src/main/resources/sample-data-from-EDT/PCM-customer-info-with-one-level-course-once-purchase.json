@@ -1502,7 +1502,8 @@
             }]
           }
         }]
-      }, {
+      },
+        {
         "ordersId": "15647121",
         "customersId": 156471,
         "datePurchased": 1524710560000,

@@ -71,7 +71,7 @@ public class EDTCourseInfoService {
     private void putInLessonsInfoFromPCM(AggregatedProductInfo aggregatedProductInfo) {
         ProductInfoFromPCM productInfoFromPCM = aggregatedProductInfo.getProductInfoFromPCM();
 
-        Map<String, List<Integer>> mediaItemInfo = productInfoMapper.getMediaItemInfo(productInfoFromPCM);
+        Map<String, Map<String, Integer>> mediaItemInfo = productInfoMapper.getMediaItemInfo(productInfoFromPCM).getMediaItemIds();
         //todo: get lesson (mp3) info from rdlss API
         LessonsAudioInfo lessonsAudioInfo = getLessonsAudioInfoFromEDT(mediaItemInfo);
 
@@ -80,7 +80,9 @@ public class EDTCourseInfoService {
         aggregatedProductInfo.setLessonAudioInfoFromPCM(lessonsAudioInfo);
     }
 
-    private LessonsAudioInfo getLessonsAudioInfoFromEDT(Map<String, List<Integer>> mediaItemInfo) {
+    private LessonsAudioInfo getLessonsAudioInfoFromEDT(Map<String, Map<String, Integer>> mediaItemInfo) {
+
+
         return null;
     }
 

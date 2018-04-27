@@ -40,6 +40,10 @@ public class InstallationFileList {
         this.resultCode = resultCode;
     }
 
+    // there is a potential bug in this code
+    // if the product code is a kitted product like "spanish level 1-4", then installation file list
+    // will include all csv files of all levels
+    // this code will be correct if the front end only send requests with single product code, not kitted
     public PracticesCsvLocations getPracticeCsvLocations() {
         PracticesCsvLocations practicesCsvLocations = new PracticesCsvLocations();
         if (this.getResultData() != null) {

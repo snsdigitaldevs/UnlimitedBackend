@@ -9,40 +9,40 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "productsId",
-    "productsModel",
-    "productsImage",
-    "productsImage2",
-    "productsRetailPrice",
-    "isbn13",
-    "productsGoodsType",
-    "isbn13NoDashes",
-    "productsName",
-    "productsSubtext",
-    "productsDescription",
-    "productsViewed",
-    "productsLanguageName",
-    "productsLevel",
-    "productsMedia",
-    "productsTotalLessons",
-    "productsLessonRange",
-    "productsHighestLevelAvail",
-    "productsHasReadings",
-    "productsIsEsl",
-    "productsPackageName",
-    "productsNumMedia",
-    "productsInclReadings",
-    "productsMediaSize",
-    "productsLessonLength",
-    "productsManufName",
-    "productsPublisherName",
-    "productsAuthor",
-    "productsTotalLengthMin",
-    "productsStartingUnit",
-    "productsGuideType",
-    "productsTitleExtended",
-    "formattedProductInfo",
-    "productsAttributes"
+        "productsId",
+        "productsModel",
+        "productsImage",
+        "productsImage2",
+        "productsRetailPrice",
+        "isbn13",
+        "productsGoodsType",
+        "isbn13NoDashes",
+        "productsName",
+        "productsSubtext",
+        "productsDescription",
+        "productsViewed",
+        "productsLanguageName",
+        "productsLevel",
+        "productsMedia",
+        "productsTotalLessons",
+        "productsLessonRange",
+        "productsHighestLevelAvail",
+        "productsHasReadings",
+        "productsIsEsl",
+        "productsPackageName",
+        "productsNumMedia",
+        "productsInclReadings",
+        "productsMediaSize",
+        "productsLessonLength",
+        "productsManufName",
+        "productsPublisherName",
+        "productsAuthor",
+        "productsTotalLengthMin",
+        "productsStartingUnit",
+        "productsGuideType",
+        "productsTitleExtended",
+        "formattedProductInfo",
+        "productsAttributes"
 })
 public class Product {
 
@@ -455,4 +455,7 @@ public class Product {
         this.productsAttributes = productsAttributes;
     }
 
+    public String getProductCode() {
+        return getIsbn13().replace("-", "");
+    }
 }

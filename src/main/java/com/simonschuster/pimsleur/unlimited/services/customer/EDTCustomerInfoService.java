@@ -27,15 +27,19 @@ public class EDTCustomerInfoService {
         CustomerInfo unlimitedCustInfo = getCustomerInfo(sub,
                 config.getApiParameter("unlimitedCustomerAction"),
                 config.getApiParameter("unlimitedDomain"));
-        CustomerInfo pcmCustInfo = getCustomerInfo(sub,
-                config.getApiParameter("pcmCustomerAction"),
-                config.getApiParameter("pcmDomain"));
+        CustomerInfo pcmCustInfo = getPcmCustomerInfo(sub);
 
         Customer customer = unlimitedCustInfo.getResultData().getCustomer();
         AggregatedSyncState aggregatedSyncState = syncStateService
                 .getSyncStates(customer.getCustomersId(), customer.getIdentityVerificationToken());
 
         return new AggregatedCustomerInfo(unlimitedCustInfo, pcmCustInfo, aggregatedSyncState);
+    }
+
+    public CustomerInfo getPcmCustomerInfo(String sub) {
+        return getCustomerInfo(sub,
+                    config.getApiParameter("pcmCustomerAction"),
+                    config.getApiParameter("pcmDomain"));
     }
 
     private CustomerInfo getCustomerInfo(String sub, String action, String domain) {

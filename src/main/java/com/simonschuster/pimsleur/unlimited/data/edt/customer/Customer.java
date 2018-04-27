@@ -59,8 +59,9 @@ public class Customer {
     public List<String> getProductCodes() {
         return this.getCustomersOrders().stream()
                 .flatMap(order -> order.getOrdersProducts().stream()
-                        .map(product -> product.getProduct().getIsbn13().replace("-", "")))
+                        .map(product -> product.getProduct().getProductCode()))
                 .collect(toList());
 
     }
+
 }

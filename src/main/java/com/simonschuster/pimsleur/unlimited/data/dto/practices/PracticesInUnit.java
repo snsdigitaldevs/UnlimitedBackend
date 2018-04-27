@@ -14,6 +14,13 @@ public class PracticesInUnit {
         this.unitNumber = unitNumber;
     }
 
+    // factory method
+    public static PracticesInUnit onlyReadingAvailable(Integer unitNumber) {
+        PracticesInUnit practicesInUnit = new PracticesInUnit(unitNumber);
+        practicesInUnit.setHasReading(true);
+        return practicesInUnit;
+    }
+
     public boolean isHasFlashCard() {
         return hasFlashCard;
     }

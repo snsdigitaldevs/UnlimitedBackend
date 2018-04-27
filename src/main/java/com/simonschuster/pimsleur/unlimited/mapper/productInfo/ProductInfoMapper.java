@@ -1,5 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.mapper.productInfo;
 
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.Customer;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.CustomerInfo;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.CustomersOrder;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.PCMAudioRequestInfo;
@@ -19,6 +20,7 @@ public class ProductInfoMapper {
     public PCMAudioRequestInfo getMediaItemInfo(ProductInfoFromPCM productInfoFromPCM) {
 
         Map<String, String> entitlementTokens = new HashMap<>();
+
 
         Map<String, Map<String, Integer>> mediaItemIds = productInfoFromPCM.getOrderProduct().getOrdersProductsAttributes()
                 .stream()
@@ -44,11 +46,17 @@ public class ProductInfoMapper {
         PCMAudioRequestInfo pcmAudioRequestInfo = new PCMAudioRequestInfo();
         pcmAudioRequestInfo.setMediaItemIds(mediaItemIds);
         pcmAudioRequestInfo.setEntitlementTokens(entitlementTokens);
+        pcmAudioRequestInfo.setCustomersId(productInfoFromPCM.getCustomersId());
+        pcmAudioRequestInfo.setCustomerToken(productInfoFromPCM.getCustomerToken());
         return pcmAudioRequestInfo;
     }
 
     public static ProductInfoFromPCM setProductInfo(String productCode, ProductInfoFromPCM productInfoFromPCM, CustomerInfo pcmCustInfo) {
-        List<CustomersOrder> customersOrders = pcmCustInfo.getResultData().getCustomer().getCustomersOrders();
+        Customer customer = pcmCustInfo.getResultData().getCustomer();
+        List<CustomersOrder> customersOrders = customer.getCustomersOrders();
+
+        productInfoFromPCM.setCustomersId(customer.getCustomersId());
+        productInfoFromPCM.setCustomerToken(customer.getIdentityVerificationToken());
 
         customersOrders.forEach(customersOrder -> {
             productInfoFromPCM.getOrdersProductList().addAll(customersOrder.getOrdersProducts());

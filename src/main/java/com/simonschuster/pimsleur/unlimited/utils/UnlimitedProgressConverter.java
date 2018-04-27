@@ -13,13 +13,13 @@ import static java.util.Arrays.asList;
 import static java.util.stream.Collectors.toList;
 
 public class UnlimitedProgressConverter {
-    private static HashMap<String, Long> currentLastPlayedDateMap = new HashMap<String, Long>();
     private static final String COMPLETED = "isCompleted";
     private static final String LAST_PLAYED_DATE = "lastPlayedDate";
     private static final String LAST_PLAYED_HEAD_LOCATION = "lastPlayHeadLocation";
     private static final List<String> keyWordsToExtract = asList(COMPLETED, LAST_PLAYED_DATE, LAST_PLAYED_HEAD_LOCATION);
 
     public static List<ProgressDTO> UnlimitedSyncStateToDTO(List<UserAppStateDatum> userAppStateData) {
+        HashMap<String, Long> currentLastPlayedDateMap = new HashMap<>();
         List<ProgressDTO> result = userAppStateData.stream()
                 .filter(UnlimitedProgressConverter::hasKeyWord)
                 .collect(Collectors.groupingBy(UserAppStateDatum::idPartOfKey))
@@ -28,16 +28,16 @@ public class UnlimitedProgressConverter {
                     String[] ids = group.get(0).getKey().split("#")[0].split("_");
                     String subUserID = ids[2];
                     ProgressDTO progressDTO = new ProgressDTO(Integer.parseInt(ids[4]), ids[3], subUserID, false, false);
-                    group.forEach(getUserAppStateDatumConsumer(subUserID, progressDTO));
+                    group.forEach(getUserAppStateDatumConsumer(subUserID, progressDTO, currentLastPlayedDateMap));
                     return progressDTO;
                 })
                 .collect(toList());
 
-        getCurrentForEachSubUser(result);
+        getCurrentForEachSubUser(result, currentLastPlayedDateMap);
         return result;
     }
 
-    private static void getCurrentForEachSubUser(List<ProgressDTO> result) {
+    private static void getCurrentForEachSubUser(List<ProgressDTO> result, HashMap<String, Long> currentLastPlayedDateMap) {
         for (String subUserID : currentLastPlayedDateMap.keySet()) {
             result.stream()
                     .filter(progress -> progress.getSubUserID().equals(subUserID)
@@ -49,7 +49,7 @@ public class UnlimitedProgressConverter {
         }
     }
 
-    private static Consumer<UserAppStateDatum> getUserAppStateDatumConsumer(String subUserID, ProgressDTO progressDTO) {
+    private static Consumer<UserAppStateDatum> getUserAppStateDatumConsumer(String subUserID, ProgressDTO progressDTO, HashMap<String, Long> currentLastPlayedDateMap) {
         return progress -> {
             switch (progress.getKey().split("#")[1]) {
                 case COMPLETED:

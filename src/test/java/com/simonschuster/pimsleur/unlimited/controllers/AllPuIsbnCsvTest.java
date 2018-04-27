@@ -1,35 +1,27 @@
 package com.simonschuster.pimsleur.unlimited.controllers;
 
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.AvailablePractices;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
-import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
-import java.util.Arrays;
 import java.util.List;
 
 import static java.util.Arrays.asList;
-import static org.hamcrest.Matchers.equalTo;
-import static org.junit.Assert.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @AutoConfigureMockMvc
-public class AvailablePracticesControllerTest {
+public class AllPuIsbnCsvTest {
 
     List<String> puISBNs = asList(
-//            "9781442394872", "9781508231431", "9781442394889", "9781508260257",
-//            "9781442394896", "9781442394902", "9781442383265", "9781508231424",
-//            "9781508230823", "9781508227939",
-            "9781508235927", "9781508235934",
+            "9781442394872", "9781508231431", "9781442394889", "9781508260257",
+            "9781442394896", "9781442394902", "9781442383265", "9781508231424",
+            "9781508230823", "9781508227939", "9781508235927", "9781508235934",
             "9781508260233", "9781508235941", "9781508227946", "9781442348646",
             "9781508231165", "9781442350328", "9781508260141", "9781442350335",
             "9781442370555", "9781442368439", "9781508231370", "9781442396173",
@@ -53,12 +45,13 @@ public class AvailablePracticesControllerTest {
     private AvailablePracticesController availablePracticesController;
 
     @Test
+    @Ignore // do not run this test in ci, we only need this to run locally
+    // to see if some csv files would cause errors
     public void shouldGetAvailablePracticesOfAllPuISBNs() throws Exception {
         for (String puISBN : puISBNs) {
             System.out.println(puISBNs.indexOf(puISBN));
             System.out.println(puISBN + " will run");
-            AvailablePractices puAvailablePractices = availablePracticesController
-                    .getPuAvailablePractices(puISBN);
+            availablePracticesController.getPuAvailablePractices(puISBN);
             System.out.println(puISBN + " is ok");
         }
     }

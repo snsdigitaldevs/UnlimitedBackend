@@ -39,7 +39,7 @@ public class EDTCourseInfoService {
             getPuProductInfo(productCode, productInfo);
         } else {
             getPcmProductInfo(auth0UserId, productCode, productInfo);
-            getPcmLessonsInfo(productInfo);
+            getPcmLessons(productInfo);
         }
         return productInfo;
     }
@@ -64,7 +64,7 @@ public class EDTCourseInfoService {
         }
     }
 
-    private void getPcmLessonsInfo(AggregatedProductInfo productInfo) {
+    private void getPcmLessons(AggregatedProductInfo productInfo) {
         PcmAudioReqParams audioRequestInfo = buildRequestParams(productInfo.getPcmProduct());
         productInfo.setPcmAudioInfo(getAudioInfo(audioRequestInfo));
     }
@@ -105,26 +105,24 @@ public class EDTCourseInfoService {
                 .collect(Collectors.toMap(Pair::getKey, Pair::getValue));
     }
 
-    private Map<String, List<Lesson>> getAudioInfo(PcmAudioReqParams requestInfo) {
-        Map<String, Map<String, Integer>> mediaItemIds = requestInfo.getMediaItemIds();
+    private Map<String, List<Lesson>> getAudioInfo(PcmAudioReqParams params) {
         Map<String, List<Lesson>> pcmAudioRespInfo = new HashMap<>();
 
-        mediaItemIds.forEach((level, mediaItemInfo) ->
-            pcmAudioRespInfo.put(level, generateLevelInfo(requestInfo, level, mediaItemInfo))
+        params.getMediaItemIds().forEach((level, mediaItemInfo) ->
+            pcmAudioRespInfo.put(level, fetchLessons(params, level, mediaItemInfo))
         );
 
         return pcmAudioRespInfo;
     }
 
-    private List<Lesson> generateLevelInfo(PcmAudioReqParams pcmAudioReqParams, String level, Map<String, Integer> mediaItemInfos) {
+    private List<Lesson> fetchLessons(PcmAudioReqParams pcmAudioReqParams, String level, Map<String, Integer> mediaItemInfos) {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
 
         List<Lesson> lessonsForThisLevel = new ArrayList<>();
         mediaItemInfos.forEach((lessonTitle, mediaItemId) -> {
             Lesson lesson = new Lesson();
-            AudioInfoFromPCM audioInfoFromPCM = null;
-            audioInfoFromPCM = postToEdt(
+            AudioInfoFromPCM audioInfoFromPCM = postToEdt(
                     new HttpEntity<>(
                             String.format(config.getApiParameter("pCMMp3Parameters"),
                                     mediaItemId,
@@ -135,7 +133,6 @@ public class EDTCourseInfoService {
                     config.getProperty("edt.api.pCMMp3ApiUrl"),
                     AudioInfoFromPCM.class);
 
-            //todo: get audio link from pcm, request not working
             lesson.setAudioLink(audioInfoFromPCM.getResult_data().getUrl());
             lesson.setName(lessonTitle);
             lesson.setLevel(Integer.parseInt(level));

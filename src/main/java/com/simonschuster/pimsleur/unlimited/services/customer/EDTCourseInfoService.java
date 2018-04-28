@@ -2,7 +2,9 @@ package com.simonschuster.pimsleur.unlimited.services.customer;
 
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Lesson;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.*;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.Customer;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.CustomerInfo;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.OrdersProduct;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.*;
 import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.apache.commons.lang3.tuple.Pair;
@@ -16,7 +18,10 @@ import org.springframework.http.converter.json.MappingJackson2HttpMessageConvert
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEdt;
@@ -41,6 +46,7 @@ public class EDTCourseInfoService {
             getPcmProductInfo(auth0UserId, productCode, productInfo);
             getPcmLessons(productInfo);
         }
+
         return productInfo;
     }
 
@@ -88,7 +94,7 @@ public class EDTCourseInfoService {
                 .filter(attribute -> attribute.getProductsOptions().contains("Download"))
                 .map(attribute -> {
                     String level = attribute.getProductsOptions().split(" ")[1];
-                    Map<String, Integer> itemIds = new HashMap<String, Integer>();
+                    Map<String, Integer> itemIds = new HashMap<>();
                     attribute.getOrdersProductsDownloads()
                             .stream()
                             .peek(download -> entitlementTokens.put(level, download.getEntitlementToken()))
@@ -96,9 +102,7 @@ public class EDTCourseInfoService {
                             .filter(mediaSet -> mediaSet.getMediaSetTitle().contains("Units"))
                             .flatMap(childMediaSet -> childMediaSet.getMediaItems().stream())
                             .filter(item -> item.getMediaItemTypeId() == EDTCourseInfoService.MP3_MEDIA_TYPE)
-                            .forEach(item -> {
-                                itemIds.put(item.getMediaItemTitle(), item.getMediaItemId());
-                            });
+                            .forEach(item -> itemIds.put(item.getMediaItemTitle(), item.getMediaItemId()));
 
                     return new ImmutablePair<>(level, itemIds);
                 })
@@ -109,7 +113,7 @@ public class EDTCourseInfoService {
         Map<String, List<Lesson>> pcmAudioRespInfo = new HashMap<>();
 
         params.getMediaItemIds().forEach((level, mediaItemInfo) ->
-            pcmAudioRespInfo.put(level, fetchLessons(params, level, mediaItemInfo))
+                pcmAudioRespInfo.put(level, fetchLessons(params, level, mediaItemInfo))
         );
 
         return pcmAudioRespInfo;
@@ -119,13 +123,16 @@ public class EDTCourseInfoService {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
 
-        List<Lesson> lessonsForThisLevel = new ArrayList<>();
-        mediaItemInfos.forEach((lessonTitle, mediaItemId) -> {
+        List<Lesson> lessons = mediaItemInfos.entrySet().parallelStream().map(entry -> {
+
             Lesson lesson = new Lesson();
+            String title = entry.getKey();
+            Integer itemId = entry.getValue();
+
             AudioInfoFromPCM audioInfoFromPCM = postToEdt(
                     new HttpEntity<>(
                             String.format(config.getApiParameter("pCMMp3Parameters"),
-                                    mediaItemId,
+                                    itemId,
                                     pcmAudioReqParams.getCustomerToken(),
                                     pcmAudioReqParams.getEntitlementTokens().get(level),
                                     pcmAudioReqParams.getCustomersId()),
@@ -134,13 +141,15 @@ public class EDTCourseInfoService {
                     AudioInfoFromPCM.class);
 
             lesson.setAudioLink(audioInfoFromPCM.getResult_data().getUrl());
-            lesson.setName(lessonTitle);
+            lesson.setName(title);
             lesson.setLevel(Integer.parseInt(level));
-            lesson.setMediaItemId(mediaItemId);
-            lesson.setLessonNumber(lessonTitle.replace("Unit ", ""));
-            lessonsForThisLevel.add(lesson);
-        });
-        return lessonsForThisLevel;
+            lesson.setMediaItemId(itemId);
+            lesson.setLessonNumber(title.replace("Unit ", ""));
+            return lesson;
+        }).collect(Collectors.toList());
+
+        return lessons;
+
     }
 
     private PcmProduct getProductInfoFromPCM(String sub, String productCode) {

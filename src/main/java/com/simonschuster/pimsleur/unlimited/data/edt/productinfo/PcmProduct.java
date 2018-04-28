@@ -2,7 +2,7 @@ package com.simonschuster.pimsleur.unlimited.data.edt.productinfo;
 
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.OrdersProduct;
 
-public class ProductInfoFromPCM {
+public class PcmProduct {
     private OrdersProduct orderProduct;
     private Integer customersId;
 

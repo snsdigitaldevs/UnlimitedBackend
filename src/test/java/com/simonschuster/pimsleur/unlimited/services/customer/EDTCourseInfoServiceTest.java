@@ -97,8 +97,8 @@ public class EDTCourseInfoServiceTest {
             AggregatedProductInfo productInfo = edtCourseInfoService.getCourseInfos(isPUProductCode, productCode, "auth0_user_id");
 
             assertNull(productInfo.getProductInfoFromPU());
-            assertNotNull(productInfo.getPcmProductInfo());
-            assertEquals(productCode, productInfo.getPcmProductInfo().getOrderProduct().getProduct().getIsbn13().replace("-", ""));
+            assertNotNull(productInfo.getPcmProduct());
+            assertEquals(productCode, productInfo.getPcmProduct().getOrderProduct().getProduct().getIsbn13().replace("-", ""));
         });
     }
 

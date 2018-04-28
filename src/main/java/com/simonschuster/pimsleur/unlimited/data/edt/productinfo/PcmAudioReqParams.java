@@ -2,7 +2,7 @@ package com.simonschuster.pimsleur.unlimited.data.edt.productinfo;
 
 import java.util.Map;
 
-public class PCMAudioRequestInfo {
+public class PcmAudioReqParams {
 
     private Integer customersId;
 

@@ -2,7 +2,7 @@ package com.simonschuster.pimsleur.unlimited.data.edt.productinfo;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class ProductInfoFromUnlimited {
+public class PuProductInfo {
     @JsonProperty("result_code")
     private Integer resultCode;
 

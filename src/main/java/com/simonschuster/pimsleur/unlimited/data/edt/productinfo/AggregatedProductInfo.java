@@ -19,23 +19,23 @@ public class AggregatedProductInfo {
     private static final String PREFIX_FOR_AUDIO_OF_PU = "https://install.pimsleurunlimited.com/staging_n/common/";
     private static final Logger logger = LoggerFactory.getLogger(AggregatedProductInfo.class);
 
-    private ProductInfoFromUnlimited productInfoFromPU;
-    private ProductInfoFromPCM productInfoFromPCM;
+    private PuProductInfo productInfoFromPU;
+    private PcmProduct pcmProduct;
     private Map<String, List<Lesson>> lessonAudioInfoFromPCM;
 
-    public void setPcmProductInfo(ProductInfoFromPCM productInfoFromPCM) {
-        this.productInfoFromPCM = productInfoFromPCM;
+    public void setPcmProduct(PcmProduct pcmProduct) {
+        this.pcmProduct = pcmProduct;
     }
 
-    public ProductInfoFromPCM getPcmProductInfo() {
-        return productInfoFromPCM;
+    public PcmProduct getPcmProduct() {
+        return pcmProduct;
     }
 
-    public void setPuProductInfo(ProductInfoFromUnlimited productInfoFromPU) {
+    public void setPuProductInfo(PuProductInfo productInfoFromPU) {
         this.productInfoFromPU = productInfoFromPU;
     }
 
-    public ProductInfoFromUnlimited getProductInfoFromPU() {
+    public PuProductInfo getProductInfoFromPU() {
         return productInfoFromPU;
     }
 
@@ -44,8 +44,8 @@ public class AggregatedProductInfo {
 
         if (productInfoFromPU != null) {
             setCourseInfoFromPU(courses);
-        } else if (productInfoFromPCM != null) {
-            setCourseInfoFromPCM(courses, productInfoFromPCM, lessonAudioInfoFromPCM);
+        } else if (pcmProduct != null) {
+            setCourseInfoFromPCM(courses, pcmProduct, lessonAudioInfoFromPCM);
         }
 
         return courses;
@@ -125,10 +125,10 @@ public class AggregatedProductInfo {
         lesson.setAudioLink(audioUrl);
     }
 
-    private List<Course> setCourseInfoFromPCM(List<Course> courses, ProductInfoFromPCM productInfoFromPCM, Map<String, List<Lesson>> lessonAudioInfoFromPCM) {
+    private List<Course> setCourseInfoFromPCM(List<Course> courses, PcmProduct pcmProduct, Map<String, List<Lesson>> lessonAudioInfoFromPCM) {
         lessonAudioInfoFromPCM.forEach((level, lessonInfoForOneLevel) -> {
             Course course = new Course();
-            course.setLanguageName(productInfoFromPCM.getOrderProduct().getProduct().getProductsLanguageName());
+            course.setLanguageName(pcmProduct.getOrderProduct().getProduct().getProductsLanguageName());
             course.setLevel(Integer.parseInt(level));
             course.setLessons(lessonInfoForOneLevel);
 

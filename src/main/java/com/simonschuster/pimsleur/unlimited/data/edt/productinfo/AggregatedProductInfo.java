@@ -23,15 +23,15 @@ public class AggregatedProductInfo {
     private ProductInfoFromPCM productInfoFromPCM;
     private Map<String, List<Lesson>> lessonAudioInfoFromPCM;
 
-    public void setProductInfoFromPCM(ProductInfoFromPCM productInfoFromPCM) {
+    public void setPcmProductInfo(ProductInfoFromPCM productInfoFromPCM) {
         this.productInfoFromPCM = productInfoFromPCM;
     }
 
-    public ProductInfoFromPCM getProductInfoFromPCM() {
+    public ProductInfoFromPCM getPcmProductInfo() {
         return productInfoFromPCM;
     }
 
-    public void setProductInfoFromPU(ProductInfoFromUnlimited productInfoFromPU) {
+    public void setPuProductInfo(ProductInfoFromUnlimited productInfoFromPU) {
         this.productInfoFromPU = productInfoFromPU;
     }
 
@@ -138,7 +138,7 @@ public class AggregatedProductInfo {
         return courses;
     }
 
-    public void setLessonAudioInfoFromPCM(Map<String, List<Lesson>> lessonAudioInfoFromPCM) {
+    public void setPcmAudioInfo(Map<String, List<Lesson>> lessonAudioInfoFromPCM) {
         this.lessonAudioInfoFromPCM = lessonAudioInfoFromPCM;
     }
 

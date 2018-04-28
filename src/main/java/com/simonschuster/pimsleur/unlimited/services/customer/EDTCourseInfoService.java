@@ -33,62 +33,54 @@ public class EDTCourseInfoService {
     private static final Logger logger = LoggerFactory.getLogger(EDTCourseInfoService.class);
 
     public AggregatedProductInfo getCourseInfos(boolean isPUProductCode, String productCode, String auth0UserId) {
-        AggregatedProductInfo aggregatedProductInfo = new AggregatedProductInfo();
+        AggregatedProductInfo productInfo = new AggregatedProductInfo();
         //Will get only one course(one level) info for the productcode
         if (isPUProductCode) {
-            putInProductInfoFromPU(productCode, aggregatedProductInfo);
+            getPuProductInfo(productCode, productInfo);
         } else {
-            putInProductInfoFromPCM(auth0UserId, productCode, aggregatedProductInfo);
-            putInLessonsInfoFromPCM(aggregatedProductInfo);
+            getPcmProductInfo(auth0UserId, productCode, productInfo);
+            getPcmLessonsInfo(productInfo);
         }
-        return aggregatedProductInfo;
+        return productInfo;
     }
 
-    private void putInProductInfoFromPU(String productCode, AggregatedProductInfo aggregatedProductInfo) {
+    private void getPuProductInfo(String productCode, AggregatedProductInfo productInfo) {
         try {
-            ProductInfoFromUnlimited productInfoForPimsleurUnlimited = getProductInfoForPimsleurUnlimited(productCode);
-            aggregatedProductInfo.setProductInfoFromPU(productInfoForPimsleurUnlimited);
-        } catch (Exception exceptionWhenGetProductInfoFromPU) {
+            productInfo.setPuProductInfo(getProductInfoFromPu(productCode));
+        } catch (Exception exception) {
             logger.error("Exception occured when get product info with PU product code.");
-            exceptionWhenGetProductInfoFromPU.printStackTrace();
-            throw exceptionWhenGetProductInfoFromPU;
+            exception.printStackTrace();
+            throw exception;
         }
     }
 
-    private void putInProductInfoFromPCM(String auth0UserId, String productCode, AggregatedProductInfo aggregatedProductInfo) {
+    private void getPcmProductInfo(String auth0UserId, String productCode, AggregatedProductInfo productInfo) {
         try {
-            ProductInfoFromPCM productInfoForPCM = getTheProductInfoFromPCM(auth0UserId, productCode);
-            aggregatedProductInfo.setProductInfoFromPCM(productInfoForPCM);
-        } catch (Exception exceptionWhenGetProductInfoFromPCM) {
+            productInfo.setPcmProductInfo(getProductInfoFromPCM(auth0UserId, productCode));
+        } catch (Exception exception) {
             logger.error("Exception occured when get product info with PU product code.");
-            exceptionWhenGetProductInfoFromPCM.printStackTrace();
-            throw exceptionWhenGetProductInfoFromPCM;
+            exception.printStackTrace();
+            throw exception;
         }
     }
 
-    private void putInLessonsInfoFromPCM(AggregatedProductInfo aggregatedProductInfo) {
-        ProductInfoFromPCM productInfoFromPCM = aggregatedProductInfo.getProductInfoFromPCM();
-
-        PCMAudioRequestInfo pcmAudioRequestInfo = productInfoMapper.getMediaItemInfo(productInfoFromPCM);
-        Map<String, List<Lesson>> lessonsAudioInfo = getLessonsAudioInfoFromEDT(pcmAudioRequestInfo);
-
-        aggregatedProductInfo.setLessonAudioInfoFromPCM(lessonsAudioInfo);
+    private void getPcmLessonsInfo(AggregatedProductInfo productInfo) {
+        PCMAudioRequestInfo pcmAudioRequestInfo = productInfoMapper.getMediaItemInfo(productInfo.getPcmProductInfo());
+        productInfo.setPcmAudioInfo(getAudioInfo(pcmAudioRequestInfo));
     }
 
-    private Map<String, List<Lesson>> getLessonsAudioInfoFromEDT(PCMAudioRequestInfo pcmAudioRequestInfo) {
-        Map<String, Map<String, Integer>> mediaItemIds = pcmAudioRequestInfo.getMediaItemIds();
-        Map<String, List<Lesson>> pcmAudioResponseInfo = new HashMap<>();
+    private Map<String, List<Lesson>> getAudioInfo(PCMAudioRequestInfo requestInfo) {
+        Map<String, Map<String, Integer>> mediaItemIds = requestInfo.getMediaItemIds();
+        Map<String, List<Lesson>> pcmAudioRespInfo = new HashMap<>();
 
-        mediaItemIds.forEach((level, mediaItemInfos) -> {
-            List<Lesson> lessonsForThisLevel = generateLevelInfo(pcmAudioRequestInfo, mediaItemIds, level, mediaItemInfos);
+        mediaItemIds.forEach((level, mediaItemInfo) ->
+            pcmAudioRespInfo.put(level, generateLevelInfo(requestInfo, level, mediaItemInfo))
+        );
 
-            pcmAudioResponseInfo.put(level, lessonsForThisLevel);
-        });
-
-        return pcmAudioResponseInfo;
+        return pcmAudioRespInfo;
     }
 
-    private List<Lesson> generateLevelInfo(PCMAudioRequestInfo pcmAudioRequestInfo, Map<String, Map<String, Integer>> mediaItemIds, String level, Map<String, Integer> mediaItemInfos) {
+    private List<Lesson> generateLevelInfo(PCMAudioRequestInfo pcmAudioRequestInfo, String level, Map<String, Integer> mediaItemInfos) {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
 
@@ -118,17 +110,38 @@ public class EDTCourseInfoService {
         return lessonsForThisLevel;
     }
 
-    private ProductInfoFromPCM getTheProductInfoFromPCM(String sub, String productCode) {
-        ProductInfoFromPCM productInfoFromPCM = new ProductInfoFromPCM();
-        productInfoFromPCM.setOrdersProductList(new ArrayList<>());
-        CustomerInfo pcmCustInfo = getCustomerInfo(sub,
+    private ProductInfoFromPCM getProductInfoFromPCM(String sub, String productCode) {
+        ProductInfoFromPCM productInfo = new ProductInfoFromPCM();
+
+        CustomerInfo pcmCustomerInfo = getCustomerInfo(
+                sub,
                 config.getApiParameter("pcmCustomerAction"),
-                config.getApiParameter("pcmDomain"));
+                config.getApiParameter("pcmDomain")
+        );
 
-        productInfoMapper.setProductInfo(productCode, productInfoFromPCM, pcmCustInfo);
+        extractProduct(productCode, productInfo, pcmCustomerInfo);
 
-        return productInfoFromPCM;
+        return productInfo;
     }
+
+    private void extractProduct(String productCode, ProductInfoFromPCM product, CustomerInfo pcmCustomerInfo) {
+        Customer customer = pcmCustomerInfo.getResultData().getCustomer();
+
+
+        product.setCustomersId(customer.getCustomersId());
+        product.setCustomerToken(customer.getIdentityVerificationToken());
+
+        OrdersProduct ordersProduct = customer.getCustomersOrders()
+                .stream()
+                .flatMap(customersOrder -> customersOrder.getOrdersProducts().stream())
+                .filter(it -> Objects.equals(productCode, it.getProduct().getIsbn13().replace("-", "")))
+                .findFirst()
+                .get();
+
+        product.setOrderProduct(ordersProduct);
+
+    }
+
 
     private CustomerInfo getCustomerInfo(String sub, String action, String domain) {
         HttpHeaders headers = new HttpHeaders();
@@ -142,7 +155,7 @@ public class EDTCourseInfoService {
                 CustomerInfo.class);
     }
 
-    private ProductInfoFromUnlimited getProductInfoForPimsleurUnlimited(String product_code) {
+    private ProductInfoFromUnlimited getProductInfoFromPu(String product_code) {
         MappingJackson2HttpMessageConverter converter = new MappingJackson2HttpMessageConverter();
         converter.setSupportedMediaTypes(asList(TEXT_HTML, APPLICATION_JSON));
 

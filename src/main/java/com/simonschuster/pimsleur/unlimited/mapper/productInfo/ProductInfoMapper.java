@@ -1,8 +1,5 @@
 package com.simonschuster.pimsleur.unlimited.mapper.productInfo;
 
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.Customer;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.CustomerInfo;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.CustomersOrder;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.PCMAudioRequestInfo;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.ProductInfoFromPCM;
 import com.simonschuster.pimsleur.unlimited.services.customer.EDTCourseInfoService;
@@ -11,7 +8,6 @@ import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
@@ -50,23 +46,4 @@ public class ProductInfoMapper {
         return pcmAudioRequestInfo;
     }
 
-    public static ProductInfoFromPCM setProductInfo(String productCode, ProductInfoFromPCM productInfoFromPCM, CustomerInfo pcmCustInfo) {
-        Customer customer = pcmCustInfo.getResultData().getCustomer();
-        List<CustomersOrder> customersOrders = customer.getCustomersOrders();
-
-        productInfoFromPCM.setCustomersId(customer.getCustomersId());
-        productInfoFromPCM.setCustomerToken(customer.getIdentityVerificationToken());
-
-        customersOrders.forEach(customersOrder -> {
-            productInfoFromPCM.getOrdersProductList().addAll(customersOrder.getOrdersProducts());
-        });
-
-        productInfoFromPCM.getOrdersProductList().forEach(ordersProduct -> {
-            if (productCode.equals(ordersProduct.getProduct().getIsbn13().replace("-", ""))) {
-                productInfoFromPCM.setOrderProduct(ordersProduct);
-            }
-        });
-
-        return productInfoFromPCM;
-    }
 }

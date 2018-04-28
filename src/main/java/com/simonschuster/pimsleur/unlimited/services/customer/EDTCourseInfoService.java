@@ -152,14 +152,13 @@ public class EDTCourseInfoService {
                 config.getApiParameter("pcmDomain")
         );
 
-        extractProduct(productCode, productInfo, pcmCustomerInfo);
+        extractPCMProduct(productCode, productInfo, pcmCustomerInfo);
 
         return productInfo;
     }
 
-    private void extractProduct(String productCode, PcmProduct product, CustomerInfo pcmCustomerInfo) {
+    private void extractPCMProduct(String productCode, PcmProduct product, CustomerInfo pcmCustomerInfo) {
         Customer customer = pcmCustomerInfo.getResultData().getCustomer();
-
 
         product.setCustomersId(customer.getCustomersId());
         product.setCustomerToken(customer.getIdentityVerificationToken());
@@ -172,7 +171,6 @@ public class EDTCourseInfoService {
                 .get();
 
         product.setOrderProduct(ordersProduct);
-
     }
 
 

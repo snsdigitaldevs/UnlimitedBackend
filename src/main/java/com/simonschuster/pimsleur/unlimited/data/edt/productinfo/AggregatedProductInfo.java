@@ -4,6 +4,9 @@ import com.google.common.util.concurrent.UncheckedExecutionException;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Image;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Lesson;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.Customer;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.CustomerInfo;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.CustomersOrder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.StringUtils;
@@ -14,12 +17,11 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class AggregatedProductInfo {
-    private static final int LESSON_NUMBER_OF_LEVEL = 30;
     private static final String PREFIX_FOR_IMAGE_OF_PU = "https://install.pimsleurunlimited.com/staging_n/desktop/";
     private static final String PREFIX_FOR_AUDIO_OF_PU = "https://install.pimsleurunlimited.com/staging_n/common/";
     private static final Logger logger = LoggerFactory.getLogger(AggregatedProductInfo.class);
 
-    private PuProductInfo productInfoFromPU;
+    private PuProductInfo puProductInfo;
     private PcmProduct pcmProduct;
     private Map<String, List<Lesson>> lessonAudioInfoFromPCM;
 
@@ -32,28 +34,28 @@ public class AggregatedProductInfo {
     }
 
     public void setPuProductInfo(PuProductInfo productInfoFromPU) {
-        this.productInfoFromPU = productInfoFromPU;
+        this.puProductInfo = productInfoFromPU;
     }
 
-    public PuProductInfo getProductInfoFromPU() {
-        return productInfoFromPU;
+    public PuProductInfo getPuProductInfo() {
+        return puProductInfo;
     }
 
     public List<Course> toDto() {
         ArrayList<Course> courses = new ArrayList<>();
 
-        if (productInfoFromPU != null) {
-            setCourseInfoFromPU(courses);
+        if (puProductInfo != null) {
+            buildCourseInfoFromPU(courses);
         } else if (pcmProduct != null) {
-            setCourseInfoFromPCM(courses, pcmProduct, lessonAudioInfoFromPCM);
+            buildCourseInfoFromPCM(courses, pcmProduct, lessonAudioInfoFromPCM);
         }
 
         return courses;
     }
 
-    private List<Course> setCourseInfoFromPU(List<Course> courses) {
+    private List<Course> buildCourseInfoFromPU(List<Course> courses) {
         // If kitted product code is passed in, a list of courses will be returned.
-        Map<String, MediaSet> mediaSets = this.productInfoFromPU.getResultData().getMediaSets();
+        Map<String, MediaSet> mediaSets = this.puProductInfo.getResultData().getMediaSets();
         mediaSets.forEach((currentProductCode, mediaSet) -> {
             Course course = new Course();
             course.setLanguageName(mediaSet.getCourseLanguageName());
@@ -69,6 +71,27 @@ public class AggregatedProductInfo {
         });
 
         return courses;
+    }
+
+    private List<Course> buildCourseInfoFromPCM(List<Course> courses, PcmProduct productInfoFromPCM, Map<String, List<Lesson>> lessonAudioInfoFromPCM) {
+        lessonAudioInfoFromPCM.forEach((level, lessonInfoForOneLevel) -> {
+            Course course = new Course();
+            course.setLanguageName(productInfoFromPCM.getOrderProduct().getProduct().getProductsLanguageName());
+            course.setLevel(Integer.parseInt(level));
+            course.setLessons(lessonInfoForOneLevel);
+
+            courses.add(course);
+        });
+
+        return courses;
+    }
+
+    public void setProductInfoFromPCM(PcmProduct productInfoFromPCM) {
+        this.pcmProduct = productInfoFromPCM;
+    }
+
+    public PcmProduct getProductInfoFromPCM() {
+        return pcmProduct;
     }
 
     private void transformLessonInfoFromPU(Course course, MediaSet mediaSet) throws Exception {
@@ -100,7 +123,7 @@ public class AggregatedProductInfo {
         String audioUrl = "";
 
         String courseConfigKey = mediaSet.getCourseLanguageName().replace(" ", "_");
-        CourseConfig courseConfig = productInfoFromPU.getResultData().getCourseConfigs().get(courseConfigKey);
+        CourseConfig courseConfig = puProductInfo.getResultData().getCourseConfigs().get(courseConfigKey);
         List<CourseLevelDef> levelDefs = courseConfig.getCourseLevelDefs();
 
         for (int i = 0; i < levelDefs.size(); i++) {
@@ -123,19 +146,6 @@ public class AggregatedProductInfo {
 
         lesson.setImage(image);
         lesson.setAudioLink(audioUrl);
-    }
-
-    private List<Course> setCourseInfoFromPCM(List<Course> courses, PcmProduct pcmProduct, Map<String, List<Lesson>> lessonAudioInfoFromPCM) {
-        lessonAudioInfoFromPCM.forEach((level, lessonInfoForOneLevel) -> {
-            Course course = new Course();
-            course.setLanguageName(pcmProduct.getOrderProduct().getProduct().getProductsLanguageName());
-            course.setLevel(Integer.parseInt(level));
-            course.setLessons(lessonInfoForOneLevel);
-
-            courses.add(course);
-        });
-
-        return courses;
     }
 
     public void setPcmAudioInfo(Map<String, List<Lesson>> lessonAudioInfoFromPCM) {

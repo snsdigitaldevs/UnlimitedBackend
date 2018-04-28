@@ -35,11 +35,11 @@ public class EDTCourseInfoServiceTest {
 
         running(server, () -> {
             AggregatedProductInfo productInfo = edtCourseInfoService.getCourseInfos(isPUProductCode, "9781508243328", "");
-            assertThat(productInfo.getProductInfoFromPU().getResultCode(),is(1));
-            assertNotNull(productInfo.getProductInfoFromPU().getResultData().getCourseConfigs());
-            assertNotNull(productInfo.getProductInfoFromPU().getResultData().getMediaSets());
+            assertThat(productInfo.getPuProductInfo().getResultCode(),is(1));
+            assertNotNull(productInfo.getPuProductInfo().getResultData().getCourseConfigs());
+            assertNotNull(productInfo.getPuProductInfo().getResultData().getMediaSets());
 
-            CourseConfig courseConfig = productInfo.getProductInfoFromPU().getResultData().getCourseConfigs().get("Mandarin_Chinese");
+            CourseConfig courseConfig = productInfo.getPuProductInfo().getResultData().getCourseConfigs().get("Mandarin_Chinese");
             assertEquals("1.0", courseConfig.getVersion());
             assertEquals("Mandarin Chinese", courseConfig.getCourseLangName());
             assertNotNull(courseConfig.getAppDefines());
@@ -48,7 +48,7 @@ public class EDTCourseInfoServiceTest {
             assertEquals(3, courseConfig.getKittedFileLists().size());
             assertEquals(new Integer(1), courseConfig.getCourseLevelDefs().get(0).getIsDemo());
 
-            MediaSet oneMediaSet = productInfo.getProductInfoFromPU().getResultData().getMediaSets().get("9781508243328");
+            MediaSet oneMediaSet = productInfo.getPuProductInfo().getResultData().getMediaSets().get("9781508243328");
             assertEquals("9781508243328_Mandarin_1_AD.csv", oneMediaSet.getMediaItems().get(0).getFilename());
             //Test Jackson convert between String and Integer, source data has two types in different places.
             assertEquals(new Integer(1), oneMediaSet.getMediaItems().get(0).getIsActive());
@@ -71,10 +71,10 @@ public class EDTCourseInfoServiceTest {
 
         running(server, () -> {
             AggregatedProductInfo productInfo = edtCourseInfoService.getCourseInfos(isPUProductCode, "9781508260257", "");
-            assertThat(productInfo.getProductInfoFromPU().getResultCode(),is(1));
-            assertNotNull(productInfo.getProductInfoFromPU().getResultData().getCourseConfigs());
-            assertEquals(1, productInfo.getProductInfoFromPU().getResultData().getCourseConfigs().size());
-            assertEquals(2, productInfo.getProductInfoFromPU().getResultData().getMediaSets().size());
+            assertThat(productInfo.getPuProductInfo().getResultCode(),is(1));
+            assertNotNull(productInfo.getPuProductInfo().getResultData().getCourseConfigs());
+            assertEquals(1, productInfo.getPuProductInfo().getResultData().getCourseConfigs().size());
+            assertEquals(2, productInfo.getPuProductInfo().getResultData().getMediaSets().size());
 
             List<Course> courses = productInfo.toDto();
             assertEquals(2, courses.size());
@@ -96,7 +96,7 @@ public class EDTCourseInfoServiceTest {
         running(server, () -> {
             AggregatedProductInfo productInfo = edtCourseInfoService.getCourseInfos(isPUProductCode, productCode, "auth0_user_id");
 
-            assertNull(productInfo.getProductInfoFromPU());
+            assertNull(productInfo.getPuProductInfo());
             assertNotNull(productInfo.getPcmProduct());
             assertEquals(productCode, productInfo.getPcmProduct().getOrderProduct().getProduct().getIsbn13().replace("-", ""));
         });

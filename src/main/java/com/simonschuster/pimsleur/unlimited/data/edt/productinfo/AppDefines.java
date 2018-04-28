@@ -6,6 +6,17 @@ public class AppDefines {
     @JsonProperty("defaultTransliterationMode")
     private Integer defaultTransliterationMode;
 
+    @JsonProperty("russianAppDefineTest")
+    private Object russianAppDefineTest;
+
+    public Object getRussianAppDefineTest() {
+        return russianAppDefineTest;
+    }
+
+    public void setRussianAppDefineTest(Object russianAppDefineTest) {
+        this.russianAppDefineTest = russianAppDefineTest;
+    }
+
     public Integer getDefaultTransliterationMode() {
         return defaultTransliterationMode;
     }

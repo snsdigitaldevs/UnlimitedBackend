@@ -1,24 +1,12 @@
 package com.simonschuster.pimsleur.unlimited.integration;
 
-import com.simonschuster.pimsleur.unlimited.controllers.AvailablePracticesController;
-import org.junit.Ignore;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
-
 import java.util.List;
 
 import static java.util.Arrays.asList;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest
-@AutoConfigureMockMvc
-public class AllPuIsbnCsvTest {
+public class PUIsbnList {
 
-    List<String> puISBNs = asList(
+    public static List<String> puISBNs = asList(
             "9781442394872", "9781508231431", "9781442394889", "9781508260257",
             "9781442394896", "9781442394902", "9781442383265", "9781508231424",
             "9781508230823", "9781508227939", "9781508235927", "9781508235934",
@@ -39,21 +27,7 @@ public class AllPuIsbnCsvTest {
             "9781508231493", "9781508236030", "9781508236023", "9781442346345",
             "9781508231509", "9781442350380", "9781508260219", "9781442350397",
             "9781442348707", "9781442350403", "9781442348714", "9781508231516",
-            "9781508231455", "978150823094", "9781508227786");
+            "9781508231455", "9781508227786");
 
-    @Autowired
-    private AvailablePracticesController availablePracticesController;
-
-    @Test
-    @Ignore // do not run this test in ci, we only need this to run locally
-    // to see if some csv files would cause errors
-    public void shouldGetAvailablePracticesOfAllPuISBNs() throws Exception {
-        for (String puISBN : puISBNs) {
-            System.out.println(puISBNs.indexOf(puISBN) + 1);
-            System.out.println(puISBN + " will run");
-            availablePracticesController.getPuAvailablePractices(puISBN);
-            System.out.println(puISBN + " is ok");
-        }
-    }
-
+    //todo: "978150823094" can't get product info from EDT service.
 }

@@ -41,6 +41,28 @@ public class CourseLevelDef {
     @JsonIgnoreProperties
     private AppDefinesOfCourseLevelDef appDefines;
 
+    @JsonProperty
+    private Object fileList;
+
+    @JsonProperty
+    private Object hasSeperateReadingLessonIntro;
+
+    public Object getFileList() {
+        return fileList;
+    }
+
+    public void setFileList(Object fileList) {
+        this.fileList = fileList;
+    }
+
+    public Object getHasSeperateReadingLessonIntro() {
+        return hasSeperateReadingLessonIntro;
+    }
+
+    public void setHasSeperateReadingLessonIntro(Object hasSeperateReadingLessonIntro) {
+        this.hasSeperateReadingLessonIntro = hasSeperateReadingLessonIntro;
+    }
+
     public Integer getIsDemo() {
         return isDemo;
     }

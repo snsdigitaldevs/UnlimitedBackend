@@ -30,6 +30,16 @@ public class MediaSet {
 
     @JsonProperty("version")
     private String version;
+    @JsonProperty("isbn10")
+    private String isbn10;
+
+    public String getIsbn10() {
+        return isbn10;
+    }
+
+    public void setIsbn10(String isbn10) {
+        this.isbn10 = isbn10;
+    }
 
     public String getMediaSetDescription() {
         return mediaSetDescription;

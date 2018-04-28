@@ -29,7 +29,7 @@ public class PcmAvailablePracticesServiceTest {
     private PcmAvailablePracticesService pcmAvailablePracticesService;
 
     @Test
-    public void getAvailablePractices() throws Exception {
+    public void shouldGetAvailablePCMReadingsForOneTimePurchase() throws Exception {
         HttpServer server = httpServer(12306);
         server.post(and(
                 by(uri("/subscr_production_v_9/action_handlers/rsovkolfqxrjl.php")),
@@ -46,6 +46,28 @@ public class PcmAvailablePracticesServiceTest {
                         .map(PracticesInUnit::getUnitNumber)
                         .collect(toList());
                 assertThat(unitsWithReadings.size(), is(22));
+            }
+        });
+    }
+
+    @Test
+    public void shouldGetAvailablePCMReadingsForSubscription() throws Exception {
+        HttpServer server = httpServer(12306);
+        server.post(and(
+                by(uri("/subscr_production_v_9/action_handlers/rsovkolfqxrjl.php")),
+                eq(form("action"), "pcm_blmqide")))
+                .response(file("src/test/resources/pcmCustInfoWithSubscription.json"));
+
+        running(server, new Runnable() {
+            @Override
+            public void run() throws IOException {
+                AvailablePractices availablePractices = pcmAvailablePracticesService
+                        .getAvailablePractices("9781442308046", "sub of auth0");
+
+                List<Integer> unitsWithReadings = availablePractices.getPracticesInUnits().stream()
+                        .map(PracticesInUnit::getUnitNumber)
+                        .collect(toList());
+                assertThat(unitsWithReadings.size(), is(20));
             }
         });
     }

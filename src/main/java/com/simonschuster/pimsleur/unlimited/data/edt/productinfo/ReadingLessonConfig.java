@@ -17,6 +17,8 @@ public class ReadingLessonConfig {
     private String alphabetChartSize;
     @JsonProperty("alphabetChartPosition")
     private String alphabetChartPosition;
+    @JsonProperty("disableAlphabetChart")
+    private String disableAlphabetChart;
 
     public Boolean getDisplayXlitHelpFromMetadata() {
         return displayXlitHelpFromMetadata;
@@ -72,5 +74,13 @@ public class ReadingLessonConfig {
 
     public void setAlphabetChartPosition(String alphabetChartPosition) {
         this.alphabetChartPosition = alphabetChartPosition;
+    }
+
+    public String getDisableAlphabetChart() {
+        return disableAlphabetChart;
+    }
+
+    public void setDisableAlphabetChart(String disableAlphabetChart) {
+        this.disableAlphabetChart = disableAlphabetChart;
     }
 }

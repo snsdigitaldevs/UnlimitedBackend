@@ -98,7 +98,7 @@ public class EDTCourseInfoServiceTest {
 
             assertNull(productInfo.getPuProductInfo());
             assertNotNull(productInfo.getPcmProduct());
-            assertEquals(productCode, productInfo.getPcmProduct().getOrderProduct().getProduct().getIsbn13().replace("-", ""));
+            assertEquals(productCode, productInfo.getPcmProduct().getOrdersProductList().get("9781442369030").getProduct().getIsbn13().replace("-", ""));
         });
     }
 

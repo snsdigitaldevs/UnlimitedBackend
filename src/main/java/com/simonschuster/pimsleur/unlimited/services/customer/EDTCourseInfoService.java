@@ -44,7 +44,7 @@ public class EDTCourseInfoService {
             getPuProductInfo(productCode, productInfo);
         } else {
             getPcmProductInfo(auth0UserId, productCode, productInfo);
-            getPcmLessons(productInfo);
+            getPcmLessons(productInfo, productCode);
         }
 
         return productInfo;
@@ -60,9 +60,9 @@ public class EDTCourseInfoService {
         }
     }
 
-    private void getPcmProductInfo(String auth0UserId, String productCode, AggregatedProductInfo productInfo) {
+    private void getPcmProductInfo(String auth0UserId, String productCode, AggregatedProductInfo aggregatedProductInfo) {
         try {
-            productInfo.setPcmProduct(getProductInfoFromPCM(auth0UserId, productCode));
+            aggregatedProductInfo.setPcmProduct(getProductInfoFromPCM(auth0UserId, productCode));
         } catch (Exception exception) {
             logger.error("Exception occured when get product info with PU product code.");
             exception.printStackTrace();
@@ -70,26 +70,65 @@ public class EDTCourseInfoService {
         }
     }
 
-    private void getPcmLessons(AggregatedProductInfo productInfo) {
-        PcmAudioReqParams audioRequestInfo = buildRequestParams(productInfo.getPcmProduct());
+    private void getPcmLessons(AggregatedProductInfo productInfo, String productCode) {
+        PcmAudioReqParams audioRequestInfo = buildRequestParams(productInfo.getPcmProduct(), productCode);
         productInfo.setPcmAudioInfo(getAudioInfo(audioRequestInfo));
     }
 
-    private PcmAudioReqParams buildRequestParams(PcmProduct pmcProduct) {
+    private PcmAudioReqParams buildRequestParams(PcmProduct pcmProduct, String productCode) {
         Map<String, String> entitlementTokens = new HashMap<>();
-        Map<String, Map<String, Integer>> mediaItemIds = getMediaItemIds(pmcProduct, entitlementTokens);
+        Map<String, Map<String, Integer>> mediaItemIds = getMediaItemIds(pcmProduct, entitlementTokens, productCode);
 
         PcmAudioReqParams pcmAudioReqParams = new PcmAudioReqParams();
         pcmAudioReqParams.setMediaItemIds(mediaItemIds);
         pcmAudioReqParams.setEntitlementTokens(entitlementTokens);
-        pcmAudioReqParams.setCustomersId(pmcProduct.getCustomersId());
-        pcmAudioReqParams.setCustomerToken(pmcProduct.getCustomerToken());
+        pcmAudioReqParams.setCustomersId(pcmProduct.getCustomersId());
+        pcmAudioReqParams.setCustomerToken(pcmProduct.getCustomerToken());
 
         return pcmAudioReqParams;
     }
 
-    private Map<String, Map<String, Integer>> getMediaItemIds(PcmProduct pcmProduct, Map<String, String> entitlementTokens) {
-        return pcmProduct.getOrderProduct().getOrdersProductsAttributes()
+    private Map<String, Map<String, Integer>> getMediaItemIds(PcmProduct pcmProduct, Map<String, String> entitlementTokens, String productCode) {
+        Map<String, OrdersProduct> ordersProductList = pcmProduct.getOrdersProductList();
+
+        if (ordersProductList.containsKey(productCode)) {
+            Map filteredOrdersProductList = new HashMap<>();
+            filteredOrdersProductList.put(productCode, ordersProductList.get(productCode));
+            pcmProduct.setOrdersProductList(filteredOrdersProductList);
+
+            return handleOrderProductCode(entitlementTokens, productCode, ordersProductList);
+        } else if (findMatchedProductInfo(pcmProduct, productCode) != null) {
+            return handleLevelProductCode(entitlementTokens, productCode, pcmProduct);
+        } else {
+            String errorMessage = "No product info found from PCM with matched product code";
+            logger.error(errorMessage);
+            return new HashMap<>();
+        }
+    }
+
+    private Map<String, Map<String, Integer>> handleLevelProductCode(Map<String, String> entitlementTokens, String productCode, PcmProduct pcmProduct) {
+        OrdersProductAttribute attribute = findMatchedProductInfo(pcmProduct, productCode);
+        String level = attribute.getProductsOptions().split(" ")[1];
+        Map<String, Integer> itemIds = new HashMap<>();
+
+        attribute.getOrdersProductsDownloads()
+                .stream()
+                .peek(download -> entitlementTokens.put(level, download.getEntitlementToken()))
+                .flatMap(downloadInfo -> downloadInfo.getMediaSet().getChildMediaSets().stream())
+                .filter(mediaSet -> mediaSet.getMediaSetTitle().contains("Units"))
+                .flatMap(childMediaSet -> childMediaSet.getMediaItems().stream())
+                .filter(item -> item.getMediaItemTypeId() == EDTCourseInfoService.MP3_MEDIA_TYPE)
+                .forEach(item -> itemIds.put(item.getMediaItemTitle(), item.getMediaItemId()));
+
+        HashMap<String, Map<String, Integer>> oneLevelItemIds = new HashMap<>();
+        oneLevelItemIds.put(level, itemIds);
+        return oneLevelItemIds;
+    }
+
+    private Map<String, Map<String, Integer>> handleOrderProductCode(Map<String, String> entitlementTokens, String productCode, Map<String, OrdersProduct> ordersProductList) {
+        OrdersProduct orderProduct = ordersProductList.get(productCode);
+
+        return orderProduct.getOrdersProductsAttributes()
                 .stream()
                 .filter(attribute -> attribute.getProductsOptions().contains("Download"))
                 .map(attribute -> {
@@ -107,6 +146,39 @@ public class EDTCourseInfoService {
                     return new ImmutablePair<>(level, itemIds);
                 })
                 .collect(Collectors.toMap(Pair::getKey, Pair::getValue));
+    }
+
+    private OrdersProductAttribute findMatchedProductInfo(PcmProduct pcmProduct, String productCode) {
+        final List<OrdersProductAttribute> matchedProductAttribute = new ArrayList<OrdersProductAttribute>();
+        Map<String, OrdersProduct> ordersProductList = pcmProduct.getOrdersProductList();
+        Map<String, OrdersProduct> filteredOrdersProductList = new HashMap<>();
+
+        ordersProductList.forEach((orderProductCode, ordersProduct) -> {
+            List<OrdersProductAttribute> matchedAttributes = ordersProduct.getOrdersProductsAttributes().stream()
+                    .filter(attribute -> attribute.getProductsOptions().contains("Download"))
+                    .filter(attribute -> attribute
+                            .getOrdersProductsDownloads().stream()
+                            .anyMatch(download -> download.getMediaSet().getProduct().getIsbn13().replace("-", "").equals(productCode)))
+                    .collect(Collectors.toList());
+
+            if (matchedAttributes.size() != 0) {
+                matchedProductAttribute.add(matchedAttributes.get(0));
+                filteredOrdersProductList.put(orderProductCode, ordersProduct);
+            }
+        });
+
+        pcmProduct.setOrdersProductList(filteredOrdersProductList);
+        return matchedProductAttribute.size() != 0 ? matchedProductAttribute.get(0) : null;
+    }
+
+    private boolean isProductCodeForOneLevel(Map<String, OrdersProduct> ordersProductList, String productCode) {
+        ordersProductList.forEach((orderProductCode, ordersProduct) -> {
+            ordersProduct.getOrdersProductsAttributes().stream()
+                    .filter(attribute -> attribute.getProductsOptions().contains("Download"))
+                    .map(attribute -> attribute.getOrdersProductsDownloads().stream()
+                            .anyMatch(download -> download.getMediaSet().getProduct().getIsbn13().replace("-", "").equals(productCode)));
+        });
+        return false;
     }
 
     private Map<String, List<Lesson>> getAudioInfo(PcmAudioReqParams params) {
@@ -153,7 +225,7 @@ public class EDTCourseInfoService {
     }
 
     private PcmProduct getProductInfoFromPCM(String sub, String productCode) {
-        PcmProduct productInfo = new PcmProduct();
+        PcmProduct pcmProduct = new PcmProduct();
 
         CustomerInfo pcmCustomerInfo = getCustomerInfo(
                 sub,
@@ -161,25 +233,28 @@ public class EDTCourseInfoService {
                 config.getApiParameter("pcmDomain")
         );
 
-        extractPCMProduct(productCode, productInfo, pcmCustomerInfo);
+        extractPCMProduct(productCode, pcmProduct, pcmCustomerInfo);
 
-        return productInfo;
+        return pcmProduct;
     }
 
-    private void extractPCMProduct(String productCode, PcmProduct product, CustomerInfo pcmCustomerInfo) {
+    private void extractPCMProduct(String productCode, PcmProduct pcmProduct, CustomerInfo pcmCustomerInfo) {
         Customer customer = pcmCustomerInfo.getResultData().getCustomer();
 
-        product.setCustomersId(customer.getCustomersId());
-        product.setCustomerToken(customer.getIdentityVerificationToken());
+        pcmProduct.setCustomersId(customer.getCustomersId());
+        pcmProduct.setCustomerToken(customer.getIdentityVerificationToken());
 
-        OrdersProduct ordersProduct = customer.getCustomersOrders()
+
+        Map<String, OrdersProduct> ordersProductList = new HashMap();
+        customer.getCustomersOrders()
                 .stream()
                 .flatMap(customersOrder -> customersOrder.getOrdersProducts().stream())
-                .filter(it -> Objects.equals(productCode, it.getProduct().getIsbn13().replace("-", "")))
-                .findFirst()
-                .get();
+                .forEach(ordersProduct -> {
+                    ordersProductList.put(ordersProduct.getProduct().getIsbn13().replace("-", ""), ordersProduct);
+                });
 
-        product.setOrderProduct(ordersProduct);
+//        pcmProduct.setOrderProduct(ordersProduct);
+        pcmProduct.setOrdersProductList(ordersProductList);
     }
 
 

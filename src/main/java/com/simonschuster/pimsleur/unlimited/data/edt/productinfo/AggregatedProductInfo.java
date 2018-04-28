@@ -7,6 +7,7 @@ import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Lesson;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.Customer;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.CustomerInfo;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.CustomersOrder;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.OrdersProduct;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.StringUtils;
@@ -74,13 +75,16 @@ public class AggregatedProductInfo {
     }
 
     private List<Course> buildCourseInfoFromPCM(List<Course> courses, PcmProduct productInfoFromPCM, Map<String, List<Lesson>> lessonAudioInfoFromPCM) {
-        lessonAudioInfoFromPCM.forEach((level, lessonInfoForOneLevel) -> {
-            Course course = new Course();
-            course.setLanguageName(productInfoFromPCM.getOrderProduct().getProduct().getProductsLanguageName());
-            course.setLevel(Integer.parseInt(level));
-            course.setLessons(lessonInfoForOneLevel);
 
-            courses.add(course);
+        productInfoFromPCM.getOrdersProductList().forEach((orderProductCode, orderProductInfo) -> {
+            lessonAudioInfoFromPCM.forEach((level, lessonInfoForOneLevel) -> {
+                Course course = new Course();
+                course.setLanguageName(orderProductInfo.getProduct().getProductsLanguageName());
+                course.setLevel(Integer.parseInt(level));
+                course.setLessons(lessonInfoForOneLevel);
+
+                courses.add(course);
+            });
         });
 
         return courses;

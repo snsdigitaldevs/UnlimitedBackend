@@ -89,8 +89,7 @@
         "authProvidersCustId": 156471,
         "authType": 8
       }],
-      "customersOrders": [
-        {
+      "customersOrders": [{
         "ordersId": "15647111",
         "customersId": 156471,
         "datePurchased": 1524710560000,
@@ -108,8 +107,7 @@
           "productsQuantity": 0,
           "altProductSku": "978-1-4423-1022-3",
           "productsOtherDiscount": 0,
-          "ordersProductsAttributes": [
-            {
+          "ordersProductsAttributes": [{
             "ordersProductsAttributesId": "1564711111",
             "ordersProductsId": "156471111",
             "ordersId": "15647111",
@@ -1342,8 +1340,7 @@
             "productsOptions": "PRODUCT_TYPE",
             "productsOptionsValues": "DOWNLOAD_PURCHASE",
             "ordersProductsDownloads": []
-          }
-          ],
+          }],
           "product": {
             "productsId": 4768,
             "productsModel": "DL 1-4423-1022-7",

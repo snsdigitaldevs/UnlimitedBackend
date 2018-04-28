@@ -30,9 +30,9 @@ public class ResultData {
                 courseConfig = mapper.readValue(value, new TypeReference<CourseConfig>() {
                 });
             } catch (IOException e) {
-                logger.error("Exception when deserialize product info(courseconfig) from EDT");
+                logger.error("Exception when deserialize product info(courseconfig) from EDT, message Detail:" + e.getMessage());
                 e.printStackTrace();
-                throw new UncheckedIOException(e);
+                throw new UncheckedIOException(e.getMessage(), e);
             }
             formattedCourseConfigs.put(key, courseConfig);
         });

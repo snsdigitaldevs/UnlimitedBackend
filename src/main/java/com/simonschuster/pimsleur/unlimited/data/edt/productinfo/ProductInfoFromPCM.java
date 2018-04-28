@@ -7,6 +7,9 @@ import java.util.List;
 public class ProductInfoFromPCM {
     private List<OrdersProduct> ordersProductList;
     private OrdersProduct orderProduct;
+    private Integer customersId;
+
+    private String customerToken;
 
     public List<OrdersProduct> getOrdersProductList() {
         return ordersProductList;
@@ -22,5 +25,21 @@ public class ProductInfoFromPCM {
 
     public OrdersProduct getOrderProduct() {
         return orderProduct;
+    }
+
+    public void setCustomersId(Integer customersId) {
+        this.customersId = customersId;
+    }
+
+    public Integer getCustomersId() {
+        return customersId;
+    }
+
+    public void setCustomerToken(String identityVerificationToken) {
+        customerToken = identityVerificationToken;
+    }
+
+    public String getCustomerToken() {
+        return customerToken;
     }
 }

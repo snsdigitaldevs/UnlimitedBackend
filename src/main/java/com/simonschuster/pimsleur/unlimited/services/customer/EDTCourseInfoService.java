@@ -1,11 +1,9 @@
 package com.simonschuster.pimsleur.unlimited.services.customer;
 
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
+import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Lesson;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.*;
-import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.AggregatedProductInfo;
-import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.LessonsAudioInfo;
-import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.ProductInfoFromPCM;
-import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.ProductInfoFromUnlimited;
+import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.*;
 import com.simonschuster.pimsleur.unlimited.mapper.productInfo.ProductInfoMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -71,17 +69,53 @@ public class EDTCourseInfoService {
     private void putInLessonsInfoFromPCM(AggregatedProductInfo aggregatedProductInfo) {
         ProductInfoFromPCM productInfoFromPCM = aggregatedProductInfo.getProductInfoFromPCM();
 
-        Map<String, List<Integer>> mediaItemInfo = productInfoMapper.getMediaItemInfo(productInfoFromPCM);
-        //todo: get lesson (mp3) info from rdlss API
-        LessonsAudioInfo lessonsAudioInfo = getLessonsAudioInfoFromEDT(mediaItemInfo);
+        PCMAudioRequestInfo pcmAudioRequestInfo = productInfoMapper.getMediaItemInfo(productInfoFromPCM);
+        Map<String, List<Lesson>> lessonsAudioInfo = getLessonsAudioInfoFromEDT(pcmAudioRequestInfo);
 
-        //mediasetinfo might not need to put in aggregatedProductInfo if lessonsAudioInfo contains level and mediasetid info.
-        aggregatedProductInfo.setMediaSetInfo(mediaItemInfo);
         aggregatedProductInfo.setLessonAudioInfoFromPCM(lessonsAudioInfo);
     }
 
-    private LessonsAudioInfo getLessonsAudioInfoFromEDT(Map<String, List<Integer>> mediaItemInfo) {
-        return null;
+    private Map<String, List<Lesson>> getLessonsAudioInfoFromEDT(PCMAudioRequestInfo pcmAudioRequestInfo) {
+        Map<String, Map<String, Integer>> mediaItemIds = pcmAudioRequestInfo.getMediaItemIds();
+        Map<String, List<Lesson>> pcmAudioResponseInfo = new HashMap<>();
+
+        mediaItemIds.forEach((level, mediaItemInfos) -> {
+            List<Lesson> lessonsForThisLevel = generateLevelInfo(pcmAudioRequestInfo, mediaItemIds, level, mediaItemInfos);
+
+            pcmAudioResponseInfo.put(level, lessonsForThisLevel);
+        });
+
+        return pcmAudioResponseInfo;
+    }
+
+    private List<Lesson> generateLevelInfo(PCMAudioRequestInfo pcmAudioRequestInfo, Map<String, Map<String, Integer>> mediaItemIds, String level, Map<String, Integer> mediaItemInfos) {
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
+
+        List<Lesson> lessonsForThisLevel = new ArrayList<>();
+        mediaItemInfos.forEach((lessonTitle, mediaItemId) -> {
+            Lesson lesson = new Lesson();
+            AudioInfoFromPCM audioInfoFromPCM = null;
+            audioInfoFromPCM = postToEdt(
+                    new HttpEntity<>(
+                            String.format(config.getApiParameter("pCMMp3Parameters"),
+                                    mediaItemId,
+                                    pcmAudioRequestInfo.getCustomerToken(),
+                                    pcmAudioRequestInfo.getEntitlementTokens().get(level),
+                                    pcmAudioRequestInfo.getCustomersId()),
+                            headers),
+                    config.getProperty("edt.api.pCMMp3ApiUrl"),
+                    AudioInfoFromPCM.class);
+
+            //todo: get audio link from pcm, request not working
+            lesson.setAudioLink(audioInfoFromPCM.getResult_data().getUrl());
+            lesson.setName(lessonTitle);
+            lesson.setLevel(Integer.parseInt(level));
+            lesson.setMediaItemId(mediaItemId);
+            lesson.setLessonNumber(lessonTitle.replace("Unit ", ""));
+            lessonsForThisLevel.add(lesson);
+        });
+        return lessonsForThisLevel;
     }
 
     private ProductInfoFromPCM getTheProductInfoFromPCM(String sub, String productCode) {
@@ -97,19 +131,15 @@ public class EDTCourseInfoService {
     }
 
     private CustomerInfo getCustomerInfo(String sub, String action, String domain) {
-        return postToEdt(
-                createPostBody(sub, action, domain),
-                config.getProperty("edt.api.customerInfoApiUrl"),
-                CustomerInfo.class);
-    }
-
-    private HttpEntity<String> createPostBody(String sub, String action, String domain) {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
 
-        return new HttpEntity<>(
-                String.format(config.getApiParameter("customerInfoDefaultParameters"), sub, action, domain),
-                headers);
+        return postToEdt(
+                new HttpEntity<>(
+                        String.format(config.getApiParameter("customerInfoDefaultParameters"), sub, action, domain),
+                        headers),
+                config.getProperty("edt.api.customerInfoApiUrl"),
+                CustomerInfo.class);
     }
 
     private ProductInfoFromUnlimited getProductInfoForPimsleurUnlimited(String product_code) {

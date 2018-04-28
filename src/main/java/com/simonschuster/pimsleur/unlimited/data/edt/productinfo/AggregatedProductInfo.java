@@ -21,8 +21,7 @@ public class AggregatedProductInfo {
 
     private ProductInfoFromUnlimited productInfoFromPU;
     private ProductInfoFromPCM productInfoFromPCM;
-    private Map<String, List<Integer>> mediaSetInfo;
-    private LessonsAudioInfo lessonAudioInfoFromPCM;
+    private Map<String, List<Lesson>> lessonAudioInfoFromPCM;
 
     public void setProductInfoFromPCM(ProductInfoFromPCM productInfoFromPCM) {
         this.productInfoFromPCM = productInfoFromPCM;
@@ -44,22 +43,19 @@ public class AggregatedProductInfo {
         ArrayList<Course> courses = new ArrayList<>();
 
         if (productInfoFromPU != null) {
-            setCourseInfoFromPU(courses, productInfoFromPU);
+            setCourseInfoFromPU(courses);
         } else if (productInfoFromPCM != null) {
-            setCourseInfoFromPCM(courses, productInfoFromPCM, mediaSetInfo);
+            setCourseInfoFromPCM(courses, productInfoFromPCM, lessonAudioInfoFromPCM);
         }
 
         return courses;
     }
 
-    private List<Course> setCourseInfoFromPU(List<Course> courses, ProductInfoFromUnlimited productInfoFromPU) {
-        //Assumption: product code from frontend doesn't have kitted product code according to spike.
-        //Spike scenario is: one user bought Mandarin level 1-5, the current product code got from customer info
-        //API is a product code for one level instead of product code for level 1-5.
-
-        Course course = new Course();
+    private List<Course> setCourseInfoFromPU(List<Course> courses) {
+        // If kitted product code is passed in, a list of courses will be returned.
         Map<String, MediaSet> mediaSets = this.productInfoFromPU.getResultData().getMediaSets();
         mediaSets.forEach((currentProductCode, mediaSet) -> {
+            Course course = new Course();
             course.setLanguageName(mediaSet.getCourseLanguageName());
             course.setLevel(mediaSet.getCourseLevel());
             try {
@@ -69,9 +65,8 @@ public class AggregatedProductInfo {
                 e.printStackTrace();
                 throw new UncheckedExecutionException(e);
             }
+            courses.add(course);
         });
-
-        courses.add(course);
 
         return courses;
     }
@@ -91,6 +86,7 @@ public class AggregatedProductInfo {
             lesson.setLessonNumber(lessonItem.getUnit());
             lesson.setName(lessonItem.getTitle());
             lesson.setImageDescription(lessonItem.getImageDescription());
+            lesson.setMediaItemId(lessonItem.getMediaItemId());
             getImageAndAudioFromPU(lesson, lessonItem, mediaSet);
 
             lessons.add(lesson);
@@ -112,12 +108,15 @@ public class AggregatedProductInfo {
             if (courseLevelDef.getIsbn13().equals(mediaSet.getIsbn13())) {
                 String pathMiddlePart = mediaSet.getCourseLanguageName().replace(" ", "").toLowerCase();
 
-                String imageUrl = PREFIX_FOR_IMAGE_OF_PU + pathMiddlePart + "/"
+                String fullImageAddress = PREFIX_FOR_IMAGE_OF_PU + pathMiddlePart + "/"
                         + courseLevelDef.getMainLessonsFullImagePath() + lessonItem.getImageURL();
+                String thumbImageAddress = PREFIX_FOR_IMAGE_OF_PU + pathMiddlePart + "/"
+                        + courseLevelDef.getMainLessonsThumbImagePath() + lessonItem.getImageURL();
                 audioUrl = PREFIX_FOR_AUDIO_OF_PU + pathMiddlePart + "/"
                         + courseLevelDef.getAudioPath() + lessonItem.getFilename();
 
-                image.setFullImageAddress(imageUrl);
+                image.setFullImageAddress(fullImageAddress);
+                image.setThumbImageAddress(thumbImageAddress);
                 break;
             }
         }
@@ -126,28 +125,24 @@ public class AggregatedProductInfo {
         lesson.setAudioLink(audioUrl);
     }
 
-    private List<Course> setCourseInfoFromPCM(List<Course> courses, ProductInfoFromPCM productInfoFromPCM, Map<String, List<Integer>> mediaSetInfo) {
-        Course course = new Course();
-        course.setLanguageName(productInfoFromPCM.getOrderProduct().getProduct().getProductsLanguageName());
-        //todo: set level and lesson info from mediasetinfo and productInfoFromPCM
+    private List<Course> setCourseInfoFromPCM(List<Course> courses, ProductInfoFromPCM productInfoFromPCM, Map<String, List<Lesson>> lessonAudioInfoFromPCM) {
+        lessonAudioInfoFromPCM.forEach((level, lessonInfoForOneLevel) -> {
+            Course course = new Course();
+            course.setLanguageName(productInfoFromPCM.getOrderProduct().getProduct().getProductsLanguageName());
+            course.setLevel(Integer.parseInt(level));
+            course.setLessons(lessonInfoForOneLevel);
 
-        courses.add(course);
+            courses.add(course);
+        });
+
         return courses;
     }
 
-    public void setMediaSetInfo(Map<String, List<Integer>> mediaSetInfo) {
-        this.mediaSetInfo = mediaSetInfo;
-    }
-
-    public Map<String, List<Integer>> getMediaSetInfo() {
-        return mediaSetInfo;
-    }
-
-    public void setLessonAudioInfoFromPCM(LessonsAudioInfo lessonAudioInfoFromPCM) {
+    public void setLessonAudioInfoFromPCM(Map<String, List<Lesson>> lessonAudioInfoFromPCM) {
         this.lessonAudioInfoFromPCM = lessonAudioInfoFromPCM;
     }
 
-    public LessonsAudioInfo getLessonAudioInfoFromPCM() {
+    public Map getLessonAudioInfoFromPCM() {
         return lessonAudioInfoFromPCM;
     }
 }

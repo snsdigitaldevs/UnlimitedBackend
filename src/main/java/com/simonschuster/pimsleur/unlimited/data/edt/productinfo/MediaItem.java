@@ -101,9 +101,14 @@ public class MediaItem {
     @JsonIgnoreProperties
     private String unit;
 
+    @JsonProperty("mediaItemRefId")
+    @JsonIgnoreProperties
+    private String mediaItemRefId;
+
     public String getMediaItemLicenseFileName() {
         return mediaItemLicenseFileName;
     }
+
 
     public void setMediaItemLicenseFileName(String mediaItemLicenseFileName) {
         this.mediaItemLicenseFileName = mediaItemLicenseFileName;
@@ -299,5 +304,13 @@ public class MediaItem {
 
     public void setUnit(String unit) {
         this.unit = unit;
+    }
+
+    public String getMediaItemRefId() {
+        return mediaItemRefId;
+    }
+
+    public void setMediaItemRefId(String mediaItemRefId) {
+        this.mediaItemRefId = mediaItemRefId;
     }
 }

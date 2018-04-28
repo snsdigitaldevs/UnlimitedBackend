@@ -28,6 +28,9 @@ public class MediaSet {
     @JsonProperty("mediaItems")
     private List<MediaItem> mediaItems;
 
+    @JsonProperty("version")
+    private String version;
+
     public String getMediaSetDescription() {
         return mediaSetDescription;
     }
@@ -114,5 +117,13 @@ public class MediaSet {
 
     public void setMediaItems(List<MediaItem> mediaItems) {
         this.mediaItems = mediaItems;
+    }
+
+    public String getVersion() {
+        return version;
+    }
+
+    public void setVersion(String version) {
+        this.version = version;
     }
 }

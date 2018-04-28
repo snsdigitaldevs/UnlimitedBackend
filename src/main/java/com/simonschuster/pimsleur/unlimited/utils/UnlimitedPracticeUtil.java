@@ -71,7 +71,6 @@ public class UnlimitedPracticeUtil {
         if (url == null || url.isEmpty()) {
             return units;
         }
-//        System.out.println(url);
         RestTemplate restTemplate = new RestTemplate();
         String csvString = replaceDuplicateHeaders(restTemplate.getForObject(url, String.class));
 

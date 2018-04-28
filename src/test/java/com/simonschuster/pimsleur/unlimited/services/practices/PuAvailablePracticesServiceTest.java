@@ -42,8 +42,6 @@ public class PuAvailablePracticesServiceTest {
                 assertThat(practiceCsvLocations.getQuickMatchUrl(), is("https://install.pimsleurunlimited.com/staging_n/mobile/mandarinchinese/Mandarin Chinese I/metadata/timecode/9781442394872_Mandarin_1_QZ.csv"));
                 assertThat(practiceCsvLocations.getReadingUrl(), is("https://install.pimsleurunlimited.com/staging_n/mobile/mandarinchinese/Mandarin Chinese I/metadata/timecode/9781442394872_Mandarin_1_RL.csv"));
                 assertThat(practiceCsvLocations.getSpeakEasyUrl(), is("https://install.pimsleurunlimited.com/staging_n/mobile/mandarinchinese/Mandarin Chinese I/metadata/timecode/9781442394872_Mandarin_1_VC.csv"));
-                AvailablePractices availablePractices = UnlimitedPracticeUtil.getAvailablePractices(practiceCsvLocations);
-                assertThat(availablePractices.getPracticesInUnits().size(), is(30));
             }
         });
     }

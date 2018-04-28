@@ -1,5 +1,6 @@
-package com.simonschuster.pimsleur.unlimited.controllers;
+package com.simonschuster.pimsleur.unlimited.integration;
 
+import com.simonschuster.pimsleur.unlimited.controllers.AvailablePracticesController;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -30,6 +30,8 @@ import static org.springframework.http.MediaType.TEXT_HTML;
 @Service
 public class EDTCourseInfoService {
     public static final int MP3_MEDIA_TYPE = 1;
+    public static final String UNITS = "Units";
+    public static final String LESSONS = "Lessons";
     @Autowired
     private ApplicationConfiguration config;
 
@@ -113,7 +115,7 @@ public class EDTCourseInfoService {
                 .stream()
                 .peek(download -> entitlementTokens.put(level, download.getEntitlementToken()))
                 .flatMap(downloadInfo -> downloadInfo.getMediaSet().getChildMediaSets().stream())
-                .filter(mediaSet -> mediaSet.getMediaSetTitle().contains("Units"))
+                .filter(mediaSet -> mediaSet.getMediaSetTitle().contains(UNITS) || mediaSet.getMediaSetTitle().contains(LESSONS))
                 .flatMap(childMediaSet -> childMediaSet.getMediaItems().stream())
                 .filter(item -> item.getMediaItemTypeId() == EDTCourseInfoService.MP3_MEDIA_TYPE)
                 .forEach(item -> itemIds.put(item.getMediaItemTitle(), item.getMediaItemId()));
@@ -169,16 +171,6 @@ public class EDTCourseInfoService {
         return matchedProductAttribute.size() != 0 ? matchedProductAttribute.get(0) : null;
     }
 
-    private boolean isProductCodeForOneLevel(Map<String, OrdersProduct> ordersProductList, String productCode) {
-        ordersProductList.forEach((orderProductCode, ordersProduct) -> {
-            ordersProduct.getOrdersProductsAttributes().stream()
-                    .filter(attribute -> attribute.getProductsOptions().contains("Download"))
-                    .map(attribute -> attribute.getOrdersProductsDownloads().stream()
-                            .anyMatch(download -> download.getMediaSet().getProduct().getIsbn13().replace("-", "").equals(productCode)));
-        });
-        return false;
-    }
-
     private Map<String, List<Lesson>> getAudioInfo(PcmAudioReqParams params) {
         Map<String, List<Lesson>> pcmAudioRespInfo = new HashMap<>();
 
@@ -214,7 +206,7 @@ public class EDTCourseInfoService {
             lesson.setName(title);
             lesson.setLevel(Integer.parseInt(level));
             lesson.setMediaItemId(itemId);
-            lesson.setLessonNumber(title.replace("Unit ", ""));
+            lesson.setLessonNumber(title.replace("Unit ", "").replace("Lesson ", ""));
             return lesson;
         }).collect(Collectors.toList());
 

@@ -94,7 +94,7 @@ public class EDTCourseInfoService {
             filteredOrdersProductList.put(productCode, ordersProductList.get(productCode));
             pcmProduct.setOrdersProductList(filteredOrdersProductList);
 
-            return handleOrderProductCode(entitlementTokens, productCode, ordersProductList);
+            return handleOrderProductCode(entitlementTokens, productCode, filteredOrdersProductList);
         } else if (findMatchedProductInfo(pcmProduct, productCode) != null) {
             return handleLevelProductCode(entitlementTokens, productCode, pcmProduct);
         } else {
@@ -136,7 +136,7 @@ public class EDTCourseInfoService {
                             .stream()
                             .peek(download -> entitlementTokens.put(level, download.getEntitlementToken()))
                             .flatMap(downloadInfo -> downloadInfo.getMediaSet().getChildMediaSets().stream())
-                            .filter(mediaSet -> mediaSet.getMediaSetTitle().contains("Units"))
+                            .filter(mediaSet -> mediaSet.getMediaSetTitle().contains("Units") || mediaSet.getMediaSetTitle().contains("Lessons"))
                             .flatMap(childMediaSet -> childMediaSet.getMediaItems().stream())
                             .filter(item -> item.getMediaItemTypeId() == EDTCourseInfoService.MP3_MEDIA_TYPE)
                             .forEach(item -> itemIds.put(item.getMediaItemTitle(), item.getMediaItemId()));

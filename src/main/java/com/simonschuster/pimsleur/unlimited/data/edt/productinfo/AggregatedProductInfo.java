@@ -4,10 +4,6 @@ import com.google.common.util.concurrent.UncheckedExecutionException;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Image;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Lesson;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.Customer;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.CustomerInfo;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.CustomersOrder;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.OrdersProduct;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.StringUtils;
@@ -90,14 +86,6 @@ public class AggregatedProductInfo {
         return courses;
     }
 
-    public void setProductInfoFromPCM(PcmProduct productInfoFromPCM) {
-        this.pcmProduct = productInfoFromPCM;
-    }
-
-    public PcmProduct getProductInfoFromPCM() {
-        return pcmProduct;
-    }
-
     private void transformLessonInfoFromPU(Course course, MediaSet mediaSet) throws Exception {
         List<Lesson> lessons = new ArrayList<>();
 
@@ -154,9 +142,5 @@ public class AggregatedProductInfo {
 
     public void setPcmAudioInfo(Map<String, List<Lesson>> lessonAudioInfoFromPCM) {
         this.lessonAudioInfoFromPCM = lessonAudioInfoFromPCM;
-    }
-
-    public Map getLessonAudioInfoFromPCM() {
-        return lessonAudioInfoFromPCM;
     }
 }

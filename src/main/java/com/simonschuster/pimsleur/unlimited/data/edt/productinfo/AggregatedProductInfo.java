@@ -4,6 +4,7 @@ import com.google.common.util.concurrent.UncheckedExecutionException;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Image;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Lesson;
+import com.simonschuster.pimsleur.unlimited.utils.UrlUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.StringUtils;
@@ -130,14 +131,14 @@ public class AggregatedProductInfo {
                 audioUrl = PREFIX_FOR_AUDIO_OF_PU + pathMiddlePart + "/"
                         + courseLevelDef.getAudioPath() + lessonItem.getFilename();
 
-                image.setFullImageAddress(fullImageAddress);
-                image.setThumbImageAddress(thumbImageAddress);
+                image.setFullImageAddress(UrlUtil.encodeUrl(PREFIX_FOR_IMAGE_OF_PU,fullImageAddress));
+                image.setThumbImageAddress(UrlUtil.encodeUrl(PREFIX_FOR_IMAGE_OF_PU, thumbImageAddress));
                 break;
             }
         }
 
         lesson.setImage(image);
-        lesson.setAudioLink(audioUrl);
+        lesson.setAudioLink(UrlUtil.encodeUrl(PREFIX_FOR_AUDIO_OF_PU, audioUrl));
     }
 
     public void setPcmAudioInfo(Map<String, List<Lesson>> lessonAudioInfoFromPCM) {

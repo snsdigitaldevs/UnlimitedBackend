@@ -58,7 +58,7 @@ public class UnlimitedProgressConverter {
                 case LAST_PLAYED_DATE:
                     Long value = (Long) progress.getValue();
                     Long currentLastPlayedDate = currentLastPlayedDateMap.get(subUserID);
-                    if (currentLastPlayedDate == null || value < currentLastPlayedDate) {
+                    if (currentLastPlayedDate == null || value > currentLastPlayedDate) {
                         currentLastPlayedDateMap.put(subUserID, value);
                     }
                     progressDTO.setLastPlayedDate(value);

@@ -4,6 +4,7 @@ import com.google.common.util.concurrent.UncheckedExecutionException;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Image;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Lesson;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.Product;
 import com.simonschuster.pimsleur.unlimited.utils.UrlUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -58,7 +59,14 @@ public class AggregatedProductInfo {
             Course course = new Course();
             course.setLanguageName(mediaSet.getCourseLanguageName());
             course.setLevel(mediaSet.getCourseLevel());
+            course.setProductCode(currentProductCode);
             try {
+                course.setCourseName(this.puProductInfo
+                        .getResultData()
+                        .getCourseConfigs()
+                        .get(mediaSet.getCourseLanguageName().replace(" ", "_"))
+                        .getIsbnToCourseName()
+                        .get(course.getProductCode()));
                 transformLessonInfoFromPU(course, mediaSet);
             } catch (Exception e) {
                 logger.error("Error occured when convert product info from PU EDT API.");
@@ -74,11 +82,20 @@ public class AggregatedProductInfo {
     private List<Course> buildCourseInfoFromPCM(List<Course> courses, PcmProduct productInfoFromPCM, Map<String, List<Lesson>> lessonAudioInfoFromPCM) {
 
         productInfoFromPCM.getOrdersProductList().forEach((orderProductCode, orderProductInfo) -> {
+            Map<Integer, Product> products = productInfoFromPCM.getOrdersProductList().get(orderProductCode).getOrdersProductsAttributes()
+                    .stream()
+                    .filter(attr -> attr.getProductsOptions().contains("Download"))
+                    .collect(Collectors.toMap(it -> it.getOrdersProductsDownloads().get(0).getMediaSet().getProduct().getProductsLevel(),
+                            it -> it.getOrdersProductsDownloads().get(0).getMediaSet().getProduct()));
+
             lessonAudioInfoFromPCM.forEach((level, lessonInfoForOneLevel) -> {
                 Course course = new Course();
                 course.setLanguageName(orderProductInfo.getProduct().getProductsLanguageName());
                 course.setLevel(Integer.parseInt(level));
                 course.setLessons(lessonInfoForOneLevel);
+
+                course.setCourseName(products.get(Integer.parseInt(level)).getProductsName());
+                course.setProductCode(products.get(Integer.parseInt(level)).getIsbn13().replace("-",""));
 
                 courses.add(course);
             });
@@ -131,7 +148,7 @@ public class AggregatedProductInfo {
                 audioUrl = PREFIX_FOR_AUDIO_OF_PU + pathMiddlePart + "/"
                         + courseLevelDef.getAudioPath() + lessonItem.getFilename();
 
-                image.setFullImageAddress(UrlUtil.encodeUrl(PREFIX_FOR_IMAGE_OF_PU,fullImageAddress));
+                image.setFullImageAddress(UrlUtil.encodeUrl(PREFIX_FOR_IMAGE_OF_PU, fullImageAddress));
                 image.setThumbImageAddress(UrlUtil.encodeUrl(PREFIX_FOR_IMAGE_OF_PU, thumbImageAddress));
                 break;
             }

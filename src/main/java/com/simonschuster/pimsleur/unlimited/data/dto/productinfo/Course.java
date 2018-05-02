@@ -6,6 +6,8 @@ public class Course {
     private String languageName;
     private Integer level;
     private List<Lesson> lessons;
+    private String productCode;
+    private String courseName;
 
     public String getLanguageName() {
         return languageName;
@@ -29,5 +31,21 @@ public class Course {
 
     public void setLessons(List<Lesson> lessons) {
         this.lessons = lessons;
+    }
+
+    public String getProductCode() {
+        return productCode;
+    }
+
+    public void setProductCode(String productCode) {
+        this.productCode = productCode;
+    }
+
+    public String getCourseName() {
+        return courseName;
+    }
+
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
     }
 }

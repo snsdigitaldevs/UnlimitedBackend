@@ -2,10 +2,7 @@ package com.simonschuster.pimsleur.unlimited.services.customer;
 
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Lesson;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.Customer;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.CustomerInfo;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.OrdersProduct;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.OrdersProductAttribute;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.*;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.*;
 import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.apache.commons.lang3.tuple.Pair;
@@ -19,10 +16,7 @@ import org.springframework.http.converter.json.MappingJackson2HttpMessageConvert
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEdt;
@@ -33,8 +27,10 @@ import static org.springframework.http.MediaType.TEXT_HTML;
 @Service
 public class EDTCourseInfoService {
     public static final int MP3_MEDIA_TYPE = 1;
-    public static final String UNITS = "Units";
-    public static final String LESSONS = "Lessons";
+    public static final String KEY_UNITS = "Units";
+    public static final String KEY_LESSONS = "Lessons";
+    public static final String KEY_DOWNLOAD = "Download";
+
     @Autowired
     private ApplicationConfiguration config;
 
@@ -42,17 +38,22 @@ public class EDTCourseInfoService {
 
     public AggregatedProductInfo getCourseInfos(boolean isPUProductCode, String productCode, String auth0UserId) {
         AggregatedProductInfo productInfo = new AggregatedProductInfo();
-        //Will get only one course(one level) info for the productcode
         if (isPUProductCode) {
             getPuProductInfo(productCode, productInfo);
         } else {
-            getPcmProductInfo(auth0UserId, productCode, productInfo);
+            getPcmProductInfo(auth0UserId, productInfo);
             getPcmLessons(productInfo, productCode);
         }
 
         return productInfo;
     }
 
+    /**
+     * Get product info for Pimsleur Unlimited.
+     *
+     * @param productCode
+     * @param productInfo
+     */
     private void getPuProductInfo(String productCode, AggregatedProductInfo productInfo) {
         try {
             productInfo.setPuProductInfo(getProductInfoFromPu(productCode));
@@ -63,9 +64,15 @@ public class EDTCourseInfoService {
         }
     }
 
-    private void getPcmProductInfo(String auth0UserId, String productCode, AggregatedProductInfo aggregatedProductInfo) {
+    /**
+     * Get product info for Pimsleur Course Manager.
+     *
+     * @param auth0UserId
+     * @param aggregatedProductInfo
+     */
+    private void getPcmProductInfo(String auth0UserId, AggregatedProductInfo aggregatedProductInfo) {
         try {
-            aggregatedProductInfo.setPcmProduct(getProductInfoFromPCM(auth0UserId, productCode));
+            aggregatedProductInfo.setPcmProduct(getProductInfoFromPCM(auth0UserId));
         } catch (Exception exception) {
             logger.error("Exception occured when get product info with PU product code.");
             exception.printStackTrace();
@@ -73,11 +80,25 @@ public class EDTCourseInfoService {
         }
     }
 
+    /**
+     * Get lesson detail info, such as mp3 urls, lesson names...
+     *
+     * @param productInfo
+     * @param productCode
+     */
     private void getPcmLessons(AggregatedProductInfo productInfo, String productCode) {
         PcmAudioReqParams audioRequestInfo = buildRequestParams(productInfo.getPcmProduct(), productCode);
         productInfo.setPcmAudioInfo(getAudioInfo(audioRequestInfo));
     }
 
+    /**
+     * Build parameters that're used to send the request for fetching mp3 urls.
+     *
+     *
+     * @param pcmProduct
+     * @param productCode
+     * @return
+     */
     private PcmAudioReqParams buildRequestParams(PcmProduct pcmProduct, String productCode) {
         Map<String, String> entitlementTokens = new HashMap<>();
         Map<String, Map<String, Integer>> mediaItemIds = getMediaItemIds(pcmProduct, entitlementTokens, productCode);
@@ -91,49 +112,82 @@ public class EDTCourseInfoService {
         return pcmAudioReqParams;
     }
 
-    private Map<String, Map<String, Integer>> getMediaItemIds(PcmProduct pcmProduct, Map<String, String> entitlementTokens, String productCode) {
+
+    /**
+     * Get media item ids
+     *
+     * @param pcmProduct
+     * @param entitlementTokens
+     * @param productCode
+     * @return
+     */
+    private Map<String, Map<String, Integer>> getMediaItemIds(
+            PcmProduct pcmProduct, Map<String, String> entitlementTokens, String productCode) {
+
         Map<String, OrdersProduct> ordersProductList = pcmProduct.getOrdersProductList();
 
         if (ordersProductList.containsKey(productCode)) {
-            Map filteredOrdersProductList = new HashMap<>();
+            Map<String, OrdersProduct> filteredOrdersProductList = new HashMap<>();
             filteredOrdersProductList.put(productCode, ordersProductList.get(productCode));
             pcmProduct.setOrdersProductList(filteredOrdersProductList);
 
-            return handleOrderProductCode(entitlementTokens, productCode, filteredOrdersProductList);
-        } else if (findMatchedProductInfo(pcmProduct, productCode) != null) {
-            return handleLevelProductCode(entitlementTokens, productCode, pcmProduct);
+            return filterItemIdsOfAllLevels(entitlementTokens, productCode, filteredOrdersProductList);
+        } else if (findMatchedProductInfo(pcmProduct, productCode)) {
+            return filterItemIdsOfOneLevel(entitlementTokens, productCode, pcmProduct);
         } else {
             String errorMessage = "No product info found from PCM with matched product code";
             logger.error(errorMessage);
-            return new HashMap<>();
+            return new HashMap();
         }
     }
 
-    private Map<String, Map<String, Integer>> handleLevelProductCode(Map<String, String> entitlementTokens, String productCode, PcmProduct pcmProduct) {
-        OrdersProductAttribute attribute = findMatchedProductInfo(pcmProduct, productCode);
-        String level = attribute.getProductsOptions().split(" ")[1];
-        Map<String, Integer> itemIds = new HashMap<>();
-
-        attribute.getOrdersProductsDownloads()
-                .stream()
-                .peek(download -> entitlementTokens.put(level, download.getEntitlementToken()))
-                .flatMap(downloadInfo -> downloadInfo.getMediaSet().getChildMediaSets().stream())
-                .filter(mediaSet -> mediaSet.getMediaSetTitle().contains(UNITS) || mediaSet.getMediaSetTitle().contains(LESSONS))
-                .flatMap(childMediaSet -> childMediaSet.getMediaItems().stream())
-                .filter(item -> item.getMediaItemTypeId() == EDTCourseInfoService.MP3_MEDIA_TYPE)
-                .forEach(item -> itemIds.put(item.getMediaItemTitle(), item.getMediaItemId()));
-
+    /**
+     * Filter item ids for one level if the product code represents product for only one level.
+     *
+     * @param entitlementTokens
+     * @param productCode
+     * @param pcmProduct
+     * @return
+     */
+    private Map<String, Map<String, Integer>> filterItemIdsOfOneLevel(Map<String, String> entitlementTokens, String productCode, PcmProduct pcmProduct) {
         HashMap<String, Map<String, Integer>> oneLevelItemIds = new HashMap<>();
-        oneLevelItemIds.put(level, itemIds);
+
+        OrdersProductAttribute attribute = getMatchedProductAttribute(pcmProduct, productCode);
+
+        if (attribute != null) {
+            String level = attribute.getProductsOptions().split(" ")[1];
+            Map<String, Integer> itemIds = new HashMap<>();
+
+            attribute.getOrdersProductsDownloads()
+                    .stream()
+                    .peek(download -> entitlementTokens.put(level, download.getEntitlementToken()))
+                    .flatMap(downloadInfo -> downloadInfo.getMediaSet().getChildMediaSets().stream())
+                    .filter(mediaSet -> isLesson(mediaSet))
+                    .flatMap(childMediaSet -> childMediaSet.getMediaItems().stream())
+                    .filter(item -> item.getMediaItemTypeId() == EDTCourseInfoService.MP3_MEDIA_TYPE)
+                    .forEach(item -> itemIds.put(item.getMediaItemTitle(), item.getMediaItemId()));
+
+
+            oneLevelItemIds.put(level, itemIds);
+        }
+
         return oneLevelItemIds;
     }
 
-    private Map<String, Map<String, Integer>> handleOrderProductCode(Map<String, String> entitlementTokens, String productCode, Map<String, OrdersProduct> ordersProductList) {
+    /**
+     * Filter out all the item ids if the product code represents several levels.
+     *
+     * @param entitlementTokens
+     * @param productCode
+     * @param ordersProductList
+     * @return
+     */
+    private Map<String, Map<String, Integer>> filterItemIdsOfAllLevels(Map<String, String> entitlementTokens, String productCode, Map<String, OrdersProduct> ordersProductList) {
         OrdersProduct orderProduct = ordersProductList.get(productCode);
 
         return orderProduct.getOrdersProductsAttributes()
                 .stream()
-                .filter(attribute -> attribute.getProductsOptions().contains("Download"))
+                .filter(attribute -> attribute.getProductsOptions().contains(KEY_DOWNLOAD))
                 .map(attribute -> {
                     String level = attribute.getProductsOptions().split(" ")[1];
                     Map<String, Integer> itemIds = new HashMap<>();
@@ -141,7 +195,7 @@ public class EDTCourseInfoService {
                             .stream()
                             .peek(download -> entitlementTokens.put(level, download.getEntitlementToken()))
                             .flatMap(downloadInfo -> downloadInfo.getMediaSet().getChildMediaSets().stream())
-                            .filter(mediaSet -> mediaSet.getMediaSetTitle().contains("Units") || mediaSet.getMediaSetTitle().contains("Lessons"))
+                            .filter(mediaSet -> isLesson(mediaSet))
                             .flatMap(childMediaSet -> childMediaSet.getMediaItems().stream())
                             .filter(item -> item.getMediaItemTypeId() == EDTCourseInfoService.MP3_MEDIA_TYPE)
                             .forEach(item -> itemIds.put(item.getMediaItemTitle(), item.getMediaItemId()));
@@ -151,29 +205,69 @@ public class EDTCourseInfoService {
                 .collect(Collectors.toMap(Pair::getKey, Pair::getValue));
     }
 
-    private OrdersProductAttribute findMatchedProductInfo(PcmProduct pcmProduct, String productCode) {
-        final List<OrdersProductAttribute> matchedProductAttribute = new ArrayList<OrdersProductAttribute>();
-        Map<String, OrdersProduct> ordersProductList = pcmProduct.getOrdersProductList();
+    private boolean isLesson(ChildMediaSet mediaSet) {
+        return mediaSet.getMediaSetTitle().contains(KEY_UNITS) || mediaSet.getMediaSetTitle().contains(KEY_LESSONS);
+    }
+
+    /**
+     * Check if any 'OrdersProductsDownload' has the same product code as given.
+     *
+     * @param pcmProduct
+     * @param productCode
+     * @return
+     */
+    private boolean findMatchedProductInfo(PcmProduct pcmProduct, String productCode) {
+        int size = pcmProduct.getOrdersProductList().entrySet()
+                .stream()
+                .flatMap(entry -> entry.getValue().getOrdersProductsAttributes().stream())
+                .filter(attribute -> attribute.getProductsOptions().contains(KEY_DOWNLOAD))
+                .flatMap(attribute -> attribute.getOrdersProductsDownloads().stream())
+                .filter(download -> download.getMediaSet().getProduct().getProductCode().equals(productCode))
+                .collect(Collectors.toList())
+                .size();
+
+        return size > 0;
+    }
+
+    /**
+     * Get the 'OrdersProductAttribute' which contains the given product code in it's child
+     * 'OrdersProductsDownload' object. This 'OrdersProductAttribute' contains information of a level and
+     * will be used to get all lesson information.
+     *
+     * @param pcmProduct
+     * @param productCode
+     * @return
+     */
+    private OrdersProductAttribute getMatchedProductAttribute(PcmProduct pcmProduct, String productCode) {
+        final List<OrdersProductAttribute> matchedProductAttribute = new ArrayList<>();
         Map<String, OrdersProduct> filteredOrdersProductList = new HashMap<>();
 
-        ordersProductList.forEach((orderProductCode, ordersProduct) -> {
+        pcmProduct.getOrdersProductList().forEach((orderProductCode, ordersProduct) -> {
             List<OrdersProductAttribute> matchedAttributes = ordersProduct.getOrdersProductsAttributes().stream()
-                    .filter(attribute -> attribute.getProductsOptions().contains("Download"))
-                    .filter(attribute -> attribute
-                            .getOrdersProductsDownloads().stream()
-                            .anyMatch(download -> download.getMediaSet().getProduct().getIsbn13().replace("-", "").equals(productCode)))
+                    .filter(attribute -> attribute.getProductsOptions().contains(KEY_DOWNLOAD))
+                    .filter(attribute -> attribute.getOrdersProductsDownloads()
+                            .stream()
+                            .anyMatch(download -> download.getMediaSet().getProduct().getProductCode().equals(productCode)))
                     .collect(Collectors.toList());
 
-            if (matchedAttributes.size() != 0) {
+            if (matchedAttributes.size() > 0) {
                 matchedProductAttribute.add(matchedAttributes.get(0));
                 filteredOrdersProductList.put(orderProductCode, ordersProduct);
             }
         });
 
         pcmProduct.setOrdersProductList(filteredOrdersProductList);
-        return matchedProductAttribute.size() != 0 ? matchedProductAttribute.get(0) : null;
+
+        return matchedProductAttribute.size() > 0 ? matchedProductAttribute.get(0) : null;
     }
 
+
+    /**
+     * Get audio urls for all lessons of all levels.
+     *
+     * @param params
+     * @return
+     */
     private Map<String, List<Lesson>> getAudioInfo(PcmAudioReqParams params) {
         Map<String, List<Lesson>> pcmAudioRespInfo = new HashMap<>();
 
@@ -184,6 +278,15 @@ public class EDTCourseInfoService {
         return pcmAudioRespInfo;
     }
 
+
+    /**
+     * Send request to get mp3 urls for lessons of a level.
+     *
+     * @param pcmAudioReqParams
+     * @param level
+     * @param mediaItemInfos
+     * @return
+     */
     private List<Lesson> fetchLessons(PcmAudioReqParams pcmAudioReqParams, String level, Map<String, Integer> mediaItemInfos) {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
@@ -209,7 +312,7 @@ public class EDTCourseInfoService {
             lesson.setName(title);
             lesson.setLevel(Integer.parseInt(level));
             lesson.setMediaItemId(itemId);
-            lesson.setLessonNumber(title.replace("Unit ", "").replace("Lesson ", ""));
+            lesson.setLessonNumber(title.split(" ")[1]);
             return lesson;
         }).collect(Collectors.toList());
 
@@ -217,7 +320,13 @@ public class EDTCourseInfoService {
 
     }
 
-    private PcmProduct getProductInfoFromPCM(String sub, String productCode) {
+    /**
+     * Send request to get get full customer info and extract all products has been ordered by the user.
+     *
+     * @param sub
+     * @return
+     */
+    private PcmProduct getProductInfoFromPCM(String sub) {
         PcmProduct pcmProduct = new PcmProduct();
 
         CustomerInfo pcmCustomerInfo = getCustomerInfo(
@@ -226,12 +335,18 @@ public class EDTCourseInfoService {
                 config.getApiParameter("pcmDomain")
         );
 
-        extractPCMProduct(productCode, pcmProduct, pcmCustomerInfo);
+        extractPCMProduct(pcmProduct, pcmCustomerInfo);
 
         return pcmProduct;
     }
 
-    private void extractPCMProduct(String productCode, PcmProduct pcmProduct, CustomerInfo pcmCustomerInfo) {
+    /**
+     * Extract products from the given customer info.
+     *
+     * @param pcmProduct
+     * @param pcmCustomerInfo
+     */
+    private void extractPCMProduct(PcmProduct pcmProduct, CustomerInfo pcmCustomerInfo) {
         Customer customer = pcmCustomerInfo.getResultData().getCustomer();
 
         pcmProduct.setCustomersId(customer.getCustomersId());
@@ -243,14 +358,21 @@ public class EDTCourseInfoService {
                 .stream()
                 .flatMap(customersOrder -> customersOrder.getOrdersProducts().stream())
                 .forEach(ordersProduct -> {
-                    ordersProductList.put(ordersProduct.getProduct().getIsbn13().replace("-", ""), ordersProduct);
+                    ordersProductList.put(ordersProduct.getProduct().getProductCode(), ordersProduct);
                 });
 
-//        pcmProduct.setOrderProduct(ordersProduct);
         pcmProduct.setOrdersProductList(ordersProductList);
     }
 
 
+    /**
+     * Get full customer info of the given sub(user token)
+     *
+     * @param sub
+     * @param action
+     * @param domain
+     * @return
+     */
     private CustomerInfo getCustomerInfo(String sub, String action, String domain) {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
@@ -263,6 +385,12 @@ public class EDTCourseInfoService {
                 CustomerInfo.class);
     }
 
+    /**
+     *  Send reqeust to get Pimsleur Unlimited product info.
+     *
+     * @param product_code
+     * @return
+     */
     private PuProductInfo getProductInfoFromPu(String product_code) {
         MappingJackson2HttpMessageConverter converter = new MappingJackson2HttpMessageConverter();
         converter.setSupportedMediaTypes(asList(TEXT_HTML, APPLICATION_JSON));

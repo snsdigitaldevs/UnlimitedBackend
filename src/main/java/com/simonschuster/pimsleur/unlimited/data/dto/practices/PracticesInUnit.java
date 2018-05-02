@@ -1,5 +1,7 @@
 package com.simonschuster.pimsleur.unlimited.data.dto.practices;
 
+import java.util.List;
+
 public class PracticesInUnit {
 
     private Integer unitNumber;
@@ -9,6 +11,8 @@ public class PracticesInUnit {
     private boolean hasSpeakEasy;
     private boolean hasReading;
     private boolean hasSkills;
+
+    private List<SpeakEasy> speakEasies;
 
     public PracticesInUnit(Integer unitNumber) {
         this.unitNumber = unitNumber;
@@ -59,5 +63,9 @@ public class PracticesInUnit {
 
     public void setHasReading(boolean hasReading) {
         this.hasReading = hasReading;
+    }
+
+    public List<SpeakEasy> getSpeakEasies() {
+        return speakEasies;
     }
 }

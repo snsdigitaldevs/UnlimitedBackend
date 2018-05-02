@@ -67,8 +67,8 @@ public class AggregatedCustomerInfo {
                 this.unlimitedCustomerInfo.getResultData().getCustomer().getProductCodes(),
                 this.pcmCustomerInfo.getResultData().getCustomer().getProductCodes(),
                 this.unlimitedCustomerInfo.getResultData().getRegistrant().getProductActivations(),
-                getProgressDTOS()
-        );
+                getProgressDTOS(),
+                this.unlimitedCustomerInfo.getResultData().getRegistrant().getSubUsers());
     }
 
     private List<ProgressDTO> getProgressDTOS() throws IOException {

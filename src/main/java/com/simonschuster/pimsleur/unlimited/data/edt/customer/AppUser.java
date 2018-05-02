@@ -5,6 +5,8 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
+import java.util.Objects;
+
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
         "appUserId",
@@ -75,5 +77,13 @@ public class AppUser {
     @JsonProperty("isRegisteredAppUser")
     public void setIsRegisteredAppUser(Integer isRegisteredAppUser) {
         this.isRegisteredAppUser = isRegisteredAppUser;
+    }
+
+    public boolean isRootSubUser() {
+        return Objects.equals(this.getIsRegisteredAppUser(), 1);
+    }
+
+    String getSubUserId() {
+        return getAppUserId().split("_")[1];
     }
 }

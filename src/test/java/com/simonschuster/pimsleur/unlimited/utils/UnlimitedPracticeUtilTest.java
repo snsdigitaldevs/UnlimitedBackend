@@ -18,7 +18,7 @@ public class UnlimitedPracticeUtilTest {
     @Test
     public void shouldIgnoreDuplicateHeaderInCSV() throws Exception {
         PracticesCsvLocations practicesCsvLocations = new PracticesCsvLocations();
-        practicesCsvLocations.setQuickMatchUrl("http://localhost:12306/hello.csv");
+        practicesCsvLocations.setReadingUrl("http://localhost:12306/hello.csv");
 
         HttpServer server = httpServer(12306);
         server.get(by(uri("/hello.csv")))

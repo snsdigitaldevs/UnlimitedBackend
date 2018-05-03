@@ -29,7 +29,7 @@ public class FlashCardUtil {
 
         CSVParser csvRecords = urlToCsv(csvUrl);
 
-        String unitNumKey = unitNumKey(csvRecords);
+        String unitNumKey = findRealHeaderName(csvRecords,"Unit Num");
         String transliterationKey = findRealHeaderName(csvRecords, "Transliteration");
         String translationKey = findRealHeaderName(csvRecords, "English Translation");
         String LanguageKey = findRealHeaderName(csvRecords, "Language");

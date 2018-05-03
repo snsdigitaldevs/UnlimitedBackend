@@ -62,22 +62,33 @@ public class SpeakEasyUtil {
                                                String orderKey, Map.Entry<String, List<CSVRecord>> group) {
         int unitNumber = parseInt(unitNumString);
 
-        List<SpeakEasy> speakEasies = group.getValue().stream()
-                .map(csvRecord -> {
-                    String orderString = getFromCsv(orderKey, csvRecord);
-                    int order = parseInt(orderString.split("VC")[1]);
+        final int[] counter = {0};
 
-                    return new SpeakEasy(
-                            getMilliSeconds(startKey, csvRecord),
-                            getMilliSeconds(stopKey, csvRecord),
-                            getFromCsv(speakerKey, csvRecord),
-                            getFromCsv(textKey, csvRecord),
-                            getFromCsv(nativeTextKey, csvRecord),
-                            order);
-                })
+        List<SpeakEasy> speakEasies = group.getValue().stream()
+                .map(csvRecord -> new SpeakEasy(
+                        getMilliSeconds(startKey, csvRecord),
+                        getMilliSeconds(stopKey, csvRecord),
+                        getFromCsv(speakerKey, csvRecord),
+                        getFromCsv(textKey, csvRecord),
+                        getFromCsv(nativeTextKey, csvRecord),
+                        getOrder(orderKey, counter, csvRecord)))
                 .collect(toList());
 
         return createWithSpeakEasies(unitNumber, speakEasies);
+    }
+
+    private static int getOrder(String orderKey, int[] counter, CSVRecord csvRecord) {
+        int order;
+        String orderString = getFromCsv(orderKey, csvRecord);
+        String[] vcs = orderString.split("VC");
+        if (vcs.length == 2) {
+            order = parseInt(vcs[1]);
+            counter[0] = order;
+        } else {
+            counter[0]++;
+            order = counter[0];
+        }
+        return order;
     }
 
     private static int getMilliSeconds(String key, CSVRecord csvRecord) {

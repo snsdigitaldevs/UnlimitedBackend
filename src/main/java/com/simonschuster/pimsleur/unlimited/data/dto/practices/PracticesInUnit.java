@@ -10,6 +10,8 @@ public class PracticesInUnit {
     private boolean hasReading;
     private boolean hasSkills;
 
+    private QuickMatch quickMatch;
+
     public PracticesInUnit(Integer unitNumber) {
         this.unitNumber = unitNumber;
     }

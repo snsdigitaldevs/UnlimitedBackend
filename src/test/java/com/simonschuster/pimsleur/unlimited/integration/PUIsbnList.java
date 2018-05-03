@@ -34,4 +34,11 @@ public class PUIsbnList {
             "9781508231455", "9781508227786");
 
     //todo: "978150823094" can't get product info from EDT service.
+    //9781508230823 cant get lessons
+    //9781508235927 esl lesson
+    //9781508235934 esl lesson
+    //9781508260233 esl lesson
+    //9781508235941 esl lesson
+    //9781442350373 cant get lessons
+    //9781508227946 cant get lessons
 }

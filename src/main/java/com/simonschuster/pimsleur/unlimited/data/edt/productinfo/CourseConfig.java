@@ -38,7 +38,36 @@ public class CourseConfig {
     private Map<String, List<String>> kittedFileLists;
     @JsonProperty("courseLevelDefs")
     private List<CourseLevelDef> courseLevelDefs;
+    @JsonProperty("isESL")
+    private Boolean isESL;
+    @JsonProperty("eslLanguageName")
+    private String eslLanguageName;
+    @JsonProperty("locale")
+    private String locale;
 
+    public Boolean getESL() {
+        return isESL;
+    }
+
+    public void setESL(Boolean ESL) {
+        isESL = ESL;
+    }
+
+    public String getEslLanguageName() {
+        return eslLanguageName;
+    }
+
+    public void setEslLanguageName(String eslLanguageName) {
+        this.eslLanguageName = eslLanguageName;
+    }
+
+    public String getLocale() {
+        return locale;
+    }
+
+    public void setLocale(String locale) {
+        this.locale = locale;
+    }
 
     public String getVersion() {
         return version;

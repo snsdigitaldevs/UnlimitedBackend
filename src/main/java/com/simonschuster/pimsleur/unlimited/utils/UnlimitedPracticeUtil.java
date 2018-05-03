@@ -21,14 +21,12 @@ public class UnlimitedPracticeUtil {
     private static final String FLASH_CARD = "flashCard";
     private static final String READING = "reading";
     private static final String QUICK_MATCH = "quickMatch";
-    private static final String SPEAK_EASY = "speakEasy";
 
     public static AvailablePractices getAvailablePractices(PracticesCsvLocations paths) throws IOException {
         Map<String, Set<Integer>> unitsSetMap = new HashMap<>();
         unitsSetMap.put(FLASH_CARD, getUnitSetFromCSV(paths.getFlashCardUrl()));
         unitsSetMap.put(READING, getUnitSetFromCSV(paths.getReadingUrl()));
         unitsSetMap.put(QUICK_MATCH, getUnitSetFromCSV(paths.getQuickMatchUrl()));
-        unitsSetMap.put(SPEAK_EASY, getUnitSetFromCSV(paths.getSpeakEasyUrl()));
         return setPracticesInUnitFromUnitSets(unitsSetMap);
     }
 
@@ -62,9 +60,6 @@ public class UnlimitedPracticeUtil {
                         break;
                     case QUICK_MATCH:
                         practiceInUnit.setHasQuickMatch(true);
-                        break;
-                    case SPEAK_EASY:
-                        practiceInUnit.setHasSpeakEasy(true);
                         break;
                     default:
                         // do nothing

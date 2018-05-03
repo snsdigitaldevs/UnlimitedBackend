@@ -2,6 +2,7 @@ package com.simonschuster.pimsleur.unlimited.integration;
 
 import com.simonschuster.pimsleur.unlimited.controllers.ProductInfoController;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +22,7 @@ public class AllPuIsbnProductInfoTest {
     private ProductInfoController productInfoController;
 
     @Test
-//    @Ignore // do not run this test in ci, we only need this to run locally
+    @Ignore // do not run this test in ci, we only need this to run locally
     // to see if different product response would cause errors
     public void shouldGetAvailablePracticesOfAllPuISBNs() throws Exception {
         for (String puISBN : PUIsbnList.puISBNs) {

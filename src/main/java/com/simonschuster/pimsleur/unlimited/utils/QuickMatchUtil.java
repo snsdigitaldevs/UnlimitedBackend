@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 public class QuickMatchUtil {
-    public Map<Integer, List<QuickMatch>> getQuickMatches(String quickMatchUrl){
+    public Map<Integer, List<QuickMatch>> getQuickMatches(String quickMatchUrl) {
         return null;
     }
 }

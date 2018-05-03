@@ -1,5 +1,7 @@
 package com.simonschuster.pimsleur.unlimited.data.dto.practices;
 
+import java.util.List;
+
 public class PracticesInUnit {
 
     private Integer unitNumber;
@@ -10,7 +12,8 @@ public class PracticesInUnit {
     private boolean hasReading;
     private boolean hasSkills;
 
-    private QuickMatch quickMatch;
+    private List<QuickMatch> quickMatch;
+    private List<SpeakEasy> speakEasies;
 
     public PracticesInUnit(Integer unitNumber) {
         this.unitNumber = unitNumber;
@@ -59,7 +62,35 @@ public class PracticesInUnit {
         this.hasSpeakEasy = hasSpeakEasy;
     }
 
+    public void setHasSkills(boolean hasSkills) {
+        this.hasSkills = hasSkills;
+    }
+
     public void setHasReading(boolean hasReading) {
         this.hasReading = hasReading;
+    }
+
+    public List<SpeakEasy> getSpeakEasies() {
+        return speakEasies;
+    }
+
+    public PracticesInUnit mergeWith(PracticesInUnit that) {
+        PracticesInUnit mergedResult = new PracticesInUnit(this.unitNumber);
+
+        mergedResult.setHasReading(this.hasReading || that.hasReading);
+        mergedResult.setHasFlashCard(this.hasFlashCard || that.hasFlashCard);
+        mergedResult.setHasQuickMatch(this.hasQuickMatch || that.hasQuickMatch);
+        mergedResult.setHasSpeakEasy(this.hasSpeakEasy || that.hasSpeakEasy);
+
+        mergedResult.speakEasies = pickNotNullOrEmpty(this.speakEasies, that.speakEasies);
+
+        return mergedResult;
+    }
+
+    private <T> List<T> pickNotNullOrEmpty(List<T> one, List<T> two) {
+        if (one != null && one.size() > 0) {
+            return one;
+        }
+        return two;
     }
 }

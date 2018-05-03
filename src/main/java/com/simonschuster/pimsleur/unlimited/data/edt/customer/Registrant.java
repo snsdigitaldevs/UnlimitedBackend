@@ -2,8 +2,12 @@
 package com.simonschuster.pimsleur.unlimited.data.edt.customer;
 
 import com.fasterxml.jackson.annotation.*;
+import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.SubUserDto;
 
 import java.util.List;
+
+import static java.util.Collections.emptyList;
+import static java.util.stream.Collectors.toList;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
@@ -113,6 +117,18 @@ public class Registrant {
     @JsonProperty("productActivations")
     public void setProductActivations(List<ProductActivation> productActivations) {
         this.productActivations = productActivations;
+    }
+
+    public List<SubUserDto> getSubUsers() {
+        if (this.getAppUsers() != null) {
+            return this.getAppUsers().stream()
+                    .map(appUser -> new SubUserDto(
+                            appUser.getAppUserName(),
+                            appUser.getSubUserId(),
+                            appUser.isRootSubUser()))
+                    .collect(toList());
+        }
+        return emptyList();
     }
 
 }

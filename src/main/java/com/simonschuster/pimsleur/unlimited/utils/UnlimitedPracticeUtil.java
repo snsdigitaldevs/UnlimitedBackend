@@ -6,6 +6,8 @@ import com.simonschuster.pimsleur.unlimited.services.practices.PracticesCsvLocat
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
+import org.springframework.http.converter.StringHttpMessageConverter;
+import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
@@ -14,6 +16,8 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 import static java.lang.Integer.parseInt;
+import static java.nio.charset.Charset.forName;
+import static java.nio.charset.Charset.forName;
 import static java.util.Collections.frequency;
 import static org.apache.commons.lang3.StringUtils.isNumeric;
 
@@ -129,6 +133,35 @@ public class UnlimitedPracticeUtil {
         return String.join(",", noDuplicatedColumns) +
                 System.lineSeparator() +
                 headerAndBody[1];
+    }
+
+    public static String removeErrorEndInLine(String line) {
+        String rightEnd = "\",";
+        if (!line.endsWith(rightEnd)) {
+            line = line.substring(0, line.lastIndexOf(rightEnd) + rightEnd.length());
+        }
+        return line;
+    }
+
+
+    public static CSVParser urlToCsv(String url) throws IOException {
+        RestTemplate restTemplate = new RestTemplate();
+        restTemplate.getMessageConverters()
+                .add(0, new StringHttpMessageConverter(forName("UTF-8")));
+        String csvString = replaceDuplicateHeaders(restTemplate.getForObject(url, String.class));
+
+        return CSVFormat.EXCEL
+                .withFirstRecordAsHeader()
+                .withIgnoreEmptyLines()
+                .withIgnoreHeaderCase()
+                .parse(new StringReader(csvString));
+    }
+
+    public static String getFromCsv(String key, CSVRecord csvRecord) {
+        if (csvRecord.isSet(key)) {
+            return csvRecord.get(key).replace("\"", "");
+        }
+        return "";
     }
 
     public static String specialCsvFiles(String csvString) {

@@ -19,7 +19,7 @@ public class PracticesInUnit {
 
     public PracticesInUnit(Integer unitNumber) {
         this.unitNumber = unitNumber;
-        this.quickMatches =new ArrayList<>();
+        this.quickMatches = new ArrayList<>();
     }
 
     // factory method
@@ -111,6 +111,13 @@ public class PracticesInUnit {
         PracticesInUnit practicesInUnit = new PracticesInUnit(unitNumber);
         practicesInUnit.speakEasies = speakEasies;
         practicesInUnit.setHasSpeakEasy(speakEasies.size() > 0);
+        return practicesInUnit;
+    }
+
+    public static PracticesInUnit createWithFlashCards(int unitNumber, List<FlashCard> flashCards) {
+        PracticesInUnit practicesInUnit = new PracticesInUnit(unitNumber);
+        practicesInUnit.flashCards = flashCards;
+        practicesInUnit.setHasFlashCard(flashCards.size() > 0);
         return practicesInUnit;
     }
 }

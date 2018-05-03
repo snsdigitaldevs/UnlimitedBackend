@@ -5,6 +5,7 @@ import com.simonschuster.pimsleur.unlimited.data.dto.practices.PracticesInUnit;
 import com.simonschuster.pimsleur.unlimited.services.practices.PcmAvailablePracticesService;
 import com.simonschuster.pimsleur.unlimited.services.practices.PracticesCsvLocations;
 import com.simonschuster.pimsleur.unlimited.services.practices.PuAvailablePracticesService;
+import com.simonschuster.pimsleur.unlimited.utils.QuickMatchUtil;
 import com.simonschuster.pimsleur.unlimited.utils.UnlimitedPracticeUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -40,12 +41,12 @@ public class AvailablePracticesController {
 
         AvailablePractices availablePractices = UnlimitedPracticeUtil.getAvailablePractices(csvLocations);
         List<PracticesInUnit> speakEasies = csvToSpeakEasies(csvLocations.getSpeakEasyUrl());
-
-        return new AvailablePractices(mergeLists(availablePractices, speakEasies));
+        List<PracticesInUnit> quickMatches = QuickMatchUtil.getQuickMatchesByCsvUrl(csvLocations.getQuickMatchUrl());
+        return new AvailablePractices(mergeLists(availablePractices, speakEasies, quickMatches));
     }
 
-    private List<PracticesInUnit> mergeLists(AvailablePractices availablePractices, List<PracticesInUnit> speakEasies) {
-        return concat(availablePractices.getPracticesInUnits().stream(), speakEasies.stream())
+    private List<PracticesInUnit> mergeLists(AvailablePractices availablePractices, List<PracticesInUnit> speakEasies, List<PracticesInUnit> quickMatches) {
+        return concat(concat(availablePractices.getPracticesInUnits().stream(), speakEasies.stream()), quickMatches.stream())
                 .collect(Collectors.groupingBy(PracticesInUnit::getUnitNumber))
                 .values().stream()
                 .map(group -> {

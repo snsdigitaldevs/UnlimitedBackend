@@ -23,7 +23,23 @@ public class QuickMatch {
         this.answer = answer;
     }
 
-    public boolean getCompleted() {
+    public boolean completed() {
         return this.answer != null && this.question != null;
+    }
+
+    public QuickMatchItem getQuestion() {
+        return question;
+    }
+
+    public QuickMatchItem getAnswer() {
+        return answer;
+    }
+
+    public String getGroup() {
+        return group;
+    }
+
+    public boolean isQuestions() {
+        return isQuestions;
     }
 }

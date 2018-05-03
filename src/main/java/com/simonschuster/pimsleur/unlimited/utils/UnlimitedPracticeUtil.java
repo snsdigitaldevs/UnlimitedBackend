@@ -26,11 +26,10 @@ public class UnlimitedPracticeUtil {
         Map<String, Set<Integer>> unitsSetMap = new HashMap<>();
         unitsSetMap.put(FLASH_CARD, getUnitSetFromCSV(paths.getFlashCardUrl()));
         unitsSetMap.put(READING, getUnitSetFromCSV(paths.getReadingUrl()));
-        unitsSetMap.put(QUICK_MATCH, getUnitSetFromCSV(paths.getQuickMatchUrl()));
         return setPracticesInUnitFromUnitSets(unitsSetMap);
     }
 
-    public static CSVParser getCsvRecordsFromUrl(String url) throws IOException {
+    private static CSVParser getCsvRecordsFromUrl(String url) throws IOException {
         RestTemplate restTemplate = new RestTemplate();
         String csvString = replaceDuplicateHeaders(restTemplate.getForObject(url, String.class));
 

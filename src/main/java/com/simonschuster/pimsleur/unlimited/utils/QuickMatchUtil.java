@@ -6,6 +6,7 @@ import com.simonschuster.pimsleur.unlimited.data.dto.practices.QuickMatchItem;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
+import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
@@ -14,6 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static com.simonschuster.pimsleur.unlimited.utils.UnlimitedPracticeUtil.replaceDuplicateHeaders;
+import static java.nio.charset.Charset.forName;
 
 public class QuickMatchUtil {
     public static List<PracticesInUnit> getQuickMatchesByCsvUrl(String quickMatchesInUrl) throws IOException {
@@ -23,6 +25,8 @@ public class QuickMatchUtil {
         }
 
         RestTemplate restTemplate = new RestTemplate();
+        restTemplate.getMessageConverters()
+                .add(0, new StringHttpMessageConverter(forName("UTF-8")));
         String csvString = replaceDuplicateHeaders(restTemplate.getForObject(quickMatchesInUrl, String.class));
 
         CSVParser csvRecords = CSVFormat.EXCEL
@@ -45,7 +49,7 @@ public class QuickMatchUtil {
                     .getQuickMatches();
 
             QuickMatch quickMatch;
-            if (quickMatches.size() == 0 || quickMatches.get(quickMatches.size() - 1).getCompleted()) {
+            if (quickMatches.size() == 0 || quickMatches.get(quickMatches.size() - 1).completed()) {
                 quickMatch = new QuickMatch(group);
                 quickMatches.add(quickMatch);
             } else {

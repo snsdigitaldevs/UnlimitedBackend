@@ -89,7 +89,7 @@ public class UnlimitedPracticeUtil {
         return units;
     }
 
-    private static String unitNumKey(CSVParser csvRecords) {
+    public static String unitNumKey(CSVParser csvRecords) {
         String quotedUnitNum = "\"Unit Num\"";
         String unitNum = "Unit Num";
         if (csvRecords.getHeaderMap().containsKey(unitNum)) {
@@ -98,7 +98,7 @@ public class UnlimitedPracticeUtil {
         return quotedUnitNum;
     }
 
-    private static String replaceDuplicateHeaders(String csvString) {
+    public static String replaceDuplicateHeaders(String csvString) {
         final Integer[] columnIndex = {0};
 
         String[] headerAndBody = csvString.split(System.lineSeparator(), 2);

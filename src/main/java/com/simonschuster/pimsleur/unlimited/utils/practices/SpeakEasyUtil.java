@@ -19,6 +19,7 @@ import static com.simonschuster.pimsleur.unlimited.data.dto.practices.PracticesI
 import static com.simonschuster.pimsleur.unlimited.utils.UnlimitedPracticeUtil.*;
 import static java.lang.Integer.parseInt;
 import static java.nio.charset.Charset.forName;
+import static java.util.Collections.emptyList;
 import static java.util.Comparator.comparingInt;
 import static java.util.stream.Collectors.groupingBy;
 import static java.util.stream.Collectors.toList;
@@ -32,6 +33,10 @@ public class SpeakEasyUtil {
     private static DateTimeFormatter colonColonTimeFormatter = forPattern("mm:ss:SSS");
 
     public static List<PracticesInUnit> csvToSpeakEasies(String csvUrl) throws IOException {
+        if (csvUrl == null) {
+            return emptyList();
+        }
+
         CSVParser csvRecords = getCsvRecordsFromUrl(csvUrl);
 
         String unitNumKey = unitNumKey(csvRecords);

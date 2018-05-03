@@ -21,15 +21,22 @@ public class UnlimitedPracticeUtil {
     private static final String FLASH_CARD = "flashCard";
     private static final String READING = "reading";
     private static final String QUICK_MATCH = "quickMatch";
-    private static final String SPEAK_EASY = "speakEasy";
 
     public static AvailablePractices getAvailablePractices(PracticesCsvLocations paths) throws IOException {
         Map<String, Set<Integer>> unitsSetMap = new HashMap<>();
         unitsSetMap.put(FLASH_CARD, getUnitSetFromCSV(paths.getFlashCardUrl()));
         unitsSetMap.put(READING, getUnitSetFromCSV(paths.getReadingUrl()));
         unitsSetMap.put(QUICK_MATCH, getUnitSetFromCSV(paths.getQuickMatchUrl()));
-        unitsSetMap.put(SPEAK_EASY, getUnitSetFromCSV(paths.getSpeakEasyUrl()));
         return setPracticesInUnitFromUnitSets(unitsSetMap);
+    }
+
+    public static CSVParser getCsvRecordsFromUrl(String url) throws IOException {
+        RestTemplate restTemplate = new RestTemplate();
+        String csvString = replaceDuplicateHeaders(restTemplate.getForObject(url, String.class));
+
+        return CSVFormat.EXCEL
+                .withFirstRecordAsHeader().withQuote(null).withIgnoreEmptyLines()
+                .parse(new StringReader(csvString));
     }
 
     private static AvailablePractices setPracticesInUnitFromUnitSets(Map<String, Set<Integer>> unitsSetMap) {
@@ -54,9 +61,6 @@ public class UnlimitedPracticeUtil {
                     case QUICK_MATCH:
                         practiceInUnit.setHasQuickMatch(true);
                         break;
-                    case SPEAK_EASY:
-                        practiceInUnit.setHasSpeakEasy(true);
-                        break;
                     default:
                         // do nothing
                         break;
@@ -71,22 +75,22 @@ public class UnlimitedPracticeUtil {
         if (url == null || url.isEmpty()) {
             return units;
         }
-        RestTemplate restTemplate = new RestTemplate();
-        String csvString = replaceDuplicateHeaders(restTemplate.getForObject(url, String.class));
-
-        CSVParser csvRecords = CSVFormat.EXCEL
-                .withFirstRecordAsHeader().withQuote(null).withIgnoreEmptyLines()
-                .parse(new StringReader(csvString));
+        CSVParser csvRecords = getCsvRecordsFromUrl(url);
         String unitNumKey = unitNumKey(csvRecords);
         for (CSVRecord record : csvRecords) {
-            if (record.isSet(unitNumKey)) {
-                String unitNumString = record.get(unitNumKey).replace("\"", "");
-                if (isNumeric(unitNumString)) {
-                    units.add(parseInt(unitNumString));
-                }
+            String unitNumString = getUnitNumString(record, unitNumKey);
+            if (isNumeric(unitNumString)) {
+                units.add(parseInt(unitNumString));
             }
         }
         return units;
+    }
+
+    public static String getUnitNumString(CSVRecord record, String unitNumKey) {
+        if (record.isSet(unitNumKey)) {
+            return record.get(unitNumKey).replace("\"", "");
+        }
+        return "NoSucnKey";
     }
 
     public static String unitNumKey(CSVParser csvRecords) {
@@ -96,6 +100,13 @@ public class UnlimitedPracticeUtil {
             return unitNum;
         }
         return quotedUnitNum;
+    }
+
+    public static String findRealHeaderName(CSVParser csvRecords, String key) {
+        if (csvRecords.getHeaderMap().containsKey(key)) {
+            return key;
+        }
+        return key.toLowerCase();
     }
 
     public static String replaceDuplicateHeaders(String csvString) {

@@ -100,4 +100,11 @@ public class PracticesInUnit {
         }
         return two;
     }
+
+    public static PracticesInUnit createWithSpeakEasies(int unitNumber, List<SpeakEasy> speakEasies) {
+        PracticesInUnit practicesInUnit = new PracticesInUnit(unitNumber);
+        practicesInUnit.speakEasies = speakEasies;
+        practicesInUnit.setHasSpeakEasy(speakEasies.size() > 0);
+        return practicesInUnit;
+    }
 }

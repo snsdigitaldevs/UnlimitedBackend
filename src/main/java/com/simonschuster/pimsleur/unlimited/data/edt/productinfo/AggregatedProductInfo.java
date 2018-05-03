@@ -5,6 +5,7 @@ import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Image;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Lesson;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.Product;
+import com.simonschuster.pimsleur.unlimited.services.customer.EDTCourseInfoService;
 import com.simonschuster.pimsleur.unlimited.utils.UrlUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -67,12 +68,12 @@ public class AggregatedProductInfo {
                         .get(mediaSet.getCourseLanguageName().replace(" ", "_"))
                         .getIsbnToCourseName()
                         .get(course.getProductCode()));
-                transformLessonInfoFromPU(course, mediaSet);
             } catch (Exception e) {
-                logger.error("Error occured when convert product info from PU EDT API.");
+                logger.error("Error occured when get product name from PU EDT API.");
                 e.printStackTrace();
                 throw new UncheckedExecutionException(e);
             }
+            transformLessonInfoFromPU(course, mediaSet);
             courses.add(course);
         });
 
@@ -84,7 +85,7 @@ public class AggregatedProductInfo {
         productInfoFromPCM.getOrdersProductList().forEach((orderProductCode, orderProductInfo) -> {
             Map<Integer, Product> products = productInfoFromPCM.getOrdersProductList().get(orderProductCode).getOrdersProductsAttributes()
                     .stream()
-                    .filter(attr -> attr.getProductsOptions().contains("Download"))
+                    .filter(attr -> attr.getProductsOptions().contains(EDTCourseInfoService.KEY_DOWNLOAD))
                     .collect(Collectors.toMap(it -> it.getOrdersProductsDownloads().get(0).getMediaSet().getProduct().getProductsLevel(),
                             it -> it.getOrdersProductsDownloads().get(0).getMediaSet().getProduct()));
 
@@ -95,7 +96,7 @@ public class AggregatedProductInfo {
                 course.setLessons(lessonInfoForOneLevel);
 
                 course.setCourseName(products.get(Integer.parseInt(level)).getProductsName());
-                course.setProductCode(products.get(Integer.parseInt(level)).getIsbn13().replace("-",""));
+                course.setProductCode(products.get(Integer.parseInt(level)).getIsbn13().replace("-", ""));
 
                 courses.add(course);
             });
@@ -104,26 +105,32 @@ public class AggregatedProductInfo {
         return courses;
     }
 
-    private void transformLessonInfoFromPU(Course course, MediaSet mediaSet) throws Exception {
+    private void transformLessonInfoFromPU(Course course, MediaSet mediaSet) {
         List<Lesson> lessons = new ArrayList<>();
 
         //Get media items which contains 'imageDescription', we think those items are the ones contains useful info.
         List<MediaItem> mediaItems = mediaSet.getMediaItems().stream()
-                .filter((mediaItem) -> (!StringUtils.isEmpty(mediaItem.getImageDescription())))
+                .filter((mediaItem) -> (!StringUtils.isEmpty(mediaItem.getImageURL())))
                 .collect(Collectors.toList());
 
-        for (MediaItem lessonItem : mediaItems) {
-
+        mediaItems.forEach(lessonItem -> {
             Lesson lesson = new Lesson();
             lesson.setLevel(course.getLevel());
             lesson.setLessonNumber(lessonItem.getUnit());
             lesson.setName(lessonItem.getTitle());
             lesson.setImageDescription(lessonItem.getImageDescription());
             lesson.setMediaItemId(lessonItem.getMediaItemId());
-            getImageAndAudioFromPU(lesson, lessonItem, mediaSet);
+            try {
+                getImageAndAudioFromPU(lesson, lessonItem, mediaSet);
+            } catch (Exception e) {
+                logger.error("Error occured when convert product info from PU EDT API.");
+                e.printStackTrace();
+                throw new UncheckedExecutionException(e);
+            }
 
             lessons.add(lesson);
-        }
+        });
+
 
         course.setLessons(lessons);
     }

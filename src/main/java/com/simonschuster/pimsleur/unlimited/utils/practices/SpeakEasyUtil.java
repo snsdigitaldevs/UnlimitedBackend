@@ -28,7 +28,8 @@ import static org.joda.time.format.DateTimeFormat.forPattern;
 
 public class SpeakEasyUtil {
 
-    private static DateTimeFormatter formatter = forPattern("mm:ss.SSS");
+    private static DateTimeFormatter colonDotTimeFormatter = forPattern("mm:ss.SSS");
+    private static DateTimeFormatter colonColonTimeFormatter = forPattern("mm:ss:SSS");
 
     public static List<PracticesInUnit> csvToSpeakEasies(String csvUrl) throws IOException {
         CSVParser csvRecords = getCsvRecordsFromUrl(csvUrl);
@@ -92,7 +93,12 @@ public class SpeakEasyUtil {
     }
 
     private static int getMilliSeconds(String key, CSVRecord csvRecord) {
-        return formatter.parseDateTime(getFromCsv(key, csvRecord)).getMillisOfDay();
+        String timeString = getFromCsv(key, csvRecord);
+        if (timeString.contains(".")) {
+            return colonDotTimeFormatter.parseDateTime(timeString).getMillisOfDay();
+        } else {
+            return colonColonTimeFormatter.parseDateTime(timeString).getMillisOfDay();
+        }
     }
 
     private static String getFromCsv(String key, CSVRecord csvRecord) {

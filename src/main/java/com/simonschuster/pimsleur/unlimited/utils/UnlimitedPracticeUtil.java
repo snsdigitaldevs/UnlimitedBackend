@@ -32,6 +32,15 @@ public class UnlimitedPracticeUtil {
         return setPracticesInUnitFromUnitSets(unitsSetMap);
     }
 
+    public static CSVParser getCsvRecordsFromUrl(String url) throws IOException {
+        RestTemplate restTemplate = new RestTemplate();
+        String csvString = replaceDuplicateHeaders(restTemplate.getForObject(url, String.class));
+
+        return CSVFormat.EXCEL
+                .withFirstRecordAsHeader().withQuote(null).withIgnoreEmptyLines()
+                .parse(new StringReader(csvString));
+    }
+
     private static AvailablePractices setPracticesInUnitFromUnitSets(Map<String, Set<Integer>> unitsSetMap) {
         AvailablePractices result = new AvailablePractices(new ArrayList<>());
         for (String key : unitsSetMap.keySet()) {
@@ -71,31 +80,38 @@ public class UnlimitedPracticeUtil {
         if (url == null || url.isEmpty()) {
             return units;
         }
-        RestTemplate restTemplate = new RestTemplate();
-        String csvString = replaceDuplicateHeaders(restTemplate.getForObject(url, String.class));
-
-        CSVParser csvRecords = CSVFormat.EXCEL
-                .withFirstRecordAsHeader().withQuote(null).withIgnoreEmptyLines()
-                .parse(new StringReader(csvString));
+        CSVParser csvRecords = getCsvRecordsFromUrl(url);
         String unitNumKey = unitNumKey(csvRecords);
         for (CSVRecord record : csvRecords) {
-            if (record.isSet(unitNumKey)) {
-                String unitNumString = record.get(unitNumKey).replace("\"", "");
-                if (isNumeric(unitNumString)) {
-                    units.add(parseInt(unitNumString));
-                }
+            String unitNumString = getUnitNumString(record, unitNumKey);
+            if (isNumeric(unitNumString)) {
+                units.add(parseInt(unitNumString));
             }
         }
         return units;
     }
 
-    private static String unitNumKey(CSVParser csvRecords) {
+    public static String getUnitNumString(CSVRecord record, String unitNumKey) {
+        if (record.isSet(unitNumKey)) {
+            return record.get(unitNumKey).replace("\"", "");
+        }
+        return "NoSucnKey";
+    }
+
+    public static String unitNumKey(CSVParser csvRecords) {
         String quotedUnitNum = "\"Unit Num\"";
         String unitNum = "Unit Num";
         if (csvRecords.getHeaderMap().containsKey(unitNum)) {
             return unitNum;
         }
         return quotedUnitNum;
+    }
+
+    public static String addQuoteToKeyIfNeeded(CSVParser csvRecords, String key) {
+        if (csvRecords.getHeaderMap().containsKey(key)) {
+            return key;
+        }
+        return "\"" + key + "\"";
     }
 
     private static String replaceDuplicateHeaders(String csvString) {

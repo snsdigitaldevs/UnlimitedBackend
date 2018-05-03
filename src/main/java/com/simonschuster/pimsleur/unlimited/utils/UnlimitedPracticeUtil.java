@@ -107,14 +107,14 @@ public class UnlimitedPracticeUtil {
         return quotedUnitNum;
     }
 
-    public static String addQuoteToKeyIfNeeded(CSVParser csvRecords, String key) {
+    public static String findRealHeaderName(CSVParser csvRecords, String key) {
         if (csvRecords.getHeaderMap().containsKey(key)) {
             return key;
         }
-        return "\"" + key + "\"";
+        return key.toLowerCase();
     }
 
-    private static String replaceDuplicateHeaders(String csvString) {
+    public static String replaceDuplicateHeaders(String csvString) {
         final Integer[] columnIndex = {0};
 
         String[] headerAndBody = csvString.split(System.lineSeparator(), 2);

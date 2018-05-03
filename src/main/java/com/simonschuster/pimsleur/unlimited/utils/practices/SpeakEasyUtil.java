@@ -2,11 +2,15 @@ package com.simonschuster.pimsleur.unlimited.utils.practices;
 
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.PracticesInUnit;
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.SpeakEasy;
+import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 import org.joda.time.format.DateTimeFormatter;
+import org.springframework.http.converter.StringHttpMessageConverter;
+import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
+import java.io.StringReader;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
@@ -14,6 +18,8 @@ import java.util.Objects;
 import static com.simonschuster.pimsleur.unlimited.data.dto.practices.PracticesInUnit.createWithSpeakEasies;
 import static com.simonschuster.pimsleur.unlimited.utils.UnlimitedPracticeUtil.*;
 import static java.lang.Integer.parseInt;
+import static java.nio.charset.Charset.forName;
+import static java.util.Comparator.comparingInt;
 import static java.util.stream.Collectors.groupingBy;
 import static java.util.stream.Collectors.toList;
 import static java.util.stream.StreamSupport.stream;
@@ -28,12 +34,12 @@ public class SpeakEasyUtil {
         CSVParser csvRecords = getCsvRecordsFromUrl(csvUrl);
 
         String unitNumKey = unitNumKey(csvRecords);
-        String startKey = addQuoteToKeyIfNeeded(csvRecords, "Start");
-        String stopKey = addQuoteToKeyIfNeeded(csvRecords, "Stop");
-        String speakerKey = addQuoteToKeyIfNeeded(csvRecords, "Spkr");
-        String textKey = addQuoteToKeyIfNeeded(csvRecords, "Text");
-        String nativeTextKey = addQuoteToKeyIfNeeded(csvRecords, "NativeText");
-        String orderKey = addQuoteToKeyIfNeeded(csvRecords, "Vis Conv");
+        String startKey = findRealHeaderName(csvRecords, "Start");
+        String stopKey = findRealHeaderName(csvRecords, "Stop");
+        String speakerKey = findRealHeaderName(csvRecords, "Spkr");
+        String textKey = findRealHeaderName(csvRecords, "Text");
+        String nativeTextKey = findRealHeaderName(csvRecords, "NativeText");
+        String orderKey = findRealHeaderName(csvRecords, "Vis Conv");
 
         return stream(csvRecords.spliterator(), false)
                 .collect(groupingBy(csvRecord -> getUnitNumString(csvRecord, unitNumKey)))
@@ -47,6 +53,7 @@ public class SpeakEasyUtil {
                     return null;
                 })
                 .filter(Objects::nonNull)
+                .sorted(comparingInt(PracticesInUnit::getUnitNumber))
                 .collect(toList());
     }
 
@@ -82,5 +89,18 @@ public class SpeakEasyUtil {
             return csvRecord.get(key).replace("\"", "");
         }
         return "";
+    }
+
+    private static CSVParser getCsvRecordsFromUrl(String url) throws IOException {
+        RestTemplate restTemplate = new RestTemplate();
+        restTemplate.getMessageConverters()
+                .add(0, new StringHttpMessageConverter(forName("UTF-8")));
+        String csvString = replaceDuplicateHeaders(restTemplate.getForObject(url, String.class));
+
+        return CSVFormat.EXCEL
+                .withFirstRecordAsHeader()
+                .withIgnoreEmptyLines()
+                .withIgnoreHeaderCase()
+                .parse(new StringReader(csvString));
     }
 }

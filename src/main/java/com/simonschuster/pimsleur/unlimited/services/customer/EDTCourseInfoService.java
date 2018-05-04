@@ -163,9 +163,11 @@ public class EDTCourseInfoService {
                     .peek(download -> entitlementTokens.put(level,
                             new ImmutablePair<>(download.getEntitlementToken(), download.getMediaSetId())))
                     .flatMap(downloadInfo -> downloadInfo.getMediaSet().getChildMediaSets().stream())
-                    .filter(mediaSet -> isLesson(mediaSet))
+                    .filter(mediaSet -> isLesson(mediaSet.getMediaSetTitle()))
                     .flatMap(childMediaSet -> childMediaSet.getMediaItems().stream())
-                    .filter(item -> item.getMediaItemTypeId() == EDTCourseInfoService.MP3_MEDIA_TYPE)
+                    .filter(item -> isLesson(item.getMediaItemTitle()))
+                    .filter(item -> (item.getMediaItemTypeId() == EDTCourseInfoService.MP3_MEDIA_TYPE)
+                            && item.getMediaItemTitle().contains("Unit"))
                     .forEach(item -> itemIds.put(item.getMediaItemTitle(), item.getMediaItemId()));
 
 
@@ -197,9 +199,10 @@ public class EDTCourseInfoService {
                             .peek(download -> entitlementTokens.put(level,
                                     new ImmutablePair<>(download.getEntitlementToken(), download.getMediaSetId())))
                             .flatMap(downloadInfo -> downloadInfo.getMediaSet().getChildMediaSets().stream())
-                            .filter(mediaSet -> isLesson(mediaSet))
+                            .filter(mediaSet -> isLesson(mediaSet.getMediaSetTitle()))
                             .flatMap(childMediaSet -> childMediaSet.getMediaItems().stream())
-                            .filter(item -> item.getMediaItemTypeId() == EDTCourseInfoService.MP3_MEDIA_TYPE)
+                            .filter(item -> (item.getMediaItemTypeId() == EDTCourseInfoService.MP3_MEDIA_TYPE)
+                                    && item.getMediaItemTitle().contains("Unit"))
                             .forEach(item -> itemIds.put(item.getMediaItemTitle(), item.getMediaItemId()));
 
                     return new ImmutablePair<>(level, itemIds);
@@ -207,8 +210,8 @@ public class EDTCourseInfoService {
                 .collect(Collectors.toMap(Pair::getKey, Pair::getValue));
     }
 
-    private boolean isLesson(ChildMediaSet mediaSet) {
-        return mediaSet.getMediaSetTitle().contains(KEY_UNITS) || mediaSet.getMediaSetTitle().contains(KEY_LESSONS);
+    private boolean isLesson(String title) {
+        return title.contains(KEY_UNITS) || title.contains(KEY_LESSONS);
     }
 
     /**

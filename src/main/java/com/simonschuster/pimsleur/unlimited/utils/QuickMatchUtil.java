@@ -12,17 +12,16 @@ import org.springframework.web.client.RestTemplate;
 import java.io.IOException;
 import java.io.StringReader;
 import java.util.*;
-import java.util.stream.Collectors;
 
-import static com.simonschuster.pimsleur.unlimited.utils.UnlimitedPracticeUtil.removeErrorEndInLine;
 import static com.simonschuster.pimsleur.unlimited.utils.UnlimitedPracticeUtil.replaceDuplicateHeaders;
+import static com.simonschuster.pimsleur.unlimited.utils.UnlimitedPracticeUtil.specialCsvFiles;
 import static java.nio.charset.Charset.forName;
 
 public class QuickMatchUtil {
     public static List<PracticesInUnit> getQuickMatchesByCsvUrl(String quickMatchesInUrl) throws IOException {
         List<PracticesInUnit> result = new ArrayList<>();
         if (quickMatchesInUrl == null || quickMatchesInUrl.isEmpty()) {
-            return null;
+            return result;
         }
 
         RestTemplate restTemplate = new RestTemplate();
@@ -38,34 +37,6 @@ public class QuickMatchUtil {
             parseCsvLine(result, record, headerMap);
         }
         return result;
-    }
-
-    private static String specialCsvFiles(String csvString) {
-        if (csvString.contains("Spanish 3")) {
-            csvString = csvString.replace("\nplease", "please").replace("\nremoved", "removed");
-        }
-        String[] csvArray = csvString.split("\n");
-        String header = csvArray[0];
-        csvString = header + "\n" + Arrays.stream(csvArray)
-                .skip(1)
-                .map(line -> {
-                    if (line.contains("Italian 2") || line.contains("Italian 3")) {
-                        line = removeErrorEndInLine(line);
-                        if (line.contains("\"\"")) {
-                            line = line.replace("\"\"", "\"");
-                        }
-                    } else if (line.contains("Spanish 3")) {
-                        if (!line.endsWith(",")) {
-                            line += ",";
-                        }
-                        if (line.contains("\" (")) {
-                            line = line.replace("\" (", " (").replace("\"in,\"", "in,");
-                        }
-                    }
-                    return line;
-                })
-                .collect(Collectors.joining("\n"));
-        return csvString;
     }
 
     private static Map<String, String> getHeaderMap(CSVParser csvRecords, List<String> originHeaders) {

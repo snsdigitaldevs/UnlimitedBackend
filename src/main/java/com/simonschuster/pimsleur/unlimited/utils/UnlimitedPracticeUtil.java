@@ -131,11 +131,35 @@ public class UnlimitedPracticeUtil {
                 headerAndBody[1];
     }
 
-    public static String removeErrorEndInLine(String line) {
-        String rightEnd = "\",";
-        if (!line.endsWith(rightEnd)) {
-            line = line.substring(0, line.lastIndexOf(rightEnd) + rightEnd.length());
+    public static String specialCsvFiles(String csvString) {
+        if (csvString.contains("Spanish 3")) {
+            csvString = csvString.replace("\nplease", "please").replace("\nremoved", "removed");
         }
-        return line;
+        String rightEnd = "\",";
+
+        String[] csvArray = csvString.split("\n");
+        String header = csvArray[0];
+        csvString = header + "\n" + Arrays.stream(csvArray)
+                .skip(1)
+                .map(line -> {
+                    if (line.contains("Italian 2") || line.contains("Italian 3")) {
+                        if (!line.endsWith(rightEnd)) {
+                            line = line.substring(0, line.lastIndexOf(rightEnd) + rightEnd.length());
+                        }
+                        if (line.contains("\"\"")) {
+                            line = line.replace("\"\"", "\"");
+                        }
+                    } else if (line.contains("Spanish 3") && line.contains("477,")) {
+                        if (!line.endsWith(",")) {
+                            line += ",";
+                        }
+                        if (line.contains("\" (")) {
+                            line = line.replace("\" (", " (").replace("\"in,\"", "in,");
+                        }
+                    }
+                    return line;
+                })
+                .collect(Collectors.joining("\n"));
+        return csvString;
     }
 }

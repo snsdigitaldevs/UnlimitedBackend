@@ -144,10 +144,10 @@ public class EDTCourseInfoServiceTest {
             List<Lesson> lessons = levelOne.getLessons();
             Lesson lessonOne = lessons.stream().filter(lesson -> lesson.getName().equals("Unit 01")).collect(Collectors.toList()).get(0);
 
-            assertEquals("https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442310223_Japanese_Phase_1/9781442310223_Unit_20.mp3?Expires=1524839994&Signature=Hw5qalqbO6a0qe4dpFcJO5xKACiYWa6kuy4pd341tFWta4yP4tZLmW4BLeHeYB4oOohcKPMn9XG8pGojntmMb37DJOyTOFaK783O5wzO5xJ7tgY-dl1fBOC1a2X9zg6CRJ-ZWtdkcK~07Ob7NSMpjBxMi3fmTxqNbD~u~61H90c_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+            assertEquals("https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Level_1/9781442307674_AudioUsersGuide.mp3?Expires=1525425056&Signature=eUnZiAoF3Z3vD789evG9c7mX4ipyzuv7nu005ZiPISjCgmJF0X7wg-u~sNi7B2XrfKReOYHm9f5JyJEqDJL3KKaQ4Vxv3QXbQd4OVy8whcvKJKrWziNXTV6Nz4Blksd7uDdoKcib79o7yVkNEL6CF4IOChjZ9s4s-rIin4HJue0_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
                     lessonOne.getAudioLink());
             assertEquals(new Integer(1), lessonOne.getLevel());
-            assertTrue(67226 == lessonOne.getMediaItemId());
+            assertTrue(41569 == lessonOne.getMediaItemId());
             assertEquals("01", lessonOne.getLessonNumber());
             assertEquals("Unit 01", lessonOne.getName());
         });
@@ -179,6 +179,12 @@ public class EDTCourseInfoServiceTest {
                 eq(form("action"), "pcm_blmqide"))
         )
                 .response(file("src/test/resources/pcmCustInfoResponse.json"));
+
+        server.post(and(
+                by(uri("/subscr_dev/action_handlers/nwdft.php")),
+                eq(form("action"), "slruldr"))
+        )
+                .response(file("src/test/resources/pcmNewVersionAudioLinkRequest.json"));
 
         server.post(and(
                 by(uri("/subscr_production_v_9/action_handlers/rdlss.php")),

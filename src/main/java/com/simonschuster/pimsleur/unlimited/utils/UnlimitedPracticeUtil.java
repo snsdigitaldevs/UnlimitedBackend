@@ -7,7 +7,6 @@ import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 import org.springframework.http.converter.StringHttpMessageConverter;
-import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
@@ -17,18 +16,14 @@ import java.util.stream.Collectors;
 
 import static java.lang.Integer.parseInt;
 import static java.nio.charset.Charset.forName;
-import static java.nio.charset.Charset.forName;
 import static java.util.Collections.frequency;
 import static org.apache.commons.lang3.StringUtils.isNumeric;
 
 public class UnlimitedPracticeUtil {
-    private static final String FLASH_CARD = "flashCard";
     private static final String READING = "reading";
-    private static final String QUICK_MATCH = "quickMatch";
 
     public static AvailablePractices getAvailablePractices(PracticesCsvLocations paths) throws IOException {
         Map<String, Set<Integer>> unitsSetMap = new HashMap<>();
-        unitsSetMap.put(FLASH_CARD, getUnitSetFromCSV(paths.getFlashCardUrl()));
         unitsSetMap.put(READING, getUnitSetFromCSV(paths.getReadingUrl()));
         return setPracticesInUnitFromUnitSets(unitsSetMap);
     }
@@ -55,14 +50,8 @@ public class UnlimitedPracticeUtil {
                             return practice;
                         });
                 switch (key) {
-                    case FLASH_CARD:
-                        practiceInUnit.setHasFlashCard(true);
-                        break;
                     case READING:
                         practiceInUnit.setHasReading(true);
-                        break;
-                    case QUICK_MATCH:
-                        practiceInUnit.setHasQuickMatch(true);
                         break;
                     default:
                         // do nothing
@@ -134,15 +123,6 @@ public class UnlimitedPracticeUtil {
                 System.lineSeparator() +
                 headerAndBody[1];
     }
-
-    public static String removeErrorEndInLine(String line) {
-        String rightEnd = "\",";
-        if (!line.endsWith(rightEnd)) {
-            line = line.substring(0, line.lastIndexOf(rightEnd) + rightEnd.length());
-        }
-        return line;
-    }
-
 
     public static CSVParser urlToCsv(String url) throws IOException {
         RestTemplate restTemplate = new RestTemplate();

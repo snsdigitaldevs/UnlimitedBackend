@@ -129,6 +129,9 @@ public class UnlimitedPracticeUtil {
         restTemplate.getMessageConverters()
                 .add(0, new StringHttpMessageConverter(forName("UTF-8")));
         String csvString = replaceDuplicateHeaders(restTemplate.getForObject(url, String.class));
+        if (csvString.contains("Italian 2")) {
+            csvString = specialCsvFiles(csvString);
+        }
 
         return CSVFormat.EXCEL
                 .withFirstRecordAsHeader()

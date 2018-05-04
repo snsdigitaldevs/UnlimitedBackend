@@ -93,7 +93,7 @@ public class AggregatedProductInfo {
                 Course course = new Course();
                 course.setLanguageName(orderProductInfo.getProduct().getProductsLanguageName());
                 course.setLevel(Integer.parseInt(level));
-                course.setLessons(lessonInfoForOneLevel);
+                course.setLessons(filterAndOrder(lessonInfoForOneLevel));
 
                 course.setCourseName(products.get(Integer.parseInt(level)).getProductsName());
                 course.setProductCode(products.get(Integer.parseInt(level)).getIsbn13().replace("-", ""));
@@ -132,7 +132,18 @@ public class AggregatedProductInfo {
         });
 
 
-        course.setLessons(lessons);
+        course.setLessons(filterAndOrder(lessons));
+    }
+
+    private List<Lesson> filterAndOrder(List<Lesson> lessons) {
+        return lessons.stream()
+                .filter(lesson -> lesson.getName().contains("Unit"))
+                .sorted((lesson1, lesson2) -> {
+                    int seq1 = Integer.parseInt(lesson1.getLessonNumber());
+                    int seq2 = Integer.parseInt(lesson2.getLessonNumber());
+                    return seq1 - seq2;
+                })
+                .collect(Collectors.toList());
     }
 
     private void getImageAndAudioFromPU(Lesson lesson, MediaItem lessonItem, MediaSet mediaSet) throws Exception {

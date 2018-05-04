@@ -138,10 +138,10 @@ public class AggregatedProductInfo {
     private List<Lesson> filterAndOrder(List<Lesson> lessons) {
         return lessons.stream()
                 .filter(lesson -> lesson.getName().contains("Unit"))
-                .sorted((lesson1,lesson2)->{
+                .sorted((lesson1, lesson2) -> {
                     int seq1 = Integer.parseInt(lesson1.getLessonNumber());
                     int seq2 = Integer.parseInt(lesson2.getLessonNumber());
-                   return seq1 - seq2;
+                    return seq1 - seq2;
                 })
                 .collect(Collectors.toList());
     }

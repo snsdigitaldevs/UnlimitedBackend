@@ -5,6 +5,7 @@ import com.simonschuster.pimsleur.unlimited.data.dto.practices.PracticesInUnit;
 import com.simonschuster.pimsleur.unlimited.services.practices.PcmAvailablePracticesService;
 import com.simonschuster.pimsleur.unlimited.services.practices.PracticesCsvLocations;
 import com.simonschuster.pimsleur.unlimited.services.practices.PuAvailablePracticesService;
+import com.simonschuster.pimsleur.unlimited.utils.QuickMatchUtil;
 import com.simonschuster.pimsleur.unlimited.utils.UnlimitedPracticeUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -13,6 +14,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static com.simonschuster.pimsleur.unlimited.utils.PuFreeLessonISBNUtil.toNormalISBN;
 import static com.simonschuster.pimsleur.unlimited.utils.practices.FlashCardUtil.csvToFlashCards;
@@ -42,16 +44,22 @@ public class AvailablePracticesController {
         AvailablePractices availablePractices = UnlimitedPracticeUtil.getAvailablePractices(csvLocations);
         List<PracticesInUnit> speakEasies = csvToSpeakEasies(csvLocations.getSpeakEasyUrl());
         List<PracticesInUnit> flashCards = csvToFlashCards(csvLocations.getFlashCardUrl());
-        return new AvailablePractices(mergeLists(availablePractices, speakEasies, flashCards));
+        List<PracticesInUnit> quickMatches = QuickMatchUtil.getQuickMatchesByCsvUrl(csvLocations.getQuickMatchUrl());
+
+        return new AvailablePractices(mergeLists(availablePractices, speakEasies, flashCards, quickMatches));
     }
 
     private List<PracticesInUnit> mergeLists(AvailablePractices availablePractices,
                                              List<PracticesInUnit> speakEasy,
-                                             List<PracticesInUnit> flashCards) {
-        return concat(
-                concat(availablePractices.getPracticesInUnits().stream(),
-                        speakEasy.stream()),
-                flashCards.stream())
+                                             List<PracticesInUnit> flashCards,
+                                             List<PracticesInUnit> quickMatches) {
+        Stream<PracticesInUnit> allPractices = concat(concat(concat(
+                availablePractices.getPracticesInUnits().stream(),
+                speakEasy.stream()),
+                quickMatches.stream()),
+                flashCards.stream());
+
+        return allPractices
                 .collect(Collectors.groupingBy(PracticesInUnit::getUnitNumber))
                 .values().stream()
                 .map(group -> {

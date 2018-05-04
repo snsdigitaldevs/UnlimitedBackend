@@ -1,5 +1,7 @@
 package com.simonschuster.pimsleur.unlimited.controllers;
 
+import com.simonschuster.pimsleur.unlimited.common.exception.ErrorCode;
+import com.simonschuster.pimsleur.unlimited.common.exception.PimsleurException;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
 import com.simonschuster.pimsleur.unlimited.services.customer.EDTCourseInfoService;
 import org.springframework.beans.factory.annotation.Autowired;

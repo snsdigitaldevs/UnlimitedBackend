@@ -12,16 +12,16 @@ import org.springframework.web.client.RestTemplate;
 import java.io.IOException;
 import java.io.StringReader;
 import java.util.*;
-import java.util.stream.Collectors;
 
 import static com.simonschuster.pimsleur.unlimited.utils.UnlimitedPracticeUtil.replaceDuplicateHeaders;
+import static com.simonschuster.pimsleur.unlimited.utils.UnlimitedPracticeUtil.specialCsvFiles;
 import static java.nio.charset.Charset.forName;
 
 public class QuickMatchUtil {
     public static List<PracticesInUnit> getQuickMatchesByCsvUrl(String quickMatchesInUrl) throws IOException {
         List<PracticesInUnit> result = new ArrayList<>();
         if (quickMatchesInUrl == null || quickMatchesInUrl.isEmpty()) {
-            return null;
+            return result;
         }
 
         RestTemplate restTemplate = new RestTemplate();
@@ -39,37 +39,6 @@ public class QuickMatchUtil {
         return result;
     }
 
-    private static String specialCsvFiles(String csvString) {
-        if (csvString.contains("Spanish 3")) {
-            csvString = csvString.replace("\nplease", "please").replace("\nremoved", "removed");
-        }
-        String[] csvArray = csvString.split("\n");
-        String header = csvArray[0];
-        String rightEnd = "\",";
-        csvString = header + "\n" + Arrays.stream(csvArray)
-                .skip(1)
-                .map(line -> {
-                    if (line.contains("Italian 2") || line.contains("Italian 3")) {
-                        if (!line.endsWith(rightEnd)) {
-                            line = line.substring(0, line.lastIndexOf(rightEnd) + rightEnd.length());
-                        }
-                        if (line.contains("\"\"")) {
-                            line = line.replace("\"\"", "\"");
-                        }
-                    } else if (line.contains("Spanish 3")) {
-                        if (!line.endsWith(",")) {
-                            line += ",";
-                        }
-                        if (line.contains("\" (")) {
-                            line = line.replace("\" (", " (").replace("\"in,\"", "in,");
-                        }
-                    }
-                    return line;
-                })
-                .collect(Collectors.joining("\n"));
-        return csvString;
-    }
-
     private static Map<String, String> getHeaderMap(CSVParser csvRecords, List<String> originHeaders) {
         Map<String, String> result = new HashMap<>();
         for (String originHeader : originHeaders) {
@@ -80,9 +49,9 @@ public class QuickMatchUtil {
 
     private static void parseCsvLine(List<PracticesInUnit> result, CSVRecord record, Map<String, String> headerMap) {
         String qz = record.get(headerMap.get("QZ #"));
-        String group = qz.contains("_") ? qz.substring(0, 2) : "00";
-
         Integer unit = Integer.parseInt(record.get("Unit Num"));
+        String group = qz.contains("_") ? unit.toString() + "_" + qz.substring(0, 2) : "00";
+
         List<QuickMatch> quickMatches = result.stream()
                 .filter(practices -> practices.getUnitNumber().equals(unit))
                 .findFirst()
@@ -111,8 +80,9 @@ public class QuickMatchUtil {
             quickMatch.setQuestions(false);
         }
 
-        String transliteration = record.isSet("Transliteration") ? record.get("Transliteration") : "";
-        QuickMatchItem quickMatchItem = new QuickMatchItem(record.get("Cue"), transliteration, record.get(headerMap.get("Snippet Name")));
+        String transliteration = getStringIfNotExist(record, "Transliteration");
+        String snippetName = getStringIfNotExist(record, "Snippet Name");
+        QuickMatchItem quickMatchItem = new QuickMatchItem(record.get("Cue"), transliteration, snippetName);
         String qzWithoutGroup = qz.split("_")[0];
         if ((qzWithoutGroup.charAt(qzWithoutGroup.length() - 1) == 'Q')) {
             quickMatch.setQuestion(quickMatchItem);
@@ -121,10 +91,13 @@ public class QuickMatchUtil {
         }
     }
 
+    private static String getStringIfNotExist(CSVRecord record, String column) {
+        return record.isSet(column) ? record.get(column) : "";
+    }
+
     private static String getHeaderIgnoreCase(CSVParser csvRecords, String originHeader) {
         for (String key : csvRecords.getHeaderMap().keySet()) {
-            if (key.toLowerCase().equals(originHeader.toLowerCase())
-                    || (originHeader.equals("Snippet Name") && key.equals("Course Name (Source)"))) {
+            if (key.toLowerCase().equals(originHeader.toLowerCase())) {
                 return key;
             }
         }

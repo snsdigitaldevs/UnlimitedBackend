@@ -15,10 +15,11 @@ public class PracticesInUnit {
 
     private List<QuickMatch> quickMatches;
     private List<SpeakEasy> speakEasies;
+    private List<FlashCard> flashCards;
 
     public PracticesInUnit(Integer unitNumber) {
         this.unitNumber = unitNumber;
-        this.quickMatches =new ArrayList<>();
+        this.quickMatches = new ArrayList<>();
     }
 
     // factory method
@@ -76,6 +77,10 @@ public class PracticesInUnit {
         this.hasReading = hasReading;
     }
 
+    public List<FlashCard> getFlashCards() {
+        return flashCards;
+    }
+
     public List<SpeakEasy> getSpeakEasies() {
         return speakEasies;
     }
@@ -89,6 +94,7 @@ public class PracticesInUnit {
         mergedResult.setHasSpeakEasy(this.hasSpeakEasy || that.hasSpeakEasy);
 
         mergedResult.speakEasies = pickNotNullOrEmpty(this.speakEasies, that.speakEasies);
+        mergedResult.flashCards = pickNotNullOrEmpty(this.flashCards, that.flashCards);
         mergedResult.quickMatches = pickNotNullOrEmpty(this.quickMatches, that.quickMatches);
 
         return mergedResult;
@@ -105,6 +111,13 @@ public class PracticesInUnit {
         PracticesInUnit practicesInUnit = new PracticesInUnit(unitNumber);
         practicesInUnit.speakEasies = speakEasies;
         practicesInUnit.setHasSpeakEasy(speakEasies.size() > 0);
+        return practicesInUnit;
+    }
+
+    public static PracticesInUnit createWithFlashCards(int unitNumber, List<FlashCard> flashCards) {
+        PracticesInUnit practicesInUnit = new PracticesInUnit(unitNumber);
+        practicesInUnit.flashCards = flashCards;
+        practicesInUnit.setHasFlashCard(flashCards.size() > 0);
         return practicesInUnit;
     }
 }

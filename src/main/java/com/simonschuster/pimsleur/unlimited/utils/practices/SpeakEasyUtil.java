@@ -2,15 +2,11 @@ package com.simonschuster.pimsleur.unlimited.utils.practices;
 
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.PracticesInUnit;
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.SpeakEasy;
-import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 import org.joda.time.format.DateTimeFormatter;
-import org.springframework.http.converter.StringHttpMessageConverter;
-import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
-import java.io.StringReader;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
@@ -18,7 +14,6 @@ import java.util.Objects;
 import static com.simonschuster.pimsleur.unlimited.data.dto.practices.PracticesInUnit.createWithSpeakEasies;
 import static com.simonschuster.pimsleur.unlimited.utils.UnlimitedPracticeUtil.*;
 import static java.lang.Integer.parseInt;
-import static java.nio.charset.Charset.forName;
 import static java.util.Collections.emptyList;
 import static java.util.Comparator.comparingInt;
 import static java.util.stream.Collectors.groupingBy;
@@ -37,7 +32,7 @@ public class SpeakEasyUtil {
             return emptyList();
         }
 
-        CSVParser csvRecords = getCsvRecordsFromUrl(csvUrl);
+        CSVParser csvRecords = urlToCsv(csvUrl);
 
         String unitNumKey = unitNumKey(csvRecords);
         String startKey = findRealHeaderName(csvRecords, "Start");
@@ -106,23 +101,4 @@ public class SpeakEasyUtil {
         }
     }
 
-    private static String getFromCsv(String key, CSVRecord csvRecord) {
-        if (csvRecord.isSet(key)) {
-            return csvRecord.get(key).replace("\"", "");
-        }
-        return "";
-    }
-
-    private static CSVParser getCsvRecordsFromUrl(String url) throws IOException {
-        RestTemplate restTemplate = new RestTemplate();
-        restTemplate.getMessageConverters()
-                .add(0, new StringHttpMessageConverter(forName("UTF-8")));
-        String csvString = replaceDuplicateHeaders(restTemplate.getForObject(url, String.class));
-
-        return CSVFormat.EXCEL
-                .withFirstRecordAsHeader()
-                .withIgnoreEmptyLines()
-                .withIgnoreHeaderCase()
-                .parse(new StringReader(csvString));
-    }
 }

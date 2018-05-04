@@ -6,6 +6,7 @@ import com.simonschuster.pimsleur.unlimited.services.practices.PracticesCsvLocat
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
+import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
@@ -14,17 +15,15 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 import static java.lang.Integer.parseInt;
+import static java.nio.charset.Charset.forName;
 import static java.util.Collections.frequency;
 import static org.apache.commons.lang3.StringUtils.isNumeric;
 
 public class UnlimitedPracticeUtil {
-    private static final String FLASH_CARD = "flashCard";
     private static final String READING = "reading";
-    private static final String QUICK_MATCH = "quickMatch";
 
     public static AvailablePractices getAvailablePractices(PracticesCsvLocations paths) throws IOException {
         Map<String, Set<Integer>> unitsSetMap = new HashMap<>();
-        unitsSetMap.put(FLASH_CARD, getUnitSetFromCSV(paths.getFlashCardUrl()));
         unitsSetMap.put(READING, getUnitSetFromCSV(paths.getReadingUrl()));
         return setPracticesInUnitFromUnitSets(unitsSetMap);
     }
@@ -51,14 +50,8 @@ public class UnlimitedPracticeUtil {
                             return practice;
                         });
                 switch (key) {
-                    case FLASH_CARD:
-                        practiceInUnit.setHasFlashCard(true);
-                        break;
                     case READING:
                         practiceInUnit.setHasReading(true);
-                        break;
-                    case QUICK_MATCH:
-                        practiceInUnit.setHasQuickMatch(true);
                         break;
                     default:
                         // do nothing
@@ -129,5 +122,60 @@ public class UnlimitedPracticeUtil {
         return String.join(",", noDuplicatedColumns) +
                 System.lineSeparator() +
                 headerAndBody[1];
+    }
+
+    public static CSVParser urlToCsv(String url) throws IOException {
+        RestTemplate restTemplate = new RestTemplate();
+        restTemplate.getMessageConverters()
+                .add(0, new StringHttpMessageConverter(forName("UTF-8")));
+        String csvString = replaceDuplicateHeaders(restTemplate.getForObject(url, String.class));
+        if (csvString.contains("Italian 2")) {
+            csvString = specialCsvFiles(csvString);
+        }
+
+        return CSVFormat.EXCEL
+                .withFirstRecordAsHeader()
+                .withIgnoreEmptyLines()
+                .withIgnoreHeaderCase()
+                .parse(new StringReader(csvString));
+    }
+
+    public static String getFromCsv(String key, CSVRecord csvRecord) {
+        if (csvRecord.isSet(key)) {
+            return csvRecord.get(key).replace("\"", "");
+        }
+        return "";
+    }
+
+    public static String specialCsvFiles(String csvString) {
+        if (csvString.contains("Spanish 3")) {
+            csvString = csvString.replace("\nplease", "please").replace("\nremoved", "removed");
+        }
+        String rightEnd = "\",";
+
+        String[] csvArray = csvString.split("\n");
+        String header = csvArray[0];
+        csvString = header + "\n" + Arrays.stream(csvArray)
+                .skip(1)
+                .map(line -> {
+                    if (line.contains("Italian 2") || line.contains("Italian 3")) {
+                        if (!line.endsWith(rightEnd)) {
+                            line = line.substring(0, line.lastIndexOf(rightEnd) + rightEnd.length());
+                        }
+                        if (line.contains("\"\"")) {
+                            line = line.replace("\"\"", "\"");
+                        }
+                    } else if (line.contains("Spanish 3") && line.contains("477,")) {
+                        if (!line.endsWith(",")) {
+                            line += ",";
+                        }
+                        if (line.contains("\" (")) {
+                            line = line.replace("\" (", " (").replace("\"in,\"", "in,");
+                        }
+                    }
+                    return line;
+                })
+                .collect(Collectors.joining("\n"));
+        return csvString;
     }
 }

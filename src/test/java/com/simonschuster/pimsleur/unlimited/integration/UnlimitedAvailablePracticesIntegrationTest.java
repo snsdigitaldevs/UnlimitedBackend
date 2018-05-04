@@ -21,8 +21,8 @@ public class UnlimitedAvailablePracticesIntegrationTest {
                 "https://install.pimsleurunlimited.com/staging_n/mobile/mandarinchinese/Mandarin Chinese I/metadata/timecode/9781442394872_Mandarin_1_RL.csv",
                 "https://install.pimsleurunlimited.com/staging_n/mobile/mandarinchinese/Mandarin Chinese I/metadata/timecode/9781442394872_Mandarin_1_VC.csv"
         );
+
         AvailablePractices availablePractices = UnlimitedPracticeUtil.getAvailablePractices(practiceCsvLocations);
-        List<PracticesInUnit> practicesInUnits = QuickMatchUtil.getQuickMatchesByCsvUrl(practiceCsvLocations.getQuickMatchUrl());
-        assertThat(availablePractices.getPracticesInUnits().size(), is(30));
+        assertThat(availablePractices.getPracticesInUnits().size(), is(20));
     }
 }

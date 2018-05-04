@@ -130,4 +130,12 @@ public class UnlimitedPracticeUtil {
                 System.lineSeparator() +
                 headerAndBody[1];
     }
+
+    public static String removeErrorEndInLine(String line) {
+        String rightEnd = "\",";
+        if (!line.endsWith(rightEnd)) {
+            line = line.substring(0, line.lastIndexOf(rightEnd) + rightEnd.length());
+        }
+        return line;
+    }
 }

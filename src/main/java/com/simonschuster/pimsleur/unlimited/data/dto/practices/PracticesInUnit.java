@@ -1,5 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.data.dto.practices;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class PracticesInUnit {
@@ -12,10 +13,12 @@ public class PracticesInUnit {
     private boolean hasReading;
     private boolean hasSkills;
 
+    private List<QuickMatch> quickMatches;
     private List<SpeakEasy> speakEasies;
 
     public PracticesInUnit(Integer unitNumber) {
         this.unitNumber = unitNumber;
+        this.quickMatches =new ArrayList<>();
     }
 
     // factory method
@@ -23,6 +26,10 @@ public class PracticesInUnit {
         PracticesInUnit practicesInUnit = new PracticesInUnit(unitNumber);
         practicesInUnit.setHasReading(true);
         return practicesInUnit;
+    }
+
+    public List<QuickMatch> getQuickMatches() {
+        return quickMatches;
     }
 
     public boolean isHasFlashCard() {
@@ -82,6 +89,7 @@ public class PracticesInUnit {
         mergedResult.setHasSpeakEasy(this.hasSpeakEasy || that.hasSpeakEasy);
 
         mergedResult.speakEasies = pickNotNullOrEmpty(this.speakEasies, that.speakEasies);
+        mergedResult.quickMatches = pickNotNullOrEmpty(this.quickMatches, that.quickMatches);
 
         return mergedResult;
     }
@@ -91,5 +99,12 @@ public class PracticesInUnit {
             return one;
         }
         return two;
+    }
+
+    public static PracticesInUnit createWithSpeakEasies(int unitNumber, List<SpeakEasy> speakEasies) {
+        PracticesInUnit practicesInUnit = new PracticesInUnit(unitNumber);
+        practicesInUnit.speakEasies = speakEasies;
+        practicesInUnit.setHasSpeakEasy(speakEasies.size() > 0);
+        return practicesInUnit;
     }
 }

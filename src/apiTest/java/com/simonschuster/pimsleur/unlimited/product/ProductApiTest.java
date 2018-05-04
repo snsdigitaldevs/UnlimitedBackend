@@ -62,4 +62,14 @@ public class ProductApiTest extends BaseApiTest {
                 .body("productCode", is(ImmutableList.of("9781442307674")))
                 .body("courseName", is(ImmutableList.of("French Level 1, Lessons 1-30")));
     }
+
+    @Test
+    public void should_get_product_info_successfully_when_product_is_pu_free_lesson() {
+        given()
+                .contentType(ContentType.JSON)
+                .when()
+                .get("/productInfo?isPUProductCode=true&productCode=9781508243328&sub=auth0|5ab1728e1d2fb71e499dde01")
+                .then()
+                .log().all();
+    }
 }

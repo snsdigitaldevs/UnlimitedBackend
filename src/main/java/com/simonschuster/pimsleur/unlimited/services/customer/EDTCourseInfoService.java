@@ -1,5 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.services.customer;
 
+import com.simonschuster.pimsleur.unlimited.common.exception.PimsleurException;
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Lesson;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.*;
@@ -60,7 +61,7 @@ public class EDTCourseInfoService {
         } catch (Exception exception) {
             logger.error("Exception occured when get product info with PU product code.");
             exception.printStackTrace();
-            throw exception;
+            throw new PimsleurException("Exception occured when get product info with PU product code.");
         }
     }
 
@@ -76,7 +77,7 @@ public class EDTCourseInfoService {
         } catch (Exception exception) {
             logger.error("Exception occured when get product info with PU product code.");
             exception.printStackTrace();
-            throw exception;
+            throw new PimsleurException("Exception occured when get product info with PU product code.");
         }
     }
 

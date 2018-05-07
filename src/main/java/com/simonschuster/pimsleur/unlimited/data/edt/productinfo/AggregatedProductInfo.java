@@ -1,6 +1,7 @@
 package com.simonschuster.pimsleur.unlimited.data.edt.productinfo;
 
 import com.google.common.util.concurrent.UncheckedExecutionException;
+import com.simonschuster.pimsleur.unlimited.common.exception.PimsleurException;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Image;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Lesson;
@@ -71,7 +72,7 @@ public class AggregatedProductInfo {
             } catch (Exception e) {
                 logger.error("Error occured when get product name from PU EDT API.");
                 e.printStackTrace();
-                throw new UncheckedExecutionException(e);
+                throw new PimsleurException("Error occured when get product name from PU EDT API.");
             }
             transformLessonInfoFromPU(course, mediaSet);
             courses.add(course);
@@ -125,7 +126,7 @@ public class AggregatedProductInfo {
             } catch (Exception e) {
                 logger.error("Error occured when convert product info from PU EDT API.");
                 e.printStackTrace();
-                throw new UncheckedExecutionException(e);
+                throw new PimsleurException("Error occured when convert product info from PU EDT API.");
             }
 
             lessons.add(lesson);

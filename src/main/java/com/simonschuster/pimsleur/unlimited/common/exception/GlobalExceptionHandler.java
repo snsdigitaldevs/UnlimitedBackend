@@ -26,7 +26,7 @@ public class GlobalExceptionHandler {
         HttpStatus httpStatus = resolveAnnotatedResponseStatus(ex);
         String message = ex.getMessage();
         if (message == null) {
-            message = "系统错误.";
+            message = "System error";
         }
 
         return new ResponseEntity<>(of(httpStatus.value(), message), new HttpHeaders(), httpStatus);

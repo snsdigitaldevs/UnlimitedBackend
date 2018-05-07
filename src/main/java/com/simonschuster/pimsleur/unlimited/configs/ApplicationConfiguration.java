@@ -16,6 +16,10 @@ public class ApplicationConfiguration {
         return env.getProperty("edt.api.parameters." + propertyName);
     }
 
+    public String getAuth0ApiParameter(String propertyName) {
+        return env.getProperty("oauth.login.api.parameters." + propertyName);
+    }
+
     public String getProperty(String propertyName){
         return env.getProperty(propertyName);
     }

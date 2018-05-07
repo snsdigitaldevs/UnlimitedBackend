@@ -1,7 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.controllers;
 
-import com.simonschuster.pimsleur.unlimited.common.exception.ErrorCode;
-import com.simonschuster.pimsleur.unlimited.common.exception.PimsleurException;
+import com.simonschuster.pimsleur.unlimited.common.exception.ParamInvalidException;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
 import com.simonschuster.pimsleur.unlimited.services.customer.EDTCourseInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +22,7 @@ public class ProductInfoController {
                                       @RequestParam(value = "productCode") String productCode,
                                       @RequestParam(value = "sub") String sub) throws Exception {
         if (productCode == null || productCode.isEmpty()) {
-            throw new Exception("Product code missing!");
+            throw new ParamInvalidException("Product code missing!");
         }
         return edtCourseInfoService.getCourseInfos(isPUProductCode, productCode, sub).toDto();
     }

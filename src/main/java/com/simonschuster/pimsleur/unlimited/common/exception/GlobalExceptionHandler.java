@@ -1,5 +1,8 @@
 package com.simonschuster.pimsleur.unlimited.common.exception;
 
+import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.ResultData;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,6 +19,9 @@ import static org.springframework.http.HttpStatus.INTERNAL_SERVER_ERROR;
 
 @ControllerAdvice
 public class GlobalExceptionHandler {
+
+    private static final Logger logger = LoggerFactory.getLogger(GlobalExceptionHandler.class);
+
     @ExceptionHandler()
     @ResponseBody
     public ResponseEntity<?> handleException(Exception ex) {
@@ -24,7 +30,7 @@ public class GlobalExceptionHandler {
         if (message == null) {
             message = "System error";
         }
-
+        printLog(message);
         return new ResponseEntity<>(of(httpStatus.value(), message), new HttpHeaders(), httpStatus);
     }
 
@@ -32,6 +38,7 @@ public class GlobalExceptionHandler {
     public ResponseEntity<ErrorResponse> handleMethodArgumentNotValidException(Exception e) {
         String errorMessage = e.getMessage();
         ErrorResponse response = of(BAD_REQUEST.value(), errorMessage);
+        printLog(errorMessage);
         return new ResponseEntity<>(response, new HttpHeaders(), BAD_REQUEST);
     }
 
@@ -44,5 +51,9 @@ public class GlobalExceptionHandler {
         }
 
         return INTERNAL_SERVER_ERROR;
+    }
+
+    private void printLog(String message) {
+        logger.error(message);
     }
 }

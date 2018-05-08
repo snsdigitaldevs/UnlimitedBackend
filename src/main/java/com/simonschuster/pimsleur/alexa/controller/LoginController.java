@@ -19,8 +19,6 @@ public class LoginController {
     private LoginService loginService;
 
     public static final Map<String, String> URI_VARIABLES_FOR_LOGIN = new HashMap<>();
-    private static String AUTH0_DOMAIN = "mg2-ss-prod.auth0.com";
-    private static String AUTH0_CLIENT_ID = "OYONqZ4zLlVruKMT9FhCtlV1idp7wrPJ";
 
     @GetMapping("/login")
 //  http://localhost:8080/login?state=abc&client_id=alexa-skill&scope=order_car%20basic_profile&response_type=code&redirect_uri=https%3A%2F%2Fpitangui.amazon.com%2Fspa%2Fskill%2Faccount-linking-status.html%3FvendorId%3DAAAAAAAAAAAAAA
@@ -52,7 +50,7 @@ public class LoginController {
         String redirectFullUrl = new StringBuilder().append(redirectUri).append("#")
                 .append("state=").append(state).append("&")
                 .append("access_token=").append(accessToken).append("&")
-                .append("token_type").append(tokenType)
+                .append("token_type=").append(tokenType)
                 .toString();
 
         return "redirect:" + redirectFullUrl;

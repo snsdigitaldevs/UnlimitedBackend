@@ -1,6 +1,5 @@
 package com.simonschuster.pimsleur.unlimited.data.edt.productinfo;
 
-import com.google.common.util.concurrent.UncheckedExecutionException;
 import com.simonschuster.pimsleur.unlimited.common.exception.PimsleurException;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Image;

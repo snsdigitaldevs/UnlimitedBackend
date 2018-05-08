@@ -26,6 +26,7 @@ public class SkillUtil {
         if (fileName == null) {
             return result;
         }
+        
         Map<String, String> skillKeyMap = getSkillKeyMap(skillDir);
         File skillCsv = new File(skillDir, fileName);
         FileInputStream fileInputStream = new FileInputStream(skillCsv);

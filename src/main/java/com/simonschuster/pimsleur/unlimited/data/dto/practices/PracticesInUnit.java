@@ -98,7 +98,7 @@ public class PracticesInUnit {
         mergedResult.setHasFlashCard(this.hasFlashCard || that.hasFlashCard);
         mergedResult.setHasQuickMatch(this.hasQuickMatch || that.hasQuickMatch);
         mergedResult.setHasSpeakEasy(this.hasSpeakEasy || that.hasSpeakEasy);
-        mergedResult.setHasSpeakEasy(this.hasSkills || that.hasSkills);
+        mergedResult.setHasSkills(this.hasSkills || that.hasSkills);
 
         mergedResult.speakEasies = pickNotNullOrEmpty(this.speakEasies, that.speakEasies);
         mergedResult.flashCards = pickNotNullOrEmpty(this.flashCards, that.flashCards);

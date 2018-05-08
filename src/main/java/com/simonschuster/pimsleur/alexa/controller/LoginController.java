@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
@@ -28,21 +29,20 @@ public class LoginController {
                         @RequestParam(name="scope") String scope,
                         @RequestParam(name="redirect_uri") String redirectUri,
                         Model model) {
-        request.getSession().setAttribute("state", state);
-        request.getSession().setAttribute("redirect_uri", redirectUri);
+        model.addAttribute("state", state);
+        model.addAttribute("redirect_uri", redirectUri);
 
-        return "login.html";
+        return "login";
     }
 
-    @GetMapping("/loginSubmit")
+    @PostMapping("/login")
     public String loginSubmission(HttpServletRequest request,
                                   @RequestParam(name="email") String userName,
                                   @RequestParam(name="password") String password,
+                                  @RequestParam(name="state") String state,
+                                  @RequestParam(name="redirect_uri") String redirectUri,
                                   Model model) {
         Auth0TokenInfo auth0TokenInfo = loginService.getAuthorizationInfoFromAuth0(userName, password);
-
-        String state = (String) request.getSession().getAttribute("state");
-        String redirectUri = (String) request.getSession().getAttribute("redirect_uri");
 
         String tokenType = auth0TokenInfo.getToken_type();
         String accessToken = auth0TokenInfo.getAccess_token();

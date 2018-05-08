@@ -27,11 +27,12 @@ public class QuickMatchUtil {
         RestTemplate restTemplate = new RestTemplate();
         restTemplate.getMessageConverters()
                 .add(0, new StringHttpMessageConverter(forName("UTF-8")));
-        String csvString = specialCsvFiles(replaceDuplicateHeaders(restTemplate.getForObject(quickMatchesInUrl, String.class)));
+        String originCsvString = replaceDuplicateHeaders(restTemplate.getForObject(quickMatchesInUrl, String.class));
+        String csvString = specialCsvFiles(originCsvString);
         CSVParser csvRecords = CSVFormat.EXCEL
                 .withFirstRecordAsHeader()
                 .parse(new StringReader(csvString));
-        String[] needIgnoreCaseHeaders = {"QZ #", "Snippet Name"};
+        String[] needIgnoreCaseHeaders = {"QZ #", "Snippet Name", "ISBN"};
         Map<String, String> headerMap = getHeaderMap(csvRecords, Arrays.asList(needIgnoreCaseHeaders));
         for (CSVRecord record : csvRecords) {
             parseCsvLine(result, record, headerMap);
@@ -39,10 +40,10 @@ public class QuickMatchUtil {
         return result;
     }
 
-    private static Map<String, String> getHeaderMap(CSVParser csvRecords, List<String> originHeaders) {
+    public static Map<String, String> getHeaderMap(CSVParser csvRecords, List<String> originHeaders) {
         Map<String, String> result = new HashMap<>();
         for (String originHeader : originHeaders) {
-            result.put(originHeader, getHeaderIgnoreCase(csvRecords, originHeader));
+            result.put(originHeader, getHeaderInCsv(csvRecords, originHeader));
         }
         return result;
     }
@@ -80,8 +81,8 @@ public class QuickMatchUtil {
             quickMatch.setQuestions(false);
         }
 
-        String transliteration = getStringIfNotExist(record, "Transliteration");
-        String snippetName = getStringIfNotExist(record, "Snippet Name");
+        String transliteration = record.isSet("Transliteration") ? record.get("Transliteration") : "";
+        String snippetName = record.isSet("Snippet Name") ? record.get("Snippet Name") : getSnippetName(record, headerMap);
         QuickMatchItem quickMatchItem = new QuickMatchItem(record.get("Cue"), transliteration, snippetName);
         String qzWithoutGroup = qz.split("_")[0];
         if ((qzWithoutGroup.charAt(qzWithoutGroup.length() - 1) == 'Q')) {
@@ -91,13 +92,25 @@ public class QuickMatchUtil {
         }
     }
 
-    private static String getStringIfNotExist(CSVRecord record, String column) {
-        return record.isSet(column) ? record.get(column) : "";
+    public static String getSnippetName(CSVRecord record, Map<String, String> headerMap) {
+        StringBuilder sb = new StringBuilder();
+        sb.append(record.get(headerMap.get("ISBN")).replace("-", ""));
+        sb.append("_");
+        sb.append(record.get("Course").replace(" ", "_"));
+        sb.append("_");
+        sb.append("QZ");
+        // TODO: make sure the type of quick match by Kelly
+        sb.append("_");
+        sb.append(String.format("%04d", record.getRecordNumber()));
+        sb.append(".mp3");
+        return sb.toString();
     }
 
-    private static String getHeaderIgnoreCase(CSVParser csvRecords, String originHeader) {
+    private static String getHeaderInCsv(CSVParser csvRecords, String originHeader) {
         for (String key : csvRecords.getHeaderMap().keySet()) {
             if (key.toLowerCase().equals(originHeader.toLowerCase())) {
+                return key;
+            } else if (originHeader.equals("ISBN") && key.toUpperCase().contains(originHeader)) {
                 return key;
             }
         }

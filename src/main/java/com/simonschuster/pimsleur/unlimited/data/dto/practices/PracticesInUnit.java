@@ -16,10 +16,16 @@ public class PracticesInUnit {
     private List<QuickMatch> quickMatches;
     private List<SpeakEasy> speakEasies;
     private List<FlashCard> flashCards;
+    private List<Skill> skills;
+
+    public List<Skill> getSkills() {
+        return skills;
+    }
 
     public PracticesInUnit(Integer unitNumber) {
         this.unitNumber = unitNumber;
         this.quickMatches = new ArrayList<>();
+        this.skills = new ArrayList<>();
     }
 
     // factory method
@@ -92,10 +98,12 @@ public class PracticesInUnit {
         mergedResult.setHasFlashCard(this.hasFlashCard || that.hasFlashCard);
         mergedResult.setHasQuickMatch(this.hasQuickMatch || that.hasQuickMatch);
         mergedResult.setHasSpeakEasy(this.hasSpeakEasy || that.hasSpeakEasy);
+        mergedResult.setHasSpeakEasy(this.hasSkills || that.hasSkills);
 
         mergedResult.speakEasies = pickNotNullOrEmpty(this.speakEasies, that.speakEasies);
         mergedResult.flashCards = pickNotNullOrEmpty(this.flashCards, that.flashCards);
         mergedResult.quickMatches = pickNotNullOrEmpty(this.quickMatches, that.quickMatches);
+        mergedResult.skills = pickNotNullOrEmpty(this.skills, that.skills);
 
         return mergedResult;
     }

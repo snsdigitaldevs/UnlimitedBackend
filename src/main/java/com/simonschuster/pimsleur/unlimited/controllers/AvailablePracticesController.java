@@ -6,6 +6,7 @@ import com.simonschuster.pimsleur.unlimited.services.practices.PcmAvailablePract
 import com.simonschuster.pimsleur.unlimited.services.practices.PracticesCsvLocations;
 import com.simonschuster.pimsleur.unlimited.services.practices.PuAvailablePracticesService;
 import com.simonschuster.pimsleur.unlimited.utils.QuickMatchUtil;
+import com.simonschuster.pimsleur.unlimited.utils.SkillUtil;
 import com.simonschuster.pimsleur.unlimited.utils.UnlimitedPracticeUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -45,19 +46,22 @@ public class AvailablePracticesController {
         List<PracticesInUnit> speakEasies = csvToSpeakEasies(csvLocations.getSpeakEasyUrl());
         List<PracticesInUnit> flashCards = csvToFlashCards(csvLocations.getFlashCardUrl());
         List<PracticesInUnit> quickMatches = QuickMatchUtil.getQuickMatchesByCsvUrl(csvLocations.getQuickMatchUrl());
+        List<PracticesInUnit> skills = SkillUtil.getSkillsByIsbn(productCode);
 
-        return new AvailablePractices(mergeLists(availablePractices, speakEasies, flashCards, quickMatches));
+        return new AvailablePractices(mergeLists(availablePractices, speakEasies, flashCards, quickMatches, skills));
     }
 
     private List<PracticesInUnit> mergeLists(AvailablePractices availablePractices,
                                              List<PracticesInUnit> speakEasy,
                                              List<PracticesInUnit> flashCards,
-                                             List<PracticesInUnit> quickMatches) {
-        Stream<PracticesInUnit> allPractices = concat(concat(concat(
+                                             List<PracticesInUnit> quickMatches,
+                                             List<PracticesInUnit> skills) {
+        Stream<PracticesInUnit> allPractices = concat(concat(concat(concat(
                 availablePractices.getPracticesInUnits().stream(),
                 speakEasy.stream()),
                 quickMatches.stream()),
-                flashCards.stream());
+                flashCards.stream()),
+                skills.stream());
 
         return allPractices
                 .collect(Collectors.groupingBy(PracticesInUnit::getUnitNumber))

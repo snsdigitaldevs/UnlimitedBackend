@@ -138,7 +138,7 @@ public class AggregatedProductInfo {
 
     private List<Lesson> filterAndOrder(List<Lesson> lessons) {
         return lessons.stream()
-                .filter(lesson -> lesson.getName().contains("Unit")|lesson.getName().contains("Lesson"))
+                .filter(lesson -> lesson.getName().startsWith("Unit")|lesson.getName().startsWith("Lesson"))
                 .sorted((lesson1, lesson2) -> {
                     int seq1 = Integer.parseInt(lesson1.getLessonNumber());
                     int seq2 = Integer.parseInt(lesson2.getLessonNumber());

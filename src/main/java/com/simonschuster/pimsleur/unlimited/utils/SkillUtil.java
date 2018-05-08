@@ -19,7 +19,6 @@ public class SkillUtil {
     public static List<PracticesInUnit> getSkillsByIsbn(String Isbn) throws IOException {
         List<PracticesInUnit> result = new ArrayList<>();
         File skillDir = new File("src/main/resources/skill");
-        Map<String, String> skillKeyMap = getSkillKeyMap(skillDir);
         String fileName = Arrays.stream(skillDir.list())
                 .filter(file -> file.contains(Isbn))
                 .findFirst()
@@ -27,6 +26,7 @@ public class SkillUtil {
         if (fileName == null) {
             return result;
         }
+        Map<String, String> skillKeyMap = getSkillKeyMap(skillDir);
         File skillCsv = new File(skillDir, fileName);
         FileInputStream fileInputStream = new FileInputStream(skillCsv);
         InputStreamReader streamReader = new InputStreamReader(fileInputStream);

@@ -4,6 +4,7 @@ package com.simonschuster.pimsleur.unlimited.data.edt.freeLessons;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.FreeLessonDto;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
@@ -28,7 +29,10 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
         "productsImage",
         "PRODUCT_TYPE"
 })
-public class FreeLesson {
+public class PCMProduct {
+
+    private static String pcmFreeLessonMp3BaseUrl = "https://coursemanagerdownload.pimsleurdigital.com/public/";
+    private static String pcmFreeLessonImageBaseUrl = "https://public.pimsleur.cdn.edtnet.us/assets/images/products/";
 
     @JsonProperty("includedTerritories")
     private String includedTerritories;
@@ -271,4 +275,15 @@ public class FreeLesson {
         this.pRODUCTTYPE = pRODUCTTYPE;
     }
 
+    public FreeLessonDto toDto() {
+        return new FreeLessonDto(
+                this.productsLanguageName,
+                this.isbn13.replaceAll("-", ""),
+                pcmFreeLessonMp3BaseUrl + this.productsAudioUrl,
+                pcmFreeLessonImageBaseUrl + this.productsImage);
+    }
+
+    public boolean isLevelOne() {
+        return getProductsLevel() == 1;
+    }
 }

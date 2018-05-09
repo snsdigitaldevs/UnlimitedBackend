@@ -10,7 +10,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
         "result_data",
         "result_code"
 })
-public class PCMFreeLessons {
+public class PCMProducts {
 
     @JsonProperty("result_data")
     private ResultData resultData;

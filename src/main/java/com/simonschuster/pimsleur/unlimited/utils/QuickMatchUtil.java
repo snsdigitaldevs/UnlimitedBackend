@@ -1,5 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.utils;
 
+import com.simonschuster.pimsleur.unlimited.UnlimitedApplication;
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.PracticesInUnit;
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.QuickMatch;
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.QuickMatchItem;
@@ -44,7 +45,7 @@ public class QuickMatchUtil {
 
     private static void getSkill(String originIsbn, List<PracticesInUnit> result) throws IOException {
         String isbd = getIsbn(originIsbn);
-        File skillDir = new File("src/main/resources/skill");
+        File skillDir = new File(UnlimitedApplication.class.getResource("").getFile(), "../../../../skill");
         String fileName = Arrays.stream(skillDir.list())
                 .filter(file -> file.contains(isbd))
                 .findFirst()

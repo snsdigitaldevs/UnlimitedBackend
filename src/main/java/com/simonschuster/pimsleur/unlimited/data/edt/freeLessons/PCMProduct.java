@@ -32,7 +32,7 @@ import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.FreeLessonDto;
 public class PCMProduct {
 
     private static String pcmFreeLessonMp3BaseUrl = "https://coursemanagerdownload.pimsleurdigital.com/public/";
-    private static String pcmFreeLessonImageBaseUrl = "https://public.pimsleur.cdn.edtnet.us/assets/images/products/";
+    private static String pcmFreeLessonImageBaseUrl = "https://public.pimsleur.cdn.edtnet.us/assets/images/";
 
     @JsonProperty("includedTerritories")
     private String includedTerritories;

@@ -15,15 +15,15 @@ import java.util.Map;
 public class ResultData {
 
     @JsonProperty("courseLanguages")
-    private Map<String, List<FreeLesson>> courseLanguages;
+    private Map<String, List<PCMProduct>> courseLanguages;
 
     @JsonProperty("courseLanguages")
-    public Map<String, List<FreeLesson>> getCourseLanguages() {
+    public Map<String, List<PCMProduct>> getCourseLanguages() {
         return courseLanguages;
     }
 
     @JsonProperty("courseLanguages")
-    public void setCourseLanguages(Map<String, List<FreeLesson>> courseLanguages) {
+    public void setCourseLanguages(Map<String, List<PCMProduct>> courseLanguages) {
         this.courseLanguages = courseLanguages;
     }
 

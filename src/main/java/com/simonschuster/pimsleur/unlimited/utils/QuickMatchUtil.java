@@ -10,7 +10,10 @@ import org.apache.commons.csv.CSVRecord;
 import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
 
-import java.io.*;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.StringReader;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -45,19 +48,12 @@ public class QuickMatchUtil {
 
     private static void getSkill(String originIsbn, List<PracticesInUnit> result) throws IOException {
         String isbd = getIsbn(originIsbn);
-        File skillDir = new File(UnlimitedApplication.class.getResource("").getFile(), "../../../../skill");
-        String fileName = Arrays.stream(skillDir.list())
-                .filter(file -> file.contains(isbd))
-                .findFirst()
-                .orElse(null);
-        if (fileName == null) {
+        InputStream fileStream = UnlimitedApplication.class.getClassLoader().getResourceAsStream("skill/" + isbd + ".csv");
+        if (fileStream == null) {
             return;
         }
-
-        Map<String, String> skillKeyMap = getSkillKeyMap(skillDir);
-        File skillCsv = new File(skillDir, fileName);
-        FileInputStream fileInputStream = new FileInputStream(skillCsv);
-        InputStreamReader streamReader = new InputStreamReader(fileInputStream);
+        Map<String, String> skillKeyMap = getSkillKeyMap();
+        InputStreamReader streamReader = new InputStreamReader(fileStream);
         StringBuilder strBuf = new StringBuilder();
         while (streamReader.ready()) {
             strBuf.append((char) streamReader.read());
@@ -157,17 +153,28 @@ public class QuickMatchUtil {
         return originHeader;
     }
 
-    private static Map<String, String> getSkillKeyMap(File skillDir) throws IOException {
-        // TODO: optimize: move the codes to a singleton's constructor
+    private static Map<String, String> getSkillKeyMap() {
         Map<String, String> skillKeyMap = new HashMap<>();
-        File skillKeyCsv = new File(skillDir, "Skills Key.csv");
-        Reader skillKeyCsvReader = new FileReader(skillKeyCsv.getAbsoluteFile());
-        CSVParser parser = CSVFormat.EXCEL
-                .withFirstRecordAsHeader()
-                .parse(skillKeyCsvReader);
-        for (CSVRecord record : parser) {
-            skillKeyMap.put(record.get("Skills Number"), record.get("Skills Name"));
-        }
+        skillKeyMap.put("1", "Activities");
+        skillKeyMap.put("2", "Animals");
+        skillKeyMap.put("3", "Communications");
+        skillKeyMap.put("4", "Directions");
+        skillKeyMap.put("5", "Friends + Family");
+        skillKeyMap.put("6", "Food");
+        skillKeyMap.put("7", "General Phrases");
+        skillKeyMap.put("8", "Health");
+        skillKeyMap.put("9", "Information");
+        skillKeyMap.put("10", "Meet + Greet");
+        skillKeyMap.put("11", "Money");
+        skillKeyMap.put("12", "Numbers");
+        skillKeyMap.put("13", "Polite Phrases");
+        skillKeyMap.put("14", "Shopping");
+        skillKeyMap.put("15", "Speak + Understand");
+        skillKeyMap.put("16", "Survival Skills");
+        skillKeyMap.put("17", "Time");
+        skillKeyMap.put("18", "Travel");
+        skillKeyMap.put("19", "Weather");
+        skillKeyMap.put("20", "Work Business");
         return skillKeyMap;
     }
 

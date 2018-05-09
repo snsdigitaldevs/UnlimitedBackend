@@ -42,7 +42,7 @@ public class QuickMatchUtil {
             parseCsvLine(result, record, headerMap);
         }
 
-        getSkill(originIsbn, result);
+        getSkill(quickMatchesInUrl, result);
         return result;
     }
 
@@ -72,10 +72,10 @@ public class QuickMatchUtil {
 
     private static String getIsbn(String quickMatchesInUrl) {
         // TODO: How to get ISBN?
-//        String[] urls = quickMatchesInUrl.split("/");
-//        return urls[urls.length - 1].split("_")[0];
+        String[] urls = quickMatchesInUrl.split("/");
+        return urls[urls.length - 1].split("_")[0];
 //        return "9781508243328";
-        return "9781508243321";
+//        return "9781508243321";
     }
 
     private static Map<String, String> getHeaderMap(CSVParser csvRecords, List<String> originHeaders) {

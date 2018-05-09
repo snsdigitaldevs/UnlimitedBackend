@@ -41,21 +41,18 @@ public class EDTSyncStateServiceTest {
                 eq(form("store_domain"), "")))
                 .response(file("src/test/resources/pcmSyncStateResponse.json"));
 
-        running(server, new Runnable() {
-            @Override
-            public void run() throws IOException {
-                AggregatedSyncState syncStates = edtSyncStateService
-                        .getSyncStates(999, "whatever");
-                List<ProgressDTO> pcmProgressDTOS = pcmProgressToDto(syncStates.getPcmSyncState().getResultData().getUserAppStateData());
-                pcmProgressDTOS.forEach(dto -> assertThat(dto.getProductCode().length(), is(13)));
+        running(server, () -> {
+            AggregatedSyncState syncStates = edtSyncStateService
+                    .getSyncStates(999, "whatever");
+            List<ProgressDTO> pcmProgressDTOS = pcmProgressToDto(syncStates.getPcmSyncState().getResultData().getUserAppStateData());
+            pcmProgressDTOS.forEach(dto -> assertThat(dto.getProductCode().length(), is(13)));
 
-                assertThat(UnlimitedProgressConverter.UnlimitedSyncStateToDTO(syncStates.getUnlimitedSyncState().getResultData().getUserAppStateData())
-                        .get(2).getCurrent(), is(true));
-                assertThat(syncStates.getUnlimitedSyncState().getResultData()
-                        .getUserAppStateData().size(), is(15));
-                assertThat(syncStates.getPcmSyncState().getResultData()
-                        .getUserAppStateData().size(), is(42));
-            }
+            assertThat(UnlimitedProgressConverter.UnlimitedSyncStateToDTO(syncStates.getUnlimitedSyncState().getResultData().getUserAppStateData())
+                    .get(2).getCurrent(), is(true));
+            assertThat(syncStates.getUnlimitedSyncState().getResultData()
+                    .getUserAppStateData().size(), is(15));
+            assertThat(syncStates.getPcmSyncState().getResultData()
+                    .getUserAppStateData().size(), is(42));
         });
     }
 }

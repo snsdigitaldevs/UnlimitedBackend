@@ -39,6 +39,7 @@ public class MediaItem {
     private Integer lengthSeconds;
 
     @JsonProperty("filename")
+    @JsonIgnoreProperties
     private String filename;
 
     @JsonProperty("licenseFileName")
@@ -54,9 +55,11 @@ public class MediaItem {
     private Integer isVisible;  //This field for image media is String
 
     @JsonProperty("mediaSetId")
+    @JsonIgnoreProperties
     private Integer mediaSetId;
 
     @JsonProperty("isEncrypted")
+    @JsonIgnoreProperties
     private Integer isEncrypted;  //This field for image media is String
 
     @JsonProperty("description")
@@ -68,6 +71,7 @@ public class MediaItem {
     private String refId;  //This field for image media is Integer
 
     @JsonProperty("mediaItemId")
+    @JsonIgnoreProperties
     private Integer mediaItemId;
 
     @JsonProperty("typeId")
@@ -79,9 +83,11 @@ public class MediaItem {
     private String formatId;
 
     @JsonProperty("classId")
+    @JsonIgnoreProperties
     private Integer classId;
 
     @JsonProperty("title")
+    @JsonIgnoreProperties
     private String title;
 
     //The following is special fields for image media information
@@ -104,6 +110,18 @@ public class MediaItem {
     @JsonProperty("mediaItemRefId")
     @JsonIgnoreProperties
     private String mediaItemRefId;
+
+    @JsonProperty("isDisable")
+    @JsonIgnoreProperties
+    private String isDisable;
+
+    public String getIsDisable() {
+        return isDisable;
+    }
+
+    public void setIsDisable(String isDisable) {
+        this.isDisable = isDisable;
+    }
 
     public String getMediaItemLicenseFileName() {
         return mediaItemLicenseFileName;

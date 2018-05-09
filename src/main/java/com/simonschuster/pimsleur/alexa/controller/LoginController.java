@@ -42,15 +42,13 @@ public class LoginController {
                                   @RequestParam(name="state") String state,
                                   @RequestParam(name="redirect_uri") String redirectUri,
                                   Model model) {
-//        Auth0TokenInfo auth0TokenInfo = loginService.getAuthorizationInfoFromAuth0(userName, password);
         String authorizationSub = loginService.getAuthorizationSub(userName, password);
-
-//        String tokenType = auth0TokenInfo.getToken_type();
-//        String accessToken = auth0TokenInfo.getAccess_token();
 
         String redirectFullUrl = new StringBuilder().append(redirectUri).append("#")
                 .append("state=").append(state).append("&")
                 .append("access_token=").append(authorizationSub).append("&")
+                //Alexa document said token_type must be "Bear" which align with what we got from EDT API.
+                //token_type won't be used on alexa endpoint, it's included in access_token's value sub.
                 .append("token_type=").append("Bear")
                 .toString();
 

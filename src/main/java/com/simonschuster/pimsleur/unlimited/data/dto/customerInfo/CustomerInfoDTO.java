@@ -15,6 +15,8 @@ public class CustomerInfoDTO {
     private Long unlimitedLastSaveId;
     private Long pcmLastSaveId;
 
+    private String customerId;
+
     public CustomerInfoDTO(List<String> unlimitedProductCodes,
                            List<String> pcmProductCodes,
                            List<ProductActivation> productActivations,
@@ -61,5 +63,13 @@ public class CustomerInfoDTO {
 
     public Long getPcmLastSaveId() {
         return pcmLastSaveId;
+    }
+
+    public String getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(String customerId) {
+        this.customerId = customerId;
     }
 }

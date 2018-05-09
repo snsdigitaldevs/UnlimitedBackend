@@ -9,16 +9,16 @@ import org.apache.commons.csv.CSVRecord;
 import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
 
-import java.io.IOException;
-import java.io.StringReader;
+import java.io.*;
 import java.util.*;
+import java.util.stream.Collectors;
 
 import static com.simonschuster.pimsleur.unlimited.utils.UnlimitedPracticeUtil.replaceDuplicateHeaders;
 import static com.simonschuster.pimsleur.unlimited.utils.UnlimitedPracticeUtil.specialCsvFiles;
 import static java.nio.charset.Charset.forName;
 
 public class QuickMatchUtil {
-    public static List<PracticesInUnit> getQuickMatchesByCsvUrl(String quickMatchesInUrl) throws IOException {
+    public static List<PracticesInUnit> getQuickMatchesByCsvUrl(String quickMatchesInUrl, String originIsbn) throws IOException {
         List<PracticesInUnit> result = new ArrayList<>();
         if (quickMatchesInUrl == null || quickMatchesInUrl.isEmpty()) {
             return result;
@@ -37,10 +37,51 @@ public class QuickMatchUtil {
         for (CSVRecord record : csvRecords) {
             parseCsvLine(result, record, headerMap);
         }
+
+        getSkill(originIsbn, result);
         return result;
     }
 
-    public static Map<String, String> getHeaderMap(CSVParser csvRecords, List<String> originHeaders) {
+    private static void getSkill(String originIsbn, List<PracticesInUnit> result) throws IOException {
+        String isbd = getIsbn(originIsbn);
+        File skillDir = new File("src/main/resources/skill");
+        String fileName = Arrays.stream(skillDir.list())
+                .filter(file -> file.contains(isbd))
+                .findFirst()
+                .orElse(null);
+        if (fileName == null) {
+            return;
+        }
+
+        Map<String, String> skillKeyMap = getSkillKeyMap(skillDir);
+        File skillCsv = new File(skillDir, fileName);
+        FileInputStream fileInputStream = new FileInputStream(skillCsv);
+        InputStreamReader streamReader = new InputStreamReader(fileInputStream);
+        StringBuilder strBuf = new StringBuilder();
+        while (streamReader.ready()) {
+            strBuf.append((char) streamReader.read());
+        }
+        String originCsvString = specialCsvFiles(strBuf.toString());
+        String csvString = specialCsvFiles(originCsvString);
+        CSVParser csvRecords = CSVFormat.EXCEL
+                .withFirstRecordAsHeader()
+                .parse(new StringReader(csvString));
+        String[] needIgnoreCaseHeaders = {"QZ #", "Snippet Name", "ISBN"};
+        Map<String, String> headerMap = getHeaderMap(csvRecords, Arrays.asList(needIgnoreCaseHeaders));
+        for (CSVRecord record : csvRecords) {
+            parseSkillCsvLine(result, skillKeyMap, headerMap, record);
+        }
+    }
+
+    private static String getIsbn(String quickMatchesInUrl) {
+        // TODO: How to get ISBN?
+//        String[] urls = quickMatchesInUrl.split("/");
+//        return urls[urls.length - 1].split("_")[0];
+//        return "9781508243328";
+        return "9781508243321";
+    }
+
+    private static Map<String, String> getHeaderMap(CSVParser csvRecords, List<String> originHeaders) {
         Map<String, String> result = new HashMap<>();
         for (String originHeader : originHeaders) {
             result.put(originHeader, getHeaderInCsv(csvRecords, originHeader));
@@ -80,6 +121,7 @@ public class QuickMatchUtil {
         } else {
             quickMatch.setQuestions(false);
         }
+        quickMatch.setQz(qz);
 
         String transliteration = record.isSet("Transliteration") ? record.get("Transliteration") : "";
         String snippetName = record.isSet("Snippet Name") ? record.get("Snippet Name") : getSnippetName(record, headerMap);
@@ -92,18 +134,15 @@ public class QuickMatchUtil {
         }
     }
 
-    public static String getSnippetName(CSVRecord record, Map<String, String> headerMap) {
-        StringBuilder sb = new StringBuilder();
-        sb.append(record.get(headerMap.get("ISBN")).replace("-", ""));
-        sb.append("_");
-        sb.append(record.get("Course").replace(" ", "_"));
-        sb.append("_");
-        sb.append("QZ");
-        // TODO: make sure the type of quick match by Kelly
-        sb.append("_");
-        sb.append(String.format("%04d", record.getRecordNumber()));
-        sb.append(".mp3");
-        return sb.toString();
+    private static String getSnippetName(CSVRecord record, Map<String, String> headerMap) {
+        return record.get(headerMap.get("ISBN")).replace("-", "")
+                .concat("_")
+                .concat(record.get("Course").replace(" ", "_"))
+                .concat("_")
+                .concat("QZ")
+                // TODO: make sure the type of quick match by Kelly
+                .concat("_")
+                .concat(".mp3");
     }
 
     private static String getHeaderInCsv(CSVParser csvRecords, String originHeader) {
@@ -116,4 +155,43 @@ public class QuickMatchUtil {
         }
         return originHeader;
     }
+
+    private static Map<String, String> getSkillKeyMap(File skillDir) throws IOException {
+        // TODO: optimize: move the codes to a singleton's constructor
+        Map<String, String> skillKeyMap = new HashMap<>();
+        File skillKeyCsv = new File(skillDir, "Skills Key.csv");
+        Reader skillKeyCsvReader = new FileReader(skillKeyCsv.getAbsoluteFile());
+        CSVParser parser = CSVFormat.EXCEL
+                .withFirstRecordAsHeader()
+                .parse(skillKeyCsvReader);
+        for (CSVRecord record : parser) {
+            skillKeyMap.put(record.get("Skills Number"), record.get("Skills Name"));
+        }
+        return skillKeyMap;
+    }
+
+    private static void parseSkillCsvLine(List<PracticesInUnit> result, Map<String, String> skillKeyMap, Map<String, String> headerMap, CSVRecord record) {
+        String qz = record.get(headerMap.get("QZ #"));
+        Integer unit = Integer.parseInt(record.get("Unit Num"));
+
+        PracticesInUnit practices = result.stream()
+                .filter(practicesInUnit -> practicesInUnit.getUnitNumber().equals(unit))
+                .findFirst()
+                .orElse(null);
+        if (practices == null) {
+            return;
+        }
+        practices.setHasSkills(true);
+        QuickMatch counterpartQuickMatch = practices.getQuickMatches().stream()
+                .filter(quickMatch -> quickMatch.getQz().equals(qz))
+                .findFirst()
+                .orElse(null);
+        if (counterpartQuickMatch == null) {
+            return;
+        }
+        counterpartQuickMatch.setSkills(Arrays.stream(record.get("Skills").split(","))
+                .map(skillKeyMap::get)
+                .collect(Collectors.toList()));
+    }
+
 }

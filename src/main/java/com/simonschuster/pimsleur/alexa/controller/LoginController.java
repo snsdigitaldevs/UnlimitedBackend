@@ -42,15 +42,16 @@ public class LoginController {
                                   @RequestParam(name="state") String state,
                                   @RequestParam(name="redirect_uri") String redirectUri,
                                   Model model) {
-        Auth0TokenInfo auth0TokenInfo = loginService.getAuthorizationInfoFromAuth0(userName, password);
+//        Auth0TokenInfo auth0TokenInfo = loginService.getAuthorizationInfoFromAuth0(userName, password);
+        String authorizationSub = loginService.getAuthorizationSub(userName, password);
 
-        String tokenType = auth0TokenInfo.getToken_type();
-        String accessToken = auth0TokenInfo.getAccess_token();
+//        String tokenType = auth0TokenInfo.getToken_type();
+//        String accessToken = auth0TokenInfo.getAccess_token();
 
         String redirectFullUrl = new StringBuilder().append(redirectUri).append("#")
                 .append("state=").append(state).append("&")
-                .append("access_token=").append(accessToken).append("&")
-                .append("token_type=").append(tokenType)
+                .append("access_token=").append(authorizationSub).append("&")
+                .append("token_type=").append("Bear")
                 .toString();
 
         return "redirect:" + redirectFullUrl;

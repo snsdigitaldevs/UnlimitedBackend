@@ -12,6 +12,9 @@ public class CustomerInfoDTO {
     private List<ProgressDTO> progresses;
     private List<SubUserDto> subUsers;
 
+    private Long unlimitedLastSaveId;
+    private Long pcmLastSaveId;
+
     public CustomerInfoDTO(List<String> unlimitedProductCodes,
                            List<String> pcmProductCodes,
                            List<ProductActivation> productActivations,
@@ -42,5 +45,21 @@ public class CustomerInfoDTO {
 
     public List<SubUserDto> getSubUsers() {
         return subUsers;
+    }
+
+    public void setUnlimitedLastSaveId(Long unlimitedLastSaveId) {
+        this.unlimitedLastSaveId = unlimitedLastSaveId;
+    }
+
+    public void setPcmLastSaveId(Long pcmLastSaveId) {
+        this.pcmLastSaveId = pcmLastSaveId;
+    }
+
+    public Long getUnlimitedLastSaveId() {
+        return unlimitedLastSaveId;
+    }
+
+    public Long getPcmLastSaveId() {
+        return pcmLastSaveId;
     }
 }

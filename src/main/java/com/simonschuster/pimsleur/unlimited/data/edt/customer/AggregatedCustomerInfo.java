@@ -63,12 +63,19 @@ public class AggregatedCustomerInfo {
     }
 
     public CustomerInfoDTO toDto() throws IOException {
-        return new CustomerInfoDTO(
+        CustomerInfoDTO customerInfoDTO = new CustomerInfoDTO(
                 this.unlimitedCustomerInfo.getResultData().getCustomer().getProductCodes(),
                 this.pcmCustomerInfo.getResultData().getCustomer().getProductCodes(),
                 this.unlimitedCustomerInfo.getResultData().getRegistrant().getProductActivations(),
                 getProgressDTOS(),
                 this.unlimitedCustomerInfo.getResultData().getRegistrant().getSubUsers());
+        if (pcmSyncState.hasResultData()) {
+            customerInfoDTO.setPcmLastSaveId(pcmSyncState.getResultData().getLastSaveId());
+        }
+        if (unlimitedSyncState.hasResultData()) {
+            customerInfoDTO.setUnlimitedLastSaveId(unlimitedSyncState.getResultData().getLastSaveId());
+        }
+        return customerInfoDTO;
     }
 
     private List<ProgressDTO> getProgressDTOS() throws IOException {

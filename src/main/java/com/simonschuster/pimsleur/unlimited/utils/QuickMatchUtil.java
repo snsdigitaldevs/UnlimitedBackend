@@ -22,6 +22,31 @@ import static com.simonschuster.pimsleur.unlimited.utils.UnlimitedPracticeUtil.s
 import static java.nio.charset.Charset.forName;
 
 public class QuickMatchUtil {
+    private static Map<String, String> SKILL_KEYS_MAP = new HashMap<String, String>() {
+        {
+            put("1", "Activities");
+            put("2", "Animals");
+            put("3", "Communications");
+            put("4", "Directions");
+            put("5", "Friends + Family");
+            put("6", "Food");
+            put("7", "General Phrases");
+            put("8", "Health");
+            put("9", "Information");
+            put("10", "Meet + Greet");
+            put("11", "Money");
+            put("12", "Numbers");
+            put("13", "Polite Phrases");
+            put("14", "Shopping");
+            put("15", "Speak + Understand");
+            put("16", "Survival Skills");
+            put("17", "Time");
+            put("18", "Travel");
+            put("19", "Weather");
+            put("20", "Work Business");
+        }
+    };
+
     public static List<PracticesInUnit> getQuickMatchesByCsvUrl(String quickMatchesInUrl, String originIsbn) throws IOException {
         List<PracticesInUnit> result = new ArrayList<>();
         if (quickMatchesInUrl == null || quickMatchesInUrl.isEmpty()) {
@@ -52,7 +77,6 @@ public class QuickMatchUtil {
         if (fileStream == null) {
             return;
         }
-        Map<String, String> skillKeyMap = getSkillKeyMap();
         InputStreamReader streamReader = new InputStreamReader(fileStream);
         StringBuilder strBuf = new StringBuilder();
         while (streamReader.ready()) {
@@ -66,7 +90,7 @@ public class QuickMatchUtil {
         String[] needIgnoreCaseHeaders = {"QZ #", "Snippet Name", "ISBN"};
         Map<String, String> headerMap = getHeaderMap(csvRecords, Arrays.asList(needIgnoreCaseHeaders));
         for (CSVRecord record : csvRecords) {
-            parseSkillCsvLine(result, skillKeyMap, headerMap, record);
+            parseSkillCsvLine(result, SKILL_KEYS_MAP, headerMap, record);
         }
     }
 
@@ -151,31 +175,6 @@ public class QuickMatchUtil {
             }
         }
         return originHeader;
-    }
-
-    private static Map<String, String> getSkillKeyMap() {
-        Map<String, String> skillKeyMap = new HashMap<>();
-        skillKeyMap.put("1", "Activities");
-        skillKeyMap.put("2", "Animals");
-        skillKeyMap.put("3", "Communications");
-        skillKeyMap.put("4", "Directions");
-        skillKeyMap.put("5", "Friends + Family");
-        skillKeyMap.put("6", "Food");
-        skillKeyMap.put("7", "General Phrases");
-        skillKeyMap.put("8", "Health");
-        skillKeyMap.put("9", "Information");
-        skillKeyMap.put("10", "Meet + Greet");
-        skillKeyMap.put("11", "Money");
-        skillKeyMap.put("12", "Numbers");
-        skillKeyMap.put("13", "Polite Phrases");
-        skillKeyMap.put("14", "Shopping");
-        skillKeyMap.put("15", "Speak + Understand");
-        skillKeyMap.put("16", "Survival Skills");
-        skillKeyMap.put("17", "Time");
-        skillKeyMap.put("18", "Travel");
-        skillKeyMap.put("19", "Weather");
-        skillKeyMap.put("20", "Work Business");
-        return skillKeyMap;
     }
 
     private static void parseSkillCsvLine(List<PracticesInUnit> result, Map<String, String> skillKeyMap, Map<String, String> headerMap, CSVRecord record) {

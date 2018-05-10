@@ -15,6 +15,7 @@ public class SyncUpDto {
 
     private static final String PU_Sync_Key = "com.ss.models::UserLessonHistory_%s_%s_%s_%s#%s";
     private static final String PCM_Sync_Key = "com.edt.models::MediaItemHistory_%s%s%s#%s";
+    private static final String PCM_Sync_Customer_Key = "com.edt.models::Customer_%s#lastVisitedView";
 
     public String getDeviceName() {
         return deviceName;
@@ -84,7 +85,17 @@ public class SyncUpDto {
         createSyncItem(customerId, syncUpItemsMap, value, key);
     }
 
+    private void createPcmSyncItem(String customerId, HashMap<String, SyncUpItem> syncUpItemsMap) {
+        String key = format(PCM_Sync_Customer_Key, customerId);
+        createSyncItem(customerId, syncUpItemsMap, "VIEW_COURSE_DETAILS", key);
+    }
+
     private void createSyncItem(String customerId, HashMap<String, SyncUpItem> syncUpItemsMap, Long value, String key) {
+        String valueStr = Long.toString(value);
+        createSyncItem(customerId, syncUpItemsMap, valueStr, key);
+    }
+
+    private void createSyncItem(String customerId, HashMap<String, SyncUpItem> syncUpItemsMap, String value, String key) {
         if (value != null) {
             SyncUpItem syncUpItem = new SyncUpItem(value, customerId, "3U", this.getProgress().getLastChangeTimestamp());
             syncUpItemsMap.put(key, syncUpItem);
@@ -99,6 +110,7 @@ public class SyncUpDto {
                 "lastAudioPosMillis", this.getProgress().getLastPlayHeadLocation());
         createPcmSyncItem(customerId, productCode, mediaItemId, syncUpItemsMap,
                 "currentMediaItemHistoryId", Long.parseLong(mediaItemId));
+        createPcmSyncItem(customerId, syncUpItemsMap);
         return syncUpItemsMap;
     }
 }

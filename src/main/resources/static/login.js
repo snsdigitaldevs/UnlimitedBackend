@@ -13,7 +13,7 @@ function initAuth0ForFBLogin(){
     try {
         webAuth = new auth0.WebAuth({
             domain: AUTH0_DOMAIN,
-            clientID: AUTH0_CLIENT_ID,
+            clientID: AUTH0_CLIENT_ID
         });
         logUtil('initAuth0ForFBLogin: successful auth0 initialization.');
         console.log(webAuth);
@@ -40,7 +40,7 @@ function fbAuth() {
             webAuth.authorize({
                 connection: 'facebook',
                 responseType: 'token',
-                redirectUri: 'https://pages.pimsleurdigital.com/auth0/v2/login.html'
+                redirectUri: window.location.origin + window.location.pathname
             });
             logUtil('fbAuth: successful auth0 initialization.');
         } catch (e) {
@@ -64,7 +64,6 @@ function doOnPageLoad() {
         // showSpinner("Login with Facebook..");
 
         try {
-
             logUtil("fbAuth: attempting to parse hash with token from social login..");
             if (initAuth0ForFBLogin()) {
                 webAuth.parseHash(window.location.hash, function (err, authResult) {
@@ -79,18 +78,20 @@ function doOnPageLoad() {
 
                             if (err) {
                                 logUtil("fbAuth: err from client.userInfo : " + JSON.stringify(err));
-                                showAlert("Invalid Login", "Autentication error.");
+                                //todo: show alert
+                                // showAlert("Invalid Login", "Autentication error.");
                             } else {
                                 logUtil("fbAuth: successfully retrieved user info: " + JSON.stringify(user));
                                 const fbUserId = user.sub;
                                 //todo: redirect to alexa service.
-
-                                // _saveToTmpStorage("auth-fl", {'fbLoginSuccessful': true, ts: new Date().getTime()});
+                                var fullRedirectUrl = window.localStorage.getItem("redirect_uri") + "#"
+                                        + "state=" + window.localStorage.getItem("state") + "&"
+                                        + "access_token=" + user.sub + "&"
+                                        + "token_type=" + "Bear";
 
                                 logUtil("fbAuth: clearing local storage");
                                 // _cleanupTmpStorage();
                                 window.localStorage.clear();
-
                             }
                         });
                     }

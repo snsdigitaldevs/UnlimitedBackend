@@ -20,7 +20,7 @@ import static org.junit.Assert.assertThat;
 @TestPropertySource("classpath:test-config.properties")
 public class PuSyncUpServiceTest {
     @Autowired
-    private PuSyncUpService puSyncUpService;
+    private SyncUpService puSyncUpService;
 
     @Test
     public void syncUpPUProgress() throws Exception {

@@ -18,7 +18,7 @@ import static java.lang.String.format;
 import static org.springframework.http.MediaType.APPLICATION_FORM_URLENCODED;
 
 @Service
-public class PuSyncUpService {
+public class SyncUpService {
 
     private static ObjectMapper mapper = new ObjectMapper();
 
@@ -29,7 +29,7 @@ public class PuSyncUpService {
                                  String productCode, String mediaItemId,
                                  SyncUpDto syncUpDto) throws Exception {
 
-        SyncUpResult syncUpResult = postToEdt(createPostBody(customerId, subUserId, productCode, mediaItemId, syncUpDto),
+        SyncUpResult syncUpResult = postToEdt(createPuPostBody(customerId, subUserId, productCode, mediaItemId, syncUpDto),
                 config.getProperty("edt.api.syncUpUrl"),
                 SyncUpResult.class);
         if (syncUpResult.getResultCode() != 1) {
@@ -38,12 +38,37 @@ public class PuSyncUpService {
         return syncUpResult.getResultData().getLastSaveId();
     }
 
-    private HttpEntity<String> createPostBody(String customerId, String subUserId,
-                                              String productCode, String mediaItemId,
-                                              SyncUpDto syncUpDto) throws JsonProcessingException {
+    public long syncUpPcmProgress(String customerId, String productCode,
+                                  String mediaItemId, SyncUpDto syncUpDto) throws Exception {
+        SyncUpResult syncUpResult = postToEdt(createPcmPostBody(customerId, productCode, mediaItemId, syncUpDto),
+                config.getProperty("edt.api.syncUpUrl"),
+                SyncUpResult.class);
+        if (syncUpResult.getResultCode() != 1) {
+            throw new Exception("EDT sync up Error");
+        }
+        return syncUpResult.getResultData().getLastSaveId();
+    }
+
+    private HttpEntity<String> createPuPostBody(String customerId, String subUserId,
+                                                String productCode, String mediaItemId,
+                                                SyncUpDto syncUpDto) throws JsonProcessingException {
 
         Map<String, SyncUpItem> edtSyncUpItems = syncUpDto.
                 toEdtPUSyncItems(customerId, subUserId, productCode, mediaItemId);
+        return createPostBody(customerId, syncUpDto, edtSyncUpItems);
+
+    }
+
+    private HttpEntity<String> createPcmPostBody(String customerId, String productCode, String mediaItemId, SyncUpDto syncUpDto) throws JsonProcessingException {
+
+        Map<String, SyncUpItem> edtSyncUpItems = syncUpDto.
+                toEdtPcmSyncItems(customerId, productCode, mediaItemId);
+        return createPostBody(customerId, syncUpDto, edtSyncUpItems);
+    }
+
+
+    private HttpEntity<String> createPostBody(String customerId, SyncUpDto syncUpDto, Map<String, SyncUpItem> edtSyncUpItems) throws JsonProcessingException {
+
         String edtJsonParameter = mapper.writeValueAsString(edtSyncUpItems);
 
         String syncUpParameters = format(config.getApiParameter("syncUpParameters"),

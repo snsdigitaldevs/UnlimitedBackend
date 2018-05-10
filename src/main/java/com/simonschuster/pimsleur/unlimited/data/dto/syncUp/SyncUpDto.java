@@ -14,6 +14,7 @@ public class SyncUpDto {
     private SyncUpProgressDto progress;
 
     private static final String PU_Sync_Key = "com.ss.models::UserLessonHistory_%s_%s_%s_%s#%s";
+    private static final String PCM_Sync_Key = "com.edt.models::MediaItemHistory_%s%s%s#%s";
 
     public String getDeviceName() {
         return deviceName;
@@ -51,30 +52,53 @@ public class SyncUpDto {
                                                     String productCode, String mediaItemId) {
         HashMap<String, SyncUpItem> syncUpItemsMap = new HashMap<>();
 
-        createSyncItem(customerId, subUserId, productCode, mediaItemId, syncUpItemsMap,
+        createPuSyncItem(customerId, subUserId, productCode, mediaItemId, syncUpItemsMap,
                 "lastPlayHeadLocation", this.getProgress().getLastPlayHeadLocation());
-        createSyncItem(customerId, subUserId, productCode, mediaItemId, syncUpItemsMap,
+        createPuSyncItem(customerId, subUserId, productCode, mediaItemId, syncUpItemsMap,
                 "furthestPlayHeadLocation", this.getProgress().getFurthestPlayHeadLocation());
-        createSyncItem(customerId, subUserId, productCode, mediaItemId, syncUpItemsMap,
+        createPuSyncItem(customerId, subUserId, productCode, mediaItemId, syncUpItemsMap,
                 "lastPlayedDate", this.getProgress().getLastPlayedDate());
-        createSyncItem(customerId, subUserId, productCode, mediaItemId, syncUpItemsMap,
+        createPuSyncItem(customerId, subUserId, productCode, mediaItemId, syncUpItemsMap,
                 "lastCompletionDate", this.getProgress().getLastCompletionDate());
         if (this.getProgress().getIsCompleted() != null && this.getProgress().getIsCompleted()) {
-            createSyncItem(customerId, subUserId, productCode, mediaItemId, syncUpItemsMap,
+            createPuSyncItem(customerId, subUserId, productCode, mediaItemId, syncUpItemsMap,
                     "isCompleted", 1L);
         }
 
         return syncUpItemsMap;
     }
 
-    private void createSyncItem(String customerId, String subUserId,
-                                String productCode, String mediaItemId,
-                                HashMap<String, SyncUpItem> syncUpItemsMap,
-                                String field, Long value) {
+    private void createPuSyncItem(String customerId, String subUserId,
+                                  String productCode, String mediaItemId,
+                                  HashMap<String, SyncUpItem> syncUpItemsMap,
+                                  String field, Long value) {
+        String key = format(PU_Sync_Key, customerId, subUserId, productCode, mediaItemId, field);
+        createSyncItem(customerId, syncUpItemsMap, value, key);
+    }
+
+    private void createPcmSyncItem(String customerId,
+                                   String productCode, String mediaItemId,
+                                   HashMap<String, SyncUpItem> syncUpItemsMap,
+                                   String field, Long value) {
+        String key = format(PCM_Sync_Key, customerId, productCode, mediaItemId, field);
+        createSyncItem(customerId, syncUpItemsMap, value, key);
+    }
+
+    private void createSyncItem(String customerId, HashMap<String, SyncUpItem> syncUpItemsMap, Long value, String key) {
         if (value != null) {
-            String key = format(PU_Sync_Key, customerId, subUserId, productCode, mediaItemId, field);
             SyncUpItem syncUpItem = new SyncUpItem(value, customerId, "3U", this.getProgress().getLastChangeTimestamp());
             syncUpItemsMap.put(key, syncUpItem);
         }
+    }
+
+    public Map<String, SyncUpItem> toEdtPcmSyncItems(String customerId, String productCode, String mediaItemId) {
+        HashMap<String, SyncUpItem> syncUpItemsMap = new HashMap<>();
+        createPcmSyncItem(customerId, productCode, mediaItemId, syncUpItemsMap,
+                "lastAccessDate", this.getProgress().getLastPlayedDate());
+        createPcmSyncItem(customerId, productCode, mediaItemId, syncUpItemsMap,
+                "lastAudioPosMillis", this.getProgress().getLastPlayHeadLocation());
+        createPcmSyncItem(customerId, productCode, mediaItemId, syncUpItemsMap,
+                "currentMediaItemHistoryId", Long.parseLong(mediaItemId));
+        return syncUpItemsMap;
     }
 }

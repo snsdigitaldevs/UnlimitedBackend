@@ -1,7 +1,7 @@
 package com.simonschuster.pimsleur.unlimited.controllers;
 
 import com.simonschuster.pimsleur.unlimited.data.dto.syncUp.SyncUpDto;
-import com.simonschuster.pimsleur.unlimited.services.syncState.PuSyncUpService;
+import com.simonschuster.pimsleur.unlimited.services.syncState.SyncUpService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -14,7 +14,7 @@ import static org.springframework.web.bind.annotation.RequestMethod.POST;
 public class SyncUpController {
 
     @Autowired
-    private PuSyncUpService puSyncUpService;
+    private SyncUpService syncUpService;
 
     @RequestMapping(
             value = "/account/{customerId}/subUser/{subUserId}" +
@@ -27,6 +27,18 @@ public class SyncUpController {
                          @PathVariable("mediaItemId") String mediaItemId,
                          @RequestBody SyncUpDto syncUpDto) throws Exception {
 
-        return puSyncUpService.syncUpPUProgress(customerId, subUserId, productCode, mediaItemId, syncUpDto);
+        return syncUpService.syncUpPUProgress(customerId, subUserId, productCode, mediaItemId, syncUpDto);
+    }
+
+
+    @RequestMapping(
+            value = "/account/{customerId}/product/{productCode}/mediaItem/{mediaItemId}/progress",
+            method = POST,
+            consumes = "application/json")
+    public Long pcmSyncUP(@PathVariable("customerId") String customerId,
+                          @PathVariable("productCode") String productCode,
+                          @PathVariable("mediaItemId") String mediaItemId,
+                          @RequestBody SyncUpDto syncUpDto) throws Exception {
+        return syncUpService.syncUpPcmProgress(customerId, productCode, mediaItemId, syncUpDto);
     }
 }

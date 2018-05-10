@@ -82,16 +82,15 @@ function doOnPageLoad() {
                                 // showAlert("Invalid Login", "Autentication error.");
                             } else {
                                 logUtil("fbAuth: successfully retrieved user info: " + JSON.stringify(user));
-                                const fbUserId = user.sub;
-                                //todo: redirect to alexa service.
                                 var fullRedirectUrl = window.localStorage.getItem("redirect_uri") + "#"
                                         + "state=" + window.localStorage.getItem("state") + "&"
                                         + "access_token=" + user.sub + "&"
                                         + "token_type=" + "Bear";
 
+                                window.location.href = fullRedirectUrl;
                                 logUtil("fbAuth: clearing local storage");
                                 // _cleanupTmpStorage();
-                                window.localStorage.clear();
+                                // window.localStorage.clear();
                             }
                         });
                     }

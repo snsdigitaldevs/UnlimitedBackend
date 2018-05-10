@@ -4,6 +4,7 @@ import com.simonschuster.pimsleur.unlimited.common.exception.PimsleurException;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Image;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Lesson;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.OrdersProduct;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.Product;
 import com.simonschuster.pimsleur.unlimited.services.customer.EDTCourseInfoService;
 import com.simonschuster.pimsleur.unlimited.utils.UrlUtil;
@@ -89,20 +90,32 @@ public class AggregatedProductInfo {
                     .collect(Collectors.toMap(it -> it.getOrdersProductsDownloads().get(0).getMediaSet().getProduct().getProductsLevel(),
                             it -> it.getOrdersProductsDownloads().get(0).getMediaSet().getProduct()));
 
-            lessonAudioInfoFromPCM.forEach((level, lessonInfoForOneLevel) -> {
-                Course course = new Course();
-                course.setLanguageName(orderProductInfo.getProduct().getProductsLanguageName());
-                course.setLevel(Integer.parseInt(level));
-                course.setLessons(filterAndOrder(lessonInfoForOneLevel));
-
-                course.setCourseName(products.get(Integer.parseInt(level)).getProductsName());
-                course.setProductCode(products.get(Integer.parseInt(level)).getIsbn13().replace("-", ""));
-
+            if (lessonAudioInfoFromPCM.size() != 0 && lessonAudioInfoFromPCM.get("1").size() == 0 && products.get(0) != null) {
+                List<Lesson> lessons = lessonAudioInfoFromPCM.get("1");
+                String level = "0";
+                Course course = buildCourse(orderProductInfo, products, lessons, level);
                 courses.add(course);
-            });
+            } else {
+                lessonAudioInfoFromPCM.forEach((level, lessonInfoForOneLevel) -> {
+                    Course course = buildCourse(orderProductInfo, products, lessonInfoForOneLevel, level);
+                    courses.add(course);
+                });
+            }
         });
 
         return courses;
+    }
+
+    private Course buildCourse(OrdersProduct orderProductInfo, Map<Integer, Product> products, List<Lesson> lessons, String level) {
+        Course course = new Course();
+        course.setLanguageName(orderProductInfo.getProduct().getProductsLanguageName());
+        course.setLevel(Integer.parseInt(level));
+        course.setLessons(filterAndOrder(lessons));
+
+        course.setCourseName(products.get(Integer.parseInt(level)).getProductsName());
+        course.setProductCode(products.get(Integer.parseInt(level)).getIsbn13().replace("-", ""));
+
+        return course;
     }
 
     private void transformLessonInfoFromPU(Course course, MediaSet mediaSet) {

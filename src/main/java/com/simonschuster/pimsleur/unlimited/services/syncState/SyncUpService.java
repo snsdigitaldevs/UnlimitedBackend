@@ -68,7 +68,6 @@ public class SyncUpService {
 
 
     private HttpEntity<String> createPostBody(String customerId, SyncUpDto syncUpDto, Map<String, SyncUpItem> edtSyncUpItems) throws JsonProcessingException {
-
         String edtJsonParameter = mapper.writeValueAsString(edtSyncUpItems);
 
         String syncUpParameters = format(config.getApiParameter("syncUpParameters"),

@@ -87,15 +87,11 @@ public class SyncUpDto {
 
     private void createPcmSyncItem(String customerId, HashMap<String, SyncUpItem> syncUpItemsMap) {
         String key = format(PCM_Sync_Customer_Key, customerId);
-        createSyncItem(customerId, syncUpItemsMap, "VIEW_COURSE_DETAILS", key);
+        SyncUpItem syncUpItem = new SyncUpItem("VIEW_COURSE_DETAILS", customerId, "3U", this.getProgress().getLastChangeTimestamp());
+        syncUpItemsMap.put(key, syncUpItem);
     }
 
     private void createSyncItem(String customerId, HashMap<String, SyncUpItem> syncUpItemsMap, Long value, String key) {
-        String valueStr = Long.toString(value);
-        createSyncItem(customerId, syncUpItemsMap, valueStr, key);
-    }
-
-    private void createSyncItem(String customerId, HashMap<String, SyncUpItem> syncUpItemsMap, String value, String key) {
         if (value != null) {
             SyncUpItem syncUpItem = new SyncUpItem(value, customerId, "3U", this.getProgress().getLastChangeTimestamp());
             syncUpItemsMap.put(key, syncUpItem);

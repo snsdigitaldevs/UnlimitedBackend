@@ -1,13 +1,22 @@
 package com.simonschuster.pimsleur.unlimited.data.edt.syncState;
 
 public class SyncUpItem {
-    private String value;
+    private Object value;
     private String parentId;
     private String stateChangeType;
     private long lastChangeTimestamp;
 
-    public SyncUpItem(String value, String parentId, String stateChangeType, long lastChangeTimestamp) {
+    public SyncUpItem(long value, String parentId, String stateChangeType, long lastChangeTimestamp) {
+        this(parentId, stateChangeType, lastChangeTimestamp);
         this.value = value;
+    }
+
+    public SyncUpItem(String value, String parentId, String stateChangeType, long lastChangeTimestamp) {
+        this(parentId, stateChangeType, lastChangeTimestamp);
+        this.value = value;
+    }
+
+    private SyncUpItem(String parentId, String stateChangeType, long lastChangeTimestamp) {
         this.parentId = parentId;
         this.stateChangeType = stateChangeType;
         this.lastChangeTimestamp = lastChangeTimestamp;
@@ -37,15 +46,11 @@ public class SyncUpItem {
         this.lastChangeTimestamp = lastChangeTimestamp;
     }
 
-    public String getValue() {
+    public Object getValue() {
         return value;
     }
 
     public void setValue(long value) {
-        this.value = Long.toString(value);
-    }
-
-    public void setValue(String value) {
         this.value = value;
     }
 }

@@ -31,9 +31,6 @@ import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.FreeLessonDto;
 })
 public class PCMProduct {
 
-    private static String pcmFreeLessonMp3BaseUrl = "https://coursemanagerdownload.pimsleurdigital.com/public/";
-    private static String pcmFreeLessonImageBaseUrl = "https://public.pimsleur.cdn.edtnet.us/assets/images/";
-
     @JsonProperty("includedTerritories")
     private String includedTerritories;
     @JsonProperty("productsName")
@@ -275,12 +272,10 @@ public class PCMProduct {
         this.pRODUCTTYPE = pRODUCTTYPE;
     }
 
-    public FreeLessonDto toDto() {
+    public FreeLessonDto pcmProductToDto() {
         return new FreeLessonDto(
                 this.productsLanguageName,
-                this.isbn13.replaceAll("-", ""),
-                pcmFreeLessonMp3BaseUrl + this.productsAudioUrl,
-                pcmFreeLessonImageBaseUrl + this.productsImage);
+                this.isbn13.replaceAll("-", ""), false);
     }
 
     public boolean isLevelOne() {

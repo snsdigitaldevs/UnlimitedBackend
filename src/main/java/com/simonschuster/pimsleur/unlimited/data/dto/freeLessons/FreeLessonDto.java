@@ -3,14 +3,12 @@ package com.simonschuster.pimsleur.unlimited.data.dto.freeLessons;
 public class FreeLessonDto {
     private String languageName;
     private String productCode;
-    private String audioLink;
-    private String imageUrl;
+    private boolean isPuProduct = false;
 
-    public FreeLessonDto(String languageName, String productCode, String audioLink, String imageUrl) {
+    public FreeLessonDto(String languageName, String productCode, boolean isPu) {
         this.languageName = languageName;
         this.productCode = productCode;
-        this.audioLink = audioLink;
-        this.imageUrl = imageUrl;
+        this.isPuProduct = isPu;
     }
 
     public String getProductCode() {
@@ -21,27 +19,19 @@ public class FreeLessonDto {
         this.productCode = productCode;
     }
 
-    public String getAudioLink() {
-        return audioLink;
-    }
-
-    public void setAudioLink(String audioLink) {
-        this.audioLink = audioLink;
-    }
-
-    public String getImageUrl() {
-        return imageUrl;
-    }
-
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
-    }
-
     public String getLanguageName() {
         return languageName;
     }
 
     public void setLanguageName(String languageName) {
         this.languageName = languageName;
+    }
+
+    public boolean isPuProduct() {
+        return isPuProduct;
+    }
+
+    public void setPuProduct(boolean puProduct) {
+        isPuProduct = puProduct;
     }
 }

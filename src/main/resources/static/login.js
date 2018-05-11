@@ -144,6 +144,8 @@ function initLoginFormAction() {
         }).done(function(data, status, jqXHR) {
             redirectDestination = data;
             window.location.href = redirectDestination;
+        }).fail(function (data) {
+            logUtil(data);
         });
     });
 }

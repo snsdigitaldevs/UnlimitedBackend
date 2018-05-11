@@ -48,28 +48,37 @@ pipeline {
             steps {
                 echo "Deploy to QA"
                 script {
+                    try {
+                        timeout(time: 10, unit: 'SECONDS') {
+                            input message: 'build QA version?'
+                        }
 
-                    timeout(time: 2, unit: 'HOURS') {
-                        input message: 'build QA version?'
+                        def config = readProperties file: 'jenkinsfiles/config/config.properties'
+                        def hostnames = config.QA_UnlimitedBackend_HostName.split(",")
+                        deploy(hostnames, "qa")
+                    } catch (err) {
+                        currentBuild.result = 'SUCCESS'
+                        return true
                     }
-
-                    def config = readProperties file: 'jenkinsfiles/config/config.properties'
-                    def hostnames = config.QA_UnlimitedBackend_HostName.split(",")
-                    deploy(hostnames, "qa")
                 }
             }
         }
 
         stage("Deploy to UAT") {
             steps {
-                echo "Deploy to UAT"
-                timeout(time: 2, unit: 'HOURS') {
-                    input message: 'build UAT version?'
-                }
-                script {
-                    def config = readProperties file: 'jenkinsfiles/config/config.properties'
-                    def hostnames = config.UAT_UnlimitedBackend_HostName.split(",")
-                    deploy(hostnames, "uat")
+                try {
+                    echo "Deploy to UAT"
+                    timeout(time: 10, unit: 'SECONDS') {
+                        input message: 'build UAT version?'
+                    }
+                    script {
+                        def config = readProperties file: 'jenkinsfiles/config/config.properties'
+                        def hostnames = config.UAT_UnlimitedBackend_HostName.split(",")
+                        deploy(hostnames, "uat")
+                    }
+                } catch (err) {
+                    currentBuild.result = 'SUCCESS'
+                    return true
                 }
             }
         }

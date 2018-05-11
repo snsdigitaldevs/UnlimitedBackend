@@ -68,7 +68,7 @@ pipeline {
                 script {
                     try {
                         echo "Deploy to UAT"
-                        timeout(time: 2, unit: 'HOURSE') {
+                        timeout(time: 2, unit: 'HOURS') {
                             input message: 'build UAT version?'
                         }
 

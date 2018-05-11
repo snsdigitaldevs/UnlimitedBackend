@@ -86,19 +86,21 @@ pipeline {
 
         stage("Deploy to PROD") {
             steps {
-                try {
-                    echo "Deploy to PROD"
-                    timeout(time: 2, unit: 'HOURS') {
-                        input message: 'build PROD version?'
-                    }
-                    script {
+                script {
+                    try {
+                        echo "Deploy to PROD"
+                        timeout(time: 2, unit: 'HOURS') {
+                            input message: 'build PROD version?'
+                        }
+
                         def config = readProperties file: 'jenkinsfiles/config/config.properties'
                         def hostnames = config.PROD_UnlimitedBackend_HostName.split(",")
                         deploy(hostnames, "prod")
                     }
-                } catch (err) {
-                    currentBuild.result = 'SUCCESS'
-                    return true
+                    catch (err) {
+                        currentBuild.result = 'SUCCESS'
+                        return true
+                    }
                 }
             }
         }

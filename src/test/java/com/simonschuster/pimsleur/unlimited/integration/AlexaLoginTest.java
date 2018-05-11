@@ -1,6 +1,7 @@
 package com.simonschuster.pimsleur.unlimited.integration;
 
 import com.simonschuster.pimsleur.unlimited.services.login.LoginService;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +14,7 @@ import static org.junit.Assert.assertEquals;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @AutoConfigureMockMvc
+@Ignore
 public class AlexaLoginTest {
     @Autowired
     LoginService loginService;

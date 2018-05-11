@@ -1,6 +1,8 @@
 package com.simonschuster.pimsleur.alexa.controller;
 
 import com.simonschuster.pimsleur.unlimited.services.login.LoginService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -9,16 +11,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.HashMap;
-import java.util.Map;
 
 @Controller
 public class LoginController {
 
     @Autowired
     private LoginService loginService;
-
-    public static final Map<String, String> URI_VARIABLES_FOR_LOGIN = new HashMap<>();
+    private static Logger logger = LoggerFactory.getLogger(LoginController.class);
 
     @GetMapping("/login")
 //  http://localhost:8080/login?state=abc&client_id=alexa-skill&scope=order_car%20basic_profile&response_type=code&redirect_uri=https%3A%2F%2Fpitangui.amazon.com%2Fspa%2Fskill%2Faccount-linking-status.html%3FvendorId%3DAAAAAAAAAAAAAA
@@ -28,6 +27,7 @@ public class LoginController {
                         @RequestParam(name="response_type", required = false) String responseType,
                         @RequestParam(name="scope", required = false) String scope,
                         @RequestParam(name="redirect_uri", required = false) String redirectUri,
+                        @RequestParam(name="loginStatus", required = false) String loginStatus,
                         Model model) {
         model.addAttribute("state", state);
         model.addAttribute("redirect_uri", redirectUri);
@@ -42,7 +42,14 @@ public class LoginController {
                                   @RequestParam(name="state") String state,
                                   @RequestParam(name="redirect_uri") String redirectUri,
                                   Model model) {
-        String authorizationSub = loginService.getAuthorizationSub(userName, password);
+        String authorizationSub = "";
+        try {
+            authorizationSub = loginService.getAuthorizationSub(userName, password);
+        } catch (Exception e) {
+            e.printStackTrace();
+            logger.error("Error when submit login on alexa.");
+            return "redirect:/login?loginStatus=fail";
+        }
 
         String redirectFullUrl = new StringBuilder().append(redirectUri).append("#")
                 .append("state=").append(state).append("&")

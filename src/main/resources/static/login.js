@@ -1,8 +1,3 @@
-// function _cleanupTmpStorage() {
-//     localStorage.clear();
-// }
-
-
 const AUTH0_DOMAIN = "mg2-ss-prod.auth0.com";
 const AUTH0_CLIENT_ID = "OYONqZ4zLlVruKMT9FhCtlV1idp7wrPJ";
 
@@ -25,11 +20,7 @@ function initAuth0ForFBLogin(){
 }
 
 function fbAuth() {
-    // Facebook auth
-    //
-    // _cleanupTmpStorage();
-
-    // showSpinner("Login with Facebook..");
+    showSpinner();
 
     if (initAuth0ForFBLogin()) {
 
@@ -53,33 +44,28 @@ function logUtil(message) {
     console.log(message);
 }
 
-function doOnPageLoad() {
-    // document.getElementById('edt-version').innerHTML=Config.edtVersion();
-
-    // logUtil("edt login version:"+Config.edtVersion());
-
-    // should be a redirect from auth for social login
+function loginWithFaceBook() {
     if (window.location.hash) {
-        //todo: show loader image
-        // showSpinner("Login with Facebook..");
+        showSpinner();
 
         try {
             logUtil("fbAuth: attempting to parse hash with token from social login..");
             if (initAuth0ForFBLogin()) {
                 webAuth.parseHash(window.location.hash, function (err, authResult) {
                     if (err) {
+                        hideSpinner();
                         logUtil("fbAuth: err from parse hash(maybe just bad login credentials): " + JSON.stringify(err));
-                        //todo: show alert
-                        // showAlert("Invalid Login", "The email address and/or password you provided to Facebook does not match a valid Pimsleur account.");
-
+                        logUtil("login fail when login with Facebook");
+                        var errorMessage = "The email address and/or password you provided to Facebook does not match a valid Pimsleur account.";
+                        showFailAlert(errorMessage);
                     } else {
                         logUtil("fbAuth: successfully parsed url hash. Attempting to get user info..");
                         webAuth.client.userInfo(authResult.accessToken, function (err, user) {
-
+                            hideSpinner();
                             if (err) {
                                 logUtil("fbAuth: err from client.userInfo : " + JSON.stringify(err));
-                                //todo: show alert
-                                // showAlert("Invalid Login", "Autentication error.");
+                                var errorMessage = "Invalid Login, " + "Autentication error.";
+                                showFailAlert(errorMessage);
                             } else {
                                 logUtil("fbAuth: successfully retrieved user info: " + JSON.stringify(user));
                                 var fullRedirectUrl = window.localStorage.getItem("redirect_uri") + "#"
@@ -88,9 +74,6 @@ function doOnPageLoad() {
                                         + "token_type=" + "Bear";
 
                                 window.location.href = fullRedirectUrl;
-                                logUtil("fbAuth: clearing local storage");
-                                // _cleanupTmpStorage();
-                                // window.localStorage.clear();
                             }
                         });
                     }
@@ -98,7 +81,7 @@ function doOnPageLoad() {
             }
         }
         catch (e) {
-            logUtil("doOnPageLoad: exception: " + e.message);
+            logUtil("loginWithFaceBook: exception: " + e.message);
         }
     }
 }
@@ -119,13 +102,43 @@ function storeFieldsFromAlexa() {
     }
 }
 
+var showFailAlert = function (errorMessage) {
+    $("#alert-modal").removeClass("off");
+    $("#alert-txt").text(errorMessage);
+};
+
+var showSpinner = function() {
+    $("#spinner").removeClass("off");
+};
+
+var hideSpinner = function() {
+    $("#spinner").addClass("off");
+};
+
+var loginFailCheckAndInit = function () {
+    $('#alert-btn').on("click", function () {
+        $("#alert-modal").addClass("off");
+    });
+
+    var url = new URL(window.location.href);
+
+    if (url.searchParams.get("loginStatus") == "fail") {
+        logUtil("login fail when login with normal Pimsleur account");
+        var errorMessage = "Your username or password doesn't match";
+        showFailAlert(errorMessage);
+    }
+};
+
 $( document ).ready(function() {
     document.getElementById("fb-login").addEventListener("click", function () {
         fbAuth();
     });
 
     storeFieldsFromAlexa();
-    doOnPageLoad();
+    loginWithFaceBook();
+
+    loginFailCheckAndInit();
+
 });
 
 

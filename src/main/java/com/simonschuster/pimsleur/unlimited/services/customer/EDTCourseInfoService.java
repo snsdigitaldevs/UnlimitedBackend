@@ -277,13 +277,10 @@ public class EDTCourseInfoService {
     private Map<String, List<Lesson>> getAudioInfo(PcmAudioReqParams params) {
         Map<String, List<Lesson>> pcmAudioRespInfo = new HashMap<>();
 
-//        params.getMediaItemIds().entrySet().parallelStream().forEach((level, mediaItemInfo) -> {
-//            pcmAudioRespInfo.put(level, fetchAudioForALevel(params, level, mediaItemInfo));
-//        });
-
-        params.getMediaItemIds().forEach((level, mediaItemInfo) ->
-                pcmAudioRespInfo.put(level, fetchAudioForALevel(params, level, mediaItemInfo))
-        );
+        params.getMediaItemIds().forEach((level, mediaItemInfo) -> {
+            boolean isBatched = Boolean.parseBoolean(config.getProperty("toggle.fetch.mp3.url.batch"));
+            pcmAudioRespInfo.put(level, isBatched ? fetchAudioForALevel(params, level, mediaItemInfo) : fetchLessons(params, level, mediaItemInfo));
+        });
 
         return pcmAudioRespInfo;
     }

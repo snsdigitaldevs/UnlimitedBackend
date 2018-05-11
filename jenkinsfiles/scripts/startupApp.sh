@@ -1,7 +1,8 @@
 #!/bin/bash
 
-project_home_dir=$1
-new_jar_package=$2
+env = $1
+project_home_dir=$2
+new_jar_package=$3
 
 set -m
 

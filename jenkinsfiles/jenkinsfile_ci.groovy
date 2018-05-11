@@ -1,4 +1,3 @@
-//    def config = readProperties file: 'jenkinsfiles/config/config.properties'
 pipeline {
 
     agent any
@@ -66,20 +65,22 @@ pipeline {
 
         stage("Deploy to UAT") {
             steps {
-                try {
-                    echo "Deploy to UAT"
-                    timeout(time: 10, unit: 'SECONDS') {
-                        input message: 'build UAT version?'
-                    }
-                    script {
+                script {
+                    try {
+                        echo "Deploy to UAT"
+                        timeout(time: 10, unit: 'SECONDS') {
+                            input message: 'build UAT version?'
+                        }
+
                         def config = readProperties file: 'jenkinsfiles/config/config.properties'
                         def hostnames = config.UAT_UnlimitedBackend_HostName.split(",")
                         deploy(hostnames, "uat")
+                    } catch (err) {
+                        currentBuild.result = 'SUCCESS'
+                        return true
                     }
-                } catch (err) {
-                    currentBuild.result = 'SUCCESS'
-                    return true
                 }
+
             }
         }
 

@@ -44,7 +44,7 @@ public class AvailablePracticesController {
         AvailablePractices availablePractices = UnlimitedPracticeUtil.getAvailablePractices(csvLocations);
         List<PracticesInUnit> speakEasies = csvToSpeakEasies(csvLocations.getSpeakEasyUrl());
         List<PracticesInUnit> flashCards = csvToFlashCards(csvLocations.getFlashCardUrl());
-        List<PracticesInUnit> quickMatches = QuickMatchUtil.getQuickMatchesByCsvUrl(csvLocations.getQuickMatchUrl());
+        List<PracticesInUnit> quickMatches = QuickMatchUtil.getQuickMatchesByCsvUrl(csvLocations.getQuickMatchUrl(), productCode);
 
         return new AvailablePractices(mergeLists(availablePractices, speakEasies, flashCards, quickMatches));
     }

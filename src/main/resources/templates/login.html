@@ -1,0 +1,80 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" charset="utf-8">
+    <title>Pimsleur Login</title>
+    <style type="text/css">@import url(https://fonts.googleapis.com/css?family=Roboto:300);</style>
+    <link rel="stylesheet" href="login.css">
+    <style id="fuze__fonts-for-external-page">
+        @font-face {font-family: 'Roboto-Light';font-style: normal;font-weight: lighter;src: local('Roboto Light'), local(Roboto-Light),url('chrome-extension://kcehcblfpidimbihdfophhhdejckolgh/styles/roboto/roboto-light.ttf') format('truetype');}@font-face {font-family: 'Roboto-Regular';font-style: normal;font-weight: normal;src: local('Roboto Regular'), local(Roboto-Regular),url('chrome-extension://kcehcblfpidimbihdfophhhdejckolgh/styles/roboto/roboto-regular.ttf') format('truetype');}@font-face {font-family: 'Roboto-Medium';font-style: normal;font-weight: bold;src: local('Roboto Medium'), local(Roboto-Medium),url('chrome-extension://kcehcblfpidimbihdfophhhdejckolgh/styles/roboto/roboto-medium.ttf') format('truetype');}
+    </style>
+    <link id="" rel="stylesheet" type="text/css" href="chrome-extension://kcehcblfpidimbihdfophhhdejckolgh/styles/styles.css">
+</head>
+<body>
+
+<div id="alert-modal" class="off">
+    <div id="alert-panel">
+        <div id="alert-txt">test</div>
+        <div id="alert-btn" class="btn">OK</div>
+    </div>
+</div>
+
+<div id="spinner" class="center-div off">
+    <div id="spinner-modal"></div>
+    <div class="ios-spinner">
+        <div class="spinner-bars">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+            <div class="bar bar4"></div>
+            <div class="bar bar5"></div>
+            <div class="bar bar6"></div>
+            <div class="bar bar7"></div>
+            <div class="bar bar8"></div>
+            <div class="bar bar9"></div>
+            <div class="bar bar10"></div>
+            <div class="bar bar11"></div>
+            <div class="bar bar12"></div>
+        </div>
+        <div id="spinner-txt" class="ios-spinner-txt"></div>
+    </div>
+</div>
+
+<div id="inner" class="form form-as-column">
+    <div id="logo-container">
+        <div class="logo"></div>
+        <div id="login-form-title">Pimsleur Account Login</div>
+    </div>
+
+    <div id="form-container">
+        <button id="fb-login" class="social-button fb-btn">Log in with Facebook</button>
+        <!-- button id="goog-login" class="social-button goog-btn">Login with Google</button -->
+
+        <form class="login-form" action="/login" method="post">
+            <input type="hidden" name="state" th:value="${state}">
+            <input type="hidden" name="redirect_uri" th:value="${redirect_uri}">
+
+            <div id="email-err" class="off">Required field:</div>
+            <input id="email-username-field" type="email" name="email" placeholder="email" autocorrect="off" autocapitalize="none">
+            <div id="password-err" class="off">Required field:</div>
+            <input id="password-field" type="password" name="password" placeholder="password" autocorrect="off" autocapitalize="none">
+
+            <button id="regular-login" type="submit">LOG IN</button>
+            <div class="reset-link message"><a id="reset-pw-link">Forgot password?</a></div>
+
+            <div class="version" id="edt-version">v1.8.2-p</div>
+        </form>
+
+    </div>
+
+</div>
+
+<div id="fuze-for-browser-extension-dial-number__container_div"><div class="fuze-for-browser-extension-dial-modal" id="fuze-for-browser-extension-dial-modal"><span class="fuze-for-browser-extension-dial-modal__close-sign"></span><div class="fuze-for-browser-extension-dial-modal__logo"></div><p id="fuze-for-browser-extension-dial-modal__phone-number" class="fuze-for-browser-extension-dial-modal__phone-number"></p><p class="fuze-for-browser-extension-dial-modal__info">Your call is being connected through your Fuze device</p></div></div><a class="fuze-for-browser-extension-injected-tooltip__tooltip"></a><span class="fuze-for-browser-extension-injected-tooltip__tooltip-arrow"></span><div id="TPN_THINKINGCONNECTOR_INSTALLED"></div>
+
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="https://cdn.auth0.com/js/auth0/9.5.1/auth0.min.js"></script>
+<script src="login.js"></script>
+
+</body>
+
+</html>
+

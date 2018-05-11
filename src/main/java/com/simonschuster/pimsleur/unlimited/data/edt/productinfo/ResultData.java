@@ -3,6 +3,7 @@ package com.simonschuster.pimsleur.unlimited.data.edt.productinfo;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.simonschuster.pimsleur.unlimited.common.exception.PimsleurException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -32,7 +33,7 @@ public class ResultData {
             } catch (IOException e) {
                 logger.error("Exception when deserialize product info(courseconfig) from EDT, message Detail:" + e.getMessage());
                 e.printStackTrace();
-                throw new UncheckedIOException(e.getMessage(), e);
+                throw new PimsleurException(e.getMessage());
             }
             formattedCourseConfigs.put(key, courseConfig);
         });
@@ -52,7 +53,7 @@ public class ResultData {
             } catch (IOException e) {
                 logger.error("Exception when deserialize product info (mediasets) from EDT");
                 e.printStackTrace();
-                throw new UncheckedIOException(e);
+                throw new PimsleurException(e.getMessage());
             }
         });
         return formattedMediaSets;

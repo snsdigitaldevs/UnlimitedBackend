@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = "com.simonschuster.pimsleur.unlimited")
+@ComponentScan(basePackages = "com.simonschuster.pimsleur")
 //@EnableJpaRepositories(basePackages = "com.simonschuster.pimsleur.unlimited.repo")
 @EntityScan(basePackages = "com.simonschuster.pimsleur.unlimited.data.domain")
 public class UnlimitedApplication {

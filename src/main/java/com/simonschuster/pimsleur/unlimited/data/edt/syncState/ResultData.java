@@ -22,7 +22,7 @@ public class ResultData {
     @JsonProperty("subCode")
     private Integer subCode;
     @JsonProperty("lastSaveId")
-    private Integer lastSaveId;
+    private Long lastSaveId;
 
     @JsonProperty("userAppStateData")
     private String userAppStateData = null;
@@ -38,12 +38,12 @@ public class ResultData {
     }
 
     @JsonProperty("lastSaveId")
-    public Integer getLastSaveId() {
+    public Long getLastSaveId() {
         return lastSaveId;
     }
 
     @JsonProperty("lastSaveId")
-    public void setLastSaveId(Integer lastSaveId) {
+    public void setLastSaveId(Long lastSaveId) {
         this.lastSaveId = lastSaveId;
     }
 

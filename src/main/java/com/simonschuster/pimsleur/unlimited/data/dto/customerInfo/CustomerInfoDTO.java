@@ -12,6 +12,12 @@ public class CustomerInfoDTO {
     private List<ProgressDTO> progresses;
     private List<SubUserDto> subUsers;
 
+    private Long unlimitedLastSaveId;
+    private Long pcmLastSaveId;
+
+    private String customerId;
+    private String identityVerificationToken;
+
     public CustomerInfoDTO(List<String> unlimitedProductCodes,
                            List<String> pcmProductCodes,
                            List<ProductActivation> productActivations,
@@ -42,5 +48,37 @@ public class CustomerInfoDTO {
 
     public List<SubUserDto> getSubUsers() {
         return subUsers;
+    }
+
+    public void setUnlimitedLastSaveId(Long unlimitedLastSaveId) {
+        this.unlimitedLastSaveId = unlimitedLastSaveId;
+    }
+
+    public void setPcmLastSaveId(Long pcmLastSaveId) {
+        this.pcmLastSaveId = pcmLastSaveId;
+    }
+
+    public Long getUnlimitedLastSaveId() {
+        return unlimitedLastSaveId;
+    }
+
+    public Long getPcmLastSaveId() {
+        return pcmLastSaveId;
+    }
+
+    public String getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(String customerId) {
+        this.customerId = customerId;
+    }
+
+    public void setIdentityVerificationToken(String identityVerificationToken) {
+        this.identityVerificationToken = identityVerificationToken;
+    }
+
+    public String getIdentityVerificationToken() {
+        return identityVerificationToken;
     }
 }

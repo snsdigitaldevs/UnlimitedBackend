@@ -1,12 +1,12 @@
 package com.simonschuster.pimsleur.unlimited.configs;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
 
 @Configuration
-@PropertySource("classpath:config.properties")
+@ConfigurationProperties
 public class ApplicationConfiguration {
 
     @Autowired
@@ -14,6 +14,10 @@ public class ApplicationConfiguration {
 
     public String getApiParameter(String propertyName) {
         return env.getProperty("edt.api.parameters." + propertyName);
+    }
+
+    public String getAuth0ApiParameter(String propertyName) {
+        return env.getProperty("oauth.login.api.parameters." + propertyName);
     }
 
     public String getProperty(String propertyName){

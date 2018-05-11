@@ -18,4 +18,5 @@ public class EDTRequestUtil {
 
         return restTemplate.postForObject(url, entity, responseType);
     }
+
 }

@@ -48,7 +48,7 @@ pipeline {
                 echo "Deploy to QA"
                 script {
                     try {
-                        timeout(time: 10, unit: 'SECONDS') {
+                        timeout(time: 2, unit: 'HOURS') {
                             input message: 'build QA version?'
                         }
 
@@ -68,7 +68,7 @@ pipeline {
                 script {
                     try {
                         echo "Deploy to UAT"
-                        timeout(time: 10, unit: 'SECONDS') {
+                        timeout(time: 2, unit: 'HOURSE') {
                             input message: 'build UAT version?'
                         }
 
@@ -84,21 +84,24 @@ pipeline {
             }
         }
 
-//        if we need production enviroment we can de-annotation this stage
-//        stage("Deploy to PROD") {
-//            steps {
-//                echo "Deploy to PROD"
-//                timeout(time: 2, unit: 'HOURS') {
-//                    input message: 'build PROD version?'
-//                }
-//                script {
-//                    def config = readProperties file: 'jenkinsfiles/config/config.properties'
-//                    def hostnames = config.PROD_UnlimitedBackend_HostName.split(",")
-//                    deploy(hostnames, "prod")
-//                }
-//            }
-//        }
-
+        stage("Deploy to PROD") {
+            steps {
+                try {
+                    echo "Deploy to PROD"
+                    timeout(time: 2, unit: 'HOURS') {
+                        input message: 'build PROD version?'
+                    }
+                    script {
+                        def config = readProperties file: 'jenkinsfiles/config/config.properties'
+                        def hostnames = config.PROD_UnlimitedBackend_HostName.split(",")
+                        deploy(hostnames, "prod")
+                    }
+                } catch (err) {
+                    currentBuild.result = 'SUCCESS'
+                    return true
+                }
+            }
+        }
     }
 }
 

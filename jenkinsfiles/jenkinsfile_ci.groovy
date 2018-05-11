@@ -74,19 +74,20 @@ pipeline {
             }
         }
 
-        stage("Deploy to PROD") {
-            steps {
-                echo "Deploy to PROD"
-                timeout(time: 2, unit: 'HOURS') {
-                    input message: 'build PROD version?'
-                }
-                script {
-                    def config = readProperties file: 'jenkinsfiles/config/config.properties'
-                    def hostnames = config.PROD_UnlimitedBackend_HostName.split(",")
-                    deploy(hostnames, "prod")
-                }
-            }
-        }
+//        if we need production enviroment we can de-annotation this stage
+//        stage("Deploy to PROD") {
+//            steps {
+//                echo "Deploy to PROD"
+//                timeout(time: 2, unit: 'HOURS') {
+//                    input message: 'build PROD version?'
+//                }
+//                script {
+//                    def config = readProperties file: 'jenkinsfiles/config/config.properties'
+//                    def hostnames = config.PROD_UnlimitedBackend_HostName.split(",")
+//                    deploy(hostnames, "prod")
+//                }
+//            }
+//        }
 
     }
 }

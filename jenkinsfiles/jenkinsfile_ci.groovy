@@ -105,6 +105,13 @@ pipeline {
             }
         }
     }
+    post{
+        aborted{
+            script {
+                currentBuild.result = 'SUCCESS'
+            }
+        }
+    }
 }
 
 def deploy(hostnames, env) {

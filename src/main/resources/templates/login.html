@@ -49,7 +49,7 @@
         <button id="fb-login" class="social-button fb-btn">Log in with Facebook</button>
         <!-- button id="goog-login" class="social-button goog-btn">Login with Google</button -->
 
-        <form class="login-form" action="/login" method="post">
+        <div class="login-form">
             <input type="hidden" name="state" th:value="${state}">
             <input type="hidden" name="redirect_uri" th:value="${redirect_uri}">
 
@@ -58,11 +58,11 @@
             <div id="password-err" class="off">Required field:</div>
             <input id="password-field" type="password" name="password" placeholder="password" autocorrect="off" autocapitalize="none">
 
-            <button id="regular-login" type="submit">LOG IN</button>
+            <button id="regular-login">LOG IN</button>
             <div class="reset-link message"><a id="reset-pw-link">Forgot password?</a></div>
 
             <div class="version" id="edt-version">v1.8.2-p</div>
-        </form>
+        </div>
 
     </div>
 

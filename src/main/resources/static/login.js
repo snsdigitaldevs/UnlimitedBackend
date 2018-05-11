@@ -3,7 +3,7 @@ const AUTH0_CLIENT_ID = "OYONqZ4zLlVruKMT9FhCtlV1idp7wrPJ";
 
 var webAuth;
 
-function initAuth0ForFBLogin(){
+function initAuth0ForFBLogin() {
     logUtil('initAuth0ForFBLogin: initializing Auth0..');
     try {
         webAuth = new auth0.WebAuth({
@@ -69,9 +69,9 @@ function loginWithFaceBook() {
                             } else {
                                 logUtil("fbAuth: successfully retrieved user info: " + JSON.stringify(user));
                                 var fullRedirectUrl = window.localStorage.getItem("redirect_uri") + "#"
-                                        + "state=" + window.localStorage.getItem("state") + "&"
-                                        + "access_token=" + user.sub + "&"
-                                        + "token_type=" + "Bear";
+                                    + "state=" + window.localStorage.getItem("state") + "&"
+                                    + "access_token=" + user.sub + "&"
+                                    + "token_type=" + "Bear";
 
                                 window.location.href = fullRedirectUrl;
                             }
@@ -107,21 +107,20 @@ var showFailAlert = function (errorMessage) {
     $("#alert-txt").text(errorMessage);
 };
 
-var showSpinner = function() {
+var showSpinner = function () {
     $("#spinner").removeClass("off");
 };
 
-var hideSpinner = function() {
+var hideSpinner = function () {
     $("#spinner").addClass("off");
 };
 
-var loginFailCheckAndInit = function () {
+var initModalAndCheckError = function () {
     $('#alert-btn').on("click", function () {
         $("#alert-modal").addClass("off");
     });
 
     var url = new URL(window.location.href);
-
     if (url.searchParams.get("loginStatus") == "fail") {
         logUtil("login fail when login with normal Pimsleur account");
         var errorMessage = "Your username or password doesn't match";
@@ -129,7 +128,27 @@ var loginFailCheckAndInit = function () {
     }
 };
 
-$( document ).ready(function() {
+function initLoginFormAction() {
+    $("#regular-login").on("click", function () {
+        var redirectDestination = "";
+
+        $.ajax({
+            method: "POST",
+            url: "login",
+            data: {
+                state: $("input[name='state']").val(),
+                redirect_uri: $("input[name='redirect_uri']").val(),
+                email: $("input[name='email']").val(),
+                password: $("input[name='password']").val()
+            }
+        }).done(function(data, status, jqXHR) {
+            redirectDestination = data;
+            window.location.href = redirectDestination;
+        });
+    });
+}
+
+$(document).ready(function () {
     document.getElementById("fb-login").addEventListener("click", function () {
         fbAuth();
     });
@@ -137,8 +156,8 @@ $( document ).ready(function() {
     storeFieldsFromAlexa();
     loginWithFaceBook();
 
-    loginFailCheckAndInit();
-
+    initModalAndCheckError();
+    initLoginFormAction();
 });
 
 

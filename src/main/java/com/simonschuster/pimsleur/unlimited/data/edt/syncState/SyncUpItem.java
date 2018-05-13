@@ -11,6 +11,11 @@ public class SyncUpItem {
         this.value = value;
     }
 
+    public SyncUpItem(Boolean value, String parentId, String stateChangeType, long lastChangeTimestamp) {
+        this(parentId, stateChangeType, lastChangeTimestamp);
+        this.value = value;
+    }
+
     public SyncUpItem(String value, String parentId, String stateChangeType, long lastChangeTimestamp) {
         this(parentId, stateChangeType, lastChangeTimestamp);
         this.value = value;

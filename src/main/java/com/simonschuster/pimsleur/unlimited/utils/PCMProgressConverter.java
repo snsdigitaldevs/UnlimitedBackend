@@ -27,12 +27,11 @@ public class PCMProgressConverter {
 
     public static List<ProgressDTO> pcmProgressToDto(List<UserAppStateDatum> edtProgresses) {
         String currentMediaItem = findCurrentMediaItem(edtProgresses);
-        List<ProgressDTO> dtos = edtProgresses.stream()
+        return edtProgresses.stream()
                 .filter(PCMProgressConverter::hasKeyWord)
                 .collect(groupingBy(UserAppStateDatum::idPartOfKey)).values().stream()
                 .map(group -> groupToDTO(group, currentMediaItem))
                 .collect(toList());
-        return dtos;
     }
 
     private static String findCurrentMediaItem(List<UserAppStateDatum> edtProgresses) {

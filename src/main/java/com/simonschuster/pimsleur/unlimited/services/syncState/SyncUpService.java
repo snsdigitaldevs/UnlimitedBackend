@@ -38,9 +38,9 @@ public class SyncUpService {
         return syncUpResult.getResultData().getLastSaveId();
     }
 
-    public long syncUpPcmProgress(String customerId, String productCode,
+    public long syncUpPcmProgress(String customerId, String productCode, String mediaSetID,
                                   String mediaItemId, SyncUpDto syncUpDto) throws Exception {
-        SyncUpResult syncUpResult = postToEdt(createPcmPostBody(customerId, productCode, mediaItemId, syncUpDto),
+        SyncUpResult syncUpResult = postToEdt(createPcmPostBody(customerId, productCode, mediaSetID, mediaItemId, syncUpDto),
                 config.getProperty("edt.api.syncUpUrl"),
                 SyncUpResult.class);
         if (syncUpResult.getResultCode() != 1) {
@@ -59,10 +59,10 @@ public class SyncUpService {
 
     }
 
-    private HttpEntity<String> createPcmPostBody(String customerId, String productCode, String mediaItemId, SyncUpDto syncUpDto) throws JsonProcessingException {
+    private HttpEntity<String> createPcmPostBody(String customerId, String productCode, String mediaSetID, String mediaItemId, SyncUpDto syncUpDto) throws JsonProcessingException {
 
         Map<String, SyncUpItem> edtSyncUpItems = syncUpDto.
-                toEdtPcmSyncItems(customerId, productCode, mediaItemId);
+                toEdtPcmSyncItems(customerId, productCode, mediaSetID, mediaItemId);
         return createPostBody(customerId, syncUpDto, edtSyncUpItems);
     }
 

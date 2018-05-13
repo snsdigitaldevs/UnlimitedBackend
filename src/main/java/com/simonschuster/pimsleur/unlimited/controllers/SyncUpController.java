@@ -32,13 +32,14 @@ public class SyncUpController {
 
 
     @RequestMapping(
-            value = "/account/{customerId}/product/{productCode}/mediaItem/{mediaItemId}/progress",
+            value = "/account/{customerId}/product/{productCode}/mediaSet/{mediaSetID}/mediaItem/{mediaItemId}/progress",
             method = POST,
             consumes = "application/json")
     public Long pcmSyncUP(@PathVariable("customerId") String customerId,
                           @PathVariable("productCode") String productCode,
+                          @PathVariable("mediaSetID") String mediaSetID,
                           @PathVariable("mediaItemId") String mediaItemId,
                           @RequestBody SyncUpDto syncUpDto) throws Exception {
-        return syncUpService.syncUpPcmProgress(customerId, productCode, mediaItemId, syncUpDto);
+        return syncUpService.syncUpPcmProgress(customerId, productCode, mediaSetID, mediaItemId, syncUpDto);
     }
 }

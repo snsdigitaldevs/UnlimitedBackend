@@ -181,6 +181,12 @@ public class EDTCourseInfoServiceTest {
                 .response(file("src/test/resources/pcmCustInfoResponse.json"));
 
         server.post(and(
+                by(uri("/subscr_dev/action_handlers/nwdft.php")),
+                eq(form("action"), "slruldr"))
+        )
+                .response(file("src/test/resources/pcmNewVersionAudioLinkRequest.json"));
+
+        server.post(and(
                 by(uri("/subscr_production_v_9/action_handlers/rdlss.php")),
                 eq(form("action"), "rdlfmix"))
         )

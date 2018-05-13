@@ -1,0 +1,237 @@
+{
+  "result_data": {
+    "mediaSetId": 30155,
+    "productsId": 4093,
+    "urls": [
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Level_1/9781442307674_AudioUsersGuide.mp3?Expires=1525425056&Signature=eUnZiAoF3Z3vD789evG9c7mX4ipyzuv7nu005ZiPISjCgmJF0X7wg-u~sNi7B2XrfKReOYHm9f5JyJEqDJL3KKaQ4Vxv3QXbQd4OVy8whcvKJKrWziNXTV6Nz4Blksd7uDdoKcib79o7yVkNEL6CF4IOChjZ9s4s-rIin4HJue0_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 67226
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/assets/PimsleurUsersGuide.pdf?Expires=1525425056&Signature=wJdottT18UAYmYogP9~UjX4rTHtQTzZ8RYU-Lod1iaw5ry7V19tewCXjBPd2RVHvDREZZOwSrVCs2URTt1F-5GkMo~32BZluRCIWsL2PYeTmQiGSu5HrDe5asEZ4CZURQ4IhCbVjrSQTREZzhYrhjDh5HzlbYtjIo~o6trru-VQ_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41570
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Level_1/9781442307674_Unit_01.mp3?Expires=1525425056&Signature=49DghMEzwKwtn8Y1XKOPUKaoN~Akq6Lp~S887jhvOLdnoiJd~Bi2DZyqWXC~s-mqLia97Q9hbZFVtWWCFNCb0QQ7xq2JUE9w4OfdXV2MbkEJbtOMKXpQwQdgvLWrOEWLBg~Oct35B11THIgOUYyXtZRnSd5DDDSAr2Z8coMkSsk_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41571
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Level_1/9781442307674_Unit_02.mp3?Expires=1525425056&Signature=tQHYz6obOxW1FHFa7qN5umKJEcg5wBXgOQ0KYlyeoou1r~Z3A1xMUUSYwJYPuRs6yPtDkAUemRNWROtwL7VgTnDB3KQ~oLFhNmFRkK4AJdkXtZTi6Feew-MHXhyvBQKpHRuYwUHNvbJ1cYqT-cKf~~Nr2jUdQdRb-wfx7AGqUGs_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41572
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Level_1/9781442307674_Unit_03.mp3?Expires=1525425056&Signature=UNCpt4kU~PEb4ZcyfOwONoU7v~SnOHHbriAKgveXe5rYgZLbbrBfu8OiZWROdTMF0q~ppCh3qmNbt1DNUfS2pnk7Kqx34HankvFspbIECH3WhZXtUjJLXWVZrSeljrB3ExMX5~amd87XTXtjj0K3hiHPZZM~Sq0eJERi~bqRuI8_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41573
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Level_1/9781442307674_Unit_04.mp3?Expires=1525425056&Signature=Frc8klcUfn0FXwiKBy~0i3IbwKg1QLJFvMEK1yLZn~ih8xidiriGnDVm48GdqO4VLasJAXnXXjF~-IM9XXBwrhOLqxKw4j6~5Nztgf9gKjA8KLT~nFnMV~CVpYxxlrVNbYWDthafRdedBVEX5sPVdnV3xQU0D4tNQ5SycxXdep0_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41574
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Level_1/9781442307674_Unit_05.mp3?Expires=1525425056&Signature=ssAlTbuRK0tbjn3bpzjze6HYEWwIj4VllexSet-59Bw4EDp9wafK5BC1yGkSWgBjVUkI7iMJJ4wWV68av1aBY6A2OWDuKxYjONyEE4m1up4LmgpEzB2QKZnTXMnEfy5FHsJZgb1tUh3VWH6noDLmzgEKcdGBDz8QuBZxUUDiz-w_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41575
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Level_1/9781442307674_Unit_06.mp3?Expires=1525425056&Signature=zL72y-nui1L9DdyDz0FIt7c-Oc9oZJEzVO5A663cBKNBwoqBrU~Z~NE7l6ywwZuFdbweiFcsJWMPTlgRNfOHHjZFzEywQMsk6LqeitpEULpUFCBPh9rJEWUPtbhbUlrddr7sBoRjrYley08-2P7Z~a0m8zr-xhA42WMERmAAduw_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41576
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Level_1/9781442307674_Unit_07.mp3?Expires=1525425056&Signature=iEdd89DMPN53EDxzeVwxPhH5pz60G7IL7I4VzmTFGjKbBenpyYFF~IjC2ktLIhaA7APC1j2uiAb7B54zEfl6uY9oiz~y3kftrWPRF6hRY1JhZK16b0KKS7uS8I~shk6ZL0oPNgLimvmNObaaqCVwLZ622XPKTq-ePbo6D0bEkcM_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41577
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Level_1/9781442307674_Unit_08.mp3?Expires=1525425056&Signature=MhxY-CH1TlD4KWX2P1nL2pla3xDZkbAcZI4d9oTx5dAYow8loaUe8vgJirTKiLX1sgjda8zCIe36gEtOmLOEIXz3X0l~m9Sve8de-s2yQGrczFclfTiutgk-Ar6AjVeMIm~o0wzF-2m2xvJ4i7vrcx5HTgIXydGhnWa6j5IEZCc_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41578
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Level_1/9781442307674_Unit_09.mp3?Expires=1525425056&Signature=Ok30ZcdcSbgX20JuwcUuOkz271jQUTkMPNnGuPhCYFjj0q1VdJ9xHzJzz5MEs4EvfUlK9mSASANy2hepuvxb7MZxuwOufvgCiTGblfpngxPrgMqZbC7Vv8suFAUd1RKZZ9NBTmqkrzhEbwVpk~W1XeFQy1NYJIbzLF7XYstMjww_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41579
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Level_1/9781442307674_Unit_10.mp3?Expires=1525425056&Signature=zj0YxbQ1eW3W--0kca46IEvdMVh5gLrF1z9p85ARqY8XykGISrB18AqRVtkC3WkJaIt5cbVkqSGWiviQ-38Jl55ePVR6HXRe9cKVD7Yzb4LVBUeuM~Ff~brc~dapLO3kKgT0qFtM9a51B2heD-IDa41cFiH6d~WUd2ctbFrFGAc_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41580
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/assets/PimsleurUsersGuide.bin?Expires=1525425056&Signature=1cwsNSCY~cV5o65Bgu3JY8sSUo~HQ2JnHdXAXDWR02gAGcQACAn5OyEriS2kcNjDMbFffaeh~ubfldI2~jezAQBTY-XygWEJ~627g03roZ4HdWexsEQY89ACFKGBw1maP3ULgtSd4RllyHAh~ZJEa8e5InBflnIIJDfo4w10tEQ_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 44512
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Level_1/9781442307674_Unit_11.mp3?Expires=1525425056&Signature=LMZ-EQXY2Emk3azhSGXMY68vW3ZRNhNP6x-IfISv6ADsuWWuQJOtxGKpW0S51Cua6d~Jh3tz1~6aPIs3I6HsWjkxOEJQPwBc17SkmulFgv56Gvb~4TlMHBfco1IypRFkiYwwhnIASo1-bjHmC1GRePRgADeQmkQij9aJYiELtdQ_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41581
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Level_1/9781442307674_Unit_12.mp3?Expires=1525425056&Signature=WYEw1Kt-7gGH~5XMEZ52N0s3LBHUzYwiGeQHBv5uzbtQIiIXoyEDAaJh1LmXsXY8TBJaQSfNDEWgPL8N9GKagX-xPL~fXT-yiiIGxSwF~AATVVYbMzkHAtYPtqFu9k~MBdS2zkV7soZIWsZff97FjGHE-CbD99yu0mzuotVvf6k_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41582
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Level_1/9781442307674_Unit_13.mp3?Expires=1525425056&Signature=ha0MXBzKsPVTRM7sk0BA-vTf99oDh-Uw7euToKOX6FjB9JDxEqBLnnORWkSbxOsbAkAOrID5ttVBuvRbDpFjK0ziH7H-NO8ocm9eD4zmcWz2IEp0OZCl63Us-ew3B4rvqegTFN6Ndgjxpr1XrsVW~A7niqZscDPK0sxUged203E_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41583
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Level_1/9781442307674_Unit_14.mp3?Expires=1525425056&Signature=xJv8BlIhE0E6EaV6BGlBnXHnCAc0uEOpBFxfsugF-MFxmhbbjEF-YEJnYhs3LV3GaIXeTJC-1G57TLdV4gOI4Yw5-T4NQ8IM0q5tRk0lV63Aqm0DDDxkIhWbB-GJ41irF2iUAk9hOwMYawcqSGRjw7NyJLW4ZtBEol8llU8NQ5g_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41584
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Level_1/9781442307674_Unit_15.mp3?Expires=1525425056&Signature=WtRH5riQixdt~mIUEuix~I65b3Kj-V8a8a6njkczMmTziwysuZKBRhXLRE5jDUDp81-0bSLR6Y~Pvyv-5MSxDBh8ElSorxR7Lv28lj~PMpoEqYc~nYJQocQZ0WtV~ovu5Iah9C-UbB1-Oe8-XAyGgEk84wsymvGo6sWA~E1hVyg_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41585
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Level_1/9781442307674_Unit_16.mp3?Expires=1525425056&Signature=WIlsJYoN5PHd6ecfPk4Hf2eiT8HdygG7F2NdG4eyFpGc71gkuIyXHI5SaOhVVkNxz-TLgt3IWMdtLPKNr7MQLxl2woL8LE1I9HdTKUQRELPMwBKIyD8E6KUi-SQODP3ZUn0VzVEB7dqQvDvAVRzBtYnYLJhrw2pCRso8kisMQNY_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41586
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Level_1/9781442307674_Unit_17.mp3?Expires=1525425056&Signature=SnIBcVjExsZ55rxLsiPHwnPY3Anw04wOfFKebZZY-nECbt48p6TiEDfZI~TcuuyY5udVwJYTIz7MiRJBf3ePuqSALqk8n8ubVYt~FkF4ti7YDQ38AUeHyzm5P0KEa1cLTvKcijb3ujLJJwwRTmPrbd3Q22lYN8jgOpn12t9ukAE_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41587
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Level_1/9781442307674_Unit_18.mp3?Expires=1525425056&Signature=RRprVeI1TzxBFD0VjJQZazQcbYAJkgBCPQpJHdaHbtOJmMcYzcpe6BZdT4IFm1c1kUkBBRs2c2P977Gwl4vmY6Ri5FcPpJrQkGRfDHVZhSZkPqvbprFEv3M~WB9Mt6BMm2uKEHj~nI0jqChrnsaIv055EED31yUjfFqB3KGt4yM_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41588
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Level_1/9781442307674_Unit_19.mp3?Expires=1525425056&Signature=cHXTjZ9yqoD-GtIFmYZiTYNEV1WLgymyWv90dWaISqYSrwWHatvJvi54jsptE7ZkdHf8z6txHVfecZnUR8aBFPulhl4uijF3xBcTgpYwD2VH9RjGt5kJ7tNc7kytnFc~ccI7A9TqHuQjHOearFlne1qVZao46flGxizHXGgJLaE_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41589
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Level_1/9781442307674_Unit_20.mp3?Expires=1525425056&Signature=ybA~PIwv9hwca~6oC8PKZwDBoEMAYAO7PqLQTWkg0c19ikCttF2QEND3h8Ca3Yz0GTb2nx0YDbe9xBgMBn66xkKMYwbGXUyIe57ebFKvCxASf2cfOf9CO7Dz3mh6mGwtljKSFb31wlfHn8fj8jELA0v2r51wIpKMUt1T8Pecqd8_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41590
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Level_1/9781442307674_Unit_21.mp3?Expires=1525425056&Signature=WUbFsIf6wlhjBSAp1VkJ~2MwntmsM5GwnaU9MzWMRdS~WFm87HmIkwFSt5b58gzduhEEb1CNvXy-SNEMvAr-~~AYT-ytw~0NaFlcxf7bvmi4yvU85f8MPZRhd6nr-crRqDj7s4S5jrZOaQgQWnAoe7UdwY1zAHVal-WMPESVMNg_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41591
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Level_1/9781442307674_Unit_22.mp3?Expires=1525425056&Signature=Gb1F-BgSVuWJSHwaMX6gQlNHwZWH7T0clxdiwcmCMsi2utR5pEpJhN5iT4G24v7a4BnKMo40H7VUUpblYN6XmxTcGM297tZSN5Tc8yUCsU5FWo8sopXLtgIc3SrakYI0POYloHQxQIN855upm7iGntUxgFdDNGrAoBl3yayldxc_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41592
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Level_1/9781442307674_Unit_23.mp3?Expires=1525425056&Signature=fJKwlhVCZwkYBiYyWcx~8FptA-velrj8V7OaMnpK205Th-Nc2owSSXGZtYNoPAWPwnIhZdGEYsA543FSwCLlX40pUy8FWwHNgqejxMOrsNAVQTmIKxSh~mL6krOLvAosgCANCW4L877T1IlEk6reqFYsng3RKOPnNpR4DbAMsb8_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41593
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Level_1/9781442307674_Unit_24.mp3?Expires=1525425056&Signature=JoOxH3y83F7FAAyvNWuHCavZrpI8b5FQGEw8-GkuvLD0meX8y7U1WhySytV5NgbRVN5yAlSbEDRIFR~LN-XK-pTcofvXCivmSN59uBXeGBkCG02EkPOLrMc4LxtbKH6T7l9MQWXu~Y57iSKxjtK2B1VoaxxHamCG0yNxEAwMuJ8_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41594
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Level_1/9781442307674_Unit_25.mp3?Expires=1525425056&Signature=C9tk696JsmZNw7W-RxpgA9yqk98eV8vaxgrKoGarlycg2XU3ko0Lo3SzgiiG2rFoeTGgaB~yFuXSMvwtOrB5himWNwGayhbZ1EpYEtpBi9hSm45ys4oHRo~NMhyR5IkQLqrj0n0-4fazy6eRTHJCpzHXWd7axv9QhH52QyVcOGU_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41595
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Level_1/9781442307674_Unit_26.mp3?Expires=1525425056&Signature=HuRyrWZXAWTbnM5UjaI7Z7vGHCM6KhevbQDhvmqs9hMm65Xuc9MUBbZ8JictPzmR19FnC3MG4WhV7wWYFrI6K2LggpVg1PfI01KaTry6WnbRUtQBeRy-oLAJSQLiWfiIaLNza0c45j4TJvN99P63bLyUdroYYr3S9ilWU~Axhtc_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41596
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Level_1/9781442307674_Unit_27.mp3?Expires=1525425056&Signature=nNTnWUDs5f6-pFlN~t4GF0k-Z0MMbby0fJkJPnMLA5lJYWZhZSytxcHdYoxWJtMV04PxqLd4guqOi91Fzmiej8BfZWp3OGv8GwVUlqwXCo-VF7OYNNhskaMBa9hsqFWknHW7TRG1AzSlXGnuVQCytVEVQorWP7i4IKMF6TaZ~W0_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41597
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Level_1/9781442307674_Unit_28.mp3?Expires=1525425056&Signature=K4lFu-HYyhqbwpINa~3xf6Gp4S4eaVu9TEnHziFo8dxKGzLo0W9OHOlnYMlwStkXyi-64Diii5MWxwRQsVW1KDNaDrLAP-iVuCF-pBCWp~CvLHNbKQ83GyIzDANUcxBoKTzEB995WpqsTOKJfvYhqZXOF4LHP8Fad2EXRDXh0l8_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41598
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Level_1/9781442307674_Unit_29.mp3?Expires=1525425056&Signature=MGvgalEU27aM~NlLLnre~mrOLERco6zAr4MSaNwpdFpBkKJf8mW6wSyhPlWAsC43DAC-UZMb~t2XCS3eZhK8urzNM92KSgRl9tq5a-XUzm8u46SfmhhxiwoNTK8Wuve0Q2GCYxCmbxHlprrxScAVnQN0Pe13MwlNpcIZUAnlh9U_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41599
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Level_1/9781442307674_Unit_30.mp3?Expires=1525425056&Signature=CdG-xS7o6zN7lcqPyq~EW8uL-AxApNKmUG-L20yYFMUu4SP0SwgxIqea4qsWysWKTntRvuW6-kpy~jReDW~ZgEkA3PyMvRlk33JwB~Nhs3gg0I0ra1exNd3y4CF2du9waG7kYl8ztaf1kvODgDYLlKzcef4R36BV3J2Z-EMuDUk_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41600
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Phase_1/9781442307674_Reading_Booklet.pdf?Expires=1525425056&Signature=CJ1BB7recseHaVWHfUWwFEfm~LG-f04IRDjSzUHX0uELXnkAE6PAF3qHxQ4-D6P-zDXJxjqCU0gxZTADwBpwkdtg3qNWEquizA6j1kZdsS~cLWo5Tzv0tu9RJ30DMJJ8uaGXJcIJAoOa7W8A6iYuknauWfX8k4k2sULMFpbfpzQ_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41601
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Phase_1/9781442307674_Reading_U09.mp3?Expires=1525425056&Signature=wUj3MEuJqEu98106RBiPvrepfMCWhu11tCDbDh6ozYKlqB8gb9gxd7GUq19nBK~qFLyrbl7dke3Dw1I~FqGXi2dQjoLeHeMRtoBCRwocB6-LtQC95HTK-6UnzUm9W6tMLq9EAy8eDaE5m6oK2-g-kqrB3yIT92KQFYoPQz0STdQ_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41602
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Phase_1/9781442307674_Reading_U10.mp3?Expires=1525425056&Signature=3DdyCOsUpUD1m2kwASfBUm3AHHIefAbylDQzjI8piethMIqNwhCWVM929fpaKW0vTafvoskR3M2oK4ScpS0VTlML7cBhS93pQUG4Iu6G29vuyTDm5jaiQGIHhQPbvh60el0tYjINgcdgl8yn-xeCXSeUWpWRAdsV-j4x75vZoSI_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41603
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Phase_1/9781442307674_Reading_U11.mp3?Expires=1525425056&Signature=byIuTZfWK4f7gm4srxTOmJuDhyroXLbAoW66TL-A47RaJmEALAQP68s98VqgSozqz2N55PGmIBxEiKp4ZdtkECF39mTHOkI0non~08CKaANRzWtjMrBsA2Lu4CtyXaJ0wRrZUPJLabTAL2qpWDRECOmM7x3eB0jlaJUMBBDpxq0_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41604
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Phase_1/9781442307674_Reading_U12.mp3?Expires=1525425056&Signature=vm9C3HnrCJbXw9BxFJ76a2nLcTfIX8kmhPnyFWTRhGLCCq8C0r8b7rXBq137rpyyJaOYzndUBwNrEy~TwKn6sDbbETo7JZPtGcXvKprytiCDuPCUEPkq8TBrjHLQYHXd7aDP1BuHnOXW1Rgao6d1XTrCgH4XCKXAqvKDrR1XYFg_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41605
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Phase_1/9781442307674_Reading_U13.mp3?Expires=1525425056&Signature=b8TDYFNotOTOnoXjM75zvK8SZcxkKqGvytGE~mDJwtxAJsv968H2N2EaRf8pPiYg901nHsX~~1L1miKkL6Rcyl-kIc~S5Ee33oOBlzsR7q6i-XRT4jusPMHhWv9NOX~n8eZyghVet0esytkbsz-wb~2ElwUQtsDOr7ZMJeQFVko_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41606
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Phase_1/9781442307674_Reading_U14.mp3?Expires=1525425056&Signature=C87MCjwmtoFQitJpRhPjNqrpgS4jWgFgEt2Mv57qdlXdx0hMdNB5rSHDf8g7As0hBRLqOlWBaCJ6oFm7Ny31XRgy-Wbbq04bGZO--LvanV0vEgShzRcwhOUDPV2mM29UVTbgjmy0U-EPGMJbu0B5QDY13MuApqLEbywYG57Wvrw_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41607
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Phase_1/9781442307674_Reading_U15.mp3?Expires=1525425056&Signature=RmChNdDTN5qXERXrUm7iqkjUXernynbU0m~QaQWMpbiAg~U7gnIpHFsxarMHct7vw5j~-kPFgcVTt95T0o0Un4~J85d-AhUhnrT8vbdSIs0X6xfR~QsH5M8wRF45-evJVQKtMMc37i0PDQStELVJna7lKPwzxzVb-4ntBAe2L7A_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41608
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Phase_1/9781442307674_Reading_U16.mp3?Expires=1525425056&Signature=qrhNto8VzdtGkTPNElG0q8w0rWzJZ5ZK7c5pgXTTwJe5FdH86oxRvh0Tq8hM-ipH3rpCfyY8NjviT9vM~jUFwgH6SPPBP0nsgHo-BnwkJXKRDclZqU1~8XN3az1FdLEDCpcFB8MSyLvcBVV43tRZZJof81rkQP9MtgA6lAbf~6U_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41609
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Phase_1/9781442307674_Reading_U17.mp3?Expires=1525425056&Signature=lmrYfLrYzy~W9EIT~6Ep7z1E5Q5bqRvu5ayxvFDRIsxw14djaYsj-7ZZKEKj5~YpNh1XlyzkEvWyovUOzCN-6o9FM7ojFQxQB82JqRJC8YQSynabZxORS86EBjR3LrefXQFyGYFuXdoclK0A6itJtXG0zJHx7WfzEzY8IcjsiRM_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41610
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Phase_1/9781442307674_Reading_U18.mp3?Expires=1525425056&Signature=aM~dg-YmG9UPtLmbk64illguFef9NAlSHS0J7lt3J92-eNBMdUXaOidhWJN0RxgAVQB-tdNhm0M1FOwiD4Nt5s3BDYP5zUsEFY3sFhz8eQ99Uqk2HpmpidlIKJDFEzWyMwgFLIoN7qdAIaxevDYnobKF5EFGAYoVyUbLL7vZMDA_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41611
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Phase_1/9781442307674_Reading_U19.mp3?Expires=1525425056&Signature=YhROVVOR6HXxtMjUhGkbXA5vG6y2g5Qp56gdnDeuLVS~wpGBBlnpSj1sRoBI6LuNZDhydaJMvsS5CcPll3zd0DeLQyy1tjpnegTHeMi1jo8g0Wj92kFNmPpGQPa4uebxNCR2y5B0FzMwhtcuiWSC~X9FH3ERBd7mBw-oBBIiF5U_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41612
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Phase_1/9781442307674_Reading_U20.mp3?Expires=1525425056&Signature=rhtmJ97jq1-4sSPfojwar2j7OL8Y78jte65y0taet9VddYBN3lWldIqW4YfNHwl-A5juNhE6rXeob8c7GUzZ8xCijwtRDjE5iuPWDsayKggJ8a~Awp4cL44n7cO3EtMDSN2O~1DQKRSzBakWgZRshPob7ewwwMCztOgSOr1wPXk_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41613
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Phase_1/9781442307674_Reading_U21.mp3?Expires=1525425056&Signature=yJYMt4AY0qwUVyCy6Gd~8IQsizN5IIylfIEgObsApWKscwFshSAvgssdEF2DocKa0fIYNbKu6rCTrTnK1raEjHY~JvXokhs0S3H59n~Q401T2~MuXk0Y4hRvmxXnuxP~K~Ykl5TZgl~4mYyBMalDUjrM4W~6T5J33MmiLAuI8eo_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41614
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Phase_1/9781442307674_Reading_U22.mp3?Expires=1525425056&Signature=WN8QCzWl2jYFEFhPE~LHYxmLL7UoHzhTzVcp1BGMA1ajH8tctexA3GZdtPcCCSZ72FeYrgfnLK3WaG48rdManZ-1NZy6eLp2AcCWDvxBSmn3ssgVBmIc8lAUvImK-4DpAhpTL5WMaxer7obX8aA8fa6~4LInotBi7y7HQ4MqvFI_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41615
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Phase_1/9781442307674_Reading_U23.mp3?Expires=1525425056&Signature=z5-W5t~HYKoaZR-GUDHUMgFWJzGYWgbB7oZRLIJtAyk-9gkIkmJxAsfNdRMRIFpYFbjm95m-2xAgDDlpNFH8MO5~g-0cCTzFCZ5nMGzORpgzLz4Zc7Bca3iB0j7Qr2YVB0aHaif4rleXqLxkTQLAhlu~pVF7tROHZp6SWoUl-hg_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41616
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Phase_1/9781442307674_Reading_U24.mp3?Expires=1525425056&Signature=yTQtgjW0SGPvRDdXkR2LuYhDNL-Dnb3lU2vzPynbdUe~BBe96W8AGFxUBIt2ZDl1EgSH3WHpKUjkQ7Sk5W2~uBoosFJv0CsSv98p33Pj4q4TGNOpRfuXLHzNwivECeEtN0Vs3o5P4Ez3MQyvVdKJBPktEq46F36RyHGxw0d1etA_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41617
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Phase_1/9781442307674_Reading_U25.mp3?Expires=1525425056&Signature=E9sNqTQywn2s-vft2TfvdmiaSdr~PlwT9EFgsY54CH1OI9nytoiE-ScNp2Qx~C1xiDJi8mIjdCeWbW1OFROqNpW6nG-MXSA1llkzDhXR53lVM6Rhd5qOyISTN78Dmuf6pBmIPJayId4FAB8xZMib5Ihl3kHYESvsRp1APMW58fA_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41618
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Phase_1/9781442307674_Reading_U26.mp3?Expires=1525425056&Signature=CSZSB4q~zRw~S8HFYPPCAEfswnEDuXmawciBGKNwOwtiqc2Qqk-ITxHZ-uZn1nhSfU1GWJ5AN2Y0oJOS8WqCwU4Dy2Nb14~PgEU-zEZEtKUZj0ukhIszrkZbHeU0Dq7fmehOv5HcL4J6adWxBeaoxP1ZUu5z7o0fiNeRU2MdjDU_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41619
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Phase_1/9781442307674_Reading_U27.mp3?Expires=1525425056&Signature=f-r3T4UXdJHJuXdzF-nlqCUS7dzkneKR~emEx-RLWsUGk-1MovzMXJsNwGyoCp2clbtARekkn9dMqPqUUNPizLbMvTWZiHq0-XlD8hM8h3nWm35ZiusycadLduXSNsdZ~Yyi4v-FmHOi4pyldeNqpjE06TVabJiHyGUBORBJO3g_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41620
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Phase_1/9781442307674_Reading_U28.mp3?Expires=1525425056&Signature=2ffUnqrRb1ntAI5G0v7jk6KjgC56x-4n9xSxNLgiDaB0I9flJfjo1Zsq2mSp~rwI7aol3oWme~YyYruyU3YKCs9hk8xZe0lEbUCU3jisE8z50RVGir1MULbLH9jh6p9j5WSRR1SeSPf7yh86p7FO~uxWVjKmJU3dJdipu2NFf58_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41621
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Phase_1/9781442307674_Reading_U29.mp3?Expires=1525425056&Signature=Bx~ndXS3P0n-NyTUDvoRkUpBWhtuajmPqhXYBoTJyZyztAdMwsPInqQ0rm1Fk-2na8PLCvpznEBqfl73Uvuzjy7WwQipfZOIfQjZTirDpjL4bdFi5WxKLQXTQ7Mh9LjFtQOP~nslTlqablCflFuWZBWG355S1b9M7nVv9eQR~LY_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41622
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Phase_1/9781442307674_Reading_U30.mp3?Expires=1525425056&Signature=hMd5DRXSdaCAEY6BR8AVvc8dUeMgJUeMFUknLmIw4EZhzYuYSyesGbVCy3aLFNyOVPC3M0tu4DSn0Df4nc1jh91dIisPxTPiO4RfWhLdLAwyy0rqfkmOPu7DugitAvDnASxk2bSzP1srLoKfSRJtBtPNw7ERvCzjo~jTjUVYRqg_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 41623
+      },
+      {
+        "url": "https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442307674_French_Phase_1/9781442307674_Reading_Booklet.bin?Expires=1525425056&Signature=JaYBVPn4NOFv36f2KSkJKcXo-dDzVXD9txESvV7i9VqyCfwWd3G6T20leLkiuJ0dbu4eeFhqDZIwlKzz1itXWvcJDQaqY4MxAuZTMq2EdctD6bBVoJMxNSqHzYMeumoGwNdsNtZghAUl~4xKXFFz9JGva5fxRaz3TVLvmZGGWgg_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
+        "mediaItemId": 44513
+      }
+    ]
+  },
+  "result_code": 1
+}

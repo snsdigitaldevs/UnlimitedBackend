@@ -49,7 +49,7 @@
         <button id="fb-login" class="social-button fb-btn">Log in with Facebook</button>
         <!-- button id="goog-login" class="social-button goog-btn">Login with Google</button -->
 
-        <form class="login-form" action="/login" method="post">
+        <div class="login-form">
             <input type="hidden" name="state" th:value="${state}">
             <input type="hidden" name="redirect_uri" th:value="${redirect_uri}">
 
@@ -58,17 +58,15 @@
             <div id="password-err" class="off">Required field:</div>
             <input id="password-field" type="password" name="password" placeholder="password" autocorrect="off" autocapitalize="none">
 
-            <button id="regular-login" type="submit">LOG IN</button>
+            <button id="regular-login">LOG IN</button>
             <div class="reset-link message"><a id="reset-pw-link">Forgot password?</a></div>
 
             <div class="version" id="edt-version">v1.8.2-p</div>
-        </form>
+        </div>
 
     </div>
 
 </div>
-
-
 
 <div id="fuze-for-browser-extension-dial-number__container_div"><div class="fuze-for-browser-extension-dial-modal" id="fuze-for-browser-extension-dial-modal"><span class="fuze-for-browser-extension-dial-modal__close-sign"></span><div class="fuze-for-browser-extension-dial-modal__logo"></div><p id="fuze-for-browser-extension-dial-modal__phone-number" class="fuze-for-browser-extension-dial-modal__phone-number"></p><p class="fuze-for-browser-extension-dial-modal__info">Your call is being connected through your Fuze device</p></div></div><a class="fuze-for-browser-extension-injected-tooltip__tooltip"></a><span class="fuze-for-browser-extension-injected-tooltip__tooltip-arrow"></span><div id="TPN_THINKINGCONNECTOR_INSTALLED"></div>
 

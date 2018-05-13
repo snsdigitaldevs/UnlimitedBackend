@@ -95,13 +95,12 @@ public class EDTCourseInfoService {
     /**
      * Build parameters that're used to send the request for fetching mp3 urls.
      *
-     *
      * @param pcmProduct
      * @param productCode
      * @return
      */
     private PcmAudioReqParams buildRequestParams(PcmProduct pcmProduct, String productCode) {
-        Map<String, String> entitlementTokens = new HashMap<>();
+        Map<String, Pair<String, Integer>> entitlementTokens = new HashMap<>();
         Map<String, Map<String, Integer>> mediaItemIds = getMediaItemIds(pcmProduct, entitlementTokens, productCode);
 
         PcmAudioReqParams pcmAudioReqParams = new PcmAudioReqParams();
@@ -123,7 +122,7 @@ public class EDTCourseInfoService {
      * @return
      */
     private Map<String, Map<String, Integer>> getMediaItemIds(
-            PcmProduct pcmProduct, Map<String, String> entitlementTokens, String productCode) {
+            PcmProduct pcmProduct, Map<String, Pair<String, Integer>> entitlementTokens, String productCode) {
 
         Map<String, OrdersProduct> ordersProductList = pcmProduct.getOrdersProductList();
 
@@ -150,7 +149,8 @@ public class EDTCourseInfoService {
      * @param pcmProduct
      * @return
      */
-    private Map<String, Map<String, Integer>> filterItemIdsOfOneLevel(Map<String, String> entitlementTokens, String productCode, PcmProduct pcmProduct) {
+    private Map<String, Map<String, Integer>> filterItemIdsOfOneLevel(Map<String, Pair<String, Integer>> entitlementTokens,
+                                                                      String productCode, PcmProduct pcmProduct) {
         HashMap<String, Map<String, Integer>> oneLevelItemIds = new HashMap<>();
 
         OrdersProductAttribute attribute = getMatchedProductAttribute(pcmProduct, productCode);
@@ -161,11 +161,14 @@ public class EDTCourseInfoService {
 
             attribute.getOrdersProductsDownloads()
                     .stream()
-                    .peek(download -> entitlementTokens.put(level, download.getEntitlementToken()))
+                    .peek(download -> entitlementTokens.put(level,
+                            new ImmutablePair<>(download.getEntitlementToken(), download.getMediaSetId())))
                     .flatMap(downloadInfo -> downloadInfo.getMediaSet().getChildMediaSets().stream())
-                    .filter(mediaSet -> isLesson(mediaSet))
+                    .filter(mediaSet -> isLesson(mediaSet.getMediaSetTitle()))
                     .flatMap(childMediaSet -> childMediaSet.getMediaItems().stream())
-                    .filter(item -> item.getMediaItemTypeId() == EDTCourseInfoService.MP3_MEDIA_TYPE)
+                    .filter(item -> isLesson(item.getMediaItemTitle()))
+                    .filter(item -> (item.getMediaItemTypeId() == EDTCourseInfoService.MP3_MEDIA_TYPE)
+                            && item.getMediaItemTitle().contains("Unit"))
                     .forEach(item -> itemIds.put(item.getMediaItemTitle(), item.getMediaItemId()));
 
 
@@ -183,7 +186,7 @@ public class EDTCourseInfoService {
      * @param ordersProductList
      * @return
      */
-    private Map<String, Map<String, Integer>> filterItemIdsOfAllLevels(Map<String, String> entitlementTokens, String productCode, Map<String, OrdersProduct> ordersProductList) {
+    private Map<String, Map<String, Integer>> filterItemIdsOfAllLevels(Map<String, Pair<String, Integer>> entitlementTokens, String productCode, Map<String, OrdersProduct> ordersProductList) {
         OrdersProduct orderProduct = ordersProductList.get(productCode);
 
         return orderProduct.getOrdersProductsAttributes()
@@ -194,11 +197,13 @@ public class EDTCourseInfoService {
                     Map<String, Integer> itemIds = new HashMap<>();
                     attribute.getOrdersProductsDownloads()
                             .stream()
-                            .peek(download -> entitlementTokens.put(level, download.getEntitlementToken()))
+                            .peek(download -> entitlementTokens.put(level,
+                                    new ImmutablePair<>(download.getEntitlementToken(), download.getMediaSetId())))
                             .flatMap(downloadInfo -> downloadInfo.getMediaSet().getChildMediaSets().stream())
-                            .filter(mediaSet -> isLesson(mediaSet))
+                            .filter(mediaSet -> isLesson(mediaSet.getMediaSetTitle()))
                             .flatMap(childMediaSet -> childMediaSet.getMediaItems().stream())
-                            .filter(item -> item.getMediaItemTypeId() == EDTCourseInfoService.MP3_MEDIA_TYPE)
+                            .filter(item -> (item.getMediaItemTypeId() == EDTCourseInfoService.MP3_MEDIA_TYPE)
+                                    && item.getMediaItemTitle().contains("Unit"))
                             .forEach(item -> itemIds.put(item.getMediaItemTitle(), item.getMediaItemId()));
 
                     return new ImmutablePair<>(level, itemIds);
@@ -206,8 +211,8 @@ public class EDTCourseInfoService {
                 .collect(Collectors.toMap(Pair::getKey, Pair::getValue));
     }
 
-    private boolean isLesson(ChildMediaSet mediaSet) {
-        return mediaSet.getMediaSetTitle().contains(KEY_UNITS) || mediaSet.getMediaSetTitle().contains(KEY_LESSONS);
+    private boolean isLesson(String title) {
+        return title.contains(KEY_UNITS) || title.contains(KEY_LESSONS);
     }
 
     /**
@@ -272,9 +277,10 @@ public class EDTCourseInfoService {
     private Map<String, List<Lesson>> getAudioInfo(PcmAudioReqParams params) {
         Map<String, List<Lesson>> pcmAudioRespInfo = new HashMap<>();
 
-        params.getMediaItemIds().forEach((level, mediaItemInfo) ->
-                pcmAudioRespInfo.put(level, fetchLessons(params, level, mediaItemInfo))
-        );
+        params.getMediaItemIds().forEach((level, mediaItemInfo) -> {
+            boolean isBatched = Boolean.parseBoolean(config.getProperty("toggle.fetch.mp3.url.batch"));
+            pcmAudioRespInfo.put(level, isBatched ? fetchAudioForALevel(params, level, mediaItemInfo) : fetchLessons(params, level, mediaItemInfo));
+        });
 
         return pcmAudioRespInfo;
     }
@@ -310,6 +316,49 @@ public class EDTCourseInfoService {
                     AudioInfoFromPCM.class);
 
             lesson.setAudioLink(audioInfoFromPCM.getResult_data().getUrl());
+            lesson.setName(title);
+            lesson.setLevel(Integer.parseInt(level));
+            lesson.setMediaItemId(itemId);
+            lesson.setLessonNumber(title.split(" ")[1]);
+            return lesson;
+        }).collect(Collectors.toList());
+
+        return lessons;
+
+    }
+
+    private List<Lesson> fetchAudioForALevel(PcmAudioReqParams pcmAudioReqParams, String level, Map<String, Integer> mediaItemInfos) {
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
+        int mediaSetId = pcmAudioReqParams.getEntitlementTokens().get(level).getValue();
+        String entitlementToken = pcmAudioReqParams.getEntitlementTokens().get(level).getKey();
+
+        BatchedAudio batchedAudio = postToEdt(
+                new HttpEntity<>(
+                        String.format(config.getApiParameter("pCMBatchMp3Parameters"),
+                                mediaSetId, // media set id for level
+                                pcmAudioReqParams.getCustomerToken(),
+                                entitlementToken, // entitlement token
+                                pcmAudioReqParams.getCustomersId()),
+                        headers),
+                config.getProperty("edt.api.pcmBatchMp3ApiUrl"),
+                BatchedAudio.class);
+
+        List<Lesson> lessons = mediaItemInfos.entrySet().stream().map(entry -> {
+            Lesson lesson = new Lesson();
+            String title = entry.getKey();
+            Integer itemId = entry.getValue();
+
+            List<BatchedAudio.ResultDataBean.UrlsBean> urls = batchedAudio.getResult_data().getUrls();
+
+            // find the audio url
+            for (int i = 0; i < urls.size(); i++) {
+                if (urls.get(i).getMediaItemId() == itemId.intValue()) {
+                    lesson.setAudioLink(urls.get(i).getUrl());
+                    break;
+                }
+            }
+
             lesson.setName(title);
             lesson.setLevel(Integer.parseInt(level));
             lesson.setMediaItemId(itemId);
@@ -387,7 +436,7 @@ public class EDTCourseInfoService {
     }
 
     /**
-     *  Send reqeust to get Pimsleur Unlimited product info.
+     * Send reqeust to get Pimsleur Unlimited product info.
      *
      * @param product_code
      * @return

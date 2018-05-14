@@ -6,6 +6,7 @@ import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Lesson;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.AggregatedProductInfo;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.CourseConfig;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.MediaSet;
+import com.simonschuster.pimsleur.unlimited.services.course.EDTCourseInfoService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

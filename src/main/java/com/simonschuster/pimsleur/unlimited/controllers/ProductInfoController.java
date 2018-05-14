@@ -2,7 +2,7 @@ package com.simonschuster.pimsleur.unlimited.controllers;
 
 import com.simonschuster.pimsleur.unlimited.common.exception.ParamInvalidException;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
-import com.simonschuster.pimsleur.unlimited.services.customer.EDTCourseInfoService;
+import com.simonschuster.pimsleur.unlimited.services.course.EDTCourseInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

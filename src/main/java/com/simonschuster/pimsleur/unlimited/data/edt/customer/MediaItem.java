@@ -1,7 +1,7 @@
 package com.simonschuster.pimsleur.unlimited.data.edt.customer;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.simonschuster.pimsleur.unlimited.services.customer.EDTCourseInfoService;
+import com.simonschuster.pimsleur.unlimited.services.course.EDTCourseInfoService;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class MediaItem {

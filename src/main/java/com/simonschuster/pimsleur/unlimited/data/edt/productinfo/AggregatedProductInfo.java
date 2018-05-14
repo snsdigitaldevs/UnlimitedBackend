@@ -6,7 +6,7 @@ import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Image;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Lesson;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.OrdersProduct;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.Product;
-import com.simonschuster.pimsleur.unlimited.services.customer.EDTCourseInfoService;
+import com.simonschuster.pimsleur.unlimited.services.course.EDTCourseInfoService;
 import com.simonschuster.pimsleur.unlimited.utils.UrlUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

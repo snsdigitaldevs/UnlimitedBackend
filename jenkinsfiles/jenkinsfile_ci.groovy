@@ -51,14 +51,14 @@ pipeline {
                         timeout(time: 2, unit: 'HOURS') {
                             input message: 'build QA version?'
                         }
-
-                        def config = readProperties file: 'jenkinsfiles/config/config.properties'
-                        def hostnames = config.QA_UnlimitedBackend_HostName.split(",")
-                        deploy(hostnames, "qa")
                     } catch (err) {
                         currentBuild.result = 'SUCCESS'
                         return true
                     }
+                    def config = readProperties file: 'jenkinsfiles/config/config.properties'
+                    def hostnames = config.QA_UnlimitedBackend_HostName.split(",")
+                    deploy(hostnames, "qa")
+
                 }
             }
         }
@@ -71,14 +71,14 @@ pipeline {
                         timeout(time: 2, unit: 'HOURS') {
                             input message: 'build UAT version?'
                         }
-
-                        def config = readProperties file: 'jenkinsfiles/config/config.properties'
-                        def hostnames = config.UAT_UnlimitedBackend_HostName.split(",")
-                        deploy(hostnames, "uat")
                     } catch (err) {
                         currentBuild.result = 'SUCCESS'
                         return true
                     }
+                    def config = readProperties file: 'jenkinsfiles/config/config.properties'
+                    def hostnames = config.UAT_UnlimitedBackend_HostName.split(",")
+                    deploy(hostnames, "uat")
+
                 }
 
             }
@@ -92,21 +92,20 @@ pipeline {
                         timeout(time: 2, unit: 'HOURS') {
                             input message: 'build PROD version?'
                         }
-
-                        def config = readProperties file: 'jenkinsfiles/config/config.properties'
-                        def hostnames = config.PROD_UnlimitedBackend_HostName.split(",")
-                        deploy(hostnames, "prod")
-                    }
-                    catch (err) {
+                    } catch (err) {
                         currentBuild.result = 'SUCCESS'
                         return true
                     }
+                    def config = readProperties file: 'jenkinsfiles/config/config.properties'
+                    def hostnames = config.PROD_UnlimitedBackend_HostName.split(",")
+                    deploy(hostnames, "prod")
+
                 }
             }
         }
     }
-    post{
-        aborted{
+    post {
+        aborted {
             script {
                 currentBuild.result = 'SUCCESS'
             }

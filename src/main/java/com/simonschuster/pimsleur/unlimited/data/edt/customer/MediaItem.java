@@ -1,6 +1,7 @@
 package com.simonschuster.pimsleur.unlimited.data.edt.customer;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.simonschuster.pimsleur.unlimited.services.customer.EDTCourseInfoService;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class MediaItem {
@@ -130,5 +131,10 @@ public class MediaItem {
 
     public void setMediaItemIdMetadata(String mediaItemIdMetadata) {
         this.mediaItemIdMetadata = mediaItemIdMetadata;
+    }
+
+    public boolean isLesson() {
+        return this.getMediaItemTypeId() == EDTCourseInfoService.MP3_MEDIA_TYPE
+                && (this.getMediaItemTitle().startsWith("Unit") || this.getMediaItemTitle().startsWith("Lesson"));
     }
 }

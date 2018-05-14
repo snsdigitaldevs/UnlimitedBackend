@@ -4,6 +4,7 @@ import com.simonschuster.pimsleur.unlimited.common.exception.PimsleurException;
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Lesson;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.*;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.MediaItem;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.*;
 import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.apache.commons.lang3.tuple.Pair;
@@ -19,6 +20,7 @@ import org.springframework.web.client.RestTemplate;
 
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEdt;
 import static java.util.Arrays.asList;
@@ -167,10 +169,8 @@ public class EDTCourseInfoService {
                     .filter(mediaSet -> isLesson(mediaSet.getMediaSetTitle()))
                     .flatMap(childMediaSet -> childMediaSet.getMediaItems().stream())
                     .filter(item -> isLesson(item.getMediaItemTitle()))
-                    .filter(item -> (item.getMediaItemTypeId() == EDTCourseInfoService.MP3_MEDIA_TYPE)
-                            && item.getMediaItemTitle().contains("Unit"))
+                    .filter(MediaItem::isLesson)
                     .forEach(item -> itemIds.put(item.getMediaItemTitle(), item.getMediaItemId()));
-
 
             oneLevelItemIds.put(level, itemIds);
         }
@@ -191,7 +191,7 @@ public class EDTCourseInfoService {
 
         return orderProduct.getOrdersProductsAttributes()
                 .stream()
-                .filter(attribute -> attribute.getProductsOptions().contains(KEY_DOWNLOAD))
+                .filter(attribute1 -> attribute1.getProductsOptions().contains(KEY_DOWNLOAD))
                 .map(attribute -> {
                     String level = attribute.getProductsOptions().split(" ")[1];
                     Map<String, Integer> itemIds = new HashMap<>();
@@ -202,8 +202,7 @@ public class EDTCourseInfoService {
                             .flatMap(downloadInfo -> downloadInfo.getMediaSet().getChildMediaSets().stream())
                             .filter(mediaSet -> isLesson(mediaSet.getMediaSetTitle()))
                             .flatMap(childMediaSet -> childMediaSet.getMediaItems().stream())
-                            .filter(item -> (item.getMediaItemTypeId() == EDTCourseInfoService.MP3_MEDIA_TYPE)
-                                    && item.getMediaItemTitle().contains("Unit"))
+                            .filter(MediaItem::isLesson)
                             .forEach(item -> itemIds.put(item.getMediaItemTitle(), item.getMediaItemId()));
 
                     return new ImmutablePair<>(level, itemIds);

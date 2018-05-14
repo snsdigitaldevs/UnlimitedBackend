@@ -90,17 +90,14 @@ public class AggregatedProductInfo {
                     .collect(Collectors.toMap(it -> it.getOrdersProductsDownloads().get(0).getMediaSet().getProduct().getProductsLevel(),
                             it -> it.getOrdersProductsDownloads().get(0).getMediaSet().getProduct()));
 
-            if (lessonAudioInfoFromPCM.size() != 0 && lessonAudioInfoFromPCM.get("1").size() == 0 && products.get(0) != null) {
-                List<Lesson> lessons = lessonAudioInfoFromPCM.get("1");
-                String level = "0";
-                Course course = buildCourse(orderProductInfo, products, lessons, level);
+            Map<String, List<Lesson>> filteredLessonAudioInfo = lessonAudioInfoFromPCM.entrySet().stream()
+                    .filter(lessonAudioInfo -> lessonAudioInfo.getValue().size() > 0)
+                    .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+
+            filteredLessonAudioInfo.forEach((level, lessonInfoForOneLevel) -> {
+                Course course = buildCourse(orderProductInfo, products, lessonInfoForOneLevel, level);
                 courses.add(course);
-            } else {
-                lessonAudioInfoFromPCM.forEach((level, lessonInfoForOneLevel) -> {
-                    Course course = buildCourse(orderProductInfo, products, lessonInfoForOneLevel, level);
-                    courses.add(course);
-                });
-            }
+            });
         });
 
         return courses;

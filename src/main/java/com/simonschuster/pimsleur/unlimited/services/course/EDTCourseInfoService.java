@@ -170,7 +170,6 @@ public class EDTCourseInfoService {
                     .flatMap(downloadInfo -> downloadInfo.getMediaSet().getChildMediaSets().stream())
                     .filter(mediaSet -> isLesson(mediaSet.getMediaSetTitle()))
                     .flatMap(childMediaSet -> childMediaSet.getMediaItems().stream())
-                    .filter(item -> isLesson(item.getMediaItemTitle()))
                     .filter(MediaItem::isLesson)
                     .forEach(item -> itemIds.put(item.getMediaItemTitle(), item.getMediaItemId()));
 

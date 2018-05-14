@@ -309,7 +309,7 @@ public class EDTCourseInfoService {
                             String.format(config.getApiParameter("pCMMp3Parameters"),
                                     itemId,
                                     pcmAudioReqParams.getCustomerToken(),
-                                    pcmAudioReqParams.getEntitlementTokens().get(level),
+                                    pcmAudioReqParams.getEntitlementTokens().get(level).getLeft(),
                                     pcmAudioReqParams.getCustomersId()),
                             headers),
                     config.getProperty("edt.api.pCMMp3ApiUrl"),

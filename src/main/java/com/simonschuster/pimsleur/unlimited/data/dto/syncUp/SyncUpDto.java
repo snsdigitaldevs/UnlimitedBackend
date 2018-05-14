@@ -16,7 +16,7 @@ public class SyncUpDto {
     private static final String PU_Sync_Key = "com.ss.models::UserLessonHistory_%s_%s_%s_%s#%s";
     private static final String PCM_Sync_Key = "com.edt.models::MediaItemHistory_%s%s%s#%s";
     private static final String PCM_Sync_Media_Item_Key = "com.edt.models::MediaSetHistory_%s%s#%s";
-    private static final String PCM_Sync_Media_Set_Key = "com.edt.models::Customer_%s#%s";
+    private static final String PCM_Sync_Media_Set_Key = "com.edt.models::Customer_%s#currentMediaSetHistoryId";
 
     public String getDeviceName() {
         return deviceName;
@@ -122,10 +122,7 @@ public class SyncUpDto {
         createPcmSyncItem(customerId, productCode, mediaItemId, syncUpItemsMap,
                 "lastAudioPosMillis", this.getProgress().getLastPlayHeadLocation());
         createPcmSyncItem(customerId, productCode, syncUpItemsMap, customerId + productCode + mediaItemId);
-        createPcmSyncItem(customerId, syncUpItemsMap, customerId + productCode
-                , format(PCM_Sync_Media_Set_Key, customerId, "currentMediaSetHistoryId"));
-        createPcmSyncItem(customerId, syncUpItemsMap, "VIEW_COURSE_DETAILS",
-                format(PCM_Sync_Media_Set_Key, customerId, "lastVisitedView"));
+        createPcmSyncItem(customerId, syncUpItemsMap, customerId + productCode, format(PCM_Sync_Media_Set_Key, customerId));
         return syncUpItemsMap;
     }
 }

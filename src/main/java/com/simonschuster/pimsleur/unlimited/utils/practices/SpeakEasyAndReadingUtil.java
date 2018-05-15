@@ -29,6 +29,7 @@ public class SpeakEasyAndReadingUtil {
     private static DateTimeFormatter colonDotTimeFormatter = forPattern("mm:ss.SSS");
     private static DateTimeFormatter starTimeFormatter = forPattern("mm:*ss.*SSS");
     private static DateTimeFormatter dotDotTimeFormatter = forPattern("mm:ss..SSS");
+    private static DateTimeFormatter beginStarTimeFormatter = forPattern("*mm:*ss.*SSS");
 
     public static List<PracticesInUnit> csvToSpeakEasies(String csvUrl) throws IOException {
         return getPracticesInUnits(csvUrl, "Text", "NativeText", "Vis Conv", false);
@@ -111,7 +112,9 @@ public class SpeakEasyAndReadingUtil {
     private static int getMilliSeconds(String key, CSVRecord csvRecord) {
         String timeString = getFromCsv(key, csvRecord).trim();
 
-        if (timeString.contains("..")) {
+        if (timeString.startsWith("*")) {
+            return beginStarTimeFormatter.parseDateTime(timeString).getMillisOfDay();
+        } else if (timeString.contains("..")) {
             return dotDotTimeFormatter.parseDateTime(timeString).getMillisOfDay();
         } else if (timeString.contains("*")) {
             return starTimeFormatter.parseDateTime(timeString).getMillisOfDay();

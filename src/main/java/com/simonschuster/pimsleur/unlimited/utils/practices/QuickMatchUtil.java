@@ -1,4 +1,4 @@
-package com.simonschuster.pimsleur.unlimited.utils;
+package com.simonschuster.pimsleur.unlimited.utils.practices;
 
 import com.simonschuster.pimsleur.unlimited.UnlimitedApplication;
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.PracticesInUnit;

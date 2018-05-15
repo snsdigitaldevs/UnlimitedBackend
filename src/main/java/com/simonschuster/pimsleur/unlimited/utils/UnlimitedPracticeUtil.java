@@ -101,7 +101,7 @@ public class UnlimitedPracticeUtil {
         return key.toLowerCase();
     }
 
-    protected static String replaceDuplicateHeaders(String csvString) {
+    public static String replaceDuplicateHeaders(String csvString) {
         final Integer[] columnIndex = {0};
 
         String[] headerAndBody = csvString.split(System.lineSeparator(), 2);
@@ -147,7 +147,7 @@ public class UnlimitedPracticeUtil {
         return "";
     }
 
-    protected static String specialCsvFiles(String csvString) {
+    public static String specialCsvFiles(String csvString) {
         if (csvString.contains("Spanish 3")) {
             csvString = csvString.replace("\nplease", "please").replace("\nremoved", "removed");
         }

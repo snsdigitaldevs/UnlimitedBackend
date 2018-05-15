@@ -5,7 +5,7 @@ import com.simonschuster.pimsleur.unlimited.data.dto.practices.PracticesInUnit;
 import com.simonschuster.pimsleur.unlimited.services.practices.PcmAvailablePracticesService;
 import com.simonschuster.pimsleur.unlimited.services.practices.PracticesCsvLocations;
 import com.simonschuster.pimsleur.unlimited.services.practices.PuAvailablePracticesService;
-import com.simonschuster.pimsleur.unlimited.utils.QuickMatchUtil;
+import com.simonschuster.pimsleur.unlimited.utils.practices.QuickMatchUtil;
 import com.simonschuster.pimsleur.unlimited.utils.UnlimitedPracticeUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

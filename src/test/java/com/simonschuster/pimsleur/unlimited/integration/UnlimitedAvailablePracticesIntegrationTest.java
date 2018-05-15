@@ -1,13 +1,9 @@
 package com.simonschuster.pimsleur.unlimited.integration;
 
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.AvailablePractices;
-import com.simonschuster.pimsleur.unlimited.data.dto.practices.PracticesInUnit;
 import com.simonschuster.pimsleur.unlimited.services.practices.PracticesCsvLocations;
-import com.simonschuster.pimsleur.unlimited.utils.QuickMatchUtil;
 import com.simonschuster.pimsleur.unlimited.utils.UnlimitedPracticeUtil;
 import org.junit.Test;
-
-import java.util.List;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;

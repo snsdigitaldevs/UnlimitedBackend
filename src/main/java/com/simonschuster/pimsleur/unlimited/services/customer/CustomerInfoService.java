@@ -21,7 +21,7 @@ public class CustomerInfoService {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
         String parameters = String.format(applicationConfiguration.getApiParameter("updateCustomerParameters"),
-                "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaW1zbGV1cmRpZ2l0YWwuY29tIiwiYXVkIjoiY291cnNlbWFuYWdlciIsImlhdCI6MTUyNjM0NzI0OSwibmJmIjoxNTI2MzQ3MjQ5LCJjb250ZXh0Ijp7ImN1c3RvbWVyc0lkIjoxNjIyNTJ9fQ.hwUbqvCGwU9bieXT7QkGM89OcKPcCCXINI2VZ3vuASI",
+                token,
                 name,
                 appUserId,
                 customerId);
@@ -37,7 +37,7 @@ public class CustomerInfoService {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
         String parameters = String.format(applicationConfiguration.getApiParameter("createCustomerParameters"),
-                "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaW1zbGV1cmRpZ2l0YWwuY29tIiwiYXVkIjoiY291cnNlbWFuYWdlciIsImlhdCI6MTUyNjM0NzI0OSwibmJmIjoxNTI2MzQ3MjQ5LCJjb250ZXh0Ijp7ImN1c3RvbWVyc0lkIjoxNjIyNTJ9fQ.hwUbqvCGwU9bieXT7QkGM89OcKPcCCXINI2VZ3vuASI",
+                token,
                 name,
                 customerId);
         HttpEntity<String> updateCustomerParameters = new HttpEntity<>(
@@ -51,7 +51,7 @@ public class CustomerInfoService {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
         String parameters = String.format(applicationConfiguration.getApiParameter("deleteCustomerParameters"),
-                "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwaW1zbGV1cmRpZ2l0YWwuY29tIiwiYXVkIjoiY291cnNlbWFuYWdlciIsImlhdCI6MTUyNjM0NzI0OSwibmJmIjoxNTI2MzQ3MjQ5LCJjb250ZXh0Ijp7ImN1c3RvbWVyc0lkIjoxNjIyNTJ9fQ.hwUbqvCGwU9bieXT7QkGM89OcKPcCCXINI2VZ3vuASI",
+                token,
                 appUserId,
                 customerId);
         HttpEntity<String> updateCustomerParameters = new HttpEntity<>(

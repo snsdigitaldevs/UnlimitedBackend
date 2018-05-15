@@ -1,0 +1,695 @@
+Rec #,Lang,Source Audio ISBN_13,Course,Unit Num,start,stop,QZ #,line #,Speaker,Cue,#of words,_Q_or_S,Course Name _Source_,Skills
+1,SP,978-1-4423-5039-7,Spanish 3,1,0:05:59,0:06:02,01Q,69,N,We’re looking for the Buena Vista Restaurant.,,,"Spanish Phase 3, Units 1-30 (2004)","4,6"
+2,SP,978-1-4423-5039-7,Spanish 3,1,0:06:06,0:06:10,01R,70,M,Buscamos el restaurante Buena Vista.,5,S,"Spanish Phase 3, Units 1-30 (2004)","4,6"
+3,SP,978-1-4423-5039-7,Spanish 3,1,0:08:21,0:08:22,02Q,93,N,There it is.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+4,SP,978-1-4423-5039-7,Spanish 3,1,0:08:25,0:08:27,02R,94,F,Allí está.,2,S,"Spanish Phase 3, Units 1-30 (2004)",7
+5,SP,978-1-4423-5039-7,Spanish 3,1,0:08:29,0:08:31,03Q,95,N,It’s located right there.,,,"Spanish Phase 3, Units 1-30 (2004)",4
+6,SP,978-1-4423-5039-7,Spanish 3,1,0:08:33,0:08:36,03R,96,F,Queda allí mismo.,3,S,"Spanish Phase 3, Units 1-30 (2004)",4
+7,SP,978-1-4423-5039-7,Spanish 3,1,0:10:01,0:10:03,04Q,108,N,A pleasure to meet you (f).,,,"Spanish Phase 3, Units 1-30 (2004)","7,10"
+8,SP,978-1-4423-5039-7,Spanish 3,1,0:10:07,0:10:10,04R,109,M,Mucho gusto en conocerla.,4,S,"Spanish Phase 3, Units 1-30 (2004)","7,10"
+9,SP,978-1-4423-5039-7,Spanish 3,1,0:11:30,0:11:33,05Q,121,N,Allow me to introduce myself.,,,"Spanish Phase 3, Units 1-30 (2004)","7,10,13"
+10,SP,978-1-4423-5039-7,Spanish 3,1,0:11:35,0:11:38,05R,122,M,Permítame presentarme.,2,S,"Spanish Phase 3, Units 1-30 (2004)","7,10,13"
+11,SP,978-1-4423-5039-7,Spanish 3,1,0:12:00,0:12:02,06Q,126,N,Pleased to meet you (m).,,,"Spanish Phase 3, Units 1-30 (2004)","10,13,16"
+12,SP,978-1-4423-5039-7,Spanish 3,1,0:12:10,0:12:12,06R,127,F,Mucho gusto en conocerlo.,4,S,"Spanish Phase 3, Units 1-30 (2004)","10,13,16"
+13,SP,978-1-4423-5039-7,Spanish 3,1,0:13:56,0:14:00,07Q,142,N,Allow me to introduce to you Mr. Gómez.,,,"Spanish Phase 3, Units 1-30 (2004)","10,13"
+14,SP,978-1-4423-5039-7,Spanish 3,1,0:14:04,0:14:08,07R,144,F,Permítame presentarle al señor Gómez.,5,S,"Spanish Phase 3, Units 1-30 (2004)","10,13"
+15,SP,978-1-4423-5039-7,Spanish 3,1,0:16:43,0:16:46,08Q,168,N,Allow me to introduce to you my colleague.,,,"Spanish Phase 3, Units 1-30 (2004)","10,13"
+16,SP,978-1-4423-5039-7,Spanish 3,1,0:16:54,0:16:58,08R,169,F,Permítame presentarle a mi colega.,4,S,"Spanish Phase 3, Units 1-30 (2004)","10,13"
+17,SP,978-1-4423-5039-7,Spanish 3,1,0:21:21,0:21:23,09Q,208,N,What do you do?,,,"Spanish Phase 3, Units 1-30 (2004)",7
+18,SP,978-1-4423-5039-7,Spanish 3,1,0:21:25,0:21:28,09R,209,M,¿A qué se dedica?,3,Q,"Spanish Phase 3, Units 1-30 (2004)",7
+19,SP,978-1-4423-5039-7,Spanish 3,1,0:22:32,0:22:35,10Q,218,N,I work at an international company.,,,"Spanish Phase 3, Units 1-30 (2004)",20
+20,SP,978-1-4423-5039-7,Spanish 3,1,0:22:40,0:22:44,10R,219,F,Trabajo en una empresa internacional.,5,S,"Spanish Phase 3, Units 1-30 (2004)",20
+21,SP,978-1-4423-5039-7,Spanish 3,2,0:01:53,0:01:56,01Q,28,N,Allow me to introduce to you my wife.,,,"Spanish Phase 3, Units 1-30 (2004)","5,13"
+22,SP,978-1-4423-5039-7,Spanish 3,2,0:02:00,0:02:04,01R,29,M,Permítame presentarle a mi esposa.,4,S,"Spanish Phase 3, Units 1-30 (2004)","5,13"
+23,SP,978-1-4423-5039-7,Spanish 3,2,0:05:13,0:05:16,02Q,55,N,He’s a manager of a Mexican company.,,,"Spanish Phase 3, Units 1-30 (2004)",20
+24,SP,978-1-4423-5039-7,Spanish 3,2,0:05:21,0:05:25,02R,56,F,Es gerente de una empresa mexicana.,6,S,"Spanish Phase 3, Units 1-30 (2004)",20
+25,SP,978-1-4423-5039-7,Spanish 3,2,0:08:16,0:08:17,03Q,84,N,Thanks for the compliment.,,,"Spanish Phase 3, Units 1-30 (2004)","13,16"
+26,SP,978-1-4423-5039-7,Spanish 3,2,0:08:19,0:08:22,03R,85,M,Gracias por el cumplido.,3,S,"Spanish Phase 3, Units 1-30 (2004)","13,16"
+27,SP,978-1-4423-5039-7,Spanish 3,2,0:09:34,0:09:36,04Q,96,N,You really speak very well.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+28,SP,978-1-4423-5039-7,Spanish 3,2,0:09:38,0:09:41,04R,98,F,En verdad habla muy bien.,5,S,"Spanish Phase 3, Units 1-30 (2004)",9
+29,SP,978-1-4423-5039-7,Spanish 3,2,0:11:55,0:11:58,05Q,122,N,My brother is married to a Spaniard.,,,"Spanish Phase 3, Units 1-30 (2004)",5
+30,SP,978-1-4423-5039-7,Spanish 3,2,0:12:04,0:12:08,05R,123,M,Mi hermano está casado con una española.,7,S,"Spanish Phase 3, Units 1-30 (2004)",5
+31,SP,978-1-4423-5039-7,Spanish 3,2,0:13:42,0:13:44,06Q,138,N,Do you travel to Spain?,,,"Spanish Phase 3, Units 1-30 (2004)",18
+32,SP,978-1-4423-5039-7,Spanish 3,2,0:13:47,0:13:49,06R,139,M,¿Viajan a España?,2,Q,"Spanish Phase 3, Units 1-30 (2004)",18
+33,SP,978-1-4423-5039-7,Spanish 3,2,0:15:53,0:15:57,07Q,159,N,My sister is married to an American.,,,"Spanish Phase 3, Units 1-30 (2004)",5
+34,SP,978-1-4423-5039-7,Spanish 3,2,0:16:01,0:16:06,07R,160,F,Mi hermana está casada con un norteamericano.,7,S,"Spanish Phase 3, Units 1-30 (2004)",5
+35,SP,978-1-4423-5039-7,Spanish 3,2,0:19:18,0:19:19,08Q,191,N,Are they going to stay there?,,,"Spanish Phase 3, Units 1-30 (2004)",18
+36,SP,978-1-4423-5039-7,Spanish 3,2,0:19:23,0:19:25,08R,192,F,¿Van a quedarse allí?,3,Q,"Spanish Phase 3, Units 1-30 (2004)",18
+37,SP,978-1-4423-5039-7,Spanish 3,2,0:20:16,0:20:18,09Q,200,N,They aren’t sure.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+38,SP,978-1-4423-5039-7,Spanish 3,2,0:20:20,0:20:22,09R,201,M,No están seguros.,3,S,"Spanish Phase 3, Units 1-30 (2004)",7
+39,SP,978-1-4423-5039-7,Spanish 3,2,0:22:59,0:23:01,10Q,222,N,I’m (m) not sure.,,,"Spanish Phase 3, Units 1-30 (2004)","7,16"
+40,SP,978-1-4423-5039-7,Spanish 3,2,0:23:03,0:23:05,10R,223,M,No estoy seguro.,3,S,"Spanish Phase 3, Units 1-30 (2004)","7,16"
+41,SP,978-1-4423-5039-7,Spanish 3,2,0:23:38,0:23:40,11Q,230,N,It depends on many things.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+42,SP,978-1-4423-5039-7,Spanish 3,2,0:23:42,0:23:45,11R,231,M,Depende de muchas cosas.,5,S,"Spanish Phase 3, Units 1-30 (2004)",7
+43,SP,978-1-4423-5039-7,Spanish 3,3,0:06:33,0:06:35,01Q,72,N,I really don’t know it (m).,,,"Spanish Phase 3, Units 1-30 (2004)",7
+44,SP,978-1-4423-5039-7,Spanish 3,3,0:06:37,0:06:40,01R,73,M,En verdad no lo sé.,5,S,"Spanish Phase 3, Units 1-30 (2004)",7
+45,SP,978-1-4423-5039-7,Spanish 3,3,0:07:13,0:07:15,02Q,78,N,My brother likes Spain.,,,"Spanish Phase 3, Units 1-30 (2004)",5
+46,SP,978-1-4423-5039-7,Spanish 3,3,0:07:24,0:07:27,02R,80,M,A mi hermano le gusta España.,5,S,"Spanish Phase 3, Units 1-30 (2004)",5
+47,SP,978-1-4423-5039-7,Spanish 3,3,0:09:08,0:09:12,03Q,97,N,Does he work at an engineering company?,,,"Spanish Phase 3, Units 1-30 (2004)",20
+48,SP,978-1-4423-5039-7,Spanish 3,3,0:09:15,0:09:19,03R,98,F,¿Trabaja en una empresa de ingeniería?,6,Q,"Spanish Phase 3, Units 1-30 (2004)",20
+49,SP,978-1-4423-5039-7,Spanish 3,3,0:11:23,0:11:25,04Q,113,N,What did you say?,,,"Spanish Phase 3, Units 1-30 (2004)","7,16"
+50,SP,978-1-4423-5039-7,Spanish 3,3,0:11:28,0:11:29,04R,114,F,¿Qué dijo?,2,Q,"Spanish Phase 3, Units 1-30 (2004)","7,16"
+51,SP,978-1-4423-5039-7,Spanish 3,3,0:12:29,0:12:31,05Q,123,N,She’s an engineer too.,,,"Spanish Phase 3, Units 1-30 (2004)",20
+52,SP,978-1-4423-5039-7,Spanish 3,3,0:12:34,0:12:37,05R,124,M,Es ingeniera también.,3,S,"Spanish Phase 3, Units 1-30 (2004)",20
+53,SP,978-1-4423-5039-7,Spanish 3,3,0:13:12,0:13:14,06Q,130,N,He’s already learned a lot of Spanish.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+54,SP,978-1-4423-5039-7,Spanish 3,3,0:13:16,0:13:19,06R,131,M,Ya ha aprendido mucho español.,5,S,"Spanish Phase 3, Units 1-30 (2004)",9
+55,SP,978-1-4423-5039-7,Spanish 3,3,0:14:53,0:14:55,07Q,146,N,It wasn’t easy.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+56,SP,978-1-4423-5039-7,Spanish 3,3,0:14:57,0:15:00,07R,147,M,No fue fácil.,3,S,"Spanish Phase 3, Units 1-30 (2004)",7
+57,SP,978-1-4423-5039-7,Spanish 3,3,0:18:00,0:18:02,08Q,174,N,It was really difficult.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+58,SP,978-1-4423-5039-7,Spanish 3,3,0:18:05,0:18:08,08R,175,M,Fue en verdad difícil.,4,S,"Spanish Phase 3, Units 1-30 (2004)",7
+59,SP,978-1-4423-5039-7,Spanish 3,3,0:21:09,0:21:11,09Q,202,F,English isn’t easy.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+60,SP,978-1-4423-5039-7,Spanish 3,3,0:21:16,0:21:19,09R,203,N,El inglés no es fácil.,5,S,"Spanish Phase 3, Units 1-30 (2004)",9
+61,SP,978-1-4423-5039-7,Spanish 3,3,0:22:09,0:22:10,10Q,210,N,Surely not.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+62,SP,978-1-4423-5039-7,Spanish 3,3,0:22:12,0:22:16,10R,211,F,Seguro que no.,3,S,"Spanish Phase 3, Units 1-30 (2004)",7
+63,SP,978-1-4423-5039-7,Spanish 3,3,0:23:02,0:23:03,11Q,218,F,For sure.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+64,SP,978-1-4423-5039-7,Spanish 3,3,0:23:06,0:23:09,11R,219,N,Seguro que sí.,3,S,"Spanish Phase 3, Units 1-30 (2004)",7
+65,SP,978-1-4423-5039-7,Spanish 3,4,0:07:49,0:07:52,01Q,79,N,Frequently I eat at this restaurant.,,,"Spanish Phase 3, Units 1-30 (2004)","5,6"
+66,SP,978-1-4423-5039-7,Spanish 3,4,0:07:55,0:07:59,01R,80,F,Con frecuencia como en este restaurante.,6,S,"Spanish Phase 3, Units 1-30 (2004)","5,6"
+67,SP,978-1-4423-5039-7,Spanish 3,4,0:09:47,0:09:50,02Q,95,N,I wish to order a bottle of wine.,,,"Spanish Phase 3, Units 1-30 (2004)",6
+68,SP,978-1-4423-5039-7,Spanish 3,4,0:09:54,0:09:57,02R,96,M,Quisiera pedir una botella de vino.,6,S,"Spanish Phase 3, Units 1-30 (2004)",6
+69,SP,978-1-4423-5039-7,Spanish 3,4,0:10:47,0:10:49,03Q,105,N,Do you recommend a wine to me?,,,"Spanish Phase 3, Units 1-30 (2004)",6
+70,SP,978-1-4423-5039-7,Spanish 3,4,0:10:52,0:10:55,03R,106,M,¿Me recomienda un vino?,4,Q,"Spanish Phase 3, Units 1-30 (2004)",6
+71,SP,978-1-4423-5039-7,Spanish 3,4,0:12:39,0:12:42,04Q,123,N,I recommend this bottle to you.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+72,SP,978-1-4423-5039-7,Spanish 3,4,0:12:46,0:12:49,04R,124,F,Le recomiendo esta botella.,4,S,"Spanish Phase 3, Units 1-30 (2004)",9
+73,SP,978-1-4423-5039-7,Spanish 3,4,0:14:26,0:14:29,05Q,139,N,She buys and sells wine.,,,"Spanish Phase 3, Units 1-30 (2004)","6,14"
+74,SP,978-1-4423-5039-7,Spanish 3,4,0:14:31,0:14:34,05R,140,F,Ella compra y vende vino.,4,S,"Spanish Phase 3, Units 1-30 (2004)","6,14"
+75,SP,978-1-4423-5039-7,Spanish 3,4,0:16:43,0:16:45,06Q,160,N,What do you recommend to us?,,,"Spanish Phase 3, Units 1-30 (2004)",7
+76,SP,978-1-4423-5039-7,Spanish 3,4,0:16:47,0:16:50,06R,162,M,¿Qué nos recomienda?,3,Q,"Spanish Phase 3, Units 1-30 (2004)",7
+77,SP,978-1-4423-5039-7,Spanish 3,4,0:18:32,0:18:34,07Q,179,N,The specialty of the house.,,,"Spanish Phase 3, Units 1-30 (2004)",6
+78,SP,978-1-4423-5039-7,Spanish 3,4,0:18:37,0:18:41,07R,180,F,La especialidad de la casa.,5,S,"Spanish Phase 3, Units 1-30 (2004)",6
+79,SP,978-1-4423-5039-7,Spanish 3,4,0:20:28,0:20:31,08Q,197,N,"Two plates of the specialty, please.",,,"Spanish Phase 3, Units 1-30 (2004)",12
+80,SP,978-1-4423-5039-7,Spanish 3,4,0:20:34,0:20:38,08R,198,M,"Dos platos de la especialidad, por favor.",7,S,"Spanish Phase 3, Units 1-30 (2004)",12
+81,SP,978-1-4423-5039-7,Spanish 3,4,0:24:49,0:24:52,09Q,239,N,An American engineering company.,,,"Spanish Phase 3, Units 1-30 (2004)",20
+82,SP,978-1-4423-5039-7,Spanish 3,4,0:24:55,0:24:59,09R,240,F,Una empresa de ingeniería norteamericana.,5,S,"Spanish Phase 3, Units 1-30 (2004)",20
+83,SP,978-1-4423-5039-7,Spanish 3,4,0:25:04,0:25:06,10Q,241,N,Your daughter speaks English?,,,"Spanish Phase 3, Units 1-30 (2004)","5,9"
+84,SP,978-1-4423-5039-7,Spanish 3,4,0:25:09,0:25:12,10R,242,M,¿Su hija habla inglés?,5,Q,"Spanish Phase 3, Units 1-30 (2004)","5,9"
+85,SP,978-1-4423-5039-7,Spanish 3,4,0:28:24,0:28:25,11Q,273,N,I wish a beer.,,,"Spanish Phase 3, Units 1-30 (2004)",6
+86,SP,978-1-4423-5039-7,Spanish 3,4,0:28:28,0:28:31,11R,274,M,Quisiera una cerveza.,3,S,"Spanish Phase 3, Units 1-30 (2004)",6
+87,SP,978-1-4423-5039-7,Spanish 3,5,0:03:50,0:03:52,01Q,50,N,You’re drinking it right now.,,,"Spanish Phase 3, Units 1-30 (2004)","6,17"
+88,SP,978-1-4423-5039-7,Spanish 3,5,0:03:58,0:04:01,01R,51,M,Lo bebe ahora mismo.,4,S,"Spanish Phase 3, Units 1-30 (2004)","6,17"
+89,SP,978-1-4423-5039-7,Spanish 3,5,0:10:11,0:10:13,02Q,110,N,Do you sell it (m) here?,,,"Spanish Phase 3, Units 1-30 (2004)","7,13"
+90,SP,978-1-4423-5039-7,Spanish 3,5,0:10:15,0:10:17,02R,111,F,¿Lo vende aquí?,3,Q,"Spanish Phase 3, Units 1-30 (2004)","7,13"
+91,SP,978-1-4423-5039-7,Spanish 3,5,0:14:55,0:14:57,03Q,160,N,It was here.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+92,SP,978-1-4423-5039-7,Spanish 3,5,0:14:59,0:15:01,03R,161,M,Estaba aquí.,2,S,"Spanish Phase 3, Units 1-30 (2004)",9
+93,SP,978-1-4423-5039-7,Spanish 3,5,0:16:32,0:16:33,04Q,174,N,It was on the table.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+94,SP,978-1-4423-5039-7,Spanish 3,5,0:16:36,0:16:39,04R,175,M,Estaba en la mesa.,4,S,"Spanish Phase 3, Units 1-30 (2004)",9
+95,SP,978-1-4423-5039-7,Spanish 3,5,0:17:04,0:17:06,05Q,178,N,I believe that it’s lost.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+96,SP,978-1-4423-5039-7,Spanish 3,5,0:17:08,0:17:11,05R,179,F,Creo que está perdido.,4,S,"Spanish Phase 3, Units 1-30 (2004)",9
+97,SP,978-1-4423-5039-7,Spanish 3,5,0:19:42,0:19:46,06Q,201,N,"It’s on the table, under those papers.",,,"Spanish Phase 3, Units 1-30 (2004)",9
+98,SP,978-1-4423-5039-7,Spanish 3,5,0:19:49,0:19:53,06R,202,F,"Está en la mesa, debajo de esos papeles.",8,S,"Spanish Phase 3, Units 1-30 (2004)",9
+99,SP,978-1-4423-5039-7,Spanish 3,5,0:20:09,0:20:12,07Q,205,N,"There it is, under everything.",,,"Spanish Phase 3, Units 1-30 (2004)",9
+100,SP,978-1-4423-5039-7,Spanish 3,5,0:20:14,0:20:19,07R,206,M,"Allí está, debajo de todo.",5,S,"Spanish Phase 3, Units 1-30 (2004)",9
+101,SP,978-1-4423-5039-7,Spanish 3,5,0:22:09,0:22:11,08Q,222,N,My notes for today’s meeting.,,,"Spanish Phase 3, Units 1-30 (2004)",20
+102,SP,978-1-4423-5039-7,Spanish 3,5,0:22:22,0:22:25,08R,223,F,Mis apuntes para la reunión de hoy.,7,S,"Spanish Phase 3, Units 1-30 (2004)",20
+103,SP,978-1-4423-5039-7,Spanish 3,5,0:22:30,0:22:32,09Q,225,N,My notes were lost.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+104,SP,978-1-4423-5039-7,Spanish 3,5,0:22:35,0:22:39,09R,226,F,Mis apuntes estaban perdidos.,4,S,"Spanish Phase 3, Units 1-30 (2004)",9
+105,SP,978-1-4423-5039-7,Spanish 3,5,0:25:36,0:25:39,10Q,249,N,My pen was next to my notes.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+106,SP,978-1-4423-5039-7,Spanish 3,5,0:25:43,0:25:47,10R,250,F,Mi bolígrafo estaba al lado de mis apuntes.,8,S,"Spanish Phase 3, Units 1-30 (2004)",9
+107,SP,978-1-4423-5039-7,Spanish 3,6,0:01:56,0:02:00,01Q,27,N,My notes also were there.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+108,SP,978-1-4423-5039-7,Spanish 3,6,0:02:03,0:02:07,01R,28,M,Mis apuntes también estaban allí.,5,S,"Spanish Phase 3, Units 1-30 (2004)",9
+109,SP,978-1-4423-5039-7,Spanish 3,6,0:06:10,0:06:12,02Q,64,N,I’m sorry.,,,"Spanish Phase 3, Units 1-30 (2004)",13
+110,SP,978-1-4423-5039-7,Spanish 3,6,0:06:13,0:06:16,02R,66,F,Lo siento.,2,S,"Spanish Phase 3, Units 1-30 (2004)",13
+111,SP,978-1-4423-5039-7,Spanish 3,6,0:07:50,0:07:52,03Q,80,N,I have wanted to talk with you.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+112,SP,978-1-4423-5039-7,Spanish 3,6,0:07:54,0:07:58,03R,81,F,He querido hablar contigo.,4,S,"Spanish Phase 3, Units 1-30 (2004)",9
+113,SP,978-1-4423-5039-7,Spanish 3,6,0:09:19,0:09:22,04Q,94,N,I meant to call you before.,,,"Spanish Phase 3, Units 1-30 (2004)","7,17"
+114,SP,978-1-4423-5039-7,Spanish 3,6,0:09:24,0:09:27,04R,95,F,Quise llamarte antes.,3,S,"Spanish Phase 3, Units 1-30 (2004)","7,17"
+115,SP,978-1-4423-5039-7,Spanish 3,6,0:12:16,0:12:18,05Q,123,N,Thanks for waiting for me.,,,"Spanish Phase 3, Units 1-30 (2004)","13,16"
+116,SP,978-1-4423-5039-7,Spanish 3,6,0:12:20,0:12:23,05R,124,F,Gracias por esperarme.,3,S,"Spanish Phase 3, Units 1-30 (2004)","13,16"
+117,SP,978-1-4423-5039-7,Spanish 3,6,0:14:37,0:14:39,06Q,147,N,Now we can talk about the trip.,,,"Spanish Phase 3, Units 1-30 (2004)","17,18"
+118,SP,978-1-4423-5039-7,Spanish 3,6,0:14:43,0:14:46,06R,148,M,Ahora podemos hablar del viaje.,5,S,"Spanish Phase 3, Units 1-30 (2004)","17,18"
+119,SP,978-1-4423-5039-7,Spanish 3,6,0:17:22,0:17:25,07Q,170,N,I have to make the hotel reservations.,,,"Spanish Phase 3, Units 1-30 (2004)","16,18"
+120,SP,978-1-4423-5039-7,Spanish 3,6,0:17:28,0:17:32,07R,171,M,Tengo que hacer las reservaciones del hotel.,7,S,"Spanish Phase 3, Units 1-30 (2004)","16,18"
+121,SP,978-1-4423-5039-7,Spanish 3,6,0:21:21,0:21:23,08Q,210,N,He can help us.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+122,SP,978-1-4423-5039-7,Spanish 3,6,0:21:25,0:21:27,08R,211,M,Él puede ayudarnos.,3,S,"Spanish Phase 3, Units 1-30 (2004)",9
+123,SP,978-1-4423-5039-7,Spanish 3,6,0:22:08,0:22:11,09Q,214,N,I don’t believe I know him.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+124,SP,978-1-4423-5039-7,Spanish 3,6,0:22:16,0:22:19,09R,215,F,Creo que no lo conozco.,5,S,"Spanish Phase 3, Units 1-30 (2004)",9
+125,SP,978-1-4423-5039-7,Spanish 3,6,0:24:20,0:24:22,10Q,232,N,I meant to call him before.,,,"Spanish Phase 3, Units 1-30 (2004)","7,17"
+126,SP,978-1-4423-5039-7,Spanish 3,6,0:24:24,0:24:27,10R,233,M,Quise llamarlo antes.,3,S,"Spanish Phase 3, Units 1-30 (2004)","7,17"
+127,SP,978-1-4423-5039-7,Spanish 3,6,0:28:06,0:28:10,11Q,270,N,I’m going to make the reservations soon.,,,"Spanish Phase 3, Units 1-30 (2004)","16,18"
+128,SP,978-1-4423-5039-7,Spanish 3,6,0:28:13,0:28:17,11R,271,M,Voy a hacer las reservaciones pronto.,5,S,"Spanish Phase 3, Units 1-30 (2004)","16,18"
+129,SP,978-1-4423-5039-7,Spanish 3,7,0:04:24,0:04:27,01Q,52,N,Next to those books.,,,"Spanish Phase 3, Units 1-30 (2004)",1
+130,SP,978-1-4423-5039-7,Spanish 3,7,0:04:30,0:04:32,01R,53,M,Al lado de esos libros.,5,S,"Spanish Phase 3, Units 1-30 (2004)",1
+131,SP,978-1-4423-5039-7,Spanish 3,7,0:15:11,0:15:14,02Q,150,N,But I haven’t been able to.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+132,SP,978-1-4423-5039-7,Spanish 3,7,0:15:16,0:15:18,02R,151,M,Pero no he podido.,4,S,"Spanish Phase 3, Units 1-30 (2004)",9
+133,SP,978-1-4423-5039-7,Spanish 3,7,0:16:58,0:17:02,03Q,166,N,It’s not as interesting as you believe.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+134,SP,978-1-4423-5039-7,Spanish 3,7,0:17:06,0:17:09,03R,167,M,No es tan interesante como cree.,6,S,"Spanish Phase 3, Units 1-30 (2004)",9
+135,SP,978-1-4423-5039-7,Spanish 3,7,0:19:04,0:19:07,04Q,185,N,The company paid for the plane tickets.,,,"Spanish Phase 3, Units 1-30 (2004)","18,20"
+136,SP,978-1-4423-5039-7,Spanish 3,7,0:19:11,0:19:14,04R,186,M,La empresa pagó los pasajes.,5,S,"Spanish Phase 3, Units 1-30 (2004)","18,20"
+137,SP,978-1-4423-5039-7,Spanish 3,7,0:20:53,0:20:57,05Q,200,N,I paid for the plane ticket of my wife.,,,"Spanish Phase 3, Units 1-30 (2004)","5,18"
+138,SP,978-1-4423-5039-7,Spanish 3,7,0:21:01,0:21:04,05R,201,M,Yo pagué el pasaje de mi esposa.,7,S,"Spanish Phase 3, Units 1-30 (2004)","5,18"
+139,SP,978-1-4423-5039-7,Spanish 3,7,0:25:16,0:25:19,06Q,241,N,But not as expensive as I thought.,,,"Spanish Phase 3, Units 1-30 (2004)",14
+140,SP,978-1-4423-5039-7,Spanish 3,7,0:25:22,0:25:26,06R,242,M,Pero no tan caro como pensé.,6,S,"Spanish Phase 3, Units 1-30 (2004)",14
+141,SP,978-1-4423-5039-7,Spanish 3,7,0:27:03,0:27:06,07Q,258,N,"I’m sorry, we have only two.",,,"Spanish Phase 3, Units 1-30 (2004)","12,13"
+142,SP,978-1-4423-5039-7,Spanish 3,7,0:27:12,0:27:15,07R,260,F,"Lo siento, sólo tenemos dos.",6,S,"Spanish Phase 3, Units 1-30 (2004)","12,13"
+143,SP,978-1-4423-5039-7,Spanish 3,7,0:27:55,0:27:58,08Q,265,N,Ask if you can pay by credit card.,,,"Spanish Phase 3, Units 1-30 (2004)","11,14,16"
+144,SP,978-1-4423-5039-7,Spanish 3,7,0:28:01,0:28:05,08R,266,M,¿Puedo pagar con tarjeta de crédito?,5,Q,"Spanish Phase 3, Units 1-30 (2004)","11,14,16"
+145,SP,978-1-4423-5039-7,Spanish 3,7,0:28:35,0:28:38,09Q,271,N,It was here a minute ago.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+146,SP,978-1-4423-5039-7,Spanish 3,7,0:28:41,0:28:44,09R,272,F,Estaba aquí hace un minuto.,6,S,"Spanish Phase 3, Units 1-30 (2004)",9
+147,SP,978-1-4423-5039-7,Spanish 3,7,0:29:22,0:29:24,10Q,277,N,Which credit card do you have?,,,"Spanish Phase 3, Units 1-30 (2004)","11,14"
+148,SP,978-1-4423-5039-7,Spanish 3,7,0:29:28,0:29:31,10R,278,F,¿Cuál tarjeta de crédito tiene?,5,Q,"Spanish Phase 3, Units 1-30 (2004)","11,14"
+149,SP,978-1-4423-5039-7,Spanish 3,8,0:05:49,0:05:52,01Q,66,N,Nicaragua is not as beautiful as Costa Rica.,,,"Spanish Phase 3, Units 1-30 (2004)",18
+150,SP,978-1-4423-5039-7,Spanish 3,8,0:06:05,0:06:09,01R,67,F,Nicaragua no es tan bonita como Costa Rica.,8,S,"Spanish Phase 3, Units 1-30 (2004)",18
+151,SP,978-1-4423-5039-7,Spanish 3,8,0:08:05,0:08:09,02Q,87,N,Always I’ve wanted to stay there.,,,"Spanish Phase 3, Units 1-30 (2004)",18
+152,SP,978-1-4423-5039-7,Spanish 3,8,0:08:12,0:08:16,02R,88,M,Siempre he querido quedarme allí.,5,S,"Spanish Phase 3, Units 1-30 (2004)",18
+153,SP,978-1-4423-5039-7,Spanish 3,8,0:09:24,0:09:28,03Q,98,N,It’s not as expensive as the Ritz.,,,"Spanish Phase 3, Units 1-30 (2004)",14
+154,SP,978-1-4423-5039-7,Spanish 3,8,0:09:31,0:09:34,03R,99,M,No es tan caro como el Ritz.,7,S,"Spanish Phase 3, Units 1-30 (2004)",14
+155,SP,978-1-4423-5039-7,Spanish 3,8,0:10:53,0:10:55,04Q,112,N,There’s a lot of space in the apartment.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+156,SP,978-1-4423-5039-7,Spanish 3,8,0:11:01,0:11:04,04R,113,M,Hay mucho espacio en el apartamento.,6,S,"Spanish Phase 3, Units 1-30 (2004)",9
+157,SP,978-1-4423-5039-7,Spanish 3,8,0:12:38,0:12:41,05Q,127,N,The apartment is pretty big.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+158,SP,978-1-4423-5039-7,Spanish 3,8,0:12:45,0:12:49,05R,128,M,El apartamento es bastante grande.,5,S,"Spanish Phase 3, Units 1-30 (2004)",9
+159,SP,978-1-4423-5039-7,Spanish 3,8,0:13:06,0:13:08,06Q,131,N,Also it’s pretty comfortable.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+160,SP,978-1-4423-5039-7,Spanish 3,8,0:13:12,0:13:15,06R,132,F,También es bastante cómodo.,4,S,"Spanish Phase 3, Units 1-30 (2004)",9
+161,SP,978-1-4423-5039-7,Spanish 3,8,0:13:35,0:13:38,07Q,135,N,In back there’s not much space.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+162,SP,978-1-4423-5039-7,Spanish 3,8,0:13:41,0:13:44,07R,136,F,Atrás no hay mucho espacio.,5,S,"Spanish Phase 3, Units 1-30 (2004)",9
+163,SP,978-1-4423-5039-7,Spanish 3,8,0:14:59,0:15:01,08Q,149,N,Where do you park the car?,,,"Spanish Phase 3, Units 1-30 (2004)","16,18"
+164,SP,978-1-4423-5039-7,Spanish 3,8,0:15:05,0:15:08,08R,150,M,¿Dónde estaciona el coche?,4,Q,"Spanish Phase 3, Units 1-30 (2004)","16,18"
+165,SP,978-1-4423-5039-7,Spanish 3,8,0:15:59,0:16:02,09Q,159,N,I park the car in the parking garage.,,,"Spanish Phase 3, Units 1-30 (2004)",18
+166,SP,978-1-4423-5039-7,Spanish 3,8,0:16:07,0:16:12,09R,160,F,Estaciono el coche en el estacionamiento.,6,S,"Spanish Phase 3, Units 1-30 (2004)",18
+167,SP,978-1-4423-5039-7,Spanish 3,8,0:17:26,0:17:30,10Q,171,N,A parking garage is better than the street.,,,"Spanish Phase 3, Units 1-30 (2004)",4
+168,SP,978-1-4423-5039-7,Spanish 3,8,0:17:35,0:17:38,10R,172,F,Un estacionamiento es mejor que la calle.,7,S,"Spanish Phase 3, Units 1-30 (2004)",4
+169,SP,978-1-4423-5039-7,Spanish 3,8,0:18:58,0:19:01,11Q,183,N,Because one must repair my car.,,,"Spanish Phase 3, Units 1-30 (2004)",18
+170,SP,978-1-4423-5039-7,Spanish 3,8,0:19:04,0:19:07,11R,184,F,Porque hay que reparar mi coche.,6,S,"Spanish Phase 3, Units 1-30 (2004)",18
+171,SP,978-1-4423-5039-7,Spanish 3,8,0:21:09,0:21:11,12Q,203,N,We can walk there.,,,"Spanish Phase 3, Units 1-30 (2004)","1,4,9"
+172,SP,978-1-4423-5039-7,Spanish 3,8,0:21:14,0:21:16,12R,204,F,Podemos caminar allí.,3,S,"Spanish Phase 3, Units 1-30 (2004)","1,4,9"
+173,SP,978-1-4423-5039-7,Spanish 3,8,0:24:33,0:24:37,13Q,235,N,But there’s not enough space for my books.,,,"Spanish Phase 3, Units 1-30 (2004)",1
+174,SP,978-1-4423-5039-7,Spanish 3,8,0:24:41,0:24:46,13R,236,M,Pero no hay suficiente espacio para mis libros.,8,S,"Spanish Phase 3, Units 1-30 (2004)",1
+175,SP,978-1-4423-5039-7,Spanish 3,9,0:02:40,0:02:43,01Q,40,N,In front there’s a beautiful patio.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+176,SP,978-1-4423-5039-7,Spanish 3,9,0:02:48,0:02:51,01R,41,M,Enfrente hay un patio bonito.,5,S,"Spanish Phase 3, Units 1-30 (2004)",7
+177,SP,978-1-4423-5039-7,Spanish 3,9,0:04:29,0:04:33,02Q,57,N,To repair it (m) is going to be expensive.,,,"Spanish Phase 3, Units 1-30 (2004)",14
+178,SP,978-1-4423-5039-7,Spanish 3,9,0:04:36,0:04:39,02R,58,F,Repararlo va a ser caro.,4,S,"Spanish Phase 3, Units 1-30 (2004)",14
+179,SP,978-1-4423-5039-7,Spanish 3,9,0:05:36,0:05:39,03Q,67,N,Everything is located nearby.,,,"Spanish Phase 3, Units 1-30 (2004)",4
+180,SP,978-1-4423-5039-7,Spanish 3,9,0:05:42,0:05:44,03R,68,M,Todo queda cerca.,3,S,"Spanish Phase 3, Units 1-30 (2004)",4
+181,SP,978-1-4423-5039-7,Spanish 3,9,0:05:47,0:05:49,04Q,69,N,You can walk to the stores.,,,"Spanish Phase 3, Units 1-30 (2004)","4,14"
+182,SP,978-1-4423-5039-7,Spanish 3,9,0:05:53,0:05:56,04R,70,M,Puede caminar a las tiendas.,4,S,"Spanish Phase 3, Units 1-30 (2004)","4,14"
+183,SP,978-1-4423-5039-7,Spanish 3,9,0:10:26,0:10:28,05Q,112,N,A lot of people are coming.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+184,SP,978-1-4423-5039-7,Spanish 3,9,0:10:34,0:10:37,05R,113,F,Viene mucha gente.,3,S,"Spanish Phase 3, Units 1-30 (2004)",9
+185,SP,978-1-4423-5039-7,Spanish 3,9,0:11:40,0:11:42,06Q,124,N,Who else?,,,"Spanish Phase 3, Units 1-30 (2004)",9
+186,SP,978-1-4423-5039-7,Spanish 3,9,0:11:43,0:11:45,06R,125,M,¿Quiénes más?,2,Q,"Spanish Phase 3, Units 1-30 (2004)",9
+187,SP,978-1-4423-5039-7,Spanish 3,9,0:13:34,0:13:36,07Q,143,N,I don’t know the details.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+188,SP,978-1-4423-5039-7,Spanish 3,9,0:13:39,0:13:41,07R,144,F,No sé los detalles.,4,S,"Spanish Phase 3, Units 1-30 (2004)",9
+189,SP,978-1-4423-5039-7,Spanish 3,9,0:15:54,0:15:57,08Q,163,N,Let’s go to have a coffee.,,,"Spanish Phase 3, Units 1-30 (2004)",6
+190,SP,978-1-4423-5039-7,Spanish 3,9,0:16:01,0:16:04,08R,164,M,Vamos a tomar un café.,4,S,"Spanish Phase 3, Units 1-30 (2004)",6
+191,SP,978-1-4423-5039-7,Spanish 3,9,0:17:57,0:18:00,09Q,181,N,A list of the persons that are coming.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+192,SP,978-1-4423-5039-7,Spanish 3,9,0:18:04,0:18:08,09R,182,M,Una lista de las personas que vienen.,7,S,"Spanish Phase 3, Units 1-30 (2004)",9
+193,SP,978-1-4423-5039-7,Spanish 3,9,0:20:16,0:20:19,10Q,203,N,When did you ask for the list?,,,"Spanish Phase 3, Units 1-30 (2004)",9
+194,SP,978-1-4423-5039-7,Spanish 3,9,0:20:21,0:20:24,10R,204,M,¿Cuándo pidió la lista?,4,Q,"Spanish Phase 3, Units 1-30 (2004)",9
+195,SP,978-1-4423-5039-7,Spanish 3,9,0:20:55,0:20:58,11Q,209,N,I asked for it immediately.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+196,SP,978-1-4423-5039-7,Spanish 3,9,0:21:01,0:21:05,11R,210,F,La pedí inmediatamente.,3,S,"Spanish Phase 3, Units 1-30 (2004)",9
+197,SP,978-1-4423-5039-7,Spanish 3,9,0:24:49,0:24:52,12Q,240,N,It’s pretty far from the office.,,,"Spanish Phase 3, Units 1-30 (2004)","4,18"
+198,SP,978-1-4423-5039-7,Spanish 3,9,0:24:56,0:24:59,12R,241,M,Es bastante lejos de la oficina.,6,S,"Spanish Phase 3, Units 1-30 (2004)","4,18"
+199,SP,978-1-4423-5039-7,Spanish 3,10,0:03:10,0:03:12,01Q,42,N,You ordered a taxi?,,,"Spanish Phase 3, Units 1-30 (2004)",18
+200,SP,978-1-4423-5039-7,Spanish 3,10,0:03:15,0:03:17,01R,43,M,¿Pidió un taxi?,3,Q,"Spanish Phase 3, Units 1-30 (2004)",18
+201,SP,978-1-4423-5039-7,Spanish 3,10,0:05:30,0:05:34,02Q,66,N,I don’t know who else is coming.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+202,SP,978-1-4423-5039-7,Spanish 3,10,0:05:36,0:05:39,02R,67,F,No sé quiénes más vienen.,5,S,"Spanish Phase 3, Units 1-30 (2004)",7
+203,SP,978-1-4423-5039-7,Spanish 3,10,0:07:52,0:07:53,03Q,86,N,Where did you go?,,,"Spanish Phase 3, Units 1-30 (2004)",7
+204,SP,978-1-4423-5039-7,Spanish 3,10,0:07:55,0:07:59,03R,87,M,¿Adónde fuiste?,2,Q,"Spanish Phase 3, Units 1-30 (2004)",7
+205,SP,978-1-4423-5039-7,Spanish 3,10,0:08:16,0:08:18,04Q,90,N,In Pablo’s new apartment.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+206,SP,978-1-4423-5039-7,Spanish 3,10,0:08:24,0:08:28,04R,91,F,En el apartamento nuevo de Pablo.,6,S,"Spanish Phase 3, Units 1-30 (2004)",9
+207,SP,978-1-4423-5039-7,Spanish 3,10,0:10:37,0:10:39,05Q,110,N,Was the party fun?,,,"Spanish Phase 3, Units 1-30 (2004)",9
+208,SP,978-1-4423-5039-7,Spanish 3,10,0:10:42,0:10:44,05R,111,M,¿Fue divertida la fiesta?,4,Q,"Spanish Phase 3, Units 1-30 (2004)",9
+209,SP,978-1-4423-5039-7,Spanish 3,10,0:11:19,0:11:20,06Q,116,N,You would have liked it.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+210,SP,978-1-4423-5039-7,Spanish 3,10,0:11:23,0:11:25,06R,117,F,Te hubiera gustado.,3,S,"Spanish Phase 3, Units 1-30 (2004)",7
+211,SP,978-1-4423-5039-7,Spanish 3,10,0:12:10,0:12:12,07Q,122,F,The party was a lot of fun.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+212,SP,978-1-4423-5039-7,Spanish 3,10,0:12:15,0:12:18,07R,123,N,La fiesta fue muy divertida.,5,S,"Spanish Phase 3, Units 1-30 (2004)",9
+213,SP,978-1-4423-5039-7,Spanish 3,10,0:13:07,0:13:09,08Q,132,N,I want to know the details.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+214,SP,978-1-4423-5039-7,Spanish 3,10,0:13:12,0:13:15,08R,133,M,Quiero saber los detalles.,4,S,"Spanish Phase 3, Units 1-30 (2004)",9
+215,SP,978-1-4423-5039-7,Spanish 3,10,0:14:26,0:14:29,09Q,143,N,There was a lot of spicy food.,,,"Spanish Phase 3, Units 1-30 (2004)",6
+216,SP,978-1-4423-5039-7,Spanish 3,10,0:14:32,0:14:35,09R,144,F,Había mucha comida picante.,4,S,"Spanish Phase 3, Units 1-30 (2004)",6
+217,SP,978-1-4423-5039-7,Spanish 3,10,0:15:42,0:15:44,10Q,154,N,We went dancing.,,,"Spanish Phase 3, Units 1-30 (2004)","1,9"
+218,SP,978-1-4423-5039-7,Spanish 3,10,0:15:46,0:15:49,10R,155,M,Fuimos a bailar.,2,S,"Spanish Phase 3, Units 1-30 (2004)","1,9"
+219,SP,978-1-4423-5039-7,Spanish 3,10,0:17:47,0:17:50,11Q,175,N,I would have liked to go to the party.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+220,SP,978-1-4423-5039-7,Spanish 3,10,0:17:53,0:17:56,11R,176,M,Me hubiera gustado ir a la fiesta.,6,S,"Spanish Phase 3, Units 1-30 (2004)",9
+221,SP,978-1-4423-5039-7,Spanish 3,10,0:17:59,0:18:03,12Q,177,N,I’m sure that it was a lot of fun.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+222,SP,978-1-4423-5039-7,Spanish 3,10,0:18:06,0:18:09,12R,178,M,Estoy seguro que fue muy divertida.,6,S,"Spanish Phase 3, Units 1-30 (2004)",9
+223,SP,978-1-4423-5039-7,Spanish 3,10,0:25:02,0:25:05,13Q,241,N,I don’t park in front.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+224,SP,978-1-4423-5039-7,Spanish 3,10,0:25:07,0:25:10,13R,242,M,No estaciono enfrente.,3,S,"Spanish Phase 3, Units 1-30 (2004)",9
+225,SP,978-1-4423-5039-7,Spanish 3,11,0:01:48,0:01:51,01Q,30,N,Last night I went to a party.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+226,SP,978-1-4423-5039-7,Spanish 3,11,0:01:53,0:01:56,01R,31,F,Anoche fui a una fiesta.,4,S,"Spanish Phase 3, Units 1-30 (2004)",9
+227,SP,978-1-4423-5039-7,Spanish 3,11,0:03:04,0:03:06,02Q,41,N,There was a lot of food.,,,"Spanish Phase 3, Units 1-30 (2004)",6
+228,SP,978-1-4423-5039-7,Spanish 3,11,0:03:08,0:03:11,02R,42,M,Había mucha comida.,3,S,"Spanish Phase 3, Units 1-30 (2004)",6
+229,SP,978-1-4423-5039-7,Spanish 3,11,0:05:07,0:05:08,03Q,58,N,Why didn’t you go?,,,"Spanish Phase 3, Units 1-30 (2004)",7
+230,SP,978-1-4423-5039-7,Spanish 3,11,0:05:11,0:05:13,03R,59,F,¿Por qué no fuiste?,4,Q,"Spanish Phase 3, Units 1-30 (2004)",7
+231,SP,978-1-4423-5039-7,Spanish 3,11,0:06:20,0:06:23,04Q,70,N,I had to stay until late.,,,"Spanish Phase 3, Units 1-30 (2004)","17,18"
+232,SP,978-1-4423-5039-7,Spanish 3,11,0:06:25,0:06:29,04R,71,M,Tuve que quedarme hasta tarde.,5,S,"Spanish Phase 3, Units 1-30 (2004)","17,18"
+233,SP,978-1-4423-5039-7,Spanish 3,11,0:06:41,0:06:43,05Q,73,N,The engineers stayed too.,,,"Spanish Phase 3, Units 1-30 (2004)","18,20"
+234,SP,978-1-4423-5039-7,Spanish 3,11,0:06:45,0:06:49,05R,74,M,Los ingenieros se quedaron también.,5,S,"Spanish Phase 3, Units 1-30 (2004)","18,20"
+235,SP,978-1-4423-5039-7,Spanish 3,11,0:10:11,0:10:14,06Q,106,N,I need the list of the persons that are coming.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+236,SP,978-1-4423-5039-7,Spanish 3,11,0:10:18,0:10:22,06R,107,M,Necesito la lista de las personas que vienen.,8,S,"Spanish Phase 3, Units 1-30 (2004)",9
+237,SP,978-1-4423-5039-7,Spanish 3,11,0:13:03,0:13:05,07Q,134,N,They left after the speech.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+238,SP,978-1-4423-5039-7,Spanish 3,11,0:13:08,0:13:12,07R,135,M,Se fueron después del discurso.,5,S,"Spanish Phase 3, Units 1-30 (2004)",9
+239,SP,978-1-4423-5039-7,Spanish 3,11,0:15:29,0:15:31,08Q,155,N,I didn’t hear the speech.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+240,SP,978-1-4423-5039-7,Spanish 3,11,0:15:33,0:15:36,08R,156,M,No oí el discurso.,4,S,"Spanish Phase 3, Units 1-30 (2004)",9
+241,SP,978-1-4423-5039-7,Spanish 3,11,0:17:02,0:17:04,09Q,167,N,You didn’t hear the speech?,,,"Spanish Phase 3, Units 1-30 (2004)",9
+242,SP,978-1-4423-5039-7,Spanish 3,11,0:17:07,0:17:10,09R,168,M,¿No oyó el discurso?,4,Q,"Spanish Phase 3, Units 1-30 (2004)",9
+243,SP,978-1-4423-5039-7,Spanish 3,11,0:18:41,0:18:44,10Q,181,N,Everyone talked among themselves.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+244,SP,978-1-4423-5039-7,Spanish 3,11,0:18:47,0:18:50,10R,182,M,Todos hablaron entre ellos.,4,S,"Spanish Phase 3, Units 1-30 (2004)",9
+245,SP,978-1-4423-5039-7,Spanish 3,11,0:20:54,0:20:57,11Q,201,N,He said that we have to work more.,,,"Spanish Phase 3, Units 1-30 (2004)",20
+246,SP,978-1-4423-5039-7,Spanish 3,11,0:21:01,0:21:05,11R,202,M,Dijo que tenemos que trabajar más.,6,S,"Spanish Phase 3, Units 1-30 (2004)",20
+247,SP,978-1-4423-5039-7,Spanish 3,11,0:22:23,0:22:26,12Q,214,N,They didn’t stay for the lunch.,,,"Spanish Phase 3, Units 1-30 (2004)","6,18"
+248,SP,978-1-4423-5039-7,Spanish 3,11,0:22:28,0:22:31,12R,215,M,No se quedaron para el almuerzo.,6,S,"Spanish Phase 3, Units 1-30 (2004)","6,18"
+249,SP,978-1-4423-5039-7,Spanish 3,11,0:24:22,0:24:25,13Q,234,N,I believe that there are many problems.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+250,SP,978-1-4423-5039-7,Spanish 3,11,0:24:28,0:24:31,13R,235,M,Creo que hay muchos problemas.,5,S,"Spanish Phase 3, Units 1-30 (2004)",9
+251,SP,978-1-4423-5039-7,Spanish 3,12,0:08:41,0:08:43,01Q,94,N,I believe that you’re going to be pleased.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+252,SP,978-1-4423-5039-7,Spanish 3,12,0:08:47,0:08:50,01R,95,F,Creo que va a estar contento.,5,S,"Spanish Phase 3, Units 1-30 (2004)",9
+253,SP,978-1-4423-5039-7,Spanish 3,12,0:10:11,0:10:15,02Q,109,N,I believe that you are not going to be happy there.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+254,SP,978-1-4423-5039-7,Spanish 3,12,0:10:18,0:10:22,02R,110,F,Creo que no va a estar contento allí.,7,S,"Spanish Phase 3, Units 1-30 (2004)",9
+255,SP,978-1-4423-5039-7,Spanish 3,12,0:10:56,0:10:58,03Q,116,N,It’s not very quiet.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+256,SP,978-1-4423-5039-7,Spanish 3,12,0:11:00,0:11:03,03R,117,F,No es muy tranquilo.,4,S,"Spanish Phase 3, Units 1-30 (2004)",7
+257,SP,978-1-4423-5039-7,Spanish 3,12,0:11:34,0:11:37,04Q,122,N,I didn’t hear what you said.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+258,SP,978-1-4423-5039-7,Spanish 3,12,0:11:39,0:11:41,04R,124,M,No oí lo que dijo.,5,S,"Spanish Phase 3, Units 1-30 (2004)",7
+259,SP,978-1-4423-5039-7,Spanish 3,12,0:14:11,0:14:13,05Q,146,N,In front of the building.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+260,SP,978-1-4423-5039-7,Spanish 3,12,0:14:17,0:14:20,05R,147,F,Enfrente del edificio.,3,S,"Spanish Phase 3, Units 1-30 (2004)",9
+261,SP,978-1-4423-5039-7,Spanish 3,12,0:15:40,0:15:42,06Q,158,N,It’s difficult to rest.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+262,SP,978-1-4423-5039-7,Spanish 3,12,0:15:44,0:15:47,06R,159,F,Es difícil descansar.,3,S,"Spanish Phase 3, Units 1-30 (2004)",9
+263,SP,978-1-4423-5039-7,Spanish 3,12,0:21:08,0:21:12,07Q,207,N,The plaza where they sell handicrafts.,,,"Spanish Phase 3, Units 1-30 (2004)",14
+264,SP,978-1-4423-5039-7,Spanish 3,12,0:21:16,0:21:19,07R,208,F,La plaza donde venden artesanías.,5,S,"Spanish Phase 3, Units 1-30 (2004)",14
+265,SP,978-1-4423-5039-7,Spanish 3,12,0:22:16,0:22:19,08Q,217,N,You can rest after working.,,,"Spanish Phase 3, Units 1-30 (2004)",20
+266,SP,978-1-4423-5039-7,Spanish 3,12,0:22:22,0:22:26,08R,218,F,Puede descansar después de trabajar.,5,S,"Spanish Phase 3, Units 1-30 (2004)",20
+267,SP,978-1-4423-5039-7,Spanish 3,12,0:25:51,0:25:53,09Q,248,N,Where is it located?,,,"Spanish Phase 3, Units 1-30 (2004)","4,16"
+268,SP,978-1-4423-5039-7,Spanish 3,12,0:25:55,0:25:57,09R,249,F,¿Dónde queda?,2,Q,"Spanish Phase 3, Units 1-30 (2004)","4,16"
+269,SP,978-1-4423-5039-7,Spanish 3,12,0:26:18,0:26:21,10Q,252,N,It’s a very quiet street.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+270,SP,978-1-4423-5039-7,Spanish 3,12,0:26:23,0:26:26,10R,253,M,Es una calle muy tranquila.,5,S,"Spanish Phase 3, Units 1-30 (2004)",9
+271,SP,978-1-4423-5039-7,Spanish 3,13,0:05:46,0:05:48,01Q,67,N,I believe that she’s going to be pleased.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+272,SP,978-1-4423-5039-7,Spanish 3,13,0:05:51,0:05:54,01R,68,M,Creo que va a estar contenta.,5,S,"Spanish Phase 3, Units 1-30 (2004)",9
+273,SP,978-1-4423-5039-7,Spanish 3,13,0:06:31,0:06:33,02Q,75,N,What’s wrong with you?,,,"Spanish Phase 3, Units 1-30 (2004)",7
+274,SP,978-1-4423-5039-7,Spanish 3,13,0:06:37,0:06:39,02R,77,M,¿Qué le pasa?,3,Q,"Spanish Phase 3, Units 1-30 (2004)",7
+275,SP,978-1-4423-5039-7,Spanish 3,13,0:07:38,0:07:40,03Q,85,N,I wish to ask you a favor.,,,"Spanish Phase 3, Units 1-30 (2004)","7,13,16"
+276,SP,978-1-4423-5039-7,Spanish 3,13,0:07:43,0:07:46,03R,86,F,Quisiera pedirle un favor.,4,S,"Spanish Phase 3, Units 1-30 (2004)","7,13,16"
+277,SP,978-1-4423-5039-7,Spanish 3,13,0:07:49,0:07:52,04Q,87,F,"Can you bring me water, please?",,,"Spanish Phase 3, Units 1-30 (2004)","6,16"
+278,SP,978-1-4423-5039-7,Spanish 3,13,0:07:55,0:07:58,04R,88,N,"¿Puede traerme agua, por favor?",5,Q,"Spanish Phase 3, Units 1-30 (2004)","6,16"
+279,SP,978-1-4423-5039-7,Spanish 3,13,0:12:27,0:12:30,05Q,129,N,How long is the meeting going to last?,,,"Spanish Phase 3, Units 1-30 (2004)",20
+280,SP,978-1-4423-5039-7,Spanish 3,13,0:12:32,0:12:35,05R,130,M,¿Cuánto va a durar la reunión?,5,Q,"Spanish Phase 3, Units 1-30 (2004)",20
+281,SP,978-1-4423-5039-7,Spanish 3,13,0:13:34,0:13:37,06Q,139,N,It’s for the whole department.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+282,SP,978-1-4423-5039-7,Spanish 3,13,0:13:38,0:13:42,06R,140,F,Es para todo el departamento.,5,S,"Spanish Phase 3, Units 1-30 (2004)",9
+283,SP,978-1-4423-5039-7,Spanish 3,13,0:15:30,0:15:32,07Q,157,N,Instead of me.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+284,SP,978-1-4423-5039-7,Spanish 3,13,0:15:37,0:15:39,07R,158,F,En mi lugar.,3,S,"Spanish Phase 3, Units 1-30 (2004)",7
+285,SP,978-1-4423-5039-7,Spanish 3,13,0:16:59,0:17:02,08Q,169,N,Instead of you.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+286,SP,978-1-4423-5039-7,Spanish 3,13,0:17:03,0:17:05,08R,170,M,En su lugar.,3,S,"Spanish Phase 3, Units 1-30 (2004)",7
+287,SP,978-1-4423-5039-7,Spanish 3,13,0:18:34,0:18:37,09Q,185,N,So it could last longer.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+288,SP,978-1-4423-5039-7,Spanish 3,13,0:18:43,0:18:46,09R,186,M,Así que podría durar más.,5,S,"Spanish Phase 3, Units 1-30 (2004)",9
+289,SP,978-1-4423-5039-7,Spanish 3,13,0:18:56,0:18:59,10Q,187,N,Instead of two hours.,,,"Spanish Phase 3, Units 1-30 (2004)","12,17"
+290,SP,978-1-4423-5039-7,Spanish 3,13,0:19:10,0:19:13,10R,188,M,En lugar de dos horas.,5,S,"Spanish Phase 3, Units 1-30 (2004)","12,17"
+291,SP,978-1-4423-5039-7,Spanish 3,13,0:19:15,0:19:19,11Q,190,N,It could last three or four hours.,,,"Spanish Phase 3, Units 1-30 (2004)","12,17"
+292,SP,978-1-4423-5039-7,Spanish 3,13,0:19:22,0:19:26,11R,191,M,Podría durar tres o cuatro horas.,5,S,"Spanish Phase 3, Units 1-30 (2004)","12,17"
+293,SP,978-1-4423-5039-7,Spanish 3,13,0:20:54,0:20:57,12Q,203,N,It lasted four hours.,,,"Spanish Phase 3, Units 1-30 (2004)","12,17"
+294,SP,978-1-4423-5039-7,Spanish 3,13,0:20:59,0:21:02,12R,204,M,Duró cuatro horas.,3,S,"Spanish Phase 3, Units 1-30 (2004)","12,17"
+295,SP,978-1-4423-5039-7,Spanish 3,13,0:21:48,0:21:50,13Q,212,N,I was sick.,,,"Spanish Phase 3, Units 1-30 (2004)","9,16"
+296,SP,978-1-4423-5039-7,Spanish 3,13,0:21:53,0:21:56,13R,213,F,Estaba enferma.,2,S,"Spanish Phase 3, Units 1-30 (2004)","9,16"
+297,SP,978-1-4423-5039-7,Spanish 3,13,0:28:01,0:28:04,14Q,269,N,I know a quiet restaurant near here.,,,"Spanish Phase 3, Units 1-30 (2004)","4,6"
+298,SP,978-1-4423-5039-7,Spanish 3,13,0:28:09,0:28:13,14R,270,F,Conozco un restaurante tranquilo cerca de aquí.,6,S,"Spanish Phase 3, Units 1-30 (2004)","4,6"
+299,SP,978-1-4423-5039-7,Spanish 3,14,0:03:07,0:03:09,01Q,41,N,It lasted too long.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+300,SP,978-1-4423-5039-7,Spanish 3,14,0:03:14,0:03:17,01R,42,M,Duró demasiado.,2,S,"Spanish Phase 3, Units 1-30 (2004)",9
+301,SP,978-1-4423-5039-7,Spanish 3,14,0:03:45,0:03:47,02Q,47,N,It lasted almost three hours.,,,"Spanish Phase 3, Units 1-30 (2004)","12,17"
+302,SP,978-1-4423-5039-7,Spanish 3,14,0:03:50,0:03:53,02R,48,M,Duró casi tres horas.,4,S,"Spanish Phase 3, Units 1-30 (2004)","12,17"
+303,SP,978-1-4423-5039-7,Spanish 3,14,0:07:16,0:07:18,03Q,81,N,Mr. Rivera is our best client.,,,"Spanish Phase 3, Units 1-30 (2004)","9,20"
+304,SP,978-1-4423-5039-7,Spanish 3,14,0:07:21,0:07:25,03R,82,M,El señor Rivera es nuestro mejor cliente.,7,S,"Spanish Phase 3, Units 1-30 (2004)","9,20"
+305,SP,978-1-4423-5039-7,Spanish 3,14,0:13:30,0:13:33,04Q,136,N,Almost the whole afternoon.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+306,SP,978-1-4423-5039-7,Spanish 3,14,0:13:35,0:13:38,04R,137,F,Casi toda la tarde.,4,S,"Spanish Phase 3, Units 1-30 (2004)",7
+307,SP,978-1-4423-5039-7,Spanish 3,14,0:14:30,0:14:32,05Q,144,N,I need an interpreter.,,,"Spanish Phase 3, Units 1-30 (2004)","7,16"
+308,SP,978-1-4423-5039-7,Spanish 3,14,0:14:35,0:14:38,05R,145,M,Necesito un intérprete.,3,S,"Spanish Phase 3, Units 1-30 (2004)","7,16"
+309,SP,978-1-4423-5039-7,Spanish 3,14,0:15:45,0:15:48,06Q,156,N,Can you get me an interpreter?,,,"Spanish Phase 3, Units 1-30 (2004)","7,16"
+310,SP,978-1-4423-5039-7,Spanish 3,14,0:15:51,0:15:54,06R,157,M,¿Puede conseguirme un intérprete?,4,Q,"Spanish Phase 3, Units 1-30 (2004)","7,16"
+311,SP,978-1-4423-5039-7,Spanish 3,14,0:16:07,0:16:10,07Q,160,N,The meeting is going to be at three.,,,"Spanish Phase 3, Units 1-30 (2004)","12,20"
+312,SP,978-1-4423-5039-7,Spanish 3,14,0:16:12,0:16:16,07R,161,F,La reunión va a ser a las tres.,8,S,"Spanish Phase 3, Units 1-30 (2004)","12,20"
+313,SP,978-1-4423-5039-7,Spanish 3,14,0:17:36,0:17:39,08Q,173,N,But it’s better to get an interpreter.,,,"Spanish Phase 3, Units 1-30 (2004)","7,16"
+314,SP,978-1-4423-5039-7,Spanish 3,14,0:17:42,0:17:45,08R,174,M,Pero es mejor conseguir un intérprete.,6,S,"Spanish Phase 3, Units 1-30 (2004)","7,16"
+315,SP,978-1-4423-5039-7,Spanish 3,14,0:20:22,0:20:26,09Q,196,N,I need a translation of this report.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+316,SP,978-1-4423-5039-7,Spanish 3,14,0:20:30,0:20:34,09R,197,M,Necesito una traducción de este informe.,6,S,"Spanish Phase 3, Units 1-30 (2004)",9
+317,SP,978-1-4423-5039-7,Spanish 3,14,0:21:21,0:21:23,10Q,203,N,And I can get you an interpreter.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+318,SP,978-1-4423-5039-7,Spanish 3,14,0:21:28,0:21:31,10R,204,F,Y puedo conseguirle un intérprete.,5,S,"Spanish Phase 3, Units 1-30 (2004)",9
+319,SP,978-1-4423-5039-7,Spanish 3,14,0:26:48,0:26:51,11Q,253,N,It’s the best restaurant near here.,,,"Spanish Phase 3, Units 1-30 (2004)","4,6"
+320,SP,978-1-4423-5039-7,Spanish 3,14,0:26:55,0:26:59,11R,254,M,Es el mejor restaurante cerca de aquí.,7,S,"Spanish Phase 3, Units 1-30 (2004)","4,6"
+321,SP,978-1-4423-5039-7,Spanish 3,15,0:01:28,0:01:30,01Q,28,N,I’m trying to read a report.,,,"Spanish Phase 3, Units 1-30 (2004)",1
+322,SP,978-1-4423-5039-7,Spanish 3,15,0:01:33,0:01:37,01R,29,F,Estoy tratando de leer un informe.,6,S,"Spanish Phase 3, Units 1-30 (2004)",1
+323,SP,978-1-4423-5039-7,Spanish 3,15,0:09:39,0:09:42,02Q,104,N,Hopefully you can go.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+324,SP,978-1-4423-5039-7,Spanish 3,15,0:09:35,0:09:37,02R,105,M,Ojalá pueda ir.,3,S,"Spanish Phase 3, Units 1-30 (2004)",7
+325,SP,978-1-4423-5039-7,Spanish 3,15,0:10:36,0:10:38,03Q,112,N,Maybe I can.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+326,SP,978-1-4423-5039-7,Spanish 3,15,0:10:40,0:10:43,03R,113,F,Quizás pueda.,2,S,"Spanish Phase 3, Units 1-30 (2004)",7
+327,SP,978-1-4423-5039-7,Spanish 3,15,0:11:16,0:11:18,04Q,118,N,A shame that you can’t go.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+328,SP,978-1-4423-5039-7,Spanish 3,15,0:11:23,0:11:26,04R,119,M,Lástima que no pueda ir.,5,S,"Spanish Phase 3, Units 1-30 (2004)",9
+329,SP,978-1-4423-5039-7,Spanish 3,15,0:12:13,0:12:15,05Q,126,N,I’m going to a wedding.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+330,SP,978-1-4423-5039-7,Spanish 3,15,0:12:17,0:12:20,05R,127,F,Voy a una boda.,4,S,"Spanish Phase 3, Units 1-30 (2004)",9
+331,SP,978-1-4423-5039-7,Spanish 3,15,0:13:28,0:13:31,06Q,136,N,My best friend (f) is getting married.,,,"Spanish Phase 3, Units 1-30 (2004)",5
+332,SP,978-1-4423-5039-7,Spanish 3,15,0:13:34,0:13:36,06R,137,F,Mi mejor amiga se casa.,5,S,"Spanish Phase 3, Units 1-30 (2004)",5
+333,SP,978-1-4423-5039-7,Spanish 3,15,0:17:57,0:17:59,07Q,179,N,He’s divorced.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+334,SP,978-1-4423-5039-7,Spanish 3,15,0:18:01,0:18:03,07R,180,F,Está divorciado.,2,S,"Spanish Phase 3, Units 1-30 (2004)",9
+335,SP,978-1-4423-5039-7,Spanish 3,15,0:18:59,0:19:01,08Q,191,N,Hopefully he can meet someone else.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+336,SP,978-1-4423-5039-7,Spanish 3,15,0:19:08,0:19:12,08R,192,M,Ojalá él pueda conocer a otra persona.,7,S,"Spanish Phase 3, Units 1-30 (2004)",9
+337,SP,978-1-4423-5039-7,Spanish 3,15,0:20:16,0:20:17,09Q,201,N,Take care.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+338,SP,978-1-4423-5039-7,Spanish 3,15,0:20:18,0:20:20,09R,204,M,Que le vaya bien.,4,S,"Spanish Phase 3, Units 1-30 (2004)",7
+339,SP,978-1-4423-5039-7,Spanish 3,15,0:24:38,0:24:41,10Q,244,N,She got married on Saturday.,,,"Spanish Phase 3, Units 1-30 (2004)",17
+340,SP,978-1-4423-5039-7,Spanish 3,15,0:24:43,0:24:45,10R,245,F,Se casó el sábado.,4,S,"Spanish Phase 3, Units 1-30 (2004)",17
+341,SP,978-1-4423-5039-7,Spanish 3,15,0:28:31,0:28:33,11Q,282,N,It’s almost six o’clock.,,,"Spanish Phase 3, Units 1-30 (2004)","12,17"
+342,SP,978-1-4423-5039-7,Spanish 3,15,0:28:36,0:28:38,11R,283,M,Son casi las seis.,4,S,"Spanish Phase 3, Units 1-30 (2004)","12,17"
+343,SP,978-1-4423-5039-7,Spanish 3,16,0:05:44,0:05:46,01Q,70,N,He married an American.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+344,SP,978-1-4423-5039-7,Spanish 3,16,0:05:52,0:05:56,01R,71,F,Se casó con una norteamericana.,5,S,"Spanish Phase 3, Units 1-30 (2004)",9
+345,SP,978-1-4423-5039-7,Spanish 3,16,0:07:08,0:07:10,02Q,78,N,She just finished the university.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+346,SP,978-1-4423-5039-7,Spanish 3,16,0:07:16,0:07:19,02R,79,M,Acaba de terminar la universidad.,5,S,"Spanish Phase 3, Units 1-30 (2004)",9
+347,SP,978-1-4423-5039-7,Spanish 3,16,0:08:07,0:08:09,03Q,90,N,They all live in other countries.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+348,SP,978-1-4423-5039-7,Spanish 3,16,0:08:11,0:08:15,03R,91,F,Todos viven en otros países.,5,S,"Spanish Phase 3, Units 1-30 (2004)",9
+349,SP,978-1-4423-5039-7,Spanish 3,16,0:09:01,0:09:03,04Q,97,N,Do you have siblings?,,,"Spanish Phase 3, Units 1-30 (2004)",5
+350,SP,978-1-4423-5039-7,Spanish 3,16,0:09:07,0:09:09,04R,98,F,¿Tiene hermanos?,2,Q,"Spanish Phase 3, Units 1-30 (2004)",5
+351,SP,978-1-4423-5039-7,Spanish 3,16,0:14:55,0:14:58,05Q,149,N,I have good news.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+352,SP,978-1-4423-5039-7,Spanish 3,16,0:15:00,0:15:03,05R,150,F,Tengo buenas noticias.,3,S,"Spanish Phase 3, Units 1-30 (2004)",7
+353,SP,978-1-4423-5039-7,Spanish 3,16,0:15:05,0:15:08,06Q,151,N,My niece is coming on a visit.,,,"Spanish Phase 3, Units 1-30 (2004)","5,18"
+354,SP,978-1-4423-5039-7,Spanish 3,16,0:15:28,0:15:32,06R,154,F,Mi sobrina viene de visita.,5,S,"Spanish Phase 3, Units 1-30 (2004)","5,18"
+355,SP,978-1-4423-5039-7,Spanish 3,16,0:16:25,0:16:26,07Q,164,N,What a good piece of news.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+356,SP,978-1-4423-5039-7,Spanish 3,16,0:16:29,0:16:31,07R,165,M,Qué buena noticia.,3,S,"Spanish Phase 3, Units 1-30 (2004)",7
+357,SP,978-1-4423-5039-7,Spanish 3,16,0:16:58,0:17:00,08Q,169,N,She just called me.,,,"Spanish Phase 3, Units 1-30 (2004)","7,17"
+358,SP,978-1-4423-5039-7,Spanish 3,16,0:17:02,0:17:05,08R,170,F,Acaba de llamarme.,3,S,"Spanish Phase 3, Units 1-30 (2004)","7,17"
+359,SP,978-1-4423-5039-7,Spanish 3,16,0:18:44,0:18:46,09Q,186,N,She just finished her studies.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+360,SP,978-1-4423-5039-7,Spanish 3,16,0:18:50,0:18:53,09R,187,F,Acaba de terminar sus estudios.,5,S,"Spanish Phase 3, Units 1-30 (2004)",9
+361,SP,978-1-4423-5039-7,Spanish 3,16,0:21:31,0:21:34,10Q,215,N,My parents live there.,,,"Spanish Phase 3, Units 1-30 (2004)",5
+362,SP,978-1-4423-5039-7,Spanish 3,16,0:21:36,0:21:39,10R,216,F,Mis padres viven allí.,4,S,"Spanish Phase 3, Units 1-30 (2004)",5
+363,SP,978-1-4423-5039-7,Spanish 3,16,0:23:48,0:23:51,11Q,233,N,Hopefully she has enough credit cards.,,,"Spanish Phase 3, Units 1-30 (2004)","11,14"
+364,SP,978-1-4423-5039-7,Spanish 3,16,0:23:55,0:23:59,11R,234,M,Ojalá ella tenga suficientes tarjetas.,5,S,"Spanish Phase 3, Units 1-30 (2004)","11,14"
+365,SP,978-1-4423-5039-7,Spanish 3,16,0:25:21,0:25:24,12Q,247,N,"Yes, it is an extremely good gift.",,,"Spanish Phase 3, Units 1-30 (2004)",14
+366,SP,978-1-4423-5039-7,Spanish 3,16,0:25:28,0:25:32,12R,248,M,"Sí, es un regalo buenísimo.",5,S,"Spanish Phase 3, Units 1-30 (2004)",14
+367,SP,978-1-4423-5039-7,Spanish 3,16,0:26:44,0:26:46,13Q,258,N,She was an extremely good student.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+368,SP,978-1-4423-5039-7,Spanish 3,16,0:26:50,0:26:53,13R,259,F,Fue una estudiante buenísima.,4,S,"Spanish Phase 3, Units 1-30 (2004)",9
+369,SP,978-1-4423-5039-7,Spanish 3,16,0:27:50,0:27:52,14Q,267,N,My niece just got a job.,,,"Spanish Phase 3, Units 1-30 (2004)","5,20"
+370,SP,978-1-4423-5039-7,Spanish 3,16,0:27:59,0:28:03,14R,268,F,Mi sobrina acaba de conseguir trabajo.,6,S,"Spanish Phase 3, Units 1-30 (2004)","5,20"
+371,SP,978-1-4423-5039-7,Spanish 3,17,0:02:46,0:02:49,01Q,35,N,I just returned from Nicaragua.,,,"Spanish Phase 3, Units 1-30 (2004)",18
+372,SP,978-1-4423-5039-7,Spanish 3,17,0:02:52,0:02:56,01R,37,M,Acabo de regresar de Nicaragua.,5,S,"Spanish Phase 3, Units 1-30 (2004)",18
+373,SP,978-1-4423-5039-7,Spanish 3,17,0:13:08,0:13:09,02Q,133,N,"Sit down, please.",,,"Spanish Phase 3, Units 1-30 (2004)","7,13"
+374,SP,978-1-4423-5039-7,Spanish 3,17,0:12:54,0:12:57,02R,134,F,"Siéntese, por favor.",3,S,"Spanish Phase 3, Units 1-30 (2004)","7,13"
+375,SP,978-1-4423-5039-7,Spanish 3,17,0:13:25,0:13:28,03Q,137,N,Sit down to have a coffee.,,,"Spanish Phase 3, Units 1-30 (2004)","6,13"
+376,SP,978-1-4423-5039-7,Spanish 3,17,0:13:30,0:13:33,03R,138,F,Siéntese a tomar un café.,5,S,"Spanish Phase 3, Units 1-30 (2004)","6,13"
+377,SP,978-1-4423-5039-7,Spanish 3,17,0:15:08,0:15:11,04Q,151,N,We’re talking about something interesting.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+378,SP,978-1-4423-5039-7,Spanish 3,17,0:15:14,0:15:18,04R,152,F,Estamos hablando de algo interesante.,5,S,"Spanish Phase 3, Units 1-30 (2004)",9
+379,SP,978-1-4423-5039-7,Spanish 3,17,0:15:35,0:15:37,05Q,155,N,What are you talking about?,,,"Spanish Phase 3, Units 1-30 (2004)",7
+380,SP,978-1-4423-5039-7,Spanish 3,17,0:15:41,0:15:44,05R,157,M,¿De qué están hablando?,4,Q,"Spanish Phase 3, Units 1-30 (2004)",7
+381,SP,978-1-4423-5039-7,Spanish 3,17,0:17:12,0:17:14,06Q,172,N,We want your opinion.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+382,SP,978-1-4423-5039-7,Spanish 3,17,0:17:16,0:17:18,06R,173,F,Queremos su opinión.,3,S,"Spanish Phase 3, Units 1-30 (2004)",7
+383,SP,978-1-4423-5039-7,Spanish 3,17,0:17:42,0:17:44,07Q,176,N,Hopefully you have an opinion.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+384,SP,978-1-4423-5039-7,Spanish 3,17,0:17:48,0:17:51,07R,177,F,Ojalá usted tenga una opinión.,5,S,"Spanish Phase 3, Units 1-30 (2004)",7
+385,SP,978-1-4423-5039-7,Spanish 3,17,0:18:59,0:19:02,08Q,187,N,The languages are important.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+386,SP,978-1-4423-5039-7,Spanish 3,17,0:19:05,0:19:09,08R,188,M,Los idiomas son importantes.,4,S,"Spanish Phase 3, Units 1-30 (2004)",9
+387,SP,978-1-4423-5039-7,Spanish 3,17,0:21:02,0:21:04,09Q,206,N,We’d like to know your opinion.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+388,SP,978-1-4423-5039-7,Spanish 3,17,0:21:07,0:21:11,09R,207,F,Nos gustaría saber su opinión.,5,S,"Spanish Phase 3, Units 1-30 (2004)",7
+389,SP,978-1-4423-5039-7,Spanish 3,17,0:21:40,0:21:43,10Q,211,N,The climate is an important difference.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+390,SP,978-1-4423-5039-7,Spanish 3,17,0:21:46,0:21:50,10R,212,M,El clima es una diferencia importante.,6,S,"Spanish Phase 3, Units 1-30 (2004)",9
+391,SP,978-1-4423-5039-7,Spanish 3,17,0:23:18,0:23:20,11Q,229,N,Both are important.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+392,SP,978-1-4423-5039-7,Spanish 3,17,0:23:23,0:23:26,11R,230,M,Ambos son importantes.,3,S,"Spanish Phase 3, Units 1-30 (2004)",9
+393,SP,978-1-4423-5039-7,Spanish 3,18,0:07:19,0:07:21,01Q,82,N,How did your trip go?,,,"Spanish Phase 3, Units 1-30 (2004)",18
+394,SP,978-1-4423-5039-7,Spanish 3,18,0:06:45,0:06:48,01R,76,M,¿Cómo le fue en el viaje?,6,Q,"Spanish Phase 3, Units 1-30 (2004)",18
+395,SP,978-1-4423-5039-7,Spanish 3,18,0:07:00,0:07:02,02Q,79,N,It went well for me.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+396,SP,978-1-4423-5039-7,Spanish 3,18,0:07:03,0:07:06,02R,80,F,Me fue bien.,3,S,"Spanish Phase 3, Units 1-30 (2004)",7
+397,SP,978-1-4423-5039-7,Spanish 3,18,0:07:37,0:07:39,03Q,86,N,The trip was a success.,,,"Spanish Phase 3, Units 1-30 (2004)",18
+398,SP,978-1-4423-5039-7,Spanish 3,18,0:07:41,0:07:44,03R,87,F,El viaje fue un éxito.,5,S,"Spanish Phase 3, Units 1-30 (2004)",18
+399,SP,978-1-4423-5039-7,Spanish 3,18,0:08:41,0:08:43,04Q,96,N,I like both.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+400,SP,978-1-4423-5039-7,Spanish 3,18,0:08:44,0:08:47,04R,97,F,Me gustan ambos.,3,S,"Spanish Phase 3, Units 1-30 (2004)",7
+401,SP,978-1-4423-5039-7,Spanish 3,18,0:10:59,0:11:02,05Q,116,N,It went well for you on the trip?,,,"Spanish Phase 3, Units 1-30 (2004)",18
+402,SP,978-1-4423-5039-7,Spanish 3,18,0:11:03,0:11:06,05R,117,M,¿Le fue bien en el viaje?,6,Q,"Spanish Phase 3, Units 1-30 (2004)",18
+403,SP,978-1-4423-5039-7,Spanish 3,18,0:13:36,0:13:39,06Q,145,N,They asked me questions.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+404,SP,978-1-4423-5039-7,Spanish 3,18,0:13:59,0:14:02,06R,146,F,Me hicieron preguntas.,3,S,"Spanish Phase 3, Units 1-30 (2004)",7
+405,SP,978-1-4423-5039-7,Spanish 3,18,0:14:41,0:14:44,07Q,151,N,Questions about what?,,,"Spanish Phase 3, Units 1-30 (2004)",7
+406,SP,978-1-4423-5039-7,Spanish 3,18,0:14:46,0:14:49,07R,152,M,¿Preguntas sobre qué?,3,Q,"Spanish Phase 3, Units 1-30 (2004)",7
+407,SP,978-1-4423-5039-7,Spanish 3,18,0:17:03,0:17:07,08Q,172,N,The salesmen asked me many questions.,,,"Spanish Phase 3, Units 1-30 (2004)",14
+408,SP,978-1-4423-5039-7,Spanish 3,18,0:17:11,0:17:15,08R,173,M,Los vendedores me hicieron muchas preguntas.,6,S,"Spanish Phase 3, Units 1-30 (2004)",14
+409,SP,978-1-4423-5039-7,Spanish 3,18,0:18:37,0:18:40,09Q,185,N,I didn’t have time to see my niece.,,,"Spanish Phase 3, Units 1-30 (2004)","5,17"
+410,SP,978-1-4423-5039-7,Spanish 3,18,0:18:48,0:18:51,09R,186,M,No tuve tiempo para ver a mi sobrina.,8,S,"Spanish Phase 3, Units 1-30 (2004)","5,17"
+411,SP,978-1-4423-5039-7,Spanish 3,18,0:29:32,0:29:34,10Q,283,N,Maybe your sister will be luckier.,,,"Spanish Phase 3, Units 1-30 (2004)",5
+412,SP,978-1-4423-5039-7,Spanish 3,18,0:29:41,0:29:45,10R,284,M,Quizás su hermana tenga más suerte.,6,S,"Spanish Phase 3, Units 1-30 (2004)",5
+413,SP,978-1-4423-5039-7,Spanish 3,19,0:03:15,0:03:17,01Q,42,N,My parents are very happy there.,,,"Spanish Phase 3, Units 1-30 (2004)",5
+414,SP,978-1-4423-5039-7,Spanish 3,19,0:03:21,0:03:25,01R,43,F,Mis padres están muy contentos allí.,6,S,"Spanish Phase 3, Units 1-30 (2004)",5
+415,SP,978-1-4423-5039-7,Spanish 3,19,0:05:30,0:05:32,02Q,62,N,They like languages.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+416,SP,978-1-4423-5039-7,Spanish 3,19,0:05:35,0:05:38,02R,63,F,Les gustan los idiomas.,4,S,"Spanish Phase 3, Units 1-30 (2004)",9
+417,SP,978-1-4423-5039-7,Spanish 3,19,0:06:02,0:06:05,03Q,66,N,I had a meeting with our salesmen.,,,"Spanish Phase 3, Units 1-30 (2004)","14,20"
+418,SP,978-1-4423-5039-7,Spanish 3,19,0:06:08,0:06:12,03R,67,F,Tuve una reunión con nuestros vendedores.,6,S,"Spanish Phase 3, Units 1-30 (2004)","14,20"
+419,SP,978-1-4423-5039-7,Spanish 3,19,0:09:44,0:09:47,04Q,99,N,"Say, “My brother just got a position.”",,,"Spanish Phase 3, Units 1-30 (2004)","5,20"
+420,SP,978-1-4423-5039-7,Spanish 3,19,0:09:51,0:09:54,04R,100,F,Mi hermano acaba de conseguir un puesto.,7,S,"Spanish Phase 3, Units 1-30 (2004)","5,20"
+421,SP,978-1-4423-5039-7,Spanish 3,19,0:12:33,0:12:34,05Q,125,N,Half hour by car.,,,"Spanish Phase 3, Units 1-30 (2004)","17,18"
+422,SP,978-1-4423-5039-7,Spanish 3,19,0:12:40,0:12:43,05R,126,M,A media hora en coche.,4,S,"Spanish Phase 3, Units 1-30 (2004)","17,18"
+423,SP,978-1-4423-5039-7,Spanish 3,19,0:13:22,0:13:24,06Q,133,N,He needs my car.,,,"Spanish Phase 3, Units 1-30 (2004)",18
+424,SP,978-1-4423-5039-7,Spanish 3,19,0:13:27,0:13:29,06R,134,M,Necesita mi coche.,3,S,"Spanish Phase 3, Units 1-30 (2004)",18
+425,SP,978-1-4423-5039-7,Spanish 3,19,0:16:15,0:16:18,07Q,160,N,Do you drive a lot on the highway?,,,"Spanish Phase 3, Units 1-30 (2004)",18
+426,SP,978-1-4423-5039-7,Spanish 3,19,0:16:21,0:16:25,07R,161,M,¿Maneja mucho en la autopista?,5,Q,"Spanish Phase 3, Units 1-30 (2004)",18
+427,SP,978-1-4423-5039-7,Spanish 3,19,0:18:20,0:18:22,08Q,180,N,When there’s not much traffic.,,,"Spanish Phase 3, Units 1-30 (2004)","9,18"
+428,SP,978-1-4423-5039-7,Spanish 3,19,0:18:24,0:18:27,08R,181,M,Cuando no hay mucho tráfico.,5,S,"Spanish Phase 3, Units 1-30 (2004)","9,18"
+429,SP,978-1-4423-5039-7,Spanish 3,19,0:18:37,0:18:40,09Q,183,N,How many kilometers per hour?,,,"Spanish Phase 3, Units 1-30 (2004)","17,18"
+430,SP,978-1-4423-5039-7,Spanish 3,19,0:18:42,0:18:45,09R,184,F,¿A cuántos kilómetros por hora?,5,Q,"Spanish Phase 3, Units 1-30 (2004)","17,18"
+431,SP,978-1-4423-5039-7,Spanish 3,19,0:21:35,0:21:38,10Q,209,N,I drive at fifty-five miles per hour.,,,"Spanish Phase 3, Units 1-30 (2004)","12,17,18"
+432,SP,978-1-4423-5039-7,Spanish 3,19,0:21:42,0:21:46,10R,210,F,Yo manejo a cincuenta y cinco millas por hora.,9,S,"Spanish Phase 3, Units 1-30 (2004)","12,17,18"
+433,SP,978-1-4423-5039-7,Spanish 3,19,0:22:47,0:22:50,11Q,220,N,It’s relatively slow.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+434,SP,978-1-4423-5039-7,Spanish 3,19,0:22:53,0:22:56,11R,221,M,Es relativemente despacio.,3,S,"Spanish Phase 3, Units 1-30 (2004)",9
+435,SP,978-1-4423-5039-7,Spanish 3,19,0:25:25,0:25:29,12Q,245,N,I believe that it’s going to be relatively expensive.,,,"Spanish Phase 3, Units 1-30 (2004)","9,14"
+436,SP,978-1-4423-5039-7,Spanish 3,19,0:25:32,0:25:36,12R,246,F,Creo que va a ser relativamente caro.,7,S,"Spanish Phase 3, Units 1-30 (2004)","9,14"
+437,SP,978-1-4423-5039-7,Spanish 3,20,0:04:01,0:04:03,01Q,49,N,Especially on the highway.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+438,SP,978-1-4423-5039-7,Spanish 3,20,0:04:06,0:04:10,01R,50,M,Especialmente en la autopista.,4,S,"Spanish Phase 3, Units 1-30 (2004)",9
+439,SP,978-1-4423-5039-7,Spanish 3,20,0:10:11,0:10:13,02Q,109,N,How long does it take to get there?,,,"Spanish Phase 3, Units 1-30 (2004)","16,18"
+440,SP,978-1-4423-5039-7,Spanish 3,20,0:10:16,0:10:19,02R,110,F,¿Cuánto tiempo para llegar?,4,Q,"Spanish Phase 3, Units 1-30 (2004)","16,18"
+441,SP,978-1-4423-5039-7,Spanish 3,20,0:12:40,0:12:43,03Q,133,N,We’re going to take a day trip.,,,"Spanish Phase 3, Units 1-30 (2004)",18
+442,SP,978-1-4423-5039-7,Spanish 3,20,0:12:46,0:12:49,03R,134,F,Vamos a hacer una excursión.,5,S,"Spanish Phase 3, Units 1-30 (2004)",18
+443,SP,978-1-4423-5039-7,Spanish 3,20,0:13:35,0:13:37,04Q,140,N,We’re going to go to a national park.,,,"Spanish Phase 3, Units 1-30 (2004)",18
+444,SP,978-1-4423-5039-7,Spanish 3,20,0:13:41,0:13:44,04R,141,F,Vamos a ir a un parque nacional.,7,S,"Spanish Phase 3, Units 1-30 (2004)",18
+445,SP,978-1-4423-5039-7,Spanish 3,20,0:13:49,0:13:51,05Q,142,N,It’s a fun day trip.,,,"Spanish Phase 3, Units 1-30 (2004)",18
+446,SP,978-1-4423-5039-7,Spanish 3,20,0:13:56,0:13:59,05R,143,F,Es una excursión divertida.,4,S,"Spanish Phase 3, Units 1-30 (2004)",18
+447,SP,978-1-4423-5039-7,Spanish 3,20,0:15:15,0:15:17,06Q,155,N,At about sixty miles.,,,"Spanish Phase 3, Units 1-30 (2004)",12
+448,SP,978-1-4423-5039-7,Spanish 3,20,0:15:24,0:15:27,06R,157,F,A unas sesenta millas.,3,S,"Spanish Phase 3, Units 1-30 (2004)",12
+449,SP,978-1-4423-5039-7,Spanish 3,20,0:17:44,0:17:46,07Q,177,N,The project just ended.,,,"Spanish Phase 3, Units 1-30 (2004)",20
+450,SP,978-1-4423-5039-7,Spanish 3,20,0:17:49,0:17:52,07R,178,M,El proyecto acaba de terminar.,5,S,"Spanish Phase 3, Units 1-30 (2004)",20
+451,SP,978-1-4423-5039-7,Spanish 3,20,0:18:47,0:18:49,08Q,188,N,The project here was a success.,,,"Spanish Phase 3, Units 1-30 (2004)",20
+452,SP,978-1-4423-5039-7,Spanish 3,20,0:18:52,0:18:56,08R,189,M,El proyecto aquí fue un éxito.,6,S,"Spanish Phase 3, Units 1-30 (2004)",20
+453,SP,978-1-4423-5039-7,Spanish 3,20,0:19:57,0:20:00,09Q,197,N,You’re going to miss the day trip.,,,"Spanish Phase 3, Units 1-30 (2004)",18
+454,SP,978-1-4423-5039-7,Spanish 3,20,0:20:02,0:20:05,09R,198,F,Vas a perderte la excursión.,5,S,"Spanish Phase 3, Units 1-30 (2004)",18
+455,SP,978-1-4423-5039-7,Spanish 3,20,0:21:20,0:21:21,10Q,209,N,I’m going to miss it (f).,,,"Spanish Phase 3, Units 1-30 (2004)",7
+456,SP,978-1-4423-5039-7,Spanish 3,20,0:21:24,0:21:26,10R,210,M,Voy a perdérmela.,3,S,"Spanish Phase 3, Units 1-30 (2004)",7
+457,SP,978-1-4423-5039-7,Spanish 3,20,0:23:59,0:24:01,11Q,231,N,Maybe we’ll go on Saturday.,,,"Spanish Phase 3, Units 1-30 (2004)",17
+458,SP,978-1-4423-5039-7,Spanish 3,20,0:24:04,0:24:07,11R,232,F,Quizás vayamos el sábado.,4,S,"Spanish Phase 3, Units 1-30 (2004)",17
+459,SP,978-1-4423-5039-7,Spanish 3,20,0:24:10,0:24:12,12Q,233,N,Then you don’t have to miss the day trip.,,,"Spanish Phase 3, Units 1-30 (2004)",18
+460,SP,978-1-4423-5039-7,Spanish 3,20,0:24:16,0:24:20,12R,234,F,Entonces no tienes que perderte la excursión.,7,S,"Spanish Phase 3, Units 1-30 (2004)",18
+461,SP,978-1-4423-5039-7,Spanish 3,20,0:27:08,0:27:11,13Q,264,N,At a hundred kilometers from here.,,,"Spanish Phase 3, Units 1-30 (2004)","4,12,18"
+462,SP,978-1-4423-5039-7,Spanish 3,20,0:27:13,0:27:17,13R,265,M,A cien kilómetros de aquí.,4,S,"Spanish Phase 3, Units 1-30 (2004)","4,12,18"
+463,SP,978-1-4423-5039-7,Spanish 3,21,0:01:33,0:01:35,01Q,27,N,And there’s a lot to see.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+464,SP,978-1-4423-5039-7,Spanish 3,21,0:01:37,0:01:40,01R,28,M,Y hay mucho que ver.,5,S,"Spanish Phase 3, Units 1-30 (2004)",7
+465,SP,978-1-4423-5039-7,Spanish 3,21,0:02:00,0:02:03,02Q,31,N,I don’t want to miss anything.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+466,SP,978-1-4423-5039-7,Spanish 3,21,0:02:06,0:02:10,02R,32,M,No quiero perderme nada.,4,S,"Spanish Phase 3, Units 1-30 (2004)",7
+467,SP,978-1-4423-5039-7,Spanish 3,21,0:02:29,0:02:32,03Q,36,N,My project here is going to finish soon.,,,"Spanish Phase 3, Units 1-30 (2004)",20
+468,SP,978-1-4423-5039-7,Spanish 3,21,0:02:37,0:02:40,03R,37,M,Mi proyecto aquí va a terminar pronto.,7,S,"Spanish Phase 3, Units 1-30 (2004)",20
+469,SP,978-1-4423-5039-7,Spanish 3,21,0:07:35,0:07:37,04Q,83,N,You don’t want to miss it (m).,,,"Spanish Phase 3, Units 1-30 (2004)",7
+470,SP,978-1-4423-5039-7,Spanish 3,21,0:07:40,0:07:43,04R,84,M,No quieres perdértelo.,3,S,"Spanish Phase 3, Units 1-30 (2004)",7
+471,SP,978-1-4423-5039-7,Spanish 3,21,0:09:18,0:09:21,05Q,98,N,It was a very pleasant day.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+472,SP,978-1-4423-5039-7,Spanish 3,21,0:09:23,0:09:26,05R,99,M,Fue un día muy agradable.,5,S,"Spanish Phase 3, Units 1-30 (2004)",7
+473,SP,978-1-4423-5039-7,Spanish 3,21,0:11:03,0:11:05,06Q,113,N,What beautiful flowers.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+474,SP,978-1-4423-5039-7,Spanish 3,21,0:11:46,0:11:49,06R,119,F,Qué flores más bonitas.,4,S,"Spanish Phase 3, Units 1-30 (2004)",9
+475,SP,978-1-4423-5039-7,Spanish 3,21,0:13:38,0:13:41,07Q,135,N,My husband is upstairs.,,,"Spanish Phase 3, Units 1-30 (2004)",5
+476,SP,978-1-4423-5039-7,Spanish 3,21,0:13:43,0:13:46,07R,136,F,Mi esposo está arriba.,4,S,"Spanish Phase 3, Units 1-30 (2004)",5
+477,SP,978-1-4423-5039-7,Spanish 3,21,0:13:52,0:13:54,08Q,137,N,In the meantime.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+478,SP,978-1-4423-5039-7,Spanish 3,21,0:14:11,0:14:13,08R,138,F,Mientras tanto.,2,S,"Spanish Phase 3, Units 1-30 (2004)",7
+479,SP,978-1-4423-5039-7,Spanish 3,21,0:14:24,0:14:26,09Q,142,N,Would you like to drink something?,,,"Spanish Phase 3, Units 1-30 (2004)",6
+480,SP,978-1-4423-5039-7,Spanish 3,21,0:14:31,0:14:34,09R,144,F,¿Le gustaría tomar algo?,4,Q,"Spanish Phase 3, Units 1-30 (2004)",6
+481,SP,978-1-4423-5039-7,Spanish 3,21,0:16:35,0:16:36,10Q,167,N,I forgot.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+482,SP,978-1-4423-5039-7,Spanish 3,21,0:16:39,0:16:41,10R,168,F,Se me olvidó.,3,S,"Spanish Phase 3, Units 1-30 (2004)",7
+483,SP,978-1-4423-5039-7,Spanish 3,21,0:20:40,0:20:43,11Q,204,N,I left the flowers upstairs.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+484,SP,978-1-4423-5039-7,Spanish 3,21,0:20:45,0:20:48,11R,205,F,Dejé las flores arriba.,4,S,"Spanish Phase 3, Units 1-30 (2004)",9
+485,SP,978-1-4423-5039-7,Spanish 3,21,0:22:15,0:22:17,12Q,219,N,You can go outside to the garden.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+486,SP,978-1-4423-5039-7,Spanish 3,21,0:22:20,0:22:22,12R,220,F,Puede salir al jardín.,4,S,"Spanish Phase 3, Units 1-30 (2004)",9
+487,SP,978-1-4423-5039-7,Spanish 3,21,0:25:34,0:25:36,13Q,249,N,I forgot the name.,,,"Spanish Phase 3, Units 1-30 (2004)","7,9"
+488,SP,978-1-4423-5039-7,Spanish 3,21,0:25:40,0:25:43,13R,250,F,Se me olvidó cómo se llama.,6,S,"Spanish Phase 3, Units 1-30 (2004)","7,9"
+489,SP,978-1-4423-5039-7,Spanish 3,21,0:29:23,0:29:26,14Q,282,N,It was a very pleasant evening.,,,"Spanish Phase 3, Units 1-30 (2004)",17
+490,SP,978-1-4423-5039-7,Spanish 3,21,0:29:29,0:29:32,14R,283,M,Fue una noche muy agradable.,5,S,"Spanish Phase 3, Units 1-30 (2004)",17
+491,SP,978-1-4423-5039-7,Spanish 3,22,0:02:42,0:02:45,01Q,37,N,I’d like to buy them flowers.,,,"Spanish Phase 3, Units 1-30 (2004)",14
+492,SP,978-1-4423-5039-7,Spanish 3,22,0:02:48,0:02:51,01R,38,F,Me gustaría comprarles flores.,4,S,"Spanish Phase 3, Units 1-30 (2004)",14
+493,SP,978-1-4423-5039-7,Spanish 3,22,0:03:00,0:03:02,02Q,39,N,I’d like to send them flowers.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+494,SP,978-1-4423-5039-7,Spanish 3,22,0:03:06,0:03:09,02R,40,F,Me gustaría enviarles flores.,4,S,"Spanish Phase 3, Units 1-30 (2004)",9
+495,SP,978-1-4423-5039-7,Spanish 3,22,0:08:08,0:08:10,03Q,87,N,Do you play any sports?,,,"Spanish Phase 3, Units 1-30 (2004)",1
+496,SP,978-1-4423-5039-7,Spanish 3,22,0:08:13,0:08:16,03R,89,M,¿Practica algún deporte?,3,Q,"Spanish Phase 3, Units 1-30 (2004)",1
+497,SP,978-1-4423-5039-7,Spanish 3,22,0:09:28,0:09:30,04Q,100,N,What do you do in your free time?,,,"Spanish Phase 3, Units 1-30 (2004)",17
+498,SP,978-1-4423-5039-7,Spanish 3,22,0:09:36,0:09:39,04R,101,F,¿Qué hace en su tiempo libre?,6,Q,"Spanish Phase 3, Units 1-30 (2004)",17
+499,SP,978-1-4423-5039-7,Spanish 3,22,0:10:01,0:10:03,05Q,105,N,I play golf.,,,"Spanish Phase 3, Units 1-30 (2004)",1
+500,SP,978-1-4423-5039-7,Spanish 3,22,0:10:05,0:10:07,05R,106,M,Juego al golf.,3,S,"Spanish Phase 3, Units 1-30 (2004)",1
+501,SP,978-1-4423-5039-7,Spanish 3,22,0:10:28,0:10:30,06Q,109,N,From time to time.,,,"Spanish Phase 3, Units 1-30 (2004)",17
+502,SP,978-1-4423-5039-7,Spanish 3,22,0:10:32,0:10:35,06R,110,M,De vez en cuando.,4,S,"Spanish Phase 3, Units 1-30 (2004)",17
+503,SP,978-1-4423-5039-7,Spanish 3,22,0:12:00,0:12:03,07Q,123,N,She plays golf from time to time.,,,"Spanish Phase 3, Units 1-30 (2004)",17
+504,SP,978-1-4423-5039-7,Spanish 3,22,0:12:07,0:12:11,07R,124,M,Juega al golf de vez en cuando.,7,S,"Spanish Phase 3, Units 1-30 (2004)",17
+505,SP,978-1-4423-5039-7,Spanish 3,22,0:12:21,0:12:23,08Q,127,N,I seldom have time.,,,"Spanish Phase 3, Units 1-30 (2004)",17
+506,SP,978-1-4423-5039-7,Spanish 3,22,0:12:25,0:12:28,08R,128,F,Raras veces tengo tiempo.,4,S,"Spanish Phase 3, Units 1-30 (2004)",17
+507,SP,978-1-4423-5039-7,Spanish 3,22,0:15:25,0:15:27,09Q,154,N,There are public places.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+508,SP,978-1-4423-5039-7,Spanish 3,22,0:15:29,0:15:32,09R,155,F,Hay lugares públicos.,3,S,"Spanish Phase 3, Units 1-30 (2004)",9
+509,SP,978-1-4423-5039-7,Spanish 3,22,0:17:06,0:17:07,10Q,170,N,I forgot to buy it (f).,,,"Spanish Phase 3, Units 1-30 (2004)",14
+510,SP,978-1-4423-5039-7,Spanish 3,22,0:17:10,0:17:13,10R,171,M,Se me olvidó comprarla.,4,S,"Spanish Phase 3, Units 1-30 (2004)",14
+511,SP,978-1-4423-5039-7,Spanish 3,22,0:25:57,0:25:59,11Q,248,N,I want to show you the garden.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+512,SP,978-1-4423-5039-7,Spanish 3,22,0:26:03,0:26:06,11R,249,M,Quiero mostrarte el jardín.,4,S,"Spanish Phase 3, Units 1-30 (2004)",9
+513,SP,978-1-4423-5039-7,Spanish 3,23,0:08:01,0:08:03,01Q,82,N,A great many thanks.,,,"Spanish Phase 3, Units 1-30 (2004)","13,16"
+514,SP,978-1-4423-5039-7,Spanish 3,23,0:08:05,0:08:08,01R,83,F,Muchísimas gracias.,2,S,"Spanish Phase 3, Units 1-30 (2004)","13,16"
+515,SP,978-1-4423-5039-7,Spanish 3,23,0:10:57,0:11:00,02Q,106,N,The children no longer live with us.,,,"Spanish Phase 3, Units 1-30 (2004)",5
+516,SP,978-1-4423-5039-7,Spanish 3,23,0:11:04,0:11:07,02R,107,F,Los hijos ya no viven con nosotros.,7,S,"Spanish Phase 3, Units 1-30 (2004)",5
+517,SP,978-1-4423-5039-7,Spanish 3,23,0:15:24,0:15:26,03Q,144,N,Now he wants to teach.,,,"Spanish Phase 3, Units 1-30 (2004)","17,20"
+518,SP,978-1-4423-5039-7,Spanish 3,23,0:15:29,0:15:31,03R,145,F,Ahora quiere enseñar.,3,S,"Spanish Phase 3, Units 1-30 (2004)","17,20"
+519,SP,978-1-4423-5039-7,Spanish 3,23,0:15:36,0:15:37,04Q,146,N,"You want to ask, “What did he study?”",,,"Spanish Phase 3, Units 1-30 (2004)",9
+520,SP,978-1-4423-5039-7,Spanish 3,23,0:15:39,0:15:41,04R,147,M,¿Qué estudió?,2,Q,"Spanish Phase 3, Units 1-30 (2004)",9
+521,SP,978-1-4423-5039-7,Spanish 3,23,0:16:54,0:16:56,05Q,159,N,At a private school.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+522,SP,978-1-4423-5039-7,Spanish 3,23,0:16:58,0:17:01,05R,160,F,En una escuela privada.,4,S,"Spanish Phase 3, Units 1-30 (2004)",9
+523,SP,978-1-4423-5039-7,Spanish 3,23,0:18:20,0:18:22,06Q,172,N,He’s always wanted to teach.,,,"Spanish Phase 3, Units 1-30 (2004)",20
+524,SP,978-1-4423-5039-7,Spanish 3,23,0:18:25,0:18:28,06R,173,F,Siempre ha querido enseñar.,4,S,"Spanish Phase 3, Units 1-30 (2004)",20
+525,SP,978-1-4423-5039-7,Spanish 3,23,0:19:38,0:19:41,07Q,182,N,I wish him a great deal of success.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+526,SP,978-1-4423-5039-7,Spanish 3,23,0:19:44,0:19:47,07R,183,M,Le deseo muchísimo éxito.,4,S,"Spanish Phase 3, Units 1-30 (2004)",9
+527,SP,978-1-4423-5039-7,Spanish 3,23,0:20:00,0:20:03,08Q,186,N,She works in the computer science department.,,,"Spanish Phase 3, Units 1-30 (2004)",20
+528,SP,978-1-4423-5039-7,Spanish 3,23,0:20:05,0:20:09,08R,187,F,Trabaja en el departamento de informática.,6,S,"Spanish Phase 3, Units 1-30 (2004)",20
+529,SP,978-1-4423-5039-7,Spanish 3,23,0:21:52,0:21:54,09Q,202,N,She works with computers.,,,"Spanish Phase 3, Units 1-30 (2004)",20
+530,SP,978-1-4423-5039-7,Spanish 3,23,0:21:57,0:22:00,09R,203,F,Trabaja con computadoras.,3,S,"Spanish Phase 3, Units 1-30 (2004)",20
+531,SP,978-1-4423-5039-7,Spanish 3,23,0:25:22,0:25:25,10Q,232,N,Say that you forgot your hat.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+532,SP,978-1-4423-5039-7,Spanish 3,23,0:25:27,0:25:30,10R,233,M,Se me olvidó mi sombrero.,5,S,"Spanish Phase 3, Units 1-30 (2004)",9
+533,SP,978-1-4423-5039-7,Spanish 3,24,0:02:51,0:02:54,01Q,37,N,She wants to teach computer science.,,,"Spanish Phase 3, Units 1-30 (2004)",20
+534,SP,978-1-4423-5039-7,Spanish 3,24,0:02:58,0:03:00,01R,38,M,Quiere enseñar informática.,3,S,"Spanish Phase 3, Units 1-30 (2004)",20
+535,SP,978-1-4423-5039-7,Spanish 3,24,0:03:58,0:04:01,02Q,48,N,She prefers to teach in a private school.,,,"Spanish Phase 3, Units 1-30 (2004)",20
+536,SP,978-1-4423-5039-7,Spanish 3,24,0:04:05,0:04:09,02R,49,M,Prefiere enseñar en una escuela privada.,6,S,"Spanish Phase 3, Units 1-30 (2004)",20
+537,SP,978-1-4423-5039-7,Spanish 3,24,0:07:50,0:07:52,03Q,82,N,My son no longer lives at home.,,,"Spanish Phase 3, Units 1-30 (2004)",5
+538,SP,978-1-4423-5039-7,Spanish 3,24,0:07:55,0:07:58,03R,83,F,Mi hijo ya no vive en casa.,7,S,"Spanish Phase 3, Units 1-30 (2004)",5
+539,SP,978-1-4423-5039-7,Spanish 3,24,0:09:57,0:09:59,04Q,102,N,I wish them much success.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+540,SP,978-1-4423-5039-7,Spanish 3,24,0:10:02,0:10:05,04R,103,M,Les deseo mucho éxito.,4,S,"Spanish Phase 3, Units 1-30 (2004)",7
+541,SP,978-1-4423-5039-7,Spanish 3,24,0:10:51,0:10:53,05Q,110,N,Where is there a dry cleaners?,,,"Spanish Phase 3, Units 1-30 (2004)",4
+542,SP,978-1-4423-5039-7,Spanish 3,24,0:10:56,0:10:58,05R,111,M,¿Dónde hay una tintorería?,4,Q,"Spanish Phase 3, Units 1-30 (2004)",4
+543,SP,978-1-4423-5039-7,Spanish 3,24,0:12:27,0:12:30,06Q,121,N,The hotel has a dry cleaning service.,,,"Spanish Phase 3, Units 1-30 (2004)",18
+544,SP,978-1-4423-5039-7,Spanish 3,24,0:12:33,0:12:38,06R,122,F,El hotel tiene un servicio de tintorería.,7,S,"Spanish Phase 3, Units 1-30 (2004)",18
+545,SP,978-1-4423-5039-7,Spanish 3,24,0:12:43,0:12:45,07Q,123,N,You can leave it (m) with me.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+546,SP,978-1-4423-5039-7,Spanish 3,24,0:12:47,0:12:50,07R,125,F,Puede dejarlo conmigo.,3,S,"Spanish Phase 3, Units 1-30 (2004)",9
+547,SP,978-1-4423-5039-7,Spanish 3,24,0:13:21,0:13:23,08Q,129,N,You can leave the suit here.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+548,SP,978-1-4423-5039-7,Spanish 3,24,0:13:26,0:13:28,08R,130,F,Puede dejar el traje aquí.,5,S,"Spanish Phase 3, Units 1-30 (2004)",9
+549,SP,978-1-4423-5039-7,Spanish 3,24,0:14:07,0:14:09,09Q,137,N,When can I pick it (m) up?,,,"Spanish Phase 3, Units 1-30 (2004)",9
+550,SP,978-1-4423-5039-7,Spanish 3,24,0:14:12,0:14:14,09R,138,M,¿Cuándo puedo recogerlo?,3,Q,"Spanish Phase 3, Units 1-30 (2004)",9
+551,SP,978-1-4423-5039-7,Spanish 3,24,0:15:18,0:15:20,10Q,148,N,It can’t be ready before?,,,"Spanish Phase 3, Units 1-30 (2004)",7
+552,SP,978-1-4423-5039-7,Spanish 3,24,0:15:23,0:15:26,10R,149,M,¿No puede estar listo antes?,5,Q,"Spanish Phase 3, Units 1-30 (2004)",7
+553,SP,978-1-4423-5039-7,Spanish 3,24,0:16:20,0:16:23,11Q,157,N,The day after tomorrow.,,,"Spanish Phase 3, Units 1-30 (2004)",17
+554,SP,978-1-4423-5039-7,Spanish 3,24,0:16:25,0:16:27,11R,158,F,Pasado mañana.,2,S,"Spanish Phase 3, Units 1-30 (2004)",17
+555,SP,978-1-4423-5039-7,Spanish 3,24,0:17:25,0:17:27,12Q,169,N,I have to wear it tomorrow.,,,"Spanish Phase 3, Units 1-30 (2004)",17
+556,SP,978-1-4423-5039-7,Spanish 3,24,0:17:29,0:17:32,12R,170,M,Tengo que ponérmelo mañana.,4,S,"Spanish Phase 3, Units 1-30 (2004)",17
+557,SP,978-1-4423-5039-7,Spanish 3,24,0:21:14,0:21:16,13Q,201,N,You need an express service.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+558,SP,978-1-4423-5039-7,Spanish 3,24,0:21:20,0:21:23,13R,202,F,Necesita un servicio extrarrápido.,4,S,"Spanish Phase 3, Units 1-30 (2004)",7
+559,SP,978-1-4423-5039-7,Spanish 3,24,0:27:24,0:27:27,14Q,263,N,I wish you much success in your work.,,,"Spanish Phase 3, Units 1-30 (2004)",20
+560,SP,978-1-4423-5039-7,Spanish 3,24,0:27:30,0:27:34,14R,264,M,Le deseo mucho éxito en su trabajo.,7,S,"Spanish Phase 3, Units 1-30 (2004)",20
+561,SP,978-1-4423-5039-7,Spanish 3,25,0:01:36,0:01:37,01Q,26,N,I have to buy a suit.,,,"Spanish Phase 3, Units 1-30 (2004)",14
+562,SP,978-1-4423-5039-7,Spanish 3,25,0:01:40,0:01:43,01R,28,M,Tengo que comprar un traje.,5,S,"Spanish Phase 3, Units 1-30 (2004)",14
+563,SP,978-1-4423-5039-7,Spanish 3,25,0:05:24,0:05:27,02Q,63,N,I have a very nice suit for you.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+564,SP,978-1-4423-5039-7,Spanish 3,25,0:05:30,0:05:33,02R,65,F,Tengo un traje muy bonito para usted.,7,S,"Spanish Phase 3, Units 1-30 (2004)",9
+565,SP,978-1-4423-5039-7,Spanish 3,25,0:07:36,0:07:39,03Q,80,N,My card for the automatic teller.,,,"Spanish Phase 3, Units 1-30 (2004)",18
+566,SP,978-1-4423-5039-7,Spanish 3,25,0:07:42,0:07:46,03R,81,M,Mi tarjeta para el cajero automático.,6,S,"Spanish Phase 3, Units 1-30 (2004)",18
+567,SP,978-1-4423-5039-7,Spanish 3,25,0:10:02,0:10:05,04Q,103,N,One must fill out some forms.,,,"Spanish Phase 3, Units 1-30 (2004)","7,16"
+568,SP,978-1-4423-5039-7,Spanish 3,25,0:10:08,0:10:11,04R,104,F,Hay que llenar unos formularios.,5,S,"Spanish Phase 3, Units 1-30 (2004)","7,16"
+569,SP,978-1-4423-5039-7,Spanish 3,25,0:10:35,0:10:37,05Q,108,N,How many forms must one fill out?,,,"Spanish Phase 3, Units 1-30 (2004)","7,16"
+570,SP,978-1-4423-5039-7,Spanish 3,25,0:10:40,0:10:43,05R,109,M,¿Cuántos formularios hay que llenar?,5,Q,"Spanish Phase 3, Units 1-30 (2004)","7,16"
+571,SP,978-1-4423-5039-7,Spanish 3,25,0:12:53,0:12:57,06Q,130,N,Give me your identification papers.,,,"Spanish Phase 3, Units 1-30 (2004)","7,16"
+572,SP,978-1-4423-5039-7,Spanish 3,25,0:13:00,0:13:03,06R,131,F,Deme sus papeles de identificación.,5,S,"Spanish Phase 3, Units 1-30 (2004)","7,16"
+573,SP,978-1-4423-5039-7,Spanish 3,25,0:14:42,0:14:44,07Q,146,N,I have my passport.,,,"Spanish Phase 3, Units 1-30 (2004)",16
+574,SP,978-1-4423-5039-7,Spanish 3,25,0:14:45,0:14:48,07R,147,M,Tengo mi pasaporte.,3,S,"Spanish Phase 3, Units 1-30 (2004)",16
+575,SP,978-1-4423-5039-7,Spanish 3,25,0:16:01,0:16:03,08Q,157,N,Where do I have to sign?,,,"Spanish Phase 3, Units 1-30 (2004)","7,16"
+576,SP,978-1-4423-5039-7,Spanish 3,25,0:16:06,0:16:09,08R,158,M,¿Dónde tengo que firmar?,4,Q,"Spanish Phase 3, Units 1-30 (2004)","7,16"
+577,SP,978-1-4423-5039-7,Spanish 3,25,0:16:41,0:16:43,09Q,164,N,You have to sign on the line.,,,"Spanish Phase 3, Units 1-30 (2004)","7,16"
+578,SP,978-1-4423-5039-7,Spanish 3,25,0:16:46,0:16:49,09R,165,M,Tiene que firmar en la línea.,6,S,"Spanish Phase 3, Units 1-30 (2004)","7,16"
+579,SP,978-1-4423-5039-7,Spanish 3,25,0:22:39,0:22:42,10Q,217,N,Can I leave these books with you?,,,"Spanish Phase 3, Units 1-30 (2004)",1
+580,SP,978-1-4423-5039-7,Spanish 3,25,0:22:44,0:22:47,10R,218,F,¿Puedo dejar estos libros con usted?,6,Q,"Spanish Phase 3, Units 1-30 (2004)",1
+581,SP,978-1-4423-5039-7,Spanish 3,25,0:24:31,0:24:33,11Q,235,N,Where is there an ATM?,,,"Spanish Phase 3, Units 1-30 (2004)","4,11"
+582,SP,978-1-4423-5039-7,Spanish 3,25,0:24:37,0:24:40,11R,237,M,¿Dónde hay un cajero automático?,5,Q,"Spanish Phase 3, Units 1-30 (2004)","4,11"
+583,SP,978-1-4423-5039-7,Spanish 3,25,0:26:20,0:26:23,12Q,253,N,Or do you have other identification?,,,"Spanish Phase 3, Units 1-30 (2004)",16
+584,SP,978-1-4423-5039-7,Spanish 3,25,0:26:27,0:26:30,12R,254,F,¿O tiene otra identificación?,4,Q,"Spanish Phase 3, Units 1-30 (2004)",16
+585,SP,978-1-4423-5039-7,Spanish 3,26,0:01:31,0:01:33,01Q,25,N,The ATM isn’t working.,,,"Spanish Phase 3, Units 1-30 (2004)","11,16"
+586,SP,978-1-4423-5039-7,Spanish 3,26,0:01:38,0:01:42,01R,26,M,El cajero automático no funciona.,5,S,"Spanish Phase 3, Units 1-30 (2004)","11,16"
+587,SP,978-1-4423-5039-7,Spanish 3,26,0:02:31,0:02:33,02Q,32,N,It’s eaten up my card.,,,"Spanish Phase 3, Units 1-30 (2004)","6,18"
+588,SP,978-1-4423-5039-7,Spanish 3,26,0:02:37,0:02:39,02R,33,M,Se ha comido mi tarjeta.,5,S,"Spanish Phase 3, Units 1-30 (2004)","6,18"
+589,SP,978-1-4423-5039-7,Spanish 3,26,0:04:05,0:04:07,03Q,46,N,I have to check the problem.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+590,SP,978-1-4423-5039-7,Spanish 3,26,0:04:11,0:04:14,03R,47,F,Tengo que verificar el problema.,5,S,"Spanish Phase 3, Units 1-30 (2004)",7
+591,SP,978-1-4423-5039-7,Spanish 3,26,0:05:24,0:05:25,04Q,58,N,We have to check it.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+592,SP,978-1-4423-5039-7,Spanish 3,26,0:05:28,0:05:31,04R,59,F,Tenemos que verificarlo.,3,S,"Spanish Phase 3, Units 1-30 (2004)",7
+593,SP,978-1-4423-5039-7,Spanish 3,26,0:06:50,0:06:52,05Q,70,N,While you wait.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+594,SP,978-1-4423-5039-7,Spanish 3,26,0:06:54,0:06:56,05R,71,F,Mientras espera.,2,S,"Spanish Phase 3, Units 1-30 (2004)",7
+595,SP,978-1-4423-5039-7,Spanish 3,26,0:09:46,0:09:48,06Q,98,N,There’s a trade show.,,,"Spanish Phase 3, Units 1-30 (2004)",16
+596,SP,978-1-4423-5039-7,Spanish 3,26,0:09:50,0:09:52,06R,99,F,Hay una exposición.,3,S,"Spanish Phase 3, Units 1-30 (2004)",16
+597,SP,978-1-4423-5039-7,Spanish 3,26,0:09:55,0:09:56,07Q,100,N,On what date?,,,"Spanish Phase 3, Units 1-30 (2004)",7
+598,SP,978-1-4423-5039-7,Spanish 3,26,0:09:58,0:10:00,07R,101,M,¿En qué fecha?,3,Q,"Spanish Phase 3, Units 1-30 (2004)",7
+599,SP,978-1-4423-5039-7,Spanish 3,26,0:10:56,0:10:59,08Q,111,N,I have to look in my appointment book.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+600,SP,978-1-4423-5039-7,Spanish 3,26,0:11:01,0:11:03,08R,112,F,Tengo que mirar en mi agenda.,6,S,"Spanish Phase 3, Units 1-30 (2004)",9
+601,SP,978-1-4423-5039-7,Spanish 3,26,0:13:56,0:13:59,09Q,138,N,It says that it is the sixteenth of January.,,,"Spanish Phase 3, Units 1-30 (2004)","12,17"
+602,SP,978-1-4423-5039-7,Spanish 3,26,0:14:03,0:14:07,09R,139,F,Dice que es el dieciséis de enero.,7,S,"Spanish Phase 3, Units 1-30 (2004)","12,17"
+603,SP,978-1-4423-5039-7,Spanish 3,26,0:14:54,0:14:57,10Q,146,N,I’m going to be out of the country.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+604,SP,978-1-4423-5039-7,Spanish 3,26,0:15:00,0:15:02,10R,147,M,Voy a estar fuera del país.,6,S,"Spanish Phase 3, Units 1-30 (2004)",9
+605,SP,978-1-4423-5039-7,Spanish 3,26,0:16:43,0:16:45,11Q,161,N,I could be wrong.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+606,SP,978-1-4423-5039-7,Spanish 3,26,0:16:47,0:16:49,11R,162,F,Podría estar equivocada.,3,S,"Spanish Phase 3, Units 1-30 (2004)",7
+607,SP,978-1-4423-5039-7,Spanish 3,27,0:02:42,0:02:44,01Q,35,N,It’s well organized.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+608,SP,978-1-4423-5039-7,Spanish 3,27,0:02:47,0:02:50,01R,36,F,Está bien organizado.,3,S,"Spanish Phase 3, Units 1-30 (2004)",9
+609,SP,978-1-4423-5039-7,Spanish 3,27,0:06:17,0:06:20,02Q,67,N,I want to leave everything well organized.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+610,SP,978-1-4423-5039-7,Spanish 3,27,0:06:24,0:06:27,02R,68,F,Quiero dejar todo bien organizado.,5,S,"Spanish Phase 3, Units 1-30 (2004)",9
+611,SP,978-1-4423-5039-7,Spanish 3,27,0:07:42,0:07:44,03Q,80,N,The photos were around here.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+612,SP,978-1-4423-5039-7,Spanish 3,27,0:07:47,0:07:50,03R,81,F,Las fotos estaban por aquí.,5,S,"Spanish Phase 3, Units 1-30 (2004)",9
+613,SP,978-1-4423-5039-7,Spanish 3,27,0:07:53,0:07:55,04Q,82,N,A little while ago.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+614,SP,978-1-4423-5039-7,Spanish 3,27,0:07:57,0:07:59,04R,83,F,Hace poco.,2,S,"Spanish Phase 3, Units 1-30 (2004)",7
+615,SP,978-1-4423-5039-7,Spanish 3,27,0:11:24,0:11:27,05Q,115,N,I made the trip in June.,,,"Spanish Phase 3, Units 1-30 (2004)","17,18"
+616,SP,978-1-4423-5039-7,Spanish 3,27,0:11:30,0:11:32,05R,116,F,Hice el viaje en junio.,5,S,"Spanish Phase 3, Units 1-30 (2004)","17,18"
+617,SP,978-1-4423-5039-7,Spanish 3,27,0:15:01,0:15:04,06Q,148,N,I know that they were around here.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+618,SP,978-1-4423-5039-7,Spanish 3,27,0:15:06,0:15:09,06R,149,F,Sé que estaban por aquí.,5,S,"Spanish Phase 3, Units 1-30 (2004)",9
+619,SP,978-1-4423-5039-7,Spanish 3,27,0:17:16,0:17:17,07Q,169,N,What’s today’s date?,,,"Spanish Phase 3, Units 1-30 (2004)","7,16"
+620,SP,978-1-4423-5039-7,Spanish 3,27,0:17:22,0:17:24,07R,171,F,¿Qué fecha es hoy?,4,Q,"Spanish Phase 3, Units 1-30 (2004)","7,16"
+621,SP,978-1-4423-5039-7,Spanish 3,27,0:19:21,0:19:23,08Q,187,N,Can one exchange money here?,,,"Spanish Phase 3, Units 1-30 (2004)","11,16"
+622,SP,978-1-4423-5039-7,Spanish 3,27,0:19:26,0:19:29,08R,189,F,¿Se puede cambiar dinero aquí?,5,Q,"Spanish Phase 3, Units 1-30 (2004)","11,16"
+623,SP,978-1-4423-5039-7,Spanish 3,27,0:25:32,0:25:35,09Q,246,N,Can one see the park in a day?,,,"Spanish Phase 3, Units 1-30 (2004)","1,9"
+624,SP,978-1-4423-5039-7,Spanish 3,27,0:25:38,0:25:41,09R,247,F,¿Se puede ver el parque en un día?,8,Q,"Spanish Phase 3, Units 1-30 (2004)","1,9"
+625,SP,978-1-4423-5039-7,Spanish 3,27,0:27:25,0:27:28,10Q,264,N,I’m a very organized person (f).,,,"Spanish Phase 3, Units 1-30 (2004)",9
+626,SP,978-1-4423-5039-7,Spanish 3,27,0:27:32,0:27:35,10R,265,F,Soy una persona muy organizada.,5,S,"Spanish Phase 3, Units 1-30 (2004)",9
+627,SP,978-1-4423-5039-7,Spanish 3,27,0:28:23,0:28:26,11Q,273,N,I always check it (f) in my appointment book.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+628,SP,978-1-4423-5039-7,Spanish 3,27,0:28:30,0:28:33,11R,274,F,Siempre la verifico en mi agenda.,6,S,"Spanish Phase 3, Units 1-30 (2004)",9
+629,SP,978-1-4423-5039-7,Spanish 3,28,0:04:06,0:04:09,01Q,54,N,One can get there by car.,,,"Spanish Phase 3, Units 1-30 (2004)",18
+630,SP,978-1-4423-5039-7,Spanish 3,28,0:04:11,0:04:14,01R,55,F,Se puede llegar en coche.,5,S,"Spanish Phase 3, Units 1-30 (2004)",18
+631,SP,978-1-4423-5039-7,Spanish 3,28,0:07:38,0:07:39,02Q,90,N,How big is it?,,,"Spanish Phase 3, Units 1-30 (2004)",9
+632,SP,978-1-4423-5039-7,Spanish 3,28,0:07:41,0:07:44,02R,91,M,¿Qué tan grande es?,4,Q,"Spanish Phase 3, Units 1-30 (2004)",9
+633,SP,978-1-4423-5039-7,Spanish 3,28,0:09:35,0:09:37,03Q,107,N,At least two bedrooms.,,,"Spanish Phase 3, Units 1-30 (2004)",12
+634,SP,978-1-4423-5039-7,Spanish 3,28,0:09:40,0:09:43,03R,108,M,Por lo menos dos habitaciones.,5,S,"Spanish Phase 3, Units 1-30 (2004)",12
+635,SP,978-1-4423-5039-7,Spanish 3,28,0:11:15,0:11:17,04Q,119,N,How much is the rent?,,,"Spanish Phase 3, Units 1-30 (2004)",14
+636,SP,978-1-4423-5039-7,Spanish 3,28,0:11:19,0:11:21,04R,120,M,¿Cuánto es el alquiler?,4,Q,"Spanish Phase 3, Units 1-30 (2004)",14
+637,SP,978-1-4423-5039-7,Spanish 3,28,0:11:24,0:11:26,05Q,123,N,How much is it per month?,,,"Spanish Phase 3, Units 1-30 (2004)","14,17"
+638,SP,978-1-4423-5039-7,Spanish 3,28,0:11:28,0:11:30,05R,124,M,¿Cuánto es por mes?,4,Q,"Spanish Phase 3, Units 1-30 (2004)","14,17"
+639,SP,978-1-4423-5039-7,Spanish 3,28,0:12:16,0:12:17,06Q,131,N,That’s right.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+640,SP,978-1-4423-5039-7,Spanish 3,28,0:12:20,0:12:21,06R,132,F,Así es.,2,S,"Spanish Phase 3, Units 1-30 (2004)",9
+641,SP,978-1-4423-5039-7,Spanish 3,28,0:12:40,0:12:43,07Q,135,N,"Unfortunately, it’s too expensive.",,,"Spanish Phase 3, Units 1-30 (2004)","13,14"
+642,SP,978-1-4423-5039-7,Spanish 3,28,0:12:47,0:12:51,07R,136,M,"Desafortunadamente, es demasiado caro.",4,S,"Spanish Phase 3, Units 1-30 (2004)","13,14"
+643,SP,978-1-4423-5039-7,Spanish 3,28,0:13:44,0:13:47,08Q,144,N,Nine thousand pesos per month.,,,"Spanish Phase 3, Units 1-30 (2004)","11,12,17"
+644,SP,978-1-4423-5039-7,Spanish 3,28,0:13:49,0:13:52,08R,145,F,Nueve mil pesos por mes.,5,S,"Spanish Phase 3, Units 1-30 (2004)","11,12,17"
+645,SP,978-1-4423-5039-7,Spanish 3,28,0:14:15,0:14:17,09Q,149,N,The rent is eight thousand.,,,"Spanish Phase 3, Units 1-30 (2004)",12
+646,SP,978-1-4423-5039-7,Spanish 3,28,0:14:24,0:14:26,09R,151,F,El alquiler es de ocho mil.,6,S,"Spanish Phase 3, Units 1-30 (2004)",12
+647,SP,978-1-4423-5039-7,Spanish 3,28,0:23:10,0:23:13,10Q,231,N,It was around here a little while ago.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+648,SP,978-1-4423-5039-7,Spanish 3,28,0:23:16,0:23:19,10R,232,F,Estaba por aquí hace poco.,5,S,"Spanish Phase 3, Units 1-30 (2004)",9
+649,SP,978-1-4423-5039-7,Spanish 3,28,0:24:05,0:24:08,11Q,238,N,It’s from the sixteenth to the twentieth.,,,"Spanish Phase 3, Units 1-30 (2004)",12
+650,SP,978-1-4423-5039-7,Spanish 3,28,0:24:11,0:24:14,11R,239,F,Es del dieciséis al veinte.,5,S,"Spanish Phase 3, Units 1-30 (2004)",12
+651,SP,978-1-4423-5039-7,Spanish 3,29,0:03:34,0:03:37,01Q,45,N,I need at least two bedrooms.,,,"Spanish Phase 3, Units 1-30 (2004)",12
+652,SP,978-1-4423-5039-7,Spanish 3,29,0:03:41,0:03:44,01R,46,F,Necesito por lo menos dos habitaciones.,6,S,"Spanish Phase 3, Units 1-30 (2004)",12
+653,SP,978-1-4423-5039-7,Spanish 3,29,0:05:03,0:05:05,02Q,59,N,At the least I should look at it.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+654,SP,978-1-4423-5039-7,Spanish 3,29,0:05:08,0:05:11,02R,60,F,Por lo menos debo mirarlo.,5,S,"Spanish Phase 3, Units 1-30 (2004)",9
+655,SP,978-1-4423-5039-7,Spanish 3,29,0:06:26,0:06:28,03Q,74,N,How far is it?,,,"Spanish Phase 3, Units 1-30 (2004)",4
+656,SP,978-1-4423-5039-7,Spanish 3,29,0:06:33,0:06:35,03R,75,F,¿Qué tan lejos queda?,4,Q,"Spanish Phase 3, Units 1-30 (2004)",4
+657,SP,978-1-4423-5039-7,Spanish 3,29,0:11:03,0:11:05,04Q,117,N,So much time?,,,"Spanish Phase 3, Units 1-30 (2004)",17
+658,SP,978-1-4423-5039-7,Spanish 3,29,0:11:07,0:11:09,04R,118,M,¿Tanto tiempo?,2,Q,"Spanish Phase 3, Units 1-30 (2004)",17
+659,SP,978-1-4423-5039-7,Spanish 3,29,0:13:06,0:13:08,05Q,135,N,I have so many things to do.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+660,SP,978-1-4423-5039-7,Spanish 3,29,0:13:11,0:13:14,05R,136,F,Tengo tantas cosas que hacer.,5,S,"Spanish Phase 3, Units 1-30 (2004)",7
+661,SP,978-1-4423-5039-7,Spanish 3,29,0:14:15,0:14:17,06Q,146,N,Things that have to do with the trip.,,,"Spanish Phase 3, Units 1-30 (2004)",18
+662,SP,978-1-4423-5039-7,Spanish 3,29,0:14:20,0:14:24,06R,147,F,Cosas que tienen que ver con el viaje.,8,S,"Spanish Phase 3, Units 1-30 (2004)",18
+663,SP,978-1-4423-5039-7,Spanish 3,29,0:17:46,0:17:48,07Q,176,N,You could buy them toys.,,,"Spanish Phase 3, Units 1-30 (2004)",14
+664,SP,978-1-4423-5039-7,Spanish 3,29,0:17:50,0:17:53,07R,177,M,Podrías comprarles juguetes.,3,S,"Spanish Phase 3, Units 1-30 (2004)",14
+665,SP,978-1-4423-5039-7,Spanish 3,29,0:21:12,0:21:14,08Q,208,N,There are so many (m).,,,"Spanish Phase 3, Units 1-30 (2004)",9
+666,SP,978-1-4423-5039-7,Spanish 3,29,0:21:16,0:21:18,08R,209,F,Hay tantos.,2,S,"Spanish Phase 3, Units 1-30 (2004)",9
+667,SP,978-1-4423-5039-7,Spanish 3,29,0:22:15,0:22:17,09Q,215,N,A CD with the latest hits.,,,"Spanish Phase 3, Units 1-30 (2004)",14
+668,SP,978-1-4423-5039-7,Spanish 3,29,0:22:21,0:22:25,09R,216,M,Un CD con los últimos éxitos.,6,S,"Spanish Phase 3, Units 1-30 (2004)",14
+669,SP,978-1-4423-5039-7,Spanish 3,29,0:25:56,0:25:59,10Q,248,N,But the rent only is of seven thousand pesos.,,,"Spanish Phase 3, Units 1-30 (2004)","11,12"
+670,SP,978-1-4423-5039-7,Spanish 3,29,0:26:04,0:26:08,10R,249,M,Pero el alquiler sólo es de siete mil pesos.,9,S,"Spanish Phase 3, Units 1-30 (2004)","11,12"
+671,SP,978-1-4423-5039-7,Spanish 3,29,0:28:27,0:28:29,11Q,272,N,I’m going to buy her a book.,,,"Spanish Phase 3, Units 1-30 (2004)",14
+672,SP,978-1-4423-5039-7,Spanish 3,29,0:28:32,0:28:35,11R,273,F,Voy a comprarle un libro.,5,S,"Spanish Phase 3, Units 1-30 (2004)",14
+673,SP,978-1-4423-5039-7,Spanish 3,30,0:04:45,0:04:47,01Q,57,N,Something that has to do with Mexico?,,,"Spanish Phase 3, Units 1-30 (2004)",9
+674,SP,978-1-4423-5039-7,Spanish 3,30,0:04:51,0:04:54,01R,58,F,¿Algo que tenga que ver con México?,7,Q,"Spanish Phase 3, Units 1-30 (2004)",9
+675,SP,978-1-4423-5039-7,Spanish 3,30,0:06:04,0:06:06,02Q,69,N,Let me look at it.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+676,SP,978-1-4423-5039-7,Spanish 3,30,0:06:09,0:06:11,02R,70,M,Déjeme mirarlo.,2,S,"Spanish Phase 3, Units 1-30 (2004)",9
+677,SP,978-1-4423-5039-7,Spanish 3,30,0:09:33,0:09:35,03Q,101,N,Thank you for the farewell.,,,"Spanish Phase 3, Units 1-30 (2004)","13,16"
+678,SP,978-1-4423-5039-7,Spanish 3,30,0:09:39,0:09:41,03R,102,M,Gracias por la despedida.,4,S,"Spanish Phase 3, Units 1-30 (2004)","13,16"
+679,SP,978-1-4423-5039-7,Spanish 3,30,0:09:46,0:09:47,04Q,103,N,You’re very kind.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+680,SP,978-1-4423-5039-7,Spanish 3,30,0:09:49,0:09:51,04R,104,M,Muy amable.,2,S,"Spanish Phase 3, Units 1-30 (2004)",7
+681,SP,978-1-4423-5039-7,Spanish 3,30,0:10:46,0:10:47,05Q,114,N,"Come in, please.",,,"Spanish Phase 3, Units 1-30 (2004)","7,13"
+682,SP,978-1-4423-5039-7,Spanish 3,30,0:10:50,0:10:52,05R,115,F,"Entre, por favor.",3,S,"Spanish Phase 3, Units 1-30 (2004)","7,13"
+683,SP,978-1-4423-5039-7,Spanish 3,30,0:12:33,0:12:35,06Q,129,N,I'm going to put them on the table,,,"Spanish Phase 3, Units 1-30 (2004)",9
+684,SP,978-1-4423-5039-7,Spanish 3,30,0:12:39,0:12:41,06R,130,F,Voy a ponerlas en la mesa.,6,S,"Spanish Phase 3, Units 1-30 (2004)",9
+685,SP,978-1-4423-5039-7,Spanish 3,30,0:14:01,0:14:03,07Q,144,N,At least not on the highway.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+686,SP,978-1-4423-5039-7,Spanish 3,30,0:14:06,0:14:10,07R,145,M,Por lo menos no en la autopista.,7,S,"Spanish Phase 3, Units 1-30 (2004)",9
+687,SP,978-1-4423-5039-7,Spanish 3,30,0:15:35,0:15:36,08Q,158,N,I made something special.,,,"Spanish Phase 3, Units 1-30 (2004)",9
+688,SP,978-1-4423-5039-7,Spanish 3,30,0:15:39,0:15:41,08R,159,F,Hice algo especial.,3,S,"Spanish Phase 3, Units 1-30 (2004)",9
+689,SP,978-1-4423-5039-7,Spanish 3,30,0:17:57,0:17:59,09Q,180,N,I’m going to bring it.,,,"Spanish Phase 3, Units 1-30 (2004)",7
+690,SP,978-1-4423-5039-7,Spanish 3,30,0:18:01,0:18:03,09R,181,M,Voy a traerla.,3,S,"Spanish Phase 3, Units 1-30 (2004)",7
+691,SP,978-1-4423-5039-7,Spanish 3,30,0:20:14,0:20:17,10Q,199,N,Ask if you arrived too early.,,,"Spanish Phase 3, Units 1-30 (2004)","17,18"
+692,SP,978-1-4423-5039-7,Spanish 3,30,0:20:21,0:20:24,10R,200,M,¿Llegué demasiado temprano?,3,Q,"Spanish Phase 3, Units 1-30 (2004)","17,18"
+693,SP,978-1-4423-5039-7,Spanish 3,30,0:25:48,0:25:50,11Q,255,N,Where should I put the wine?,,,"Spanish Phase 3, Units 1-30 (2004)",6
+694,SP,978-1-4423-5039-7,Spanish 3,30,0:25:53,0:25:56,11R,256,M,¿Dónde debo poner el vino?,5,Q,"Spanish Phase 3, Units 1-30 (2004)",6

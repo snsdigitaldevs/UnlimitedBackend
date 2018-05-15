@@ -1,0 +1,659 @@
+Rec #,Lang,ISBN-13,Course,Unit Num,start,stop,QZ #,line #,spkr,Cue,#of words,Q or S,Course Name (Source),Skills
+1,SP,978-1-4423-5038-0,Spanish 2,1,0:07:55,0:07:57,01Q,86,N,"Yes, certainly.",,,"Spanish Phase 2, Units 1-30 (2003)",7
+2,SP,978-1-4423-5038-0,Spanish 2,1,0:07:59,0:08:01,01R,87,F,"Sí, cómo no.",2,S,"Spanish Phase 2, Units 1-30 (2003)",7
+3,SP,978-1-4423-5038-0,Spanish 2,1,0:08:40,0:08:42,02Q,93,N,Where is it located?,,,"Spanish Phase 2, Units 1-30 (2003)",4
+4,SP,978-1-4423-5038-0,Spanish 2,1,0:08:45,0:08:46,02R,94,F,¿Dónde queda?,2,Q,"Spanish Phase 2, Units 1-30 (2003)",4
+5,SP,978-1-4423-5038-0,Spanish 2,1,0:10:40,0:10:42,03Q,112,N,by subway,,,"Spanish Phase 2, Units 1-30 (2003)",18
+6,SP,978-1-4423-5038-0,Spanish 2,1,0:10:44,0:10:45,03R,113,M,en metro,2,S,"Spanish Phase 2, Units 1-30 (2003)",18
+7,SP,978-1-4423-5038-0,Spanish 2,1,0:12:36,0:12:37,04Q,130,N,Where do you work?,,,"Spanish Phase 2, Units 1-30 (2003)",20
+8,SP,978-1-4423-5038-0,Spanish 2,1,0:12:39,0:12:42,04R,132,F,¿Dónde trabaja?,2,Q,"Spanish Phase 2, Units 1-30 (2003)",20
+9,SP,978-1-4423-5038-0,Spanish 2,1,0:14:17,0:14:19,05Q,149,N,On which street?,,,"Spanish Phase 2, Units 1-30 (2003)",4
+10,SP,978-1-4423-5038-0,Spanish 2,1,0:14:22,0:14:23,05R,150,F,¿En cuál calle?,3,Q,"Spanish Phase 2, Units 1-30 (2003)",4
+11,SP,978-1-4423-5038-0,Spanish 2,1,0:16:20,0:16:22,06Q,169,N,How long does it take to get there?,,,"Spanish Phase 2, Units 1-30 (2003)",18
+12,SP,978-1-4423-5038-0,Spanish 2,1,0:16:28,0:16:31,06R,171,F,¿Cuánto tiempo para llegar?,4,Q,"Spanish Phase 2, Units 1-30 (2003)",18
+13,SP,978-1-4423-5038-0,Spanish 2,1,0:17:18,0:17:20,07Q,180,N,Half an hour to get there?,,,"Spanish Phase 2, Units 1-30 (2003)",17
+14,SP,978-1-4423-5038-0,Spanish 2,1,0:17:23,0:17:26,07R,181,F,¿Media hora para llegar?,4,Q,"Spanish Phase 2, Units 1-30 (2003)",17
+15,SP,978-1-4423-5038-0,Spanish 2,1,0:24:40,0:24:42,08Q,253,N,First I have to work.,,,"Spanish Phase 2, Units 1-30 (2003)",20
+16,SP,978-1-4423-5038-0,Spanish 2,1,0:24:45,0:24:48,08R,254,F,Primero tengo que trabajar.,4,S,"Spanish Phase 2, Units 1-30 (2003)",20
+17,SP,978-1-4423-5038-0,Spanish 2,1,0:26:52,0:26:55,09Q,275,N,I want to talk about something else.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+18,SP,978-1-4423-5038-0,Spanish 2,1,0:26:58,0:27:00,09R,276,M,Quiero hablar de otra cosa.,5,S,"Spanish Phase 2, Units 1-30 (2003)",9
+19,SP,978-1-4423-5038-0,Spanish 2,1,0:27:23,0:27:26,10Q,279,N,Do you have time for a coffee?,,,"Spanish Phase 2, Units 1-30 (2003)","6,17"
+20,SP,978-1-4423-5038-0,Spanish 2,1,0:27:28,0:27:31,10R,280,M,¿Tienes tiempo para un café?,5,Q,"Spanish Phase 2, Units 1-30 (2003)","6,17"
+21,SP,978-1-4423-5038-0,Spanish 2,1,0:28:31,0:28:33,11Q,290,N,We can go to the movies with you.,,,"Spanish Phase 2, Units 1-30 (2003)",1
+22,SP,978-1-4423-5038-0,Spanish 2,1,0:28:36,0:28:39,11R,291,F,Podemos ir al cine contigo.,5,S,"Spanish Phase 2, Units 1-30 (2003)",1
+23,SP,978-1-4423-5038-0,Spanish 2,2,0:02:49,0:02:50,01Q,42,N,Turn to the left.,,,"Spanish Phase 2, Units 1-30 (2003)",4
+24,SP,978-1-4423-5038-0,Spanish 2,2,0:02:52,0:02:54,01R,43,F,Doble a la izquierda.,4,S,"Spanish Phase 2, Units 1-30 (2003)",4
+25,SP,978-1-4423-5038-0,Spanish 2,2,0:06:41,0:06:42,02Q,75,N,Mexico City.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+26,SP,978-1-4423-5038-0,Spanish 2,2,0:06:48,0:06:50,02R,76,M,la ciudad de México,4,S,"Spanish Phase 2, Units 1-30 (2003)",9
+27,SP,978-1-4423-5038-0,Spanish 2,2,0:08:03,0:08:05,03Q,88,N,I arrived yesterday.,,,"Spanish Phase 2, Units 1-30 (2003)","17,18"
+28,SP,978-1-4423-5038-0,Spanish 2,2,0:08:07,0:08:08,03R,89,M,Llegué ayer.,2,S,"Spanish Phase 2, Units 1-30 (2003)","17,18"
+29,SP,978-1-4423-5038-0,Spanish 2,2,0:09:22,0:09:23,04Q,100,N,in the afternoon,,,"Spanish Phase 2, Units 1-30 (2003)",9
+30,SP,978-1-4423-5038-0,Spanish 2,2,0:09:24,0:09:26,04R,101,M,en la tarde,3,S,"Spanish Phase 2, Units 1-30 (2003)",9
+31,SP,978-1-4423-5038-0,Spanish 2,2,0:09:42,0:09:45,05Q,105,N,I arrived yesterday afternoon.,,,"Spanish Phase 2, Units 1-30 (2003)","17,18"
+32,SP,978-1-4423-5038-0,Spanish 2,2,0:09:48,0:09:51,05R,106,M,Llegué ayer en la tarde.,5,S,"Spanish Phase 2, Units 1-30 (2003)","17,18"
+33,SP,978-1-4423-5038-0,Spanish 2,2,0:10:30,0:10:32,06Q,111,N,I’m here on a visit.,,,"Spanish Phase 2, Units 1-30 (2003)",18
+34,SP,978-1-4423-5038-0,Spanish 2,2,0:10:36,0:10:38,06R,112,M,Estoy aquí de visita.,4,S,"Spanish Phase 2, Units 1-30 (2003)",18
+35,SP,978-1-4423-5038-0,Spanish 2,2,0:14:14,0:14:16,07Q,147,N,I have to work tomorrow morning.,,,"Spanish Phase 2, Units 1-30 (2003)","17,20"
+36,SP,978-1-4423-5038-0,Spanish 2,2,0:14:20,0:14:23,07R,148,M,Tengo que trabajar mañana en la mañana.,7,S,"Spanish Phase 2, Units 1-30 (2003)","17,20"
+37,SP,978-1-4423-5038-0,Spanish 2,2,0:16:40,0:16:43,08Q,172,N,Do you have time after working?,,,"Spanish Phase 2, Units 1-30 (2003)",17
+38,SP,978-1-4423-5038-0,Spanish 2,2,0:16:46,0:16:50,08R,173,F,¿Tienes tiempo después de trabajar?,5,Q,"Spanish Phase 2, Units 1-30 (2003)",17
+39,SP,978-1-4423-5038-0,Spanish 2,2,0:16:55,0:16:57,09Q,174,N,Unfortunately not.,,,"Spanish Phase 2, Units 1-30 (2003)",7
+40,SP,978-1-4423-5038-0,Spanish 2,2,0:17:00,0:17:03,09R,175,M,Desafortunadamente no.,2,S,"Spanish Phase 2, Units 1-30 (2003)",7
+41,SP,978-1-4423-5038-0,Spanish 2,2,0:19:40,0:19:42,10Q,200,N,Not when he arrived.,,,"Spanish Phase 2, Units 1-30 (2003)",18
+42,SP,978-1-4423-5038-0,Spanish 2,2,0:19:47,0:19:49,10R,202,M,"Cuando llegó, no.",2,S,"Spanish Phase 2, Units 1-30 (2003)",18
+43,SP,978-1-4423-5038-0,Spanish 2,3,0:01:36,0:01:38,01Q,24,N,When did you arrive in Mexico City?,,,"Spanish Phase 2, Units 1-30 (2003)",18
+44,SP,978-1-4423-5038-0,Spanish 2,3,0:01:44,0:01:48,01R,26,M,¿Cuándo llegó a la ciudad de México?,7,Q,"Spanish Phase 2, Units 1-30 (2003)",18
+45,SP,978-1-4423-5038-0,Spanish 2,3,0:04:34,0:04:37,02Q,50,N,"Yes, I work in an office near here.",,,"Spanish Phase 2, Units 1-30 (2003)",20
+46,SP,978-1-4423-5038-0,Spanish 2,3,0:04:41,0:04:46,02R,51,M,"Sí, trabajo en una oficina cerca de aquí.",7,S,"Spanish Phase 2, Units 1-30 (2003)",20
+47,SP,978-1-4423-5038-0,Spanish 2,3,0:06:58,0:07:00,03Q,70,N,I’ve had to come alone.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+48,SP,978-1-4423-5038-0,Spanish 2,3,0:07:02,0:07:04,03R,71,F,He tenido que venir sola.,5,S,"Spanish Phase 2, Units 1-30 (2003)",9
+49,SP,978-1-4423-5038-0,Spanish 2,3,0:08:11,0:08:14,04Q,82,N,"That’s too bad! or, What a shame!",,,"Spanish Phase 2, Units 1-30 (2003)",9
+50,SP,978-1-4423-5038-0,Spanish 2,3,0:08:16,0:08:18,04R,83,M,¡Qué lástima!,2,S,"Spanish Phase 2, Units 1-30 (2003)",9
+51,SP,978-1-4423-5038-0,Spanish 2,3,0:12:10,0:12:13,05Q,122,N,"By the way, I need a car.",,,"Spanish Phase 2, Units 1-30 (2003)",18
+52,SP,978-1-4423-5038-0,Spanish 2,3,0:12:16,0:12:20,05R,123,F,"A propósito, necesito un coche.",5,S,"Spanish Phase 2, Units 1-30 (2003)",18
+53,SP,978-1-4423-5038-0,Spanish 2,3,0:13:41,0:13:43,06Q,136,N,The office for renting a car.,,,"Spanish Phase 2, Units 1-30 (2003)",18
+54,SP,978-1-4423-5038-0,Spanish 2,3,0:13:49,0:13:53,06R,138,F,La oficina para alquilar un coche.,6,S,"Spanish Phase 2, Units 1-30 (2003)",18
+55,SP,978-1-4423-5038-0,Spanish 2,3,0:19:32,0:19:34,07Q,192,N,You don’t drive?,,,"Spanish Phase 2, Units 1-30 (2003)",18
+56,SP,978-1-4423-5038-0,Spanish 2,3,0:19:36,0:19:38,07R,193,M,¿No maneja?,2,Q,"Spanish Phase 2, Units 1-30 (2003)",18
+57,SP,978-1-4423-5038-0,Spanish 2,3,0:19:47,0:19:49,08Q,194,N,I don’t drive in the city.,,,"Spanish Phase 2, Units 1-30 (2003)",18
+58,SP,978-1-4423-5038-0,Spanish 2,3,0:19:51,0:19:54,08R,195,F,No manejo en la ciudad.,5,S,"Spanish Phase 2, Units 1-30 (2003)",18
+59,SP,978-1-4423-5038-0,Spanish 2,3,0:26:08,0:26:10,09Q,255,N,Thanks for helping me.,,,"Spanish Phase 2, Units 1-30 (2003)","13,16"
+60,SP,978-1-4423-5038-0,Spanish 2,3,0:26:12,0:26:15,09R,256,F,Gracias por ayudarme.,3,S,"Spanish Phase 2, Units 1-30 (2003)","13,16"
+61,SP,978-1-4423-5038-0,Spanish 2,3,0:27:05,0:27:06,10Q,264,N,Can you take me there?,,,"Spanish Phase 2, Units 1-30 (2003)",9
+62,SP,978-1-4423-5038-0,Spanish 2,3,0:27:08,0:27:11,10R,265,F,¿Puedes llevarme?,2,Q,"Spanish Phase 2, Units 1-30 (2003)",9
+63,SP,978-1-4423-5038-0,Spanish 2,3,0:28:01,0:28:03,11Q,275,N,How can I get there?,,,"Spanish Phase 2, Units 1-30 (2003)",7
+64,SP,978-1-4423-5038-0,Spanish 2,3,0:28:05,0:28:08,11R,276,F,¿Cómo puedo llegar?,3,Q,"Spanish Phase 2, Units 1-30 (2003)",7
+65,SP,978-1-4423-5038-0,Spanish 2,3,0:29:32,0:29:36,12Q,291,N,"After eating, I can go with you.",,,"Spanish Phase 2, Units 1-30 (2003)",6
+66,SP,978-1-4423-5038-0,Spanish 2,3,0:29:38,0:29:43,12R,292,M,"Después de comer, puedo ir contigo.",6,S,"Spanish Phase 2, Units 1-30 (2003)",6
+67,SP,978-1-4423-5038-0,Spanish 2,4,0:04:14,0:04:15,01Q,53,N,I see her there.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+68,SP,978-1-4423-5038-0,Spanish 2,4,0:04:17,0:04:20,01R,54,M,La veo allí.,3,S,"Spanish Phase 2, Units 1-30 (2003)",9
+69,SP,978-1-4423-5038-0,Spanish 2,4,0:06:40,0:06:42,02Q,78,N,I’m going to visit a friend of mine.,,,"Spanish Phase 2, Units 1-30 (2003)","5,18"
+70,SP,978-1-4423-5038-0,Spanish 2,4,0:06:46,0:06:49,02R,79,M,Voy a visitar a un amigo mío.,7,S,"Spanish Phase 2, Units 1-30 (2003)","5,18"
+71,SP,978-1-4423-5038-0,Spanish 2,4,0:12:42,0:12:44,03Q,132,M,After six a.m.,,,"Spanish Phase 2, Units 1-30 (2003)",12
+72,SP,978-1-4423-5038-0,Spanish 2,4,0:12:48,0:12:51,03R,133,F,Después de las seis de la mañana.,7,S,"Spanish Phase 2, Units 1-30 (2003)",12
+73,SP,978-1-4423-5038-0,Spanish 2,4,0:14:51,0:14:52,04Q,151,N,Yesterday morning.,,,"Spanish Phase 2, Units 1-30 (2003)",17
+74,SP,978-1-4423-5038-0,Spanish 2,4,0:14:55,0:14:57,04R,152,F,Ayer en la mañana.,4,S,"Spanish Phase 2, Units 1-30 (2003)",17
+75,SP,978-1-4423-5038-0,Spanish 2,4,0:17:40,0:17:43,05Q,179,N,I wish to order a beer.,,,"Spanish Phase 2, Units 1-30 (2003)",6
+76,SP,978-1-4423-5038-0,Spanish 2,4,0:17:46,0:17:49,05R,180,M,Quisiera pedir una cerveza.,4,S,"Spanish Phase 2, Units 1-30 (2003)",6
+77,SP,978-1-4423-5038-0,Spanish 2,4,0:18:37,0:18:40,06Q,188,N,Do you like red wine?,,,"Spanish Phase 2, Units 1-30 (2003)",6
+78,SP,978-1-4423-5038-0,Spanish 2,4,0:18:41,0:18:44,06R,189,M,¿Le gusta el vino tinto?,5,Q,"Spanish Phase 2, Units 1-30 (2003)",6
+79,SP,978-1-4423-5038-0,Spanish 2,4,0:20:14,0:20:16,07Q,203,N,I always drink white wine.,,,"Spanish Phase 2, Units 1-30 (2003)",6
+80,SP,978-1-4423-5038-0,Spanish 2,4,0:20:20,0:20:22,07R,204,F,Siempre bebo vino blanco.,4,S,"Spanish Phase 2, Units 1-30 (2003)",6
+81,SP,978-1-4423-5038-0,Spanish 2,4,0:21:30,0:21:32,08Q,216,N,"No, nothing more.",,,"Spanish Phase 2, Units 1-30 (2003)",9
+82,SP,978-1-4423-5038-0,Spanish 2,4,0:21:34,0:21:36,08R,217,F,"No, nada más.",2,S,"Spanish Phase 2, Units 1-30 (2003)",9
+83,SP,978-1-4423-5038-0,Spanish 2,4,0:21:50,0:21:53,09Q,220,N,Never is there enough time!,,,"Spanish Phase 2, Units 1-30 (2003)",17
+84,SP,978-1-4423-5038-0,Spanish 2,4,0:21:56,0:21:59,09R,221,F,¡Nunca hay suficiente tiempo!,4,S,"Spanish Phase 2, Units 1-30 (2003)",17
+85,SP,978-1-4423-5038-0,Spanish 2,4,0:27:49,0:27:51,10Q,281,N,I never drink without eating something.,,,"Spanish Phase 2, Units 1-30 (2003)",6
+86,SP,978-1-4423-5038-0,Spanish 2,4,0:27:54,0:27:57,10R,282,M,Nunca bebo sin comer algo.,5,S,"Spanish Phase 2, Units 1-30 (2003)",6
+87,SP,978-1-4423-5038-0,Spanish 2,4,0:28:23,0:28:25,11Q,287,N,Four p.m.!,,,"Spanish Phase 2, Units 1-30 (2003)",12
+88,SP,978-1-4423-5038-0,Spanish 2,4,0:28:28,0:28:30,11R,288,M,¡Las cuatro de la tarde!,5,S,"Spanish Phase 2, Units 1-30 (2003)",12
+89,SP,978-1-4423-5038-0,Spanish 2,5,0:02:24,0:02:26,01Q,32,N,It’s too early to drink wine.,,,"Spanish Phase 2, Units 1-30 (2003)","6,17"
+90,SP,978-1-4423-5038-0,Spanish 2,5,0:02:31,0:02:35,01R,33,F,Es demasiado temprano para beber vino.,6,S,"Spanish Phase 2, Units 1-30 (2003)","6,17"
+91,SP,978-1-4423-5038-0,Spanish 2,5,0:04:15,0:04:16,02Q,50,N,She’s a friend of mine.,,,"Spanish Phase 2, Units 1-30 (2003)",5
+92,SP,978-1-4423-5038-0,Spanish 2,5,0:04:22,0:04:24,02R,52,M,Es amiga mía.,3,S,"Spanish Phase 2, Units 1-30 (2003)",5
+93,SP,978-1-4423-5038-0,Spanish 2,5,0:05:37,0:05:40,03Q,64,N,Is he also a friend of yours?,,,"Spanish Phase 2, Units 1-30 (2003)",5
+94,SP,978-1-4423-5038-0,Spanish 2,5,0:05:54,0:05:56,03R,65,F,¿También es amigo suyo?,4,Q,"Spanish Phase 2, Units 1-30 (2003)",5
+95,SP,978-1-4423-5038-0,Spanish 2,5,0:07:28,0:07:29,04Q,83,N,I would like to meet him.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+96,SP,978-1-4423-5038-0,Spanish 2,5,0:07:32,0:07:35,04R,84,M,Me gustaría conocerlo.,3,S,"Spanish Phase 2, Units 1-30 (2003)",9
+97,SP,978-1-4423-5038-0,Spanish 2,5,0:09:24,0:09:25,05Q,102,N,He’s a friend of mine.,,,"Spanish Phase 2, Units 1-30 (2003)",5
+98,SP,978-1-4423-5038-0,Spanish 2,5,0:09:27,0:09:29,05R,103,F,Es amigo mío.,3,S,"Spanish Phase 2, Units 1-30 (2003)",5
+99,SP,978-1-4423-5038-0,Spanish 2,5,0:10:20,0:10:23,06Q,113,N,I have to take something to him.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+100,SP,978-1-4423-5038-0,Spanish 2,5,0:10:25,0:10:27,06R,114,F,Tengo que llevarle algo.,4,S,"Spanish Phase 2, Units 1-30 (2003)",9
+101,SP,978-1-4423-5038-0,Spanish 2,5,0:11:21,0:11:23,07Q,122,N,What are you going to buy him?,,,"Spanish Phase 2, Units 1-30 (2003)",14
+102,SP,978-1-4423-5038-0,Spanish 2,5,0:11:25,0:11:28,07R,123,M,¿Qué va a comprarle?,4,Q,"Spanish Phase 2, Units 1-30 (2003)",14
+103,SP,978-1-4423-5038-0,Spanish 2,5,0:16:30,0:16:31,08Q,173,N,We don’t like beer.,,,"Spanish Phase 2, Units 1-30 (2003)",6
+104,SP,978-1-4423-5038-0,Spanish 2,5,0:16:34,0:16:37,08R,174,F,No nos gusta la cerveza.,5,S,"Spanish Phase 2, Units 1-30 (2003)",6
+105,SP,978-1-4423-5038-0,Spanish 2,5,0:20:07,0:20:09,09Q,208,N,Since when?,,,"Spanish Phase 2, Units 1-30 (2003)",7
+106,SP,978-1-4423-5038-0,Spanish 2,5,0:20:11,0:20:13,09R,209,M,¿Desde cuándo?,2,Q,"Spanish Phase 2, Units 1-30 (2003)",7
+107,SP,978-1-4423-5038-0,Spanish 2,5,0:22:42,0:22:44,10Q,233,N,We’d like to see more.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+108,SP,978-1-4423-5038-0,Spanish 2,5,0:22:47,0:22:49,10R,234,F,Nos gustaría ver más.,4,S,"Spanish Phase 2, Units 1-30 (2003)",9
+109,SP,978-1-4423-5038-0,Spanish 2,5,0:24:03,0:24:05,11Q,245,N,How long are you going to stay?,,,"Spanish Phase 2, Units 1-30 (2003)",18
+110,SP,978-1-4423-5038-0,Spanish 2,5,0:24:08,0:24:11,11R,246,M,¿Cuánto tiempo van a quedarse?,5,Q,"Spanish Phase 2, Units 1-30 (2003)",18
+111,SP,978-1-4423-5038-0,Spanish 2,6,0:02:17,0:02:18,01Q,38,N,I’d like to meet her.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+112,SP,978-1-4423-5038-0,Spanish 2,6,0:02:21,0:02:25,01R,39,F,Me gustaría conocerla.,3,S,"Spanish Phase 2, Units 1-30 (2003)",9
+113,SP,978-1-4423-5038-0,Spanish 2,6,0:04:00,0:04:02,02Q,54,N,Would you (pl.) like to come tomorrow?,,,"Spanish Phase 2, Units 1-30 (2003)",17
+114,SP,978-1-4423-5038-0,Spanish 2,6,0:04:06,0:04:09,02R,55,F,¿Les gustaría venir mañana?,4,Q,"Spanish Phase 2, Units 1-30 (2003)",17
+115,SP,978-1-4423-5038-0,Spanish 2,6,0:06:02,0:06:04,03Q,75,N,I wish to order a white wine.,,,"Spanish Phase 2, Units 1-30 (2003)",6
+116,SP,978-1-4423-5038-0,Spanish 2,6,0:06:07,0:06:10,03R,76,F,Quisiera pedir un vino blanco.,5,S,"Spanish Phase 2, Units 1-30 (2003)",6
+117,SP,978-1-4423-5038-0,Spanish 2,6,0:06:49,0:06:51,04Q,84,N,Do you see that man over there?,,,"Spanish Phase 2, Units 1-30 (2003)",4
+118,SP,978-1-4423-5038-0,Spanish 2,6,0:06:54,0:06:57,04R,85,F,¿Ve a ese hombre allí?,5,Q,"Spanish Phase 2, Units 1-30 (2003)",4
+119,SP,978-1-4423-5038-0,Spanish 2,6,0:07:19,0:07:21,05Q,88,N,I’d like to meet him.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+120,SP,978-1-4423-5038-0,Spanish 2,6,0:07:23,0:07:26,05R,89,F,Me gustaría conocerlo.,3,S,"Spanish Phase 2, Units 1-30 (2003)",9
+121,SP,978-1-4423-5038-0,Spanish 2,6,0:12:32,0:12:34,06Q,135,N,I’m only going to stay until next week.,,,"Spanish Phase 2, Units 1-30 (2003)",18
+122,SP,978-1-4423-5038-0,Spanish 2,6,0:12:39,0:12:44,06R,136,M,Sólo voy a quedarme hasta la semana entrante.,8,S,"Spanish Phase 2, Units 1-30 (2003)",18
+123,SP,978-1-4423-5038-0,Spanish 2,6,0:16:58,0:17:00,07Q,175,N,Do you travel a lot?,,,"Spanish Phase 2, Units 1-30 (2003)",18
+124,SP,978-1-4423-5038-0,Spanish 2,6,0:17:02,0:17:04,07R,176,F,¿Viaja mucho?,3,Q,"Spanish Phase 2, Units 1-30 (2003)",18
+125,SP,978-1-4423-5038-0,Spanish 2,6,0:17:56,0:17:58,08Q,184,N,Sometimes I have to travel.,,,"Spanish Phase 2, Units 1-30 (2003)",18
+126,SP,978-1-4423-5038-0,Spanish 2,6,0:18:02,0:18:04,08R,185,M,A veces tengo que viajar.,5,S,"Spanish Phase 2, Units 1-30 (2003)",18
+127,SP,978-1-4423-5038-0,Spanish 2,6,0:22:52,0:22:54,09Q,229,N,How nice!,,,"Spanish Phase 2, Units 1-30 (2003)","7,13"
+128,SP,978-1-4423-5038-0,Spanish 2,6,0:22:56,0:22:57,09R,230,F,¡Qué bien!,2,S,"Spanish Phase 2, Units 1-30 (2003)","7,13"
+129,SP,978-1-4423-5038-0,Spanish 2,6,0:25:58,0:26:02,10Q,261,N,"I don’t know. Literally, I don’t know it.",,,"Spanish Phase 2, Units 1-30 (2003)",9
+130,SP,978-1-4423-5038-0,Spanish 2,6,0:26:04,0:26:06,10R,262,M,No lo sé.,2,S,"Spanish Phase 2, Units 1-30 (2003)",9
+131,SP,978-1-4423-5038-0,Spanish 2,6,0:26:13,0:26:15,11Q,263,N,But I know where she’s going to stay.,,,"Spanish Phase 2, Units 1-30 (2003)",18
+132,SP,978-1-4423-5038-0,Spanish 2,6,0:26:19,0:26:22,11R,264,M,Pero sé dónde va a quedarse.,6,S,"Spanish Phase 2, Units 1-30 (2003)",18
+133,SP,978-1-4423-5038-0,Spanish 2,7,0:03:34,0:03:37,01Q,45,N,I can’t stay a long time.,,,"Spanish Phase 2, Units 1-30 (2003)","17,18"
+134,SP,978-1-4423-5038-0,Spanish 2,7,0:03:40,0:03:43,01R,46,M,No puedo quedarme mucho tiempo.,5,S,"Spanish Phase 2, Units 1-30 (2003)","17,18"
+135,SP,978-1-4423-5038-0,Spanish 2,7,0:04:35,0:04:37,02Q,55,N,You travel a lot!,,,"Spanish Phase 2, Units 1-30 (2003)",18
+136,SP,978-1-4423-5038-0,Spanish 2,7,0:04:39,0:04:41,02R,56,M,¡Viaja mucho!,2,S,"Spanish Phase 2, Units 1-30 (2003)",18
+137,SP,978-1-4423-5038-0,Spanish 2,7,0:07:06,0:07:08,03Q,81,N,I wish to order a coffee.,,,"Spanish Phase 2, Units 1-30 (2003)","6,16"
+138,SP,978-1-4423-5038-0,Spanish 2,7,0:07:11,0:07:13,03R,82,F,Quisiera pedir un café.,4,S,"Spanish Phase 2, Units 1-30 (2003)","6,16"
+139,SP,978-1-4423-5038-0,Spanish 2,7,0:07:35,0:07:36,04Q,86,N,I’m hungry.,,,"Spanish Phase 2, Units 1-30 (2003)","6,16"
+140,SP,978-1-4423-5038-0,Spanish 2,7,0:07:38,0:07:40,04R,87,F,Tengo hambre.,2,S,"Spanish Phase 2, Units 1-30 (2003)","6,16"
+141,SP,978-1-4423-5038-0,Spanish 2,7,0:08:20,0:08:22,05Q,96,N,You should eat.,,,"Spanish Phase 2, Units 1-30 (2003)",6
+142,SP,978-1-4423-5038-0,Spanish 2,7,0:08:24,0:08:25,05R,97,M,Debe comer.,2,S,"Spanish Phase 2, Units 1-30 (2003)",6
+143,SP,978-1-4423-5038-0,Spanish 2,7,0:12:49,0:12:52,06Q,140,N,I’m going to visit her next week.,,,"Spanish Phase 2, Units 1-30 (2003)",18
+144,SP,978-1-4423-5038-0,Spanish 2,7,0:12:55,0:12:59,06R,141,F,Voy a visitarla la semana entrante.,6,S,"Spanish Phase 2, Units 1-30 (2003)",18
+145,SP,978-1-4423-5038-0,Spanish 2,7,0:13:14,0:13:17,07Q,144,N,I’m going to stay four days.,,,"Spanish Phase 2, Units 1-30 (2003)","12,18"
+146,SP,978-1-4423-5038-0,Spanish 2,7,0:13:20,0:13:23,07R,145,F,Voy a quedarme cuatro días.,5,S,"Spanish Phase 2, Units 1-30 (2003)","12,18"
+147,SP,978-1-4423-5038-0,Spanish 2,7,0:14:30,0:14:32,08Q,157,N,Sometimes we like to travel.,,,"Spanish Phase 2, Units 1-30 (2003)",18
+148,SP,978-1-4423-5038-0,Spanish 2,7,0:14:36,0:14:38,08R,158,F,A veces nos gusta viajar.,5,S,"Spanish Phase 2, Units 1-30 (2003)",18
+149,SP,978-1-4423-5038-0,Spanish 2,7,0:17:56,0:17:59,09Q,188,N,"Another co-worker, John, arrives tomorrow.",,,"Spanish Phase 2, Units 1-30 (2003)","17,18,20"
+150,SP,978-1-4423-5038-0,Spanish 2,7,0:18:04,0:18:09,09R,189,M,"Otro compañero de trabajo, John, llega mañana.",7,S,"Spanish Phase 2, Units 1-30 (2003)","17,18,20"
+151,SP,978-1-4423-5038-0,Spanish 2,7,0:18:14,0:18:16,10Q,190,N,I work with them.,,,"Spanish Phase 2, Units 1-30 (2003)",20
+152,SP,978-1-4423-5038-0,Spanish 2,7,0:18:18,0:18:20,10R,191,M,Trabajo con ellos.,3,S,"Spanish Phase 2, Units 1-30 (2003)",20
+153,SP,978-1-4423-5038-0,Spanish 2,8,0:03:12,0:03:15,01Q,43,N,"Excuse me, but I should leave now.",,,"Spanish Phase 2, Units 1-30 (2003)","13,16,17"
+154,SP,978-1-4423-5038-0,Spanish 2,8,0:03:18,0:03:21,01R,44,M,"Perdón, pero debo irme ahora.",5,S,"Spanish Phase 2, Units 1-30 (2003)","13,16,17"
+155,SP,978-1-4423-5038-0,Spanish 2,8,0:03:26,0:03:29,02Q,45,N,They arrive in an hour.,,,"Spanish Phase 2, Units 1-30 (2003)","17,18"
+156,SP,978-1-4423-5038-0,Spanish 2,8,0:03:31,0:03:33,02R,46,M,Llegan en una hora.,4,S,"Spanish Phase 2, Units 1-30 (2003)","17,18"
+157,SP,978-1-4423-5038-0,Spanish 2,8,0:05:41,0:05:43,03Q,68,N,He’s going to the U.S.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+158,SP,978-1-4423-5038-0,Spanish 2,8,0:05:47,0:05:50,03R,69,F,Va a los Estados Unidos.,5,S,"Spanish Phase 2, Units 1-30 (2003)",9
+159,SP,978-1-4423-5038-0,Spanish 2,8,0:06:24,0:06:26,04Q,76,N,They travel a lot.,,,"Spanish Phase 2, Units 1-30 (2003)",18
+160,SP,978-1-4423-5038-0,Spanish 2,8,0:06:28,0:06:31,04R,77,F,Viajan mucho.,2,S,"Spanish Phase 2, Units 1-30 (2003)",18
+161,SP,978-1-4423-5038-0,Spanish 2,8,0:09:02,0:09:04,05Q,99,N,I have a gift.,,,"Spanish Phase 2, Units 1-30 (2003)",14
+162,SP,978-1-4423-5038-0,Spanish 2,8,0:09:06,0:09:08,05R,100,F,Tengo un regalo.,3,S,"Spanish Phase 2, Units 1-30 (2003)",14
+163,SP,978-1-4423-5038-0,Spanish 2,8,0:10:23,0:10:25,06Q,115,N,I have a T-shirt for my friend.,,,"Spanish Phase 2, Units 1-30 (2003)","5,14"
+164,SP,978-1-4423-5038-0,Spanish 2,8,0:10:29,0:10:32,06R,116,F,Tengo una camiseta para mi amiga.,6,S,"Spanish Phase 2, Units 1-30 (2003)","5,14"
+165,SP,978-1-4423-5038-0,Spanish 2,8,0:13:23,0:13:25,07Q,149,N,A gift for my daughter.,,,"Spanish Phase 2, Units 1-30 (2003)","5,14"
+166,SP,978-1-4423-5038-0,Spanish 2,8,0:13:27,0:13:29,07R,150,M,Un regalo para mi hija.,5,S,"Spanish Phase 2, Units 1-30 (2003)","5,14"
+167,SP,978-1-4423-5038-0,Spanish 2,8,0:14:33,0:14:35,08Q,160,N,How many children do you have?,,,"Spanish Phase 2, Units 1-30 (2003)",5
+168,SP,978-1-4423-5038-0,Spanish 2,8,0:14:37,0:14:40,08R,161,F,¿Cuántos hijos tiene?,3,Q,"Spanish Phase 2, Units 1-30 (2003)",5
+169,SP,978-1-4423-5038-0,Spanish 2,8,0:15:10,0:15:13,09Q,167,N,I’m going to buy something for my children.,,,"Spanish Phase 2, Units 1-30 (2003)","5,14"
+170,SP,978-1-4423-5038-0,Spanish 2,8,0:15:17,0:15:20,09R,168,M,Voy a comprar algo para mis hijos.,7,S,"Spanish Phase 2, Units 1-30 (2003)","5,14"
+171,SP,978-1-4423-5038-0,Spanish 2,8,0:17:15,0:17:18,10Q,188,N,Can you take me to a store?,,,"Spanish Phase 2, Units 1-30 (2003)",14
+172,SP,978-1-4423-5038-0,Spanish 2,8,0:17:21,0:17:24,10R,189,M,¿Puede llevarme a una tienda?,5,Q,"Spanish Phase 2, Units 1-30 (2003)",14
+173,SP,978-1-4423-5038-0,Spanish 2,9,0:02:15,0:02:18,01Q,32,N,Only just a little.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+174,SP,978-1-4423-5038-0,Spanish 2,9,0:02:20,0:02:23,01R,33,M,Sólo un poquito.,3,S,"Spanish Phase 2, Units 1-30 (2003)",9
+175,SP,978-1-4423-5038-0,Spanish 2,9,0:02:29,0:02:33,02Q,34,N,With whom have you spoken?,,,"Spanish Phase 2, Units 1-30 (2003)",9
+176,SP,978-1-4423-5038-0,Spanish 2,9,0:02:34,0:02:37,02R,35,M,¿Con quién ha hablado?,4,Q,"Spanish Phase 2, Units 1-30 (2003)",9
+177,SP,978-1-4423-5038-0,Spanish 2,9,0:06:12,0:06:14,03Q,71,N,We’re going by plane.,,,"Spanish Phase 2, Units 1-30 (2003)",18
+178,SP,978-1-4423-5038-0,Spanish 2,9,0:06:16,0:06:19,03R,72,M,Vamos en avión.,3,S,"Spanish Phase 2, Units 1-30 (2003)",18
+179,SP,978-1-4423-5038-0,Spanish 2,9,0:07:07,0:07:09,04Q,81,N,Are the stores open?,,,"Spanish Phase 2, Units 1-30 (2003)","14,16"
+180,SP,978-1-4423-5038-0,Spanish 2,9,0:07:11,0:07:14,04R,82,F,¿Están abiertas las tiendas?,4,Q,"Spanish Phase 2, Units 1-30 (2003)","14,16"
+181,SP,978-1-4423-5038-0,Spanish 2,9,0:08:20,0:08:24,05Q,93,N,The stores are open until six.,,,"Spanish Phase 2, Units 1-30 (2003)","12,14"
+182,SP,978-1-4423-5038-0,Spanish 2,9,0:08:28,0:08:33,05R,94,M,Las tiendas están abiertas hasta las seis.,7,S,"Spanish Phase 2, Units 1-30 (2003)","12,14"
+183,SP,978-1-4423-5038-0,Spanish 2,9,0:09:20,0:09:23,06Q,101,N,How many children do you (pl) have?,,,"Spanish Phase 2, Units 1-30 (2003)",5
+184,SP,978-1-4423-5038-0,Spanish 2,9,0:09:25,0:09:28,06R,102,M,¿Cuántos hijos tienen?,3,Q,"Spanish Phase 2, Units 1-30 (2003)",5
+185,SP,978-1-4423-5038-0,Spanish 2,9,0:12:19,0:12:22,07Q,129,N,The plane departs tomorrow morning.,,,"Spanish Phase 2, Units 1-30 (2003)","14,17,18"
+186,SP,978-1-4423-5038-0,Spanish 2,9,0:12:25,0:12:30,07R,130,F,El avión sale mañana en la mañana.,7,S,"Spanish Phase 2, Units 1-30 (2003)","14,17,18"
+187,SP,978-1-4423-5038-0,Spanish 2,9,0:15:11,0:15:14,08Q,156,N,At what time does the plane depart?,,,"Spanish Phase 2, Units 1-30 (2003)","14,16,17,18"
+188,SP,978-1-4423-5038-0,Spanish 2,9,0:15:20,0:15:24,08R,158,M,¿A qué hora sale el avión?,6,Q,"Spanish Phase 2, Units 1-30 (2003)","14,16,17,18"
+189,SP,978-1-4423-5038-0,Spanish 2,9,0:16:26,0:16:30,09Q,169,N,Therefore I have to buy the gifts now.,,,"Spanish Phase 2, Units 1-30 (2003)","14,17"
+190,SP,978-1-4423-5038-0,Spanish 2,9,0:16:33,0:16:38,09R,170,F,Así que tengo que comprar los regalos ahora.,8,S,"Spanish Phase 2, Units 1-30 (2003)","14,17"
+191,SP,978-1-4423-5038-0,Spanish 2,9,0:18:07,0:18:09,10Q,187,N,You can buy them in many stores.,,,"Spanish Phase 2, Units 1-30 (2003)",14
+192,SP,978-1-4423-5038-0,Spanish 2,9,0:18:13,0:18:17,10R,188,M,Puede comprarlas en muchas tiendas.,5,S,"Spanish Phase 2, Units 1-30 (2003)",14
+193,SP,978-1-4423-5038-0,Spanish 2,9,0:21:21,0:21:23,11Q,213,N,You have to send a letter?,,,"Spanish Phase 2, Units 1-30 (2003)",3
+194,SP,978-1-4423-5038-0,Spanish 2,9,0:21:26,0:21:29,11R,214,M,¿Tiene que enviar una carta?,5,Q,"Spanish Phase 2, Units 1-30 (2003)",3
+195,SP,978-1-4423-5038-0,Spanish 2,9,0:23:10,0:23:13,12Q,232,N,I have to tell him something.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+196,SP,978-1-4423-5038-0,Spanish 2,9,0:23:15,0:23:19,12R,233,F,Tengo que decirle algo.,4,S,"Spanish Phase 2, Units 1-30 (2003)",9
+197,SP,978-1-4423-5038-0,Spanish 2,10,0:04:21,0:04:23,01Q,56,N,Would you like to go to the movies?,,,"Spanish Phase 2, Units 1-30 (2003)",1
+198,SP,978-1-4423-5038-0,Spanish 2,10,0:04:26,0:04:28,01R,57,M,¿Te gustaría ir al cine?,5,Q,"Spanish Phase 2, Units 1-30 (2003)",1
+199,SP,978-1-4423-5038-0,Spanish 2,10,0:04:43,0:04:45,02Q,60,N,When would you like to go?,,,"Spanish Phase 2, Units 1-30 (2003)",7
+200,SP,978-1-4423-5038-0,Spanish 2,10,0:04:47,0:04:50,02R,61,F,¿Cuándo te gustaría ir?,4,Q,"Spanish Phase 2, Units 1-30 (2003)",7
+201,SP,978-1-4423-5038-0,Spanish 2,10,0:05:19,0:05:21,03Q,66,N,Can you go on Saturday?,,,"Spanish Phase 2, Units 1-30 (2003)",17
+202,SP,978-1-4423-5038-0,Spanish 2,10,0:05:24,0:05:27,03R,67,M,¿Puedes ir el sábado?,4,Q,"Spanish Phase 2, Units 1-30 (2003)",17
+203,SP,978-1-4423-5038-0,Spanish 2,10,0:06:15,0:06:17,04Q,75,N,I have a lot to do.,,,"Spanish Phase 2, Units 1-30 (2003)",7
+204,SP,978-1-4423-5038-0,Spanish 2,10,0:06:20,0:06:22,04R,76,F,Tengo mucho que hacer.,4,S,"Spanish Phase 2, Units 1-30 (2003)",7
+205,SP,978-1-4423-5038-0,Spanish 2,10,0:07:41,0:07:43,05Q,90,N,The film starts at seven.,,,"Spanish Phase 2, Units 1-30 (2003)","1,12"
+206,SP,978-1-4423-5038-0,Spanish 2,10,0:07:45,0:07:48,05R,91,M,La película comienza a las siete.,6,S,"Spanish Phase 2, Units 1-30 (2003)","1,12"
+207,SP,978-1-4423-5038-0,Spanish 2,10,0:11:01,0:11:03,06Q,122,N,Before Monday.,,,"Spanish Phase 2, Units 1-30 (2003)",17
+208,SP,978-1-4423-5038-0,Spanish 2,10,0:11:05,0:11:07,06R,123,F,Antes del lunes.,3,S,"Spanish Phase 2, Units 1-30 (2003)",17
+209,SP,978-1-4423-5038-0,Spanish 2,10,0:14:21,0:14:24,07Q,158,N,I can’t buy the hat on Monday.,,,"Spanish Phase 2, Units 1-30 (2003)","14,17"
+210,SP,978-1-4423-5038-0,Spanish 2,10,0:14:28,0:14:31,07R,159,F,No puedo comprar el sombrero el lunes.,7,S,"Spanish Phase 2, Units 1-30 (2003)","14,17"
+211,SP,978-1-4423-5038-0,Spanish 2,10,0:17:10,0:17:12,08Q,184,N,A pretty hat.,,,"Spanish Phase 2, Units 1-30 (2003)",14
+212,SP,978-1-4423-5038-0,Spanish 2,10,0:17:14,0:17:17,08R,185,F,Un sombrero bonito.,3,S,"Spanish Phase 2, Units 1-30 (2003)",14
+213,SP,978-1-4423-5038-0,Spanish 2,10,0:17:55,0:17:58,09Q,192,N,The stores are open on Saturday.,,,"Spanish Phase 2, Units 1-30 (2003)","14,17"
+214,SP,978-1-4423-5038-0,Spanish 2,10,0:18:01,0:18:05,09R,193,F,Las tiendas están abiertas el sábado.,6,S,"Spanish Phase 2, Units 1-30 (2003)","14,17"
+215,SP,978-1-4423-5038-0,Spanish 2,10,0:18:47,0:18:48,10Q,200,N,Hopefully.,,,"Spanish Phase 2, Units 1-30 (2003)","7,13"
+216,SP,978-1-4423-5038-0,Spanish 2,10,0:18:50,0:18:52,10R,201,F,Ojalá que sí.,3,S,"Spanish Phase 2, Units 1-30 (2003)","7,13"
+217,SP,978-1-4423-5038-0,Spanish 2,11,0:03:43,0:03:45,01Q,47,N,I’d like to see a film.,,,"Spanish Phase 2, Units 1-30 (2003)",1
+218,SP,978-1-4423-5038-0,Spanish 2,11,0:03:48,0:03:51,01R,48,M,Me gustaría ver una película.,5,S,"Spanish Phase 2, Units 1-30 (2003)",1
+219,SP,978-1-4423-5038-0,Spanish 2,11,0:04:52,0:04:56,02Q,58,N,Would you like to go with me on Saturday?,,,"Spanish Phase 2, Units 1-30 (2003)",17
+220,SP,978-1-4423-5038-0,Spanish 2,11,0:04:59,0:05:03,02R,59,M,¿Le gustaría ir conmigo él sábado?,6,Q,"Spanish Phase 2, Units 1-30 (2003)",17
+221,SP,978-1-4423-5038-0,Spanish 2,11,0:05:07,0:05:09,03Q,60,N,When does the film start?,,,"Spanish Phase 2, Units 1-30 (2003)",1
+222,SP,978-1-4423-5038-0,Spanish 2,11,0:05:15,0:05:18,03R,61,F,¿Cuándo comienza la película?,4,Q,"Spanish Phase 2, Units 1-30 (2003)",1
+223,SP,978-1-4423-5038-0,Spanish 2,11,0:07:27,0:07:30,04Q,85,N,She’s going to be in Mexico next week.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+224,SP,978-1-4423-5038-0,Spanish 2,11,0:07:34,0:07:37,04R,86,M,Va a estar en México la semana entrante.,7,S,"Spanish Phase 2, Units 1-30 (2003)",9
+225,SP,978-1-4423-5038-0,Spanish 2,11,0:07:56,0:07:57,05Q,89,N,She would like to visit me.,,,"Spanish Phase 2, Units 1-30 (2003)",18
+226,SP,978-1-4423-5038-0,Spanish 2,11,0:08:00,0:08:03,05R,90,F,Le gustaría visitarme.,3,S,"Spanish Phase 2, Units 1-30 (2003)",18
+227,SP,978-1-4423-5038-0,Spanish 2,11,0:08:34,0:08:36,06Q,95,N,She’s very nice.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+228,SP,978-1-4423-5038-0,Spanish 2,11,0:08:38,0:08:40,06R,96,M,Es muy simpática.,3,S,"Spanish Phase 2, Units 1-30 (2003)",9
+229,SP,978-1-4423-5038-0,Spanish 2,11,0:10:17,0:10:19,07Q,112,N,Could Mrs. Elders come?,,,"Spanish Phase 2, Units 1-30 (2003)",9
+230,SP,978-1-4423-5038-0,Spanish 2,11,0:10:25,0:10:28,07R,114,F,¿La señora Elders podría venir?,5,Q,"Spanish Phase 2, Units 1-30 (2003)",9
+231,SP,978-1-4423-5038-0,Spanish 2,11,0:11:39,0:11:41,08Q,124,N,Thanks for inviting us.,,,"Spanish Phase 2, Units 1-30 (2003)","13,16"
+232,SP,978-1-4423-5038-0,Spanish 2,11,0:11:43,0:11:46,08R,125,M,Gracias por invitarnos.,3,S,"Spanish Phase 2, Units 1-30 (2003)","13,16"
+233,SP,978-1-4423-5038-0,Spanish 2,11,0:15:00,0:15:01,09Q,156,N,He went to eat.,,,"Spanish Phase 2, Units 1-30 (2003)",6
+234,SP,978-1-4423-5038-0,Spanish 2,11,0:15:04,0:15:05,09R,157,F,Fue a comer.,2,S,"Spanish Phase 2, Units 1-30 (2003)",6
+235,SP,978-1-4423-5038-0,Spanish 2,11,0:21:03,0:21:05,10Q,214,N,I went to Spain last month.,,,"Spanish Phase 2, Units 1-30 (2003)","17,18"
+236,SP,978-1-4423-5038-0,Spanish 2,11,0:21:09,0:21:12,10R,215,M,Fui a España el mes pasado.,5,S,"Spanish Phase 2, Units 1-30 (2003)","17,18"
+237,SP,978-1-4423-5038-0,Spanish 2,12,0:02:51,0:02:53,01Q,37,N,I don’t like sweet wine.,,,"Spanish Phase 2, Units 1-30 (2003)",6
+238,SP,978-1-4423-5038-0,Spanish 2,12,0:02:56,0:02:59,01R,38,F,No me gusta el vino dulce.,6,S,"Spanish Phase 2, Units 1-30 (2003)",6
+239,SP,978-1-4423-5038-0,Spanish 2,12,0:07:50,0:07:52,02Q,89,N,She’s going on vacation,,,"Spanish Phase 2, Units 1-30 (2003)",18
+240,SP,978-1-4423-5038-0,Spanish 2,12,0:07:55,0:07:57,02R,90,M,Va de vacaciones.,5,S,"Spanish Phase 2, Units 1-30 (2003)",18
+241,SP,978-1-4423-5038-0,Spanish 2,12,0:10:28,0:10:30,03Q,119,N,I liked Spain.,,,"Spanish Phase 2, Units 1-30 (2003)","9,18"
+242,SP,978-1-4423-5038-0,Spanish 2,12,0:10:32,0:10:35,03R,120,F,Me gustó España.,3,S,"Spanish Phase 2, Units 1-30 (2003)","9,18"
+243,SP,978-1-4423-5038-0,Spanish 2,12,0:12:53,0:12:55,04Q,140,N,Do you have an idea?,,,"Spanish Phase 2, Units 1-30 (2003)",9
+244,SP,978-1-4423-5038-0,Spanish 2,12,0:12:57,0:12:59,04R,141,M,¿Tienes una idea?,3,Q,"Spanish Phase 2, Units 1-30 (2003)",9
+245,SP,978-1-4423-5038-0,Spanish 2,12,0:15:40,0:15:42,05Q,167,N,We could buy them T-shirts.,,,"Spanish Phase 2, Units 1-30 (2003)",14
+246,SP,978-1-4423-5038-0,Spanish 2,12,0:15:46,0:15:50,05R,168,M,Podríamos comprarles camisetas.,3,S,"Spanish Phase 2, Units 1-30 (2003)",14
+247,SP,978-1-4423-5038-0,Spanish 2,12,0:18:34,0:18:36,06Q,195,N,We have to look at the T-shirts.,,,"Spanish Phase 2, Units 1-30 (2003)",14
+248,SP,978-1-4423-5038-0,Spanish 2,12,0:18:39,0:18:43,06R,196,F,Tenemos que mirar las camisetas.,5,S,"Spanish Phase 2, Units 1-30 (2003)",14
+249,SP,978-1-4423-5038-0,Spanish 2,12,0:19:34,0:19:35,07Q,206,N,On Friday.,,,"Spanish Phase 2, Units 1-30 (2003)",17
+250,SP,978-1-4423-5038-0,Spanish 2,12,0:19:37,0:19:39,07R,207,M,El viernes.,2,S,"Spanish Phase 2, Units 1-30 (2003)",17
+251,SP,978-1-4423-5038-0,Spanish 2,12,0:25:17,0:25:20,08Q,259,N,I liked the store a lot.,,,"Spanish Phase 2, Units 1-30 (2003)",14
+252,SP,978-1-4423-5038-0,Spanish 2,12,0:25:22,0:25:25,08R,260,F,Me gustó la tienda mucho.,5,S,"Spanish Phase 2, Units 1-30 (2003)",14
+253,SP,978-1-4423-5038-0,Spanish 2,12,0:26:47,0:26:50,09Q,275,N,I’ve known her since January.,,,"Spanish Phase 2, Units 1-30 (2003)",17
+254,SP,978-1-4423-5038-0,Spanish 2,12,0:26:55,0:26:58,09R,276,M,La conozco desde enero.,4,S,"Spanish Phase 2, Units 1-30 (2003)",17
+255,SP,978-1-4423-5038-0,Spanish 2,12,0:28:13,0:28:16,10Q,287,N,We could go in my car.,,,"Spanish Phase 2, Units 1-30 (2003)",18
+256,SP,978-1-4423-5038-0,Spanish 2,12,0:28:19,0:28:22,10R,288,F,Podríamos ir en mi coche.,5,S,"Spanish Phase 2, Units 1-30 (2003)",18
+257,SP,978-1-4423-5038-0,Spanish 2,13,0:02:24,0:02:27,01Q,38,N,She likes to look at things.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+258,SP,978-1-4423-5038-0,Spanish 2,13,0:02:29,0:02:33,01R,39,M,Le gusta mirar cosas.,4,S,"Spanish Phase 2, Units 1-30 (2003)",9
+259,SP,978-1-4423-5038-0,Spanish 2,13,0:03:22,0:03:24,02Q,48,N,I went to see a film.,,,"Spanish Phase 2, Units 1-30 (2003)",1
+260,SP,978-1-4423-5038-0,Spanish 2,13,0:03:27,0:03:29,02R,49,M,Fui a ver una película.,4,S,"Spanish Phase 2, Units 1-30 (2003)",1
+261,SP,978-1-4423-5038-0,Spanish 2,13,0:05:47,0:05:49,03Q,69,N,Could you go next Thursday?,,,"Spanish Phase 2, Units 1-30 (2003)",17
+262,SP,978-1-4423-5038-0,Spanish 2,13,0:05:52,0:05:56,03R,70,M,¿Podrías ir el jueves entrante?,5,Q,"Spanish Phase 2, Units 1-30 (2003)",17
+263,SP,978-1-4423-5038-0,Spanish 2,13,0:07:25,0:07:27,04Q,85,N,I want to be at home early.,,,"Spanish Phase 2, Units 1-30 (2003)",17
+264,SP,978-1-4423-5038-0,Spanish 2,13,0:07:30,0:07:33,04R,86,F,Quiero estar en casa temprano.,5,S,"Spanish Phase 2, Units 1-30 (2003)",17
+265,SP,978-1-4423-5038-0,Spanish 2,13,0:08:27,0:08:31,05Q,95,N,I’m leaving on Friday morning.,,,"Spanish Phase 2, Units 1-30 (2003)","17,18"
+266,SP,978-1-4423-5038-0,Spanish 2,13,0:08:32,0:08:36,05R,96,F,Me voy el viernes en la mañana.,7,S,"Spanish Phase 2, Units 1-30 (2003)","17,18"
+267,SP,978-1-4423-5038-0,Spanish 2,13,0:08:53,0:08:54,06Q,99,N,More or less.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+268,SP,978-1-4423-5038-0,Spanish 2,13,0:08:56,0:08:58,06R,100,M,Más o menos.,3,S,"Spanish Phase 2, Units 1-30 (2003)",9
+269,SP,978-1-4423-5038-0,Spanish 2,13,0:12:21,0:12:23,07Q,131,N,"Yes, I liked the music.",,,"Spanish Phase 2, Units 1-30 (2003)",9
+270,SP,978-1-4423-5038-0,Spanish 2,13,0:12:25,0:12:28,07R,132,M,"Sí, me gustó la música.",4,S,"Spanish Phase 2, Units 1-30 (2003)",9
+271,SP,978-1-4423-5038-0,Spanish 2,13,0:13:24,0:13:26,08Q,142,N,We went together.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+272,SP,978-1-4423-5038-0,Spanish 2,13,0:13:28,0:13:30,08R,143,M,Fuimos juntos.,2,S,"Spanish Phase 2, Units 1-30 (2003)",9
+273,SP,978-1-4423-5038-0,Spanish 2,13,0:14:17,0:14:19,09Q,150,N,She didn’t like the music.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+274,SP,978-1-4423-5038-0,Spanish 2,13,0:14:22,0:14:24,09R,151,M,No le gustó la música.,5,S,"Spanish Phase 2, Units 1-30 (2003)",9
+275,SP,978-1-4423-5038-0,Spanish 2,13,0:18:08,0:18:10,10Q,186,N,It ended very late.,,,"Spanish Phase 2, Units 1-30 (2003)",17
+276,SP,978-1-4423-5038-0,Spanish 2,13,0:18:12,0:18:14,10R,187,M,Terminó muy tarde.,3,S,"Spanish Phase 2, Units 1-30 (2003)",17
+277,SP,978-1-4423-5038-0,Spanish 2,14,0:01:38,0:01:39,01Q,28,N,We went to a concert.,,,"Spanish Phase 2, Units 1-30 (2003)",1
+278,SP,978-1-4423-5038-0,Spanish 2,14,0:01:44,0:01:46,01R,29,F,Fuimos a un concierto.,3,S,"Spanish Phase 2, Units 1-30 (2003)",1
+279,SP,978-1-4423-5038-0,Spanish 2,14,0:02:46,0:02:49,02Q,39,N,Sometimes the music was beautiful.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+280,SP,978-1-4423-5038-0,Spanish 2,14,0:02:52,0:02:55,02R,40,F,A veces la música fue bonita.,6,S,"Spanish Phase 2, Units 1-30 (2003)",9
+281,SP,978-1-4423-5038-0,Spanish 2,14,0:04:04,0:04:06,03Q,52,N,Where is a music store?,,,"Spanish Phase 2, Units 1-30 (2003)","4,14"
+282,SP,978-1-4423-5038-0,Spanish 2,14,0:04:12,0:04:16,03R,54,F,¿Dónde queda una tienda de música?,6,Q,"Spanish Phase 2, Units 1-30 (2003)","4,14"
+283,SP,978-1-4423-5038-0,Spanish 2,14,0:06:44,0:06:47,04Q,80,N,Friday was an important day for me.,,,"Spanish Phase 2, Units 1-30 (2003)",17
+284,SP,978-1-4423-5038-0,Spanish 2,14,0:06:51,0:06:55,04R,81,F,El viernes fue un día importante para mí.,8,S,"Spanish Phase 2, Units 1-30 (2003)",17
+285,SP,978-1-4423-5038-0,Spanish 2,14,0:09:20,0:09:22,05Q,106,N,But it’s better by taxi.,,,"Spanish Phase 2, Units 1-30 (2003)",18
+286,SP,978-1-4423-5038-0,Spanish 2,14,0:09:24,0:09:26,05R,107,M,Pero es mejor en taxi.,5,S,"Spanish Phase 2, Units 1-30 (2003)",18
+287,SP,978-1-4423-5038-0,Spanish 2,14,0:12:54,0:12:56,06Q,136,N,We can look around a little.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+288,SP,978-1-4423-5038-0,Spanish 2,14,0:12:59,0:13:02,06R,137,M,Podemos mirar un poco.,4,S,"Spanish Phase 2, Units 1-30 (2003)",9
+289,SP,978-1-4423-5038-0,Spanish 2,14,0:16:26,0:16:30,07Q,171,N,Just a little less than two weeks.,,,"Spanish Phase 2, Units 1-30 (2003)",12
+290,SP,978-1-4423-5038-0,Spanish 2,14,0:16:33,0:16:36,07R,172,F,Un poquito menos que dos semanas.,6,S,"Spanish Phase 2, Units 1-30 (2003)",12
+291,SP,978-1-4423-5038-0,Spanish 2,14,0:18:05,0:18:08,08Q,188,N,At that hour of the night?,,,"Spanish Phase 2, Units 1-30 (2003)",17
+292,SP,978-1-4423-5038-0,Spanish 2,14,0:18:10,0:18:13,08R,189,F,¿A esa hora de la noche?,6,Q,"Spanish Phase 2, Units 1-30 (2003)",17
+293,SP,978-1-4423-5038-0,Spanish 2,14,0:20:43,0:20:45,09Q,214,N,What’s the weather like?,,,"Spanish Phase 2, Units 1-30 (2003)","16,19"
+294,SP,978-1-4423-5038-0,Spanish 2,14,0:20:49,0:20:51,09R,215,F,¿Qué tiempo hace?,3,Q,"Spanish Phase 2, Units 1-30 (2003)","16,19"
+295,SP,978-1-4423-5038-0,Spanish 2,14,0:21:25,0:21:27,10Q,220,N,Is it good weather?,,,"Spanish Phase 2, Units 1-30 (2003)",19
+296,SP,978-1-4423-5038-0,Spanish 2,14,0:21:28,0:21:31,10R,221,F,¿Hace buen tiempo?,3,Q,"Spanish Phase 2, Units 1-30 (2003)",19
+297,SP,978-1-4423-5038-0,Spanish 2,14,0:24:12,0:24:16,11Q,247,N,The good weather is better than the bad weather.,,,"Spanish Phase 2, Units 1-30 (2003)",19
+298,SP,978-1-4423-5038-0,Spanish 2,14,0:24:19,0:24:23,11R,248,F,El buen tiempo es mejor que el mal tiempo.,9,S,"Spanish Phase 2, Units 1-30 (2003)",19
+299,SP,978-1-4423-5038-0,Spanish 2,14,0:24:40,0:24:41,12Q,251,N,Could you send me a letter?,,,"Spanish Phase 2, Units 1-30 (2003)",3
+300,SP,978-1-4423-5038-0,Spanish 2,14,0:24:44,0:24:47,12R,252,F,¿Podrías enviarme una carta?,4,Q,"Spanish Phase 2, Units 1-30 (2003)",3
+301,SP,978-1-4423-5038-0,Spanish 2,15,0:03:33,0:03:36,01Q,47,N,Here it’s better weather.,,,"Spanish Phase 2, Units 1-30 (2003)",19
+302,SP,978-1-4423-5038-0,Spanish 2,15,0:03:39,0:03:41,01R,48,F,Aquí hace mejor tiempo.,4,S,"Spanish Phase 2, Units 1-30 (2003)",19
+303,SP,978-1-4423-5038-0,Spanish 2,15,0:08:47,0:08:52,02Q,99,N,"Say that you would like to speak with your colleague, Mr. García.",,,"Spanish Phase 2, Units 1-30 (2003)",9
+304,SP,978-1-4423-5038-0,Spanish 2,15,0:08:57,0:09:01,02R,100,M,"Me gustaría hablar con mi colega, el señor García.",9,S,"Spanish Phase 2, Units 1-30 (2003)",9
+305,SP,978-1-4423-5038-0,Spanish 2,15,0:12:32,0:12:34,03Q,132,N,I’m here on business.,,,"Spanish Phase 2, Units 1-30 (2003)","18,20"
+306,SP,978-1-4423-5038-0,Spanish 2,15,0:12:36,0:12:39,03R,133,M,Estoy aquí de negocios.,4,S,"Spanish Phase 2, Units 1-30 (2003)","18,20"
+307,SP,978-1-4423-5038-0,Spanish 2,15,0:13:38,0:13:40,04Q,141,N,Would you like to have a coffee?,,,"Spanish Phase 2, Units 1-30 (2003)",6
+308,SP,978-1-4423-5038-0,Spanish 2,15,0:13:43,0:13:46,04R,142,F,¿Le gustaría tomar un café?,5,Q,"Spanish Phase 2, Units 1-30 (2003)",6
+309,SP,978-1-4423-5038-0,Spanish 2,15,0:14:11,0:14:13,05Q,146,N,The coffee’s very hot.,,,"Spanish Phase 2, Units 1-30 (2003)",6
+310,SP,978-1-4423-5038-0,Spanish 2,15,0:14:17,0:14:20,05R,147,F,El café está muy caliente.,5,S,"Spanish Phase 2, Units 1-30 (2003)",6
+311,SP,978-1-4423-5038-0,Spanish 2,15,0:16:28,0:16:31,06Q,168,N,I take my coffee with milk.,,,"Spanish Phase 2, Units 1-30 (2003)",6
+312,SP,978-1-4423-5038-0,Spanish 2,15,0:16:35,0:16:39,06R,169,F,Yo tomo mi café con leche.,6,S,"Spanish Phase 2, Units 1-30 (2003)",6
+313,SP,978-1-4423-5038-0,Spanish 2,15,0:17:54,0:17:56,07Q,179,N,Do you know Mr. García well?,,,"Spanish Phase 2, Units 1-30 (2003)",9
+314,SP,978-1-4423-5038-0,Spanish 2,15,0:18:02,0:18:05,07R,181,F,¿Conoce bien al señor García?,5,Q,"Spanish Phase 2, Units 1-30 (2003)",9
+315,SP,978-1-4423-5038-0,Spanish 2,15,0:19:42,0:19:45,08Q,198,N,"I don’t know either his wife, or his children.",,,"Spanish Phase 2, Units 1-30 (2003)",5
+316,SP,978-1-4423-5038-0,Spanish 2,15,0:19:47,0:19:52,08R,199,N,"No conozco ni a su esposa, ni a sus hijos.",10,S,"Spanish Phase 2, Units 1-30 (2003)",5
+317,SP,978-1-4423-5038-0,Spanish 2,15,0:22:24,0:22:26,09Q,219,N,I don’t know his children either.,,,"Spanish Phase 2, Units 1-30 (2003)",5
+318,SP,978-1-4423-5038-0,Spanish 2,15,0:22:31,0:22:34,09R,221,M,No conozco a sus hijos tampoco.,6,S,"Spanish Phase 2, Units 1-30 (2003)",5
+319,SP,978-1-4423-5038-0,Spanish 2,15,0:24:06,0:24:07,10Q,232,N,You told me that.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+320,SP,978-1-4423-5038-0,Spanish 2,15,0:24:12,0:24:14,10R,233,M,Me dijo eso.,3,S,"Spanish Phase 2, Units 1-30 (2003)",9
+321,SP,978-1-4423-5038-0,Spanish 2,15,0:25:41,0:25:42,11Q,246,N,Me neither.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+322,SP,978-1-4423-5038-0,Spanish 2,15,0:25:47,0:25:49,11R,247,M,Ni yo tampoco.,3,S,"Spanish Phase 2, Units 1-30 (2003)",9
+323,SP,978-1-4423-5038-0,Spanish 2,15,0:26:09,0:26:13,12Q,250,N,He has said that many times.,,,"Spanish Phase 2, Units 1-30 (2003)",17
+324,SP,978-1-4423-5038-0,Spanish 2,15,0:26:16,0:26:19,12R,251,M,Ha dicho eso muchas veces.,5,S,"Spanish Phase 2, Units 1-30 (2003)",17
+325,SP,978-1-4423-5038-0,Spanish 2,16,0:02:26,0:02:28,01Q,30,N,He’s taking a business trip.,,,"Spanish Phase 2, Units 1-30 (2003)","18,20"
+326,SP,978-1-4423-5038-0,Spanish 2,16,0:02:31,0:02:34,01R,31,F,Hace un viaje de negocios.,5,S,"Spanish Phase 2, Units 1-30 (2003)","18,20"
+327,SP,978-1-4423-5038-0,Spanish 2,16,0:04:03,0:04:05,02Q,47,N,No one else is going.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+328,SP,978-1-4423-5038-0,Spanish 2,16,0:04:07,0:04:09,02R,48,F,Nadie más va.,3,S,"Spanish Phase 2, Units 1-30 (2003)",9
+329,SP,978-1-4423-5038-0,Spanish 2,16,0:04:55,0:04:59,03Q,56,N,"Neither I, nor anyone else from the office.",,,"Spanish Phase 2, Units 1-30 (2003)",9
+330,SP,978-1-4423-5038-0,Spanish 2,16,0:05:03,0:05:07,03R,57,F,"Ni yo, ni nadie más de la oficina.",8,S,"Spanish Phase 2, Units 1-30 (2003)",9
+331,SP,978-1-4423-5038-0,Spanish 2,16,0:07:24,0:07:25,04Q,78,N,Nothing else?,,,"Spanish Phase 2, Units 1-30 (2003)",9
+332,SP,978-1-4423-5038-0,Spanish 2,16,0:07:27,0:07:29,04R,79,M,¿Nada más?,2,Q,"Spanish Phase 2, Units 1-30 (2003)",9
+333,SP,978-1-4423-5038-0,Spanish 2,16,0:07:45,0:07:47,05Q,82,N,to tell the truth,,,"Spanish Phase 2, Units 1-30 (2003)",9
+334,SP,978-1-4423-5038-0,Spanish 2,16,0:07:53,0:07:55,05R,83b,M,a decir verdad,3,S,"Spanish Phase 2, Units 1-30 (2003)",9
+335,SP,978-1-4423-5038-0,Spanish 2,16,0:07:57,0:08:01,06Q,84,N,"Say with emphasis, “I would like to eat something.”",,,"Spanish Phase 2, Units 1-30 (2003)",6
+336,SP,978-1-4423-5038-0,Spanish 2,16,0:08:08,0:08:11,06R,86,M,A mí me gustaría comer algo.,6,S,"Spanish Phase 2, Units 1-30 (2003)",6
+337,SP,978-1-4423-5038-0,Spanish 2,16,0:10:44,0:10:48,07Q,115,N,I could eat with my colleague Juan.,,,"Spanish Phase 2, Units 1-30 (2003)","6,20"
+338,SP,978-1-4423-5038-0,Spanish 2,16,0:10:52,0:10:55,07R,116,F,Yo podría comer con mi colega Juan.,7,S,"Spanish Phase 2, Units 1-30 (2003)","6,20"
+339,SP,978-1-4423-5038-0,Spanish 2,16,0:12:20,0:12:23,08Q,132,N,I like it when it’s cold.,,,"Spanish Phase 2, Units 1-30 (2003)",19
+340,SP,978-1-4423-5038-0,Spanish 2,16,0:12:25,0:12:28,08R,133,F,Me gusta cuando hace frío.,5,S,"Spanish Phase 2, Units 1-30 (2003)",19
+341,SP,978-1-4423-5038-0,Spanish 2,16,0:14:02,0:14:04,09Q,149,N,If you don’t go out of the building.,,,"Spanish Phase 2, Units 1-30 (2003)",14
+342,SP,978-1-4423-5038-0,Spanish 2,16,0:14:06,0:14:09,09R,150,F,Si no sale del edificio.,5,S,"Spanish Phase 2, Units 1-30 (2003)",14
+343,SP,978-1-4423-5038-0,Spanish 2,16,0:15:46,0:15:48,10Q,165,N,But not without going outside.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+344,SP,978-1-4423-5038-0,Spanish 2,16,0:15:50,0:15:53,10R,166,M,"Pero sin salir, no.",4,S,"Spanish Phase 2, Units 1-30 (2003)",9
+345,SP,978-1-4423-5038-0,Spanish 2,17,0:04:26,0:04:28,01Q,55,N,Today it’s very cold.,,,"Spanish Phase 2, Units 1-30 (2003)",19
+346,SP,978-1-4423-5038-0,Spanish 2,17,0:04:33,0:04:37,01R,56,M,Hoy hace mucho frío.,4,S,"Spanish Phase 2, Units 1-30 (2003)",19
+347,SP,978-1-4423-5038-0,Spanish 2,17,0:05:04,0:05:07,02Q,59,N,I don’t want to go out of the building.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+348,SP,978-1-4423-5038-0,Spanish 2,17,0:05:17,0:05:21,02R,60,F,No quiero salir del edificio.,5,S,"Spanish Phase 2, Units 1-30 (2003)",9
+349,SP,978-1-4423-5038-0,Spanish 2,17,0:06:56,0:06:58,03Q,77,N,I could bring you something.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+350,SP,978-1-4423-5038-0,Spanish 2,17,0:07:04,0:07:08,03R,79,M,Yo podría traerle algo.,4,S,"Spanish Phase 2, Units 1-30 (2003)",9
+351,SP,978-1-4423-5038-0,Spanish 2,17,0:07:46,0:07:49,04Q,85,N,"Yes, I’d be happy to.",,,"Spanish Phase 2, Units 1-30 (2003)",7
+352,SP,978-1-4423-5038-0,Spanish 2,17,0:07:54,0:07:57,04R,86,M,"Sí, con mucho gusto.",3,S,"Spanish Phase 2, Units 1-30 (2003)",7
+353,SP,978-1-4423-5038-0,Spanish 2,17,0:08:52,0:08:54,05Q,95,N,Could you go tomorrow evening?,,,"Spanish Phase 2, Units 1-30 (2003)",17
+354,SP,978-1-4423-5038-0,Spanish 2,17,0:08:58,0:09:01,05R,96,M,¿Podría usted ir mañana en la noche?,6,Q,"Spanish Phase 2, Units 1-30 (2003)",17
+355,SP,978-1-4423-5038-0,Spanish 2,17,0:12:32,0:12:33,06Q,131,N,Two children.,,,"Spanish Phase 2, Units 1-30 (2003)","5,12"
+356,SP,978-1-4423-5038-0,Spanish 2,17,0:12:35,0:12:38,06R,132,M,Dos niños.,2,S,"Spanish Phase 2, Units 1-30 (2003)","5,12"
+357,SP,978-1-4423-5038-0,Spanish 2,17,0:14:17,0:14:20,07Q,150,N,The boy still is little.,,,"Spanish Phase 2, Units 1-30 (2003)",5
+358,SP,978-1-4423-5038-0,Spanish 2,17,0:14:23,0:14:27,07R,151,M,El niño todavía está pequeño.,5,S,"Spanish Phase 2, Units 1-30 (2003)",5
+359,SP,978-1-4423-5038-0,Spanish 2,17,0:17:09,0:17:12,08Q,179,N,The girl has to study.,,,"Spanish Phase 2, Units 1-30 (2003)",5
+360,SP,978-1-4423-5038-0,Spanish 2,17,0:17:14,0:17:17,08R,180,M,La niña tiene que estudiar.,5,S,"Spanish Phase 2, Units 1-30 (2003)",5
+361,SP,978-1-4423-5038-0,Spanish 2,17,0:19:00,0:19:02,09Q,199,N,It’s so expensive to travel.,,,"Spanish Phase 2, Units 1-30 (2003)","14,18"
+362,SP,978-1-4423-5038-0,Spanish 2,17,0:19:05,0:19:07,09R,200,F,Es tan caro viajar.,4,S,"Spanish Phase 2, Units 1-30 (2003)","14,18"
+363,SP,978-1-4423-5038-0,Spanish 2,17,0:19:16,0:19:17,10Q,201,N,You’re right.,,,"Spanish Phase 2, Units 1-30 (2003)",7
+364,SP,978-1-4423-5038-0,Spanish 2,17,0:19:19,0:19:21,10R,202,M,Tiene razón.,2,S,"Spanish Phase 2, Units 1-30 (2003)",7
+365,SP,978-1-4423-5038-0,Spanish 2,18,0:01:21,0:01:24,01Q,26,N,I’d like to invite you to my house.,,,"Spanish Phase 2, Units 1-30 (2003)","9,13"
+366,SP,978-1-4423-5038-0,Spanish 2,18,0:01:27,0:01:30,01R,27,M,Me gustaría invitarla a mi casa.,5,S,"Spanish Phase 2, Units 1-30 (2003)","9,13"
+367,SP,978-1-4423-5038-0,Spanish 2,18,0:03:31,0:03:33,02Q,46,N,It’s not going to be too sweet.,,,"Spanish Phase 2, Units 1-30 (2003)",6
+368,SP,978-1-4423-5038-0,Spanish 2,18,0:03:37,0:03:40,02R,47,F,No va a ser demasiado dulce.,5,S,"Spanish Phase 2, Units 1-30 (2003)",6
+369,SP,978-1-4423-5038-0,Spanish 2,18,0:03:43,0:03:46,03Q,48,N,I don’t like sweet things either.,,,"Spanish Phase 2, Units 1-30 (2003)",6
+370,SP,978-1-4423-5038-0,Spanish 2,18,0:03:49,0:03:53,03R,49,M,No me gustan las cosas dulces tampoco.,7,S,"Spanish Phase 2, Units 1-30 (2003)",6
+371,SP,978-1-4423-5038-0,Spanish 2,18,0:05:28,0:05:30,04Q,65,N,Children like the sweet things.,,,"Spanish Phase 2, Units 1-30 (2003)","5,6"
+372,SP,978-1-4423-5038-0,Spanish 2,18,0:05:34,0:05:38,04R,66,F,A los niños les gustan las cosas dulces.,7,S,"Spanish Phase 2, Units 1-30 (2003)","5,6"
+373,SP,978-1-4423-5038-0,Spanish 2,18,0:06:56,0:06:58,05Q,78,N,Thanks for bringing the dessert.,,,"Spanish Phase 2, Units 1-30 (2003)","6,13,16"
+374,SP,978-1-4423-5038-0,Spanish 2,18,0:07:01,0:07:04,05R,80,M,Gracias por traer el postre.,5,S,"Spanish Phase 2, Units 1-30 (2003)","6,13,16"
+375,SP,978-1-4423-5038-0,Spanish 2,18,0:11:40,0:11:43,06Q,129,N,No one can study every day.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+376,SP,978-1-4423-5038-0,Spanish 2,18,0:11:46,0:11:50,06R,130,F,Nadie puede estudiar todos los días.,6,S,"Spanish Phase 2, Units 1-30 (2003)",9
+377,SP,978-1-4423-5038-0,Spanish 2,18,0:15:43,0:15:45,07Q,171,N,I don’t like cold places.,,,"Spanish Phase 2, Units 1-30 (2003)",19
+378,SP,978-1-4423-5038-0,Spanish 2,18,0:15:51,0:15:54,07R,173,M,No me gustan los lugares fríos.,6,S,"Spanish Phase 2, Units 1-30 (2003)",19
+379,SP,978-1-4423-5038-0,Spanish 2,18,0:19:42,0:19:44,08Q,209,N,I have to find something good.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+380,SP,978-1-4423-5038-0,Spanish 2,18,0:19:47,0:19:50,08R,210,M,Tengo que encontrar algo bueno.,5,S,"Spanish Phase 2, Units 1-30 (2003)",9
+381,SP,978-1-4423-5038-0,Spanish 2,18,0:21:14,0:21:18,09Q,223,N,It’s difficult to find good gifts.,,,"Spanish Phase 2, Units 1-30 (2003)",14
+382,SP,978-1-4423-5038-0,Spanish 2,18,0:21:20,0:21:24,09R,224,M,Es difícil encontrar regalos buenos.,5,S,"Spanish Phase 2, Units 1-30 (2003)",14
+383,SP,978-1-4423-5038-0,Spanish 2,18,0:28:17,0:28:20,10Q,289,N,There you can buy very good candies.,,,"Spanish Phase 2, Units 1-30 (2003)",14
+384,SP,978-1-4423-5038-0,Spanish 2,18,0:28:23,0:28:27,10R,290,F,Allí puede comprar dulces muy buenos.,6,S,"Spanish Phase 2, Units 1-30 (2003)",14
+385,SP,978-1-4423-5038-0,Spanish 2,19,0:02:18,0:02:20,01Q,31,N,I’m going to take her to the doctor.,,,"Spanish Phase 2, Units 1-30 (2003)",16
+386,SP,978-1-4423-5038-0,Spanish 2,19,0:02:23,0:02:26,01R,32,F,Voy a llevarla al médico.,4,S,"Spanish Phase 2, Units 1-30 (2003)",16
+387,SP,978-1-4423-5038-0,Spanish 2,19,0:03:25,0:03:27,02Q,42,N,What’s happening with your son?,,,"Spanish Phase 2, Units 1-30 (2003)",5
+388,SP,978-1-4423-5038-0,Spanish 2,19,0:03:29,0:03:32,02R,43,M,¿Qué pasa con su hijo?,5,Q,"Spanish Phase 2, Units 1-30 (2003)",5
+389,SP,978-1-4423-5038-0,Spanish 2,19,0:06:50,0:06:54,03Q,73,N,It’s difficult to find a good doctor.,,,"Spanish Phase 2, Units 1-30 (2003)",16
+390,SP,978-1-4423-5038-0,Spanish 2,19,0:06:57,0:07:00,03R,74,F,Es difícil encontrar un buen médico.,6,S,"Spanish Phase 2, Units 1-30 (2003)",16
+391,SP,978-1-4423-5038-0,Spanish 2,19,0:09:15,0:09:17,04Q,96,N,I like it when it’s hot.,,,"Spanish Phase 2, Units 1-30 (2003)",19
+392,SP,978-1-4423-5038-0,Spanish 2,19,0:09:20,0:09:23,04R,97,M,Me gusta cuando hace calor.,5,S,"Spanish Phase 2, Units 1-30 (2003)",19
+393,SP,978-1-4423-5038-0,Spanish 2,19,0:11:30,0:11:33,05Q,117,N,I have to read the papers.,,,"Spanish Phase 2, Units 1-30 (2003)",1
+394,SP,978-1-4423-5038-0,Spanish 2,19,0:11:35,0:11:38,05R,118,F,Tengo que leer los papeles.,5,S,"Spanish Phase 2, Units 1-30 (2003)",1
+395,SP,978-1-4423-5038-0,Spanish 2,19,0:14:21,0:14:23,06Q,144,N,I have to read too many papers.,,,"Spanish Phase 2, Units 1-30 (2003)",1
+396,SP,978-1-4423-5038-0,Spanish 2,19,0:14:26,0:14:30,06R,145,F,Tengo que leer demasiados papeles.,5,S,"Spanish Phase 2, Units 1-30 (2003)",1
+397,SP,978-1-4423-5038-0,Spanish 2,19,0:16:33,0:16:35,07Q,164,N,It’s too hot to read these papers.,,,"Spanish Phase 2, Units 1-30 (2003)",1
+398,SP,978-1-4423-5038-0,Spanish 2,19,0:16:39,0:16:44,07R,165,F,Hace demasiado calor para leer estos papeles.,7,S,"Spanish Phase 2, Units 1-30 (2003)",1
+399,SP,978-1-4423-5038-0,Spanish 2,19,0:17:03,0:17:06,08Q,168,N,I have to buy the plane tickets.,,,"Spanish Phase 2, Units 1-30 (2003)","14,18"
+400,SP,978-1-4423-5038-0,Spanish 2,19,0:17:09,0:17:12,08R,169,M,Tengo que comprar los pasajes.,5,S,"Spanish Phase 2, Units 1-30 (2003)","14,18"
+401,SP,978-1-4423-5038-0,Spanish 2,19,0:19:50,0:19:53,09Q,195,N,These plane tickets are not my plane tickets!,,,"Spanish Phase 2, Units 1-30 (2003)",18
+402,SP,978-1-4423-5038-0,Spanish 2,19,0:19:57,0:20:01,09R,196,M,¡Estos pasajes no son mis pasajes!,6,S,"Spanish Phase 2, Units 1-30 (2003)",18
+403,SP,978-1-4423-5038-0,Spanish 2,19,0:23:14,0:23:17,10Q,226,N,Can you go to my house tomorrow evening?,,,"Spanish Phase 2, Units 1-30 (2003)",17
+404,SP,978-1-4423-5038-0,Spanish 2,19,0:23:20,0:23:23,10R,227,F,¿Puede ir a mi casa mañana en la noche?,8,Q,"Spanish Phase 2, Units 1-30 (2003)",17
+405,SP,978-1-4423-5038-0,Spanish 2,19,0:26:42,0:26:44,11Q,264,N,It’s a very beautiful house.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+406,SP,978-1-4423-5038-0,Spanish 2,19,0:26:47,0:26:50,11R,265,M,Es una casa muy bonita.,5,S,"Spanish Phase 2, Units 1-30 (2003)",9
+407,SP,978-1-4423-5038-0,Spanish 2,19,0:27:08,0:27:09,12Q,268,N,My house is your house.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+408,SP,978-1-4423-5038-0,Spanish 2,19,0:27:13,0:27:16,12R,269,F,Mi casa es su casa.,5,S,"Spanish Phase 2, Units 1-30 (2003)",9
+409,SP,978-1-4423-5038-0,Spanish 2,20,0:01:23,0:01:24,01Q,24,N,Nothing is happening.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+410,SP,978-1-4423-5038-0,Spanish 2,20,0:01:26,0:01:29,01R,25,M,No pasa nada.,3,S,"Spanish Phase 2, Units 1-30 (2003)",9
+411,SP,978-1-4423-5038-0,Spanish 2,20,0:02:43,0:02:44,02Q,37,N,Do you read a lot?,,,"Spanish Phase 2, Units 1-30 (2003)",1
+412,SP,978-1-4423-5038-0,Spanish 2,20,0:02:46,0:02:49,02R,38,F,¿Lee mucho?,2,Q,"Spanish Phase 2, Units 1-30 (2003)",1
+413,SP,978-1-4423-5038-0,Spanish 2,20,0:06:13,0:06:15,03Q,76,N,I read the newspaper.,,,"Spanish Phase 2, Units 1-30 (2003)",1
+414,SP,978-1-4423-5038-0,Spanish 2,20,0:06:17,0:06:20,03R,77,F,Leo el periódico.,3,S,"Spanish Phase 2, Units 1-30 (2003)",1
+415,SP,978-1-4423-5038-0,Spanish 2,20,0:07:55,0:07:58,04Q,91,N,Do you have a newspaper in English?,,,"Spanish Phase 2, Units 1-30 (2003)",9
+416,SP,978-1-4423-5038-0,Spanish 2,20,0:08:01,0:08:04,04R,92,F,¿Tiene un periódico en inglés?,5,Q,"Spanish Phase 2, Units 1-30 (2003)",9
+417,SP,978-1-4423-5038-0,Spanish 2,20,0:10:34,0:10:37,05Q,116,N,Please take six hundred pesos.,,,"Spanish Phase 2, Units 1-30 (2003)","11,12"
+418,SP,978-1-4423-5038-0,Spanish 2,20,0:10:41,0:10:45,05R,117,F,Por favor tome seiscientos pesos.,5,S,"Spanish Phase 2, Units 1-30 (2003)","11,12"
+419,SP,978-1-4423-5038-0,Spanish 2,20,0:12:30,0:12:32,06Q,134,N,Take the sugar.,,,"Spanish Phase 2, Units 1-30 (2003)",6
+420,SP,978-1-4423-5038-0,Spanish 2,20,0:12:34,0:12:36,06R,135,M,Tome el azúcar.,3,S,"Spanish Phase 2, Units 1-30 (2003)",6
+421,SP,978-1-4423-5038-0,Spanish 2,20,0:13:42,0:13:45,07Q,146,N,I take it (m) without anything.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+422,SP,978-1-4423-5038-0,Spanish 2,20,0:13:47,0:13:50,07R,147,M,Lo tomo sin nada.,4,S,"Spanish Phase 2, Units 1-30 (2003)",9
+423,SP,978-1-4423-5038-0,Spanish 2,20,0:13:52,0:13:54,08Q,148,N,I don’t like things with sugar.,,,"Spanish Phase 2, Units 1-30 (2003)",6
+424,SP,978-1-4423-5038-0,Spanish 2,20,0:13:58,0:14:02,08R,149,F,No me gustan las cosas con azúcar.,7,S,"Spanish Phase 2, Units 1-30 (2003)",6
+425,SP,978-1-4423-5038-0,Spanish 2,20,0:16:38,0:16:40,09Q,172,N,How old is your daughter?,,,"Spanish Phase 2, Units 1-30 (2003)",5
+426,SP,978-1-4423-5038-0,Spanish 2,20,0:16:44,0:16:46,09R,173,F,¿Cuántos años tiene su hija?,5,Q,"Spanish Phase 2, Units 1-30 (2003)",5
+427,SP,978-1-4423-5038-0,Spanish 2,20,0:17:55,0:17:58,10Q,184,N,She’s a student at the university.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+428,SP,978-1-4423-5038-0,Spanish 2,20,0:18:04,0:18:08,10R,186,M,Es estudiante en la universidad.,5,S,"Spanish Phase 2, Units 1-30 (2003)",9
+429,SP,978-1-4423-5038-0,Spanish 2,21,0:01:46,0:01:48,01Q,26,N,He must be a good student.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+430,SP,978-1-4423-5038-0,Spanish 2,21,0:01:52,0:01:55,01R,27,F,Debe ser buen estudiante.,4,S,"Spanish Phase 2, Units 1-30 (2003)",9
+431,SP,978-1-4423-5038-0,Spanish 2,21,0:02:31,0:02:33,02Q,33,N,In a few years.,,,"Spanish Phase 2, Units 1-30 (2003)",7
+432,SP,978-1-4423-5038-0,Spanish 2,21,0:02:35,0:02:37,02R,34,M,En unos años.,3,S,"Spanish Phase 2, Units 1-30 (2003)",7
+433,SP,978-1-4423-5038-0,Spanish 2,21,0:04:10,0:04:13,03Q,50,N,That’s why he’s not at the university.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+434,SP,978-1-4423-5038-0,Spanish 2,21,0:04:16,0:04:20,03R,51,F,Por eso no está en la universidad.,7,S,"Spanish Phase 2, Units 1-30 (2003)",9
+435,SP,978-1-4423-5038-0,Spanish 2,21,0:07:46,0:07:48,04Q,85,N,All your family lives in Mexico City?,,,"Spanish Phase 2, Units 1-30 (2003)",5
+436,SP,978-1-4423-5038-0,Spanish 2,21,0:07:54,0:07:58,04R,86,M,¿Toda su familia vive en la Ciudad de México?,9,Q,"Spanish Phase 2, Units 1-30 (2003)",5
+437,SP,978-1-4423-5038-0,Spanish 2,21,0:10:48,0:10:50,05Q,111,N,My work ended two years ago.,,,"Spanish Phase 2, Units 1-30 (2003)","12,20"
+438,SP,978-1-4423-5038-0,Spanish 2,21,0:10:54,0:10:58,05R,112,F,Mi trabajo terminó hace dos años.,6,S,"Spanish Phase 2, Units 1-30 (2003)","12,20"
+439,SP,978-1-4423-5038-0,Spanish 2,21,0:12:28,0:12:30,06Q,126,N,My daughter works at a bank.,,,"Spanish Phase 2, Units 1-30 (2003)","5,11,20"
+440,SP,978-1-4423-5038-0,Spanish 2,21,0:12:33,0:12:36,06R,127,M,Mi hija trabaja en un banco.,6,S,"Spanish Phase 2, Units 1-30 (2003)","5,11,20"
+441,SP,978-1-4423-5038-0,Spanish 2,21,0:15:22,0:15:25,07Q,156,N,Two years ago I had more time.,,,"Spanish Phase 2, Units 1-30 (2003)","12,17"
+442,SP,978-1-4423-5038-0,Spanish 2,21,0:15:28,0:15:32,07R,157,F,Hace dos años tuve más tiempo.,6,S,"Spanish Phase 2, Units 1-30 (2003)","12,17"
+443,SP,978-1-4423-5038-0,Spanish 2,21,0:18:14,0:18:16,08Q,185,N,I have to make a call.,,,"Spanish Phase 2, Units 1-30 (2003)",3
+444,SP,978-1-4423-5038-0,Spanish 2,21,0:18:18,0:18:21,08R,186,M,Tengo que hacer una llamada.,5,S,"Spanish Phase 2, Units 1-30 (2003)",3
+445,SP,978-1-4423-5038-0,Spanish 2,21,0:18:49,0:18:51,09Q,190,N,By cell phone.,,,"Spanish Phase 2, Units 1-30 (2003)",3
+446,SP,978-1-4423-5038-0,Spanish 2,21,0:18:52,0:18:55,09R,191,M,Por celular.,2,S,"Spanish Phase 2, Units 1-30 (2003)",3
+447,SP,978-1-4423-5038-0,Spanish 2,21,0:19:59,0:20:00,10Q,201,N,I had it.,,,"Spanish Phase 2, Units 1-30 (2003)",7
+448,SP,978-1-4423-5038-0,Spanish 2,21,0:20:02,0:20:04,10R,202,M,Lo tuve.,2,S,"Spanish Phase 2, Units 1-30 (2003)",7
+449,SP,978-1-4423-5038-0,Spanish 2,22,0:02:33,0:02:35,01Q,39,N,What luck!,,,"Spanish Phase 2, Units 1-30 (2003)",7
+450,SP,978-1-4423-5038-0,Spanish 2,22,0:02:37,0:02:39,01R,40,F,¡Qué suerte!,2,S,"Spanish Phase 2, Units 1-30 (2003)",7
+451,SP,978-1-4423-5038-0,Spanish 2,22,0:05:37,0:05:39,02Q,74,N,I should know it (m).,,,"Spanish Phase 2, Units 1-30 (2003)",7
+452,SP,978-1-4423-5038-0,Spanish 2,22,0:05:41,0:05:43,02R,75,M,Debo saberlo.,2,S,"Spanish Phase 2, Units 1-30 (2003)",7
+453,SP,978-1-4423-5038-0,Spanish 2,22,0:07:11,0:07:13,03Q,89,N,What’s the problem with your car?,,,"Spanish Phase 2, Units 1-30 (2003)",18
+454,SP,978-1-4423-5038-0,Spanish 2,22,0:07:17,0:07:20,03R,90,M,¿Cuál es el problema con su coche?,7,Q,"Spanish Phase 2, Units 1-30 (2003)",18
+455,SP,978-1-4423-5038-0,Spanish 2,22,0:08:48,0:08:50,04Q,104,N,It isn’t working well.,,,"Spanish Phase 2, Units 1-30 (2003)",7
+456,SP,978-1-4423-5038-0,Spanish 2,22,0:08:52,0:08:55,04R,105,M,No funciona bien.,3,S,"Spanish Phase 2, Units 1-30 (2003)",7
+457,SP,978-1-4423-5038-0,Spanish 2,22,0:10:06,0:10:09,05Q,117,N,It’s going to be ready in an hour.,,,"Spanish Phase 2, Units 1-30 (2003)",17
+458,SP,978-1-4423-5038-0,Spanish 2,22,0:10:12,0:10:14,05R,118,M,Va a estar listo en una hora.,6,S,"Spanish Phase 2, Units 1-30 (2003)",17
+459,SP,978-1-4423-5038-0,Spanish 2,22,0:13:31,0:13:33,06Q,150,N,He likes to play tennis.,,,"Spanish Phase 2, Units 1-30 (2003)",1
+460,SP,978-1-4423-5038-0,Spanish 2,22,0:13:35,0:13:38,06R,151,M,Le gusta jugar al tenis.,5,S,"Spanish Phase 2, Units 1-30 (2003)",1
+461,SP,978-1-4423-5038-0,Spanish 2,22,0:14:25,0:14:27,07Q,157,N,Do YOU play tennis?,,,"Spanish Phase 2, Units 1-30 (2003)",1
+462,SP,978-1-4423-5038-0,Spanish 2,22,0:14:29,0:14:31,07R,158,F,¿Usted juega al tenis?,4,Q,"Spanish Phase 2, Units 1-30 (2003)",1
+463,SP,978-1-4423-5038-0,Spanish 2,22,0:17:05,0:17:07,08Q,183,N,I had good luck.,,,"Spanish Phase 2, Units 1-30 (2003)",7
+464,SP,978-1-4423-5038-0,Spanish 2,22,0:17:09,0:17:12,08R,184,F,Tuve buena suerte.,3,S,"Spanish Phase 2, Units 1-30 (2003)",7
+465,SP,978-1-4423-5038-0,Spanish 2,22,0:19:44,0:19:47,09Q,208,N,I’ve lived here since February.,,,"Spanish Phase 2, Units 1-30 (2003)",17
+466,SP,978-1-4423-5038-0,Spanish 2,22,0:19:52,0:19:56,09R,210,M,Vivo aquí desde febrero.,4,S,"Spanish Phase 2, Units 1-30 (2003)",17
+467,SP,978-1-4423-5038-0,Spanish 2,22,0:20:46,0:20:48,10Q,217,N,Good luck in finding the house.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+468,SP,978-1-4423-5038-0,Spanish 2,22,0:20:52,0:20:56,10R,218,M,Buena suerte en encontrar la casa.,6,S,"Spanish Phase 2, Units 1-30 (2003)",9
+469,SP,978-1-4423-5038-0,Spanish 2,22,0:24:48,0:24:50,11Q,250,N,You read in English?,,,"Spanish Phase 2, Units 1-30 (2003)",1
+470,SP,978-1-4423-5038-0,Spanish 2,22,0:24:52,0:24:54,11R,251,F,¿Lees en inglés?,3,Q,"Spanish Phase 2, Units 1-30 (2003)",1
+471,SP,978-1-4423-5038-0,Spanish 2,22,0:25:06,0:25:08,12Q,253,N,I read in English every day.,,,"Spanish Phase 2, Units 1-30 (2003)",1
+472,SP,978-1-4423-5038-0,Spanish 2,22,0:25:12,0:25:16,12R,254,M,Leo en inglés todos los días.,6,S,"Spanish Phase 2, Units 1-30 (2003)",1
+473,SP,978-1-4423-5038-0,Spanish 2,23,0:01:43,0:01:46,01Q,29,N,I don’t know why it isn’t working.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+474,SP,978-1-4423-5038-0,Spanish 2,23,0:01:49,0:01:53,01R,30,F,No sé por qué no funciona.,6,S,"Spanish Phase 2, Units 1-30 (2003)",9
+475,SP,978-1-4423-5038-0,Spanish 2,23,0:02:09,0:02:12,02Q,33,N,They can’t find the problem.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+476,SP,978-1-4423-5038-0,Spanish 2,23,0:02:16,0:02:19,02R,34,F,No pueden encontrar el problema.,5,S,"Spanish Phase 2, Units 1-30 (2003)",9
+477,SP,978-1-4423-5038-0,Spanish 2,23,0:05:29,0:05:31,03Q,61,N,I can take you.,,,"Spanish Phase 2, Units 1-30 (2003)",7
+478,SP,978-1-4423-5038-0,Spanish 2,23,0:05:33,0:05:36,03R,62,M,Puedo llevarte.,2,S,"Spanish Phase 2, Units 1-30 (2003)",7
+479,SP,978-1-4423-5038-0,Spanish 2,23,0:08:53,0:08:55,04Q,99,N,I play a little.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+480,SP,978-1-4423-5038-0,Spanish 2,23,0:08:57,0:08:59,04R,100,F,Juego un poco.,3,S,"Spanish Phase 2, Units 1-30 (2003)",9
+481,SP,978-1-4423-5038-0,Spanish 2,23,0:10:44,0:10:46,05Q,113,N,Is she a good friend of yours?,,,"Spanish Phase 2, Units 1-30 (2003)",5
+482,SP,978-1-4423-5038-0,Spanish 2,23,0:10:49,0:10:52,05R,114,F,¿Es buena amiga tuya?,4,Q,"Spanish Phase 2, Units 1-30 (2003)",5
+483,SP,978-1-4423-5038-0,Spanish 2,23,0:11:15,0:11:17,06Q,117,N,We play tennis together.,,,"Spanish Phase 2, Units 1-30 (2003)",1
+484,SP,978-1-4423-5038-0,Spanish 2,23,0:11:19,0:11:22,06R,118,M,Jugamos al tenis juntos.,4,S,"Spanish Phase 2, Units 1-30 (2003)",1
+485,SP,978-1-4423-5038-0,Spanish 2,23,0:12:23,0:12:25,07Q,127,N,You three play tennis?,,,"Spanish Phase 2, Units 1-30 (2003)",1
+486,SP,978-1-4423-5038-0,Spanish 2,23,0:12:29,0:12:32,07R,128,F,¿Ustedes tres juegan al tenis?,5,Q,"Spanish Phase 2, Units 1-30 (2003)",1
+487,SP,978-1-4423-5038-0,Spanish 2,23,0:13:04,0:13:07,08Q,133,N,We need another person.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+488,SP,978-1-4423-5038-0,Spanish 2,23,0:13:11,0:13:14,08R,134,M,Necesitamos a otra persona.,3,S,"Spanish Phase 2, Units 1-30 (2003)",9
+489,SP,978-1-4423-5038-0,Spanish 2,23,0:16:35,0:16:38,09Q,167,N,How about tomorrow afternoon?,,,"Spanish Phase 2, Units 1-30 (2003)",17
+490,SP,978-1-4423-5038-0,Spanish 2,23,0:16:41,0:16:43,09R,168,M,¿Qué tal mañana en la tarde?,6,Q,"Spanish Phase 2, Units 1-30 (2003)",17
+491,SP,978-1-4423-5038-0,Spanish 2,23,0:18:00,0:18:02,10Q,178,N,I have a meeting on Wednesday.,,,"Spanish Phase 2, Units 1-30 (2003)","17,20"
+492,SP,978-1-4423-5038-0,Spanish 2,23,0:18:06,0:18:10,10R,179,F,Tengo una reunión el miércoles.,5,S,"Spanish Phase 2, Units 1-30 (2003)","17,20"
+493,SP,978-1-4423-5038-0,Spanish 2,23,0:19:05,0:19:07,11Q,190,N,It’s impossible to know it (m).,,,"Spanish Phase 2, Units 1-30 (2003)",7
+494,SP,978-1-4423-5038-0,Spanish 2,23,0:19:12,0:19:15,11R,191,F,Es imposible saberlo.,3,S,"Spanish Phase 2, Units 1-30 (2003)",7
+495,SP,978-1-4423-5038-0,Spanish 2,23,0:20:51,0:20:53,12Q,206,N,How about the day after tomorrow?,,,"Spanish Phase 2, Units 1-30 (2003)",17
+496,SP,978-1-4423-5038-0,Spanish 2,23,0:20:56,0:20:59,12R,207,M,¿Qué tal pasado mañana?,4,Q,"Spanish Phase 2, Units 1-30 (2003)",17
+497,SP,978-1-4423-5038-0,Spanish 2,23,0:26:04,0:26:06,13Q,259,N,Who plays better?,,,"Spanish Phase 2, Units 1-30 (2003)",9
+498,SP,978-1-4423-5038-0,Spanish 2,23,0:26:09,0:26:11,13R,260,F,¿Quién juega mejor?,3,Q,"Spanish Phase 2, Units 1-30 (2003)",9
+499,SP,978-1-4423-5038-0,Spanish 2,24,0:01:52,0:01:58,01Q,30,N,I thought that you would like something sweet.,,,"Spanish Phase 2, Units 1-30 (2003)",6
+500,SP,978-1-4423-5038-0,Spanish 2,24,0:02:00,0:02:03,01R,31,M,Pensé que te gustaría algo dulce.,6,S,"Spanish Phase 2, Units 1-30 (2003)",6
+501,SP,978-1-4423-5038-0,Spanish 2,24,0:03:47,0:03:50,02Q,48,N,They return this weekend.,,,"Spanish Phase 2, Units 1-30 (2003)",18
+502,SP,978-1-4423-5038-0,Spanish 2,24,0:03:53,0:03:56,02R,49,M,Regresan este fin de semana.,5,S,"Spanish Phase 2, Units 1-30 (2003)",18
+503,SP,978-1-4423-5038-0,Spanish 2,24,0:08:03,0:08:06,03Q,93,N,He has changed his mind.,,,"Spanish Phase 2, Units 1-30 (2003)",7
+504,SP,978-1-4423-5038-0,Spanish 2,24,0:08:08,0:08:11,03R,94,M,Ha cambiado de idea.,4,S,"Spanish Phase 2, Units 1-30 (2003)",7
+505,SP,978-1-4423-5038-0,Spanish 2,24,0:09:28,0:09:31,04Q,108,N,I said that he’s changed his mind.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+506,SP,978-1-4423-5038-0,Spanish 2,24,0:09:35,0:09:39,04R,109,M,Dije que ha cambiado de idea.,6,S,"Spanish Phase 2, Units 1-30 (2003)",9
+507,SP,978-1-4423-5038-0,Spanish 2,24,0:09:55,0:09:57,05Q,111,N,Now he’s studying engineering.,,,"Spanish Phase 2, Units 1-30 (2003)","17,20"
+508,SP,978-1-4423-5038-0,Spanish 2,24,0:09:59,0:10:02,05R,112,M,Ahora estudia ingeniería.,3,S,"Spanish Phase 2, Units 1-30 (2003)","17,20"
+509,SP,978-1-4423-5038-0,Spanish 2,24,0:11:49,0:11:50,06Q,129,N,Hopefully not!,,,"Spanish Phase 2, Units 1-30 (2003)","7,13"
+510,SP,978-1-4423-5038-0,Spanish 2,24,0:11:52,0:11:54,06R,130,M,¡Ojalá que no!,3,S,"Spanish Phase 2, Units 1-30 (2003)","7,13"
+511,SP,978-1-4423-5038-0,Spanish 2,24,0:13:30,0:13:32,07Q,144,N,He should not start something else.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+512,SP,978-1-4423-5038-0,Spanish 2,24,0:13:36,0:13:39,07R,145,M,No debe comenzar otra cosa.,5,S,"Spanish Phase 2, Units 1-30 (2003)",9
+513,SP,978-1-4423-5038-0,Spanish 2,24,0:18:13,0:18:15,08Q,191,N,"He’s a friend of yours, right?",,,"Spanish Phase 2, Units 1-30 (2003)",5
+514,SP,978-1-4423-5038-0,Spanish 2,24,0:18:18,0:18:21,08R,192,M,"Es amigo tuyo, ¿verdad?",4,Q,"Spanish Phase 2, Units 1-30 (2003)",5
+515,SP,978-1-4423-5038-0,Spanish 2,24,0:18:58,0:19:01,09Q,198,N,On Wednesday I have a meeting with him.,,,"Spanish Phase 2, Units 1-30 (2003)","17,20"
+516,SP,978-1-4423-5038-0,Spanish 2,24,0:19:05,0:19:09,09R,199,M,El miércoles tengo una reunión con él.,7,S,"Spanish Phase 2, Units 1-30 (2003)","17,20"
+517,SP,978-1-4423-5038-0,Spanish 2,24,0:22:44,0:22:47,10Q,231,N,I thought that we could play this weekend.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+518,SP,978-1-4423-5038-0,Spanish 2,24,0:22:52,0:22:56,10R,232,M,Pensé que podríamos jugar este fin de semana.,8,S,"Spanish Phase 2, Units 1-30 (2003)",9
+519,SP,978-1-4423-5038-0,Spanish 2,24,0:27:39,0:27:41,11Q,278,N,I have to exchange money.,,,"Spanish Phase 2, Units 1-30 (2003)","11,16"
+520,SP,978-1-4423-5038-0,Spanish 2,24,0:27:46,0:27:49,11R,279,F,Tengo que cambiar dinero.,4,S,"Spanish Phase 2, Units 1-30 (2003)","11,16"
+521,SP,978-1-4423-5038-0,Spanish 2,24,0:27:59,0:28:01,12Q,281,N,Today the bank isn’t open.,,,"Spanish Phase 2, Units 1-30 (2003)","11,16"
+522,SP,978-1-4423-5038-0,Spanish 2,24,0:28:04,0:28:08,12R,282,M,Hoy el banco no está abierto.,6,S,"Spanish Phase 2, Units 1-30 (2003)","11,16"
+523,SP,978-1-4423-5038-0,Spanish 2,25,0:02:23,0:02:24,01Q,30,N,When are you coming back?,,,"Spanish Phase 2, Units 1-30 (2003)",7
+524,SP,978-1-4423-5038-0,Spanish 2,25,0:02:26,0:02:29,01R,31,F,¿Cuándo regresa?,2,Q,"Spanish Phase 2, Units 1-30 (2003)",7
+525,SP,978-1-4423-5038-0,Spanish 2,25,0:03:18,0:03:20,02Q,38,N,I return in the afternoon.,,,"Spanish Phase 2, Units 1-30 (2003)",18
+526,SP,978-1-4423-5038-0,Spanish 2,25,0:03:23,0:03:26,02R,39,M,Regreso en la tarde.,4,S,"Spanish Phase 2, Units 1-30 (2003)",18
+527,SP,978-1-4423-5038-0,Spanish 2,25,0:05:28,0:05:31,03Q,62,N,How about next weekend?,,,"Spanish Phase 2, Units 1-30 (2003)",7
+528,SP,978-1-4423-5038-0,Spanish 2,25,0:05:34,0:05:37,03R,63,M,¿Qué tal el fin de semana entrante?,7,Q,"Spanish Phase 2, Units 1-30 (2003)",7
+529,SP,978-1-4423-5038-0,Spanish 2,25,0:07:46,0:07:48,04Q,86,N,I don’t remember!,,,"Spanish Phase 2, Units 1-30 (2003)",7
+530,SP,978-1-4423-5038-0,Spanish 2,25,0:07:50,0:07:53,04R,87,M,¡No me acuerdo!,3,S,"Spanish Phase 2, Units 1-30 (2003)",7
+531,SP,978-1-4423-5038-0,Spanish 2,25,0:08:25,0:08:28,05Q,92,N,Here in the hotel we can exchange money.,,,"Spanish Phase 2, Units 1-30 (2003)","11,18"
+532,SP,978-1-4423-5038-0,Spanish 2,25,0:08:32,0:08:35,05R,93,M,Aquí en el hotel podemos cambiar dinero.,7,S,"Spanish Phase 2, Units 1-30 (2003)","11,18"
+533,SP,978-1-4423-5038-0,Spanish 2,25,0:09:01,0:09:02,06Q,97,N,There’s a new restaurant.,,,"Spanish Phase 2, Units 1-30 (2003)",6
+534,SP,978-1-4423-5038-0,Spanish 2,25,0:09:05,0:09:09,06R,98,M,Hay un restaurante nuevo.,4,S,"Spanish Phase 2, Units 1-30 (2003)",6
+535,SP,978-1-4423-5038-0,Spanish 2,25,0:10:09,0:10:11,07Q,108,N,It has delicious food.,,,"Spanish Phase 2, Units 1-30 (2003)",6
+536,SP,978-1-4423-5038-0,Spanish 2,25,0:10:14,0:10:17,07R,109,M,Tiene comida deliciosa.,3,S,"Spanish Phase 2, Units 1-30 (2003)",6
+537,SP,978-1-4423-5038-0,Spanish 2,25,0:10:38,0:10:40,08Q,112,N,I haven’t eaten there.,,,"Spanish Phase 2, Units 1-30 (2003)",6
+538,SP,978-1-4423-5038-0,Spanish 2,25,0:10:42,0:10:45,08R,113,M,No he comido allí.,4,S,"Spanish Phase 2, Units 1-30 (2003)",6
+539,SP,978-1-4423-5038-0,Spanish 2,25,0:12:05,0:12:07,09Q,126,N,"Yes, exactly.",,,"Spanish Phase 2, Units 1-30 (2003)",7
+540,SP,978-1-4423-5038-0,Spanish 2,25,0:12:09,0:12:12,09R,127,M,"Sí, exactamente.",2,S,"Spanish Phase 2, Units 1-30 (2003)",7
+541,SP,978-1-4423-5038-0,Spanish 2,25,0:14:19,0:14:21,10Q,147,N,It’s work for a new client.,,,"Spanish Phase 2, Units 1-30 (2003)",20
+542,SP,978-1-4423-5038-0,Spanish 2,25,0:14:25,0:14:28,10R,148,M,Es trabajo para un cliente nuevo.,6,S,"Spanish Phase 2, Units 1-30 (2003)",20
+543,SP,978-1-4423-5038-0,Spanish 2,25,0:15:30,0:15:32,11Q,157,N,It’s lunchtime.,,,"Spanish Phase 2, Units 1-30 (2003)",6
+544,SP,978-1-4423-5038-0,Spanish 2,25,0:15:35,0:15:38,11R,158,M,Es la hora del almuerzo.,5,S,"Spanish Phase 2, Units 1-30 (2003)",6
+545,SP,978-1-4423-5038-0,Spanish 2,26,0:04:23,0:04:26,01Q,50,N,The meal was so delicious.,,,"Spanish Phase 2, Units 1-30 (2003)",6
+546,SP,978-1-4423-5038-0,Spanish 2,26,0:04:29,0:04:32,01R,51,M,La comida fue tan deliciosa.,5,S,"Spanish Phase 2, Units 1-30 (2003)",6
+547,SP,978-1-4423-5038-0,Spanish 2,26,0:04:49,0:04:52,02Q,54,N,How nice that you liked the lunch.,,,"Spanish Phase 2, Units 1-30 (2003)",6
+548,SP,978-1-4423-5038-0,Spanish 2,26,0:04:55,0:04:58,02R,55,F,Qué bien que le gustó el almuerzo.,7,S,"Spanish Phase 2, Units 1-30 (2003)",6
+549,SP,978-1-4423-5038-0,Spanish 2,26,0:07:36,0:07:39,03Q,81,N,How long does it take to get into town?,,,"Spanish Phase 2, Units 1-30 (2003)","16,17,18"
+550,SP,978-1-4423-5038-0,Spanish 2,26,0:07:42,0:07:45,03R,82,M,¿Cuánto tiempo para llegar al centro?,6,Q,"Spanish Phase 2, Units 1-30 (2003)","16,17,18"
+551,SP,978-1-4423-5038-0,Spanish 2,26,0:08:19,0:08:20,04Q,87,N,I’m going on foot.,,,"Spanish Phase 2, Units 1-30 (2003)",1
+552,SP,978-1-4423-5038-0,Spanish 2,26,0:08:23,0:08:25,04R,88,M,Voy a pie.,2,S,"Spanish Phase 2, Units 1-30 (2003)",1
+553,SP,978-1-4423-5038-0,Spanish 2,26,0:08:44,0:08:46,05Q,91,N,In no way.,,,"Spanish Phase 2, Units 1-30 (2003)",7
+554,SP,978-1-4423-5038-0,Spanish 2,26,0:08:48,0:08:50,05R,92,F,De ninguna manera.,3,S,"Spanish Phase 2, Units 1-30 (2003)",7
+555,SP,978-1-4423-5038-0,Spanish 2,26,0:10:07,0:10:09,06Q,103,N,I’m going to take you into town.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+556,SP,978-1-4423-5038-0,Spanish 2,26,0:10:12,0:10:15,06R,104,F,Voy a llevarlo al centro.,4,S,"Spanish Phase 2, Units 1-30 (2003)",9
+557,SP,978-1-4423-5038-0,Spanish 2,26,0:10:27,0:10:29,07Q,107,N,I could go by bus.,,,"Spanish Phase 2, Units 1-30 (2003)",18
+558,SP,978-1-4423-5038-0,Spanish 2,26,0:10:31,0:10:35,07R,108,M,Yo podría ir en autobús.,5,S,"Spanish Phase 2, Units 1-30 (2003)",18
+559,SP,978-1-4423-5038-0,Spanish 2,26,0:13:10,0:13:13,08Q,132,N,We’re going into town together.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+560,SP,978-1-4423-5038-0,Spanish 2,26,0:13:16,0:13:19,08R,133,F,Vamos al centro juntos.,4,S,"Spanish Phase 2, Units 1-30 (2003)",9
+561,SP,978-1-4423-5038-0,Spanish 2,26,0:13:31,0:13:33,09Q,135,N,Friday is the fifth of June.,,,"Spanish Phase 2, Units 1-30 (2003)",17
+562,SP,978-1-4423-5038-0,Spanish 2,26,0:13:39,0:13:43,09R,136,F,El viernes es el cinco de junio.,7,S,"Spanish Phase 2, Units 1-30 (2003)",17
+563,SP,978-1-4423-5038-0,Spanish 2,26,0:16:22,0:16:25,10Q,163,N,In no way is it comfortable.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+564,SP,978-1-4423-5038-0,Spanish 2,26,0:16:28,0:16:31,10R,164,M,De ninguna manera es cómodo.,5,S,"Spanish Phase 2, Units 1-30 (2003)",9
+565,SP,978-1-4423-5038-0,Spanish 2,26,0:20:44,0:20:46,11Q,205,N,Don’t you remember?,,,"Spanish Phase 2, Units 1-30 (2003)",7
+566,SP,978-1-4423-5038-0,Spanish 2,26,0:20:48,0:20:50,11R,206,M,¿No te acuerdas?,3,Q,"Spanish Phase 2, Units 1-30 (2003)",7
+567,SP,978-1-4423-5038-0,Spanish 2,27,0:02:03,0:02:08,01Q,34,N,Dígale que usted quiere cambiar de trabajo.,,,"Spanish Phase 2, Units 1-30 (2003)",20
+568,SP,978-1-4423-5038-0,Spanish 2,27,0:02:10,0:02:13,01R,35,F,Quiero cambiar de trabajo.,4,S,"Spanish Phase 2, Units 1-30 (2003)",20
+569,SP,978-1-4423-5038-0,Spanish 2,27,0:03:20,0:03:23,02Q,46,N,I don’t know anything about engineering.,,,"Spanish Phase 2, Units 1-30 (2003)",20
+570,SP,978-1-4423-5038-0,Spanish 2,27,0:03:26,0:03:29,02R,47,M,No sé nada de ingeniería.,5,S,"Spanish Phase 2, Units 1-30 (2003)",20
+571,SP,978-1-4423-5038-0,Spanish 2,27,0:03:38,0:03:40,03Q,49,N,I’m a professor of music.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+572,SP,978-1-4423-5038-0,Spanish 2,27,0:03:43,0:03:46,03R,50,M,Soy profesor de música.,4,S,"Spanish Phase 2, Units 1-30 (2003)",9
+573,SP,978-1-4423-5038-0,Spanish 2,27,0:06:43,0:06:44,04Q,78,N,If it’s raining?,,,"Spanish Phase 2, Units 1-30 (2003)",19
+574,SP,978-1-4423-5038-0,Spanish 2,27,0:06:46,0:06:49,04R,79,F,¿Si llueve?,2,Q,"Spanish Phase 2, Units 1-30 (2003)",19
+575,SP,978-1-4423-5038-0,Spanish 2,27,0:06:53,0:06:54,05Q,80,N,I like the rain.,,,"Spanish Phase 2, Units 1-30 (2003)",19
+576,SP,978-1-4423-5038-0,Spanish 2,27,0:06:57,0:06:59,05R,81,M,Me gusta la lluvia.,4,S,"Spanish Phase 2, Units 1-30 (2003)",19
+577,SP,978-1-4423-5038-0,Spanish 2,27,0:09:25,0:09:28,06Q,103,N,The taxi is much more comfortable.,,,"Spanish Phase 2, Units 1-30 (2003)",18
+578,SP,978-1-4423-5038-0,Spanish 2,27,0:09:30,0:09:34,06R,104,M,El taxi es mucho más cómodo.,6,S,"Spanish Phase 2, Units 1-30 (2003)",18
+579,SP,978-1-4423-5038-0,Spanish 2,27,0:11:02,0:11:05,07Q,119,N,I have to read some books.,,,"Spanish Phase 2, Units 1-30 (2003)",1
+580,SP,978-1-4423-5038-0,Spanish 2,27,0:11:08,0:11:11,07R,120,F,Tengo que leer unos libros.,5,S,"Spanish Phase 2, Units 1-30 (2003)",1
+581,SP,978-1-4423-5038-0,Spanish 2,27,0:15:17,0:15:19,08Q,158,N,Can you call me?,,,"Spanish Phase 2, Units 1-30 (2003)","3,16"
+582,SP,978-1-4423-5038-0,Spanish 2,27,0:15:20,0:15:23,08R,159,F,¿Puede llamarme?,2,Q,"Spanish Phase 2, Units 1-30 (2003)","3,16"
+583,SP,978-1-4423-5038-0,Spanish 2,27,0:21:19,0:21:21,09Q,216,N,Tomorrow is the twenty-fourth of February.,,,"Spanish Phase 2, Units 1-30 (2003)","12,17"
+584,SP,978-1-4423-5038-0,Spanish 2,27,0:21:25,0:21:29,09R,217,F,Mañana es el veinticuatro de febrero.,6,S,"Spanish Phase 2, Units 1-30 (2003)","12,17"
+585,SP,978-1-4423-5038-0,Spanish 2,27,0:22:21,0:22:24,10Q,227,N,Maybe the next time.,,,"Spanish Phase 2, Units 1-30 (2003)",17
+586,SP,978-1-4423-5038-0,Spanish 2,27,0:22:26,0:22:28,10R,228,M,Quizás la próxima vez.,4,S,"Spanish Phase 2, Units 1-30 (2003)",17
+587,SP,978-1-4423-5038-0,Spanish 2,27,0:23:32,0:23:34,11Q,237,N,I’m going to call you.,,,"Spanish Phase 2, Units 1-30 (2003)",3
+588,SP,978-1-4423-5038-0,Spanish 2,27,0:23:35,0:23:38,11R,238,F,Voy a llamarte.,2,S,"Spanish Phase 2, Units 1-30 (2003)",3
+589,SP,978-1-4423-5038-0,Spanish 2,27,0:28:07,0:28:09,12Q,286,N,I have to call my new client.,,,"Spanish Phase 2, Units 1-30 (2003)","3,20"
+590,SP,978-1-4423-5038-0,Spanish 2,27,0:28:12,0:28:15,12R,287,M,Tengo que llamar a mi cliente nuevo.,6,S,"Spanish Phase 2, Units 1-30 (2003)","3,20"
+591,SP,978-1-4423-5038-0,Spanish 2,28,0:05:04,0:05:06,01Q,62,N,I have a lot to do in town.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+592,SP,978-1-4423-5038-0,Spanish 2,28,0:05:12,0:05:16,01R,63,F,Tengo mucho que hacer en el centro.,7,S,"Spanish Phase 2, Units 1-30 (2003)",9
+593,SP,978-1-4423-5038-0,Spanish 2,28,0:05:39,0:05:42,02Q,67,N,I have to call my colleagues in New York.,,,"Spanish Phase 2, Units 1-30 (2003)","3,20"
+594,SP,978-1-4423-5038-0,Spanish 2,28,0:05:45,0:05:49,02R,68,F,Tengo que llamar a mis colegas en Nueva York.,8,S,"Spanish Phase 2, Units 1-30 (2003)","3,20"
+595,SP,978-1-4423-5038-0,Spanish 2,28,0:09:45,0:09:47,03Q,107,N,I told you before.,,,"Spanish Phase 2, Units 1-30 (2003)",7
+596,SP,978-1-4423-5038-0,Spanish 2,28,0:09:49,0:09:52,03R,108,F,Te lo dije antes.,4,S,"Spanish Phase 2, Units 1-30 (2003)",7
+597,SP,978-1-4423-5038-0,Spanish 2,28,0:13:27,0:13:29,04Q,142,N,How are you going into town?,,,"Spanish Phase 2, Units 1-30 (2003)","4,18"
+598,SP,978-1-4423-5038-0,Spanish 2,28,0:13:32,0:13:34,04R,143,M,¿Cómo vas al centro?,4,Q,"Spanish Phase 2, Units 1-30 (2003)","4,18"
+599,SP,978-1-4423-5038-0,Spanish 2,28,0:17:25,0:17:26,05Q,180,N,I had to rent one (m).,,,"Spanish Phase 2, Units 1-30 (2003)",9
+600,SP,978-1-4423-5038-0,Spanish 2,28,0:17:28,0:17:31,05R,181,F,Tuve que alquilar uno.,4,S,"Spanish Phase 2, Units 1-30 (2003)",9
+601,SP,978-1-4423-5038-0,Spanish 2,28,0:18:47,0:18:48,06Q,191,N,Let me see.,,,"Spanish Phase 2, Units 1-30 (2003)",7
+602,SP,978-1-4423-5038-0,Spanish 2,28,0:18:50,0:18:53,06R,192,M,Déjeme ver.,2,S,"Spanish Phase 2, Units 1-30 (2003)",7
+603,SP,978-1-4423-5038-0,Spanish 2,28,0:20:41,0:20:43,07Q,209,N,I believe that we need a map.,,,"Spanish Phase 2, Units 1-30 (2003)","4,9"
+604,SP,978-1-4423-5038-0,Spanish 2,28,0:20:46,0:20:50,07R,210,M,Creo que necesitamos un mapa.,5,S,"Spanish Phase 2, Units 1-30 (2003)","4,9"
+605,SP,978-1-4423-5038-0,Spanish 2,28,0:21:58,0:22:00,08Q,221,N,I’m going to look for it.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+606,SP,978-1-4423-5038-0,Spanish 2,28,0:22:02,0:22:04,08R,222,F,Voy a buscarlo.,2,S,"Spanish Phase 2, Units 1-30 (2003)",9
+607,SP,978-1-4423-5038-0,Spanish 2,28,0:24:46,0:24:49,09Q,252,N,I’m looking for Buena Vista Street.,,,"Spanish Phase 2, Units 1-30 (2003)",4
+608,SP,978-1-4423-5038-0,Spanish 2,28,0:24:51,0:24:55,09R,253,F,Busco la calle Buena Vista.,4,S,"Spanish Phase 2, Units 1-30 (2003)",4
+609,SP,978-1-4423-5038-0,Spanish 2,28,0:29:33,0:29:35,10Q,299,N,How about the party?,,,"Spanish Phase 2, Units 1-30 (2003)",9
+610,SP,978-1-4423-5038-0,Spanish 2,28,0:29:38,0:29:40,10R,301,M,¿Qué tal la fiesta?,4,Q,"Spanish Phase 2, Units 1-30 (2003)",9
+611,SP,978-1-4423-5038-0,Spanish 2,28,0:29:49,0:29:50,11Q,302,N,It (f) was great!,,,"Spanish Phase 2, Units 1-30 (2003)",9
+612,SP,978-1-4423-5038-0,Spanish 2,28,0:29:53,0:29:55,11R,303,F,¡Fue magnífica!,2,S,"Spanish Phase 2, Units 1-30 (2003)",9
+613,SP,978-1-4423-5038-0,Spanish 2,29,0:04:58,0:05:00,01Q,65,N,Have you been here before?,,,"Spanish Phase 2, Units 1-30 (2003)",9
+614,SP,978-1-4423-5038-0,Spanish 2,29,0:05:03,0:05:06,01R,66,F,¿Ha estado aquí antes?,4,Q,"Spanish Phase 2, Units 1-30 (2003)",9
+615,SP,978-1-4423-5038-0,Spanish 2,29,0:06:24,0:06:27,02Q,79,N,I’m looking for my father’s family.,,,"Spanish Phase 2, Units 1-30 (2003)",5
+616,SP,978-1-4423-5038-0,Spanish 2,29,0:06:30,0:06:33,02R,80,M,Busco a la familia de mi padre.,6,S,"Spanish Phase 2, Units 1-30 (2003)",5
+617,SP,978-1-4423-5038-0,Spanish 2,29,0:07:50,0:07:52,03Q,91,N,I’m trying to find them.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+618,SP,978-1-4423-5038-0,Spanish 2,29,0:07:56,0:08:00,03R,92,M,Estoy tratando de encontrarlos.,4,S,"Spanish Phase 2, Units 1-30 (2003)",9
+619,SP,978-1-4423-5038-0,Spanish 2,29,0:08:18,0:08:20,04Q,95,N,But I haven’t had much luck.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+620,SP,978-1-4423-5038-0,Spanish 2,29,0:08:24,0:08:27,04R,96,M,Pero no he tenido mucha suerte.,6,S,"Spanish Phase 2, Units 1-30 (2003)",9
+621,SP,978-1-4423-5038-0,Spanish 2,29,0:08:32,0:08:34,05Q,97,N,Not this time.,,,"Spanish Phase 2, Units 1-30 (2003)",17
+622,SP,978-1-4423-5038-0,Spanish 2,29,0:08:36,0:08:38,05R,98,M,Esta vez no.,3,S,"Spanish Phase 2, Units 1-30 (2003)",17
+623,SP,978-1-4423-5038-0,Spanish 2,29,0:13:17,0:13:18,06Q,143,N,I’ll be right back.,,,"Spanish Phase 2, Units 1-30 (2003)",7
+624,SP,978-1-4423-5038-0,Spanish 2,29,0:13:21,0:13:23,06R,144,F,Ya regreso.,2,S,"Spanish Phase 2, Units 1-30 (2003)",7
+625,SP,978-1-4423-5038-0,Spanish 2,29,0:16:54,0:16:57,07Q,173,N,Can you show me on the map?,,,"Spanish Phase 2, Units 1-30 (2003)","4,16"
+626,SP,978-1-4423-5038-0,Spanish 2,29,0:17:00,0:17:03,07R,174,M,¿Puede mostrarme en el mapa?,5,Q,"Spanish Phase 2, Units 1-30 (2003)","4,16"
+627,SP,978-1-4423-5038-0,Spanish 2,29,0:17:38,0:17:40,08Q,179,N,I can show you on the map.,,,"Spanish Phase 2, Units 1-30 (2003)",4
+628,SP,978-1-4423-5038-0,Spanish 2,29,0:17:43,0:17:46,08R,180,F,Puedo mostrarle en el mapa.,5,S,"Spanish Phase 2, Units 1-30 (2003)",4
+629,SP,978-1-4423-5038-0,Spanish 2,29,0:18:52,0:18:55,09Q,191,N,"How much does it cost, all together?",,,"Spanish Phase 2, Units 1-30 (2003)","14,16"
+630,SP,978-1-4423-5038-0,Spanish 2,29,0:18:57,0:19:00,09R,192,M,"¿Cuánto cuesta, todo junto?",4,Q,"Spanish Phase 2, Units 1-30 (2003)","14,16"
+631,SP,978-1-4423-5038-0,Spanish 2,29,0:19:34,0:19:36,10Q,198,N,Three thousand pesos.,,,"Spanish Phase 2, Units 1-30 (2003)","11,12"
+632,SP,978-1-4423-5038-0,Spanish 2,29,0:19:38,0:19:40,10R,199,F,Tres mil pesos.,3,S,"Spanish Phase 2, Units 1-30 (2003)","11,12"
+633,SP,978-1-4423-5038-0,Spanish 2,29,0:20:59,0:21:01,11Q,212,N,The map costs a thousand.,,,"Spanish Phase 2, Units 1-30 (2003)","4,12,14"
+634,SP,978-1-4423-5038-0,Spanish 2,29,0:21:04,0:21:06,11R,213,F,El mapa cuesta mil.,4,S,"Spanish Phase 2, Units 1-30 (2003)","4,12,14"
+635,SP,978-1-4423-5038-0,Spanish 2,29,0:29:11,0:29:13,12Q,289,N,I prefer fewer meetings.,,,"Spanish Phase 2, Units 1-30 (2003)",20
+636,SP,978-1-4423-5038-0,Spanish 2,29,0:29:27,0:29:30,12R,290,M,Prefiero menos reuniones.,3,S,"Spanish Phase 2, Units 1-30 (2003)",20
+637,SP,978-1-4423-5038-0,Spanish 2,30,0:02:32,0:02:35,01Q,37,N,"In the summer, it’s not cold.",,,"Spanish Phase 2, Units 1-30 (2003)","17,19"
+638,SP,978-1-4423-5038-0,Spanish 2,30,0:02:37,0:02:40,01R,38,F,"En verano, no hace frío.",5,S,"Spanish Phase 2, Units 1-30 (2003)","17,19"
+639,SP,978-1-4423-5038-0,Spanish 2,30,0:03:23,0:03:26,02Q,46,N,We travel to many places.,,,"Spanish Phase 2, Units 1-30 (2003)",18
+640,SP,978-1-4423-5038-0,Spanish 2,30,0:03:29,0:03:32,02R,47,F,Viajamos a muchos lugares.,3,S,"Spanish Phase 2, Units 1-30 (2003)",18
+641,SP,978-1-4423-5038-0,Spanish 2,30,0:06:20,0:06:22,03Q,73,N,Can you show me the photo?,,,"Spanish Phase 2, Units 1-30 (2003)",9
+642,SP,978-1-4423-5038-0,Spanish 2,30,0:06:24,0:06:28,03R,74,M,¿Puede mostrarme la foto?,4,Q,"Spanish Phase 2, Units 1-30 (2003)",9
+643,SP,978-1-4423-5038-0,Spanish 2,30,0:06:52,0:06:54,04Q,78,N,I’d like to show you the photo.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+644,SP,978-1-4423-5038-0,Spanish 2,30,0:06:57,0:07:00,04R,79,F,Me gustaría mostrarle la foto.,5,S,"Spanish Phase 2, Units 1-30 (2003)",9
+645,SP,978-1-4423-5038-0,Spanish 2,30,0:11:04,0:11:06,05Q,121,N,Lots of friends visit us.,,,"Spanish Phase 2, Units 1-30 (2003)","5,18"
+646,SP,978-1-4423-5038-0,Spanish 2,30,0:11:07,0:11:10,05R,122,F,Muchos amigos nos visitan.,4,S,"Spanish Phase 2, Units 1-30 (2003)","5,18"
+647,SP,978-1-4423-5038-0,Spanish 2,30,0:19:45,0:19:48,06Q,210,N,I believe that we’re lost.,,,"Spanish Phase 2, Units 1-30 (2003)","9,16"
+648,SP,978-1-4423-5038-0,Spanish 2,30,0:19:50,0:19:53,06R,211,F,Creo que estamos perdidos.,4,S,"Spanish Phase 2, Units 1-30 (2003)","9,16"
+649,SP,978-1-4423-5038-0,Spanish 2,30,0:20:38,0:20:41,07Q,219,N,I know exactly where I am.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+650,SP,978-1-4423-5038-0,Spanish 2,30,0:20:45,0:20:49,07R,220,M,Yo sé exactamente dónde estoy.,5,S,"Spanish Phase 2, Units 1-30 (2003)",9
+651,SP,978-1-4423-5038-0,Spanish 2,30,0:23:29,0:23:31,08Q,247,N,We’re lost very frequently.,,,"Spanish Phase 2, Units 1-30 (2003)",9
+652,SP,978-1-4423-5038-0,Spanish 2,30,0:23:35,0:23:38,08R,248,F,Estamos perdidos con mucha frecuencia.,5,S,"Spanish Phase 2, Units 1-30 (2003)",9
+653,SP,978-1-4423-5038-0,Spanish 2,30,0:26:48,0:26:50,09Q,277,N,A thousand thanks.,,,"Spanish Phase 2, Units 1-30 (2003)","12,13,16"
+654,SP,978-1-4423-5038-0,Spanish 2,30,0:26:52,0:26:54,09R,278,F,Mil gracias.,2,S,"Spanish Phase 2, Units 1-30 (2003)","12,13,16"
+655,SP,978-1-4423-5038-0,Spanish 2,30,0:27:02,0:27:05,10Q,279,N,Bolívar Street is located right there.,,,"Spanish Phase 2, Units 1-30 (2003)",4
+656,SP,978-1-4423-5038-0,Spanish 2,30,0:27:09,0:27:13,10R,280,F,La calle Bolívar queda allí mismo.,6,S,"Spanish Phase 2, Units 1-30 (2003)",4
+657,SP,978-1-4423-5038-0,Spanish 2,30,0:28:49,0:28:52,11Q,296,N,It’s only a quarter past one.,,,"Spanish Phase 2, Units 1-30 (2003)","12,17"
+658,SP,978-1-4423-5038-0,Spanish 2,30,0:28:57,0:29:00,11R,297,M,Sólo es la una y cuarto.,6,S,"Spanish Phase 2, Units 1-30 (2003)","12,17"

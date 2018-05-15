@@ -1,0 +1,603 @@
+Rec #,Lang,ISBN-13,Course,Unit Num,start,stop,QZ #,line #,spkr,Cue,#of words,Q or S,Course Name (Source),Skills
+1,SP,978-1-4423-4634-5,Spanish 1,1,0:02:46,0:02:48,01Q,37,N,"Excuse me, miss.",,,"Spanish Phase 1, Units 1-30 (2003)","10,13,16"
+2,SP,978-1-4423-4634-5,Spanish 1,1,0:02:51,0:02:53,01R,38,M,"Perdón, señorita.",2,S,"Spanish Phase 1, Units 1-30 (2003)","10,13,16"
+3,SP,978-1-4423-4634-5,Spanish 1,1,0:04:40,0:04:42,02Q,56,N,Do you understand English?,,,"Spanish Phase 1, Units 1-30 (2003)","10,15"
+4,SP,978-1-4423-4634-5,Spanish 1,1,0:04:45,0:04:47,02R,57,M,¿Entiende inglés?,2,Q,"Spanish Phase 1, Units 1-30 (2003)","10,15"
+5,SP,978-1-4423-4634-5,Spanish 1,1,0:06:34,0:06:35,03Q,74,N,"No, sir.",,,"Spanish Phase 1, Units 1-30 (2003)","7,16"
+6,SP,978-1-4423-4634-5,Spanish 1,1,0:06:38,0:06:40,03R,75,F,"No, señor.",2,S,"Spanish Phase 1, Units 1-30 (2003)","7,16"
+7,SP,978-1-4423-4634-5,Spanish 1,1,0:08:18,0:08:19,04Q,93,N,I understand.,,,"Spanish Phase 1, Units 1-30 (2003)","10,15"
+8,SP,978-1-4423-4634-5,Spanish 1,1,0:08:21,0:08:23,04R,94,F,Entiendo.,1,S,"Spanish Phase 1, Units 1-30 (2003)","10,15"
+9,SP,978-1-4423-4634-5,Spanish 1,1,0:09:24,0:09:25,05Q,104,N,You understand.,,,"Spanish Phase 1, Units 1-30 (2003)",15
+10,SP,978-1-4423-4634-5,Spanish 1,1,0:09:27,0:09:29,05R,105,M,Entiende.,1,S,"Spanish Phase 1, Units 1-30 (2003)",15
+11,SP,978-1-4423-4634-5,Spanish 1,1,0:11:48,0:11:50,06Q,132,N,Do you understand Spanish?,,,"Spanish Phase 1, Units 1-30 (2003)","10,15"
+12,SP,978-1-4423-4634-5,Spanish 1,1,0:11:53,0:11:55,06R,133,F,¿Entiende español?,2,Q,"Spanish Phase 1, Units 1-30 (2003)","10,15"
+13,SP,978-1-4423-4634-5,Spanish 1,1,0:13:31,0:13:34,07Q,150,N,I don’t speak Spanish.,,,"Spanish Phase 1, Units 1-30 (2003)","10,15,16"
+14,SP,978-1-4423-4634-5,Spanish 1,1,0:13:37,0:13:40,07R,151,M,No hablo español.,3,S,"Spanish Phase 1, Units 1-30 (2003)","10,15,16"
+15,SP,978-1-4423-4634-5,Spanish 1,1,0:17:59,0:18:01,08Q,198,N,I understand a little.,,,"Spanish Phase 1, Units 1-30 (2003)","10,15"
+16,SP,978-1-4423-4634-5,Spanish 1,1,0:18:04,0:18:06,08R,199,M,Entiendo un poco.,3,S,"Spanish Phase 1, Units 1-30 (2003)","10,15"
+17,SP,978-1-4423-4634-5,Spanish 1,1,0:20:19,0:20:22,09Q,225,N,"No, I don't speak English.",,,"Spanish Phase 1, Units 1-30 (2003)","10,15,16"
+18,SP,978-1-4423-4634-5,Spanish 1,1,0:20:25,0:20:28,09R,226,F,"No, no hablo inglés.",4,S,"Spanish Phase 1, Units 1-30 (2003)","10,15,16"
+19,SP,978-1-4423-4634-5,Spanish 1,1,0:25:20,0:25:22,10Q,277,N,Do you speak Spanish?,,,"Spanish Phase 1, Units 1-30 (2003)","10,15"
+20,SP,978-1-4423-4634-5,Spanish 1,1,0:25:24,0:25:26,10R,278,F,¿Habla español?,2,Q,"Spanish Phase 1, Units 1-30 (2003)","10,15"
+21,SP,978-1-4423-4634-5,Spanish 1,2,0:03:55,0:03:58,01Q,64,N,I understand a little Spanish.,,,"Spanish Phase 1, Units 1-30 (2003)","10,15"
+22,SP,978-1-4423-4634-5,Spanish 1,2,0:03:59,0:04:03,01R,65,M,Entiendo un poco de español.,5,S,"Spanish Phase 1, Units 1-30 (2003)","10,15"
+23,SP,978-1-4423-4634-5,Spanish 1,2,0:04:56,0:04:58,02Q,71,N,I speak a little Spanish.,,,"Spanish Phase 1, Units 1-30 (2003)","10,15,16"
+24,SP,978-1-4423-4634-5,Spanish 1,2,0:05:01,0:05:06,02R,72,M,Hablo un poco de español.,5,S,"Spanish Phase 1, Units 1-30 (2003)","10,15,16"
+25,SP,978-1-4423-4634-5,Spanish 1,2,0:05:16,0:05:18,03Q,74,N,I don’t understand English.,,,"Spanish Phase 1, Units 1-30 (2003)",15
+26,SP,978-1-4423-4634-5,Spanish 1,2,0:05:20,0:05:25,03R,75,F,No entiendo inglés.,3,S,"Spanish Phase 1, Units 1-30 (2003)",15
+27,SP,978-1-4423-4634-5,Spanish 1,2,0:07:07,0:07:10,04Q,89,N,Ask the man if he’s American.,,,"Spanish Phase 1, Units 1-30 (2003)",7
+28,SP,978-1-4423-4634-5,Spanish 1,2,0:07:13,0:07:17,04R,90,F,¿Es usted norteamericano?,3,Q,"Spanish Phase 1, Units 1-30 (2003)",7
+29,SP,978-1-4423-4634-5,Spanish 1,2,0:09:16,0:09:19,05Q,110,N,Ask the woman if she’s American.,,,"Spanish Phase 1, Units 1-30 (2003)",7
+30,SP,978-1-4423-4634-5,Spanish 1,2,0:09:22,0:09:26,05R,111,M,¿Es usted norteamericana?,3,Q,"Spanish Phase 1, Units 1-30 (2003)",7
+31,SP,978-1-4423-4634-5,Spanish 1,2,0:11:53,0:11:54,06Q,136,N,Good morning.,,,"Spanish Phase 1, Units 1-30 (2003)","10,13"
+32,SP,978-1-4423-4634-5,Spanish 1,2,0:11:58,0:12:01,06R,138,M,Buenos días.,2,S,"Spanish Phase 1, Units 1-30 (2003)","10,13"
+33,SP,978-1-4423-4634-5,Spanish 1,2,0:14:04,0:14:08,07Q,155,N,Ask the “señora” how she is.,,,"Spanish Phase 1, Units 1-30 (2003)",7
+34,SP,978-1-4423-4634-5,Spanish 1,2,0:14:11,0:14:15,07R,156,M,"¿Cómo está usted, señora?",4,Q,"Spanish Phase 1, Units 1-30 (2003)",7
+35,SP,978-1-4423-4634-5,Spanish 1,2,0:14:36,0:14:38,08Q,160,N,How are you?,,,"Spanish Phase 1, Units 1-30 (2003)","10,13"
+36,SP,978-1-4423-4634-5,Spanish 1,2,0:14:40,0:14:44,08R,161,M,¿Cómo está usted?,3,Q,"Spanish Phase 1, Units 1-30 (2003)","10,13"
+37,SP,978-1-4423-4634-5,Spanish 1,2,0:15:47,0:15:48,09Q,173,N,Thank you.,,,"Spanish Phase 1, Units 1-30 (2003)","13,16"
+38,SP,978-1-4423-4634-5,Spanish 1,2,0:15:49,0:15:52,09R,174,F,Gracias.,1,S,"Spanish Phase 1, Units 1-30 (2003)","13,16"
+39,SP,978-1-4423-4634-5,Spanish 1,2,0:17:37,0:17:39,10Q,196,N,"Very well, thanks.",,,"Spanish Phase 1, Units 1-30 (2003)","13,16"
+40,SP,978-1-4423-4634-5,Spanish 1,2,0:17:42,0:17:45,10R,197,F,"Muy bien, gracias.",3,S,"Spanish Phase 1, Units 1-30 (2003)","13,16"
+41,SP,978-1-4423-4634-5,Spanish 1,2,0:18:43,0:18:45,11Q,208,N,I understand very well.,,,"Spanish Phase 1, Units 1-30 (2003)","10,15"
+42,SP,978-1-4423-4634-5,Spanish 1,2,0:18:47,0:18:51,11R,209,F,Entiendo muy bien.,3,S,"Spanish Phase 1, Units 1-30 (2003)","10,15"
+43,SP,978-1-4423-4634-5,Spanish 1,3,0:01:23,0:01:24,01Q,25,N,Not very well.,,,"Spanish Phase 1, Units 1-30 (2003)",7
+44,SP,978-1-4423-4634-5,Spanish 1,3,0:01:26,0:01:29,01R,26,M,No muy bien.,3,S,"Spanish Phase 1, Units 1-30 (2003)",7
+45,SP,978-1-4423-4634-5,Spanish 1,3,0:03:43,0:03:45,02Q,52,N,I speak a little English.,,,"Spanish Phase 1, Units 1-30 (2003)","10,15"
+46,SP,978-1-4423-4634-5,Spanish 1,3,0:03:48,0:03:51,02R,53,F,Hablo un poco de inglés.,5,S,"Spanish Phase 1, Units 1-30 (2003)","10,15"
+47,SP,978-1-4423-4634-5,Spanish 1,3,0:04:01,0:04:02,03Q,55,N,You speak very well.,,,"Spanish Phase 1, Units 1-30 (2003)",15
+48,SP,978-1-4423-4634-5,Spanish 1,3,0:04:04,0:04:07,03R,56,M,Habla muy bien.,3,S,"Spanish Phase 1, Units 1-30 (2003)",15
+49,SP,978-1-4423-4634-5,Spanish 1,3,0:09:00,0:09:01,04Q,106,N,Where are you from?,,,"Spanish Phase 1, Units 1-30 (2003)","7,16"
+50,SP,978-1-4423-4634-5,Spanish 1,3,0:09:07,0:09:10,04R,108,F,¿De dónde es usted?,4,Q,"Spanish Phase 1, Units 1-30 (2003)","7,16"
+51,SP,978-1-4423-4634-5,Spanish 1,3,0:12:35,0:12:38,05Q,139,N,Good afternoon.,,,"Spanish Phase 1, Units 1-30 (2003)","10,13,16"
+52,SP,978-1-4423-4634-5,Spanish 1,3,0:12:39,0:12:42,05R,140,M,Buenas tardes.,2,S,"Spanish Phase 1, Units 1-30 (2003)","10,13,16"
+53,SP,978-1-4423-4634-5,Spanish 1,3,0:13:19,0:13:20,06Q,148,N,"Fine, thanks.",,,"Spanish Phase 1, Units 1-30 (2003)","13,16"
+54,SP,978-1-4423-4634-5,Spanish 1,3,0:13:22,0:13:26,06R,149,F,"Bien, gracias.",2,S,"Spanish Phase 1, Units 1-30 (2003)","13,16"
+55,SP,978-1-4423-4634-5,Spanish 1,3,0:14:03,0:14:05,07Q,154,N,I speak English.,,,"Spanish Phase 1, Units 1-30 (2003)","10,15,16"
+56,SP,978-1-4423-4634-5,Spanish 1,3,0:14:06,0:14:10,07R,155,M,Hablo inglés.,2,S,"Spanish Phase 1, Units 1-30 (2003)","10,15,16"
+57,SP,978-1-4423-4634-5,Spanish 1,3,0:14:10,0:14:13,08Q,156,N,I don’t understand Spanish.,,,"Spanish Phase 1, Units 1-30 (2003)","15,16"
+58,SP,978-1-4423-4634-5,Spanish 1,3,0:14:15,0:14:19,08R,157,M,No entiendo español.,3,S,"Spanish Phase 1, Units 1-30 (2003)","15,16"
+59,SP,978-1-4423-4634-5,Spanish 1,3,0:15:31,0:15:31,09Q,167,N,Good evening.,,,"Spanish Phase 1, Units 1-30 (2003)","10,13,16"
+60,SP,978-1-4423-4634-5,Spanish 1,3,0:15:33,0:15:37,09R,168,M,Buenas noches.,2,S,"Spanish Phase 1, Units 1-30 (2003)","10,13,16"
+61,SP,978-1-4423-4634-5,Spanish 1,3,0:20:34,0:20:37,10Q,222,N,"Excuse me, do you speak English?",,,"Spanish Phase 1, Units 1-30 (2003)","10,13,15,16"
+62,SP,978-1-4423-4634-5,Spanish 1,3,0:20:39,0:20:43,10R,223,M,"Perdón, ¿habla inglés?",3,Q,"Spanish Phase 1, Units 1-30 (2003)","10,13,15,16"
+63,SP,978-1-4423-4634-5,Spanish 1,3,0:20:46,0:20:48,11Q,224,N,"No sir, I don’t speak English.",,,"Spanish Phase 1, Units 1-30 (2003)",15
+64,SP,978-1-4423-4634-5,Spanish 1,3,0:20:52,0:20:56,11R,225,F,"No señor, no hablo inglés.",5,S,"Spanish Phase 1, Units 1-30 (2003)",15
+65,SP,978-1-4423-4634-5,Spanish 1,4,0:01:27,0:01:28,01Q,21,N,It's the evening.,,,"Spanish Phase 1, Units 1-30 (2003)",17
+66,SP,978-1-4423-4634-5,Spanish 1,4,0:01:30,0:01:33,01R,22,M,Es la noche.,3,S,"Spanish Phase 1, Units 1-30 (2003)",17
+67,SP,978-1-4423-4634-5,Spanish 1,4,0:08:58,0:08:59,02Q,95,N,"Pleased to meet you, miss.",,,"Spanish Phase 1, Units 1-30 (2003)","10,13,16"
+68,SP,978-1-4423-4634-5,Spanish 1,4,0:09:03,0:09:06,02R,96,M,"Encantado, señorita.",2,S,"Spanish Phase 1, Units 1-30 (2003)","10,13,16"
+69,SP,978-1-4423-4634-5,Spanish 1,4,0:09:29,0:09:30,03Q,100,N,Where are you?,,,"Spanish Phase 1, Units 1-30 (2003)",7
+70,SP,978-1-4423-4634-5,Spanish 1,4,0:09:33,0:09:36,03R,101,M,¿Dónde está usted?,3,Q,"Spanish Phase 1, Units 1-30 (2003)",7
+71,SP,978-1-4423-4634-5,Spanish 1,4,0:10:34,0:10:35,04Q,111,N,Where is the hotel?,,,"Spanish Phase 1, Units 1-30 (2003)","4,16,18"
+72,SP,978-1-4423-4634-5,Spanish 1,4,0:10:38,0:10:41,04R,112,M,¿Dónde está el hotel?,4,Q,"Spanish Phase 1, Units 1-30 (2003)","4,16,18"
+73,SP,978-1-4423-4634-5,Spanish 1,4,0:12:28,0:12:29,05Q,128,N,Is it here?,,,"Spanish Phase 1, Units 1-30 (2003)","4,7"
+74,SP,978-1-4423-4634-5,Spanish 1,4,0:12:31,0:12:34,05R,129,F,¿Está aquí?,2,Q,"Spanish Phase 1, Units 1-30 (2003)","4,7"
+75,SP,978-1-4423-4634-5,Spanish 1,4,0:15:06,0:15:07,06Q,153,N,The restaurant is here.,,,"Spanish Phase 1, Units 1-30 (2003)","4,6"
+76,SP,978-1-4423-4634-5,Spanish 1,4,0:15:11,0:15:15,06R,154,M,El restaurante está aquí.,4,S,"Spanish Phase 1, Units 1-30 (2003)","4,6"
+77,SP,978-1-4423-4634-5,Spanish 1,4,0:15:33,0:15:34,07Q,157,N,It’s over there.,,,"Spanish Phase 1, Units 1-30 (2003)",4
+78,SP,978-1-4423-4634-5,Spanish 1,4,0:15:37,0:15:40,07R,158,M,Está allí.,2,S,"Spanish Phase 1, Units 1-30 (2003)",4
+79,SP,978-1-4423-4634-5,Spanish 1,4,0:17:12,0:17:14,08Q,173,N,"Pleased to meet you, sir.",,,"Spanish Phase 1, Units 1-30 (2003)","10,13,16"
+80,SP,978-1-4423-4634-5,Spanish 1,4,0:17:16,0:17:20,08R,174,F,"Encantada, señor.",2,S,"Spanish Phase 1, Units 1-30 (2003)","10,13,16"
+81,SP,978-1-4423-4634-5,Spanish 1,4,0:18:34,0:18:36,09Q,188,N,Ask the man if he’s American.,,,"Spanish Phase 1, Units 1-30 (2003)",7
+82,SP,978-1-4423-4634-5,Spanish 1,4,0:18:40,0:18:44,09R,189,F,"¿Es usted norteamericano, señor?",4,Q,"Spanish Phase 1, Units 1-30 (2003)",7
+83,SP,978-1-4423-4634-5,Spanish 1,4,0:22:34,0:22:38,10Q,228,N,"How does he say, “I’m not Mexican.”",,,"Spanish Phase 1, Units 1-30 (2003)",7
+84,SP,978-1-4423-4634-5,Spanish 1,4,0:22:41,0:22:45,10R,229,F,No soy mexicano.,3,S,"Spanish Phase 1, Units 1-30 (2003)",7
+85,SP,978-1-4423-4634-5,Spanish 1,5,0:04:21,0:04:24,01Q,61,N,Are you from here?,,,"Spanish Phase 1, Units 1-30 (2003)",7
+86,SP,978-1-4423-4634-5,Spanish 1,5,0:04:26,0:04:29,01R,62,M,¿Es usted de aquí?,4,Q,"Spanish Phase 1, Units 1-30 (2003)",7
+87,SP,978-1-4423-4634-5,Spanish 1,5,0:07:13,0:07:14,02Q,89,N,I don’t know.,,,"Spanish Phase 1, Units 1-30 (2003)","7,16"
+88,SP,978-1-4423-4634-5,Spanish 1,5,0:07:16,0:07:17,02R,90,F,No sé.,2,S,"Spanish Phase 1, Units 1-30 (2003)","7,16"
+89,SP,978-1-4423-4634-5,Spanish 1,5,0:07:46,0:07:50,03Q,95,N,Do you know where the hotel is?,,,"Spanish Phase 1, Units 1-30 (2003)","4,16,18"
+90,SP,978-1-4423-4634-5,Spanish 1,5,0:07:52,0:07:56,03R,96,M,¿Sabe dónde está el hotel?,5,Q,"Spanish Phase 1, Units 1-30 (2003)","4,16,18"
+91,SP,978-1-4423-4634-5,Spanish 1,5,0:09:20,0:09:22,04Q,111,N,"Please, do you know where it is?",,,"Spanish Phase 1, Units 1-30 (2003)","4,13,16"
+92,SP,978-1-4423-4634-5,Spanish 1,5,0:09:25,0:09:29,04R,112,M,"Por favor, ¿sabe dónde está?",5,Q,"Spanish Phase 1, Units 1-30 (2003)","4,13,16"
+93,SP,978-1-4423-4634-5,Spanish 1,5,0:09:48,0:09:50,05Q,116,N,I don’t know where it is.,,,"Spanish Phase 1, Units 1-30 (2003)",4
+94,SP,978-1-4423-4634-5,Spanish 1,5,0:09:52,0:09:56,05R,117,F,No sé dónde está.,4,S,"Spanish Phase 1, Units 1-30 (2003)",4
+95,SP,978-1-4423-4634-5,Spanish 1,5,0:10:43,0:10:44,06Q,128,N,I’m not from here.,,,"Spanish Phase 1, Units 1-30 (2003)","7,16"
+96,SP,978-1-4423-4634-5,Spanish 1,5,0:10:46,0:10:49,06R,129,F,No soy de aquí.,4,S,"Spanish Phase 1, Units 1-30 (2003)","7,16"
+97,SP,978-1-4423-4634-5,Spanish 1,5,0:14:40,0:14:42,07Q,164,N,"Yes, I have pesos.",,,"Spanish Phase 1, Units 1-30 (2003)",11
+98,SP,978-1-4423-4634-5,Spanish 1,5,0:14:44,0:14:47,07R,165,M,"Si, tengo pesos.",3,S,"Spanish Phase 1, Units 1-30 (2003)",11
+99,SP,978-1-4423-4634-5,Spanish 1,5,0:16:48,0:16:50,08Q,185,N,I don’t have any pesos.,,,"Spanish Phase 1, Units 1-30 (2003)",11
+100,SP,978-1-4423-4634-5,Spanish 1,5,0:16:52,0:16:55,08R,186,M,No tengo pesos.,3,S,"Spanish Phase 1, Units 1-30 (2003)",11
+101,SP,978-1-4423-4634-5,Spanish 1,5,0:20:04,0:20:06,09Q,219,N,I don’t know where it is.,,,"Spanish Phase 1, Units 1-30 (2003)","4,16"
+102,SP,978-1-4423-4634-5,Spanish 1,5,0:20:09,0:20:12,09R,220,F,No sé dónde está.,4,S,"Spanish Phase 1, Units 1-30 (2003)","4,16"
+103,SP,978-1-4423-4634-5,Spanish 1,5,0:29:08,0:29:10,10Q,325,N,"You speak Spanish very well, sir.",,,"Spanish Phase 1, Units 1-30 (2003)",15
+104,SP,978-1-4423-4634-5,Spanish 1,5,0:29:14,0:29:18,10R,326,F,"Habla castellano muy bien, señor.",5,S,"Spanish Phase 1, Units 1-30 (2003)",15
+105,SP,978-1-4423-4634-5,Spanish 1,6,0:05:41,0:05:42,01Q,75,N,Not much.,,,"Spanish Phase 1, Units 1-30 (2003)",7
+106,SP,978-1-4423-4634-5,Spanish 1,6,0:05:50,0:05:53,01R,76,F,No mucho.,2,S,"Spanish Phase 1, Units 1-30 (2003)",7
+107,SP,978-1-4423-4634-5,Spanish 1,6,0:06:46,0:06:49,02Q,85,N,"Now say with emphasis, “YOU have a lot of dollars.”",,,"Spanish Phase 1, Units 1-30 (2003)","11,17"
+108,SP,978-1-4423-4634-5,Spanish 1,6,0:06:53,0:06:57,02R,86,M,Usted tiene muchos dólares.,4,S,"Spanish Phase 1, Units 1-30 (2003)","11,17"
+109,SP,978-1-4423-4634-5,Spanish 1,6,0:07:33,0:07:34,03Q,93,N,How many do you have?,,,"Spanish Phase 1, Units 1-30 (2003)",7
+110,SP,978-1-4423-4634-5,Spanish 1,6,0:07:36,0:07:39,03R,94,M,¿Cuántos tiene?,2,Q,"Spanish Phase 1, Units 1-30 (2003)",7
+111,SP,978-1-4423-4634-5,Spanish 1,6,0:08:09,0:08:11,04Q,100,N,I have two pesos.,,,"Spanish Phase 1, Units 1-30 (2003)","11,12"
+112,SP,978-1-4423-4634-5,Spanish 1,6,0:08:13,0:08:15,04R,101,F,Tengo dos pesos.,3,S,"Spanish Phase 1, Units 1-30 (2003)","11,12"
+113,SP,978-1-4423-4634-5,Spanish 1,6,0:09:21,0:09:23,05Q,112,N,But I don’t have any dollars.,,,"Spanish Phase 1, Units 1-30 (2003)",11
+114,SP,978-1-4423-4634-5,Spanish 1,6,0:09:26,0:09:28,05R,113,F,Pero no tengo dólares.,4,S,"Spanish Phase 1, Units 1-30 (2003)",11
+115,SP,978-1-4423-4634-5,Spanish 1,6,0:12:49,0:12:50,06Q,155,N,Do you want dollars?,,,"Spanish Phase 1, Units 1-30 (2003)",11
+116,SP,978-1-4423-4634-5,Spanish 1,6,0:12:53,0:12:54,06R,156,M,¿Quiere dólares?,2,Q,"Spanish Phase 1, Units 1-30 (2003)",11
+117,SP,978-1-4423-4634-5,Spanish 1,6,0:15:08,0:15:10,07Q,181,N,I want three pesos.,,,"Spanish Phase 1, Units 1-30 (2003)","11,12"
+118,SP,978-1-4423-4634-5,Spanish 1,6,0:15:12,0:15:14,07R,182,F,Quiero tres pesos.,3,S,"Spanish Phase 1, Units 1-30 (2003)","11,12"
+119,SP,978-1-4423-4634-5,Spanish 1,6,0:15:54,0:15:56,08Q,189,N,I don’t want three dollars.,,,"Spanish Phase 1, Units 1-30 (2003)","11,12"
+120,SP,978-1-4423-4634-5,Spanish 1,6,0:15:59,0:16:01,08R,190,F,No quiero tres dólares.,4,S,"Spanish Phase 1, Units 1-30 (2003)","11,12"
+121,SP,978-1-4423-4634-5,Spanish 1,6,0:18:23,0:18:24,09Q,218,N,That’s O.K.,,,"Spanish Phase 1, Units 1-30 (2003)",7
+122,SP,978-1-4423-4634-5,Spanish 1,6,0:18:26,0:18:28,09R,219,M,Está bien.,2,S,"Spanish Phase 1, Units 1-30 (2003)",7
+123,SP,978-1-4423-4634-5,Spanish 1,6,0:19:13,0:19:14,10Q,228,N,In the hotel.,,,"Spanish Phase 1, Units 1-30 (2003)",18
+124,SP,978-1-4423-4634-5,Spanish 1,6,0:19:16,0:19:18,10R,229,F,En el hotel.,3,S,"Spanish Phase 1, Units 1-30 (2003)",18
+125,SP,978-1-4423-4634-5,Spanish 1,7,0:11:50,0:11:51,01Q,142,N,I have four dollars.,,,"Spanish Phase 1, Units 1-30 (2003)","11,12"
+126,SP,978-1-4423-4634-5,Spanish 1,7,0:11:53,0:11:57,01R,143,F,Yo tengo cuatro dólares.,4,S,"Spanish Phase 1, Units 1-30 (2003)","11,12"
+127,SP,978-1-4423-4634-5,Spanish 1,7,0:14:42,0:14:43,02Q,173,N,What do you want?,,,"Spanish Phase 1, Units 1-30 (2003)",7
+128,SP,978-1-4423-4634-5,Spanish 1,7,0:14:45,0:14:47,02R,174,M,¿Qué quiere?,2,Q,"Spanish Phase 1, Units 1-30 (2003)",7
+129,SP,978-1-4423-4634-5,Spanish 1,7,0:16:06,0:16:08,03Q,189,N,Tell me that you want to eat.,,,"Spanish Phase 1, Units 1-30 (2003)",6
+130,SP,978-1-4423-4634-5,Spanish 1,7,0:16:09,0:16:12,03R,190,F,Quiero comer.,2,S,"Spanish Phase 1, Units 1-30 (2003)",6
+131,SP,978-1-4423-4634-5,Spanish 1,7,0:16:30,0:16:33,04Q,195,N,I want to eat in the hotel.,,,"Spanish Phase 1, Units 1-30 (2003)","6,18"
+132,SP,978-1-4423-4634-5,Spanish 1,7,0:16:35,0:16:39,04R,196,F,Quiero comer en el hotel.,5,S,"Spanish Phase 1, Units 1-30 (2003)","6,18"
+133,SP,978-1-4423-4634-5,Spanish 1,7,0:16:55,0:16:56,05Q,200,N,What do you want to eat?,,,"Spanish Phase 1, Units 1-30 (2003)",6
+134,SP,978-1-4423-4634-5,Spanish 1,7,0:16:58,0:17:01,05R,201,M,¿Qué quiere comer?,3,Q,"Spanish Phase 1, Units 1-30 (2003)",6
+135,SP,978-1-4423-4634-5,Spanish 1,7,0:19:31,0:19:32,06Q,231,N,I don’t want anything.,,,"Spanish Phase 1, Units 1-30 (2003)",7
+136,SP,978-1-4423-4634-5,Spanish 1,7,0:19:38,0:19:42,06R,233,F,No quiero nada.,3,S,"Spanish Phase 1, Units 1-30 (2003)",7
+137,SP,978-1-4423-4634-5,Spanish 1,7,0:20:52,0:20:53,07Q,248,N,I want to eat something.,,,"Spanish Phase 1, Units 1-30 (2003)","6,16"
+138,SP,978-1-4423-4634-5,Spanish 1,7,0:20:56,0:20:59,07R,249,M,Quiero comer algo.,3,S,"Spanish Phase 1, Units 1-30 (2003)","6,16"
+139,SP,978-1-4423-4634-5,Spanish 1,7,0:22:14,0:22:15,08Q,262,N,Where do you want to eat?,,,"Spanish Phase 1, Units 1-30 (2003)",6
+140,SP,978-1-4423-4634-5,Spanish 1,7,0:22:17,0:22:21,08R,263,M,¿Dónde quiere comer?,3,Q,"Spanish Phase 1, Units 1-30 (2003)",6
+141,SP,978-1-4423-4634-5,Spanish 1,7,0:24:36,0:24:37,09Q,296,N,Let’s go to eat.,,,"Spanish Phase 1, Units 1-30 (2003)",6
+142,SP,978-1-4423-4634-5,Spanish 1,7,0:24:39,0:24:42,09R,297,F,Vamos a comer.,3,S,"Spanish Phase 1, Units 1-30 (2003)",6
+143,SP,978-1-4423-4634-5,Spanish 1,7,0:27:47,0:27:49,10Q,328,N,How does she ask if you want to eat something?,,,"Spanish Phase 1, Units 1-30 (2003)",6
+144,SP,978-1-4423-4634-5,Spanish 1,7,0:27:51,0:27:54,10R,329,F,¿Quiere comer algo?,3,Q,"Spanish Phase 1, Units 1-30 (2003)",6
+145,SP,978-1-4423-4634-5,Spanish 1,8,0:05:20,0:05:22,01Q,70,N,Let’s go to the hotel.,,,"Spanish Phase 1, Units 1-30 (2003)","16,18"
+146,SP,978-1-4423-4634-5,Spanish 1,8,0:05:24,0:05:26,01R,71,M,Vamos al hotel.,3,S,"Spanish Phase 1, Units 1-30 (2003)","16,18"
+147,SP,978-1-4423-4634-5,Spanish 1,8,0:06:57,0:06:59,02Q,83,N,But I want to drink something.,,,"Spanish Phase 1, Units 1-30 (2003)",6
+148,SP,978-1-4423-4634-5,Spanish 1,8,0:07:02,0:07:04,02R,84,M,Pero quiero beber algo.,4,S,"Spanish Phase 1, Units 1-30 (2003)",6
+149,SP,978-1-4423-4634-5,Spanish 1,8,0:07:37,0:07:38,03Q,90,N,What do you want to drink?,,,"Spanish Phase 1, Units 1-30 (2003)",6
+150,SP,978-1-4423-4634-5,Spanish 1,8,0:07:41,0:07:43,03R,91,F,¿Qué quiere beber?,3,Q,"Spanish Phase 1, Units 1-30 (2003)",6
+151,SP,978-1-4423-4634-5,Spanish 1,8,0:09:09,0:09:10,04Q,103,N,I want a beer.,,,"Spanish Phase 1, Units 1-30 (2003)",6
+152,SP,978-1-4423-4634-5,Spanish 1,8,0:09:13,0:09:15,04R,104,F,Quiero una cerveza.,3,S,"Spanish Phase 1, Units 1-30 (2003)",6
+153,SP,978-1-4423-4634-5,Spanish 1,8,0:10:36,0:10:37,05Q,118,N,How much does it cost?,,,"Spanish Phase 1, Units 1-30 (2003)","14,16"
+154,SP,978-1-4423-4634-5,Spanish 1,8,0:10:40,0:10:42,05R,119,M,¿Cuánto cuesta?,2,Q,"Spanish Phase 1, Units 1-30 (2003)","14,16"
+155,SP,978-1-4423-4634-5,Spanish 1,8,0:15:06,0:15:08,06Q,167,N,I have six pesos.,,,"Spanish Phase 1, Units 1-30 (2003)","11,12"
+156,SP,978-1-4423-4634-5,Spanish 1,8,0:15:12,0:15:15,06R,168,F,Yo tengo seis pesos.,4,S,"Spanish Phase 1, Units 1-30 (2003)","11,12"
+157,SP,978-1-4423-4634-5,Spanish 1,8,0:18:48,0:18:50,07Q,203,N,Ask where the bathroom is.,,,"Spanish Phase 1, Units 1-30 (2003)","4,16"
+158,SP,978-1-4423-4634-5,Spanish 1,8,0:18:53,0:18:55,07R,204,M,¿Dónde está el baño?,4,Q,"Spanish Phase 1, Units 1-30 (2003)","4,16"
+159,SP,978-1-4423-4634-5,Spanish 1,8,0:19:45,0:19:47,08Q,213,N,I don’t know where the bathroom is.,,,"Spanish Phase 1, Units 1-30 (2003)","4,16"
+160,SP,978-1-4423-4634-5,Spanish 1,8,0:19:51,0:19:53,08R,214,F,No sé dónde está el baño.,6,S,"Spanish Phase 1, Units 1-30 (2003)","4,16"
+161,SP,978-1-4423-4634-5,Spanish 1,8,0:21:09,0:21:11,09Q,226,N,"Please, where’s the bathroom?",,,"Spanish Phase 1, Units 1-30 (2003)",16
+162,SP,978-1-4423-4634-5,Spanish 1,8,0:21:15,0:21:18,09R,227,M,"Por favor, ¿dónde está el baño?",6,Q,"Spanish Phase 1, Units 1-30 (2003)",16
+163,SP,978-1-4423-4634-5,Spanish 1,8,0:24:56,0:24:57,10Q,269,N,Don’t you want to eat anything?,,,"Spanish Phase 1, Units 1-30 (2003)",6
+164,SP,978-1-4423-4634-5,Spanish 1,8,0:25:01,0:25:03,10R,270,M,¿No quiere comer nada?,4,Q,"Spanish Phase 1, Units 1-30 (2003)",6
+165,SP,978-1-4423-4634-5,Spanish 1,9,0:02:51,0:02:54,01Q,46,N,Ask Juan what he wants to eat.,,,"Spanish Phase 1, Units 1-30 (2003)",6
+166,SP,978-1-4423-4634-5,Spanish 1,9,0:02:56,0:02:59,01R,47,F,"¿Qué quiere comer, Juan?",4,Q,"Spanish Phase 1, Units 1-30 (2003)",6
+167,SP,978-1-4423-4634-5,Spanish 1,9,0:03:29,0:03:30,02Q,53,N,We’re going to drink something.,,,"Spanish Phase 1, Units 1-30 (2003)",6
+168,SP,978-1-4423-4634-5,Spanish 1,9,0:03:33,0:03:35,02R,54,M,Vamos a beber algo.,4,S,"Spanish Phase 1, Units 1-30 (2003)",6
+169,SP,978-1-4423-4634-5,Spanish 1,9,0:06:40,0:06:42,03Q,87,N,I’m going to the restaurant.,,,"Spanish Phase 1, Units 1-30 (2003)",6
+170,SP,978-1-4423-4634-5,Spanish 1,9,0:06:46,0:06:48,03R,88,F,Voy al restaurante.,3,S,"Spanish Phase 1, Units 1-30 (2003)",6
+171,SP,978-1-4423-4634-5,Spanish 1,9,0:08:51,0:08:52,04Q,107,N,I’m going to pay.,,,"Spanish Phase 1, Units 1-30 (2003)","11,14"
+172,SP,978-1-4423-4634-5,Spanish 1,9,0:08:55,0:08:57,04R,108,F,Yo voy a pagar.,4,S,"Spanish Phase 1, Units 1-30 (2003)","11,14"
+173,SP,978-1-4423-4634-5,Spanish 1,9,0:10:00,0:10:02,05Q,119,N,I have money.,,,"Spanish Phase 1, Units 1-30 (2003)",11
+174,SP,978-1-4423-4634-5,Spanish 1,9,0:10:04,0:10:06,05R,120,F,Tengo dinero.,2,S,"Spanish Phase 1, Units 1-30 (2003)",11
+175,SP,978-1-4423-4634-5,Spanish 1,9,0:10:44,0:10:46,06Q,127,N,YOU’RE not going to pay.,,,"Spanish Phase 1, Units 1-30 (2003)","11,14"
+176,SP,978-1-4423-4634-5,Spanish 1,9,0:10:50,0:10:52,06R,128,M,Usted no va a pagar.,5,S,"Spanish Phase 1, Units 1-30 (2003)","11,14"
+177,SP,978-1-4423-4634-5,Spanish 1,9,0:12:10,0:12:12,07Q,143,N,Seven hundred pesos.,,,"Spanish Phase 1, Units 1-30 (2003)","11,12"
+178,SP,978-1-4423-4634-5,Spanish 1,9,0:12:15,0:12:17,07R,144,M,Setecientos pesos.,2,S,"Spanish Phase 1, Units 1-30 (2003)","11,12"
+179,SP,978-1-4423-4634-5,Spanish 1,9,0:12:48,0:12:50,08Q,152,N,Eight hundred pesos.,,,"Spanish Phase 1, Units 1-30 (2003)","11,12"
+180,SP,978-1-4423-4634-5,Spanish 1,9,0:12:52,0:12:55,08R,153,M,Ochocientos pesos.,2,S,"Spanish Phase 1, Units 1-30 (2003)","11,12"
+181,SP,978-1-4423-4634-5,Spanish 1,9,0:15:23,0:15:24,09Q,172,N,Only eight pesos.,,,"Spanish Phase 1, Units 1-30 (2003)","11,12"
+182,SP,978-1-4423-4634-5,Spanish 1,9,0:15:27,0:15:29,09R,173,M,Sólo ocho pesos.,3,S,"Spanish Phase 1, Units 1-30 (2003)","11,12"
+183,SP,978-1-4423-4634-5,Spanish 1,9,0:17:29,0:17:30,10Q,194,N,I don’t have time.,,,"Spanish Phase 1, Units 1-30 (2003)",17
+184,SP,978-1-4423-4634-5,Spanish 1,9,0:17:33,0:17:34,10R,195,M,No tengo tiempo.,3,S,"Spanish Phase 1, Units 1-30 (2003)",17
+185,SP,978-1-4423-4634-5,Spanish 1,10,0:06:21,0:06:24,01Q,77,N,I have seven or eight minutes.,,,"Spanish Phase 1, Units 1-30 (2003)","12,17"
+186,SP,978-1-4423-4634-5,Spanish 1,10,0:06:27,0:06:31,01R,78,F,Tengo siete u ocho minutos.,5,S,"Spanish Phase 1, Units 1-30 (2003)","12,17"
+187,SP,978-1-4423-4634-5,Spanish 1,10,0:08:17,0:08:20,02Q,97,N,I like beer.,,,"Spanish Phase 1, Units 1-30 (2003)",6
+188,SP,978-1-4423-4634-5,Spanish 1,10,0:08:22,0:08:25,02R,98,M,Me gusta la cerveza.,4,S,"Spanish Phase 1, Units 1-30 (2003)",6
+189,SP,978-1-4423-4634-5,Spanish 1,10,0:10:41,0:10:44,03Q,103,N,I don’t like beer.,,,"Spanish Phase 1, Units 1-30 (2003)",6
+190,SP,978-1-4423-4634-5,Spanish 1,10,0:10:47,0:10:50,03R,104,F,No me gusta la cerveza.,5,S,"Spanish Phase 1, Units 1-30 (2003)",6
+191,SP,978-1-4423-4634-5,Spanish 1,10,0:09:41,0:09:43,04Q,106,N,I like to eat.,,,"Spanish Phase 1, Units 1-30 (2003)",6
+192,SP,978-1-4423-4634-5,Spanish 1,10,0:09:45,0:09:48,04R,107,F,Me gusta comer.,3,S,"Spanish Phase 1, Units 1-30 (2003)",6
+193,SP,978-1-4423-4634-5,Spanish 1,10,0:11:38,0:11:39,05Q,124,N,A cold beer.,,,"Spanish Phase 1, Units 1-30 (2003)",6
+194,SP,978-1-4423-4634-5,Spanish 1,10,0:11:41,0:11:47,05R,125,M,Una cerveza fría.,3,S,"Spanish Phase 1, Units 1-30 (2003)",6
+195,SP,978-1-4423-4634-5,Spanish 1,10,0:12:07,0:12:08,06Q,128,N,A cold sandwich.,,,"Spanish Phase 1, Units 1-30 (2003)",6
+196,SP,978-1-4423-4634-5,Spanish 1,10,0:12:11,0:12:15,06R,129,M,Un sándwiche frío.,3,S,"Spanish Phase 1, Units 1-30 (2003)",6
+197,SP,978-1-4423-4634-5,Spanish 1,10,0:12:43,0:12:44,07Q,134,N,I like it a lot.,,,"Spanish Phase 1, Units 1-30 (2003)",7
+198,SP,978-1-4423-4634-5,Spanish 1,10,0:12:47,0:12:49,07R,135,F,Me gusta mucho.,3,S,"Spanish Phase 1, Units 1-30 (2003)",7
+199,SP,978-1-4423-4634-5,Spanish 1,10,0:13:08,0:13:09,08Q,141,N,Why not?,,,"Spanish Phase 1, Units 1-30 (2003)",7
+200,SP,978-1-4423-4634-5,Spanish 1,10,0:13:11,0:13:13,08R,142,M,¿Por qué no?,3,Q,"Spanish Phase 1, Units 1-30 (2003)",7
+201,SP,978-1-4423-4634-5,Spanish 1,10,0:14:19,0:14:20,09Q,151,N,Because I like it.,,,"Spanish Phase 1, Units 1-30 (2003)",7
+202,SP,978-1-4423-4634-5,Spanish 1,10,0:14:23,0:14:25,09R,152,F,Porque me gusta.,3,S,"Spanish Phase 1, Units 1-30 (2003)",7
+203,SP,978-1-4423-4634-5,Spanish 1,10,0:18:56,0:18:58,10Q,202,N,You’re welcome.,,,"Spanish Phase 1, Units 1-30 (2003)","7,13,16"
+204,SP,978-1-4423-4634-5,Spanish 1,10,0:19:16,0:19:19,10R,207,F,De nada.,2,S,"Spanish Phase 1, Units 1-30 (2003)","7,13,16"
+205,SP,978-1-4423-4634-5,Spanish 1,11,0:11:20,0:11:22,01Q,135,N,I’m going to buy something.,,,"Spanish Phase 1, Units 1-30 (2003)",14
+206,SP,978-1-4423-4634-5,Spanish 1,11,0:11:24,0:11:26,01R,136,F,Voy a comprar algo.,4,S,"Spanish Phase 1, Units 1-30 (2003)",14
+207,SP,978-1-4423-4634-5,Spanish 1,11,0:12:39,0:12:41,02Q,149,N,I’m going to buy many things.,,,"Spanish Phase 1, Units 1-30 (2003)",14
+208,SP,978-1-4423-4634-5,Spanish 1,11,0:12:45,0:12:48,02R,150,F,Voy a comprar muchas cosas.,5,S,"Spanish Phase 1, Units 1-30 (2003)",14
+209,SP,978-1-4423-4634-5,Spanish 1,11,0:14:49,0:14:52,03Q,171,N,I can buy many things.,,,"Spanish Phase 1, Units 1-30 (2003)",14
+210,SP,978-1-4423-4634-5,Spanish 1,11,0:14:56,0:14:58,03R,172,F,Puedo comprar muchas cosas.,4,S,"Spanish Phase 1, Units 1-30 (2003)",14
+211,SP,978-1-4423-4634-5,Spanish 1,11,0:15:02,0:15:04,04Q,173,N,You can buy things.,,,"Spanish Phase 1, Units 1-30 (2003)",14
+212,SP,978-1-4423-4634-5,Spanish 1,11,0:15:06,0:15:08,04R,174,M,Puede comprar cosas.,3,S,"Spanish Phase 1, Units 1-30 (2003)",14
+213,SP,978-1-4423-4634-5,Spanish 1,11,0:18:08,0:18:10,05Q,207,N,There are twelve pesos here.,,,"Spanish Phase 1, Units 1-30 (2003)","11,12"
+214,SP,978-1-4423-4634-5,Spanish 1,11,0:18:12,0:18:15,05R,208,F,Hay doce pesos aquí.,4,S,"Spanish Phase 1, Units 1-30 (2003)","11,12"
+215,SP,978-1-4423-4634-5,Spanish 1,11,0:21:02,0:21:04,06Q,240,N,I buy good things.,,,"Spanish Phase 1, Units 1-30 (2003)",14
+216,SP,978-1-4423-4634-5,Spanish 1,11,0:21:08,0:21:10,06R,241,F,Compro cosas buenas.,3,S,"Spanish Phase 1, Units 1-30 (2003)",14
+217,SP,978-1-4423-4634-5,Spanish 1,11,0:25:36,0:25:40,07Q,281,N,You can buy very good beers.,,,"Spanish Phase 1, Units 1-30 (2003)","6,14"
+218,SP,978-1-4423-4634-5,Spanish 1,11,0:25:43,0:25:47,07R,282,M,Puede comprar cervezas muy buenas.,5,S,"Spanish Phase 1, Units 1-30 (2003)","6,14"
+219,SP,978-1-4423-4634-5,Spanish 1,12,0:08:33,0:08:35,01Q,97,N,Isn’t there any money?,,,"Spanish Phase 1, Units 1-30 (2003)",11
+220,SP,978-1-4423-4634-5,Spanish 1,12,0:08:37,0:08:39,01R,98,F,¿No hay dinero?,3,Q,"Spanish Phase 1, Units 1-30 (2003)",11
+221,SP,978-1-4423-4634-5,Spanish 1,12,0:10:59,0:11:00,02Q,124,N,At what time?,,,"Spanish Phase 1, Units 1-30 (2003)","16,17"
+222,SP,978-1-4423-4634-5,Spanish 1,12,0:11:03,0:11:06,02R,125,F,¿A qué hora?,3,Q,"Spanish Phase 1, Units 1-30 (2003)","16,17"
+223,SP,978-1-4423-4634-5,Spanish 1,12,0:13:27,0:13:28,03Q,153,N,At eight-thirty.,,,"Spanish Phase 1, Units 1-30 (2003)","12,17"
+224,SP,978-1-4423-4634-5,Spanish 1,12,0:13:33,0:13:36,03R,154,M,A las ocho y media.,5,S,"Spanish Phase 1, Units 1-30 (2003)","12,17"
+225,SP,978-1-4423-4634-5,Spanish 1,12,0:15:47,0:15:49,04Q,179,N,Tomorrow I don’t want to.,,,"Spanish Phase 1, Units 1-30 (2003)",17
+226,SP,978-1-4423-4634-5,Spanish 1,12,0:15:52,0:15:54,04R,180,F,Mañana no quiero.,3,S,"Spanish Phase 1, Units 1-30 (2003)",17
+227,SP,978-1-4423-4634-5,Spanish 1,12,0:22:32,0:22:35,05Q,260,N,"If I don’t have time, I don’t eat.",,,"Spanish Phase 1, Units 1-30 (2003)","6,17"
+228,SP,978-1-4423-4634-5,Spanish 1,12,0:22:39,0:22:42,05R,261,F,"Si no tengo tiempo, no como.",6,S,"Spanish Phase 1, Units 1-30 (2003)","6,17"
+229,SP,978-1-4423-4634-5,Spanish 1,12,0:28:29,0:28:31,06Q,327,N,"Tomorrow, I don’t have anything.",,,"Spanish Phase 1, Units 1-30 (2003)",17
+230,SP,978-1-4423-4634-5,Spanish 1,12,0:28:34,0:28:37,06R,328,M,"Mañana, no tengo nada.",4,S,"Spanish Phase 1, Units 1-30 (2003)",17
+231,SP,978-1-4423-4634-5,Spanish 1,13,0:02:33,0:02:34,01Q,41,N,I’m going to drink it.,,,"Spanish Phase 1, Units 1-30 (2003)",6
+232,SP,978-1-4423-4634-5,Spanish 1,13,0:02:36,0:02:39,01R,42,M,Voy a beberla.,3,S,"Spanish Phase 1, Units 1-30 (2003)",6
+233,SP,978-1-4423-4634-5,Spanish 1,13,0:02:42,0:02:43,02Q,43,N,I’m going to buy it.,,,"Spanish Phase 1, Units 1-30 (2003)",14
+234,SP,978-1-4423-4634-5,Spanish 1,13,0:02:46,0:02:48,02R,44,M,Voy a comprarla.,3,S,"Spanish Phase 1, Units 1-30 (2003)",14
+235,SP,978-1-4423-4634-5,Spanish 1,13,0:04:08,0:04:12,03Q,60,N,I only have thirteen or fourteen pesos.,,,"Spanish Phase 1, Units 1-30 (2003)","11,12"
+236,SP,978-1-4423-4634-5,Spanish 1,13,0:04:16,0:04:20,03R,61,F,Sólo tengo trece o catorce pesos.,6,S,"Spanish Phase 1, Units 1-30 (2003)","11,12"
+237,SP,978-1-4423-4634-5,Spanish 1,13,0:06:00,0:06:01,04Q,76,N,I have seventeen pesos.,,,"Spanish Phase 1, Units 1-30 (2003)","11,12"
+238,SP,978-1-4423-4634-5,Spanish 1,13,0:06:05,0:06:09,04R,77,M,Tengo diecisiete pesos.,3,S,"Spanish Phase 1, Units 1-30 (2003)","11,12"
+239,SP,978-1-4423-4634-5,Spanish 1,13,0:07:19,0:07:20,05Q,88,N,Two beers cost a lot.,,,"Spanish Phase 1, Units 1-30 (2003)","6,12,14"
+240,SP,978-1-4423-4634-5,Spanish 1,13,0:07:25,0:07:28,05R,89,F,Dos cervezas cuestan mucho.,4,S,"Spanish Phase 1, Units 1-30 (2003)","6,12,14"
+241,SP,978-1-4423-4634-5,Spanish 1,13,0:07:46,0:07:48,06Q,92,N,How many beers are you going to buy?,,,"Spanish Phase 1, Units 1-30 (2003)","6,14"
+242,SP,978-1-4423-4634-5,Spanish 1,13,0:07:52,0:07:55,06R,93,M,¿Cuántas cervezas va a comprar?,5,Q,"Spanish Phase 1, Units 1-30 (2003)","6,14"
+243,SP,978-1-4423-4634-5,Spanish 1,13,0:08:24,0:08:25,07Q,99,N,I can buy them.,,,"Spanish Phase 1, Units 1-30 (2003)",14
+244,SP,978-1-4423-4634-5,Spanish 1,13,0:08:28,0:08:30,07R,100,M,Yo puedo comprarlas.,4,S,"Spanish Phase 1, Units 1-30 (2003)",14
+245,SP,978-1-4423-4634-5,Spanish 1,13,0:09:19,0:09:20,08Q,108,N,I can pay for them.,,,"Spanish Phase 1, Units 1-30 (2003)","11,14"
+246,SP,978-1-4423-4634-5,Spanish 1,13,0:09:23,0:09:24,08R,109,M,Puedo pagarlas.,2,S,"Spanish Phase 1, Units 1-30 (2003)","11,14"
+247,SP,978-1-4423-4634-5,Spanish 1,13,0:10:24,0:10:26,09Q,118,N,We’re going to drink them.,,,"Spanish Phase 1, Units 1-30 (2003)",6
+248,SP,978-1-4423-4634-5,Spanish 1,13,0:10:29,0:10:31,09R,119,M,Vamos a beberlas.,3,S,"Spanish Phase 1, Units 1-30 (2003)",6
+249,SP,978-1-4423-4634-5,Spanish 1,13,0:18:19,0:18:21,10Q,202,N,At a quarter to eight.,,,"Spanish Phase 1, Units 1-30 (2003)","12,17"
+250,SP,978-1-4423-4634-5,Spanish 1,13,0:18:23,0:18:26,10R,203,F,A las ocho menos cuarto.,5,S,"Spanish Phase 1, Units 1-30 (2003)","12,17"
+251,SP,978-1-4423-4634-5,Spanish 1,13,0:19:04,0:19:06,11Q,209,N,That’s not OK.,,,"Spanish Phase 1, Units 1-30 (2003)",7
+252,SP,978-1-4423-4634-5,Spanish 1,13,0:19:08,0:19:10,11R,210,M,No está bien.,3,S,"Spanish Phase 1, Units 1-30 (2003)",7
+253,SP,978-1-4423-4634-5,Spanish 1,13,0:27:48,0:27:49,12Q,298,N,At what time do you eat?,,,"Spanish Phase 1, Units 1-30 (2003)","6,17"
+254,SP,978-1-4423-4634-5,Spanish 1,13,0:27:52,0:27:54,12R,299,F,¿A qué hora come?,4,Q,"Spanish Phase 1, Units 1-30 (2003)","6,17"
+255,SP,978-1-4423-4634-5,Spanish 1,14,0:05:29,0:05:31,01Q,78,N,Me too.,,,"Spanish Phase 1, Units 1-30 (2003)",7
+256,SP,978-1-4423-4634-5,Spanish 1,14,0:05:33,0:05:35,01R,79,M,Yo también.,2,S,"Spanish Phase 1, Units 1-30 (2003)",7
+257,SP,978-1-4423-4634-5,Spanish 1,14,0:05:54,0:05:55,02Q,83,N,You too.,,,"Spanish Phase 1, Units 1-30 (2003)",7
+258,SP,978-1-4423-4634-5,Spanish 1,14,0:05:58,0:06:00,02R,84,F,Usted también.,2,S,"Spanish Phase 1, Units 1-30 (2003)",7
+259,SP,978-1-4423-4634-5,Spanish 1,14,0:09:40,0:09:41,03Q,124,N,What time is it?,,,"Spanish Phase 1, Units 1-30 (2003)","16,17"
+260,SP,978-1-4423-4634-5,Spanish 1,14,0:09:45,0:09:47,03R,125,F,¿Qué hora es?,3,Q,"Spanish Phase 1, Units 1-30 (2003)","16,17"
+261,SP,978-1-4423-4634-5,Spanish 1,14,0:09:52,0:09:54,04Q,126,N,It’s three o’clock.,,,"Spanish Phase 1, Units 1-30 (2003)","12,17"
+262,SP,978-1-4423-4634-5,Spanish 1,14,0:09:57,0:09:58,04R,127,M,Son las tres.,3,S,"Spanish Phase 1, Units 1-30 (2003)","12,17"
+263,SP,978-1-4423-4634-5,Spanish 1,14,0:11:29,0:11:30,05Q,142,N,It’s late.,,,"Spanish Phase 1, Units 1-30 (2003)","16,17"
+264,SP,978-1-4423-4634-5,Spanish 1,14,0:11:33,0:11:34,05R,143,F,Es tarde.,2,S,"Spanish Phase 1, Units 1-30 (2003)","16,17"
+265,SP,978-1-4423-4634-5,Spanish 1,14,0:12:54,0:12:56,06Q,160,N,I don’t want to talk now.,,,"Spanish Phase 1, Units 1-30 (2003)",17
+266,SP,978-1-4423-4634-5,Spanish 1,14,0:12:58,0:13:02,06R,161,F,No quiero hablar ahora.,4,S,"Spanish Phase 1, Units 1-30 (2003)",17
+267,SP,978-1-4423-4634-5,Spanish 1,14,0:14:04,0:14:06,07Q,175,N,It’s early.,,,"Spanish Phase 1, Units 1-30 (2003)",17
+268,SP,978-1-4423-4634-5,Spanish 1,14,0:14:08,0:14:10,07R,176,F,Es temprano.,2,S,"Spanish Phase 1, Units 1-30 (2003)",17
+269,SP,978-1-4423-4634-5,Spanish 1,14,0:15:09,0:15:10,08Q,185,N,But later.,,,"Spanish Phase 1, Units 1-30 (2003)",17
+270,SP,978-1-4423-4634-5,Spanish 1,14,0:15:12,0:15:14,08R,186,F,Pero más tarde.,3,S,"Spanish Phase 1, Units 1-30 (2003)",17
+271,SP,978-1-4423-4634-5,Spanish 1,14,0:15:50,0:15:51,09Q,193,N,In an hour and a half.,,,"Spanish Phase 1, Units 1-30 (2003)",17
+272,SP,978-1-4423-4634-5,Spanish 1,14,0:15:56,0:15:59,09R,194,F,En una hora y media.,5,S,"Spanish Phase 1, Units 1-30 (2003)",17
+273,SP,978-1-4423-4634-5,Spanish 1,14,0:20:03,0:20:04,10Q,240,N,Twenty-five.,,,"Spanish Phase 1, Units 1-30 (2003)",12
+274,SP,978-1-4423-4634-5,Spanish 1,14,0:20:06,0:20:09,10R,241,F,Veinticinco.,1,S,"Spanish Phase 1, Units 1-30 (2003)",12
+275,SP,978-1-4423-4634-5,Spanish 1,15,0:04:24,0:04:26,01Q,57,N,He has pesos.,,,"Spanish Phase 1, Units 1-30 (2003)",11
+276,SP,978-1-4423-4634-5,Spanish 1,15,0:04:28,0:04:30,01R,58,F,Él tiene pesos.,3,S,"Spanish Phase 1, Units 1-30 (2003)",11
+277,SP,978-1-4423-4634-5,Spanish 1,15,0:05:29,0:05:31,02Q,65,N,He has twenty-one pesos.,,,"Spanish Phase 1, Units 1-30 (2003)","11,12"
+278,SP,978-1-4423-4634-5,Spanish 1,15,0:05:34,0:05:39,02R,66,F,Él tiene veintiún pesos.,4,S,"Spanish Phase 1, Units 1-30 (2003)","11,12"
+279,SP,978-1-4423-4634-5,Spanish 1,15,0:09:28,0:09:30,03Q,105,N,I have forty minutes.,,,"Spanish Phase 1, Units 1-30 (2003)","12,17"
+280,SP,978-1-4423-4634-5,Spanish 1,15,0:09:33,0:09:35,03R,106,M,Tengo cuarenta minutos.,3,S,"Spanish Phase 1, Units 1-30 (2003)","12,17"
+281,SP,978-1-4423-4634-5,Spanish 1,15,0:12:21,0:12:23,04Q,130,N,It’s too much time.,,,"Spanish Phase 1, Units 1-30 (2003)",17
+282,SP,978-1-4423-4634-5,Spanish 1,15,0:12:26,0:12:28,04R,131,M,Es demasiado tiempo.,3,S,"Spanish Phase 1, Units 1-30 (2003)",17
+283,SP,978-1-4423-4634-5,Spanish 1,15,0:13:44,0:13:45,05Q,142,N,Who drinks too much?,,,"Spanish Phase 1, Units 1-30 (2003)",6
+284,SP,978-1-4423-4634-5,Spanish 1,15,0:13:49,0:13:50,05R,143,F,¿Quién bebe demasiado?,3,Q,"Spanish Phase 1, Units 1-30 (2003)",6
+285,SP,978-1-4423-4634-5,Spanish 1,15,0:15:31,0:15:32,06Q,162,N,What are we going to do?,,,"Spanish Phase 1, Units 1-30 (2003)",1
+286,SP,978-1-4423-4634-5,Spanish 1,15,0:15:35,0:15:37,06R,163,M,¿Qué vamos a hacer?,4,Q,"Spanish Phase 1, Units 1-30 (2003)",1
+287,SP,978-1-4423-4634-5,Spanish 1,15,0:16:16,0:16:18,07Q,171,N,I’m not going to do anything.,,,"Spanish Phase 1, Units 1-30 (2003)",1
+288,SP,978-1-4423-4634-5,Spanish 1,15,0:16:22,0:16:24,07R,172,F,Yo no voy a hacer nada.,6,S,"Spanish Phase 1, Units 1-30 (2003)",1
+289,SP,978-1-4423-4634-5,Spanish 1,15,0:17:28,0:17:31,08Q,184,N,I’m going to do it later.,,,"Spanish Phase 1, Units 1-30 (2003)",17
+290,SP,978-1-4423-4634-5,Spanish 1,15,0:17:34,0:17:38,08R,185,M,Voy a hacerlo más tarde.,5,S,"Spanish Phase 1, Units 1-30 (2003)",17
+291,SP,978-1-4423-4634-5,Spanish 1,15,0:18:10,0:18:12,09Q,191,N,Two hundred forty-five pesos.,,,"Spanish Phase 1, Units 1-30 (2003)","11,12"
+292,SP,978-1-4423-4634-5,Spanish 1,15,0:18:15,0:18:20,09R,192,F,Doscientos cuarenta y cinco pesos.,5,S,"Spanish Phase 1, Units 1-30 (2003)","11,12"
+293,SP,978-1-4423-4634-5,Spanish 1,15,0:21:59,0:22:01,10Q,229,N,I want to talk with you.,,,"Spanish Phase 1, Units 1-30 (2003)",7
+294,SP,978-1-4423-4634-5,Spanish 1,15,0:22:03,0:22:06,10R,230,F,Quiero hablar con usted.,4,S,"Spanish Phase 1, Units 1-30 (2003)",7
+295,SP,978-1-4423-4634-5,Spanish 1,16,0:04:28,0:04:33,01Q,59,N,We’re going to do something together.,,,"Spanish Phase 1, Units 1-30 (2003)",1
+296,SP,978-1-4423-4634-5,Spanish 1,16,0:04:34,0:04:39,01R,60,F,Vamos a hacer algo juntos.,5,S,"Spanish Phase 1, Units 1-30 (2003)",1
+297,SP,978-1-4423-4634-5,Spanish 1,16,0:08:02,0:08:04,02Q,98,N,I want to pay alone.,,,"Spanish Phase 1, Units 1-30 (2003)","11,14"
+298,SP,978-1-4423-4634-5,Spanish 1,16,0:08:06,0:08:08,02R,99,M,Quiero pagar solo.,3,S,"Spanish Phase 1, Units 1-30 (2003)","11,14"
+299,SP,978-1-4423-4634-5,Spanish 1,16,0:12:08,0:12:10,03Q,141,N,My husband’s going to pay.,,,"Spanish Phase 1, Units 1-30 (2003)","5,11,14"
+300,SP,978-1-4423-4634-5,Spanish 1,16,0:12:13,0:12:16,03R,142,F,Mi esposo va a pagar.,5,S,"Spanish Phase 1, Units 1-30 (2003)","5,11,14"
+301,SP,978-1-4423-4634-5,Spanish 1,16,0:12:19,0:12:22,04Q,143,N,My wife has no money.,,,"Spanish Phase 1, Units 1-30 (2003)","5,11"
+302,SP,978-1-4423-4634-5,Spanish 1,16,0:12:26,0:12:28,04R,144,M,Mi esposa no tiene dinero.,5,S,"Spanish Phase 1, Units 1-30 (2003)","5,11"
+303,SP,978-1-4423-4634-5,Spanish 1,16,0:13:55,0:13:57,05Q,157,N,My husband has seventy pesos.,,,"Spanish Phase 1, Units 1-30 (2003)","5,11,12"
+304,SP,978-1-4423-4634-5,Spanish 1,16,0:14:01,0:14:05,05R,158,F,Mi esposo tiene setenta pesos.,5,S,"Spanish Phase 1, Units 1-30 (2003)","5,11,12"
+305,SP,978-1-4423-4634-5,Spanish 1,16,0:21:43,0:21:45,06Q,240,N,We have one hour.,,,"Spanish Phase 1, Units 1-30 (2003)","12,17"
+306,SP,978-1-4423-4634-5,Spanish 1,16,0:21:47,0:21:49,06R,241,F,Tenemos una hora.,3,S,"Spanish Phase 1, Units 1-30 (2003)","12,17"
+307,SP,978-1-4423-4634-5,Spanish 1,16,0:22:59,0:23:01,07Q,252,N,We want to eat together.,,,"Spanish Phase 1, Units 1-30 (2003)",6
+308,SP,978-1-4423-4634-5,Spanish 1,16,0:23:04,0:23:06,07R,253,F,Queremos comer juntos.,3,S,"Spanish Phase 1, Units 1-30 (2003)",6
+309,SP,978-1-4423-4634-5,Spanish 1,16,0:24:27,0:24:29,08Q,266,N,We have lots of friends.,,,"Spanish Phase 1, Units 1-30 (2003)",5
+310,SP,978-1-4423-4634-5,Spanish 1,16,0:24:32,0:24:34,08R,267,M,Tenemos muchos amigos.,3,S,"Spanish Phase 1, Units 1-30 (2003)",5
+311,SP,978-1-4423-4634-5,Spanish 1,16,0:26:35,0:26:39,09Q,289,N,"Your husband, does he want something?",,,"Spanish Phase 1, Units 1-30 (2003)",5
+312,SP,978-1-4423-4634-5,Spanish 1,16,0:26:41,0:26:44,09R,290,M,"Su esposo, ¿quiere algo?",4,Q,"Spanish Phase 1, Units 1-30 (2003)",5
+313,SP,978-1-4423-4634-5,Spanish 1,17,0:07:24,0:07:25,01Q,119,N,With our friends.,,,"Spanish Phase 1, Units 1-30 (2003)",5
+314,SP,978-1-4423-4634-5,Spanish 1,17,0:07:28,0:07:30,01R,120,F,Con nuestros amigos.,3,S,"Spanish Phase 1, Units 1-30 (2003)",5
+315,SP,978-1-4423-4634-5,Spanish 1,17,0:10:39,0:10:42,02Q,127,N,We speak Spanish.,,,"Spanish Phase 1, Units 1-30 (2003)",15
+316,SP,978-1-4423-4634-5,Spanish 1,17,0:10:44,0:10:48,02R,128,M,Hablamos español.,2,S,"Spanish Phase 1, Units 1-30 (2003)",15
+317,SP,978-1-4423-4634-5,Spanish 1,17,0:11:23,0:11:25,03Q,134,N,We’re American.,,,"Spanish Phase 1, Units 1-30 (2003)","10,16"
+318,SP,978-1-4423-4634-5,Spanish 1,17,0:11:26,0:11:30,03R,135,M,Somos norteamericanos.,2,S,"Spanish Phase 1, Units 1-30 (2003)","10,16"
+319,SP,978-1-4423-4634-5,Spanish 1,17,0:12:05,0:12:08,04Q,141,N,We speak with our friends.,,,"Spanish Phase 1, Units 1-30 (2003)","5,15"
+320,SP,978-1-4423-4634-5,Spanish 1,17,0:12:11,0:12:15,04R,142,M,Hablamos con nuestros amigos.,4,S,"Spanish Phase 1, Units 1-30 (2003)","5,15"
+321,SP,978-1-4423-4634-5,Spanish 1,17,0:14:46,0:14:47,05Q,164,N,We can eat together.,,,"Spanish Phase 1, Units 1-30 (2003)",6
+322,SP,978-1-4423-4634-5,Spanish 1,17,0:14:51,0:14:53,05R,165,M,Podemos comer juntos.,3,S,"Spanish Phase 1, Units 1-30 (2003)",6
+323,SP,978-1-4423-4634-5,Spanish 1,17,0:15:46,0:15:47,06Q,176,N,"Well, maybe.",,,"Spanish Phase 1, Units 1-30 (2003)",7
+324,SP,978-1-4423-4634-5,Spanish 1,17,0:15:49,0:15:51,06R,177,F,"Bueno, quizás.",2,S,"Spanish Phase 1, Units 1-30 (2003)",7
+325,SP,978-1-4423-4634-5,Spanish 1,17,0:21:46,0:21:47,07Q,237,N,We have money to buy something.,,,"Spanish Phase 1, Units 1-30 (2003)","11,14"
+326,SP,978-1-4423-4634-5,Spanish 1,17,0:21:51,0:21:56,07R,238,M,Tenemos dinero para comprar algo.,5,S,"Spanish Phase 1, Units 1-30 (2003)","11,14"
+327,SP,978-1-4423-4634-5,Spanish 1,17,0:28:07,0:28:11,08Q,303,N,"You know, we’re not from here.",,,"Spanish Phase 1, Units 1-30 (2003)",9
+328,SP,978-1-4423-4634-5,Spanish 1,17,0:28:13,0:28:17,08R,304,M,"Sabe, no somos de aquí.",5,S,"Spanish Phase 1, Units 1-30 (2003)",9
+329,SP,978-1-4423-4634-5,Spanish 1,18,0:03:36,0:03:38,01Q,50,N,I want to know.,,,"Spanish Phase 1, Units 1-30 (2003)",7
+330,SP,978-1-4423-4634-5,Spanish 1,18,0:03:41,0:03:42,01R,51,M,Quiero saber.,2,S,"Spanish Phase 1, Units 1-30 (2003)",7
+331,SP,978-1-4423-4634-5,Spanish 1,18,0:05:04,0:05:08,02Q,66,N,We eat and we talk.,,,"Spanish Phase 1, Units 1-30 (2003)","6,15"
+332,SP,978-1-4423-4634-5,Spanish 1,18,0:05:09,0:05:13,02R,67,F,Comemos y hablamos.,3,S,"Spanish Phase 1, Units 1-30 (2003)","6,15"
+333,SP,978-1-4423-4634-5,Spanish 1,18,0:05:19,0:05:24,03Q,68,N,"All right, but I buy and I pay.",,,"Spanish Phase 1, Units 1-30 (2003)","11,14"
+334,SP,978-1-4423-4634-5,Spanish 1,18,0:05:26,0:05:33,03R,69,M,"Bueno, pero yo compro y yo pago.",7,S,"Spanish Phase 1, Units 1-30 (2003)","11,14"
+335,SP,978-1-4423-4634-5,Spanish 1,18,0:06:07,0:06:08,04Q,74,N,I have enough money.,,,"Spanish Phase 1, Units 1-30 (2003)",11
+336,SP,978-1-4423-4634-5,Spanish 1,18,0:06:12,0:06:14,04R,75,M,Tengo suficiente dinero.,3,S,"Spanish Phase 1, Units 1-30 (2003)",11
+337,SP,978-1-4423-4634-5,Spanish 1,18,0:07:49,0:07:51,05Q,91,N,Because my friends are going too.,,,"Spanish Phase 1, Units 1-30 (2003)",5
+338,SP,978-1-4423-4634-5,Spanish 1,18,0:07:55,0:07:58,05R,92,F,Porque mis amigos van también.,5,S,"Spanish Phase 1, Units 1-30 (2003)",5
+339,SP,978-1-4423-4634-5,Spanish 1,18,0:14:59,0:15:02,06Q,163,N,I’m here with my husband.,,,"Spanish Phase 1, Units 1-30 (2003)",5
+340,SP,978-1-4423-4634-5,Spanish 1,18,0:15:04,0:15:08,06R,164,F,Estoy aquí con mi esposo.,5,S,"Spanish Phase 1, Units 1-30 (2003)",5
+341,SP,978-1-4423-4634-5,Spanish 1,18,0:15:46,0:15:49,07Q,171,N,"Ask a man, “Are you ready?”",,,"Spanish Phase 1, Units 1-30 (2003)",7
+342,SP,978-1-4423-4634-5,Spanish 1,18,0:15:51,0:15:53,07R,172,F,¿Está listo?,2,Q,"Spanish Phase 1, Units 1-30 (2003)",7
+343,SP,978-1-4423-4634-5,Spanish 1,18,0:16:13,0:16:15,08Q,175,N,"How would a woman say, “I’m ready.”",,,"Spanish Phase 1, Units 1-30 (2003)",7
+344,SP,978-1-4423-4634-5,Spanish 1,18,0:16:17,0:16:19,08R,176,F,Estoy lista.,2,S,"Spanish Phase 1, Units 1-30 (2003)",7
+345,SP,978-1-4423-4634-5,Spanish 1,18,0:19:29,0:19:30,09Q,209,N,We’re leaving.,,,"Spanish Phase 1, Units 1-30 (2003)","7,18"
+346,SP,978-1-4423-4634-5,Spanish 1,18,0:19:32,0:19:34,09R,210,M,Nos vamos.,2,S,"Spanish Phase 1, Units 1-30 (2003)","7,18"
+347,SP,978-1-4423-4634-5,Spanish 1,18,0:20:38,0:20:39,10Q,221,N,We’re ready.,,,"Spanish Phase 1, Units 1-30 (2003)",7
+348,SP,978-1-4423-4634-5,Spanish 1,18,0:20:41,0:20:44,10R,222,M,Estamos listos.,2,S,"Spanish Phase 1, Units 1-30 (2003)",7
+349,SP,978-1-4423-4634-5,Spanish 1,18,0:22:33,0:22:37,11Q,243,N,Say that you have a hundred pesos.,,,"Spanish Phase 1, Units 1-30 (2003)","11,12"
+350,SP,978-1-4423-4634-5,Spanish 1,18,0:22:39,0:22:41,11R,244,F,Tengo cien pesos.,3,S,"Spanish Phase 1, Units 1-30 (2003)","11,12"
+351,SP,978-1-4423-4634-5,Spanish 1,19,0:01:05,0:01:07,01Q,21,N,How much do five cost?,,,"Spanish Phase 1, Units 1-30 (2003)","12,14"
+352,SP,978-1-4423-4634-5,Spanish 1,19,0:01:10,0:01:15,01R,22,F,¿Cuánto cuestan cinco?,3,Q,"Spanish Phase 1, Units 1-30 (2003)","12,14"
+353,SP,978-1-4423-4634-5,Spanish 1,19,0:02:27,0:02:30,02Q,35,N,No more numbers!,,,"Spanish Phase 1, Units 1-30 (2003)","9,12"
+354,SP,978-1-4423-4634-5,Spanish 1,19,0:02:32,0:02:34,02R,36,F,¡No más números!,3,S,"Spanish Phase 1, Units 1-30 (2003)","9,12"
+355,SP,978-1-4423-4634-5,Spanish 1,19,0:04:25,0:04:27,03Q,51,N,I want to know more numbers.,,,"Spanish Phase 1, Units 1-30 (2003)","9,12"
+356,SP,978-1-4423-4634-5,Spanish 1,19,0:04:31,0:04:33,03R,52,M,Quiero saber más números.,4,S,"Spanish Phase 1, Units 1-30 (2003)","9,12"
+357,SP,978-1-4423-4634-5,Spanish 1,19,0:05:26,0:05:28,04Q,65,N,I want to talk with my friends.,,,"Spanish Phase 1, Units 1-30 (2003)","5,15"
+358,SP,978-1-4423-4634-5,Spanish 1,19,0:05:33,0:05:35,04R,66,F,Quiero hablar con mis amigos.,5,S,"Spanish Phase 1, Units 1-30 (2003)","5,15"
+359,SP,978-1-4423-4634-5,Spanish 1,19,0:06:36,0:06:38,05Q,79,N,At three in the afternoon.,,,"Spanish Phase 1, Units 1-30 (2003)","12,17"
+360,SP,978-1-4423-4634-5,Spanish 1,19,0:06:40,0:06:43,05R,80,M,A las tres de la tarde.,6,S,"Spanish Phase 1, Units 1-30 (2003)","12,17"
+361,SP,978-1-4423-4634-5,Spanish 1,19,0:11:13,0:11:15,06Q,126,N,Is there enough time to eat?,,,"Spanish Phase 1, Units 1-30 (2003)","6,17"
+362,SP,978-1-4423-4634-5,Spanish 1,19,0:11:21,0:11:25,06R,127,F,¿Hay suficiente tiempo para comer?,5,Q,"Spanish Phase 1, Units 1-30 (2003)","6,17"
+363,SP,978-1-4423-4634-5,Spanish 1,19,0:14:15,0:14:17,07Q,156,N,We’re going to eat all together.,,,"Spanish Phase 1, Units 1-30 (2003)",6
+364,SP,978-1-4423-4634-5,Spanish 1,19,0:14:21,0:14:24,07R,157,F,Vamos a comer todos juntos.,5,S,"Spanish Phase 1, Units 1-30 (2003)",6
+365,SP,978-1-4423-4634-5,Spanish 1,19,0:17:44,0:17:45,08Q,188,N,We’re all leaving.,,,"Spanish Phase 1, Units 1-30 (2003)",18
+366,SP,978-1-4423-4634-5,Spanish 1,19,0:17:47,0:17:51,08R,189,F,Todos nos vamos.,3,S,"Spanish Phase 1, Units 1-30 (2003)",18
+367,SP,978-1-4423-4634-5,Spanish 1,19,0:18:54,0:18:57,09Q,201,N,When are you leaving?,,,"Spanish Phase 1, Units 1-30 (2003)",18
+368,SP,978-1-4423-4634-5,Spanish 1,19,0:18:59,0:19:02,09R,202,F,¿Cuándo se va?,3,Q,"Spanish Phase 1, Units 1-30 (2003)",18
+369,SP,978-1-4423-4634-5,Spanish 1,19,0:21:08,0:21:10,10Q,223,N,Let’s all go to eat.,,,"Spanish Phase 1, Units 1-30 (2003)","1,6"
+370,SP,978-1-4423-4634-5,Spanish 1,19,0:21:13,0:21:17,10R,224,F,Vamos todos a comer.,4,S,"Spanish Phase 1, Units 1-30 (2003)","1,6"
+371,SP,978-1-4423-4634-5,Spanish 1,19,0:26:28,0:26:31,11Q,276,N,When are they leaving?,,,"Spanish Phase 1, Units 1-30 (2003)",18
+372,SP,978-1-4423-4634-5,Spanish 1,19,0:26:32,0:26:35,11R,277,M,¿Cuándo se van?,3,Q,"Spanish Phase 1, Units 1-30 (2003)",18
+373,SP,978-1-4423-4634-5,Spanish 1,19,0:28:13,0:28:20,12Q,294,N,We're leaving in one month.,,,"Spanish Phase 1, Units 1-30 (2003)","12,17,18"
+374,SP,978-1-4423-4634-5,Spanish 1,19,0:28:20,0:28:26,12R,295,F,Nosotros nos vamos en un mes.,6,S,"Spanish Phase 1, Units 1-30 (2003)","12,17,18"
+375,SP,978-1-4423-4634-5,Spanish 1,20,0:05:39,0:05:46,01Q,73,N,Pregúntele a él si se va solo.,,,"Spanish Phase 1, Units 1-30 (2003)","9,18"
+376,SP,978-1-4423-4634-5,Spanish 1,20,0:05:45,0:05:48,01R,74,F,¿Se va solo?,3,Q,"Spanish Phase 1, Units 1-30 (2003)","9,18"
+377,SP,978-1-4423-4634-5,Spanish 1,20,0:07:10,0:07:12,02Q,85,N,He’s leaving with the Mexicans.,,,"Spanish Phase 1, Units 1-30 (2003)",18
+378,SP,978-1-4423-4634-5,Spanish 1,20,0:07:17,0:07:19,02R,86,M,Se va con los mexicanos.,5,S,"Spanish Phase 1, Units 1-30 (2003)",18
+379,SP,978-1-4423-4634-5,Spanish 1,20,0:11:22,0:11:26,03Q,127,N,Ask how long he’s going to be there.,,,"Spanish Phase 1, Units 1-30 (2003)","9,17"
+380,SP,978-1-4423-4634-5,Spanish 1,20,0:11:29,0:11:33,03R,128,F,¿Cuánto tiempo va a estar allí?,6,Q,"Spanish Phase 1, Units 1-30 (2003)","9,17"
+381,SP,978-1-4423-4634-5,Spanish 1,20,0:11:52,0:11:56,04Q,133,N,He’s going to be there two months.,,,"Spanish Phase 1, Units 1-30 (2003)","12,17"
+382,SP,978-1-4423-4634-5,Spanish 1,20,0:11:59,0:12:03,04R,134,M,Va a estar allí dos meses.,6,S,"Spanish Phase 1, Units 1-30 (2003)","12,17"
+383,SP,978-1-4423-4634-5,Spanish 1,20,0:12:55,0:12:56,05Q,143,N,If you speak slowly.,,,"Spanish Phase 1, Units 1-30 (2003)",15
+384,SP,978-1-4423-4634-5,Spanish 1,20,0:12:59,0:13:02,05R,144,M,Si habla despacio.,3,S,"Spanish Phase 1, Units 1-30 (2003)",15
+385,SP,978-1-4423-4634-5,Spanish 1,20,0:14:50,0:14:52,06Q,161,N,He speaks too quickly.,,,"Spanish Phase 1, Units 1-30 (2003)",15
+386,SP,978-1-4423-4634-5,Spanish 1,20,0:14:55,0:14:58,06R,162,M,Habla demasiado rápido.,3,S,"Spanish Phase 1, Units 1-30 (2003)",15
+387,SP,978-1-4423-4634-5,Spanish 1,20,0:15:35,0:15:36,07Q,168,N,This person isn’t here.,,,"Spanish Phase 1, Units 1-30 (2003)",9
+388,SP,978-1-4423-4634-5,Spanish 1,20,0:15:53,0:15:55,07R,169,M,Esta persona no está aquí.,5,S,"Spanish Phase 1, Units 1-30 (2003)",9
+389,SP,978-1-4423-4634-5,Spanish 1,20,0:16:10,0:16:14,08Q,173,N,He doesn’t speak slowly.,,,"Spanish Phase 1, Units 1-30 (2003)",15
+390,SP,978-1-4423-4634-5,Spanish 1,20,0:16:16,0:16:20,08R,174,F,No habla despacio.,3,S,"Spanish Phase 1, Units 1-30 (2003)",15
+391,SP,978-1-4423-4634-5,Spanish 1,20,0:18:45,0:18:46,09Q,197,N,Who is this man?,,,"Spanish Phase 1, Units 1-30 (2003)",9
+392,SP,978-1-4423-4634-5,Spanish 1,20,0:18:49,0:18:51,09R,198,F,¿Quién es este hombre?,4,Q,"Spanish Phase 1, Units 1-30 (2003)",9
+393,SP,978-1-4423-4634-5,Spanish 1,20,0:22:48,0:22:51,10Q,244,N,I don’t know who this man is.,,,"Spanish Phase 1, Units 1-30 (2003)",9
+394,SP,978-1-4423-4634-5,Spanish 1,20,0:22:57,0:22:59,10R,245,F,No sé quién es este hombre.,6,S,"Spanish Phase 1, Units 1-30 (2003)",9
+395,SP,978-1-4423-4634-5,Spanish 1,20,0:23:16,0:23:18,11Q,249,N,"He’s your friend, right?",,,"Spanish Phase 1, Units 1-30 (2003)",5
+396,SP,978-1-4423-4634-5,Spanish 1,20,0:23:21,0:23:23,11R,250,F,"Es su amigo, ¿verdad?",4,Q,"Spanish Phase 1, Units 1-30 (2003)",5
+397,SP,978-1-4423-4634-5,Spanish 1,21,0:01:13,0:01:16,01Q,22,N,You speak too fast.,,,"Spanish Phase 1, Units 1-30 (2003)","10,15,16"
+398,SP,978-1-4423-4634-5,Spanish 1,21,0:01:19,0:01:22,01R,23,F,Habla demasiado rápido.,3,S,"Spanish Phase 1, Units 1-30 (2003)","10,15,16"
+399,SP,978-1-4423-4634-5,Spanish 1,21,0:02:17,0:02:20,02Q,32,N,But I'm not leaving.,,,"Spanish Phase 1, Units 1-30 (2003)",18
+400,SP,978-1-4423-4634-5,Spanish 1,21,0:02:22,0:02:25,02R,33,F,Pero yo no me voy.,5,S,"Spanish Phase 1, Units 1-30 (2003)",18
+401,SP,978-1-4423-4634-5,Spanish 1,21,0:03:25,0:03:28,03Q,46,N,She’s a very good person.,,,"Spanish Phase 1, Units 1-30 (2003)",9
+402,SP,978-1-4423-4634-5,Spanish 1,21,0:03:30,0:03:34,03R,47,F,Es una persona muy buena.,5,S,"Spanish Phase 1, Units 1-30 (2003)",9
+403,SP,978-1-4423-4634-5,Spanish 1,21,0:06:37,0:06:41,04Q,80,N,He speaks Spanish very slowly.,,,"Spanish Phase 1, Units 1-30 (2003)",15
+404,SP,978-1-4423-4634-5,Spanish 1,21,0:06:44,0:06:48,04R,81,F,Habla español muy despacio.,4,S,"Spanish Phase 1, Units 1-30 (2003)",15
+405,SP,978-1-4423-4634-5,Spanish 1,21,0:08:19,0:08:22,05Q,97,N,"Try to ask the woman, “Are you sick too?”",,,"Spanish Phase 1, Units 1-30 (2003)",7
+406,SP,978-1-4423-4634-5,Spanish 1,21,0:08:25,0:08:28,05R,98,M,¿Está enferma también?,3,Q,"Spanish Phase 1, Units 1-30 (2003)",7
+407,SP,978-1-4423-4634-5,Spanish 1,21,0:10:18,0:10:21,06Q,116,N,Give me a cup of tea.,,,"Spanish Phase 1, Units 1-30 (2003)",6
+408,SP,978-1-4423-4634-5,Spanish 1,21,0:10:24,0:10:26,06R,117,F,Déme una taza de té.,5,S,"Spanish Phase 1, Units 1-30 (2003)",6
+409,SP,978-1-4423-4634-5,Spanish 1,21,0:10:29,0:10:32,07Q,118,N,"How does a man say, “I’m sick.”",,,"Spanish Phase 1, Units 1-30 (2003)",7
+410,SP,978-1-4423-4634-5,Spanish 1,21,0:10:34,0:10:36,07R,119,M,Estoy enfermo.,2,S,"Spanish Phase 1, Units 1-30 (2003)",7
+411,SP,978-1-4423-4634-5,Spanish 1,21,0:11:27,0:11:29,08Q,128,N,A glass of water.,,,"Spanish Phase 1, Units 1-30 (2003)",6
+412,SP,978-1-4423-4634-5,Spanish 1,21,0:11:31,0:11:33,08R,129,M,Un vaso de agua.,4,S,"Spanish Phase 1, Units 1-30 (2003)",6
+413,SP,978-1-4423-4634-5,Spanish 1,21,0:13:07,0:13:09,09Q,144,N,Give me a small glass of water.,,,"Spanish Phase 1, Units 1-30 (2003)",6
+414,SP,978-1-4423-4634-5,Spanish 1,21,0:13:13,0:13:16,09R,145,M,Déme un vaso pequeño de agua.,6,S,"Spanish Phase 1, Units 1-30 (2003)",6
+415,SP,978-1-4423-4634-5,Spanish 1,21,0:14:43,0:14:45,10Q,162,N,Who is that man?,,,"Spanish Phase 1, Units 1-30 (2003)",9
+416,SP,978-1-4423-4634-5,Spanish 1,21,0:14:47,0:14:49,10R,163,F,¿Quién es ese hombre?,4,Q,"Spanish Phase 1, Units 1-30 (2003)",9
+417,SP,978-1-4423-4634-5,Spanish 1,22,0:02:18,0:02:20,01Q,31,N,Those persons are very big.,,,"Spanish Phase 1, Units 1-30 (2003)","5,9"
+418,SP,978-1-4423-4634-5,Spanish 1,22,0:02:24,0:02:28,01R,32,F,Esas personas son muy grandes.,5,S,"Spanish Phase 1, Units 1-30 (2003)","5,9"
+419,SP,978-1-4423-4634-5,Spanish 1,22,0:02:34,0:02:37,02Q,33,N,They aren’t little.,,,"Spanish Phase 1, Units 1-30 (2003)","5,9"
+420,SP,978-1-4423-4634-5,Spanish 1,22,0:02:39,0:02:42,02R,34,M,No son pequeñas.,3,S,"Spanish Phase 1, Units 1-30 (2003)","5,9"
+421,SP,978-1-4423-4634-5,Spanish 1,22,0:03:24,0:03:26,03Q,41,N,"Those women, are they sick?",,,"Spanish Phase 1, Units 1-30 (2003)",7
+422,SP,978-1-4423-4634-5,Spanish 1,22,0:03:29,0:03:34,03R,42,F,"Esas mujeres, ¿están enfermas?",4,Q,"Spanish Phase 1, Units 1-30 (2003)",7
+423,SP,978-1-4423-4634-5,Spanish 1,22,0:10:06,0:10:12,04Q,109,N,I think that you need a cup of tea.,,,"Spanish Phase 1, Units 1-30 (2003)",6
+424,SP,978-1-4423-4634-5,Spanish 1,22,0:10:13,0:10:20,04R,110,F,Creo que necesita una taza de té.,7,S,"Spanish Phase 1, Units 1-30 (2003)",6
+425,SP,978-1-4423-4634-5,Spanish 1,22,0:10:38,0:10:39,05Q,113,N,You need a doctor.,,,"Spanish Phase 1, Units 1-30 (2003)",16
+426,SP,978-1-4423-4634-5,Spanish 1,22,0:10:42,0:10:47,05R,114,F,Necesita un médico.,3,S,"Spanish Phase 1, Units 1-30 (2003)",16
+427,SP,978-1-4423-4634-5,Spanish 1,22,0:11:23,0:11:27,06Q,121,N,I think that I need a cup of tea.,,,"Spanish Phase 1, Units 1-30 (2003)",6
+428,SP,978-1-4423-4634-5,Spanish 1,22,0:11:30,0:11:34,06R,122,F,Creo que necesito una taza de té.,7,S,"Spanish Phase 1, Units 1-30 (2003)",6
+429,SP,978-1-4423-4634-5,Spanish 1,22,0:12:44,0:12:47,07Q,135,N,I need a doctor.,,,"Spanish Phase 1, Units 1-30 (2003)",16
+430,SP,978-1-4423-4634-5,Spanish 1,22,0:12:49,0:12:52,07R,136,F,Necesito un médico.,3,S,"Spanish Phase 1, Units 1-30 (2003)",16
+431,SP,978-1-4423-4634-5,Spanish 1,22,0:12:55,0:12:57,08Q,137,N,We’re all sick.,,,"Spanish Phase 1, Units 1-30 (2003)","9,16"
+432,SP,978-1-4423-4634-5,Spanish 1,22,0:13:00,0:13:04,08R,138,M,Todos estamos enfermos.,3,S,"Spanish Phase 1, Units 1-30 (2003)","9,16"
+433,SP,978-1-4423-4634-5,Spanish 1,22,0:13:29,0:13:31,09Q,142,N,I think that it’s true.,,,"Spanish Phase 1, Units 1-30 (2003)",7
+434,SP,978-1-4423-4634-5,Spanish 1,22,0:13:35,0:13:36,09R,143,F,Creo que es verdad.,4,S,"Spanish Phase 1, Units 1-30 (2003)",7
+435,SP,978-1-4423-4634-5,Spanish 1,22,0:14:20,0:14:22,10Q,150,N,I know a doctor.,,,"Spanish Phase 1, Units 1-30 (2003)",16
+436,SP,978-1-4423-4634-5,Spanish 1,22,0:14:24,0:14:26,10R,151,M,Conozco a un médico.,4,S,"Spanish Phase 1, Units 1-30 (2003)",16
+437,SP,978-1-4423-4634-5,Spanish 1,23,0:02:13,0:02:19,01Q,33,N,Why do you say it (m)?,,,"Spanish Phase 1, Units 1-30 (2003)",7
+438,SP,978-1-4423-4634-5,Spanish 1,23,0:02:18,0:02:23,01R,34,F,¿Por qué lo dice?,4,Q,"Spanish Phase 1, Units 1-30 (2003)",7
+439,SP,978-1-4423-4634-5,Spanish 1,23,0:04:20,0:04:21,02Q,56,N,What do you think?,,,"Spanish Phase 1, Units 1-30 (2003)",7
+440,SP,978-1-4423-4634-5,Spanish 1,23,0:04:24,0:04:25,02R,57,F,¿Qué cree?,2,Q,"Spanish Phase 1, Units 1-30 (2003)",7
+441,SP,978-1-4423-4634-5,Spanish 1,23,0:06:18,0:06:20,03Q,78,N,I know a good doctor.,,,"Spanish Phase 1, Units 1-30 (2003)",16
+442,SP,978-1-4423-4634-5,Spanish 1,23,0:06:24,0:06:27,03R,79,F,Conozco a un buen médico.,5,S,"Spanish Phase 1, Units 1-30 (2003)",16
+443,SP,978-1-4423-4634-5,Spanish 1,23,0:07:19,0:07:21,04Q,90,N,But I don’t remember.,,,"Spanish Phase 1, Units 1-30 (2003)",7
+444,SP,978-1-4423-4634-5,Spanish 1,23,0:07:24,0:07:25,04R,91,F,Pero no me acuerdo.,4,S,"Spanish Phase 1, Units 1-30 (2003)",7
+445,SP,978-1-4423-4634-5,Spanish 1,23,0:11:58,0:12:00,05Q,138,N,What’s his address?,,,"Spanish Phase 1, Units 1-30 (2003)",9
+446,SP,978-1-4423-4634-5,Spanish 1,23,0:12:06,0:12:08,05R,139,M,¿Cuál es su dirección?,4,Q,"Spanish Phase 1, Units 1-30 (2003)",9
+447,SP,978-1-4423-4634-5,Spanish 1,23,0:12:12,0:12:14,06Q,140,N,Give me the doctor’s address.,,,"Spanish Phase 1, Units 1-30 (2003)",16
+448,SP,978-1-4423-4634-5,Spanish 1,23,0:12:18,0:12:21,06R,141,M,Déme la dirección del médico.,5,S,"Spanish Phase 1, Units 1-30 (2003)",16
+449,SP,978-1-4423-4634-5,Spanish 1,23,0:12:24,0:12:26,07Q,142,N,He lives far away.,,,"Spanish Phase 1, Units 1-30 (2003)",4
+450,SP,978-1-4423-4634-5,Spanish 1,23,0:12:28,0:12:30,07R,143,F,Vive lejos.,2,S,"Spanish Phase 1, Units 1-30 (2003)",4
+451,SP,978-1-4423-4634-5,Spanish 1,23,0:13:09,0:13:10,08Q,150,N,I don’t remember his address.,,,"Spanish Phase 1, Units 1-30 (2003)",9
+452,SP,978-1-4423-4634-5,Spanish 1,23,0:13:16,0:13:19,08R,151,F,No me acuerdo de su dirección.,6,S,"Spanish Phase 1, Units 1-30 (2003)",9
+453,SP,978-1-4423-4634-5,Spanish 1,23,0:14:31,0:14:33,09Q,163,N,It’s not very far.,,,"Spanish Phase 1, Units 1-30 (2003)",4
+454,SP,978-1-4423-4634-5,Spanish 1,23,0:14:36,0:14:38,09R,164,F,No está muy lejos.,4,S,"Spanish Phase 1, Units 1-30 (2003)",4
+455,SP,978-1-4423-4634-5,Spanish 1,23,0:16:47,0:16:50,10Q,186,N,"No, it’s a little far.",,,"Spanish Phase 1, Units 1-30 (2003)",4
+456,SP,978-1-4423-4634-5,Spanish 1,23,0:16:53,0:16:56,10R,187,F,"No, está un poco lejos.",5,S,"Spanish Phase 1, Units 1-30 (2003)",4
+457,SP,978-1-4423-4634-5,Spanish 1,24,0:08:52,0:08:57,01Q,92,N,Dígale que usted necesita la dirección.,,,"Spanish Phase 1, Units 1-30 (2003)","4,9"
+458,SP,978-1-4423-4634-5,Spanish 1,24,0:08:59,0:09:03,01R,93,F,Necesito la dirección.,3,S,"Spanish Phase 1, Units 1-30 (2003)","4,9"
+459,SP,978-1-4423-4634-5,Spanish 1,24,0:13:11,0:13:14,02Q,135,N,How do I go there?,,,"Spanish Phase 1, Units 1-30 (2003)","7,16"
+460,SP,978-1-4423-4634-5,Spanish 1,24,0:13:15,0:13:18,02R,136,F,¿Cómo voy allí?,3,Q,"Spanish Phase 1, Units 1-30 (2003)","7,16"
+461,SP,978-1-4423-4634-5,Spanish 1,24,0:13:44,0:13:47,03Q,141,N,Continue this way.,,,"Spanish Phase 1, Units 1-30 (2003)",7
+462,SP,978-1-4423-4634-5,Spanish 1,24,0:13:49,0:13:51,03R,142,M,Siga por aquí.,3,S,"Spanish Phase 1, Units 1-30 (2003)",7
+463,SP,978-1-4423-4634-5,Spanish 1,24,0:14:54,0:14:56,04Q,154,N,Continue straight ahead.,,,"Spanish Phase 1, Units 1-30 (2003)",4
+464,SP,978-1-4423-4634-5,Spanish 1,24,0:14:59,0:15:01,04R,155,M,Siga derecho.,2,S,"Spanish Phase 1, Units 1-30 (2003)",4
+465,SP,978-1-4423-4634-5,Spanish 1,24,0:17:20,0:17:23,05Q,177,N,"And then, to the left.",,,"Spanish Phase 1, Units 1-30 (2003)",4
+466,SP,978-1-4423-4634-5,Spanish 1,24,0:17:26,0:17:30,05R,178,M,"Y entonces, a la izquierda.",5,S,"Spanish Phase 1, Units 1-30 (2003)",4
+467,SP,978-1-4423-4634-5,Spanish 1,24,0:17:40,0:17:41,06Q,181,N,That way?,,,"Spanish Phase 1, Units 1-30 (2003)","7,16"
+468,SP,978-1-4423-4634-5,Spanish 1,24,0:17:45,0:17:47,06R,182,F,¿Por allí?,2,Q,"Spanish Phase 1, Units 1-30 (2003)","7,16"
+469,SP,978-1-4423-4634-5,Spanish 1,24,0:24:30,0:24:34,07Q,263,N,Try to ask the name of the street.,,,"Spanish Phase 1, Units 1-30 (2003)","4,7"
+470,SP,978-1-4423-4634-5,Spanish 1,24,0:24:35,0:24:38,07R,264,M,¿Cómo se llama la calle?,5,Q,"Spanish Phase 1, Units 1-30 (2003)","4,7"
+471,SP,978-1-4423-4634-5,Spanish 1,25,0:08:45,0:08:46,01Q,102,N,I want to see him.,,,"Spanish Phase 1, Units 1-30 (2003)",9
+472,SP,978-1-4423-4634-5,Spanish 1,25,0:08:49,0:08:50,01R,103,M,Quiero verlo.,2,S,"Spanish Phase 1, Units 1-30 (2003)",9
+473,SP,978-1-4423-4634-5,Spanish 1,25,0:09:45,0:09:46,02Q,113,N,I want to go now.,,,"Spanish Phase 1, Units 1-30 (2003)",17
+474,SP,978-1-4423-4634-5,Spanish 1,25,0:09:48,0:09:50,02R,114,M,Quiero ir ahora.,3,S,"Spanish Phase 1, Units 1-30 (2003)",17
+475,SP,978-1-4423-4634-5,Spanish 1,25,0:13:30,0:13:31,03Q,149,N,It doesn’t matter.,,,"Spanish Phase 1, Units 1-30 (2003)",7
+476,SP,978-1-4423-4634-5,Spanish 1,25,0:13:34,0:13:35,03R,150,F,No importa.,2,S,"Spanish Phase 1, Units 1-30 (2003)",7
+477,SP,978-1-4423-4634-5,Spanish 1,25,0:14:37,0:14:39,04Q,161,N,I’m going to see my father.,,,"Spanish Phase 1, Units 1-30 (2003)",5
+478,SP,978-1-4423-4634-5,Spanish 1,25,0:14:41,0:14:43,04R,162,F,Voy a ver a mi padre.,6,S,"Spanish Phase 1, Units 1-30 (2003)",5
+479,SP,978-1-4423-4634-5,Spanish 1,25,0:16:02,0:16:04,05Q,175,N,Are you going to see your father now?,,,"Spanish Phase 1, Units 1-30 (2003)","5,17"
+480,SP,978-1-4423-4634-5,Spanish 1,25,0:16:08,0:16:10,05R,176,M,¿Va a ver a su padre ahora?,7,Q,"Spanish Phase 1, Units 1-30 (2003)","5,17"
+481,SP,978-1-4423-4634-5,Spanish 1,25,0:18:13,0:18:14,06Q,200,N,What does it mean?,,,"Spanish Phase 1, Units 1-30 (2003)","7,16"
+482,SP,978-1-4423-4634-5,Spanish 1,25,0:18:16,0:18:18,06R,201,F,¿Qué quiere decir?,3,Q,"Spanish Phase 1, Units 1-30 (2003)","7,16"
+483,SP,978-1-4423-4634-5,Spanish 1,25,0:20:38,0:20:41,07Q,228,M,I want to learn English.,,,"Spanish Phase 1, Units 1-30 (2003)",7
+484,SP,978-1-4423-4634-5,Spanish 1,25,0:20:43,0:20:46,07R,229,F,Quiero aprender inglés.,3,S,"Spanish Phase 1, Units 1-30 (2003)",7
+485,SP,978-1-4423-4634-5,Spanish 1,25,0:21:05,0:21:06,08Q,234,N,You learn quickly.,,,"Spanish Phase 1, Units 1-30 (2003)",9
+486,SP,978-1-4423-4634-5,Spanish 1,25,0:21:09,0:21:12,08R,235,M,Aprende rápido.,2,S,"Spanish Phase 1, Units 1-30 (2003)",9
+487,SP,978-1-4423-4634-5,Spanish 1,25,0:25:40,0:25:41,09Q,278,N,Can we study together?,,,"Spanish Phase 1, Units 1-30 (2003)",9
+488,SP,978-1-4423-4634-5,Spanish 1,25,0:25:45,0:25:47,09R,279,F,¿Podemos estudiar juntos?,3,Q,"Spanish Phase 1, Units 1-30 (2003)",9
+489,SP,978-1-4423-4634-5,Spanish 1,26,0:04:22,0:04:24,01Q,55,N,"Then, you can come with me.",,,"Spanish Phase 1, Units 1-30 (2003)",9
+490,SP,978-1-4423-4634-5,Spanish 1,26,0:04:28,0:04:30,01R,56,M,"Entonces, puede venir conmigo.",4,S,"Spanish Phase 1, Units 1-30 (2003)",9
+491,SP,978-1-4423-4634-5,Spanish 1,26,0:05:22,0:05:25,02Q,66,N,To the left?,,,"Spanish Phase 1, Units 1-30 (2003)","4,16"
+492,SP,978-1-4423-4634-5,Spanish 1,26,0:05:26,0:05:29,02R,67,F,¿A la izquierda?,3,Q,"Spanish Phase 1, Units 1-30 (2003)","4,16"
+493,SP,978-1-4423-4634-5,Spanish 1,26,0:08:21,0:08:23,03Q,97,N,You study enough.,,,"Spanish Phase 1, Units 1-30 (2003)",9
+494,SP,978-1-4423-4634-5,Spanish 1,26,0:08:25,0:08:28,03R,98,M,Estudia suficiente.,2,S,"Spanish Phase 1, Units 1-30 (2003)",9
+495,SP,978-1-4423-4634-5,Spanish 1,26,0:10:21,0:10:24,04Q,117,N,We’re going to see my father.,,,"Spanish Phase 1, Units 1-30 (2003)",5
+496,SP,978-1-4423-4634-5,Spanish 1,26,0:10:25,0:10:29,04R,118,M,Vamos a ver a mi padre.,6,S,"Spanish Phase 1, Units 1-30 (2003)",5
+497,SP,978-1-4423-4634-5,Spanish 1,26,0:11:35,0:11:35,05Q,131,N,Come with me.,,,"Spanish Phase 1, Units 1-30 (2003)",7
+498,SP,978-1-4423-4634-5,Spanish 1,26,0:11:38,0:11:40,05R,132,M,Venga conmigo.,2,S,"Spanish Phase 1, Units 1-30 (2003)",7
+499,SP,978-1-4423-4634-5,Spanish 1,26,0:12:24,0:12:27,06Q,141,N,"But now, come with me.",,,"Spanish Phase 1, Units 1-30 (2003)",17
+500,SP,978-1-4423-4634-5,Spanish 1,26,0:12:29,0:12:33,06R,142,F,"Pero ahora, venga conmigo.",4,S,"Spanish Phase 1, Units 1-30 (2003)",17
+501,SP,978-1-4423-4634-5,Spanish 1,26,0:14:22,0:14:24,07Q,161,N,Where is your house?,,,"Spanish Phase 1, Units 1-30 (2003)",4
+502,SP,978-1-4423-4634-5,Spanish 1,26,0:14:26,0:14:30,07R,162,F,¿Dónde está su casa?,4,Q,"Spanish Phase 1, Units 1-30 (2003)",4
+503,SP,978-1-4423-4634-5,Spanish 1,26,0:16:32,0:16:34,08Q,187,N,I’ve seen José.,,,"Spanish Phase 1, Units 1-30 (2003)",9
+504,SP,978-1-4423-4634-5,Spanish 1,26,0:16:58,0:17:00,08R,189,M,He visto a José.,4,S,"Spanish Phase 1, Units 1-30 (2003)",9
+505,SP,978-1-4423-4634-5,Spanish 1,26,0:18:12,0:18:14,09Q,201,N,You’ve seen him a lot?,,,"Spanish Phase 1, Units 1-30 (2003)",9
+506,SP,978-1-4423-4634-5,Spanish 1,26,0:18:16,0:18:18,09R,202,F,¿Lo ha visto mucho?,4,Q,"Spanish Phase 1, Units 1-30 (2003)",9
+507,SP,978-1-4423-4634-5,Spanish 1,26,0:20:17,0:20:18,10Q,219,N,How many times?,,,"Spanish Phase 1, Units 1-30 (2003)",17
+508,SP,978-1-4423-4634-5,Spanish 1,26,0:20:22,0:20:23,10R,220,F,¿Cuántas veces?,2,Q,"Spanish Phase 1, Units 1-30 (2003)",17
+509,SP,978-1-4423-4634-5,Spanish 1,26,0:21:14,0:21:16,11Q,230,N,"Yes, yesterday too.",,,"Spanish Phase 1, Units 1-30 (2003)",17
+510,SP,978-1-4423-4634-5,Spanish 1,26,0:21:19,0:21:21,11R,231,M,"Sí, ayer también.",3,S,"Spanish Phase 1, Units 1-30 (2003)",17
+511,SP,978-1-4423-4634-5,Spanish 1,26,0:21:24,0:21:28,12Q,232,N,I don’t want to see him today.,,,"Spanish Phase 1, Units 1-30 (2003)",9
+512,SP,978-1-4423-4634-5,Spanish 1,26,0:21:30,0:21:33,12R,233,M,No quiero verlo hoy.,4,S,"Spanish Phase 1, Units 1-30 (2003)",9
+513,SP,978-1-4423-4634-5,Spanish 1,26,0:24:40,0:24:43,13Q,264,N,Let’s go to his house now.,,,"Spanish Phase 1, Units 1-30 (2003)",17
+514,SP,978-1-4423-4634-5,Spanish 1,26,0:24:45,0:24:49,13R,265,F,Vamos a su casa ahora.,5,S,"Spanish Phase 1, Units 1-30 (2003)",17
+515,SP,978-1-4423-4634-5,Spanish 1,27,0:03:09,0:03:11,01Q,47,N,I’m going to see her now.,,,"Spanish Phase 1, Units 1-30 (2003)",17
+516,SP,978-1-4423-4634-5,Spanish 1,27,0:03:14,0:03:17,01R,48,M,Voy a verla ahora.,4,S,"Spanish Phase 1, Units 1-30 (2003)",17
+517,SP,978-1-4423-4634-5,Spanish 1,27,0:05:16,0:05:21,02Q,67,N,I live with my father.,,,"Spanish Phase 1, Units 1-30 (2003)","5,9"
+518,SP,978-1-4423-4634-5,Spanish 1,27,0:05:21,0:05:26,02R,68,M,Vivo con mi padre.,4,S,"Spanish Phase 1, Units 1-30 (2003)","5,9"
+519,SP,978-1-4423-4634-5,Spanish 1,27,0:08:01,0:08:03,03Q,96,N,To my father’s house.,,,"Spanish Phase 1, Units 1-30 (2003)",5
+520,SP,978-1-4423-4634-5,Spanish 1,27,0:08:05,0:08:10,03R,97,M,A la casa de mi padre.,6,S,"Spanish Phase 1, Units 1-30 (2003)",5
+521,SP,978-1-4423-4634-5,Spanish 1,27,0:09:17,0:09:20,04Q,108,N,We continue straight ahead two blocks.,,,"Spanish Phase 1, Units 1-30 (2003)","4,12"
+522,SP,978-1-4423-4634-5,Spanish 1,27,0:09:23,0:09:27,04R,109,M,Sigamos derecho dos cuadras.,4,S,"Spanish Phase 1, Units 1-30 (2003)","4,12"
+523,SP,978-1-4423-4634-5,Spanish 1,27,0:11:33,0:11:35,05Q,132,N,I want to see your father.,,,"Spanish Phase 1, Units 1-30 (2003)",5
+524,SP,978-1-4423-4634-5,Spanish 1,27,0:11:37,0:11:40,05R,133,F,Quiero ver a su padre.,5,S,"Spanish Phase 1, Units 1-30 (2003)",5
+525,SP,978-1-4423-4634-5,Spanish 1,27,0:11:44,0:11:45,06Q,134,N,I want to study with him.,,,"Spanish Phase 1, Units 1-30 (2003)",9
+526,SP,978-1-4423-4634-5,Spanish 1,27,0:11:51,0:11:53,06R,135,F,Quiero estudiar con él.,4,S,"Spanish Phase 1, Units 1-30 (2003)",9
+527,SP,978-1-4423-4634-5,Spanish 1,27,0:13:21,0:13:23,07Q,152,N,I’ve spoken with him.,,,"Spanish Phase 1, Units 1-30 (2003)",9
+528,SP,978-1-4423-4634-5,Spanish 1,27,0:13:26,0:13:27,07R,153,M,He hablado con él.,4,S,"Spanish Phase 1, Units 1-30 (2003)",9
+529,SP,978-1-4423-4634-5,Spanish 1,27,0:14:24,0:14:27,08Q,163,N,I’ve spoken with him many times today.,,,"Spanish Phase 1, Units 1-30 (2003)",17
+530,SP,978-1-4423-4634-5,Spanish 1,27,0:14:31,0:14:34,08R,164,M,He hablado con él muchas veces hoy.,7,S,"Spanish Phase 1, Units 1-30 (2003)",17
+531,SP,978-1-4423-4634-5,Spanish 1,27,0:15:34,0:15:35,09Q,174,N,I’ve spoken by phone.,,,"Spanish Phase 1, Units 1-30 (2003)",15
+532,SP,978-1-4423-4634-5,Spanish 1,27,0:15:39,0:15:41,09R,175,F,He hablado por teléfono.,4,S,"Spanish Phase 1, Units 1-30 (2003)",15
+533,SP,978-1-4423-4634-5,Spanish 1,27,0:17:35,0:17:36,10Q,193,N,What have you told him?,,,"Spanish Phase 1, Units 1-30 (2003)",9
+534,SP,978-1-4423-4634-5,Spanish 1,27,0:17:40,0:17:42,10R,194,M,¿Qué le ha dicho?,4,Q,"Spanish Phase 1, Units 1-30 (2003)",9
+535,SP,978-1-4423-4634-5,Spanish 1,27,0:18:06,0:18:09,11Q,198,N,I’ve told him a lot of things.,,,"Spanish Phase 1, Units 1-30 (2003)",9
+536,SP,978-1-4423-4634-5,Spanish 1,27,0:18:12,0:18:15,11R,199,F,Le he dicho muchas cosas.,5,S,"Spanish Phase 1, Units 1-30 (2003)",9
+537,SP,978-1-4423-4634-5,Spanish 1,28,0:02:34,0:02:35,01Q,36,N,I know a good teacher.,,,"Spanish Phase 1, Units 1-30 (2003)",9
+538,SP,978-1-4423-4634-5,Spanish 1,28,0:02:38,0:02:40,01R,37,M,Conozco a un buen profesor.,5,S,"Spanish Phase 1, Units 1-30 (2003)",9
+539,SP,978-1-4423-4634-5,Spanish 1,28,0:05:51,0:05:52,02Q,66,N,I’ve told him.,,,"Spanish Phase 1, Units 1-30 (2003)",9
+540,SP,978-1-4423-4634-5,Spanish 1,28,0:05:56,0:05:58,02R,68,M,Le he dicho a él.,5,S,"Spanish Phase 1, Units 1-30 (2003)",9
+541,SP,978-1-4423-4634-5,Spanish 1,28,0:08:41,0:08:44,03Q,96,N,My teacher has told me that.,,,"Spanish Phase 1, Units 1-30 (2003)",9
+542,SP,978-1-4423-4634-5,Spanish 1,28,0:08:46,0:08:49,03R,97,F,Mi profesor me ha dicho eso.,6,S,"Spanish Phase 1, Units 1-30 (2003)",9
+543,SP,978-1-4423-4634-5,Spanish 1,28,0:10:29,0:10:31,04Q,113,N,Have you seen them a lot?,,,"Spanish Phase 1, Units 1-30 (2003)",9
+544,SP,978-1-4423-4634-5,Spanish 1,28,0:10:34,0:10:36,04R,114,M,¿Los ha visto mucho?,4,Q,"Spanish Phase 1, Units 1-30 (2003)",9
+545,SP,978-1-4423-4634-5,Spanish 1,28,0:12:25,0:12:26,05Q,131,N,I still don’t understand.,,,"Spanish Phase 1, Units 1-30 (2003)","15,16"
+546,SP,978-1-4423-4634-5,Spanish 1,28,0:12:30,0:12:32,05R,132,F,Todavía no entiendo.,3,S,"Spanish Phase 1, Units 1-30 (2003)","15,16"
+547,SP,978-1-4423-4634-5,Spanish 1,28,0:16:09,0:16:11,06Q,169,N,Where have you lived?,,,"Spanish Phase 1, Units 1-30 (2003)",7
+548,SP,978-1-4423-4634-5,Spanish 1,28,0:16:13,0:16:15,06R,170,M,¿Dónde han vivido?,3,Q,"Spanish Phase 1, Units 1-30 (2003)",7
+549,SP,978-1-4423-4634-5,Spanish 1,28,0:17:10,0:17:11,07Q,177,N,Where have you spoken Spanish?,,,"Spanish Phase 1, Units 1-30 (2003)",9
+550,SP,978-1-4423-4634-5,Spanish 1,28,0:17:15,0:17:18,07R,178,M,¿Dónde han hablado español?,4,Q,"Spanish Phase 1, Units 1-30 (2003)",9
+551,SP,978-1-4423-4634-5,Spanish 1,28,0:17:49,0:17:50,08Q,182,N,What have you eaten?,,,"Spanish Phase 1, Units 1-30 (2003)",6
+552,SP,978-1-4423-4634-5,Spanish 1,28,0:17:52,0:17:54,08R,183,M,¿Qué han comido?,3,Q,"Spanish Phase 1, Units 1-30 (2003)",6
+553,SP,978-1-4423-4634-5,Spanish 1,28,0:19:30,0:19:34,09Q,199,N,I’ve drunk coffee with milk.,,,"Spanish Phase 1, Units 1-30 (2003)",6
+554,SP,978-1-4423-4634-5,Spanish 1,28,0:19:36,0:19:40,09R,200,F,He bebido café con leche.,5,S,"Spanish Phase 1, Units 1-30 (2003)",6
+555,SP,978-1-4423-4634-5,Spanish 1,28,0:19:50,0:19:52,10Q,203,N,I have to eat something.,,,"Spanish Phase 1, Units 1-30 (2003)",6
+556,SP,978-1-4423-4634-5,Spanish 1,28,0:19:54,0:19:57,10R,204,F,Tengo que comer algo.,4,S,"Spanish Phase 1, Units 1-30 (2003)",6
+557,SP,978-1-4423-4634-5,Spanish 1,28,0:23:32,0:23:34,11Q,239,N,What do you have to do?,,,"Spanish Phase 1, Units 1-30 (2003)",7
+558,SP,978-1-4423-4634-5,Spanish 1,28,0:23:37,0:23:39,11R,240,F,¿Qué tiene que hacer?,4,Q,"Spanish Phase 1, Units 1-30 (2003)",7
+559,SP,978-1-4423-4634-5,Spanish 1,28,0:27:05,0:27:08,12Q,275,N,We’ve been there many times.,,,"Spanish Phase 1, Units 1-30 (2003)",17
+560,SP,978-1-4423-4634-5,Spanish 1,28,0:27:12,0:27:15,12R,276,F,Hemos estado allí muchas veces.,5,S,"Spanish Phase 1, Units 1-30 (2003)",17
+561,SP,978-1-4423-4634-5,Spanish 1,29,0:01:21,0:01:23,01Q,25,N,I have to write to him.,,,"Spanish Phase 1, Units 1-30 (2003)",9
+562,SP,978-1-4423-4634-5,Spanish 1,29,0:01:25,0:01:30,01R,26,M,Tengo que escribirle.,3,S,"Spanish Phase 1, Units 1-30 (2003)",9
+563,SP,978-1-4423-4634-5,Spanish 1,29,0:03:03,0:03:04,02Q,42,N,I can’t tell you.,,,"Spanish Phase 1, Units 1-30 (2003)",7
+564,SP,978-1-4423-4634-5,Spanish 1,29,0:03:08,0:03:11,02R,43,M,No puedo decirle.,3,S,"Spanish Phase 1, Units 1-30 (2003)",7
+565,SP,978-1-4423-4634-5,Spanish 1,29,0:06:41,0:06:43,03Q,79,N,Do you like your Spanish teacher?,,,"Spanish Phase 1, Units 1-30 (2003)","7,9"
+566,SP,978-1-4423-4634-5,Spanish 1,29,0:06:48,0:06:51,03R,80,F,¿Le gusta su profesor de español?,6,Q,"Spanish Phase 1, Units 1-30 (2003)","7,9"
+567,SP,978-1-4423-4634-5,Spanish 1,29,0:08:41,0:08:44,04Q,97,N,I’m leaving now.,,,"Spanish Phase 1, Units 1-30 (2003)","17,18"
+568,SP,978-1-4423-4634-5,Spanish 1,29,0:08:44,0:08:47,04R,98,M,Me voy ahora.,3,S,"Spanish Phase 1, Units 1-30 (2003)","17,18"
+569,SP,978-1-4423-4634-5,Spanish 1,29,0:11:53,0:11:56,05Q,132,N,I want to see them.,,,"Spanish Phase 1, Units 1-30 (2003)",7
+570,SP,978-1-4423-4634-5,Spanish 1,29,0:11:57,0:12:00,05R,133,F,Quiero verlos.,2,S,"Spanish Phase 1, Units 1-30 (2003)",7
+571,SP,978-1-4423-4634-5,Spanish 1,29,0:12:04,0:12:07,06Q,134,N,Have you been to our house?,,,"Spanish Phase 1, Units 1-30 (2003)",9
+572,SP,978-1-4423-4634-5,Spanish 1,29,0:12:10,0:12:14,06R,135,M,¿Ha estado en nuestra casa?,5,Q,"Spanish Phase 1, Units 1-30 (2003)",9
+573,SP,978-1-4423-4634-5,Spanish 1,29,0:13:24,0:13:25,07Q,146,N,Gladly.,,,"Spanish Phase 1, Units 1-30 (2003)","7,13"
+574,SP,978-1-4423-4634-5,Spanish 1,29,0:13:30,0:13:31,07R,147,F,Con mucho gusto.,3,S,"Spanish Phase 1, Units 1-30 (2003)","7,13"
+575,SP,978-1-4423-4634-5,Spanish 1,29,0:14:30,0:14:31,08Q,158,N,In just a moment.,,,"Spanish Phase 1, Units 1-30 (2003)",7
+576,SP,978-1-4423-4634-5,Spanish 1,29,0:14:34,0:14:36,08R,159,M,En un momentito.,3,S,"Spanish Phase 1, Units 1-30 (2003)",7
+577,SP,978-1-4423-4634-5,Spanish 1,29,0:16:45,0:16:47,09Q,186,N,Do you live far from here?,,,"Spanish Phase 1, Units 1-30 (2003)",4
+578,SP,978-1-4423-4634-5,Spanish 1,29,0:16:50,0:16:52,09R,187,F,¿Vive lejos de aquí?,4,Q,"Spanish Phase 1, Units 1-30 (2003)",4
+579,SP,978-1-4423-4634-5,Spanish 1,29,0:20:11,0:20:12,10Q,222,N,Can you help me?,,,"Spanish Phase 1, Units 1-30 (2003)","7,16"
+580,SP,978-1-4423-4634-5,Spanish 1,29,0:20:15,0:20:17,10R,223,F,¿Puede ayudarme?,2,Q,"Spanish Phase 1, Units 1-30 (2003)","7,16"
+581,SP,978-1-4423-4634-5,Spanish 1,29,0:24:12,0:24:15,11Q,261,N,I’m going to help my friend.,,,"Spanish Phase 1, Units 1-30 (2003)",5
+582,SP,978-1-4423-4634-5,Spanish 1,29,0:24:18,0:24:21,11R,262,M,Voy a ayudar a mi amiga.,6,S,"Spanish Phase 1, Units 1-30 (2003)",5
+583,SP,978-1-4423-4634-5,Spanish 1,29,0:24:31,0:24:32,12Q,264,N,So long.,,,"Spanish Phase 1, Units 1-30 (2003)","7,10,13,16"
+584,SP,978-1-4423-4634-5,Spanish 1,29,0:24:35,0:24:36,12R,265,M,Hasta luego.,2,S,"Spanish Phase 1, Units 1-30 (2003)","7,10,13,16"
+585,SP,978-1-4423-4634-5,Spanish 1,29,0:26:54,0:27:00,13Q,286,N,Tell your friend that you can help her.,,,"Spanish Phase 1, Units 1-30 (2003)",5
+586,SP,978-1-4423-4634-5,Spanish 1,29,0:27:00,0:27:03,13R,287,M,Puedo ayudarle.,2,S,"Spanish Phase 1, Units 1-30 (2003)",5
+587,SP,978-1-4423-4634-5,Spanish 1,30,0:06:37,0:06:41,01Q,75,N,Ask your friend how he is.,,,"Spanish Phase 1, Units 1-30 (2003)",5
+588,SP,978-1-4423-4634-5,Spanish 1,30,0:06:42,0:06:45,01R,76,F,¿Cómo estás?,2,Q,"Spanish Phase 1, Units 1-30 (2003)",5
+589,SP,978-1-4423-4634-5,Spanish 1,30,0:13:53,0:13:54,02Q,144,N,You know her.,,,"Spanish Phase 1, Units 1-30 (2003)",9
+590,SP,978-1-4423-4634-5,Spanish 1,30,0:13:56,0:13:59,02R,145,M,La conoces.,2,S,"Spanish Phase 1, Units 1-30 (2003)",9
+591,SP,978-1-4423-4634-5,Spanish 1,30,0:16:03,0:16:06,03Q,169,N,I don’t know what to buy.,,,"Spanish Phase 1, Units 1-30 (2003)",14
+592,SP,978-1-4423-4634-5,Spanish 1,30,0:16:08,0:16:11,03R,170,M,No sé qué comprar.,4,S,"Spanish Phase 1, Units 1-30 (2003)",14
+593,SP,978-1-4423-4634-5,Spanish 1,30,0:16:13,0:16:16,04Q,171,N,Are you going to help me?,,,"Spanish Phase 1, Units 1-30 (2003)",7
+594,SP,978-1-4423-4634-5,Spanish 1,30,0:16:17,0:16:20,04R,172,M,¿Vas a ayudarme?,3,Q,"Spanish Phase 1, Units 1-30 (2003)",7
+595,SP,978-1-4423-4634-5,Spanish 1,30,0:17:08,0:17:11,05Q,182,N,Agreed?,,,"Spanish Phase 1, Units 1-30 (2003)","7,16"
+596,SP,978-1-4423-4634-5,Spanish 1,30,0:17:12,0:17:14,05R,183,F,¿De acuerdo?,2,Q,"Spanish Phase 1, Units 1-30 (2003)","7,16"
+597,SP,978-1-4423-4634-5,Spanish 1,30,0:17:22,0:17:25,06Q,186,N,We're going together to the theater.,,,"Spanish Phase 1, Units 1-30 (2003)",1
+598,SP,978-1-4423-4634-5,Spanish 1,30,0:17:27,0:17:31,06R,187,F,Nosotros vamos juntos al teatro.,5,S,"Spanish Phase 1, Units 1-30 (2003)",1
+599,SP,978-1-4423-4634-5,Spanish 1,30,0:20:59,0:21:02,07Q,223,N,I prefer the movies.,,,"Spanish Phase 1, Units 1-30 (2003)",1
+600,SP,978-1-4423-4634-5,Spanish 1,30,0:21:19,0:21:21,07R,224,M,Prefiero el cine.,3,S,"Spanish Phase 1, Units 1-30 (2003)",1
+601,SP,978-1-4423-4634-5,Spanish 1,30,0:21:24,0:21:26,08Q,225,N,If there aren’t too many people.,,,"Spanish Phase 1, Units 1-30 (2003)",9
+602,SP,978-1-4423-4634-5,Spanish 1,30,0:21:30,0:21:32,08R,226,M,Si no hay demasiada gente.,5,S,"Spanish Phase 1, Units 1-30 (2003)",9

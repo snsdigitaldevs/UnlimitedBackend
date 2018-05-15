@@ -1,7 +1,7 @@
 package com.simonschuster.pimsleur.unlimited.utils.practices;
 
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.PracticesInUnit;
-import com.simonschuster.pimsleur.unlimited.data.dto.practices.SpeakEasy;
+import com.simonschuster.pimsleur.unlimited.data.dto.practices.SpeakEasyOrReading;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 import org.joda.time.format.DateTimeFormatter;
@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
+import static com.simonschuster.pimsleur.unlimited.data.dto.practices.PracticesInUnit.createWithReadings;
 import static com.simonschuster.pimsleur.unlimited.data.dto.practices.PracticesInUnit.createWithSpeakEasies;
 import static com.simonschuster.pimsleur.unlimited.utils.UnlimitedPracticeUtil.*;
 import static java.lang.Integer.parseInt;
@@ -22,12 +23,20 @@ import static java.util.stream.StreamSupport.stream;
 import static org.apache.commons.lang3.StringUtils.isNumeric;
 import static org.joda.time.format.DateTimeFormat.forPattern;
 
-public class SpeakEasyUtil {
+public class SpeakEasyAndReadingUtil {
 
     private static DateTimeFormatter colonDotTimeFormatter = forPattern("mm:ss.SSS");
     private static DateTimeFormatter colonColonTimeFormatter = forPattern("mm:ss:SSS");
 
     public static List<PracticesInUnit> csvToSpeakEasies(String csvUrl) throws IOException {
+        return getPracticesInUnits(csvUrl, "Text", "NativeText", "Vis Conv", false);
+    }
+
+    public static List<PracticesInUnit> csvToReadings(String csvUrl) throws IOException {
+        return getPracticesInUnits(csvUrl, "English Translation", "Language", "RL Item #", true);
+    }
+
+    private static List<PracticesInUnit> getPracticesInUnits(String csvUrl, String text, String nativeText, String order, boolean isReading) throws IOException {
         if (csvUrl == null) {
             return emptyList();
         }
@@ -38,9 +47,9 @@ public class SpeakEasyUtil {
         String startKey = findRealHeaderName(csvRecords, "Start");
         String stopKey = findRealHeaderName(csvRecords, "Stop");
         String speakerKey = findRealHeaderName(csvRecords, "Spkr");
-        String textKey = findRealHeaderName(csvRecords, "Text");
-        String nativeTextKey = findRealHeaderName(csvRecords, "NativeText");
-        String orderKey = findRealHeaderName(csvRecords, "Vis Conv");
+        String textKey = findRealHeaderName(csvRecords, text);
+        String nativeTextKey = findRealHeaderName(csvRecords, nativeText);
+        String orderKey = findRealHeaderName(csvRecords, order);
 
         return stream(csvRecords.spliterator(), false)
                 .collect(groupingBy(csvRecord -> getUnitNumString(csvRecord, unitNumKey)))
@@ -49,7 +58,7 @@ public class SpeakEasyUtil {
                     String unitNumString = group.getKey();
                     if (isNumeric(unitNumString)) {
                         return groupToUnit(unitNumString, startKey, stopKey, speakerKey, textKey,
-                                nativeTextKey, orderKey, group);
+                                nativeTextKey, orderKey, group, isReading);
                     }
                     return null;
                 })
@@ -60,13 +69,13 @@ public class SpeakEasyUtil {
 
     private static PracticesInUnit groupToUnit(String unitNumString, String startKey, String stopKey,
                                                String speakerKey, String textKey, String nativeTextKey,
-                                               String orderKey, Map.Entry<String, List<CSVRecord>> group) {
+                                               String orderKey, Map.Entry<String, List<CSVRecord>> group, boolean isReading) {
         int unitNumber = parseInt(unitNumString);
 
         final int[] counter = {0};
 
-        List<SpeakEasy> speakEasies = group.getValue().stream()
-                .map(csvRecord -> new SpeakEasy(
+        List<SpeakEasyOrReading> speakEasies = group.getValue().stream()
+                .map(csvRecord -> new SpeakEasyOrReading(
                         getMilliSeconds(startKey, csvRecord),
                         getMilliSeconds(stopKey, csvRecord),
                         getFromCsv(speakerKey, csvRecord),
@@ -75,7 +84,11 @@ public class SpeakEasyUtil {
                         getOrder(orderKey, counter, csvRecord)))
                 .collect(toList());
 
-        return createWithSpeakEasies(unitNumber, speakEasies);
+        if (isReading) {
+            return createWithReadings(unitNumber, speakEasies);
+        } else {
+            return createWithSpeakEasies(unitNumber, speakEasies);
+        }
     }
 
     private static int getOrder(String orderKey, int[] counter, CSVRecord csvRecord) {

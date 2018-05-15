@@ -1,6 +1,7 @@
 package com.simonschuster.pimsleur.unlimited.data.dto.practices;
 
-public class SpeakEasy {
+// speak easy and reading has the same data structure
+public class SpeakEasyOrReading {
     private long start;
     private long stop;
     private String speaker;
@@ -8,7 +9,7 @@ public class SpeakEasy {
     private String nativeText;
     private int order;
 
-    public SpeakEasy(long start, long stop, String speaker, String text, String nativeText, int order) {
+    public SpeakEasyOrReading(long start, long stop, String speaker, String text, String nativeText, int order) {
         this.start = start;
         this.stop = stop;
         this.speaker = speaker;

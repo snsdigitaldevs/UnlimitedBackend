@@ -18,7 +18,8 @@ import java.util.stream.Stream;
 
 import static com.simonschuster.pimsleur.unlimited.utils.PuFreeLessonISBNUtil.toNormalISBN;
 import static com.simonschuster.pimsleur.unlimited.utils.practices.FlashCardUtil.csvToFlashCards;
-import static com.simonschuster.pimsleur.unlimited.utils.practices.SpeakEasyUtil.csvToSpeakEasies;
+import static com.simonschuster.pimsleur.unlimited.utils.practices.SpeakEasyAndReadingUtil.csvToReadings;
+import static com.simonschuster.pimsleur.unlimited.utils.practices.SpeakEasyAndReadingUtil.csvToSpeakEasies;
 import static java.util.Comparator.comparingInt;
 import static java.util.stream.Collectors.toList;
 import static java.util.stream.Stream.concat;
@@ -38,26 +39,23 @@ public class AvailablePracticesController {
     public AvailablePractices getPuAvailablePractices(@PathVariable("productCode") String productCode)
             throws IOException {
         String normalProductCode = toNormalISBN(productCode);
-        PracticesCsvLocations csvLocations = puAvailablePracticesService
-                .getPracticeCsvLocations(normalProductCode);
+        PracticesCsvLocations csvLocations = puAvailablePracticesService.getPracticeCsvLocations(normalProductCode);
 
-        AvailablePractices availablePractices = UnlimitedPracticeUtil.getAvailablePractices(csvLocations);
         List<PracticesInUnit> speakEasies = csvToSpeakEasies(csvLocations.getSpeakEasyUrl());
+        List<PracticesInUnit> readings = csvToReadings(csvLocations.getReadingUrl());
         List<PracticesInUnit> flashCards = csvToFlashCards(csvLocations.getFlashCardUrl());
         List<PracticesInUnit> quickMatches = QuickMatchUtil.getQuickMatchesByCsvUrl(csvLocations.getQuickMatchUrl(), productCode);
 
-        return new AvailablePractices(mergeLists(availablePractices, speakEasies, flashCards, quickMatches));
+        return new AvailablePractices(mergeLists(readings, speakEasies, flashCards, quickMatches));
     }
 
-    private List<PracticesInUnit> mergeLists(AvailablePractices availablePractices,
-                                             List<PracticesInUnit> speakEasy,
+    private List<PracticesInUnit> mergeLists(List<PracticesInUnit> readings,
+                                             List<PracticesInUnit> speakEasies,
                                              List<PracticesInUnit> flashCards,
                                              List<PracticesInUnit> quickMatches) {
         Stream<PracticesInUnit> allPractices = concat(concat(concat(
-                availablePractices.getPracticesInUnits().stream(),
-                speakEasy.stream()),
-                quickMatches.stream()),
-                flashCards.stream());
+                readings.stream(), speakEasies.stream()),
+                quickMatches.stream()), flashCards.stream());
 
         return allPractices
                 .collect(Collectors.groupingBy(PracticesInUnit::getUnitNumber))

@@ -79,9 +79,9 @@ public class EDTCourseInfoService {
         try {
             aggregatedProductInfo.setPcmProduct(getProductInfoFromPCM(auth0UserId));
         } catch (Exception exception) {
-            logger.error("Exception occured when get product info with PU product code.");
+            logger.error("Exception occured when get product info with PCM product code.");
             exception.printStackTrace();
-            throw new PimsleurException("Exception occured when get product info with PU product code.");
+            throw new PimsleurException("Exception occured when get product info with PCM product code.");
         }
     }
 

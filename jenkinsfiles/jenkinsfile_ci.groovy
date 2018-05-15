@@ -48,7 +48,7 @@ pipeline {
                 echo "Deploy to QA"
                 script {
                     try {
-                        timeout(time: 2, unit: 'HOURS') {
+                        timeout(time: 2, unit: 'MINUTES') {
                             input message: 'build QA version?'
                         }
                     } catch (err) {
@@ -68,7 +68,7 @@ pipeline {
                 script {
                     try {
                         echo "Deploy to UAT"
-                        timeout(time: 2, unit: 'HOURS') {
+                        timeout(time: 2, unit: 'MINUTES') {
                             input message: 'build UAT version?'
                         }
                     } catch (err) {
@@ -89,7 +89,7 @@ pipeline {
                 script {
                     try {
                         echo "Deploy to PROD"
-                        timeout(time: 2, unit: 'HOURS') {
+                        timeout(time: 2, unit: 'MINUTES') {
                             input message: 'build PROD version?'
                         }
                     } catch (err) {

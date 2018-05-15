@@ -18,9 +18,7 @@ public class CustomerController {
                                        @RequestParam String token,
                                        @RequestParam String name) {
         CustomerInfo customerInfo = customerInfoService.update(customerId, appUserId, name, token);
-        if (customerInfo.getResult_code() != 1) {
-            throw new ParamInvalidException("invalid parameters");
-        }
+        checkResultCode(customerInfo);
         return customerInfo;
     }
 
@@ -29,9 +27,7 @@ public class CustomerController {
                                        @RequestParam String token,
                                        @RequestParam String name) {
         CustomerInfo customerInfo = customerInfoService.create(customerId, name, token);
-        if (customerInfo.getResult_code() != 1) {
-            throw new ParamInvalidException("invalid parameters");
-        }
+        checkResultCode(customerInfo);
         return customerInfo;
     }
 
@@ -40,9 +36,13 @@ public class CustomerController {
                                        @RequestParam String token,
                                        @PathVariable String appUserId) {
         CustomerInfo customerInfo = customerInfoService.delete(customerId, appUserId, token);
+        checkResultCode(customerInfo);
+        return customerInfo;
+    }
+
+    private void checkResultCode(CustomerInfo customerInfo) {
         if (customerInfo.getResult_code() != 1) {
             throw new ParamInvalidException("invalid parameters");
         }
-        return customerInfo;
     }
 }

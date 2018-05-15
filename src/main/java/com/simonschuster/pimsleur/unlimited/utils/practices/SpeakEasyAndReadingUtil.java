@@ -46,7 +46,6 @@ public class SpeakEasyAndReadingUtil {
 
         CSVParser csvRecords = urlToCsv(csvUrl);
 
-
         String unitNumKey = unitNumKey(csvRecords);
         String startKey = findRealHeaderName(csvRecords, "Start");
         String stopKey = findRealHeaderName(csvRecords, "Stop");

@@ -124,7 +124,7 @@ public class PracticesInUnit {
     public static PracticesInUnit createWithReadings(int unitNumber, List<SpeakEasyOrReading> speakEasies) {
         PracticesInUnit practicesInUnit = new PracticesInUnit(unitNumber);
         practicesInUnit.readings = speakEasies;
-        practicesInUnit.setHasSpeakEasy(speakEasies.size() > 0);
+        practicesInUnit.setHasReading(speakEasies.size() > 0);
         return practicesInUnit;
     }
 

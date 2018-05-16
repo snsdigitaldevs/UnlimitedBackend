@@ -129,16 +129,15 @@ public class AggregatedProductInfo {
                 .collect(Collectors.toList());
 
         mediaItems.forEach(lessonItem -> {
-            String imageDescription = lessonItem.getImageDescription();
-            if (imageDescription.startsWith("\"") && imageDescription.endsWith("\"")) {
-                imageDescription = imageDescription.substring(1, imageDescription.length() - 1);
-            }
+//            String imageDescription = deleteQuotation(lessonItem);
             Lesson lesson = new Lesson();
             lesson.setLevel(course.getLevel());
             lesson.setLessonNumber(lessonItem.getUnit());
             lesson.setName(lessonItem.getTitle());
             lesson.setCultureContent(new CultureContent(
-                    lessonItem.getImageLocation(), imageDescription, lessonItem.getImageCredits()));
+                    deleteQuotation(lessonItem.getImageLocation()),
+                    deleteQuotation(lessonItem.getImageDescription()),
+                    deleteQuotation(lessonItem.getImageCredits())));
             lesson.setMediaItemId(lessonItem.getMediaItemId());
             try {
                 getImageAndAudioFromPU(lesson, lessonItem, mediaSet);
@@ -153,6 +152,13 @@ public class AggregatedProductInfo {
 
 
         course.setLessons(filterAndOrder(lessons));
+    }
+
+    private String deleteQuotation(String origin) {
+        if (origin.startsWith("\"") && origin.endsWith("\"")) {
+            origin = origin.substring(1, origin.length() - 1);
+        }
+        return origin;
     }
 
     private List<Lesson> filterAndOrder(List<Lesson> lessons) {

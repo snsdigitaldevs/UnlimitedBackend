@@ -1,6 +1,7 @@
 package com.simonschuster.pimsleur.unlimited.controllers;
 
 import com.simonschuster.pimsleur.unlimited.common.exception.ParamInvalidException;
+import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.SubUserDto;
 import com.simonschuster.pimsleur.unlimited.data.edt.customerinfo.CustomerInfo;
 import com.simonschuster.pimsleur.unlimited.services.customer.CustomerInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,32 +17,33 @@ public class CustomerController {
     @Autowired
     CustomerInfoService customerInfoService;
 
-    @PutMapping(value = "customer/{customerId}/appUserIds/{appUserId}")
-    public CustomerInfo updateUserInfo(@PathVariable String customerId,
-                                       @PathVariable String appUserId,
-                                       @RequestParam String token,
-                                       @RequestParam String name) {
+    @PutMapping(value = "customers/{customerId}/appUsers/{appUserId}")
+    public SubUserDto updateUserInfo(@PathVariable String customerId,
+                                     @PathVariable String appUserId,
+                                     @RequestParam String token,
+                                     @RequestParam String name) {
         CustomerInfo customerInfo = customerInfoService.update(customerId, appUserId, name, token);
         checkResultCode(customerInfo);
-        return customerInfo;
+        return customerInfo.toDto(name, appUserId);
     }
 
-    @PostMapping(value = "customer/{customerId}")
-    public CustomerInfo createUserInfo(@PathVariable String customerId,
-                                       @RequestParam String token,
-                                       @RequestParam String name) {
+    @PostMapping(value = "customers/{customerId}/appUsers")
+    public SubUserDto createUserInfo(@PathVariable String customerId,
+                                     @RequestParam String token,
+                                     @RequestParam String name) {
         CustomerInfo customerInfo = customerInfoService.create(customerId, name, token);
         checkResultCode(customerInfo);
-        return customerInfo;
+        return customerInfo.toDto(name);
     }
 
-    @DeleteMapping(value = "customer/{customerId}/appUserIds/{appUserId}")
-    public CustomerInfo deleteUserInfo(@PathVariable String customerId,
-                                       @RequestParam String token,
-                                       @PathVariable String appUserId) {
+    @DeleteMapping(value = "customers/{customerId}/appUsers/{appUserId}")
+    public SubUserDto deleteUserInfo(@PathVariable String customerId,
+                                     @RequestParam String token,
+                                     @PathVariable String appUserId,
+                                     @RequestParam(defaultValue = "") String name) {
         CustomerInfo customerInfo = customerInfoService.delete(customerId, appUserId, token);
         checkResultCode(customerInfo);
-        return customerInfo;
+        return customerInfo.toDto(name, appUserId);
     }
 
     private void checkResultCode(CustomerInfo customerInfo) {

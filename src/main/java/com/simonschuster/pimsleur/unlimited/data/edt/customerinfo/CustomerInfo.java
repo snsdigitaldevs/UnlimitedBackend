@@ -1,6 +1,7 @@
 package com.simonschuster.pimsleur.unlimited.data.edt.customerinfo;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.SubUserDto;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class CustomerInfo {
@@ -24,4 +25,14 @@ public class CustomerInfo {
         this.result_code = result_code;
     }
 
+    public SubUserDto toDto(String name, String appUserId) {
+        boolean isRootUser = result_data == null ? false : result_data.getAppUser().isRootSubUser();
+        return new SubUserDto(name, appUserId, isRootUser);
+    }
+
+    public SubUserDto toDto(String name) {
+        boolean isRootUser = result_data == null ? false : result_data.getAppUser().isRootSubUser();
+        String appUserId = result_data == null ? "" : result_data.getAppUser().getAppUserId();
+        return new SubUserDto(name, appUserId, isRootUser);
+    }
 }

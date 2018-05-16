@@ -6,12 +6,16 @@ public class Lesson {
     private String audioLink;
     private Integer level;
     private String lessonNumber;
-    private String imageDescription;
     private Integer mediaItemId;
+    private CultureContent cultureContent;
 
-    public String getImageDescription() {return imageDescription;}
+    public CultureContent getCultureContent() {
+        return cultureContent;
+    }
 
-    public void setImageDescription(String imageDescription) {this.imageDescription = imageDescription; }
+    public void setCultureContent(CultureContent cultureContent) {
+        this.cultureContent = cultureContent;
+    }
 
     public Image getImage() {
         return image;

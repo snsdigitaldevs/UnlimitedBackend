@@ -2,6 +2,7 @@ package com.simonschuster.pimsleur.unlimited.data.edt.productinfo;
 
 import com.simonschuster.pimsleur.unlimited.common.exception.PimsleurException;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
+import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.CultureContent;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Image;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Lesson;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.OrdersProduct;
@@ -124,11 +125,16 @@ public class AggregatedProductInfo {
                 .collect(Collectors.toList());
 
         mediaItems.forEach(lessonItem -> {
+            String imageDescription = lessonItem.getImageDescription();
+            if (imageDescription.startsWith("\"") && imageDescription.endsWith("\"")) {
+                imageDescription = imageDescription.substring(1, imageDescription.length() - 1);
+            }
             Lesson lesson = new Lesson();
             lesson.setLevel(course.getLevel());
             lesson.setLessonNumber(lessonItem.getUnit());
             lesson.setName(lessonItem.getTitle());
-            lesson.setImageDescription(lessonItem.getImageDescription());
+            lesson.setCultureContent(new CultureContent(
+                    lessonItem.getImageLocation(), imageDescription, lessonItem.getImageCredits()));
             lesson.setMediaItemId(lessonItem.getMediaItemId());
             try {
                 getImageAndAudioFromPU(lesson, lessonItem, mediaSet);

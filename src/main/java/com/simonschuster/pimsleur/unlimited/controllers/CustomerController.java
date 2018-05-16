@@ -6,8 +6,12 @@ import com.simonschuster.pimsleur.unlimited.services.customer.CustomerInfoServic
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import static com.simonschuster.pimsleur.unlimited.utils.EdtResponseCode.RESULT_GENERAL_ERROR;
+import static com.simonschuster.pimsleur.unlimited.utils.EdtResponseCode.RESULT_USER_ID_ALREADY_EXISTS;
+
 @RestController
 public class CustomerController {
+
 
     @Autowired
     CustomerInfoService customerInfoService;
@@ -41,8 +45,11 @@ public class CustomerController {
     }
 
     private void checkResultCode(CustomerInfo customerInfo) {
-        if (customerInfo.getResult_code() != 1) {
-            throw new ParamInvalidException("invalid parameters");
+        switch (customerInfo.getResult_code()) {
+            case RESULT_GENERAL_ERROR:
+                throw new ParamInvalidException("Invalid parameters");
+            case RESULT_USER_ID_ALREADY_EXISTS:
+                throw new ParamInvalidException("Duplicated Name");
         }
     }
 }

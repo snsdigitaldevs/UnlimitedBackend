@@ -1,13 +1,19 @@
 package com.simonschuster.pimsleur.unlimited.data.dto.productinfo;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 import java.util.List;
 
+import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_EMPTY;
+
+@JsonInclude(NON_EMPTY)
 public class Course {
     private String languageName;
     private Integer level;
     private List<Lesson> lessons;
     private String productCode;
     private String courseName;
+    private Boolean hidePracticeTab;
 
     public String getLanguageName() {
         return languageName;
@@ -47,5 +53,13 @@ public class Course {
 
     public void setCourseName(String courseName) {
         this.courseName = courseName;
+    }
+
+    public Boolean getHidePracticeTab() {
+        return hidePracticeTab;
+    }
+
+    public void setHidePracticeTab(Boolean hidePracticeTab) {
+        this.hidePracticeTab = hidePracticeTab;
     }
 }

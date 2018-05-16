@@ -18,6 +18,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+import static com.simonschuster.pimsleur.unlimited.utils.HardCodedProductsUtil.isOneOfNineBig;
+
 public class AggregatedProductInfo {
     private static final String PREFIX_FOR_IMAGE_OF_PU = "https://install.pimsleurunlimited.com/staging_n/desktop/";
     private static final String PREFIX_FOR_AUDIO_OF_PU = "https://install.pimsleurunlimited.com/staging_n/common/";
@@ -96,7 +98,7 @@ public class AggregatedProductInfo {
                     .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
 
             filteredLessonAudioInfo.forEach((level, lessonInfoForOneLevel) -> {
-                Course course = buildCourse(orderProductInfo, products, lessonInfoForOneLevel, level);
+                Course course = buildPcmCourse(orderProductInfo, products, lessonInfoForOneLevel, level);
                 courses.add(course);
             });
         });
@@ -104,12 +106,14 @@ public class AggregatedProductInfo {
         return courses;
     }
 
-    private Course buildCourse(OrdersProduct orderProductInfo, Map<Integer, Product> products, List<Lesson> lessons, String level) {
+    private Course buildPcmCourse(OrdersProduct orderProductInfo, Map<Integer, Product> products, List<Lesson> lessons, String level) {
+        String languageName = orderProductInfo.getProduct().getProductsLanguageName();
+
         Course course = new Course();
-        course.setLanguageName(orderProductInfo.getProduct().getProductsLanguageName());
+        course.setHidePracticeTab(!isOneOfNineBig(languageName));
+        course.setLanguageName(languageName);
         course.setLevel(Integer.parseInt(level));
         course.setLessons(filterAndOrder(lessons));
-
         course.setCourseName(products.get(Integer.parseInt(level)).getProductsName());
         course.setProductCode(products.get(Integer.parseInt(level)).getIsbn13().replace("-", ""));
 

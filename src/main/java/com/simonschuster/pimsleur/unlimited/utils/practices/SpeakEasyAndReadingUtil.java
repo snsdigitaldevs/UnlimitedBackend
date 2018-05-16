@@ -51,6 +51,7 @@ public class SpeakEasyAndReadingUtil {
         String stopKey = findRealHeaderName(csvRecords, "Stop");
         String speakerKey = findRealHeaderName(csvRecords, "Spkr");
         String transliterationKey = findRealHeaderName(csvRecords, "Transliteration");
+        String helpTextKey = findRealHeaderName(csvRecords, "xlitHelp");
         String textKey = findRealHeaderName(csvRecords, text);
         String nativeTextKey = findRealHeaderName(csvRecords, nativeText);
         String orderKey = findRealHeaderName(csvRecords, order);
@@ -62,7 +63,7 @@ public class SpeakEasyAndReadingUtil {
                     String unitNumString = group.getKey();
                     if (isNumeric(unitNumString)) {
                         return groupToUnit(unitNumString, startKey, stopKey, speakerKey, textKey,
-                                nativeTextKey, orderKey, group, transliterationKey, isReading);
+                                nativeTextKey, orderKey, group, transliterationKey, helpTextKey, isReading);
                     }
                     return null;
                 })
@@ -74,7 +75,7 @@ public class SpeakEasyAndReadingUtil {
     private static PracticesInUnit groupToUnit(String unitNumString, String startKey, String stopKey,
                                                String speakerKey, String textKey, String nativeTextKey,
                                                String orderKey, Map.Entry<String, List<CSVRecord>> group,
-                                               String transliterationKey, boolean isReading) {
+                                               String transliterationKey, String helpTextKey, boolean isReading) {
         int unitNumber = parseInt(unitNumString);
 
         final int[] counter = {0};
@@ -87,6 +88,7 @@ public class SpeakEasyAndReadingUtil {
                         getFromCsv(textKey, csvRecord),
                         getFromCsv(nativeTextKey, csvRecord),
                         getFromCsv(transliterationKey, csvRecord),
+                        getFromCsv(helpTextKey, csvRecord),
                         getOrder(orderKey, counter, csvRecord)))
                 .collect(toList());
 

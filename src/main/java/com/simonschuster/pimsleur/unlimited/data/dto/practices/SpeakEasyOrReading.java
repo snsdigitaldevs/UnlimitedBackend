@@ -2,8 +2,10 @@ package com.simonschuster.pimsleur.unlimited.data.dto.practices;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 
+import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_EMPTY;
+
 // speak easy and reading has same data structure
-@JsonInclude(JsonInclude.Include.NON_EMPTY)
+@JsonInclude(NON_EMPTY)
 public class SpeakEasyOrReading {
     private long start;
     private long stop;

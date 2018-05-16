@@ -49,6 +49,12 @@ public class AvailablePracticesController {
         return new AvailablePractices(mergeLists(readings, speakEasies, flashCards, quickMatches));
     }
 
+    @RequestMapping(value = "/pcmProduct/{productCode}/availablePractices", method = RequestMethod.GET)
+    public AvailablePractices getPcmAvailablePractices(@PathVariable("productCode") String productCode,
+                                                       @RequestParam(value = "sub") String sub) {
+        return pcmAvailablePracticesService.getAvailablePractices(productCode, sub);
+    }
+
     private List<PracticesInUnit> mergeLists(List<PracticesInUnit> readings,
                                              List<PracticesInUnit> speakEasies,
                                              List<PracticesInUnit> flashCards,
@@ -69,11 +75,5 @@ public class AvailablePracticesController {
                 })
                 .sorted(comparingInt(PracticesInUnit::getUnitNumber))
                 .collect(toList());
-    }
-
-    @RequestMapping(value = "/pcmProduct/{productCode}/availablePractices", method = RequestMethod.GET)
-    public AvailablePractices getPcmAvailablePractices(@PathVariable("productCode") String productCode,
-                                                       @RequestParam(value = "sub") String sub) {
-        return pcmAvailablePracticesService.getAvailablePractices(productCode, sub);
     }
 }

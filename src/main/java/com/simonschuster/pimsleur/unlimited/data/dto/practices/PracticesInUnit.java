@@ -1,8 +1,13 @@
 package com.simonschuster.pimsleur.unlimited.data.dto.practices;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_EMPTY;
+
+@JsonInclude(NON_EMPTY)
 public class PracticesInUnit {
 
     private Integer unitNumber;
@@ -14,8 +19,9 @@ public class PracticesInUnit {
     private boolean hasSkills;
 
     private List<QuickMatch> quickMatches;
-    private List<SpeakEasy> speakEasies;
+    private List<SpeakEasyOrReading> speakEasies;
     private List<FlashCard> flashCards;
+    private List<SpeakEasyOrReading> readings = new ArrayList<>();
 
     public PracticesInUnit(Integer unitNumber) {
         this.unitNumber = unitNumber;
@@ -81,8 +87,12 @@ public class PracticesInUnit {
         return flashCards;
     }
 
-    public List<SpeakEasy> getSpeakEasies() {
+    public List<SpeakEasyOrReading> getSpeakEasies() {
         return speakEasies;
+    }
+
+    public List<SpeakEasyOrReading> getReadings() {
+        return readings;
     }
 
     public PracticesInUnit mergeWith(PracticesInUnit that) {
@@ -97,6 +107,7 @@ public class PracticesInUnit {
         mergedResult.speakEasies = pickNotNullOrEmpty(this.speakEasies, that.speakEasies);
         mergedResult.flashCards = pickNotNullOrEmpty(this.flashCards, that.flashCards);
         mergedResult.quickMatches = pickNotNullOrEmpty(this.quickMatches, that.quickMatches);
+        mergedResult.readings = pickNotNullOrEmpty(this.readings, that.readings);
 
         return mergedResult;
     }
@@ -108,10 +119,17 @@ public class PracticesInUnit {
         return two;
     }
 
-    public static PracticesInUnit createWithSpeakEasies(int unitNumber, List<SpeakEasy> speakEasies) {
+    public static PracticesInUnit createWithSpeakEasies(int unitNumber, List<SpeakEasyOrReading> speakEasies) {
         PracticesInUnit practicesInUnit = new PracticesInUnit(unitNumber);
         practicesInUnit.speakEasies = speakEasies;
         practicesInUnit.setHasSpeakEasy(speakEasies.size() > 0);
+        return practicesInUnit;
+    }
+
+    public static PracticesInUnit createWithReadings(int unitNumber, List<SpeakEasyOrReading> speakEasies) {
+        PracticesInUnit practicesInUnit = new PracticesInUnit(unitNumber);
+        practicesInUnit.readings = speakEasies;
+        practicesInUnit.setHasReading(speakEasies.size() > 0);
         return practicesInUnit;
     }
 
@@ -121,4 +139,5 @@ public class PracticesInUnit {
         practicesInUnit.setHasFlashCard(flashCards.size() > 0);
         return practicesInUnit;
     }
+
 }

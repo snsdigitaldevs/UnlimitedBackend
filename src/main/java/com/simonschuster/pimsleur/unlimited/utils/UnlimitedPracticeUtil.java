@@ -1,8 +1,5 @@
 package com.simonschuster.pimsleur.unlimited.utils;
 
-import com.simonschuster.pimsleur.unlimited.data.dto.practices.AvailablePractices;
-import com.simonschuster.pimsleur.unlimited.data.dto.practices.PracticesInUnit;
-import com.simonschuster.pimsleur.unlimited.services.practices.PracticesCsvLocations;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
@@ -11,78 +8,20 @@ import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
 import java.io.StringReader;
-import java.util.*;
+import java.util.Arrays;
+import java.util.List;
 import java.util.stream.Collectors;
 
-import static java.lang.Integer.parseInt;
 import static java.nio.charset.Charset.forName;
 import static java.util.Collections.frequency;
-import static org.apache.commons.lang3.StringUtils.isNumeric;
 
 public class UnlimitedPracticeUtil {
-    private static final String READING = "reading";
-
-    public static AvailablePractices getAvailablePractices(PracticesCsvLocations paths) throws IOException {
-        Map<String, Set<Integer>> unitsSetMap = new HashMap<>();
-        unitsSetMap.put(READING, getUnitSetFromCSV(paths.getReadingUrl()));
-        return setPracticesInUnitFromUnitSets(unitsSetMap);
-    }
-
-    private static CSVParser getCsvRecordsFromUrl(String url) throws IOException {
-        RestTemplate restTemplate = new RestTemplate();
-        String csvString = replaceDuplicateHeaders(restTemplate.getForObject(url, String.class));
-
-        return CSVFormat.EXCEL
-                .withFirstRecordAsHeader().withQuote(null).withIgnoreEmptyLines()
-                .parse(new StringReader(csvString));
-    }
-
-    private static AvailablePractices setPracticesInUnitFromUnitSets(Map<String, Set<Integer>> unitsSetMap) {
-        AvailablePractices result = new AvailablePractices(new ArrayList<>());
-        for (String key : unitsSetMap.keySet()) {
-            for (Integer unit : unitsSetMap.get(key)) {
-                PracticesInUnit practiceInUnit = result.getPracticesInUnits().stream()
-                        .filter(practice -> practice.getUnitNumber().equals(unit))
-                        .findFirst()
-                        .orElseGet(() -> {
-                            PracticesInUnit practice = new PracticesInUnit(unit);
-                            result.getPracticesInUnits().add(practice);
-                            return practice;
-                        });
-                switch (key) {
-                    case READING:
-                        practiceInUnit.setHasReading(true);
-                        break;
-                    default:
-                        // do nothing
-                        break;
-                }
-            }
-        }
-        return result;
-    }
-
-    private static Set<Integer> getUnitSetFromCSV(String url) throws IOException {
-        Set<Integer> units = new HashSet<>();
-        if (url == null || url.isEmpty()) {
-            return units;
-        }
-        CSVParser csvRecords = getCsvRecordsFromUrl(url);
-        String unitNumKey = unitNumKey(csvRecords);
-        for (CSVRecord record : csvRecords) {
-            String unitNumString = getUnitNumString(record, unitNumKey);
-            if (isNumeric(unitNumString)) {
-                units.add(parseInt(unitNumString));
-            }
-        }
-        return units;
-    }
 
     public static String getUnitNumString(CSVRecord record, String unitNumKey) {
         if (record.isSet(unitNumKey)) {
             return record.get(unitNumKey).replace("\"", "");
         }
-        return "NoSucnKey";
+        return "NoSuchKey";
     }
 
     public static String unitNumKey(CSVParser csvRecords) {
@@ -95,10 +34,14 @@ public class UnlimitedPracticeUtil {
     }
 
     public static String findRealHeaderName(CSVParser csvRecords, String key) {
-        if (csvRecords.getHeaderMap().containsKey(key)) {
-            return key;
+        String quotedKey = "\"" + key + "\"";
+        String quotedKeyLowerCase = quotedKey.toLowerCase();
+        if (csvRecords.getHeaderMap().containsKey(quotedKey)) {
+            return quotedKey;
+        } else if (csvRecords.getHeaderMap().containsKey(quotedKeyLowerCase)) {
+            return quotedKeyLowerCase;
         }
-        return key.toLowerCase();
+        return key;
     }
 
     public static String replaceDuplicateHeaders(String csvString) {
@@ -137,6 +80,7 @@ public class UnlimitedPracticeUtil {
                 .withFirstRecordAsHeader()
                 .withIgnoreEmptyLines()
                 .withIgnoreHeaderCase()
+                .withQuote(null)
                 .parse(new StringReader(csvString));
     }
 

@@ -11,17 +11,20 @@ public class SpeakEasyOrReading {
     private String speaker;
     private String text;
     private String nativeText;
-    private String transliteration;
+    private String optionalText;
 
     private int order;
 
-    public SpeakEasyOrReading(long start, long stop, String speaker, String text, String nativeText, String transliteration, int order) {
+    public SpeakEasyOrReading(long start, long stop,
+                              String speaker, String text,
+                              String nativeText, String optionalText,
+                              int order) {
         this.start = start;
         this.stop = stop;
         this.speaker = speaker;
         this.text = text;
         this.nativeText = nativeText;
-        this.transliteration = transliteration;
+        this.optionalText = optionalText;
         this.order = order;
     }
 
@@ -49,7 +52,7 @@ public class SpeakEasyOrReading {
         return order;
     }
 
-    public String getTransliteration() {
-        return transliteration;
+    public String getOptionalText() {
+        return optionalText;
     }
 }

@@ -140,8 +140,8 @@ public class EDTCourseInfoServiceTest {
             List<Course> courseDtos = productInfo.toDto();
             Course levelOne = courseDtos.stream().filter(course -> course.getLevel() == 1).collect(Collectors.toList()).get(0);
 
-            assertThat(levelOne.getHidePracticeTab(), is(false));
             assertEquals("French", levelOne.getLanguageName());
+            assertThat(levelOne.getIsOneOfNineBig(), is(true));
 
             List<Lesson> lessons = levelOne.getLessons();
             Lesson lessonOne = lessons.stream().filter(lesson -> lesson.getName().equals("Unit 01")).collect(Collectors.toList()).get(0);

@@ -110,7 +110,7 @@ public class AggregatedProductInfo {
         String languageName = orderProductInfo.getProduct().getProductsLanguageName();
 
         Course course = new Course();
-        course.setHidePracticeTab(!isOneOfNineBig(languageName));
+        course.setIsOneOfNineBig(isOneOfNineBig(languageName));
         course.setLanguageName(languageName);
         course.setLevel(Integer.parseInt(level));
         course.setLessons(filterAndOrder(lessons));

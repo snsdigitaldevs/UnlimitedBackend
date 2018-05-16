@@ -36,7 +36,7 @@ public class EDTCourseInfoServiceTest {
 
         running(server, () -> {
             AggregatedProductInfo productInfo = edtCourseInfoService.getCourseInfos(isPUProductCode, "9781508243328", "");
-            assertThat(productInfo.getPuProductInfo().getResultCode(),is(1));
+            assertThat(productInfo.getPuProductInfo().getResultCode(), is(1));
             assertNotNull(productInfo.getPuProductInfo().getResultData().getCourseConfigs());
             assertNotNull(productInfo.getPuProductInfo().getResultData().getMediaSets());
 
@@ -66,13 +66,13 @@ public class EDTCourseInfoServiceTest {
         server.post(and(
                 by(uri("/subscr_production_v_9/action_handlers/qwsfrecv.php")),
                 eq(form("action"), "fgtyh")
-                ))
+        ))
                 .response(file("src/test/resources/edtProductInfoResponseWithMultipleCourses.json"));
         boolean isPUProductCode = true;
 
         running(server, () -> {
             AggregatedProductInfo productInfo = edtCourseInfoService.getCourseInfos(isPUProductCode, "9781508260257", "");
-            assertThat(productInfo.getPuProductInfo().getResultCode(),is(1));
+            assertThat(productInfo.getPuProductInfo().getResultCode(), is(1));
             assertNotNull(productInfo.getPuProductInfo().getResultData().getCourseConfigs());
             assertEquals(1, productInfo.getPuProductInfo().getResultData().getCourseConfigs().size());
             assertEquals(2, productInfo.getPuProductInfo().getResultData().getMediaSets().size());
@@ -115,7 +115,7 @@ public class EDTCourseInfoServiceTest {
 
             Lesson lesson1InLevel1 = course.getLessons().get(0);
             assertEquals("https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese"
-                    + "/Mandarin+Chinese+Demo/images/full/MA_1_M_01.jpg",
+                            + "/Mandarin+Chinese+Demo/images/full/MA_1_M_01.jpg",
                     lesson1InLevel1.getImage().getFullImageAddress());
 
             assertEquals("https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese"
@@ -140,6 +140,7 @@ public class EDTCourseInfoServiceTest {
             List<Course> courseDtos = productInfo.toDto();
             Course levelOne = courseDtos.stream().filter(course -> course.getLevel() == 1).collect(Collectors.toList()).get(0);
 
+            assertThat(levelOne.getHidePracticeTab(), is(false));
             assertEquals("French", levelOne.getLanguageName());
 
             List<Lesson> lessons = levelOne.getLessons();
@@ -160,8 +161,7 @@ public class EDTCourseInfoServiceTest {
         server.post(and(
                 by(uri("/subscr_production_v_9/action_handlers/qwsfrecv.php")),
                 eq(form("action"), "fgtyh"),
-                eq(form("gccfs"), "[\"9781508243328\"]")
-        ))
+                eq(form("gccfs"), "[\"9781508243328\"]")))
                 .response(file("src/test/resources/edtProductInfoResponse.json"));
         return server;
     }
@@ -171,26 +171,22 @@ public class EDTCourseInfoServiceTest {
         server.post(and(
                 by(uri("/subscr_production_v_9/action_handlers/qwsfrecv.php")),
                 eq(form("action"), "fgtyh"),
-                eq(form("gccfs"), "[\"9781508243328\"]")
-        ))
+                eq(form("gccfs"), "[\"9781508243328\"]")))
                 .response("{\"result_code\":-1}");
 
         server.post(and(
                 by(uri("/subscr_production_v_9/action_handlers/rsovkolfqxrjl.php")),
-                eq(form("action"), "pcm_blmqide"))
-        )
+                eq(form("action"), "pcm_blmqide")))
                 .response(file("src/test/resources/pcmCustInfoResponse.json"));
 
         server.post(and(
                 by(uri("/subscr_dev/action_handlers/nwdft.php")),
-                eq(form("action"), "slruldr"))
-        )
+                eq(form("action"), "slruldr")))
                 .response(file("src/test/resources/pcmNewVersionAudioLinkRequest.json"));
 
         server.post(and(
                 by(uri("/subscr_production_v_9/action_handlers/rdlss.php")),
-                eq(form("action"), "rdlfmix"))
-        )
+                eq(form("action"), "rdlfmix")))
                 .response(file("src/test/resources/pcmAudioLinkRequest.json"));
         return server;
     }

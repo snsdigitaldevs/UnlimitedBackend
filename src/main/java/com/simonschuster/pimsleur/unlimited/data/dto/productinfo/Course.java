@@ -13,7 +13,7 @@ public class Course {
     private List<Lesson> lessons;
     private String productCode;
     private String courseName;
-    private Boolean hidePracticeTab;
+    private Boolean isOneOfNineBig;
 
     public String getLanguageName() {
         return languageName;
@@ -55,11 +55,11 @@ public class Course {
         this.courseName = courseName;
     }
 
-    public Boolean getHidePracticeTab() {
-        return hidePracticeTab;
+    public Boolean getIsOneOfNineBig() {
+        return isOneOfNineBig;
     }
 
-    public void setHidePracticeTab(Boolean hidePracticeTab) {
-        this.hidePracticeTab = hidePracticeTab;
+    public void setIsOneOfNineBig(Boolean isOneOfNineBig) {
+        this.isOneOfNineBig = isOneOfNineBig;
     }
 }

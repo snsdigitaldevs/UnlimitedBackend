@@ -95,7 +95,6 @@ public class QuickMatchUtil {
     }
 
     private static String getIsbn(String quickMatchesInUrl) {
-        // TODO: How to get ISBN?
         String[] urls = quickMatchesInUrl.split("/");
         return urls[urls.length - 1].split("_")[0];
     }
@@ -159,8 +158,10 @@ public class QuickMatchUtil {
                 .concat(record.get("Course").replace(" ", "_"))
                 .concat("_")
                 .concat("QZ")
-                // TODO: make sure the type of quick match by Kelly
+                .concat("_U")
+                .concat(String.valueOf(Integer.parseInt(record.get("Unit Num"))))
                 .concat("_")
+                .concat(record.get(headerMap.get("QZ #")))
                 .concat(".mp3");
     }
 

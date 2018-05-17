@@ -8,8 +8,9 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
+
+import static java.util.Collections.emptyList;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
@@ -49,9 +50,12 @@ public class ResultData {
 
     @JsonProperty("userAppStateData")
     public List<UserAppStateDatum> getUserAppStateData() throws IOException {
-        ObjectMapper mapper = new ObjectMapper();
-        return mapper.readValue(userAppStateData, new TypeReference<List<UserAppStateDatum>>() {
-        });
+        if (userAppStateData != null) {
+            ObjectMapper mapper = new ObjectMapper();
+            return mapper.readValue(userAppStateData, new TypeReference<List<UserAppStateDatum>>() {
+            });
+        }
+        return emptyList();
     }
 
 }

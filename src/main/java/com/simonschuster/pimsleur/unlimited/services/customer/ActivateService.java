@@ -43,8 +43,8 @@ public class ActivateService {
         Boolean isActivated = resultCode.equals(1);
         ActivateResultDTO activateDTO = new ActivateResultDTO(isbn, isActivated);
         if (isActivated) {
-            Integer activationCountMobile = activateResponse.getResultData().getActivation().getActivationCountMobile();
-            activateDTO.setActivatedTime(activationCountMobile);
+            activateDTO.setActivatedTime(activateResponse.getResultData().getActivation().getActivationCountMobile() +
+                    activateResponse.getResultData().getActivation().getActivationCountDesktop());
         } else {
             activateDTO.setActivatedTime(resultCode.equals(-7010) ? 4 : -1);
         }

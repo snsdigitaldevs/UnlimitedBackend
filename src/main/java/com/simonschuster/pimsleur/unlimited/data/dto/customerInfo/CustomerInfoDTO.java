@@ -16,6 +16,7 @@ public class CustomerInfoDTO {
     private Long pcmLastSaveId;
 
     private String customerId;
+    private String registrantId;
     private String identityVerificationToken;
 
     public CustomerInfoDTO(List<String> unlimitedProductCodes,
@@ -80,5 +81,13 @@ public class CustomerInfoDTO {
 
     public String getIdentityVerificationToken() {
         return identityVerificationToken;
+    }
+
+    public String getRegistrantId() {
+        return registrantId;
+    }
+
+    public void setRegistrantId(String registrantId) {
+        this.registrantId = registrantId;
     }
 }

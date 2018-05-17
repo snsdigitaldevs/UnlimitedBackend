@@ -76,6 +76,7 @@ public class AggregatedCustomerInfo {
             customerInfoDTO.setUnlimitedLastSaveId(unlimitedSyncState.getResultData().getLastSaveId());
         }
         customerInfoDTO.setCustomerId(unlimitedCustomerInfo.getResultData().getCustomer().getCustomersId().toString());
+        customerInfoDTO.setRegistrantId(unlimitedCustomerInfo.getResultData().getRegistrant().getRegistrantId().toString());
         customerInfoDTO.setIdentityVerificationToken(unlimitedCustomerInfo.getResultData().getCustomer().getIdentityVerificationToken());
         return customerInfoDTO;
     }

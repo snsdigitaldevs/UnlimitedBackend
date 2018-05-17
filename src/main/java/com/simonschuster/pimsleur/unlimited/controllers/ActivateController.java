@@ -18,7 +18,7 @@ public class ActivateController {
         activateService.deactivate(customerId, deactivateBodyDTO.getRegistrantId());
     }
 
-    @RequestMapping(value = "/account/{registrantId}/products/activation", method = RequestMethod.POST)
+    @RequestMapping(value = "/registrant/{registrantId}/products/activation", method = RequestMethod.POST)
     public ActivateDTO activate(@PathVariable("registrantId") String registrantId,
                                 @RequestBody ActivateBodyDTO activateBodyDTO) {
         return activateService.active(registrantId, activateBodyDTO.getIdentityVerificationToken(), activateBodyDTO.getIsbns());

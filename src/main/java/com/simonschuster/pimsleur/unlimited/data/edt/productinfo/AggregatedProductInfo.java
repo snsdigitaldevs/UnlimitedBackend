@@ -129,7 +129,6 @@ public class AggregatedProductInfo {
                 .collect(Collectors.toList());
 
         mediaItems.forEach(lessonItem -> {
-//            String imageDescription = deleteQuotation(lessonItem);
             Lesson lesson = new Lesson();
             lesson.setLevel(course.getLevel());
             lesson.setLessonNumber(lessonItem.getUnit());

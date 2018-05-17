@@ -23,7 +23,6 @@ import static org.apache.commons.lang3.StringUtils.isNumeric;
 public class FlashCardUtil {
 
     public static List<PracticesInUnit> csvToFlashCards(String csvUrl) throws IOException {
-        System.out.println(csvUrl);
         if (csvUrl == null) {
             return emptyList();
         }

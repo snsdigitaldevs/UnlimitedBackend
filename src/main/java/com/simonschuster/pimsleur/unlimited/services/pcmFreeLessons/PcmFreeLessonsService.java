@@ -2,8 +2,8 @@ package com.simonschuster.pimsleur.unlimited.services.pcmFreeLessons;
 
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.FreeLessonDto;
-import com.simonschuster.pimsleur.unlimited.data.edt.freeLessons.PCMProduct;
-import com.simonschuster.pimsleur.unlimited.data.edt.freeLessons.PCMProducts;
+import com.simonschuster.pimsleur.unlimited.data.edt.freeLessonsList.PCMProduct;
+import com.simonschuster.pimsleur.unlimited.data.edt.freeLessonsList.PCMProducts;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;

@@ -1,5 +1,5 @@
 
-package com.simonschuster.pimsleur.unlimited.data.edt.freeLessons;
+package com.simonschuster.pimsleur.unlimited.data.edt.freeLessonsList;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;

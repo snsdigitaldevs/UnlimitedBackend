@@ -27,24 +27,28 @@ public class ActivateService {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
 
-        return new ActivateDTO(isbns.parallelStream()
-                .map(isbn -> {
-                    HttpEntity<String> entity = new HttpEntity<>(String.format(
-                            applicationConfiguration.getProperty("edt.api.activate.parameters.activate"),
-                            identityVerificationToken, registrantId, isbn
-                    ), headers);
-                    Activate activateResponse = postToEdt(entity, url, Activate.class);
-                    Integer resultCode = activateResponse.getResultCode();
-                    Boolean isActivated = resultCode.equals(1);
-                    ActivateResultDTO activateDTO = new ActivateResultDTO(isbn, isActivated);
-                    if (isActivated) {
-                        activateDTO.setActivatedTime(activateResponse.getResultData().getActivation().getActivationCountMobile());
-                    } else {
-                        activateDTO.setActivatedTime(resultCode.equals(-7010) ? 4 : -1);
-                    }
-                    return activateDTO;
-                })
+        return new ActivateDTO(isbns.stream()
+                // Do not use parallelStream because updating data in same time is note supported by EDT now.
+                .map(isbn -> activateToEdt(registrantId, identityVerificationToken, url, headers, isbn))
                 .collect(Collectors.toList()));
+    }
+
+    private ActivateResultDTO activateToEdt(String registrantId, String identityVerificationToken, String url, HttpHeaders headers, String isbn) {
+        HttpEntity<String> entity = new HttpEntity<>(String.format(
+                applicationConfiguration.getProperty("edt.api.activate.parameters.activate"),
+                identityVerificationToken, registrantId, isbn
+        ), headers);
+        Activate activateResponse = postToEdt(entity, url, Activate.class);
+        Integer resultCode = activateResponse.getResultCode();
+        Boolean isActivated = resultCode.equals(1);
+        ActivateResultDTO activateDTO = new ActivateResultDTO(isbn, isActivated);
+        if (isActivated) {
+            Integer activationCountMobile = activateResponse.getResultData().getActivation().getActivationCountMobile();
+            activateDTO.setActivatedTime(activationCountMobile);
+        } else {
+            activateDTO.setActivatedTime(resultCode.equals(-7010) ? 4 : -1);
+        }
+        return activateDTO;
     }
 
     public void deactivate(String customerId, String registrantId) {

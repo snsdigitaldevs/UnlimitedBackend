@@ -1,7 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.utils;
 
 import org.apache.commons.csv.CSVFormat;
-import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
@@ -24,23 +23,19 @@ public class UnlimitedPracticeUtil {
         return "NoSuchKey";
     }
 
-    public static String unitNumKey(CSVParser csvRecords) {
-        String quotedUnitNum = "\"Unit Num\"";
-        String unitNum = "Unit Num";
-        if (csvRecords.getHeaderMap().containsKey(unitNum)) {
-            return unitNum;
-        }
-        return quotedUnitNum;
-    }
-
-    public static String findRealHeaderName(CSVParser csvRecords, String key) {
+    public static String findRealHeaderName(CSVRecord oneRecord, String key) {
         String quotedKey = "\"" + key + "\"";
         String quotedKeyLowerCase = quotedKey.toLowerCase();
-        if (csvRecords.getHeaderMap().containsKey(quotedKey)) {
+        String keyLowerCase = key.toLowerCase();
+
+        if (oneRecord.isMapped(quotedKey)) {
             return quotedKey;
-        } else if (csvRecords.getHeaderMap().containsKey(quotedKeyLowerCase)) {
+        } else if (oneRecord.isMapped(quotedKeyLowerCase)) {
             return quotedKeyLowerCase;
+        } else if (oneRecord.isMapped(quotedKeyLowerCase)) {
+            return keyLowerCase;
         }
+
         return key;
     }
 
@@ -67,7 +62,7 @@ public class UnlimitedPracticeUtil {
                 headerAndBody[1];
     }
 
-    public static CSVParser urlToCsv(String url) throws IOException {
+    public static List<CSVRecord> urlToCsv(String url) throws IOException {
         RestTemplate restTemplate = new RestTemplate();
         restTemplate.getMessageConverters()
                 .add(0, new StringHttpMessageConverter(forName("UTF-8")));
@@ -76,12 +71,24 @@ public class UnlimitedPracticeUtil {
             csvString = specialCsvFiles(csvString);
         }
 
-        return CSVFormat.EXCEL
+        return csvStringToObj(csvString);
+    }
+
+    private static List<CSVRecord> csvStringToObj(String csvString) throws IOException {
+        CSVFormat csvFormat = CSVFormat.EXCEL
                 .withFirstRecordAsHeader()
                 .withIgnoreEmptyLines()
-                .withIgnoreHeaderCase()
-                .withQuote(null)
-                .parse(new StringReader(csvString));
+                .withIgnoreHeaderCase();
+        try {
+            // first try to parse csv with quotes
+            return csvFormat
+                    .parse(new StringReader(csvString)).getRecords();
+        } catch (IOException e) {
+            // if try fails, then try to parse csv without quotes
+            return csvFormat
+                    .withQuote(null)
+                    .parse(new StringReader(csvString)).getRecords();
+        }
     }
 
     public static String getFromCsv(String key, CSVRecord csvRecord) {

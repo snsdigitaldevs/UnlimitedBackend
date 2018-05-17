@@ -19,8 +19,8 @@ public class PracticesInUnit {
     private boolean hasSkills;
 
     private List<QuickMatch> quickMatches;
-    private List<SpeakEasyOrReading> speakEasies;
-    private List<FlashCard> flashCards;
+    private List<SpeakEasyOrReading> speakEasies = new ArrayList<>();
+    private List<FlashCard> flashCards = new ArrayList<>();
     private List<SpeakEasyOrReading> readings = new ArrayList<>();
 
     public PracticesInUnit(Integer unitNumber) {

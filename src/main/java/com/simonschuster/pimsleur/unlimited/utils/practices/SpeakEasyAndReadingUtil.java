@@ -2,7 +2,6 @@ package com.simonschuster.pimsleur.unlimited.utils.practices;
 
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.PracticesInUnit;
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.SpeakEasyOrReading;
-import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 import org.joda.time.format.DateTimeFormatter;
 
@@ -19,7 +18,6 @@ import static java.util.Collections.emptyList;
 import static java.util.Comparator.comparingInt;
 import static java.util.stream.Collectors.groupingBy;
 import static java.util.stream.Collectors.toList;
-import static java.util.stream.StreamSupport.stream;
 import static org.apache.commons.lang3.StringUtils.isNumeric;
 import static org.joda.time.format.DateTimeFormat.forPattern;
 
@@ -44,19 +42,19 @@ public class SpeakEasyAndReadingUtil {
             return emptyList();
         }
 
-        CSVParser csvRecords = urlToCsv(csvUrl);
+        List<CSVRecord> csvRecords = urlToCsv(csvUrl);
 
-        String unitNumKey = unitNumKey(csvRecords);
-        String startKey = findRealHeaderName(csvRecords, "Start");
-        String stopKey = findRealHeaderName(csvRecords, "Stop");
-        String speakerKey = findRealHeaderName(csvRecords, "Spkr");
-        String transliterationKey = findRealHeaderName(csvRecords, "Transliteration");
-        String helpTextKey = findRealHeaderName(csvRecords, "xlitHelp");
-        String textKey = findRealHeaderName(csvRecords, text);
-        String nativeTextKey = findRealHeaderName(csvRecords, nativeText);
-        String orderKey = findRealHeaderName(csvRecords, order);
+        String unitNumKey = findRealHeaderName(csvRecords.get(0), "Unit Num");
+        String startKey = findRealHeaderName(csvRecords.get(0), "Start");
+        String stopKey = findRealHeaderName(csvRecords.get(0), "Stop");
+        String speakerKey = findRealHeaderName(csvRecords.get(0), "Spkr");
+        String transliterationKey = findRealHeaderName(csvRecords.get(0), "Transliteration");
+        String helpTextKey = findRealHeaderName(csvRecords.get(0), "xlitHelp");
+        String textKey = findRealHeaderName(csvRecords.get(0), text);
+        String nativeTextKey = findRealHeaderName(csvRecords.get(0), nativeText);
+        String orderKey = findRealHeaderName(csvRecords.get(0), order);
 
-        return stream(csvRecords.spliterator(), false)
+        return csvRecords.stream()
                 .collect(groupingBy(csvRecord -> getUnitNumString(csvRecord, unitNumKey)))
                 .entrySet().stream()
                 .map(group -> {

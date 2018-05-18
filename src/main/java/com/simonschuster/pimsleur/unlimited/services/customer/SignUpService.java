@@ -23,9 +23,10 @@ public class SignUpService {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
 
+        String userName = signUpBodyDTO.getUserName() == null ? "" : "&worf=" + signUpBodyDTO.getUserName();
         HttpEntity<String> entity = new HttpEntity<>(String.format(
                 applicationConfiguration.getProperty("edt.api.signUp.parameters.signUp"),
-                signUpBodyDTO.getPassword(), signUpBodyDTO.getEmail(), signUpBodyDTO.getStoreDomain(), signUpBodyDTO.getCountryCode()
+                userName, signUpBodyDTO.getPassword(), signUpBodyDTO.getEmail(), signUpBodyDTO.getStoreDomain(), signUpBodyDTO.getCountryCode()
         ), headers);
         SignUpEDT response = postToEdt(entity, url, SignUpEDT.class);
 

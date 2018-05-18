@@ -15,6 +15,7 @@ import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEd
 
 @Service
 public class SignUpService {
+    public static final String EMAIL_ALREADY_REGISTERED_ERROR_MESSAGE = "This email is already registered.";
     @Autowired
     private ApplicationConfiguration applicationConfiguration;
 
@@ -34,7 +35,7 @@ public class SignUpService {
             String errorMessage;
             switch (response.getResultCode()) {
                 case -3011:
-                    errorMessage = "This email is already registered.";
+                    errorMessage = EMAIL_ALREADY_REGISTERED_ERROR_MESSAGE;
                     break;
                 case -1:
                     errorMessage = "Password must be at least 8 characters,  " +

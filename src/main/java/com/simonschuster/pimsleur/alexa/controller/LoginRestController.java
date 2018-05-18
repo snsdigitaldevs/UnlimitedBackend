@@ -1,5 +1,8 @@
 package com.simonschuster.pimsleur.alexa.controller;
 
+import com.simonschuster.pimsleur.unlimited.common.exception.ParamInvalidException;
+import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.signUp.SignUpBodyDTO;
+import com.simonschuster.pimsleur.unlimited.services.customer.SignUpService;
 import com.simonschuster.pimsleur.unlimited.services.login.LoginService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,18 +19,24 @@ public class LoginRestController {
 
     @Autowired
     private LoginService loginService;
+    @Autowired
+    private SignUpService signUpService;
+
     private static Logger logger = LoggerFactory.getLogger(LoginController.class);
 
     @RequestMapping("/login")
     public String loginSubmission(HttpServletRequest request,
-                                  @RequestParam(name = "email") String userName,
+                                  @RequestParam(name = "email") String email,
                                   @RequestParam(name = "password") String password,
                                   @RequestParam(name = "state") String state,
                                   @RequestParam(name = "redirect_uri") String redirectUri,
                                   Model model) {
         String responseRedirectUrl = "";
         try {
-            String authorizationSub = loginService.getAuthorizationSub(userName, password);
+            String authorizationSub = loginService.getAuthorizationSub(email, password);
+            //Generate necessary data in EDT backend for user who signed up on auth0
+            noticeEDTForNewUserInAuth0(email);
+
             responseRedirectUrl = new StringBuilder().append(redirectUri).append("#")
                     .append("state=").append(state).append("&")
                     .append("access_token=").append(authorizationSub).append("&")
@@ -41,5 +50,20 @@ public class LoginRestController {
         }
 
         return responseRedirectUrl;
+    }
+
+    private void noticeEDTForNewUserInAuth0(@RequestParam(name = "email") String email) {
+        SignUpBodyDTO signUpBodyDto = new SignUpBodyDTO();
+        signUpBodyDto.setEmail(email);
+        //Hardcode storedomain as android_inapp because EDT only accept "android_inapp" or "ios_inapp" in sign up API.
+        signUpBodyDto.setStoreDomain("android_inapp");
+        try {
+            signUpService.signUp(signUpBodyDto);
+        } catch (ParamInvalidException e) {
+            if (!e.getMessage().equals(signUpService.EMAIL_ALREADY_REGISTERED_ERROR_MESSAGE)) {
+                e.printStackTrace();
+                throw e;
+            }
+        }
     }
 }

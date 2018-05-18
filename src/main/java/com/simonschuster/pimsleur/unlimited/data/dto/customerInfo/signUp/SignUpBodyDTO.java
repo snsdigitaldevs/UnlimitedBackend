@@ -11,6 +11,10 @@ public class SignUpBodyDTO {
         return email;
     }
 
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     public String getUserName() {
         return userName;
     }
@@ -21,6 +25,10 @@ public class SignUpBodyDTO {
 
     public String getStoreDomain() {
         return storeDomain;
+    }
+
+    public void setStoreDomain(String storeDomain) {
+        this.storeDomain = storeDomain;
     }
 
     public String getCountryCode() {

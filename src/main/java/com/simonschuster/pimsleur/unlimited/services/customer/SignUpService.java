@@ -1,5 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.services.customer;
 
+import com.simonschuster.pimsleur.unlimited.common.exception.ParamInvalidException;
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.signUp.SignUpBodyDTO;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.signUp.SignUpDTO;
@@ -27,6 +28,30 @@ public class SignUpService {
                 applicationConfiguration.getProperty("edt.api.signUp.parameters.signUp"),
                 userName, signUpBodyDTO.getPassword(), signUpBodyDTO.getEmail(), signUpBodyDTO.getStoreDomain(), signUpBodyDTO.getCountryCode()
         ), headers);
-        return postToEdt(entity, url, SignUpEDT.class).dataFormat();
+        SignUpEDT response = postToEdt(entity, url, SignUpEDT.class);
+
+        if (!response.getResultCode().equals(1)) {
+            String errorMessage;
+            switch (response.getResultCode()) {
+                case -3011:
+                    errorMessage = "This email is already registered.";
+                    break;
+                case -1:
+                    errorMessage = "Password must be at least 8 characters,  " +
+                            "including: lower case letters,  upper case letters,  numbers,  and special characters.";
+                    break;
+//                     invalid email cause different error codes
+/*
+                case 0:
+                    errorMessage = "Please input valid email address.";
+                    break;
+*/
+                default:
+                    errorMessage = "System error, please try latter.";
+                    break;
+            }
+            throw new ParamInvalidException(errorMessage);
+        }
+        return response.dataFormat();
     }
 }

@@ -7,7 +7,7 @@ public class ActivateResultDTO {
 
     public ActivateResultDTO(String isbn, Boolean isActivated) {
         this.isbn = isbn;
-        this.isActivated=isActivated;
+        this.isActivated = isActivated;
     }
 
     public String getIsbn() {

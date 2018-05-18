@@ -41,6 +41,9 @@ public class SignUpService {
                             "including: lower case letters,  upper case letters,  numbers,  and special characters.";
                     break;
 //                     invalid email cause different error codes
+//                     e.g.: xxx334.xxx.online cause -1
+//                           xxx333.xxx.online cause -3011
+//                           in some situations cause 0
 /*
                 case 0:
                     errorMessage = "Please input valid email address.";

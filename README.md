@@ -15,17 +15,17 @@
 ##### DEV:
 Instance:  i-0f6069ee82692ecbb (DEV_UnlimitedBackend)
 
-Public DNS: ec2-54-165-165-197.compute-1.amazonaws.com
+Public DNS: ec2-34-238-227-224.compute-1.amazonaws.com
 
 #### QA:
 Instance:  i-0e7490d0b50185618 (QA_UnlimitedBackend)
 
-Public DNS: ec2-54-89-109-156.compute-1.amazonaws.com
+Public DNS: ec2-34-232-139-149.compute-1.amazonaws.com
 
 #### UAT:
 Instance:  i-0e46cc08c799b1235 (UAT_UnlimitedBackend)
 
-Public DNS: ec2-54-167-82-185.compute-1.amazonaws.com
+Public DNS: ec2-54-156-176-22.compute-1.amazonaws.com
 
 #### PROD:
 Instance:  i-0e4ef2be6ab7c0af5 (PROD_UnlimitedBackend)

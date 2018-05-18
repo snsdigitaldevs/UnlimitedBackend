@@ -1,6 +1,6 @@
 #!/bin/bash
 
-env = $1
+env=$1
 project_home_dir=$2
 new_jar_package=$3
 

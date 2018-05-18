@@ -37,7 +37,7 @@ pipeline {
                 echo "Deploy to Dev"
                 script {
                     def config = readProperties file: 'jenkinsfiles/config/config.properties'
-                    def hostnames = config.CI_UnlimitedBackend_HostName.split(",")
+                    def hostnames = config.DEV_UnlimitedBackend_HostName.split(",")
                     deploy(hostnames, "dev")
                 }
             }

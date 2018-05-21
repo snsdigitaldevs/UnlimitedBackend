@@ -26,7 +26,7 @@ public class LearnerInfoService {
         String url = config.getProperty("edt.api.freeLesson.url");
         CodeOnlyResposeEDT learnerInfoResponse = postToEdt(parameters, url, CodeOnlyResposeEDT.class);
         if (!learnerInfoResponse.getResultCode().equals(1)) {
-            throw new PimsleurException("send learner info to EDT faild!");
+            throw new PimsleurException("send learner info to EDT failed!");
         }
     }
 }

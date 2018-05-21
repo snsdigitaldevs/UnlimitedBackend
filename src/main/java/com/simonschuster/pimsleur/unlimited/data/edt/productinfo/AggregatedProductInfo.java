@@ -19,6 +19,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 import static com.simonschuster.pimsleur.unlimited.utils.HardCodedProductsUtil.isOneOfNineBig;
+import static com.simonschuster.pimsleur.unlimited.utils.HardCodedProductsUtil.isPuFreeLesson;
 
 public class AggregatedProductInfo {
     private static final String PREFIX_FOR_IMAGE_OF_PU = "https://install.pimsleurunlimited.com/staging_n/desktop/";
@@ -65,6 +66,7 @@ public class AggregatedProductInfo {
             course.setLanguageName(mediaSet.getCourseLanguageName());
             course.setLevel(mediaSet.getCourseLevel());
             course.setProductCode(currentProductCode);
+            course.setIsFree(isPuFreeLesson(currentProductCode));
             try {
                 course.setCourseName(this.puProductInfo
                         .getResultData()

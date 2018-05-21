@@ -14,6 +14,7 @@ public class Course {
     private String productCode;
     private String courseName;
     private Boolean isOneOfNineBig;
+    private Boolean isFree;
 
     public String getLanguageName() {
         return languageName;
@@ -61,5 +62,13 @@ public class Course {
 
     public void setIsOneOfNineBig(Boolean isOneOfNineBig) {
         this.isOneOfNineBig = isOneOfNineBig;
+    }
+
+    public Boolean getIsFree() {
+        return isFree;
+    }
+
+    public void setIsFree(Boolean free) {
+        isFree = free;
     }
 }

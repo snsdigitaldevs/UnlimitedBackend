@@ -26,6 +26,10 @@ public class HardCodedProductsUtil {
             .map(FreeLessonDto::getLanguageName)
             .collect(toList());
 
+    private static final List<String> puFreeIsbns = PU_FREE_LESSONS.stream()
+            .map(FreeLessonDto::getProductCode)
+            .collect(toList());
+
     // key is PU free lesson isbn
     // value is PU normal isbn
     private static Map<String, String> freeISBNToNormalISBN =
@@ -41,6 +45,7 @@ public class HardCodedProductsUtil {
                     .put("9781508243342", "9781508231448")
                     .build();
 
+
     public static boolean isOneOfNineBig(String langName) {
         return nineBigLanguageNames.contains(langName);
     }
@@ -50,5 +55,9 @@ public class HardCodedProductsUtil {
             return freeISBNToNormalISBN.get(productCode);
         }
         return productCode;
+    }
+
+    public static boolean isPuFreeLesson(String productCode) {
+        return puFreeIsbns.contains(productCode);
     }
 }

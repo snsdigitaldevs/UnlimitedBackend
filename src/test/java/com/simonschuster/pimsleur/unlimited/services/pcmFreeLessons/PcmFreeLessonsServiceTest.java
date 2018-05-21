@@ -25,14 +25,14 @@ public class PcmFreeLessonsServiceTest {
     private PcmFreeLessonsService pcmFreeLessonsService;
 
     @Test
-    public void shouldGetOnlyLevelOneFromEachLanguage() throws Exception {
+    public void shouldGetOnlyLevelOneFromEachLanguageAndIgnoreSubscriptions() throws Exception {
         HttpServer server = httpServer(12306);
         server.post(by(uri("/subscr_production_v_9/action_handlers/kmuhtr.php")))
                 .response(file("src/test/resources/pcmProducts.json"));
 
         running(server, () -> {
             List<FreeLessonDto> pcmFreeLessons = pcmFreeLessonsService.getPcmFreeLessons();
-            assertThat(pcmFreeLessons.size(), is(61));
+            assertThat(pcmFreeLessons.size(), is(57));
         });
     }
 }

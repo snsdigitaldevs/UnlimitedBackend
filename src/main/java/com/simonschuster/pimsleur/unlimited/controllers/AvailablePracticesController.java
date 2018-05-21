@@ -6,7 +6,6 @@ import com.simonschuster.pimsleur.unlimited.services.practices.PcmAvailablePract
 import com.simonschuster.pimsleur.unlimited.services.practices.PracticesCsvLocations;
 import com.simonschuster.pimsleur.unlimited.services.practices.PuAvailablePracticesService;
 import com.simonschuster.pimsleur.unlimited.utils.practices.QuickMatchUtil;
-import com.simonschuster.pimsleur.unlimited.utils.UnlimitedPracticeUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,7 +15,7 @@ import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import static com.simonschuster.pimsleur.unlimited.utils.PuFreeLessonISBNUtil.toNormalISBN;
+import static com.simonschuster.pimsleur.unlimited.utils.HardCodedProductsUtil.puFreeToPuNormalIsbn;
 import static com.simonschuster.pimsleur.unlimited.utils.practices.FlashCardUtil.csvToFlashCards;
 import static com.simonschuster.pimsleur.unlimited.utils.practices.SpeakEasyAndReadingUtil.csvToReadings;
 import static com.simonschuster.pimsleur.unlimited.utils.practices.SpeakEasyAndReadingUtil.csvToSpeakEasies;
@@ -38,7 +37,7 @@ public class AvailablePracticesController {
     @RequestMapping(value = "/puProduct/{productCode}/availablePractices", method = RequestMethod.GET)
     public AvailablePractices getPuAvailablePractices(@PathVariable("productCode") String productCode)
             throws IOException {
-        String normalProductCode = toNormalISBN(productCode);
+        String normalProductCode = puFreeToPuNormalIsbn(productCode);
         PracticesCsvLocations csvLocations = puAvailablePracticesService.getPracticeCsvLocations(normalProductCode);
 
         List<PracticesInUnit> speakEasies = csvToSpeakEasies(csvLocations.getSpeakEasyUrl());

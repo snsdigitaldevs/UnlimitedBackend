@@ -32,6 +32,7 @@ public class PcmFreeLessonsService {
                     .values().stream()
                     .flatMap(Collection::stream)
                     .filter(PCMProduct::isLevelOne)
+                    .filter(PCMProduct::isNotSubscription)
                     .map(PCMProduct::pcmProductToDto)
                     .collect(toList());
         }

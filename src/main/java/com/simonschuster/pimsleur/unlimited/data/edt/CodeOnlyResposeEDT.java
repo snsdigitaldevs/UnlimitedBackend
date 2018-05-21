@@ -1,4 +1,4 @@
-package com.simonschuster.pimsleur.unlimited.data.edt.customer.activate;
+package com.simonschuster.pimsleur.unlimited.data.edt;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -8,7 +8,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder({
         "result_code"
 })
-public class Deactivate {
+public class CodeOnlyResposeEDT {
     @JsonProperty("result_code")
     private Integer resultCode;
 

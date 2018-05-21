@@ -5,7 +5,7 @@ import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.active.ActivateDTO;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.active.ActivateResultDTO;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.activate.Activate;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.activate.Deactivate;
+import com.simonschuster.pimsleur.unlimited.data.edt.CodeOnlyResposeEDT;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -59,7 +59,7 @@ public class ActivateService {
         HttpEntity<String> entity = new HttpEntity<>(String.format(
                 applicationConfiguration.getProperty("edt.api.activate.parameters.deactivate"),
                 registrantId, customerId), headers);
-        Deactivate deactivateResponse = postToEdt(entity, url, Deactivate.class);
+        CodeOnlyResposeEDT deactivateResponse = postToEdt(entity, url, CodeOnlyResposeEDT.class);
         if (!deactivateResponse.getResultCode().equals(1)) {
             throw new PimsleurException("PU deactivate failed!");
         }

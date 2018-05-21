@@ -1,4 +1,4 @@
-package com.simonschuster.pimsleur.unlimited.services.pcmFreeLessons;
+package com.simonschuster.pimsleur.unlimited.services.freeLessons;
 
 import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.FreeLessonDto;
 import org.springframework.stereotype.Service;

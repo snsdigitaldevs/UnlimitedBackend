@@ -1,4 +1,4 @@
-package com.simonschuster.pimsleur.unlimited.services.pcmFreeLessons;
+package com.simonschuster.pimsleur.unlimited.services.freeLessons;
 
 import com.github.dreamhead.moco.HttpServer;
 import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.FreeLessonDto;

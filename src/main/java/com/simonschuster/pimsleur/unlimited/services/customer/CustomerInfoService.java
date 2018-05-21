@@ -9,6 +9,7 @@ import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
 
 import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEdt;
+import static java.lang.String.format;
 
 @Component
 public class CustomerInfoService {
@@ -17,13 +18,13 @@ public class CustomerInfoService {
     private ApplicationConfiguration applicationConfiguration;
 
     public CustomerInfo update(String customerId, String appUserId, String name, String token) {
-        String url = String.format(applicationConfiguration.getProperty("edt.api.customerInfo"));
+        String url = applicationConfiguration.getProperty("edt.api.customerInfo");
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
-        String parameters = String.format(applicationConfiguration.getApiParameter("updateCustomerParameters"),
+        String parameters = format(applicationConfiguration.getApiParameter("updateCustomerParameters"),
                 token,
                 name,
-                appUserId,
+                customerId + "_" + appUserId,
                 customerId);
         HttpEntity<String> updateCustomerParameters = new HttpEntity<>(
                 parameters,
@@ -33,10 +34,10 @@ public class CustomerInfoService {
     }
 
     public CustomerInfo create(String customerId, String name, String token) {
-        String url = String.format(applicationConfiguration.getProperty("edt.api.customerInfo"));
+        String url = applicationConfiguration.getProperty("edt.api.customerInfo");
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
-        String parameters = String.format(applicationConfiguration.getApiParameter("createCustomerParameters"),
+        String parameters = format(applicationConfiguration.getApiParameter("createCustomerParameters"),
                 token,
                 name,
                 customerId);
@@ -47,12 +48,12 @@ public class CustomerInfoService {
     }
 
     public CustomerInfo delete(String customerId, String appUserId, String token) {
-        String url = String.format(applicationConfiguration.getProperty("edt.api.customerInfo"));
+        String url = applicationConfiguration.getProperty("edt.api.customerInfo");
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
-        String parameters = String.format(applicationConfiguration.getApiParameter("deleteCustomerParameters"),
+        String parameters = format(applicationConfiguration.getApiParameter("deleteCustomerParameters"),
                 token,
-                appUserId,
+                customerId + "_" + appUserId,
                 customerId);
         HttpEntity<String> updateCustomerParameters = new HttpEntity<>(
                 parameters,

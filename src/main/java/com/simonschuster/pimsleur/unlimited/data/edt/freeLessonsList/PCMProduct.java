@@ -6,6 +6,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.FreeLessonDto;
 
+import java.util.Objects;
+
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
         "includedTerritories",
@@ -280,5 +282,9 @@ public class PCMProduct {
 
     public boolean isLevelOne() {
         return getProductsLevel() == 1;
+    }
+
+    public boolean isNotSubscription() {
+        return !Objects.equals(getPRODUCTTYPE(), "DIGITAL_SUBSCRIPTION");
     }
 }

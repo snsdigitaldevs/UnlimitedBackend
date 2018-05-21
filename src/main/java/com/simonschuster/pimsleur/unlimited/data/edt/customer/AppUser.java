@@ -83,7 +83,7 @@ public class AppUser {
         return Objects.equals(this.getIsRegisteredAppUser(), 1);
     }
 
-    String getSubUserId() {
+    public String getSubUserId() {
         return getAppUserId().split("_")[1];
     }
 }

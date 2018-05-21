@@ -32,7 +32,7 @@ public class CustomerInfo {
 
     public SubUserDto toDto(String name) {
         boolean isRootUser = result_data == null ? false : result_data.getAppUser().isRootSubUser();
-        String appUserId = result_data == null ? "" : result_data.getAppUser().getAppUserId();
+        String appUserId = result_data == null ? "" : result_data.getAppUser().getSubUserId();
         return new SubUserDto(name, appUserId, isRootUser);
     }
 }

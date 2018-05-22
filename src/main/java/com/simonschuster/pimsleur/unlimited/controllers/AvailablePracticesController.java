@@ -43,7 +43,7 @@ public class AvailablePracticesController {
         List<PracticesInUnit> speakEasies = csvToSpeakEasies(practicesUrls.getSpeakEasyUrl());
         List<PracticesInUnit> readings = csvToReadings(practicesUrls.getReadingUrl());
         List<PracticesInUnit> flashCards = csvToFlashCards(practicesUrls);
-        List<PracticesInUnit> quickMatches = getQuickMatchesByCsvUrl(practicesUrls.getQuickMatchUrl());
+        List<PracticesInUnit> quickMatches = getQuickMatchesByCsvUrl(practicesUrls);
 
         return new AvailablePractices(mergeLists(readings, speakEasies, flashCards, quickMatches));
     }

@@ -4,6 +4,7 @@ import com.simonschuster.pimsleur.unlimited.UnlimitedApplication;
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.PracticesInUnit;
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.QuickMatch;
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.QuickMatchItem;
+import com.simonschuster.pimsleur.unlimited.services.practices.PracticesUrls;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
@@ -47,16 +48,17 @@ public class QuickMatchUtil {
         }
     };
 
-    public static List<PracticesInUnit> getQuickMatchesByCsvUrl(String quickMatchesInUrl) throws IOException {
+    public static List<PracticesInUnit> getQuickMatchesByCsvUrl(PracticesUrls practicesUrls) throws IOException {
         List<PracticesInUnit> result = new ArrayList<>();
-        if (quickMatchesInUrl == null || quickMatchesInUrl.isEmpty()) {
+        String quickMatchUrl = practicesUrls.getQuickMatchUrl();
+        if (quickMatchUrl == null || quickMatchUrl.isEmpty()) {
             return result;
         }
 
         RestTemplate restTemplate = new RestTemplate();
         restTemplate.getMessageConverters()
                 .add(0, new StringHttpMessageConverter(forName("UTF-8")));
-        String originCsvString = replaceDuplicateHeaders(restTemplate.getForObject(quickMatchesInUrl, String.class));
+        String originCsvString = replaceDuplicateHeaders(restTemplate.getForObject(quickMatchUrl, String.class));
         String csvString = specialCsvFiles(originCsvString);
         CSVParser csvRecords = CSVFormat.EXCEL
                 .withFirstRecordAsHeader()
@@ -64,10 +66,10 @@ public class QuickMatchUtil {
         String[] needIgnoreCaseHeaders = {"QZ #", "Snippet Name", "ISBN"};
         Map<String, String> headerMap = getHeaderMap(csvRecords, Arrays.asList(needIgnoreCaseHeaders));
         for (CSVRecord record : csvRecords) {
-            parseCsvLine(result, record, headerMap);
+            parseCsvLine(result, record, headerMap, practicesUrls.getQuickMatchAudioBaseUrl());
         }
 
-        getSkill(quickMatchesInUrl, result);
+        getSkill(quickMatchUrl, result);
         return result;
     }
 
@@ -107,7 +109,8 @@ public class QuickMatchUtil {
         return result;
     }
 
-    private static void parseCsvLine(List<PracticesInUnit> result, CSVRecord record, Map<String, String> headerMap) {
+    private static void parseCsvLine(List<PracticesInUnit> result, CSVRecord record,
+                                     Map<String, String> headerMap, String quickMatchAudioBaseUrl) {
         String qz = record.get(headerMap.get("QZ #"));
         Integer unit = Integer.parseInt(record.get("Unit Num"));
         String group = qz.contains("_") ? unit.toString() + "_" + qz.substring(0, 2) : "00";
@@ -143,7 +146,10 @@ public class QuickMatchUtil {
 
         String transliteration = record.isSet("Transliteration") ? record.get("Transliteration") : "";
         String snippetName = record.isSet("Snippet Name") ? record.get("Snippet Name") : getSnippetName(record, headerMap);
-        QuickMatchItem quickMatchItem = new QuickMatchItem(record.get("Cue"), transliteration, snippetName);
+
+        QuickMatchItem quickMatchItem = new QuickMatchItem(record.get("Cue"),
+                transliteration, quickMatchAudioBaseUrl + snippetName);
+
         String qzWithoutGroup = qz.split("_")[0];
         if ((qzWithoutGroup.charAt(qzWithoutGroup.length() - 1) == 'Q')) {
             quickMatch.setQuestion(quickMatchItem);

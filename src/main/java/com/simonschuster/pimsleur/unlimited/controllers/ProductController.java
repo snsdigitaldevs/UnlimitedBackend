@@ -5,6 +5,7 @@ import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.IntentionToBuyBody;
 import com.simonschuster.pimsleur.unlimited.services.course.EDTCourseInfoService;
 import com.simonschuster.pimsleur.unlimited.services.course.IntentionToBuyService;
+import com.simonschuster.pimsleur.unlimited.services.course.PcmFreeCourseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,17 +15,23 @@ import java.util.List;
 public class ProductController {
 
     @Autowired
-    private EDTCourseInfoService edtCourseInfoService;
+    private IntentionToBuyService intentionToBuyService;
 
     @Autowired
-    private IntentionToBuyService intentionToBuyService;
+    private EDTCourseInfoService edtCourseInfoService;
+    @Autowired
+    private PcmFreeCourseService pcmFreeCourseService;
 
     @RequestMapping(value = "/productInfo", method = RequestMethod.GET)
     public List<Course> getProductInfo(@RequestParam("isPUProductCode") boolean isPUProductCode,
+                                       @RequestParam(name = "isFree", required = false) boolean isFree,
                                        @RequestParam(value = "productCode") String productCode,
-                                       @RequestParam(value = "sub") String sub) throws Exception {
+                                       @RequestParam(value = "sub") String sub) {
         if (productCode == null || productCode.isEmpty()) {
             throw new ParamInvalidException("Product code missing!");
+        }
+        if (isFree && !isPUProductCode) {
+            return pcmFreeCourseService.getPcmFreeCourseInfos(productCode);
         }
         return edtCourseInfoService.getCourseInfos(isPUProductCode, productCode, sub).toDto();
     }

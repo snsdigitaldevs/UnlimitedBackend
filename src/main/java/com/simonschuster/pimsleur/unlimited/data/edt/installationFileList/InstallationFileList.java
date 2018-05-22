@@ -4,7 +4,7 @@ package com.simonschuster.pimsleur.unlimited.data.edt.installationFileList;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import com.simonschuster.pimsleur.unlimited.services.practices.PracticesCsvLocations;
+import com.simonschuster.pimsleur.unlimited.services.practices.PracticesUrls;
 
 import static com.simonschuster.pimsleur.unlimited.data.edt.installationFileList.FileListItem.*;
 
@@ -44,21 +44,23 @@ public class InstallationFileList {
     // if the product code is a kitted product like "spanish level 1-4", then installation file list
     // will include all csv files of all levels
     // this code will be correct if the front end only send requests with single product code, not kitted
-    public PracticesCsvLocations getPracticeCsvLocations() {
-        PracticesCsvLocations practicesCsvLocations = new PracticesCsvLocations();
+    public PracticesUrls getPracticeUrls() {
+        PracticesUrls practicesUrls = new PracticesUrls();
         if (this.getResultData() != null) {
             this.getResultData().getFileList().getFileListItems().forEach((fileListItem) -> {
                 if (fileListItem.isCsvFileOf(FlashCard)) {
-                    practicesCsvLocations.setFlashCardUrl(fileListItem.getFullUrl());
+                    practicesUrls.setFlashCardUrl(fileListItem.getFullUrl());
                 } else if (fileListItem.isCsvFileOf(QuickMatch)) {
-                    practicesCsvLocations.setQuickMatchUrl(fileListItem.getFullUrl());
+                    practicesUrls.setQuickMatchUrl(fileListItem.getFullUrl());
                 } else if (fileListItem.isCsvFileOf(Reading)) {
-                    practicesCsvLocations.setReadingUrl(fileListItem.getFullUrl());
+                    practicesUrls.setReadingUrl(fileListItem.getFullUrl());
                 } else if (fileListItem.isCsvFileOf(SpeakEasy)) {
-                    practicesCsvLocations.setSpeakEasyUrl(fileListItem.getFullUrl());
+                    practicesUrls.setSpeakEasyUrl(fileListItem.getFullUrl());
+                } else if (fileListItem.isReviewAudioZipFile()) {
+                    practicesUrls.setReviewAudioBaseUrl(fileListItem.getReviewAudioBaseUrl());
                 }
             });
         }
-        return practicesCsvLocations;
+        return practicesUrls;
     }
 }

@@ -3,9 +3,8 @@ package com.simonschuster.pimsleur.unlimited.controllers;
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.AvailablePractices;
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.PracticesInUnit;
 import com.simonschuster.pimsleur.unlimited.services.practices.PcmAvailablePracticesService;
-import com.simonschuster.pimsleur.unlimited.services.practices.PracticesCsvLocations;
+import com.simonschuster.pimsleur.unlimited.services.practices.PracticesUrls;
 import com.simonschuster.pimsleur.unlimited.services.practices.PuAvailablePracticesService;
-import com.simonschuster.pimsleur.unlimited.utils.practices.QuickMatchUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,6 +16,7 @@ import java.util.stream.Stream;
 
 import static com.simonschuster.pimsleur.unlimited.utils.HardCodedProductsUtil.puFreeToPuNormalIsbn;
 import static com.simonschuster.pimsleur.unlimited.utils.practices.FlashCardUtil.csvToFlashCards;
+import static com.simonschuster.pimsleur.unlimited.utils.practices.QuickMatchUtil.getQuickMatchesByCsvUrl;
 import static com.simonschuster.pimsleur.unlimited.utils.practices.SpeakEasyAndReadingUtil.csvToReadings;
 import static com.simonschuster.pimsleur.unlimited.utils.practices.SpeakEasyAndReadingUtil.csvToSpeakEasies;
 import static java.util.Comparator.comparingInt;
@@ -38,12 +38,12 @@ public class AvailablePracticesController {
     public AvailablePractices getPuAvailablePractices(@PathVariable("productCode") String productCode)
             throws IOException {
         String normalProductCode = puFreeToPuNormalIsbn(productCode);
-        PracticesCsvLocations csvLocations = puAvailablePracticesService.getPracticeCsvLocations(normalProductCode);
+        PracticesUrls practicesUrls = puAvailablePracticesService.getPracticeUrls(normalProductCode);
 
-        List<PracticesInUnit> speakEasies = csvToSpeakEasies(csvLocations.getSpeakEasyUrl());
-        List<PracticesInUnit> readings = csvToReadings(csvLocations.getReadingUrl());
-        List<PracticesInUnit> flashCards = csvToFlashCards(csvLocations.getFlashCardUrl());
-        List<PracticesInUnit> quickMatches = QuickMatchUtil.getQuickMatchesByCsvUrl(csvLocations.getQuickMatchUrl(), productCode);
+        List<PracticesInUnit> speakEasies = csvToSpeakEasies(practicesUrls.getSpeakEasyUrl());
+        List<PracticesInUnit> readings = csvToReadings(practicesUrls.getReadingUrl());
+        List<PracticesInUnit> flashCards = csvToFlashCards(practicesUrls);
+        List<PracticesInUnit> quickMatches = getQuickMatchesByCsvUrl(practicesUrls.getQuickMatchUrl());
 
         return new AvailablePractices(mergeLists(readings, speakEasies, flashCards, quickMatches));
     }

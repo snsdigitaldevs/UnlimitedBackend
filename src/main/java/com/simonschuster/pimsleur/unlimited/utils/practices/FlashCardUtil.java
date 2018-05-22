@@ -2,6 +2,7 @@ package com.simonschuster.pimsleur.unlimited.utils.practices;
 
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.FlashCard;
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.PracticesInUnit;
+import com.simonschuster.pimsleur.unlimited.services.practices.PracticesUrls;
 import org.apache.commons.csv.CSVRecord;
 
 import java.io.IOException;
@@ -22,12 +23,12 @@ import static org.apache.commons.lang3.StringUtils.isNumeric;
 
 public class FlashCardUtil {
 
-    public static List<PracticesInUnit> csvToFlashCards(String csvUrl) throws IOException {
-        if (csvUrl == null) {
+    public static List<PracticesInUnit> csvToFlashCards(PracticesUrls practicesUrls) throws IOException {
+        if (practicesUrls.getFlashCardUrl() == null) {
             return emptyList();
         }
 
-        List<CSVRecord> csvRecords = urlToCsv(csvUrl);
+        List<CSVRecord> csvRecords = urlToCsv(practicesUrls.getFlashCardUrl());
 
         String unitNumKey = findRealHeaderName(csvRecords.get(0), "Unit Num");
         String transliterationKey = findRealHeaderName(csvRecords.get(0), "Transliteration");
@@ -42,7 +43,7 @@ public class FlashCardUtil {
                     String unitNumString = group.getKey();
                     if (isNumeric(unitNumString)) {
                         return groupToUnit(unitNumString, transliterationKey, translationKey,
-                                LanguageKey, mp3FileKey, group);
+                                LanguageKey, mp3FileKey, practicesUrls.getFlashCardAudioBaseUrl(), group);
                     }
                     return null;
                 })
@@ -51,8 +52,11 @@ public class FlashCardUtil {
                 .collect(toList());
     }
 
-    private static PracticesInUnit groupToUnit(String unitNumString, String transliterationKey, String translationKey,
-                                               String LanguageKey, String mp3FileKey, Map.Entry<String, List<CSVRecord>> group) {
+    private static PracticesInUnit groupToUnit(String unitNumString,
+                                               String transliterationKey, String translationKey,
+                                               String LanguageKey, String mp3FileKey,
+                                               String flashCardAudioBaseUrl,
+                                               Map.Entry<String, List<CSVRecord>> group) {
         int unitNumber = parseInt(unitNumString);
 
         List<FlashCard> speakEasies = group.getValue().stream()
@@ -60,7 +64,7 @@ public class FlashCardUtil {
                         getFromCsv(transliterationKey, csvRecord),
                         getFromCsv(translationKey, csvRecord),
                         getFromCsv(LanguageKey, csvRecord),
-                        getMp3FileName(unitNumber, mp3FileKey, csvRecord)))
+                        flashCardAudioBaseUrl + getMp3FileName(unitNumber, mp3FileKey, csvRecord)))
                 .collect(toList());
 
         return createWithFlashCards(unitNumber, speakEasies);

@@ -47,7 +47,7 @@ public class QuickMatchUtil {
         }
     };
 
-    public static List<PracticesInUnit> getQuickMatchesByCsvUrl(String quickMatchesInUrl, String originIsbn) throws IOException {
+    public static List<PracticesInUnit> getQuickMatchesByCsvUrl(String quickMatchesInUrl) throws IOException {
         List<PracticesInUnit> result = new ArrayList<>();
         if (quickMatchesInUrl == null || quickMatchesInUrl.isEmpty()) {
             return result;

@@ -1,15 +1,17 @@
 package com.simonschuster.pimsleur.unlimited.services.practices;
 
-public class PracticesCsvLocations {
+public class PracticesUrls {
     private String flashCardUrl;
     private String quickMatchUrl;
     private String speakEasyUrl;
     private String readingUrl;
 
-    public PracticesCsvLocations() {
+    private String reviewAudioBaseUrl;
+
+    public PracticesUrls() {
     }
 
-    public PracticesCsvLocations(String flashCardUrl, String quickMatchUrl, String readingUrl, String speakEasyUrl) {
+    public PracticesUrls(String flashCardUrl, String quickMatchUrl, String readingUrl, String speakEasyUrl) {
         this.flashCardUrl = flashCardUrl;
         this.quickMatchUrl = quickMatchUrl;
         this.readingUrl = readingUrl;
@@ -46,5 +48,21 @@ public class PracticesCsvLocations {
 
     public String getReadingUrl() {
         return readingUrl;
+    }
+
+    public String getReviewAudioBaseUrl() {
+        return reviewAudioBaseUrl;
+    }
+
+    public void setReviewAudioBaseUrl(String reviewAudioBaseUrl) {
+        this.reviewAudioBaseUrl = reviewAudioBaseUrl;
+    }
+
+    public String getFlashCardAudioBaseUrl() {
+        return this.reviewAudioBaseUrl + "fc/";
+    }
+
+    public String getQuickMatchAudioBaseUrl() {
+        return this.reviewAudioBaseUrl + "quiz/";
     }
 }

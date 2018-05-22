@@ -2,6 +2,7 @@ package com.simonschuster.pimsleur.unlimited.utils.practices;
 
 import com.github.dreamhead.moco.HttpServer;
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.PracticesInUnit;
+import com.simonschuster.pimsleur.unlimited.services.practices.PracticesUrls;
 import org.junit.Test;
 
 import java.util.List;
@@ -22,7 +23,11 @@ public class FlashCardUtilTest {
                 .response(file("src/test/resources/csv/9781442394872_Mandarin_1_FC.csv"));
 
         running(server, () -> {
-            List<PracticesInUnit> practicesInUnits = csvToFlashCards("http://localhost:12306/xxx.csv");
+            PracticesUrls practicesUrls = new PracticesUrls();
+            practicesUrls.setFlashCardUrl("http://localhost:12306/xxx.csv");
+
+            List<PracticesInUnit> practicesInUnits = csvToFlashCards(practicesUrls);
+
             assertThat(practicesInUnits.size(), is(30));
         });
     }

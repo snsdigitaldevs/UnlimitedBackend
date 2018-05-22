@@ -124,7 +124,15 @@ public class FileListItem {
         return this.path.contains(csvFileType + ".csv");
     }
 
+    public boolean isReviewAudioZipFile() {
+        return this.path.contains("REVIEW_AUDIO.zip");
+    }
+
     public String getFullUrl() {
         return this.sourceURL + this.path;
+    }
+
+    public String getReviewAudioBaseUrl() {
+        return this.getFullUrl().replace(".zip", "_SNIPPETS/");
     }
 }

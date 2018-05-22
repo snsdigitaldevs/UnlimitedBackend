@@ -48,7 +48,7 @@ pipeline {
                 echo "Deploy to QA"
                 script {
                     try {
-                        timeout(time: 2, unit: 'MINUTES') {
+                        timeout(time: 30, unit: 'MINUTES') {
                             input message: 'build QA version?'
                         }
                     } catch (err) {
@@ -68,7 +68,7 @@ pipeline {
                 script {
                     try {
                         echo "Deploy to UAT"
-                        timeout(time: 2, unit: 'MINUTES') {
+                        timeout(time: 30, unit: 'MINUTES') {
                             input message: 'build UAT version?'
                         }
                     } catch (err) {
@@ -89,7 +89,7 @@ pipeline {
                 script {
                     try {
                         echo "Deploy to PROD"
-                        timeout(time: 2, unit: 'MINUTES') {
+                        timeout(time: 30, unit: 'MINUTES') {
                             input message: 'build PROD version?'
                         }
                     } catch (err) {
@@ -144,7 +144,7 @@ def deploy(hostnames, env) {
 
             sleep 5
 
-            timeout(time: 3, unit: 'SECONDS') {
+            timeout(time: 30, unit: 'SECONDS') {
                 retry(3) {
                     def response = httpRequest url: "${appurl}", validResponseContent: 'Greetings from Spring Boot', validResponseCodes: '200'
                     println("Response Status: " + response.status)

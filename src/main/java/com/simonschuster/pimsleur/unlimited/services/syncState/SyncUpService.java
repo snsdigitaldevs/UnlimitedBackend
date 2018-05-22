@@ -55,7 +55,7 @@ public class SyncUpService {
 
         Map<String, SyncUpItem> edtSyncUpItems = syncUpDto.
                 toEdtPUSyncItems(customerId, subUserId, productCode, mediaItemId);
-        return createPostBody(customerId, syncUpDto, edtSyncUpItems);
+        return createPostBody(customerId, syncUpDto, edtSyncUpItems, "ss_pu");
 
     }
 
@@ -63,16 +63,18 @@ public class SyncUpService {
 
         Map<String, SyncUpItem> edtSyncUpItems = syncUpDto.
                 toEdtPcmSyncItems(customerId, productCode, mediaItemId);
-        return createPostBody(customerId, syncUpDto, edtSyncUpItems);
+        return createPostBody(customerId, syncUpDto, edtSyncUpItems, "");
     }
 
 
-    private HttpEntity<String> createPostBody(String customerId, SyncUpDto syncUpDto, Map<String, SyncUpItem> edtSyncUpItems) throws JsonProcessingException {
+    private HttpEntity<String> createPostBody(String customerId, SyncUpDto syncUpDto,
+                                              Map<String, SyncUpItem> edtSyncUpItems, String storeDomain)
+            throws JsonProcessingException {
         String edtJsonParameter = mapper.writeValueAsString(edtSyncUpItems);
 
         String syncUpParameters = format(config.getApiParameter("syncUpParameters"),
                 customerId, syncUpDto.getDeviceName(), syncUpDto.getLastSaveId(), edtJsonParameter,
-                syncUpDto.getProgress().getLastChangeTimestamp(), syncUpDto.getIdentityVerificationToken());
+                syncUpDto.getProgress().getLastChangeTimestamp(), syncUpDto.getIdentityVerificationToken(), storeDomain);
 
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(APPLICATION_FORM_URLENCODED);

@@ -4,6 +4,8 @@ import com.simonschuster.pimsleur.unlimited.common.exception.ParamInvalidExcepti
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.SubUserDto;
 import com.simonschuster.pimsleur.unlimited.data.edt.customerinfo.CustomerInfo;
 import com.simonschuster.pimsleur.unlimited.services.customer.CustomerInfoService;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,13 +14,26 @@ import static com.simonschuster.pimsleur.unlimited.utils.EdtResponseCode.*;
 @RestController
 public class CustomerController {
 
-
     @Autowired
     CustomerInfoService customerInfoService;
 
+    @ApiOperation(value = "Create new sub user")
+    @PostMapping(value = "customers/{customerId}/appUsers")
+    public SubUserDto createUserInfo(@PathVariable String customerId,
+                                     @ApiParam(value = "you can find identityVerificationToken in customerInfo api")
+                                     @RequestParam String token,
+                                     @ApiParam(value = "name of the new sub user")
+                                     @RequestParam String name) {
+        CustomerInfo customerInfo = customerInfoService.create(customerId, name, token);
+        checkResultCode(customerInfo);
+        return customerInfo.toDto(name);
+    }
+
+    @ApiOperation(value = "Update sub user, you an only change sub user's name")
     @PutMapping(value = "customers/{customerId}/appUsers/{appUserId}")
     public SubUserDto updateUserInfo(@PathVariable String customerId,
                                      @PathVariable String appUserId,
+                                     @ApiParam(value = "you can find identityVerificationToken in customerInfo api")
                                      @RequestParam String token,
                                      @RequestParam String name) {
         CustomerInfo customerInfo = customerInfoService.update(customerId, appUserId, name, token);
@@ -26,17 +41,10 @@ public class CustomerController {
         return customerInfo.toDto(name, appUserId);
     }
 
-    @PostMapping(value = "customers/{customerId}/appUsers")
-    public SubUserDto createUserInfo(@PathVariable String customerId,
-                                     @RequestParam String token,
-                                     @RequestParam String name) {
-        CustomerInfo customerInfo = customerInfoService.create(customerId, name, token);
-        checkResultCode(customerInfo);
-        return customerInfo.toDto(name);
-    }
-
+    @ApiOperation(value = "Delete sub user")
     @DeleteMapping(value = "customers/{customerId}/appUsers/{appUserId}")
     public SubUserDto deleteUserInfo(@PathVariable String customerId,
+                                     @ApiParam(value = "you can find identityVerificationToken in customerInfo api")
                                      @RequestParam String token,
                                      @PathVariable String appUserId,
                                      @RequestParam(defaultValue = "") String name) {

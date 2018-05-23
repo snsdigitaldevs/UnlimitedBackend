@@ -23,6 +23,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEdt;
 import static java.util.Arrays.asList;
@@ -190,25 +191,34 @@ public class EDTCourseInfoService {
     private Map<String, Map<String, Integer>> filterItemIdsOfAllLevels(Map<String, Pair<String, Integer>> entitlementTokens, String productCode, Map<String, OrdersProduct> ordersProductList) {
         OrdersProduct orderProduct = ordersProductList.get(productCode);
 
-        return orderProduct.getOrdersProductsAttributes()
+        List<Map> listOfItemIdsByLevel = orderProduct.getOrdersProductsAttributes()
                 .stream()
-                .filter(attribute1 -> attribute1.getProductsOptions().contains(KEY_DOWNLOAD))
+                .filter(attribute -> attribute.getProductsOptions().contains(KEY_DOWNLOAD))
                 .map(attribute -> {
-                    String level = attribute.getProductsOptions().split(" ")[1];
-                    Map<String, Integer> itemIds = new HashMap<>();
+                    Map itemIdsByLevel = new HashMap();
                     attribute.getOrdersProductsDownloads()
                             .stream()
-                            .peek(download -> entitlementTokens.put(level,
+                            .peek(download -> entitlementTokens.put(download.getMediaSet().getProduct().getProductsLevel().toString(),
                                     new ImmutablePair<>(download.getEntitlementToken(), download.getMediaSetId())))
-                            .flatMap(downloadInfo -> downloadInfo.getMediaSet().getChildMediaSets().stream())
-                            .filter(mediaSet -> isLesson(mediaSet.getMediaSetTitle()))
-                            .flatMap(childMediaSet -> childMediaSet.getMediaItems().stream())
-                            .filter(MediaItem::isLesson)
-                            .forEach(item -> itemIds.put(item.getMediaItemTitle(), item.getMediaItemId()));
+                            .forEach(downloadInfo -> {
+                                Map<String, Integer> itemIds = new HashMap<>();
 
-                    return new ImmutablePair<>(level, itemIds);
+                                String levelInDownload = downloadInfo.getMediaSet().getProduct().getProductsLevel().toString();
+                                downloadInfo.getMediaSet().getChildMediaSets().stream()
+                                        .filter(mediaSet -> isLesson(mediaSet.getMediaSetTitle()))
+                                        .flatMap(childMediaSet -> childMediaSet.getMediaItems().stream())
+                                        .filter(MediaItem::isLesson)
+                                        .forEach(item -> itemIds.put(item.getMediaItemTitle(), item.getMediaItemId()));
+                                itemIdsByLevel.put(levelInDownload, itemIds);
+                            });
+                    return itemIdsByLevel;
                 })
-                .collect(Collectors.toMap(Pair::getKey, Pair::getValue));
+                .collect(Collectors.toList());
+
+        Map itemIdsByLevel = new HashMap<String, Map<String, Integer>>();
+        listOfItemIdsByLevel.forEach(oneLevelItemIds -> itemIdsByLevel.putAll(oneLevelItemIds));
+
+        return itemIdsByLevel;
     }
 
     private boolean isLesson(String title) {

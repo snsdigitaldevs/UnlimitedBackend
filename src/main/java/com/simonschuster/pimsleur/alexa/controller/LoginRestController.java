@@ -14,6 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 
+import static com.simonschuster.pimsleur.unlimited.services.customer.SignUpService.EMAIL_ALREADY_REGISTERED_ERROR_MESSAGE;
+import static org.springframework.web.bind.annotation.RequestMethod.POST;
+
 @RestController
 public class LoginRestController {
 
@@ -24,7 +27,7 @@ public class LoginRestController {
 
     private static Logger logger = LoggerFactory.getLogger(LoginController.class);
 
-    @RequestMapping("/login")
+    @RequestMapping(value = "/login", method = POST)
     public String loginSubmission(HttpServletRequest request,
                                   @RequestParam(name = "email") String email,
                                   @RequestParam(name = "password") String password,
@@ -60,7 +63,7 @@ public class LoginRestController {
         try {
             signUpService.signUp(signUpBodyDto);
         } catch (ParamInvalidException e) {
-            if (!e.getMessage().equals(signUpService.EMAIL_ALREADY_REGISTERED_ERROR_MESSAGE)) {
+            if (!e.getMessage().equals(EMAIL_ALREADY_REGISTERED_ERROR_MESSAGE)) {
                 e.printStackTrace();
                 throw e;
             }

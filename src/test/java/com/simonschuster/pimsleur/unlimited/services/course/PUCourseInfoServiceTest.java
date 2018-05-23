@@ -1,4 +1,4 @@
-package com.simonschuster.pimsleur.unlimited.services.customer;
+package com.simonschuster.pimsleur.unlimited.services.course;
 
 import com.github.dreamhead.moco.HttpServer;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
@@ -6,7 +6,6 @@ import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Lesson;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.AggregatedProductInfo;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.CourseConfig;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.MediaSet;
-import com.simonschuster.pimsleur.unlimited.services.course.EDTCourseInfoService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +14,6 @@ import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 import static com.github.dreamhead.moco.Moco.*;
 import static com.github.dreamhead.moco.Runner.running;
@@ -25,17 +23,18 @@ import static org.junit.Assert.*;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @TestPropertySource("classpath:test-config.properties")
-public class EDTCourseInfoServiceTest {
+public class PUCourseInfoServiceTest {
+
     @Autowired
-    private EDTCourseInfoService edtCourseInfoService;
+    private PUCourseInfoService puCourseInfoService;
 
     @Test
     public void shouldGetCorrectResponseFromEDTService() throws Exception {
         HttpServer server = mockEDTResponseFromPU();
-        boolean isPUProductCode = true;
 
         running(server, () -> {
-            AggregatedProductInfo productInfo = edtCourseInfoService.getCourseInfos(isPUProductCode, "9781508243328", "");
+            AggregatedProductInfo productInfo = puCourseInfoService.getPuProductInfo("9781508243328");
+
             assertThat(productInfo.getPuProductInfo().getResultCode(), is(1));
             assertNotNull(productInfo.getPuProductInfo().getResultData().getCourseConfigs());
             assertNotNull(productInfo.getPuProductInfo().getResultData().getMediaSets());
@@ -68,10 +67,10 @@ public class EDTCourseInfoServiceTest {
                 eq(form("action"), "fgtyh")
         ))
                 .response(file("src/test/resources/edtProductInfoResponseWithMultipleCourses.json"));
-        boolean isPUProductCode = true;
 
         running(server, () -> {
-            AggregatedProductInfo productInfo = edtCourseInfoService.getCourseInfos(isPUProductCode, "9781508260257", "");
+            AggregatedProductInfo productInfo = puCourseInfoService.getPuProductInfo("9781508260257");
+
             assertThat(productInfo.getPuProductInfo().getResultCode(), is(1));
             assertNotNull(productInfo.getPuProductInfo().getResultData().getCourseConfigs());
             assertEquals(1, productInfo.getPuProductInfo().getResultData().getCourseConfigs().size());
@@ -89,26 +88,13 @@ public class EDTCourseInfoServiceTest {
     }
 
     @Test
-    public void shouldGetProductInfoFromPCMCorrectlyWhenNoDataFromPU() throws Exception {
-        HttpServer server = mockEDTResponseFromPCM();
-        boolean isPUProductCode = false;
-        String productCode = "9781442369030";
-
-        running(server, () -> {
-            AggregatedProductInfo productInfo = edtCourseInfoService.getCourseInfos(isPUProductCode, productCode, "auth0_user_id");
-
-            assertNull(productInfo.getPuProductInfo());
-            assertNotNull(productInfo.getPcmProduct());
-            assertEquals(productCode, productInfo.getPcmProduct().getOrdersProductList().get("9781442369030").getProduct().getIsbn13().replace("-", ""));
-        });
-    }
-
-    @Test
     public void shouldGenerateDTOResponseCorrectlyFromPU() throws Exception {
         HttpServer httpServer = mockEDTResponseFromPU();
 
         running(httpServer, () -> {
-            List<Course> productInfos = edtCourseInfoService.getCourseInfos(true, "9781508243328", "").toDto();
+            AggregatedProductInfo productInfo = puCourseInfoService.getPuProductInfo("9781508243328");
+
+            List<Course> productInfos = productInfo.toDto();
             Course course = productInfos.get(0);
 
             assertEquals("Mandarin Chinese", course.getLanguageName());
@@ -129,33 +115,6 @@ public class EDTCourseInfoServiceTest {
         });
     }
 
-    @Test
-    public void shouldGenerateDTOResponseCorrectlyFromPCM() throws Exception {
-        HttpServer server = mockEDTResponseFromPCM();
-        boolean isPUProductCode = false;
-        String productCode = "9781508205333";
-
-        running(server, () -> {
-            AggregatedProductInfo productInfo = edtCourseInfoService.getCourseInfos(isPUProductCode, productCode, "auth0_user_id");
-            List<Course> courseDtos = productInfo.toDto();
-            Course levelOne = courseDtos.stream().filter(course -> course.getLevel() == 1).collect(Collectors.toList()).get(0);
-
-            assertEquals("French", levelOne.getLanguageName());
-            assertThat(levelOne.getIsOneOfNineBig(), is(true));
-
-            List<Lesson> lessons = levelOne.getLessons();
-            Lesson lessonOne = lessons.stream().filter(lesson -> lesson.getName().equals("Unit 01")).collect(Collectors.toList()).get(0);
-
-            assertEquals("https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442310223_Japanese_Phase_1/9781442310223_Unit_20.mp3?Expires=1524839994&Signature=Hw5qalqbO6a0qe4dpFcJO5xKACiYWa6kuy4pd341tFWta4yP4tZLmW4BLeHeYB4oOohcKPMn9XG8pGojntmMb37DJOyTOFaK783O5wzO5xJ7tgY-dl1fBOC1a2X9zg6CRJ-ZWtdkcK~07Ob7NSMpjBxMi3fmTxqNbD~u~61H90c_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
-                    lessonOne.getAudioLink());
-            assertEquals(new Integer(1), lessonOne.getLevel());
-            assertTrue(67226 == lessonOne.getMediaItemId());
-            assertEquals("01", lessonOne.getLessonNumber());
-            assertEquals("Unit 01", lessonOne.getName());
-        });
-
-    }
-
     private HttpServer mockEDTResponseFromPU() {
         HttpServer server = httpServer(12306);
         server.post(and(
@@ -166,28 +125,4 @@ public class EDTCourseInfoServiceTest {
         return server;
     }
 
-    private HttpServer mockEDTResponseFromPCM() {
-        HttpServer server = httpServer(12306);
-        server.post(and(
-                by(uri("/subscr_production_v_9/action_handlers/qwsfrecv.php")),
-                eq(form("action"), "fgtyh"),
-                eq(form("gccfs"), "[\"9781508243328\"]")))
-                .response("{\"result_code\":-1}");
-
-        server.post(and(
-                by(uri("/subscr_production_v_9/action_handlers/rsovkolfqxrjl.php")),
-                eq(form("action"), "pcm_blmqide")))
-                .response(file("src/test/resources/pcmCustInfoResponse.json"));
-
-        server.post(and(
-                by(uri("/subscr_dev/action_handlers/nwdft.php")),
-                eq(form("action"), "slruldr")))
-                .response(file("src/test/resources/pcmNewVersionAudioLinkRequest.json"));
-
-        server.post(and(
-                by(uri("/subscr_production_v_9/action_handlers/rdlss.php")),
-                eq(form("action"), "rdlfmix")))
-                .response(file("src/test/resources/pcmAudioLinkRequest.json"));
-        return server;
-    }
 }

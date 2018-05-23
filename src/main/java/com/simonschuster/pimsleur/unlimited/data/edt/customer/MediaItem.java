@@ -1,7 +1,8 @@
 package com.simonschuster.pimsleur.unlimited.data.edt.customer;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.simonschuster.pimsleur.unlimited.services.course.EDTCourseInfoService;
+
+import static com.simonschuster.pimsleur.unlimited.services.course.PUCourseInfoService.MP3_MEDIA_TYPE;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class MediaItem {
@@ -134,7 +135,7 @@ public class MediaItem {
     }
 
     public boolean isLesson() {
-        return this.getMediaItemTypeId() == EDTCourseInfoService.MP3_MEDIA_TYPE
+        return this.getMediaItemTypeId() == MP3_MEDIA_TYPE
                 && (this.getMediaItemTitle().startsWith("Unit") || this.getMediaItemTitle().startsWith("Lesson"));
     }
 }

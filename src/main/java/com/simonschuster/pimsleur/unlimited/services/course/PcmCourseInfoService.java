@@ -17,13 +17,10 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
+import java.util.*;
 
 import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEdt;
+import static java.util.stream.Collectors.toList;
 
 @Service
 public class PcmCourseInfoService {
@@ -111,15 +108,12 @@ public class PcmCourseInfoService {
         pcmProduct.setCustomersId(customer.getCustomersId());
         pcmProduct.setCustomerToken(customer.getIdentityVerificationToken());
 
-        Map<String, OrdersProduct> ordersProductList = new HashMap<>();
-        customer.getCustomersOrders()
+        List<OrdersProduct> ordersProducts = customer.getCustomersOrders()
                 .stream()
                 .flatMap(customersOrder -> customersOrder.getOrdersProducts().stream())
-                .forEach(ordersProduct -> {
-                    ordersProductList.put(ordersProduct.getProduct().getProductCode(), ordersProduct);
-                });
+                .collect(toList());
 
-        pcmProduct.setOrdersProductList(ordersProductList);
+        pcmProduct.setOrdersProducts(ordersProducts);
         return pcmProduct;
     }
 
@@ -151,13 +145,14 @@ public class PcmCourseInfoService {
     private Map<String, Map<String, Integer>> getMediaItemIds(
             PcmProduct pcmProduct, Map<String, Pair<String, Integer>> entitlementTokens, String productCode) {
 
-        Map<String, OrdersProduct> ordersProductList = pcmProduct.getOrdersProductList();
+        Optional<OrdersProduct> first = pcmProduct.getOrdersProducts().stream()
+                .filter(ordersProduct -> Objects.equals(ordersProduct.getProduct().getProductCode(), productCode))
+                .findFirst();
 
-        if (ordersProductList.containsKey(productCode)) {
+        if (first.isPresent()) {
             Map<String, OrdersProduct> filteredOrdersProductList = new HashMap<>();
-            filteredOrdersProductList.put(productCode, ordersProductList.get(productCode));
-            pcmProduct.setOrdersProductList(filteredOrdersProductList);
-
+            filteredOrdersProductList.put(productCode, first.get());
+            pcmProduct.setOrdersProducts(Collections.singletonList(first.get()));
             return filterItemIdsOfAllLevels(entitlementTokens, productCode, filteredOrdersProductList);
         } else if (findMatchedProductInfo(pcmProduct, productCode)) {
             return filterItemIdsOfOneLevel(entitlementTokens, productCode, pcmProduct);
@@ -205,7 +200,7 @@ public class PcmCourseInfoService {
             lesson.setMediaItemId(itemId);
             lesson.setLessonNumber(title.split(" ")[1]);
             return lesson;
-        }).collect(Collectors.toList());
+        }).collect(toList());
 
         return lessons;
 
@@ -246,7 +241,7 @@ public class PcmCourseInfoService {
             lesson.setMediaItemId(itemId);
             lesson.setLessonNumber(title.split(" ")[1]);
             return lesson;
-        }).collect(Collectors.toList());
+        }).collect(toList());
 
         return lessons;
 
@@ -285,7 +280,7 @@ public class PcmCourseInfoService {
                             });
                     return itemIdsByLevel;
                 })
-                .collect(Collectors.toList());
+                .collect(toList());
 
         Map itemIdsByLevel = new HashMap<String, Map<String, Integer>>();
         listOfItemIdsByLevel.forEach(oneLevelItemIds -> itemIdsByLevel.putAll(oneLevelItemIds));
@@ -301,13 +296,13 @@ public class PcmCourseInfoService {
      * @return
      */
     private boolean findMatchedProductInfo(PcmProduct pcmProduct, String productCode) {
-        int size = pcmProduct.getOrdersProductList().entrySet()
+        int size = pcmProduct.getOrdersProducts()
                 .stream()
-                .flatMap(entry -> entry.getValue().getOrdersProductsAttributes().stream())
+                .flatMap(ordersProduct -> ordersProduct.getOrdersProductsAttributes().stream())
                 .filter(attribute -> attribute.getProductsOptions().contains(PUCourseInfoService.KEY_DOWNLOAD))
                 .flatMap(attribute -> attribute.getOrdersProductsDownloads().stream())
                 .filter(download -> download.getMediaSet().getProduct().getProductCode().equals(productCode))
-                .collect(Collectors.toList())
+                .collect(toList())
                 .size();
 
         return size > 0;
@@ -361,25 +356,24 @@ public class PcmCourseInfoService {
      * @return
      */
     private OrdersProductAttribute getMatchedProductAttribute(PcmProduct pcmProduct, String productCode) {
-        final List<OrdersProductAttribute> matchedProductAttribute = new ArrayList<>();
+        List<OrdersProductAttribute> matchedProductAttribute = new ArrayList<>();
         Map<String, OrdersProduct> filteredOrdersProductList = new HashMap<>();
 
-        pcmProduct.getOrdersProductList().forEach((orderProductCode, ordersProduct) -> {
+        pcmProduct.getOrdersProducts().forEach((ordersProduct) -> {
             List<OrdersProductAttribute> matchedAttributes = ordersProduct.getOrdersProductsAttributes().stream()
                     .filter(attribute -> attribute.getProductsOptions().contains(PUCourseInfoService.KEY_DOWNLOAD))
                     .filter(attribute -> attribute.getOrdersProductsDownloads()
                             .stream()
                             .anyMatch(download -> download.getMediaSet().getProduct().getProductCode().equals(productCode)))
-                    .collect(Collectors.toList());
+                    .collect(toList());
 
             if (matchedAttributes.size() > 0) {
                 matchedProductAttribute.add(matchedAttributes.get(0));
-                filteredOrdersProductList.put(orderProductCode, ordersProduct);
+                filteredOrdersProductList.put(ordersProduct.getProduct().getProductCode(), ordersProduct);
             }
         });
 
-        pcmProduct.setOrdersProductList(filteredOrdersProductList);
-
+        pcmProduct.setOrdersProducts(new ArrayList<>(filteredOrdersProductList.values()));
         return matchedProductAttribute.size() > 0 ? matchedProductAttribute.get(0) : null;
     }
 }

@@ -86,10 +86,9 @@ public class AggregatedProductInfo {
         return courses;
     }
 
-    private List<Course> buildCourseInfoFromPCM(List<Course> courses, PcmProduct productInfoFromPCM, Map<String, List<Lesson>> lessonAudioInfoFromPCM) {
-
-        productInfoFromPCM.getOrdersProductList().forEach((orderProductCode, orderProductInfo) -> {
-            Map<Integer, Product> products = productInfoFromPCM.getOrdersProductList().get(orderProductCode).getOrdersProductsAttributes()
+    private void buildCourseInfoFromPCM(List<Course> courses, PcmProduct productInfoFromPCM, Map<String, List<Lesson>> lessonAudioInfoFromPCM) {
+        productInfoFromPCM.getOrdersProducts().forEach((orderProductInfo) -> {
+            Map<Integer, Product> products = orderProductInfo.getOrdersProductsAttributes()
                     .stream()
                     .filter(attr -> attr.getProductsOptions().contains(KEY_DOWNLOAD))
                     .collect(Collectors.toMap(it -> it.getOrdersProductsDownloads().get(0).getMediaSet().getProduct().getProductsLevel(),
@@ -105,7 +104,6 @@ public class AggregatedProductInfo {
             });
         });
 
-        return courses;
     }
 
     private Course buildPcmCourse(OrdersProduct orderProductInfo, Map<Integer, Product> products, List<Lesson> lessons, String level) {

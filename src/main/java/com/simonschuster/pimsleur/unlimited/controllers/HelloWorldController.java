@@ -1,7 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.controllers;
 
-import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
-import org.springframework.beans.factory.annotation.Autowired;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,16 +16,9 @@ public class HelloWorldController {
 //        return addressBookRepository.getOne(addressBookId);
 //    }
 
-    @Autowired
-    private ApplicationConfiguration configuration;
-
-    @RequestMapping("/")
+    @ApiOperation(value = "This api is called after a new deployment to verify if the new version is up and running")
+    @RequestMapping(value = "/", method = GET)
     public String index() {
         return "Greetings from Spring Boot!";
-    }
-
-    @RequestMapping(value = "/hello", method = GET)
-    public String hello() {
-        return "from properties file " + configuration.getProperty("edt.api.customerInfoApiUrl");
     }
 }

@@ -29,7 +29,7 @@ public class CustomerController {
         return customerInfo.toDto(name);
     }
 
-    @ApiOperation(value = "Update sub user, you an only change sub user's name")
+    @ApiOperation(value = "Update sub user, you can only change sub user's name")
     @PutMapping(value = "customers/{customerId}/appUsers/{appUserId}")
     public SubUserDto updateUserInfo(@PathVariable String customerId,
                                      @PathVariable String appUserId,

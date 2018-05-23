@@ -32,7 +32,8 @@ public class FreeLessonsController {
                 .mergePuWithPcmFreeLessons(pcmFreeLessonsService.getPcmFreeLessons());
     }
 
-    @ApiOperation(value = "Tell us your email so that we can spam you")
+    @ApiOperation(value = "Before trying free lessons, users are asked to fill in their emails. " +
+            "Call this api to tell EDT the user's email and further actions will be taken by EDT.")
     @RequestMapping(value = "/freeLessons/learnerInfo", method = RequestMethod.POST)
     public void learnerInfo(@RequestBody LearnerInfoBodyDTO learnerInfoBodyDTO) {
         learnerInfoService.LearnerInfo(learnerInfoBodyDTO);

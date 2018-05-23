@@ -1,4 +1,4 @@
-package com.simonschuster.pimsleur.unlimited.data.dto.productinfo;
+package com.simonschuster.pimsleur.unlimited.data.dto.customerInfo;
 
 public class IntentionToBuyBody {
     private String storeDomain;

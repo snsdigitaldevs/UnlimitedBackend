@@ -6,6 +6,7 @@ import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Lesson;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.*;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.MediaItem;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.*;
+import com.simonschuster.pimsleur.unlimited.services.customer.EDTCustomerInfoService;
 import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.apache.commons.lang3.tuple.Pair;
 import org.slf4j.Logger;
@@ -15,7 +16,6 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -27,23 +27,31 @@ import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEd
 
 @Service
 public class PcmCourseInfoService {
+
     public static final String KEY_LESSONS = "Lessons";
     private static final String KEY_UNITS = "Units";
+
+    @Autowired
+    private EDTCustomerInfoService customerInfoService;
 
     @Autowired
     private ApplicationConfiguration config;
 
     private static final Logger logger = LoggerFactory.getLogger(PUCourseInfoService.class);
 
-    /**
-     * Get product info for Pimsleur Course Manager.
-     *
-     * @param auth0UserId
-     * @param aggregatedProductInfo
-     */
-    public void getPcmProductInfo(String auth0UserId, AggregatedProductInfo aggregatedProductInfo) {
+    public AggregatedProductInfo getPcmProductInfo(String productCode, String sub) {
+        AggregatedProductInfo productInfo = new AggregatedProductInfo();
+
+        productInfo.setPcmProduct(getPcmProductInfo(sub));
+        productInfo.setPcmAudioInfo(getPcmAudioInfo(productInfo, productCode));
+
+        return productInfo;
+    }
+
+    private PcmProduct getPcmProductInfo(String sub) {
         try {
-            aggregatedProductInfo.setPcmProduct(getProductInfoFromPCM(auth0UserId));
+            CustomerInfo pcmCustomerInfo = customerInfoService.getPcmCustomerInfo(sub);
+            return extractPCMProduct(pcmCustomerInfo);
         } catch (Exception exception) {
             logger.error("Exception occured when get product info with PCM product code.");
             exception.printStackTrace();
@@ -57,29 +65,18 @@ public class PcmCourseInfoService {
      * @param productInfo
      * @param productCode
      */
-    public void getPcmLessons(AggregatedProductInfo productInfo, String productCode) {
-        PcmAudioReqParams audioRequestInfo = buildRequestParams(productInfo.getPcmProduct(), productCode);
-        productInfo.setPcmAudioInfo(getAudioInfo(audioRequestInfo));
-    }
+    private Map<String, List<Lesson>> getPcmAudioInfo(AggregatedProductInfo productInfo, String productCode) {
+        PcmProduct pcmProduct = productInfo.getPcmProduct();
+        Map<String, Pair<String, Integer>> entitlementTokens = new HashMap<>();
+        Map<String, Map<String, Integer>> mediaItemIds = getMediaItemIds(pcmProduct, entitlementTokens, productCode);
 
-    /**
-     * Send request to get get full customer info and extract all products has been ordered by the user.
-     *
-     * @param sub
-     * @return
-     */
-    private PcmProduct getProductInfoFromPCM(String sub) {
-        PcmProduct pcmProduct = new PcmProduct();
+        PcmAudioReqParams pcmAudioReqParams = new PcmAudioReqParams();
+        pcmAudioReqParams.setMediaItemIds(mediaItemIds);
+        pcmAudioReqParams.setEntitlementTokens(entitlementTokens);
+        pcmAudioReqParams.setCustomersId(pcmProduct.getCustomersId());
+        pcmAudioReqParams.setCustomerToken(pcmProduct.getCustomerToken());
 
-        CustomerInfo pcmCustomerInfo = getCustomerInfo(
-                sub,
-                config.getApiParameter("pcmCustomerAction"),
-                config.getApiParameter("pcmDomain")
-        );
-
-        extractPCMProduct(pcmProduct, pcmCustomerInfo);
-
-        return pcmProduct;
+        return getAudioInfo(pcmAudioReqParams);
     }
 
     /**
@@ -105,16 +102,16 @@ public class PcmCourseInfoService {
     /**
      * Extract products from the given customer info.
      *
-     * @param pcmProduct
      * @param pcmCustomerInfo
      */
-    private void extractPCMProduct(PcmProduct pcmProduct, CustomerInfo pcmCustomerInfo) {
-        Customer customer = pcmCustomerInfo.getResultData().getCustomer();
+    private PcmProduct extractPCMProduct(CustomerInfo pcmCustomerInfo) {
+        PcmProduct pcmProduct = new PcmProduct();
 
+        Customer customer = pcmCustomerInfo.getResultData().getCustomer();
         pcmProduct.setCustomersId(customer.getCustomersId());
         pcmProduct.setCustomerToken(customer.getIdentityVerificationToken());
 
-        Map<String, OrdersProduct> ordersProductList = new HashMap();
+        Map<String, OrdersProduct> ordersProductList = new HashMap<>();
         customer.getCustomersOrders()
                 .stream()
                 .flatMap(customersOrder -> customersOrder.getOrdersProducts().stream())
@@ -123,26 +120,7 @@ public class PcmCourseInfoService {
                 });
 
         pcmProduct.setOrdersProductList(ordersProductList);
-    }
-
-    /**
-     * Build parameters that're used to send the request for fetching mp3 urls.
-     *
-     * @param pcmProduct
-     * @param productCode
-     * @return
-     */
-    private PcmAudioReqParams buildRequestParams(PcmProduct pcmProduct, String productCode) {
-        Map<String, Pair<String, Integer>> entitlementTokens = new HashMap<>();
-        Map<String, Map<String, Integer>> mediaItemIds = getMediaItemIds(pcmProduct, entitlementTokens, productCode);
-
-        PcmAudioReqParams pcmAudioReqParams = new PcmAudioReqParams();
-        pcmAudioReqParams.setMediaItemIds(mediaItemIds);
-        pcmAudioReqParams.setEntitlementTokens(entitlementTokens);
-        pcmAudioReqParams.setCustomersId(pcmProduct.getCustomersId());
-        pcmAudioReqParams.setCustomerToken(pcmProduct.getCustomerToken());
-
-        return pcmAudioReqParams;
+        return pcmProduct;
     }
 
     /**
@@ -186,7 +164,7 @@ public class PcmCourseInfoService {
         } else {
             String errorMessage = "No product info found from PCM with matched product code";
             logger.error(errorMessage);
-            return new HashMap();
+            return new HashMap<>();
         }
     }
 
@@ -403,12 +381,5 @@ public class PcmCourseInfoService {
         pcmProduct.setOrdersProductList(filteredOrdersProductList);
 
         return matchedProductAttribute.size() > 0 ? matchedProductAttribute.get(0) : null;
-    }
-
-    public AggregatedProductInfo getPcmProductInfo(@RequestParam(value = "productCode") String productCode, @RequestParam(value = "sub") String sub) {
-        AggregatedProductInfo productInfo = new AggregatedProductInfo();
-        getPcmProductInfo(sub, productInfo);
-        getPcmLessons(productInfo, productCode);
-        return productInfo;
     }
 }

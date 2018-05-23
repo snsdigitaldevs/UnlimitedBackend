@@ -3,7 +3,7 @@ package com.simonschuster.pimsleur.unlimited.controllers;
 import com.simonschuster.pimsleur.unlimited.common.exception.ParamInvalidException;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.IntentionToBuyBody;
-import com.simonschuster.pimsleur.unlimited.services.course.IntentionToBuyService;
+import com.simonschuster.pimsleur.unlimited.services.customer.IntentionToBuyService;
 import com.simonschuster.pimsleur.unlimited.services.course.PUCourseInfoService;
 import com.simonschuster.pimsleur.unlimited.services.course.PcmCourseInfoService;
 import com.simonschuster.pimsleur.unlimited.services.course.PcmFreeCourseService;

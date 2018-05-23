@@ -1,4 +1,4 @@
-package com.simonschuster.pimsleur.unlimited.services.course;
+package com.simonschuster.pimsleur.unlimited.services.customer;
 
 import com.simonschuster.pimsleur.unlimited.common.exception.PimsleurException;
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;

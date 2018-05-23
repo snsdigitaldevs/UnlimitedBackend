@@ -7,10 +7,7 @@ import java.util.List;
 public class PcmProduct {
     private OrdersProduct orderProduct;
     private Integer customersId;
-
     private String customerToken;
-
-    //<orderproductcode, infoForAllLevels>
     private List<OrdersProduct> ordersProducts;
 
     public List<OrdersProduct> getOrdersProducts() {

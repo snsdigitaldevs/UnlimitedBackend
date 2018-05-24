@@ -44,7 +44,7 @@ public class ProductController {
         } else if (isPUProductCode) {
             return puCourseInfoService.getPuProductInfo(productCode).toDto();
         } else {
-            return pcmCourseInfoService.getPcmProductInfo(productCode, sub).toDto();
+            return pcmCourseInfoService.getCourses(productCode, sub);
         }
     }
 

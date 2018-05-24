@@ -15,6 +15,7 @@ public class Course {
     private String courseName;
     private Boolean isOneOfNineBig;
     private Boolean isFree;
+    private PcmReadings readings;
 
     public String getLanguageName() {
         return languageName;
@@ -70,5 +71,13 @@ public class Course {
 
     public void setIsFree(Boolean free) {
         isFree = free;
+    }
+
+    public PcmReadings getReadings() {
+        return readings;
+    }
+
+    public void setReadings(PcmReadings readings) {
+        this.readings = readings;
     }
 }

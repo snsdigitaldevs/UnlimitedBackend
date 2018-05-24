@@ -2,9 +2,12 @@ package com.simonschuster.pimsleur.unlimited.services.course;
 
 import com.simonschuster.pimsleur.unlimited.common.exception.PimsleurException;
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
+import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Lesson;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.*;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.Customer;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.MediaItem;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.OrdersProduct;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.OrdersProductAttribute;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.*;
 import com.simonschuster.pimsleur.unlimited.services.customer.EDTCustomerInfoService;
 import org.apache.commons.lang3.tuple.ImmutablePair;
@@ -17,13 +20,14 @@ import org.springframework.stereotype.Service;
 import java.util.*;
 
 import static com.simonschuster.pimsleur.unlimited.data.edt.productinfo.AggregatedProductInfo.createInstanceForPcm;
-import static java.lang.String.format;
+import static java.lang.Boolean.parseBoolean;
+import static java.util.Collections.singletonList;
 import static java.util.stream.Collectors.toList;
 
 @Service
 public class PcmCourseInfoService {
-
     public static final String KEY_LESSONS = "Lessons";
+
     private static final String KEY_UNITS = "Units";
 
     @Autowired
@@ -31,15 +35,20 @@ public class PcmCourseInfoService {
     @Autowired
     private PcmMediaItemUrlService pcmMediaItemUrlService;
     @Autowired
+    private PcmReadingsService pcmReadingsService;
+
+    @Autowired
     private ApplicationConfiguration config;
 
     private static final Logger logger = LoggerFactory.getLogger(PUCourseInfoService.class);
 
-    public AggregatedProductInfo getPcmProductInfo(String productCode, String sub) {
+    public List<Course> getCourses(String productCode, String sub) {
         PcmProduct pcmProductInfo = getPcmProductInfo(sub);
         Map<String, List<Lesson>> pcmAudioInfo = getPcmAudioInfo(productCode, pcmProductInfo);
 
-        return createInstanceForPcm(pcmProductInfo, pcmAudioInfo);
+        List<Course> courses = createInstanceForPcm(pcmProductInfo, pcmAudioInfo).toDto();
+        pcmReadingsService.addReadingsToCourses(courses,pcmProductInfo.getOrdersProducts());
+        return courses;
     }
 
     private PcmProduct getPcmProductInfo(String sub) {
@@ -53,9 +62,9 @@ public class PcmCourseInfoService {
             pcmProduct.setOrdersProducts(customer.getAllOrdersProducts());
             return pcmProduct;
         } catch (Exception exception) {
-            logger.error("Exception occured when get product info with PCM product code.");
+            logger.error("Exception occurred when get product info with PCM product code.");
             exception.printStackTrace();
-            throw new PimsleurException("Exception occured when get product info with PCM product code.");
+            throw new PimsleurException("Exception occurred when get product info with PCM product code.");
         }
     }
 
@@ -87,9 +96,13 @@ public class PcmCourseInfoService {
     private Map<String, List<Lesson>> getAudioInfo(PcmAudioReqParams params) {
         Map<String, List<Lesson>> pcmAudioRespInfo = new HashMap<>();
 
+        boolean isBatched = parseBoolean(config.getProperty("toggle.fetch.mp3.url.batch"));
         params.getMediaItemIds().forEach((level, mediaItemInfo) -> {
-            boolean isBatched = Boolean.parseBoolean(config.getProperty("toggle.fetch.mp3.url.batch"));
-            pcmAudioRespInfo.put(level, isBatched ? fetchAudioForALevel(params, level, mediaItemInfo) : fetchLessons(params, level, mediaItemInfo));
+            if (isBatched) {
+                pcmAudioRespInfo.put(level, batchFetchLessons(params, level, mediaItemInfo));
+            } else {
+                pcmAudioRespInfo.put(level, fetchLessonsOneByOne(params, level, mediaItemInfo));
+            }
         });
 
         return pcmAudioRespInfo;
@@ -114,7 +127,7 @@ public class PcmCourseInfoService {
         if (first.isPresent()) {
             Map<String, OrdersProduct> filteredOrdersProductList = new HashMap<>();
             filteredOrdersProductList.put(productCode, first.get());
-            pcmProduct.setOrdersProducts(Collections.singletonList(first.get()));
+            pcmProduct.setOrdersProducts(singletonList(first.get()));
             return filterItemIdsOfAllLevels(entitlementTokens, productCode, filteredOrdersProductList);
         } else if (findMatchedProductInfo(pcmProduct, productCode)) {
             return filterItemIdsOfOneLevel(entitlementTokens, productCode, pcmProduct);
@@ -125,11 +138,14 @@ public class PcmCourseInfoService {
         }
     }
 
-    private List<Lesson> fetchAudioForALevel(PcmAudioReqParams pcmAudioReqParams, String level, Map<String, Integer> mediaItemInfos) {
+    private List<Lesson> batchFetchLessons(PcmAudioReqParams pcmAudioReqParams, String level, Map<String, Integer> mediaItemInfos) {
         int mediaSetId = pcmAudioReqParams.getEntitlementTokens().get(level).getValue();
-        String entitlementToken = pcmAudioReqParams.getEntitlementTokens().get(level).getKey();
 
-        BatchedMediaItemUrls batchedMediaItemUrls = pcmMediaItemUrlService.getBatchedMediaItemUrls(mediaSetId, pcmAudioReqParams.getCustomerToken(), entitlementToken, pcmAudioReqParams.getCustomersId());
+        BatchedMediaItemUrls batchedMediaItemUrls =
+                pcmMediaItemUrlService.getBatchedMediaItemUrls(mediaSetId,
+                        pcmAudioReqParams.getCustomerToken(),
+                        pcmAudioReqParams.getEntitlementTokens().get(level).getKey(),
+                        pcmAudioReqParams.getCustomersId());
 
         return mediaItemInfos.entrySet().stream().map(entry -> {
             Lesson lesson = new Lesson();
@@ -163,23 +179,23 @@ public class PcmCourseInfoService {
      * @param mediaItemInfos
      * @return
      */
-    private List<Lesson> fetchLessons(PcmAudioReqParams pcmAudioReqParams, String level, Map<String, Integer> mediaItemInfos) {
+    private List<Lesson> fetchLessonsOneByOne(PcmAudioReqParams pcmAudioReqParams, String level, Map<String, Integer> mediaItemInfos) {
 
         List<Lesson> lessons = mediaItemInfos.entrySet().parallelStream().map(entry -> {
 
-            Lesson lesson = new Lesson();
             String title = entry.getKey();
-            Integer itemId = entry.getValue();
+            Integer mediaItemId = entry.getValue();
 
-            MediaItemUrl mediaItemUrl = pcmMediaItemUrlService.getMediaItemUrl(itemId,
+            MediaItemUrl mediaItemUrl = pcmMediaItemUrlService.getMediaItemUrl(mediaItemId,
                     pcmAudioReqParams.getCustomerToken(),
                     pcmAudioReqParams.getEntitlementTokens().get(level).getLeft(),
                     pcmAudioReqParams.getCustomersId());
 
+            Lesson lesson = new Lesson();
             lesson.setAudioLink(mediaItemUrl.getResult_data().getUrl());
             lesson.setName(title);
             lesson.setLevel(Integer.parseInt(level));
-            lesson.setMediaItemId(itemId);
+            lesson.setMediaItemId(mediaItemId);
             lesson.setLessonNumber(title.split(" ")[1]);
             return lesson;
         }).collect(toList());

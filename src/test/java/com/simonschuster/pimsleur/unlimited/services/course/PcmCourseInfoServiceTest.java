@@ -28,29 +28,13 @@ public class PcmCourseInfoServiceTest {
     private PcmCourseInfoService pcmCourseInfoService;
 
     @Test
-    public void shouldGetProductInfoFromPCMCorrectlyWhenNoDataFromPU() throws Exception {
-        HttpServer server = mockEDTResponseFromPCM();
-        String productCode = "9781442369030";
-
-        running(server, () -> {
-            AggregatedProductInfo productInfo = pcmCourseInfoService.getPcmProductInfo(productCode, "sub");
-
-            assertNull(productInfo.getPuProductInfo());
-            assertNotNull(productInfo.getPcmProduct());
-            assertEquals(productCode,
-                    productInfo.getPcmProduct().getOrdersProducts().get(0).getProduct().getProductCode());
-        });
-    }
-
-    @Test
     public void shouldGenerateDTOResponseCorrectlyFromPCM() throws Exception {
         HttpServer server = mockEDTResponseFromPCM();
         String productCode = "9781508205333";
 
         running(server, () -> {
-            AggregatedProductInfo productInfo = pcmCourseInfoService.getPcmProductInfo(productCode, "sub");
+            List<Course> courseDtos = pcmCourseInfoService.getCourses(productCode, "sub");
 
-            List<Course> courseDtos = productInfo.toDto();
             Course levelOne = courseDtos.stream().filter(course -> course.getLevel() == 1).collect(Collectors.toList()).get(0);
 
             assertEquals("French", levelOne.getLanguageName());

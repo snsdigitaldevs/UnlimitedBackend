@@ -138,4 +138,12 @@ public class MediaItem {
         return this.getMediaItemTypeId() == MP3_MEDIA_TYPE
                 && (this.getMediaItemTitle().startsWith("Unit") || this.getMediaItemTitle().startsWith("Lesson"));
     }
+
+    public boolean isReading() {
+        return this.getMediaItemFilename().contains(".mp3") || this.isPdf();
+    }
+
+    public boolean isPdf() {
+        return this.getMediaItemFilename().contains(".pdf");
+    }
 }

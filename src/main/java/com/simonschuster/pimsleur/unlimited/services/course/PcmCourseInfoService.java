@@ -47,7 +47,7 @@ public class PcmCourseInfoService {
         Map<String, List<Lesson>> pcmAudioInfo = getPcmAudioInfo(productCode, pcmProductInfo);
 
         List<Course> courses = createInstanceForPcm(pcmProductInfo, pcmAudioInfo).toDto();
-        pcmReadingsService.addReadingsToCourses(courses,pcmProductInfo.getOrdersProducts());
+        pcmReadingsService.addReadingsToCourses(courses, pcmProductInfo);
         return courses;
     }
 

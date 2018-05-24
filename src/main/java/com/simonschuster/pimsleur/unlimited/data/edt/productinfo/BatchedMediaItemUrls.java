@@ -3,6 +3,7 @@ package com.simonschuster.pimsleur.unlimited.data.edt.productinfo;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.util.List;
+import java.util.Optional;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class BatchedMediaItemUrls {
@@ -24,6 +25,16 @@ public class BatchedMediaItemUrls {
 
     public void setResult_code(int result_code) {
         this.result_code = result_code;
+    }
+
+    public String getUrlOfMediaItem(int mediaItemId) {
+        Optional<ResultDataBean.UrlsBean> match = this.getResult_data().getUrls().stream()
+                .filter(x -> x.getMediaItemId() == mediaItemId)
+                .findFirst();
+        if (match.isPresent()) {
+            return match.get().getUrl();
+        }
+        return "";
     }
 
     @JsonIgnoreProperties(ignoreUnknown = true)

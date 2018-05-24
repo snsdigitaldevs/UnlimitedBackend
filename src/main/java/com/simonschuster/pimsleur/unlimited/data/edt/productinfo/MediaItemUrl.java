@@ -3,7 +3,7 @@ package com.simonschuster.pimsleur.unlimited.data.edt.productinfo;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class AudioInfoFromPCM {
+public class MediaItemUrl {
     private ResultDataBean result_data;
     private int result_code;
 

@@ -12,15 +12,12 @@ import org.apache.commons.lang3.tuple.Pair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
 
 import static com.simonschuster.pimsleur.unlimited.data.edt.productinfo.AggregatedProductInfo.createInstanceForPcm;
-import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEdt;
+import static java.lang.String.format;
 import static java.util.stream.Collectors.toList;
 
 @Service
@@ -31,7 +28,8 @@ public class PcmCourseInfoService {
 
     @Autowired
     private EDTCustomerInfoService customerInfoService;
-
+    @Autowired
+    private PcmMediaItemUrlService pcmMediaItemUrlService;
     @Autowired
     private ApplicationConfiguration config;
 
@@ -81,26 +79,6 @@ public class PcmCourseInfoService {
     }
 
     /**
-     * Get full customer info of the given sub(user token)
-     *
-     * @param sub
-     * @param action
-     * @param domain
-     * @return
-     */
-    private CustomerInfo getCustomerInfo(String sub, String action, String domain) {
-        HttpHeaders headers = new HttpHeaders();
-        headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
-
-        return postToEdt(
-                new HttpEntity<>(
-                        String.format(config.getApiParameter("customerInfoDefaultParameters"), sub, action, domain),
-                        headers),
-                config.getProperty("edt.api.customerInfoApiUrl"),
-                CustomerInfo.class);
-    }
-
-    /**
      * Get audio urls for all lessons of all levels.
      *
      * @param params
@@ -125,8 +103,9 @@ public class PcmCourseInfoService {
      * @param productCode
      * @return
      */
-    private Map<String, Map<String, Integer>> getMediaItemIds(
-            PcmProduct pcmProduct, Map<String, Pair<String, Integer>> entitlementTokens, String productCode) {
+    private Map<String, Map<String, Integer>> getMediaItemIds(PcmProduct pcmProduct,
+                                                              Map<String, Pair<String, Integer>> entitlementTokens,
+                                                              String productCode) {
 
         Optional<OrdersProduct> first = pcmProduct.getOrdersProducts().stream()
                 .filter(ordersProduct -> Objects.equals(ordersProduct.getProduct().getProductCode(), productCode))
@@ -147,33 +126,22 @@ public class PcmCourseInfoService {
     }
 
     private List<Lesson> fetchAudioForALevel(PcmAudioReqParams pcmAudioReqParams, String level, Map<String, Integer> mediaItemInfos) {
-        HttpHeaders headers = new HttpHeaders();
-        headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
         int mediaSetId = pcmAudioReqParams.getEntitlementTokens().get(level).getValue();
         String entitlementToken = pcmAudioReqParams.getEntitlementTokens().get(level).getKey();
 
-        BatchedAudio batchedAudio = postToEdt(
-                new HttpEntity<>(
-                        String.format(config.getApiParameter("pCMBatchMp3Parameters"),
-                                mediaSetId, // media set id for level
-                                pcmAudioReqParams.getCustomerToken(),
-                                entitlementToken, // entitlement token
-                                pcmAudioReqParams.getCustomersId()),
-                        headers),
-                config.getProperty("edt.api.pcmBatchMp3ApiUrl"),
-                BatchedAudio.class);
+        BatchedMediaItemUrls batchedMediaItemUrls = pcmMediaItemUrlService.getBatchedMediaItemUrls(mediaSetId, pcmAudioReqParams.getCustomerToken(), entitlementToken, pcmAudioReqParams.getCustomersId());
 
-        List<Lesson> lessons = mediaItemInfos.entrySet().stream().map(entry -> {
+        return mediaItemInfos.entrySet().stream().map(entry -> {
             Lesson lesson = new Lesson();
             String title = entry.getKey();
             Integer itemId = entry.getValue();
 
-            List<BatchedAudio.ResultDataBean.UrlsBean> urls = batchedAudio.getResult_data().getUrls();
+            List<BatchedMediaItemUrls.ResultDataBean.UrlsBean> urls = batchedMediaItemUrls.getResult_data().getUrls();
 
             // find the audio url
-            for (int i = 0; i < urls.size(); i++) {
-                if (urls.get(i).getMediaItemId() == itemId.intValue()) {
-                    lesson.setAudioLink(urls.get(i).getUrl());
+            for (BatchedMediaItemUrls.ResultDataBean.UrlsBean url : urls) {
+                if (url.getMediaItemId() == itemId) {
+                    lesson.setAudioLink(url.getUrl());
                     break;
                 }
             }
@@ -184,8 +152,6 @@ public class PcmCourseInfoService {
             lesson.setLessonNumber(title.split(" ")[1]);
             return lesson;
         }).collect(toList());
-
-        return lessons;
 
     }
 
@@ -198,8 +164,6 @@ public class PcmCourseInfoService {
      * @return
      */
     private List<Lesson> fetchLessons(PcmAudioReqParams pcmAudioReqParams, String level, Map<String, Integer> mediaItemInfos) {
-        HttpHeaders headers = new HttpHeaders();
-        headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
 
         List<Lesson> lessons = mediaItemInfos.entrySet().parallelStream().map(entry -> {
 
@@ -207,18 +171,12 @@ public class PcmCourseInfoService {
             String title = entry.getKey();
             Integer itemId = entry.getValue();
 
-            AudioInfoFromPCM audioInfoFromPCM = postToEdt(
-                    new HttpEntity<>(
-                            String.format(config.getApiParameter("pCMMp3Parameters"),
-                                    itemId,
-                                    pcmAudioReqParams.getCustomerToken(),
-                                    pcmAudioReqParams.getEntitlementTokens().get(level).getLeft(),
-                                    pcmAudioReqParams.getCustomersId()),
-                            headers),
-                    config.getProperty("edt.api.pCMMp3ApiUrl"),
-                    AudioInfoFromPCM.class);
+            MediaItemUrl mediaItemUrl = pcmMediaItemUrlService.getMediaItemUrl(itemId,
+                    pcmAudioReqParams.getCustomerToken(),
+                    pcmAudioReqParams.getEntitlementTokens().get(level).getLeft(),
+                    pcmAudioReqParams.getCustomersId());
 
-            lesson.setAudioLink(audioInfoFromPCM.getResult_data().getUrl());
+            lesson.setAudioLink(mediaItemUrl.getResult_data().getUrl());
             lesson.setName(title);
             lesson.setLevel(Integer.parseInt(level));
             lesson.setMediaItemId(itemId);

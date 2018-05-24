@@ -37,7 +37,8 @@ public class PcmCourseInfoServiceTest {
 
             assertNull(productInfo.getPuProductInfo());
             assertNotNull(productInfo.getPcmProduct());
-            assertEquals(productCode, productInfo.getPcmProduct().getOrdersProductList().get("9781442369030").getProduct().getIsbn13().replace("-", ""));
+            assertEquals(productCode,
+                    productInfo.getPcmProduct().getOrdersProducts().get(0).getProduct().getProductCode());
         });
     }
 

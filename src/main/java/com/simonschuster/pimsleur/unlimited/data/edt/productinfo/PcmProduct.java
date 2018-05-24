@@ -2,23 +2,20 @@ package com.simonschuster.pimsleur.unlimited.data.edt.productinfo;
 
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.OrdersProduct;
 
-import java.util.Map;
+import java.util.List;
 
 public class PcmProduct {
     private OrdersProduct orderProduct;
     private Integer customersId;
-
     private String customerToken;
+    private List<OrdersProduct> ordersProducts;
 
-    //<orderproductcode, infoForAllLevels>
-    private Map<String, OrdersProduct> ordersProductList;
-
-    public Map<String, OrdersProduct> getOrdersProductList() {
-        return ordersProductList;
+    public List<OrdersProduct> getOrdersProducts() {
+        return ordersProducts;
     }
 
-    public void setOrdersProductList(Map<String, OrdersProduct> ordersProductList) {
-        this.ordersProductList = ordersProductList;
+    public void setOrdersProducts(List<OrdersProduct> ordersProducts) {
+        this.ordersProducts = ordersProducts;
     }
 
     public void setOrderProduct(OrdersProduct orderProduct) {

@@ -20,6 +20,7 @@ import java.util.stream.Collectors;
 import static com.simonschuster.pimsleur.unlimited.services.course.PUCourseInfoService.KEY_DOWNLOAD;
 import static com.simonschuster.pimsleur.unlimited.utils.HardCodedProductsUtil.isOneOfNineBig;
 import static com.simonschuster.pimsleur.unlimited.utils.HardCodedProductsUtil.isPuFreeLesson;
+import static java.util.stream.Collectors.toMap;
 
 public class AggregatedProductInfo {
     private static final String PREFIX_FOR_IMAGE_OF_PU = "https://install.pimsleurunlimited.com/staging_n/desktop/";
@@ -86,29 +87,30 @@ public class AggregatedProductInfo {
         return courses;
     }
 
-    private List<Course> buildCourseInfoFromPCM(List<Course> courses, PcmProduct productInfoFromPCM, Map<String, List<Lesson>> lessonAudioInfoFromPCM) {
-
-        productInfoFromPCM.getOrdersProductList().forEach((orderProductCode, orderProductInfo) -> {
-            Map<Integer, Product> products = productInfoFromPCM.getOrdersProductList().get(orderProductCode).getOrdersProductsAttributes()
-                    .stream()
-                    .filter(attr -> attr.getProductsOptions().contains(KEY_DOWNLOAD))
-                    .collect(Collectors.toMap(it -> it.getOrdersProductsDownloads().get(0).getMediaSet().getProduct().getProductsLevel(),
-                            it -> it.getOrdersProductsDownloads().get(0).getMediaSet().getProduct()));
+    private void buildCourseInfoFromPCM(List<Course> courses,
+                                        PcmProduct productInfoFromPCM,
+                                        Map<String, List<Lesson>> lessonAudioInfoFromPCM) {
+        productInfoFromPCM.getOrdersProducts().forEach((orderProductInfo) -> {
 
             Map<String, List<Lesson>> filteredLessonAudioInfo = lessonAudioInfoFromPCM.entrySet().stream()
                     .filter(lessonAudioInfo -> lessonAudioInfo.getValue().size() > 0)
-                    .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+                    .collect(toMap(Map.Entry::getKey, Map.Entry::getValue));
 
             filteredLessonAudioInfo.forEach((level, lessonInfoForOneLevel) -> {
-                Course course = buildPcmCourse(orderProductInfo, products, lessonInfoForOneLevel, level);
+                Course course = buildPcmCourse(orderProductInfo, lessonInfoForOneLevel, level);
                 courses.add(course);
             });
         });
 
-        return courses;
     }
 
-    private Course buildPcmCourse(OrdersProduct orderProductInfo, Map<Integer, Product> products, List<Lesson> lessons, String level) {
+    private Course buildPcmCourse(OrdersProduct orderProductInfo, List<Lesson> lessons, String level) {
+        Map<Integer, Product> products = orderProductInfo.getOrdersProductsAttributes()
+                .stream()
+                .filter(attr -> attr.getProductsOptions().contains(KEY_DOWNLOAD))
+                .collect(toMap(it -> it.getOrdersProductsDownloads().get(0).getMediaSet().getProduct().getProductsLevel(),
+                        it -> it.getOrdersProductsDownloads().get(0).getMediaSet().getProduct()));
+
         String languageName = orderProductInfo.getProduct().getProductsLanguageName();
 
         Course course = new Course();

@@ -37,11 +37,12 @@ public class PcmCourseInfoService {
     private static final Logger logger = LoggerFactory.getLogger(PUCourseInfoService.class);
 
     public AggregatedProductInfo getPcmProductInfo(String productCode, String sub) {
+        PcmProduct pcmProductInfo = getPcmProductInfo(sub);
+        Map<String, List<Lesson>> pcmAudioInfo = getPcmAudioInfo(productCode, pcmProductInfo);
+
         AggregatedProductInfo productInfo = new AggregatedProductInfo();
-
-        productInfo.setPcmProduct(getPcmProductInfo(sub));
-        productInfo.setPcmAudioInfo(getPcmAudioInfo(productInfo, productCode));
-
+        productInfo.setPcmProduct(pcmProductInfo);
+        productInfo.setPcmAudioInfo(pcmAudioInfo);
         return productInfo;
     }
 
@@ -65,11 +66,10 @@ public class PcmCourseInfoService {
     /**
      * Get lesson detail info, such as mp3 urls, lesson names...
      *
-     * @param productInfo
      * @param productCode
+     * @param pcmProduct
      */
-    private Map<String, List<Lesson>> getPcmAudioInfo(AggregatedProductInfo productInfo, String productCode) {
-        PcmProduct pcmProduct = productInfo.getPcmProduct();
+    private Map<String, List<Lesson>> getPcmAudioInfo(String productCode, PcmProduct pcmProduct) {
         Map<String, Pair<String, Integer>> entitlementTokens = new HashMap<>();
         Map<String, Map<String, Integer>> mediaItemIds = getMediaItemIds(pcmProduct, entitlementTokens, productCode);
 

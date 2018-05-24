@@ -19,6 +19,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.*;
 
+import static com.simonschuster.pimsleur.unlimited.data.edt.productinfo.AggregatedProductInfo.createInstanceForPcm;
 import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEdt;
 import static java.util.stream.Collectors.toList;
 
@@ -40,10 +41,7 @@ public class PcmCourseInfoService {
         PcmProduct pcmProductInfo = getPcmProductInfo(sub);
         Map<String, List<Lesson>> pcmAudioInfo = getPcmAudioInfo(productCode, pcmProductInfo);
 
-        AggregatedProductInfo productInfo = new AggregatedProductInfo();
-        productInfo.setPcmProduct(pcmProductInfo);
-        productInfo.setPcmAudioInfo(pcmAudioInfo);
-        return productInfo;
+        return createInstanceForPcm(pcmProductInfo, pcmAudioInfo);
     }
 
     private PcmProduct getPcmProductInfo(String sub) {

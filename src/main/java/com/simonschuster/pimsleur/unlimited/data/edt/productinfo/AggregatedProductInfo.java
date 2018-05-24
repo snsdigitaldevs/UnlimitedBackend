@@ -47,6 +47,15 @@ public class AggregatedProductInfo {
         return puProductInfo;
     }
 
+    // factory method
+    public static AggregatedProductInfo createInstanceForPcm(PcmProduct pcmProductInfo,
+                                                             Map<String, List<Lesson>> pcmAudioInfo) {
+        AggregatedProductInfo productInfo = new AggregatedProductInfo();
+        productInfo.setPcmProduct(pcmProductInfo);
+        productInfo.setPcmAudioInfo(pcmAudioInfo);
+        return productInfo;
+    }
+
     public List<Course> toDto() {
         ArrayList<Course> courses = new ArrayList<>();
 

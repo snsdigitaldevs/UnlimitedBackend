@@ -64,4 +64,10 @@ public class Customer {
 
     }
 
+    public List<OrdersProduct> getAllOrdersProducts() {
+        return getCustomersOrders()
+                .stream()
+                .flatMap(customersOrder -> customersOrder.getOrdersProducts().stream())
+                .collect(toList());
+    }
 }

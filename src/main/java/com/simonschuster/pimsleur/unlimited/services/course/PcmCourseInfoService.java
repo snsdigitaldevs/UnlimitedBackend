@@ -47,8 +47,14 @@ public class PcmCourseInfoService {
 
     private PcmProduct getPcmProductInfo(String sub) {
         try {
-            CustomerInfo pcmCustomerInfo = customerInfoService.getPcmCustomerInfo(sub);
-            return extractPCMProduct(pcmCustomerInfo);
+            Customer customer = customerInfoService.getPcmCustomerInfo(sub)
+                    .getResultData().getCustomer();
+
+            PcmProduct pcmProduct = new PcmProduct();
+            pcmProduct.setCustomersId(customer.getCustomersId());
+            pcmProduct.setCustomerToken(customer.getIdentityVerificationToken());
+            pcmProduct.setOrdersProducts(customer.getAllOrdersProducts());
+            return pcmProduct;
         } catch (Exception exception) {
             logger.error("Exception occured when get product info with PCM product code.");
             exception.printStackTrace();
@@ -94,27 +100,6 @@ public class PcmCourseInfoService {
                         headers),
                 config.getProperty("edt.api.customerInfoApiUrl"),
                 CustomerInfo.class);
-    }
-
-    /**
-     * Extract products from the given customer info.
-     *
-     * @param pcmCustomerInfo
-     */
-    private PcmProduct extractPCMProduct(CustomerInfo pcmCustomerInfo) {
-        PcmProduct pcmProduct = new PcmProduct();
-
-        Customer customer = pcmCustomerInfo.getResultData().getCustomer();
-        pcmProduct.setCustomersId(customer.getCustomersId());
-        pcmProduct.setCustomerToken(customer.getIdentityVerificationToken());
-
-        List<OrdersProduct> ordersProducts = customer.getCustomersOrders()
-                .stream()
-                .flatMap(customersOrder -> customersOrder.getOrdersProducts().stream())
-                .collect(toList());
-
-        pcmProduct.setOrdersProducts(ordersProducts);
-        return pcmProduct;
     }
 
     /**

@@ -1,12 +1,15 @@
 package com.simonschuster.pimsleur.unlimited.controllers;
 
 import com.simonschuster.pimsleur.unlimited.common.exception.ParamInvalidException;
+import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.VerifyReceiptBody;
+import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.VerifyReceiptDTO;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.IntentionToBuyBody;
 import com.simonschuster.pimsleur.unlimited.services.customer.IntentionToBuyService;
 import com.simonschuster.pimsleur.unlimited.services.course.PUCourseInfoService;
 import com.simonschuster.pimsleur.unlimited.services.course.PcmCourseInfoService;
 import com.simonschuster.pimsleur.unlimited.services.course.PcmFreeCourseService;
+import com.simonschuster.pimsleur.unlimited.services.customer.VerifyReceiptService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -25,6 +28,9 @@ public class ProductController {
 
     @Autowired
     private IntentionToBuyService intentionToBuyService;
+
+    @Autowired
+    private VerifyReceiptService verifyReceiptService;
 
     @ApiOperation(value = "Get product info by ISBN. Product info includes audio links, images, culture contents, etc.")
     @RequestMapping(value = "/productInfo", method = RequestMethod.GET)
@@ -48,6 +54,13 @@ public class ProductController {
                                @PathVariable("isbn") String isbn,
                                @RequestBody IntentionToBuyBody intentionToBuyBody) {
         intentionToBuyService.intentionToBuy(customerId, isbn, intentionToBuyBody.getStoreDomain());
+    }
+
+    @ApiOperation(value = "Call this api when getting pending in customer, verify does the pending product purchase success.")
+    @RequestMapping(value = "/account/{customerId}/receipt", method = RequestMethod.POST)
+    public VerifyReceiptDTO verifyReceipt(@PathVariable("customerId") String customerId,
+                                          @RequestBody VerifyReceiptBody verifyReceiptBody) {
+        return verifyReceiptService.verifyReceipt(verifyReceiptBody, customerId);
     }
 
     private void validateProductCode(@RequestParam(value = "productCode") String productCode) {

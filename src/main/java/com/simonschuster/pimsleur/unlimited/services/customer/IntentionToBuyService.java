@@ -17,11 +17,11 @@ public class IntentionToBuyService {
     private ApplicationConfiguration config;
 
     public void intentionToBuy(String customerId, String isbn, String storeDomain) {
-        String url = config.getProperty("edt.api.intentionToBuyService.url");
+        String url = config.getProperty("edt.api.intentionToBuy.url");
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
 
-        HttpEntity<String> entity = new HttpEntity<>(String.format(config.getProperty("edt.api.intentionToBuyService.parameters"),
+        HttpEntity<String> entity = new HttpEntity<>(String.format(config.getProperty("edt.api.intentionToBuy.parameters"),
                 isbn, storeDomain, customerId), headers);
         CodeOnlyResposeEDT intentionToBuyResponse = postToEdt(entity, url, CodeOnlyResposeEDT.class);
         if (!intentionToBuyResponse.getResultCode().equals(1)) {

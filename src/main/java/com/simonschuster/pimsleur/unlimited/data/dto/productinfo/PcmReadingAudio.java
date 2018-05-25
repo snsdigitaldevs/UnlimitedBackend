@@ -107,6 +107,8 @@ public class PcmReadingAudio {
 
         @JsonProperty("startPage")
         private String startPage;
+        @JsonProperty("endPage")
+        private String endPage;
         @JsonProperty("pageCount")
         private String pageCount;
         @JsonProperty("processingRules")
@@ -142,5 +144,12 @@ public class PcmReadingAudio {
             this.processingRules = processingRules;
         }
 
+        public String getEndPage() {
+            return endPage;
+        }
+
+        public void setEndPage(String endPage) {
+            this.endPage = endPage;
+        }
     }
 }

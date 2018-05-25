@@ -24,37 +24,30 @@ import static java.lang.Boolean.parseBoolean;
 
 @Service
 public class PcmReadingsService {
-
-
     @Autowired
     private ApplicationConfiguration config;
-
     @Autowired
     private PcmMediaItemUrlService pcmMediaItemUrlService;
 
     public void addReadingsToCourses(List<Course> courses, PcmProduct pcmProduct) {
         courses.forEach(course -> {
             Optional<OrdersProductsDownload> matchingDownload =
-                    findMatchingDownload(course, pcmProduct.getOrdersProducts());
-
-            matchingDownload.ifPresent(ordersProductsDownload ->
-                    course.setReadings(createReadingFrom(ordersProductsDownload, pcmProduct)));
+                    findMatchingDownload(pcmProduct.getOrdersProducts(), course.getProductCode());
+            matchingDownload.ifPresent(download ->
+                    course.setReadings(createPcmReadings(download, pcmProduct)));
         });
     }
 
-    private Optional<OrdersProductsDownload> findMatchingDownload(Course course, List<OrdersProduct> ordersProducts) {
+    private Optional<OrdersProductsDownload> findMatchingDownload(List<OrdersProduct> ordersProducts, String productCode) {
         return ordersProducts.stream()
                 .flatMap(ordersProduct -> ordersProduct.getOrdersProductsAttributes().stream())
-                .flatMap(ordersProductAttribute -> ordersProductAttribute.getOrdersProductsDownloads().stream())
-                .filter(ordersProductsDownload -> Objects.equals(ordersProductsDownload.getMediaSet().getProduct().getProductCode(), course.getProductCode()))
+                .flatMap(attribute -> attribute.getOrdersProductsDownloads().stream())
+                .filter(download -> Objects.equals(download.getMediaSet().getProduct().getProductCode(), productCode))
                 .findFirst();
     }
 
-    private PcmReadings createReadingFrom(OrdersProductsDownload download, PcmProduct pcmProduct) {
-        Stream<MediaItem> mediaItems = download.getMediaSet().getChildMediaSets().stream()
-                .filter(ChildMediaSet::isReading)
-                .flatMap(childMediaSet -> childMediaSet.getMediaItems().stream())
-                .filter(MediaItem::isReading);
+    private PcmReadings createPcmReadings(OrdersProductsDownload download, PcmProduct pcmProduct) {
+        Stream<MediaItem> mediaItems = findReadingMediaItems(download.getMediaSet().getChildMediaSets());
 
         boolean isBatched = parseBoolean(config.getProperty("toggle.fetch.mp3.url.batch"));
         if (isBatched) {
@@ -62,6 +55,13 @@ public class PcmReadingsService {
         } else {
             return getPcmReadingsOneByOne(download, pcmProduct, mediaItems);
         }
+    }
+
+    private Stream<MediaItem> findReadingMediaItems(List<ChildMediaSet> childMediaSets) {
+        return childMediaSets.stream()
+                .filter(ChildMediaSet::isReading)
+                .flatMap(childMediaSet -> childMediaSet.getMediaItems().stream())
+                .filter(MediaItem::isReading);
     }
 
     private PcmReadings getPcmReadingsOneByOne(OrdersProductsDownload download, PcmProduct pcmProduct,

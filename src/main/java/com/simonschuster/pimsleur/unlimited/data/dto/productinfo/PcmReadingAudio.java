@@ -26,17 +26,24 @@ public class PcmReadingAudio {
     private String audioLink;
     private int startPage;
     private int pageCount;
+    private Integer mediaItemId;
 
-    public PcmReadingAudio(int order, String title, String audioLink, int startPage, int pageCount) {
+    public PcmReadingAudio(int order, String title, String audioLink,
+                           int startPage, int pageCount, Integer mediaItemId) {
         this.order = order;
         this.title = title;
         this.audioLink = audioLink;
         this.startPage = startPage;
         this.pageCount = pageCount;
+        this.mediaItemId = mediaItemId;
     }
 
     public int getOrder() {
         return order;
+    }
+
+    public Integer getMediaItemId() {
+        return mediaItemId;
     }
 
     public String getTitle() {
@@ -55,10 +62,11 @@ public class PcmReadingAudio {
         return pageCount;
     }
 
-    public static PcmReadingAudio createFrom(String mediaItemTitle, String url, String mediaItemIdMetadata) {
+    public static PcmReadingAudio createFrom(String mediaItemTitle, String url,
+                                             String mediaItemIdMetadata, int mediaItemId) {
         ReadingMetaData readingMetaData = getReadingMetaData(mediaItemIdMetadata);
         return new PcmReadingAudio(titleToUnitNumber(mediaItemTitle), mediaItemTitle, url,
-                parseInt(readingMetaData.startPage), parseInt(readingMetaData.pageCount));
+                parseInt(readingMetaData.startPage), parseInt(readingMetaData.pageCount), mediaItemId);
     }
 
     private static ReadingMetaData getReadingMetaData(String mediaItemIdMetadata) {

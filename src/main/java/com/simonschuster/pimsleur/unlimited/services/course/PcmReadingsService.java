@@ -77,7 +77,8 @@ public class PcmReadingsService {
                 PcmReadingAudio readingAudio = createFrom(
                         mediaItem.getMediaItemTitle(),
                         mediaItemUrl.getResult_data().getUrl(),
-                        mediaItem.getMediaItemIdMetadata());
+                        mediaItem.getMediaItemIdMetadata(),
+                        mediaItem.getMediaItemId());
                 pcmReadings.getAudios().add(readingAudio);
             }
         });
@@ -99,7 +100,8 @@ public class PcmReadingsService {
                 PcmReadingAudio readingAudio = createFrom(
                         mediaItem.getMediaItemTitle(),
                         batchedMediaItemUrls.getUrlOfMediaItem(mediaItem.getMediaItemId()),
-                        mediaItem.getMediaItemIdMetadata());
+                        mediaItem.getMediaItemIdMetadata(),
+                        mediaItem.getMediaItemId());
                 pcmReadings.getAudios().add(readingAudio);
             }
         });

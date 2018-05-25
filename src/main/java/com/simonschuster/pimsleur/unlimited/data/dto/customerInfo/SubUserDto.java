@@ -11,6 +11,10 @@ public class SubUserDto {
         this.isRootSubUser = isRootSubUser;
     }
 
+    public SubUserDto() {
+
+    }
+
     public String getName() {
         return name;
     }

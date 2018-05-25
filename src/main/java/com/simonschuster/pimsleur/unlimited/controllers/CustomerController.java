@@ -22,11 +22,11 @@ public class CustomerController {
     public SubUserDto createUserInfo(@PathVariable String customerId,
                                      @ApiParam(value = "you can find identityVerificationToken in customerInfo api")
                                      @RequestParam String token,
-                                     @ApiParam(value = "name of the new sub user")
-                                     @RequestParam String name) {
-        CustomerInfo customerInfo = customerInfoService.create(customerId, name, token);
+                                     @ApiParam(value = "only need name of the new sub user")
+                                     @RequestBody SubUserDto userDto) {
+        CustomerInfo customerInfo = customerInfoService.create(customerId, userDto.getName(), token);
         checkResultCode(customerInfo);
-        return customerInfo.toDto(name);
+        return customerInfo.toDto(userDto.getName());
     }
 
     @ApiOperation(value = "Update sub user, you can only change sub user's name")
@@ -35,10 +35,11 @@ public class CustomerController {
                                      @PathVariable String appUserId,
                                      @ApiParam(value = "you can find identityVerificationToken in customerInfo api")
                                      @RequestParam String token,
-                                     @RequestParam String name) {
-        CustomerInfo customerInfo = customerInfoService.update(customerId, appUserId, name, token);
+                                     @ApiParam(value = "only need the new name of sub user")
+                                     @RequestBody SubUserDto userDto) {
+        CustomerInfo customerInfo = customerInfoService.update(customerId, appUserId, userDto.getName(), token);
         checkResultCode(customerInfo);
-        return customerInfo.toDto(name, appUserId);
+        return customerInfo.toDto(userDto.getName(), appUserId);
     }
 
     @ApiOperation(value = "Delete sub user")
@@ -47,10 +48,11 @@ public class CustomerController {
                                      @ApiParam(value = "you can find identityVerificationToken in customerInfo api")
                                      @RequestParam String token,
                                      @PathVariable String appUserId,
-                                     @RequestParam(defaultValue = "") String name) {
+                                     @ApiParam(value = "only need the name of sub user")
+                                     @RequestBody SubUserDto userDto) {
         CustomerInfo customerInfo = customerInfoService.delete(customerId, appUserId, token);
         checkResultCode(customerInfo);
-        return customerInfo.toDto(name, appUserId);
+        return customerInfo.toDto(userDto.getName(), appUserId);
     }
 
     private void checkResultCode(CustomerInfo customerInfo) {

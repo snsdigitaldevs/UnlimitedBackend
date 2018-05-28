@@ -34,6 +34,10 @@ public class AvailableProductsService {
 
 
     public AvailableProductsDto getAvailableProducts(String sub) {
+        if (sub == null) {
+            return new AvailableProductsDto(emptyList(), getFreeProducts(emptyList()));
+        }
+
         List<AvailableProductDto> purchasedProducts = purchasedPUAndPcmProducts(sub);
         List<AvailableProductDto> freeProducts = getFreeProducts(purchasedProducts);
 
@@ -49,7 +53,8 @@ public class AvailableProductsService {
         Stream<AvailableProductDto> filteredPcmProducts = purchasedPCMProducts.stream()
                 .filter((AvailableProductDto pcm) -> purchasedPuProducts.stream().noneMatch(pu -> pu.isSameLevelSameLang(pcm)));
 
-        return concat(purchasedPuProducts.stream(), filteredPcmProducts).collect(toList());
+        return concat(purchasedPuProducts.stream(), filteredPcmProducts)
+                .collect(toList());
     }
 
     private List<AvailableProductDto> getPurchasedProducts(CustomerInfo customerInfo,

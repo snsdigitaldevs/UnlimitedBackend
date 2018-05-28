@@ -1,11 +1,11 @@
 package com.simonschuster.pimsleur.unlimited.data.dto.freeLessons;
 
-public class FreeLessonDto {
+public class AvailableProductDto {
     private String languageName;
     private String productCode;
     private boolean isPuProduct = false;
 
-    public FreeLessonDto(String languageName, String productCode, boolean isPu) {
+    public AvailableProductDto(String languageName, String productCode, boolean isPu) {
         this.languageName = languageName;
         this.productCode = productCode;
         this.isPuProduct = isPu;

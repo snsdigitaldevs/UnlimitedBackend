@@ -1,6 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.services.freeLessons;
 
-import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.FreeLessonDto;
+import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.AvailableProductDto;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -26,8 +26,8 @@ public class PuFreeLessonsService {
             "9781442310223"//Japanese
     );
 
-    public List<FreeLessonDto> mergePuWithPcmFreeLessons(List<FreeLessonDto> pcmFreeLessons) {
-        Stream<FreeLessonDto> pcmFreeLessonsWithout9PuCourses =
+    public List<AvailableProductDto> mergePuWithPcmFreeLessons(List<AvailableProductDto> pcmFreeLessons) {
+        Stream<AvailableProductDto> pcmFreeLessonsWithout9PuCourses =
                 pcmFreeLessons.stream()
                         .filter(pcmFreeLesson -> pcmFreeLessonsToIgnore.stream()
                                 .noneMatch(ignored -> ignored.equals(pcmFreeLesson.getProductCode())));

@@ -1,7 +1,7 @@
 package com.simonschuster.pimsleur.unlimited.services.freeLessons;
 
 import com.github.dreamhead.moco.HttpServer;
-import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.FreeLessonDto;
+import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.AvailableProductDto;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,7 +31,7 @@ public class PcmFreeLessonsServiceTest {
                 .response(file("src/test/resources/pcmProducts.json"));
 
         running(server, () -> {
-            List<FreeLessonDto> pcmFreeLessons = pcmFreeLessonsService.getPcmFreeLessons();
+            List<AvailableProductDto> pcmFreeLessons = pcmFreeLessonsService.getPcmFreeLessons();
             assertThat(pcmFreeLessons.size(), is(57));
         });
     }

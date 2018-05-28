@@ -1,7 +1,7 @@
 package com.simonschuster.pimsleur.unlimited.services.freeLessons;
 
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
-import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.FreeLessonDto;
+import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.AvailableProductDto;
 import com.simonschuster.pimsleur.unlimited.data.edt.freeLessonsList.PCMProduct;
 import com.simonschuster.pimsleur.unlimited.data.edt.freeLessonsList.PCMProducts;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +23,7 @@ public class PcmFreeLessonsService {
     @Autowired
     private ApplicationConfiguration config;
 
-    public List<FreeLessonDto> getPcmFreeLessons() {
+    public List<AvailableProductDto> getPcmFreeLessons() {
         PCMProducts pcmProducts =
                 postToEdt(createPostBody(), config.getProperty("edt.api.pcmProductsApiUrl"), PCMProducts.class);
 

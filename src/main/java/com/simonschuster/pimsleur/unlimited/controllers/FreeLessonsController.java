@@ -1,6 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.controllers;
 
-import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.FreeLessonDto;
+import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.AvailableProductDto;
 import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.LearnerInfoBodyDTO;
 import com.simonschuster.pimsleur.unlimited.services.freeLessons.LearnerInfoService;
 import com.simonschuster.pimsleur.unlimited.services.freeLessons.PcmFreeLessonsService;
@@ -27,7 +27,7 @@ public class FreeLessonsController {
 
     @ApiOperation(value = "Get a list of all free lessons of both PU and PCM")
     @RequestMapping(value = "/freeLessons", method = RequestMethod.GET)
-    public List<FreeLessonDto> getFreeLessons() {
+    public List<AvailableProductDto> getFreeLessons() {
         return puFreeLessonsService
                 .mergePuWithPcmFreeLessons(pcmFreeLessonsService.getPcmFreeLessons());
     }

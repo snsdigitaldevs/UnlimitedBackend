@@ -4,7 +4,7 @@ package com.simonschuster.pimsleur.unlimited.data.edt.freeLessonsList;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.FreeLessonDto;
+import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.AvailableProductDto;
 
 import java.util.Objects;
 
@@ -274,8 +274,8 @@ public class PCMProduct {
         this.pRODUCTTYPE = pRODUCTTYPE;
     }
 
-    public FreeLessonDto pcmProductToDto() {
-        return new FreeLessonDto(
+    public AvailableProductDto pcmProductToDto() {
+        return new AvailableProductDto(
                 this.productsLanguageName,
                 this.isbn13.replaceAll("-", ""), false);
     }

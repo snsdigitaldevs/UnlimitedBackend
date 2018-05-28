@@ -1,9 +1,13 @@
 package com.simonschuster.pimsleur.unlimited.data.dto.customerInfo;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.ProductActivation;
 
 import java.util.List;
 
+import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL;
+
+@JsonInclude(NON_NULL)
 public class CustomerInfoDTO {
     private List<String> unlimitedProductCodes;
     private List<String> pcmProductCodes;
@@ -14,6 +18,9 @@ public class CustomerInfoDTO {
 
     private Long unlimitedLastSaveId;
     private Long pcmLastSaveId;
+
+    private boolean hasPendingIos;
+    private boolean hasPendingAndroid;
 
     private String customerId;
     private String registrantId;
@@ -89,5 +96,21 @@ public class CustomerInfoDTO {
 
     public void setRegistrantId(String registrantId) {
         this.registrantId = registrantId;
+    }
+
+    public boolean getHasPendingIos() {
+        return hasPendingIos;
+    }
+
+    public void setHasPendingIos(boolean hasPendingIos) {
+        this.hasPendingIos = hasPendingIos;
+    }
+
+    public boolean getHasPendingAndroid() {
+        return hasPendingAndroid;
+    }
+
+    public void setHasPendingAndroid(boolean hasPendingAndroid) {
+        this.hasPendingAndroid = hasPendingAndroid;
     }
 }

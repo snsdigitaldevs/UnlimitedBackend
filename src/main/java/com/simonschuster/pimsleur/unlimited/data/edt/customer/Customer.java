@@ -23,6 +23,9 @@ public class Customer {
     @JsonProperty("identityVerificationToken")
     private String identityVerificationToken;
 
+    @JsonProperty("pendingPurchasesFromStoreDomains")
+    private String pendingPurchasesFromStoreDomains;
+
     @JsonProperty("customersOrders")
     private List<CustomersOrder> customersOrders = null;
 
@@ -69,5 +72,21 @@ public class Customer {
                 .stream()
                 .flatMap(customersOrder -> customersOrder.getOrdersProducts().stream())
                 .collect(toList());
+    }
+
+    public String getPendingPurchasesFromStoreDomains() {
+        return pendingPurchasesFromStoreDomains;
+    }
+
+    public void setPendingPurchasesFromStoreDomains(String pendingPurchasesFromStoreDomains) {
+        this.pendingPurchasesFromStoreDomains = pendingPurchasesFromStoreDomains;
+    }
+
+    public boolean hasPendingAndroid() {
+        return this.pendingPurchasesFromStoreDomains != null && this.pendingPurchasesFromStoreDomains.contains("android");
+    }
+
+    public boolean hasPendingIos() {
+        return this.pendingPurchasesFromStoreDomains != null && this.pendingPurchasesFromStoreDomains.contains("ios");
     }
 }

@@ -63,21 +63,25 @@ public class AggregatedCustomerInfo {
     }
 
     public CustomerInfoDTO toDto() throws IOException {
+        Customer customer = unlimitedCustomerInfo.getResultData().getCustomer();
+
         CustomerInfoDTO customerInfoDTO = new CustomerInfoDTO(
-                this.unlimitedCustomerInfo.getResultData().getCustomer().getProductCodes(),
-                this.pcmCustomerInfo.getResultData().getCustomer().getProductCodes(),
-                this.unlimitedCustomerInfo.getResultData().getRegistrant().getProductActivations(),
+                customer.getProductCodes(),
+                pcmCustomerInfo.getResultData().getCustomer().getProductCodes(),
+                unlimitedCustomerInfo.getResultData().getRegistrant().getProductActivations(),
                 getProgressDTOS(),
-                this.unlimitedCustomerInfo.getResultData().getRegistrant().getSubUsers());
+                unlimitedCustomerInfo.getResultData().getRegistrant().getSubUsers());
         if (pcmSyncState.hasResultData()) {
             customerInfoDTO.setPcmLastSaveId(pcmSyncState.getResultData().getLastSaveId());
         }
         if (unlimitedSyncState.hasResultData()) {
             customerInfoDTO.setUnlimitedLastSaveId(unlimitedSyncState.getResultData().getLastSaveId());
         }
-        customerInfoDTO.setCustomerId(unlimitedCustomerInfo.getResultData().getCustomer().getCustomersId().toString());
+        customerInfoDTO.setCustomerId(customer.getCustomersId().toString());
+        customerInfoDTO.setHasPendingAndroid(customer.hasPendingAndroid());
+        customerInfoDTO.setHasPendingIos(customer.hasPendingIos());
         customerInfoDTO.setRegistrantId(unlimitedCustomerInfo.getResultData().getRegistrant().getRegistrantId().toString());
-        customerInfoDTO.setIdentityVerificationToken(unlimitedCustomerInfo.getResultData().getCustomer().getIdentityVerificationToken());
+        customerInfoDTO.setIdentityVerificationToken(customer.getIdentityVerificationToken());
         return customerInfoDTO;
     }
 

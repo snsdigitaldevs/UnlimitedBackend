@@ -1,28 +1,29 @@
 
 package com.simonschuster.pimsleur.unlimited.data.edt.customer;
 
-import java.util.List;
-
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.AvailableProductDto;
+
+import java.util.List;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "ordersProductsId",
-    "ordersId",
-    "productsId",
-    "productsModel",
-    "productsName",
-    "finalPrice",
-    "productsTax",
-    "productsTaxLocalizedDesc",
-    "productsTaxRate",
-    "productsQuantity",
-    "altProductSku",
-    "productsOtherDiscount",
-    "ordersProductsAttributes",
-    "product"
+        "ordersProductsId",
+        "ordersId",
+        "productsId",
+        "productsModel",
+        "productsName",
+        "finalPrice",
+        "productsTax",
+        "productsTaxLocalizedDesc",
+        "productsTaxRate",
+        "productsQuantity",
+        "altProductSku",
+        "productsOtherDiscount",
+        "ordersProductsAttributes",
+        "product"
 })
 public class OrdersProduct {
 
@@ -194,5 +195,4 @@ public class OrdersProduct {
     public void setProduct(Product product) {
         this.product = product;
     }
-
 }

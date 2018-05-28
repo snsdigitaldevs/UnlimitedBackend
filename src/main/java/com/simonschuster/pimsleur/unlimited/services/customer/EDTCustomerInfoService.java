@@ -24,9 +24,7 @@ public class EDTCustomerInfoService {
     private EDTSyncStateService syncStateService;
 
     public AggregatedCustomerInfo getCustomerInfos(String sub) {
-        CustomerInfo unlimitedCustInfo = getCustomerInfo(sub,
-                config.getApiParameter("unlimitedCustomerAction"),
-                config.getApiParameter("unlimitedDomain"));
+        CustomerInfo unlimitedCustInfo = getPUCustomerInfo(sub);
         CustomerInfo pcmCustInfo = getPcmCustomerInfo(sub);
 
         Customer customer = unlimitedCustInfo.getResultData().getCustomer();
@@ -36,10 +34,16 @@ public class EDTCustomerInfoService {
         return new AggregatedCustomerInfo(unlimitedCustInfo, pcmCustInfo, aggregatedSyncState);
     }
 
+    public CustomerInfo getPUCustomerInfo(String sub) {
+        return getCustomerInfo(sub,
+                config.getApiParameter("unlimitedCustomerAction"),
+                config.getApiParameter("unlimitedDomain"));
+    }
+
     public CustomerInfo getPcmCustomerInfo(String sub) {
         return getCustomerInfo(sub,
-                    config.getApiParameter("pcmCustomerAction"),
-                    config.getApiParameter("pcmDomain"));
+                config.getApiParameter("pcmCustomerAction"),
+                config.getApiParameter("pcmDomain"));
     }
 
     private CustomerInfo getCustomerInfo(String sub, String action, String domain) {

@@ -14,6 +14,7 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 @RestController
@@ -59,7 +60,8 @@ public class ProductController {
     @ApiOperation(value = "Call this api when getting pending in customer, verify does the pending product purchase success.")
     @RequestMapping(value = "/account/{customerId}/receipt", method = RequestMethod.POST)
     public VerifyReceiptDTO verifyReceipt(@PathVariable("customerId") String customerId,
-                                          @RequestBody VerifyReceiptBody verifyReceiptBody) {
+                                          @RequestBody VerifyReceiptBody verifyReceiptBody)
+            throws UnsupportedEncodingException {
         return verifyReceiptService.verifyReceipt(verifyReceiptBody, customerId);
     }
 

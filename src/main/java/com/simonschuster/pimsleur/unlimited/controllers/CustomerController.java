@@ -9,6 +9,8 @@ import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.UnsupportedEncodingException;
+
 import static com.simonschuster.pimsleur.unlimited.utils.EdtResponseCode.*;
 
 @RestController
@@ -23,7 +25,7 @@ public class CustomerController {
                                      @ApiParam(value = "you can find identityVerificationToken in customerInfo api")
                                      @RequestParam String token,
                                      @ApiParam(value = "only need name of the new sub user")
-                                     @RequestBody SubUserDto userDto) {
+                                     @RequestBody SubUserDto userDto) throws UnsupportedEncodingException {
         CustomerInfo customerInfo = customerInfoService.create(customerId, userDto.getName(), token);
         checkResultCode(customerInfo);
         return customerInfo.toDto(userDto.getName());
@@ -36,7 +38,7 @@ public class CustomerController {
                                      @ApiParam(value = "you can find identityVerificationToken in customerInfo api")
                                      @RequestParam String token,
                                      @ApiParam(value = "only need the new name of sub user")
-                                     @RequestBody SubUserDto userDto) {
+                                     @RequestBody SubUserDto userDto) throws UnsupportedEncodingException {
         CustomerInfo customerInfo = customerInfoService.update(customerId, appUserId, userDto.getName(), token);
         checkResultCode(customerInfo);
         return customerInfo.toDto(userDto.getName(), appUserId);

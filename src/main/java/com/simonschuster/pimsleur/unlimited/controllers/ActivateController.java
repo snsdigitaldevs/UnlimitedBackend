@@ -30,7 +30,7 @@ public class ActivateController {
             notes = "activate pu products given in the isbns array")
     @RequestMapping(value = "/registrant/{registrantId}/products/activation", method = RequestMethod.POST)
     public ActivateDTO activate(
-            @ApiParam(value = "you can find customer id in customerInfo api")
+            @ApiParam(value = "you can find registrant id in customerInfo api")
             @PathVariable("registrantId") String registrantId,
 
             @ApiParam(value = "you can find identityVerificationToken in customerInfo api")

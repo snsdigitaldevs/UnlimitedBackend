@@ -2,14 +2,13 @@ package com.simonschuster.pimsleur.unlimited.controllers;
 
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.AvailablePractices;
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.PracticesInUnit;
+import com.simonschuster.pimsleur.unlimited.services.practices.PcmAvailablePracticesService;
 import com.simonschuster.pimsleur.unlimited.services.practices.PracticesUrls;
 import com.simonschuster.pimsleur.unlimited.services.practices.PuAvailablePracticesService;
 import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
 import java.util.List;
@@ -34,6 +33,9 @@ public class AvailablePracticesController {
     @Autowired
     private PuAvailablePracticesService puAvailablePracticesService;
 
+    @Autowired
+    private PcmAvailablePracticesService pcmAvailablePracticesService;
+
     @ApiOperation(value = "PU practices of one course",
             notes = "PU may have reading, quick match(skill), speak easy, flash card.")
     @RequestMapping(value = "/puProduct/{productCode}/availablePractices", method = RequestMethod.GET)
@@ -48,6 +50,17 @@ public class AvailablePracticesController {
         List<PracticesInUnit> quickMatches = getQuickMatchesByCsvUrl(practicesUrls);
 
         return new AvailablePractices(mergeLists(readings, speakEasies, flashCards, quickMatches));
+    }
+
+    @ApiOperation(value = "PCM practices of one course",
+            notes = "PCM may have reading. The other 3 types of practices are only for PU")
+    @RequestMapping(value = "/pcmProduct/{productCode}/availablePractices", method = RequestMethod.GET)
+    public AvailablePractices getPcmAvailablePractices(
+            @PathVariable("productCode") String productCode,
+
+            @ApiParam(value = "sub should be from auth0 userinfo")
+            @RequestParam(value = "sub") String sub) {
+        return pcmAvailablePracticesService.getAvailablePractices(productCode, sub);
     }
 
     private List<PracticesInUnit> mergeLists(List<PracticesInUnit> readings,

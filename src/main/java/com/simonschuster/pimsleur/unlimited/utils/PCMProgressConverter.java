@@ -58,7 +58,7 @@ public class PCMProgressConverter {
                 progressDTO.setCompleted(true);
             }
             if (progress.getKey().contains(LAST_ACCESS_DATE)) {
-                progressDTO.setLastPlayedDate((Long) progress.getValue());
+                progressDTO.setLastPlayedDate(Long.parseLong(progress.getValue().toString()));
             }
             if (progress.getKey().contains(LAST_AUDIO_POS_MILLIS)) {
                 progressDTO.setLastPlayHeadLocation(Double.valueOf(progress.getValue().toString()));

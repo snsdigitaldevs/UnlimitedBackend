@@ -167,7 +167,7 @@ public class AggregatedProductInfo {
     }
 
     private String deleteQuotation(String origin) {
-        if (origin.startsWith("\"") && origin.endsWith("\"")) {
+        if (origin != null && origin.startsWith("\"") && origin.endsWith("\"")) {
             origin = origin.substring(1, origin.length() - 1);
         }
         return origin;

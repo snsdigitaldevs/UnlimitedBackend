@@ -74,6 +74,17 @@ public class AvailableProductDto {
     }
 
     public boolean isSameLang(AvailableProductDto that) {
-        return Objects.equals(this.languageName, that.languageName);
+        return Objects.equals(normalizeLangName(this.languageName), normalizeLangName(that.languageName));
+    }
+
+    private String normalizeLangName(String languageName) {
+        if (Objects.equals(languageName, "Chinese Mandarin")) {
+            // pcm lang name is CM, but pu lang name is MC
+            return "Mandarin Chinese";
+        }
+        if (Objects.equals(languageName, "Portuguese Brazilian")) {
+            return "Brazilian Portuguese";
+        }
+        return languageName;
     }
 }

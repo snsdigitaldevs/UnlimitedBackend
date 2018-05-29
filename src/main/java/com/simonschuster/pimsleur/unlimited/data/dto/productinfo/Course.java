@@ -1,6 +1,7 @@
 package com.simonschuster.pimsleur.unlimited.data.dto.productinfo;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.AvailableProductDto;
 
 import java.util.List;
 
@@ -79,5 +80,9 @@ public class Course {
 
     public void setReadings(PcmReadings readings) {
         this.readings = readings;
+    }
+
+    public AvailableProductDto toAvailableProductDto() {
+        return new AvailableProductDto(getLanguageName(), getCourseName(), getProductCode(), true, getLevel());
     }
 }

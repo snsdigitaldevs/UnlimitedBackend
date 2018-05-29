@@ -86,7 +86,7 @@ public class FlashCardUtil {
 
         return csvRecord.get(isbnKey).replace("-", "")
                 .concat("_")
-                .concat(csvRecord.get(courseKey).replace(" ", "_"))
+                .concat(csvRecord.get(courseKey).trim().replaceAll(" +", "_"))
                 .concat("_FC_U")
                 .concat(valueOf(unitNumber))
                 .concat("_")

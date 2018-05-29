@@ -42,8 +42,12 @@ public class FlashCardUtil {
                 .map(group -> {
                     String unitNumString = group.getKey();
                     if (isNumeric(unitNumString)) {
-                        return groupToUnit(unitNumString, transliterationKey, translationKey,
-                                LanguageKey, mp3FileKey, practicesUrls.getFlashCardAudioBaseUrl(), group);
+                        return groupToUnit(unitNumString,
+                                transliterationKey, translationKey,
+                                LanguageKey, mp3FileKey,
+                                practicesUrls.getFlashCardAudioBaseUrl(),
+                                practicesUrls.getFlashCardAudioBaseFileName(),
+                                group);
                     }
                     return null;
                 })
@@ -56,6 +60,7 @@ public class FlashCardUtil {
                                                String transliterationKey, String translationKey,
                                                String LanguageKey, String mp3FileKey,
                                                String flashCardAudioBaseUrl,
+                                               String flashCardAudioBaseFileName,
                                                Map.Entry<String, List<CSVRecord>> group) {
         int unitNumber = parseInt(unitNumString);
 
@@ -64,30 +69,29 @@ public class FlashCardUtil {
                         getFromCsv(transliterationKey, csvRecord),
                         getFromCsv(translationKey, csvRecord),
                         getFromCsv(LanguageKey, csvRecord),
-                        flashCardAudioBaseUrl + getMp3FileName(unitNumber, mp3FileKey, csvRecord)))
+                        flashCardAudioBaseUrl + getMp3FileName(unitNumber, mp3FileKey, flashCardAudioBaseFileName, csvRecord)))
                 .collect(toList());
 
         return createWithFlashCards(unitNumber, speakEasies);
     }
 
-    private static String getMp3FileName(int unitNumber, String mp3FileKey, CSVRecord csvRecord) {
+    private static String getMp3FileName(int unitNumber, String mp3FileKey,
+                                         String flashCardAudioBaseFileName, CSVRecord csvRecord) {
         String mp3FileName = getFromCsv(mp3FileKey, csvRecord);
         if (mp3FileName.length() != 0) {
             return mp3FileName;
         } else {
-            return constructMp3FileNameByPattern(unitNumber, csvRecord);
+            return constructMp3FileNameByPattern(unitNumber, flashCardAudioBaseFileName, csvRecord);
         }
     }
 
-    private static String constructMp3FileNameByPattern(int unitNumber, CSVRecord csvRecord) {
-        String isbnKey = findRealHeaderName(csvRecord, "ISBN-13");
-        String courseKey = findRealHeaderName(csvRecord, "Course");
+    private static String constructMp3FileNameByPattern(int unitNumber,
+                                                        String flashCardAudioBaseFileName,
+                                                        CSVRecord csvRecord) {
         String flashCardNumberKey = findRealHeaderName(csvRecord, "Flash Card #");
 
-        return csvRecord.get(isbnKey).replace("-", "")
-                .concat("_")
-                .concat(csvRecord.get(courseKey).trim().replaceAll(" +", "_"))
-                .concat("_FC_U")
+        return flashCardAudioBaseFileName
+                .concat("_U")
                 .concat(valueOf(unitNumber))
                 .concat("_")
                 .concat(csvRecord.get(flashCardNumberKey))

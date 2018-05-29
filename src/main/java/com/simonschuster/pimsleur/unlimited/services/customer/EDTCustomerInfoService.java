@@ -6,11 +6,14 @@ import com.simonschuster.pimsleur.unlimited.data.edt.customer.Customer;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.CustomerInfo;
 import com.simonschuster.pimsleur.unlimited.data.edt.syncState.AggregatedSyncState;
 import com.simonschuster.pimsleur.unlimited.services.syncState.EDTSyncStateService;
+import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
+
+import java.util.concurrent.CompletableFuture;
 
 import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEdt;
 
@@ -24,14 +27,18 @@ public class EDTCustomerInfoService {
     private EDTSyncStateService syncStateService;
 
     public AggregatedCustomerInfo getCustomerInfos(String sub) {
-        CustomerInfo unlimitedCustInfo = getPUCustomerInfo(sub);
-        CustomerInfo pcmCustInfo = getPcmCustomerInfo(sub);
-
-        Customer customer = unlimitedCustInfo.getResultData().getCustomer();
-        AggregatedSyncState aggregatedSyncState = syncStateService
-                .getSyncStates(customer.getCustomersId(), customer.getIdentityVerificationToken());
-
-        return new AggregatedCustomerInfo(unlimitedCustInfo, pcmCustInfo, aggregatedSyncState);
+        return CompletableFuture
+                .supplyAsync(() -> getPUCustomerInfo(sub))
+                .thenApplyAsync(unlimitedCustInfo -> {
+                    Customer customer = unlimitedCustInfo.getResultData().getCustomer();
+                    AggregatedSyncState aggregatedSyncState = syncStateService
+                            .getSyncStates(customer.getCustomersId(), customer.getIdentityVerificationToken());
+                    return Pair.of(unlimitedCustInfo, aggregatedSyncState);
+                })
+                .thenCombineAsync(CompletableFuture.supplyAsync(() -> getPcmCustomerInfo(sub)),
+                        ((pair, pcmCustInfo) ->
+                                new AggregatedCustomerInfo(pair.getLeft(), pcmCustInfo, pair.getRight())))
+                .join();
     }
 
     public CustomerInfo getPUCustomerInfo(String sub) {

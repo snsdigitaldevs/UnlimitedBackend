@@ -48,10 +48,10 @@ public class PUCourseInfoService {
     /**
      * Send reqeust to get Pimsleur Unlimited product info.
      *
-     * @param product_code
+     * @param productCode
      * @return
      */
-    private PuProductInfo getProductInfoFromPu(String product_code) {
+    private PuProductInfo getProductInfoFromPu(String productCode) {
         MappingJackson2HttpMessageConverter converter = new MappingJackson2HttpMessageConverter();
         converter.setSupportedMediaTypes(asList(TEXT_HTML, APPLICATION_JSON));
 
@@ -59,7 +59,7 @@ public class PUCourseInfoService {
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
 
         HttpEntity<String> requestEntity = new HttpEntity<>(
-                String.format(config.getApiParameter("unlimitedProductInfoDefaultParameters"), product_code),
+                String.format(config.getApiParameter("unlimitedProductInfoDefaultParameters"), productCode),
                 headers);
 
         RestTemplate restTemplate = new RestTemplate();

@@ -8,15 +8,17 @@ import java.util.List;
 import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_EMPTY;
 
 @JsonInclude(NON_EMPTY)
-public class PcmReadings {
+public class Readings {
+
+    // pdf only exists for pcm
     private String pdf;
-    private List<PcmReadingAudio> audios = new ArrayList<>();
+    private List<ReadingAudio> audios = new ArrayList<>();
 
     public String getPdf() {
         return pdf;
     }
 
-    public List<PcmReadingAudio> getAudios() {
+    public List<ReadingAudio> getAudios() {
         return audios;
     }
 
@@ -24,7 +26,7 @@ public class PcmReadings {
         this.pdf = pdf;
     }
 
-    public void setAudios(List<PcmReadingAudio> audios) {
+    public void setAudios(List<ReadingAudio> audios) {
         this.audios = audios;
     }
 }

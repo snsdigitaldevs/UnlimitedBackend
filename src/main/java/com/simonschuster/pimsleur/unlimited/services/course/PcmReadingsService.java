@@ -2,8 +2,8 @@ package com.simonschuster.pimsleur.unlimited.services.course;
 
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
-import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.PcmReadingAudio;
-import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.PcmReadings;
+import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.ReadingAudio;
+import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Readings;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.ChildMediaSet;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.MediaItem;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.OrdersProduct;
@@ -19,7 +19,7 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Stream;
 
-import static com.simonschuster.pimsleur.unlimited.data.dto.productinfo.PcmReadingAudio.createFrom;
+import static com.simonschuster.pimsleur.unlimited.data.dto.productinfo.ReadingAudio.createFrom;
 import static java.lang.Boolean.parseBoolean;
 
 @Service
@@ -46,7 +46,7 @@ public class PcmReadingsService {
                 .findFirst();
     }
 
-    private PcmReadings createPcmReadings(OrdersProductsDownload download, PcmProduct pcmProduct) {
+    private Readings createPcmReadings(OrdersProductsDownload download, PcmProduct pcmProduct) {
         Stream<MediaItem> mediaItems = findReadingMediaItems(download.getMediaSet().getChildMediaSets());
 
         boolean isBatched = parseBoolean(config.getProperty("toggle.fetch.mp3.url.batch"));
@@ -64,30 +64,30 @@ public class PcmReadingsService {
                 .filter(MediaItem::isReading);
     }
 
-    private PcmReadings getPcmReadingsOneByOne(OrdersProductsDownload download, PcmProduct pcmProduct,
-                                               Stream<MediaItem> mediaItems) {
-        PcmReadings pcmReadings = new PcmReadings();
+    private Readings getPcmReadingsOneByOne(OrdersProductsDownload download, PcmProduct pcmProduct,
+                                            Stream<MediaItem> mediaItems) {
+        Readings readings = new Readings();
 
         mediaItems.forEach(mediaItem -> {
             MediaItemUrl mediaItemUrl = pcmMediaItemUrlService.getMediaItemUrl(mediaItem.getMediaItemId(),
                     pcmProduct.getCustomerToken(), download.getEntitlementToken(), pcmProduct.getCustomersId());
             if (mediaItem.isPdf()) {
-                pcmReadings.setPdf(mediaItemUrl.getResult_data().getUrl());
+                readings.setPdf(mediaItemUrl.getResult_data().getUrl());
             } else {
-                PcmReadingAudio readingAudio = createFrom(
+                ReadingAudio readingAudio = createFrom(
                         mediaItem.getMediaItemTitle(),
                         mediaItemUrl.getResult_data().getUrl(),
                         mediaItem.getMediaItemIdMetadata(),
                         mediaItem.getMediaItemId());
-                pcmReadings.getAudios().add(readingAudio);
+                readings.getAudios().add(readingAudio);
             }
         });
 
-        return pcmReadings;
+        return readings;
     }
 
-    private PcmReadings batchGetPcmReadings(OrdersProductsDownload download, PcmProduct pcmProduct, Stream<MediaItem> mediaItems) {
-        PcmReadings pcmReadings = new PcmReadings();
+    private Readings batchGetPcmReadings(OrdersProductsDownload download, PcmProduct pcmProduct, Stream<MediaItem> mediaItems) {
+        Readings readings = new Readings();
 
         BatchedMediaItemUrls batchedMediaItemUrls = pcmMediaItemUrlService.getBatchedMediaItemUrls(
                 download.getMediaSetId(), pcmProduct.getCustomerToken(),
@@ -95,17 +95,17 @@ public class PcmReadingsService {
 
         mediaItems.forEach(mediaItem -> {
             if (mediaItem.isPdf()) {
-                pcmReadings.setPdf(batchedMediaItemUrls.getUrlOfMediaItem(mediaItem.getMediaItemId()));
+                readings.setPdf(batchedMediaItemUrls.getUrlOfMediaItem(mediaItem.getMediaItemId()));
             } else {
-                PcmReadingAudio readingAudio = createFrom(
+                ReadingAudio readingAudio = createFrom(
                         mediaItem.getMediaItemTitle(),
                         batchedMediaItemUrls.getUrlOfMediaItem(mediaItem.getMediaItemId()),
                         mediaItem.getMediaItemIdMetadata(),
                         mediaItem.getMediaItemId());
-                pcmReadings.getAudios().add(readingAudio);
+                readings.getAudios().add(readingAudio);
             }
         });
 
-        return pcmReadings;
+        return readings;
     }
 }

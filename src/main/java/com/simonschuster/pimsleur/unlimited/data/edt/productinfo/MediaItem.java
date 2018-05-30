@@ -331,4 +331,8 @@ public class MediaItem {
     public void setMediaItemRefId(String mediaItemRefId) {
         this.mediaItemRefId = mediaItemRefId;
     }
+
+    boolean isReadingMp3() {
+        return getFilename().contains("_Reading.mp3");
+    }
 }

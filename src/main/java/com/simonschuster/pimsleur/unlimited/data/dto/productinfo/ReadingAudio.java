@@ -15,21 +15,21 @@ import static java.lang.Integer.parseInt;
 import static org.apache.commons.lang3.StringUtils.isNumeric;
 
 @JsonInclude(NON_EMPTY)
-public class PcmReadingAudio {
+public class ReadingAudio {
     private static ObjectMapper mapper = new ObjectMapper();
 
     private static final String READING_LESSON = "Reading Lesson";
     public static final String CULTURE_NOTES = "Culture Notes";
 
-    private int order;
+    private Integer order;
     private String title;
     private String audioLink;
-    private int startPage;
-    private int pageCount;
+    private Integer startPage;
+    private Integer pageCount;
     private Integer mediaItemId;
 
-    public PcmReadingAudio(int order, String title, String audioLink,
-                           int startPage, int pageCount, Integer mediaItemId) {
+    private ReadingAudio(Integer order, String title, String audioLink,
+                         Integer startPage, Integer pageCount, Integer mediaItemId) {
         this.order = order;
         this.title = title;
         this.audioLink = audioLink;
@@ -38,7 +38,12 @@ public class PcmReadingAudio {
         this.mediaItemId = mediaItemId;
     }
 
-    public int getOrder() {
+    public ReadingAudio(Integer order, String audioLink) {
+        this.order = order;
+        this.audioLink = audioLink;
+    }
+
+    public Integer getOrder() {
         return order;
     }
 
@@ -54,18 +59,18 @@ public class PcmReadingAudio {
         return audioLink;
     }
 
-    public int getStartPage() {
+    public Integer getStartPage() {
         return startPage;
     }
 
-    public int getPageCount() {
+    public Integer getPageCount() {
         return pageCount;
     }
 
-    public static PcmReadingAudio createFrom(String mediaItemTitle, String url,
-                                             String mediaItemIdMetadata, int mediaItemId) {
+    public static ReadingAudio createFrom(String mediaItemTitle, String url,
+                                          String mediaItemIdMetadata, Integer mediaItemId) {
         ReadingMetaData readingMetaData = getReadingMetaData(mediaItemIdMetadata);
-        return new PcmReadingAudio(titleToUnitNumber(mediaItemTitle), mediaItemTitle, url,
+        return new ReadingAudio(titleToUnitNumber(mediaItemTitle), mediaItemTitle, url,
                 parseInt(readingMetaData.startPage), parseInt(readingMetaData.pageCount), mediaItemId);
     }
 

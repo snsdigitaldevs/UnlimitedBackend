@@ -1,12 +1,10 @@
 package com.simonschuster.pimsleur.unlimited.data.edt.customer;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.PcmReadingAudio;
-import com.simonschuster.pimsleur.unlimited.services.course.PcmReadingsService;
 
 import java.util.List;
 
-import static com.simonschuster.pimsleur.unlimited.data.dto.productinfo.PcmReadingAudio.CULTURE_NOTES;
+import static com.simonschuster.pimsleur.unlimited.data.dto.productinfo.ReadingAudio.CULTURE_NOTES;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ChildMediaSet {

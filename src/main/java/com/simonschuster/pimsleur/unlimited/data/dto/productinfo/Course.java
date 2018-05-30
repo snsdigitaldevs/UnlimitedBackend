@@ -16,7 +16,7 @@ public class Course {
     private String courseName;
     private Boolean isOneOfNineBig;
     private Boolean isFree;
-    private PcmReadings readings;
+    private Readings readings; // pdf and mp3 for pcm OR mp3 for pu
 
     public String getLanguageName() {
         return languageName;
@@ -74,11 +74,11 @@ public class Course {
         isFree = free;
     }
 
-    public PcmReadings getReadings() {
+    public Readings getReadings() {
         return readings;
     }
 
-    public void setReadings(PcmReadings readings) {
+    public void setReadings(Readings readings) {
         this.readings = readings;
     }
 

@@ -195,4 +195,9 @@ public class OrdersProduct {
     public void setProduct(Product product) {
         this.product = product;
     }
+
+    boolean isHowToLearnForeignLang() {
+        // How to Learn a Foreign Language is a pcm course that you can get for free
+        return getProduct().getProductsLevel() != 0;
+    }
 }

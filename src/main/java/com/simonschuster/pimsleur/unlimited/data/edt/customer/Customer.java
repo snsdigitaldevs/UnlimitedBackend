@@ -62,6 +62,8 @@ public class Customer {
     public List<String> getProductCodes() {
         return this.getCustomersOrders().stream()
                 .flatMap(order -> order.getOrdersProducts().stream()
+                        //.filter(OrdersProduct::isHowToLearnForeignLang)
+                        // maybe we will ignore "how to learn", but not yet
                         .map(product -> product.getProduct().getProductCode()))
                 .collect(toList());
 

@@ -63,10 +63,10 @@ public class AggregatedCustomerInfo {
     }
 
     public CustomerInfoDTO toDto() throws IOException {
-        Customer customer = unlimitedCustomerInfo.getResultData().getCustomer();
+        Customer puCustomer = unlimitedCustomerInfo.getResultData().getCustomer();
 
         CustomerInfoDTO customerInfoDTO = new CustomerInfoDTO(
-                customer.getProductCodes(),
+                puCustomer.getProductCodes(),
                 pcmCustomerInfo.getResultData().getCustomer().getProductCodes(),
                 unlimitedCustomerInfo.getResultData().getRegistrant().getProductActivations(),
                 getProgressDTOS(),
@@ -77,11 +77,11 @@ public class AggregatedCustomerInfo {
         if (unlimitedSyncState.hasResultData()) {
             customerInfoDTO.setUnlimitedLastSaveId(unlimitedSyncState.getResultData().getLastSaveId());
         }
-        customerInfoDTO.setCustomerId(customer.getCustomersId().toString());
-        customerInfoDTO.setHasPendingAndroid(customer.hasPendingAndroid());
-        customerInfoDTO.setHasPendingIos(customer.hasPendingIos());
+        customerInfoDTO.setCustomerId(puCustomer.getCustomersId().toString());
+        customerInfoDTO.setHasPendingAndroid(puCustomer.hasPendingAndroid());
+        customerInfoDTO.setHasPendingIos(puCustomer.hasPendingIos());
         customerInfoDTO.setRegistrantId(unlimitedCustomerInfo.getResultData().getRegistrant().getRegistrantId().toString());
-        customerInfoDTO.setIdentityVerificationToken(customer.getIdentityVerificationToken());
+        customerInfoDTO.setIdentityVerificationToken(puCustomer.getIdentityVerificationToken());
         return customerInfoDTO;
     }
 

@@ -145,7 +145,7 @@ public class QuickMatchUtil {
         quickMatch.setQz(qz);
 
         String transliteration = record.isSet("Transliteration") ? record.get("Transliteration") : "";
-        String snippetName = record.isSet("Snippet Name") ? record.get("Snippet Name") : getSnippetName(record, headerMap);
+        String snippetName = getSnippetName(record, headerMap);
 
         QuickMatchItem quickMatchItem = new QuickMatchItem(record.get("Cue"),
                 transliteration, quickMatchAudioBaseUrl + snippetName);
@@ -159,16 +159,30 @@ public class QuickMatchUtil {
     }
 
     private static String getSnippetName(CSVRecord record, Map<String, String> headerMap) {
-        return record.get(headerMap.get("ISBN")).replace("-", "")
-                .concat("_")
-                .concat(record.get("Course").replace(" ", "_"))
-                .concat("_")
-                .concat("QZ")
-                .concat("_U")
-                .concat(String.valueOf(Integer.parseInt(record.get("Unit Num"))))
-                .concat("_")
-                .concat(record.get(headerMap.get("QZ #")))
-                .concat(".mp3");
+        String snippetNameKey = getSnippetNameKey(record);
+        if (record.isSet(snippetNameKey)) {
+            return record.get(snippetNameKey);
+        } else {
+            return record.get(headerMap.get("ISBN")).replace("-", "")
+                    .concat("_")
+                    .concat(record.get("Course").replace(" ", "_"))
+                    .concat("_")
+                    .concat("QZ")
+                    .concat("_U")
+                    .concat(String.valueOf(Integer.parseInt(record.get("Unit Num"))))
+                    .concat("_")
+                    .concat(record.get(headerMap.get("QZ #")))
+                    .concat(".mp3");
+        }
+    }
+
+    private static String getSnippetNameKey(CSVRecord record) {
+        String snippetNameKey = "Snippet Name";
+        String lowerCaseKey = "Snippet name";
+        if (record.isSet(lowerCaseKey)) {
+            snippetNameKey = lowerCaseKey;
+        }
+        return snippetNameKey;
     }
 
     private static String getHeaderInCsv(CSVParser csvRecords, String originHeader) {

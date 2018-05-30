@@ -3,7 +3,6 @@ package com.simonschuster.pimsleur.unlimited.services.practices;
 import java.io.UnsupportedEncodingException;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.net.URLEncoder;
 import java.nio.file.Paths;
 
 import static java.net.URLEncoder.encode;
@@ -71,8 +70,12 @@ public class PracticesUrls {
     }
 
     public String getFlashCardAudioBaseFileName() {
+        return getCsvFileName(this.flashCardUrl);
+    }
+
+    private String getCsvFileName(String url) {
         try {
-            String csvFileName = Paths.get(new URI(encode(this.flashCardUrl, "UTF-8"))
+            String csvFileName = Paths.get(new URI(encode(url, "UTF-8"))
                     .getPath()).getFileName().toString();
             return csvFileName.split(".csv")[0];
         } catch (URISyntaxException | UnsupportedEncodingException e) {

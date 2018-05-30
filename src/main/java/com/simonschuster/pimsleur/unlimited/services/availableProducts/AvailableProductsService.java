@@ -70,6 +70,7 @@ public class AvailableProductsService {
                     .map(OrdersProduct::getProduct)
                     .flatMap(product -> puCourseInfoService.getPuProductInfo(product.getProductCode()).toDto().stream())
                     .map(Course::toAvailableProductDto)
+                    .filter(distinctByKey(p -> p.getLanguageName() + p.getLevel())) // remove duplicate
                     .collect(toList());
         } else {
             return emptyList();

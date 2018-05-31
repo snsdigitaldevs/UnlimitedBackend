@@ -98,6 +98,11 @@ public class MediaItem {
         return mediaItemFilename;
     }
 
+    public String getMediaItemFileNameWithoutExtension() {
+        // the .x is for pcm subscription
+        return mediaItemFilename.split(".x")[0];
+    }
+
     public void setMediaItemFilename(String mediaItemFilename) {
         this.mediaItemFilename = mediaItemFilename;
     }

@@ -95,11 +95,11 @@ public class PcmReadingsService {
 
         mediaItems.forEach(mediaItem -> {
             if (mediaItem.isPdf()) {
-                readings.setPdf(batchedMediaItemUrls.getUrlOfMediaItem(mediaItem.getMediaItemId()));
+                readings.setPdf(batchedMediaItemUrls.getUrlOfMediaItem(mediaItem.getMediaItemFileNameWithoutExtension()));
             } else {
                 ReadingAudio readingAudio = createFrom(
                         mediaItem.getMediaItemTitle(),
-                        batchedMediaItemUrls.getUrlOfMediaItem(mediaItem.getMediaItemId()),
+                        batchedMediaItemUrls.getUrlOfMediaItem(mediaItem.getMediaItemFileNameWithoutExtension()),
                         mediaItem.getMediaItemIdMetadata(),
                         mediaItem.getMediaItemId());
                 readings.getAudios().add(readingAudio);

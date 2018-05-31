@@ -27,9 +27,9 @@ public class BatchedMediaItemUrls {
         this.result_code = result_code;
     }
 
-    public String getUrlOfMediaItem(int mediaItemId) {
+    public String getUrlOfMediaItem(String fileName) {
         Optional<ResultDataBean.UrlsBean> match = this.getResult_data().getUrls().stream()
-                .filter(x -> x.getMediaItemId() == mediaItemId)
+                .filter(x -> x.getUrl().contains(fileName))
                 .findFirst();
         if (match.isPresent()) {
             return match.get().getUrl();

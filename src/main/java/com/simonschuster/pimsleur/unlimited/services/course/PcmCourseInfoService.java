@@ -8,7 +8,10 @@ import com.simonschuster.pimsleur.unlimited.data.edt.customer.Customer;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.MediaItem;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.OrdersProduct;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.OrdersProductAttribute;
-import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.*;
+import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.BatchedMediaItemUrls;
+import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.MediaItemUrl;
+import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.PcmAudioReqParams;
+import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.PcmProduct;
 import com.simonschuster.pimsleur.unlimited.services.customer.EDTCustomerInfoService;
 import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.apache.commons.lang3.tuple.Pair;
@@ -152,15 +155,8 @@ public class PcmCourseInfoService {
             String title = entry.getKey();
             Integer itemId = entry.getValue();
 
-            List<BatchedMediaItemUrls.ResultDataBean.UrlsBean> urls = batchedMediaItemUrls.getResult_data().getUrls();
-
-            // find the audio url
-            for (BatchedMediaItemUrls.ResultDataBean.UrlsBean url : urls) {
-                if (url.getMediaItemId() == itemId) {
-                    lesson.setAudioLink(url.getUrl());
-                    break;
-                }
-            }
+            String urlOfMediaItem = batchedMediaItemUrls.getUrlOfMediaItem(title.replace(" ", "_"));
+            lesson.setAudioLink(urlOfMediaItem);
 
             lesson.setName(title);
             lesson.setLevel(Integer.parseInt(level));

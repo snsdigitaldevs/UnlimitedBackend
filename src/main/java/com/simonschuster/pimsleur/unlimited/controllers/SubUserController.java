@@ -14,7 +14,7 @@ import java.io.UnsupportedEncodingException;
 import static com.simonschuster.pimsleur.unlimited.utils.EdtResponseCode.*;
 
 @RestController
-public class CustomerController {
+public class SubUserController {
 
     @Autowired
     CustomerInfoService customerInfoService;

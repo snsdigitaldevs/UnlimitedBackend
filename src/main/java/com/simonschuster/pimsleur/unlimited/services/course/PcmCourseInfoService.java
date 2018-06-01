@@ -155,7 +155,8 @@ public class PcmCourseInfoService {
             String title = entry.getKey();
             Integer itemId = entry.getValue();
 
-            String urlOfMediaItem = batchedMediaItemUrls.getUrlOfMediaItem(title.replace(" ", "_"));
+            String urlOfMediaItem = batchedMediaItemUrls.getUrlOfMediaItem(
+                    title.replace("Lesson", "Unit").replace(" ", "_"));
             lesson.setAudioLink(urlOfMediaItem);
 
             lesson.setName(title);

@@ -4,6 +4,7 @@ import com.simonschuster.pimsleur.unlimited.data.dto.practices.PracticesInUnit;
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.SpeakEasyOrReading;
 import org.apache.commons.csv.CSVRecord;
 import org.joda.time.format.DateTimeFormatter;
+import org.jsoup.Jsoup;
 
 import java.io.IOException;
 import java.util.List;
@@ -78,6 +79,7 @@ public class SpeakEasyAndReadingUtil {
 
         final int[] counter = {0};
 
+
         List<SpeakEasyOrReading> speakEasies = group.getValue().stream()
                 .map(csvRecord -> new SpeakEasyOrReading(
                         getMilliSeconds(startKey, csvRecord),
@@ -86,7 +88,7 @@ public class SpeakEasyAndReadingUtil {
                         getFromCsv(textKey, csvRecord),
                         getFromCsv(nativeTextKey, csvRecord),
                         getFromCsv(transliterationKey, csvRecord),
-                        getFromCsv(helpTextKey, csvRecord),
+                        Jsoup.parse(getFromCsv(helpTextKey, csvRecord)).text(),
                         getOrder(orderKey, counter, csvRecord)))
                 .collect(toList());
 

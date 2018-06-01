@@ -196,8 +196,8 @@ public class OrdersProduct {
         this.product = product;
     }
 
-    boolean isHowToLearnForeignLang() {
+    public boolean isNotHowToLearnForeignLang() {
         // How to Learn a Foreign Language is a pcm course that you can get for free
-        return getProduct().getProductsLevel() == 0;
+        return getProduct().getProductsLevel() != 0;
     }
 }

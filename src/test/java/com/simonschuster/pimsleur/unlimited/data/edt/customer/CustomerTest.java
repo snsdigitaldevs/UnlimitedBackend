@@ -32,6 +32,7 @@ public class CustomerTest {
         CustomersOrder customersOrder = new CustomersOrder();
         OrdersProduct ordersProduct = new OrdersProduct();
         Product product = new Product();
+        product.setProductsLevel(2);
         product.setIsbn13(productsModel);
         ordersProduct.setProduct(product);
         customersOrder.setOrdersProducts(asList(ordersProduct));

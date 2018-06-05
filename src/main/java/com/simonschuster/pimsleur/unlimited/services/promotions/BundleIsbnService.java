@@ -21,12 +21,13 @@ public class BundleIsbnService {
 
     static {
         try {
+            //only do this once per runtime
             bundleToIndividuals = initBundleToIndividuals();
         } catch (IOException ignored) {
         }
     }
 
-    // this will tell you which bundle isbn includes the given isbn
+    // this will tell you which bundle isbn includes the given isbn in the parameter
     public List<String> getBundleIsbnsOf(String isbn) {
         return bundleToIndividuals.stream()
                 .filter(bundle -> bundle.getChildIsbns().contains(isbn))

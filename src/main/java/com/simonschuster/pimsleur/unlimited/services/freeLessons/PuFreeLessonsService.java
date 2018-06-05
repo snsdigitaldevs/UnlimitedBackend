@@ -8,6 +8,7 @@ import java.util.stream.Stream;
 
 import static com.simonschuster.pimsleur.unlimited.utils.HardCodedProductsUtil.PU_FREE_LESSONS;
 import static java.util.Arrays.asList;
+import static java.util.Comparator.comparing;
 import static java.util.stream.Collectors.toList;
 import static java.util.stream.Stream.concat;
 
@@ -33,6 +34,7 @@ public class PuFreeLessonsService {
                                 .noneMatch(ignored -> ignored.equals(pcmFreeLesson.getProductCode())));
 
         return concat(pcmFreeLessonsWithout9PuCourses, PU_FREE_LESSONS.stream())
+                .sorted(comparing(AvailableProductDto::getLanguageName))
                 .collect(toList());
     }
 }

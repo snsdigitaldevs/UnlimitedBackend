@@ -88,7 +88,7 @@ public class AvailableProductsService {
                     .map(download -> download.getMediaSet().getProduct())
                     .map(Product::toPCMAvailableProductDto)
                     .filter(productDto -> productDto.getLevel() != 0) // remove "how to learn"
-                    .filter(distinctByKey(p -> p.getLanguageName() + p.getLevel())) // remove duplicate
+                    .filter(distinctByKey(p -> p.getLanguageName() + p.getLevel() + p.getProductCode())) // remove duplicate
                     .collect(toList());
         } else {
             return emptyList();

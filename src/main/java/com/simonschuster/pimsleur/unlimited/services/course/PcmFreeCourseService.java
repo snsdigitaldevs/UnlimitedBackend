@@ -3,6 +3,7 @@ package com.simonschuster.pimsleur.unlimited.services.course;
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Lesson;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.MediaItem;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.pcmFreeCourse.PcmFreeCourseResponse;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.pcmFreeCourse.PcmFreeCourseResultData;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -76,7 +77,7 @@ public class PcmFreeCourseService {
     private List<Lesson> createLessons(PcmFreeCourseResultData resultData) {
         return resultData.getMediaSet().getChildMediaSets().stream()
                 .flatMap(mediaSet -> mediaSet.getMediaItems().stream())
-                .filter(mediaItem -> mediaItem.getMediaItemFilename().contains(".mp3") && mediaItem.getMediaItemFilename().contains("Unit"))
+                .filter(MediaItem::isLesson)
                 .map(mediaItem -> {
                     Lesson lesson = new Lesson();
                     lesson.setName(mediaItem.getMediaItemTitle());

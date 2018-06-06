@@ -3,17 +3,14 @@ package com.simonschuster.pimsleur.unlimited.services.promotions;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.simonschuster.pimsleur.unlimited.UnlimitedApplication;
-import com.simonschuster.pimsleur.unlimited.data.dto.promotions.BundleInfo;
-import com.simonschuster.pimsleur.unlimited.data.dto.promotions.BundleToIndividuals;
 import com.simonschuster.pimsleur.unlimited.data.dto.promotions.PurchaseMapping;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
-import java.util.Optional;
 
-import static java.util.stream.Collectors.toList;
+import static java.util.Collections.singletonList;
 
 @Service
 public class PurchaseMappingService {
@@ -28,11 +25,20 @@ public class PurchaseMappingService {
         }
     }
 
-    public PurchaseMapping getPurchaseMappingFor(String isbn) {
+    public PurchaseMapping findPurchaseMappingFor(String isbn) {
         return purchaseMappings.stream()
                 .filter(x -> x.matches(isbn))
                 .findFirst()
                 .orElse(null);
+    }
+
+    public List<String> getAllFormatsOf(String isbn) {
+        PurchaseMapping mapping = findPurchaseMappingFor(isbn);
+        if (mapping == null) {
+            return singletonList(isbn);
+        } else {
+            return mapping.getAllFormats();
+        }
     }
 
     private static List<PurchaseMapping> readJsonFile() throws IOException {

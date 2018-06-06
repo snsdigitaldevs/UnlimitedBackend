@@ -9,7 +9,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.nullValue;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -21,23 +21,23 @@ public class PurchaseMappingServiceTest {
     @Test
     public void shouldGetPurchaseMappingForIsbn() {
         // isbn match
-        PurchaseMapping purchaseMapping = purchaseMappingService.getPurchaseMappingFor("9781508231431");
+        PurchaseMapping purchaseMapping = purchaseMappingService.findPurchaseMappingFor("9781508231431");
         assertThat(purchaseMapping.getISBN(), is("9781508231431"));
 
         // other format one match
-        purchaseMapping = purchaseMappingService.getPurchaseMappingFor("9781508275589");
+        purchaseMapping = purchaseMappingService.findPurchaseMappingFor("9781508275589");
         assertThat(purchaseMapping.getISBN(), is("9781442394896"));
 
         // other format two match
-        purchaseMapping = purchaseMappingService.getPurchaseMappingFor("9781508275688");
+        purchaseMapping = purchaseMappingService.findPurchaseMappingFor("9781508275688");
         assertThat(purchaseMapping.getISBN(), is("9781442394896"));
 
         // other format three match
-        purchaseMapping = purchaseMappingService.getPurchaseMappingFor("9781442383265");
+        purchaseMapping = purchaseMappingService.findPurchaseMappingFor("9781442383265");
         assertThat(purchaseMapping.getISBN(), is("9781508231424"));
 
         // no match
-        purchaseMapping = purchaseMappingService.getPurchaseMappingFor("123");
-        assertThat(purchaseMapping, is(nullValue()));
+        purchaseMapping = purchaseMappingService.findPurchaseMappingFor("123");
+        assertThat(purchaseMapping, nullValue());
     }
 }

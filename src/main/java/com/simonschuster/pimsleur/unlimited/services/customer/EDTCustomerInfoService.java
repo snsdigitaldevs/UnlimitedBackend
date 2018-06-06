@@ -13,9 +13,12 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
+import java.util.stream.Stream;
 
 import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEdt;
+import static java.util.stream.Collectors.toList;
 
 @Service
 public class EDTCustomerInfoService {
@@ -51,6 +54,13 @@ public class EDTCustomerInfoService {
         return getCustomerInfo(sub,
                 config.getApiParameter("pcmCustomerAction"),
                 config.getApiParameter("pcmDomain"));
+    }
+
+    public List<String> getBoughtIsbns(String sub) {
+        return Stream.concat(
+                getPUCustomerInfo(sub).getResultData().getCustomer().getProductCodes().stream(),
+                getPcmCustomerInfo(sub).getResultData().getCustomer().getProductCodes().stream())
+                .collect(toList());
     }
 
     private CustomerInfo getCustomerInfo(String sub, String action, String domain) {

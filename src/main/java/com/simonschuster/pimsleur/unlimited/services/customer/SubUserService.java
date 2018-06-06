@@ -1,7 +1,7 @@
 package com.simonschuster.pimsleur.unlimited.services.customer;
 
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
-import com.simonschuster.pimsleur.unlimited.data.edt.customerinfo.CustomerInfo;
+import com.simonschuster.pimsleur.unlimited.data.edt.customerinfo.SubUserInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -15,39 +15,39 @@ import static java.lang.String.format;
 import static java.net.URLEncoder.encode;
 
 @Component
-public class CustomerInfoService {
+public class SubUserService {
 
     @Autowired
     private ApplicationConfiguration applicationConfiguration;
 
-    public CustomerInfo create(String customerId, String name, String token)
+    public SubUserInfo create(String customerId, String name, String token)
             throws UnsupportedEncodingException {
         String url = applicationConfiguration.getProperty("edt.api.customerInfo");
         String parameters = format(applicationConfiguration.getApiParameter("createCustomerParameters"),
                 token, encode(name, "UTF-8"), customerId);
 
         HttpEntity<String> createSubUserBody = getStringHttpEntity(parameters);
-        return postToEdt(createSubUserBody, url, CustomerInfo.class);
+        return postToEdt(createSubUserBody, url, SubUserInfo.class);
     }
 
-    public CustomerInfo update(String customerId, String appUserId, String name, String token)
+    public SubUserInfo update(String customerId, String appUserId, String name, String token)
             throws UnsupportedEncodingException {
         String url = applicationConfiguration.getProperty("edt.api.customerInfo");
         String parameters = format(applicationConfiguration.getApiParameter("updateCustomerParameters"),
                 token, encode(name, "UTF-8"), customerId + "_" + appUserId, customerId);
 
         HttpEntity<String> updateCustomerParameters = getStringHttpEntity(parameters);
-        return postToEdt(updateCustomerParameters, url, CustomerInfo.class);
+        return postToEdt(updateCustomerParameters, url, SubUserInfo.class);
 
     }
 
-    public CustomerInfo delete(String customerId, String appUserId, String token) {
+    public SubUserInfo delete(String customerId, String appUserId, String token) {
         String url = applicationConfiguration.getProperty("edt.api.customerInfo");
         String parameters = format(applicationConfiguration.getApiParameter("deleteCustomerParameters"),
                 token, customerId + "_" + appUserId, customerId);
 
         HttpEntity<String> updateCustomerParameters = getStringHttpEntity(parameters);
-        return postToEdt(updateCustomerParameters, url, CustomerInfo.class);
+        return postToEdt(updateCustomerParameters, url, SubUserInfo.class);
     }
 
     private HttpEntity<String> getStringHttpEntity(String parameters) {

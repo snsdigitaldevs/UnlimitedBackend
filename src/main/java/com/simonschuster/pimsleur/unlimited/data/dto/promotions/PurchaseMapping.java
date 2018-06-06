@@ -4,6 +4,11 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
+import java.util.List;
+import java.util.stream.Stream;
+
+import static java.util.stream.Collectors.toList;
+
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
         "Base Course Type",
@@ -53,7 +58,7 @@ public class PurchaseMapping {
     @JsonProperty("Upsell google product_ID")
     private String upsellGoogleProductID;
     @JsonProperty("Upgrade in-app purchase ISBN")
-    private long upgradeInAppPurchaseISBN;
+    private String upgradeInAppPurchaseISBN;
     @JsonProperty("Upgrade course name")
     private String upgradeCourseName;
     @JsonProperty("Upgrade Apple product_ID")
@@ -192,12 +197,12 @@ public class PurchaseMapping {
     }
 
     @JsonProperty("Upgrade in-app purchase ISBN")
-    public long getUpgradeInAppPurchaseISBN() {
+    public String getUpgradeInAppPurchaseISBN() {
         return upgradeInAppPurchaseISBN;
     }
 
     @JsonProperty("Upgrade in-app purchase ISBN")
-    public void setUpgradeInAppPurchaseISBN(long upgradeInAppPurchaseISBN) {
+    public void setUpgradeInAppPurchaseISBN(String upgradeInAppPurchaseISBN) {
         this.upgradeInAppPurchaseISBN = upgradeInAppPurchaseISBN;
     }
 
@@ -232,9 +237,36 @@ public class PurchaseMapping {
     }
 
     public boolean matches(String isbn) {
-        return this.getISBN().equals(isbn) ||
-                this.getOtherFormat1ISBN().equals(isbn) ||
-                this.getOtherFormat2ISBN().equals(isbn) ||
-                this.getOtherFormat3ISBN().equals(isbn);
+        return getAllFormats().stream()
+                .anyMatch(oneFormat -> oneFormat.equals(isbn));
+    }
+
+    public UpsellDto toUpsellDto(boolean isUpsellIgnored, boolean isUpgradeIgnored) {
+        return new UpsellDto(createNextLevel(isUpsellIgnored), createNextVersion(isUpgradeIgnored));
+    }
+
+    private UpsellItem createNextLevel(boolean ignoreUpsell) {
+        if (!ignoreUpsell) {
+            return new UpsellItem(getUpsellInAppPurchaseISBN(), getUpsellCourseName());
+        }
+        return null;
+    }
+
+    private UpsellItem createNextVersion(boolean ignoreUpgrade) {
+        if (!ignoreUpgrade) {
+            return new UpsellItem(getUpgradeInAppPurchaseISBN(), getUpgradeCourseName());
+        }
+        return null;
+    }
+
+    // isbns in the returned list are for the same product
+    public List<String> getAllFormats() {
+        return Stream
+                .of(this.getISBN(),
+                        this.getOtherFormat1ISBN(),
+                        this.getOtherFormat2ISBN(),
+                        this.getOtherFormat3ISBN())
+                .filter(isbn -> isbn.length() > 0)
+                .collect(toList());
     }
 }

@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.SubUserDto;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class CustomerInfo {
+public class SubUserInfo {
 
     private ResultData result_data;
     private int result_code;
@@ -26,12 +26,12 @@ public class CustomerInfo {
     }
 
     public SubUserDto toDto(String name, String appUserId) {
-        boolean isRootUser = result_data == null ? false : result_data.getAppUser().isRootSubUser();
+        boolean isRootUser = result_data != null && result_data.getAppUser().isRootSubUser();
         return new SubUserDto(name, appUserId, isRootUser);
     }
 
     public SubUserDto toDto(String name) {
-        boolean isRootUser = result_data == null ? false : result_data.getAppUser().isRootSubUser();
+        boolean isRootUser = result_data != null && result_data.getAppUser().isRootSubUser();
         String appUserId = result_data == null ? "" : result_data.getAppUser().getSubUserId();
         return new SubUserDto(name, appUserId, isRootUser);
     }

@@ -2,8 +2,8 @@ package com.simonschuster.pimsleur.unlimited.controllers;
 
 import com.simonschuster.pimsleur.unlimited.common.exception.ParamInvalidException;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.SubUserDto;
-import com.simonschuster.pimsleur.unlimited.data.edt.customerinfo.CustomerInfo;
-import com.simonschuster.pimsleur.unlimited.services.customer.CustomerInfoService;
+import com.simonschuster.pimsleur.unlimited.data.edt.customerinfo.SubUserInfo;
+import com.simonschuster.pimsleur.unlimited.services.customer.SubUserService;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +17,7 @@ import static com.simonschuster.pimsleur.unlimited.utils.EdtResponseCode.*;
 public class SubUserController {
 
     @Autowired
-    CustomerInfoService customerInfoService;
+    SubUserService subUserService;
 
     @ApiOperation(value = "Create new sub user")
     @PostMapping(value = "customers/{customerId}/appUsers")
@@ -26,9 +26,9 @@ public class SubUserController {
                                      @RequestParam String token,
                                      @ApiParam(value = "only need name of the new sub user")
                                      @RequestBody SubUserDto userDto) throws UnsupportedEncodingException {
-        CustomerInfo customerInfo = customerInfoService.create(customerId, userDto.getName(), token);
-        checkResultCode(customerInfo);
-        return customerInfo.toDto(userDto.getName());
+        SubUserInfo subUserInfo = subUserService.create(customerId, userDto.getName(), token);
+        checkResultCode(subUserInfo);
+        return subUserInfo.toDto(userDto.getName());
     }
 
     @ApiOperation(value = "Update sub user, you can only change sub user's name")
@@ -39,9 +39,9 @@ public class SubUserController {
                                      @RequestParam String token,
                                      @ApiParam(value = "only need the new name of sub user")
                                      @RequestBody SubUserDto userDto) throws UnsupportedEncodingException {
-        CustomerInfo customerInfo = customerInfoService.update(customerId, appUserId, userDto.getName(), token);
-        checkResultCode(customerInfo);
-        return customerInfo.toDto(userDto.getName(), appUserId);
+        SubUserInfo subUserInfo = subUserService.update(customerId, appUserId, userDto.getName(), token);
+        checkResultCode(subUserInfo);
+        return subUserInfo.toDto(userDto.getName(), appUserId);
     }
 
     @ApiOperation(value = "Delete sub user")
@@ -52,13 +52,13 @@ public class SubUserController {
                                      @PathVariable String appUserId,
                                      @ApiParam(value = "only need the name of sub user")
                                      @RequestBody SubUserDto userDto) {
-        CustomerInfo customerInfo = customerInfoService.delete(customerId, appUserId, token);
-        checkResultCode(customerInfo);
-        return customerInfo.toDto(userDto.getName(), appUserId);
+        SubUserInfo subUserInfo = subUserService.delete(customerId, appUserId, token);
+        checkResultCode(subUserInfo);
+        return subUserInfo.toDto(userDto.getName(), appUserId);
     }
 
-    private void checkResultCode(CustomerInfo customerInfo) {
-        switch (customerInfo.getResult_code()) {
+    private void checkResultCode(SubUserInfo subUserInfo) {
+        switch (subUserInfo.getResult_code()) {
             case RESULT_OK:
                 break;
             case NO_RESULT:

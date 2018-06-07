@@ -1,0 +1,629 @@
+Rec #,Lang,ISBN-13,Course,Unit Num,start,stop,QZ #,line #,spkr,Cue,#of words,Q or S,Course Name (Source),Skills
+1,GR,978-1-4423-5034-2,German 2,1,0:02:27,0:02:29,1Q,39,N,You’re going to stay another two weeks?,,,"German Phase 2, Units 1-30 (2003)","1,12,17,18"
+2,GR,978-1-4423-5034-2,German 2,1,0:02:32,0:02:34,1R,41,M,Sie bleiben noch zwei Wochen?,5,Q,"German Phase 2, Units 1-30 (2003)","1,12,17,18"
+3,GR,978-1-4423-5034-2,German 2,1,0:07:16,0:07:18,2Q,87,N,"Yes, I would like very much to drink wine.",,,"German Phase 2, Units 1-30 (2003)","1,6"
+4,GR,978-1-4423-5034-2,German 2,1,0:07:26,0:07:30,2R,89,F,"Ja, ich möchte gern Wein trinken.",6,S,"German Phase 2, Units 1-30 (2003)","1,6"
+5,GR,978-1-4423-5034-2,German 2,1,0:10:09,0:10:12,3Q,115,N,I arrived yesterday with my family.,,,"German Phase 2, Units 1-30 (2003)","5,17,18"
+6,GR,978-1-4423-5034-2,German 2,1,0:10:17,0:10:22,3R,116,M,Ich bin gestern mit meiner Familie angekommen.,7,S,"German Phase 2, Units 1-30 (2003)","5,17,18"
+7,GR,978-1-4423-5034-2,German 2,1,0:14:31,0:14:33,4Q,156,N,We visited the city.,,,"German Phase 2, Units 1-30 (2003)","1,18"
+8,GR,978-1-4423-5034-2,German 2,1,0:14:35,0:14:37,4R,157,F,Wir haben die Stadt besichtigt.,5,S,"German Phase 2, Units 1-30 (2003)","1,18"
+9,GR,978-1-4423-5034-2,German 2,1,0:15:56,0:15:59,5Q,168,N,Do you know Dresden?,,,"German Phase 2, Units 1-30 (2003)",18
+10,GR,978-1-4423-5034-2,German 2,1,0:16:01,0:16:03,5R,169,F,Kennen Sie Dresden?,3,Q,"German Phase 2, Units 1-30 (2003)",18
+11,GR,978-1-4423-5034-2,German 2,1,0:16:30,0:16:31,6Q,174,N,"No, not yet.",,,"German Phase 2, Units 1-30 (2003)",7
+12,GR,978-1-4423-5034-2,German 2,1,0:16:34,0:16:36,6R,175,M,"Nein, noch nicht.",3,S,"German Phase 2, Units 1-30 (2003)",7
+13,GR,978-1-4423-5034-2,German 2,1,0:18:31,0:18:32,7Q,191,N,Did you buy this book?,,,"German Phase 2, Units 1-30 (2003)","1,14"
+14,GR,978-1-4423-5034-2,German 2,1,0:18:36,0:18:42,7R,193,M,Haben Sie dieses Buch gekauft?,5,Q,"German Phase 2, Units 1-30 (2003)","1,14"
+15,GR,978-1-4423-5034-2,German 2,1,0:21:03,0:21:05,8Q,217,N,What did you do this morning?,,,"German Phase 2, Units 1-30 (2003)","1,17"
+16,GR,978-1-4423-5034-2,German 2,1,0:21:07,0:21:13,8R,218,F,Was haben Sie heute Morgen gemacht?,6,Q,"German Phase 2, Units 1-30 (2003)","1,17"
+17,GR,978-1-4423-5034-2,German 2,1,0:24:48,0:24:54,9Q,252,M,I’m working tomorrow mid-morning.,,,"German Phase 2, Units 1-30 (2003)","1,17,20"
+18,GR,978-1-4423-5034-2,German 2,1,0:24:54,0:25:00,9R,253,N,Ich arbeite morgen Vormittag.,4,S,"German Phase 2, Units 1-30 (2003)","1,17,20"
+19,GR,978-1-4423-5034-2,German 2,1,0:27:28,0:27:31,10Q,276,N,"Yes, and I visited a couple of friends.",,,"German Phase 2, Units 1-30 (2003)","1,5,18"
+20,GR,978-1-4423-5034-2,German 2,1,0:27:36,0:27:38,10R,277,M,"Ja, und ich habe ein paar Freunde besucht.",8,S,"German Phase 2, Units 1-30 (2003)","1,5,18"
+21,GR,978-1-4423-5034-2,German 2,2,0:04:23,0:04:24,1Q,49,N,We visited the city.,,,"German Phase 2, Units 1-30 (2003)","1,18"
+22,GR,978-1-4423-5034-2,German 2,2,0:04:30,0:04:32,1R,50,M,Wir haben die Stadt besichtigt.,5,S,"German Phase 2, Units 1-30 (2003)","1,18"
+23,GR,978-1-4423-5034-2,German 2,2,0:05:41,0:05:42,2Q,61,N,I did a lot.,,,"German Phase 2, Units 1-30 (2003)","1,12"
+24,GR,978-1-4423-5034-2,German 2,2,0:05:45,0:05:46,2R,62,M,Ich habe viel gemacht.,4,S,"German Phase 2, Units 1-30 (2003)","1,12"
+25,GR,978-1-4423-5034-2,German 2,2,0:14:22,0:14:24,3Q,149,N,What’s your name?,,,"German Phase 2, Units 1-30 (2003)","7,10,16"
+26,GR,978-1-4423-5034-2,German 2,2,0:14:27,0:14:28,3R,150,F,Wie heißen Sie?,3,Q,"German Phase 2, Units 1-30 (2003)","7,10,16"
+27,GR,978-1-4423-5034-2,German 2,2,0:16:23,0:16:25,4Q,169,N,"I have to leave, unfortunately.",,,"German Phase 2, Units 1-30 (2003)","1,18"
+28,GR,978-1-4423-5034-2,German 2,2,0:16:27,0:16:28,4R,170,F,Ich muss leider gehen.,4,S,"German Phase 2, Units 1-30 (2003)","1,18"
+29,GR,978-1-4423-5034-2,German 2,2,0:18:56,0:18:57,5Q,192,N,Do you have to go?,,,"German Phase 2, Units 1-30 (2003)","1,18"
+30,GR,978-1-4423-5034-2,German 2,2,0:19:00,0:19:01,5R,193,M,Müssen Sie gehen?,3,Q,"German Phase 2, Units 1-30 (2003)","1,18"
+31,GR,978-1-4423-5034-2,German 2,2,0:19:55,0:19:57,6Q,204,N,I can’t stay.,,,"German Phase 2, Units 1-30 (2003)","1,18"
+32,GR,978-1-4423-5034-2,German 2,2,0:20:01,0:20:03,6R,205,F,Ich kann nicht bleiben.,4,S,"German Phase 2, Units 1-30 (2003)","1,18"
+33,GR,978-1-4423-5034-2,German 2,2,0:20:10,0:20:12,7Q,206,N,Unfortunately not.,,,"German Phase 2, Units 1-30 (2003)","7,13"
+34,GR,978-1-4423-5034-2,German 2,2,0:20:15,0:20:16,7R,207,F,Leider nicht.,2,S,"German Phase 2, Units 1-30 (2003)","7,13"
+35,GR,978-1-4423-5034-2,German 2,2,0:21:24,0:21:29,8Q,219,N,I’d like very much to stay.,,,"German Phase 2, Units 1-30 (2003)",18
+36,GR,978-1-4423-5034-2,German 2,2,0:21:30,0:21:33,8R,220,F,Ich möchte gern bleiben.,4,S,"German Phase 2, Units 1-30 (2003)",18
+37,GR,978-1-4423-5034-2,German 2,2,0:21:39,0:21:41,9Q,222,N,But I have to go now.,,,"German Phase 2, Units 1-30 (2003)","17,18"
+38,GR,978-1-4423-5034-2,German 2,2,0:21:45,0:21:47,9R,223,F,Aber ich muss jetzt gehen.,5,S,"German Phase 2, Units 1-30 (2003)","17,18"
+39,GR,978-1-4423-5034-2,German 2,2,0:23:24,0:23:27,10Q,238,N,My friend Monika is Swiss.,,,"German Phase 2, Units 1-30 (2003)",5
+40,GR,978-1-4423-5034-2,German 2,2,0:23:31,0:23:34,10R,239,F,Meine Freundin Monika ist Schweizerin.,5,S,"German Phase 2, Units 1-30 (2003)",5
+41,GR,978-1-4423-5034-2,German 2,2,0:25:39,0:25:41,11Q,261,N,Would you also like to go into town?,,,"German Phase 2, Units 1-30 (2003)","1,18"
+42,GR,978-1-4423-5034-2,German 2,2,0:25:44,0:25:49,11R,262,F,Möchten Sie auch in die Stadt gehen?,7,Q,"German Phase 2, Units 1-30 (2003)","1,18"
+43,GR,978-1-4423-5034-2,German 2,2,0:26:29,0:26:31,12Q,269,N,I’d like very much to come along with you.,,,"German Phase 2, Units 1-30 (2003)",1
+44,GR,978-1-4423-5034-2,German 2,2,0:26:36,0:26:38,12R,270,M,Ich möchte gern mit Ihnen mitkommen.,6,S,"German Phase 2, Units 1-30 (2003)",1
+45,GR,978-1-4423-5034-2,German 2,2,0:28:30,0:28:32,13Q,292,N,"There is my friend, Willi Klein.",,,"German Phase 2, Units 1-30 (2003)",5
+46,GR,978-1-4423-5034-2,German 2,2,0:28:38,0:28:40,13R,294,M,"Dort ist mein Freund, Willi Klein.",6,S,"German Phase 2, Units 1-30 (2003)",5
+47,GR,978-1-4423-5034-2,German 2,3,0:02:20,0:02:22,1Q,37,N,I’d like to stay another week.,,,"German Phase 2, Units 1-30 (2003)","17,18"
+48,GR,978-1-4423-5034-2,German 2,3,0:02:29,0:02:31,1R,39,F,Ich möchte noch eine Woche bleiben.,6,S,"German Phase 2, Units 1-30 (2003)","17,18"
+49,GR,978-1-4423-5034-2,German 2,3,0:02:56,0:02:58,2Q,44,N,I toured the city yesterday mid-morning.,,,"German Phase 2, Units 1-30 (2003)","1,17,18"
+50,GR,978-1-4423-5034-2,German 2,3,0:03:01,0:03:07,2R,45,F,Ich habe gestern Vormittag die Stadt besichtigt.,7,S,"German Phase 2, Units 1-30 (2003)","1,17,18"
+51,GR,978-1-4423-5034-2,German 2,3,0:05:39,0:05:40,3Q,70,N,I already did a lot.,,,"German Phase 2, Units 1-30 (2003)","1,12,17"
+52,GR,978-1-4423-5034-2,German 2,3,0:05:42,0:05:47,3R,71,F,Ich habe schon viel gemacht.,5,S,"German Phase 2, Units 1-30 (2003)","1,12,17"
+53,GR,978-1-4423-5034-2,German 2,3,0:06:22,0:06:27,4Q,77,N,I’d like very much to drive to Bremen.,,,"German Phase 2, Units 1-30 (2003)","1,18"
+54,GR,978-1-4423-5034-2,German 2,3,0:06:27,0:06:33,4R,78,F,Ich möchte gern nach Bremen fahren.,6,S,"German Phase 2, Units 1-30 (2003)","1,18"
+55,GR,978-1-4423-5034-2,German 2,3,0:09:09,0:09:12,5Q,105,N,I have to drive into town.,,,"German Phase 2, Units 1-30 (2003)","1,18"
+56,GR,978-1-4423-5034-2,German 2,3,0:09:14,0:09:20,5R,106,M,Ich muss in die Stadt fahren.,6,S,"German Phase 2, Units 1-30 (2003)","1,18"
+57,GR,978-1-4423-5034-2,German 2,3,0:10:27,0:10:28,6Q,117,N,Do you know the museum?,,,"German Phase 2, Units 1-30 (2003)","17,18"
+58,GR,978-1-4423-5034-2,German 2,3,0:10:31,0:10:35,6R,118,F,Kennen Sie das Museum?,4,Q,"German Phase 2, Units 1-30 (2003)","17,18"
+59,GR,978-1-4423-5034-2,German 2,3,0:13:41,0:13:43,7Q,151,N,We visited the museum.,,,"German Phase 2, Units 1-30 (2003)","1,18"
+60,GR,978-1-4423-5034-2,German 2,3,0:13:47,0:13:49,7R,152,M,Wir haben das Museum besichtigt.,5,S,"German Phase 2, Units 1-30 (2003)","1,18"
+61,GR,978-1-4423-5034-2,German 2,3,0:16:28,0:16:31,8Q,185,N,Do you have time to drink a cup of coffee?,,,"German Phase 2, Units 1-30 (2003)","6,17"
+62,GR,978-1-4423-5034-2,German 2,3,0:16:34,0:16:38,8R,187,M,"Haben Sie Zeit, eine Tasse Kaffee zu trinken?",8,Q,"German Phase 2, Units 1-30 (2003)","6,17"
+63,GR,978-1-4423-5034-2,German 2,3,0:19:23,0:19:26,9Q,212,N,My friend Ingrid is coming for a visit.,,,"German Phase 2, Units 1-30 (2003)","1,5,18"
+64,GR,978-1-4423-5034-2,German 2,3,0:19:30,0:19:33,9R,213,F,Meine Freundin Ingrid kommt zu Besuch.,6,S,"German Phase 2, Units 1-30 (2003)","1,5,18"
+65,GR,978-1-4423-5034-2,German 2,3,0:21:36,0:21:38,10Q,234,N,Would you like a glass of wine?,,,"German Phase 2, Units 1-30 (2003)","6,13"
+66,GR,978-1-4423-5034-2,German 2,3,0:21:41,0:21:43,10R,235,M,Möchten Sie ein Glas Wein?,5,Q,"German Phase 2, Units 1-30 (2003)","6,13"
+67,GR,978-1-4423-5034-2,German 2,4,0:04:18,0:04:20,1Q,62,N,We would like very much to come along.,,,"German Phase 2, Units 1-30 (2003)","1,12"
+68,GR,978-1-4423-5034-2,German 2,4,0:04:26,0:04:27,1R,63,F,Wir möchten gern mitkommen.,4,S,"German Phase 2, Units 1-30 (2003)","1,12"
+69,GR,978-1-4423-5034-2,German 2,4,0:05:56,0:05:58,2Q,79,N,How long is she staying?,,,"German Phase 2, Units 1-30 (2003)","17,18"
+70,GR,978-1-4423-5034-2,German 2,4,0:06:01,0:06:02,2R,80,M,Wie lange bleibt sie?,4,Q,"German Phase 2, Units 1-30 (2003)","17,18"
+71,GR,978-1-4423-5034-2,German 2,4,0:06:23,0:06:25,3Q,84,N,If she has time.,,,"German Phase 2, Units 1-30 (2003)",17
+72,GR,978-1-4423-5034-2,German 2,4,0:06:28,0:06:31,3R,85,F,Wenn sie Zeit hat.,4,S,"German Phase 2, Units 1-30 (2003)",17
+73,GR,978-1-4423-5034-2,German 2,4,0:08:39,0:08:41,4Q,107,N,But we didn’t visit the museum.,,,"German Phase 2, Units 1-30 (2003)","1,18"
+74,GR,978-1-4423-5034-2,German 2,4,0:08:48,0:08:51,4R,109,F,Aber wir haben das Museum nicht besichtigt.,7,S,"German Phase 2, Units 1-30 (2003)","1,18"
+75,GR,978-1-4423-5034-2,German 2,4,0:09:35,0:09:36,5Q,117,N,I’m going to drink red wine.,,,"German Phase 2, Units 1-30 (2003)","1,6"
+76,GR,978-1-4423-5034-2,German 2,4,0:09:41,0:09:42,5R,118,F,Ich trinke Rotwein.,3,S,"German Phase 2, Units 1-30 (2003)","1,6"
+77,GR,978-1-4423-5034-2,German 2,4,0:10:49,0:10:51,6Q,129,N,A colleague is coming for a visit.,,,"German Phase 2, Units 1-30 (2003)","18,20"
+78,GR,978-1-4423-5034-2,German 2,4,0:10:55,0:10:57,6R,130,F,Eine Kollegin kommt zu Besuch.,5,S,"German Phase 2, Units 1-30 (2003)","18,20"
+79,GR,978-1-4423-5034-2,German 2,4,0:11:10,0:11:12,7Q,133,N,She’s coming with her husband.,,,"German Phase 2, Units 1-30 (2003)","5,18"
+80,GR,978-1-4423-5034-2,German 2,4,0:11:15,0:11:17,7R,134,F,Sie kommt mit ihrem Mann.,5,S,"German Phase 2, Units 1-30 (2003)","5,18"
+81,GR,978-1-4423-5034-2,German 2,4,0:11:49,0:11:52,8Q,139,N,She comes from America.,,,"German Phase 2, Units 1-30 (2003)","1,18"
+82,GR,978-1-4423-5034-2,German 2,4,0:11:54,0:11:56,8R,140,F,Sie kommt aus Amerika.,4,S,"German Phase 2, Units 1-30 (2003)","1,18"
+83,GR,978-1-4423-5034-2,German 2,4,0:13:51,0:13:54,9Q,159,N,She’s been living there already since three years.,,,"German Phase 2, Units 1-30 (2003)","1,12"
+84,GR,978-1-4423-5034-2,German 2,4,0:13:59,0:14:01,9R,160,F,Sie wohnt schon seit drei Jahren dort.,7,S,"German Phase 2, Units 1-30 (2003)","1,12"
+85,GR,978-1-4423-5034-2,German 2,4,0:14:46,0:14:49,10Q,168,N,She’s lived since one year in Washington.,,,"German Phase 2, Units 1-30 (2003)","12,18"
+86,GR,978-1-4423-5034-2,German 2,4,0:14:53,0:14:56,10R,169,F,Sie wohnt seit einem Jahr in Washington.,7,S,"German Phase 2, Units 1-30 (2003)","12,18"
+87,GR,978-1-4423-5034-2,German 2,4,0:15:40,0:15:42,11Q,177,N,You don’t know her.,,,"German Phase 2, Units 1-30 (2003)","7,10"
+88,GR,978-1-4423-5034-2,German 2,4,0:15:45,0:15:47,11R,178,F,Sie kennen sie nicht.,4,S,"German Phase 2, Units 1-30 (2003)","7,10"
+89,GR,978-1-4423-5034-2,German 2,4,0:23:51,0:23:53,12Q,264,N,How about a glass of wine?,,,"German Phase 2, Units 1-30 (2003)","6,13"
+90,GR,978-1-4423-5034-2,German 2,4,0:23:57,0:23:59,12R,265,M,Wie wär’s mit einem Glas Wein?,6,Q,"German Phase 2, Units 1-30 (2003)","6,13"
+91,GR,978-1-4423-5034-2,German 2,5,0:03:31,0:03:33,1Q,48,N,You know her perhaps.,,,"German Phase 2, Units 1-30 (2003)","7,10"
+92,GR,978-1-4423-5034-2,German 2,5,0:03:36,0:03:37,1R,49,F,Sie kennen sie vielleicht.,4,S,"German Phase 2, Units 1-30 (2003)","7,10"
+93,GR,978-1-4423-5034-2,German 2,5,0:03:54,0:03:56,2Q,52,N,I’ve known her since a year.,,,"German Phase 2, Units 1-30 (2003)",17
+94,GR,978-1-4423-5034-2,German 2,5,0:04:00,0:04:02,2R,53,F,Ich kenne sie seit einem Jahr.,6,S,"German Phase 2, Units 1-30 (2003)",17
+95,GR,978-1-4423-5034-2,German 2,5,0:05:59,0:06:02,3Q,72,N,I would like very much a glass of white wine.,,,"German Phase 2, Units 1-30 (2003)",6
+96,GR,978-1-4423-5034-2,German 2,5,0:06:06,0:06:08,3R,73,M,Ich möchte gern ein Glas Weißwein.,6,S,"German Phase 2, Units 1-30 (2003)",6
+97,GR,978-1-4423-5034-2,German 2,5,0:11:18,0:11:20,4Q,123,N,A male colleague is coming for a visit.,,,"German Phase 2, Units 1-30 (2003)","18,20"
+98,GR,978-1-4423-5034-2,German 2,5,0:11:23,0:11:25,4R,124,M,Ein Kollege kommt zu Besuch.,5,S,"German Phase 2, Units 1-30 (2003)","18,20"
+99,GR,978-1-4423-5034-2,German 2,5,0:13:12,0:13:14,5Q,140,N,They’re both Americans.,,,"German Phase 2, Units 1-30 (2003)","9,10"
+100,GR,978-1-4423-5034-2,German 2,5,0:13:17,0:13:19,5R,141,M,Sie sind beide Amerikaner.,4,S,"German Phase 2, Units 1-30 (2003)","9,10"
+101,GR,978-1-4423-5034-2,German 2,5,0:14:28,0:14:29,6Q,152,N,And they both speak German.,,,"German Phase 2, Units 1-30 (2003)",9
+102,GR,978-1-4423-5034-2,German 2,5,0:14:37,0:14:39,6R,154,M,Und sie sprechen beide Deutsch.,5,S,"German Phase 2, Units 1-30 (2003)",9
+103,GR,978-1-4423-5034-2,German 2,5,0:18:16,0:18:19,7Q,192,N,We could all drink a glass of wine together.,,,"German Phase 2, Units 1-30 (2003)","1,6"
+104,GR,978-1-4423-5034-2,German 2,5,0:18:12,0:18:15,7R,191,M,Wir könnten alle zusammen ein Glas Wein trinken.,8,S,"German Phase 2, Units 1-30 (2003)","1,6"
+105,GR,978-1-4423-5034-2,German 2,5,0:22:21,0:22:23,8Q,233,N,The subway goes often.,,,"German Phase 2, Units 1-30 (2003)","4,18"
+106,GR,978-1-4423-5034-2,German 2,5,0:22:26,0:22:28,8R,234,F,Die U-Bahn fährt oft.,4,S,"German Phase 2, Units 1-30 (2003)","4,18"
+107,GR,978-1-4423-5034-2,German 2,5,0:24:10,0:24:11,9Q,249,N,Let’s go on foot.,,,"German Phase 2, Units 1-30 (2003)","1,4"
+108,GR,978-1-4423-5034-2,German 2,5,0:24:14,0:24:16,9R,250,F,Gehen wir zu Fuß.,4,S,"German Phase 2, Units 1-30 (2003)","1,4"
+109,GR,978-1-4423-5034-2,German 2,5,0:25:42,0:25:44,10Q,263,N,My car is at home.,,,"German Phase 2, Units 1-30 (2003)","9,18"
+110,GR,978-1-4423-5034-2,German 2,5,0:25:47,0:25:49,10R,264,F,Mein Auto ist zu Hause.,5,S,"German Phase 2, Units 1-30 (2003)","9,18"
+111,GR,978-1-4423-5034-2,German 2,5,0:26:10,0:26:12,11Q,269,N,Not far from here.,,,"German Phase 2, Units 1-30 (2003)","4,18"
+112,GR,978-1-4423-5034-2,German 2,5,0:26:15,0:26:16,11R,270,M,Nicht weit von hier.,4,S,"German Phase 2, Units 1-30 (2003)","4,18"
+113,GR,978-1-4423-5034-2,German 2,5,0:27:44,0:27:45,12Q,286,N,Do you have your car here?,,,"German Phase 2, Units 1-30 (2003)","4,18"
+114,GR,978-1-4423-5034-2,German 2,5,0:27:48,0:27:50,12R,287,F,Haben Sie Ihr Auto hier?,5,Q,"German Phase 2, Units 1-30 (2003)","4,18"
+115,GR,978-1-4423-5034-2,German 2,6,0:02:30,0:02:32,1Q,39,N,She’s a colleague of mine.,,,"German Phase 2, Units 1-30 (2003)",20
+116,GR,978-1-4423-5034-2,German 2,6,0:02:36,0:02:38,1R,40,F,Sie ist eine Kollegin von mir.,6,S,"German Phase 2, Units 1-30 (2003)",20
+117,GR,978-1-4423-5034-2,German 2,6,0:02:57,0:02:59,2Q,43,N,I’ve known her since four years.,,,"German Phase 2, Units 1-30 (2003)","12,17"
+118,GR,978-1-4423-5034-2,German 2,6,0:03:02,0:03:08,2R,44,F,Ich kenne sie seit vier Jahren.,6,S,"German Phase 2, Units 1-30 (2003)","12,17"
+119,GR,978-1-4423-5034-2,German 2,6,0:03:16,0:03:18,3Q,46,N,She’s coming together with her husband.,,,"German Phase 2, Units 1-30 (2003)","1,5,18"
+120,GR,978-1-4423-5034-2,German 2,6,0:03:22,0:03:24,3R,47,F,Sie kommt zusammen mit ihrem Mann.,6,S,"German Phase 2, Units 1-30 (2003)","1,5,18"
+121,GR,978-1-4423-5034-2,German 2,6,0:05:03,0:05:07,4Q,62,N,A colleague (m) of mine from Berlin is coming for a visit.,,,"German Phase 2, Units 1-30 (2003)","18,20"
+122,GR,978-1-4423-5034-2,German 2,6,0:05:12,0:05:14,4R,63,M,Ein Kollege von mir aus Berlin kommt zu Besuch.,9,S,"German Phase 2, Units 1-30 (2003)","18,20"
+123,GR,978-1-4423-5034-2,German 2,6,0:06:01,0:06:02,5Q,71,N,We work together.,,,"German Phase 2, Units 1-30 (2003)",20
+124,GR,978-1-4423-5034-2,German 2,6,0:06:07,0:06:08,5R,72,M,Wir arbeiten zusammen.,3,S,"German Phase 2, Units 1-30 (2003)",20
+125,GR,978-1-4423-5034-2,German 2,6,0:07:19,0:07:21,6Q,84,N,How often does the subway go?,,,"German Phase 2, Units 1-30 (2003)","4,17,18"
+126,GR,978-1-4423-5034-2,German 2,6,0:07:23,0:07:27,6R,85,F,Wie oft fährt die U-Bahn?,5,Q,"German Phase 2, Units 1-30 (2003)","4,17,18"
+127,GR,978-1-4423-5034-2,German 2,6,0:11:00,0:11:03,7Q,124,N,They both have been living in Basel since a year.,,,"German Phase 2, Units 1-30 (2003)","10,17,18"
+128,GR,978-1-4423-5034-2,German 2,6,0:11:08,0:11:12,7R,125,M,Sie wohnen beide seit einem Jahr in Basel.,8,S,"German Phase 2, Units 1-30 (2003)","10,17,18"
+129,GR,978-1-4423-5034-2,German 2,6,0:14:11,0:14:14,8Q,155,N,Let’s go by car.,,,"German Phase 2, Units 1-30 (2003)","4,18"
+130,GR,978-1-4423-5034-2,German 2,6,0:14:16,0:14:18,8R,156,F,Fahren wir mit dem Auto.,5,S,"German Phase 2, Units 1-30 (2003)","4,18"
+131,GR,978-1-4423-5034-2,German 2,6,0:14:37,0:14:39,9Q,159,N,We can go by subway.,,,"German Phase 2, Units 1-30 (2003)","4,18"
+132,GR,978-1-4423-5034-2,German 2,6,0:14:42,0:14:44,9R,160,F,Wir können mit der U-Bahn fahren.,6,S,"German Phase 2, Units 1-30 (2003)","4,18"
+133,GR,978-1-4423-5034-2,German 2,6,0:18:55,0:18:56,10Q,203,N,For whom?,,,"German Phase 2, Units 1-30 (2003)",7
+134,GR,978-1-4423-5034-2,German 2,6,0:18:57,0:18:58,10R,204,M,Für wen?,2,Q,"German Phase 2, Units 1-30 (2003)",7
+135,GR,978-1-4423-5034-2,German 2,6,0:23:18,0:23:20,11Q,250,N,Afterwards is too late for me.,,,"German Phase 2, Units 1-30 (2003)","7,17"
+136,GR,978-1-4423-5034-2,German 2,6,0:23:23,0:23:26,11R,251,F,Nachher ist zu spät für mich.,6,S,"German Phase 2, Units 1-30 (2003)","7,17"
+137,GR,978-1-4423-5034-2,German 2,7,0:02:13,0:02:14,1Q,38,N,"No, I don’t know him.",,,"German Phase 2, Units 1-30 (2003)","7,10"
+138,GR,978-1-4423-5034-2,German 2,7,0:02:18,0:02:20,1R,39,F,"Nein, ich kenne ihn nicht.",5,S,"German Phase 2, Units 1-30 (2003)","7,10"
+139,GR,978-1-4423-5034-2,German 2,7,0:04:38,0:04:40,2Q,61,N,We have to drink a glass of wine together.,,,"German Phase 2, Units 1-30 (2003)","1,6"
+140,GR,978-1-4423-5034-2,German 2,7,0:04:45,0:04:48,2R,63,F,Wir müssen zusammen ein Glas Wein trinken.,7,S,"German Phase 2, Units 1-30 (2003)","1,6"
+141,GR,978-1-4423-5034-2,German 2,7,0:05:10,0:05:12,3Q,68,N,Let’s go into town this evening.,,,"German Phase 2, Units 1-30 (2003)","1,17,18"
+142,GR,978-1-4423-5034-2,German 2,7,0:05:15,0:05:17,3R,69,M,Gehen wir heute Abend in die Stadt.,7,S,"German Phase 2, Units 1-30 (2003)","1,17,18"
+143,GR,978-1-4423-5034-2,German 2,7,0:06:56,0:06:57,4Q,88,N,At three P.M.,,,"German Phase 2, Units 1-30 (2003)","12,17"
+144,GR,978-1-4423-5034-2,German 2,7,0:07:00,0:07:02,4R,89,M,Um fünfzehn Uhr.,3,S,"German Phase 2, Units 1-30 (2003)","12,17"
+145,GR,978-1-4423-5034-2,German 2,7,0:08:47,0:08:49,5Q,106,N,Are you staying home today?,,,"German Phase 2, Units 1-30 (2003)","1,17,18"
+146,GR,978-1-4423-5034-2,German 2,7,0:08:53,0:08:55,5R,107,M,Bleiben Sie heute zu Hause?,5,Q,"German Phase 2, Units 1-30 (2003)","1,17,18"
+147,GR,978-1-4423-5034-2,German 2,7,0:09:59,0:10:01,6Q,117,N,I would like to buy a book afterwards.,,,"German Phase 2, Units 1-30 (2003)","1,14,17"
+148,GR,978-1-4423-5034-2,German 2,7,0:10:05,0:10:07,6R,118,F,Ich möchte nachher ein Buch kaufen.,6,S,"German Phase 2, Units 1-30 (2003)","1,14,17"
+149,GR,978-1-4423-5034-2,German 2,7,0:13:35,0:13:37,7Q,154,N,Here’s a letter for you.,,,"German Phase 2, Units 1-30 (2003)","3,13"
+150,GR,978-1-4423-5034-2,German 2,7,0:13:40,0:13:42,7R,155,F,Hier ist ein Brief für Sie.,6,S,"German Phase 2, Units 1-30 (2003)","3,13"
+151,GR,978-1-4423-5034-2,German 2,7,0:13:58,0:14:00,8Q,158,N,A letter for whom?,,,"German Phase 2, Units 1-30 (2003)",3
+152,GR,978-1-4423-5034-2,German 2,7,0:14:03,0:14:04,8R,159,M,Ein Brief für wen?,4,Q,"German Phase 2, Units 1-30 (2003)",3
+153,GR,978-1-4423-5034-2,German 2,7,0:22:19,0:22:22,9Q,239,N,They are arriving on Monday at five P.M.,,,"German Phase 2, Units 1-30 (2003)","12,17,18"
+154,GR,978-1-4423-5034-2,German 2,7,0:22:27,0:22:29,9R,240,M,Sie kommen am Montag um siebzehn Uhr an.,8,S,"German Phase 2, Units 1-30 (2003)","12,17,18"
+155,GR,978-1-4423-5034-2,German 2,7,0:23:31,0:23:33,10Q,250,N,At ten to five in the afternoon.,,,"German Phase 2, Units 1-30 (2003)","12,17"
+156,GR,978-1-4423-5034-2,German 2,7,0:23:36,0:23:39,10R,251,M,Um zehn vor fünf nachmittags.,5,S,"German Phase 2, Units 1-30 (2003)","12,17"
+157,GR,978-1-4423-5034-2,German 2,8,0:04:11,0:04:13,1Q,59,N,Are you coming into town with me?,,,"German Phase 2, Units 1-30 (2003)","1,18"
+158,GR,978-1-4423-5034-2,German 2,8,0:04:18,0:04:20,1R,61,F,Kommen Sie mit mir in die Stadt?,7,Q,"German Phase 2, Units 1-30 (2003)","1,18"
+159,GR,978-1-4423-5034-2,German 2,8,0:05:31,0:05:33,2Q,73,N,Would you like to drink something beforehand?,,,"German Phase 2, Units 1-30 (2003)","1,6"
+160,GR,978-1-4423-5034-2,German 2,8,0:05:41,0:05:43,2R,75,F,Möchten Sie vorher etwas trinken?,5,Q,"German Phase 2, Units 1-30 (2003)","1,6"
+161,GR,978-1-4423-5034-2,German 2,8,0:07:29,0:07:31,3Q,92,N,At ten to five in the afternoon.,,,"German Phase 2, Units 1-30 (2003)","12,17"
+162,GR,978-1-4423-5034-2,German 2,8,0:07:35,0:07:37,3R,93,M,Um zehn vor fünf nachmittags.,5,S,"German Phase 2, Units 1-30 (2003)","12,17"
+163,GR,978-1-4423-5034-2,German 2,8,0:12:37,0:12:39,4Q,151,N,We can go together to a restaurant.,,,"German Phase 2, Units 1-30 (2003)","1,6"
+164,GR,978-1-4423-5034-2,German 2,8,0:12:43,0:12:46,4R,152,F,Wir können zusammen in ein Restaurant gehen.,7,S,"German Phase 2, Units 1-30 (2003)","1,6"
+165,GR,978-1-4423-5034-2,German 2,8,0:13:37,0:13:40,5Q,162,N,Would you like to go to the movies afterwards?,,,"German Phase 2, Units 1-30 (2003)","1,17"
+166,GR,978-1-4423-5034-2,German 2,8,0:13:43,0:13:45,5R,164,M,Möchten Sie nachher ins Kino gehen?,6,Q,"German Phase 2, Units 1-30 (2003)","1,17"
+167,GR,978-1-4423-5034-2,German 2,8,0:17:38,0:17:40,6Q,202,N,She’s arriving Friday evening.,,,"German Phase 2, Units 1-30 (2003)","17,18"
+168,GR,978-1-4423-5034-2,German 2,8,0:17:42,0:17:46,6R,203,F,Sie kommt Freitag Abend an.,5,S,"German Phase 2, Units 1-30 (2003)","17,18"
+169,GR,978-1-4423-5034-2,German 2,8,0:20:24,0:20:29,7Q,228,N,"No, she arrives on Friday at a quarter past eight in the evening.",,,"German Phase 2, Units 1-30 (2003)","12,17,18"
+170,GR,978-1-4423-5034-2,German 2,8,0:20:34,0:20:38,7R,230,F,"Nein, sie kommt am Freitag um Viertel nach acht abends an.",11,S,"German Phase 2, Units 1-30 (2003)","12,17,18"
+171,GR,978-1-4423-5034-2,German 2,8,0:22:06,0:22:08,8Q,245,N,Her husband is not coming.,,,"German Phase 2, Units 1-30 (2003)","1,5"
+172,GR,978-1-4423-5034-2,German 2,8,0:22:13,0:22:15,8R,246,F,Ihr Mann kommt nicht.,4,S,"German Phase 2, Units 1-30 (2003)","1,5"
+173,GR,978-1-4423-5034-2,German 2,8,0:22:43,0:22:45,9Q,251,N,She likes traveling.,,,"German Phase 2, Units 1-30 (2003)","9,18"
+174,GR,978-1-4423-5034-2,German 2,8,0:22:48,0:22:49,9R,252,F,Sie reist gern.,3,S,"German Phase 2, Units 1-30 (2003)","9,18"
+175,GR,978-1-4423-5034-2,German 2,8,0:23:44,0:23:46,10Q,261,N,He’d rather stay at home.,,,"German Phase 2, Units 1-30 (2003)","9,18"
+176,GR,978-1-4423-5034-2,German 2,8,0:23:49,0:23:51,10R,262,F,Er bleibt lieber zu Hause.,5,S,"German Phase 2, Units 1-30 (2003)","9,18"
+177,GR,978-1-4423-5034-2,German 2,8,0:26:11,0:26:13,11Q,285,N,I don’t like staying at home.,,,"German Phase 2, Units 1-30 (2003)","9,18"
+178,GR,978-1-4423-5034-2,German 2,8,0:26:16,0:26:21,11R,286,F,Ich bleibe nicht gern zu Hause.,6,S,"German Phase 2, Units 1-30 (2003)","9,18"
+179,GR,978-1-4423-5034-2,German 2,9,0:03:11,0:03:15,1Q,50,N,At a quarter to five in the afternoon.,,,"German Phase 2, Units 1-30 (2003)","12,17"
+180,GR,978-1-4423-5034-2,German 2,9,0:03:18,0:03:21,1R,51,M,Um Viertel vor fünf nachmittags.,5,S,"German Phase 2, Units 1-30 (2003)","12,17"
+181,GR,978-1-4423-5034-2,German 2,9,0:04:10,0:04:12,2Q,60,N,Are they not arriving together?,,,"German Phase 2, Units 1-30 (2003)","1,18"
+182,GR,978-1-4423-5034-2,German 2,9,0:04:16,0:04:18,2R,61,F,Kommen sie nicht zusammen an?,5,Q,"German Phase 2, Units 1-30 (2003)","1,18"
+183,GR,978-1-4423-5034-2,German 2,9,0:05:22,0:05:26,3Q,71,N,She’s arriving here in Munich in the evening.,,,"German Phase 2, Units 1-30 (2003)","1,17,18"
+184,GR,978-1-4423-5034-2,German 2,9,0:05:32,0:05:35,3R,73,M,Sie kommt abends hier in München an.,7,S,"German Phase 2, Units 1-30 (2003)","1,17,18"
+185,GR,978-1-4423-5034-2,German 2,9,0:09:29,0:09:30,4Q,113,N,How’s it going?,,,"German Phase 2, Units 1-30 (2003)","10,13"
+186,GR,978-1-4423-5034-2,German 2,9,0:09:32,0:09:33,4R,114,F,Wie geht’s?,2,Q,"German Phase 2, Units 1-30 (2003)","10,13"
+187,GR,978-1-4423-5034-2,German 2,9,0:10:21,0:10:23,5Q,122,N,Would you like to go to the movies?,,,"German Phase 2, Units 1-30 (2003)",1
+188,GR,978-1-4423-5034-2,German 2,9,0:10:26,0:10:29,5R,123,M,Möchtest du ins Kino gehen?,5,Q,"German Phase 2, Units 1-30 (2003)",1
+189,GR,978-1-4423-5034-2,German 2,9,0:11:20,0:11:21,6Q,131,N,When are you going?,,,"German Phase 2, Units 1-30 (2003)","1,7,17"
+190,GR,978-1-4423-5034-2,German 2,9,0:11:25,0:11:26,6R,132,F,Wann gehst du?,3,Q,"German Phase 2, Units 1-30 (2003)","1,7,17"
+191,GR,978-1-4423-5034-2,German 2,9,0:12:55,0:12:59,7Q,147,N,Can you come along on Friday?,,,"German Phase 2, Units 1-30 (2003)","1,17"
+192,GR,978-1-4423-5034-2,German 2,9,0:13:00,0:13:05,7R,148,M,Kannst du am Freitag mitkommen?,5,Q,"German Phase 2, Units 1-30 (2003)","1,17"
+193,GR,978-1-4423-5034-2,German 2,9,0:13:46,0:13:48,8Q,156,N,May I invite you?,,,"German Phase 2, Units 1-30 (2003)","1,13"
+194,GR,978-1-4423-5034-2,German 2,9,0:13:50,0:13:52,8R,157,M,Darf ich dich einladen?,4,Q,"German Phase 2, Units 1-30 (2003)","1,13"
+195,GR,978-1-4423-5034-2,German 2,9,0:15:48,0:15:51,9Q,175,N,Would you like to go to a concert on Friday?,,,"German Phase 2, Units 1-30 (2003)","1,17"
+196,GR,978-1-4423-5034-2,German 2,9,0:15:53,0:15:55,9R,176,M,Möchtest du am Freitag in ein Konzert gehen?,8,Q,"German Phase 2, Units 1-30 (2003)","1,17"
+197,GR,978-1-4423-5034-2,German 2,9,0:17:59,0:18:01,10Q,196,N,I have time on Saturday.,,,"German Phase 2, Units 1-30 (2003)","1,17"
+198,GR,978-1-4423-5034-2,German 2,9,0:18:04,0:18:06,10R,197,F,Ich habe am Samstag Zeit.,5,S,"German Phase 2, Units 1-30 (2003)","1,17"
+199,GR,978-1-4423-5034-2,German 2,9,0:20:03,0:20:04,11Q,215,N,When does the concert begin?,,,"German Phase 2, Units 1-30 (2003)","1,17"
+200,GR,978-1-4423-5034-2,German 2,9,0:20:07,0:20:09,11R,216,F,Wann beginnt das Konzert?,4,Q,"German Phase 2, Units 1-30 (2003)","1,17"
+201,GR,978-1-4423-5034-2,German 2,10,0:02:44,0:02:46,1Q,45,N,Can you go to the movies with me?,,,"German Phase 2, Units 1-30 (2003)",1
+202,GR,978-1-4423-5034-2,German 2,10,0:02:50,0:02:53,1R,46,M,Kannst du mit mir ins Kino gehen?,7,Q,"German Phase 2, Units 1-30 (2003)",1
+203,GR,978-1-4423-5034-2,German 2,10,0:02:55,0:02:58,2Q,47,N,I’d like to invite you.,,,"German Phase 2, Units 1-30 (2003)","1,13"
+204,GR,978-1-4423-5034-2,German 2,10,0:02:59,0:03:03,2R,48,M,Ich möchte dich einladen.,4,S,"German Phase 2, Units 1-30 (2003)","1,13"
+205,GR,978-1-4423-5034-2,German 2,10,0:05:30,0:05:34,3Q,74,N,I believe the movie begins at eight P.M.,,,"German Phase 2, Units 1-30 (2003)","1,9,12,17"
+206,GR,978-1-4423-5034-2,German 2,10,0:05:37,0:05:41,3R,75,M,"Ich glaube, das Kino beginnt um zwanzig Uhr.",8,S,"German Phase 2, Units 1-30 (2003)","1,9,12,17"
+207,GR,978-1-4423-5034-2,German 2,10,0:08:10,0:08:12,4Q,99,N,Do you have time on Saturday?,,,"German Phase 2, Units 1-30 (2003)","1,17"
+208,GR,978-1-4423-5034-2,German 2,10,0:08:14,0:08:20,4R,100,F,Hast du am Samstag Zeit?,5,Q,"German Phase 2, Units 1-30 (2003)","1,17"
+209,GR,978-1-4423-5034-2,German 2,10,0:09:11,0:09:14,5Q,109,N,May I invite you to the movies and to the concert?,,,"German Phase 2, Units 1-30 (2003)",1
+210,GR,978-1-4423-5034-2,German 2,10,0:09:20,0:09:23,5R,110,M,Darf ich dich ins Kino und ins Konzert einladen?,9,Q,"German Phase 2, Units 1-30 (2003)",1
+211,GR,978-1-4423-5034-2,German 2,10,0:15:28,0:15:30,6Q,175,N,Can you wait a couple of minutes?,,,"German Phase 2, Units 1-30 (2003)","12,17"
+212,GR,978-1-4423-5034-2,German 2,10,0:15:34,0:15:36,6R,176,F,Können Sie ein paar Minuten warten?,6,Q,"German Phase 2, Units 1-30 (2003)","12,17"
+213,GR,978-1-4423-5034-2,German 2,10,0:16:22,0:16:23,7Q,185,N,He’s not yet in the office.,,,"German Phase 2, Units 1-30 (2003)",20
+214,GR,978-1-4423-5034-2,German 2,10,0:16:27,0:16:29,7R,186,F,Er ist noch nicht im Büro.,6,S,"German Phase 2, Units 1-30 (2003)",20
+215,GR,978-1-4423-5034-2,German 2,10,0:18:58,0:19:00,8Q,211,N,You can then speak with him.,,,"German Phase 2, Units 1-30 (2003)",3
+216,GR,978-1-4423-5034-2,German 2,10,0:19:04,0:19:06,8R,212,F,Sie können dann mit ihm sprechen.,6,S,"German Phase 2, Units 1-30 (2003)",3
+217,GR,978-1-4423-5034-2,German 2,10,0:22:06,0:22:08,9Q,245,N,With milk and without sugar.,,,"German Phase 2, Units 1-30 (2003)",6
+218,GR,978-1-4423-5034-2,German 2,10,0:22:12,0:22:13,9R,246,F,Mit Milch und ohne Zucker.,5,S,"German Phase 2, Units 1-30 (2003)",6
+219,GR,978-1-4423-5034-2,German 2,10,0:23:14,0:23:16,10Q,254,N,That’s interesting.,,,"German Phase 2, Units 1-30 (2003)",7
+220,GR,978-1-4423-5034-2,German 2,10,0:23:19,0:23:21,10R,255,M,Das ist interessant.,3,S,"German Phase 2, Units 1-30 (2003)",7
+221,GR,978-1-4423-5034-2,German 2,11,0:02:34,0:02:36,1Q,45,N,The movie begins in twenty minutes.,,,"German Phase 2, Units 1-30 (2003)","1,12,17"
+222,GR,978-1-4423-5034-2,German 2,11,0:02:42,0:02:45,1R,47,F,Das Kino beginnt in zwanzig Minuten.,6,S,"German Phase 2, Units 1-30 (2003)","1,12,17"
+223,GR,978-1-4423-5034-2,German 2,11,0:02:55,0:02:57,2Q,49,N,Or would you rather go to a concert?,,,"German Phase 2, Units 1-30 (2003)",1
+224,GR,978-1-4423-5034-2,German 2,11,0:03:01,0:03:03,2R,50,F,Oder gehst du lieber in ein Konzert?,7,Q,"German Phase 2, Units 1-30 (2003)",1
+225,GR,978-1-4423-5034-2,German 2,11,0:04:09,0:04:10,3Q,66,N,"Today, I have time.",,,"German Phase 2, Units 1-30 (2003)",17
+226,GR,978-1-4423-5034-2,German 2,11,0:04:14,0:04:15,3R,67,M,Heute habe ich Zeit.,4,S,"German Phase 2, Units 1-30 (2003)",17
+227,GR,978-1-4423-5034-2,German 2,11,0:06:37,0:06:39,4Q,84,N,Do you like going to the movies?,,,"German Phase 2, Units 1-30 (2003)",1
+228,GR,978-1-4423-5034-2,German 2,11,0:06:42,0:06:44,4R,85,M,Gehst du gern ins Kino?,5,Q,"German Phase 2, Units 1-30 (2003)",1
+229,GR,978-1-4423-5034-2,German 2,11,0:10:48,0:10:50,5Q,130,N,Here’s YOUR coffee.,,,"German Phase 2, Units 1-30 (2003)",6
+230,GR,978-1-4423-5034-2,German 2,11,0:10:53,0:10:55,5R,132,M,Hier ist DEIN Kaffee.,4,S,"German Phase 2, Units 1-30 (2003)",6
+231,GR,978-1-4423-5034-2,German 2,11,0:12:34,0:12:36,6Q,150,N,With sugar but without milk.,,,"German Phase 2, Units 1-30 (2003)",6
+232,GR,978-1-4423-5034-2,German 2,11,0:12:39,0:12:41,6R,151,F,Mit Zucker aber ohne Milch.,5,S,"German Phase 2, Units 1-30 (2003)",6
+233,GR,978-1-4423-5034-2,German 2,11,0:13:11,0:13:12,7Q,156,N,When are you going on vacation?,,,"German Phase 2, Units 1-30 (2003)","17,18"
+234,GR,978-1-4423-5034-2,German 2,11,0:13:15,0:13:17,7R,158,M,Wann fährst du in Urlaub?,5,Q,"German Phase 2, Units 1-30 (2003)","17,18"
+235,GR,978-1-4423-5034-2,German 2,11,0:15:12,0:15:14,8Q,175,N,Perhaps I’m going in January.,,,"German Phase 2, Units 1-30 (2003)","1,17,18"
+236,GR,978-1-4423-5034-2,German 2,11,0:15:20,0:15:23,8R,177,F,Vielleicht fahre ich im Januar.,5,S,"German Phase 2, Units 1-30 (2003)","1,17,18"
+237,GR,978-1-4423-5034-2,German 2,11,0:26:28,0:26:30,9Q,287,N,I really have to go now.,,,"German Phase 2, Units 1-30 (2003)","17,18"
+238,GR,978-1-4423-5034-2,German 2,11,0:26:33,0:26:35,9R,288,F,Ich muss jetzt wirklich gehen.,5,S,"German Phase 2, Units 1-30 (2003)","17,18"
+239,GR,978-1-4423-5034-2,German 2,11,0:26:57,0:26:59,10Q,292,N,Is your office far from here?,,,"German Phase 2, Units 1-30 (2003)","4,20"
+240,GR,978-1-4423-5034-2,German 2,11,0:27:03,0:27:05,10R,293,M,Ist dein Büro weit von hier?,6,Q,"German Phase 2, Units 1-30 (2003)","4,20"
+241,GR,978-1-4423-5034-2,German 2,12,0:01:54,0:01:56,1Q,37,N,"Well, I have a lot of work.",,,"German Phase 2, Units 1-30 (2003)",20
+242,GR,978-1-4423-5034-2,German 2,12,0:01:59,0:02:00,1R,38,M,"Also, ich habe viel Arbeit.",5,S,"German Phase 2, Units 1-30 (2003)",20
+243,GR,978-1-4423-5034-2,German 2,12,0:04:42,0:04:44,2Q,64,N,But perhaps I have time somewhat later.,,,"German Phase 2, Units 1-30 (2003)","9,17"
+244,GR,978-1-4423-5034-2,German 2,12,0:04:50,0:04:53,2R,66,M,Aber vielleicht habe ich etwas später Zeit.,7,S,"German Phase 2, Units 1-30 (2003)","9,17"
+245,GR,978-1-4423-5034-2,German 2,12,0:09:27,0:09:28,3Q,113,F,Thanks so much.,,,"German Phase 2, Units 1-30 (2003)","13,16"
+246,GR,978-1-4423-5034-2,German 2,12,0:09:22,0:09:23,3R,112,N,Danke schön.,2,S,"German Phase 2, Units 1-30 (2003)","13,16"
+247,GR,978-1-4423-5034-2,German 2,12,0:09:41,0:09:42,4Q,117,N,Early tomorrow morning.,,,"German Phase 2, Units 1-30 (2003)",17
+248,GR,978-1-4423-5034-2,German 2,12,0:09:45,0:09:46,4R,119,M,Morgen früh.,2,S,"German Phase 2, Units 1-30 (2003)",17
+249,GR,978-1-4423-5034-2,German 2,12,0:11:02,0:11:05,5Q,132,N,I’m going on vacation early tomorrow morning.,,,"German Phase 2, Units 1-30 (2003)","17,18"
+250,GR,978-1-4423-5034-2,German 2,12,0:11:09,0:11:11,5R,133,M,Ich fahre morgen früh in Urlaub.,6,S,"German Phase 2, Units 1-30 (2003)","17,18"
+251,GR,978-1-4423-5034-2,German 2,12,0:11:29,0:11:32,6Q,137,N,Are you going on vacation soon?,,,"German Phase 2, Units 1-30 (2003)","17,18"
+252,GR,978-1-4423-5034-2,German 2,12,0:12:04,0:12:06,6R,143,M,Fahren Sie bald in Urlaub?,5,Q,"German Phase 2, Units 1-30 (2003)","17,18"
+253,GR,978-1-4423-5034-2,German 2,12,0:15:00,0:15:01,7Q,171,N,Have a good trip!,,,"German Phase 2, Units 1-30 (2003)","13,18"
+254,GR,978-1-4423-5034-2,German 2,12,0:15:06,0:15:07,7R,172,F,Gute Reise!,2,S,"German Phase 2, Units 1-30 (2003)","13,18"
+255,GR,978-1-4423-5034-2,German 2,12,0:16:25,0:16:27,8Q,184,N,I’m traveling with my girlfriend.,,,"German Phase 2, Units 1-30 (2003)","5,18"
+256,GR,978-1-4423-5034-2,German 2,12,0:16:30,0:16:34,8R,185,M,Ich reise mit meiner Freundin.,5,S,"German Phase 2, Units 1-30 (2003)","5,18"
+257,GR,978-1-4423-5034-2,German 2,12,0:16:47,0:16:49,9Q,188,N,There we have friends.,,,"German Phase 2, Units 1-30 (2003)","5,18"
+258,GR,978-1-4423-5034-2,German 2,12,0:16:54,0:16:56,9R,189,M,Dort haben wir Freunde.,4,S,"German Phase 2, Units 1-30 (2003)","5,18"
+259,GR,978-1-4423-5034-2,German 2,12,0:22:41,0:22:43,10Q,246,N,I have to speak with him.,,,"German Phase 2, Units 1-30 (2003)",3
+260,GR,978-1-4423-5034-2,German 2,12,0:22:46,0:22:48,10R,247,M,Ich muss mit ihm sprechen.,5,S,"German Phase 2, Units 1-30 (2003)",3
+261,GR,978-1-4423-5034-2,German 2,13,0:04:14,0:04:17,1Q,57,N,Here’s a letter for him.,,,"German Phase 2, Units 1-30 (2003)","3,9"
+262,GR,978-1-4423-5034-2,German 2,13,0:04:18,0:04:22,1R,58,M,Hier ist ein Brief für ihn.,6,S,"German Phase 2, Units 1-30 (2003)","3,9"
+263,GR,978-1-4423-5034-2,German 2,13,0:04:54,0:04:56,2Q,63,N,Is that correct?,,,"German Phase 2, Units 1-30 (2003)","4,7"
+264,GR,978-1-4423-5034-2,German 2,13,0:04:57,0:05:00,2R,64,M,Stimmt das?,2,Q,"German Phase 2, Units 1-30 (2003)","4,7"
+265,GR,978-1-4423-5034-2,German 2,13,0:08:13,0:08:14,3Q,98,N,We’re taking his car.,,,"German Phase 2, Units 1-30 (2003)","9,18"
+266,GR,978-1-4423-5034-2,German 2,13,0:08:16,0:08:21,3R,99,F,Wir nehmen sein Auto.,4,S,"German Phase 2, Units 1-30 (2003)","9,18"
+267,GR,978-1-4423-5034-2,German 2,13,0:08:25,0:08:29,4Q,100,N,"Early tomorrow morning, we’re driving to Switzerland.",,,"German Phase 2, Units 1-30 (2003)","17,18"
+268,GR,978-1-4423-5034-2,German 2,13,0:08:36,0:08:39,4R,102,F,Morgen früh fahren wir in die Schweiz.,7,S,"German Phase 2, Units 1-30 (2003)","17,18"
+269,GR,978-1-4423-5034-2,German 2,13,0:08:50,0:08:53,5Q,104,N,To beautiful Switzerland.,,,"German Phase 2, Units 1-30 (2003)",18
+270,GR,978-1-4423-5034-2,German 2,13,0:08:54,0:08:56,5R,105,F,In die schöne Schweiz.,4,S,"German Phase 2, Units 1-30 (2003)",18
+271,GR,978-1-4423-5034-2,German 2,13,0:10:23,0:10:27,6Q,122,N,My office is far from here.,,,"German Phase 2, Units 1-30 (2003)",4
+272,GR,978-1-4423-5034-2,German 2,13,0:10:29,0:10:33,6R,123,F,Mein Büro ist weit von hier.,6,S,"German Phase 2, Units 1-30 (2003)",4
+273,GR,978-1-4423-5034-2,German 2,13,0:15:28,0:15:30,7Q,177,N,I like it in Switzerland.,,,"German Phase 2, Units 1-30 (2003)",18
+274,GR,978-1-4423-5034-2,German 2,13,0:15:33,0:15:35,7R,178,F,Es gefällt mir in der Schweiz.,6,S,"German Phase 2, Units 1-30 (2003)",18
+275,GR,978-1-4423-5034-2,German 2,13,0:16:46,0:16:50,8Q,190,N,We’re going on vacation next week.,,,"German Phase 2, Units 1-30 (2003)","1,18"
+276,GR,978-1-4423-5034-2,German 2,13,0:16:52,0:16:56,8R,191,F,Wir fahren nächste Woche in Urlaub.,6,S,"German Phase 2, Units 1-30 (2003)","1,18"
+277,GR,978-1-4423-5034-2,German 2,13,0:19:09,0:19:10,9Q,212,N,How’s the weather?,,,"German Phase 2, Units 1-30 (2003)","16,19"
+278,GR,978-1-4423-5034-2,German 2,13,0:19:13,0:19:14,9R,213,M,Wie ist das Wetter?,4,Q,"German Phase 2, Units 1-30 (2003)","16,19"
+279,GR,978-1-4423-5034-2,German 2,13,0:21:05,0:21:06,10Q,233,N,How so?,,,"German Phase 2, Units 1-30 (2003)",7
+280,GR,978-1-4423-5034-2,German 2,13,0:21:09,0:21:10,10R,234,F,Wieso?,1,Q,"German Phase 2, Units 1-30 (2003)",7
+281,GR,978-1-4423-5034-2,German 2,13,0:22:59,0:23:02,11Q,253,N,Because your wife has too much work?,,,"German Phase 2, Units 1-30 (2003)","5,20"
+282,GR,978-1-4423-5034-2,German 2,13,0:23:05,0:23:08,11R,254,F,Weil Ihre Frau zu viel Arbeit hat?,7,Q,"German Phase 2, Units 1-30 (2003)","5,20"
+283,GR,978-1-4423-5034-2,German 2,14,0:01:11,0:01:12,1Q,29,N,The weather is beautiful.,,,"German Phase 2, Units 1-30 (2003)",19
+284,GR,978-1-4423-5034-2,German 2,14,0:01:15,0:01:17,1R,30,F,Das Wetter ist schön.,4,S,"German Phase 2, Units 1-30 (2003)",19
+285,GR,978-1-4423-5034-2,German 2,14,0:01:41,0:01:44,2Q,35,N,My wife and I are traveling early tomorrow morning.,,,"German Phase 2, Units 1-30 (2003)","1,5,17,18"
+286,GR,978-1-4423-5034-2,German 2,14,0:01:49,0:01:51,2R,36,M,Meine Frau und ich reisen morgen früh.,7,S,"German Phase 2, Units 1-30 (2003)","1,5,17,18"
+287,GR,978-1-4423-5034-2,German 2,14,0:02:44,0:02:45,3Q,45,N,Who knows?,,,"German Phase 2, Units 1-30 (2003)",7
+288,GR,978-1-4423-5034-2,German 2,14,0:02:47,0:02:48,3R,46,F,Wer weiß?,2,Q,"German Phase 2, Units 1-30 (2003)",7
+289,GR,978-1-4423-5034-2,German 2,14,0:08:32,0:08:33,4Q,106,N,You’re welcome.,,,"German Phase 2, Units 1-30 (2003)","7,13"
+290,GR,978-1-4423-5034-2,German 2,14,0:08:34,0:08:34,4R,107,F,Bitte.,1,S,"German Phase 2, Units 1-30 (2003)","7,13"
+291,GR,978-1-4423-5034-2,German 2,14,0:09:11,0:09:12,5Q,114,N,How was your trip?,,,"German Phase 2, Units 1-30 (2003)","7,18"
+292,GR,978-1-4423-5034-2,German 2,14,0:09:15,0:09:16,5R,116,F,Wie war Ihre Reise?,4,Q,"German Phase 2, Units 1-30 (2003)","7,18"
+293,GR,978-1-4423-5034-2,German 2,14,0:10:29,0:10:33,6Q,125,N,It was really a beautiful trip.,,,"German Phase 2, Units 1-30 (2003)","9,18"
+294,GR,978-1-4423-5034-2,German 2,14,0:10:35,0:10:38,6R,126,M,Es war wirklich eine schöne Reise.,6,S,"German Phase 2, Units 1-30 (2003)","9,18"
+295,GR,978-1-4423-5034-2,German 2,14,0:12:44,0:12:46,7Q,150,N,Who knows whether he has time.,,,"German Phase 2, Units 1-30 (2003)","9,17"
+296,GR,978-1-4423-5034-2,German 2,14,0:12:50,0:12:52,7R,151,F,"Wer weiß, ob er Zeit hat.",6,S,"German Phase 2, Units 1-30 (2003)","9,17"
+297,GR,978-1-4423-5034-2,German 2,14,0:14:40,0:14:42,8Q,167,N,I’d like very much to go along.,,,"German Phase 2, Units 1-30 (2003)","1,18"
+298,GR,978-1-4423-5034-2,German 2,14,0:14:46,0:14:48,8R,168,F,Ich möchte gern mitfahren,4,S,"German Phase 2, Units 1-30 (2003)","1,18"
+299,GR,978-1-4423-5034-2,German 2,14,0:16:19,0:16:22,9Q,187,N,Our daughters can’t go along either.,,,"German Phase 2, Units 1-30 (2003)","1,5"
+300,GR,978-1-4423-5034-2,German 2,14,0:16:24,0:16:27,9R,189,F,Unsere Töchter können auch nicht mitfahren.,6,S,"German Phase 2, Units 1-30 (2003)","1,5"
+301,GR,978-1-4423-5034-2,German 2,14,0:19:50,0:19:53,10Q,225,N,Say that you’d like to buy a newspaper.,,,"German Phase 2, Units 1-30 (2003)","1,3,14"
+302,GR,978-1-4423-5034-2,German 2,14,0:19:56,0:19:58,10R,226,M,Ich möchte eine Zeitung kaufen.,5,S,"German Phase 2, Units 1-30 (2003)","1,3,14"
+303,GR,978-1-4423-5034-2,German 2,15,0:01:14,0:01:17,1Q,30,N,How much does this newspaper cost?,,,"German Phase 2, Units 1-30 (2003)","11,14"
+304,GR,978-1-4423-5034-2,German 2,15,0:01:20,0:01:22,1R,31,F,Wieviel kostet diese Zeitung?,4,Q,"German Phase 2, Units 1-30 (2003)","11,14"
+305,GR,978-1-4423-5034-2,German 2,15,0:03:24,0:03:27,2Q,53,N,"The weather was bad, unfortunately.",,,"German Phase 2, Units 1-30 (2003)",19
+306,GR,978-1-4423-5034-2,German 2,15,0:03:30,0:03:32,2R,54,F,Das Wetter war leider schlecht.,5,S,"German Phase 2, Units 1-30 (2003)",19
+307,GR,978-1-4423-5034-2,German 2,15,0:06:52,0:06:53,3Q,85,N,Where were his daughters?,,,"German Phase 2, Units 1-30 (2003)","5,19"
+308,GR,978-1-4423-5034-2,German 2,15,0:06:58,0:07:00,3R,86,M,Wo waren seine Töchter?,4,Q,"German Phase 2, Units 1-30 (2003)","5,19"
+309,GR,978-1-4423-5034-2,German 2,15,0:08:07,0:08:11,4Q,97,N,And her sons were also there.,,,"German Phase 2, Units 1-30 (2003)",5
+310,GR,978-1-4423-5034-2,German 2,15,0:08:14,0:08:18,4R,98,F,Und ihre Söhne waren auch dort.,6,S,"German Phase 2, Units 1-30 (2003)",5
+311,GR,978-1-4423-5034-2,German 2,15,0:11:30,0:11:34,5Q,134,N,His office has a lot of work this week.,,,"German Phase 2, Units 1-30 (2003)","17,20"
+312,GR,978-1-4423-5034-2,German 2,15,0:11:36,0:11:40,5R,135,M,Sein Büro hat diese Woche viel Arbeit.,7,S,"German Phase 2, Units 1-30 (2003)","17,20"
+313,GR,978-1-4423-5034-2,German 2,15,0:12:57,0:12:59,6Q,148,N,The newspaper of today is over there.,,,"German Phase 2, Units 1-30 (2003)","3,4,17"
+314,GR,978-1-4423-5034-2,German 2,15,0:13:02,0:13:08,6R,149,M,Die Zeitung von heute ist dort drüben.,7,S,"German Phase 2, Units 1-30 (2003)","3,4,17"
+315,GR,978-1-4423-5034-2,German 2,15,0:14:15,0:14:17,7Q,162,N,In order to visit friends.,,,"German Phase 2, Units 1-30 (2003)","5,18"
+316,GR,978-1-4423-5034-2,German 2,15,0:14:20,0:14:22,7R,163,M,Um Freunde zu besuchen.,4,S,"German Phase 2, Units 1-30 (2003)","5,18"
+317,GR,978-1-4423-5034-2,German 2,15,0:16:49,0:16:50,8Q,189,N,How old is your son?,,,"German Phase 2, Units 1-30 (2003)",5
+318,GR,978-1-4423-5034-2,German 2,15,0:16:53,0:16:55,8R,190,F,Wie alt ist Ihr Sohn?,5,Q,"German Phase 2, Units 1-30 (2003)",5
+319,GR,978-1-4423-5034-2,German 2,15,0:21:38,0:21:40,9Q,240,N,"Yes, in the past, I had a car.",,,"German Phase 2, Units 1-30 (2003)","9,18"
+320,GR,978-1-4423-5034-2,German 2,15,0:21:47,0:21:49,9R,242,F,"Ja, früher hatte ich ein Auto.",6,S,"German Phase 2, Units 1-30 (2003)","9,18"
+321,GR,978-1-4423-5034-2,German 2,15,0:24:20,0:24:22,10Q,265,N,Where did you work previously?,,,"German Phase 2, Units 1-30 (2003)",20
+322,GR,978-1-4423-5034-2,German 2,15,0:24:26,0:24:28,10R,266,M,Wo haben Sie früher gearbeitet?,5,Q,"German Phase 2, Units 1-30 (2003)",20
+323,GR,978-1-4423-5034-2,German 2,16,0:01:46,0:01:49,1Q,35,N,Do you still have yesterday’s newspaper?,,,"German Phase 2, Units 1-30 (2003)","3,17"
+324,GR,978-1-4423-5034-2,German 2,16,0:01:56,0:01:58,1R,37,M,Haben Sie noch die Zeitung von gestern?,7,Q,"German Phase 2, Units 1-30 (2003)","3,17"
+325,GR,978-1-4423-5034-2,German 2,16,0:02:37,0:02:39,2Q,45,N,Are you driving into town?,,,"German Phase 2, Units 1-30 (2003)","1,18"
+326,GR,978-1-4423-5034-2,German 2,16,0:02:42,0:02:44,2R,47,F,Fahren Sie in die Stadt?,5,Q,"German Phase 2, Units 1-30 (2003)","1,18"
+327,GR,978-1-4423-5034-2,German 2,16,0:04:45,0:04:47,3Q,66,N,They are certainly going into town.,,,"German Phase 2, Units 1-30 (2003)","1,4,18"
+328,GR,978-1-4423-5034-2,German 2,16,0:04:52,0:04:54,3R,67,F,Sie fahren sicher in die Stadt.,6,S,"German Phase 2, Units 1-30 (2003)","1,4,18"
+329,GR,978-1-4423-5034-2,German 2,16,0:12:20,0:12:22,4Q,137,N,It was very interesting.,,,"German Phase 2, Units 1-30 (2003)",7
+330,GR,978-1-4423-5034-2,German 2,16,0:12:26,0:12:27,4R,138,M,Es war sehr interessant.,4,S,"German Phase 2, Units 1-30 (2003)",7
+331,GR,978-1-4423-5034-2,German 2,16,0:20:43,0:20:45,5Q,222,N,I have to make a phone call.,,,"German Phase 2, Units 1-30 (2003)","1,3"
+332,GR,978-1-4423-5034-2,German 2,16,0:20:48,0:20:50,5R,223,M,Ich muss telefonieren.,3,S,"German Phase 2, Units 1-30 (2003)","1,3"
+333,GR,978-1-4423-5034-2,German 2,16,0:21:37,0:21:39,6Q,230,N,Over there is a telephone.,,,"German Phase 2, Units 1-30 (2003)","3,4"
+334,GR,978-1-4423-5034-2,German 2,16,0:21:43,0:21:45,6R,231,F,Dort drüben ist ein Telefon.,5,S,"German Phase 2, Units 1-30 (2003)","3,4"
+335,GR,978-1-4423-5034-2,German 2,16,0:22:32,0:22:33,7Q,240,N,What do you need?,,,"German Phase 2, Units 1-30 (2003)","14,16"
+336,GR,978-1-4423-5034-2,German 2,16,0:22:35,0:22:37,7R,241,F,Was brauchen Sie?,3,Q,"German Phase 2, Units 1-30 (2003)","14,16"
+337,GR,978-1-4423-5034-2,German 2,16,0:24:08,0:24:10,8Q,257,N,I need the right number.,,,"German Phase 2, Units 1-30 (2003)",3
+338,GR,978-1-4423-5034-2,German 2,16,0:24:14,0:24:15,8R,258,M,Ich brauche die richtige Nummer.,5,S,"German Phase 2, Units 1-30 (2003)",3
+339,GR,978-1-4423-5034-2,German 2,16,0:26:28,0:26:30,9Q,283,N,I need another number.,,,"German Phase 2, Units 1-30 (2003)",3
+340,GR,978-1-4423-5034-2,German 2,16,0:26:31,0:26:36,9R,284,M,Ich brauche noch eine Nummer.,5,S,"German Phase 2, Units 1-30 (2003)",3
+341,GR,978-1-4423-5034-2,German 2,16,0:27:02,0:27:05,10Q,289,N,Do you need it again?,,,"German Phase 2, Units 1-30 (2003)","7,16"
+342,GR,978-1-4423-5034-2,German 2,16,0:27:07,0:27:10,10R,290,F,Brauchen Sie es noch einmal?,5,Q,"German Phase 2, Units 1-30 (2003)","7,16"
+343,GR,978-1-4423-5034-2,German 2,17,0:03:43,0:03:45,1Q,54,N,In order to go to a concert.,,,"German Phase 2, Units 1-30 (2003)",1
+344,GR,978-1-4423-5034-2,German 2,17,0:03:48,0:03:50,1R,55,F,Um in ein Konzert zu gehen.,6,S,"German Phase 2, Units 1-30 (2003)",1
+345,GR,978-1-4423-5034-2,German 2,17,0:03:55,0:03:56,2Q,56,N,I was at the concert.,,,"German Phase 2, Units 1-30 (2003)",1
+346,GR,978-1-4423-5034-2,German 2,17,0:03:59,0:04:01,2R,57,F,Ich war im Konzert.,4,S,"German Phase 2, Units 1-30 (2003)",1
+347,GR,978-1-4423-5034-2,German 2,17,0:04:53,0:04:55,3Q,67,N,How old are his sons now?,,,"German Phase 2, Units 1-30 (2003)","5,17"
+348,GR,978-1-4423-5034-2,German 2,17,0:04:59,0:05:01,3R,68,M,Wie alt sind seine Söhne jetzt?,6,Q,"German Phase 2, Units 1-30 (2003)","5,17"
+349,GR,978-1-4423-5034-2,German 2,17,0:08:55,0:08:56,4Q,104,N,She’s an interesting woman.,,,"German Phase 2, Units 1-30 (2003)",5
+350,GR,978-1-4423-5034-2,German 2,17,0:08:59,0:09:05,4R,105,F,Sie ist eine interessante Frau.,5,S,"German Phase 2, Units 1-30 (2003)",5
+351,GR,978-1-4423-5034-2,German 2,17,0:10:51,0:10:53,5Q,122,M,"But at the moment, I’m without work.",,,"German Phase 2, Units 1-30 (2003)","17,20"
+352,GR,978-1-4423-5034-2,German 2,17,0:10:48,0:10:50,5R,121,M,Aber im Moment bin ich ohne Arbeit.,7,S,"German Phase 2, Units 1-30 (2003)","17,20"
+353,GR,978-1-4423-5034-2,German 2,17,0:10:57,0:10:59,6Q,123,N,Can I make a telephone call here?,,,"German Phase 2, Units 1-30 (2003)",3
+354,GR,978-1-4423-5034-2,German 2,17,0:11:02,0:11:03,6R,124,F,Kann ich hier telefonieren?,4,Q,"German Phase 2, Units 1-30 (2003)",3
+355,GR,978-1-4423-5034-2,German 2,17,0:12:03,0:12:05,7Q,141,N,Go to the post office.,,,"German Phase 2, Units 1-30 (2003)",4
+356,GR,978-1-4423-5034-2,German 2,17,0:12:08,0:12:09,7R,142,M,Gehen Sie zur Post.,4,S,"German Phase 2, Units 1-30 (2003)",4
+357,GR,978-1-4423-5034-2,German 2,17,0:16:14,0:16:16,8Q,181,N,It’s not the right telephone number.,,,"German Phase 2, Units 1-30 (2003)","3,9"
+358,GR,978-1-4423-5034-2,German 2,17,0:16:19,0:16:23,8R,186,F,Es ist nicht die richtige Telefonnummer.,6,S,"German Phase 2, Units 1-30 (2003)","3,9"
+359,GR,978-1-4423-5034-2,German 2,17,0:17:57,0:17:59,9Q,199,N,Where did you live previously?,,,"German Phase 2, Units 1-30 (2003)",10
+360,GR,978-1-4423-5034-2,German 2,17,0:18:02,0:18:04,9R,200,F,Wo haben Sie früher gewohnt?,5,Q,"German Phase 2, Units 1-30 (2003)",10
+361,GR,978-1-4423-5034-2,German 2,17,0:20:47,0:20:49,10Q,226,N,He still goes to school.,,,"German Phase 2, Units 1-30 (2003)",5
+362,GR,978-1-4423-5034-2,German 2,17,0:20:52,0:20:54,10R,227,M,Er geht noch zur Schule.,5,S,"German Phase 2, Units 1-30 (2003)",5
+363,GR,978-1-4423-5034-2,German 2,18,0:03:12,0:03:14,1Q,48,N,He’s studying medicine.,,,"German Phase 2, Units 1-30 (2003)","8,20"
+364,GR,978-1-4423-5034-2,German 2,18,0:03:17,0:03:19,1R,49,M,Er studiert Medizin.,3,S,"German Phase 2, Units 1-30 (2003)","8,20"
+365,GR,978-1-4423-5034-2,German 2,18,0:06:34,0:06:36,2Q,81,N,There’s the university.,,,"German Phase 2, Units 1-30 (2003)","4,20"
+366,GR,978-1-4423-5034-2,German 2,18,0:06:39,0:06:41,2R,82,F,Dort ist die Universität.,4,S,"German Phase 2, Units 1-30 (2003)","4,20"
+367,GR,978-1-4423-5034-2,German 2,18,0:07:21,0:07:23,3Q,89,N,The post office is on Post Office Street.,,,"German Phase 2, Units 1-30 (2003)","4,9,20"
+368,GR,978-1-4423-5034-2,German 2,18,0:07:28,0:07:30,3R,90,F,Die Post ist in der Poststraße,6,S,"German Phase 2, Units 1-30 (2003)","4,9,20"
+369,GR,978-1-4423-5034-2,German 2,18,0:08:21,0:08:26,4Q,99,N,The address is Post Office Street Number two.,,,"German Phase 2, Units 1-30 (2003)","4,12,20"
+370,GR,978-1-4423-5034-2,German 2,18,0:08:29,0:08:33,4R,100,F,Die Adresse ist Poststraße Nummer zwei.,6,S,"German Phase 2, Units 1-30 (2003)","4,12,20"
+371,GR,978-1-4423-5034-2,German 2,18,0:11:07,0:11:08,5Q,129,N,She writes many letters.,,,"German Phase 2, Units 1-30 (2003)","1,3"
+372,GR,978-1-4423-5034-2,German 2,18,0:11:12,0:11:13,5R,130,M,Sie schreibt viele Briefe.,4,S,"German Phase 2, Units 1-30 (2003)","1,3"
+373,GR,978-1-4423-5034-2,German 2,18,0:11:30,0:11:32,6Q,133,N,Do you write a lot of letters?,,,"German Phase 2, Units 1-30 (2003)","1,3"
+374,GR,978-1-4423-5034-2,German 2,18,0:11:37,0:11:38,6R,134,F,Schreiben Sie viele Briefe?,4,Q,"German Phase 2, Units 1-30 (2003)","1,3"
+375,GR,978-1-4423-5034-2,German 2,18,0:13:50,0:13:51,7Q,157,N,They no longer live at home.,,,"German Phase 2, Units 1-30 (2003)",5
+376,GR,978-1-4423-5034-2,German 2,18,0:13:54,0:13:58,7R,158,M,Sie wohnen nicht mehr zu Hause.,6,S,"German Phase 2, Units 1-30 (2003)",5
+377,GR,978-1-4423-5034-2,German 2,18,0:18:51,0:18:53,8Q,207,N,My daughter writes often.,,,"German Phase 2, Units 1-30 (2003)","1,5,17"
+378,GR,978-1-4423-5034-2,German 2,18,0:18:56,0:19:00,8R,208,F,Meine Tochter schreibt oft.,4,S,"German Phase 2, Units 1-30 (2003)","1,5,17"
+379,GR,978-1-4423-5034-2,German 2,18,0:21:00,0:21:02,9Q,227,N,"Yes, my wife needs a doctor.",,,"German Phase 2, Units 1-30 (2003)""","5,8,16"
+380,GR,978-1-4423-5034-2,German 2,18,0:21:06,0:21:08,9R,228,M,"Ja, Meine Frau braucht einen Arzt.",6,S,"German Phase 2, Units 1-30 (2003)","5,8,16"
+381,GR,978-1-4423-5034-2,German 2,18,0:25:25,0:25:27,10Q,274,N,Could I make a call here?,,,"German Phase 2, Units 1-30 (2003)","3,4"
+382,GR,978-1-4423-5034-2,German 2,18,0:25:30,0:25:32,10R,275,M,Könnte ich hier telefonieren?,4,Q,"German Phase 2, Units 1-30 (2003)","3,4"
+383,GR,978-1-4423-5034-2,German 2,19,0:01:26,0:01:28,1Q,27,N,They are acquaintances of mine.,,,"German Phase 2, Units 1-30 (2003)",5
+384,GR,978-1-4423-5034-2,German 2,19,0:01:31,0:01:33,1R,28,F,Sie sind Bekannte von mir.,5,S,"German Phase 2, Units 1-30 (2003)",5
+385,GR,978-1-4423-5034-2,German 2,19,0:02:07,0:02:09,2Q,33,N,I believe that I know them.,,,"German Phase 2, Units 1-30 (2003)",9
+386,GR,978-1-4423-5034-2,German 2,19,0:02:12,0:02:13,2R,34,M,"Ich glaube, dass ich sie kenne.",6,S,"German Phase 2, Units 1-30 (2003)",9
+387,GR,978-1-4423-5034-2,German 2,19,0:05:23,0:05:26,3Q,61,N,I believe that she no longer goes to school.,,,"German Phase 2, Units 1-30 (2003)",9
+388,GR,978-1-4423-5034-2,German 2,19,0:05:36,0:05:38,3R,62,F,"Ich glaube, dass sie nicht mehr zur Schule geht.",9,S,"German Phase 2, Units 1-30 (2003)",9
+389,GR,978-1-4423-5034-2,German 2,19,0:11:18,0:11:20,4Q,122,N,How do I get to the post office?,,,"German Phase 2, Units 1-30 (2003)","4,20"
+390,GR,978-1-4423-5034-2,German 2,19,11:26..16,0:11:28,4R,124,F,Wie komme ich zur Post?,5,Q,"German Phase 2, Units 1-30 (2003)","4,20"
+391,GR,978-1-4423-5034-2,German 2,19,0:12:12,0:12:13,5Q,132,N,What is the address?,,,"German Phase 2, Units 1-30 (2003)","4,18"
+392,GR,978-1-4423-5034-2,German 2,19,0:12:19,0:12:20,5R,134,F,Wie ist die Adresse?,4,Q,"German Phase 2, Units 1-30 (2003)","4,18"
+393,GR,978-1-4423-5034-2,German 2,19,0:14:58,0:14:59,6Q,159,N,And then turn to the right.,,,"German Phase 2, Units 1-30 (2003)",4
+394,GR,978-1-4423-5034-2,German 2,19,0:15:06,0:15:08,6R,160,M,Und dann biegen Sie nach rechts ab.,7,S,"German Phase 2, Units 1-30 (2003)",4
+395,GR,978-1-4423-5034-2,German 2,19,0:16:11,0:16:13,7Q,170,N,Then you get to the post office.,,,"German Phase 2, Units 1-30 (2003)","4,20"
+396,GR,978-1-4423-5034-2,German 2,19,0:16:18,0:16:20,7R,171,M,Dann kommen Sie zur Post.,5,S,"German Phase 2, Units 1-30 (2003)","4,20"
+397,GR,978-1-4423-5034-2,German 2,19,0:19:27,0:19:28,8Q,203,N,How can I help you?,,,"German Phase 2, Units 1-30 (2003)","13,16"
+398,GR,978-1-4423-5034-2,German 2,19,0:19:31,0:19:33,8R,204,M,Wie kann ich Ihnen helfen?,5,Q,"German Phase 2, Units 1-30 (2003)","13,16"
+399,GR,978-1-4423-5034-2,German 2,19,0:23:40,0:23:42,9Q,247,N,Because it’s a holiday.,,,"German Phase 2, Units 1-30 (2003)","7,17"
+400,GR,978-1-4423-5034-2,German 2,19,0:23:47,0:23:49,9R,248,M,Weil es ein Feiertag ist.,5,S,"German Phase 2, Units 1-30 (2003)","7,17"
+401,GR,978-1-4423-5034-2,German 2,19,0:24:35,0:24:37,10Q,254,N,Is the pharmacy also closed?,,,"German Phase 2, Units 1-30 (2003)","8,14,16,20"
+402,GR,978-1-4423-5034-2,German 2,19,0:24:40,0:24:43,10R,255,F,Ist die Apotheke auch geschlossen?,5,Q,"German Phase 2, Units 1-30 (2003)","8,14,16,20"
+403,GR,978-1-4423-5034-2,German 2,20,0:01:12,0:01:13,1Q,29,N,Is today a holiday?,,,"German Phase 2, Units 1-30 (2003)","16,17"
+404,GR,978-1-4423-5034-2,German 2,20,0:01:17,0:01:18,1R,30,M,Ist heute ein Feiertag?,4,Q,"German Phase 2, Units 1-30 (2003)","16,17"
+405,GR,978-1-4423-5034-2,German 2,20,0:06:39,0:06:42,2Q,79,N,After fifty meters you get to a traffic light.,,,"German Phase 2, Units 1-30 (2003)","4,12"
+406,GR,978-1-4423-5034-2,German 2,20,0:06:49,0:06:52,2R,81,F,Nach fünfzig Metern kommen Sie zu einer Ampel.,8,S,"German Phase 2, Units 1-30 (2003)","4,12"
+407,GR,978-1-4423-5034-2,German 2,20,0:09:15,0:09:18,3Q,107,N,I also have to go to the post office.,,,"German Phase 2, Units 1-30 (2003)","4,20"
+408,GR,978-1-4423-5034-2,German 2,20,0:09:21,0:09:24,3R,108,F,Ich muss auch zur Post gehen.,6,S,"German Phase 2, Units 1-30 (2003)","4,20"
+409,GR,978-1-4423-5034-2,German 2,20,0:12:36,0:12:37,4Q,142,N,She e-mails me often.,,,"German Phase 2, Units 1-30 (2003)","3,5"
+410,GR,978-1-4423-5034-2,German 2,20,0:12:33,0:12:34,4R,141,M,Sie schreibt mir oft per e-mail.,6,S,"German Phase 2, Units 1-30 (2003)","3,5"
+411,GR,978-1-4423-5034-2,German 2,20,0:13:03,0:13:06,5Q,149,N,Do you know that my husband was a doctor?,,,"German Phase 2, Units 1-30 (2003)","5,20"
+412,GR,978-1-4423-5034-2,German 2,20,0:13:13,0:13:15,5R,151,F,"Wissen Sie, dass mein Mann Arzt war?",7,Q,"German Phase 2, Units 1-30 (2003)","5,20"
+413,GR,978-1-4423-5034-2,German 2,20,0:15:49,0:15:52,6Q,179,N,I’m looking for a pharmacy on Main Street.,,,"German Phase 2, Units 1-30 (2003)","4,8,16"
+414,GR,978-1-4423-5034-2,German 2,20,0:15:57,0:15:59,6R,180,M,Ich suche eine Apotheke in der Hauptstraße.,7,S,"German Phase 2, Units 1-30 (2003)","4,8,16"
+415,GR,978-1-4423-5034-2,German 2,20,0:16:17,0:16:19,7Q,182,N,Could you help me?,,,"German Phase 2, Units 1-30 (2003)","13,16"
+416,GR,978-1-4423-5034-2,German 2,20,0:16:21,0:16:23,7R,183,M,Könnten Sie mir helfen?,4,Q,"German Phase 2, Units 1-30 (2003)","13,16"
+417,GR,978-1-4423-5034-2,German 2,20,0:19:31,0:19:33,8Q,215,N,If you take the correct road.,,,"German Phase 2, Units 1-30 (2003)",4
+418,GR,978-1-4423-5034-2,German 2,20,0:19:39,0:19:41,8R,216,F,Wenn Sie die richtige Straße nehmen.,6,S,"German Phase 2, Units 1-30 (2003)",4
+419,GR,978-1-4423-5034-2,German 2,20,0:24:04,0:24:06,9Q,257,N,I believe that one drives pretty slowly.,,,"German Phase 2, Units 1-30 (2003)","9,12,18"
+420,GR,978-1-4423-5034-2,German 2,20,0:24:10,0:24:13,9R,258,F,"Ich glaube, dass man ziemlich langsam fährt.",7,S,"German Phase 2, Units 1-30 (2003)","9,12,18"
+421,GR,978-1-4423-5034-2,German 2,20,0:27:14,0:27:16,10Q,290,N,I could drive more slowly.,,,"German Phase 2, Units 1-30 (2003)","1,18"
+422,GR,978-1-4423-5034-2,German 2,20,0:27:19,0:27:23,10R,291,F,Ich könnte langsamer fahren.,4,S,"German Phase 2, Units 1-30 (2003)","1,18"
+423,GR,978-1-4423-5034-2,German 2,21,0:01:47,0:01:49,1Q,42,N,Could you tell me where Main Street is?,,,"German Phase 2, Units 1-30 (2003)","4,18"
+424,GR,978-1-4423-5034-2,German 2,21,0:01:54,0:01:56,1R,43,M,"Könnten Sie mir sagen, wo die Hauptstraße ist?",8,Q,"German Phase 2, Units 1-30 (2003)","4,18"
+425,GR,978-1-4423-5034-2,German 2,21,0:07:06,0:07:08,2Q,95,N,Am I driving too fast?,,,"German Phase 2, Units 1-30 (2003)","1,18"
+426,GR,978-1-4423-5034-2,German 2,21,0:07:13,0:07:15,2R,96,F,Fahre ich zu schnell?,4,Q,"German Phase 2, Units 1-30 (2003)","1,18"
+427,GR,978-1-4423-5034-2,German 2,21,0:08:05,0:08:07,3Q,105,N,"I believe, I’m driving fairly slowly.",,,"German Phase 2, Units 1-30 (2003)","1,9"
+428,GR,978-1-4423-5034-2,German 2,21,0:08:12,0:08:15,3R,106,F,"Ich glaube, ich fahre ziemlich langsam.",6,S,"German Phase 2, Units 1-30 (2003)","1,9"
+429,GR,978-1-4423-5034-2,German 2,21,0:09:11,0:09:12,4Q,116,N,Could you drive more slowly?,,,"German Phase 2, Units 1-30 (2003)","16,18"
+430,GR,978-1-4423-5034-2,German 2,21,0:09:17,0:09:18,4R,117,M,Könntest du langsamer fahren?,4,Q,"German Phase 2, Units 1-30 (2003)","16,18"
+431,GR,978-1-4423-5034-2,German 2,21,0:11:01,0:11:04,5Q,134,N,We’re going to have more time in the restaurant ---,,,"German Phase 2, Units 1-30 (2003)","5,6,17"
+432,GR,978-1-4423-5034-2,German 2,21,0:11:09,0:11:14,5R,136,F,Wir haben im Restaurant mehr Zeit ---,6,S,"German Phase 2, Units 1-30 (2003)","5,6,17"
+433,GR,978-1-4423-5034-2,German 2,21,0:11:28,0:11:31,6Q,138,N,If I drive faster now.,,,"German Phase 2, Units 1-30 (2003)","17,18"
+434,GR,978-1-4423-5034-2,German 2,21,0:11:37,0:11:39,6R,139,F,Wenn ich jetzt schneller fahre.,5,S,"German Phase 2, Units 1-30 (2003)","17,18"
+435,GR,978-1-4423-5034-2,German 2,21,0:18:15,0:18:16,7Q,207,N,Could you drive me into town?,,,"German Phase 2, Units 1-30 (2003)",18
+436,GR,978-1-4423-5034-2,German 2,21,0:18:21,0:18:23,7R,208,F,Könntest du mich in die Stadt fahren?,7,Q,"German Phase 2, Units 1-30 (2003)",18
+437,GR,978-1-4423-5034-2,German 2,21,0:20:03,0:20:05,8Q,224,N,My car doesn’t work.,,,"German Phase 2, Units 1-30 (2003)","9,18"
+438,GR,978-1-4423-5034-2,German 2,21,0:20:08,0:20:10,8R,225,F,Mein Auto geht nicht.,4,S,"German Phase 2, Units 1-30 (2003)","9,18"
+439,GR,978-1-4423-5034-2,German 2,21,0:20:55,0:20:57,9Q,232,N,Do you have no more gas?,,,"German Phase 2, Units 1-30 (2003)",18
+440,GR,978-1-4423-5034-2,German 2,21,0:21:03,0:21:05,9R,233,M,Hast du kein Benzin mehr?,5,Q,"German Phase 2, Units 1-30 (2003)",18
+441,GR,978-1-4423-5034-2,German 2,21,0:25:00,0:25:03,10Q,273,N,Where can I find an open pharmacy?,,,"German Phase 2, Units 1-30 (2003)","8,16,20"
+442,GR,978-1-4423-5034-2,German 2,21,0:25:06,0:25:12,10R,274,M,Wo kann ich eine geöffnete Apotheke finden?,7,Q,"German Phase 2, Units 1-30 (2003)","8,16,20"
+443,GR,978-1-4423-5034-2,German 2,21,0:26:38,0:26:40,11Q,288,N,I need only a couple of minutes.,,,"German Phase 2, Units 1-30 (2003)",17
+444,GR,978-1-4423-5034-2,German 2,21,0:26:43,0:26:46,11R,289,F,Ich brauche nur ein paar Minuten.,6,S,"German Phase 2, Units 1-30 (2003)",17
+445,GR,978-1-4423-5034-2,German 2,22,0:03:26,0:03:30,1Q,46,N,You have to drive pretty far.,,,"German Phase 2, Units 1-30 (2003)","4,18"
+446,GR,978-1-4423-5034-2,German 2,22,0:03:32,0:03:36,1R,47,F,Sie müssen ziemlich weit fahren.,5,S,"German Phase 2, Units 1-30 (2003)","4,18"
+447,GR,978-1-4423-5034-2,German 2,22,0:05:43,0:05:45,2Q,70,N,Are you going right away?,,,"German Phase 2, Units 1-30 (2003)","4,18"
+448,GR,978-1-4423-5034-2,German 2,22,0:05:48,0:05:50,2R,71,F,Gehst du sofort?,3,Q,"German Phase 2, Units 1-30 (2003)","4,18"
+449,GR,978-1-4423-5034-2,German 2,22,0:06:16,0:06:19,3Q,76,N,I’d like to go right away.,,,"German Phase 2, Units 1-30 (2003)","4,18"
+450,GR,978-1-4423-5034-2,German 2,22,0:06:21,0:06:24,3R,77,M,Ich möchte sofort gehen.,4,S,"German Phase 2, Units 1-30 (2003)","4,18"
+451,GR,978-1-4423-5034-2,German 2,22,0:10:05,0:10:09,4Q,114,N,A bicycle goes much slower than a car.,,,"German Phase 2, Units 1-30 (2003)","1,18"
+452,GR,978-1-4423-5034-2,German 2,22,0:10:12,0:10:16,4R,115,M,Ein Fahrrad fährt viel langsamer als ein Auto.,8,S,"German Phase 2, Units 1-30 (2003)","1,18"
+453,GR,978-1-4423-5034-2,German 2,22,0:15:53,0:15:54,5Q,172,N,Which car?,,,"German Phase 2, Units 1-30 (2003)",18
+454,GR,978-1-4423-5034-2,German 2,22,0:15:57,0:15:59,5R,173,F,Welches Auto?,2,Q,"German Phase 2, Units 1-30 (2003)",18
+455,GR,978-1-4423-5034-2,German 2,22,0:17:43,0:17:47,6Q,192,N,You could take my bicycle.,,,"German Phase 2, Units 1-30 (2003)","1,18"
+456,GR,978-1-4423-5034-2,German 2,22,0:17:49,0:17:52,6R,193,F,Du könntest mein Fahrrad nehmen.,5,S,"German Phase 2, Units 1-30 (2003)","1,18"
+457,GR,978-1-4423-5034-2,German 2,22,0:19:58,0:20:00,7Q,214,N,We could play tennis.,,,"German Phase 2, Units 1-30 (2003)",1
+458,GR,978-1-4423-5034-2,German 2,22,0:20:03,0:20:05,7R,215,F,Wir könnten Tennis spielen.,4,S,"German Phase 2, Units 1-30 (2003)",1
+459,GR,978-1-4423-5034-2,German 2,22,0:22:36,0:22:37,8Q,240,N,Great!,,,"German Phase 2, Units 1-30 (2003)",7
+460,GR,978-1-4423-5034-2,German 2,22,0:22:40,0:22:41,8R,241,F,Prima!,1,S,"German Phase 2, Units 1-30 (2003)",7
+461,GR,978-1-4423-5034-2,German 2,22,0:23:19,0:23:21,9Q,248,N,That’s a good idea.,,,"German Phase 2, Units 1-30 (2003)",7
+462,GR,978-1-4423-5034-2,German 2,22,0:23:24,0:23:26,9R,249,M,Das ist eine gute Idee.,5,S,"German Phase 2, Units 1-30 (2003)",7
+463,GR,978-1-4423-5034-2,German 2,22,0:24:27,0:24:29,10Q,259,N,Perhaps we’re not playing tennis alone.,,,"German Phase 2, Units 1-30 (2003)",1
+464,GR,978-1-4423-5034-2,German 2,22,0:24:36,0:24:38,10R,261,F,Vielleicht spielen wir nicht alleine Tennis.,6,S,"German Phase 2, Units 1-30 (2003)",1
+465,GR,978-1-4423-5034-2,German 2,22,0:25:38,0:25:40,11Q,273,N,We could play together.,,,"German Phase 2, Units 1-30 (2003)",1
+466,GR,978-1-4423-5034-2,German 2,22,0:25:43,0:25:45,11R,274,F,Wir könnten zusammen spielen.,4,S,"German Phase 2, Units 1-30 (2003)",1
+467,GR,978-1-4423-5034-2,German 2,23,0:02:54,0:02:56,1Q,50,N,I have to find the book.,,,"German Phase 2, Units 1-30 (2003)",1
+468,GR,978-1-4423-5034-2,German 2,23,0:02:59,0:03:01,1R,51,M,Ich muss das Buch finden.,5,S,"German Phase 2, Units 1-30 (2003)",1
+469,GR,978-1-4423-5034-2,German 2,23,0:05:14,0:05:16,2Q,73,N,I thought that it was over there.,,,"German Phase 2, Units 1-30 (2003)",4
+470,GR,978-1-4423-5034-2,German 2,23,0:05:19,0:05:22,2R,74,M,"Ich dachte, dass es dort drüben war.",7,S,"German Phase 2, Units 1-30 (2003)",4
+471,GR,978-1-4423-5034-2,German 2,23,0:08:59,0:09:01,3Q,111,N,I don’t know why it doesn’t work any more.,,,"German Phase 2, Units 1-30 (2003)",9
+472,GR,978-1-4423-5034-2,German 2,23,0:09:05,0:09:07,3R,112,M,"Ich weiß nicht, warum es nicht mehr geht.",8,S,"German Phase 2, Units 1-30 (2003)",9
+473,GR,978-1-4423-5034-2,German 2,23,0:10:13,0:10:15,4Q,124,N,I don’t have a car any more.,,,"German Phase 2, Units 1-30 (2003)","9,18"
+474,GR,978-1-4423-5034-2,German 2,23,0:10:18,0:10:19,4R,125,M,Ich habe kein Auto mehr.,5,S,"German Phase 2, Units 1-30 (2003)","9,18"
+475,GR,978-1-4423-5034-2,German 2,23,0:16:05,0:16:07,5Q,182,N,What did you do today?,,,"German Phase 2, Units 1-30 (2003)","1,17"
+476,GR,978-1-4423-5034-2,German 2,23,0:16:10,0:16:12,5R,183,F,Was hast du heute gemacht?,5,Q,"German Phase 2, Units 1-30 (2003)","1,17"
+477,GR,978-1-4423-5034-2,German 2,23,0:19:08,0:19:09,6Q,210,N,Do you know him?,,,"German Phase 2, Units 1-30 (2003)","5,10"
+478,GR,978-1-4423-5034-2,German 2,23,0:19:12,0:19:13,6R,211,M,Kennst du ihn?,3,Q,"German Phase 2, Units 1-30 (2003)","5,10"
+479,GR,978-1-4423-5034-2,German 2,23,0:19:47,0:19:49,7Q,216,N,He’s also an acquaintance of mine.,,,"German Phase 2, Units 1-30 (2003)","5,20"
+480,GR,978-1-4423-5034-2,German 2,23,0:19:53,0:19:54,7R,217,F,Er ist auch ein Bekannter von mir.,7,S,"German Phase 2, Units 1-30 (2003)","5,20"
+481,GR,978-1-4423-5034-2,German 2,23,0:27:19,0:27:21,8Q,290,N,Who plays better tennis?,,,"German Phase 2, Units 1-30 (2003)",1
+482,GR,978-1-4423-5034-2,German 2,23,0:27:26,0:27:27,8R,291,F,Wer spielt besser Tennis?,4,Q,"German Phase 2, Units 1-30 (2003)",1
+483,GR,978-1-4423-5034-2,German 2,23,0:28:05,0:28:06,9Q,297,N,What time is it?,,,"German Phase 2, Units 1-30 (2003)","7,17"
+484,GR,978-1-4423-5034-2,German 2,23,0:28:09,0:28:10,9R,298,M,Wie spät ist es?,4,Q,"German Phase 2, Units 1-30 (2003)","7,17"
+485,GR,978-1-4423-5034-2,German 2,24,0:01:37,0:01:40,1Q,35,N,"We’re going to play tennis on Wednesday, aren’t we?",,,"German Phase 2, Units 1-30 (2003)","1,17"
+486,GR,978-1-4423-5034-2,German 2,24,0:01:44,0:01:46,1R,36,M,"Wir spielen am Mittwoch Tennis, nicht wahr?",7,Q,"German Phase 2, Units 1-30 (2003)","1,17"
+487,GR,978-1-4423-5034-2,German 2,24,0:03:27,0:03:28,2Q,52,N,When would you like to play?,,,"German Phase 2, Units 1-30 (2003)","1,17"
+488,GR,978-1-4423-5034-2,German 2,24,0:03:35,0:03:36,2R,54,M,Wann möchtest du spielen?,4,Q,"German Phase 2, Units 1-30 (2003)","1,17"
+489,GR,978-1-4423-5034-2,German 2,24,0:04:31,0:04:33,3Q,63,N,That would be a good idea.,,,"German Phase 2, Units 1-30 (2003)",7
+490,GR,978-1-4423-5034-2,German 2,24,0:04:36,0:04:38,3R,64,F,Das wäre eine gute Idee.,5,S,"German Phase 2, Units 1-30 (2003)",7
+491,GR,978-1-4423-5034-2,German 2,24,0:04:50,0:04:53,4Q,66,N,In the afternoon would be better.,,,"German Phase 2, Units 1-30 (2003)","1,7,17"
+492,GR,978-1-4423-5034-2,German 2,24,0:04:57,0:04:59,4R,67,F,Nachmittags wäre besser.,3,S,"German Phase 2, Units 1-30 (2003)","1,7,17"
+493,GR,978-1-4423-5034-2,German 2,24,0:06:37,0:06:39,5Q,82,N,How does your acquaintance (m) play?,,,"German Phase 2, Units 1-30 (2003)","1,5"
+494,GR,978-1-4423-5034-2,German 2,24,0:06:43,0:06:45,5R,83,F,Wie spielt dein Bekannter?,4,Q,"German Phase 2, Units 1-30 (2003)","1,5"
+495,GR,978-1-4423-5034-2,German 2,24,0:09:33,0:09:35,6Q,111,N,We could play tennis together on Thursday.,,,"German Phase 2, Units 1-30 (2003)","1,17"
+496,GR,978-1-4423-5034-2,German 2,24,0:09:41,0:09:44,6R,112,F,Wir könnten am Donnerstag zusammen Tennis spielen.,7,S,"German Phase 2, Units 1-30 (2003)","1,17"
+497,GR,978-1-4423-5034-2,German 2,24,0:15:09,0:15:10,7Q,170,N,I don’t need it.,,,"German Phase 2, Units 1-30 (2003)","7,16"
+498,GR,978-1-4423-5034-2,German 2,24,0:15:14,0:15:15,7R,171,M,Ich brauche es nicht.,4,S,"German Phase 2, Units 1-30 (2003)","7,16"
+499,GR,978-1-4423-5034-2,German 2,24,0:16:11,0:16:12,8Q,181,N,That doesn’t matter.,,,"German Phase 2, Units 1-30 (2003)",7
+500,GR,978-1-4423-5034-2,German 2,24,0:16:15,0:16:16,8R,182,M,Das macht nichts.,3,S,"German Phase 2, Units 1-30 (2003)",7
+501,GR,978-1-4423-5034-2,German 2,24,0:19:55,0:19:57,9Q,223,N,I have a meeting on Wednesday.,,,"German Phase 2, Units 1-30 (2003)","17,20"
+502,GR,978-1-4423-5034-2,German 2,24,0:20:02,0:20:04,9R,224,F,Ich habe am Mittwoch eine Bespechung.,6,S,"German Phase 2, Units 1-30 (2003)","17,20"
+503,GR,978-1-4423-5034-2,German 2,24,0:20:40,0:20:43,10Q,232,N,"On Thursday, I have some things to do in Berlin.",,,"German Phase 2, Units 1-30 (2003)","17,18"
+504,GR,978-1-4423-5034-2,German 2,24,0:20:46,0:20:49,10R,234,F,Am Donnerstag habe ich in Berlin zu tun.,8,S,"German Phase 2, Units 1-30 (2003)","17,18"
+505,GR,978-1-4423-5034-2,German 2,24,0:22:49,0:22:51,11Q,254,N,On Friday I’m coming back.,,,"German Phase 2, Units 1-30 (2003)","17,18"
+506,GR,978-1-4423-5034-2,German 2,24,0:22:55,0:22:57,11R,255,F,Am Freitag komme ich zurück.,5,S,"German Phase 2, Units 1-30 (2003)","17,18"
+507,GR,978-1-4423-5034-2,German 2,25,0:05:03,0:05:07,1Q,60,N,I have a meeting this mid-morning.,,,"German Phase 2, Units 1-30 (2003)","17,20"
+508,GR,978-1-4423-5034-2,German 2,25,0:05:10,0:05:14,1R,61,F,Ich habe heute Vormittag eine Besprechung.,6,S,"German Phase 2, Units 1-30 (2003)","17,20"
+509,GR,978-1-4423-5034-2,German 2,25,0:06:29,0:06:33,2Q,75,N,I can gladly drive you to the office.,,,"German Phase 2, Units 1-30 (2003)",18
+510,GR,978-1-4423-5034-2,German 2,25,0:06:35,0:06:38,2R,76,M,Ich kann dich gern ins Büro fahren.,7,S,"German Phase 2, Units 1-30 (2003)",18
+511,GR,978-1-4423-5034-2,German 2,25,0:07:48,0:07:50,3Q,89,N,My meeting is not until ten o’clock.,,,"German Phase 2, Units 1-30 (2003)","12,17,20"
+512,GR,978-1-4423-5034-2,German 2,25,0:07:55,0:07:58,3R,90,F,Meine Besprechung ist erst um zehn Uhr.,7,S,"German Phase 2, Units 1-30 (2003)","12,17,20"
+513,GR,978-1-4423-5034-2,German 2,25,0:11:04,0:11:07,4Q,119,N,I thought you are coming back on Thursday.,,,"German Phase 2, Units 1-30 (2003)","17,18"
+514,GR,978-1-4423-5034-2,German 2,25,0:11:12,0:11:14,4R,120,M,"Ich dachte, Sie kommen am Donnerstag zurück.",7,S,"German Phase 2, Units 1-30 (2003)","17,18"
+515,GR,978-1-4423-5034-2,German 2,25,0:12:19,0:12:20,5Q,134,N,How much is that?,,,"German Phase 2, Units 1-30 (2003)","12,14,16"
+516,GR,978-1-4423-5034-2,German 2,25,0:12:25,0:12:27,5R,136,F,Wieviel macht das?,3,Q,"German Phase 2, Units 1-30 (2003)","12,14,16"
+517,GR,978-1-4423-5034-2,German 2,25,0:13:22,0:13:24,6Q,146,N,How much is that all together?,,,"German Phase 2, Units 1-30 (2003)","12,14,16"
+518,GR,978-1-4423-5034-2,German 2,25,0:13:27,0:13:30,6R,147,F,Wieviel macht das alles zusammen?,5,Q,"German Phase 2, Units 1-30 (2003)","12,14,16"
+519,GR,978-1-4423-5034-2,German 2,25,0:16:09,0:16:12,7Q,173,N,I still have to exchange some money.,,,"German Phase 2, Units 1-30 (2003)","1,11"
+520,GR,978-1-4423-5034-2,German 2,25,0:16:15,0:16:17,7R,175,F,Ich muss noch etwas Geld wechseln.,6,S,"German Phase 2, Units 1-30 (2003)","1,11"
+521,GR,978-1-4423-5034-2,German 2,25,0:17:01,0:17:04,8Q,182,N,Would you like to exchange money right away?,,,"German Phase 2, Units 1-30 (2003)",11
+522,GR,978-1-4423-5034-2,German 2,25,0:17:08,0:17:10,8R,184,M,Möchten Sie sofort Geld wechseln?,5,Q,"German Phase 2, Units 1-30 (2003)",11
+523,GR,978-1-4423-5034-2,German 2,25,0:21:54,0:21:55,9Q,232,N,He’s coming along later.,,,"German Phase 2, Units 1-30 (2003)","1,17"
+524,GR,978-1-4423-5034-2,German 2,25,0:22:01,0:22:02,9R,234,F,Er kommt später mit.,4,S,"German Phase 2, Units 1-30 (2003)","1,17"
+525,GR,978-1-4423-5034-2,German 2,25,0:23:13,0:23:16,10Q,248,N,I’m going to bring along my husband.,,,"German Phase 2, Units 1-30 (2003)","1,5"
+526,GR,978-1-4423-5034-2,German 2,25,0:23:18,0:23:21,10R,249,F,Ich bringe meinen Mann mit.,5,S,"German Phase 2, Units 1-30 (2003)","1,5"
+527,GR,978-1-4423-5034-2,German 2,25,0:26:44,0:26:46,11Q,283,N,At what time are you leaving tomorrow?,,,"German Phase 2, Units 1-30 (2003)","17,18"
+528,GR,978-1-4423-5034-2,German 2,25,0:26:50,0:26:52,11R,284,F,Um wieviel Uhr fahren Sie morgen weg?,7,Q,"German Phase 2, Units 1-30 (2003)","17,18"
+529,GR,978-1-4423-5034-2,German 2,26,0:03:35,0:03:37,1Q,51,N,Do you have some things to do in the city?,,,"German Phase 2, Units 1-30 (2003)","1,18"
+530,GR,978-1-4423-5034-2,German 2,26,0:03:40,0:03:42,1R,52,F,Haben Sie in der Stadt zu tun?,7,Q,"German Phase 2, Units 1-30 (2003)","1,18"
+531,GR,978-1-4423-5034-2,German 2,26,0:04:01,0:04:03,2Q,56,N,You have to go into town.,,,"German Phase 2, Units 1-30 (2003)","1,18"
+532,GR,978-1-4423-5034-2,German 2,26,0:04:06,0:04:08,2R,57,F,Sie müssen in die Stadt gehen.,6,S,"German Phase 2, Units 1-30 (2003)","1,18"
+533,GR,978-1-4423-5034-2,German 2,26,0:07:23,0:07:26,3Q,90,N,"""Where?” meaning “Where to?""",,,"German Phase 2, Units 1-30 (2003)","4,18"
+534,GR,978-1-4423-5034-2,German 2,26,0:07:28,0:07:29,3R,91,F,Wohin?,1,Q,"German Phase 2, Units 1-30 (2003)","4,18"
+535,GR,978-1-4423-5034-2,German 2,26,0:13:28,0:13:30,4Q,151,N,You’re very welcome.,,,"German Phase 2, Units 1-30 (2003)","7,13"
+536,GR,978-1-4423-5034-2,German 2,26,0:13:32,0:13:34,4R,153,F,Bitte sehr.,2,S,"German Phase 2, Units 1-30 (2003)","7,13"
+537,GR,978-1-4423-5034-2,German 2,26,0:14:34,0:14:35,5Q,163,N,I’m going to bring my son along.,,,"German Phase 2, Units 1-30 (2003)","1,5"
+538,GR,978-1-4423-5034-2,German 2,26,0:14:39,0:14:40,5R,164,M,Ich bringe meinen Sohn mit.,5,S,"German Phase 2, Units 1-30 (2003)","1,5"
+539,GR,978-1-4423-5034-2,German 2,26,0:20:11,0:20:13,6Q,218,N,By car or by train?,,,"German Phase 2, Units 1-30 (2003)","4,18"
+540,GR,978-1-4423-5034-2,German 2,26,0:20:17,0:20:18,6R,219,M,Mit dem Auto oder mit dem Zug?,7,Q,"German Phase 2, Units 1-30 (2003)","4,18"
+541,GR,978-1-4423-5034-2,German 2,26,0:20:46,0:20:47,7Q,224,N,I’m going by bus.,,,"German Phase 2, Units 1-30 (2003)","4,18"
+542,GR,978-1-4423-5034-2,German 2,26,0:20:50,0:20:52,7R,225,F,Ich fahre mit dem Bus.,5,S,"German Phase 2, Units 1-30 (2003)","4,18"
+543,GR,978-1-4423-5034-2,German 2,26,0:24:32,0:24:34,8Q,263,N,Are you coming back by train?,,,"German Phase 2, Units 1-30 (2003)",18
+544,GR,978-1-4423-5034-2,German 2,26,0:24:37,0:24:39,8R,264,M,Kommen Sie mit dem Zug zurück?,6,Q,"German Phase 2, Units 1-30 (2003)",18
+545,GR,978-1-4423-5034-2,German 2,26,0:25:07,0:25:08,9Q,269,N,I’m flying back.,,,"German Phase 2, Units 1-30 (2003)",18
+546,GR,978-1-4423-5034-2,German 2,26,0:25:11,0:25:13,9R,270,F,Ich fliege zurück.,3,S,"German Phase 2, Units 1-30 (2003)",18
+547,GR,978-1-4423-5034-2,German 2,26,0:26:06,0:26:07,10Q,280,N,Flying would be faster.,,,"German Phase 2, Units 1-30 (2003)",18
+548,GR,978-1-4423-5034-2,German 2,26,0:26:11,0:26:12,10R,281,M,Fliegen wäre schneller.,3,S,"German Phase 2, Units 1-30 (2003)",18
+549,GR,978-1-4423-5034-2,German 2,27,0:01:39,0:01:40,1Q,34,N,Where’s the nearest bank?,,,"German Phase 2, Units 1-30 (2003)","4,11,20"
+550,GR,978-1-4423-5034-2,German 2,27,0:01:45,0:01:47,1R,35,M,Wo ist die nächste Bank?,5,Q,"German Phase 2, Units 1-30 (2003)","4,11,20"
+551,GR,978-1-4423-5034-2,German 2,27,0:01:52,0:01:54,2Q,36,N,In town is an open bank.,,,"German Phase 2, Units 1-30 (2003)","11,20"
+552,GR,978-1-4423-5034-2,German 2,27,0:01:58,0:02:00,2R,37,M,In der Stadt ist eine geöffnete Bank.,7,S,"German Phase 2, Units 1-30 (2003)","11,20"
+553,GR,978-1-4423-5034-2,German 2,27,0:07:07,0:07:09,3Q,91,N,They live in the city.,,,"German Phase 2, Units 1-30 (2003)","5,18"
+554,GR,978-1-4423-5034-2,German 2,27,0:07:12,0:07:13,3R,92,F,Sie wohnen in der Stadt.,5,S,"German Phase 2, Units 1-30 (2003)","5,18"
+555,GR,978-1-4423-5034-2,German 2,27,0:07:55,0:07:57,4Q,100,N,There’s our bus.,,,"German Phase 2, Units 1-30 (2003)","9,18"
+556,GR,978-1-4423-5034-2,German 2,27,0:07:41,0:07:42,4R,97,M,Da ist unser bus.,4,S,"German Phase 2, Units 1-30 (2003)","9,18"
+557,GR,978-1-4423-5034-2,German 2,27,0:08:54,0:08:57,5Q,108,N,"Today, I’m going to buy a couple of CDs for the children.",,,"German Phase 2, Units 1-30 (2003)","5,9,14"
+558,GR,978-1-4423-5034-2,German 2,27,0:09:00,0:09:06,5R,110,F,Heute kaufe ich ein paar CDs für die Kinder.,9,S,"German Phase 2, Units 1-30 (2003)","5,9,14"
+559,GR,978-1-4423-5034-2,German 2,27,0:10:53,0:10:55,6Q,128,N,I’m going to there by train.,,,"German Phase 2, Units 1-30 (2003)","9,18"
+560,GR,978-1-4423-5034-2,German 2,27,0:10:59,0:11:02,6R,129,F,Ich fahre mit dem Zug dorthin.,6,S,"German Phase 2, Units 1-30 (2003)","9,18"
+561,GR,978-1-4423-5034-2,German 2,27,0:13:27,0:13:30,7Q,154,N,That’s one hundred ten euros all together.,,,"German Phase 2, Units 1-30 (2003)","11,12,14"
+562,GR,978-1-4423-5034-2,German 2,27,0:13:34,0:13:37,7R,155,F,Das macht einhundertzehn Euro alles zusammen.,6,S,"German Phase 2, Units 1-30 (2003)","11,12,14"
+563,GR,978-1-4423-5034-2,German 2,27,0:17:50,0:17:53,8Q,201,N,I believe my wife is not flying along.,,,"German Phase 2, Units 1-30 (2003)","1,5,9,18"
+564,GR,978-1-4423-5034-2,German 2,27,0:17:56,0:17:59,8R,202,M,"Ich glaube, meine Frau fliegt nicht mit.",7,S,"German Phase 2, Units 1-30 (2003)","1,5,9,18"
+565,GR,978-1-4423-5034-2,German 2,27,0:24:43,0:24:46,9Q,269,N,My wife and I cannot come next weekend.,,,"German Phase 2, Units 1-30 (2003)","1,5,18"
+566,GR,978-1-4423-5034-2,German 2,27,0:24:49,0:24:54,9R,270,M,Meine Frau und ich können nächstes Wochenende nicht kommen.,9,S,"German Phase 2, Units 1-30 (2003)","1,5,18"
+567,GR,978-1-4423-5034-2,German 2,27,0:25:03,0:25:05,10Q,272,N,We cannot come for dinner.,,,"German Phase 2, Units 1-30 (2003)","1,6"
+568,GR,978-1-4423-5034-2,German 2,27,0:25:11,0:25:13,10R,273,M,Wir können nicht zum Abendessen kommen.,6,S,"German Phase 2, Units 1-30 (2003)","1,6"
+569,GR,978-1-4423-5034-2,German 2,28,0:01:21,0:01:23,1Q,28,N,Would you like to come to our place?,,,"German Phase 2, Units 1-30 (2003)","1,10"
+570,GR,978-1-4423-5034-2,German 2,28,0:01:26,0:01:28,1R,29,M,Möchten Sie zu uns kommen?,5,Q,"German Phase 2, Units 1-30 (2003)","1,10"
+571,GR,978-1-4423-5034-2,German 2,28,0:03:40,0:03:42,2Q,51,N,I’m flying back alone.,,,"German Phase 2, Units 1-30 (2003)","1,18"
+572,GR,978-1-4423-5034-2,German 2,28,0:03:46,0:03:48,2R,52,F,Ich fliege alleine zurück.,4,S,"German Phase 2, Units 1-30 (2003)","1,18"
+573,GR,978-1-4423-5034-2,German 2,28,0:05:56,0:05:59,3Q,72,N,Maybe you can come to our place in two weeks.,,,"German Phase 2, Units 1-30 (2003)","1,12,17"
+574,GR,978-1-4423-5034-2,German 2,28,0:06:04,0:06:07,3R,74,M,Vielleicht können Sie in zwei Wochen zu uns kommen.,9,S,"German Phase 2, Units 1-30 (2003)","1,12,17"
+575,GR,978-1-4423-5034-2,German 2,28,0:08:42,0:08:47,4Q,103,N,Can you come for lunch next weekend?,,,"German Phase 2, Units 1-30 (2003)","1,6,17"
+576,GR,978-1-4423-5034-2,German 2,28,0:08:49,0:08:55,4R,104,F,Können Sie nächstes Wochenende zum Mittagessen kommen?,7,Q,"German Phase 2, Units 1-30 (2003)","1,6,17"
+577,GR,978-1-4423-5034-2,German 2,28,0:12:21,0:12:23,5Q,139,N,First I’m going to the bank.,,,"German Phase 2, Units 1-30 (2003)","11,12,20"
+578,GR,978-1-4423-5034-2,German 2,28,0:12:26,0:12:27,5R,140,M,Erst gehe ich zur Bank.,5,S,"German Phase 2, Units 1-30 (2003)","11,12,20"
+579,GR,978-1-4423-5034-2,German 2,28,0:18:15,0:18:18,6Q,200,N,Would you like to come for lunch next Sunday?,,,"German Phase 2, Units 1-30 (2003)","5,6,17"
+580,GR,978-1-4423-5034-2,German 2,28,0:18:22,0:18:25,6R,202,M,Möchten Sie nächsten Sonntag zum Mittagessen kommen?,7,Q,"German Phase 2, Units 1-30 (2003)","5,6,17"
+581,GR,978-1-4423-5034-2,German 2,28,0:19:32,0:19:34,7Q,216,N,How do I get to your place?,,,"German Phase 2, Units 1-30 (2003)","4,18"
+582,GR,978-1-4423-5034-2,German 2,28,0:19:37,0:19:39,7R,217,F,Wie komme ich zu Ihnen?,5,Q,"German Phase 2, Units 1-30 (2003)","4,18"
+583,GR,978-1-4423-5034-2,German 2,28,0:21:06,0:21:08,8Q,230,N,Here’s a city map.,,,"German Phase 2, Units 1-30 (2003)","4,18"
+584,GR,978-1-4423-5034-2,German 2,28,0:21:11,0:21:12,8R,231,M,Hier ist ein Stadtplan.,4,S,"German Phase 2, Units 1-30 (2003)","4,18"
+585,GR,978-1-4423-5034-2,German 2,28,0:21:35,0:21:37,9Q,236,N,I can show you.,,,"German Phase 2, Units 1-30 (2003)","4,7"
+586,GR,978-1-4423-5034-2,German 2,28,0:21:39,0:21:41,9R,237,M,Ich kann Ihnen zeigen.,4,S,"German Phase 2, Units 1-30 (2003)","4,7"
+587,GR,978-1-4423-5034-2,German 2,28,0:23:16,0:23:18,10Q,254,N,I’m coming by car from the city.,,,"German Phase 2, Units 1-30 (2003)","4,18"
+588,GR,978-1-4423-5034-2,German 2,28,0:23:23,0:23:25,10R,255,F,Ich komme mit dem Auto von der Stadt.,8,S,"German Phase 2, Units 1-30 (2003)","4,18"
+589,GR,978-1-4423-5034-2,German 2,29,0:00:15,0:00:17,1Q,6,N,"I’m late, unfortunately.",,,"German Phase 2, Units 1-30 (2003)","7,17"
+590,GR,978-1-4423-5034-2,German 2,29,0:00:20,0:00:21,1R,8,M,Ich komme leider zu spät.,5,S,"German Phase 2, Units 1-30 (2003)","7,17"
+591,GR,978-1-4423-5034-2,German 2,29,0:02:29,0:02:32,2Q,39,N,Then I’m going to the post office.,,,"German Phase 2, Units 1-30 (2003)","4,20"
+592,GR,978-1-4423-5034-2,German 2,29,0:02:34,0:02:37,2R,40,M,Dann gehe ich zur Post.,5,S,"German Phase 2, Units 1-30 (2003)","4,20"
+593,GR,978-1-4423-5034-2,German 2,29,0:03:11,0:03:13,3Q,47,N,To which pharmacy?,,,"German Phase 2, Units 1-30 (2003)","4,8,16,20"
+594,GR,978-1-4423-5034-2,German 2,29,0:03:16,0:03:18,3R,48,F,Zu welcher Apotheke?,3,Q,"German Phase 2, Units 1-30 (2003)","4,8,16,20"
+595,GR,978-1-4423-5034-2,German 2,29,0:05:57,0:05:59,4Q,76,N,We’d like to invite you for dinner.,,,"German Phase 2, Units 1-30 (2003)","1,6"
+596,GR,978-1-4423-5034-2,German 2,29,0:06:03,0:06:05,4R,77,M,Wir möchten Sie zum Abendessen einladen.,6,S,"German Phase 2, Units 1-30 (2003)","1,6"
+597,GR,978-1-4423-5034-2,German 2,29,0:10:59,0:11:01,5Q,129,N,Could I see the city map?,,,"German Phase 2, Units 1-30 (2003)","4,18"
+598,GR,978-1-4423-5034-2,German 2,29,0:11:03,0:11:05,5R,130,F,Könnte ich den Stadtplan sehen?,5,Q,"German Phase 2, Units 1-30 (2003)","4,18"
+599,GR,978-1-4423-5034-2,German 2,29,0:12:59,0:13:00,6Q,148,N,Can you show me your house?,,,"German Phase 2, Units 1-30 (2003)",4
+600,GR,978-1-4423-5034-2,German 2,29,0:13:04,0:13:06,6R,149,F,Können Sie mir Ihr Haus zeigen?,6,Q,"German Phase 2, Units 1-30 (2003)",4
+601,GR,978-1-4423-5034-2,German 2,29,0:15:44,0:15:46,7Q,177,N,I’m going to try to show you the house.,,,"German Phase 2, Units 1-30 (2003)","4,9"
+602,GR,978-1-4423-5034-2,German 2,29,0:15:50,0:15:52,7R,178,M,"Ich versuche, Ihnen das Haus zu zeigen.",7,S,"German Phase 2, Units 1-30 (2003)","4,9"
+603,GR,978-1-4423-5034-2,German 2,29,0:16:15,0:16:17,8Q,184,N,I can’t see our house.,,,"German Phase 2, Units 1-30 (2003)","4,9"
+604,GR,978-1-4423-5034-2,German 2,29,0:16:20,0:16:22,8R,185,M,Ich kann unser Haus nicht sehen.,6,S,"German Phase 2, Units 1-30 (2003)","4,9"
+605,GR,978-1-4423-5034-2,German 2,29,0:16:44,0:16:46,9Q,188,N,Our street is on the city map.,,,"German Phase 2, Units 1-30 (2003)","4,9"
+606,GR,978-1-4423-5034-2,German 2,29,0:16:49,0:16:51,9R,189,M,Unsere Straße ist auf dem Stadtplan.,6,S,"German Phase 2, Units 1-30 (2003)","4,9"
+607,GR,978-1-4423-5034-2,German 2,29,0:18:16,0:18:18,10Q,208,N,I’m going to try to show you the way.,,,"German Phase 2, Units 1-30 (2003)","4,9"
+608,GR,978-1-4423-5034-2,German 2,29,0:18:49,0:18:56,10R,209,M,"Ich versuche, Ihnen den Weg zu zeigen.",7,S,"German Phase 2, Units 1-30 (2003)","4,9"
+609,GR,978-1-4423-5034-2,German 2,30,0:02:17,0:02:23,1Q,34,N,I’m going to try to help you.,,,"German Phase 2, Units 1-30 (2003)","9,13,16"
+610,GR,978-1-4423-5034-2,German 2,30,0:02:23,0:02:26,1R,35,M,"Ich versuche, Ihnen zu helfen.",5,S,"German Phase 2, Units 1-30 (2003)","9,13,16"
+611,GR,978-1-4423-5034-2,German 2,30,0:03:33,0:03:34,2Q,46,N,Can you show me the way?,,,"German Phase 2, Units 1-30 (2003)","4,16"
+612,GR,978-1-4423-5034-2,German 2,30,0:03:38,0:03:40,2R,47,F,Können Sie mir den Weg zeigen?,6,Q,"German Phase 2, Units 1-30 (2003)","4,16"
+613,GR,978-1-4423-5034-2,German 2,30,0:10:14,0:10:20,3Q,118,N,How do I get to your place by car?,,,"German Phase 2, Units 1-30 (2003)","4,18"
+614,GR,978-1-4423-5034-2,German 2,30,0:10:21,0:10:24,3R,119,M,Wie komme ich mit dem Auto zu Ihnen?,8,Q,"German Phase 2, Units 1-30 (2003)","4,18"
+615,GR,978-1-4423-5034-2,German 2,30,0:14:21,0:14:23,4Q,159,N,How’s the weather at your place?,,,"German Phase 2, Units 1-30 (2003)","18,19"
+616,GR,978-1-4423-5034-2,German 2,30,0:14:26,0:14:28,4R,160,M,Wie ist das Wetter bei Ihnen?,6,Q,"German Phase 2, Units 1-30 (2003)","18,19"
+617,GR,978-1-4423-5034-2,German 2,30,0:16:24,0:16:26,5Q,182,N,Is there no snow there?,,,"German Phase 2, Units 1-30 (2003)","18,19"
+618,GR,978-1-4423-5034-2,German 2,30,0:16:21,0:16:23,5R,181,M,Gibt es keinen Schnee dort?,5,Q,"German Phase 2, Units 1-30 (2003)","18,19"
+619,GR,978-1-4423-5034-2,German 2,30,0:18:02,0:18:04,6Q,200,N,There’s no snow at our place.,,,"German Phase 2, Units 1-30 (2003)","9,18,19"
+620,GR,978-1-4423-5034-2,German 2,30,0:18:08,0:18:10,6R,201,F,Es gibt keinen Schnee bei uns.,6,S,"German Phase 2, Units 1-30 (2003)","9,18,19"
+621,GR,978-1-4423-5034-2,German 2,30,0:19:31,0:19:33,7Q,215,N,There’s only a little rain at our place.,,,"German Phase 2, Units 1-30 (2003)","9,18,19"
+622,GR,978-1-4423-5034-2,German 2,30,0:19:37,0:19:39,7R,216,F,Es gibt nur ein bisschen Regen bei uns.,8,S,"German Phase 2, Units 1-30 (2003)","9,18,19"
+623,GR,978-1-4423-5034-2,German 2,30,0:19:43,0:19:46,8Q,217,N,It’s very beautiful at our place.,,,"German Phase 2, Units 1-30 (2003)","4,9"
+624,GR,978-1-4423-5034-2,German 2,30,0:19:48,0:19:50,8R,218,F,Es ist sehr schön bei uns.,6,S,"German Phase 2, Units 1-30 (2003)","4,9"
+625,GR,978-1-4423-5034-2,German 2,30,0:22:04,0:22:07,9Q,245,N,We’d like to take a trip to America next summer.,,,"German Phase 2, Units 1-30 (2003)","1,9,17,18"
+626,GR,978-1-4423-5034-2,German 2,30,0:22:12,0:22:16,9R,246,M,Wir möchten nächsten Sommer eine Reise nach Amerika machen.,9,S,"German Phase 2, Units 1-30 (2003)","1,9,17,18"
+627,GR,978-1-4423-5034-2,German 2,30,0:24:50,0:24:52,10Q,274,N,This photo is better.,,,"German Phase 2, Units 1-30 (2003)",9
+628,GR,978-1-4423-5034-2,German 2,30,0:24:55,0:24:56,10R,275,F,Dieses Foto ist besser.,4,S,"German Phase 2, Units 1-30 (2003)",9

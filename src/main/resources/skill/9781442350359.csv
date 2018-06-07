@@ -1,0 +1,615 @@
+Rec #,Lang,Source Audio ISBN_13,Course,Unit Num,start,stop,QZ #,line #,Speaker,Cue,#of words,_Q_or_S,Course Name _Source_,Skills
+1,GR,978-1-4423-5035-9,German 3,1,0:02:43,0:02:45,01Q,42,N,Can you show me the way to the post office?,,,"German Phase 3, Units 1-30 (2006)","4,20"
+2,GR,978-1-4423-5035-9,German 3,1,0:02:51,0:02:52,01R,43,M,Können Sie mir den Weg zur Post zeigen?,8,Q,"German Phase 3, Units 1-30 (2006)","4,20"
+3,GR,978-1-4423-5035-9,German 3,1,0:02:59,0:03:01,02Q,44,N,I’m trying to show you the house.,,,"German Phase 3, Units 1-30 (2006)","4,9"
+4,GR,978-1-4423-5035-9,German 3,1,0:03:06,0:03:08,02R,45,F,"Ich versuche, Ihnen das Haus zu zeigen.",7,S,"German Phase 3, Units 1-30 (2006)","4,9"
+5,GR,978-1-4423-5035-9,German 3,1,0:03:40,0:03:42,03Q,49,N,I'm trying to read the city map,,,"German Phase 3, Units 1-30 (2006)","1,4,9,18"
+6,GR,978-1-4423-5035-9,German 3,1,0:03:46,0:03:48,03R,50,M,Ich versuche den Stadtplan zu lesen.,6,S,"German Phase 3, Units 1-30 (2006)","1,4,9,18"
+7,GR,978-1-4423-5035-9,German 3,1,0:04:19,0:04:20,04Q,55,N,Look!,,,"German Phase 3, Units 1-30 (2006)",7
+8,GR,978-1-4423-5035-9,German 3,1,0:04:29,0:04:30,04R,56,F,Schauen Sie!,2,S,"German Phase 3, Units 1-30 (2006)",7
+9,GR,978-1-4423-5035-9,German 3,1,0:07:44,0:07:46,05Q,93,N,How does one get to your place?,,,"German Phase 3, Units 1-30 (2006)",4
+10,GR,978-1-4423-5035-9,German 3,1,0:07:51,0:07:53,05R,95,M,Wie kommt man zu Ihnen?,5,Q,"German Phase 3, Units 1-30 (2006)",4
+11,GR,978-1-4423-5035-9,German 3,1,0:10:45,0:10:46,06Q,130,N,Where do you come from?,,,"German Phase 3, Units 1-30 (2006)",7
+12,GR,978-1-4423-5035-9,German 3,1,0:10:52,0:10:53,06R,131,M,Woher kommen Sie?,3,Q,"German Phase 3, Units 1-30 (2006)",7
+13,GR,978-1-4423-5035-9,German 3,1,0:13:34,0:13:35,07Q,156,N,At this time it’s pretty cold.,,,"German Phase 3, Units 1-30 (2006)","9,17,19"
+14,GR,978-1-4423-5035-9,German 3,1,0:13:40,0:13:43,07R,157,M,Zur Zeit ist es ziemlich kalt.,6,S,"German Phase 3, Units 1-30 (2006)","9,17,19"
+15,GR,978-1-4423-5035-9,German 3,1,0:16:31,0:16:32,08Q,183,N,Last week it snowed a little.,,,"German Phase 3, Units 1-30 (2006)","9,19"
+16,GR,978-1-4423-5035-9,German 3,1,0:16:38,0:16:40,08R,184,M,Letzte Woche hat es ein bisschen geschneit.,7,S,"German Phase 3, Units 1-30 (2006)","9,19"
+17,GR,978-1-4423-5035-9,German 3,1,0:18:55,0:18:57,09Q,209,N,Is it hot in the summer?,,,"German Phase 3, Units 1-30 (2006)","17,19"
+18,GR,978-1-4423-5035-9,German 3,1,0:18:59,0:19:01,09R,210,F,Ist es heiß im Sommer?,5,Q,"German Phase 3, Units 1-30 (2006)","17,19"
+19,GR,978-1-4423-5035-9,German 3,1,0:23:55,0:23:57,10Q,262,N,I could show you a couple photos.,,,"German Phase 3, Units 1-30 (2006)","1,12"
+20,GR,978-1-4423-5035-9,German 3,1,0:24:02,0:24:04,10R,263,F,Ich könnte Ihnen ein paar Fotos zeigen.,7,S,"German Phase 3, Units 1-30 (2006)","1,12"
+21,GR,978-1-4423-5035-9,German 3,2,0:01:53,0:01:54,01Q,28,N,He’s a professor.,,,"German Phase 3, Units 1-30 (2006)","5,20"
+22,GR,978-1-4423-5035-9,German 3,2,0:01:57,0:01:59,01R,29,F,Er ist Professor.,3,S,"German Phase 3, Units 1-30 (2006)","5,20"
+23,GR,978-1-4423-5035-9,German 3,2,0:03:50,0:03:51,02Q,48,N,That’s a photo of the city.,,,"German Phase 3, Units 1-30 (2006)","9,18"
+24,GR,978-1-4423-5035-9,German 3,2,0:03:55,0:03:57,02R,50,F,Das ist ein Foto von der Stadt.,7,S,"German Phase 3, Units 1-30 (2006)","9,18"
+25,GR,978-1-4423-5035-9,German 3,2,0:04:59,0:05:00,03Q,62,N,Cheers!,,,"German Phase 3, Units 1-30 (2006)",7
+26,GR,978-1-4423-5035-9,German 3,2,0:05:02,0:05:03,03R,63,F,Prost!,1,S,"German Phase 3, Units 1-30 (2006)",7
+27,GR,978-1-4423-5035-9,German 3,2,0:06:18,0:06:20,04Q,77,N,We live on Karl Street one hundred.,,,"German Phase 3, Units 1-30 (2006)","4,9,12"
+28,GR,978-1-4423-5035-9,German 3,2,0:06:26,0:06:29,04R,78,F,Wir wohnen in der Karlstraße einhundert.,6,S,"German Phase 3, Units 1-30 (2006)","4,9,12"
+29,GR,978-1-4423-5035-9,German 3,2,0:11:24,0:11:27,05Q,131,N,Say that you’d like to have a glass of white wine.,,,"German Phase 3, Units 1-30 (2006)","6,12"
+30,GR,978-1-4423-5035-9,German 3,2,0:11:31,0:11:33,05R,133,F,Ich hätte gern ein Glas Weißwein.,6,S,"German Phase 3, Units 1-30 (2006)","6,12"
+31,GR,978-1-4423-5035-9,German 3,2,0:12:06,0:12:08,06Q,139,N,I’d like to have a small lager.,,,"German Phase 3, Units 1-30 (2006)","6,12"
+32,GR,978-1-4423-5035-9,German 3,2,0:12:12,0:12:13,06R,140,M,Ich hätte gern ein kleines Helles.,6,S,"German Phase 3, Units 1-30 (2006)","6,12"
+33,GR,978-1-4423-5035-9,German 3,2,0:16:25,0:16:28,07Q,185,N,In Summer she’s taking a German class.,,,"German Phase 3, Units 1-30 (2006)","1,15,17"
+34,GR,978-1-4423-5035-9,German 3,2,0:16:31,0:16:34,07R,186,F,Im Sommer macht sie einen Deutschkurs.,6,S,"German Phase 3, Units 1-30 (2006)","1,15,17"
+35,GR,978-1-4423-5035-9,German 3,2,0:18:00,0:18:01,08Q,200,N,Another lager?,,,"German Phase 3, Units 1-30 (2006)","6,7"
+36,GR,978-1-4423-5035-9,German 3,2,0:18:05,0:18:06,08R,201,M,Noch ein Helles?,3,Q,"German Phase 3, Units 1-30 (2006)","6,7"
+37,GR,978-1-4423-5035-9,German 3,2,0:18:52,0:18:52,09Q,211,N,Pardon me?,,,"German Phase 3, Units 1-30 (2006)","7,13"
+38,GR,978-1-4423-5035-9,German 3,2,0:18:56,0:18:57,09R,213,F,Wie bitte?,2,Q,"German Phase 3, Units 1-30 (2006)","7,13"
+39,GR,978-1-4423-5035-9,German 3,2,0:23:58,0:24:01,10Q,223,N,At our place there is at this time a lot of snow.,,,"German Phase 3, Units 1-30 (2006)","9,17,19"
+40,GR,978-1-4423-5035-9,German 3,2,0:24:05,0:24:07,10R,224,M,Bei uns gibt es zur Zeit viel Schnee.,8,S,"German Phase 3, Units 1-30 (2006)","9,17,19"
+41,GR,978-1-4423-5035-9,German 3,3,0:01:21,0:01:23,01Q,29,N,I would like to have a large lager.,,,"German Phase 3, Units 1-30 (2006)","6,12"
+42,GR,978-1-4423-5035-9,German 3,3,0:01:28,0:01:30,01R,30,M,Ich hätte gern ein großes Helles.,6,S,"German Phase 3, Units 1-30 (2006)","6,12"
+43,GR,978-1-4423-5035-9,German 3,3,0:04:57,0:04:58,02Q,71,N,Here’s a photo of my daughter.,,,"German Phase 3, Units 1-30 (2006)","5,9"
+44,GR,978-1-4423-5035-9,German 3,3,0:05:02,0:05:04,02R,72,F,Hier ist ein Foto von meiner Tochter.,7,S,"German Phase 3, Units 1-30 (2006)","5,9"
+45,GR,978-1-4423-5035-9,German 3,3,0:05:38,0:05:40,03Q,78,N,My daughter’s learning Italian.,,,"German Phase 3, Units 1-30 (2006)","5,9,15"
+46,GR,978-1-4423-5035-9,German 3,3,0:05:44,0:05:46,03R,79,F,Meine Tochter lernt Italienisch.,4,S,"German Phase 3, Units 1-30 (2006)","5,9,15"
+47,GR,978-1-4423-5035-9,German 3,3,0:07:47,0:07:48,04Q,97,N,Did it rain?,,,"German Phase 3, Units 1-30 (2006)",19
+48,GR,978-1-4423-5035-9,German 3,3,0:07:51,0:07:52,04R,98,M,Hat es geregnet?,3,Q,"German Phase 3, Units 1-30 (2006)",19
+49,GR,978-1-4423-5035-9,German 3,3,0:12:02,0:12:04,05Q,146,N,It’s never very cold.,,,"German Phase 3, Units 1-30 (2006)","9,19"
+50,GR,978-1-4423-5035-9,German 3,3,0:12:07,0:12:08,05R,147,M,Es ist nie sehr kalt.,5,S,"German Phase 3, Units 1-30 (2006)","9,19"
+51,GR,978-1-4423-5035-9,German 3,3,0:13:52,0:13:54,06Q,162,N,It almost never snows.,,,"German Phase 3, Units 1-30 (2006)","9,19"
+52,GR,978-1-4423-5035-9,German 3,3,0:13:57,0:13:58,06R,163,F,Es schneit fast nie.,4,S,"German Phase 3, Units 1-30 (2006)","9,19"
+53,GR,978-1-4423-5035-9,German 3,3,0:16:45,0:16:47,07Q,191,N,Next month I’m going there.,,,"German Phase 3, Units 1-30 (2006)","9,17,18"
+54,GR,978-1-4423-5035-9,German 3,3,0:16:51,0:16:53,07R,192,M,Nächsten Monat fahre ich dorthin.,5,S,"German Phase 3, Units 1-30 (2006)","9,17,18"
+55,GR,978-1-4423-5035-9,German 3,3,0:18:27,0:18:29,08Q,206,N,That’s really a fantastic city.,,,"German Phase 3, Units 1-30 (2006)","9,18"
+56,GR,978-1-4423-5035-9,German 3,3,0:18:35,0:18:37,08R,207,F,Das ist wirklich eine tolle Stadt.,6,S,"German Phase 3, Units 1-30 (2006)","9,18"
+57,GR,978-1-4423-5035-9,German 3,3,0:18:56,0:18:57,09Q,210,N,I grew up.,,,"German Phase 3, Units 1-30 (2006)","5,9"
+58,GR,978-1-4423-5035-9,German 3,3,0:19:00,0:19:02,09R,211,F,Ich bin aufgewachsen.,3,S,"German Phase 3, Units 1-30 (2006)","5,9"
+59,GR,978-1-4423-5035-9,German 3,3,0:24:25,0:24:31,10Q,265,N,And where did you grow up?,,,"German Phase 3, Units 1-30 (2006)",7
+60,GR,978-1-4423-5035-9,German 3,3,0:24:30,0:24:31,10R,266,M,Und wo sind Sie aufgewachsen?,5,Q,"German Phase 3, Units 1-30 (2006)",7
+61,GR,978-1-4423-5035-9,German 3,4,0:04:35,0:04:36,01Q,52,N,How’s the weather in the winter?,,,"German Phase 3, Units 1-30 (2006)","17,19"
+62,GR,978-1-4423-5035-9,German 3,4,0:04:39,0:04:41,01R,53,F,Wie ist das Wetter im Winter?,6,Q,"German Phase 3, Units 1-30 (2006)","17,19"
+63,GR,978-1-4423-5035-9,German 3,4,0:07:30,0:07:32,02Q,79,N,It rains often in the winter.,,,"German Phase 3, Units 1-30 (2006)","9,17,19"
+64,GR,978-1-4423-5035-9,German 3,4,0:07:38,0:07:39,02R,80,F,Es regnet oft im Winter.,5,S,"German Phase 3, Units 1-30 (2006)","9,17,19"
+65,GR,978-1-4423-5035-9,German 3,4,0:10:08,0:10:10,03Q,103,N,I’m (m) a branch manager.,,,"German Phase 3, Units 1-30 (2006)","9,20"
+66,GR,978-1-4423-5035-9,German 3,4,0:10:13,0:10:14,03R,104,M,Ich bin Filialleiter.,3,S,"German Phase 3, Units 1-30 (2006)","9,20"
+67,GR,978-1-4423-5035-9,German 3,4,0:11:52,0:11:53,04Q,117,N,What does she teach?,,,"German Phase 3, Units 1-30 (2006)",20
+68,GR,978-1-4423-5035-9,German 3,4,0:11:56,0:11:58,04R,118,F,Was unterrichtet sie?,3,Q,"German Phase 3, Units 1-30 (2006)",20
+69,GR,978-1-4423-5035-9,German 3,4,0:13:43,0:13:46,05Q,137,N,"In the winter, she never has time.",,,"German Phase 3, Units 1-30 (2006)","9,17"
+70,GR,978-1-4423-5035-9,German 3,4,0:13:52,0:13:54,05R,139,M,Im Winter hat sie nie Zeit.,6,S,"German Phase 3, Units 1-30 (2006)","9,17"
+71,GR,978-1-4423-5035-9,German 3,4,0:14:23,0:14:24,06Q,144,N,She’s a German teacher.,,,"German Phase 3, Units 1-30 (2006)","9,20"
+72,GR,978-1-4423-5035-9,German 3,4,0:14:27,0:14:29,06R,145,M,Sie ist Deutschlehrerin.,3,S,"German Phase 3, Units 1-30 (2006)","9,20"
+73,GR,978-1-4423-5035-9,German 3,4,0:19:44,0:19:45,07Q,197,N,He’s married to a German woman.,,,"German Phase 3, Units 1-30 (2006)","5,9"
+74,GR,978-1-4423-5035-9,German 3,4,0:19:52,0:19:54,07R,198,M,Er ist mit einer Deutschen verheiratet.,6,S,"German Phase 3, Units 1-30 (2006)","5,9"
+75,GR,978-1-4423-5035-9,German 3,4,0:22:08,0:22:10,08Q,221,N,My brother is also married.,,,"German Phase 3, Units 1-30 (2006)","5,9"
+76,GR,978-1-4423-5035-9,German 3,4,0:22:14,0:22:16,08R,222,F,Mein Bruder ist auch verheiratet.,5,S,"German Phase 3, Units 1-30 (2006)","5,9"
+77,GR,978-1-4423-5035-9,German 3,4,0:23:54,0:23:56,09Q,238,N,Unfortunately it often rains.,,,"German Phase 3, Units 1-30 (2006)","9,19"
+78,GR,978-1-4423-5035-9,German 3,4,0:24:01,0:24:02,09R,239,F,Leider regnet es oft.,4,S,"German Phase 3, Units 1-30 (2006)","9,19"
+79,GR,978-1-4423-5035-9,German 3,4,0:26:27,0:26:29,10Q,263,N,Do you have a photo of your family?,,,"German Phase 3, Units 1-30 (2006)",5
+80,GR,978-1-4423-5035-9,German 3,4,0:26:33,0:26:35,10R,265,F,Haben Sie ein Foto von Ihrer Familie?,7,Q,"German Phase 3, Units 1-30 (2006)",5
+81,GR,978-1-4423-5035-9,German 3,5,0:03:20,0:03:21,01Q,43,N,My sister still lives there.,,,"German Phase 3, Units 1-30 (2006)","5,18"
+82,GR,978-1-4423-5035-9,German 3,5,0:03:26,0:03:28,01R,44,F,Meine Schwester wohnt noch dort.,5,S,"German Phase 3, Units 1-30 (2006)","5,18"
+83,GR,978-1-4423-5035-9,German 3,5,0:05:29,0:05:31,02Q,65,N,In the summer it’s never very hot.,,,"German Phase 3, Units 1-30 (2006)","17,19"
+84,GR,978-1-4423-5035-9,German 3,5,0:05:35,0:05:37,02R,66,F,Im Sommer ist es nie sehr heiß.,7,S,"German Phase 3, Units 1-30 (2006)","17,19"
+85,GR,978-1-4423-5035-9,German 3,5,0:06:56,0:06:58,03Q,79,N,Next month I’m going to visit them.,,,"German Phase 3, Units 1-30 (2006)","17,18"
+86,GR,978-1-4423-5035-9,German 3,5,0:07:01,0:07:03,03R,80,M,Nächsten Monat besuche ich sie.,5,S,"German Phase 3, Units 1-30 (2006)","17,18"
+87,GR,978-1-4423-5035-9,German 3,5,0:25:54,0:25:57,04Q,263,N,My husband works at a company here in Berlin.,,,"German Phase 3, Units 1-30 (2006)","5,20"
+88,GR,978-1-4423-5035-9,German 3,5,0:26:01,0:26:04,04R,264,F,Mein Mann arbeitet bei einer Firma hier in Berlin.,9,S,"German Phase 3, Units 1-30 (2006)","5,20"
+89,GR,978-1-4423-5035-9,German 3,5,0:17:30,0:17:31,05Q,182,N,Where did you learn German?,,,"German Phase 3, Units 1-30 (2006)","1,15"
+90,GR,978-1-4423-5035-9,German 3,5,0:17:34,0:17:36,05R,184,F,Wo haben Sie Deutsch gelernt?,5,Q,"German Phase 3, Units 1-30 (2006)","1,15"
+91,GR,978-1-4423-5035-9,German 3,5,0:19:21,0:19:22,06Q,199,N,Did you grow up here?,,,"German Phase 3, Units 1-30 (2006)",7
+92,GR,978-1-4423-5035-9,German 3,5,0:19:25,0:19:27,06R,200,F,Sind Sie hier aufgewachsen?,4,Q,"German Phase 3, Units 1-30 (2006)",7
+93,GR,978-1-4423-5035-9,German 3,5,0:21:01,0:21:02,07Q,215,N,It wasn’t easy.,,,"German Phase 3, Units 1-30 (2006)",9
+94,GR,978-1-4423-5035-9,German 3,5,0:21:05,0:21:06,07R,216,M,Es war nicht leicht.,4,S,"German Phase 3, Units 1-30 (2006)",9
+95,GR,978-1-4423-5035-9,German 3,5,0:26:27,0:26:29,08Q,269,N,At this time he’s learning English.,,,"German Phase 3, Units 1-30 (2006)","1,15,17"
+96,GR,978-1-4423-5035-9,German 3,5,0:26:32,0:26:34,08R,270,F,Zur Zeit lernt er Englisch.,5,S,"German Phase 3, Units 1-30 (2006)","1,15,17"
+97,GR,978-1-4423-5035-9,German 3,5,0:24:46,0:24:48,09Q,252,N,In the winter it rains a lot.,,,"German Phase 3, Units 1-30 (2006)","9,19"
+98,GR,978-1-4423-5035-9,German 3,5,0:24:52,0:24:53,09R,253,F,Im Winter regnet es viel.,5,S,"German Phase 3, Units 1-30 (2006)","9,19"
+99,GR,978-1-4423-5035-9,German 3,5,0:29:02,0:29:03,10Q,296,N,It’s never very easy.,,,"German Phase 3, Units 1-30 (2006)","9,17"
+100,GR,978-1-4423-5035-9,German 3,5,0:29:07,0:29:08,10R,297,F,Es ist nie sehr leicht.,5,S,"German Phase 3, Units 1-30 (2006)","9,17"
+101,GR,978-1-4423-5035-9,German 3,6,0:03:35,0:03:36,01Q,47,N,I learned English.,,,"German Phase 3, Units 1-30 (2006)","1,15"
+102,GR,978-1-4423-5035-9,German 3,6,0:03:39,0:03:41,01R,48,F,Ich habe Englisch gelernt.,4,S,"German Phase 3, Units 1-30 (2006)","1,15"
+103,GR,978-1-4423-5035-9,German 3,6,0:04:09,0:04:10,02Q,53,N,I took a class.,,,"German Phase 3, Units 1-30 (2006)","1,9,20"
+104,GR,978-1-4423-5035-9,German 3,6,0:04:14,0:04:15,02R,54,F,Ich habe einen Kurs gemacht.,5,S,"German Phase 3, Units 1-30 (2006)","1,9,20"
+105,GR,978-1-4423-5035-9,German 3,6,0:06:02,0:06:04,03Q,72,N,She works for a German company there.,,,"German Phase 3, Units 1-30 (2006)","5,20"
+106,GR,978-1-4423-5035-9,German 3,6,0:06:09,0:06:11,03R,73,F,Sie arbeitet bei einer deutschen Firma dort.,7,S,"German Phase 3, Units 1-30 (2006)","5,20"
+107,GR,978-1-4423-5035-9,German 3,6,0:08:04,0:08:06,04Q,94,N,She’s married to a German man.,,,"German Phase 3, Units 1-30 (2006)","5,11"
+108,GR,978-1-4423-5035-9,German 3,6,0:08:10,0:08:12,04R,95,M,Sie ist mit einem Deutschen verheiratet.,6,S,"German Phase 3, Units 1-30 (2006)","5,11"
+109,GR,978-1-4423-5035-9,German 3,6,0:14:28,0:14:29,05Q,150,N,Here you are.,,,"German Phase 3, Units 1-30 (2006)","7,13"
+110,GR,978-1-4423-5035-9,German 3,6,0:13:28,0:13:29,05R,151,M,Hier bitte.,2,S,"German Phase 3, Units 1-30 (2006)","7,13"
+111,GR,978-1-4423-5035-9,German 3,6,0:14:34,0:14:35,06Q,161,N,The menu and the wine list.,,,"German Phase 3, Units 1-30 (2006)",6
+112,GR,978-1-4423-5035-9,German 3,6,0:14:40,0:14:42,06R,162,M,Die Speisekarte und die Weinkarte.,5,S,"German Phase 3, Units 1-30 (2006)",6
+113,GR,978-1-4423-5035-9,German 3,6,0:15:55,0:15:57,07Q,174,N,Let’s order a bottle of white wine.,,,"German Phase 3, Units 1-30 (2006)","1,6"
+114,GR,978-1-4423-5035-9,German 3,6,0:16:01,0:16:03,07R,176,M,Bestellen wir doch eine Flasche Weißwein.,6,S,"German Phase 3, Units 1-30 (2006)","1,6"
+115,GR,978-1-4423-5035-9,German 3,6,0:16:56,0:16:58,08Q,187,N,Which one can you recommend?,,,"German Phase 3, Units 1-30 (2006)","12,14"
+116,GR,978-1-4423-5035-9,German 3,6,0:17:01,0:17:02,08R,189,M,Welchen können Sie empfehlen?,4,Q,"German Phase 3, Units 1-30 (2006)","12,14"
+117,GR,978-1-4423-5035-9,German 3,6,0:17:59,0:18:00,09Q,200,N,Can you recommend this one here?,,,"German Phase 3, Units 1-30 (2006)","12,14"
+118,GR,978-1-4423-5035-9,German 3,6,0:18:04,0:18:05,09R,201,M,Können Sie diesen hier empfehlen?,5,Q,"German Phase 3, Units 1-30 (2006)","12,14"
+119,GR,978-1-4423-5035-9,German 3,6,0:18:29,0:18:30,10Q,206,N,Let’s order this one here.,,,"German Phase 3, Units 1-30 (2006)","6,12,14"
+120,GR,978-1-4423-5035-9,German 3,6,0:18:33,0:18:35,10R,207,M,Bestellen wir doch diesen hier.,5,S,"German Phase 3, Units 1-30 (2006)","6,12,14"
+121,GR,978-1-4423-5035-9,German 3,6,0:20:32,0:20:34,11Q,227,N,Already since five years.,,,"German Phase 3, Units 1-30 (2006)",12
+122,GR,978-1-4423-5035-9,German 3,6,0:20:37,0:20:39,11R,228,F,Schon seit fünf Jahren.,4,S,"German Phase 3, Units 1-30 (2006)",12
+123,GR,978-1-4423-5035-9,German 3,7,0:01:22,0:01:23,01Q,27,N,Something to drink?,,,"German Phase 3, Units 1-30 (2006)",6
+124,GR,978-1-4423-5035-9,German 3,7,0:01:25,0:01:26,01R,28,F,Etwas zu trinken?,3,Q,"German Phase 3, Units 1-30 (2006)",6
+125,GR,978-1-4423-5035-9,German 3,7,0:01:53,0:01:55,02Q,33,N,We’d like to order a white wine.,,,"German Phase 3, Units 1-30 (2006)","6,14"
+126,GR,978-1-4423-5035-9,German 3,7,0:01:59,0:02:01,02R,34,M,Wir möchten einen Weißwein bestellen.,5,S,"German Phase 3, Units 1-30 (2006)","6,14"
+127,GR,978-1-4423-5035-9,German 3,7,0:03:39,0:03:41,03Q,52,N,Let’s order that one there.,,,"German Phase 3, Units 1-30 (2006)","6,12"
+128,GR,978-1-4423-5035-9,German 3,7,0:03:45,0:03:46,03R,53,F,Bestellen wir doch den da.,5,S,"German Phase 3, Units 1-30 (2006)","6,12"
+129,GR,978-1-4423-5035-9,German 3,7,0:04:39,0:04:40,04Q,66,N,A half bottle.,,,"German Phase 3, Units 1-30 (2006)","6,12"
+130,GR,978-1-4423-5035-9,German 3,7,0:04:44,0:04:45,04R,67,M,Eine halbe Flasche.,3,S,"German Phase 3, Units 1-30 (2006)","6,12"
+131,GR,978-1-4423-5035-9,German 3,7,0:08:44,0:08:45,05Q,102,N,Her work is interesting.,,,"German Phase 3, Units 1-30 (2006)",20
+132,GR,978-1-4423-5035-9,German 3,7,0:08:49,0:08:51,05R,103,F,Ihre Arbeit ist interessant.,4,S,"German Phase 3, Units 1-30 (2006)",20
+133,GR,978-1-4423-5035-9,German 3,7,0:09:29,0:09:30,06Q,108,N,Could I please pay?,,,"German Phase 3, Units 1-30 (2006)","11,14"
+134,GR,978-1-4423-5035-9,German 3,7,0:09:34,0:09:35,06R,110,M,Könnte ich bitte zahlen?,4,Q,"German Phase 3, Units 1-30 (2006)","11,14"
+135,GR,978-1-4423-5035-9,German 3,7,0:11:14,0:11:16,07Q,127,N,Have you seen my notes?,,,"German Phase 3, Units 1-30 (2006)","4,20"
+136,GR,978-1-4423-5035-9,German 3,7,0:11:21,0:11:22,07R,128,M,Haben Sie meine Notizen gesehen?,5,Q,"German Phase 3, Units 1-30 (2006)","4,20"
+137,GR,978-1-4423-5035-9,German 3,7,0:11:28,0:11:30,08Q,129,N,"Yes, I saw them this morning.",,,"German Phase 3, Units 1-30 (2006)",17
+138,GR,978-1-4423-5035-9,German 3,7,0:11:37,0:11:39,08R,132,F,"Ja, ich habe sie heute Morgen gesehen.",6,S,"German Phase 3, Units 1-30 (2006)",17
+139,GR,978-1-4423-5035-9,German 3,7,0:15:06,0:15:08,09Q,167,N,I saw them on the table.,,,"German Phase 3, Units 1-30 (2006)",9
+140,GR,978-1-4423-5035-9,German 3,7,0:15:11,0:15:13,09R,168,F,Ich habe sie auf dem Tisch gesehen.,7,S,"German Phase 3, Units 1-30 (2006)",9
+141,GR,978-1-4423-5035-9,German 3,7,0:15:17,0:15:18,10Q,169,N,Your notes were under a book.,,,"German Phase 3, Units 1-30 (2006)","4,20"
+142,GR,978-1-4423-5035-9,German 3,7,0:15:22,0:15:24,10R,170,F,Ihre Notizen waren unter einem Buch.,6,S,"German Phase 3, Units 1-30 (2006)","4,20"
+143,GR,978-1-4423-5035-9,German 3,7,0:17:31,0:17:33,11Q,192,N,My cell phone was next to the book.,,,"German Phase 3, Units 1-30 (2006)","3,4"
+144,GR,978-1-4423-5035-9,German 3,7,0:17:36,0:17:38,11R,193,M,Mein Handy war neben dem Buch.,6,S,"German Phase 3, Units 1-30 (2006)","3,4"
+145,GR,978-1-4423-5035-9,German 3,7,0:26:50,0:26:53,12Q,293,N,Your pen was on the table under a book.,,,"German Phase 3, Units 1-30 (2006)","4,9"
+146,GR,978-1-4423-5035-9,German 3,7,0:26:57,0:27:00,12R,294,F,Ihr Kuli war auf dem Tisch unter einem Buch.,9,S,"German Phase 3, Units 1-30 (2006)","4,9"
+147,GR,978-1-4423-5035-9,German 3,8,0:02:46,0:02:48,01Q,40,N,Which one would you like to order?,,,"German Phase 3, Units 1-30 (2006)","6,14"
+148,GR,978-1-4423-5035-9,German 3,8,0:02:51,0:02:52,01R,41,F,Welchen möchten Sie bestellen?,4,Q,"German Phase 3, Units 1-30 (2006)","6,14"
+149,GR,978-1-4423-5035-9,German 3,8,0:05:59,0:06:01,02Q,74,N,Perhaps there on the table next to the book.,,,"German Phase 3, Units 1-30 (2006)","4,9"
+150,GR,978-1-4423-5035-9,German 3,8,0:06:05,0:06:08,02R,75,M,Vielleicht dort auf dem Tisch neben dem Buch.,8,S,"German Phase 3, Units 1-30 (2006)","4,9"
+151,GR,978-1-4423-5035-9,German 3,8,0:06:51,0:06:54,03Q,83,N,Unfortunately I haven’t seen the pen.,,,"German Phase 3, Units 1-30 (2006)","7,9"
+152,GR,978-1-4423-5035-9,German 3,8,0:06:59,0:07:01,03R,84,M,Leider habe ich den Kuli nicht gesehen.,7,S,"German Phase 3, Units 1-30 (2006)","7,9"
+153,GR,978-1-4423-5035-9,German 3,8,0:07:36,0:07:37,04Q,90,N,Five minutes ago.,,,"German Phase 3, Units 1-30 (2006)","12,17"
+154,GR,978-1-4423-5035-9,German 3,8,0:07:41,0:07:42,04R,91,F,Vor fünf Minuten.,3,S,"German Phase 3, Units 1-30 (2006)","12,17"
+155,GR,978-1-4423-5035-9,German 3,8,0:09:36,0:09:38,05Q,109,N,Still on the table next to the book.,,,"German Phase 3, Units 1-30 (2006)","4,9"
+156,GR,978-1-4423-5035-9,German 3,8,0:09:42,0:09:44,05R,110,F,Noch auf dem Tisch neben dem Buch.,7,S,"German Phase 3, Units 1-30 (2006)","4,9"
+157,GR,978-1-4423-5035-9,German 3,8,0:12:21,0:12:23,06Q,139,N,I would enjoy speaking with you.,,,"German Phase 3, Units 1-30 (2006)","1,15"
+158,GR,978-1-4423-5035-9,German 3,8,0:12:58,0:12:59,06R,147,M,Ich würde gern mit dir sprechen.,6,S,"German Phase 3, Units 1-30 (2006)","1,15"
+159,GR,978-1-4423-5035-9,German 3,8,0:14:42,0:14:44,07Q,164,N,Did you not yet book the hotel?,,,"German Phase 3, Units 1-30 (2006)",18
+160,GR,978-1-4423-5035-9,German 3,8,0:14:48,0:14:50,07R,165,F,Hast du das Hotel noch nicht gebucht?,7,Q,"German Phase 3, Units 1-30 (2006)",18
+161,GR,978-1-4423-5035-9,German 3,8,0:19:00,0:19:01,08Q,208,N,Of course!,,,"German Phase 3, Units 1-30 (2006)","7,13"
+162,GR,978-1-4423-5035-9,German 3,8,0:19:04,0:19:05,08R,209,M,Natürlich!,1,S,"German Phase 3, Units 1-30 (2006)","7,13"
+163,GR,978-1-4423-5035-9,German 3,8,0:19:46,0:19:48,09Q,218,N,Do you still remember the hotel?,,,"German Phase 3, Units 1-30 (2006)",18
+164,GR,978-1-4423-5035-9,German 3,8,0:19:51,0:19:53,09R,219,M,Erinnerst du dich noch an das Hotel?,7,Q,"German Phase 3, Units 1-30 (2006)",18
+165,GR,978-1-4423-5035-9,German 3,8,0:21:50,0:21:52,10Q,238,N,We were there four years ago.,,,"German Phase 3, Units 1-30 (2006)","12,17,18"
+166,GR,978-1-4423-5035-9,German 3,8,0:21:57,0:21:59,10R,239,F,Wir waren vor vier Jahren dort.,6,S,"German Phase 3, Units 1-30 (2006)","12,17,18"
+167,GR,978-1-4423-5035-9,German 3,9,0:02:42,0:02:44,01Q,47,N,I was just in Rome.,,,"German Phase 3, Units 1-30 (2006)","9,18"
+168,GR,978-1-4423-5035-9,German 3,9,0:02:47,0:02:48,01R,48,F,Ich war gerade in Rom.,5,S,"German Phase 3, Units 1-30 (2006)","9,18"
+169,GR,978-1-4423-5035-9,German 3,9,0:03:10,0:03:12,02Q,53,N,Just a couple of weeks ago.,,,"German Phase 3, Units 1-30 (2006)","12,17"
+170,GR,978-1-4423-5035-9,German 3,9,0:03:15,0:03:17,02R,54,F,Gerade vor ein paar Wochen.,5,S,"German Phase 3, Units 1-30 (2006)","12,17"
+171,GR,978-1-4423-5035-9,German 3,9,0:08:49,0:08:51,03Q,106,N,It was near a good restaurant.,,,"German Phase 3, Units 1-30 (2006)","5,6"
+172,GR,978-1-4423-5035-9,German 3,9,0:08:56,0:08:59,03R,107,F,Es war in der Nähe von einem guten Restaurant.,9,S,"German Phase 3, Units 1-30 (2006)","5,6"
+173,GR,978-1-4423-5035-9,German 3,9,0:06:31,0:06:34,04Q,85,N,Do you still know what the restaurant is called?,,,"German Phase 3, Units 1-30 (2006)","3,6"
+174,GR,978-1-4423-5035-9,German 3,9,0:06:38,0:06:39,04R,86,M,"Wissen Sie noch, wie das Restaurant heißt?",7,Q,"German Phase 3, Units 1-30 (2006)","3,6"
+175,GR,978-1-4423-5035-9,German 3,9,0:08:10,0:08:13,05Q,100,N,"Unfortunately I don’t know any more, what it’s called.",,,"German Phase 3, Units 1-30 (2006)",9
+176,GR,978-1-4423-5035-9,German 3,9,0:08:18,0:08:20,05R,101,F,"Leider weiß ich nicht mehr, wie es heißt.",8,S,"German Phase 3, Units 1-30 (2006)",9
+177,GR,978-1-4423-5035-9,German 3,9,0:09:21,0:09:23,06Q,110,N,I would enjoy going there again.,,,"German Phase 3, Units 1-30 (2006)","1,9,18"
+178,GR,978-1-4423-5035-9,German 3,9,0:10:00,0:10:03,06R,117,F,Ich würde gern noch einmal hinfahren.,6,S,"German Phase 3, Units 1-30 (2006)","1,9,18"
+179,GR,978-1-4423-5035-9,German 3,9,0:12:03,0:12:05,07Q,135,N,I saw them a couple of minutes ago.,,,"German Phase 3, Units 1-30 (2006)","9,12,17"
+180,GR,978-1-4423-5035-9,German 3,9,0:12:09,0:12:11,07R,136,F,Ich habe sie vor ein paar Minuten gesehen.,8,S,"German Phase 3, Units 1-30 (2006)","9,12,17"
+181,GR,978-1-4423-5035-9,German 3,9,0:16:04,0:16:06,08Q,172,N,I thought you wanted to go to Hamburg.,,,"German Phase 3, Units 1-30 (2006)","1,9,18"
+182,GR,978-1-4423-5035-9,German 3,9,0:16:08,0:16:10,08R,173,M,"Ich dachte, du wolltest nach Hamburg fahren.",7,S,"German Phase 3, Units 1-30 (2006)","1,9,18"
+183,GR,978-1-4423-5035-9,German 3,9,0:19:53,0:19:56,09Q,206,N,Now we first have to get the plane tickets.,,,"German Phase 3, Units 1-30 (2006)","9,17,18"
+184,GR,978-1-4423-5035-9,German 3,9,0:21:07,0:21:09,09R,218,M,Jetzt müssen wir erst die Flugkarten besorgen.,7,S,"German Phase 3, Units 1-30 (2006)","9,17,18"
+185,GR,978-1-4423-5035-9,German 3,9,0:22:45,0:22:48,10Q,235,N,I didn’t yet get the plane tickets.,,,"German Phase 3, Units 1-30 (2006)","9,18"
+186,GR,978-1-4423-5035-9,German 3,9,0:22:52,0:22:54,10R,236,M,Ich habe die Flugkarten noch nicht besorgt.,7,S,"German Phase 3, Units 1-30 (2006)","9,18"
+187,GR,978-1-4423-5035-9,German 3,9,0:27:17,0:27:19,11Q,277,N,I have my credit card on me.,,,"German Phase 3, Units 1-30 (2006)","9,14,18"
+188,GR,978-1-4423-5035-9,German 3,9,0:27:22,0:27:24,11R,278,M,Ich habe meine Kreditkarte dabei.,5,S,"German Phase 3, Units 1-30 (2006)","9,14,18"
+189,GR,978-1-4423-5035-9,German 3,10,0:01:37,0:01:39,01Q,28,N,Did you already get the plane tickets?,,,"German Phase 3, Units 1-30 (2006)",18
+190,GR,978-1-4423-5035-9,German 3,10,0:01:43,0:01:45,01R,29,M,Hast du die Flugkarten schon besorgt?,6,Q,"German Phase 3, Units 1-30 (2006)",18
+191,GR,978-1-4423-5035-9,German 3,10,0:03:56,0:03:59,02Q,43,N,I can pay by credit card.,,,"German Phase 3, Units 1-30 (2006)","11,14,18"
+192,GR,978-1-4423-5035-9,German 3,10,0:04:02,0:04:04,02R,44,M,Ich kann mit Kreditkarte zahlen.,5,S,"German Phase 3, Units 1-30 (2006)","11,14,18"
+193,GR,978-1-4423-5035-9,German 3,10,0:08:28,0:08:30,03Q,97,N,We should book the hotel soon.,,,"German Phase 3, Units 1-30 (2006)","14,18"
+194,GR,978-1-4423-5035-9,German 3,10,0:08:33,0:08:35,03R,98,F,Wir sollten das Hotel bald buchen.,6,S,"German Phase 3, Units 1-30 (2006)","14,18"
+195,GR,978-1-4423-5035-9,German 3,10,0:15:58,0:16:00,04Q,164,N,I just got the plane tickets.,,,"German Phase 3, Units 1-30 (2006)",18
+196,GR,978-1-4423-5035-9,German 3,10,0:16:04,0:16:06,04R,165,F,Ich habe die Flugkarten gerade besorgt.,6,S,"German Phase 3, Units 1-30 (2006)",18
+197,GR,978-1-4423-5035-9,German 3,10,0:17:59,0:18:01,05Q,184,N,Just a couple of minutes ago.,,,"German Phase 3, Units 1-30 (2006)","9,17"
+198,GR,978-1-4423-5035-9,German 3,10,0:18:06,0:18:08,05R,185,M,Gerade vor ein paar Minuten.,5,S,"German Phase 3, Units 1-30 (2006)","9,17"
+199,GR,978-1-4423-5035-9,German 3,10,0:18:37,0:18:39,06Q,191,N,That’s a fantastic apartment.,,,"German Phase 3, Units 1-30 (2006)",9
+200,GR,978-1-4423-5035-9,German 3,10,0:18:43,0:18:45,06R,192,M,Das ist eine tolle Wohnung.,5,S,"German Phase 3, Units 1-30 (2006)",9
+201,GR,978-1-4423-5035-9,German 3,10,0:20:17,0:20:20,07Q,206,N,Behind the apartment is a small yard.,,,"German Phase 3, Units 1-30 (2006)","9,12"
+202,GR,978-1-4423-5035-9,German 3,10,0:20:24,0:20:26,07R,207,F,Hinter der Wohnung ist ein kleiner Garten.,7,S,"German Phase 3, Units 1-30 (2006)","9,12"
+203,GR,978-1-4423-5035-9,German 3,10,0:21:37,0:21:40,08Q,219,N,I park my car always in front of the apartment.,,,"German Phase 3, Units 1-30 (2006)","9,18"
+204,GR,978-1-4423-5035-9,German 3,10,0:21:42,0:21:44,08R,220,F,Ich parke mein Auto immer vor der Wohnung.,8,S,"German Phase 3, Units 1-30 (2006)","9,18"
+205,GR,978-1-4423-5035-9,German 3,10,0:26:22,0:26:24,09Q,267,N,I thought you wanted to drink white wine.,,,"German Phase 3, Units 1-30 (2006)","1,6"
+206,GR,978-1-4423-5035-9,German 3,10,0:26:28,0:26:30,09R,268,F,"Ich dachte, du wolltest Weißwein trinken.",6,S,"German Phase 3, Units 1-30 (2006)","1,6"
+207,GR,978-1-4423-5035-9,German 3,10,0:28:33,0:28:34,10Q,286,N,We should go now.,,,"German Phase 3, Units 1-30 (2006)","1,17"
+208,GR,978-1-4423-5035-9,German 3,10,0:28:37,0:28:39,10R,287,M,Wir sollten jetzt gehen.,4,S,"German Phase 3, Units 1-30 (2006)","1,17"
+209,GR,978-1-4423-5035-9,German 3,11,0:02:47,0:02:50,01Q,42,N,You have really a fantastic apartment.,,,"German Phase 3, Units 1-30 (2006)",9
+210,GR,978-1-4423-5035-9,German 3,11,0:02:53,0:02:55,01R,43,M,Du hast wirklich eine tolle Wohnung.,6,S,"German Phase 3, Units 1-30 (2006)",9
+211,GR,978-1-4423-5035-9,German 3,11,0:04:57,0:04:59,02Q,63,N,You park your car on the street?,,,"German Phase 3, Units 1-30 (2006)","4,18"
+212,GR,978-1-4423-5035-9,German 3,11,0:05:03,0:05:05,02R,64,M,Du parkst dein Auto auf der Straße?,7,Q,"German Phase 3, Units 1-30 (2006)","4,18"
+213,GR,978-1-4423-5035-9,German 3,11,0:07:25,0:07:26,03Q,86,N,Let’s take a walk.,,,"German Phase 3, Units 1-30 (2006)",1
+214,GR,978-1-4423-5035-9,German 3,11,0:07:29,0:07:31,03R,88,M,Machen wir doch einen Spaziergang.,5,S,"German Phase 3, Units 1-30 (2006)",1
+215,GR,978-1-4423-5035-9,German 3,11,0:10:30,0:10:33,04Q,114,N,We should get the concert tickets still today.,,,"German Phase 3, Units 1-30 (2006)","1,14"
+216,GR,978-1-4423-5035-9,German 3,11,0:10:37,0:10:40,04R,115,F,Wir sollten die Konzertkarten noch heute besorgen.,7,S,"German Phase 3, Units 1-30 (2006)","1,14"
+217,GR,978-1-4423-5035-9,German 3,11,0:12:17,0:12:19,05Q,131,N,We can go to the park.,,,"German Phase 3, Units 1-30 (2006)",1
+218,GR,978-1-4423-5035-9,German 3,11,0:12:22,0:12:24,05R,132,F,Wir können in den Park gehen.,6,S,"German Phase 3, Units 1-30 (2006)",1
+219,GR,978-1-4423-5035-9,German 3,11,0:19:00,0:19:02,06Q,192,N,Until what time is the museum open?,,,"German Phase 3, Units 1-30 (2006)","1,17"
+220,GR,978-1-4423-5035-9,German 3,11,0:19:07,0:19:09,06R,193,M,Bis wieviel Uhr ist das Museum geöffnet?,7,Q,"German Phase 3, Units 1-30 (2006)","1,17"
+221,GR,978-1-4423-5035-9,German 3,11,0:21:24,0:21:26,07Q,215,N,The park is near a museum.,,,"German Phase 3, Units 1-30 (2006)","1,4,17"
+222,GR,978-1-4423-5035-9,German 3,11,0:21:31,0:21:33,07R,216,F,Der Park ist in der Nähe von einem Museum.,9,S,"German Phase 3, Units 1-30 (2006)","1,4,17"
+223,GR,978-1-4423-5035-9,German 3,11,0:22:43,0:22:44,08Q,228,N,Do you (familiar) know where the hotel is?,,,"German Phase 3, Units 1-30 (2006)","4,16,18"
+224,GR,978-1-4423-5035-9,German 3,11,0:22:47,0:22:49,08R,229,M,"Weißt du, wo das Hotel ist?",6,Q,"German Phase 3, Units 1-30 (2006)","4,16,18"
+225,GR,978-1-4423-5035-9,German 3,11,0:24:07,0:24:08,09Q,242,N,Let’s go to the park.,,,"German Phase 3, Units 1-30 (2006)",1
+226,GR,978-1-4423-5035-9,German 3,11,0:24:12,0:24:13,09R,243,M,Gehen wir doch in den Park.,6,S,"German Phase 3, Units 1-30 (2006)",1
+227,GR,978-1-4423-5035-9,German 3,11,0:28:27,0:28:28,10Q,284,N,I can’t find my glasses.,,,"German Phase 3, Units 1-30 (2006)",9
+228,GR,978-1-4423-5035-9,German 3,11,0:28:32,0:28:34,10R,286,F,Ich kann meine Brille nicht finden.,6,S,"German Phase 3, Units 1-30 (2006)",9
+229,GR,978-1-4423-5035-9,German 3,12,0:02:19,0:02:21,01Q,34,N,On the street in front of the apartment.,,,"German Phase 3, Units 1-30 (2006)",4
+230,GR,978-1-4423-5035-9,German 3,12,0:02:24,0:02:26,01R,35,F,Auf der Straße vor der Wohnung.,6,S,"German Phase 3, Units 1-30 (2006)",4
+231,GR,978-1-4423-5035-9,German 3,12,0:03:57,0:03:59,02Q,51,N,Not far from here is a small park.,,,"German Phase 3, Units 1-30 (2006)",4
+232,GR,978-1-4423-5035-9,German 3,12,0:04:04,0:04:06,02R,52,F,Nicht weit von hier ist ein kleiner Park.,8,S,"German Phase 3, Units 1-30 (2006)",4
+233,GR,978-1-4423-5035-9,German 3,12,0:05:22,0:05:24,03Q,65,N,If we still have time.,,,"German Phase 3, Units 1-30 (2006)","1,17"
+234,GR,978-1-4423-5035-9,German 3,12,0:05:28,0:05:29,03R,66,M,Wenn wir noch Zeit haben.,5,S,"German Phase 3, Units 1-30 (2006)","1,17"
+235,GR,978-1-4423-5035-9,German 3,12,0:09:30,0:09:32,04Q,107,N,It’s directly across.,,,"German Phase 3, Units 1-30 (2006)",4
+236,GR,978-1-4423-5035-9,German 3,12,0:09:35,0:09:36,04R,108,F,Es ist direkt gegenüber.,4,S,"German Phase 3, Units 1-30 (2006)",4
+237,GR,978-1-4423-5035-9,German 3,12,0:11:40,0:11:42,05Q,128,N,Would you like to eat inside?,,,"German Phase 3, Units 1-30 (2006)","1,6"
+238,GR,978-1-4423-5035-9,German 3,12,0:11:45,0:11:46,05R,129,F,Möchten Sie drinnen essen?,4,Q,"German Phase 3, Units 1-30 (2006)","1,6"
+239,GR,978-1-4423-5035-9,German 3,12,0:13:50,0:13:53,06Q,151,N,In the summer most people eat outside.,,,"German Phase 3, Units 1-30 (2006)","1,6,17"
+240,GR,978-1-4423-5035-9,German 3,12,0:13:59,0:14:02,06R,152,F,Im Sommer essen die meisten Leute draußen.,7,S,"German Phase 3, Units 1-30 (2006)","1,6,17"
+241,GR,978-1-4423-5035-9,German 3,12,0:15:07,0:15:09,07Q,164,N,Without glasses I cannot read the menu.,,,"German Phase 3, Units 1-30 (2006)","1,6"
+242,GR,978-1-4423-5035-9,German 3,12,0:15:15,0:15:18,07R,165,F,Ohne Brille kann ich die Speisekarte nicht lesen.,8,S,"German Phase 3, Units 1-30 (2006)","1,6"
+243,GR,978-1-4423-5035-9,German 3,12,0:25:05,0:25:08,08Q,264,N,I would enjoy coming here again tomorrow.,,,"German Phase 3, Units 1-30 (2006)","1,18"
+244,GR,978-1-4423-5035-9,German 3,12,0:25:12,0:25:14,08R,265,M,Ich würde gern morgen noch einmal herkommen.,7,S,"German Phase 3, Units 1-30 (2006)","1,18"
+245,GR,978-1-4423-5035-9,German 3,12,0:26:55,0:26:58,09Q,282,N,Most people find Kiel very beautiful.,,,"German Phase 3, Units 1-30 (2006)","9,18"
+246,GR,978-1-4423-5035-9,German 3,12,0:27:04,0:27:07,09R,284,F,Die meisten Leute finden Kiel sehr schön.,7,S,"German Phase 3, Units 1-30 (2006)","9,18"
+247,GR,978-1-4423-5035-9,German 3,12,0:27:33,0:27:36,10Q,288,N,Your book about Kiel is very interesting.,,,"German Phase 3, Units 1-30 (2006)","9,18"
+248,GR,978-1-4423-5035-9,German 3,12,0:27:40,0:27:42,10R,290,M,Dein Buch über Kiel ist sehr interessant.,7,S,"German Phase 3, Units 1-30 (2006)","9,18"
+249,GR,978-1-4423-5035-9,German 3,13,0:02:23,0:02:25,01Q,38,N,I’m parking my car there on the street.,,,"German Phase 3, Units 1-30 (2006)","4,18"
+250,GR,978-1-4423-5035-9,German 3,13,0:02:29,0:02:32,01R,40,F,Ich parke mein Auto dort auf der Straße.,8,S,"German Phase 3, Units 1-30 (2006)","4,18"
+251,GR,978-1-4423-5035-9,German 3,13,0:06:55,0:06:57,02Q,85,N,That’s really a nice restaurant.,,,"German Phase 3, Units 1-30 (2006)","6,9"
+252,GR,978-1-4423-5035-9,German 3,13,0:07:01,0:07:03,02R,86,F,Das ist wirklich ein nettes Restaurant.,6,S,"German Phase 3, Units 1-30 (2006)","6,9"
+253,GR,978-1-4423-5035-9,German 3,13,0:09:54,0:09:56,03Q,114,N,I would enjoy coming along.,,,"German Phase 3, Units 1-30 (2006)","1,9"
+254,GR,978-1-4423-5035-9,German 3,13,0:09:59,0:10:01,03R,115,F,Ich würde gern mitkommen.,4,S,"German Phase 3, Units 1-30 (2006)","1,9"
+255,GR,978-1-4423-5035-9,German 3,13,0:14:32,0:14:34,04Q,157,N,I know a nice store.,,,"German Phase 3, Units 1-30 (2006)","9,14"
+256,GR,978-1-4423-5035-9,German 3,13,0:14:40,0:14:41,04R,158,F,Ich kenne ein nettes Geschäft.,5,S,"German Phase 3, Units 1-30 (2006)","9,14"
+257,GR,978-1-4423-5035-9,German 3,13,0:15:10,0:15:11,05Q,164,N,Could I use your telephone?,,,"German Phase 3, Units 1-30 (2006)",3
+258,GR,978-1-4423-5035-9,German 3,13,0:15:15,0:15:17,05R,166,M,Könnte ich Ihr Telefon benutzen?,5,Q,"German Phase 3, Units 1-30 (2006)",3
+259,GR,978-1-4423-5035-9,German 3,13,0:19:09,0:19:11,06Q,210,N,I believe I need my glasses.,,,"German Phase 3, Units 1-30 (2006)",9
+260,GR,978-1-4423-5035-9,German 3,13,0:19:14,0:19:16,06R,211,M,"Ich glaube, ich brauche meine Brille.",6,S,"German Phase 3, Units 1-30 (2006)",9
+261,GR,978-1-4423-5035-9,German 3,13,0:19:35,0:19:36,07Q,214,N,That wasn’t the right area code.,,,"German Phase 3, Units 1-30 (2006)","4,9"
+262,GR,978-1-4423-5035-9,German 3,13,0:19:40,0:19:42,07R,216,M,Das war nicht die richtige Vorwahl.,6,S,"German Phase 3, Units 1-30 (2006)","4,9"
+263,GR,978-1-4423-5035-9,German 3,13,0:23:37,0:23:40,08Q,257,N,I know a nice café directly across from the museum.,,,"German Phase 3, Units 1-30 (2006)","4,6"
+264,GR,978-1-4423-5035-9,German 3,13,0:23:45,0:23:49,08R,258,F,Ich kenne ein nettes Café direkt gegenüber vom Museum.,9,S,"German Phase 3, Units 1-30 (2006)","4,6"
+265,GR,978-1-4423-5035-9,German 3,13,0:24:56,0:24:57,09Q,270,N,Go right ahead.,,,"German Phase 3, Units 1-30 (2006)",4
+266,GR,978-1-4423-5035-9,German 3,13,0:25:03,0:25:03,09R,272,F,Bitte.,1,S,"German Phase 3, Units 1-30 (2006)",4
+267,GR,978-1-4423-5035-9,German 3,13,0:24:58,0:24:59,10Q,270,N,You can use my cell phone.,,,"German Phase 3, Units 1-30 (2006)",3
+268,GR,978-1-4423-5035-9,German 3,13,0:25:03,0:25:05,10R,272,F,Du kannst mein Handy benutzen.,5,S,"German Phase 3, Units 1-30 (2006)",3
+269,GR,978-1-4423-5035-9,German 3,14,0:03:57,0:03:59,01Q,53,N,Near the museum is a nice café.,,,"German Phase 3, Units 1-30 (2006)","6,9,17"
+270,GR,978-1-4423-5035-9,German 3,14,0:04:03,0:04:06,01R,54,F,In der Nähe vom Museum ist ein nettes Café.,9,S,"German Phase 3, Units 1-30 (2006)","6,9,17"
+271,GR,978-1-4423-5035-9,German 3,14,0:04:18,0:04:20,02Q,56,N,Most people find the museum very interesting.,,,"German Phase 3, Units 1-30 (2006)","9,17"
+272,GR,978-1-4423-5035-9,German 3,14,0:04:25,0:04:28,02R,57,F,Die meisten Leute finden das Museum sehr interessant.,8,S,"German Phase 3, Units 1-30 (2006)","9,17"
+273,GR,978-1-4423-5035-9,German 3,14,0:06:43,0:06:44,03Q,79,N,Let’s go there tomorrow.,,,"German Phase 3, Units 1-30 (2006)","1,17"
+274,GR,978-1-4423-5035-9,German 3,14,0:06:49,0:06:50,03R,80,M,Fahren wir doch morgen dorthin.,5,S,"German Phase 3, Units 1-30 (2006)","1,17"
+275,GR,978-1-4423-5035-9,German 3,14,0:07:29,0:07:30,04Q,86,N,How about lunch?,,,"German Phase 3, Units 1-30 (2006)","1,6"
+276,GR,978-1-4423-5035-9,German 3,14,0:07:33,0:07:35,04R,87,M,Wie wär’s mit Mittagessen?,4,Q,"German Phase 3, Units 1-30 (2006)","1,6"
+277,GR,978-1-4423-5035-9,German 3,14,0:07:51,0:07:53,05Q,90,N,I could come along into town.,,,"German Phase 3, Units 1-30 (2006)","1,4,18"
+278,GR,978-1-4423-5035-9,German 3,14,0:07:57,0:07:58,05R,91,F,Ich könnte in die Stadt mitkommen.,6,S,"German Phase 3, Units 1-30 (2006)","1,4,18"
+279,GR,978-1-4423-5035-9,German 3,14,0:15:39,0:15:40,06Q,169,N,No calls for me?,,,"German Phase 3, Units 1-30 (2006)",3
+280,GR,978-1-4423-5035-9,German 3,14,0:15:44,0:15:45,06R,170,M,Keine Anrufe für mich?,4,Q,"German Phase 3, Units 1-30 (2006)",3
+281,GR,978-1-4423-5035-9,German 3,14,0:18:49,0:18:51,07Q,197,N,Someone called ten minutes ago.,,,"German Phase 3, Units 1-30 (2006)","3,12,17"
+282,GR,978-1-4423-5035-9,German 3,14,0:18:56,0:18:58,07R,198,F,Jemand hat vor zehn Minuten angerufen.,6,S,"German Phase 3, Units 1-30 (2006)","3,12,17"
+283,GR,978-1-4423-5035-9,German 3,14,0:19:18,0:19:19,08Q,201,N,Who was it?,,,"German Phase 3, Units 1-30 (2006)",7
+284,GR,978-1-4423-5035-9,German 3,14,0:19:22,0:19:22,08R,202,M,Wer war es?,3,Q,"German Phase 3, Units 1-30 (2006)",7
+285,GR,978-1-4423-5035-9,German 3,14,0:20:21,0:20:22,09Q,213,N,It was a man.,,,"German Phase 3, Units 1-30 (2006)",9
+286,GR,978-1-4423-5035-9,German 3,14,0:20:25,0:20:26,09R,214,F,Es war ein Mann.,4,S,"German Phase 3, Units 1-30 (2006)",9
+287,GR,978-1-4423-5035-9,German 3,14,0:23:30,0:23:32,10Q,243,N,The man left no message.,,,"German Phase 3, Units 1-30 (2006)",3
+288,GR,978-1-4423-5035-9,German 3,14,0:23:36,0:23:38,10R,244,F,Der Mann hat keine Nachricht hinterlassen.,6,S,"German Phase 3, Units 1-30 (2006)",3
+289,GR,978-1-4423-5035-9,German 3,15,0:02:13,0:02:15,01Q,37,N,Someone called about ten minutes ago.,,,"German Phase 3, Units 1-30 (2006)","3,12,17"
+290,GR,978-1-4423-5035-9,German 3,15,0:02:24,0:02:27,01R,39,F,Jemand hat vor ungefähr zehn Minuten angerufen.,7,S,"German Phase 3, Units 1-30 (2006)","3,12,17"
+291,GR,978-1-4423-5035-9,German 3,15,0:05:41,0:05:42,02Q,72,N,He’ll call you back.,,,"German Phase 3, Units 1-30 (2006)",3
+292,GR,978-1-4423-5035-9,German 3,15,0:05:46,0:05:47,02R,74,F,Er ruft Sie zurück.,4,S,"German Phase 3, Units 1-30 (2006)",3
+293,GR,978-1-4423-5035-9,German 3,15,0:08:43,0:08:44,03Q,103,N,I’ll call him back later.,,,"German Phase 3, Units 1-30 (2006)","3,17"
+294,GR,978-1-4423-5035-9,German 3,15,0:08:47,0:08:49,03R,104,M,Ich rufe ihn später zurück.,5,S,"German Phase 3, Units 1-30 (2006)","3,17"
+295,GR,978-1-4423-5035-9,German 3,15,0:12:32,0:12:34,04Q,144,N,She called at about ten o’clock.,,,"German Phase 3, Units 1-30 (2006)","3,12,17"
+296,GR,978-1-4423-5035-9,German 3,15,0:12:38,0:12:41,04R,145,F,Sie hat ungefähr um zehn Uhr angerufen.,7,S,"German Phase 3, Units 1-30 (2006)","3,12,17"
+297,GR,978-1-4423-5035-9,German 3,15,0:15:57,0:16:00,05Q,180,N,I’ll call him back still this afternoon.,,,"German Phase 3, Units 1-30 (2006)","3,17"
+298,GR,978-1-4423-5035-9,German 3,15,0:16:03,0:16:05,05R,181,M,Ich rufe ihn noch heute Nachmittag zurück.,7,S,"German Phase 3, Units 1-30 (2006)","3,17"
+299,GR,978-1-4423-5035-9,German 3,15,0:21:20,0:21:21,06Q,236,N,Could I use the pen?,,,"German Phase 3, Units 1-30 (2006)","16,20"
+300,GR,978-1-4423-5035-9,German 3,15,0:21:25,0:21:26,06R,237,M,Könnte ich den Kuli benutzen?,5,Q,"German Phase 3, Units 1-30 (2006)","16,20"
+301,GR,978-1-4423-5035-9,German 3,15,0:22:31,0:22:32,07Q,248,N,It’s an important meeting.,,,"German Phase 3, Units 1-30 (2006)","9,20"
+302,GR,978-1-4423-5035-9,German 3,15,0:22:35,0:22:37,07R,249,F,Es ist eine wichtige Besprechung.,5,S,"German Phase 3, Units 1-30 (2006)","9,20"
+303,GR,978-1-4423-5035-9,German 3,15,0:22:58,0:23:00,08Q,253,N,How long is the meeting going to last?,,,"German Phase 3, Units 1-30 (2006)","17,20"
+304,GR,978-1-4423-5035-9,German 3,15,0:23:03,0:23:04,08R,255,M,Wie lange dauert die Besprechung?,5,Q,"German Phase 3, Units 1-30 (2006)","17,20"
+305,GR,978-1-4423-5035-9,German 3,15,0:24:41,0:24:43,09Q,275,N,The meeting is going to last an hour.,,,"German Phase 3, Units 1-30 (2006)","12,17,20"
+306,GR,978-1-4423-5035-9,German 3,15,0:24:47,0:24:49,09R,276,F,Die Besprechung dauert eine Stunde.,5,S,"German Phase 3, Units 1-30 (2006)","12,17,20"
+307,GR,978-1-4423-5035-9,German 3,15,0:25:50,0:25:51,10Q,286,N,Only half an hour.,,,"German Phase 3, Units 1-30 (2006)","12,17"
+308,GR,978-1-4423-5035-9,German 3,15,0:25:54,0:25:56,10R,287,F,Nur eine halbe Stunde.,4,S,"German Phase 3, Units 1-30 (2006)","12,17"
+309,GR,978-1-4423-5035-9,German 3,16,0:02:48,0:02:50,01Q,41,N,Someone called half an hour ago.,,,"German Phase 3, Units 1-30 (2006)","3,12,17"
+310,GR,978-1-4423-5035-9,German 3,16,0:02:55,0:02:57,01R,42,F,Jemand hat vor einer halben Stunde angerufen.,7,S,"German Phase 3, Units 1-30 (2006)","3,12,17"
+311,GR,978-1-4423-5035-9,German 3,16,0:03:32,0:03:34,02Q,48,N,She called at about nine-thirty.,,,"German Phase 3, Units 1-30 (2006)","3,12,17"
+312,GR,978-1-4423-5035-9,German 3,16,0:03:40,0:03:43,02R,49,F,Sie hat ungefähr um neun Uhr dreißig angerufen.,8,S,"German Phase 3, Units 1-30 (2006)","3,12,17"
+313,GR,978-1-4423-5035-9,German 3,16,0:04:44,0:04:46,03Q,58,N,I’ll call her back in half an hour.,,,"German Phase 3, Units 1-30 (2006)","3,12,17"
+314,GR,978-1-4423-5035-9,German 3,16,0:04:50,0:04:52,03R,59,M,Ich rufe sie in einer halben Stunde zurück.,8,S,"German Phase 3, Units 1-30 (2006)","3,12,17"
+315,GR,978-1-4423-5035-9,German 3,16,0:05:26,0:05:27,04Q,66,N,Did anyone else call?,,,"German Phase 3, Units 1-30 (2006)",3
+316,GR,978-1-4423-5035-9,German 3,16,0:05:30,0:05:31,04R,67,M,Hat noch jemand angerufen?,4,Q,"German Phase 3, Units 1-30 (2006)",3
+317,GR,978-1-4423-5035-9,German 3,16,0:07:15,0:07:17,05Q,84,N,This afternoon we have an important meeting.,,,"German Phase 3, Units 1-30 (2006)","17,20"
+318,GR,978-1-4423-5035-9,German 3,16,0:07:22,0:07:25,05R,86,F,Heute Nachmittag haben wir eine wichtige Besprechung.,7,S,"German Phase 3, Units 1-30 (2006)","17,20"
+319,GR,978-1-4423-5035-9,German 3,16,0:09:15,0:09:17,06Q,106,N,All are coming to the meeting.,,,"German Phase 3, Units 1-30 (2006)","9,20"
+320,GR,978-1-4423-5035-9,German 3,16,0:09:20,0:09:21,06R,107,M,Alle kommen zur Besprechung.,4,S,"German Phase 3, Units 1-30 (2006)","9,20"
+321,GR,978-1-4423-5035-9,German 3,16,0:14:14,0:14:16,07Q,154,N,Could you call him back as soon as possible?,,,"German Phase 3, Units 1-30 (2006)","3,17"
+322,GR,978-1-4423-5035-9,German 3,16,0:14:22,0:14:25,07R,155,F,Könnten Sie ihn so bald wie möglich zurückrufen?,8,Q,"German Phase 3, Units 1-30 (2006)","3,17"
+323,GR,978-1-4423-5035-9,German 3,16,0:23:36,0:23:37,08Q,248,N,He’s an important customer.,,,"German Phase 3, Units 1-30 (2006)","9,20"
+324,GR,978-1-4423-5035-9,German 3,16,0:23:40,0:23:42,08R,249,F,Er ist ein wichtiger Kunde.,5,S,"German Phase 3, Units 1-30 (2006)","9,20"
+325,GR,978-1-4423-5035-9,German 3,16,0:24:32,0:24:35,09Q,258,N,Our customer is also coming to the meeting.,,,"German Phase 3, Units 1-30 (2006)","9,20"
+326,GR,978-1-4423-5035-9,German 3,16,0:24:39,0:24:41,09R,259,F,Unser Kunde kommt auch zur Besprechung.,6,S,"German Phase 3, Units 1-30 (2006)","9,20"
+327,GR,978-1-4423-5035-9,German 3,16,0:28:18,0:28:20,10Q,295,N,At the moment he’s not in the office.,,,"German Phase 3, Units 1-30 (2006)","17,20"
+328,GR,978-1-4423-5035-9,German 3,16,0:28:23,0:28:25,10R,296,F,Im Moment ist er nicht im Büro.,7,S,"German Phase 3, Units 1-30 (2006)","17,20"
+329,GR,978-1-4423-5035-9,German 3,17,0:06:23,0:06:25,01Q,79,N,She’ll call back in half an hour.,,,"German Phase 3, Units 1-30 (2006)","3,12,17"
+330,GR,978-1-4423-5035-9,German 3,17,0:06:29,0:06:31,01R,80,F,Sie ruft in einer halben Stunde zurück.,7,S,"German Phase 3, Units 1-30 (2006)","3,12,17"
+331,GR,978-1-4423-5035-9,German 3,17,0:07:36,0:07:39,02Q,92,N,I believe the meeting is going to last a long time.,,,"German Phase 3, Units 1-30 (2006)","9,17,20"
+332,GR,978-1-4423-5035-9,German 3,17,0:07:43,0:07:44,02R,93,M,Ich glaube die Besprechung dauert lange.,6,S,"German Phase 3, Units 1-30 (2006)","9,17,20"
+333,GR,978-1-4423-5035-9,German 3,17,0:14:42,0:14:44,03Q,164,N,We would enjoy inviting you for dinner.,,,"German Phase 3, Units 1-30 (2006)","1,6"
+334,GR,978-1-4423-5035-9,German 3,17,0:14:48,0:14:51,03R,165,F,Wir würden Sie gern zum Abendessen einladen.,7,S,"German Phase 3, Units 1-30 (2006)","1,6"
+335,GR,978-1-4423-5035-9,German 3,17,0:15:18,0:15:20,04Q,169,N,Our new customer is coming too.,,,"German Phase 3, Units 1-30 (2006)","9,20"
+336,GR,978-1-4423-5035-9,German 3,17,0:15:24,0:15:26,04R,170,F,Unser neuer Kunde kommt auch.,5,S,"German Phase 3, Units 1-30 (2006)","9,20"
+337,GR,978-1-4423-5035-9,German 3,17,0:17:59,0:18:00,05Q,195,N,I won’t be here Saturday.,,,"German Phase 3, Units 1-30 (2006)","9,17"
+338,GR,978-1-4423-5035-9,German 3,17,0:18:03,0:18:05,05R,196,M,Ich bin Samstag nicht da.,5,S,"German Phase 3, Units 1-30 (2006)","9,17"
+339,GR,978-1-4423-5035-9,German 3,17,0:20:41,0:20:44,06Q,227,N,I’m invited for the weekend at some friends’ place.,,,"German Phase 3, Units 1-30 (2006)","1,5,17"
+340,GR,978-1-4423-5035-9,German 3,17,0:20:48,0:20:51,06R,228,M,Ich bin fürs Wochenende bei Freunden eingeladen.,7,S,"German Phase 3, Units 1-30 (2006)","1,5,17"
+341,GR,978-1-4423-5035-9,German 3,17,0:21:34,0:21:36,07Q,236,N,I’m invited for the weekend at their place.,,,"German Phase 3, Units 1-30 (2006)","1,17,18"
+342,GR,978-1-4423-5035-9,German 3,17,0:21:40,0:21:43,07R,237,M,Ich bin fürs Wochenende bei ihnen eingeladen.,7,S,"German Phase 3, Units 1-30 (2006)","1,17,18"
+343,GR,978-1-4423-5035-9,German 3,17,0:23:38,0:23:41,08Q,260,N,We would enjoy inviting you to the concert Sunday.,,,"German Phase 3, Units 1-30 (2006)","1,5,17"
+344,GR,978-1-4423-5035-9,German 3,17,0:23:47,0:23:50,08R,261,F,Wir würden Sie gern Sonntag ins Konzert einladen.,8,S,"German Phase 3, Units 1-30 (2006)","1,5,17"
+345,GR,978-1-4423-5035-9,German 3,17,0:26:26,0:26:28,09Q,289,N,At the moment I’m in the restaurant.,,,"German Phase 3, Units 1-30 (2006)","5,17"
+346,GR,978-1-4423-5035-9,German 3,17,0:26:31,0:26:33,09R,290,M,Im Moment bin ich im Restaurant.,6,S,"German Phase 3, Units 1-30 (2006)","5,17"
+347,GR,978-1-4423-5035-9,German 3,17,0:26:47,0:26:48,10Q,293,N,We have still half an hour.,,,"German Phase 3, Units 1-30 (2006)","12,17"
+348,GR,978-1-4423-5035-9,German 3,17,0:26:52,0:26:53,10R,294,M,Wir haben noch eine halbe Stunde.,6,S,"German Phase 3, Units 1-30 (2006)","12,17"
+349,GR,978-1-4423-5035-9,German 3,18,0:02:40,0:02:43,01Q,41,N,This afternoon he won’t be in the office.,,,"German Phase 3, Units 1-30 (2006)","17,20"
+350,GR,978-1-4423-5035-9,German 3,18,0:02:46,0:02:48,01R,42,M,Heute Nachmittag ist er nicht im Büro.,7,S,"German Phase 3, Units 1-30 (2006)","17,20"
+351,GR,978-1-4423-5035-9,German 3,18,0:02:58,0:03:00,02Q,44,N,"I have to call him now, right away.",,,"German Phase 3, Units 1-30 (2006)","1,3,17"
+352,GR,978-1-4423-5035-9,German 3,18,0:03:04,0:03:05,02R,45,M,Ich muss ihn jetzt sofort anrufen.,6,S,"German Phase 3, Units 1-30 (2006)","1,3,17"
+353,GR,978-1-4423-5035-9,German 3,18,0:08:13,0:08:15,03Q,98,N,I’m going to spend the weekend at their place.,,,"German Phase 3, Units 1-30 (2006)","1,17,18"
+354,GR,978-1-4423-5035-9,German 3,18,0:08:19,0:08:21,03R,99,F,Ich verbringe das Wochenende bei ihnen.,6,S,"German Phase 3, Units 1-30 (2006)","1,17,18"
+355,GR,978-1-4423-5035-9,German 3,18,0:10:13,0:10:14,04Q,116,N,Where’s the waiter?,,,"German Phase 3, Units 1-30 (2006)",6
+356,GR,978-1-4423-5035-9,German 3,18,0:10:18,0:10:19,04R,118,F,Wo ist der Kellner?,4,Q,"German Phase 3, Units 1-30 (2006)",6
+357,GR,978-1-4423-5035-9,German 3,18,0:15:31,0:15:33,05Q,170,N,My niece likes to travel.,,,"German Phase 3, Units 1-30 (2006)","5,18"
+358,GR,978-1-4423-5035-9,German 3,18,0:15:36,0:15:38,05R,171,M,Meine Nichte reist gern.,4,S,"German Phase 3, Units 1-30 (2006)","5,18"
+359,GR,978-1-4423-5035-9,German 3,18,0:16:16,0:16:18,06Q,178,N,She’s going to spend two weeks at our place.,,,"German Phase 3, Units 1-30 (2006)","12,17,18"
+360,GR,978-1-4423-5035-9,German 3,18,0:16:22,0:16:24,06R,179,M,Sie verbringt zwei Wochen bei uns.,6,S,"German Phase 3, Units 1-30 (2006)","12,17,18"
+361,GR,978-1-4423-5035-9,German 3,18,0:18:07,0:18:08,07Q,195,N,She finished her studies.,,,"German Phase 3, Units 1-30 (2006)","5,9,20"
+362,GR,978-1-4423-5035-9,German 3,18,0:18:18,0:18:20,07R,196,M,Sie hat ihr Studium abgeschlossen.,5,S,"German Phase 3, Units 1-30 (2006)","5,9,20"
+363,GR,978-1-4423-5035-9,German 3,18,0:20:33,0:20:36,08Q,218,N,Her friend also just finished her studies.,,,"German Phase 3, Units 1-30 (2006)","5,20"
+364,GR,978-1-4423-5035-9,German 3,18,0:20:41,0:20:43,08R,219,M,Ihre Freundin hat auch ihr Studium gerade abgeschlossen.,8,S,"German Phase 3, Units 1-30 (2006)","5,20"
+365,GR,978-1-4423-5035-9,German 3,18,0:24:27,0:24:28,09Q,261,N,All our colleagues are coming to the meeting.,,,"German Phase 3, Units 1-30 (2006)","9,20"
+366,GR,978-1-4423-5035-9,German 3,18,0:24:33,0:24:35,09R,262,F,Alle unsere Kollegen kommen zur Besprechung.,6,S,"German Phase 3, Units 1-30 (2006)","9,20"
+367,GR,978-1-4423-5035-9,German 3,18,0:25:49,0:25:51,10Q,274,N,"Unfortunately, I can’t come to the meeting.",,,"German Phase 3, Units 1-30 (2006)","9,20"
+368,GR,978-1-4423-5035-9,German 3,18,0:25:55,0:25:57,10R,275,F,Leider kann ich nicht zur Besprechung kommen.,7,S,"German Phase 3, Units 1-30 (2006)","9,20"
+369,GR,978-1-4423-5035-9,German 3,19,0:01:22,0:01:24,01Q,26,N,My niece just finished her studies.,,,"German Phase 3, Units 1-30 (2006)","5,20"
+370,GR,978-1-4423-5035-9,German 3,19,0:01:28,0:01:31,01R,27,F,Meine Nichte hat ihr Studium gerade abgeschlossen.,7,S,"German Phase 3, Units 1-30 (2006)","5,20"
+371,GR,978-1-4423-5035-9,German 3,19,0:02:11,0:02:13,02Q,34,N,They are spending the weekend at my place.,,,"German Phase 3, Units 1-30 (2006)","9,17,18"
+372,GR,978-1-4423-5035-9,German 3,19,0:02:17,0:02:19,02R,35,F,Sie verbringen das Wochenende bei mir.,6,S,"German Phase 3, Units 1-30 (2006)","9,17,18"
+373,GR,978-1-4423-5035-9,German 3,19,0:02:56,0:02:58,03Q,42,N,She’s coming together with a girlfriend.,,,"German Phase 3, Units 1-30 (2006)","1,5,18"
+374,GR,978-1-4423-5035-9,German 3,19,0:03:02,0:03:03,03R,43,F,Sie kommt zusammen mit einer Freundin.,6,S,"German Phase 3, Units 1-30 (2006)","1,5,18"
+375,GR,978-1-4423-5035-9,German 3,19,0:08:57,0:08:58,04Q,100,N,Please do sit down.,,,"German Phase 3, Units 1-30 (2006)",13
+376,GR,978-1-4423-5035-9,German 3,19,0:09:02,0:09:03,04R,101,M,Bitte setzen Sie sich doch.,5,S,"German Phase 3, Units 1-30 (2006)",13
+377,GR,978-1-4423-5035-9,German 3,19,0:13:09,0:13:11,05Q,144,N,We were just speaking about the States.,,,"German Phase 3, Units 1-30 (2006)","15,18"
+378,GR,978-1-4423-5035-9,German 3,19,0:13:16,0:13:18,05R,145,F,Wir haben gerade über die Staaten gesprochen.,7,S,"German Phase 3, Units 1-30 (2006)","15,18"
+379,GR,978-1-4423-5035-9,German 3,19,0:16:06,0:16:08,06Q,171,N,My sister is flying for two weeks to the States.,,,"German Phase 3, Units 1-30 (2006)","5,12,17,18"
+380,GR,978-1-4423-5035-9,German 3,19,0:16:13,0:16:16,06R,172,F,Meine Schwester fliegt für zwei Wochen in die Staaten.,9,S,"German Phase 3, Units 1-30 (2006)","5,12,17,18"
+381,GR,978-1-4423-5035-9,German 3,19,0:17:55,0:17:56,07Q,186,N,In my opinion.,,,"German Phase 3, Units 1-30 (2006)","7,13"
+382,GR,978-1-4423-5035-9,German 3,19,0:17:59,0:18:00,07R,187,M,Meiner Meinung nach.,3,S,"German Phase 3, Units 1-30 (2006)","7,13"
+383,GR,978-1-4423-5035-9,German 3,19,0:18:51,0:18:53,08Q,196,N,Which cities would they like to tour?,,,"German Phase 3, Units 1-30 (2006)","1,18"
+384,GR,978-1-4423-5035-9,German 3,19,0:18:57,0:18:58,08R,197,M,Welche Städte möchten sie besichtigen?,5,Q,"German Phase 3, Units 1-30 (2006)","1,18"
+385,GR,978-1-4423-5035-9,German 3,19,0:22:33,0:22:36,09Q,231,N,My nephew and my niece are flying along.,,,"German Phase 3, Units 1-30 (2006)","5,18"
+386,GR,978-1-4423-5035-9,German 3,19,0:22:40,0:22:42,09R,231,F,Mein Neffe und meine Nichte fliegen mit.,7,S,"German Phase 3, Units 1-30 (2006)","5,18"
+387,GR,978-1-4423-5035-9,German 3,19,0:24:29,0:24:31,10Q,249,N,Can they tour these three cities?,,,"German Phase 3, Units 1-30 (2006)","12,18"
+388,GR,978-1-4423-5035-9,German 3,19,0:24:35,0:24:37,10R,250,F,Können sie diese drei Städte besichtigen?,6,Q,"German Phase 3, Units 1-30 (2006)","12,18"
+389,GR,978-1-4423-5035-9,German 3,20,0:02:18,0:02:19,01Q,40,N,She’s coming to visit me.,,,"German Phase 3, Units 1-30 (2006)",18
+390,GR,978-1-4423-5035-9,German 3,20,0:02:23,0:02:24,01R,41,F,Sie kommt mich besuchen.,4,S,"German Phase 3, Units 1-30 (2006)",18
+391,GR,978-1-4423-5035-9,German 3,20,0:05:00,0:05:03,02Q,68,N,We were just speaking about my niece’s car.,,,"German Phase 3, Units 1-30 (2006)","5,15,18"
+392,GR,978-1-4423-5035-9,German 3,20,0:05:08,0:05:11,02R,69,F,Wir haben gerade über das Auto meiner Nichte gesprochen.,9,S,"German Phase 3, Units 1-30 (2006)","5,15,18"
+393,GR,978-1-4423-5035-9,German 3,20,0:06:26,0:06:27,03Q,81,N,They are coming to visit me here in Berlin.,,,"German Phase 3, Units 1-30 (2006)","1,9,18"
+394,GR,978-1-4423-5035-9,German 3,20,0:06:32,0:06:34,03R,82,F,Sie kommen mich hier in Berlin besuchen.,7,S,"German Phase 3, Units 1-30 (2006)","1,9,18"
+395,GR,978-1-4423-5035-9,German 3,20,0:16:48,0:16:50,04Q,185,N,For four weeks or longer.,,,"German Phase 3, Units 1-30 (2006)","12,17"
+396,GR,978-1-4423-5035-9,German 3,20,0:16:54,0:16:55,04R,186,F,Für vier Wochen oder länger.,5,S,"German Phase 3, Units 1-30 (2006)","12,17"
+397,GR,978-1-4423-5035-9,German 3,20,0:18:58,0:18:59,05Q,204,N,How was your business trip?,,,"German Phase 3, Units 1-30 (2006)","18,20"
+398,GR,978-1-4423-5035-9,German 3,20,0:19:02,0:19:04,05R,205,F,Wie war Ihre Geschäftsreise?,4,Q,"German Phase 3, Units 1-30 (2006)","18,20"
+399,GR,978-1-4423-5035-9,German 3,20,0:19:09,0:19:10,06Q,206,N,That went all very well.,,,"German Phase 3, Units 1-30 (2006)",7
+400,GR,978-1-4423-5035-9,German 3,20,0:19:14,0:19:16,06R,207,M,Das ist alles sehr gut gegangen.,6,S,"German Phase 3, Units 1-30 (2006)",7
+401,GR,978-1-4423-5035-9,German 3,20,0:19:32,0:19:33,07Q,210,N,The meeting lasted a long time.,,,"German Phase 3, Units 1-30 (2006)","17,20"
+402,GR,978-1-4423-5035-9,German 3,20,0:19:37,0:19:39,07R,211,M,Die Besprechung hat lange gedauert.,5,S,"German Phase 3, Units 1-30 (2006)","17,20"
+403,GR,978-1-4423-5035-9,German 3,20,0:21:06,0:21:08,08Q,225,N,It lasted a very long time.,,,"German Phase 3, Units 1-30 (2006)",17
+404,GR,978-1-4423-5035-9,German 3,20,0:21:11,0:21:13,08R,226,M,Sie hat sehr lange gedauert.,5,S,"German Phase 3, Units 1-30 (2006)",17
+405,GR,978-1-4423-5035-9,German 3,20,0:23:58,0:23:59,09Q,250,N,Next time I would like to stay longer.,,,"German Phase 3, Units 1-30 (2006)","17,18"
+406,GR,978-1-4423-5035-9,German 3,20,0:24:03,0:24:05,09R,251,M,Nächstes Mal möchte ich länger bleiben.,6,S,"German Phase 3, Units 1-30 (2006)","17,18"
+407,GR,978-1-4423-5035-9,German 3,20,0:26:06,0:26:07,10Q,272,N,Did everything go well?,,,"German Phase 3, Units 1-30 (2006)",7
+408,GR,978-1-4423-5035-9,German 3,20,0:26:12,0:26:13,10R,273,F,Ist alles gut gegangen?,4,Q,"German Phase 3, Units 1-30 (2006)",7
+409,GR,978-1-4423-5035-9,German 3,21,0:05:37,0:05:37,01Q,65,N,Did you fly?,,,"German Phase 3, Units 1-30 (2006)","1,18"
+410,GR,978-1-4423-5035-9,German 3,21,0:05:40,0:05:41,01R,66,M,Sind Sie geflogen?,3,Q,"German Phase 3, Units 1-30 (2006)","1,18"
+411,GR,978-1-4423-5035-9,German 3,21,0:06:11,0:06:12,02Q,72,N,"This time, I went by car.",,,"German Phase 3, Units 1-30 (2006)","1,17,18"
+412,GR,978-1-4423-5035-9,German 3,21,0:06:17,0:06:20,02R,73,F,Diesmal bin ich mit dem Auto gefahren.,7,S,"German Phase 3, Units 1-30 (2006)","1,17,18"
+413,GR,978-1-4423-5035-9,German 3,21,0:06:31,0:06:32,03Q,75,N,I didn’t fly.,,,"German Phase 3, Units 1-30 (2006)","1,9,18"
+414,GR,978-1-4423-5035-9,German 3,21,0:06:37,0:06:39,03R,76,F,Ich bin nicht geflogen.,4,S,"German Phase 3, Units 1-30 (2006)","1,9,18"
+415,GR,978-1-4423-5035-9,German 3,21,0:09:08,0:09:11,04Q,101,N,Perhaps my nephew and his wife are going to fly along.,,,"German Phase 3, Units 1-30 (2006)","5,9,18"
+416,GR,978-1-4423-5035-9,German 3,21,0:09:21,0:09:23,04R,103,F,Vielleicht fliegen mein Neffe und seine Frau mit.,8,S,"German Phase 3, Units 1-30 (2006)","5,9,18"
+417,GR,978-1-4423-5035-9,German 3,21,0:10:49,0:10:52,05Q,117,N,This time he’s spending four weeks in the States.,,,"German Phase 3, Units 1-30 (2006)","9,12,17,18"
+418,GR,978-1-4423-5035-9,German 3,21,0:10:57,0:11:00,05R,118,F,Diesmal verbringt er vier Wochen in den Staaten.,8,S,"German Phase 3, Units 1-30 (2006)","9,12,17,18"
+419,GR,978-1-4423-5035-9,German 3,21,0:19:01,0:19:03,06Q,198,N,On the highway is always a lot of traffic.,,,"German Phase 3, Units 1-30 (2006)","9,12,18"
+420,GR,978-1-4423-5035-9,German 3,21,0:19:09,0:19:11,06R,199,F,Auf der Autobahn ist immer viel Verkehr.,7,S,"German Phase 3, Units 1-30 (2006)","9,12,18"
+421,GR,978-1-4423-5035-9,German 3,21,0:19:17,0:19:19,07Q,200,N,Especially in the afternoon at five o’clock.,,,"German Phase 3, Units 1-30 (2006)","9,12,17"
+422,GR,978-1-4423-5035-9,German 3,21,0:19:24,0:19:26,07R,201,F,Besonders nachmittags um fünf Uhr.,5,S,"German Phase 3, Units 1-30 (2006)","9,12,17"
+423,GR,978-1-4423-5035-9,German 3,21,0:21:10,0:21:12,08Q,218,N,Most cars drive pretty fast.,,,"German Phase 3, Units 1-30 (2006)","9,18"
+424,GR,978-1-4423-5035-9,German 3,21,0:21:17,0:21:19,08R,219,M,Die meisten Autos fahren ziemlich schnell.,6,S,"German Phase 3, Units 1-30 (2006)","9,18"
+425,GR,978-1-4423-5035-9,German 3,21,0:21:25,0:21:28,09Q,220,N,Today was especially a lot of traffic on the highway.,,,"German Phase 3, Units 1-30 (2006)","9,17,18"
+426,GR,978-1-4423-5035-9,German 3,21,0:21:33,0:21:36,09R,221,M,Heute war besonders viel Verkehr auf der Autobahn.,8,S,"German Phase 3, Units 1-30 (2006)","9,17,18"
+427,GR,978-1-4423-5035-9,German 3,21,0:27:05,0:27:08,10Q,276,N,Faster than one hundred five kilometers an hour.,,,"German Phase 3, Units 1-30 (2006)","12,17"
+428,GR,978-1-4423-5035-9,German 3,21,0:27:13,0:27:15,10R,277,M,Schneller als einhundertfünf Kilometer in der Stunde.,7,S,"German Phase 3, Units 1-30 (2006)","12,17"
+429,GR,978-1-4423-5035-9,German 3,22,0:00:44,0:00:45,01Q,16,N,Did you drive on the highway?,,,"German Phase 3, Units 1-30 (2006)","1,18"
+430,GR,978-1-4423-5035-9,German 3,22,0:00:49,0:00:51,01R,17,F,Sind Sie auf der Autobahn gefahren?,6,Q,"German Phase 3, Units 1-30 (2006)","1,18"
+431,GR,978-1-4423-5035-9,German 3,22,0:04:21,0:04:23,02Q,52,N,"Usually, there is a lot of traffic.",,,"German Phase 3, Units 1-30 (2006)","12,18"
+432,GR,978-1-4423-5035-9,German 3,22,0:04:29,0:04:30,02R,54,M,Meistens ist viel Verkehr.,4,S,"German Phase 3, Units 1-30 (2006)","12,18"
+433,GR,978-1-4423-5035-9,German 3,22,0:04:59,0:05:00,03Q,59,N,I don’t like to drive in traffic.,,,"German Phase 3, Units 1-30 (2006)","9,18"
+434,GR,978-1-4423-5035-9,German 3,22,0:05:04,0:05:06,03R,60,M,Ich fahre nicht gern im Verkehr.,6,S,"German Phase 3, Units 1-30 (2006)","9,18"
+435,GR,978-1-4423-5035-9,German 3,22,0:07:34,0:07:36,04Q,85,N,This time I didn’t go by car.,,,"German Phase 3, Units 1-30 (2006)","1,9,17,18"
+436,GR,978-1-4423-5035-9,German 3,22,0:07:42,0:07:44,04R,86,M,Diesmal bin ich nicht mit dem Auto gefahren.,8,S,"German Phase 3, Units 1-30 (2006)","1,9,17,18"
+437,GR,978-1-4423-5035-9,German 3,22,0:11:08,0:11:10,05Q,121,N,"Usually, we take an outing together.",,,"German Phase 3, Units 1-30 (2006)",1
+438,GR,978-1-4423-5035-9,German 3,22,0:11:15,0:11:17,05R,122,F,Meistens machen wir einen Ausflug zusammen.,6,S,"German Phase 3, Units 1-30 (2006)",1
+439,GR,978-1-4423-5035-9,German 3,22,0:13:22,0:13:23,06Q,142,N,Too bad!,,,"German Phase 3, Units 1-30 (2006)",7
+440,GR,978-1-4423-5035-9,German 3,22,0:13:28,0:13:28,06R,143,F,Schade!,1,S,"German Phase 3, Units 1-30 (2006)",7
+441,GR,978-1-4423-5035-9,German 3,22,0:13:32,0:13:34,07Q,144,N,Perhaps you’ll come along next time.,,,"German Phase 3, Units 1-30 (2006)",7
+442,GR,978-1-4423-5035-9,German 3,22,0:13:42,0:13:44,07R,146,F,Vielleicht kommen Sie nächstes Mal mit.,6,S,"German Phase 3, Units 1-30 (2006)",7
+443,GR,978-1-4423-5035-9,German 3,22,0:15:59,0:16:00,07Q,170,N,That I didn’t know.,,,"German Phase 3, Units 1-30 (2006)",7
+444,GR,978-1-4423-5035-9,German 3,22,0:15:53,0:15:54,07R,171,F,Das habe ich nicht gewusst.,5,S,"German Phase 3, Units 1-30 (2006)",7
+445,GR,978-1-4423-5035-9,German 3,22,0:18:35,0:18:35,08Q,199,N,Me neither.,,,"German Phase 3, Units 1-30 (2006)",7
+446,GR,978-1-4423-5035-9,German 3,22,0:18:38,0:18:38,08R,200,M,Ich auch nicht.,3,S,"German Phase 3, Units 1-30 (2006)",7
+447,GR,978-1-4423-5035-9,German 3,22,0:18:42,0:18:44,09Q,201,N,I found that out only yesterday.,,,"German Phase 3, Units 1-30 (2006)",17
+448,GR,978-1-4423-5035-9,German 3,22,0:18:46,0:18:48,09R,202,M,Ich habe das erst gestern erfahren.,6,S,"German Phase 3, Units 1-30 (2006)",17
+449,GR,978-1-4423-5035-9,German 3,22,0:20:05,0:20:07,10Q,215,N,Our project is completed.,,,"German Phase 3, Units 1-30 (2006)","9,20"
+450,GR,978-1-4423-5035-9,German 3,22,0:20:10,0:20:12,10R,216,M,Unser Projekt ist abgeschlossen.,4,S,"German Phase 3, Units 1-30 (2006)","9,20"
+451,GR,978-1-4423-5035-9,German 3,23,0:04:14,0:04:17,01Q,55,N,One hundred twenty kilometers an hour or still faster.,,,"German Phase 3, Units 1-30 (2006)","12,17"
+452,GR,978-1-4423-5035-9,German 3,23,0:04:22,0:04:25,01R,56,M,Einhundertzwanzig Kilometer in der Stunde oder noch schneller.,8,S,"German Phase 3, Units 1-30 (2006)","12,17"
+453,GR,978-1-4423-5035-9,German 3,23,0:05:53,0:05:56,02Q,72,N,Most cars drive ninety-five kilometers an hour.,,,"German Phase 3, Units 1-30 (2006)","12,17,18"
+454,GR,978-1-4423-5035-9,German 3,23,0:06:02,0:06:05,02R,73,M,Die meisten Autos fahren fünfundneunzig Kilometer in der Stunde.,9,S,"German Phase 3, Units 1-30 (2006)","12,17,18"
+455,GR,978-1-4423-5035-9,German 3,23,0:06:33,0:06:35,03Q,77,N,I heard you’re leaving soon.,,,"German Phase 3, Units 1-30 (2006)","17,18"
+456,GR,978-1-4423-5035-9,German 3,23,0:06:37,0:06:39,03R,78,F,"Ich habe gehört, Sie fahren bald weg.",7,S,"German Phase 3, Units 1-30 (2006)","17,18"
+457,GR,978-1-4423-5035-9,German 3,23,0:12:47,0:12:49,04Q,143,N,Thank you for the beautiful flowers!,,,"German Phase 3, Units 1-30 (2006)","13,16"
+458,GR,978-1-4423-5035-9,German 3,23,0:12:52,0:12:54,04R,145,F,Danke für die schönen Blumen!,5,S,"German Phase 3, Units 1-30 (2006)","13,16"
+459,GR,978-1-4423-5035-9,German 3,23,0:16:17,0:16:18,05Q,183,N,He is still upstairs.,,,"German Phase 3, Units 1-30 (2006)","5,9"
+460,GR,978-1-4423-5035-9,German 3,23,0:16:21,0:16:22,05R,184,F,Er ist noch oben.,4,S,"German Phase 3, Units 1-30 (2006)","5,9"
+461,GR,978-1-4423-5035-9,German 3,23,0:16:25,0:16:26,06Q,185,N,He’s still with the children.,,,"German Phase 3, Units 1-30 (2006)",5
+462,GR,978-1-4423-5035-9,German 3,23,0:16:29,0:16:31,06R,186,F,Er ist noch bei den Kindern.,6,S,"German Phase 3, Units 1-30 (2006)",5
+463,GR,978-1-4423-5035-9,German 3,23,0:18:28,0:18:30,07Q,207,N,I was upstairs with the children.,,,"German Phase 3, Units 1-30 (2006)",5
+464,GR,978-1-4423-5035-9,German 3,23,0:18:33,0:18:34,07R,209,M,Ich war oben bei den Kindern.,6,S,"German Phase 3, Units 1-30 (2006)",5
+465,GR,978-1-4423-5035-9,German 3,23,0:20:18,0:20:20,08Q,226,N,May I bring you another glass of wine?,,,"German Phase 3, Units 1-30 (2006)",6
+466,GR,978-1-4423-5035-9,German 3,23,0:20:24,0:20:26,08R,228,F,Darf ich Ihnen noch ein Glas Wein bringen?,8,Q,"German Phase 3, Units 1-30 (2006)",6
+467,GR,978-1-4423-5035-9,German 3,23,0:21:48,0:21:50,09Q,245,N,May I bring you something to drink?,,,"German Phase 3, Units 1-30 (2006)",6
+468,GR,978-1-4423-5035-9,German 3,23,0:21:55,0:21:57,09R,246,F,Darf ich Ihnen etwas zu trinken bringen?,7,Q,"German Phase 3, Units 1-30 (2006)",6
+469,GR,978-1-4423-5035-9,German 3,23,0:22:37,0:22:39,10Q,253,N,The project here is almost completed.,,,"German Phase 3, Units 1-30 (2006)","9,20"
+470,GR,978-1-4423-5035-9,German 3,23,0:22:44,0:22:46,10R,254,M,Das Projekt hier ist fast abgeschlossen.,6,S,"German Phase 3, Units 1-30 (2006)","9,20"
+471,GR,978-1-4423-5035-9,German 3,24,0:03:26,0:03:27,01Q,50,N,We took an outing.,,,"German Phase 3, Units 1-30 (2006)","1,9"
+472,GR,978-1-4423-5035-9,German 3,24,0:03:31,0:03:33,01R,51,M,Wir haben einen Ausflug gemacht.,5,S,"German Phase 3, Units 1-30 (2006)","1,9"
+473,GR,978-1-4423-5035-9,German 3,24,0:06:06,0:06:08,02Q,79,N,I found that out only today.,,,"German Phase 3, Units 1-30 (2006)","9,17"
+474,GR,978-1-4423-5035-9,German 3,24,0:06:12,0:06:13,02R,80,M,Ich habe das erst heute erfahren.,6,S,"German Phase 3, Units 1-30 (2006)","9,17"
+475,GR,978-1-4423-5035-9,German 3,24,0:07:16,0:07:18,03Q,91,N,He’s flying back already tomorrow.,,,"German Phase 3, Units 1-30 (2006)","9,17,18"
+476,GR,978-1-4423-5035-9,German 3,24,0:07:21,0:07:23,03R,92,M,Er fliegt schon morgen zurück.,5,S,"German Phase 3, Units 1-30 (2006)","9,17,18"
+477,GR,978-1-4423-5035-9,German 3,24,0:08:17,0:08:18,04Q,102,N,That’s a beautiful church.,,,"German Phase 3, Units 1-30 (2006)","9,18"
+478,GR,978-1-4423-5035-9,German 3,24,0:08:22,0:08:23,04R,103,M,Das ist eine schöne Kirche.,5,S,"German Phase 3, Units 1-30 (2006)","9,18"
+479,GR,978-1-4423-5035-9,German 3,24,0:10:10,0:10:12,05Q,120,N,Would you feel like touring the church?,,,"German Phase 3, Units 1-30 (2006)",18
+480,GR,978-1-4423-5035-9,German 3,24,0:10:16,0:10:18,05R,121,F,"Hätten Sie Lust, die Kirche zu besichtigen?",7,Q,"German Phase 3, Units 1-30 (2006)",18
+481,GR,978-1-4423-5035-9,German 3,24,0:11:10,0:11:12,06Q,129,N,"That is really a beautiful, old church.",,,"German Phase 3, Units 1-30 (2006)","9,18"
+482,GR,978-1-4423-5035-9,German 3,24,0:11:17,0:11:19,06R,130,F,"Das ist wirklich eine schöne, alte Kirche.",7,S,"German Phase 3, Units 1-30 (2006)","9,18"
+483,GR,978-1-4423-5035-9,German 3,24,0:13:11,0:13:13,07Q,149,N,Would you feel like touring the old church now?,,,"German Phase 3, Units 1-30 (2006)","17,18"
+484,GR,978-1-4423-5035-9,German 3,24,0:13:19,0:13:22,07R,151,F,"Hätten Sie Lust, die alte Kirche jetzt zu besichtigen?",9,Q,"German Phase 3, Units 1-30 (2006)","17,18"
+485,GR,978-1-4423-5035-9,German 3,24,0:13:46,0:13:48,08Q,155,N,What do you like to do in your free time?,,,"German Phase 3, Units 1-30 (2006)","1,17"
+486,GR,978-1-4423-5035-9,German 3,24,0:13:50,0:13:52,08R,157,F,Was machen Sie gern in Ihrer Freizeit?,7,Q,"German Phase 3, Units 1-30 (2006)","1,17"
+487,GR,978-1-4423-5035-9,German 3,24,0:14:52,0:14:53,09Q,167,N,Do you like to do sports?,,,"German Phase 3, Units 1-30 (2006)","1,14"
+488,GR,978-1-4423-5035-9,German 3,24,0:14:56,0:14:58,09R,168,F,Machen Sie gern Sport?,4,Q,"German Phase 3, Units 1-30 (2006)","1,14"
+489,GR,978-1-4423-5035-9,German 3,24,0:17:40,0:17:41,10Q,195,N,Would you feel like playing tennis?,,,"German Phase 3, Units 1-30 (2006)",1
+490,GR,978-1-4423-5035-9,German 3,24,0:17:47,0:17:49,10R,197,F,"Hätten Sie Lust, Tennis zu spielen?",6,Q,"German Phase 3, Units 1-30 (2006)",1
+491,GR,978-1-4423-5035-9,German 3,24,0:19:19,0:19:20,11Q,212,N,Around here are tennis courts.,,,"German Phase 3, Units 1-30 (2006)",1
+492,GR,978-1-4423-5035-9,German 3,24,0:19:24,0:19:26,11R,213,F,Hier in der Nähe sind Tennisplätze.,6,S,"German Phase 3, Units 1-30 (2006)",1
+493,GR,978-1-4423-5035-9,German 3,25,0:03:34,0:03:36,01Q,51,N,In my free time I like to do jogging.,,,"German Phase 3, Units 1-30 (2006)","1,17"
+494,GR,978-1-4423-5035-9,German 3,25,0:03:41,0:03:42,01R,52,M,In meiner Freizeit mache ich gern Jogging.,7,S,"German Phase 3, Units 1-30 (2006)","1,17"
+495,GR,978-1-4423-5035-9,German 3,25,0:09:17,0:09:19,02Q,112,N,My wife is still upstairs with the children.,,,"German Phase 3, Units 1-30 (2006)",5
+496,GR,978-1-4423-5035-9,German 3,25,0:09:23,0:09:25,02R,114,M,Meine Frau ist noch oben bei den Kindern.,8,S,"German Phase 3, Units 1-30 (2006)",5
+497,GR,978-1-4423-5035-9,German 3,25,0:13:13,0:13:15,03Q,158,N,What kind of job is she looking for?,,,"German Phase 3, Units 1-30 (2006)",20
+498,GR,978-1-4423-5035-9,German 3,25,0:13:21,0:13:22,03R,159,M,Was für eine Stelle sucht sie?,6,Q,"German Phase 3, Units 1-30 (2006)",20
+499,GR,978-1-4423-5035-9,German 3,25,0:17:07,0:17:09,04Q,194,N,She’s looking for a job as an architect.,,,"German Phase 3, Units 1-30 (2006)","9,20"
+500,GR,978-1-4423-5035-9,German 3,25,0:17:14,0:17:16,04R,195,F,Sie sucht eine Stelle als Architektin.,6,S,"German Phase 3, Units 1-30 (2006)","9,20"
+501,GR,978-1-4423-5035-9,German 3,25,0:17:20,0:17:22,05Q,196,N,She would like to work at a small firm.,,,"German Phase 3, Units 1-30 (2006)","9,20"
+502,GR,978-1-4423-5035-9,German 3,25,0:17:27,0:17:29,05R,197,F,Sie möchte bei einer kleinen Firma arbeiten.,7,S,"German Phase 3, Units 1-30 (2006)","9,20"
+503,GR,978-1-4423-5035-9,German 3,25,0:20:16,0:20:19,06Q,227,N,She has wanted all along to become an architect.,,,"German Phase 3, Units 1-30 (2006)","9,20"
+504,GR,978-1-4423-5035-9,German 3,25,0:20:24,0:20:26,06R,228,F,Sie wollte schon immer Architektin werden.,6,S,"German Phase 3, Units 1-30 (2006)","9,20"
+505,GR,978-1-4423-5035-9,German 3,25,0:21:17,0:21:19,07Q,239,N,He has wanted all along to become a programmer.,,,"German Phase 3, Units 1-30 (2006)","9,20"
+506,GR,978-1-4423-5035-9,German 3,25,0:21:24,0:21:26,07R,240,F,Er wollte schon immer Programmierer werden.,6,S,"German Phase 3, Units 1-30 (2006)","9,20"
+507,GR,978-1-4423-5035-9,German 3,25,0:21:31,0:21:33,08Q,241,N,He has liked all along working with the computer.,,,"German Phase 3, Units 1-30 (2006)","3,9"
+508,GR,978-1-4423-5035-9,German 3,25,0:21:36,0:21:38,08R,242,F,Er hat schon immer gern mit dem Computer gearbeitet.,9,S,"German Phase 3, Units 1-30 (2006)","3,9"
+509,GR,978-1-4423-5035-9,German 3,25,0:24:14,0:24:16,09Q,266,N,He also likes doing sports.,,,"German Phase 3, Units 1-30 (2006)","1,5"
+510,GR,978-1-4423-5035-9,German 3,25,0:24:19,0:24:20,09R,267,F,Er macht auch gern Sport.,5,S,"German Phase 3, Units 1-30 (2006)","1,5"
+511,GR,978-1-4423-5035-9,German 3,25,0:24:47,0:24:48,10Q,272,N,Does your daughter do sports?,,,"German Phase 3, Units 1-30 (2006)","1,5"
+512,GR,978-1-4423-5035-9,German 3,25,0:24:52,0:24:53,10R,273,M,Macht Ihre Tochter Sport?,4,Q,"German Phase 3, Units 1-30 (2006)","1,5"
+513,GR,978-1-4423-5035-9,German 3,26,0:01:16,0:01:19,01Q,24,N,A job as an architect at a small firm.,,,"German Phase 3, Units 1-30 (2006)",20
+514,GR,978-1-4423-5035-9,German 3,26,0:01:25,0:01:28,01R,25,F,Eine Stelle als Architektin bei einer kleinen Firma.,8,S,"German Phase 3, Units 1-30 (2006)",20
+515,GR,978-1-4423-5035-9,German 3,26,0:01:35,0:01:37,02Q,26,N,Does she like working with the computer?,,,"German Phase 3, Units 1-30 (2006)",3
+516,GR,978-1-4423-5035-9,German 3,26,0:01:40,0:01:42,02R,27,M,Arbeitet sie gern mit dem Computer?,6,Q,"German Phase 3, Units 1-30 (2006)",3
+517,GR,978-1-4423-5035-9,German 3,26,0:07:17,0:07:19,03Q,83,N,The tennis courts around here are pretty good.,,,"German Phase 3, Units 1-30 (2006)","1,9"
+518,GR,978-1-4423-5035-9,German 3,26,0:07:25,0:07:28,03R,84,F,Die Tennisplätze hier in der Nähe sind ziemlich gut.,9,S,"German Phase 3, Units 1-30 (2006)","1,9"
+519,GR,978-1-4423-5035-9,German 3,26,0:09:16,0:09:17,04Q,103,N,I reserved a room.,,,"German Phase 3, Units 1-30 (2006)","14,16,18"
+520,GR,978-1-4423-5035-9,German 3,26,0:09:21,0:09:22,04R,104,M,Ich habe ein Zimmer reserviert.,5,S,"German Phase 3, Units 1-30 (2006)","14,16,18"
+521,GR,978-1-4423-5035-9,German 3,26,0:10:51,0:10:54,05Q,119,N,"Around here, I saw a beautiful, old church.",,,"German Phase 3, Units 1-30 (2006)","14,18"
+522,GR,978-1-4423-5035-9,German 3,26,0:10:59,0:11:02,05R,121,M,"Hier in der Nähe habe ich eine schöne, alte Kirche gesehen.",11,S,"German Phase 3, Units 1-30 (2006)","14,18"
+523,GR,978-1-4423-5035-9,German 3,26,0:11:52,0:11:54,06Q,129,N,You reserved a room for two nights.,,,"German Phase 3, Units 1-30 (2006)","12,17,18"
+524,GR,978-1-4423-5035-9,German 3,26,0:11:59,0:12:01,06R,130,F,Sie haben ein Zimmer für zwei Nächte reserviert.,8,S,"German Phase 3, Units 1-30 (2006)","12,17,18"
+525,GR,978-1-4423-5035-9,German 3,26,0:13:52,0:13:54,07Q,149,N,Try to say that you have your luggage in the car.,,,"German Phase 3, Units 1-30 (2006)",18
+526,GR,978-1-4423-5035-9,German 3,26,0:13:57,0:13:59,07R,150,M,Ich habe mein Gepäck im Auto.,6,S,"German Phase 3, Units 1-30 (2006)",18
+527,GR,978-1-4423-5035-9,German 3,26,0:14:12,0:14:14,08Q,152,N,Where can I park my car?,,,"German Phase 3, Units 1-30 (2006)","4,18"
+528,GR,978-1-4423-5035-9,German 3,26,0:14:17,0:14:18,08R,153,M,Wo kann ich mein Auto parken?,6,Q,"German Phase 3, Units 1-30 (2006)","4,18"
+529,GR,978-1-4423-5035-9,German 3,26,0:16:54,0:16:56,09Q,180,N,You can fetch your luggage.,,,"German Phase 3, Units 1-30 (2006)",18
+530,GR,978-1-4423-5035-9,German 3,26,0:16:59,0:17:01,09R,181,F,Sie können Ihr Gepäck holen.,5,S,"German Phase 3, Units 1-30 (2006)",18
+531,GR,978-1-4423-5035-9,German 3,26,0:17:45,0:17:47,10Q,188,N,"Here you are, your key.",,,"German Phase 3, Units 1-30 (2006)","13,18,20"
+532,GR,978-1-4423-5035-9,German 3,26,0:17:51,0:17:52,10R,189,F,"Hier bitte, Ihr Schüssel.",4,S,"German Phase 3, Units 1-30 (2006)","13,18,20"
+533,GR,978-1-4423-5035-9,German 3,26,0:19:46,0:19:46,11Q,206,N,I’m sorry.,,,"German Phase 3, Units 1-30 (2006)",13
+534,GR,978-1-4423-5035-9,German 3,26,0:19:51,0:19:52,11R,207,F,Tut mir leid.,3,S,"German Phase 3, Units 1-30 (2006)",13
+535,GR,978-1-4423-5035-9,German 3,26,0:19:55,0:19:57,12Q,208,N,Your room is not yet ready.,,,"German Phase 3, Units 1-30 (2006)","16,18"
+536,GR,978-1-4423-5035-9,German 3,26,0:20:01,0:20:02,12R,209,F,Ihr Zimmer ist noch nicht fertig.,6,S,"German Phase 3, Units 1-30 (2006)","16,18"
+537,GR,978-1-4423-5035-9,German 3,27,0:01:20,0:01:22,01Q,27,N,Directly across is a parking lot.,,,"German Phase 3, Units 1-30 (2006)",4
+538,GR,978-1-4423-5035-9,German 3,27,0:01:26,0:01:28,01R,28,F,Direkt gegenüber ist ein Parkplatz.,5,S,"German Phase 3, Units 1-30 (2006)",4
+539,GR,978-1-4423-5035-9,German 3,27,0:07:46,0:07:48,02Q,99,N,When is my room going to be ready?,,,"German Phase 3, Units 1-30 (2006)","16,18"
+540,GR,978-1-4423-5035-9,German 3,27,0:07:51,0:07:52,02R,100,M,Wann ist mein Zimmer fertig?,5,Q,"German Phase 3, Units 1-30 (2006)","16,18"
+541,GR,978-1-4423-5035-9,German 3,27,0:08:50,0:08:52,03Q,109,N,Is your luggage still in the car?,,,"German Phase 3, Units 1-30 (2006)",18
+542,GR,978-1-4423-5035-9,German 3,27,0:08:55,0:08:57,03R,110,F,Ist Ihr Gepäck noch im Auto?,6,Q,"German Phase 3, Units 1-30 (2006)",18
+543,GR,978-1-4423-5035-9,German 3,27,0:09:03,0:09:04,04Q,111,N,Can I fetch it now?,,,"German Phase 3, Units 1-30 (2006)",17
+544,GR,978-1-4423-5035-9,German 3,27,0:09:07,0:09:08,04R,112,M,Kann ich es jetzt holen?,5,Q,"German Phase 3, Units 1-30 (2006)",17
+545,GR,978-1-4423-5035-9,German 3,27,0:09:34,0:09:36,05Q,116,N,You can park your car on the parking lot.,,,"German Phase 3, Units 1-30 (2006)","9,18"
+546,GR,978-1-4423-5035-9,German 3,27,0:09:42,0:09:44,05R,117,F,Sie können Ihr Auto auf dem Parkplatz parken.,8,S,"German Phase 3, Units 1-30 (2006)","9,18"
+547,GR,978-1-4423-5035-9,German 3,27,0:10:23,0:10:25,06Q,124,N,Your room is going to be ready soon.,,,"German Phase 3, Units 1-30 (2006)","9,18"
+548,GR,978-1-4423-5035-9,German 3,27,0:10:28,0:10:30,06R,125,F,Ihr Zimmer ist bald fertig.,5,S,"German Phase 3, Units 1-30 (2006)","9,18"
+549,GR,978-1-4423-5035-9,German 3,27,0:13:01,0:13:02,07Q,153,N,I would like to open an account.,,,"German Phase 3, Units 1-30 (2006)","11,20"
+550,GR,978-1-4423-5035-9,German 3,27,0:13:06,0:13:08,07R,154,M,Ich möchte ein Konto eröffnen.,5,S,"German Phase 3, Units 1-30 (2006)","11,20"
+551,GR,978-1-4423-5035-9,German 3,27,0:14:34,0:14:36,08Q,170,N,Would you like to open a checking account?,,,"German Phase 3, Units 1-30 (2006)","11,20"
+552,GR,978-1-4423-5035-9,German 3,27,0:14:40,0:14:43,08R,171,F,Möchten Sie ein Girokonto eröffnen?,5,Q,"German Phase 3, Units 1-30 (2006)","11,20"
+553,GR,978-1-4423-5035-9,German 3,27,0:15:53,0:15:54,09Q,182,N,Please sign here.,,,"German Phase 3, Units 1-30 (2006)","14,20"
+554,GR,978-1-4423-5035-9,German 3,27,0:15:57,0:15:59,09R,183,F,Bitte unterschreiben Sie hier.,4,S,"German Phase 3, Units 1-30 (2006)","14,20"
+555,GR,978-1-4423-5035-9,German 3,27,0:16:31,0:16:33,10Q,189,N,Do you have an ID on you?,,,"German Phase 3, Units 1-30 (2006)","16,18,20"
+556,GR,978-1-4423-5035-9,German 3,27,0:16:37,0:16:38,10R,191,F,Haben Sie einen Ausweis dabei?,5,Q,"German Phase 3, Units 1-30 (2006)","16,18,20"
+557,GR,978-1-4423-5035-9,German 3,28,0:04:41,0:04:43,01Q,60,N,Next to the hotel is a parking lot.,,,"German Phase 3, Units 1-30 (2006)","9,16,18"
+558,GR,978-1-4423-5035-9,German 3,28,0:04:47,0:04:49,01R,61,F,Neben dem Hotel ist ein Parkplatz.,6,S,"German Phase 3, Units 1-30 (2006)","9,16,18"
+559,GR,978-1-4423-5035-9,German 3,28,0:06:21,0:06:22,02Q,76,N,"Here please, my passport.",,,"German Phase 3, Units 1-30 (2006)","16,18"
+560,GR,978-1-4423-5035-9,German 3,28,0:06:25,0:06:26,02R,77,M,"Hier bitte, mein Pass.",4,S,"German Phase 3, Units 1-30 (2006)","16,18"
+561,GR,978-1-4423-5035-9,German 3,28,0:07:54,0:07:55,03Q,94,N,That’s your account number.,,,"German Phase 3, Units 1-30 (2006)","3,11,20"
+562,GR,978-1-4423-5035-9,German 3,28,0:07:59,0:08:00,03R,96,F,Das ist Ihre Kontonummer.,4,S,"German Phase 3, Units 1-30 (2006)","3,11,20"
+563,GR,978-1-4423-5035-9,German 3,28,0:08:13,0:08:15,04Q,99,N,That’s your checking account number.,,,"German Phase 3, Units 1-30 (2006)","11,20"
+564,GR,978-1-4423-5035-9,German 3,28,0:08:19,0:08:21,04R,100,F,Das ist Ihre Girokontonummer.,4,S,"German Phase 3, Units 1-30 (2006)","11,20"
+565,GR,978-1-4423-5035-9,German 3,28,0:08:55,0:08:57,05Q,106,N,Would you also like a debit card?,,,"German Phase 3, Units 1-30 (2006)","11,14,18"
+566,GR,978-1-4423-5035-9,German 3,28,0:09:01,0:09:03,05R,107,F,Möchten Sie auch eine EC-Karte?,6,Q,"German Phase 3, Units 1-30 (2006)","11,14,18"
+567,GR,978-1-4423-5035-9,German 3,28,0:10:45,0:10:47,06Q,125,N,Where is an ATM?,,,"German Phase 3, Units 1-30 (2006)","4,11,16"
+568,GR,978-1-4423-5035-9,German 3,28,0:10:50,0:10:52,06R,126,F,Wo ist ein Geldautomat?,4,Q,"German Phase 3, Units 1-30 (2006)","4,11,16"
+569,GR,978-1-4423-5035-9,German 3,28,0:14:59,0:15:01,07Q,163,N,There is an important conference.,,,"German Phase 3, Units 1-30 (2006)","9,20"
+570,GR,978-1-4423-5035-9,German 3,28,0:15:05,0:15:07,07R,164,M,Dort ist eine wichtige Konferenz.,5,S,"German Phase 3, Units 1-30 (2006)","9,20"
+571,GR,978-1-4423-5035-9,German 3,28,0:18:21,0:18:23,08Q,196,N,We can’t change the date.,,,"German Phase 3, Units 1-30 (2006)","16,17,18"
+572,GR,978-1-4423-5035-9,German 3,28,0:18:29,0:18:31,08R,197,F,Wir können den Termin nicht ändern.,6,S,"German Phase 3, Units 1-30 (2006)","16,17,18"
+573,GR,978-1-4423-5035-9,German 3,28,0:26:06,0:26:08,09Q,272,N,Could you send me the information?,,,"German Phase 3, Units 1-30 (2006)","3,16,20"
+574,GR,978-1-4423-5035-9,German 3,28,0:26:12,0:26:14,09R,274,F,Könnten Sie mir die Information schicken?,6,Q,"German Phase 3, Units 1-30 (2006)","3,16,20"
+575,GR,978-1-4423-5035-9,German 3,28,0:26:33,0:26:35,10Q,276,N,Can I send you the information by e-mail?,,,"German Phase 3, Units 1-30 (2006)","3,20"
+576,GR,978-1-4423-5035-9,German 3,28,0:26:39,0:26:41,10R,277,M,Kann ich Ihnen die Information per E-Mail schicken?,8,Q,"German Phase 3, Units 1-30 (2006)","3,20"
+577,GR,978-1-4423-5035-9,German 3,29,0:01:38,0:01:40,01Q,26,N,I would like to open a checking account.,,,"German Phase 3, Units 1-30 (2006)",11
+578,GR,978-1-4423-5035-9,German 3,29,0:01:44,0:01:46,01R,27,M,Ich möchte ein Girokonto eröffnen.,5,S,"German Phase 3, Units 1-30 (2006)",11
+579,GR,978-1-4423-5035-9,German 3,29,0:04:31,0:04:33,02Q,56,N,You’re going to be at a conference.,,,"German Phase 3, Units 1-30 (2006)","18,20"
+580,GR,978-1-4423-5035-9,German 3,29,0:04:37,0:04:38,02R,57,M,Sie sind bei einer Konferenz.,5,S,"German Phase 3, Units 1-30 (2006)","18,20"
+581,GR,978-1-4423-5035-9,German 3,29,0:04:52,0:04:54,03Q,60,N,We can’t change the date for our meeting.,,,"German Phase 3, Units 1-30 (2006)","17,20"
+582,GR,978-1-4423-5035-9,German 3,29,0:04:58,0:05:01,03R,61,M,Wir können den Termin für unsere Besprechung nicht ändern.,9,S,"German Phase 3, Units 1-30 (2006)","17,20"
+583,GR,978-1-4423-5035-9,German 3,29,0:11:24,0:11:25,04Q,121,N,I would have a question.,,,"German Phase 3, Units 1-30 (2006)","16,20"
+584,GR,978-1-4423-5035-9,German 3,29,0:11:28,0:11:30,04R,123,M,Ich hätte eine Frage.,4,S,"German Phase 3, Units 1-30 (2006)","16,20"
+585,GR,978-1-4423-5035-9,German 3,29,0:15:52,0:15:54,05Q,171,N,She would like to improve her German.,,,"German Phase 3, Units 1-30 (2006)",15
+586,GR,978-1-4423-5035-9,German 3,29,0:15:58,0:15:59,05R,172,M,Sie möchte ihr Deutsch verbessern.,5,S,"German Phase 3, Units 1-30 (2006)",15
+587,GR,978-1-4423-5035-9,German 3,29,0:19:18,0:19:19,06Q,205,N,She could take a language course.,,,"German Phase 3, Units 1-30 (2006)","1,15"
+588,GR,978-1-4423-5035-9,German 3,29,0:19:23,0:19:25,06R,206,M,Sie könnte einen Sprachkurs machen.,5,S,"German Phase 3, Units 1-30 (2006)","1,15"
+589,GR,978-1-4423-5035-9,German 3,29,0:21:55,0:21:57,07Q,232,N,This evening it’s unfortunately too late.,,,"German Phase 3, Units 1-30 (2006)","9,17"
+590,GR,978-1-4423-5035-9,German 3,29,0:22:01,0:22:04,07R,233,F,Heute Abend ist es leider zu spät.,7,S,"German Phase 3, Units 1-30 (2006)","9,17"
+591,GR,978-1-4423-5035-9,German 3,29,0:23:12,0:23:14,08Q,245,N,I can send you the information by e-mail.,,,"German Phase 3, Units 1-30 (2006)","3,20"
+592,GR,978-1-4423-5035-9,German 3,29,0:23:19,0:23:21,08R,246,F,Ich kann Ihnen die Information per E-Mail schicken.,8,S,"German Phase 3, Units 1-30 (2006)","3,20"
+593,GR,978-1-4423-5035-9,German 3,29,0:23:34,0:23:36,09Q,248,N,Do you have perhaps another question?,,,"German Phase 3, Units 1-30 (2006)","16,20"
+594,GR,978-1-4423-5035-9,German 3,29,0:23:40,0:23:42,09R,249,F,Haben Sie vielleicht noch eine Frage?,6,Q,"German Phase 3, Units 1-30 (2006)","16,20"
+595,GR,978-1-4423-5035-9,German 3,29,0:24:05,0:24:08,10Q,253,N,My niece would like to spend the summer in Germany.,,,"German Phase 3, Units 1-30 (2006)","5,17,18"
+596,GR,978-1-4423-5035-9,German 3,29,0:24:12,0:24:14,10R,255,M,Meine Nichte möchte den Sommer in Deutschland verbringen.,8,S,"German Phase 3, Units 1-30 (2006)","5,17,18"
+597,GR,978-1-4423-5035-9,German 3,30,0:01:54,0:01:56,01Q,33,N,Now everything is ready for the conference.,,,"German Phase 3, Units 1-30 (2006)","17,20"
+598,GR,978-1-4423-5035-9,German 3,30,0:02:02,0:02:05,01R,34,F,Jetzt ist alles fertig für die Konferenz.,7,S,"German Phase 3, Units 1-30 (2006)","17,20"
+599,GR,978-1-4423-5035-9,German 3,30,0:04:54,0:04:56,03Q,63,N,I can send her the information.,,,"German Phase 3, Units 1-30 (2006)","3,9,20"
+600,GR,978-1-4423-5035-9,German 3,30,0:05:00,0:05:02,03R,64,F,Ich kann ihr die Information schicken.,6,S,"German Phase 3, Units 1-30 (2006)","3,9,20"
+601,GR,978-1-4423-5035-9,German 3,30,0:08:14,0:08:16,04Q,99,N,I haven’t seen your car keys.,,,"German Phase 3, Units 1-30 (2006)",18
+602,GR,978-1-4423-5035-9,German 3,30,0:08:20,0:08:22,04R,100,M,Ich habe Ihre Autoschlüssel nicht gesehen.,6,S,"German Phase 3, Units 1-30 (2006)",18
+603,GR,978-1-4423-5035-9,German 3,30,0:13:02,0:13:04,05Q,154,N,Do you know perhaps a good language school?,,,"German Phase 3, Units 1-30 (2006)","1,15"
+604,GR,978-1-4423-5035-9,German 3,30,0:13:08,0:13:10,05R,155,M,Kennen Sie vielleicht eine gute Sprachschule?,6,Q,"German Phase 3, Units 1-30 (2006)","1,15"
+605,GR,978-1-4423-5035-9,German 3,30,0:14:38,0:14:40,06Q,171,N,Not far from here is a language school.,,,"German Phase 3, Units 1-30 (2006)","4,15"
+606,GR,978-1-4423-5035-9,German 3,30,0:14:44,0:14:46,06R,172,F,Nicht weit von hier ist eine Sprachschule.,7,S,"German Phase 3, Units 1-30 (2006)","4,15"
+607,GR,978-1-4423-5035-9,German 3,30,0:19:12,0:19:13,07Q,220,N,Are those your car keys?,,,"German Phase 3, Units 1-30 (2006)",18
+608,GR,978-1-4423-5035-9,German 3,30,0:19:19,0:19:20,07R,221,M,Sind das Ihre Autoschlüssel?,4,Q,"German Phase 3, Units 1-30 (2006)",18
+609,GR,978-1-4423-5035-9,German 3,30,0:20:40,0:20:42,08Q,236,N,The kitchen is pretty small.,,,"German Phase 3, Units 1-30 (2006)","9,12"
+610,GR,978-1-4423-5035-9,German 3,30,0:20:46,0:20:48,08R,237,F,Die Küche ist ziemlich klein.,5,S,"German Phase 3, Units 1-30 (2006)","9,12"
+611,GR,978-1-4423-5035-9,German 3,30,0:21:06,0:21:09,09Q,240,N,Would you feel like drinking a cup of coffee?,,,"German Phase 3, Units 1-30 (2006)","1,6"
+612,GR,978-1-4423-5035-9,German 3,30,0:21:15,0:21:17,09R,242,F,"Hätten Sie Lust, eine Tasse Kaffee zu trinken?",8,Q,"German Phase 3, Units 1-30 (2006)","1,6"
+613,GR,978-1-4423-5035-9,German 3,30,0:26:20,0:26:21,10Q,296,N,Good luck!,,,"German Phase 3, Units 1-30 (2006)","9,13"
+614,GR,978-1-4423-5035-9,German 3,30,0:26:23,0:26:24,10R,297,F,Viel Glück!,2,S,"German Phase 3, Units 1-30 (2006)","9,13"

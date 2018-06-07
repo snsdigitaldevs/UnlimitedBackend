@@ -1,5 +1,10 @@
 package com.simonschuster.pimsleur.unlimited.data.dto.promotions;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_EMPTY;
+
+@JsonInclude(NON_EMPTY)
 public class UpsellItem {
     private String isbn;
     private String name;

@@ -2,9 +2,9 @@ package com.simonschuster.pimsleur.unlimited.data.dto.promotions;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 
-import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL;
+import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_EMPTY;
 
-@JsonInclude(NON_NULL)
+@JsonInclude(NON_EMPTY)
 public class UpsellDto {
     private UpsellItem nextLevel;
     private UpsellItem nextVersion;

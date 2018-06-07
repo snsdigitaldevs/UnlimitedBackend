@@ -246,14 +246,14 @@ public class PurchaseMapping {
     }
 
     private UpsellItem createNextLevel(boolean ignoreUpsell) {
-        if (!ignoreUpsell) {
+        if (!ignoreUpsell && getUpsellInAppPurchaseISBN().length() > 0) {
             return new UpsellItem(getUpsellInAppPurchaseISBN(), getUpsellCourseName());
         }
         return null;
     }
 
     private UpsellItem createNextVersion(boolean ignoreUpgrade) {
-        if (!ignoreUpgrade) {
+        if (!ignoreUpgrade && getUpgradeInAppPurchaseISBN().length() > 0) {
             return new UpsellItem(getUpgradeInAppPurchaseISBN(), getUpgradeCourseName());
         }
         return null;

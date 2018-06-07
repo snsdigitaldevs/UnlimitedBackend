@@ -4,10 +4,7 @@ import com.simonschuster.pimsleur.unlimited.common.exception.PimsleurException;
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Lesson;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.Customer;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.MediaItem;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.OrdersProduct;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.OrdersProductAttribute;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.*;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.BatchedMediaItemUrls;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.MediaItemUrl;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.PcmAudioReqParams;
@@ -29,10 +26,6 @@ import static java.util.stream.Collectors.toList;
 
 @Service
 public class PcmCourseInfoService {
-    public static final String KEY_LESSONS = "Lessons";
-
-    private static final String KEY_UNITS = "Units";
-
     @Autowired
     private EDTCustomerInfoService customerInfoService;
     @Autowired
@@ -226,7 +219,7 @@ public class PcmCourseInfoService {
 
                                 String levelInDownload = downloadInfo.getMediaSet().getProduct().getProductsLevel().toString();
                                 downloadInfo.getMediaSet().getChildMediaSets().stream()
-                                        .filter(mediaSet -> isLesson(mediaSet.getMediaSetTitle()))
+                                        .filter(ChildMediaSet::isLesson)
                                         .flatMap(childMediaSet -> childMediaSet.getMediaItems().stream())
                                         .filter(MediaItem::isLesson)
                                         .forEach(item -> itemIds.put(item.getMediaItemTitle(), item.getMediaItemId()));
@@ -285,7 +278,7 @@ public class PcmCourseInfoService {
                     .peek(download -> entitlementTokens.put(level,
                             new ImmutablePair<>(download.getEntitlementToken(), download.getMediaSetId())))
                     .flatMap(downloadInfo -> downloadInfo.getMediaSet().getChildMediaSets().stream())
-                    .filter(mediaSet -> isLesson(mediaSet.getMediaSetTitle()))
+                    .filter(ChildMediaSet::isLesson)
                     .flatMap(childMediaSet -> childMediaSet.getMediaItems().stream())
                     .filter(MediaItem::isLesson)
                     .forEach(item -> itemIds.put(item.getMediaItemTitle(), item.getMediaItemId()));
@@ -294,10 +287,6 @@ public class PcmCourseInfoService {
         }
 
         return oneLevelItemIds;
-    }
-
-    private boolean isLesson(String title) {
-        return title.contains(KEY_UNITS) || title.contains(KEY_LESSONS);
     }
 
     /**

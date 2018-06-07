@@ -13,7 +13,6 @@ import com.simonschuster.pimsleur.unlimited.services.freeLessons.PuFreeLessonsSe
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -36,7 +35,6 @@ public class AvailableProductsService {
     private PuFreeLessonsService puFreeLessonsService;
     @Autowired
     private PUCourseInfoService puCourseInfoService;
-
 
     public AvailableProductsDto getAvailableProducts(String sub) {
         if (sub == null) {
@@ -68,8 +66,7 @@ public class AvailableProductsService {
             return puCustInfo.getResultData().getCustomer().getAllOrdersProducts()
                     .stream()
                     .map(OrdersProduct::getProduct)
-                    .flatMap(product -> puCourseInfoService.getPuProductInfo(product.getProductCode()).toDto().stream())
-                    .map(Course::toAvailableProductDto)
+                    .flatMap(this::puProductToDtos)
                     .filter(distinctByKey(p -> p.getLanguageName() + p.getLevel())) // remove duplicate
                     .collect(toList());
         } else {
@@ -83,10 +80,7 @@ public class AvailableProductsService {
         if (pcmCustInfo.getResultData() != null) {
             return pcmCustInfo.getResultData().getCustomer().getAllOrdersProducts()
                     .stream()
-                    .flatMap(ordersProduct -> ordersProduct.getOrdersProductsAttributes().stream())
-                    .flatMap(attribute -> attribute.getOrdersProductsDownloads().stream())
-                    .map(download -> download.getMediaSet().getProduct())
-                    .map(Product::toPCMAvailableProductDto)
+                    .flatMap(this::pcmOrderToDtos)
                     .filter(productDto -> productDto.getLevel() != 0) // remove "how to learn"
                     .filter(distinctByKey(AvailableProductDto::getProductCode)) // remove duplicate
                     .collect(toList());
@@ -100,10 +94,45 @@ public class AvailableProductsService {
                 .mergePuWithPcmFreeLessons(pcmFreeLessonsService.getPcmFreeLessons());
         return freeProducts.stream()
                 .filter(free -> purchasedProducts.stream().noneMatch(purchased -> purchased.isSameLang(free)))
+                //for free lessons, the isbn used to call upsell api is always the original isbn itself
+                .peek(free -> free.setProductCodeForUpsell(free.getProductCode()))
                 .collect(toList());
     }
 
-    private static <T> Predicate<T> distinctByKey(Function<? super T, Object> keyExtractor) {
+    private Stream<AvailableProductDto> puProductToDtos(Product product) {
+        List<Course> courses = puCourseInfoService.getPuProductInfo(product.getProductCode()).toDto();
+        boolean isKitted = courses.size() > 1;
+
+        return courses.stream().map(course -> {
+            AvailableProductDto dto = course.toPuAvailableProductDto();
+            if (isKitted) {
+                // if the pu product is kitted, use the mother isbn for upsell for all its children
+                dto.setProductCodeForUpsell(product.getProductCode());
+            } else {
+                // otherwise, use the single level isbn for upsell api
+                dto.setProductCodeForUpsell(product.getProductCode());
+            }
+            return dto;
+        });
+    }
+
+    private Stream<AvailableProductDto> pcmOrderToDtos(OrdersProduct ordersProduct) {
+        List<AvailableProductDto> dtos = ordersProduct.getOrdersProductsAttributes().stream()
+                .flatMap(attribute -> attribute.getOrdersProductsDownloads().stream())
+                .map(download -> download.getMediaSet().getProduct())
+                .map(Product::toPCMAvailableProductDto)
+                .collect(toList());
+        if (dtos.size() > 1) {
+            // if it's subscription or kitted, use the mother isbn for upsell
+            dtos.forEach(dto -> dto.setProductCodeForUpsell(ordersProduct.getProduct().getProductCode()));
+        } else {
+            // otherwise, use the single level isbn
+            dtos.forEach(dto -> dto.setProductCodeForUpsell(dto.getProductCode()));
+        }
+        return dtos.stream();
+    }
+
+    private static <T> Predicate<T> distinctByKey(Function<T, Object> keyExtractor) {
         Map<Object, Boolean> seen = new ConcurrentHashMap<>();
         return object -> seen.putIfAbsent(keyExtractor.apply(object), Boolean.TRUE) == null;
     }

@@ -11,6 +11,8 @@ public class AvailableProductDto {
     private String languageName;
     private String productCode;
     private String courseName;
+    // this is the isbn you should use when calling the upsell api
+    private String productCodeForUpsell;
 
     private boolean isPuProduct = false;
     private Integer level = 1; // default level 1 for free lessons
@@ -58,6 +60,14 @@ public class AvailableProductDto {
 
     public void setLevel(Integer level) {
         this.level = level;
+    }
+
+    public String getProductCodeForUpsell() {
+        return productCodeForUpsell;
+    }
+
+    public void setProductCodeForUpsell(String productCodeForUpsell) {
+        this.productCodeForUpsell = productCodeForUpsell;
     }
 
     public String getCourseName() {

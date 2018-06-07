@@ -460,15 +460,6 @@ public class Product {
         return getIsbn13().replace("-", "");
     }
 
-    public AvailableProductDto toPUAvailableProductDto() {
-        return new AvailableProductDto(
-                getProductsLanguageName(),
-                getProductsName(),
-                getProductCode(),
-                true,
-                getProductsLevel());
-    }
-
     public AvailableProductDto toPCMAvailableProductDto() {
         return new AvailableProductDto(
                 getProductsLanguageName(),

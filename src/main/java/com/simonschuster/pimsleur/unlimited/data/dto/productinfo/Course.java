@@ -82,7 +82,8 @@ public class Course {
         this.readings = readings;
     }
 
-    public AvailableProductDto toAvailableProductDto() {
-        return new AvailableProductDto(getLanguageName(), getCourseName(), getProductCode(), true, getLevel());
+    public AvailableProductDto toPuAvailableProductDto() {
+        return new AvailableProductDto(getLanguageName(), getCourseName(),
+                getProductCode(), true, getLevel());
     }
 }

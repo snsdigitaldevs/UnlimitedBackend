@@ -13,6 +13,7 @@ public class ChildMediaSet {
     private static final String KEY_LESSONS = "Lessons";
     private static final String KEY_UNITS = "Units";
     private static final String ESL_SPANISH_PCM_LESSONS = "Lecciónes";
+    private static final String ESL_SPANISH_PCM_READING_LESSONS = "Lectura lecciónes";
 
     private int mediaSetId;
     private int mediaSetParentId;
@@ -98,11 +99,15 @@ public class ChildMediaSet {
 
     public boolean isReading() {
         String title = getMediaSetTitle();
-        return title.contains(READING_LESSONS) || title.contains(CULTURE_NOTES);
+        return title.contains(READING_LESSONS) ||
+                title.contains(CULTURE_NOTES) ||
+                title.contains(ESL_SPANISH_PCM_READING_LESSONS);
     }
 
     public boolean isLesson() {
         String title = getMediaSetTitle();
-        return title.contains(KEY_UNITS) || title.contains(KEY_LESSONS) || title.contains(ESL_SPANISH_PCM_LESSONS);
+        return title.contains(KEY_UNITS) ||
+                title.contains(KEY_LESSONS) ||
+                title.contains(ESL_SPANISH_PCM_LESSONS);
     }
 }

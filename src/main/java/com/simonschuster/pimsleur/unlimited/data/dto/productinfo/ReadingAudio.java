@@ -18,6 +18,7 @@ import static org.apache.commons.lang3.StringUtils.isNumeric;
 public class ReadingAudio {
     private static ObjectMapper mapper = new ObjectMapper();
 
+    private static final String ESL_SPANISH_READING_LESSON = "Lectura lección";
     private static final String READING_LESSON = "Reading Lesson";
     public static final String CULTURE_NOTES = "Culture Notes";
 
@@ -93,6 +94,7 @@ public class ReadingAudio {
     private static Integer titleToUnitNumber(String title) {
         String unit = title
                 .replace(READING_LESSON, "")
+                .replace(ESL_SPANISH_READING_LESSON, "")
                 .replace(CULTURE_NOTES, "")
                 .replace(" ", "");
         try {

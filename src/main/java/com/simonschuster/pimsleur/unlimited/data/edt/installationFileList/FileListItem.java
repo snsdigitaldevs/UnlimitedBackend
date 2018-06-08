@@ -129,7 +129,10 @@ public class FileListItem {
     }
 
     public String getFullUrl() {
-        return this.sourceURL + this.path;
+        return this.sourceURL +
+                // pu free lessons have encrypted csv files, just remove the encr part
+                // then we have an url that point to unencrypted version of the csv
+                this.path.replace(".csv.encr", ".csv");
     }
 
     public String getReviewAudioBaseUrl() {

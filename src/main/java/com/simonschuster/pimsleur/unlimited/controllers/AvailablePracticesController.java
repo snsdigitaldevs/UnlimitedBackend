@@ -16,7 +16,6 @@ import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import static com.simonschuster.pimsleur.unlimited.utils.HardCodedProductsUtil.puFreeToPuNormalIsbn;
 import static com.simonschuster.pimsleur.unlimited.utils.practices.FlashCardUtil.csvToFlashCards;
 import static com.simonschuster.pimsleur.unlimited.utils.practices.QuickMatchUtil.getQuickMatchesByCsvUrl;
 import static com.simonschuster.pimsleur.unlimited.utils.practices.SpeakEasyAndReadingUtil.csvToReadings;
@@ -41,8 +40,7 @@ public class AvailablePracticesController {
     @RequestMapping(value = "/puProduct/{productCode}/availablePractices", method = RequestMethod.GET)
     public AvailablePractices getPuAvailablePractices(@PathVariable("productCode") String productCode)
             throws IOException {
-        String normalProductCode = puFreeToPuNormalIsbn(productCode);
-        PracticesUrls practicesUrls = puAvailablePracticesService.getPracticeUrls(normalProductCode);
+        PracticesUrls practicesUrls = puAvailablePracticesService.getPracticeUrls(productCode);
 
         List<PracticesInUnit> speakEasies = csvToSpeakEasies(practicesUrls.getSpeakEasyUrl());
         List<PracticesInUnit> readings = csvToReadings(practicesUrls.getReadingUrl());

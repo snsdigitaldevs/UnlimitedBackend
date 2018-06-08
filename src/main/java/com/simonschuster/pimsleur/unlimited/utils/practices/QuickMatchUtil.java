@@ -74,8 +74,8 @@ public class QuickMatchUtil {
     }
 
     private static void getSkill(String originIsbn, List<PracticesInUnit> result) throws IOException {
-        String isbd = getIsbn(originIsbn);
-        InputStream fileStream = UnlimitedApplication.class.getClassLoader().getResourceAsStream("skill/" + isbd + ".csv");
+        String isbn = getIsbn(originIsbn);
+        InputStream fileStream = UnlimitedApplication.class.getClassLoader().getResourceAsStream("skill/" + isbn + ".csv");
         if (fileStream == null) {
             return;
         }

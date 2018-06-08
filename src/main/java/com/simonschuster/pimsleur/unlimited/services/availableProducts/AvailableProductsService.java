@@ -15,6 +15,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Function;
 import java.util.function.Predicate;
@@ -41,23 +42,31 @@ public class AvailableProductsService {
             return new AvailableProductsDto(emptyList(), getFreeProducts(emptyList()));
         }
 
-        List<AvailableProductDto> purchasedProducts = purchasedPUAndPcmProducts(sub);
-        List<AvailableProductDto> freeProducts = getFreeProducts(purchasedProducts);
-
-        return new AvailableProductsDto(purchasedProducts, freeProducts);
+        return CompletableFuture.supplyAsync(() -> purchasedPUAndPcmProducts(sub))
+                .thenCombineAsync(CompletableFuture.supplyAsync(() -> pcmFreeLessonsService.getPcmFreeLessons()),
+                        (purchasedProducts, pcmFreeLessons) -> {
+                            List<AvailableProductDto> freeProducts = getFreeProducts(purchasedProducts, pcmFreeLessons);
+                            return new AvailableProductsDto(purchasedProducts, freeProducts);
+                        })
+                .join();
     }
 
     private List<AvailableProductDto> purchasedPUAndPcmProducts(String sub) {
-        List<AvailableProductDto> purchasedPuProducts = getPuAvailableProducts(sub);
-        List<AvailableProductDto> purchasedPCMProducts = getPcmAvailableProducts(sub);
 
-        Stream<AvailableProductDto> filteredPcmProducts = purchasedPCMProducts.stream()
-                .filter((AvailableProductDto pcm) -> purchasedPuProducts.stream()
-                        .noneMatch(pu -> pu.isSameLevelSameLang(pcm)));
+        return CompletableFuture.supplyAsync(() -> getPuAvailableProducts(sub))
+                .thenCombineAsync(
+                        CompletableFuture.supplyAsync(() -> getPcmAvailableProducts(sub)),
+                        (purchasedPuProducts, purchasedPCMProducts) -> {
+                            Stream<AvailableProductDto> filteredPcmProducts = purchasedPCMProducts.stream()
+                                    .filter((AvailableProductDto pcm) -> purchasedPuProducts.stream()
+                                            .noneMatch(pu -> pu.isSameLevelSameLang(pcm)));
 
-        return concat(purchasedPuProducts.stream(), filteredPcmProducts)
-                .sorted(comparing(AvailableProductDto::getCourseName))
-                .collect(toList());
+                            return concat(purchasedPuProducts.stream(), filteredPcmProducts)
+                                    .sorted(comparing(AvailableProductDto::getCourseName))
+                                    .collect(toList());
+                        })
+                .join();
+
     }
 
     private List<AvailableProductDto> getPuAvailableProducts(String sub) {
@@ -90,8 +99,13 @@ public class AvailableProductsService {
     }
 
     private List<AvailableProductDto> getFreeProducts(List<AvailableProductDto> purchasedProducts) {
+        return getFreeProducts(purchasedProducts, pcmFreeLessonsService.getPcmFreeLessons());
+    }
+
+    private List<AvailableProductDto> getFreeProducts(List<AvailableProductDto> purchasedProducts,
+                                                      List<AvailableProductDto> pcmFreeLessons) {
         List<AvailableProductDto> freeProducts = puFreeLessonsService
-                .mergePuWithPcmFreeLessons(pcmFreeLessonsService.getPcmFreeLessons());
+                .mergePuWithPcmFreeLessons(pcmFreeLessons);
         return freeProducts.stream()
                 .filter(free -> purchasedProducts.stream().noneMatch(purchased -> purchased.isSameLang(free)))
                 //for free lessons, the isbn used to call upsell api is always the original isbn itself

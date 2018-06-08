@@ -22,7 +22,7 @@ public class Lesson {
     }
 
     public String getName() {
-        return name;
+        return name.replace("Unit", "Lesson");
     }
 
     public String getAudioLink() {

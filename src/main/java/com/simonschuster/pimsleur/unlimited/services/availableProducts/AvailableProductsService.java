@@ -42,31 +42,38 @@ public class AvailableProductsService {
             return new AvailableProductsDto(emptyList(), getFreeProducts(emptyList()));
         }
 
-        return CompletableFuture.supplyAsync(() -> purchasedPUAndPcmProducts(sub))
-                .thenCombineAsync(CompletableFuture.supplyAsync(() -> pcmFreeLessonsService.getPcmFreeLessons()),
-                        (purchasedProducts, pcmFreeLessons) -> {
-                            List<AvailableProductDto> freeProducts = getFreeProducts(purchasedProducts, pcmFreeLessons);
-                            return new AvailableProductsDto(purchasedProducts, freeProducts);
-                        })
+        return CompletableFuture
+                .supplyAsync(() -> purchasedPUAndPcmProducts(sub))
+                .thenCombineAsync(
+                        CompletableFuture.supplyAsync(() -> pcmFreeLessonsService.getPcmFreeLessons()),
+                        this::getAvailableProductsDto)
                 .join();
+    }
+
+    private AvailableProductsDto getAvailableProductsDto(List<AvailableProductDto> purchasedProducts, List<AvailableProductDto> pcmFreeLessons) {
+        List<AvailableProductDto> freeProducts = getFreeProducts(purchasedProducts, pcmFreeLessons);
+        return new AvailableProductsDto(purchasedProducts, freeProducts);
     }
 
     private List<AvailableProductDto> purchasedPUAndPcmProducts(String sub) {
 
-        return CompletableFuture.supplyAsync(() -> getPuAvailableProducts(sub))
+        return CompletableFuture
+                .supplyAsync(() -> getPuAvailableProducts(sub))
                 .thenCombineAsync(
                         CompletableFuture.supplyAsync(() -> getPcmAvailableProducts(sub)),
-                        (purchasedPuProducts, purchasedPCMProducts) -> {
-                            Stream<AvailableProductDto> filteredPcmProducts = purchasedPCMProducts.stream()
-                                    .filter((AvailableProductDto pcm) -> purchasedPuProducts.stream()
-                                            .noneMatch(pu -> pu.isSameLevelSameLang(pcm)));
-
-                            return concat(purchasedPuProducts.stream(), filteredPcmProducts)
-                                    .sorted(comparing(AvailableProductDto::getCourseName))
-                                    .collect(toList());
-                        })
+                        this::getAvailableProductDtos)
                 .join();
 
+    }
+
+    private List<AvailableProductDto> getAvailableProductDtos(List<AvailableProductDto> purchasedPuProducts, List<AvailableProductDto> purchasedPCMProducts) {
+        Stream<AvailableProductDto> filteredPcmProducts = purchasedPCMProducts.stream()
+                .filter((AvailableProductDto pcm) -> purchasedPuProducts.stream()
+                        .noneMatch(pu -> pu.isSameLevelSameLang(pcm)));
+
+        return concat(purchasedPuProducts.stream(), filteredPcmProducts)
+                .sorted(comparing(AvailableProductDto::getCourseName))
+                .collect(toList());
     }
 
     private List<AvailableProductDto> getPuAvailableProducts(String sub) {

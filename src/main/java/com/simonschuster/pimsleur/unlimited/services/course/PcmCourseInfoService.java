@@ -152,6 +152,9 @@ public class PcmCourseInfoService {
                     .replace("Lesson", "Unit")
                     .replace("Lección", "Unit")
                     .replace(" ", "_");
+            String lessonNumber = title.split(" ")[1];
+            fileName = lessonNumber.length() == 1 ? fileName.replace(lessonNumber, "0" + lessonNumber) : fileName;
+
             String urlOfMediaItem = batchedMediaItemUrls.getUrlOfMediaItem(fileName);
             lesson.setAudioLink(urlOfMediaItem);
 

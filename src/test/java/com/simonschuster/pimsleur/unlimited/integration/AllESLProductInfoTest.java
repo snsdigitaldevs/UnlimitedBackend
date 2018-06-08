@@ -5,6 +5,7 @@ import com.simonschuster.pimsleur.unlimited.controllers.ProductController;
 import com.simonschuster.pimsleur.unlimited.data.dto.availableProducts.AvailableProductsDto;
 import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.AvailableProductDto;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
+import org.apache.commons.lang3.StringUtils;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -21,6 +22,7 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
+import static junit.framework.TestCase.assertFalse;
 import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -60,6 +62,9 @@ public class AllESLProductInfoTest {
             assertTrue(eslProductInfo.size() > 0);
             eslProductInfo.forEach(course -> {
                 assertTrue(course.getLessons().size() > 0);
+                course.getLessons().forEach(lesson -> {
+                    assertFalse(StringUtils.isEmpty(lesson.getAudioLink()));
+                });
                 assertNotNull(course.getLanguageName());
                 System.out.println(course.getCourseName());
             });

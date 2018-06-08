@@ -3,9 +3,11 @@ package com.simonschuster.pimsleur.unlimited.services.promotions;
 import com.simonschuster.pimsleur.unlimited.data.dto.promotions.PurchaseMapping;
 import com.simonschuster.pimsleur.unlimited.data.dto.promotions.UpsellDto;
 import com.simonschuster.pimsleur.unlimited.services.customer.EDTCustomerInfoService;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static java.util.stream.Collectors.toList;
@@ -27,7 +29,10 @@ public class UpsellService {
             // return empty result if can not find mapping for this isbn
             return new UpsellDto();
         } else {
-            List<String> boughtIsbns = customerInfoService.getBoughtIsbns(sub);
+            List<String> boughtIsbns = new ArrayList<>();
+            if (!StringUtils.isEmpty(sub)) {
+                boughtIsbns = customerInfoService.getBoughtIsbns(sub);
+            }
             boolean upsellBought = isBought(boughtIsbns, purchaseMapping.getUpsellInAppPurchaseISBN());
             boolean upgradeBought = isBought(boughtIsbns, purchaseMapping.getUpgradeInAppPurchaseISBN());
             return purchaseMapping.toUpsellDto(upsellBought, upgradeBought);

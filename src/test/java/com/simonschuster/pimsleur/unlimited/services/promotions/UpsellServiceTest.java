@@ -126,4 +126,16 @@ public class UpsellServiceTest {
 
         assertThat(upsellInfo.getNextVersion(), nullValue());
     }
+
+    @Test
+    public void shouldGetUpsellInfoForFreeLessonWithoutSub() {
+        UpsellDto upsellInfo = upsellService.getUpsellInfoFor(
+                "9781508243328",// Chinese (Mandarin) Level 1 Lesson 1 Demo Unlimited
+                "");
+
+        assertThat(upsellInfo.getNextLevel().getName(),
+                containsString("Chinese (Mandarin) Level 1 Unlimited Upsell"));
+
+        assertThat(upsellInfo.getNextVersion(), nullValue());
+    }
 }

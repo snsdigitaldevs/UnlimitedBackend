@@ -30,7 +30,7 @@ public class AggregatedProductInfo {
 
     private PuProductInfo puProductInfo;
     private PcmProduct pcmProduct;
-    private Map<String, List<Lesson>> lessonAudioInfoFromPCM;
+    private List<Course> lessonAudioInfoFromPCM;
 
     public void setPcmProduct(PcmProduct pcmProduct) {
         this.pcmProduct = pcmProduct;
@@ -50,7 +50,7 @@ public class AggregatedProductInfo {
 
     // factory method
     public static AggregatedProductInfo createInstanceForPcm(PcmProduct pcmProductInfo,
-                                                             Map<String, List<Lesson>> pcmAudioInfo) {
+                                                             List<Course> pcmAudioInfo) {
         AggregatedProductInfo productInfo = new AggregatedProductInfo();
         productInfo.setPcmProduct(pcmProductInfo);
         productInfo.setPcmAudioInfo(pcmAudioInfo);
@@ -122,22 +122,23 @@ public class AggregatedProductInfo {
 
     private void buildCourseInfoFromPCM(List<Course> courses,
                                         PcmProduct productInfoFromPCM,
-                                        Map<String, List<Lesson>> lessonAudioInfoFromPCM) {
+                                        List<Course> lessonAudioInfoFromPCM) {
         productInfoFromPCM.getOrdersProducts().forEach((orderProductInfo) -> {
+            List<Course> filteredLessonAudioInfo = lessonAudioInfoFromPCM.stream()
+                    .filter(course -> course.getLessons().size() > 0)
+                    .collect(Collectors.toList());
 
-            Map<String, List<Lesson>> filteredLessonAudioInfo = lessonAudioInfoFromPCM.entrySet().stream()
-                    .filter(lessonAudioInfo -> lessonAudioInfo.getValue().size() > 0)
-                    .collect(toMap(Map.Entry::getKey, Map.Entry::getValue));
-
-            filteredLessonAudioInfo.forEach((level, lessonInfoForOneLevel) -> {
-                Course course = buildPcmCourse(orderProductInfo, lessonInfoForOneLevel, level);
+            filteredLessonAudioInfo.forEach(courseWithLessonInfoOnly -> {
+                Course course = buildPcmCourse(orderProductInfo, courseWithLessonInfoOnly);
                 courses.add(course);
             });
         });
 
     }
 
-    private Course buildPcmCourse(OrdersProduct orderProductInfo, List<Lesson> lessons, String level) {
+    private Course buildPcmCourse(OrdersProduct orderProductInfo, Course courseWithLessonInfoOnly) {
+        List lessons = courseWithLessonInfoOnly.getLessons();
+        String level = String.valueOf(courseWithLessonInfoOnly.getLevel());
         Map<Integer, Product> products = orderProductInfo.getOrdersProductsAttributes()
                 .stream()
                 .filter(attr -> attr.getProductsOptions().contains(KEY_DOWNLOAD))
@@ -242,7 +243,7 @@ public class AggregatedProductInfo {
         lesson.setAudioLink(encodeUrl(PREFIX_FOR_AUDIO_OF_PU, audioUrl));
     }
 
-    private void setPcmAudioInfo(Map<String, List<Lesson>> lessonAudioInfoFromPCM) {
+    private void setPcmAudioInfo(List<Course> lessonAudioInfoFromPCM) {
         this.lessonAudioInfoFromPCM = lessonAudioInfoFromPCM;
     }
 }

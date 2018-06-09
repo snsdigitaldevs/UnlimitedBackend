@@ -35,7 +35,8 @@ public class PcmCourseInfoServiceTest {
         running(server, () -> {
             List<Course> courseDtos = pcmCourseInfoService.getCourses(productCode, "sub");
 
-            Course levelOne = courseDtos.stream().filter(course -> course.getLevel() == 1).collect(Collectors.toList()).get(0);
+            Course levelOne = courseDtos.stream()
+                    .filter(course -> course.getLevel() == 1).collect(Collectors.toList()).get(0);
 
             assertEquals("French", levelOne.getLanguageName());
             assertThat(levelOne.getIsOneOfNineBig(), is(true));

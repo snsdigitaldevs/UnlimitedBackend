@@ -40,7 +40,7 @@ public class PcmCourseInfoService {
 
     public List<Course> getCourses(String productCode, String sub) {
         PcmProduct pcmProductInfo = getPcmProductInfo(sub);
-        Map<String, List<Lesson>> pcmAudioInfo = getPcmAudioInfo(productCode, pcmProductInfo);
+        List<Course> pcmAudioInfo = getPcmAudioInfo(productCode, pcmProductInfo);
 
         List<Course> courses = createInstanceForPcm(pcmProductInfo, pcmAudioInfo).toDto();
         pcmReadingsService.addReadingsToCourses(courses, pcmProductInfo);
@@ -70,7 +70,7 @@ public class PcmCourseInfoService {
      * @param productCode
      * @param pcmProduct
      */
-    private Map<String, List<Lesson>> getPcmAudioInfo(String productCode, PcmProduct pcmProduct) {
+    private List<Course> getPcmAudioInfo(String productCode, PcmProduct pcmProduct) {
         Map<String, Pair<String, Integer>> entitlementTokens = new HashMap<>();
         Map<String, Map<String, Integer>> mediaItemIds = getMediaItemIds(pcmProduct, entitlementTokens, productCode);
 
@@ -89,19 +89,23 @@ public class PcmCourseInfoService {
      * @param params
      * @return
      */
-    private Map<String, List<Lesson>> getAudioInfo(PcmAudioReqParams params) {
-        Map<String, List<Lesson>> pcmAudioRespInfo = new HashMap<>();
+    private List<Course> getAudioInfo(PcmAudioReqParams params) {
+        List<Course> coursesWithLessonInfoOnly = new ArrayList<>();
 
         boolean isBatched = parseBoolean(config.getProperty("toggle.fetch.mp3.url.batch"));
         params.getMediaItemIds().forEach((level, mediaItemInfo) -> {
+            Course course = new Course();
+            course.setLevel(Integer.valueOf(level));
             if (isBatched) {
-                pcmAudioRespInfo.put(level, batchFetchLessons(params, level, mediaItemInfo));
+                course.setLessons(batchFetchLessons(params, level, mediaItemInfo));
+
             } else {
-                pcmAudioRespInfo.put(level, fetchLessonsOneByOne(params, level, mediaItemInfo));
+                course.setLessons(fetchLessonsOneByOne(params, level, mediaItemInfo));
             }
+            coursesWithLessonInfoOnly.add(course);
         });
 
-        return pcmAudioRespInfo;
+        return coursesWithLessonInfoOnly;
     }
 
     /**
@@ -116,14 +120,14 @@ public class PcmCourseInfoService {
                                                               Map<String, Pair<String, Integer>> entitlementTokens,
                                                               String productCode) {
 
-        Optional<OrdersProduct> first = pcmProduct.getOrdersProducts().stream()
+        Optional<OrdersProduct> firstMatchedOrderProduct = pcmProduct.getOrdersProducts().stream()
                 .filter(ordersProduct -> Objects.equals(ordersProduct.getProduct().getProductCode(), productCode))
                 .findFirst();
 
-        if (first.isPresent()) {
+        if (firstMatchedOrderProduct.isPresent()) {
             Map<String, OrdersProduct> filteredOrdersProductList = new HashMap<>();
-            filteredOrdersProductList.put(productCode, first.get());
-            pcmProduct.setOrdersProducts(singletonList(first.get()));
+            filteredOrdersProductList.put(productCode, firstMatchedOrderProduct.get());
+            pcmProduct.setOrdersProducts(singletonList(firstMatchedOrderProduct.get()));
             return filterItemIdsOfAllLevels(entitlementTokens, productCode, filteredOrdersProductList);
         } else if (findMatchedProductInfo(pcmProduct, productCode)) {
             return filterItemIdsOfOneLevel(entitlementTokens, productCode, pcmProduct);

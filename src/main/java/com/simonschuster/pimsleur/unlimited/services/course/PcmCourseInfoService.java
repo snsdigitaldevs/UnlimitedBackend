@@ -8,8 +8,7 @@ import com.simonschuster.pimsleur.unlimited.data.edt.customer.*;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.MediaItem;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.*;
 import com.simonschuster.pimsleur.unlimited.services.customer.EDTCustomerInfoService;
-import org.apache.commons.lang3.tuple.ImmutablePair;
-import org.apache.commons.lang3.tuple.Pair;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -69,7 +68,7 @@ public class PcmCourseInfoService {
      * @param pcmProduct
      */
     private List<Course> getPcmAudioInfo(String productCode, PcmProduct pcmProduct) {
-        Map<String, Pair<String, Integer>> entitlementTokens = new HashMap<>();
+        List<MediaSetByLevel> entitlementTokens = new ArrayList<>();
         List<MediaItemsByLevel> mediaItemIds = getMediaItemIds(pcmProduct, entitlementTokens, productCode);
 
         PcmAudioReqParams pcmAudioReqParams = new PcmAudioReqParams();
@@ -115,7 +114,7 @@ public class PcmCourseInfoService {
      * @return
      */
     private List<MediaItemsByLevel> getMediaItemIds(PcmProduct pcmProduct,
-                                                    Map<String, Pair<String, Integer>> entitlementTokens,
+                                                    List<MediaSetByLevel> entitlementTokens,
                                                     String productCode) {
 
         Optional<OrdersProduct> firstMatchedOrderProduct = pcmProduct.getOrdersProducts().stream()
@@ -138,12 +137,14 @@ public class PcmCourseInfoService {
 
     private List<Lesson> batchFetchLessons(PcmAudioReqParams pcmAudioReqParams, MediaItemsByLevel mediaItemsByLevel) {
         String level = mediaItemsByLevel.getLevel();
-        int mediaSetId = pcmAudioReqParams.getEntitlementTokens().get(level).getValue();
+
+        Integer mediaSetId = getMatchedMediaSetId(pcmAudioReqParams, level);
+        String entitlementToken = getMatchedEntitlementToken(pcmAudioReqParams, level);
 
         BatchedMediaItemUrls batchedMediaItemUrls =
                 pcmMediaItemUrlService.getBatchedMediaItemUrls(mediaSetId,
                         pcmAudioReqParams.getCustomerToken(),
-                        pcmAudioReqParams.getEntitlementTokens().get(level).getKey(),
+                        entitlementToken,
                         pcmAudioReqParams.getCustomersId());
 
         return mediaItemsByLevel.getMediaItems().stream().map(mediaItem -> {
@@ -185,10 +186,11 @@ public class PcmCourseInfoService {
 
             String title = mediaItem.getMediaItemTitle();
             Integer mediaItemId = mediaItem.getMediaItemId();
+            String entitlementToken = getMatchedEntitlementToken(pcmAudioReqParams, level);
 
             MediaItemUrl mediaItemUrl = pcmMediaItemUrlService.getMediaItemUrl(mediaItemId,
                     pcmAudioReqParams.getCustomerToken(),
-                    pcmAudioReqParams.getEntitlementTokens().get(level).getLeft(),
+                    entitlementToken,
                     pcmAudioReqParams.getCustomersId());
 
             Lesson lesson = new Lesson();
@@ -201,6 +203,23 @@ public class PcmCourseInfoService {
         }).collect(toList());
     }
 
+    private Integer getMatchedMediaSetId(PcmAudioReqParams pcmAudioReqParams, String level) {
+        Optional<Integer> first = pcmAudioReqParams.getEntitlementTokens().stream()
+                .filter(mediaSetByLevel -> mediaSetByLevel.getLevel().equals(level))
+                .map(MediaSetByLevel::getMediaSetId)
+                .findFirst();
+
+        return first.isPresent() ? first.get() : 0;
+    }
+
+    private String getMatchedEntitlementToken(PcmAudioReqParams pcmAudioReqParams, String level) {
+        Optional<String> entitlementToken = pcmAudioReqParams.getEntitlementTokens().stream()
+                .filter(mediaSetByLevel -> mediaSetByLevel.getLevel().equals(level))
+                .map(MediaSetByLevel::getEntitlementToken)
+                .findFirst();
+        return entitlementToken.isPresent() ? entitlementToken.get() : StringUtils.EMPTY;
+    }
+
     /**
      * Filter out all the item ids if the product code represents several levels.
      *
@@ -209,7 +228,7 @@ public class PcmCourseInfoService {
      * @param ordersProductList
      * @return
      */
-    private List<MediaItemsByLevel> filterItemIdsOfAllLevels(Map<String, Pair<String, Integer>> entitlementTokens, String productCode, Map<String, OrdersProduct> ordersProductList) {
+    private List<MediaItemsByLevel> filterItemIdsOfAllLevels(List<MediaSetByLevel> entitlementTokens, String productCode, Map<String, OrdersProduct> ordersProductList) {
         OrdersProduct orderProduct = ordersProductList.get(productCode);
 
         Optional<List<MediaItemsByLevel>> matchedMediaItemsAllLevelAllOrders = orderProduct.getOrdersProductsAttributes()
@@ -219,8 +238,10 @@ public class PcmCourseInfoService {
                     List<MediaItemsByLevel> matchedMediaItemsByLevel = new ArrayList<>();
                     attribute.getOrdersProductsDownloads()
                             .stream()
-                            .peek(download -> entitlementTokens.put(download.getMediaSet().getProduct().getProductsLevel().toString(),
-                                    new ImmutablePair<>(download.getEntitlementToken(), download.getMediaSetId())))
+                            .peek(download -> {
+                                String level = download.getMediaSet().getProduct().getProductsLevel().toString();
+                                entitlementTokens.add(new MediaSetByLevel(level, download.getEntitlementToken(), download.getMediaSetId()));
+                            })
                             .forEach(downloadInfo -> {
                                 List<MediaItem> matchedMediaItems = new ArrayList<>();
 
@@ -229,9 +250,7 @@ public class PcmCourseInfoService {
                                         .filter(ChildMediaSet::isLesson)
                                         .flatMap(childMediaSet -> childMediaSet.getMediaItems().stream())
                                         .filter(MediaItem::isLesson)
-                                        .forEach(item -> {
-                                            matchedMediaItems.add(item);
-                                        });
+                                        .forEach(matchedMediaItems::add);
                                 matchedMediaItemsByLevel.add(new MediaItemsByLevel(levelInDownload, matchedMediaItems));
                             });
                     return matchedMediaItemsByLevel;
@@ -272,7 +291,7 @@ public class PcmCourseInfoService {
      * @param pcmProduct
      * @return
      */
-    private List<MediaItemsByLevel> filterItemIdsOfOneLevel(Map<String, Pair<String, Integer>> entitlementTokens,
+    private List<MediaItemsByLevel> filterItemIdsOfOneLevel(List<MediaSetByLevel> entitlementTokens,
                                                             String productCode, PcmProduct pcmProduct) {
         List<MediaItemsByLevel> matchedMediaItems = new ArrayList<>();
 
@@ -284,8 +303,9 @@ public class PcmCourseInfoService {
 
             attribute.getOrdersProductsDownloads()
                     .stream()
-                    .peek(download -> entitlementTokens.put(level,
-                            new ImmutablePair<>(download.getEntitlementToken(), download.getMediaSetId())))
+                    .peek(download -> {
+                        entitlementTokens.add(new MediaSetByLevel(level, download.getEntitlementToken(), download.getMediaSetId()));
+                    })
                     .flatMap(downloadInfo -> downloadInfo.getMediaSet().getChildMediaSets().stream())
                     .filter(ChildMediaSet::isLesson)
                     .flatMap(childMediaSet -> childMediaSet.getMediaItems().stream())

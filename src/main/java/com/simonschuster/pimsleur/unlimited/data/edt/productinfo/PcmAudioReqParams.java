@@ -1,9 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.data.edt.productinfo;
 
-import org.apache.commons.lang3.tuple.Pair;
-
 import java.util.List;
-import java.util.Map;
 
 public class PcmAudioReqParams {
 
@@ -11,8 +8,7 @@ public class PcmAudioReqParams {
 
     private String customerToken;
 
-    //<Level, <entitlementToken, mediaSetId>>
-    private Map<String, Pair<String, Integer>>entitlementTokens;
+    private List<MediaSetByLevel> entitlementTokens;
 
     private List<MediaItemsByLevel> mediaItemIds;
 
@@ -40,11 +36,11 @@ public class PcmAudioReqParams {
         return mediaItemIds;
     }
 
-    public Map<String, Pair<String, Integer>> getEntitlementTokens() {
+    public List<MediaSetByLevel> getEntitlementTokens() {
         return entitlementTokens;
     }
 
-    public void setEntitlementTokens(Map<String, Pair<String, Integer>>entitlementTokens) {
+    public void setEntitlementTokens(List<MediaSetByLevel> entitlementTokens) {
         this.entitlementTokens = entitlementTokens;
     }
 }

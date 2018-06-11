@@ -6,7 +6,6 @@ import com.simonschuster.pimsleur.unlimited.data.edt.customer.Customer;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.CustomerInfo;
 import com.simonschuster.pimsleur.unlimited.data.edt.syncState.AggregatedSyncState;
 import com.simonschuster.pimsleur.unlimited.services.syncState.EDTSyncStateService;
-import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -30,18 +29,21 @@ public class EDTCustomerInfoService {
     private EDTSyncStateService syncStateService;
 
     public AggregatedCustomerInfo getCustomerInfos(String sub) {
-        return CompletableFuture
-                .supplyAsync(() -> getPUCustomerInfo(sub))
-                .thenApplyAsync(unlimitedCustInfo -> {
-                    Customer customer = unlimitedCustInfo.getResultData().getCustomer();
-                    AggregatedSyncState aggregatedSyncState = syncStateService
+        CompletableFuture<CustomerInfo> puCustomerInfoCompletableFuture = CompletableFuture.supplyAsync(() -> getPUCustomerInfo(sub));
+        CompletableFuture<CustomerInfo> pcmCustomerInfoCompletableFuture = CompletableFuture.supplyAsync(() -> getPcmCustomerInfo(sub));
+
+        AggregatedSyncState aggregatedSyncState = CompletableFuture.anyOf(puCustomerInfoCompletableFuture, pcmCustomerInfoCompletableFuture)
+                .thenApplyAsync(puOrPcmCustomerInfo -> {
+                    Customer customer = ((CustomerInfo) puOrPcmCustomerInfo).getResultData().getCustomer();
+                    return syncStateService
                             .getSyncStates(customer.getCustomersId(), customer.getIdentityVerificationToken());
-                    return Pair.of(unlimitedCustInfo, aggregatedSyncState);
                 })
-                .thenCombineAsync(CompletableFuture.supplyAsync(() -> getPcmCustomerInfo(sub)),
-                        ((pair, pcmCustInfo) ->
-                                new AggregatedCustomerInfo(pair.getLeft(), pcmCustInfo, pair.getRight())))
                 .join();
+
+        boolean puFutureDone = puCustomerInfoCompletableFuture.isDone();
+        CustomerInfo pcCustomerInfo = puFutureDone ? puCustomerInfoCompletableFuture.getNow(null) : puCustomerInfoCompletableFuture.join();
+        CustomerInfo pcmCustomerInfo = puFutureDone ? pcmCustomerInfoCompletableFuture.join() : pcmCustomerInfoCompletableFuture.getNow(null);
+        return new AggregatedCustomerInfo(pcCustomerInfo, pcmCustomerInfo, aggregatedSyncState);
     }
 
     public CustomerInfo getPUCustomerInfo(String sub) {

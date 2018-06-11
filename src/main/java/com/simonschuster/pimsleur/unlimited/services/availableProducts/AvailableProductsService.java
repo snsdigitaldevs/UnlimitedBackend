@@ -10,15 +10,12 @@ import com.simonschuster.pimsleur.unlimited.services.course.PUCourseInfoService;
 import com.simonschuster.pimsleur.unlimited.services.customer.EDTCustomerInfoService;
 import com.simonschuster.pimsleur.unlimited.services.freeLessons.PcmFreeLessonsService;
 import com.simonschuster.pimsleur.unlimited.services.freeLessons.PuFreeLessonsService;
+import com.simonschuster.pimsleur.unlimited.utils.DataConverterUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Map;
 import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.function.Function;
-import java.util.function.Predicate;
 import java.util.stream.Stream;
 
 import static java.util.Collections.emptyList;
@@ -83,7 +80,7 @@ public class AvailableProductsService {
                     .stream()
                     .map(OrdersProduct::getProduct)
                     .flatMap(this::puProductToDtos)
-                    .filter(distinctByKey(p -> p.getLanguageName() + p.getLevel())) // remove duplicate
+                    .filter(DataConverterUtil.distinctByKey(p -> p.getLanguageName() + p.getLevel())) // remove duplicate
                     .collect(toList());
         } else {
             return emptyList();
@@ -98,7 +95,7 @@ public class AvailableProductsService {
                     .stream()
                     .flatMap(this::pcmOrderToDtos)
                     .filter(productDto -> productDto.getLevel() != 0) // remove "how to learn"
-                    .filter(distinctByKey(AvailableProductDto::getProductCode)) // remove duplicate
+                    .filter(DataConverterUtil.distinctByKey(AvailableProductDto::getProductCode)) // remove duplicate
                     .collect(toList());
         } else {
             return emptyList();
@@ -120,7 +117,7 @@ public class AvailableProductsService {
                 .collect(toList());
     }
 
-    private Stream<AvailableProductDto> puProductToDtos(Product product) {
+    public Stream<AvailableProductDto> puProductToDtos(Product product) {
         List<Course> courses = puCourseInfoService.getPuProductInfo(product.getProductCode()).toDto();
         boolean isKitted = courses.size() > 1;
 
@@ -137,7 +134,7 @@ public class AvailableProductsService {
         });
     }
 
-    private Stream<AvailableProductDto> pcmOrderToDtos(OrdersProduct ordersProduct) {
+    public Stream<AvailableProductDto> pcmOrderToDtos(OrdersProduct ordersProduct) {
         List<AvailableProductDto> dtos = ordersProduct.getOrdersProductsAttributes().stream()
                 .flatMap(attribute -> attribute.getOrdersProductsDownloads().stream())
                 .map(download -> download.getMediaSet().getProduct())
@@ -151,10 +148,5 @@ public class AvailableProductsService {
             dtos.forEach(dto -> dto.setProductCodeForUpsell(dto.getProductCode()));
         }
         return dtos.stream();
-    }
-
-    private static <T> Predicate<T> distinctByKey(Function<T, Object> keyExtractor) {
-        Map<Object, Boolean> seen = new ConcurrentHashMap<>();
-        return object -> seen.putIfAbsent(keyExtractor.apply(object), Boolean.TRUE) == null;
     }
 }

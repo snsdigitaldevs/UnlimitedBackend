@@ -85,7 +85,7 @@ public class AggregatedCustomerInfo {
         return customerInfoDTO;
     }
 
-    private List<ProgressDTO> getProgressDTOS() throws IOException {
+    public List<ProgressDTO> getProgressDTOS() throws IOException {
         //both
         if (pcmSyncState.hasResultData() && unlimitedSyncState.hasResultData()) {
             List<ProgressDTO> pcmProgressDTOs = pcmProgressToDto(this.pcmSyncState.getResultData().getUserAppStateData());

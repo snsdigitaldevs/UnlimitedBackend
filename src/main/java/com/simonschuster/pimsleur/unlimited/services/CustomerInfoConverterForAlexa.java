@@ -8,12 +8,16 @@ import com.simonschuster.pimsleur.unlimited.data.edt.customer.CustomerInfo;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.OrdersProduct;
 import com.simonschuster.pimsleur.unlimited.data.edt.syncState.SyncState;
 import com.simonschuster.pimsleur.unlimited.services.availableProducts.AvailableProductsService;
+import com.simonschuster.pimsleur.unlimited.services.freeLessons.PcmFreeLessonsService;
+import com.simonschuster.pimsleur.unlimited.services.freeLessons.PuFreeLessonsService;
 import com.simonschuster.pimsleur.unlimited.utils.DataConverterUtil;
+import com.simonschuster.pimsleur.unlimited.utils.HardCodedProductsUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import static java.util.Collections.emptyList;
 import static java.util.stream.Collectors.toList;
@@ -22,6 +26,10 @@ import static java.util.stream.Collectors.toList;
 public class CustomerInfoConverterForAlexa {
     @Autowired
     private AvailableProductsService availableProductsService;
+    @Autowired
+    private PuFreeLessonsService puFreeLessonsService;
+    @Autowired
+    private PcmFreeLessonsService pcmFreeLessonsService;
 
     public CustomerInfoDTO convertEDTModelToDto(AggregatedCustomerInfo customerInfos) throws IOException {
         CustomerInfo unlimitedCustomerInfo = customerInfos.getUnlimitedCustomerInfo();
@@ -72,6 +80,7 @@ public class CustomerInfoConverterForAlexa {
                     .map(OrdersProduct::getProduct)
                     .flatMap(product -> availableProductsService.puProductToDtos(product))
                     .filter(DataConverterUtil.distinctByKey(p -> p.getLanguageName() + p.getLevel())) // remove duplicate
+                    .filter(this::isPurchased)
                     .map(AvailableProductDto::getProductCode)
                     .collect(toList());
         } else {
@@ -80,5 +89,10 @@ public class CustomerInfoConverterForAlexa {
 
     }
 
+    private boolean isPurchased(AvailableProductDto availableProductDto) {
+        List<AvailableProductDto> puFreeLessons = HardCodedProductsUtil.PU_FREE_LESSONS;
 
+        List<String> freePUProductCodes = puFreeLessons.stream().map(AvailableProductDto::getProductCode).collect(Collectors.toList());
+        return !(availableProductDto.isPuProduct() && freePUProductCodes.contains(availableProductDto.getProductCode()));
+    }
 }

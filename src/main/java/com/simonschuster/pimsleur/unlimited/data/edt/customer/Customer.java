@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 import java.util.List;
+import java.util.Objects;
 
 import static java.util.stream.Collectors.toList;
 
@@ -59,6 +60,14 @@ public class Customer {
         this.customersOrders = customersOrders;
     }
 
+    public String getPendingPurchasesFromStoreDomains() {
+        return pendingPurchasesFromStoreDomains;
+    }
+
+    public void setPendingPurchasesFromStoreDomains(String pendingPurchasesFromStoreDomains) {
+        this.pendingPurchasesFromStoreDomains = pendingPurchasesFromStoreDomains;
+    }
+
     public List<String> getProductCodes() {
         return this.getCustomersOrders().stream()
                 .flatMap(order -> order.getOrdersProducts()
@@ -71,19 +80,19 @@ public class Customer {
 
     }
 
+    public List<String> getSubscriptionProductCodes() {
+        return this.getCustomersOrders().stream()
+                .filter(order -> Objects.equals(order.getStoreDomain(), "pimsleur.com.mg2"))
+                .flatMap(order -> order.getOrdersProducts().stream())
+                .map(ordersProduct -> ordersProduct.getProduct().getProductCode())
+                .collect(toList());
+    }
+
     public List<OrdersProduct> getAllOrdersProducts() {
         return getCustomersOrders()
                 .stream()
                 .flatMap(customersOrder -> customersOrder.getOrdersProducts().stream())
                 .collect(toList());
-    }
-
-    public String getPendingPurchasesFromStoreDomains() {
-        return pendingPurchasesFromStoreDomains;
-    }
-
-    public void setPendingPurchasesFromStoreDomains(String pendingPurchasesFromStoreDomains) {
-        this.pendingPurchasesFromStoreDomains = pendingPurchasesFromStoreDomains;
     }
 
     public boolean hasPendingAndroid() {

@@ -11,6 +11,7 @@ import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL;
 public class CustomerInfoDTO {
     private List<String> unlimitedProductCodes;
     private List<String> pcmProductCodes;
+    private List<String> subscriptionProductCodes;
 
     private List<ProductActivation> productActivations;
     private List<ProgressDTO> progresses;
@@ -28,11 +29,13 @@ public class CustomerInfoDTO {
 
     public CustomerInfoDTO(List<String> unlimitedProductCodes,
                            List<String> pcmProductCodes,
+                           List<String> subscriptionProductCodes,
                            List<ProductActivation> productActivations,
                            List<ProgressDTO> progresses,
                            List<SubUserDto> subUsers) {
         this.unlimitedProductCodes = unlimitedProductCodes;
         this.pcmProductCodes = pcmProductCodes;
+        this.subscriptionProductCodes = subscriptionProductCodes;
         this.productActivations = productActivations;
         this.progresses = progresses;
         this.subUsers = subUsers;
@@ -112,5 +115,13 @@ public class CustomerInfoDTO {
 
     public void setHasPendingAndroid(boolean hasPendingAndroid) {
         this.hasPendingAndroid = hasPendingAndroid;
+    }
+
+    public List<String> getSubscriptionProductCodes() {
+        return subscriptionProductCodes;
+    }
+
+    public void setSubscriptionProductCodes(List<String> subscriptionProductCodes) {
+        this.subscriptionProductCodes = subscriptionProductCodes;
     }
 }

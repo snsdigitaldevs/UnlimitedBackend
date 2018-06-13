@@ -10,16 +10,15 @@ import com.simonschuster.pimsleur.unlimited.services.course.PUCourseInfoService;
 import com.simonschuster.pimsleur.unlimited.services.customer.EDTCustomerInfoService;
 import com.simonschuster.pimsleur.unlimited.services.freeLessons.PcmFreeLessonsService;
 import com.simonschuster.pimsleur.unlimited.services.freeLessons.PuFreeLessonsService;
-import com.simonschuster.pimsleur.unlimited.utils.DataConverterUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Objects;
-import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Stream;
 
+import static com.simonschuster.pimsleur.unlimited.utils.DataConverterUtil.distinctByKey;
 import static java.util.Collections.emptyList;
 import static java.util.Comparator.comparing;
 import static java.util.stream.Collectors.toList;
@@ -82,7 +81,7 @@ public class AvailableProductsService {
                     .stream()
                     .map(OrdersProduct::getProduct)
                     .flatMap(this::puProductToDtos)
-                    .filter(DataConverterUtil.distinctByKey(p -> p.getLanguageName() + p.getLevel())) // remove duplicate
+                    .filter(distinctByKey(p -> p.getLanguageName() + p.getLevel())) // remove duplicate
                     .collect(toList());
         } else {
             return emptyList();
@@ -92,27 +91,19 @@ public class AvailableProductsService {
     private List<AvailableProductDto> getPcmAvailableProducts(String sub) {
         CustomerInfo pcmCustInfo = customerInfoService.getPcmCustomerInfo(sub);
 
-        pcmCustInfo.getResultData().getCustomer().getCustomersOrders().stream()
-                .filter(order -> Objects.equals(order.getStoreDomain(), "pimsleur.com.mg2"));
-
         if (pcmCustInfo.getResultData() != null) {
-            Optional<List<AvailableProductDto>> availableProductDtos = pcmCustInfo.getResultData().getCustomer()
-                    .getCustomersOrders()
-                    .stream()
-                    .map(order -> {
-                        Boolean isSubscriptionCourse = Objects.equals(order.getStoreDomain(), "pimsleur.com.mg2");
+            return pcmCustInfo.getResultData()
+                    .getCustomer().getCustomersOrders().stream()
+                    .flatMap(order -> {
+                        Boolean isSubscription = Objects.equals(order.getStoreDomain(), "pimsleur.com.mg2");
 
                         return order.getOrdersProducts().stream()
-                                .flatMap(ordersProduct -> pcmOrderToDtos(ordersProduct, isSubscriptionCourse))
-                                .filter(productDto -> productDto.getLevel() != 0) // remove "how to learn"
-                                .filter(DataConverterUtil.distinctByKey(AvailableProductDto::getProductCode)) // remove duplicate
-                                .collect(toList());
+                                .flatMap(this::pcmOrderToDtos)
+                                .filter(dto -> dto.getLevel() != 0) // remove "how to learn"
+                                .filter(distinctByKey(AvailableProductDto::getProductCode)) // remove duplicate
+                                .peek(dto -> dto.setIsSubscription(isSubscription));
                     })
-                    .reduce((result, availableProductDtoList) -> {
-                        result.addAll(availableProductDtoList);
-                        return result;
-                    });
-            return availableProductDtos.isPresent() ? availableProductDtos.get() : emptyList();
+                    .collect(toList());
         } else {
             return emptyList();
         }
@@ -150,11 +141,11 @@ public class AvailableProductsService {
         });
     }
 
-    public Stream<AvailableProductDto> pcmOrderToDtos(OrdersProduct ordersProduct, Boolean isSubscriptionCourse) {
+    public Stream<AvailableProductDto> pcmOrderToDtos(OrdersProduct ordersProduct) {
         List<AvailableProductDto> dtos = ordersProduct.getOrdersProductsAttributes().stream()
                 .flatMap(attribute -> attribute.getOrdersProductsDownloads().stream())
                 .map(download -> download.getMediaSet().getProduct())
-                .map(product -> product.toPCMAvailableProductDto(isSubscriptionCourse))
+                .map(Product::toPCMAvailableProductDto)
                 .collect(toList());
         if (dtos.size() > 1) {
             // if it's subscription or kitted, use the mother isbn for upsell

@@ -7,13 +7,15 @@ import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_EMPTY;
 @JsonInclude(NON_EMPTY)
 public class UpsellDto {
     private UpsellItem nextLevel;
+    private UpsellItem nextSubscription;
     private UpsellItem nextVersion;
 
     public UpsellDto() {
     }
 
-    public UpsellDto(UpsellItem nextLevel, UpsellItem nextVersion) {
+    public UpsellDto(UpsellItem nextLevel, UpsellItem nextSubscription, UpsellItem nextVersion) {
         this.nextLevel = nextLevel;
+        this.nextSubscription = nextSubscription;
         this.nextVersion = nextVersion;
     }
 
@@ -23,5 +25,9 @@ public class UpsellDto {
 
     public UpsellItem getNextVersion() {
         return nextVersion;
+    }
+
+    public UpsellItem getNextSubscription() {
+        return nextSubscription;
     }
 }

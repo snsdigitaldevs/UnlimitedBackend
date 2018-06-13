@@ -22,12 +22,10 @@ import static java.util.stream.Collectors.toList;
         "Other format 3 Type",
         "Upsell in-app purchase ISBN",
         "Upsell course name",
-        "Upsell Apple product_ID",
-        "Upsell google product_ID",
+        "Upsell2 in-app purchase ISBN",
+        "Upsell2 course name",
         "Upgrade in-app purchase ISBN",
         "Upgrade course name",
-        "Upgrade Apple product_ID",
-        "Upgrade google product_ID"
 })
 public class PurchaseMapping {
 
@@ -53,18 +51,16 @@ public class PurchaseMapping {
     private String upsellInAppPurchaseISBN;
     @JsonProperty("Upsell course name")
     private String upsellCourseName;
-    @JsonProperty("Upsell Apple product_ID")
-    private String upsellAppleProductID;
-    @JsonProperty("Upsell google product_ID")
-    private String upsellGoogleProductID;
+
+    @JsonProperty("Upsell2 in-app purchase ISBN")
+    private String upsell2InAppPurchaseISBN;
+    @JsonProperty("Upsell2 course name")
+    private String upsell2CourseName;
+
     @JsonProperty("Upgrade in-app purchase ISBN")
     private String upgradeInAppPurchaseISBN;
     @JsonProperty("Upgrade course name")
     private String upgradeCourseName;
-    @JsonProperty("Upgrade Apple product_ID")
-    private long upgradeAppleProductID;
-    @JsonProperty("Upgrade google product_ID")
-    private long upgradeGoogleProductID;
 
     @JsonProperty("Base Course Type")
     public String getBaseCourseType() {
@@ -176,26 +172,6 @@ public class PurchaseMapping {
         this.upsellCourseName = upsellCourseName;
     }
 
-    @JsonProperty("Upsell Apple product_ID")
-    public String getUpsellAppleProductID() {
-        return upsellAppleProductID;
-    }
-
-    @JsonProperty("Upsell Apple product_ID")
-    public void setUpsellAppleProductID(String upsellAppleProductID) {
-        this.upsellAppleProductID = upsellAppleProductID;
-    }
-
-    @JsonProperty("Upsell google product_ID")
-    public String getUpsellGoogleProductID() {
-        return upsellGoogleProductID;
-    }
-
-    @JsonProperty("Upsell google product_ID")
-    public void setUpsellGoogleProductID(String upsellGoogleProductID) {
-        this.upsellGoogleProductID = upsellGoogleProductID;
-    }
-
     @JsonProperty("Upgrade in-app purchase ISBN")
     public String getUpgradeInAppPurchaseISBN() {
         return upgradeInAppPurchaseISBN;
@@ -216,24 +192,20 @@ public class PurchaseMapping {
         this.upgradeCourseName = upgradeCourseName;
     }
 
-    @JsonProperty("Upgrade Apple product_ID")
-    public long getUpgradeAppleProductID() {
-        return upgradeAppleProductID;
+    public String getUpsell2InAppPurchaseISBN() {
+        return upsell2InAppPurchaseISBN;
     }
 
-    @JsonProperty("Upgrade Apple product_ID")
-    public void setUpgradeAppleProductID(long upgradeAppleProductID) {
-        this.upgradeAppleProductID = upgradeAppleProductID;
+    public void setUpsell2InAppPurchaseISBN(String upsell2InAppPurchaseISBN) {
+        this.upsell2InAppPurchaseISBN = upsell2InAppPurchaseISBN;
     }
 
-    @JsonProperty("Upgrade google product_ID")
-    public long getUpgradeGoogleProductID() {
-        return upgradeGoogleProductID;
+    public String getUpsell2CourseName() {
+        return upsell2CourseName;
     }
 
-    @JsonProperty("Upgrade google product_ID")
-    public void setUpgradeGoogleProductID(long upgradeGoogleProductID) {
-        this.upgradeGoogleProductID = upgradeGoogleProductID;
+    public void setUpsell2CourseName(String upsell2CourseName) {
+        this.upsell2CourseName = upsell2CourseName;
     }
 
     public boolean matches(String isbn) {
@@ -241,13 +213,23 @@ public class PurchaseMapping {
                 .anyMatch(oneFormat -> oneFormat.equals(isbn));
     }
 
-    public UpsellDto toUpsellDto(boolean isUpsellIgnored, boolean isUpgradeIgnored) {
-        return new UpsellDto(createNextLevel(isUpsellIgnored), createNextVersion(isUpgradeIgnored));
+    public UpsellDto toUpsellDto(boolean isUpsellIgnored, boolean isSubIgnored, boolean isUpgradeIgnored) {
+        return new UpsellDto(
+                createNextLevel(isUpsellIgnored),
+                createNextSub(isSubIgnored),
+                createNextVersion(isUpgradeIgnored));
     }
 
     private UpsellItem createNextLevel(boolean ignoreUpsell) {
         if (!ignoreUpsell && getUpsellInAppPurchaseISBN().length() > 0) {
             return new UpsellItem(getUpsellInAppPurchaseISBN(), getUpsellCourseName());
+        }
+        return null;
+    }
+
+    private UpsellItem createNextSub(boolean isSubIgnored) {
+        if (!isSubIgnored && getUpsell2InAppPurchaseISBN().length() > 0) {
+            return new UpsellItem(getUpsell2InAppPurchaseISBN(), getUpsell2CourseName());
         }
         return null;
     }

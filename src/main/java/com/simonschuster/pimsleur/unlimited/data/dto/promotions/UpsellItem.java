@@ -21,4 +21,8 @@ public class UpsellItem {
     public String getName() {
         return name;
     }
+
+    public String getDescription() {
+        return "Sean will provide this, we don't have it yet.";
+    }
 }

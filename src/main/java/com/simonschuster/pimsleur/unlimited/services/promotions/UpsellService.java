@@ -34,8 +34,9 @@ public class UpsellService {
                 boughtIsbns = customerInfoService.getBoughtIsbns(sub);
             }
             boolean upsellBought = isBought(boughtIsbns, purchaseMapping.getUpsellInAppPurchaseISBN());
+            boolean subBought = isBought(boughtIsbns, purchaseMapping.getUpsell2InAppPurchaseISBN());
             boolean upgradeBought = isBought(boughtIsbns, purchaseMapping.getUpgradeInAppPurchaseISBN());
-            return purchaseMapping.toUpsellDto(upsellBought, upgradeBought);
+            return purchaseMapping.toUpsellDto(upsellBought, subBought, upgradeBought);
         }
     }
 

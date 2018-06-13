@@ -25,10 +25,6 @@ public class LoginService {
         return requestToGetSub(authorization);
     }
 
-    public Auth0TokenInfo getAuthorizationInfoFromAuth0(String userName, String password) {
-        return requestToGetAuth0TokenInfo(userName, password);
-    }
-
     private String requestToGetAuthorization(String userName, String password) {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
@@ -42,20 +38,6 @@ public class LoginService {
                 config.getProperty("oauth.login.tokenApiUrl"),
                 Auth0TokenInfo.class);
         return auth0TokenInfo.getToken_type() + " " + auth0TokenInfo.getAccess_token();
-    }
-
-    private Auth0TokenInfo requestToGetAuth0TokenInfo(String userName, String password) {
-        HttpHeaders headers = new HttpHeaders();
-        headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
-
-        return postToEdt(
-                new HttpEntity<>(
-                        String.format(config.getAuth0ApiParameter("tokenApiParameters"),
-                                userName,
-                                password),
-                        headers),
-                config.getProperty("oauth.login.tokenApiUrl"),
-                Auth0TokenInfo.class);
     }
 
     private String requestToGetSub(String authorization) {

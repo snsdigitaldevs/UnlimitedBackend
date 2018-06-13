@@ -8,8 +8,6 @@ import com.simonschuster.pimsleur.unlimited.data.edt.customer.CustomerInfo;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.OrdersProduct;
 import com.simonschuster.pimsleur.unlimited.data.edt.syncState.SyncState;
 import com.simonschuster.pimsleur.unlimited.services.availableProducts.AvailableProductsService;
-import com.simonschuster.pimsleur.unlimited.services.freeLessons.PcmFreeLessonsService;
-import com.simonschuster.pimsleur.unlimited.services.freeLessons.PuFreeLessonsService;
 import com.simonschuster.pimsleur.unlimited.utils.DataConverterUtil;
 import com.simonschuster.pimsleur.unlimited.utils.HardCodedProductsUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,10 +25,6 @@ import static java.util.stream.Collectors.toList;
 public class CustomerInfoConverterForAlexa {
     @Autowired
     private AvailableProductsService availableProductsService;
-    @Autowired
-    private PuFreeLessonsService puFreeLessonsService;
-    @Autowired
-    private PcmFreeLessonsService pcmFreeLessonsService;
 
     public CustomerInfoDTO convertEDTModelToDto(AggregatedCustomerInfo customerInfos) throws IOException {
         CustomerInfo unlimitedCustomerInfo = customerInfos.getUnlimitedCustomerInfo();

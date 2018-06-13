@@ -14,7 +14,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -35,7 +34,6 @@ public class CustomerInfoConverterForAlexa {
         CustomerInfoDTO customerInfoDTO = new CustomerInfoDTO(
                 getPurchasedPUProductCodes(puCustomer, unlimitedCustomerInfo),
                 getPurchasedPCMProductCodes(customerInfos.getPcmCustomerInfo()),
-                new ArrayList<>(),
                 unlimitedCustomerInfo.getResultData().getRegistrant().getProductActivations(),
                 customerInfos.getProgressDTOS(),
                 unlimitedCustomerInfo.getResultData().getRegistrant().getSubUsers());

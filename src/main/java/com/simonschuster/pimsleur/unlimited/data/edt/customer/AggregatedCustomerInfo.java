@@ -68,18 +68,15 @@ public class AggregatedCustomerInfo {
         CustomerInfoDTO customerInfoDTO = new CustomerInfoDTO(
                 puCustomer.getProductCodes(),
                 pcmCustomerInfo.getResultData().getCustomer().getProductCodes(),
-                pcmCustomerInfo.getResultData().getCustomer().getSubscriptionProductCodes(),
                 unlimitedCustomerInfo.getResultData().getRegistrant().getProductActivations(),
                 getProgressDTOS(),
                 unlimitedCustomerInfo.getResultData().getRegistrant().getSubUsers());
-
         if (pcmSyncState.hasResultData()) {
             customerInfoDTO.setPcmLastSaveId(pcmSyncState.getResultData().getLastSaveId());
         }
         if (unlimitedSyncState.hasResultData()) {
             customerInfoDTO.setUnlimitedLastSaveId(unlimitedSyncState.getResultData().getLastSaveId());
         }
-
         customerInfoDTO.setCustomerId(puCustomer.getCustomersId().toString());
         customerInfoDTO.setHasPendingAndroid(puCustomer.hasPendingAndroid());
         customerInfoDTO.setHasPendingIos(puCustomer.hasPendingIos());

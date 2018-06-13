@@ -57,7 +57,7 @@ public class CustomerInfoConverterForAlexa {
         if (pcmCustomerInfo.getResultData() != null) {
             return pcmCustomerInfo.getResultData().getCustomer().getAllOrdersProducts()
                     .stream()
-                    .flatMap(ordersProduct -> availableProductsService.pcmOrderToDtos(ordersProduct))
+                    .flatMap(ordersProduct -> availableProductsService.pcmOrderToDtos(ordersProduct, false))
                     .filter(productDto -> productDto.getLevel() != 0) // remove "how to learn"
                     .filter(DataConverterUtil.distinctByKey(AvailableProductDto::getProductCode)) // remove duplicate
                     .map(AvailableProductDto::getProductCode)

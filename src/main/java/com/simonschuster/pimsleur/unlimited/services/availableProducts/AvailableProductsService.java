@@ -15,6 +15,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Objects;
+import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Stream;
 
@@ -90,13 +92,27 @@ public class AvailableProductsService {
     private List<AvailableProductDto> getPcmAvailableProducts(String sub) {
         CustomerInfo pcmCustInfo = customerInfoService.getPcmCustomerInfo(sub);
 
+        pcmCustInfo.getResultData().getCustomer().getCustomersOrders().stream()
+                .filter(order -> Objects.equals(order.getStoreDomain(), "pimsleur.com.mg2"));
+
         if (pcmCustInfo.getResultData() != null) {
-            return pcmCustInfo.getResultData().getCustomer().getAllOrdersProducts()
+            Optional<List<AvailableProductDto>> availableProductDtos = pcmCustInfo.getResultData().getCustomer()
+                    .getCustomersOrders()
                     .stream()
-                    .flatMap(this::pcmOrderToDtos)
-                    .filter(productDto -> productDto.getLevel() != 0) // remove "how to learn"
-                    .filter(DataConverterUtil.distinctByKey(AvailableProductDto::getProductCode)) // remove duplicate
-                    .collect(toList());
+                    .map(order -> {
+                        Boolean isSubscriptionCourse = Objects.equals(order.getStoreDomain(), "pimsleur.com.mg2");
+
+                        return order.getOrdersProducts().stream()
+                                .flatMap(ordersProduct -> pcmOrderToDtos(ordersProduct, isSubscriptionCourse))
+                                .filter(productDto -> productDto.getLevel() != 0) // remove "how to learn"
+                                .filter(DataConverterUtil.distinctByKey(AvailableProductDto::getProductCode)) // remove duplicate
+                                .collect(toList());
+                    })
+                    .reduce((result, availableProductDtoList) -> {
+                        result.addAll(availableProductDtoList);
+                        return result;
+                    });
+            return availableProductDtos.isPresent() ? availableProductDtos.get() : emptyList();
         } else {
             return emptyList();
         }
@@ -134,11 +150,11 @@ public class AvailableProductsService {
         });
     }
 
-    public Stream<AvailableProductDto> pcmOrderToDtos(OrdersProduct ordersProduct) {
+    public Stream<AvailableProductDto> pcmOrderToDtos(OrdersProduct ordersProduct, Boolean isSubscriptionCourse) {
         List<AvailableProductDto> dtos = ordersProduct.getOrdersProductsAttributes().stream()
                 .flatMap(attribute -> attribute.getOrdersProductsDownloads().stream())
                 .map(download -> download.getMediaSet().getProduct())
-                .map(Product::toPCMAvailableProductDto)
+                .map(product -> product.toPCMAvailableProductDto(isSubscriptionCourse))
                 .collect(toList());
         if (dtos.size() > 1) {
             // if it's subscription or kitted, use the mother isbn for upsell

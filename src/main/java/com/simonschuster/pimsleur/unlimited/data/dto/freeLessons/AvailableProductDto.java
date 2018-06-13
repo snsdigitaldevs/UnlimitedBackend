@@ -17,6 +17,8 @@ public class AvailableProductDto {
     private boolean isPuProduct = false;
     private Integer level = 1; // default level 1 for free lessons
 
+    private boolean isSubscription;
+
     public AvailableProductDto(String languageName, String productCode, boolean isPu) {
         this.languageName = languageName;
         this.productCode = productCode;
@@ -28,6 +30,14 @@ public class AvailableProductDto {
 
         this.level = level;
         this.courseName = courseName;
+    }
+
+    public boolean getIsSubscription() {
+        return isSubscription;
+    }
+
+    public void setIsSubscription(boolean isSubscription) {
+        this.isSubscription = isSubscription;
     }
 
     public String getProductCode() {

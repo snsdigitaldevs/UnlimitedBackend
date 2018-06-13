@@ -460,12 +460,14 @@ public class Product {
         return getIsbn13().replace("-", "");
     }
 
-    public AvailableProductDto toPCMAvailableProductDto() {
-        return new AvailableProductDto(
+    public AvailableProductDto toPCMAvailableProductDto(Boolean isSubscriptionCourse) {
+        AvailableProductDto availableProductDto = new AvailableProductDto(
                 getProductsLanguageName(),
                 getProductsName(),
                 getProductCode(),
                 false,
                 getProductsLevel());
+        availableProductDto.setIsSubscription(isSubscriptionCourse);
+        return availableProductDto;
     }
 }

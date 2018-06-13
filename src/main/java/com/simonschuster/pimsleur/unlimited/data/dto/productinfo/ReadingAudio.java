@@ -70,9 +70,16 @@ public class ReadingAudio {
 
     public static ReadingAudio createFrom(String mediaItemTitle, String url,
                                           String mediaItemIdMetadata, Integer mediaItemId) {
-        ReadingMetaData readingMetaData = getReadingMetaData(mediaItemIdMetadata);
+        int startPage = 0;
+        int pageCount = 0;
+        if (mediaItemIdMetadata != null) {
+            ReadingMetaData readingMetaData = getReadingMetaData(mediaItemIdMetadata);
+            startPage = parseInt(readingMetaData.startPage);
+            pageCount = parseInt(readingMetaData.pageCount);
+        }
+
         return new ReadingAudio(titleToUnitNumber(mediaItemTitle), mediaItemTitle, url,
-                parseInt(readingMetaData.startPage), parseInt(readingMetaData.pageCount), mediaItemId);
+                startPage, pageCount, mediaItemId);
     }
 
     private static ReadingMetaData getReadingMetaData(String mediaItemIdMetadata) {

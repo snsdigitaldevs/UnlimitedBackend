@@ -16,6 +16,7 @@ public class EdtErrorCodeUtil {
             put(-9304, "app store transaction pending");
             put(-9305, "app store transaction success with pending event");
             put(-9306, "app store receipt invalid");
+            put(-1039, "user already purchased product");
         }
     };
 

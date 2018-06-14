@@ -16,16 +16,12 @@ import com.simonschuster.pimsleur.unlimited.data.edt.customer.MediaSet;
         "productsMedia",
         "productsTotalLessons",
         "productsLessonRange",
-        "productsNextLevel",
         "productsHighestLevelAvail",
-        "productsIsEsl",
-        "productsPackageName",
         "productsNumMedia",
-        "productsInclReadings",
         "productsMediaSize",
         "productsTitle",
-        "productsGuideType",
-        "mediaSet"
+        "mediaSet",
+        "additionalProductData"
 })
 public class PcmFreeCourseResultData {
 
@@ -47,26 +43,18 @@ public class PcmFreeCourseResultData {
     private long productsTotalLessons;
     @JsonProperty("productsLessonRange")
     private String productsLessonRange;
-    @JsonProperty("productsNextLevel")
-    private long productsNextLevel;
     @JsonProperty("productsHighestLevelAvail")
     private long productsHighestLevelAvail;
-    @JsonProperty("productsIsEsl")
-    private long productsIsEsl;
-    @JsonProperty("productsPackageName")
-    private String productsPackageName;
     @JsonProperty("productsNumMedia")
     private long productsNumMedia;
-    @JsonProperty("productsInclReadings")
-    private long productsInclReadings;
     @JsonProperty("productsMediaSize")
     private String productsMediaSize;
     @JsonProperty("productsTitle")
     private String productsTitle;
-    @JsonProperty("productsGuideType")
-    private String productsGuideType;
     @JsonProperty("mediaSet")
     private MediaSet mediaSet;
+    @JsonProperty("additionalProductData")
+    private AdditionalProductData additionalProductData;
 
     @JsonProperty("productsId")
     public long getProductsId() {
@@ -158,16 +146,6 @@ public class PcmFreeCourseResultData {
         this.productsLessonRange = productsLessonRange;
     }
 
-    @JsonProperty("productsNextLevel")
-    public long getProductsNextLevel() {
-        return productsNextLevel;
-    }
-
-    @JsonProperty("productsNextLevel")
-    public void setProductsNextLevel(long productsNextLevel) {
-        this.productsNextLevel = productsNextLevel;
-    }
-
     @JsonProperty("productsHighestLevelAvail")
     public long getProductsHighestLevelAvail() {
         return productsHighestLevelAvail;
@@ -178,26 +156,6 @@ public class PcmFreeCourseResultData {
         this.productsHighestLevelAvail = productsHighestLevelAvail;
     }
 
-    @JsonProperty("productsIsEsl")
-    public long getProductsIsEsl() {
-        return productsIsEsl;
-    }
-
-    @JsonProperty("productsIsEsl")
-    public void setProductsIsEsl(long productsIsEsl) {
-        this.productsIsEsl = productsIsEsl;
-    }
-
-    @JsonProperty("productsPackageName")
-    public String getProductsPackageName() {
-        return productsPackageName;
-    }
-
-    @JsonProperty("productsPackageName")
-    public void setProductsPackageName(String productsPackageName) {
-        this.productsPackageName = productsPackageName;
-    }
-
     @JsonProperty("productsNumMedia")
     public long getProductsNumMedia() {
         return productsNumMedia;
@@ -206,16 +164,6 @@ public class PcmFreeCourseResultData {
     @JsonProperty("productsNumMedia")
     public void setProductsNumMedia(long productsNumMedia) {
         this.productsNumMedia = productsNumMedia;
-    }
-
-    @JsonProperty("productsInclReadings")
-    public long getProductsInclReadings() {
-        return productsInclReadings;
-    }
-
-    @JsonProperty("productsInclReadings")
-    public void setProductsInclReadings(long productsInclReadings) {
-        this.productsInclReadings = productsInclReadings;
     }
 
     @JsonProperty("productsMediaSize")
@@ -238,16 +186,6 @@ public class PcmFreeCourseResultData {
         this.productsTitle = productsTitle;
     }
 
-    @JsonProperty("productsGuideType")
-    public String getProductsGuideType() {
-        return productsGuideType;
-    }
-
-    @JsonProperty("productsGuideType")
-    public void setProductsGuideType(String productsGuideType) {
-        this.productsGuideType = productsGuideType;
-    }
-
     @JsonProperty("mediaSet")
     public MediaSet getMediaSet() {
         return mediaSet;
@@ -258,4 +196,13 @@ public class PcmFreeCourseResultData {
         this.mediaSet = mediaSet;
     }
 
+    @JsonProperty("additionalProductData")
+    public AdditionalProductData getAdditionalProductData() {
+        return additionalProductData;
+    }
+
+    @JsonProperty("additionalProductData")
+    public void setAdditionalProductData(AdditionalProductData additionalProductData) {
+        this.additionalProductData = additionalProductData;
+    }
 }

@@ -21,6 +21,7 @@ import static com.simonschuster.pimsleur.unlimited.utils.HardCodedProductsUtil.i
 import static java.util.Collections.emptyList;
 import static java.util.Collections.singletonList;
 import static java.util.stream.Collectors.toList;
+import static java.util.stream.IntStream.rangeClosed;
 
 @Service
 public class PcmFreeCourseService {
@@ -30,28 +31,19 @@ public class PcmFreeCourseService {
 
     public List<Course> getPcmFreeCourseInfos(String productCode) {
 
-        PcmFreeCourseResponse pcmFreeCourseResponse = postToEdt(
-                createPostBody(productCode),
+        PcmFreeCourseResponse pcmFreeCourseResponse = postToEdt(createPostBody(productCode),
                 configuration.getProperty("edt.api.pcmFreeCourseApiUrl"),
                 PcmFreeCourseResponse.class);
 
         PcmFreeCourseResultData resultData = pcmFreeCourseResponse.getResultData();
         if (resultData != null) {
             List<Lesson> lessons = createLessons(resultData);
-            setAudioLinkForFirstLessons(resultData, lessons);
+            setAudioLinkForFirstLesson(resultData, lessons);
 
-            Course course = createCourse(productCode, resultData, lessons);
-            return singletonList(course);
+            return singletonList(createCourse(productCode, resultData, lessons));
         } else {
             return emptyList();
         }
-    }
-
-    private HttpEntity<String> createPostBody(String productCode) {
-        HttpHeaders headers = new HttpHeaders();
-        headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
-        return new HttpEntity<>(
-                String.format(configuration.getApiParameter("pcmFreeCourseparameters"), productCode), headers);
     }
 
     private Course createCourse(String productCode, PcmFreeCourseResultData resultData, List<Lesson> lessons) {
@@ -67,7 +59,7 @@ public class PcmFreeCourseService {
         return course;
     }
 
-    private void setAudioLinkForFirstLessons(PcmFreeCourseResultData resultData, List<Lesson> lessons) {
+    private void setAudioLinkForFirstLesson(PcmFreeCourseResultData resultData, List<Lesson> lessons) {
         Optional<Lesson> first = lessons.stream()
                 .filter(x -> Objects.equals(x.getLessonNumber(), "01"))
                 .findFirst();
@@ -75,6 +67,31 @@ public class PcmFreeCourseService {
     }
 
     private List<Lesson> createLessons(PcmFreeCourseResultData resultData) {
+        List<Lesson> lessonsFromMediaSet = createLessonsFromMediaSet(resultData);
+
+        boolean isMediaSetInsufficient = resultData.getAdditionalProductData() != null && lessonsFromMediaSet.size() == 1;
+        if (isMediaSetInsufficient) {
+            return createLessonsFromAdditionalInfo(resultData, lessonsFromMediaSet);
+        }
+
+        return lessonsFromMediaSet;
+    }
+
+    private List<Lesson> createLessonsFromAdditionalInfo(PcmFreeCourseResultData resultData, List<Lesson> lessonsFromMediaSet) {
+        String lessonNamePrefix = lessonsFromMediaSet.get(0).getName().split(" ")[0];
+        int numberOfLessons = resultData.getAdditionalProductData().getLevel1FullCourseTotalLessons();
+
+        return rangeClosed(1, numberOfLessons).boxed()
+                .map(lessonNumber -> {
+                    String lessonNumberString = String.format("%02d", lessonNumber);
+                    Lesson lesson = new Lesson();
+                    lesson.setName(lessonNamePrefix + " " + lessonNumberString);
+                    lesson.setLessonNumber(lessonNumberString);
+                    return lesson;
+                }).collect(toList());
+    }
+
+    private List<Lesson> createLessonsFromMediaSet(PcmFreeCourseResultData resultData) {
         return resultData.getMediaSet().getChildMediaSets().stream()
                 .flatMap(mediaSet -> mediaSet.getMediaItems().stream())
                 .filter(MediaItem::isLesson)
@@ -84,5 +101,12 @@ public class PcmFreeCourseService {
                     lesson.setLessonNumber(mediaItem.getMediaItemTitle().split(" ")[1]);
                     return lesson;
                 }).collect(toList());
+    }
+
+    private HttpEntity<String> createPostBody(String productCode) {
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
+        return new HttpEntity<>(
+                String.format(configuration.getApiParameter("pcmFreeCourseparameters"), productCode), headers);
     }
 }

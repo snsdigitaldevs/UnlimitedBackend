@@ -40,9 +40,8 @@ public class EDTCustomerInfoService {
                 })
                 .join();
 
-        boolean puFutureDone = puCustomerInfoCompletableFuture.isDone();
-        CustomerInfo pcCustomerInfo = puFutureDone ? puCustomerInfoCompletableFuture.getNow(null) : puCustomerInfoCompletableFuture.join();
-        CustomerInfo pcmCustomerInfo = puFutureDone ? pcmCustomerInfoCompletableFuture.join() : pcmCustomerInfoCompletableFuture.getNow(null);
+        CustomerInfo pcCustomerInfo = puCustomerInfoCompletableFuture.join();
+        CustomerInfo pcmCustomerInfo = pcmCustomerInfoCompletableFuture.join();
         return new AggregatedCustomerInfo(pcCustomerInfo, pcmCustomerInfo, aggregatedSyncState);
     }
 

@@ -8,7 +8,9 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
 
 import static java.lang.Boolean.parseBoolean;
 import static java.util.stream.Collectors.toList;
@@ -68,23 +70,14 @@ public class PcmLessonInfoService {
 
         return mediaItemsByLevel.getMediaItems().stream().map(mediaItem -> {
             Lesson lesson = new Lesson();
-            String title = mediaItem.getMediaItemTitle();
-            Integer itemId = mediaItem.getMediaItemId();
 
-            String fileName = title
-                    .replace("Lesson", "Unit")
-                    .replace("Lección", "Unit")
-                    .replace(" ", "_");
-            String lessonNumber = title.split(" ")[1];
-            fileName = lessonNumber.length() == 1 ? fileName.replace(lessonNumber, "0" + lessonNumber) : fileName;
-
-            String urlOfMediaItem = batchedMediaItemUrls.getUrlOfMediaItem(fileName);
-            lesson.setAudioLink(urlOfMediaItem);
-
-            lesson.setName(title);
+            lesson.setName(mediaItem.getMediaItemTitle());
             lesson.setLevel(Integer.parseInt(level));
-            lesson.setMediaItemId(itemId);
-            lesson.setLessonNumber(title.split(" ")[1]);
+            lesson.setMediaItemId(mediaItem.getMediaItemId());
+            lesson.setLessonNumber(mediaItem.getMediaItemTitle().split(" ")[1]);
+            lesson.setAudioLink(batchedMediaItemUrls
+                    .getUrlOfMediaItem(mediaItem.getMediaItemFileNameWithoutExtension()));
+
             return lesson;
         }).collect(toList());
 

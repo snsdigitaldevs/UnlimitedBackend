@@ -65,8 +65,11 @@ public class QuickMatchUtil {
                 .parse(new StringReader(csvString));
         String[] needIgnoreCaseHeaders = {"QZ #", "Snippet Name", "ISBN"};
         Map<String, String> headerMap = getHeaderMap(csvRecords, Arrays.asList(needIgnoreCaseHeaders));
+
+        String quickMatchAudioBaseFileName = practicesUrls.getQuickMatchAudioBaseFileName();
+        String quickMatchAudioBaseUrl = practicesUrls.getQuickMatchAudioBaseUrl();
         for (CSVRecord record : csvRecords) {
-            parseCsvLine(result, record, headerMap, practicesUrls.getQuickMatchAudioBaseUrl());
+            parseCsvLine(result, record, headerMap, quickMatchAudioBaseUrl, quickMatchAudioBaseFileName);
         }
 
         getSkill(quickMatchUrl, result);
@@ -110,7 +113,8 @@ public class QuickMatchUtil {
     }
 
     private static void parseCsvLine(List<PracticesInUnit> result, CSVRecord record,
-                                     Map<String, String> headerMap, String quickMatchAudioBaseUrl) {
+                                     Map<String, String> headerMap,
+                                     String quickMatchAudioBaseUrl, String quickMatchAudioBaseFileName) {
         String qz = record.get(headerMap.get("QZ #"));
         Integer unit = Integer.parseInt(record.get("Unit Num"));
         String group = qz.contains("_") ? unit.toString() + "_" + qz.substring(0, 2) : "00";
@@ -145,7 +149,7 @@ public class QuickMatchUtil {
         quickMatch.setQz(qz);
 
         String transliteration = record.isSet("Transliteration") ? record.get("Transliteration") : "";
-        String snippetName = getSnippetName(record, headerMap);
+        String snippetName = getSnippetName(record, headerMap, quickMatchAudioBaseFileName);
 
         QuickMatchItem quickMatchItem = new QuickMatchItem(record.get("Cue"),
                 transliteration, quickMatchAudioBaseUrl + snippetName);
@@ -158,16 +162,13 @@ public class QuickMatchUtil {
         }
     }
 
-    private static String getSnippetName(CSVRecord record, Map<String, String> headerMap) {
+    private static String getSnippetName(CSVRecord record, Map<String, String> headerMap,
+                                         String quickMatchAudioBaseFileName) {
         String snippetNameKey = getSnippetNameKey(record);
         if (record.isSet(snippetNameKey)) {
             return record.get(snippetNameKey);
         } else {
-            return record.get(headerMap.get("ISBN")).replace("-", "")
-                    .concat("_")
-                    .concat(record.get("Course").replace(" ", "_"))
-                    .concat("_")
-                    .concat("QZ")
+            return quickMatchAudioBaseFileName
                     .concat("_U")
                     .concat(String.valueOf(Integer.parseInt(record.get("Unit Num"))))
                     .concat("_")

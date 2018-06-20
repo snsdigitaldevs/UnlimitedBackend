@@ -73,6 +73,10 @@ public class PracticesUrls {
         return getCsvFileName(this.flashCardUrl);
     }
 
+    public String getQuickMatchAudioBaseFileName() {
+        return getCsvFileName(this.quickMatchUrl);
+    }
+
     private String getCsvFileName(String url) {
         try {
             String csvFileName = Paths.get(new URI(encode(url, "UTF-8"))

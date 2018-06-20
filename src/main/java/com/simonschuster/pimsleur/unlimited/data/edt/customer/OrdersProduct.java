@@ -4,9 +4,9 @@ package com.simonschuster.pimsleur.unlimited.data.edt.customer;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.AvailableProductDto;
 
 import java.util.List;
+import java.util.Objects;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
@@ -199,5 +199,11 @@ public class OrdersProduct {
     public boolean isNotHowToLearnForeignLang() {
         // How to Learn a Foreign Language is a pcm course that you can get for free
         return getProduct().getProductsLevel() != 0;
+    }
+
+    public boolean isSubscription() {
+        return this.getOrdersProductsAttributes().stream()
+                .anyMatch(attribute ->
+                        Objects.equals(attribute.getProductsOptionsValues(), "DIGITAL_SUBSCRIPTION"));
     }
 }

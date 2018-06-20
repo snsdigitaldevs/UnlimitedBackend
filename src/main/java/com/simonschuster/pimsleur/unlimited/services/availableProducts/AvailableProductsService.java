@@ -14,7 +14,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Objects;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Stream;
 
@@ -79,8 +78,9 @@ public class AvailableProductsService {
         if (puCustInfo.getResultData() != null) {
             return puCustInfo.getResultData().getCustomer().getAllOrdersProducts()
                     .stream()
-                    .map(OrdersProduct::getProduct)
-                    .flatMap(this::puProductToDtos)
+                    .flatMap(order ->
+                            puProductToDtos(order.getProduct())
+                                    .peek(dto -> dto.setIsSubscription(order.isSubscription())))
                     .filter(distinctByKey(p -> p.getLanguageName() + p.getLevel())) // remove duplicate
                     .collect(toList());
         } else {
@@ -94,14 +94,12 @@ public class AvailableProductsService {
         if (pcmCustInfo.getResultData() != null) {
             return pcmCustInfo.getResultData()
                     .getCustomer().getCustomersOrders().stream()
-                    .flatMap(order -> {
-                        Boolean isSubscription = Objects.equals(order.getStoreDomain(), "pimsleur.com.mg2");
-
-                        return order.getOrdersProducts().stream()
-                                .flatMap(this::pcmOrderToDtos)
+                    .flatMap(customersOrder -> {
+                        return customersOrder.getOrdersProducts().stream()
+                                .flatMap(order -> this.pcmOrderToDtos(order)
+                                        .peek(dto -> dto.setIsSubscription(order.isSubscription())))
                                 .filter(dto -> dto.getLevel() != 0) // remove "how to learn"
-                                .filter(distinctByKey(AvailableProductDto::getProductCode)) // remove duplicate
-                                .peek(dto -> dto.setIsSubscription(isSubscription));
+                                .filter(distinctByKey(AvailableProductDto::getProductCode)); // remove duplicate
                     })
                     .collect(toList());
         } else {
@@ -126,12 +124,12 @@ public class AvailableProductsService {
 
     public Stream<AvailableProductDto> puProductToDtos(Product product) {
         List<Course> courses = puCourseInfoService.getPuProductInfo(product.getProductCode()).toDto();
-        boolean isKitted = courses.size() > 1;
+        boolean hasMother = courses.size() > 1;
 
         return courses.stream().map(course -> {
             AvailableProductDto dto = course.toPuAvailableProductDto();
-            if (isKitted) {
-                // if the pu product is kitted, use the mother isbn for upsell for all its children
+            if (hasMother) {
+                // if the pu product is kitted or subscription, use the mother isbn for upsell for all its children
                 dto.setProductCodeForUpsell(product.getProductCode());
             } else {
                 // otherwise, use the single level isbn for upsell api

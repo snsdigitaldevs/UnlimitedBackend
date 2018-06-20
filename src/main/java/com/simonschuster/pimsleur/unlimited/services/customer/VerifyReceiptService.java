@@ -41,8 +41,8 @@ public class VerifyReceiptService {
         String storeDomain = verifyReceiptBody.getStoreDomain();
         String utf8 = "UTF-8";
         // encode twice, this is edt bug
-        String transactionResult = encode(encode(verifyReceiptBody.getTransactionResult(), utf8), utf8);
-        String receipt = encode(encode(verifyReceiptBody.getReceipt(), utf8), utf8);
+        String transactionResult = encode(verifyReceiptBody.getTransactionResult(), utf8);
+        String receipt = encode(verifyReceiptBody.getReceipt(), utf8);
         return new HttpEntity<>(String.format(config.getProperty("edt.api.verifyReceipt.parameters"),
                 storeDomain, customerId, InAppPurchaseUtil.getAppId(storeDomain), transactionResult, receipt
         ), headers);

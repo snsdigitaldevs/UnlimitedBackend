@@ -1,0 +1,599 @@
+Rec #,Lang,ISBN-13,Course,Unit Num,start,stop,QZ #,line #,spkr,Cue,# of words,Q or S,Course Name (Source),Skills
+1,FR,978-1-4423-4864-6,French 1,1,0:02:21,0:02:22,01Q,37,N,Excuse me.,,,"French Phase 1, Units 1-30 (2001)","10,13,16"
+2,FR,978-1-4423-4864-6,French 1,1,0:02:25,0:02:25,01R,38,M,Pardon.,1,S,"French Phase 1, Units 1-30 (2001)","10,13,16"
+3,FR,978-1-4423-4864-6,French 1,1,0:03:20,0:03:20,02Q,50,N,Understand.,,,"French Phase 1, Units 1-30 (2001)",15
+4,FR,978-1-4423-4864-6,French 1,1,0:03:23,0:03:23,02R,51,M,Comprenez.,1,S,"French Phase 1, Units 1-30 (2001)",15
+5,FR,978-1-4423-4864-6,French 1,1,0:04:14,0:04:15,03Q,61,N,You understand English.,,,"French Phase 1, Units 1-30 (2001)",15
+6,FR,978-1-4423-4864-6,French 1,1,0:04:19,0:04:20,03R,62,M,Vous comprenez l'anglais.,3,S,"French Phase 1, Units 1-30 (2001)",15
+7,FR,978-1-4423-4864-6,French 1,1,0:04:58,0:04:59,04Q,69,N,Do you understand?,,,"French Phase 1, Units 1-30 (2001)","10,15"
+8,FR,978-1-4423-4864-6,French 1,1,0:05:02,0:05:04,04R,70,M,Est-ce que vous comprenez?,5,Q,"French Phase 1, Units 1-30 (2001)","10,15"
+9,FR,978-1-4423-4864-6,French 1,1,0:06:38,0:06:42,05Q,88,N,How would you ask someone if he understands?,,,"French Phase 1, Units 1-30 (2001)","10,15"
+10,FR,978-1-4423-4864-6,French 1,1,0:06:45,0:06:46,05R,89,M,Est-ce que vous comprenez?,5,Q,"French Phase 1, Units 1-30 (2001)","10,15"
+11,FR,978-1-4423-4864-6,French 1,1,0:10:26,0:10:27,06Q,126,N,I don't understand.,,,"French Phase 1, Units 1-30 (2001)","10,15"
+12,FR,978-1-4423-4864-6,French 1,1,0:10:30,0:10:31,06R,127,F,Je ne comprends pas.,4,S,"French Phase 1, Units 1-30 (2001)","10,15"
+13,FR,978-1-4423-4864-6,French 1,1,0:16:09,0:16:10,07Q,194,N,I understand French a little.,,,"French Phase 1, Units 1-30 (2001)","10,15"
+14,FR,978-1-4423-4864-6,French 1,1,0:16:13,0:16:14,07R,195,M,Je comprends un peu le français.,6,S,"French Phase 1, Units 1-30 (2001)","10,15"
+15,FR,978-1-4423-4864-6,French 1,1,0:17:48,0:17:50,08Q,210,N,You are American.,,,"French Phase 1, Units 1-30 (2001)","10,16"
+16,FR,978-1-4423-4864-6,French 1,1,0:17:53,0:17:54,08R,211,F,Vous êtes américain.,3,S,"French Phase 1, Units 1-30 (2001)","10,16"
+17,FR,978-1-4423-4864-6,French 1,1,0:20:46,0:20:47,09Q,240,F,I don't understand English.,,,"French Phase 1, Units 1-30 (2001)","10,15"
+18,FR,978-1-4423-4864-6,French 1,1,0:20:51,0:20:53,09R,241,N,Je ne comprends pas l'anglais.,5,S,"French Phase 1, Units 1-30 (2001)","10,15"
+19,FR,978-1-4423-4864-6,French 1,2,0:00:31,0:00:34,01Q,16,N,Say the word “English” in French.,,,"French Phase 1, Units 1-30 (2001)",7
+20,FR,978-1-4423-4864-6,French 1,2,0:00:36,0:00:38,01R,17,F,L'anglais.,1,S,"French Phase 1, Units 1-30 (2001)",7
+21,FR,978-1-4423-4864-6,French 1,2,0:01:05,0:01:07,02Q,22,N,I understand French.,,,"French Phase 1, Units 1-30 (2001)","10,15"
+22,FR,978-1-4423-4864-6,French 1,2,0:01:10,0:01:11,02R,23,F,Je comprends l'français.,4,S,"French Phase 1, Units 1-30 (2001)","10,15"
+23,FR,978-1-4423-4864-6,French 1,2,0:07:41,0:07:42,03Q,94,N,"Excuse me, miss.",,,"French Phase 1, Units 1-30 (2001)","10,13,16"
+24,FR,978-1-4423-4864-6,French 1,2,0:07:46,0:07:47,03R,95,M,"Pardon, mademoiselle.",2,S,"French Phase 1, Units 1-30 (2001)","10,13,16"
+25,FR,978-1-4423-4864-6,French 1,2,0:13:22,0:13:23,04Q,159,N,How are you?,,,"French Phase 1, Units 1-30 (2001)","10,13"
+26,FR,978-1-4423-4864-6,French 1,2,0:13:26,0:13:27,04R,160,M,Comment allez-vous?,3,Q,"French Phase 1, Units 1-30 (2001)","10,13"
+27,FR,978-1-4423-4864-6,French 1,2,0:13:35,0:13:37,05Q,161,N,"Good morning, ma’am.",,,"French Phase 1, Units 1-30 (2001)",10
+28,FR,978-1-4423-4864-6,French 1,2,0:13:40,0:13:41,05R,162,M,"Bonjour, madame.",2,S,"French Phase 1, Units 1-30 (2001)",10
+29,FR,978-1-4423-4864-6,French 1,2,0:15:48,0:15:49,06Q,186,N,"Very well, miss.",,,"French Phase 1, Units 1-30 (2001)",7
+30,FR,978-1-4423-4864-6,French 1,2,0:15:53,0:15:54,06R,187,M,"Très bien, mademoiselle.",3,S,"French Phase 1, Units 1-30 (2001)",7
+31,FR,978-1-4423-4864-6,French 1,2,0:16:30,0:16:34,07Q,194,N,I'm well.,,,"French Phase 1, Units 1-30 (2001)","7,10"
+32,FR,978-1-4423-4864-6,French 1,2,0:16:34,0:16:37,07R,195,M,Je vais bien.,3,S,"French Phase 1, Units 1-30 (2001)","7,10"
+33,FR,978-1-4423-4864-6,French 1,2,0:17:50,0:17:51,08Q,210,N,Thank you.,,,"French Phase 1, Units 1-30 (2001)","13,16"
+34,FR,978-1-4423-4864-6,French 1,2,0:17:53,0:17:54,08R,211,M,Merci.,1,S,"French Phase 1, Units 1-30 (2001)","13,16"
+35,FR,978-1-4423-4864-6,French 1,2,0:24:53,0:24:53,09Q,287,N,Not very well.,,,"French Phase 1, Units 1-30 (2001)",7
+36,FR,978-1-4423-4864-6,French 1,2,0:24:57,0:24:57,09R,288,M,Pas très bien.,3,S,"French Phase 1, Units 1-30 (2001)",7
+37,FR,978-1-4423-4864-6,French 1,2,0:25:37,0:25:38,10Q,296,N,I don't understand very well.,,,"French Phase 1, Units 1-30 (2001)",15
+38,FR,978-1-4423-4864-6,French 1,2,0:25:43,0:25:44,10R,297,F,Je ne comprends pas très bien.,6,S,"French Phase 1, Units 1-30 (2001)",15
+39,FR,978-1-4423-4864-6,French 1,2,0:27:29,0:27:29,11Q,317,N,Goodbye.,,,"French Phase 1, Units 1-30 (2001)","10,13,16"
+40,FR,978-1-4423-4864-6,French 1,2,0:27:32,0:27:33,11R,318,F,Au revoir.,2,S,"French Phase 1, Units 1-30 (2001)","10,13,16"
+41,FR,978-1-4423-4864-6,French 1,3,0:02:59,0:03:00,01Q,47,N,Ask me how I'm feeling.,,,"French Phase 1, Units 1-30 (2001)",7
+42,FR,978-1-4423-4864-6,French 1,3,0:03:08,0:03:09,01R,48,F,Comment allez-vous?,3,Q,"French Phase 1, Units 1-30 (2001)",7
+43,FR,978-1-4423-4864-6,French 1,3,0:03:54,0:03:57,02Q,57,M,"How do you say, “Hello” in French?",,,"French Phase 1, Units 1-30 (2001)","10,16"
+44,FR,978-1-4423-4864-6,French 1,3,0:03:59,0:04:00,02R,58,N,Bonjour.,1,S,"French Phase 1, Units 1-30 (2001)","10,16"
+45,FR,978-1-4423-4864-6,French 1,3,0:07:42,0:07:46,03Q,97,N,Ask the young woman if she is American.,,,"French Phase 1, Units 1-30 (2001)",10
+46,FR,978-1-4423-4864-6,French 1,3,0:07:48,0:07:50,03R,98,M,Est-ce que vous êtes américaine?,5,Q,"French Phase 1, Units 1-30 (2001)",10
+47,FR,978-1-4423-4864-6,French 1,3,0:10:10,0:10:14,04Q,125,N,"Guess how the man would say, “I am French.”",,,"French Phase 1, Units 1-30 (2001)",9
+48,FR,978-1-4423-4864-6,French 1,3,0:10:16,0:10:18,04R,126,M,Je suis français.,3,S,"French Phase 1, Units 1-30 (2001)",9
+49,FR,978-1-4423-4864-6,French 1,3,0:11:28,0:11:31,05Q,136,N,And now ask the woman if she is French.,,,"French Phase 1, Units 1-30 (2001)",17
+50,FR,978-1-4423-4864-6,French 1,3,0:11:34,0:11:37,05R,137,M,Est-ce que vous êtes française?,5,Q,"French Phase 1, Units 1-30 (2001)",17
+51,FR,978-1-4423-4864-6,French 1,3,0:11:58,0:12:00,06Q,141,N,I (f) am not French.,,,"French Phase 1, Units 1-30 (2001)","7,10"
+52,FR,978-1-4423-4864-6,French 1,3,0:12:03,0:12:05,06R,142,F,Je ne suis pas française.,,S,"French Phase 1, Units 1-30 (2001)","7,10"
+53,FR,978-1-4423-4864-6,French 1,3,0:13:29,0:13:32,07Q,156,N,"Say to the woman, “You are American.”",,,"French Phase 1, Units 1-30 (2001)",10
+54,FR,978-1-4423-4864-6,French 1,3,0:13:35,0:13:36,07R,157,M,Vous êtes américaine.,3,S,"French Phase 1, Units 1-30 (2001)",10
+55,FR,978-1-4423-4864-6,French 1,3,0:13:48,0:13:51,08Q,160,N,"And now say to the woman, “You're not American.”",,,"French Phase 1, Units 1-30 (2001)",10
+56,FR,978-1-4423-4864-6,French 1,3,0:13:54,0:13:56,08R,161,M,Vous n'êtes pas américaine.,4,S,"French Phase 1, Units 1-30 (2001)",10
+57,FR,978-1-4423-4864-6,French 1,3,0:21:45,0:21:46,09Q,246,N,Are you well?,,,"French Phase 1, Units 1-30 (2001)",7
+58,FR,978-1-4423-4864-6,French 1,3,0:21:50,0:21:51,09R,247,M,Est-ce que vous allez bien?,5,Q,"French Phase 1, Units 1-30 (2001)",7
+59,FR,978-1-4423-4864-6,French 1,4,0:03:26,0:03:28,01Q,49,N,You understand very well.,,,"French Phase 1, Units 1-30 (2001)",15
+60,FR,978-1-4423-4864-6,French 1,4,0:03:32,0:03:33,01R,50,F,Vous comprenez très bien.,3,S,"French Phase 1, Units 1-30 (2001)",15
+61,FR,978-1-4423-4864-6,French 1,4,0:08:23,0:08:24,02Q,101,N,You speak well.,,,"French Phase 1, Units 1-30 (2001)",15
+62,FR,978-1-4423-4864-6,French 1,4,0:08:28,0:08:28,02R,102,M,Vous parlez bien.,3,S,"French Phase 1, Units 1-30 (2001)",15
+63,FR,978-1-4423-4864-6,French 1,4,0:15:48,0:15:49,03Q,182,N,Where is the street?,,,"French Phase 1, Units 1-30 (2001)","4,16"
+64,FR,978-1-4423-4864-6,French 1,4,0:15:52,0:15:53,03R,183,M,Où est la rue?,4,Q,"French Phase 1, Units 1-30 (2001)","4,16"
+65,FR,978-1-4423-4864-6,French 1,4,0:18:49,0:18:49,04Q,212,N,It's here.,,,"French Phase 1, Units 1-30 (2001)","4,7"
+66,FR,978-1-4423-4864-6,French 1,4,0:18:58,0:18:58,04R,214,F,C'est ici.,2,S,"French Phase 1, Units 1-30 (2001)","4,7"
+67,FR,978-1-4423-4864-6,French 1,4,0:20:01,0:20:02,05Q,223,N,Is it here?,,,"French Phase 1, Units 1-30 (2001)","4,7"
+68,FR,978-1-4423-4864-6,French 1,4,0:20:06,0:20:07,05R,224,M,Est-ce que c'est ici?,4,Q,"French Phase 1, Units 1-30 (2001)","4,7"
+69,FR,978-1-4423-4864-6,French 1,4,0:20:36,0:20:37,06Q,229,N,"No, it's not here.",,,"French Phase 1, Units 1-30 (2001)","4,7"
+70,FR,978-1-4423-4864-6,French 1,4,0:20:40,0:20:42,06R,230,F,"Non, ce n'est pas ici.",5,S,"French Phase 1, Units 1-30 (2001)","4,7"
+71,FR,978-1-4423-4864-6,French 1,4,0:21:00,0:21:01,07Q,233,N,It’s over there.,,,"French Phase 1, Units 1-30 (2001)",4
+72,FR,978-1-4423-4864-6,French 1,4,0:21:06,0:21:07,07R,235,F,C’est là-bas.,5,S,"French Phase 1, Units 1-30 (2001)",4
+73,FR,978-1-4423-4864-6,French 1,4,0:21:33,0:21:34,08Q,240,N,It's not down there.,,,"French Phase 1, Units 1-30 (2001)","4,7"
+74,FR,978-1-4423-4864-6,French 1,4,0:21:38,0:21:39,08R,241,M,Ce n'est pas là-bas.,5,S,"French Phase 1, Units 1-30 (2001)","4,7"
+75,FR,978-1-4423-4864-6,French 1,5,0:02:45,0:02:46,01Q,47,N,But yes.,,,"French Phase 1, Units 1-30 (2001)",7
+76,FR,978-1-4423-4864-6,French 1,5,0:02:48,0:02:49,01R,48,M,Mais oui.,2,S,"French Phase 1, Units 1-30 (2001)",7
+77,FR,978-1-4423-4864-6,French 1,5,0:02:56,0:02:58,02Q,49,N,I understand French well.,,,"French Phase 1, Units 1-30 (2001)","10,15"
+78,FR,978-1-4423-4864-6,French 1,5,0:03:19,0:03:20,02R,52,M,Je comprends bien le français.,2,S,"French Phase 1, Units 1-30 (2001)","10,15"
+79,FR,978-1-4423-4864-6,French 1,5,0:04:29,0:04:29,03Q,65,N,And you?,,,"French Phase 1, Units 1-30 (2001)",7
+80,FR,978-1-4423-4864-6,French 1,5,0:04:31,0:04:32,03R,66,F,Et vous?,2,Q,"French Phase 1, Units 1-30 (2001)",7
+81,FR,978-1-4423-4864-6,French 1,5,0:09:26,0:09:26,04Q,112,N,I don't know.,,,"French Phase 1, Units 1-30 (2001)",7
+82,FR,978-1-4423-4864-6,French 1,5,0:09:29,0:09:29,04R,113,F,Je ne sais pas.,4,S,"French Phase 1, Units 1-30 (2001)",7
+83,FR,978-1-4423-4864-6,French 1,5,0:09:43,0:09:44,05Q,116,N,"Me, I know.",,,"French Phase 1, Units 1-30 (2001)",7
+84,FR,978-1-4423-4864-6,French 1,5,0:09:47,0:09:48,05R,117,M,"Moi, je sais.",3,S,"French Phase 1, Units 1-30 (2001)",7
+85,FR,978-1-4423-4864-6,French 1,5,0:11:11,0:11:12,06Q,131,N,Do you know?,,,"French Phase 1, Units 1-30 (2001)",7
+86,FR,978-1-4423-4864-6,French 1,5,0:11:15,0:11:16,06R,132,M,Est-ce que vous savez?,4,Q,"French Phase 1, Units 1-30 (2001)",7
+87,FR,978-1-4423-4864-6,French 1,5,0:11:37,0:11:38,07Q,135,N,Do you know?,,,"French Phase 1, Units 1-30 (2001)",7
+88,FR,978-1-4423-4864-6,French 1,5,0:11:40,0:11:41,07R,136,M,Savez-vous?,2,Q,"French Phase 1, Units 1-30 (2001)",7
+89,FR,978-1-4423-4864-6,French 1,5,0:16:45,0:16:46,08Q,192,N,Would you like to eat something?,,,"French Phase 1, Units 1-30 (2001)",6
+90,FR,978-1-4423-4864-6,French 1,5,0:16:51,0:16:54,08R,193,M,Est-ce que vous voudriez manger quelque chose?,7,Q,"French Phase 1, Units 1-30 (2001)",6
+91,FR,978-1-4423-4864-6,French 1,5,0:19:09,0:19:10,09Q,215,N,I would like to drink something.,,,"French Phase 1, Units 1-30 (2001)",6
+92,FR,978-1-4423-4864-6,French 1,5,0:19:14,0:19:16,09R,216,F,Je voudrais boire quelque chose.,5,S,"French Phase 1, Units 1-30 (2001)",6
+93,FR,978-1-4423-4864-6,French 1,5,0:22:32,0:22:32,10Q,249,N,Are you well?,,,"French Phase 1, Units 1-30 (2001)",7
+94,FR,978-1-4423-4864-6,French 1,5,0:22:36,0:22:37,10R,250,M,Est-ce que vous allez bien?,5,Q,"French Phase 1, Units 1-30 (2001)",7
+95,FR,978-1-4423-4864-6,French 1,6,0:01:38,0:01:39,01Q,33,N,Do you know?,,,"French Phase 1, Units 1-30 (2001)",7
+96,FR,978-1-4423-4864-6,French 1,6,0:01:42,0:01:44,01R,34,F,Est-ce que vous savez?,4,Q,"French Phase 1, Units 1-30 (2001)",7
+97,FR,978-1-4423-4864-6,French 1,6,0:06:26,0:06:28,02Q,81,N,I would like to eat something.,,,"French Phase 1, Units 1-30 (2001)",6
+98,FR,978-1-4423-4864-6,French 1,6,0:06:32,0:06:33,02R,82,F,Je voudrais manger quelque chose.,5,S,"French Phase 1, Units 1-30 (2001)",6
+99,FR,978-1-4423-4864-6,French 1,6,0:11:46,0:11:47,03Q,130,N,Ask me where I would like to eat.,,,"French Phase 1, Units 1-30 (2001)",6
+100,FR,978-1-4423-4864-6,French 1,6,0:11:51,0:11:54,03R,131,M,Où est-ce que vous voudriez manger?,5,Q,"French Phase 1, Units 1-30 (2001)",6
+101,FR,978-1-4423-4864-6,French 1,6,0:12:05,0:12:06,04Q,133,N,At your place.,,,"French Phase 1, Units 1-30 (2001)",7
+102,FR,978-1-4423-4864-6,French 1,6,0:12:08,0:12:09,04R,134,F,Chez vous.,2,S,"French Phase 1, Units 1-30 (2001)",7
+103,FR,978-1-4423-4864-6,French 1,6,0:12:15,0:12:16,05Q,135,N,At my place?,,,"French Phase 1, Units 1-30 (2001)",7
+104,FR,978-1-4423-4864-6,French 1,6,0:12:19,0:12:19,05R,136,M,Chez moi?,2,Q,"French Phase 1, Units 1-30 (2001)",7
+105,FR,978-1-4423-4864-6,French 1,6,0:13:25,0:13:26,06Q,147,N,I would like to eat too.,,,"French Phase 1, Units 1-30 (2001)",6
+106,FR,978-1-4423-4864-6,French 1,6,0:13:30,0:13:31,06R,148,F,Je voudrais manger aussi.,4,S,"French Phase 1, Units 1-30 (2001)",6
+107,FR,978-1-4423-4864-6,French 1,6,0:13:42,0:13:43,07Q,150,N,When?,,,"French Phase 1, Units 1-30 (2001)","7,17"
+108,FR,978-1-4423-4864-6,French 1,6,0:13:43,0:13:43,07R,151,M,Quand?,1,Q,"French Phase 1, Units 1-30 (2001)","7,17"
+109,FR,978-1-4423-4864-6,French 1,6,0:16:29,0:16:30,08Q,181,N,Not now.,,,"French Phase 1, Units 1-30 (2001)",17
+110,FR,978-1-4423-4864-6,French 1,6,0:16:32,0:16:33,08R,182,M,Pas maintenant.,2,S,"French Phase 1, Units 1-30 (2001)",17
+111,FR,978-1-4423-4864-6,French 1,6,0:20:41,0:20:42,09Q,322,N,Later.,,,"French Phase 1, Units 1-30 (2001)",17
+112,FR,978-1-4423-4864-6,French 1,6,0:20:44,0:20:45,09R,323,F,Plus tard.,2,S,"French Phase 1, Units 1-30 (2001)",17
+113,FR,978-1-4423-4864-6,French 1,6,0:22:00,0:22:02,10Q,240,N,I don't want to. (Emphatically),,,"French Phase 1, Units 1-30 (2001)",7
+114,FR,978-1-4423-4864-6,French 1,6,0:22:04,0:22:06,10R,241,F,Je ne veux pas.,4,S,"French Phase 1, Units 1-30 (2001)",7
+115,FR,978-1-4423-4864-6,French 1,6,0:25:57,0:25:58,11Q,280,N,"Very good, very good.",,,"French Phase 1, Units 1-30 (2001)",7
+116,FR,978-1-4423-4864-6,French 1,6,0:26:02,0:26:03,11R,281,M,"Très bien, très bien.",4,S,"French Phase 1, Units 1-30 (2001)",7
+117,FR,978-1-4423-4864-6,French 1,7,0:01:20,0:01:21,01Q,31,N,You want to eat.,,,"French Phase 1, Units 1-30 (2001)",6
+118,FR,978-1-4423-4864-6,French 1,7,0:01:25,0:01:26,01R,32,F,Vous voulez manger.,3,S,"French Phase 1, Units 1-30 (2001)",6
+119,FR,978-1-4423-4864-6,French 1,7,0:06:47,0:06:47,02Q,87,N,OK.,,,"French Phase 1, Units 1-30 (2001)",7
+120,FR,978-1-4423-4864-6,French 1,7,0:06:50,0:06:50,02R,88,F,D'accord.,1,S,"French Phase 1, Units 1-30 (2001)",7
+121,FR,978-1-4423-4864-6,French 1,7,0:07:48,0:07:49,03Q,98,N,At the restaurant.,,,"French Phase 1, Units 1-30 (2001)",6
+122,FR,978-1-4423-4864-6,French 1,7,0:07:51,0:07:52,03R,99,M,Au restaurant.,2,S,"French Phase 1, Units 1-30 (2001)",6
+123,FR,978-1-4423-4864-6,French 1,7,0:10:10,0:10:12,04Q,120,N,Ask me what I would like to eat.,,,"French Phase 1, Units 1-30 (2001)",6
+124,FR,978-1-4423-4864-6,French 1,7,0:10:16,0:10:18,04R,121,M,Qu'est-ce que vous voudriez manger?,5,Q,"French Phase 1, Units 1-30 (2001)",6
+125,FR,978-1-4423-4864-6,French 1,7,0:12:08,0:12:10,05Q,140,N,I would like to drink some wine.,,,"French Phase 1, Units 1-30 (2001)",6
+126,FR,978-1-4423-4864-6,French 1,7,0:12:13,0:12:15,05R,141,F,Je voudrais boire du vin.,5,S,"French Phase 1, Units 1-30 (2001)",6
+127,FR,978-1-4423-4864-6,French 1,7,0:15:36,0:15:37,06Q,176,N,I would like some beer.,,,"French Phase 1, Units 1-30 (2001)",6
+128,FR,978-1-4423-4864-6,French 1,7,0:15:41,0:15:43,06R,177,M,Je voudrais de la bière.,5,S,"French Phase 1, Units 1-30 (2001)",6
+129,FR,978-1-4423-4864-6,French 1,7,0:16:33,0:16:34,07Q,184,N,"At the restaurant, please.",,,"French Phase 1, Units 1-30 (2001)",6
+130,FR,978-1-4423-4864-6,French 1,7,0:16:37,0:16:40,07R,185,F,"Au restaurant, s'il vous plaît.",5,S,"French Phase 1, Units 1-30 (2001)",6
+131,FR,978-1-4423-4864-6,French 1,8,0:07:00,0:07:01,01Q,86,N,"Two beers, please.",,,"French Phase 1, Units 1-30 (2001)","6,12"
+132,FR,978-1-4423-4864-6,French 1,8,0:07:04,0:07:06,01R,87,M,"Deux bières, s'il vous plaît.",5,S,"French Phase 1, Units 1-30 (2001)","6,12"
+133,FR,978-1-4423-4864-6,French 1,8,0:07:43,0:07:44,02Q,93,N,Would you like some beer?,,,"French Phase 1, Units 1-30 (2001)",6
+134,FR,978-1-4423-4864-6,French 1,8,0:07:49,0:07:50,02R,94,M,Est-ce que vous voudriez de la bière?,7,Q,"French Phase 1, Units 1-30 (2001)",6
+135,FR,978-1-4423-4864-6,French 1,8,0:11:25,0:11:27,03Q,133,N,Some wine or some beer?,,,"French Phase 1, Units 1-30 (2001)",6
+136,FR,978-1-4423-4864-6,French 1,8,0:11:31,0:11:33,03R,134,M,Du vin ou de la bière?,6,Q,"French Phase 1, Units 1-30 (2001)",6
+137,FR,978-1-4423-4864-6,French 1,8,0:11:52,0:11:54,04Q,137,N,I really want to.,,,"French Phase 1, Units 1-30 (2001)",7
+138,FR,978-1-4423-4864-6,French 1,8,0:11:58,0:11:58,04R,138,F,Je veux bien.,3,S,"French Phase 1, Units 1-30 (2001)",7
+139,FR,978-1-4423-4864-6,French 1,8,0:12:32,0:12:33,05Q,143,N,Not okay.,,,"French Phase 1, Units 1-30 (2001)",7
+140,FR,978-1-4423-4864-6,French 1,8,0:12:36,0:12:37,05R,144,M,Pas d'accord.,2,S,"French Phase 1, Units 1-30 (2001)",7
+141,FR,978-1-4423-4864-6,French 1,8,0:13:24,0:13:27,06Q,153,N,Ask me what I want to do.,,,"French Phase 1, Units 1-30 (2001)",7
+142,FR,978-1-4423-4864-6,French 1,8,0:13:30,0:13:32,06R,154,M,Qu'est-ce que vous voulez faire?,5,Q,"French Phase 1, Units 1-30 (2001)",7
+143,FR,978-1-4423-4864-6,French 1,8,0:15:37,0:15:38,07Q,188,N,I would like to buy something.,,,"French Phase 1, Units 1-30 (2001)",14
+144,FR,978-1-4423-4864-6,French 1,8,0:15:39,0:15:41,07R,189,F,Je voudrais acheter quelque chose.,5,S,"French Phase 1, Units 1-30 (2001)",14
+145,FR,978-1-4423-4864-6,French 1,8,0:19:10,0:19:10,08Q,213,N,But with whom?,,,"French Phase 1, Units 1-30 (2001)",7
+146,FR,978-1-4423-4864-6,French 1,8,0:19:13,0:19:15,08R,214,F,"Mais, avec qui?",3,Q,"French Phase 1, Units 1-30 (2001)",7
+147,FR,978-1-4423-4864-6,French 1,8,0:21:13,0:21:15,09Q,234,N,Where? At the hotel?,,,"French Phase 1, Units 1-30 (2001)",18
+148,FR,978-1-4423-4864-6,French 1,8,0:21:19,0:21:20,09R,235,M,Où? À l'hôtel?,3,Q,"French Phase 1, Units 1-30 (2001)",18
+149,FR,978-1-4423-4864-6,French 1,9,0:03:42,0:03:44,01Q,58,N,I'd like to buy something.,,,"French Phase 1, Units 1-30 (2001)",14
+150,FR,978-1-4423-4864-6,French 1,9,0:03:48,0:03:50,01R,59,F,Je voudrais acheter quelque chose.,5,S,"French Phase 1, Units 1-30 (2001)",14
+151,FR,978-1-4423-4864-6,French 1,9,0:04:56,0:04:58,02Q,71,N,I’d like to drink something with you.,,,"French Phase 1, Units 1-30 (2001)",6
+152,FR,978-1-4423-4864-6,French 1,9,0:05:02,0:05:04,02R,72,F,Je voudrais boire quelque chose avec vous.,7,S,"French Phase 1, Units 1-30 (2001)",6
+153,FR,978-1-4423-4864-6,French 1,9,0:06:35,0:06:38,03Q,85,N,I’d like to drink something at your place.,,,"French Phase 1, Units 1-30 (2001)",6
+154,FR,978-1-4423-4864-6,French 1,9,0:06:42,0:06:44,03R,86,F,Je voudrais boire quelque chose chez vous.,7,S,"French Phase 1, Units 1-30 (2001)",6
+155,FR,978-1-4423-4864-6,French 1,9,0:07:46,0:07:47,04Q,97,N,At what time?,,,"French Phase 1, Units 1-30 (2001)","16,17"
+156,FR,978-1-4423-4864-6,French 1,9,0:07:50,0:07:50,04R,98,F,À quelle heure?,3,Q,"French Phase 1, Units 1-30 (2001)","16,17"
+157,FR,978-1-4423-4864-6,French 1,9,0:15:14,0:15:16,05Q,169,N,I don't know at what time.,,,"French Phase 1, Units 1-30 (2001)",17
+158,FR,978-1-4423-4864-6,French 1,9,0:15:20,0:15:21,05R,170,F,Je ne sais pas à quelle heure.,7,S,"French Phase 1, Units 1-30 (2001)",17
+159,FR,978-1-4423-4864-6,French 1,9,0:19:15,0:19:16,06Q,206,N,At two o'clock?,,,"French Phase 1, Units 1-30 (2001)","12,17"
+160,FR,978-1-4423-4864-6,French 1,9,0:19:19,0:19:20,06R,207,M,À deux heures?,3,Q,"French Phase 1, Units 1-30 (2001)","12,17"
+161,FR,978-1-4423-4864-6,French 1,9,0:24:40,0:24:42,07Q,254,N,What don't I understand?,,,"French Phase 1, Units 1-30 (2001)","10,15"
+162,FR,978-1-4423-4864-6,French 1,9,0:24:46,0:24:47,07R,255,M,Qu'est-ce que je ne comprends pas?,6,Q,"French Phase 1, Units 1-30 (2001)","10,15"
+163,FR,978-1-4423-4864-6,French 1,10,0:03:16,0:03:16,01Q,47,N,"But, no!",,,"French Phase 1, Units 1-30 (2001)",7
+164,FR,978-1-4423-4864-6,French 1,10,0:03:22,0:03:22,01R,48,M,"Mais, non!",2,S,"French Phase 1, Units 1-30 (2001)",7
+165,FR,978-1-4423-4864-6,French 1,10,0:07:32,0:07:33,02Q,91,N,What time is it?,,,"French Phase 1, Units 1-30 (2001)",17
+166,FR,978-1-4423-4864-6,French 1,10,0:07:35,0:07:36,02R,93,F,Quelle heure est-il?,3,Q,"French Phase 1, Units 1-30 (2001)",17
+167,FR,978-1-4423-4864-6,French 1,10,0:08:14,0:08:15,03Q,99,N,It’s nine o’clock.,,,"French Phase 1, Units 1-30 (2001)","12,17"
+168,FR,978-1-4423-4864-6,French 1,10,0:08:22,0:08:23,03R,100,M,Il est neuf heures.,4,S,"French Phase 1, Units 1-30 (2001)","12,17"
+169,FR,978-1-4423-4864-6,French 1,10,0:08:51,0:08:53,04Q,105,N,It’s five o’clock.,,,"French Phase 1, Units 1-30 (2001)","12,17"
+170,FR,978-1-4423-4864-6,French 1,10,0:08:55,0:08:56,04R,106,M,Il est cinq heures.,4,S,"French Phase 1, Units 1-30 (2001)","12,17"
+171,FR,978-1-4423-4864-6,French 1,10,0:09:35,0:09:36,05Q,113,N,It’s three o’clock.,,,"French Phase 1, Units 1-30 (2001)","12,17"
+172,FR,978-1-4423-4864-6,French 1,10,0:09:37,0:09:38,05R,114,M,Il est trois heures.,4,S,"French Phase 1, Units 1-30 (2001)","12,17"
+173,FR,978-1-4423-4864-6,French 1,10,0:15:32,0:15:34,06Q,181,N,I’m going to have lunch now.,,,"French Phase 1, Units 1-30 (2001)","6,17"
+174,FR,978-1-4423-4864-6,French 1,10,0:15:38,0:15:39,06R,182,M,Je vais déjeuner maintenant.,4,S,"French Phase 1, Units 1-30 (2001)","6,17"
+175,FR,978-1-4423-4864-6,French 1,10,0:16:04,0:16:06,07Q,185,N,I’m going to eat at five o’clock.,,,"French Phase 1, Units 1-30 (2001)","6,12,17"
+176,FR,978-1-4423-4864-6,French 1,10,0:16:10,0:16:12,07R,186,M,Je vais manger à cinq heures.,6,S,"French Phase 1, Units 1-30 (2001)","6,12,17"
+177,FR,978-1-4423-4864-6,French 1,10,0:18:15,0:18:16,08Q,206,N,What time is it now?,,,"French Phase 1, Units 1-30 (2001)","16,17"
+178,FR,978-1-4423-4864-6,French 1,10,0:18:19,0:18:21,08R,207,M,Quelle heure est-il maintenant?,4,Q,"French Phase 1, Units 1-30 (2001)","16,17"
+179,FR,978-1-4423-4864-6,French 1,10,0:18:29,0:18:30,09Q,209,N,It’s one o’clock now.,,,"French Phase 1, Units 1-30 (2001)","12,17"
+180,FR,978-1-4423-4864-6,French 1,10,0:18:34,0:18:35,09R,210,F,Il est une heure maintenant.,5,S,"French Phase 1, Units 1-30 (2001)","12,17"
+181,FR,978-1-4423-4864-6,French 1,10,0:22:40,0:22:42,10Q,252,N,I’m going to have lunch with you.,,,"French Phase 1, Units 1-30 (2001)",6
+182,FR,978-1-4423-4864-6,French 1,10,0:22:46,0:22:48,10R,253,F,Je vais déjeuner avec vous.,5,S,"French Phase 1, Units 1-30 (2001)",6
+183,FR,978-1-4423-4864-6,French 1,11,0:05:56,0:05:57,01Q,97,N,At six o’clock.,,,"French Phase 1, Units 1-30 (2001)","12,17"
+184,FR,978-1-4423-4864-6,French 1,11,0:06:03,0:06:04,01R,99,M,A six heures.,3,S,"French Phase 1, Units 1-30 (2001)","12,17"
+185,FR,978-1-4423-4864-6,French 1,11,0:09:17,0:09:19,02Q,127,N,I’m going to have dinner this evening.,,,"French Phase 1, Units 1-30 (2001)","6,17"
+186,FR,978-1-4423-4864-6,French 1,11,0:09:22,0:09:24,02R,128,M,Je vais dîner ce soir.,5,S,"French Phase 1, Units 1-30 (2001)","6,17"
+187,FR,978-1-4423-4864-6,French 1,11,0:09:33,0:09:35,03Q,129,N,I would like to have dinner this evening.,,,"French Phase 1, Units 1-30 (2001)","6,17"
+188,FR,978-1-4423-4864-6,French 1,11,0:09:39,0:09:40,03R,130,M,Je voudrais dîner ce soir.,5,S,"French Phase 1, Units 1-30 (2001)","6,17"
+189,FR,978-1-4423-4864-6,French 1,11,0:10:11,0:10:12,04Q,134,N,At ten o’clock.,,,"French Phase 1, Units 1-30 (2001)","12,17"
+190,FR,978-1-4423-4864-6,French 1,11,0:10:15,0:10:16,04R,135,F,A dix heures.,3,S,"French Phase 1, Units 1-30 (2001)","12,17"
+191,FR,978-1-4423-4864-6,French 1,11,0:11:37,0:11:39,05Q,148,N,"Tomorrow, I am going to have dinner with you.",,,"French Phase 1, Units 1-30 (2001)","6,9,17"
+192,FR,978-1-4423-4864-6,French 1,11,0:11:43,0:11:45,05R,149,F,"Demain, je vais dîner avec vous.",6,S,"French Phase 1, Units 1-30 (2001)","6,9,17"
+193,FR,978-1-4423-4864-6,French 1,11,0:12:38,0:12:39,06Q,160,N,Not at nine o’clock.,,,"French Phase 1, Units 1-30 (2001)","12,17"
+194,FR,978-1-4423-4864-6,French 1,11,0:12:42,0:12:43,06R,161,M,Pas à neuf heures.,4,S,"French Phase 1, Units 1-30 (2001)","12,17"
+195,FR,978-1-4423-4864-6,French 1,11,0:13:44,0:13:46,07Q,172,N,Tomorrow evening at seven o’clock.,,,"French Phase 1, Units 1-30 (2001)","12,17"
+196,FR,978-1-4423-4864-6,French 1,11,0:13:50,0:13:52,07R,173,M,Demain soir à sept heures.,5,S,"French Phase 1, Units 1-30 (2001)","12,17"
+197,FR,978-1-4423-4864-6,French 1,11,0:16:40,0:16:42,08Q,204,N,"Not today, tomorrow.",,,"French Phase 1, Units 1-30 (2001)",17
+198,FR,978-1-4423-4864-6,French 1,11,0:16:45,0:16:47,08R,205,F,"Pas aujourd’hui, demain.",3,S,"French Phase 1, Units 1-30 (2001)",17
+199,FR,978-1-4423-4864-6,French 1,11,0:18:44,0:18:46,09Q,226,N,"Not this evening, but tomorrow evening.",,,"French Phase 1, Units 1-30 (2001)",17
+200,FR,978-1-4423-4864-6,French 1,11,0:18:51,0:18:53,09R,227,M,"Pas ce soir, mais demain soir.",6,S,"French Phase 1, Units 1-30 (2001)",17
+201,FR,978-1-4423-4864-6,French 1,11,0:23:15,0:23:16,10Q,277,N,See you tomorrow.,,,"French Phase 1, Units 1-30 (2001)",17
+202,FR,978-1-4423-4864-6,French 1,11,0:23:19,0:23:19,10R,279,M,A demain.,2,S,"French Phase 1, Units 1-30 (2001)",17
+203,FR,978-1-4423-4864-6,French 1,12,0:02:42,0:02:43,01Q,48,N,Then at eight o’clock.,,,"French Phase 1, Units 1-30 (2001)","12,17"
+204,FR,978-1-4423-4864-6,French 1,12,0:02:47,0:02:48,01R,49,M,Alors a huit heures.,4,S,"French Phase 1, Units 1-30 (2001)","12,17"
+205,FR,978-1-4423-4864-6,French 1,12,0:04:53,0:04:54,02Q,71,N,You’re going to have dinner?,,,"French Phase 1, Units 1-30 (2001)",6
+206,FR,978-1-4423-4864-6,French 1,12,0:04:57,0:04:58,02R,72,F,Vous allez dîner?,3,Q,"French Phase 1, Units 1-30 (2001)",6
+207,FR,978-1-4423-4864-6,French 1,12,0:05:12,0:05:13,03Q,75,N,I’m going to eat with you.,,,"French Phase 1, Units 1-30 (2001)",6
+208,FR,978-1-4423-4864-6,French 1,12,0:05:18,0:05:19,03R,76,M,Je vais manger avec vous.,5,S,"French Phase 1, Units 1-30 (2001)",6
+209,FR,978-1-4423-4864-6,French 1,12,0:06:33,0:06:35,04Q,87,N,I’m not going to drink wine today.,,,"French Phase 1, Units 1-30 (2001)","6,17"
+210,FR,978-1-4423-4864-6,French 1,12,0:06:39,0:06:41,04R,88,M,Je ne vais pas boire du vin aujourd’hui.,8,S,"French Phase 1, Units 1-30 (2001)","6,17"
+211,FR,978-1-4423-4864-6,French 1,12,0:09:24,0:09:25,05Q,119,N,How much do I owe you?,,,"French Phase 1, Units 1-30 (2001)","14,16"
+212,FR,978-1-4423-4864-6,French 1,12,0:09:28,0:09:29,05R,120,M,Je vous dois combien?,4,Q,"French Phase 1, Units 1-30 (2001)","14,16"
+213,FR,978-1-4423-4864-6,French 1,12,0:11:16,0:11:18,06Q,138,N,How much do I owe you today?,,,"French Phase 1, Units 1-30 (2001)","14,17"
+214,FR,978-1-4423-4864-6,French 1,12,0:11:21,0:11:23,06R,140,M,Je vous dois combien aujourd’hui?,5,Q,"French Phase 1, Units 1-30 (2001)","14,17"
+215,FR,978-1-4423-4864-6,French 1,12,0:11:55,0:11:57,07Q,146,N,Eleven euros.,,,"French Phase 1, Units 1-30 (2001)","11,12"
+216,FR,978-1-4423-4864-6,French 1,12,0:12:00,0:12:00,07R,147,F,Onze euros.,2,S,"French Phase 1, Units 1-30 (2001)","11,12"
+217,FR,978-1-4423-4864-6,French 1,12,0:12:42,0:12:43,08Q,155,N,Twelve euros.,,,"French Phase 1, Units 1-30 (2001)","11,12"
+218,FR,978-1-4423-4864-6,French 1,12,0:12:44,0:12:45,08R,156,F,Douze euros.,2,S,"French Phase 1, Units 1-30 (2001)","11,12"
+219,FR,978-1-4423-4864-6,French 1,12,0:13:02,0:13:03,09Q,159,N,Two euros.,,,"French Phase 1, Units 1-30 (2001)","11,12"
+220,FR,978-1-4423-4864-6,French 1,12,0:13:06,0:13:07,09R,160,F,Deux euros.,2,S,"French Phase 1, Units 1-30 (2001)","11,12"
+221,FR,978-1-4423-4864-6,French 1,12,0:16:33,0:16:35,10Q,197,N,Do I owe you five euros?,,,"French Phase 1, Units 1-30 (2001)","11,12,14"
+222,FR,978-1-4423-4864-6,French 1,12,0:16:39,0:16:40,10R,198,F,Est-ce que je vous dois cinq euros?,7,Q,"French Phase 1, Units 1-30 (2001)","11,12,14"
+223,FR,978-1-4423-4864-6,French 1,12,0:19:01,0:19:03,11Q,222,N,I understand you now.,,,"French Phase 1, Units 1-30 (2001)","10,15,17"
+224,FR,978-1-4423-4864-6,French 1,12,0:19:06,0:19:08,11R,223,F,Je vous comprends maintenant.,7,S,"French Phase 1, Units 1-30 (2001)","10,15,17"
+225,FR,978-1-4423-4864-6,French 1,13,0:02:22,0:02:23,01Q,42,N,It’s eleven o’clock.,,,"French Phase 1, Units 1-30 (2001)","12,17"
+226,FR,978-1-4423-4864-6,French 1,13,0:02:26,0:02:27,01R,43,F,Il est onze heures.,4,S,"French Phase 1, Units 1-30 (2001)","12,17"
+227,FR,978-1-4423-4864-6,French 1,13,0:05:16,0:05:18,02Q,68,N,I’m listening.,,,"French Phase 1, Units 1-30 (2001)",7
+228,FR,978-1-4423-4864-6,French 1,13,0:05:20,0:05:21,02R,69,M,J’écoute.,2,S,"French Phase 1, Units 1-30 (2001)",7
+229,FR,978-1-4423-4864-6,French 1,13,0:07:53,0:07:54,03Q,94,N,Good evening.,,,"French Phase 1, Units 1-30 (2001)","7,10"
+230,FR,978-1-4423-4864-6,French 1,13,0:08:00,0:08:01,03R,95,M,Bonsoir.,1,S,"French Phase 1, Units 1-30 (2001)","7,10"
+231,FR,978-1-4423-4864-6,French 1,13,0:08:22,0:08:24,04Q,99,N,How many euros do you have?,,,"French Phase 1, Units 1-30 (2001)",11
+232,FR,978-1-4423-4864-6,French 1,13,0:08:27,0:08:29,04R,100,F,Vous avez combien d’euros?,4,Q,"French Phase 1, Units 1-30 (2001)",11
+233,FR,978-1-4423-4864-6,French 1,13,0:09:25,0:09:26,05Q,110,N,I have fourteen euros.,,,"French Phase 1, Units 1-30 (2001)","11,12"
+234,FR,978-1-4423-4864-6,French 1,13,0:09:29,0:09:30,05R,111,M,J’ai quatorze euros.,3,S,"French Phase 1, Units 1-30 (2001)","11,12"
+235,FR,978-1-4423-4864-6,French 1,13,0:10:20,0:10:22,06Q,119,N,How many dollars do you have?,,,"French Phase 1, Units 1-30 (2001)",11
+236,FR,978-1-4423-4864-6,French 1,13,0:10:25,0:10:27,06R,120,F,Vous avez combien de dollars?,5,Q,"French Phase 1, Units 1-30 (2001)",11
+237,FR,978-1-4423-4864-6,French 1,13,0:11:38,0:11:40,07Q,131,N,I have fifteen dollars.,,,"French Phase 1, Units 1-30 (2001)","11,12"
+238,FR,978-1-4423-4864-6,French 1,13,0:11:42,0:11:43,07R,132,M,J’ai quinze dollars.,3,S,"French Phase 1, Units 1-30 (2001)","11,12"
+239,FR,978-1-4423-4864-6,French 1,13,0:12:22,0:12:23,08Q,139,N,Do you have sixteen euros?,,,"French Phase 1, Units 1-30 (2001)","11,12"
+240,FR,978-1-4423-4864-6,French 1,13,0:12:26,0:12:28,08R,140,F,Est-ce que vous avez seize euros?,6,Q,"French Phase 1, Units 1-30 (2001)","11,12"
+241,FR,978-1-4423-4864-6,French 1,13,0:13:29,0:13:31,09Q,148,N,You don’t have sixteen dollars?,,,"French Phase 1, Units 1-30 (2001)","11,12"
+242,FR,978-1-4423-4864-6,French 1,13,0:13:35,0:13:36,09R,149,F,Vous n’avez pas seize dollars?,5,Q,"French Phase 1, Units 1-30 (2001)","11,12"
+243,FR,978-1-4423-4864-6,French 1,13,0:14:14,0:14:15,10Q,156,N,And in dollars?,,,"French Phase 1, Units 1-30 (2001)",11
+244,FR,978-1-4423-4864-6,French 1,13,0:14:18,0:14:18,10R,157,M,Et en dollars?,3,Q,"French Phase 1, Units 1-30 (2001)",11
+245,FR,978-1-4423-4864-6,French 1,13,0:22:24,0:22:26,11Q,232,N,You owe me two dollars.,,,"French Phase 1, Units 1-30 (2001)","11,12"
+246,FR,978-1-4423-4864-6,French 1,13,0:22:29,0:22:31,11R,233,F,Vous me devez deux dollars.,5,S,"French Phase 1, Units 1-30 (2001)","11,12"
+247,FR,978-1-4423-4864-6,French 1,14,0:01:14,0:01:15,01Q,26,N,How much is it in euros?,,,"French Phase 1, Units 1-30 (2001)","11,14,16"
+248,FR,978-1-4423-4864-6,French 1,14,0:01:19,0:01:20,01R,27,M,C’est combien en euros?,4,Q,"French Phase 1, Units 1-30 (2001)","11,14,16"
+249,FR,978-1-4423-4864-6,French 1,14,0:01:42,0:01:44,02Q,32,N,Here are thirteen euros.,,,"French Phase 1, Units 1-30 (2001)","11,12"
+250,FR,978-1-4423-4864-6,French 1,14,0:01:47,0:01:49,02R,33,F,Voilà treize euros.,3,S,"French Phase 1, Units 1-30 (2001)","11,12"
+251,FR,978-1-4423-4864-6,French 1,14,0:02:22,0:02:24,03Q,38,N,I owe you thirteen euros.,,,"French Phase 1, Units 1-30 (2001)","11,12"
+252,FR,978-1-4423-4864-6,French 1,14,0:02:28,0:02:29,03R,39,M,Je vous dois treize euros.,5,S,"French Phase 1, Units 1-30 (2001)","11,12"
+253,FR,978-1-4423-4864-6,French 1,14,0:04:09,0:04:10,04Q,54,N,Have you one euro?,,,"French Phase 1, Units 1-30 (2001)","11,12"
+254,FR,978-1-4423-4864-6,French 1,14,0:04:13,0:04:14,04R,55,F,Avez-vous un euro?,4,Q,"French Phase 1, Units 1-30 (2001)","11,12"
+255,FR,978-1-4423-4864-6,French 1,14,0:04:19,0:04:20,05Q,56,N,Do you want one euro?,,,"French Phase 1, Units 1-30 (2001)","11,12"
+256,FR,978-1-4423-4864-6,French 1,14,0:04:23,0:04:24,05R,57,F,Voulez-vous un euro?,4,Q,"French Phase 1, Units 1-30 (2001)","11,12"
+257,FR,978-1-4423-4864-6,French 1,14,0:04:53,0:04:55,06Q,62,N,How many dollars have you?,,,"French Phase 1, Units 1-30 (2001)",11
+258,FR,978-1-4423-4864-6,French 1,14,0:04:58,0:05:00,06R,63,F,Combien de dollars avez-vous?,5,Q,"French Phase 1, Units 1-30 (2001)",11
+259,FR,978-1-4423-4864-6,French 1,14,0:05:25,0:05:27,07Q,67,N,I have no dollars.,,,"French Phase 1, Units 1-30 (2001)","11,12"
+260,FR,978-1-4423-4864-6,French 1,14,0:05:30,0:05:31,07R,68,M,Je n’ai pas de dollars.,5,S,"French Phase 1, Units 1-30 (2001)","11,12"
+261,FR,978-1-4423-4864-6,French 1,14,0:05:53,0:05:54,08Q,72,N,I have many euros.,,,"French Phase 1, Units 1-30 (2001)","11,12"
+262,FR,978-1-4423-4864-6,French 1,14,0:05:57,0:05:58,08R,73,M,J’ai beaucoup d’euros.,3,S,"French Phase 1, Units 1-30 (2001)","11,12"
+263,FR,978-1-4423-4864-6,French 1,14,0:07:24,0:07:26,09Q,89,N,I have some euros.,,,"French Phase 1, Units 1-30 (2001)","11,12"
+264,FR,978-1-4423-4864-6,French 1,14,0:07:29,0:07:30,09R,90,M,J’ai des euros.,3,S,"French Phase 1, Units 1-30 (2001)","11,12"
+265,FR,978-1-4423-4864-6,French 1,14,0:08:08,0:08:09,10Q,96,N,Give me some euros.,,,"French Phase 1, Units 1-30 (2001)","11,12"
+266,FR,978-1-4423-4864-6,French 1,14,0:08:12,0:08:13,10R,97,M,Donnez-moi des euros.,4,S,"French Phase 1, Units 1-30 (2001)","11,12"
+267,FR,978-1-4423-4864-6,French 1,14,0:21:03,0:21:05,11Q,239,N,I’m giving you ten dollars.,,,"French Phase 1, Units 1-30 (2001)","11,12"
+268,FR,978-1-4423-4864-6,French 1,14,0:21:08,0:21:09,11R,240,M,Je vous donne dix dollars.,5,S,"French Phase 1, Units 1-30 (2001)","11,12"
+269,FR,978-1-4423-4864-6,French 1,14,0:21:44,0:21:46,12Q,247,N,You haven’t any euros.,,,"French Phase 1, Units 1-30 (2001)","11,12"
+270,FR,978-1-4423-4864-6,French 1,14,0:21:48,0:21:49,12R,248,F,Vous n’avez pas d’euros.,4,S,"French Phase 1, Units 1-30 (2001)","11,12"
+271,FR,978-1-4423-4864-6,French 1,15,0:02:54,0:02:55,01Q,46,N,You haven’t any wine?,,,"French Phase 1, Units 1-30 (2001)",6
+272,FR,978-1-4423-4864-6,French 1,15,0:02:59,0:03:00,01R,47,F,Vous n’avez pas de vin?,5,Q,"French Phase 1, Units 1-30 (2001)",6
+273,FR,978-1-4423-4864-6,French 1,15,0:04:11,0:04:13,02Q,58,N,"Yes, I have some euros, too.",,,"French Phase 1, Units 1-30 (2001)","11,12"
+274,FR,978-1-4423-4864-6,French 1,15,0:04:19,0:04:22,02R,59,F,"Si, j’ai aussi des euros.",4,S,"French Phase 1, Units 1-30 (2001)","11,12"
+275,FR,978-1-4423-4864-6,French 1,15,0:08:06,0:08:07,03Q,94,N,The wine is for you.,,,"French Phase 1, Units 1-30 (2001)",6
+276,FR,978-1-4423-4864-6,French 1,15,0:08:11,0:08:13,03R,95,M,Le vin est pour vous.,5,S,"French Phase 1, Units 1-30 (2001)",6
+277,FR,978-1-4423-4864-6,French 1,15,0:09:16,0:09:17,04Q,106,N,How much is a beer?,,,"French Phase 1, Units 1-30 (2001)","6,14"
+278,FR,978-1-4423-4864-6,French 1,15,0:09:20,0:09:21,04R,107,F,"C’est combien, une bière?",4,Q,"French Phase 1, Units 1-30 (2001)","6,14"
+279,FR,978-1-4423-4864-6,French 1,15,0:10:55,0:10:56,05Q,119,N,I can’t.,,,"French Phase 1, Units 1-30 (2001)",7
+280,FR,978-1-4423-4864-6,French 1,15,0:10:59,0:11:00,05R,120,F,Je ne peux pas.,4,S,"French Phase 1, Units 1-30 (2001)",7
+281,FR,978-1-4423-4864-6,French 1,15,0:12:00,0:12:01,06Q,130,N,Can you eat now?,,,"French Phase 1, Units 1-30 (2001)","6,17"
+282,FR,978-1-4423-4864-6,French 1,15,0:12:05,0:12:07,06R,131,M,Est-ce que vous pouvez manger maintenant?,6,Q,"French Phase 1, Units 1-30 (2001)","6,17"
+283,FR,978-1-4423-4864-6,French 1,15,0:13:36,0:13:37,07Q,147,N,I have some.,,,"French Phase 1, Units 1-30 (2001)","7,12"
+284,FR,978-1-4423-4864-6,French 1,15,0:13:40,0:13:40,07R,148,F,J’en ai.,2,S,"French Phase 1, Units 1-30 (2001)","7,12"
+285,FR,978-1-4423-4864-6,French 1,15,0:14:29,0:14:30,08Q,155,N,I haven’t any.,,,"French Phase 1, Units 1-30 (2001)","7,12"
+286,FR,978-1-4423-4864-6,French 1,15,0:14:33,0:14:34,08R,156,F,Je n’en ai pas.,4,S,"French Phase 1, Units 1-30 (2001)","7,12"
+287,FR,978-1-4423-4864-6,French 1,15,0:15:10,0:15:10,09Q,162,N,I have many.,,,"French Phase 1, Units 1-30 (2001)","7,12"
+288,FR,978-1-4423-4864-6,French 1,15,0:15:14,0:15:15,09R,163,F,J’en ai beaucoup.,3,S,"French Phase 1, Units 1-30 (2001)","7,12"
+289,FR,978-1-4423-4864-6,French 1,15,0:19:46,0:19:47,10Q,209,N,You have some euros.,,,"French Phase 1, Units 1-30 (2001)","11,12"
+290,FR,978-1-4423-4864-6,French 1,15,0:19:51,0:19:52,10R,210,M,Vous avez des euros.,4,S,"French Phase 1, Units 1-30 (2001)","11,12"
+291,FR,978-1-4423-4864-6,French 1,16,0:01:45,0:01:45,01Q,36,N,It’s for you.,,,"French Phase 1, Units 1-30 (2001)",7
+292,FR,978-1-4423-4864-6,French 1,16,0:01:48,0:01:49,01R,37,M,C’est pour vous.,3,S,"French Phase 1, Units 1-30 (2001)",7
+293,FR,978-1-4423-4864-6,French 1,16,0:04:14,0:04:16,02Q,60,N,Can you give me some euros?,,,"French Phase 1, Units 1-30 (2001)",11
+294,FR,978-1-4423-4864-6,French 1,16,0:04:21,0:04:22,02R,61,M,Est-ce que vous pouvez me donner des euros?,8,Q,"French Phase 1, Units 1-30 (2001)",11
+295,FR,978-1-4423-4864-6,French 1,16,0:04:28,0:04:29,03Q,62,N,"Give me some euros, please.",,,"French Phase 1, Units 1-30 (2001)","11,13"
+296,FR,978-1-4423-4864-6,French 1,16,0:04:34,0:04:36,03R,63,M,"Donnez-moi des euros, s’il vous plaît.",7,S,"French Phase 1, Units 1-30 (2001)","11,13"
+297,FR,978-1-4423-4864-6,French 1,16,0:05:23,0:05:25,04Q,72,N,I can give you some dollars.,,,"French Phase 1, Units 1-30 (2001)",11
+298,FR,978-1-4423-4864-6,French 1,16,0:05:29,0:05:31,04R,73,F,Je peux vous donner des dollars.,6,S,"French Phase 1, Units 1-30 (2001)",11
+299,FR,978-1-4423-4864-6,French 1,16,0:05:54,0:05:55,05Q,76,N,I don’t want any.,,,"French Phase 1, Units 1-30 (2001)",7
+300,FR,978-1-4423-4864-6,French 1,16,0:05:58,0:05:59,05R,77,M,Je n’en veux pas.,4,S,"French Phase 1, Units 1-30 (2001)",7
+301,FR,978-1-4423-4864-6,French 1,16,0:07:22,0:07:23,06Q,90,N,That’s a lot of money.,,,"French Phase 1, Units 1-30 (2001)","11,12"
+302,FR,978-1-4423-4864-6,French 1,16,0:07:26,0:07:27,06R,91,M,C’est beaucoup d’argent.,3,S,"French Phase 1, Units 1-30 (2001)","11,12"
+303,FR,978-1-4423-4864-6,French 1,16,0:08:42,0:08:43,07Q,102,N,It’s too much money.,,,"French Phase 1, Units 1-30 (2001)","11,12"
+304,FR,978-1-4423-4864-6,French 1,16,0:08:47,0:08:48,07R,103,M,C’est trop d’argent.,3,S,"French Phase 1, Units 1-30 (2001)","11,12"
+305,FR,978-1-4423-4864-6,French 1,16,0:09:38,0:09:39,08Q,110,N,I have twenty dollars.,,,"French Phase 1, Units 1-30 (2001)","11,12"
+306,FR,978-1-4423-4864-6,French 1,16,0:09:42,0:09:43,08R,111,M,J’ai vingt dollars.,3,S,"French Phase 1, Units 1-30 (2001)","11,12"
+307,FR,978-1-4423-4864-6,French 1,16,0:13:01,0:13:01,09Q,141,N,It’s not enough.,,,"French Phase 1, Units 1-30 (2001)","7,12"
+308,FR,978-1-4423-4864-6,French 1,16,0:13:05,0:13:06,09R,142,F,Ça ne suffit pas.,4,S,"French Phase 1, Units 1-30 (2001)","7,12"
+309,FR,978-1-4423-4864-6,French 1,16,0:14:45,0:14:47,10Q,156,N,Give me forty-seven euros.,,,"French Phase 1, Units 1-30 (2001)","11,12"
+310,FR,978-1-4423-4864-6,French 1,16,0:14:51,0:14:53,10R,157,F,Donnez-moi quarante-sept euros.,5,S,"French Phase 1, Units 1-30 (2001)","11,12"
+311,FR,978-1-4423-4864-6,French 1,17,0:03:15,0:03:16,01Q,53,N,I have a lot of money.,,,"French Phase 1, Units 1-30 (2001)","11,12"
+312,FR,978-1-4423-4864-6,French 1,17,0:03:20,0:03:21,01R,54,F,J’ai beaucoup d’argent.,3,S,"French Phase 1, Units 1-30 (2001)","11,12"
+313,FR,978-1-4423-4864-6,French 1,17,0:03:48,0:03:50,02Q,59,N,I can give you some money.,,,"French Phase 1, Units 1-30 (2001)",11
+314,FR,978-1-4423-4864-6,French 1,17,0:03:54,0:03:56,02R,60,F,Je peux vous donner de l'argent.,6,S,"French Phase 1, Units 1-30 (2001)",11
+315,FR,978-1-4423-4864-6,French 1,17,0:05:25,0:05:26,03Q,74,N,I have enough.,,,"French Phase 1, Units 1-30 (2001)","7,12"
+316,FR,978-1-4423-4864-6,French 1,17,0:05:29,0:05:30,03R,75,F,J’en ai assez.,3,S,"French Phase 1, Units 1-30 (2001)","7,12"
+317,FR,978-1-4423-4864-6,French 1,17,0:05:54,0:05:55,04Q,79,N,That’s a lot of money.,,,"French Phase 1, Units 1-30 (2001)","11,12"
+318,FR,978-1-4423-4864-6,French 1,17,0:05:58,0:05:59,04R,80,M,C’est beaucoup d’argent.,3,S,"French Phase 1, Units 1-30 (2001)","11,12"
+319,FR,978-1-4423-4864-6,French 1,17,0:06:40,0:06:42,05Q,88,N,Now I have forty-one euros.,,,"French Phase 1, Units 1-30 (2001)","11,12,17"
+320,FR,978-1-4423-4864-6,French 1,17,0:06:45,0:06:47,05R,89,M,Maintenant j’ai quarante et un euros.,6,S,"French Phase 1, Units 1-30 (2001)","11,12,17"
+321,FR,978-1-4423-4864-6,French 1,17,0:10:44,0:10:45,06Q,130,N,That’s too expensive.,,,"French Phase 1, Units 1-30 (2001)",14
+322,FR,978-1-4423-4864-6,French 1,17,0:10:48,0:10:49,06R,131,M,C’est trop cher.,3,S,"French Phase 1, Units 1-30 (2001)",14
+323,FR,978-1-4423-4864-6,French 1,17,0:11:18,0:11:19,07Q,135,N,It’s not too expensive.,,,"French Phase 1, Units 1-30 (2001)",14
+324,FR,978-1-4423-4864-6,French 1,17,0:11:23,0:11:24,07R,136,F,Ce n’est pas trop cher.,5,S,"French Phase 1, Units 1-30 (2001)",14
+325,FR,978-1-4423-4864-6,French 1,17,0:12:02,0:12:04,08Q,142,N,I’m giving you sixty-one euros.,,,"French Phase 1, Units 1-30 (2001)","11,12"
+326,FR,978-1-4423-4864-6,French 1,17,0:12:09,0:12:11,08R,143,M,Je vous donne soixante et un euros.,7,S,"French Phase 1, Units 1-30 (2001)","11,12"
+327,FR,978-1-4423-4864-6,French 1,17,0:15:09,0:15:10,09Q,170,N,You speak too fast.,,,"French Phase 1, Units 1-30 (2001)",15
+328,FR,978-1-4423-4864-6,French 1,17,0:15:13,0:15:14,09R,171,M,Vous parlez trop vite.,4,S,"French Phase 1, Units 1-30 (2001)",15
+329,FR,978-1-4423-4864-6,French 1,17,0:15:40,0:15:41,10Q,175,N,I don’t talk fast.,,,"French Phase 1, Units 1-30 (2001)",15
+330,FR,978-1-4423-4864-6,French 1,17,0:15:45,0:15:46,10R,176,F,Je ne parle pas vite.,5,S,"French Phase 1, Units 1-30 (2001)",15
+331,FR,978-1-4423-4864-6,French 1,18,0:06:49,0:06:51,01Q,87,N,"Here, it’s more expensive.",,,"French Phase 1, Units 1-30 (2001)",14
+332,FR,978-1-4423-4864-6,French 1,18,0:06:55,0:06:57,01R,88,F,"Ici, c’est plus cher.",4,S,"French Phase 1, Units 1-30 (2001)",14
+333,FR,978-1-4423-4864-6,French 1,18,0:07:32,0:07:33,02Q,94,N,Speak more quickly.,,,"French Phase 1, Units 1-30 (2001)",15
+334,FR,978-1-4423-4864-6,French 1,18,0:07:36,0:07:37,02R,95,F,Parlez plus vite.,3,S,"French Phase 1, Units 1-30 (2001)",15
+335,FR,978-1-4423-4864-6,French 1,18,0:08:07,0:08:08,03Q,100,N,My husband speaks quickly.,,,"French Phase 1, Units 1-30 (2001)","5,15"
+336,FR,978-1-4423-4864-6,French 1,18,0:08:11,0:08:13,03R,101,F,Mon mari parle vite.,4,S,"French Phase 1, Units 1-30 (2001)","5,15"
+337,FR,978-1-4423-4864-6,French 1,18,0:09:46,0:09:48,04Q,116,N,My wife would like to drink something.,,,"French Phase 1, Units 1-30 (2001)","5,6"
+338,FR,978-1-4423-4864-6,French 1,18,0:09:53,0:09:55,04R,117,M,Ma femme voudrait boire quelque chose.,6,S,"French Phase 1, Units 1-30 (2001)","5,6"
+339,FR,978-1-4423-4864-6,French 1,18,0:10:46,0:10:48,05Q,125,N,My husband wants to drink something.,,,"French Phase 1, Units 1-30 (2001)","5,6"
+340,FR,978-1-4423-4864-6,French 1,18,0:10:52,0:10:54,05R,126,F,Mon mari veut boire quelque chose.,6,S,"French Phase 1, Units 1-30 (2001)","5,6"
+341,FR,978-1-4423-4864-6,French 1,18,0:11:59,0:12:01,06Q,135,N,I would like to drink some tea.,,,"French Phase 1, Units 1-30 (2001)",6
+342,FR,978-1-4423-4864-6,French 1,18,0:12:05,0:12:06,06R,136,F,Je voudrais boire du thé.,5,S,"French Phase 1, Units 1-30 (2001)",6
+343,FR,978-1-4423-4864-6,French 1,18,0:12:30,0:12:31,07Q,140,N,I would like to drink some water.,,,"French Phase 1, Units 1-30 (2001)",6
+344,FR,978-1-4423-4864-6,French 1,18,0:12:34,0:12:36,07R,141,M,Je voudrais boire de l’eau.,5,S,"French Phase 1, Units 1-30 (2001)",6
+345,FR,978-1-4423-4864-6,French 1,18,0:14:39,0:14:41,08Q,160,N,Your wife isn’t here.,,,"French Phase 1, Units 1-30 (2001)",5
+346,FR,978-1-4423-4864-6,French 1,18,0:14:45,0:14:46,08R,161,F,Votre femme n’est pas ici.,5,S,"French Phase 1, Units 1-30 (2001)",5
+347,FR,978-1-4423-4864-6,French 1,18,0:14:56,0:14:58,09Q,163,N,Your husband would like to eat something right now.,,,"French Phase 1, Units 1-30 (2001)","5,6,17"
+348,FR,978-1-4423-4864-6,French 1,18,0:15:04,0:15:07,09R,164,M,Votre mari voudrait manger quelque chose maintenant.,7,S,"French Phase 1, Units 1-30 (2001)","5,6,17"
+349,FR,978-1-4423-4864-6,French 1,18,0:16:35,0:16:36,10Q,180,N,Who is over there?,,,"French Phase 1, Units 1-30 (2001)","4,7"
+350,FR,978-1-4423-4864-6,French 1,18,0:16:39,0:16:40,10R,181,M,Qui est là-bas?,4,Q,"French Phase 1, Units 1-30 (2001)","4,7"
+351,FR,978-1-4423-4864-6,French 1,19,0:02:14,0:02:15,01Q,42,N,Much too fast.,,,"French Phase 1, Units 1-30 (2001)",15
+352,FR,978-1-4423-4864-6,French 1,19,0:02:18,0:02:19,01R,43,M,Beaucoup trop vite.,3,S,"French Phase 1, Units 1-30 (2001)",15
+353,FR,978-1-4423-4864-6,French 1,19,0:05:03,0:05:06,02Q,70,N,I’m going to give you fifty-three euros.,,,"French Phase 1, Units 1-30 (2001)","11,12"
+354,FR,978-1-4423-4864-6,French 1,19,0:05:12,0:05:14,02R,71,F,Je vais vous donner cinquante-trois euros.,7,S,"French Phase 1, Units 1-30 (2001)","11,12"
+355,FR,978-1-4423-4864-6,French 1,19,0:06:35,0:06:35,03Q,84,N,He’s over there.,,,"French Phase 1, Units 1-30 (2001)",4
+356,FR,978-1-4423-4864-6,French 1,19,0:06:38,0:06:39,03R,85,F,Il est là-bas.,4,S,"French Phase 1, Units 1-30 (2001)",4
+357,FR,978-1-4423-4864-6,French 1,19,0:07:03,0:07:03,04Q,88,N,She’s over there.,,,"French Phase 1, Units 1-30 (2001)",4
+358,FR,978-1-4423-4864-6,French 1,19,0:07:06,0:07:07,04R,89,M,Elle est là-bas.,4,S,"French Phase 1, Units 1-30 (2001)",4
+359,FR,978-1-4423-4864-6,French 1,19,0:09:04,0:09:05,05Q,110,N,Come in!,,,"French Phase 1, Units 1-30 (2001)",13
+360,FR,978-1-4423-4864-6,French 1,19,0:09:08,0:09:08,05R,111,F,Entrez!,1,S,"French Phase 1, Units 1-30 (2001)",13
+361,FR,978-1-4423-4864-6,French 1,19,0:09:26,0:09:27,06Q,115,N,Pleased to meet you.,,,"French Phase 1, Units 1-30 (2001)","10,13,16"
+362,FR,978-1-4423-4864-6,French 1,19,0:09:30,0:09:31,06R,116,F,Enchantée.,1,S,"French Phase 1, Units 1-30 (2001)","10,13,16"
+363,FR,978-1-4423-4864-6,French 1,19,0:11:06,0:11:07,07Q,135,N,Where do you live?,,,"French Phase 1, Units 1-30 (2001)","7,10"
+364,FR,978-1-4423-4864-6,French 1,19,0:11:10,0:11:11,07R,136,M,Où habitez-vous?,3,Q,"French Phase 1, Units 1-30 (2001)","7,10"
+365,FR,978-1-4423-4864-6,French 1,19,0:13:21,0:13:21,08Q,157,N,We live here.,,,"French Phase 1, Units 1-30 (2001)",9
+366,FR,978-1-4423-4864-6,French 1,19,0:13:24,0:13:26,08R,158,M,Nous habitons ici.,3,S,"French Phase 1, Units 1-30 (2001)",9
+367,FR,978-1-4423-4864-6,French 1,19,0:15:32,0:15:34,09Q,177,N,We’d like to drink some coffee.,,,"French Phase 1, Units 1-30 (2001)",6
+368,FR,978-1-4423-4864-6,French 1,19,0:15:38,0:15:40,09R,178,F,Nous voudrions boire du café.,5,S,"French Phase 1, Units 1-30 (2001)",6
+369,FR,978-1-4423-4864-6,French 1,19,0:21:01,0:21:03,10Q,239,N,"Now we can drink something, and talk.",,,"French Phase 1, Units 1-30 (2001)","6,17"
+370,FR,978-1-4423-4864-6,French 1,19,0:21:10,0:21:13,10R,240,M,"Maintenant nous pouvons boire quelque chose, et parler.",8,S,"French Phase 1, Units 1-30 (2001)","6,17"
+371,FR,978-1-4423-4864-6,French 1,20,0:03:21,0:03:22,01Q,54,N,I would like some coffee.,,,"French Phase 1, Units 1-30 (2001)",6
+372,FR,978-1-4423-4864-6,French 1,20,0:03:25,0:03:26,01R,55,F,Je voudrais du café.,4,S,"French Phase 1, Units 1-30 (2001)",6
+373,FR,978-1-4423-4864-6,French 1,20,0:04:33,0:04:34,02Q,67,N,I don’t know where he is.,,,"French Phase 1, Units 1-30 (2001)",4
+374,FR,978-1-4423-4864-6,French 1,20,0:04:37,0:04:38,02R,68,F,Je ne sais pas où il est.,7,S,"French Phase 1, Units 1-30 (2001)",4
+375,FR,978-1-4423-4864-6,French 1,20,0:05:58,0:05:59,03Q,76,N,He is in America.,,,"French Phase 1, Units 1-30 (2001)",9
+376,FR,978-1-4423-4864-6,French 1,20,0:06:02,0:06:03,03R,77,F,Il est en Amérique.,4,S,"French Phase 1, Units 1-30 (2001)",9
+377,FR,978-1-4423-4864-6,French 1,20,0:06:31,0:06:32,04Q,85,N,Do you have any children?,,,"French Phase 1, Units 1-30 (2001)",5
+378,FR,978-1-4423-4864-6,French 1,20,0:06:35,0:06:36,04R,86,M,Est-ce que vous avez des enfants?,6,Q,"French Phase 1, Units 1-30 (2001)",5
+379,FR,978-1-4423-4864-6,French 1,20,0:07:13,0:07:14,05Q,91,N,We have children.,,,"French Phase 1, Units 1-30 (2001)",5
+380,FR,978-1-4423-4864-6,French 1,20,0:07:18,0:07:19,05R,92,M,Nous avons des enfants.,4,S,"French Phase 1, Units 1-30 (2001)",5
+381,FR,978-1-4423-4864-6,French 1,20,0:07:32,0:07:34,06Q,94,N,How many children do you have?,,,"French Phase 1, Units 1-30 (2001)",5
+382,FR,978-1-4423-4864-6,French 1,20,0:07:37,0:07:38,06R,95,F,Combien d’enfants avez-vous?,4,Q,"French Phase 1, Units 1-30 (2001)",5
+383,FR,978-1-4423-4864-6,French 1,20,0:09:16,0:09:17,07Q,113,N,We have one girl.,,,"French Phase 1, Units 1-30 (2001)","5,12"
+384,FR,978-1-4423-4864-6,French 1,20,0:09:21,0:09:23,07R,114,M,Nous avons une fille.,4,S,"French Phase 1, Units 1-30 (2001)","5,12"
+385,FR,978-1-4423-4864-6,French 1,20,0:10:42,0:10:44,08Q,126,N,"We would like a boy, too.",,,"French Phase 1, Units 1-30 (2001)",5
+386,FR,978-1-4423-4864-6,French 1,20,0:10:49,0:10:51,08R,127,M,Nous voudrions aussi un garçon.,5,S,"French Phase 1, Units 1-30 (2001)",5
+387,FR,978-1-4423-4864-6,French 1,20,0:12:52,0:12:54,09Q,146,N,The boy is big.,,,"French Phase 1, Units 1-30 (2001)",5
+388,FR,978-1-4423-4864-6,French 1,20,0:12:57,0:12:59,09R,147,M,Le garcon est grand.,4,S,"French Phase 1, Units 1-30 (2001)",5
+389,FR,978-1-4423-4864-6,French 1,20,0:19:58,0:19:59,10Q,223,N,"You’re American, right?",,,"French Phase 1, Units 1-30 (2001)","10,16"
+390,FR,978-1-4423-4864-6,French 1,20,0:20:02,0:20:04,10R,225,F,"Vous êtes américain, n’est-ce pas?",5,Q,"French Phase 1, Units 1-30 (2001)","10,16"
+391,FR,978-1-4423-4864-6,French 1,21,0:03:25,0:03:26,01Q,58,N,We have a big girl.,,,"French Phase 1, Units 1-30 (2001)",5
+392,FR,978-1-4423-4864-6,French 1,21,0:03:31,0:03:32,01R,59,M,Nous avons une grande fille.,5,S,"French Phase 1, Units 1-30 (2001)",5
+393,FR,978-1-4423-4864-6,French 1,21,0:04:24,0:04:24,02Q,67,N,We can wait.,,,"French Phase 1, Units 1-30 (2001)",7
+394,FR,978-1-4423-4864-6,French 1,21,0:04:28,0:04:29,02R,68,M,Nous pouvons attendre.,3,S,"French Phase 1, Units 1-30 (2001)",7
+395,FR,978-1-4423-4864-6,French 1,21,0:04:46,0:04:47,03Q,70,N,Can you wait?,,,"French Phase 1, Units 1-30 (2001)",7
+396,FR,978-1-4423-4864-6,French 1,21,0:04:51,0:04:53,03R,71,M,Est-ce que vous pouvez attendre?,5,Q,"French Phase 1, Units 1-30 (2001)",7
+397,FR,978-1-4423-4864-6,French 1,21,0:05:29,0:05:31,04Q,77,N,We want a lot of children.,,,"French Phase 1, Units 1-30 (2001)","5,12"
+398,FR,978-1-4423-4864-6,French 1,21,0:05:35,0:05:36,04R,78,M,Nous voulons beaucoup d’enfants.,4,S,"French Phase 1, Units 1-30 (2001)","5,12"
+399,FR,978-1-4423-4864-6,French 1,21,0:10:19,0:10:21,05Q,120,N,Our boy is little.,,,"French Phase 1, Units 1-30 (2001)",5
+400,FR,978-1-4423-4864-6,French 1,21,0:10:24,0:10:25,05R,121,M,Notre garçon est petit.,4,S,"French Phase 1, Units 1-30 (2001)",5
+401,FR,978-1-4423-4864-6,French 1,21,0:11:16,0:11:17,06Q,129,N,Really?,,,"French Phase 1, Units 1-30 (2001)",7
+402,FR,978-1-4423-4864-6,French 1,21,0:11:20,0:11:20,06R,130,F,Vraiment?,1,Q,"French Phase 1, Units 1-30 (2001)",7
+403,FR,978-1-4423-4864-6,French 1,21,0:11:40,0:11:41,07Q,133,N,He is really little.,,,"French Phase 1, Units 1-30 (2001)","5,7"
+404,FR,978-1-4423-4864-6,French 1,21,0:11:44,0:11:46,07R,134,M,Il est vraiment petit.,4,S,"French Phase 1, Units 1-30 (2001)","5,7"
+405,FR,978-1-4423-4864-6,French 1,21,0:13:55,0:13:56,08Q,156,N,Where is the bathroom?,,,"French Phase 1, Units 1-30 (2001)","7,16"
+406,FR,978-1-4423-4864-6,French 1,21,0:13:59,0:14:00,08R,157,M,Où sont les toilettes?,4,Q,"French Phase 1, Units 1-30 (2001)","7,16"
+407,FR,978-1-4423-4864-6,French 1,21,0:19:19,0:19:20,09Q,207,N,You have a big family.,,,"French Phase 1, Units 1-30 (2001)",5
+408,FR,978-1-4423-4864-6,French 1,21,0:19:25,0:19:26,09R,208,F,Vous avez une grande famille.,5,S,"French Phase 1, Units 1-30 (2001)",5
+409,FR,978-1-4423-4864-6,French 1,21,0:22:51,0:22:53,10Q,245,N,We are going down there.,,,"French Phase 1, Units 1-30 (2001)","4,9"
+410,FR,978-1-4423-4864-6,French 1,21,0:22:57,0:22:58,10R,246,M,Nous allons là-bas.,4,S,"French Phase 1, Units 1-30 (2001)","4,9"
+411,FR,978-1-4423-4864-6,French 1,22,0:04:15,0:04:16,01Q,63,N,Where are the boys?,,,"French Phase 1, Units 1-30 (2001)",5
+412,FR,978-1-4423-4864-6,French 1,22,0:04:20,0:04:21,01R,64,F,Ou sont les garçons?,4,Q,"French Phase 1, Units 1-30 (2001)",5
+413,FR,978-1-4423-4864-6,French 1,22,0:05:17,0:05:18,02Q,75,N,How many people?,,,"French Phase 1, Units 1-30 (2001)","5,12"
+414,FR,978-1-4423-4864-6,French 1,22,0:05:21,0:05:22,02R,76,F,Combien de personnes?,3,Q,"French Phase 1, Units 1-30 (2001)","5,12"
+415,FR,978-1-4423-4864-6,French 1,22,0:07:03,0:07:05,03Q,92,N,There are how many people in your family?,,,"French Phase 1, Units 1-30 (2001)","5,12"
+416,FR,978-1-4423-4864-6,French 1,22,0:07:10,0:07:13,03R,93,F,Il y a combien de personnes dans votre famille?,9,Q,"French Phase 1, Units 1-30 (2001)","5,12"
+417,FR,978-1-4423-4864-6,French 1,22,0:07:49,0:07:50,04Q,99,N,In my car.,,,"French Phase 1, Units 1-30 (2001)",18
+418,FR,978-1-4423-4864-6,French 1,22,0:07:53,0:07:54,04R,100,M,Dans ma voiture.,3,S,"French Phase 1, Units 1-30 (2001)",18
+419,FR,978-1-4423-4864-6,French 1,22,0:10:23,0:10:25,05Q,126,N,There are five people in my family.,,,"French Phase 1, Units 1-30 (2001)","5,12"
+420,FR,978-1-4423-4864-6,French 1,22,0:10:30,0:10:32,05R,127,M,Il y a cinq personnes dans ma famille.,8,S,"French Phase 1, Units 1-30 (2001)","5,12"
+421,FR,978-1-4423-4864-6,French 1,22,0:13:48,0:13:49,06Q,161,N,I speak French a little.,,,"French Phase 1, Units 1-30 (2001)","10,15"
+422,FR,978-1-4423-4864-6,French 1,22,0:13:57,0:13:58,06R,163,M,Je parle un peu le français.,6,S,"French Phase 1, Units 1-30 (2001)","10,15"
+423,FR,978-1-4423-4864-6,French 1,22,0:16:03,0:16:04,07Q,182,N,We want some gas.,,,"French Phase 1, Units 1-30 (2001)","9,18"
+424,FR,978-1-4423-4864-6,French 1,22,0:16:07,0:16:08,07R,183,M,Nous voulons de l’essence.,4,S,"French Phase 1, Units 1-30 (2001)","9,18"
+425,FR,978-1-4423-4864-6,French 1,22,0:18:14,0:18:15,08Q,201,N,Give me some gas.,,,"French Phase 1, Units 1-30 (2001)","9,18"
+426,FR,978-1-4423-4864-6,French 1,22,0:18:19,0:18:21,08R,202,M,Donnez-moi de l’essence.,4,S,"French Phase 1, Units 1-30 (2001)","9,18"
+427,FR,978-1-4423-4864-6,French 1,22,0:21:12,0:21:14,09Q,231,N,There are many American cars.,,,"French Phase 1, Units 1-30 (2001)","9,18"
+428,FR,978-1-4423-4864-6,French 1,22,0:21:18,0:21:20,09R,232,F,Il y a beaucoup de voitures américaines.,7,S,"French Phase 1, Units 1-30 (2001)","9,18"
+429,FR,978-1-4423-4864-6,French 1,22,0:22:00,0:22:03,10Q,238,N,Is there gas in the car?,,,"French Phase 1, Units 1-30 (2001)",18
+430,FR,978-1-4423-4864-6,French 1,22,0:22:06,0:22:08,10R,239,M,Est-ce qu’il y a de l’essence dans la voiture?,9,Q,"French Phase 1, Units 1-30 (2001)",18
+431,FR,978-1-4423-4864-6,French 1,22,0:22:13,0:22:14,11Q,240,N,How many liters?,,,"French Phase 1, Units 1-30 (2001)","12,14"
+432,FR,978-1-4423-4864-6,French 1,22,0:22:18,0:22:18,11R,241,M,Combien de litres?,3,Q,"French Phase 1, Units 1-30 (2001)","12,14"
+433,FR,978-1-4423-4864-6,French 1,22,0:23:15,0:23:16,12Q,252,N,How many kilometers?,,,"French Phase 1, Units 1-30 (2001)","12,18"
+434,FR,978-1-4423-4864-6,French 1,22,0:23:20,0:23:21,12R,253,F,Combien de kilomètres?,3,Q,"French Phase 1, Units 1-30 (2001)","12,18"
+435,FR,978-1-4423-4864-6,French 1,22,0:24:32,0:24:34,13Q,265,N,It’s enough for fifty kilometers.,,,"French Phase 1, Units 1-30 (2001)","12,18"
+436,FR,978-1-4423-4864-6,French 1,22,0:24:39,0:24:41,13R,266,M,Ça suffit pour cinquante kilomètres.,5,S,"French Phase 1, Units 1-30 (2001)","12,18"
+437,FR,978-1-4423-4864-6,French 1,23,0:03:22,0:03:24,01Q,49,N,Our family is big.,,,"French Phase 1, Units 1-30 (2001)",5
+438,FR,978-1-4423-4864-6,French 1,23,0:03:28,0:03:30,01R,50,M,Notre famille est grande.,4,S,"French Phase 1, Units 1-30 (2001)",5
+439,FR,978-1-4423-4864-6,French 1,23,0:04:00,0:04:02,02Q,55,N,The little one (f) is over there.,,,"French Phase 1, Units 1-30 (2001)",5
+440,FR,978-1-4423-4864-6,French 1,23,0:04:06,0:04:07,02R,56,M,La petite est là-bas.,5,S,"French Phase 1, Units 1-30 (2001)",5
+441,FR,978-1-4423-4864-6,French 1,23,0:06:25,0:06:27,03Q,79,N,Our car is too big.,,,"French Phase 1, Units 1-30 (2001)",18
+442,FR,978-1-4423-4864-6,French 1,23,0:06:31,0:06:33,03R,80,M,Notre voiture est trop grande.,5,S,"French Phase 1, Units 1-30 (2001)",18
+443,FR,978-1-4423-4864-6,French 1,23,0:07:54,0:07:55,04Q,92,N,Put in ten liters.,,,"French Phase 1, Units 1-30 (2001)",12
+444,FR,978-1-4423-4864-6,French 1,23,0:07:58,0:07:59,04R,93,F,Mettez dix litres.,3,S,"French Phase 1, Units 1-30 (2001)",12
+445,FR,978-1-4423-4864-6,French 1,23,0:08:58,0:08:58,05Q,103,N,Wait!,,,"French Phase 1, Units 1-30 (2001)",7
+446,FR,978-1-4423-4864-6,French 1,23,0:09:02,0:09:03,05R,104,M,Attendez!,1,S,"French Phase 1, Units 1-30 (2001)",7
+447,FR,978-1-4423-4864-6,French 1,23,0:11:35,0:11:36,06Q,130,N,It’s far.,,,"French Phase 1, Units 1-30 (2001)","4,18"
+448,FR,978-1-4423-4864-6,French 1,23,0:11:39,0:11:39,06R,131,M,C’est loin.,2,S,"French Phase 1, Units 1-30 (2001)","4,18"
+449,FR,978-1-4423-4864-6,French 1,23,0:15:53,0:15:55,07Q,174,N,There are seventy-five kilometers.,,,"French Phase 1, Units 1-30 (2001)","12,18"
+450,FR,978-1-4423-4864-6,French 1,23,0:15:59,0:16:01,07R,175,F,Il y a soixante-quinze kilomètres.,6,S,"French Phase 1, Units 1-30 (2001)","12,18"
+451,FR,978-1-4423-4864-6,French 1,23,0:16:14,0:16:14,08Q,178,N,Which route is it?,,,"French Phase 1, Units 1-30 (2001)","4,18"
+452,FR,978-1-4423-4864-6,French 1,23,0:16:17,0:16:18,08R,179,F,C’est quelle route?,3,Q,"French Phase 1, Units 1-30 (2001)","4,18"
+453,FR,978-1-4423-4864-6,French 1,23,0:16:47,0:16:48,09Q,183,N,Which is the route?,,,"French Phase 1, Units 1-30 (2001)","4,18"
+454,FR,978-1-4423-4864-6,French 1,23,0:16:51,0:16:52,09R,184,F,Quelle est la route?,4,Q,"French Phase 1, Units 1-30 (2001)","4,18"
+455,FR,978-1-4423-4864-6,French 1,23,0:18:21,0:18:22,10Q,199,N,It’s straight ahead.,,,"French Phase 1, Units 1-30 (2001)",4
+456,FR,978-1-4423-4864-6,French 1,23,0:18:25,0:18:26,10R,198,M,C’est tout droit.,3,S,"French Phase 1, Units 1-30 (2001)",4
+457,FR,978-1-4423-4864-6,French 1,24,0:02:25,0:02:27,01Q,38,N,There are many American cars in France.,,,"French Phase 1, Units 1-30 (2001)","9,18"
+458,FR,978-1-4423-4864-6,French 1,24,0:02:32,0:02:35,01R,39,M,Il y a beaucoup de voitures américaines en France.,9,S,"French Phase 1, Units 1-30 (2001)","9,18"
+459,FR,978-1-4423-4864-6,French 1,24,0:03:15,0:03:16,02Q,47,N,Two euros per liter.,,,"French Phase 1, Units 1-30 (2001)","11,12"
+460,FR,978-1-4423-4864-6,French 1,24,0:03:20,0:03:24,02R,49,M,Deux euros le litre.,4,S,"French Phase 1, Units 1-30 (2001)","11,12"
+461,FR,978-1-4423-4864-6,French 1,24,0:04:04,0:04:06,03Q,56,N,"Put in forty liters, please.",,,"French Phase 1, Units 1-30 (2001)",12
+462,FR,978-1-4423-4864-6,French 1,24,0:04:10,0:04:12,03R,57,M,"Mettez quarante litres, s’il vous plaît.",6,S,"French Phase 1, Units 1-30 (2001)",12
+463,FR,978-1-4423-4864-6,French 1,24,0:05:56,0:05:58,04Q,78,N,Which is the route to go to Paris?,,,"French Phase 1, Units 1-30 (2001)","4,18"
+464,FR,978-1-4423-4864-6,French 1,24,0:06:03,0:06:04,04R,80,M,Quelle est la route pour aller à Paris?,8,Q,"French Phase 1, Units 1-30 (2001)","4,18"
+465,FR,978-1-4423-4864-6,French 1,24,0:08:49,0:08:50,05Q,104,N,Take the Paris route.,,,"French Phase 1, Units 1-30 (2001)","4,18"
+466,FR,978-1-4423-4864-6,French 1,24,0:08:53,0:08:54,05R,105,F,Prenez la route de Paris.,5,S,"French Phase 1, Units 1-30 (2001)","4,18"
+467,FR,978-1-4423-4864-6,French 1,24,0:10:11,0:10:12,06Q,118,N,It’s to the right.,,,"French Phase 1, Units 1-30 (2001)",4
+468,FR,978-1-4423-4864-6,French 1,24,0:10:15,0:10:16,06R,119,F,C’est à droite.,3,S,"French Phase 1, Units 1-30 (2001)",4
+469,FR,978-1-4423-4864-6,French 1,24,0:11:31,0:11:33,07Q,130,N,The correct route is to the right.,,,"French Phase 1, Units 1-30 (2001)","4,18"
+470,FR,978-1-4423-4864-6,French 1,24,0:11:36,0:11:39,07R,131,F,La bonne route est à droite.,6,S,"French Phase 1, Units 1-30 (2001)","4,18"
+471,FR,978-1-4423-4864-6,French 1,24,0:12:40,0:12:41,08Q,142,N,Go straight ahead.,,,"French Phase 1, Units 1-30 (2001)",4
+472,FR,978-1-4423-4864-6,French 1,24,0:12:46,0:12:48,08R,143,F,Prenez tout droit.,3,S,"French Phase 1, Units 1-30 (2001)",4
+473,FR,978-1-4423-4864-6,French 1,24,0:13:05,0:13:06,09Q,146,N,The correct route is to the left.,,,"French Phase 1, Units 1-30 (2001)","4,18"
+474,FR,978-1-4423-4864-6,French 1,24,0:13:09,0:13:11,09R,147,F,La bonne route est à gauche.,6,S,"French Phase 1, Units 1-30 (2001)","4,18"
+475,FR,978-1-4423-4864-6,French 1,24,0:15:57,0:15:58,10Q,174,N,And then straight ahead.,,,"French Phase 1, Units 1-30 (2001)",4
+476,FR,978-1-4423-4864-6,French 1,24,0:16:01,0:16:02,10R,175,F,Et puis tout droit.,4,S,"French Phase 1, Units 1-30 (2001)",4
+477,FR,978-1-4423-4864-6,French 1,24,0:20:03,0:20:04,11Q,218,N,The good route is here.,,,"French Phase 1, Units 1-30 (2001)","4,18"
+478,FR,978-1-4423-4864-6,French 1,24,0:20:08,0:20:11,11R,219,F,La bonne route est ici.,5,S,"French Phase 1, Units 1-30 (2001)","4,18"
+479,FR,978-1-4423-4864-6,French 1,25,0:00:57,0:00:57,01Q,23,N,Where are you going?,,,"French Phase 1, Units 1-30 (2001)","7,18"
+480,FR,978-1-4423-4864-6,French 1,25,0:01:00,0:01:02,01R,24,F,Où allez-vous?,3,Q,"French Phase 1, Units 1-30 (2001)","7,18"
+481,FR,978-1-4423-4864-6,French 1,25,0:05:51,0:05:53,02Q,75,N,There are eighty kilometers.,,,"French Phase 1, Units 1-30 (2001)","12,18"
+482,FR,978-1-4423-4864-6,French 1,25,0:05:56,0:05:58,02R,76,F,Il y a quatre-vingts kilomètres.,6,S,"French Phase 1, Units 1-30 (2001)","12,18"
+483,FR,978-1-4423-4864-6,French 1,25,0:08:10,0:08:11,03Q,99,N,Can I buy something?,,,"French Phase 1, Units 1-30 (2001)",14
+484,FR,978-1-4423-4864-6,French 1,25,0:08:16,0:08:18,03R,100,M,Est-ce que je peux acheter quelque chose?,7,Q,"French Phase 1, Units 1-30 (2001)",14
+485,FR,978-1-4423-4864-6,French 1,25,0:11:35,0:11:36,04Q,135,N,The stores are closed.,,,"French Phase 1, Units 1-30 (2001)",14
+486,FR,978-1-4423-4864-6,French 1,25,0:11:39,0:11:40,04R,136,F,Les magasins sont fermés.,4,S,"French Phase 1, Units 1-30 (2001)",14
+487,FR,978-1-4423-4864-6,French 1,25,0:12:40,0:12:42,05Q,146,N,Because the stores are closed.,,,"French Phase 1, Units 1-30 (2001)",14
+488,FR,978-1-4423-4864-6,French 1,25,0:12:46,0:12:48,05R,147,F,Parce que les magasins sont fermés.,6,S,"French Phase 1, Units 1-30 (2001)",14
+489,FR,978-1-4423-4864-6,French 1,25,0:14:38,0:14:40,06Q,167,N,The department stores are open now.,,,"French Phase 1, Units 1-30 (2001)","14,17"
+490,FR,978-1-4423-4864-6,French 1,25,0:14:45,0:14:47,06R,168,M,Les grands magasins sont ouverts maintenant.,6,S,"French Phase 1, Units 1-30 (2001)","14,17"
+491,FR,978-1-4423-4864-6,French 1,25,0:16:18,0:16:19,07Q,183,N,Because it’s late.,,,"French Phase 1, Units 1-30 (2001)",17
+492,FR,978-1-4423-4864-6,French 1,25,0:16:24,0:16:25,07R,184,F,Parce qu’il est tard.,4,S,"French Phase 1, Units 1-30 (2001)",17
+493,FR,978-1-4423-4864-6,French 1,25,0:20:03,0:20:04,08Q,218,N,In a department store.,,,"French Phase 1, Units 1-30 (2001)",14
+494,FR,978-1-4423-4864-6,French 1,25,0:20:08,0:20:10,08R,219,M,Dans un grand magasin.,4,S,"French Phase 1, Units 1-30 (2001)",14
+495,FR,978-1-4423-4864-6,French 1,25,0:21:08,0:21:10,09Q,228,N,Because they are open this evening.,,,"French Phase 1, Units 1-30 (2001)","14,17"
+496,FR,978-1-4423-4864-6,French 1,25,0:21:14,0:21:16,09R,229,F,Parce qu’ils sont ouverts ce soir.,6,S,"French Phase 1, Units 1-30 (2001)","14,17"
+497,FR,978-1-4423-4864-6,French 1,25,0:23:38,0:23:39,10Q,252,N,It’s enough for me.,,,"French Phase 1, Units 1-30 (2001)",7
+498,FR,978-1-4423-4864-6,French 1,25,0:23:43,0:23:44,10R,253,M,Ça suffit pour moi.,4,S,"French Phase 1, Units 1-30 (2001)",7
+499,FR,978-1-4423-4864-6,French 1,26,0:02:01,0:02:02,01Q,47,N,Which is the correct route?,,,"French Phase 1, Units 1-30 (2001)","4,18"
+500,FR,978-1-4423-4864-6,French 1,26,0:02:06,0:02:07,01R,48,M,Quelle est la bonne route?,5,Q,"French Phase 1, Units 1-30 (2001)","4,18"
+501,FR,978-1-4423-4864-6,French 1,26,0:03:04,0:03:05,02Q,59,N,Twenty kilometers farther.,,,"French Phase 1, Units 1-30 (2001)","4,12,18"
+502,FR,978-1-4423-4864-6,French 1,26,0:03:09,0:03:10,02R,60,F,Vingt kilomètres plus loin.,4,S,"French Phase 1, Units 1-30 (2001)","4,12,18"
+503,FR,978-1-4423-4864-6,French 1,26,0:04:13,0:04:14,03Q,71,N,How much is it per liter?,,,"French Phase 1, Units 1-30 (2001)",14
+504,FR,978-1-4423-4864-6,French 1,26,0:04:17,0:04:18,03R,72,M,C’est combien le litre?,4,Q,"French Phase 1, Units 1-30 (2001)",14
+505,FR,978-1-4423-4864-6,French 1,26,0:09:07,0:09:07,04Q,120,N,Take a taxi.,,,"French Phase 1, Units 1-30 (2001)",18
+506,FR,978-1-4423-4864-6,French 1,26,0:09:11,0:09:12,04R,121,M,Prenez un taxi.,3,S,"French Phase 1, Units 1-30 (2001)",18
+507,FR,978-1-4423-4864-6,French 1,26,0:09:23,0:09:24,05Q,122,N,I’m going to take my car.,,,"French Phase 1, Units 1-30 (2001)",18
+508,FR,978-1-4423-4864-6,French 1,26,0:09:27,0:09:29,05R,123,F,Je vais prendre ma voiture.,5,S,"French Phase 1, Units 1-30 (2001)",18
+509,FR,978-1-4423-4864-6,French 1,26,0:13:39,0:13:40,06Q,161,N,I have a few friends down there.,,,"French Phase 1, Units 1-30 (2001)","5,9"
+510,FR,978-1-4423-4864-6,French 1,26,0:13:45,0:13:46,06R,162,F,"J’ai quelques amis, là-bas.",5,S,"French Phase 1, Units 1-30 (2001)","5,9"
+511,FR,978-1-4423-4864-6,French 1,26,0:14:52,0:14:54,07Q,171,N,I am going to see my friends.,,,"French Phase 1, Units 1-30 (2001)","5,9"
+512,FR,978-1-4423-4864-6,French 1,26,0:14:58,0:14:59,07R,172,F,Je vais voir mes amis.,5,S,"French Phase 1, Units 1-30 (2001)","5,9"
+513,FR,978-1-4423-4864-6,French 1,26,0:15:08,0:15:10,08Q,173,N,I’m going to spend three days there.,,,"French Phase 1, Units 1-30 (2001)","12,18"
+514,FR,978-1-4423-4864-6,French 1,26,0:15:13,0:15:15,08R,174,F,Je vais passer trois jours là-bas.,7,S,"French Phase 1, Units 1-30 (2001)","12,18"
+515,FR,978-1-4423-4864-6,French 1,26,0:19:06,0:19:07,09Q,209,N,I don’t believe so.,,,"French Phase 1, Units 1-30 (2001)","7,9"
+516,FR,978-1-4423-4864-6,French 1,26,0:19:09,0:19:10,09R,210,F,Je ne crois pas.,4,S,"French Phase 1, Units 1-30 (2001)","7,9"
+517,FR,978-1-4423-4864-6,French 1,26,0:19:50,0:19:51,10Q,217,N,Are you going to see him?,,,"French Phase 1, Units 1-30 (2001)",9
+518,FR,978-1-4423-4864-6,French 1,26,0:19:54,0:19:55,10R,218,M,Est-ce que vous allez le voir?,6,Q,"French Phase 1, Units 1-30 (2001)",9
+519,FR,978-1-4423-4864-6,French 1,27,0:06:32,0:06:33,01Q,86,N,I’m going to see him.,,,"French Phase 1, Units 1-30 (2001)",9
+520,FR,978-1-4423-4864-6,French 1,27,0:06:37,0:06:38,01R,87,F,Je vais le voir.,4,S,"French Phase 1, Units 1-30 (2001)",9
+521,FR,978-1-4423-4864-6,French 1,27,0:06:46,0:06:47,02Q,88,N,I think that he works there.,,,"French Phase 1, Units 1-30 (2001)",9
+522,FR,978-1-4423-4864-6,French 1,27,0:06:51,0:06:53,02R,89,F,Je crois qu’il travaille là-bas.,5,S,"French Phase 1, Units 1-30 (2001)",9
+523,FR,978-1-4423-4864-6,French 1,27,0:10:59,0:11:00,03Q,129,N,I’m not going to work.,,,"French Phase 1, Units 1-30 (2001)",9
+524,FR,978-1-4423-4864-6,French 1,27,0:11:04,0:11:05,03R,130,M,Je ne vais pas travailler.,5,S,"French Phase 1, Units 1-30 (2001)",9
+525,FR,978-1-4423-4864-6,French 1,27,0:13:17,0:13:18,04Q,154,N,Here are one hundred euros.,,,"French Phase 1, Units 1-30 (2001)","11,12"
+526,FR,978-1-4423-4864-6,French 1,27,0:13:21,0:13:23,04R,155,F,Voilà cent euros.,3,S,"French Phase 1, Units 1-30 (2001)","11,12"
+527,FR,978-1-4423-4864-6,French 1,27,0:16:28,0:16:30,05Q,193,N,I don’t want anything.,,,"French Phase 1, Units 1-30 (2001)",7
+528,FR,978-1-4423-4864-6,French 1,27,0:16:34,0:16:35,05R,194,M,Je ne veux rien.,4,S,"French Phase 1, Units 1-30 (2001)",7
+529,FR,978-1-4423-4864-6,French 1,27,0:18:41,0:18:42,06Q,216,N,I don’t want to leave.,,,"French Phase 1, Units 1-30 (2001)","7,18"
+530,FR,978-1-4423-4864-6,French 1,27,0:18:46,0:18:47,06R,217,F,Je ne veux pas partir.,5,S,"French Phase 1, Units 1-30 (2001)","7,18"
+531,FR,978-1-4423-4864-6,French 1,27,0:19:47,0:19:49,07Q,226,N,We’re going to leave together.,,,"French Phase 1, Units 1-30 (2001)","9,18"
+532,FR,978-1-4423-4864-6,French 1,27,0:19:51,0:19:53,07R,227,F,Nous allons partir ensemble.,4,S,"French Phase 1, Units 1-30 (2001)","9,18"
+533,FR,978-1-4423-4864-6,French 1,27,0:20:28,0:20:29,08Q,234,N,I want to leave with you.,,,"French Phase 1, Units 1-30 (2001)","9,18"
+534,FR,978-1-4423-4864-6,French 1,27,0:20:33,0:20:35,08R,235,M,Je veux partir avec vous.,5,S,"French Phase 1, Units 1-30 (2001)","9,18"
+535,FR,978-1-4423-4864-6,French 1,27,0:21:38,0:21:40,09Q,248,N,I want to spend a few days here.,,,"French Phase 1, Units 1-30 (2001)","12,17,18"
+536,FR,978-1-4423-4864-6,French 1,27,0:21:44,0:21:46,09R,249,F,Je veux passer quelques jours ici.,6,S,"French Phase 1, Units 1-30 (2001)","12,17,18"
+537,FR,978-1-4423-4864-6,French 1,27,0:22:57,0:22:58,10Q,262,N,I have no money.,,,"French Phase 1, Units 1-30 (2001)","11,12"
+538,FR,978-1-4423-4864-6,French 1,27,0:23:02,0:23:03,10R,263,F,Je n’ai pas d’argent.,4,S,"French Phase 1, Units 1-30 (2001)","11,12"
+539,FR,978-1-4423-4864-6,French 1,28,0:07:40,0:07:41,01Q,94,N,I am alone.,,,"French Phase 1, Units 1-30 (2001)",9
+540,FR,978-1-4423-4864-6,French 1,28,0:07:45,0:07:45,01R,95,M,Je suis seul.,3,S,"French Phase 1, Units 1-30 (2001)",9
+541,FR,978-1-4423-4864-6,French 1,28,0:07:51,0:07:53,02Q,96,N,I don’t want to work.,,,"French Phase 1, Units 1-30 (2001)",9
+542,FR,978-1-4423-4864-6,French 1,28,0:07:56,0:07:58,02R,97,M,Je ne veux pas travailler.,5,S,"French Phase 1, Units 1-30 (2001)",9
+543,FR,978-1-4423-4864-6,French 1,28,0:09:37,0:09:38,03Q,113,N,Now you can leave.,,,"French Phase 1, Units 1-30 (2001)","17,18"
+544,FR,978-1-4423-4864-6,French 1,28,0:09:43,0:09:45,03R,114,F,Maintenant vous pouvez partir.,4,S,"French Phase 1, Units 1-30 (2001)","17,18"
+545,FR,978-1-4423-4864-6,French 1,28,0:09:55,0:09:56,04Q,116,N,What does that mean?,,,"French Phase 1, Units 1-30 (2001)",7
+546,FR,978-1-4423-4864-6,French 1,28,0:09:59,0:10:01,04R,117,M,Qu’est-ce que ça veut dire?,5,Q,"French Phase 1, Units 1-30 (2001)",7
+547,FR,978-1-4423-4864-6,French 1,28,0:13:43,0:13:44,05Q,153,N,We are American.,,,"French Phase 1, Units 1-30 (2001)","9,10,16"
+548,FR,978-1-4423-4864-6,French 1,28,0:13:48,0:13:49,05R,154,M,Nous sommes américains.,3,S,"French Phase 1, Units 1-30 (2001)","9,10,16"
+549,FR,978-1-4423-4864-6,French 1,28,0:14:41,0:14:42,06Q,164,N,Since a few days.,,,"French Phase 1, Units 1-30 (2001)","7,17"
+550,FR,978-1-4423-4864-6,French 1,28,0:14:45,0:14:46,06R,165,M,Depuis quelques jours.,3,S,"French Phase 1, Units 1-30 (2001)","7,17"
+551,FR,978-1-4423-4864-6,French 1,28,0:15:32,0:15:33,07Q,174,N,Since how long?,,,"French Phase 1, Units 1-30 (2001)","7,17"
+552,FR,978-1-4423-4864-6,French 1,28,0:15:36,0:15:37,07R,175,F,Depuis combien de temps?,4,Q,"French Phase 1, Units 1-30 (2001)","7,17"
+553,FR,978-1-4423-4864-6,French 1,28,0:18:35,0:18:36,08Q,207,N,You are here since when?,,,"French Phase 1, Units 1-30 (2001)","7,17"
+554,FR,978-1-4423-4864-6,French 1,28,0:18:40,0:18:42,08R,208,F,Vous êtes ici depuis quand?,5,Q,"French Phase 1, Units 1-30 (2001)","7,17"
+555,FR,978-1-4423-4864-6,French 1,28,0:19:45,0:19:47,09Q,218,N,We are here since two days.,,,"French Phase 1, Units 1-30 (2001)","9,12,17"
+556,FR,978-1-4423-4864-6,French 1,28,0:19:51,0:19:53,09R,219,M,Nous sommes ici depuis deux jours.,6,S,"French Phase 1, Units 1-30 (2001)","9,12,17"
+557,FR,978-1-4423-4864-6,French 1,28,0:20:46,0:20:48,10Q,231,N,I don’t know what that means.,,,"French Phase 1, Units 1-30 (2001)","7,16"
+558,FR,978-1-4423-4864-6,French 1,28,0:20:51,0:20:53,10R,232,M,Je ne sais pas ce que ça veut dire.,9,S,"French Phase 1, Units 1-30 (2001)","7,16"
+559,FR,978-1-4423-4864-6,French 1,29,0:02:09,0:02:11,01Q,33,N,We’ve been here for three days.,,,"French Phase 1, Units 1-30 (2001)","12,17"
+560,FR,978-1-4423-4864-6,French 1,29,0:02:15,0:02:17,01R,34,F,Nous sommes ici depuis trois jours.,6,S,"French Phase 1, Units 1-30 (2001)","12,17"
+561,FR,978-1-4423-4864-6,French 1,29,0:02:22,0:02:23,02Q,35,N,How long have you been here?,,,"French Phase 1, Units 1-30 (2001)","7,17"
+562,FR,978-1-4423-4864-6,French 1,29,0:02:31,0:02:33,02R,37,F,Vous êtes ici depuis combien de temps?,7,Q,"French Phase 1, Units 1-30 (2001)","7,17"
+563,FR,978-1-4423-4864-6,French 1,29,0:08:23,0:08:25,03Q,106,N,What did you buy yesterday?,,,"French Phase 1, Units 1-30 (2001)","14,17"
+564,FR,978-1-4423-4864-6,French 1,29,0:08:27,0:08:29,03R,107,M,Qu’est ce que vous avez acheté hier?,7,Q,"French Phase 1, Units 1-30 (2001)","14,17"
+565,FR,978-1-4423-4864-6,French 1,29,0:09:51,0:09:53,04Q,121,N,I bought something to drink.,,,"French Phase 1, Units 1-30 (2001)","6,14"
+566,FR,978-1-4423-4864-6,French 1,29,0:09:57,0:09:59,04R,122,F,J’ai acheté quelque chose à boire.,6,S,"French Phase 1, Units 1-30 (2001)","6,14"
+567,FR,978-1-4423-4864-6,French 1,29,0:10:41,0:10:42,05Q,131,N,I bought some milk.,,,"French Phase 1, Units 1-30 (2001)","6,14"
+568,FR,978-1-4423-4864-6,French 1,29,0:10:45,0:10:46,05R,132,F,J’ai acheté du lait.,4,S,"French Phase 1, Units 1-30 (2001)","6,14"
+569,FR,978-1-4423-4864-6,French 1,29,0:14:47,0:14:49,06Q,173,N,You’re going to eat today.,,,"French Phase 1, Units 1-30 (2001)","6,17"
+570,FR,978-1-4423-4864-6,French 1,29,0:14:53,0:14:55,06R,174,M,Vous allez manger aujourd’hui.,4,S,"French Phase 1, Units 1-30 (2001)","6,17"
+571,FR,978-1-4423-4864-6,French 1,29,0:17:21,0:17:22,07Q,201,N,I’m going to drink some good wine.,,,"French Phase 1, Units 1-30 (2001)",6
+572,FR,978-1-4423-4864-6,French 1,29,0:17:25,0:17:27,07R,202,F,Je vais boire du bon vin.,6,S,"French Phase 1, Units 1-30 (2001)",6
+573,FR,978-1-4423-4864-6,French 1,29,0:17:35,0:17:36,08Q,203,N,Do you like wine?,,,"French Phase 1, Units 1-30 (2001)",6
+574,FR,978-1-4423-4864-6,French 1,29,0:17:39,0:17:40,08R,204,M,Est-ce que vous aimez le vin?,6,Q,"French Phase 1, Units 1-30 (2001)",6
+575,FR,978-1-4423-4864-6,French 1,29,0:19:43,0:19:45,09Q,226,N,Would you like to have lunch now?,,,"French Phase 1, Units 1-30 (2001)","6,17"
+576,FR,978-1-4423-4864-6,French 1,29,0:19:49,0:19:51,09R,227,M,Est-ce que vous voudriez déjeuner maintenant?,6,S,"French Phase 1, Units 1-30 (2001)","6,17"
+577,FR,978-1-4423-4864-6,French 1,29,0:20:59,0:21:01,10Q,240,N,I didn’t eat yesterday.,,,"French Phase 1, Units 1-30 (2001)","6,17"
+578,FR,978-1-4423-4864-6,French 1,29,0:21:04,0:21:05,10R,241,F,Je n’ai pas mangé hier.,5,S,"French Phase 1, Units 1-30 (2001)","6,17"
+579,FR,978-1-4423-4864-6,French 1,30,0:00:56,0:00:57,01Q,18,N,What does this word mean?,,,"French Phase 1, Units 1-30 (2001)","7,16"
+580,FR,978-1-4423-4864-6,French 1,30,0:01:01,0:01:02,01R,19,M,Qu’est-ce que ce mot veut dire?,6,Q,"French Phase 1, Units 1-30 (2001)","7,16"
+581,FR,978-1-4423-4864-6,French 1,30,0:01:13,0:01:14,02Q,21,N,How does one say?,,,"French Phase 1, Units 1-30 (2001)","7,16"
+582,FR,978-1-4423-4864-6,French 1,30,0:01:17,0:01:17,02R,22,M,Comment dit-on?,3,Q,"French Phase 1, Units 1-30 (2001)","7,16"
+583,FR,978-1-4423-4864-6,French 1,30,0:05:25,0:05:26,03Q,69,N,I like that.,,,"French Phase 1, Units 1-30 (2001)",7
+584,FR,978-1-4423-4864-6,French 1,30,0:05:29,0:05:30,03R,70,F,J’aime ça.,2,S,"French Phase 1, Units 1-30 (2001)",7
+585,FR,978-1-4423-4864-6,French 1,30,0:06:22,0:06:23,04Q,79,N,We bought nothing.,,,"French Phase 1, Units 1-30 (2001)","12,14"
+586,FR,978-1-4423-4864-6,French 1,30,0:06:27,0:06:28,04R,80,M,Nous n’avons rien acheté.,4,S,"French Phase 1, Units 1-30 (2001)","12,14"
+587,FR,978-1-4423-4864-6,French 1,30,0:08:59,0:09:01,05Q,104,N,We have bought lots of things.,,,"French Phase 1, Units 1-30 (2001)","12,14"
+588,FR,978-1-4423-4864-6,French 1,30,0:09:05,0:09:07,05R,105,F,Nous avons acheté beaucoup de choses.,6,S,"French Phase 1, Units 1-30 (2001)","12,14"
+589,FR,978-1-4423-4864-6,French 1,30,0:11:09,0:11:10,06Q,127,N,We spoke French.,,,"French Phase 1, Units 1-30 (2001)","9,15"
+590,FR,978-1-4423-4864-6,French 1,30,0:11:13,0:11:15,06R,128,F,Nous avons parlé français.,4,S,"French Phase 1, Units 1-30 (2001)","9,15"
+591,FR,978-1-4423-4864-6,French 1,30,0:12:40,0:12:41,07Q,141,N,When did you arrive?,,,"French Phase 1, Units 1-30 (2001)","17,18"
+592,FR,978-1-4423-4864-6,French 1,30,0:12:46,0:12:47,07R,142,M,Quand est-ce que vous êtes arrivés?,6,Q,"French Phase 1, Units 1-30 (2001)","17,18"
+593,FR,978-1-4423-4864-6,French 1,30,0:15:01,0:15:03,08Q,162,N,We arrived yesterday morning.,,,"French Phase 1, Units 1-30 (2001)","9,17,18"
+594,FR,978-1-4423-4864-6,French 1,30,0:15:08,0:15:10,08R,163,F,Nous sommes arrivés hier matin.,5,S,"French Phase 1, Units 1-30 (2001)","9,17,18"
+595,FR,978-1-4423-4864-6,French 1,30,0:18:57,0:18:58,09Q,202,N,When did you go?,,,"French Phase 1, Units 1-30 (2001)","7,17,18"
+596,FR,978-1-4423-4864-6,French 1,30,0:19:02,0:19:03,09R,203,M,Quand est-ce que vous êtes allés?,6,Q,"French Phase 1, Units 1-30 (2001)","7,17,18"
+597,FR,978-1-4423-4864-6,French 1,30,0:23:43,0:23:45,10Q,245,N,We are going to leave tomorrow morning.,,,"French Phase 1, Units 1-30 (2001)","9,17,18"
+598,FR,978-1-4423-4864-6,French 1,30,0:23:49,0:23:52,10R,246,F,Nous allons partir demain matin.,5,S,"French Phase 1, Units 1-30 (2001)","9,17,18"

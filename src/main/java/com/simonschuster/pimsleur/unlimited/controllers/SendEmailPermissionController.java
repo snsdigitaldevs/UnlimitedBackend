@@ -4,7 +4,7 @@ import com.simonschuster.pimsleur.unlimited.data.dto.sendEmailPermission.EmailPe
 import com.simonschuster.pimsleur.unlimited.services.sendEmailPermission.SendEmailPermissionService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
@@ -17,7 +17,7 @@ public class SendEmailPermissionController {
 
     @ApiOperation(value = "Set if users allow backend send email to them", notes = "")
     @RequestMapping(value = "/acceptReceiveEmail", method = RequestMethod.POST)
-    public HttpStatus setEmailPermission(@RequestBody EmailPermissionDto emailPermissionDto)
+    public HttpEntity setEmailPermission(@RequestBody EmailPermissionDto emailPermissionDto)
             throws IOException {
         return sendEmailPermissionService.setSendEmailPermission(emailPermissionDto);
     }

@@ -4,10 +4,7 @@ import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.dto.sendEmailPermission.EmailPermissionDto;
 import com.simonschuster.pimsleur.unlimited.data.edt.sendEmailPermission.SendEmailPermissionDto;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
+import org.springframework.http.*;
 import org.springframework.stereotype.Service;
 
 import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEdt;
@@ -17,7 +14,7 @@ public class SendEmailPermissionService {
     @Autowired
     ApplicationConfiguration config;
 
-    public HttpStatus setSendEmailPermission(EmailPermissionDto emailPermissionDto) {
+    public HttpEntity setSendEmailPermission(EmailPermissionDto emailPermissionDto) {
         Integer allowSendEmail = emailPermissionDto.getAllowSendEmail() ? 1 : 0;
         String registrantId = emailPermissionDto.getRegistrantId();
 
@@ -35,6 +32,9 @@ public class SendEmailPermissionService {
                 requestUrl,
                 SendEmailPermissionDto.class);
 
-        return sendEmailPermissionDto.getResult_code().equals("1") ? HttpStatus.OK : HttpStatus.BAD_REQUEST;
+        ResponseEntity<Object> successResponse = new ResponseEntity<>(null, HttpStatus.OK);
+        ResponseEntity<Object> failResponse = new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);
+
+        return sendEmailPermissionDto.getResult_code().equals("1") ? successResponse : failResponse;
     }
 }

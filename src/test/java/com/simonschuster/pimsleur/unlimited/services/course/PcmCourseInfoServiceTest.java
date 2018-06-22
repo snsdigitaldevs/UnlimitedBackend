@@ -42,14 +42,14 @@ public class PcmCourseInfoServiceTest {
             assertThat(levelOne.getIsOneOfNineBig(), is(true));
 
             List<Lesson> lessons = levelOne.getLessons();
-            Lesson lessonOne = lessons.stream().filter(lesson -> lesson.getName().equals("Lesson 01")).collect(Collectors.toList()).get(0);
+            Lesson lessonOne = lessons.stream().filter(lesson -> lesson.getName().equals("Lesson 1")).collect(Collectors.toList()).get(0);
 
             assertEquals("https://pimsleur.cdn.edtnet.us/pimsleur/subscription/9781442310223_Japanese_Phase_1/9781442310223_Unit_20.mp3?Expires=1524839994&Signature=Hw5qalqbO6a0qe4dpFcJO5xKACiYWa6kuy4pd341tFWta4yP4tZLmW4BLeHeYB4oOohcKPMn9XG8pGojntmMb37DJOyTOFaK783O5wzO5xJ7tgY-dl1fBOC1a2X9zg6CRJ-ZWtdkcK~07Ob7NSMpjBxMi3fmTxqNbD~u~61H90c_&Key-Pair-Id=APKAJRDZZRICRGT4VEOA",
                     lessonOne.getAudioLink());
             assertEquals(new Integer(1), lessonOne.getLevel());
             assertTrue(67226 == lessonOne.getMediaItemId());
             assertEquals("01", lessonOne.getLessonNumber());
-            assertEquals("Lesson 01", lessonOne.getName());
+            assertEquals("Lesson 1", lessonOne.getName());
         });
     }
 

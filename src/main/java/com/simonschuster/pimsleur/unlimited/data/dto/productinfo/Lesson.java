@@ -22,7 +22,10 @@ public class Lesson {
     }
 
     public String getName() {
-        return name.replace("Unit", "Lesson");
+        // Unit 01 will be shown as Lesson 1
+        return name
+                .replace("Unit", "Lesson")
+                .replace(" 0", " ");
     }
 
     public String getAudioLink() {

@@ -108,7 +108,7 @@ public class PUCourseInfoServiceTest {
                             + "/Mandarin+Chinese+Demo/audio/9781508243328_Mandarin_Chinese1_U01_Lesson.mp3",
                     lesson1InLevel1.getAudioLink());
             assertEquals(new Integer(331006), lesson1InLevel1.getMediaItemId());
-            assertEquals("Lesson 01", lesson1InLevel1.getName());
+            assertEquals("Lesson 1", lesson1InLevel1.getName());
             assertEquals("01", lesson1InLevel1.getLessonNumber());
             assertEquals("https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/Mandarin+Chinese+Demo/images/thumb/MA_1_M_01.jpg",
                     lesson1InLevel1.getImage().getThumbImageAddress());

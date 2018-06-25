@@ -106,10 +106,11 @@ public class UnlimitedPracticeUtil {
 
         String[] csvArray = csvString.split("\n");
         String header = csvArray[0];
+        boolean headerHasSkills = header.contains("Skills");
         return header + "\n" + Arrays.stream(csvArray)
                 .skip(1)
                 .map(line -> {
-                    if (line.contains("Italian 2") || line.contains("Italian 3")) {
+                    if (!headerHasSkills && (line.contains("Italian 2") || line.contains("Italian 3"))) {
                         if (!line.endsWith(rightEnd)) {
                             line = line.substring(0, line.lastIndexOf(rightEnd) + rightEnd.length());
                         }

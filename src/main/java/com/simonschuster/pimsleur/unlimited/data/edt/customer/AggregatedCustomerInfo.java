@@ -81,6 +81,7 @@ public class AggregatedCustomerInfo {
         customerInfoDTO.setHasPendingAndroid(puCustomer.hasPendingAndroid());
         customerInfoDTO.setHasPendingIos(puCustomer.hasPendingIos());
         customerInfoDTO.setRegistrantId(unlimitedCustomerInfo.getResultData().getRegistrant().getRegistrantId().toString());
+        customerInfoDTO.setOptinNewProductInfo(unlimitedCustomerInfo.getResultData().getRegistrant().getOptinNewProductInfo().toString());
         customerInfoDTO.setIdentityVerificationToken(puCustomer.getIdentityVerificationToken());
         return customerInfoDTO;
     }

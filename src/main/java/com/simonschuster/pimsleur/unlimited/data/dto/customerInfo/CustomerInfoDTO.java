@@ -26,6 +26,8 @@ public class CustomerInfoDTO {
     private String registrantId;
     private String identityVerificationToken;
 
+    private String optinNewProductInfo;
+
     public CustomerInfoDTO(List<String> unlimitedProductCodes,
                            List<String> pcmProductCodes,
                            List<ProductActivation> productActivations,
@@ -112,5 +114,13 @@ public class CustomerInfoDTO {
 
     public void setHasPendingAndroid(boolean hasPendingAndroid) {
         this.hasPendingAndroid = hasPendingAndroid;
+    }
+
+    public String getOptinNewProductInfo() {
+        return optinNewProductInfo;
+    }
+
+    public void setOptinNewProductInfo(String optinNewProductInfo) {
+        this.optinNewProductInfo = optinNewProductInfo;
     }
 }

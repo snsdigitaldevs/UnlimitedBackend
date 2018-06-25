@@ -79,6 +79,8 @@ public class PCMProgressConverter {
     }
 
     private static boolean hasKeyWord(UserAppStateDatum progress) {
-        return keyWordsToExtract.stream().anyMatch((keyWord) -> progress.getKey().contains(keyWord));
+        boolean keyDoesNotHaveNullString = !progress.getKey().contains("null");
+        return keyDoesNotHaveNullString &&
+                keyWordsToExtract.stream().anyMatch((keyWord) -> progress.getKey().contains(keyWord));
     }
 }

@@ -26,7 +26,6 @@ public class IntentionToBuyService {
                 isbn, storeDomain, customerId, InAppPurchaseUtil.getAppId(storeDomain)), headers);
         CodeOnlyResposeEDT intentionToBuyResponse = postToEdt(entity, url, CodeOnlyResposeEDT.class);
 
-
         if (!intentionToBuyResponse.getResultCode().equals(1)) {
             EdtErrorCodeUtil.throwError(intentionToBuyResponse.getResultCode(), "intention to buy failed!");
         }

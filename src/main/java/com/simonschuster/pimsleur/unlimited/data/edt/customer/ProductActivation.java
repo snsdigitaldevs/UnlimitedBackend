@@ -10,7 +10,10 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
         "activationId",
         "registrantId",
         "activationDate",
+        "activationCode",
+        "serialNumber",
         "productCode",
+        "childProductCodesString",
         "activationCountDesktop",
         "activationCountMobile",
         "totalActivationsAllowed",
@@ -21,15 +24,20 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
         "registerableProduct"
 })
 public class ProductActivation {
-
     @JsonProperty("activationId")
     private Integer activationId;
     @JsonProperty("registrantId")
     private Integer registrantId;
     @JsonProperty("activationDate")
     private String activationDate;
+    @JsonProperty("activationCode")
+    private String activationCode;
+    @JsonProperty("serialNumber")
+    private String serialNumber;
     @JsonProperty("productCode")
     private String productCode;
+    @JsonProperty("childProductCodesString")
+    private String childProductCodesString;
     @JsonProperty("activationCountDesktop")
     private Integer activationCountDesktop;
     @JsonProperty("activationCountMobile")
@@ -77,6 +85,26 @@ public class ProductActivation {
         this.activationDate = activationDate;
     }
 
+    @JsonProperty("activationCode")
+    public String getActivationCode() {
+        return activationCode;
+    }
+
+    @JsonProperty("activationCode")
+    public void setActivationCode(String activationCode) {
+        this.activationCode = activationCode;
+    }
+
+    @JsonProperty("serialNumber")
+    public String getSerialNumber() {
+        return serialNumber;
+    }
+
+    @JsonProperty("serialNumber")
+    public void setSerialNumber(String serialNumber) {
+        this.serialNumber = serialNumber;
+    }
+
     @JsonProperty("productCode")
     public String getProductCode() {
         return productCode;
@@ -85,6 +113,16 @@ public class ProductActivation {
     @JsonProperty("productCode")
     public void setProductCode(String productCode) {
         this.productCode = productCode;
+    }
+
+    @JsonProperty("childProductCodesString")
+    public String getChildProductCodesString() {
+        return childProductCodesString;
+    }
+
+    @JsonProperty("childProductCodesString")
+    public void setChildProductCodesString(String childProductCodesString) {
+        this.childProductCodesString = childProductCodesString;
     }
 
     @JsonProperty("activationCountDesktop")

@@ -32,8 +32,8 @@ public class SendEmailPermissionService {
                 requestUrl,
                 SendEmailPermissionDto.class);
 
-        ResponseEntity<Object> successResponse = new ResponseEntity<>(null, HttpStatus.OK);
-        ResponseEntity<Object> failResponse = new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);
+        ResponseEntity<Object> successResponse = new ResponseEntity<>(HttpStatus.OK);
+        ResponseEntity<Object> failResponse = new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 
         return sendEmailPermissionDto.getResult_code().equals("1") ? successResponse : failResponse;
     }

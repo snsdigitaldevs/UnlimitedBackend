@@ -33,7 +33,7 @@ public class CustomerInfoForAlexaController {
     @RequestMapping(value = "alexa/customerInfo", method = RequestMethod.GET)
     public CustomerInfoDTO getCustomerInfo(@RequestParam(value = "sub") String sub)
             throws IOException {
-        AggregatedCustomerInfo customerInfos = edtCustomerInfoService.getCustomerInfos(sub);
+        AggregatedCustomerInfo customerInfos = edtCustomerInfoService.getCustomerInfos(sub, "");
         return customerInfoConverterForAlexa.convertEDTModelToDto(customerInfos);
     }
 }

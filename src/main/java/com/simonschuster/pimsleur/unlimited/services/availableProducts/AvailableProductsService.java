@@ -74,7 +74,7 @@ public class AvailableProductsService {
     }
 
     private List<AvailableProductDto> getPuAvailableProducts(String sub) {
-        CustomerInfo puCustInfo = customerInfoService.getPUCustomerInfo(sub);
+        CustomerInfo puCustInfo = customerInfoService.getPUCustomerInfo(sub, "");
         if (puCustInfo.getResultData() != null) {
             return puCustInfo.getResultData().getCustomer().getAllOrdersProducts()
                     .stream()
@@ -89,7 +89,7 @@ public class AvailableProductsService {
     }
 
     private List<AvailableProductDto> getPcmAvailableProducts(String sub) {
-        CustomerInfo pcmCustInfo = customerInfoService.getPcmCustomerInfo(sub);
+        CustomerInfo pcmCustInfo = customerInfoService.getPcmCustomerInfo(sub, "");
 
         if (pcmCustInfo.getResultData() != null) {
             return pcmCustInfo.getResultData()

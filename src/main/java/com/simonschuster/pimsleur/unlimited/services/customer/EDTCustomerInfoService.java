@@ -6,6 +6,7 @@ import com.simonschuster.pimsleur.unlimited.data.edt.customer.Customer;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.CustomerInfo;
 import com.simonschuster.pimsleur.unlimited.data.edt.syncState.AggregatedSyncState;
 import com.simonschuster.pimsleur.unlimited.services.syncState.EDTSyncStateService;
+import com.simonschuster.pimsleur.unlimited.utils.InAppPurchaseUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -28,9 +29,9 @@ public class EDTCustomerInfoService {
     @Autowired
     private EDTSyncStateService syncStateService;
 
-    public AggregatedCustomerInfo getCustomerInfos(String sub) {
-        CompletableFuture<CustomerInfo> puCustomerInfoCompletableFuture = CompletableFuture.supplyAsync(() -> getPUCustomerInfo(sub));
-        CompletableFuture<CustomerInfo> pcmCustomerInfoCompletableFuture = CompletableFuture.supplyAsync(() -> getPcmCustomerInfo(sub));
+    public AggregatedCustomerInfo getCustomerInfos(String sub, String storeDomain) {
+        CompletableFuture<CustomerInfo> puCustomerInfoCompletableFuture = CompletableFuture.supplyAsync(() -> getPUCustomerInfo(sub, storeDomain));
+        CompletableFuture<CustomerInfo> pcmCustomerInfoCompletableFuture = CompletableFuture.supplyAsync(() -> getPcmCustomerInfo(sub,storeDomain));
 
         AggregatedSyncState aggregatedSyncState = CompletableFuture.anyOf(puCustomerInfoCompletableFuture, pcmCustomerInfoCompletableFuture)
                 .thenApplyAsync(puOrPcmCustomerInfo -> {
@@ -45,22 +46,22 @@ public class EDTCustomerInfoService {
         return new AggregatedCustomerInfo(pcCustomerInfo, pcmCustomerInfo, aggregatedSyncState);
     }
 
-    public CustomerInfo getPUCustomerInfo(String sub) {
+    public CustomerInfo getPUCustomerInfo(String sub, String storeDomain) {
         return getCustomerInfo(sub,
                 config.getApiParameter("unlimitedCustomerAction"),
-                config.getApiParameter("unlimitedDomain"));
+                storeDomain);
     }
 
-    public CustomerInfo getPcmCustomerInfo(String sub) {
+    public CustomerInfo getPcmCustomerInfo(String sub, String storeDomain) {
         return getCustomerInfo(sub,
                 config.getApiParameter("pcmCustomerAction"),
-                config.getApiParameter("pcmDomain"));
+                storeDomain);
     }
 
     public List<String> getBoughtIsbns(String sub) {
         return Stream.concat(
-                getPUCustomerInfo(sub).getResultData().getCustomer().getProductCodes().stream(),
-                getPcmCustomerInfo(sub).getResultData().getCustomer().getProductCodes().stream())
+                getPUCustomerInfo(sub, "").getResultData().getCustomer().getProductCodes().stream(),
+                getPcmCustomerInfo(sub, "").getResultData().getCustomer().getProductCodes().stream())
                 .collect(toList());
     }
 
@@ -76,7 +77,8 @@ public class EDTCustomerInfoService {
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
 
         return new HttpEntity<>(
-                String.format(config.getApiParameter("customerInfoDefaultParameters"), sub, action, domain),
+                String.format(config.getApiParameter("customerInfoDefaultParameters"),
+                        sub, action, domain, InAppPurchaseUtil.getAppId(domain)),
                 headers);
     }
 }

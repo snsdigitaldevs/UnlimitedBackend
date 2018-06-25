@@ -24,7 +24,7 @@ public class PcmAvailablePracticesService {
     private EDTCustomerInfoService edtCustomerInfoService;
 
     public AvailablePractices getAvailablePractices(String productCode, String sub) {
-        CustomerInfo pcmCustomerInfo = edtCustomerInfoService.getPcmCustomerInfo(sub);
+        CustomerInfo pcmCustomerInfo = edtCustomerInfoService.getPcmCustomerInfo(sub, "");
 
         if (pcmCustomerInfo.getResultData() != null) {
             return collectPractices(productCode, pcmCustomerInfo);

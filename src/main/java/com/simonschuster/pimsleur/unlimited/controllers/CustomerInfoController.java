@@ -24,8 +24,9 @@ public class CustomerInfoController {
                     "sub users info, customerId, registrantId, identityVerificationToken " +
                     "and last save id of pcm and pu")
     @RequestMapping(value = "/customerInfo", method = RequestMethod.GET)
-    public CustomerInfoDTO getCustomerInfo(@RequestParam(value = "sub") String sub)
+    public CustomerInfoDTO getCustomerInfo(@RequestParam(value = "sub") String sub,
+                                           @RequestParam(value = "storeDomain", required = false, defaultValue = "") String storeDomain)
             throws IOException {
-        return edtCustomerInfoService.getCustomerInfos(sub).toDto();
+        return edtCustomerInfoService.getCustomerInfos(sub, storeDomain).toDto();
     }
 }

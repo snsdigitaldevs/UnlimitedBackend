@@ -1,7 +1,7 @@
 package com.simonschuster.pimsleur.unlimited.services.customer;
 
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
-import com.simonschuster.pimsleur.unlimited.data.edt.CodeOnlyResposeEDT;
+import com.simonschuster.pimsleur.unlimited.data.edt.CodeOnlyResponseEDT;
 import com.simonschuster.pimsleur.unlimited.utils.EdtErrorCodeUtil;
 import com.simonschuster.pimsleur.unlimited.utils.InAppPurchaseUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +24,7 @@ public class IntentionToBuyService {
 
         HttpEntity<String> entity = new HttpEntity<>(String.format(config.getProperty("edt.api.intentionToBuy.parameters"),
                 isbn, storeDomain, customerId, InAppPurchaseUtil.getAppId(storeDomain)), headers);
-        CodeOnlyResposeEDT intentionToBuyResponse = postToEdt(entity, url, CodeOnlyResposeEDT.class);
+        CodeOnlyResponseEDT intentionToBuyResponse = postToEdt(entity, url, CodeOnlyResponseEDT.class);
 
         if (!intentionToBuyResponse.getResultCode().equals(1)) {
             EdtErrorCodeUtil.throwError(intentionToBuyResponse.getResultCode(), "intention to buy failed!");

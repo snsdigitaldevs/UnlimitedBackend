@@ -8,7 +8,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder({
         "result_code"
 })
-public class CodeOnlyResposeEDT {
+public class CodeOnlyResponseEDT {
     @JsonProperty("result_code")
     private Integer resultCode;
 

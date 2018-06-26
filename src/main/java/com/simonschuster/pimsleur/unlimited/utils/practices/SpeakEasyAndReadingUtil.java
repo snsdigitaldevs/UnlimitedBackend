@@ -76,9 +76,7 @@ public class SpeakEasyAndReadingUtil {
                                                String orderKey, Map.Entry<String, List<CSVRecord>> group,
                                                String transliterationKey, String helpTextKey, boolean isReading) {
         int unitNumber = parseInt(unitNumString);
-
         final int[] counter = {0};
-
 
         List<SpeakEasyOrReading> speakEasies = group.getValue().stream()
                 .map(csvRecord -> new SpeakEasyOrReading(
@@ -93,10 +91,20 @@ public class SpeakEasyAndReadingUtil {
                 .collect(toList());
 
         if (isReading) {
-            return createWithReadings(unitNumber, speakEasies);
+            int specialCaseUnitNum = specialCaseUnitNumberForReading(unitNumber, group.getValue().get(0));
+            return createWithReadings(specialCaseUnitNum, speakEasies);
         } else {
             return createWithSpeakEasies(unitNumber, speakEasies);
         }
+    }
+
+    private static int specialCaseUnitNumberForReading(int unitNumber, CSVRecord csvRecord) {
+        // for german level 5, the unit number in reading csv is wrong, should add 10 to all of them
+        String courseKey = findRealHeaderName(csvRecord, "Course");
+        if (csvRecord.isSet(courseKey) && csvRecord.get(courseKey).contains("German 5")) {
+            return unitNumber + 10;
+        }
+        return unitNumber;
     }
 
     private static int getOrder(String orderKey, int[] counter, CSVRecord csvRecord) {

@@ -20,6 +20,9 @@ public class UpsellService {
     @Autowired
     private BundleIsbnService bundleIsbnService;
     @Autowired
+    private IsbnNameDescriptionService isbnNameDescriptionService;
+
+    @Autowired
     private EDTCustomerInfoService customerInfoService;
 
     public UpsellDto getUpsellInfoFor(String isbn, String sub) {
@@ -36,7 +39,9 @@ public class UpsellService {
             boolean upsellBought = isBought(boughtIsbns, purchaseMapping.getUpsellInAppPurchaseISBN());
             boolean subBought = isBought(boughtIsbns, purchaseMapping.getUpsell2InAppPurchaseISBN());
             boolean upgradeBought = isBought(boughtIsbns, purchaseMapping.getUpgradeInAppPurchaseISBN());
-            return purchaseMapping.toUpsellDto(upsellBought, subBought, upgradeBought);
+
+            UpsellDto upsellDto = purchaseMapping.toUpsellDto(upsellBought, subBought, upgradeBought);
+            return isbnNameDescriptionService.updateNameDescription(upsellDto);
         }
     }
 

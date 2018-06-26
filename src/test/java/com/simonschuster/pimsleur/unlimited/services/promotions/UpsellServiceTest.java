@@ -28,9 +28,14 @@ public class UpsellServiceTest {
     @Autowired
     @Spy
     private PurchaseMappingService purchaseMappingService;
+
     @Autowired
     @Spy
     private BundleIsbnService bundleIsbnService;
+
+    @Autowired
+    @Spy
+    private IsbnNameDescriptionService isbnNameDescriptionService;
 
     @InjectMocks
     private UpsellService upsellService;
@@ -45,10 +50,10 @@ public class UpsellServiceTest {
                 "123");
 
         assertThat(upsellInfo.getNextLevel().getName(),
-                containsString("Chinese (Mandarin) Level 2 Upsell"));
+                containsString("Chinese (Mandarin) Level 2"));
 
         assertThat(upsellInfo.getNextVersion().getName(),
-                containsString("Chinese (Mandarin) Level 1 Unlimited Upgrade"));
+                containsString("Chinese (Mandarin) Level 1"));
     }
 
     @Test
@@ -61,10 +66,10 @@ public class UpsellServiceTest {
                 "123");
 
         assertThat(upsellInfo.getNextLevel().getName(),
-                containsString("Chinese (Mandarin) Level 3 Upsell"));
+                containsString("Chinese (Mandarin) Level 3"));
 
         assertThat(upsellInfo.getNextVersion().getName(),
-                containsString("Chinese (Mandarin) Level 2 Unlimited Upgrade"));
+                containsString("Chinese (Mandarin) Level 2"));
     }
 
     @Test
@@ -79,7 +84,7 @@ public class UpsellServiceTest {
         assertThat(upsellInfo.getNextLevel(), nullValue());
 
         assertThat(upsellInfo.getNextVersion().getName(),
-                containsString("Chinese (Mandarin) Level 1 Unlimited Upgrade"));
+                containsString("Chinese (Mandarin) Level 1"));
     }
 
     @Test
@@ -92,7 +97,7 @@ public class UpsellServiceTest {
                 "123");
 
         assertThat(upsellInfo.getNextLevel().getName(),
-                containsString("Chinese (Mandarin) Level 3 Upsell"));
+                containsString("Chinese (Mandarin) Level 3"));
 
         assertThat(upsellInfo.getNextVersion(), nullValue());
     }
@@ -109,7 +114,7 @@ public class UpsellServiceTest {
         assertThat(upsellInfo.getNextLevel(), nullValue());
 
         assertThat(upsellInfo.getNextVersion().getName(),
-                containsString("Chinese (Mandarin) Level 1 Unlimited Upgrade"));
+                containsString("Chinese (Mandarin) Level 1"));
     }
 
     @Test
@@ -122,7 +127,7 @@ public class UpsellServiceTest {
                 "123");
 
         assertThat(upsellInfo.getNextLevel().getName(),
-                containsString("Chinese (Mandarin) Level 3 Upsell"));
+                containsString("Chinese (Mandarin) Level 3"));
 
         assertThat(upsellInfo.getNextVersion(), nullValue());
     }
@@ -134,7 +139,7 @@ public class UpsellServiceTest {
                 "");
 
         assertThat(upsellInfo.getNextLevel().getName(),
-                containsString("Chinese (Mandarin) Level 1 Unlimited Upsell"));
+                containsString("Chinese (Mandarin) Level 1"));
 
         assertThat(upsellInfo.getNextVersion(), nullValue());
     }

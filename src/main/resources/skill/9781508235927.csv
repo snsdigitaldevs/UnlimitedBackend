@@ -1,0 +1,633 @@
+Control #,Rec #,Lang,Source Audio ISBN-13,Course,Unit Num,QZ #,Speaker,Cue,#of words,Q or S,Course Name (Source),Snippet Name,Skills
+1,1,ESL_SP,9781442328686,,1,01Q,N,Con permiso.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_001.mp3,"13,15,16"
+2,2,ESL_SP,9781442328686,,1,01R,M,Excuse me.,2,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_002.mp3,"13,15,16"
+3,3,ESL_SP,9781442328686,,1,02Q,N,Usted entiende.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_003.mp3,"15,16"
+4,4,ESL_SP,9781442328686,,1,02R,M,You understand.,2,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_004.mp3,"15,16"
+5,5,ESL_SP,9781442328686,,1,03Q,N,¿Entiende usted español?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_005.mp3,"10,15,16"
+6,6,ESL_SP,9781442328686,,1,03R,M,Do you understand Spanish?,4,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_006.mp3,"10,15,16"
+7,7,ESL_SP,9781442328686,,1,04Q,N,Yo entiendo un poco de inglés.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_007.mp3,"15,16"
+8,8,ESL_SP,9781442328686,,1,04R,M,I understand a little English.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_008.mp3,"15,16"
+9,9,ESL_SP,9781442328686,,1,05Q,N,Usted es mexicano.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_009.mp3,"7,10"
+10,10,ESL_SP,9781442328686,,1,05R,F,You are Mexican.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_010.mp3,"7,10"
+11,11,ESL_SP,9781442328686,,1,06Q,N,Yo entiendo.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_011.mp3,"15,16"
+12,12,ESL_SP,9781442328686,,1,06R,M,I understand.,2,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_012.mp3,"15,16"
+13,13,ESL_SP,9781442328686,,1,07Q,N,Yo no entiendo español.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_013.mp3,"10,15,16"
+14,14,ESL_SP,9781442328686,,1,07R,F,I don't understand Spanish.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_014.mp3,"10,15,16"
+15,15,ESL_SP,9781442328686,,1,08Q,N,Usted entiende inglés.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_015.mp3,"10,15,16"
+16,16,ESL_SP,9781442328686,,1,08R,M,You understand English.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_016.mp3,"10,15,16"
+17,17,ESL_SP,9781442328686,,1,09Q,N,Yo entiendo un poco.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_017.mp3,"10,15,16"
+18,18,ESL_SP,9781442328686,,1,09R,M,I understand a little.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_018.mp3,"10,15,16"
+19,19,ESL_SP,9781442328686,,1,10Q,N,¿Es usted mexicano?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_019.mp3,"7,10"
+20,20,ESL_SP,9781442328686,,1,10R,F,Are you Mexican?,3,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_020.mp3,"7,10"
+21,21,ESL_SP,9781442328686,,2,01Q,N,¿Cómo está?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_021.mp3,"10,13,16"
+22,22,ESL_SP,9781442328686,,2,01R,M,How are you?,3,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_022.mp3,"10,13,16"
+23,23,ESL_SP,9781442328686,,2,02Q,N,"Bien, gracias.",,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_023.mp3,"10,13,16"
+24,24,ESL_SP,9781442328686,,2,02R,F,"Fine, thanks.",2,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_024.mp3,"10,13,16"
+25,25,ESL_SP,9781442328686,,2,03Q,N,Estoy bien.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_025.mp3,"10,16"
+26,26,ESL_SP,9781442328686,,2,03R,M,I'm fine.,2,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_026.mp3,"10,16"
+27,27,ESL_SP,9781442328686,,2,04Q,N,Soy mexicano.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_027.mp3,"10,16"
+28,28,ESL_SP,9781442328686,,2,04R,M,I'm Mexican.,2,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_028.mp3,"10,16"
+29,29,ESL_SP,9781442328686,,2,05Q,N,Hola.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_029.mp3,"10,16"
+30,30,ESL_SP,9781442328686,,2,05R,F,Hello.,1,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_030.mp3,"10,16"
+31,31,ESL_SP,9781442328686,,2,06Q,N,"Estoy bien, gracias.",,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_031.mp3,"10,13,16"
+32,32,ESL_SP,9781442328686,,2,06R,M,"I'm fine, thanks.",3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_032.mp3,"10,13,16"
+33,33,ESL_SP,9781442328686,,2,07Q,N,Adiós.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_033.mp3,"13,16"
+34,34,ESL_SP,9781442328686,,2,07R,M,Good-bye.,1,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_034.mp3,"13,16"
+35,35,ESL_SP,9781442328686,,2,08Q,N,Entiendo muy bien.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_035.mp3,"15,16"
+36,36,ESL_SP,9781442328686,,2,08R,F,I understand very well.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_036.mp3,"15,16"
+37,37,ESL_SP,9781442328686,,2,09Q,N,No muy bien.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_037.mp3,"10,16"
+38,38,ESL_SP,9781442328686,,2,09R,M,Not very well.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_038.mp3,"10,16"
+39,39,ESL_SP,9781442328686,,2,10Q,N,Gracias.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_039.mp3,"10,13,16"
+40,40,ESL_SP,9781442328686,,2,10R,F,Thanks.,1,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_040.mp3,"10,13,16"
+41,41,ESL_SP,9781442328686,,3,01Q,N,¿Y usted?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_041.mp3,"7,10"
+42,42,ESL_SP,9781442328686,,3,01R,M,And you?,2,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_042.mp3,"7,10"
+43,43,ESL_SP,9781442328686,,3,02Q,N,Soy norteamericana.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_043.mp3,"7,10"
+44,44,ESL_SP,9781442328686,,3,02R,F,I'm American.,2,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_044.mp3,"7,10"
+45,45,ESL_SP,9781442328686,,3,03Q,N,Se lo agradezco.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_045.mp3,"13,16"
+46,46,ESL_SP,9781442328686,,3,03R,F,Thank you.,2,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_046.mp3,"13,16"
+47,47,ESL_SP,9781442328686,,3,04Q,N,Lo siento.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_047.mp3,"13,16"
+48,48,ESL_SP,9781442328686,,3,04R,F,I'm sorry.,2,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_048.mp3,"13,16"
+49,49,ESL_SP,9781442328686,,3,05Q,N,Usted no es mexicana.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_049.mp3,"7,9"
+50,50,ESL_SP,9781442328686,,3,05R,M,You're not Mexican.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_050.mp3,"7,9"
+51,51,ESL_SP,9781442328686,,3,06Q,N,Pero yo entiendo inglés.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_051.mp3,"15,16"
+52,52,ESL_SP,9781442328686,,3,06R,M,But I understand English.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_052.mp3,"15,16"
+53,53,ESL_SP,9781442328686,,3,07Q,N,No entiendo muy bien.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_053.mp3,"15,16"
+54,54,ESL_SP,9781442328686,,3,07R,M,I don't understand very well.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_054.mp3,"15,16"
+55,55,ESL_SP,9781442328686,,3,08Q,N,Por favor.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_055.mp3,"7,13,16"
+56,56,ESL_SP,9781442328686,,3,08R,M,Please.,1,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_056.mp3,"7,13,16"
+57,57,ESL_SP,9781442328686,,4,01Q,N,¿Queda aquí?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_057.mp3,4
+58,58,ESL_SP,9781442328686,,4,01R,M,Is it here?,3,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_058.mp3,4
+59,59,ESL_SP,9781442328686,,4,02Q,N,Queda aquí.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_059.mp3,4
+60,60,ESL_SP,9781442328686,,4,02R,F,It's here.,2,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_060.mp3,4
+61,61,ESL_SP,9781442328686,,4,03Q,N,¿Dónde queda la calle Este Cincuenta Dos?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_061.mp3,"4,12"
+62,62,ESL_SP,9781442328686,,4,03R,M,Where is East 52nd Street?,5,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_062.mp3,"4,12"
+63,63,ESL_SP,9781442328686,,4,04Q,N,¿Usted no entiende español?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_063.mp3,"15,16"
+64,64,ESL_SP,9781442328686,,4,04R,M,You don't understand Spanish?,4,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_064.mp3,"15,16"
+65,65,ESL_SP,9781442328686,,4,05Q,N,Queda allá.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_065.mp3,4
+66,66,ESL_SP,9781442328686,,4,05R,F,It's over there.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_066.mp3,4
+67,67,ESL_SP,9781442328686,,4,06Q,N,Pero entiendo un poco de inglés.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_067.mp3,"15,16"
+68,68,ESL_SP,9781442328686,,4,06R,M,But I understand a little English.,6,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_068.mp3,"15,16"
+69,69,ESL_SP,9781442328686,,4,07Q,N,Usted habla muy bien.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_069.mp3,"10,15"
+70,70,ESL_SP,9781442328686,,4,07R,M,You speak very well.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_070.mp3,"10,15"
+71,71,ESL_SP,9781442328686,,4,08Q,N,Hablo un poco.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_071.mp3,"15,16"
+72,72,ESL_SP,9781442328686,,4,08R,M,I speak a little.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_072.mp3,"15,16"
+73,73,ESL_SP,9781442328686,,4,09Q,N,No hablo muy bien.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_073.mp3,"15,16"
+74,74,ESL_SP,9781442328686,,4,09R,F,I don't speak very well.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_074.mp3,"15,16"
+75,75,ESL_SP,9781442328686,,4,10Q,N,No hablo español.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_075.mp3,"15,16"
+76,76,ESL_SP,9781442328686,,4,10R,F,I don't speak Spanish.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_076.mp3,"15,16"
+77,77,ESL_SP,9781442328686,,4,11Q,N,No queda aquí.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_077.mp3,4
+78,78,ESL_SP,9781442328686,,4,11R,F,It's not here.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_078.mp3,4
+79,79,ESL_SP,9781442328686,,4,12Q,N,No queda allá.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_079.mp3,4
+80,80,ESL_SP,9781442328686,,4,12R,M,It's not over there.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_080.mp3,4
+81,81,ESL_SP,9781442328686,,5,01Q,N,No quiero comer.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_081.mp3,6
+82,82,ESL_SP,9781442328686,,5,01R,M,I don't want to eat.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_082.mp3,6
+83,83,ESL_SP,9781442328686,,5,02Q,N,Me gustaría comer.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_083.mp3,6
+84,84,ESL_SP,9781442328686,,5,02R,F,I would like to eat.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_084.mp3,6
+85,85,ESL_SP,9781442328686,,5,03Q,N,Me gustaría comer algo.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_085.mp3,"6,9"
+86,86,ESL_SP,9781442328686,,5,03R,F,I would like to have something to eat.,8,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_086.mp3,"6,9"
+87,87,ESL_SP,9781442328686,,5,04Q,N,¿Le gustaría comer algo?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_087.mp3,"6,7"
+88,88,ESL_SP,9781442328686,,5,04R,M,Would you like to have something to eat?,8,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_088.mp3,"6,7"
+89,89,ESL_SP,9781442328686,,5,05Q,N,De nada.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_089.mp3,"13,16"
+90,90,ESL_SP,9781442328686,,5,05R,F,You're welcome.,2,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_090.mp3,"13,16"
+91,91,ESL_SP,9781442328686,,5,06Q,N,De acuerdo.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_091.mp3,"7,16"
+92,92,ESL_SP,9781442328686,,5,06R,M,OK.,1,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_092.mp3,"7,16"
+93,93,ESL_SP,9781442328686,,5,07Q,N,Yo no sé.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_093.mp3,"7,16"
+94,94,ESL_SP,9781442328686,,5,07R,F,I don't know.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_094.mp3,"7,16"
+95,95,ESL_SP,9781442328686,,5,08Q,N,Yo sé.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_095.mp3,7
+96,96,ESL_SP,9781442328686,,5,08R,M,I know.,2,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_096.mp3,7
+97,97,ESL_SP,9781442328686,,5,09Q,N,¿Sabe usted?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_097.mp3,"7,16"
+98,98,ESL_SP,9781442328686,,5,09R,M,Do you know?,3,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_098.mp3,"7,16"
+99,99,ESL_SP,9781442328686,,5,10Q,N,Le gustaría comer algo.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_099.mp3,"6,9"
+100,100,ESL_SP,9781442328686,,5,10R,M,You would like to have something to eat.,8,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_100.mp3,"6,9"
+101,101,ESL_SP,9781442328686,,5,11Q,N,Me gustaría beber algo.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_101.mp3,"6,9"
+102,102,ESL_SP,9781442328686,,5,11R,F,I would like to have something to drink.,8,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_102.mp3,"6,9"
+103,103,ESL_SP,9781442328686,,5,12Q,N,¿Le gustaría beber algo?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_103.mp3,"6,7"
+104,104,ESL_SP,9781442328686,,5,12R,M,Would you like to have something to drink?,8,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_104.mp3,"6,7"
+105,105,ESL_SP,9781442328686,,6,01Q,N,Yo entiendo un poco y hablo un poco.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_105.mp3,"15,16"
+106,106,ESL_SP,9781442328686,,6,01R,F,I understand a little and I speak a little.,9,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_106.mp3,"15,16"
+107,107,ESL_SP,9781442328686,,6,02Q,N,¿Le gustaría beber algo en un restaurante?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_107.mp3,"1,6"
+108,108,ESL_SP,9781442328686,,6,02R,M,Would you like to have something to drink in a restaurant?,11,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_108.mp3,"1,6"
+109,109,ESL_SP,9781442328686,,6,03Q,N,"Sí, me gustaría.",,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_109.mp3,"7,16"
+110,110,ESL_SP,9781442328686,,6,03R,F,"Yes, I would.",3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_110.mp3,"7,16"
+111,111,ESL_SP,9781442328686,,6,04Q,N,¿Dónde queda la Avenida Este?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_111.mp3,"4,18"
+112,112,ESL_SP,9781442328686,,6,04R,F,Where is East Avenue?,4,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_112.mp3,"4,18"
+113,113,ESL_SP,9781442328686,,6,05Q,N,¿Dónde le gustaría comer?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_113.mp3,"4,6"
+114,114,ESL_SP,9781442328686,,6,05R,M,Where would you like to eat?,6,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_114.mp3,"4,6"
+115,115,ESL_SP,9781442328686,,6,06Q,N,"A mí también, me gustaría comer.",,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_115.mp3,6
+116,116,ESL_SP,9781442328686,,6,06R,F,"I'd like to eat, too.",5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_116.mp3,6
+117,117,ESL_SP,9781442328686,,6,07Q,N,Ahora.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_117.mp3,17
+118,118,ESL_SP,9781442328686,,6,07R,M,Now.,1,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_118.mp3,17
+119,119,ESL_SP,9781442328686,,6,08Q,N,¿Cuándo le gustaría comer?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_119.mp3,"6,17"
+120,120,ESL_SP,9781442328686,,6,08R,F,When would you like to eat?,6,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_120.mp3,"6,17"
+121,121,ESL_SP,9781442328686,,6,09Q,N,Más tarde.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_121.mp3,17
+122,122,ESL_SP,9781442328686,,6,09R,M,Later.,1,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_122.mp3,17
+123,123,ESL_SP,9781442328686,,6,10Q,N,Yo no quiero.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_123.mp3,7
+124,124,ESL_SP,9781442328686,,6,10R,F,I don't want to.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_124.mp3,7
+125,125,ESL_SP,9781442328686,,7,01Q,N,Quiero comer más tarde.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_125.mp3,"6,17"
+126,126,ESL_SP,9781442328686,,7,01R,M,I want to eat later.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_126.mp3,"6,17"
+127,127,ESL_SP,9781442328686,,7,02Q,N,Me gustaría algo de vino.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_127.mp3,6
+128,128,ESL_SP,9781442328686,,7,02R,F,I'd like some wine.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_128.mp3,6
+129,129,ESL_SP,9781442328686,,7,03Q,N,A mí me gustaría comer ahora.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_129.mp3,"6,17"
+130,130,ESL_SP,9781442328686,,7,03R,M,I'd like to eat now.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_130.mp3,"6,17"
+131,131,ESL_SP,9781442328686,,7,04Q,N,Aquí no.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_131.mp3,4
+132,132,ESL_SP,9781442328686,,7,04R,M,Not here.,2,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_132.mp3,4
+133,133,ESL_SP,9781442328686,,7,05Q,N,Allá no.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_133.mp3,4
+134,134,ESL_SP,9781442328686,,7,05R,M,Not over there.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_134.mp3,4
+135,135,ESL_SP,9781442328686,,7,06Q,N,¿Allá?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_135.mp3,4
+136,136,ESL_SP,9781442328686,,7,06R,F,Over there?,2,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_136.mp3,4
+137,137,ESL_SP,9781442328686,,7,07Q,N,En el hotel.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_137.mp3,18
+138,138,ESL_SP,9781442328686,,7,07R,M,At the hotel.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_138.mp3,18
+139,139,ESL_SP,9781442328686,,7,08Q,N,En un hotel.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_139.mp3,18
+140,140,ESL_SP,9781442328686,,7,08R,M,At a hotel.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_140.mp3,18
+141,141,ESL_SP,9781442328686,,7,09Q,N,¿Qué le gustaría comer?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_141.mp3,"6,7"
+142,142,ESL_SP,9781442328686,,7,09R,M,What would you like to eat?,6,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_142.mp3,"6,7"
+143,143,ESL_SP,9781442328686,,7,10Q,N,¿Le gustaría algo de vino?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_143.mp3,"6,7"
+144,144,ESL_SP,9781442328686,,7,10R,M,Would you like some wine?,5,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_144.mp3,"6,7"
+145,145,ESL_SP,9781442328686,,7,11Q,N,¿Le gustaría comer ahora?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_145.mp3,"6,7,17"
+146,146,ESL_SP,9781442328686,,7,11R,M,Would you like to eat now?,6,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_146.mp3,"6,7,17"
+147,147,ESL_SP,9781442328686,,7,12Q,N,¿Usted no quiere comer?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_147.mp3,"6,7"
+148,148,ESL_SP,9781442328686,,7,12R,M,You don't want to eat?,5,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_148.mp3,"6,7"
+149,149,ESL_SP,9781442328686,,8,01Q,N,Me gustaría comprar algo.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_149.mp3,1
+150,150,ESL_SP,9781442328686,,8,01R,F,I'd like to buy something.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_150.mp3,1
+151,151,ESL_SP,9781442328686,,8,02Q,N,A mí me gustaría hacer algo.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_151.mp3,1
+152,152,ESL_SP,9781442328686,,8,02R,F,I'd like to do something.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_152.mp3,1
+153,153,ESL_SP,9781442328686,,8,03Q,N,¿Qué quiere hacer usted?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_153.mp3,"1,7"
+154,154,ESL_SP,9781442328686,,8,03R,M,What do you want to do?,6,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_154.mp3,"1,7"
+155,155,ESL_SP,9781442328686,,8,04Q,N,¿Con quién?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_155.mp3,"1,7"
+156,156,ESL_SP,9781442328686,,8,04R,M,With whom?,2,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_156.mp3,"1,7"
+157,157,ESL_SP,9781442328686,,8,05Q,N,"¿A usted también, le gustaría algo de cerveza?",,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_157.mp3,6
+158,158,ESL_SP,9781442328686,,8,05R,M,"Would you like some beer, too?",6,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_158.mp3,6
+159,159,ESL_SP,9781442328686,,8,06Q,N,¿Le gustaría beber algo conmigo?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_159.mp3,6
+160,160,ESL_SP,9781442328686,,8,06R,M,Would you like to have something to drink with me?,10,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_160.mp3,6
+161,161,ESL_SP,9781442328686,,8,07Q,N,¿Vino o cerveza?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_161.mp3,6
+162,162,ESL_SP,9781442328686,,8,07R,M,Wine or beer?,3,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_162.mp3,6
+163,163,ESL_SP,9781442328686,,8,08Q,N,En el hotel en la Calle Este.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_163.mp3,18
+164,164,ESL_SP,9781442328686,,8,08R,F,At the hotel on East Street.,6,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_164.mp3,18
+165,165,ESL_SP,9781442328686,,8,09Q,N,¿Qué le gustaría beber?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_165.mp3,"6,7"
+166,166,ESL_SP,9781442328686,,8,09R,M,What would you like to drink?,6,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_166.mp3,"6,7"
+167,167,ESL_SP,9781442328686,,8,10Q,N,"Dos cervezas, por favor.",,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_167.mp3,"6,12"
+168,168,ESL_SP,9781442328686,,8,10R,M,"Two beers, please.",3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_168.mp3,"6,12"
+169,169,ESL_SP,9781442328686,,8,11Q,N,¿Le gustaría almorzar?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_169.mp3,6
+170,170,ESL_SP,9781442328686,,8,11R,M,Would you like to have lunch?,6,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_170.mp3,6
+171,171,ESL_SP,9781442328686,,9,01Q,N,"Y no allá, en el hotel.",,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_171.mp3,"4,18"
+172,172,ESL_SP,9781442328686,,9,01R,F,"And not over there, at the hotel.",7,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_172.mp3,"4,18"
+173,173,ESL_SP,9781442328686,,9,02Q,N,A las nueve.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_173.mp3,"12,17"
+174,174,ESL_SP,9781442328686,,9,02R,M,At nine o'clock.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_174.mp3,"12,17"
+175,175,ESL_SP,9781442328686,,9,03Q,N,¿A la una?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_175.mp3,"12,17"
+176,176,ESL_SP,9781442328686,,9,03R,M,At one o'clock?,3,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_176.mp3,"12,17"
+177,177,ESL_SP,9781442328686,,9,04Q,N,¿A qué hora?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_177.mp3,17
+178,178,ESL_SP,9781442328686,,9,04R,F,At what time?,3,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_178.mp3,17
+179,179,ESL_SP,9781442328686,,9,05Q,N,¿Sabe usted dónde queda la Avenida Parque?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_179.mp3,"4,18"
+180,180,ESL_SP,9781442328686,,9,05R,F,Do you know where Park Avenue is?,7,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_180.mp3,"4,18"
+181,181,ESL_SP,9781442328686,,9,06Q,N,Quiero comprar dos cervezas.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_181.mp3,"6,12"
+182,182,ESL_SP,9781442328686,,9,06R,F,I want to buy two beers.,6,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_182.mp3,"6,12"
+183,183,ESL_SP,9781442328686,,9,07Q,N,¿A la una o a las dos?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_183.mp3,"12,17"
+184,184,ESL_SP,9781442328686,,9,07R,F,"At one o'clock, or at two o'clock?",6,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_184.mp3,"12,17"
+185,185,ESL_SP,9781442328686,,9,08Q,N,No sé a qué hora.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_185.mp3,"7,17"
+186,186,ESL_SP,9781442328686,,9,08R,F,I don't know at what time.,6,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_186.mp3,"7,17"
+187,187,ESL_SP,9781442328686,,9,09Q,N,"A las dos, ¿de acuerdo?",,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_187.mp3,"12,17"
+188,188,ESL_SP,9781442328686,,9,09R,M,"At two o'clock, OK?",4,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_188.mp3,"12,17"
+189,189,ESL_SP,9781442328686,,9,10Q,N,¿Sabe usted dónde queda el hotel?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_189.mp3,"4,18"
+190,190,ESL_SP,9781442328686,,9,10R,M,Do you know where the hotel is?,7,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_190.mp3,"4,18"
+191,191,ESL_SP,9781442328686,,9,11Q,N,"A la una no, y a las dos no.",,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_191.mp3,"12,17"
+192,192,ESL_SP,9781442328686,,9,11R,F,Not at one o'clock and not at two o'clock.,9,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_192.mp3,"12,17"
+193,193,ESL_SP,9781442328686,,10,01Q,N,Y me gustarían dos cervezas.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_193.mp3,"6,12"
+194,194,ESL_SP,9781442328686,,10,01R,M,And I'd like two beers.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_194.mp3,"6,12"
+195,195,ESL_SP,9781442328686,,10,02Q,N,¿Va usted a comer?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_195.mp3,6
+196,196,ESL_SP,9781442328686,,10,02R,F,Are you going to eat?,5,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_196.mp3,6
+197,197,ESL_SP,9781442328686,,10,03Q,N,Voy a beber algo.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_197.mp3,6
+198,198,ESL_SP,9781442328686,,10,03R,M,I'm going to have something to drink.,7,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_198.mp3,6
+199,199,ESL_SP,9781442328686,,10,04Q,N,Yo voy a almorzar.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_199.mp3,6
+200,200,ESL_SP,9781442328686,,10,04R,M,I'm going to have lunch.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_200.mp3,6
+201,201,ESL_SP,9781442328686,,10,05Q,N,¿Son las cuatro?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_201.mp3,"5,12,17"
+202,202,ESL_SP,9781442328686,,10,05R,F,Is it four o'clock?,4,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_202.mp3,"5,12,17"
+203,203,ESL_SP,9781442328686,,10,06Q,N,Es la una.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_203.mp3,"12,17"
+204,204,ESL_SP,9781442328686,,10,06R,F,It's one o'clock.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_204.mp3,"12,17"
+205,205,ESL_SP,9781442328686,,10,07Q,N,Son las tres.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_205.mp3,"12,17"
+206,206,ESL_SP,9781442328686,,10,07R,M,It's three o'clock.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_206.mp3,"12,17"
+207,207,ESL_SP,9781442328686,,10,08Q,N,¿Qué hora es?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_207.mp3,"7,17"
+208,208,ESL_SP,9781442328686,,10,08R,F,What time is it?,4,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_208.mp3,"7,17"
+209,209,ESL_SP,9781442328686,,10,09Q,N,Bueno.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_209.mp3,7
+210,210,ESL_SP,9781442328686,,10,09R,M,All right.,2,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_210.mp3,7
+211,211,ESL_SP,9781442328686,,10,10Q,N,¿Va usted a comer a las cinco?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_211.mp3,"6,12,17"
+212,212,ESL_SP,9781442328686,,10,10R,F,Are you going to eat at five o'clock?,8,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_212.mp3,"6,12,17"
+213,213,ESL_SP,9781442328686,,11,01Q,N,Voy a tomar algo de vino.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_213.mp3,6
+214,214,ESL_SP,9781442328686,,11,01R,M,I'm going to have some wine.,6,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_214.mp3,6
+215,215,ESL_SP,9781442328686,,11,02Q,N,"Hoy, y mañana también.",,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_215.mp3,17
+216,216,ESL_SP,9781442328686,,11,02R,M,"Today, and tomorrow, too.",4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_216.mp3,17
+217,217,ESL_SP,9781442328686,,11,03Q,N,Mañana por la noche a las siete.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_217.mp3,"12,17"
+218,218,ESL_SP,9781442328686,,11,03R,M,Tomorrow night at seven o'clock.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_218.mp3,"12,17"
+219,219,ESL_SP,9781442328686,,11,04Q,N,"Esta noche, voy a cenar a las diez.",,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_219.mp3,"6,12,17"
+220,220,ESL_SP,9781442328686,,11,04R,F,"Tonight, I’m going to have dinner at ten o’clock.",9,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_220.mp3,"6,12,17"
+221,221,ESL_SP,9781442328686,,11,05Q,N,¿Sabe usted qué hora es?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_221.mp3,"7,17"
+222,222,ESL_SP,9781442328686,,11,05R,M,Do you know what time it is?,7,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_222.mp3,"7,17"
+223,223,ESL_SP,9781442328686,,11,06Q,N,A las seis o a las siete.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_223.mp3,"12,17"
+224,224,ESL_SP,9781442328686,,11,06R,M,At six o'clock or at seven o'clock.,7,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_224.mp3,"12,17"
+225,225,ESL_SP,9781442328686,,11,07Q,N,"Entonces, a las siete.",,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_225.mp3,"12,17"
+226,226,ESL_SP,9781442328686,,11,07R,M,"Then, at seven o'clock.",4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_226.mp3,"12,17"
+227,227,ESL_SP,9781442328686,,11,08Q,N,Me gustaría cenar esta noche.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_227.mp3,"6,17"
+228,228,ESL_SP,9781442328686,,11,08R,M,I'd like to have dinner tonight.,6,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_228.mp3,"6,17"
+229,229,ESL_SP,9781442328686,,11,09Q,N,Voy a cenar esta noche.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_229.mp3,"6,17"
+230,230,ESL_SP,9781442328686,,11,09R,M,I'm going to have dinner tonight.,6,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_230.mp3,"6,17"
+231,231,ESL_SP,9781442328686,,11,10Q,N,"Mañana, voy a cenar con usted.",,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_231.mp3,"6,17"
+232,232,ESL_SP,9781442328686,,11,10R,F,"Tomorrow, I'm going to have dinner with you.",8,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_232.mp3,"6,17"
+233,233,ESL_SP,9781442328686,,11,11Q,N,¿Le gustaría cenar conmigo hoy?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_233.mp3,"6,17"
+234,234,ESL_SP,9781442328686,,11,11R,M,Would you like to have dinner with me today?,9,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_234.mp3,"6,17"
+235,235,ESL_SP,9781442328686,,12,01Q,N,¿Usted va a comer?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_235.mp3,6
+236,236,ESL_SP,9781442328686,,12,01R,F,You're going to eat?,4,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_236.mp3,6
+237,237,ESL_SP,9781442328686,,12,02Q,N,No voy a cenar hoy.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_237.mp3,"6,17"
+238,238,ESL_SP,9781442328686,,12,02R,M,I'm not going to have dinner today.,7,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_238.mp3,"6,17"
+239,239,ESL_SP,9781442328686,,12,03Q,N,¿Usted no va a cenar?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_239.mp3,6
+240,240,ESL_SP,9781442328686,,12,03R,F,You're not going to have dinner?,6,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_240.mp3,6
+241,241,ESL_SP,9781442328686,,12,04Q,N,¿Cuánto?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_241.mp3,"11,14,16"
+242,242,ESL_SP,9781442328686,,12,04R,M,How much?,2,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_242.mp3,"11,14,16"
+243,243,ESL_SP,9781442328686,,12,05Q,N,¿Cuánto le debo?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_243.mp3,"11,14"
+244,244,ESL_SP,9781442328686,,12,05R,M,How much do I owe you?,6,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_244.mp3,"11,14"
+245,245,ESL_SP,9781442328686,,12,06Q,N,Yo le entiendo.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_245.mp3,"15,16"
+246,246,ESL_SP,9781442328686,,12,06R,F,I understand you.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_246.mp3,"15,16"
+247,247,ESL_SP,9781442328686,,12,07Q,N,"Lo siento, por favor repita.",,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_247.mp3,"13,16"
+248,248,ESL_SP,9781442328686,,12,07R,F,"I'm sorry, please repeat.",4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_248.mp3,"13,16"
+249,249,ESL_SP,9781442328686,,12,08Q,N,¿Le debo yo cinco dólares?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_249.mp3,"11,12"
+250,250,ESL_SP,9781442328686,,12,08R,F,Do I owe you five dollars?,6,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_250.mp3,"11,12"
+251,251,ESL_SP,9781442328686,,12,09Q,N,Yo le debo trece dólares.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_251.mp3,"11,12"
+252,252,ESL_SP,9781442328686,,12,09R,F,I owe you thirteen dollars.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_252.mp3,"11,12"
+253,253,ESL_SP,9781442328686,,13,01Q,N,¿Cuántos pesos tiene usted?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_253.mp3,11
+254,254,ESL_SP,9781442328686,,13,01R,F,How many pesos do you have?,6,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_254.mp3,11
+255,255,ESL_SP,9781442328686,,13,02Q,N,Son quince pesos.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_255.mp3,"11,12"
+256,256,ESL_SP,9781442328686,,13,02R,F,It's fifteen pesos.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_256.mp3,"11,12"
+257,257,ESL_SP,9781442328686,,13,03Q,N,No la entiendo.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_257.mp3,"15,16"
+258,258,ESL_SP,9781442328686,,13,03R,M,I don't understand you.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_258.mp3,"15,16"
+259,259,ESL_SP,9781442328686,,13,04Q,N,"Por favor, escuche.",,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_259.mp3,"7,13"
+260,260,ESL_SP,9781442328686,,13,04R,F,"Please, listen.",2,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_260.mp3,"7,13"
+261,261,ESL_SP,9781442328686,,13,05Q,N,Yo no voy a comer con usted mañana por la noche.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_261.mp3,"6,17"
+262,262,ESL_SP,9781442328686,,13,05R,F,I'm not going to eat with you tomorrow night.,9,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_262.mp3,"6,17"
+263,263,ESL_SP,9781442328686,,13,06Q,N,¿Cuántos dólares tiene usted?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_263.mp3,11
+264,264,ESL_SP,9781442328686,,13,06R,F,How many dollars do you have?,6,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_264.mp3,11
+265,265,ESL_SP,9781442328686,,13,07Q,N,¿Tiene usted dieciséis dólares?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_265.mp3,"11,12"
+266,266,ESL_SP,9781442328686,,13,07R,F,Do you have sixteen dollars?,5,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_266.mp3,"11,12"
+267,267,ESL_SP,9781442328686,,13,08Q,N,"En dólares, son cinco dólares.",,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_267.mp3,"11,12"
+268,268,ESL_SP,9781442328686,,13,08R,F,"In dollars, it's five dollars.",5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_268.mp3,"11,12"
+269,269,ESL_SP,9781442328686,,14,01Q,N,Déme algunos dólares.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_269.mp3,"11,12"
+270,270,ESL_SP,9781442328686,,14,01R,M,Give me some dollars.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_270.mp3,"11,12"
+271,271,ESL_SP,9781442328686,,14,02Q,N,También tengo muchos dólares.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_271.mp3,"11,12"
+272,272,ESL_SP,9781442328686,,14,02R,F,I have a lot of dollars too.,7,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_272.mp3,"11,12"
+273,273,ESL_SP,9781442328686,,14,03Q,N,Aquí está un dólar.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_273.mp3,"11,12"
+274,274,ESL_SP,9781442328686,,14,03R,M,Here's a dollar.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_274.mp3,"11,12"
+275,275,ESL_SP,9781442328686,,14,04Q,N,Aquí están trece dólares.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_275.mp3,"11,12"
+276,276,ESL_SP,9781442328686,,14,04R,M,Here's thirteen dollars.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_276.mp3,"11,12"
+277,277,ESL_SP,9781442328686,,14,05Q,N,¿Cuánto le debo en dólares?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_277.mp3,"11,12"
+278,278,ESL_SP,9781442328686,,14,05R,M,How much do I owe you in dollars?,8,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_278.mp3,"11,12"
+279,279,ESL_SP,9781442328686,,14,06Q,N,¿Quiere usted un dólar?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_279.mp3,"11,12"
+280,280,ESL_SP,9781442328686,,14,06R,M,Do you want one dollar?,5,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_280.mp3,"11,12"
+281,281,ESL_SP,9781442328686,,14,07Q,N,¿Tiene usted dólares?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_281.mp3,11
+282,282,ESL_SP,9781442328686,,14,07R,F,Do you have any dollars?,5,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_282.mp3,11
+283,283,ESL_SP,9781442328686,,14,08Q,N,Te voy a dar diez pesos.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_283.mp3,"11,12"
+284,284,ESL_SP,9781442328686,,14,08R,M,I'm going to give you ten pesos.,7,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_284.mp3,"11,12"
+285,285,ESL_SP,9781442328686,,14,09Q,N,¿Qué vas a hacer?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_285.mp3,1
+286,286,ESL_SP,9781442328686,,14,09R,M,What are you going to do?,6,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_286.mp3,1
+287,287,ESL_SP,9781442328686,,14,10Q,N,Eso es mucho.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_287.mp3,"11,12,14"
+288,288,ESL_SP,9781442328686,,14,10R,M,That's a lot,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_288.mp3,"11,12,14"
+289,289,ESL_SP,9781442328686,,15,01Q,N,¿Cuánto cuesta?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_289.mp3,"11,14,16"
+290,290,ESL_SP,9781442328686,,15,01R,M,How much is it?,4,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_290.mp3,"11,14,16"
+291,291,ESL_SP,9781442328686,,15,02Q,N,Tengo algo.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_291.mp3,"11,14"
+292,292,ESL_SP,9781442328686,,15,02R,F,I have some.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_292.mp3,"11,14"
+293,293,ESL_SP,9781442328686,,15,03Q,N,Quiero algunos.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_293.mp3,"11,14"
+294,294,ESL_SP,9781442328686,,15,03R,M,I want some.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_294.mp3,"11,14"
+295,295,ESL_SP,9781442328686,,15,04Q,N,Muchas gracias.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_295.mp3,"13,16"
+296,296,ESL_SP,9781442328686,,15,04R,M,Thank you very much.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_296.mp3,"13,16"
+297,297,ESL_SP,9781442328686,,15,05Q,N,¿Dos y dos son cuánto?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_297.mp3,"7,12"
+298,298,ESL_SP,9781442328686,,15,05R,M,Two and two is how much?,6,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_298.mp3,"7,12"
+299,299,ESL_SP,9781442328686,,15,06Q,N,"Entonces, déme un dólar.",,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_299.mp3,"11,12"
+300,300,ESL_SP,9781442328686,,15,06R,F,Then give me one dollar.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_300.mp3,"11,12"
+301,301,ESL_SP,9781442328686,,15,07Q,N,No mucho.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_301.mp3,"11,12,14"
+302,302,ESL_SP,9781442328686,,15,07R,M,Not a lot.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_302.mp3,"11,12,14"
+303,303,ESL_SP,9781442328686,,15,08Q,N,¿Para mí?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_303.mp3,7
+304,304,ESL_SP,9781442328686,,15,08R,M,For me?,2,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_304.mp3,7
+305,305,ESL_SP,9781442328686,,15,09Q,N,¿Cuánto cuesta una cerveza?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_305.mp3,"6,7"
+306,306,ESL_SP,9781442328686,,15,09R,M,How much is a beer?,5,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_306.mp3,"6,7"
+307,307,ESL_SP,9781442328686,,15,10Q,N,No puedo darle dólares.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_307.mp3,11
+308,308,ESL_SP,9781442328686,,15,10R,F,I can't give you any dollars.,6,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_308.mp3,11
+309,309,ESL_SP,9781442328686,,16,01Q,N,Déme algo de dinero.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_309.mp3,"7,11"
+310,310,ESL_SP,9781442328686,,16,01R,F,Give me some money.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_310.mp3,"7,11"
+311,311,ESL_SP,9781442328686,,16,02Q,N,¿Eso es demasiado?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_311.mp3,"7,14"
+312,312,ESL_SP,9781442328686,,16,02R,M,Is that too much?,4,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_312.mp3,"7,14"
+313,313,ESL_SP,9781442328686,,16,03Q,N,Es para usted.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_313.mp3,"7,9"
+314,314,ESL_SP,9781442328686,,16,03R,M,It's for you.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_314.mp3,"7,9"
+315,315,ESL_SP,9781442328686,,16,04Q,N,No es suficiente.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_315.mp3,"9,11,14"
+316,316,ESL_SP,9781442328686,,16,04R,F,It's not enough.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_316.mp3,"9,11,14"
+317,317,ESL_SP,9781442328686,,16,05Q,N,Eso es suficiente.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_317.mp3,"11,14"
+318,318,ESL_SP,9781442328686,,16,05R,F,That's enough.,2,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_318.mp3,"11,14"
+319,319,ESL_SP,9781442328686,,16,06Q,N,Eso es mucho dinero.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_319.mp3,"11,12"
+320,320,ESL_SP,9781442328686,,16,06R,M,That's a lot of money.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_320.mp3,"11,12"
+321,321,ESL_SP,9781442328686,,16,07Q,N,¿Qué es?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_321.mp3,7
+322,322,ESL_SP,9781442328686,,16,07R,F,What is it?,3,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_322.mp3,7
+323,323,ESL_SP,9781442328686,,16,08Q,N,Usted me debe cinco dólares.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_323.mp3,"11,12"
+324,324,ESL_SP,9781442328686,,16,08R,M,You owe me five dollars.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_324.mp3,"11,12"
+325,325,ESL_SP,9781442328686,,16,09Q,N,Es demasiado.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_325.mp3,"7,11,14"
+326,326,ESL_SP,9781442328686,,16,09R,M,It's too much.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_326.mp3,"7,11,14"
+327,327,ESL_SP,9781442328686,,16,10Q,N,¿Es suficiente?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_327.mp3,"7,11,14"
+328,328,ESL_SP,9781442328686,,16,10R,M,Is it enough?,3,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_328.mp3,"7,11,14"
+329,329,ESL_SP,9781442328686,,17,01Q,N,Buenos días.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_329.mp3,"13,16,17"
+330,330,ESL_SP,9781442328686,,17,01R,F,Good morning.,2,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_330.mp3,"13,16,17"
+331,331,ESL_SP,9781442328686,,17,02Q,N,¿Adónde va usted?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_331.mp3,4
+332,332,ESL_SP,9781442328686,,17,02R,F,Where are you going?,4,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_332.mp3,4
+333,333,ESL_SP,9781442328686,,17,03Q,N,Puedo darle algo de dinero.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_333.mp3,"11,12"
+334,334,ESL_SP,9781442328686,,17,03R,F,I can give you some money.,6,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_334.mp3,"11,12"
+335,335,ESL_SP,9781442328686,,17,04Q,N,Tengo suficientes dólares.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_335.mp3,"11,12"
+336,336,ESL_SP,9781442328686,,17,04R,F,I have enough dollars.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_336.mp3,"11,12"
+337,337,ESL_SP,9781442328686,,17,05Q,N,Es demasiado caro.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_337.mp3,"11,14"
+338,338,ESL_SP,9781442328686,,17,05R,M,It's too expensive.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_338.mp3,"11,14"
+339,339,ESL_SP,9781442328686,,17,06Q,N,Es muy caro.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_339.mp3,"11,14"
+340,340,ESL_SP,9781442328686,,17,06R,M,It's very expensive.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_340.mp3,"11,14"
+341,341,ESL_SP,9781442328686,,17,07Q,N,Usted habla muy rápido.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_341.mp3,"15,16"
+342,342,ESL_SP,9781442328686,,17,07R,M,You speak very fast.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_342.mp3,"15,16"
+343,343,ESL_SP,9781442328686,,17,08Q,N,Usted habla demasiado rápido.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_343.mp3,"15,16"
+344,344,ESL_SP,9781442328686,,17,08R,M,You speak too fast.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_344.mp3,"15,16"
+345,345,ESL_SP,9781442328686,,18,01Q,N,Aquí es más caro.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_345.mp3,"11,14"
+346,346,ESL_SP,9781442328686,,18,01R,M,Here it's more expensive.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_346.mp3,"11,14"
+347,347,ESL_SP,9781442328686,,18,02Q,N,¿Quién es?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_347.mp3,7
+348,348,ESL_SP,9781442328686,,18,02R,M,Who's that?,2,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_348.mp3,7
+349,349,ESL_SP,9781442328686,,18,03Q,N,Ése es mi esposo.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_349.mp3,5
+350,350,ESL_SP,9781442328686,,18,03R,F,That's my husband.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_350.mp3,5
+351,351,ESL_SP,9781442328686,,18,04Q,N,Ésa es mi esposa.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_351.mp3,5
+352,352,ESL_SP,9781442328686,,18,04R,M,That's my wife.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_352.mp3,5
+353,353,ESL_SP,9781442328686,,18,05Q,N,Mi esposa está allá.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_353.mp3,4
+354,354,ESL_SP,9781442328686,,18,05R,M,My wife is over there.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_354.mp3,4
+355,355,ESL_SP,9781442328686,,18,06Q,N,"A mi esposo, le gustaría tomar algo de agua.",,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_355.mp3,"5,6"
+356,356,ESL_SP,9781442328686,,18,06R,F,My husband would like to have some water.,8,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_356.mp3,"5,6"
+357,357,ESL_SP,9781442328686,,18,07Q,N,"A mi esposa, le gustaría algo de agua.",,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_357.mp3,"5,6"
+358,358,ESL_SP,9781442328686,,18,07R,M,My wife would like some water.,6,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_358.mp3,"5,6"
+359,359,ESL_SP,9781442328686,,18,08Q,N,Su esposa está aquí.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_359.mp3,5
+360,360,ESL_SP,9781442328686,,18,08R,F,Your wife is here.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_360.mp3,5
+361,361,ESL_SP,9781442328686,,18,09Q,N,¿Qué quiere hacer su esposa?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_361.mp3,"1,5"
+362,362,ESL_SP,9781442328686,,18,09R,F,What does your wife want to do?,7,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_362.mp3,"1,5"
+363,363,ESL_SP,9781442328686,,18,10Q,N,Su esposo no está aquí.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_363.mp3,5
+364,364,ESL_SP,9781442328686,,18,10R,M,Your husband isn't here.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_364.mp3,5
+365,365,ESL_SP,9781442328686,,18,11Q,N,¿Quién está allá?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_365.mp3,4
+366,366,ESL_SP,9781442328686,,18,11R,F,Who's over there?,3,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_366.mp3,4
+367,367,ESL_SP,9781442328686,,18,12Q,N,¿Su esposa quiere beber algo?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_367.mp3,"5,6"
+368,368,ESL_SP,9781442328686,,18,12R,F,Does your wife want to have something to drink?,9,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_368.mp3,"5,6"
+369,369,ESL_SP,9781442328686,,19,01Q,N,¿Su esposo también habla rápido?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_369.mp3,"5,15"
+370,370,ESL_SP,9781442328686,,19,01R,M,Does your husband speak fast too?,6,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_370.mp3,"5,15"
+371,371,ESL_SP,9781442328686,,19,02Q,N,¿Está ella allá?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_371.mp3,4
+372,372,ESL_SP,9781442328686,,19,02R,F,Is she over there?,4,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_372.mp3,4
+373,373,ESL_SP,9781442328686,,19,03Q,N,Mucho gusto en conocerlo.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_373.mp3,"10,13,16"
+374,374,ESL_SP,9781442328686,,19,03R,F,Pleased to meet you.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_374.mp3,"10,13,16"
+375,375,ESL_SP,9781442328686,,19,04Q,N,A nosotros nos gustaría beber algo.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_375.mp3,6
+376,376,ESL_SP,9781442328686,,19,04R,M,We’d like to have something to drink.,7,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_376.mp3,6
+377,377,ESL_SP,9781442328686,,19,05Q,N,¿Dónde viven ustedes?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_377.mp3,"10,16"
+378,378,ESL_SP,9781442328686,,19,05R,F,Where do you live?,4,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_378.mp3,"10,16"
+379,379,ESL_SP,9781442328686,,19,06Q,N,Le voy a dar cincuenta y tres dólares.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_379.mp3,"11,12"
+380,380,ESL_SP,9781442328686,,19,06R,F,I’m going to give you fifty-three dollars.,7,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_380.mp3,"11,12"
+381,381,ESL_SP,9781442328686,,19,07Q,N,Él está allá.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_381.mp3,4
+382,382,ESL_SP,9781442328686,,19,07R,F,He's over there.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_382.mp3,4
+383,383,ESL_SP,9781442328686,,19,08Q,N,Ella no está allá.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_383.mp3,4
+384,384,ESL_SP,9781442328686,,19,08R,M,She's not over there.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_384.mp3,4
+385,385,ESL_SP,9781442328686,,19,09Q,N,A él le gustaría algo de café.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_385.mp3,6
+386,386,ESL_SP,9781442328686,,19,09R,F,He'd like some coffee.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_386.mp3,6
+387,387,ESL_SP,9781442328686,,19,10Q,N,A ella le gustaría algo de agua.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_387.mp3,6
+388,388,ESL_SP,9781442328686,,19,10R,M,She'd like some water.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_388.mp3,6
+389,389,ESL_SP,9781442328686,,19,11Q,N,Pase.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_389.mp3,"13,16"
+390,390,ESL_SP,9781442328686,,19,11R,F,Come in.,2,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_390.mp3,"13,16"
+391,391,ESL_SP,9781442328686,,19,12Q,N,¿Su esposo también vive aquí?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_391.mp3,"5,9"
+392,392,ESL_SP,9781442328686,,19,12R,M,Does your husband live here too?,6,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_392.mp3,"5,9"
+393,393,ESL_SP,9781442328686,,19,13Q,N,Nosotros vivimos aquí.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_393.mp3,9
+394,394,ESL_SP,9781442328686,,19,13R,F,We live here.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_394.mp3,9
+395,395,ESL_SP,9781442328686,,20,01Q,N,Qué tiene usted?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_395.mp3,9
+396,396,ESL_SP,9781442328686,,20,01R,F,What do you have?,4,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_396.mp3,9
+397,397,ESL_SP,9781442328686,,20,02Q,N,¿Qué quiere beber su esposo?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_397.mp3,"5,6"
+398,398,ESL_SP,9781442328686,,20,02R,M,What does your husband want to drink?,7,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_398.mp3,"5,6"
+399,399,ESL_SP,9781442328686,,20,03Q,N,Ella está con su esposo.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_399.mp3,"5,9"
+400,400,ESL_SP,9781442328686,,20,03R,M,She's with your husband.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_400.mp3,"5,9"
+401,401,ESL_SP,9781442328686,,20,04Q,N,Nosotros vivimos en México.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_401.mp3,"9,18"
+402,402,ESL_SP,9781442328686,,20,04R,M,We live in Mexico.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_402.mp3,"9,18"
+403,403,ESL_SP,9781442328686,,20,05Q,N,¿Tienen ustedes hijos?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_403.mp3,"5,10"
+404,404,ESL_SP,9781442328686,,20,05R,F,Do you have any children?,5,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_404.mp3,"5,10"
+405,405,ESL_SP,9781442328686,,20,06Q,N,No tenemos hijos.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_405.mp3,"5,10"
+406,406,ESL_SP,9781442328686,,20,06R,F,We don't have any children.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_406.mp3,"5,10"
+407,407,ESL_SP,9781442328686,,20,07Q,N,¿Cuántos hijos tienen ustedes?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_407.mp3,"5,10"
+408,408,ESL_SP,9781442328686,,20,07R,F,How many children do you have?,6,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_408.mp3,"5,10"
+409,409,ESL_SP,9781442328686,,20,08Q,N,Tenemos dos niños y una niña.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_409.mp3,"5,10,12"
+410,410,ESL_SP,9781442328686,,20,08R,M,We have two boys and one girl.,7,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_410.mp3,"5,10,12"
+411,411,ESL_SP,9781442328686,,20,09Q,N,Nos gustaría un niño.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_411.mp3,5
+412,412,ESL_SP,9781442328686,,20,09R,M,We'd like a boy.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_412.mp3,5
+413,413,ESL_SP,9781442328686,,20,10Q,N,Los niños son grandes.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_413.mp3,5
+414,414,ESL_SP,9781442328686,,20,10R,M,The boys are big.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_414.mp3,5
+415,415,ESL_SP,9781442328686,,20,10Q,N,¿Están ellos aquí?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_415.mp3,5
+416,416,ESL_SP,9781442328686,,20,10R,F,Are they here?,3,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_416.mp3,5
+417,417,ESL_SP,9781442328686,,20,12Q,N,Ellos no están allá.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_417.mp3,"4,9"
+418,418,ESL_SP,9781442328686,,20,12R,M,They're not over there.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_418.mp3,"4,9"
+419,419,ESL_SP,9781442328686,,20,13Q,N,Ellos son grandes.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_419.mp3,"5,9"
+420,420,ESL_SP,9781442328686,,20,13R,M,They are big.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_420.mp3,"5,9"
+421,421,ESL_SP,9781442328686,,21,01Q,N,Nuestro niño no es grande.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_421.mp3,"5,9"
+422,422,ESL_SP,9781442328686,,21,01R,M,Our boy isn't big.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_422.mp3,"5,9"
+423,423,ESL_SP,9781442328686,,21,02Q,N,Ella está aquí con nosotros.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_423.mp3,"5,9"
+424,424,ESL_SP,9781442328686,,21,02R,M,She's here with us.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_424.mp3,"5,9"
+425,425,ESL_SP,9781442328686,,21,03Q,N,Las niñas son grandes.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_425.mp3,"5,9"
+426,426,ESL_SP,9781442328686,,21,03R,F,The girls are big.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_426.mp3,"5,9"
+427,427,ESL_SP,9781442328686,,21,04Q,N,Espere.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_427.mp3,"7,9"
+428,428,ESL_SP,9781442328686,,21,04R,F,Wait.,1,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_428.mp3,"7,9"
+429,429,ESL_SP,9781442328686,,21,05Q,N,Podemos esperar.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_429.mp3,"7,9"
+430,430,ESL_SP,9781442328686,,21,05R,M,We can wait.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_430.mp3,"7,9"
+431,431,ESL_SP,9781442328686,,21,06Q,N,Tiene una familia grande.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_431.mp3,"5,9"
+432,432,ESL_SP,9781442328686,,21,06R,M,You have a big family.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_432.mp3,"5,9"
+433,433,ESL_SP,9781442328686,,21,07Q,N,Queremos muchos hijos.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_433.mp3,"5,9,12"
+434,434,ESL_SP,9781442328686,,21,07R,M,We want lot of children.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_434.mp3,"5,9,12"
+435,435,ESL_SP,9781442328686,,21,08Q,N,¿Tiene usted niñas?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_435.mp3,5
+436,436,ESL_SP,9781442328686,,21,08R,M,Do you have any girls?,5,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_436.mp3,5
+437,437,ESL_SP,9781442328686,,21,09Q,N,¿Puede usted esperar?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_437.mp3,"7,9"
+438,438,ESL_SP,9781442328686,,21,09R,M,Can you wait?,3,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_438.mp3,"7,9"
+439,439,ESL_SP,9781442328686,,21,10Q,N,No queremos muchos hijos.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_439.mp3,"5,12"
+440,440,ESL_SP,9781442328686,,21,10R,F,We don't want a lot of children.,7,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_440.mp3,"5,12"
+441,441,ESL_SP,9781442328686,,21,11Q,N,La niña grande está aquí.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_441.mp3,4
+442,442,ESL_SP,9781442328686,,21,11R,F,The big girl is here.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_442.mp3,4
+443,443,ESL_SP,9781442328686,,21,12Q,N,Nuestro niño es pequeño.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_443.mp3,"5,9"
+444,444,ESL_SP,9781442328686,,21,12R,M,Our boy is little.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_444.mp3,"5,9"
+445,445,ESL_SP,9781442328686,,21,13Q,N,¿De verdad?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_445.mp3,7
+446,446,ESL_SP,9781442328686,,21,13R,F,Really?,1,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_446.mp3,7
+447,447,ESL_SP,9781442328686,,21,14Q,N,¿Dónde queda el baño?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_447.mp3,"4,16"
+448,448,ESL_SP,9781442328686,,21,14R,M,Where's the bathroom?,3,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_448.mp3,"4,16"
+449,449,ESL_SP,9781442328686,,22,01Q,N,¿Tiene suficiente gasolina?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_449.mp3,"12,18"
+450,450,ESL_SP,9781442328686,,22,01R,F,Do you have enough gas?,5,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_450.mp3,"12,18"
+451,451,ESL_SP,9781442328686,,22,02Q,N,¿Cuántas personas hay?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_451.mp3,5
+452,452,ESL_SP,9781442328686,,22,02R,F,How many people are there?,5,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_452.mp3,5
+453,453,ESL_SP,9781442328686,,22,03Q,N,¿Cuánta gasolina?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_453.mp3,"12,18"
+454,454,ESL_SP,9781442328686,,22,03R,F,How much gas?,3,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_454.mp3,"12,18"
+455,455,ESL_SP,9781442328686,,22,04Q,N,Son sesenta millas.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_455.mp3,"12,18"
+456,456,ESL_SP,9781442328686,,22,04R,M,It's sixty miles.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_456.mp3,"12,18"
+457,457,ESL_SP,9781442328686,,22,05Q,N,Mi familia está en los Estados Unidos.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_457.mp3,"5,18"
+458,458,ESL_SP,9781442328686,,22,05R,M,My family is in the United States.,7,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_458.mp3,"5,18"
+459,459,ESL_SP,9781442328686,,22,06Q,N,¿Cuántas personas hay en su familia?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_459.mp3,"5,12"
+460,460,ESL_SP,9781442328686,,22,06R,F,How many people are there in your family?,8,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_460.mp3,"5,12"
+461,461,ESL_SP,9781442328686,,22,07Q,N,Hay tres personas en mi familia.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_461.mp3,"5,12"
+462,462,ESL_SP,9781442328686,,22,07R,M,There are three people in my family.,7,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_462.mp3,"5,12"
+463,463,ESL_SP,9781442328686,,22,08Q,N,Nos gustaría algo de gasolina.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_463.mp3,"7,18"
+464,464,ESL_SP,9781442328686,,22,08R,M,We'd like some gas.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_464.mp3,"7,18"
+465,465,ESL_SP,9781442328686,,22,09Q,N,Mi coche es suficientemente grande para nuestra familia.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_465.mp3,"5,9"
+466,466,ESL_SP,9781442328686,,22,09R,M,My car is big enough for my family.,8,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_466.mp3,"5,9"
+467,467,ESL_SP,9781442328686,,22,10Q,N,Si usted quiere.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_467.mp3,7
+468,468,ESL_SP,9781442328686,,22,10R,M,If you want.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_468.mp3,7
+469,469,ESL_SP,9781442328686,,22,11Q,N,¿Cuántos galones?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_469.mp3,"12,18"
+470,470,ESL_SP,9781442328686,,22,11R,F,How many gallons?,3,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_470.mp3,"12,18"
+471,471,ESL_SP,9781442328686,,22,12Q,N,Eso es mucha gasolina.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_471.mp3,"12,18"
+472,472,ESL_SP,9781442328686,,22,12R,F,That's a lot of gas.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_472.mp3,"12,18"
+473,473,ESL_SP,9781442328686,,22,13Q,N,Por favor déme diez dólares de gasolina.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_473.mp3,"11,12"
+474,474,ESL_SP,9781442328686,,22,13R,M,Please give me ten dollars’ worth of gas.,8,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_474.mp3,"11,12"
+475,475,ESL_SP,9781442328686,,23,01Q,N,¿Queda lejos Long Island?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_475.mp3,"4,18"
+476,476,ESL_SP,9781442328686,,23,01R,M,Is Long Island far?,4,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_476.mp3,"4,18"
+477,477,ESL_SP,9781442328686,,23,02Q,N,¿Es éste el camino a Long Island?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_477.mp3,"4,18"
+478,478,ESL_SP,9781442328686,,23,02R,F,Is this the road to Long Island?,7,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_478.mp3,"4,18"
+479,479,ESL_SP,9781442328686,,23,03Q,N,Queda lejos.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_479.mp3,"4,18"
+480,480,ESL_SP,9781442328686,,23,03R,F,It's far.,2,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_480.mp3,"4,18"
+481,481,ESL_SP,9781442328686,,23,04Q,N,Queda todo derecho.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_481.mp3,4
+482,482,ESL_SP,9781442328686,,23,04R,M,It's straight ahead.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_482.mp3,4
+483,483,ESL_SP,9781442328686,,23,05Q,N,¿Cuál es el camino a Long Island?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_483.mp3,"4,18"
+484,484,ESL_SP,9781442328686,,23,05R,F,Which is the road to Long Island?,7,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_484.mp3,"4,18"
+485,485,ESL_SP,9781442328686,,23,06Q,N,Las niñas están aquí en los Estados Unidos con nosotros.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_485.mp3,"5,9,18"
+486,486,ESL_SP,9781442328686,,23,06R,M,The girls are here in the United States with us.,10,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_486.mp3,"5,9,18"
+487,487,ESL_SP,9781442328686,,23,07Q,N,Tenemos una familia grande.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_487.mp3,"5,9"
+488,488,ESL_SP,9781442328686,,23,07R,M,We have a big family.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_488.mp3,"5,9"
+489,489,ESL_SP,9781442328686,,23,08Q,N,Tenemos una familia pequeña.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_489.mp3,"5,9"
+490,490,ESL_SP,9781442328686,,23,08R,F,We have a small family.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_490.mp3,"5,9"
+491,491,ESL_SP,9781442328686,,23,09Q,N,Nosotros no tenemos una familia grande.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_491.mp3,"5,9"
+492,492,ESL_SP,9781442328686,,23,09R,F,We don't have a big family.,6,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_492.mp3,"5,9"
+493,493,ESL_SP,9781442328686,,23,10Q,N,Quiero un coche más chico.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_493.mp3,9
+494,494,ESL_SP,9781442328686,,23,10R,M,I want a smaller car.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_494.mp3,9
+495,495,ESL_SP,9781442328686,,23,11Q,N,¿Cuántas millas son de aquí a Long Island?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_495.mp3,"12,18"
+496,496,ESL_SP,9781442328686,,23,11R,M,How many miles is it to Long Island?,8,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_496.mp3,"12,18"
+497,497,ESL_SP,9781442328686,,23,12Q,N,Ése no es el camino a Long Island.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_497.mp3,"4,18"
+498,498,ESL_SP,9781442328686,,23,12R,F,That's not the road to Long Island.,7,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_498.mp3,"4,18"
+499,499,ESL_SP,9781442328686,,24,01Q,N,No hable demasiado rápido.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_499.mp3,"15,16"
+500,500,ESL_SP,9781442328686,,24,01R,M,Don't speak too fast.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_500.mp3,"15,16"
+501,501,ESL_SP,9781442328686,,24,02Q,N,Queda a la derecha.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_501.mp3,4
+502,502,ESL_SP,9781442328686,,24,02R,F,It's to the right.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_502.mp3,4
+503,503,ESL_SP,9781442328686,,24,03Q,N,Vaya a la derecha.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_503.mp3,4
+504,504,ESL_SP,9781442328686,,24,03R,F,Go to the right.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_504.mp3,4
+505,505,ESL_SP,9781442328686,,24,04Q,N,¿Qué tan lejos queda?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_505.mp3,4
+506,506,ESL_SP,9781442328686,,24,04R,M,How far is it?,4,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_506.mp3,4
+507,507,ESL_SP,9781442328686,,24,05Q,N,El camino que usted quiere queda a la izquierda.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_507.mp3,4
+508,508,ESL_SP,9781442328686,,24,05R,F,The road you want is to the left.,8,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_508.mp3,4
+509,509,ESL_SP,9781442328686,,24,06Q,N,No muy lejos.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_509.mp3,4
+510,510,ESL_SP,9781442328686,,24,06R,F,Not very far.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_510.mp3,4
+511,511,ESL_SP,9781442328686,,24,07Q,N,Un dólar por galón.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_511.mp3,"11,12"
+512,512,ESL_SP,9781442328686,,24,07R,F,One dollar per gallon.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_512.mp3,"11,12"
+513,513,ESL_SP,9781442328686,,24,08Q,N,¿Usted necesita gasolina?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_513.mp3,18
+514,514,ESL_SP,9781442328686,,24,08R,F,Do you need gas?,4,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_514.mp3,18
+515,515,ESL_SP,9781442328686,,24,09Q,N,Necesito algo de gasolina.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_515.mp3,"9,18"
+516,516,ESL_SP,9781442328686,,24,09R,M,I need some gas.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_516.mp3,"9,18"
+517,517,ESL_SP,9781442328686,,24,10Q,N,Necesitamos un coche más grande.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_517.mp3,9
+518,518,ESL_SP,9781442328686,,24,10R,F,We need a bigger car.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_518.mp3,9
+519,519,ESL_SP,9781442328686,,25,01Q,N,Ellas están abiertas tarde esta noche.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_519.mp3,"14,16"
+520,520,ESL_SP,9781442328686,,25,01R,F,They're open late tonight.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_520.mp3,"14,16"
+521,521,ESL_SP,9781442328686,,25,02Q,N,¿Por qué?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_521.mp3,"7,9"
+522,522,ESL_SP,9781442328686,,25,02R,M,Why?,1,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_522.mp3,"7,9"
+523,523,ESL_SP,9781442328686,,25,03Q,N,¿Por qué no?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_523.mp3,"7,9"
+524,524,ESL_SP,9781442328686,,25,03R,M,Why not?,2,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_524.mp3,"7,9"
+525,525,ESL_SP,9781442328686,,25,04Q,N,Ése es el camino que usted quiere.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_525.mp3,"4,18"
+526,526,ESL_SP,9781442328686,,25,04R,F,That's the road you want.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_526.mp3,"4,18"
+527,527,ESL_SP,9781442328686,,25,05Q,N,¿Puedo comprar algo?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_527.mp3,14
+528,528,ESL_SP,9781442328686,,25,05R,M,Can I buy something?,4,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_528.mp3,14
+529,529,ESL_SP,9781442328686,,25,06Q,N,Las tiendas pequeñas están cerradas.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_529.mp3,14
+530,530,ESL_SP,9781442328686,,25,06R,F,The smaller stores are closed.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_530.mp3,14
+531,531,ESL_SP,9781442328686,,25,07Q,N,Porque necesito algo de dinero.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_531.mp3,11
+532,532,ESL_SP,9781442328686,,25,07R,F,Because I need some money.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_532.mp3,11
+533,533,ESL_SP,9781442328686,,25,08Q,N,No es tarde.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_533.mp3,"14,17"
+534,534,ESL_SP,9781442328686,,25,08R,M,It's not late.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_534.mp3,"14,17"
+535,535,ESL_SP,9781442328686,,25,09Q,N,Mi esposo quiere comprar algo.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_535.mp3,"5,14"
+536,536,ESL_SP,9781442328686,,25,09R,F,My husband wants to buy something.,6,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_536.mp3,"5,14"
+537,537,ESL_SP,9781442328686,,25,10Q,N,Él necesita algo de dinero.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_537.mp3,11
+538,538,ESL_SP,9781442328686,,25,10R,F,He needs some money.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_538.mp3,11
+539,539,ESL_SP,9781442328686,,26,01Q,N,Creo que sí.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_539.mp3,7
+540,540,ESL_SP,9781442328686,,26,01R,F,I think so.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_540.mp3,7
+541,541,ESL_SP,9781442328686,,26,02Q,N,Creo que no.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_541.mp3,7
+542,542,ESL_SP,9781442328686,,26,02R,F,I don't think so.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_542.mp3,7
+543,543,ESL_SP,9781442328686,,26,03Q,N,Voy a ver a algunos amigos.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_543.mp3,"1,5"
+544,544,ESL_SP,9781442328686,,26,03R,F,I'm going to see some friends.,6,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_544.mp3,"1,5"
+545,545,ESL_SP,9781442328686,,26,04Q,N,Ella trabaja allí.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_545.mp3,9
+546,546,ESL_SP,9781442328686,,26,04R,F,She works there.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_546.mp3,9
+547,547,ESL_SP,9781442328686,,26,05Q,N,No muy bien.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_547.mp3,"9,15"
+548,548,ESL_SP,9781442328686,,26,05R,F,Not very well.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_548.mp3,"9,15"
+549,549,ESL_SP,9781442328686,,26,06Q,N,Entonces vaya a la tienda departamental.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_549.mp3,14
+550,550,ESL_SP,9781442328686,,26,06R,M,Then go to the department store.,6,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_550.mp3,14
+551,551,ESL_SP,9781442328686,,26,07Q,N,¿Qué va a hacer allí?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_551.mp3,1
+552,552,ESL_SP,9781442328686,,26,07R,M,What are you going to do there?,7,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_552.mp3,1
+553,553,ESL_SP,9781442328686,,26,08Q,N,Tengo unos amigos allí.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_553.mp3,"5,12"
+554,554,ESL_SP,9781442328686,,26,08R,F,I have a few friends there.,6,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_554.mp3,"5,12"
+555,555,ESL_SP,9781442328686,,26,09Q,N,Puede ser.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_555.mp3,7
+556,556,ESL_SP,9781442328686,,26,09R,F,Maybe.,1,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_556.mp3,7
+557,557,ESL_SP,9781442328686,,27,01Q,N,No quiero nada.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_557.mp3,7
+558,558,ESL_SP,9781442328686,,27,01R,M,I don't want anything.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_558.mp3,7
+559,559,ESL_SP,9781442328686,,27,02Q,N,Quiero irme.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_559.mp3,18
+560,560,ESL_SP,9781442328686,,27,02R,M,I want to leave.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_560.mp3,18
+561,561,ESL_SP,9781442328686,,27,03Q,N,Me voy a ir mañana.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_561.mp3,"17,18"
+562,562,ESL_SP,9781442328686,,27,03R,M,I'm going to leave tomorrow.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_562.mp3,"17,18"
+563,563,ESL_SP,9781442328686,,27,04Q,N,Ella no tiene coche.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_563.mp3,9
+564,564,ESL_SP,9781442328686,,27,04R,M,She doesn't have a car.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_564.mp3,9
+565,565,ESL_SP,9781442328686,,27,05Q,N,Ella no necesita un coche.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_565.mp3,9
+566,566,ESL_SP,9781442328686,,27,05R,M,She doesn't need a car.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_566.mp3,9
+567,567,ESL_SP,9781442328686,,27,06Q,N,No necesitamos nada.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_567.mp3,7
+568,568,ESL_SP,9781442328686,,27,06R,M,We don't need anything.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_568.mp3,7
+569,569,ESL_SP,9781442328686,,27,07Q,N,Vamos a irnos juntos.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_569.mp3,"1,18"
+570,570,ESL_SP,9781442328686,,27,07R,M,We're going to leave together.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_570.mp3,"1,18"
+571,571,ESL_SP,9781442328686,,27,08Q,N,Usted puede irse con nosotros.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_571.mp3,"1,18"
+572,572,ESL_SP,9781442328686,,27,08R,M,You can leave with us.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_572.mp3,"1,18"
+573,573,ESL_SP,9781442328686,,27,09Q,N,No tengo nada.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_573.mp3,7
+574,574,ESL_SP,9781442328686,,27,09R,M,I don't have anything.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_574.mp3,7
+575,575,ESL_SP,9781442328686,,27,10Q,N,Usted no me debe nada.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_575.mp3,"7,11"
+576,576,ESL_SP,9781442328686,,27,10R,M,You don't owe me anything.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_576.mp3,"7,11"
+577,577,ESL_SP,9781442328686,,28,01Q,N,¿Cuánto tiempo van a quedarse?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_577.mp3,18
+578,578,ESL_SP,9781442328686,,28,01R,F,How long are you going to stay?,7,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_578.mp3,18
+579,579,ESL_SP,9781442328686,,28,02Q,N,¿Cuántos días?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_579.mp3,"12,17,18"
+580,580,ESL_SP,9781442328686,,28,02R,F,How many days?,3,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_580.mp3,"12,17,18"
+581,581,ESL_SP,9781442328686,,28,03Q,N,No sé lo que quiere decir eso.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_581.mp3,"15,16"
+582,582,ESL_SP,9781442328686,,28,03R,F,I don't know what that means.,6,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_582.mp3,"15,16"
+583,583,ESL_SP,9781442328686,,28,04Q,N,Somos norteamericanos.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_583.mp3,"9,10"
+584,584,ESL_SP,9781442328686,,28,04R,F,We're American.,2,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_584.mp3,"9,10"
+585,585,ESL_SP,9781442328686,,28,05Q,N,Estamos aquí durante unos días.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_585.mp3,"17,18"
+586,586,ESL_SP,9781442328686,,28,05R,M,We're here for a few days.,6,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_586.mp3,"17,18"
+587,587,ESL_SP,9781442328686,,28,06Q,N,¿Qué quiere decir eso?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_587.mp3,"15,16"
+588,588,ESL_SP,9781442328686,,28,06R,M,What does that mean?,4,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_588.mp3,"15,16"
+589,589,ESL_SP,9781442328686,,28,07Q,N,Es una palabra en inglés.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_589.mp3,15
+590,590,ESL_SP,9781442328686,,28,07R,F,It's an English word.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_590.mp3,15
+591,591,ESL_SP,9781442328686,,28,08Q,N,Tenemos un coche norteamericano.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_591.mp3,9
+592,592,ESL_SP,9781442328686,,28,08R,F,We have an American car.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_592.mp3,9
+593,593,ESL_SP,9781442328686,,28,09Q,N,Vamos a quedarnos durante unos días.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_593.mp3,"17,18"
+594,594,ESL_SP,9781442328686,,28,09R,M,We're going to stay for a few days.,8,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_594.mp3,"17,18"
+595,595,ESL_SP,9781442328686,,28,10Q,N,No tenemos mucho tiempo.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_595.mp3,"9,17"
+596,596,ESL_SP,9781442328686,,28,10R,M,We don't have much time.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_596.mp3,"9,17"
+597,597,ESL_SP,9781442328686,,29,01Q,N,El vino es para él.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_597.mp3,"6,9"
+598,598,ESL_SP,9781442328686,,29,01R,F,The wine is for him.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_598.mp3,"6,9"
+599,599,ESL_SP,9781442328686,,29,02Q,N,Cuanto tiempo hace que están ustedes aquí?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_599.mp3,"6,17"
+600,600,ESL_SP,9781442328686,,29,02R,M,How long have you been here?,6,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_600.mp3,"6,17"
+601,601,ESL_SP,9781442328686,,29,03Q,N,Me gusta el vino.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_601.mp3,"6,9"
+602,602,ESL_SP,9781442328686,,29,03R,F,I like wine.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_602.mp3,"6,9"
+603,603,ESL_SP,9781442328686,,29,04Q,N,Eso no está nada mal.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_603.mp3,"7,9"
+604,604,ESL_SP,9781442328686,,29,04R,M,That's not bad.,3,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_604.mp3,"7,9"
+605,605,ESL_SP,9781442328686,,29,05Q,N,Estoy aquí desde hace unas semanas.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_605.mp3,"17,18"
+606,606,ESL_SP,9781442328686,,29,05R,F,I've been here for a few weeks.,7,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_606.mp3,"17,18"
+607,607,ESL_SP,9781442328686,,29,06Q,N,Estamos aquí desde ayer.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_607.mp3,"17,18"
+608,608,ESL_SP,9781442328686,,29,06R,F,We've been here since yesterday.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_608.mp3,"17,18"
+609,609,ESL_SP,9781442328686,,29,07Q,N,¿Qué compró usted ayer?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_609.mp3,"14,17"
+610,610,ESL_SP,9781442328686,,29,07R,M,What did you buy yesterday?,5,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_610.mp3,"14,17"
+611,611,ESL_SP,9781442328686,,29,08Q,N,¿Qué hizo usted ayer?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_611.mp3,"1,17"
+612,612,ESL_SP,9781442328686,,29,08R,M,What did you do yesterday?,5,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_612.mp3,"1,17"
+613,613,ESL_SP,9781442328686,,29,09Q,N,Compré algo para beber.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_613.mp3,"6,14"
+614,614,ESL_SP,9781442328686,,29,09R,F,I bought something to drink.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_614.mp3,"6,14"
+615,615,ESL_SP,9781442328686,,29,10Q,N,¿Le gusta el vino?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_615.mp3,6
+616,616,ESL_SP,9781442328686,,29,10R,M,Do you like wine?,4,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_616.mp3,6
+617,617,ESL_SP,9781442328686,,30,01Q,N,¿Compró usted algo?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_617.mp3,"7,14"
+618,618,ESL_SP,9781442328686,,30,01R,M,Did you buy anything?,4,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_618.mp3,"7,14"
+619,619,ESL_SP,9781442328686,,30,02Q,N,¿Cómo se dice esa palabra?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_619.mp3,"15,16"
+620,620,ESL_SP,9781442328686,,30,02R,M,How do you say that word?,6,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_620.mp3,"15,16"
+621,621,ESL_SP,9781442328686,,30,03Q,N,Me gustan los Estados Unidos.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_621.mp3,"9,18"
+622,622,ESL_SP,9781442328686,,30,03R,F,I like the United States.,5,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_622.mp3,"9,18"
+623,623,ESL_SP,9781442328686,,30,04Q,N,Compré muchas cosas.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_623.mp3,"12,14"
+624,624,ESL_SP,9781442328686,,30,04R,F,I bought a lot of things.,6,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_624.mp3,"12,14"
+625,625,ESL_SP,9781442328686,,30,05Q,N,No voy a comprar nada.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_625.mp3,"7,14"
+626,626,ESL_SP,9781442328686,,30,05R,M,I'm not going to buy anything.,6,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_626.mp3,"7,14"
+627,627,ESL_SP,9781442328686,,30,06Q,N,Compramos muchas cosas.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_627.mp3,"12,14"
+628,628,ESL_SP,9781442328686,,30,06R,F,We bought a lot of things.,6,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_628.mp3,"12,14"
+629,629,ESL_SP,9781442328686,,30,07Q,N,¿Cuándo llegaron ustedes?,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_629.mp3,"17,18"
+630,630,ESL_SP,9781442328686,,30,07R,M,When did you arrive?,4,Q,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_630.mp3,"17,18"
+631,631,ESL_SP,9781442328686,,30,08Q,N,Llegamos ayer por la mañana.,,,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_631.mp3,"17,18"
+632,632,ESL_SP,9781442328686,,30,08R,F,We arrived yesterday morning.,4,S,English for Spanish Speakers Level 1,9781508235927_ESL_Spanish_1_QZ_632.mp3,"17,18"

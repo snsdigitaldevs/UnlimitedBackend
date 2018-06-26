@@ -1,0 +1,21 @@
+Rec #,Lang,ISBN-13,Course,Unit Num,start,stop,QZ #,line #,spkr,Cue,#of words,Q or S,Course Name (Source),Skills
+1,GR,9781508243298,German 1,1,0:03:07,0:03:08,01Q,41,M,Excuse me.,,,"German Phase 1, Units 1-30 (2002)","7,10,13,16"
+2,GR,9781508243298,German 1,1,0:02:08,0:02:10,01R,,M,Entschuldigen Sie.,2,S,"German Phase 1, Units 1-30 (2002)","7,10,13,16"
+3,GR,9781508243298,German 1,1,0:04:27,0:04:28,02Q,57,N,You understand.,,,"German Phase 1, Units 1-30 (2002)",15
+4,GR,9781508243298,German 1,1,0:04:30,0:04:33,02R,,M,Sie verstehen.,2,S,"German Phase 1, Units 1-30 (2002)",15
+5,GR,9781508243298,German 1,1,0:05:29,0:05:31,03Q,71,N,Do you understand?,,,"German Phase 1, Units 1-30 (2002)","10,15"
+6,GR,9781508243298,German 1,1,0:05:32,0:05:35,03R,,M,Verstehen Sie?,2,Q,"German Phase 1, Units 1-30 (2002)","10,15"
+7,GR,9781508243298,German 1,1,0:06:27,0:06:28,04Q,82,N,No.,,,"German Phase 1, Units 1-30 (2002)","7,16"
+8,GR,9781508243298,German 1,1,0:06:29,0:06:31,04R,,F,Nein.,1,S,"German Phase 1, Units 1-30 (2002)","7,16"
+9,GR,9781508243298,German 1,1,0:06:39,0:06:43,05Q,86,N,How would you ask someone if he understands?,,,"German Phase 1, Units 1-30 (2002)",15
+10,GR,9781508243298,German 1,1,0:06:44,0:06:47,05R,,M,Verstehen Sie?,2,Q,"German Phase 1, Units 1-30 (2002)",15
+11,GR,9781508243298,German 1,1,0:08:15,0:08:18,06Q,101,N,I understand English.,,,"German Phase 1, Units 1-30 (2002)","10,15"
+12,GR,9781508243298,German 1,1,0:08:20,0:08:23,06R,,M,Ich verstehe Englisch.,3,S,"German Phase 1, Units 1-30 (2002)","10,15"
+13,GR,9781508243298,German 1,1,0:10:31,0:10:33,07Q,124,N,I understand no English.,,,"German Phase 1, Units 1-30 (2002)","10,15"
+14,GR,9781508243298,German 1,1,0:10:35,0:10:38,07R,,F,Ich verstehe kein Englisch.,4,S,"German Phase 1, Units 1-30 (2002)","10,15"
+15,GR,9781508243298,German 1,1,0:12:54,0:12:56,08Q,152,N,I understand German.,,,"German Phase 1, Units 1-30 (2002)","10,15"
+16,GR,9781508243298,German 1,1,0:12:58,0:13:01,08R,,M,Ich verstehe Deutsch.,3,S,"German Phase 1, Units 1-30 (2002)","10,15"
+17,GR,9781508243298,German 1,1,0:15:41,0:15:43,09Q,176,N,Only a little.,,,"German Phase 1, Units 1-30 (2002)","7,15"
+18,GR,9781508243298,German 1,1,0:15:44,0:15:47,09R,,M,Nur ein bisschen.,3,S,"German Phase 1, Units 1-30 (2002)","7,15"
+19,GR,9781508243298,German 1,1,0:19:17,0:19:18,10Q,208,N,Yes.,,,"German Phase 1, Units 1-30 (2002)","7,15"
+20,GR,9781508243298,German 1,1,0:19:19,0:19:21,10R,,M,Ja.,1,S,"German Phase 1, Units 1-30 (2002)","7,15"

@@ -1,0 +1,19 @@
+Rec #,Lang,ISBN-13,Course,Unit Num,start,stop,QZ #,line #,spkr,Cue,# of words,Q or S,Course Name (Source),Skills
+1,FR,9781508243281,French 1,1,0:02:21,0:02:22,01Q,37,N,Excuse me.,,,"French Phase 1, Units 1-30 (2001)","10,13,16"
+2,FR,9781508243281,French 1,1,0:02:25,0:02:25,01R,38,M,Pardon.,1,S,"French Phase 1, Units 1-30 (2001)","10,13,16"
+3,FR,9781508243281,French 1,1,0:03:20,0:03:20,02Q,50,N,Understand.,,,"French Phase 1, Units 1-30 (2001)",15
+4,FR,9781508243281,French 1,1,0:03:23,0:03:23,02R,51,M,Comprenez.,1,S,"French Phase 1, Units 1-30 (2001)",15
+5,FR,9781508243281,French 1,1,0:04:14,0:04:15,03Q,61,N,You understand English.,,,"French Phase 1, Units 1-30 (2001)",15
+6,FR,9781508243281,French 1,1,0:04:19,0:04:20,03R,62,M,Vous comprenez l'anglais.,3,S,"French Phase 1, Units 1-30 (2001)",15
+7,FR,9781508243281,French 1,1,0:04:58,0:04:59,04Q,69,N,Do you understand?,,,"French Phase 1, Units 1-30 (2001)","10,15"
+8,FR,9781508243281,French 1,1,0:05:02,0:05:04,04R,70,M,Est-ce que vous comprenez?,5,Q,"French Phase 1, Units 1-30 (2001)","10,15"
+9,FR,9781508243281,French 1,1,0:06:38,0:06:42,05Q,88,N,How would you ask someone if he understands?,,,"French Phase 1, Units 1-30 (2001)","10,15"
+10,FR,9781508243281,French 1,1,0:06:45,0:06:46,05R,89,M,Est-ce que vous comprenez?,5,Q,"French Phase 1, Units 1-30 (2001)","10,15"
+11,FR,9781508243281,French 1,1,0:10:26,0:10:27,06Q,126,N,I don't understand.,,,"French Phase 1, Units 1-30 (2001)","10,15"
+12,FR,9781508243281,French 1,1,0:10:30,0:10:31,06R,127,F,Je ne comprends pas.,4,S,"French Phase 1, Units 1-30 (2001)","10,15"
+13,FR,9781508243281,French 1,1,0:16:09,0:16:10,07Q,194,N,I understand French a little.,,,"French Phase 1, Units 1-30 (2001)","10,15"
+14,FR,9781508243281,French 1,1,0:16:13,0:16:14,07R,195,M,Je comprends un peu le français.,6,S,"French Phase 1, Units 1-30 (2001)","10,15"
+15,FR,9781508243281,French 1,1,0:17:48,0:17:50,08Q,210,N,You are American.,,,"French Phase 1, Units 1-30 (2001)","10,16"
+16,FR,9781508243281,French 1,1,0:17:53,0:17:54,08R,211,F,Vous êtes américain.,3,S,"French Phase 1, Units 1-30 (2001)","10,16"
+17,FR,9781508243281,French 1,1,0:20:46,0:20:47,09Q,240,F,I don't understand English.,,,"French Phase 1, Units 1-30 (2001)","10,15"
+18,FR,9781508243281,French 1,1,0:20:51,0:20:53,09R,241,N,Je ne comprends pas l'anglais.,5,S,"French Phase 1, Units 1-30 (2001)","10,15"

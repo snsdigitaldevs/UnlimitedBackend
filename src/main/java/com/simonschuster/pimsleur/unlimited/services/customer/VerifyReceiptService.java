@@ -19,6 +19,10 @@ import static java.net.URLEncoder.encode;
 
 @Service
 public class VerifyReceiptService {
+
+    private String singleAction = "kljh";
+    private String multipleAction = "gfds";
+
     @Autowired
     private ApplicationConfiguration config;
 
@@ -39,12 +43,13 @@ public class VerifyReceiptService {
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
 
         String storeDomain = verifyReceiptBody.getStoreDomain();
-        String utf8 = "UTF-8";
-        // encode twice, this is edt bug
-        String transactionResult = encode(verifyReceiptBody.getTransactionResult(), utf8);
-        String receipt = encode(verifyReceiptBody.getReceipt(), utf8);
+        String transactionResult = encode(verifyReceiptBody.getTransactionResult(), "UTF-8");
+        String receipt = encode(verifyReceiptBody.getReceipt(), "UTF-8");
         return new HttpEntity<>(String.format(config.getProperty("edt.api.verifyReceipt.parameters"),
-                storeDomain, customerId, InAppPurchaseUtil.getAppId(storeDomain), transactionResult, receipt
+                storeDomain, customerId,
+                InAppPurchaseUtil.getAppId(storeDomain),
+                transactionResult, receipt,
+                verifyReceiptBody.getIsMultiple() ? multipleAction : singleAction
         ), headers);
     }
 }

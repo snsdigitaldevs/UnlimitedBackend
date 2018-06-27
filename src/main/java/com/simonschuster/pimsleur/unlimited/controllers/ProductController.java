@@ -57,7 +57,7 @@ public class ProductController {
         intentionToBuyService.intentionToBuy(customerId, isbn, intentionToBuyBody.getStoreDomain());
     }
 
-    @ApiOperation(value = "Call this api when getting pending in customer, verify does the pending product purchase success.")
+    @ApiOperation(value = "Send transaction result and receipt to EDT, so that EDT can create order for user.")
     @RequestMapping(value = "/account/{customerId}/receipt", method = RequestMethod.POST)
     public VerifyReceiptDTO verifyReceipt(@PathVariable("customerId") String customerId,
                                           @RequestBody VerifyReceiptBody verifyReceiptBody)

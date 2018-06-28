@@ -24,7 +24,6 @@ pipeline {
             }
         }
 
-
         stage("Test") {
             agent any
             steps {
@@ -175,7 +174,6 @@ def deploy(hostnames, env) {
         }
 
     }
-
 
 }
 

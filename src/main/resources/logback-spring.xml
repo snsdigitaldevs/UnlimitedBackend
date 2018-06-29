@@ -15,17 +15,17 @@
 
     <springProfile name="prod">
 
-        <appender name="CLOUDWATCH" class="com.j256.cloudwatchlogbackappender.CloudWatchAppender">
+        <appender name="cloudwatch" class="com.j256.cloudwatchlogbackappender.CloudWatchAppender">
             <region>us-east-1</region>
-            <logGroup>pims-backend-logs</logGroup>
-            <logStream>general-%instance</logStream>
+            <logGroup>ec2pimslogs</logGroup>
+            <logStream>ec2pims-%instance</logStream>
             <layout class="com.j256.cloudwatchlogbackappender.Ec2PatternLayout">
                 <pattern>[%instance] [%thread] %level %logger{20} - %msg%n%xThrowable</pattern>
             </layout>
         </appender>
 
         <root level="debug">
-            <appender-ref ref="CLOUDWATCH"/>
+            <appender-ref ref="cloudwatch"/>
         </root>
     </springProfile>
 

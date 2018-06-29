@@ -1,32 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configuration debug="true">
-    <springProfile name="dev,qa,uat">
+<configuration>
 
-        <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
-            <layout class="ch.qos.logback.classic.PatternLayout">
-                <Pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</Pattern>
-            </layout>
-        </appender>
+    <appender name="SYSLOG" class="ch.qos.logback.classic.net.SyslogAppender">
+        <syslogHost>localhost</syslogHost>
+        <facility>USER</facility>
+        <suffixPattern>[%thread] %logger %msg</suffixPattern>
+    </appender>
 
-        <root level="debug">
-            <appender-ref ref="STDOUT"/>
-        </root>
-    </springProfile>
-
-    <springProfile name="prod">
-
-        <appender name="cloudwatch" class="com.j256.cloudwatchlogbackappender.CloudWatchAppender">
-            <region>us-east-1</region>
-            <logGroup>ec2pimslogs</logGroup>
-            <logStream>ec2pims-%instance</logStream>
-            <layout class="com.j256.cloudwatchlogbackappender.Ec2PatternLayout">
-                <pattern>[%instance] [%thread] %level %logger{20} - %msg%n%xThrowable</pattern>
-            </layout>
-        </appender>
-
-        <root level="debug">
-            <appender-ref ref="cloudwatch"/>
-        </root>
-    </springProfile>
+    <root level="DEBUG">
+        <appender-ref ref="SYSLOG"/>
+    </root>
 
 </configuration>

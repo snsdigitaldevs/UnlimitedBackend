@@ -94,13 +94,11 @@ public class AvailableProductsService {
         if (pcmCustInfo.getResultData() != null) {
             return pcmCustInfo.getResultData()
                     .getCustomer().getCustomersOrders().stream()
-                    .flatMap(customersOrder -> {
-                        return customersOrder.getOrdersProducts().stream()
-                                .flatMap(order -> this.pcmOrderToDtos(order)
-                                        .peek(dto -> dto.setIsSubscription(order.isSubscription())))
-                                .filter(dto -> dto.getLevel() != 0) // remove "how to learn"
-                                .filter(distinctByKey(AvailableProductDto::getProductCode)); // remove duplicate
-                    })
+                    .flatMap(customersOrder -> customersOrder.getOrdersProducts().stream()
+                            .flatMap(order -> this.pcmOrderToDtos(order)
+                                    .peek(dto -> dto.setIsSubscription(order.isSubscription()))))
+                    .filter(dto -> dto.getLevel() != 0) // remove "how to learn"
+                    .filter(distinctByKey(AvailableProductDto::getProductCode)) // remove duplicate
                     .collect(toList());
         } else {
             return emptyList();

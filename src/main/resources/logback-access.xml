@@ -1,0 +1,19 @@
+<configuration>
+
+    <appender name="SYSLOG" class="ch.qos.logback.classic.net.SyslogAppender">
+        <syslogHost>127.0.0.1</syslogHost>
+        <facility>LOCAL0</facility>
+        <port>514</port>
+        <throwableExcluded>true</throwableExcluded>
+        <suffixPattern>PIMS-BFF %h %l %u [%t] "%r" %s %b "%i{Referer}" "%i{User-Agent}"</suffixPattern>
+    </appender>
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>PIMS-BFF %h %l %u [%t] "%r" %s %b "%i{Referer}" "%i{User-Agent}"</pattern>
+        </encoder>
+    </appender>
+
+    <appender-ref ref="SYSLOG" />
+    <appender-ref ref="CONSOLE" />
+</configuration>

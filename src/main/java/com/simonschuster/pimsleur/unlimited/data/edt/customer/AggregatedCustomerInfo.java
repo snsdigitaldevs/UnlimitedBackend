@@ -71,12 +71,8 @@ public class AggregatedCustomerInfo {
                 unlimitedCustomerInfo.getResultData().getRegistrant().getProductActivations(),
                 getProgressDTOS(),
                 unlimitedCustomerInfo.getResultData().getRegistrant().getSubUsers());
-        if (pcmSyncState.hasResultData()) {
-            customerInfoDTO.setPcmLastSaveId(pcmSyncState.getResultData().getLastSaveId());
-        }
-        if (unlimitedSyncState.hasResultData()) {
-            customerInfoDTO.setUnlimitedLastSaveId(unlimitedSyncState.getResultData().getLastSaveId());
-        }
+        customerInfoDTO.setPcmLastSaveId(pcmSyncState.hasResultData() ? pcmSyncState.getResultData().getLastSaveId() : 0L);
+        customerInfoDTO.setUnlimitedLastSaveId(unlimitedSyncState.hasResultData() ? unlimitedSyncState.getResultData().getLastSaveId() : 0L);
         customerInfoDTO.setCustomerId(puCustomer.getCustomersId().toString());
         customerInfoDTO.setHasPendingAndroid(puCustomer.hasPendingAndroid());
         customerInfoDTO.setHasPendingIos(puCustomer.hasPendingIos());

@@ -1,14 +1,14 @@
 package com.simonschuster.pimsleur.unlimited.controllers;
 
 import com.simonschuster.pimsleur.unlimited.common.exception.ParamInvalidException;
+import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.IntentionToBuyBody;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.VerifyReceiptBody;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.VerifyReceiptDTO;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
-import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.IntentionToBuyBody;
-import com.simonschuster.pimsleur.unlimited.services.customer.IntentionToBuyService;
 import com.simonschuster.pimsleur.unlimited.services.course.PUCourseInfoService;
 import com.simonschuster.pimsleur.unlimited.services.course.PcmCourseInfoService;
 import com.simonschuster.pimsleur.unlimited.services.course.PcmFreeCourseService;
+import com.simonschuster.pimsleur.unlimited.services.customer.IntentionToBuyService;
 import com.simonschuster.pimsleur.unlimited.services.customer.VerifyReceiptService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +16,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.io.UnsupportedEncodingException;
 import java.util.List;
+
+import static com.simonschuster.pimsleur.unlimited.utils.DataConverterUtil.distinctByKey;
+import static java.util.stream.Collectors.toList;
 
 @RestController
 public class ProductController {
@@ -40,6 +43,15 @@ public class ProductController {
                                        @RequestParam(value = "productCode") String productCode,
                                        @RequestParam(value = "sub") String sub) {
         validateProductCode(productCode);
+        return getProductInfos(isPUProductCode, isFree, productCode, sub)
+                .stream()
+                .filter(distinctByKey(Course::getProductCode))
+                // remove duplicate by isbn, sometimes there could be same isbn show up more than once
+                // because user could have bought a product and a subscription that covers this product
+                .collect(toList());
+    }
+
+    private List<Course> getProductInfos(@RequestParam("isPUProductCode") boolean isPUProductCode, @RequestParam(name = "isFree", required = false) boolean isFree, @RequestParam(value = "productCode") String productCode, @RequestParam(value = "sub") String sub) {
         if (isFree && !isPUProductCode) {
             return pcmFreeCourseService.getPcmFreeCourseInfos(productCode);
         } else if (isPUProductCode) {

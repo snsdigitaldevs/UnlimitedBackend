@@ -12,7 +12,7 @@
         <facility>LOCAL0</facility>
         <port>514</port>
         <throwableExcluded>true</throwableExcluded>
-        <suffixPattern>%m thread:%t priority:%p category:%c exception:%exception</suffixPattern>
+        <suffixPattern>PIMS-BFF %d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</suffixPattern>
     </appender>
 
     <root level="info">

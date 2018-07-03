@@ -2,8 +2,8 @@ package com.simonschuster.pimsleur.unlimited.services.customer;
 
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.edt.CodeOnlyResponseEDT;
+import com.simonschuster.pimsleur.unlimited.services.AppIdService;
 import com.simonschuster.pimsleur.unlimited.utils.EdtErrorCodeUtil;
-import com.simonschuster.pimsleur.unlimited.utils.InAppPurchaseUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -16,6 +16,8 @@ import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEd
 public class IntentionToBuyService {
     @Autowired
     private ApplicationConfiguration config;
+    @Autowired
+    private AppIdService appIdService;
 
     public void intentionToBuy(String customerId, String isbn, String storeDomain) {
         String url = config.getProperty("edt.api.intentionToBuy.url");
@@ -23,7 +25,7 @@ public class IntentionToBuyService {
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
 
         HttpEntity<String> entity = new HttpEntity<>(String.format(config.getProperty("edt.api.intentionToBuy.parameters"),
-                isbn, storeDomain, customerId, InAppPurchaseUtil.getAppId(storeDomain)), headers);
+                isbn, storeDomain, customerId, appIdService.getAppId(storeDomain)), headers);
         CodeOnlyResponseEDT intentionToBuyResponse = postToEdt(entity, url, CodeOnlyResponseEDT.class);
 
         if (!intentionToBuyResponse.getResultCode().equals(1)) {

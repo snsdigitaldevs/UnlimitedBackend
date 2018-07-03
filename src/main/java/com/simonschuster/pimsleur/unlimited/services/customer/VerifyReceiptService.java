@@ -4,8 +4,8 @@ import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.VerifyReceiptBody;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.VerifyReceiptDTO;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.verifyReceipt.VerifyReceipt;
+import com.simonschuster.pimsleur.unlimited.services.AppIdService;
 import com.simonschuster.pimsleur.unlimited.utils.EdtErrorCodeUtil;
-import com.simonschuster.pimsleur.unlimited.utils.InAppPurchaseUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -25,6 +25,8 @@ public class VerifyReceiptService {
 
     @Autowired
     private ApplicationConfiguration config;
+    @Autowired
+    private AppIdService appIdService;
 
     public VerifyReceiptDTO verifyReceipt(VerifyReceiptBody verifyReceiptBody, String customerId)
             throws UnsupportedEncodingException {
@@ -47,7 +49,7 @@ public class VerifyReceiptService {
         String receipt = encode(verifyReceiptBody.getReceipt(), "UTF-8");
         return new HttpEntity<>(String.format(config.getProperty("edt.api.verifyReceipt.parameters"),
                 storeDomain, customerId,
-                InAppPurchaseUtil.getAppId(storeDomain),
+                appIdService.getAppId(storeDomain),
                 transactionResult, receipt,
                 verifyReceiptBody.getIsMultiple() ? multipleAction : singleAction
         ), headers);

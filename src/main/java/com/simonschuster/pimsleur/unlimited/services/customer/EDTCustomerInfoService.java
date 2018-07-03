@@ -5,8 +5,8 @@ import com.simonschuster.pimsleur.unlimited.data.edt.customer.AggregatedCustomer
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.Customer;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.CustomerInfo;
 import com.simonschuster.pimsleur.unlimited.data.edt.syncState.AggregatedSyncState;
+import com.simonschuster.pimsleur.unlimited.services.AppIdService;
 import com.simonschuster.pimsleur.unlimited.services.syncState.EDTSyncStateService;
-import com.simonschuster.pimsleur.unlimited.utils.InAppPurchaseUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -25,13 +25,14 @@ public class EDTCustomerInfoService {
 
     @Autowired
     private ApplicationConfiguration config;
-
     @Autowired
     private EDTSyncStateService syncStateService;
+    @Autowired
+    private AppIdService appIdService;
 
     public AggregatedCustomerInfo getCustomerInfos(String sub, String storeDomain) {
         CompletableFuture<CustomerInfo> puCustomerInfoCompletableFuture = CompletableFuture.supplyAsync(() -> getPUCustomerInfo(sub, storeDomain));
-        CompletableFuture<CustomerInfo> pcmCustomerInfoCompletableFuture = CompletableFuture.supplyAsync(() -> getPcmCustomerInfo(sub,storeDomain));
+        CompletableFuture<CustomerInfo> pcmCustomerInfoCompletableFuture = CompletableFuture.supplyAsync(() -> getPcmCustomerInfo(sub, storeDomain));
 
         AggregatedSyncState aggregatedSyncState = CompletableFuture.anyOf(puCustomerInfoCompletableFuture, pcmCustomerInfoCompletableFuture)
                 .thenApplyAsync(puOrPcmCustomerInfo -> {
@@ -78,7 +79,7 @@ public class EDTCustomerInfoService {
 
         return new HttpEntity<>(
                 String.format(config.getApiParameter("customerInfoDefaultParameters"),
-                        sub, action, domain, InAppPurchaseUtil.getAppId(domain)),
+                        sub, action, domain, appIdService.getAppId(domain)),
                 headers);
     }
 }

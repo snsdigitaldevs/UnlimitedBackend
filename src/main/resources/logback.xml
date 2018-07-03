@@ -3,7 +3,7 @@
 
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <layout class="ch.qos.logback.classic.PatternLayout">
-            <Pattern>PIMS-BFF %d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</Pattern>
+            <Pattern>pimsbackbff %d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</Pattern>
         </layout>
     </appender>
 
@@ -12,7 +12,7 @@
         <facility>LOCAL0</facility>
         <port>514</port>
         <throwableExcluded>true</throwableExcluded>
-        <suffixPattern>PIMS-BFF %d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</suffixPattern>
+        <suffixPattern>pimsbackbff %d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</suffixPattern>
     </appender>
 
     <root level="info">

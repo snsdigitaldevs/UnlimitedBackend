@@ -4,6 +4,8 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.util.List;
 
+import static com.simonschuster.pimsleur.unlimited.services.course.PUCourseInfoService.KEY_DOWNLOAD;
+
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class OrdersProductAttribute {
 
@@ -62,4 +64,7 @@ public class OrdersProductAttribute {
         this.ordersProductsDownloads = ordersProductsDownloads;
     }
 
+    public boolean isDownload() {
+        return getProductsOptions() != null && getProductsOptions().contains(KEY_DOWNLOAD);
+    }
 }

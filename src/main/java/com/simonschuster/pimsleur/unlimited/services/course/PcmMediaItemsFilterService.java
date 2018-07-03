@@ -21,8 +21,8 @@ public class PcmMediaItemsFilterService {
     private static final Logger logger = LoggerFactory.getLogger(PcmMediaItemsFilterService.class);
 
     public List<MediaItemsByLevel> getMatchedMediaItems(PcmProduct pcmProduct,
-                                                               List<MediaSetByLevel> entitlementTokens,
-                                                               String productCode) {
+                                                        List<MediaSetByLevel> entitlementTokens,
+                                                        String productCode) {
 
         Optional<OrdersProduct> firstMatchedOrderProduct = pcmProduct.getOrdersProducts().stream()
                 .filter(ordersProduct -> Objects.equals(ordersProduct.getProduct().getProductCode(), productCode))
@@ -47,7 +47,7 @@ public class PcmMediaItemsFilterService {
 
         Optional<List<MediaItemsByLevel>> matchedMediaItemsAllLevelAllOrders = orderProduct.getOrdersProductsAttributes()
                 .stream()
-                .filter(attribute -> attribute.getProductsOptions().contains(PUCourseInfoService.KEY_DOWNLOAD))
+                .filter(OrdersProductAttribute::isDownload)
                 .map(attribute -> {
                     List<MediaItemsByLevel> matchedMediaItemsByLevel = new ArrayList<>();
                     attribute.getOrdersProductsDownloads()
@@ -81,7 +81,7 @@ public class PcmMediaItemsFilterService {
         int size = pcmProduct.getOrdersProducts()
                 .stream()
                 .flatMap(ordersProduct -> ordersProduct.getOrdersProductsAttributes().stream())
-                .filter(attribute -> attribute.getProductsOptions().contains(PUCourseInfoService.KEY_DOWNLOAD))
+                .filter(OrdersProductAttribute::isDownload)
                 .flatMap(attribute -> attribute.getOrdersProductsDownloads().stream())
                 .filter(download -> download.getMediaSet().getProduct().getProductCode().equals(productCode))
                 .collect(toList())
@@ -91,12 +91,12 @@ public class PcmMediaItemsFilterService {
     }
 
     private List<MediaItemsByLevel> filterItemIdsOfOneLevel(List<MediaSetByLevel> entitlementTokens,
-                                                                   String productCode, PcmProduct pcmProduct) {
+                                                            String productCode, PcmProduct pcmProduct) {
         List<MediaItemsByLevel> matchedMediaItems = new ArrayList<>();
 
         OrdersProductAttribute attribute = getMatchedProductAttribute(pcmProduct, productCode);
 
-        if (attribute != null) {
+        if (attribute != null && attribute.getProductsOptions() != null) {
             String level = attribute.getProductsOptions().split(" ")[1];
             List<MediaItem> mediaItemsForOneLevel = new ArrayList<>();
 
@@ -123,7 +123,7 @@ public class PcmMediaItemsFilterService {
 
         pcmProduct.getOrdersProducts().forEach((ordersProduct) -> {
             List<OrdersProductAttribute> matchedAttributes = ordersProduct.getOrdersProductsAttributes().stream()
-                    .filter(attribute -> attribute.getProductsOptions().contains(PUCourseInfoService.KEY_DOWNLOAD))
+                    .filter(OrdersProductAttribute::isDownload)
                     .filter(attribute -> attribute.getOrdersProductsDownloads()
                             .stream()
                             .anyMatch(download -> download.getMediaSet().getProduct().getProductCode().equals(productCode)))

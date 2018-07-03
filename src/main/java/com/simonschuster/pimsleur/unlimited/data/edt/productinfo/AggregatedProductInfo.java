@@ -4,6 +4,7 @@ import com.simonschuster.pimsleur.unlimited.common.exception.PimsleurException;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.*;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Image;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.OrdersProduct;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.OrdersProductAttribute;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.Product;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,7 +16,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import static com.simonschuster.pimsleur.unlimited.services.course.PUCourseInfoService.KEY_DOWNLOAD;
 import static com.simonschuster.pimsleur.unlimited.utils.HardCodedProductsUtil.isOneOfNineBig;
 import static com.simonschuster.pimsleur.unlimited.utils.HardCodedProductsUtil.isPuFreeLesson;
 import static com.simonschuster.pimsleur.unlimited.utils.UrlUtil.encodeUrl;
@@ -141,7 +141,7 @@ public class AggregatedProductInfo {
         String level = String.valueOf(courseWithLessonInfoOnly.getLevel());
         Map<Integer, Product> products = orderProductInfo.getOrdersProductsAttributes()
                 .stream()
-                .filter(attr -> attr.getProductsOptions().contains(KEY_DOWNLOAD))
+                .filter(OrdersProductAttribute::isDownload)
                 .collect(toMap(it -> it.getOrdersProductsDownloads().get(0).getMediaSet().getProduct().getProductsLevel(),
                         it -> it.getOrdersProductsDownloads().get(0).getMediaSet().getProduct()));
 

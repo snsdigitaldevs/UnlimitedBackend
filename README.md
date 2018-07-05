@@ -31,3 +31,13 @@ Public DNS: ec2-54-156-176-22.compute-1.amazonaws.com
 Instance:  i-0e4ef2be6ab7c0af5 (PROD_UnlimitedBackend)
 
 Public DNS: ec2-18-233-65-171.compute-1.amazonaws.com
+
+### Prod env logs
+
+For diagnostic purposes, we can check logs of prod env in AWS CloudWatch logs.
+
+Log into AWS console, go to CloudWatch - Log Groups - Streams for /var/log/messages.
+
+Logs are coming from 2 EC2 instances that are running our java code, and also coming from ELB (the access log).
+
+You can use the "Search log group" function provided by AWS to search across all log streams under this log group.

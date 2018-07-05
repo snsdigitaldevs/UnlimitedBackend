@@ -44,14 +44,37 @@ public class VerifyReceiptService {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
 
+        String appVersion = verifyReceiptBody.getAppVersion();
         String storeDomain = verifyReceiptBody.getStoreDomain();
         String transactionResult = encode(verifyReceiptBody.getTransactionResult(), "UTF-8");
         String receipt = encode(verifyReceiptBody.getReceipt(), "UTF-8");
-        return new HttpEntity<>(String.format(config.getProperty("edt.api.verifyReceipt.parameters"),
-                storeDomain, customerId,
+        String activeAppVersion = config.getProperty("verifyReceipt.appVersion");
+        String verifyReceiptProperty = config.getProperty("edt.api.verifyReceipt.parameters");
+        //if app is in apple evaluation process, purchase is verified by apple test environment
+        boolean verifyPurchaseInAppleTestEnv = (appVersion.equals(activeAppVersion)) && storeDomain.toLowerCase().contains("ios");
+
+        if (verifyPurchaseInAppleTestEnv) {
+            String format = String.format(verifyReceiptProperty,
+                    storeDomain,
+                    customerId,
+                    appIdService.getAppId(storeDomain),
+                    transactionResult,
+                    receipt,
+                    verifyReceiptBody.getIsMultiple() ? multipleAction : singleAction,
+                    1
+            );
+            return new HttpEntity<>(format, headers);
+        }
+        verifyReceiptProperty = verifyReceiptProperty.replace("&glft=%d", "");
+        String format = String.format(verifyReceiptProperty,
+                storeDomain,
+                customerId,
                 appIdService.getAppId(storeDomain),
-                transactionResult, receipt,
+                transactionResult,
+                receipt,
                 verifyReceiptBody.getIsMultiple() ? multipleAction : singleAction
-        ), headers);
+        );
+        return new HttpEntity<>(format, headers);
     }
 }
+

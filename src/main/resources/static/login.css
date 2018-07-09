@@ -109,6 +109,16 @@ body {
     text-decoration: none;
 }
 
+.form .link {
+    margin: 15px 0 0;
+}
+
+.form .link a {
+    color: #346df1;
+    text-decoration: none;
+    font-size: 12px;
+}
+
 input {
     background-color: #eeeeee;
 }

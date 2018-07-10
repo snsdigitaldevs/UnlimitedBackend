@@ -24,7 +24,7 @@ public class HardCodedProductsUtil {
             .map(AvailableProductDto::getLanguageName)
             .collect(toList());
 
-    private static final List<String> puFreeIsbns = PU_FREE_LESSONS.stream()
+    public static final List<String> puFreeIsbns = PU_FREE_LESSONS.stream()
             .map(AvailableProductDto::getProductCode)
             .collect(toList());
 

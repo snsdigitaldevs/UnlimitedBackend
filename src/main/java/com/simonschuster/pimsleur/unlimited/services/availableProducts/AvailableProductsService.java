@@ -10,11 +10,13 @@ import com.simonschuster.pimsleur.unlimited.services.course.PUCourseInfoService;
 import com.simonschuster.pimsleur.unlimited.services.customer.EDTCustomerInfoService;
 import com.simonschuster.pimsleur.unlimited.services.freeLessons.PcmFreeLessonsService;
 import com.simonschuster.pimsleur.unlimited.services.freeLessons.PuFreeLessonsService;
+import com.simonschuster.pimsleur.unlimited.utils.HardCodedProductsUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static com.simonschuster.pimsleur.unlimited.utils.DataConverterUtil.distinctByKey;
@@ -76,16 +78,36 @@ public class AvailableProductsService {
     private List<AvailableProductDto> getPuAvailableProducts(String sub) {
         CustomerInfo puCustInfo = customerInfoService.getPUCustomerInfo(sub, "");
         if (puCustInfo.getResultData() != null) {
-            return puCustInfo.getResultData().getCustomer().getAllOrdersProducts()
-                    .stream()
+            List<AvailableProductDto> availableProductDto =
+                    puCustInfo.getResultData().getCustomer().getAllOrdersProducts().stream()
                     .flatMap(order ->
                             puProductToDtos(order.getProduct())
                                     .peek(dto -> dto.setIsSubscription(order.isSubscription())))
+                    .collect(Collectors.toList());
+
+            List<AvailableProductDto> purchasedCourses = availableProductDto.stream()
+                    .filter(p -> !HardCodedProductsUtil.puFreeIsbns.contains(p.getProductCode()))
+                    .collect(Collectors.toList());
+
+            List<AvailableProductDto> freePUDistinctCourses = availableProductDto.stream()
+                    .filter(p -> HardCodedProductsUtil.puFreeIsbns.contains(p.getProductCode()))
+                    .filter(puFreeCourse -> !freeCourseIsInPurchasedCourses(purchasedCourses, puFreeCourse))
+                    .collect(Collectors.toList());
+
+            purchasedCourses.addAll(freePUDistinctCourses);
+
+            return purchasedCourses.stream()
                     .filter(distinctByKey(p -> p.getLanguageName() + p.getLevel())) // remove duplicate
                     .collect(toList());
         } else {
             return emptyList();
         }
+    }
+
+    private boolean freeCourseIsInPurchasedCourses(List<AvailableProductDto> purchasedCourses, AvailableProductDto puFreeCourse) {
+        return purchasedCourses.stream().anyMatch(purchasedCourse ->
+                (purchasedCourse.getLanguageName() + purchasedCourse.getLevel())
+                        .equals(puFreeCourse.getLanguageName() + purchasedCourse.getLevel()));
     }
 
     private List<AvailableProductDto> getPcmAvailableProducts(String sub) {

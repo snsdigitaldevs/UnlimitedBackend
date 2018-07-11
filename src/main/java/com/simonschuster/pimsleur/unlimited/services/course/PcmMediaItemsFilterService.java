@@ -97,7 +97,10 @@ public class PcmMediaItemsFilterService {
         OrdersProductAttribute attribute = getMatchedProductAttribute(pcmProduct, productCode);
 
         if (attribute != null && attribute.getProductsOptions() != null) {
-            String level = attribute.getProductsOptions().split(" ")[1];
+            //assume all the products level are the same
+            String level = attribute.getOrdersProductsDownloads()
+                    .get(0).getMediaSet().getProduct().getProductsLevel().toString();
+
             List<MediaItem> mediaItemsForOneLevel = new ArrayList<>();
 
             attribute.getOrdersProductsDownloads()

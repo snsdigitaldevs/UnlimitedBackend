@@ -152,8 +152,9 @@ public class AggregatedProductInfo {
         course.setLanguageName(languageName);
         course.setLevel(parseInt(level));
         course.setLessons(filterAndOrder(lessons));
-        course.setCourseName(products.get(parseInt(level)).getProductsName());
-        course.setProductCode(products.get(parseInt(level)).getIsbn13().replace("-", ""));
+        Product product = products.get(parseInt(level));
+        course.setCourseName(product.getProductsName());
+        course.setProductCode(product.getIsbn13().replace("-", ""));
 
         return course;
     }

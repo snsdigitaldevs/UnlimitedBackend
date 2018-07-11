@@ -25,7 +25,7 @@ public class UpsellService {
     @Autowired
     private EDTCustomerInfoService customerInfoService;
 
-    public UpsellDto getUpsellInfoFor(String isbn, String sub) {
+    public UpsellDto getUpsellInfoFor(String isbn, String sub, String email) {
 
         PurchaseMapping purchaseMapping = purchaseMappingService.findPurchaseMappingFor(isbn);
         if (purchaseMapping == null) {
@@ -34,7 +34,7 @@ public class UpsellService {
         } else {
             List<String> boughtIsbns = new ArrayList<>();
             if (!StringUtils.isEmpty(sub)) {
-                boughtIsbns = customerInfoService.getBoughtIsbns(sub);
+                boughtIsbns = customerInfoService.getBoughtIsbns(sub, email);
             }
             boolean upsellBought = isBought(boughtIsbns, purchaseMapping.getUpsellInAppPurchaseISBN());
             boolean subBought = isBought(boughtIsbns, purchaseMapping.getUpsell2InAppPurchaseISBN());

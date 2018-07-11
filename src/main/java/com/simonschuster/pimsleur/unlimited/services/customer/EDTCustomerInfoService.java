@@ -30,9 +30,9 @@ public class EDTCustomerInfoService {
     @Autowired
     private AppIdService appIdService;
 
-    public AggregatedCustomerInfo getCustomerInfos(String sub, String storeDomain) {
-        CompletableFuture<CustomerInfo> puCustomerInfoCompletableFuture = CompletableFuture.supplyAsync(() -> getPUCustomerInfo(sub, storeDomain));
-        CompletableFuture<CustomerInfo> pcmCustomerInfoCompletableFuture = CompletableFuture.supplyAsync(() -> getPcmCustomerInfo(sub, storeDomain));
+    public AggregatedCustomerInfo getCustomerInfos(String sub, String storeDomain, String email) {
+        CompletableFuture<CustomerInfo> puCustomerInfoCompletableFuture = CompletableFuture.supplyAsync(() -> getPUCustomerInfo(sub, storeDomain, email));
+        CompletableFuture<CustomerInfo> pcmCustomerInfoCompletableFuture = CompletableFuture.supplyAsync(() -> getPcmCustomerInfo(sub, storeDomain, email));
 
         AggregatedSyncState aggregatedSyncState = CompletableFuture.anyOf(puCustomerInfoCompletableFuture, pcmCustomerInfoCompletableFuture)
                 .thenApplyAsync(puOrPcmCustomerInfo -> {
@@ -47,39 +47,41 @@ public class EDTCustomerInfoService {
         return new AggregatedCustomerInfo(pcCustomerInfo, pcmCustomerInfo, aggregatedSyncState);
     }
 
-    public CustomerInfo getPUCustomerInfo(String sub, String storeDomain) {
+    public CustomerInfo getPUCustomerInfo(String sub, String storeDomain, String email) {
         return getCustomerInfo(sub,
                 config.getApiParameter("unlimitedCustomerAction"),
-                storeDomain);
+                storeDomain,
+                email);
     }
 
-    public CustomerInfo getPcmCustomerInfo(String sub, String storeDomain) {
+    public CustomerInfo getPcmCustomerInfo(String sub, String storeDomain, String email) {
         return getCustomerInfo(sub,
                 config.getApiParameter("pcmCustomerAction"),
-                storeDomain);
+                storeDomain,
+                email);
     }
 
-    public List<String> getBoughtIsbns(String sub) {
+    public List<String> getBoughtIsbns(String sub, String email) {
         return Stream.concat(
-                getPUCustomerInfo(sub, "").getResultData().getCustomer().getProductCodes().stream(),
-                getPcmCustomerInfo(sub, "").getResultData().getCustomer().getProductCodes().stream())
+                getPUCustomerInfo(sub, "", email).getResultData().getCustomer().getProductCodes().stream(),
+                getPcmCustomerInfo(sub, "", email).getResultData().getCustomer().getProductCodes().stream())
                 .collect(toList());
     }
 
-    private CustomerInfo getCustomerInfo(String sub, String action, String domain) {
+    private CustomerInfo getCustomerInfo(String sub, String action, String domain, String email) {
         return postToEdt(
-                createPostBody(sub, action, domain),
+                createPostBody(sub, action, domain, email),
                 config.getProperty("edt.api.customerInfoApiUrl"),
                 CustomerInfo.class);
     }
 
-    private HttpEntity<String> createPostBody(String sub, String action, String domain) {
+    private HttpEntity<String> createPostBody(String sub, String action, String domain, String email) {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
 
         return new HttpEntity<>(
                 String.format(config.getApiParameter("customerInfoDefaultParameters"),
-                        sub, action, domain, appIdService.getAppId(domain)),
+                        sub, email, action, domain, appIdService.getAppId(domain)),
                 headers);
     }
 }

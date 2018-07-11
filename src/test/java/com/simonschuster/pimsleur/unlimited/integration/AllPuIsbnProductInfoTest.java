@@ -28,7 +28,7 @@ public class AllPuIsbnProductInfoTest {
         for (String puISBN : PUIsbnList.puISBNs) {
             System.out.println(PUIsbnList.puISBNs.indexOf(puISBN) + 1);
             System.out.println(puISBN + " will run");
-            List<Course> courseList = productController.getProductInfo(true, false, puISBN, "whatever");
+            List<Course> courseList = productController.getProductInfo(true, false, puISBN, "whatever", "super@thoughtworks.com");
             courseList
                     .stream()
                     .flatMap(it -> it.getLessons().stream())

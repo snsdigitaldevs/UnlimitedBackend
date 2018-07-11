@@ -33,7 +33,7 @@ public class PcmCourseInfoServiceTest {
         String productCode = "9781508205333";
 
         running(server, () -> {
-            List<Course> courseDtos = pcmCourseInfoService.getCourses(productCode, "sub");
+            List<Course> courseDtos = pcmCourseInfoService.getCourses(productCode, "sub", "email");
 
             Course levelOne = courseDtos.stream()
                     .filter(course -> course.getLevel() == 1).collect(Collectors.toList()).get(0);

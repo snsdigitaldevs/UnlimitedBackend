@@ -44,7 +44,9 @@ public class AllESLProductInfoTest {
         //user email: 9-big-lauguages-pcm-courses@thoughtworks.com, all PCM courses for 9 big languages.
         String allPCMCoursesForNineBigLanguagesSub = "auth0%7C5b18e3133e7e606465d37a0c";
 
-        List<AvailableProductDto> allSupportedESLProducts = getAllSupportedESLProducts(allLanguageCoursesUserSub, allPCMCoursesForNineBigLanguagesSub);
+        List<AvailableProductDto> allSupportedESLProducts = getAllSupportedESLProducts(
+                allLanguageCoursesUserSub, allPCMCoursesForNineBigLanguagesSub,
+                "super@thoughtworks.com", "9-big-lauguages-pcm-courses@thoughtworks.com");
 
         List<String> allESLLanguageNames = allSupportedESLProducts.stream()
                 .filter(distinctByKey(AvailableProductDto::getLanguageName))
@@ -54,7 +56,8 @@ public class AllESLProductInfoTest {
 
         List<List<Course>> allESLProductsInfo = allSupportedESLProducts.stream()
                 .map(eslProduct -> productController.getProductInfo(eslProduct.isPuProduct(),
-                        false, eslProduct.getProductCode(), allLanguageCoursesUserSub))
+                        false, eslProduct.getProductCode(), allLanguageCoursesUserSub,
+                        "super@thoughtworks.com"))
                 .collect(Collectors.toList());
         assertEquals(20, allESLProductsInfo.size());
 
@@ -76,17 +79,30 @@ public class AllESLProductInfoTest {
         return object -> seen.putIfAbsent(keyExtractor.apply(object), Boolean.TRUE) == null;
     }
 
-    private List<AvailableProductDto> getAllSupportedESLProducts(String allLanguageCoursesUserSub, String allPCMCoursesForNineBigLanguagesSub) {
-        List<AvailableProductDto> allSupportedCourses = getAllSupportedCourses(allLanguageCoursesUserSub, allPCMCoursesForNineBigLanguagesSub);
+    private List<AvailableProductDto> getAllSupportedESLProducts(String allLanguageCoursesUserSub,
+                                                                 String allPCMCoursesForNineBigLanguagesSub,
+                                                                 String allLanguageCoursesUserEmail,
+                                                                 String allPCMCoursesForNineBigLanguagesEmail) {
+        List<AvailableProductDto> allSupportedCourses = getAllSupportedCourses(allLanguageCoursesUserSub,
+                allPCMCoursesForNineBigLanguagesSub,
+                allLanguageCoursesUserEmail,
+                allPCMCoursesForNineBigLanguagesEmail);
 
         return allSupportedCourses.stream()
                 .filter(availableProduct -> availableProduct.getLanguageName().startsWith("ESL"))
                 .collect(Collectors.toList());
     }
 
-    private List<AvailableProductDto> getAllSupportedCourses(String allLanguageCoursesUserSub, String allPCMCoursesForNineBigLanguagesSub) {
-        AvailableProductsDto allLanguageCourses = availableProductsController.getAvailableProducts(allLanguageCoursesUserSub);
-        AvailableProductsDto allPCMCoursesForNineBigLanguages = availableProductsController.getAvailableProducts(allPCMCoursesForNineBigLanguagesSub);
+    private List<AvailableProductDto> getAllSupportedCourses(String allLanguageCoursesUserSub,
+                                                             String allPCMCoursesForNineBigLanguagesSub,
+                                                             String allLanguageCoursesUserEmail,
+                                                             String allPCMCoursesForNineBigLanguagesEmail) {
+        AvailableProductsDto allLanguageCourses = availableProductsController.getAvailableProducts(
+                        allLanguageCoursesUserSub,
+                        allLanguageCoursesUserEmail);
+        AvailableProductsDto allPCMCoursesForNineBigLanguages = availableProductsController.getAvailableProducts(
+                allPCMCoursesForNineBigLanguagesSub,
+                allPCMCoursesForNineBigLanguagesEmail);
 
         List<AvailableProductDto> allSupportedCourses = new ArrayList<>();
         allSupportedCourses.addAll(allLanguageCourses.getPurchasedProducts());

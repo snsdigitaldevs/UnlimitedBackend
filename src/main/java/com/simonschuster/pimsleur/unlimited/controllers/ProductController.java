@@ -41,9 +41,10 @@ public class ProductController {
     public List<Course> getProductInfo(@RequestParam("isPUProductCode") boolean isPUProductCode,
                                        @RequestParam(name = "isFree", required = false) boolean isFree,
                                        @RequestParam(value = "productCode") String productCode,
-                                       @RequestParam(value = "sub") String sub) {
+                                       @RequestParam(value = "sub") String sub,
+                                       @RequestParam(value = "email") String email) {
         validateProductCode(productCode);
-        return getProductInfos(isPUProductCode, isFree, productCode, sub)
+        return getProductInfos(isPUProductCode, isFree, productCode, sub, email)
                 .stream()
                 .filter(distinctByKey(Course::getProductCode))
                 // remove duplicate by isbn, sometimes there could be same isbn show up more than once
@@ -51,13 +52,17 @@ public class ProductController {
                 .collect(toList());
     }
 
-    private List<Course> getProductInfos(@RequestParam("isPUProductCode") boolean isPUProductCode, @RequestParam(name = "isFree", required = false) boolean isFree, @RequestParam(value = "productCode") String productCode, @RequestParam(value = "sub") String sub) {
+    private List<Course> getProductInfos(boolean isPUProductCode,
+                                         boolean isFree,
+                                         String productCode,
+                                         String sub,
+                                         String email) {
         if (isFree && !isPUProductCode) {
             return pcmFreeCourseService.getPcmFreeCourseInfos(productCode);
         } else if (isPUProductCode) {
             return puCourseInfoService.getPuProductInfo(productCode).toDto();
         } else {
-            return pcmCourseInfoService.getCourses(productCode, sub);
+            return pcmCourseInfoService.getCourses(productCode, sub, email);
         }
     }
 

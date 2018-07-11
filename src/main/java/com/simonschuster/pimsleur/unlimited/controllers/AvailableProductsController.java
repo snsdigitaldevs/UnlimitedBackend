@@ -17,8 +17,9 @@ public class AvailableProductsController {
 
     @ApiOperation(value = "All products a customer can choose to learn(includes purchased and free)")
     @RequestMapping(value = "/availableProducts", method = RequestMethod.GET)
-    public AvailableProductsDto getAvailableProducts(@RequestParam(value = "sub", required = false) String sub) {
-        return availableProductsService.getAvailableProducts(sub);
+    public AvailableProductsDto getAvailableProducts(@RequestParam(value = "sub", required = false) String sub,
+                                                     @RequestParam(value = "email", required = false) String email) {
+        return availableProductsService.getAvailableProducts(sub, email);
     }
 
 }

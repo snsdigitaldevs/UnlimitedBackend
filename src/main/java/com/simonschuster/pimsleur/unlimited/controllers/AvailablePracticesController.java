@@ -57,8 +57,9 @@ public class AvailablePracticesController {
             @PathVariable("productCode") String productCode,
 
             @ApiParam(value = "sub should be from auth0 userinfo")
-            @RequestParam(value = "sub") String sub) {
-        return pcmAvailablePracticesService.getAvailablePractices(productCode, sub);
+            @RequestParam(value = "sub") String sub,
+            @RequestParam(value = "email") String email) {
+        return pcmAvailablePracticesService.getAvailablePractices(productCode, sub, email);
     }
 
     private List<PracticesInUnit> mergeLists(List<PracticesInUnit> readings,

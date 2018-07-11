@@ -15,7 +15,8 @@ public class UpsellController {
     @ApiOperation(value = "Upsell info for user's current learning course")
     @RequestMapping(value = "/product/{productCode}/upsell", method = RequestMethod.GET)
     public UpsellDto getUpsellInfo(@PathVariable("productCode") String isbn,
-                                   @RequestParam(value = "sub", required = false) String sub) {
-        return upsellService.getUpsellInfoFor(isbn, sub);
+                                   @RequestParam(value = "sub", required = false) String sub,
+                                   @RequestParam(value = "email", required = false) String email) {
+        return upsellService.getUpsellInfoFor(isbn, sub, email);
     }
 }

@@ -43,11 +43,12 @@ public class UpsellServiceTest {
     @Test
     public void shouldGetUpsellInfoForIsbn() {
         // mock: user has not bought anything yet
-        when(customerInfoService.getBoughtIsbns("123")).thenReturn(emptyList());
+        when(customerInfoService.getBoughtIsbns("123", "email")).thenReturn(emptyList());
 
         UpsellDto upsellInfo = upsellService.getUpsellInfoFor(
                 "9781442316034",// pcm chinese level 1
-                "123");
+                "123",
+                "email");
 
         assertThat(upsellInfo.getNextLevel().getName(),
                 containsString("Chinese (Mandarin) Level 2"));
@@ -59,11 +60,12 @@ public class UpsellServiceTest {
     @Test
     public void shouldGetUpsellInfoForOtherFormatIsbn() {
         // mock: user has not bought anything yet
-        when(customerInfoService.getBoughtIsbns("123")).thenReturn(emptyList());
+        when(customerInfoService.getBoughtIsbns("123", "email")).thenReturn(emptyList());
 
         UpsellDto upsellInfo = upsellService.getUpsellInfoFor(
                 "9781508273790",// pcm chinese level 2
-                "123");
+                "123",
+                "email");
 
         assertThat(upsellInfo.getNextLevel().getName(),
                 containsString("Chinese (Mandarin) Level 3"));
@@ -75,11 +77,12 @@ public class UpsellServiceTest {
     @Test
     public void shouldNotGetNextLevelIfAlreadyBought() {
         // mock: user has already bought next level
-        when(customerInfoService.getBoughtIsbns("123")).thenReturn(asList("9781508273790"));
+        when(customerInfoService.getBoughtIsbns("123", "email")).thenReturn(asList("9781508273790"));
 
         UpsellDto upsellInfo = upsellService.getUpsellInfoFor(
                 "9781442316034",// pcm chinese level 1
-                "123");
+                "123",
+                "email");
 
         assertThat(upsellInfo.getNextLevel(), nullValue());
 
@@ -90,11 +93,12 @@ public class UpsellServiceTest {
     @Test
     public void shouldNotGetNextVersionIfAlreadyBoughtOtherFormatOfNextVersion() {
         // mock: user has already bought next version's other format
-        when(customerInfoService.getBoughtIsbns("123")).thenReturn(asList("9781442394889"));
+        when(customerInfoService.getBoughtIsbns("123", "email")).thenReturn(asList("9781442394889"));
 
         UpsellDto upsellInfo = upsellService.getUpsellInfoFor(
                 "9781508273790",// pcm chinese level 2
-                "123");
+                "123",
+                "email");
 
         assertThat(upsellInfo.getNextLevel().getName(),
                 containsString("Chinese (Mandarin) Level 3"));
@@ -105,11 +109,12 @@ public class UpsellServiceTest {
     @Test
     public void shouldNotGetNextLevelIfAlreadyBoughtBundleThatCoversNextLevel() {
         // mock: user has bought chinese 1-4 pcm
-        when(customerInfoService.getBoughtIsbns("123")).thenReturn(asList("9781442369351"));
+        when(customerInfoService.getBoughtIsbns("123", "email")).thenReturn(asList("9781442369351"));
 
         UpsellDto upsellInfo = upsellService.getUpsellInfoFor(
                 "9781442316034",// pcm chinese level 1
-                "123");
+                "123",
+                "email");
 
         assertThat(upsellInfo.getNextLevel(), nullValue());
 
@@ -120,11 +125,12 @@ public class UpsellServiceTest {
     @Test
     public void shouldNotGetNextVersionIfAlreadyBoughtOtherFormatOfBundleThatCoversNextVersion() {
         // mock: user has already bought a other format of chinese 1-5 PU
-        when(customerInfoService.getBoughtIsbns("123")).thenReturn(asList("9781508276197"));
+        when(customerInfoService.getBoughtIsbns("123", "email")).thenReturn(asList("9781508276197"));
 
         UpsellDto upsellInfo = upsellService.getUpsellInfoFor(
                 "9781508273790",// pcm chinese level 2
-                "123");
+                "123",
+                "email");
 
         assertThat(upsellInfo.getNextLevel().getName(),
                 containsString("Chinese (Mandarin) Level 3"));
@@ -136,7 +142,8 @@ public class UpsellServiceTest {
     public void shouldGetUpsellInfoForFreeLessonWithoutSub() {
         UpsellDto upsellInfo = upsellService.getUpsellInfoFor(
                 "9781508243328",// Chinese (Mandarin) Level 1 Lesson 1 Demo Unlimited
-                "");
+                "",
+                "email");
 
         assertThat(upsellInfo.getNextLevel().getName(),
                 containsString("Chinese (Mandarin) Level 1"));

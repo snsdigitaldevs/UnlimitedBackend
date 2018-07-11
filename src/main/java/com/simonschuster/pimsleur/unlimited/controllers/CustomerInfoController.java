@@ -25,8 +25,9 @@ public class CustomerInfoController {
                     "and last save id of pcm and pu")
     @RequestMapping(value = "/customerInfo", method = RequestMethod.GET)
     public CustomerInfoDTO getCustomerInfo(@RequestParam(value = "sub") String sub,
-                                           @RequestParam(value = "storeDomain", required = false, defaultValue = "") String storeDomain)
+                                           @RequestParam(value = "storeDomain", required = false, defaultValue = "") String storeDomain,
+                                           @RequestParam(value = "email", required = false, defaultValue = "") String email)
             throws IOException {
-        return edtCustomerInfoService.getCustomerInfos(sub, storeDomain).toDto();
+        return edtCustomerInfoService.getCustomerInfos(sub, storeDomain, email).toDto();
     }
 }

@@ -40,7 +40,7 @@ public class PcmAvailablePracticesServiceTest {
             @Override
             public void run() throws IOException {
                 AvailablePractices availablePractices = pcmAvailablePracticesService
-                        .getAvailablePractices("9781442307674", "sub of auth0");
+                        .getAvailablePractices("9781442307674", "sub of auth0", "email");
 
                 List<Integer> unitsWithReadings = availablePractices.getPracticesInUnits().stream()
                         .map(PracticesInUnit::getUnitNumber)
@@ -62,7 +62,7 @@ public class PcmAvailablePracticesServiceTest {
             @Override
             public void run() throws IOException {
                 AvailablePractices availablePractices = pcmAvailablePracticesService
-                        .getAvailablePractices("9781442308046", "sub of auth0");
+                        .getAvailablePractices("9781442308046", "sub of auth0", "email");
 
                 List<Integer> unitsWithReadings = availablePractices.getPracticesInUnits().stream()
                         .map(PracticesInUnit::getUnitNumber)

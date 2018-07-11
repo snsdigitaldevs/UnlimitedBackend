@@ -55,7 +55,7 @@ public class EDTCustomerInfoServiceTest {
             @Override
             public void run() throws IOException {
                 AggregatedCustomerInfo customerInfos =
-                        edtCustomerInfoService.getCustomerInfos("whatever", "");
+                        edtCustomerInfoService.getCustomerInfos("whatever", "", "email");
 
                 assertThat(customerInfos.getPcmCustomerInfo().getResultCode(), is(1));
                 assertThat(customerInfos.getUnlimitedCustomerInfo().getResultCode(), is(1));

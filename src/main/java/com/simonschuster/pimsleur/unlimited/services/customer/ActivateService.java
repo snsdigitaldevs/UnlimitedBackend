@@ -6,6 +6,7 @@ import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.active.Activat
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.active.ActivateResultDTO;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.activate.Activate;
 import com.simonschuster.pimsleur.unlimited.data.edt.CodeOnlyResponseEDT;
+import com.simonschuster.pimsleur.unlimited.services.AppIdService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -21,22 +22,25 @@ import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEd
 public class ActivateService {
     @Autowired
     private ApplicationConfiguration applicationConfiguration;
+    @Autowired
+    private AppIdService appIdService;
 
-    public ActivateDTO active(String registrantId, String identityVerificationToken, List<String> isbns) {
+    public ActivateDTO active(String registrantId, String identityVerificationToken, List<String> isbns, String storeDomain) {
         String url = applicationConfiguration.getProperty("edt.api.activate.url");
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
 
         return new ActivateDTO(isbns.stream()
                 // Do not use parallelStream because updating data in same time is note supported by EDT now.
-                .map(isbn -> activateToEdt(registrantId, identityVerificationToken, url, headers, isbn))
+                .map(isbn -> activateToEdt(registrantId, identityVerificationToken, url, headers, isbn, storeDomain))
                 .collect(Collectors.toList()));
     }
 
-    private ActivateResultDTO activateToEdt(String registrantId, String identityVerificationToken, String url, HttpHeaders headers, String isbn) {
+    private ActivateResultDTO activateToEdt(String registrantId, String identityVerificationToken, String url, HttpHeaders headers, String isbn, String storeDomain) {
+        String appId = appIdService.getAppId(storeDomain);
         HttpEntity<String> entity = new HttpEntity<>(String.format(
                 applicationConfiguration.getProperty("edt.api.activate.parameters.activate"),
-                identityVerificationToken, registrantId, isbn
+                identityVerificationToken, registrantId, isbn, appId
         ), headers);
         Activate activateResponse = postToEdt(entity, url, Activate.class);
         Integer resultCode = activateResponse.getResultCode();
@@ -51,14 +55,15 @@ public class ActivateService {
         return activateDTO;
     }
 
-    public void deactivate(String customerId, String registrantId) {
+    public void deactivate(String customerId, String registrantId, String storeDomain) {
         String url = applicationConfiguration.getProperty("edt.api.activate.url");
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
 
+        String appId = appIdService.getAppId(storeDomain);
         HttpEntity<String> entity = new HttpEntity<>(String.format(
                 applicationConfiguration.getProperty("edt.api.activate.parameters.deactivate"),
-                registrantId, customerId), headers);
+                registrantId, customerId, appId), headers);
         CodeOnlyResponseEDT deactivateResponse = postToEdt(entity, url, CodeOnlyResponseEDT.class);
         if (!deactivateResponse.getResultCode().equals(1)) {
             throw new PimsleurException("PU deactivate failed!");

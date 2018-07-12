@@ -23,7 +23,7 @@ public class ActivateController {
 
             @ApiParam(value = "you can find registrant id in customerInfo api")
             @RequestBody DeactivateBodyDTO deactivateBodyDTO) {
-        activateService.deactivate(customerId, deactivateBodyDTO.getRegistrantId());
+        activateService.deactivate(customerId, deactivateBodyDTO.getRegistrantId(), deactivateBodyDTO.getStoreDomain());
     }
 
     @ApiOperation(value = "Activation",
@@ -35,6 +35,7 @@ public class ActivateController {
 
             @ApiParam(value = "you can find identityVerificationToken in customerInfo api")
             @RequestBody ActivateBodyDTO activateBodyDTO) {
-        return activateService.active(registrantId, activateBodyDTO.getIdentityVerificationToken(), activateBodyDTO.getIsbns());
+        return activateService.active(registrantId, activateBodyDTO.getIdentityVerificationToken(),
+                activateBodyDTO.getIsbns(), activateBodyDTO.getStoreDomain());
     }
 }

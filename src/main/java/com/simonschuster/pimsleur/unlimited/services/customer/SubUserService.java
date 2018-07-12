@@ -47,10 +47,11 @@ public class SubUserService {
 
     }
 
-    public SubUserInfo delete(String customerId, String appUserId, String token) {
+    public SubUserInfo delete(String customerId, String appUserId, String token, String storeDomain) {
         String url = applicationConfiguration.getProperty("edt.api.customerInfo");
+        String appId = appIdService.getAppId(storeDomain);
         String parameters = format(applicationConfiguration.getApiParameter("deleteCustomerParameters"),
-                token, customerId + "_" + appUserId, customerId);
+                token, customerId + "_" + appUserId, customerId, appId);
 
         HttpEntity<String> updateCustomerParameters = getStringHttpEntity(parameters);
         return postToEdt(updateCustomerParameters, url, SubUserInfo.class);

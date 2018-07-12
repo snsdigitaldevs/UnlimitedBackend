@@ -7,7 +7,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.AvailableProductDto;
 
 import java.util.List;
-import java.util.Locale;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
@@ -116,16 +115,6 @@ public class Product {
     private String formattedProductInfo;
     @JsonProperty("productsAttributes")
     private List<Object> productsAttributes = null;
-    @JsonProperty("languageName")
-    private LanguageName languageName;
-
-    public LanguageName getLanguageName() {
-        return languageName;
-    }
-
-    public void setLanguageName(LanguageName languageName) {
-        this.languageName = languageName;
-    }
 
     @JsonProperty("productsId")
     public Integer getProductsId() {

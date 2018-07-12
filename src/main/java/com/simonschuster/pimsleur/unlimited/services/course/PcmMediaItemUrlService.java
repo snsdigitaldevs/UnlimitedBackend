@@ -3,6 +3,7 @@ package com.simonschuster.pimsleur.unlimited.services.course;
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.BatchedMediaItemUrls;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.MediaItemUrl;
+import com.simonschuster.pimsleur.unlimited.services.AppIdService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -17,14 +18,17 @@ public class PcmMediaItemUrlService {
 
     @Autowired
     private ApplicationConfiguration config;
+    @Autowired
+    private AppIdService appIdService;
 
     public MediaItemUrl getMediaItemUrl(Integer mediaItemId, String customerToken,
-                                        String entitlementToken, Integer customersId) {
+                                        String entitlementToken, Integer customersId, String storeDomain) {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(APPLICATION_FORM_URLENCODED);
 
+        String appId = appIdService.getAppId(storeDomain);
         String parameters = format(config.getApiParameter("pCMMp3Parameters"),
-                mediaItemId, customerToken, entitlementToken, customersId);
+                mediaItemId, customerToken, entitlementToken, customersId, appId);
 
         return postToEdt(new HttpEntity<>(parameters, headers),
                 config.getProperty("edt.api.pCMMp3ApiUrl"),

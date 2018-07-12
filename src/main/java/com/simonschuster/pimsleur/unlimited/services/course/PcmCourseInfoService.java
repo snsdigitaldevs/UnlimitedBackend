@@ -27,10 +27,10 @@ public class PcmCourseInfoService {
 
     public List<Course> getCourses(String productCode, String sub, String email, String storeDomain) {
         PcmProduct pcmProductInfo = getPcmProductInfo(sub, email, storeDomain);
-        List<Course> pcmAudioInfo = pcmLessonInfoService.getPcmLessonInfo(productCode, pcmProductInfo);
+        List<Course> pcmAudioInfo = pcmLessonInfoService.getPcmLessonInfo(productCode, pcmProductInfo, storeDomain);
 
         List<Course> courses = createInstanceForPcm(pcmProductInfo, pcmAudioInfo).toDto();
-        pcmReadingsService.addReadingsToCourses(courses, pcmProductInfo);
+        pcmReadingsService.addReadingsToCourses(courses, pcmProductInfo, storeDomain);
         return courses;
     }
 

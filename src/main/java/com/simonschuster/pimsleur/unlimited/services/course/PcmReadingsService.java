@@ -29,12 +29,12 @@ public class PcmReadingsService {
     @Autowired
     private PcmMediaItemUrlService pcmMediaItemUrlService;
 
-    public void addReadingsToCourses(List<Course> courses, PcmProduct pcmProduct) {
+    public void addReadingsToCourses(List<Course> courses, PcmProduct pcmProduct, String storeDomain) {
         courses.forEach(course -> {
             Optional<OrdersProductsDownload> matchingDownload =
                     findMatchingDownload(pcmProduct.getOrdersProducts(), course.getProductCode());
             matchingDownload.ifPresent(download ->
-                    course.setReadings(createPcmReadings(download, pcmProduct)));
+                    course.setReadings(createPcmReadings(download, pcmProduct, storeDomain)));
         });
     }
 
@@ -46,14 +46,14 @@ public class PcmReadingsService {
                 .findFirst();
     }
 
-    private Readings createPcmReadings(OrdersProductsDownload download, PcmProduct pcmProduct) {
+    private Readings createPcmReadings(OrdersProductsDownload download, PcmProduct pcmProduct, String storeDomain) {
         Stream<MediaItem> mediaItems = findReadingMediaItems(download.getMediaSet().getChildMediaSets());
 
         boolean isBatched = parseBoolean(config.getProperty("toggle.fetch.mp3.url.batch"));
         if (isBatched) {
             return batchGetPcmReadings(download, pcmProduct, mediaItems);
         } else {
-            return getPcmReadingsOneByOne(download, pcmProduct, mediaItems);
+            return getPcmReadingsOneByOne(download, pcmProduct, mediaItems, storeDomain);
         }
     }
 
@@ -65,12 +65,12 @@ public class PcmReadingsService {
     }
 
     private Readings getPcmReadingsOneByOne(OrdersProductsDownload download, PcmProduct pcmProduct,
-                                            Stream<MediaItem> mediaItems) {
+                                            Stream<MediaItem> mediaItems, String storeDomain) {
         Readings readings = new Readings();
 
         mediaItems.forEach(mediaItem -> {
             MediaItemUrl mediaItemUrl = pcmMediaItemUrlService.getMediaItemUrl(mediaItem.getMediaItemId(),
-                    pcmProduct.getCustomerToken(), download.getEntitlementToken(), pcmProduct.getCustomersId());
+                    pcmProduct.getCustomerToken(), download.getEntitlementToken(), pcmProduct.getCustomersId(), storeDomain);
             if (mediaItem.isPdf()) {
                 readings.setPdf(mediaItemUrl.getResult_data().getUrl());
             } else {

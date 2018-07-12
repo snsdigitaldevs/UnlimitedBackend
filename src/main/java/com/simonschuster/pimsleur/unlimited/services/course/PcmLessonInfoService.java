@@ -24,7 +24,7 @@ public class PcmLessonInfoService {
     @Autowired
     private PcmMediaItemsFilterService pcmMediaItemsFilterService;
 
-    public List<Course> getPcmLessonInfo(String productCode, PcmProduct pcmProduct) {
+    public List<Course> getPcmLessonInfo(String productCode, PcmProduct pcmProduct, String storeDomain) {
         List<MediaSetByLevel> entitlementTokens = new ArrayList<>();
         List<MediaItemsByLevel> matchedMediaItems = pcmMediaItemsFilterService.getMatchedMediaItems(pcmProduct, entitlementTokens, productCode);
 
@@ -34,10 +34,10 @@ public class PcmLessonInfoService {
         pcmAudioReqParams.setCustomersId(pcmProduct.getCustomersId());
         pcmAudioReqParams.setCustomerToken(pcmProduct.getCustomerToken());
 
-        return getLessonsInfo(pcmAudioReqParams);
+        return getLessonsInfo(pcmAudioReqParams, storeDomain);
     }
 
-    private List<Course> getLessonsInfo(PcmAudioReqParams params) {
+    private List<Course> getLessonsInfo(PcmAudioReqParams params, String storeDomain) {
         List<Course> coursesWithLessonInfoOnly = new ArrayList<>();
 
         boolean isBatched = parseBoolean(config.getProperty("toggle.fetch.mp3.url.batch"));
@@ -48,7 +48,7 @@ public class PcmLessonInfoService {
                 course.setLessons(batchFetchLessons(params, mediaItemsByLevel));
 
             } else {
-                course.setLessons(fetchLessonsOneByOne(params, mediaItemsByLevel));
+                course.setLessons(fetchLessonsOneByOne(params, mediaItemsByLevel, storeDomain));
             }
             coursesWithLessonInfoOnly.add(course);
         });
@@ -100,7 +100,7 @@ public class PcmLessonInfoService {
         return entitlementToken.isPresent() ? entitlementToken.get() : StringUtils.EMPTY;
     }
 
-    private List<Lesson> fetchLessonsOneByOne(PcmAudioReqParams pcmAudioReqParams, MediaItemsByLevel mediaItemsByLevel) {
+    private List<Lesson> fetchLessonsOneByOne(PcmAudioReqParams pcmAudioReqParams, MediaItemsByLevel mediaItemsByLevel, String storeDomain) {
 
         String level = mediaItemsByLevel.getLevel();
 
@@ -113,7 +113,7 @@ public class PcmLessonInfoService {
             MediaItemUrl mediaItemUrl = pcmMediaItemUrlService.getMediaItemUrl(mediaItemId,
                     pcmAudioReqParams.getCustomerToken(),
                     entitlementToken,
-                    pcmAudioReqParams.getCustomersId());
+                    pcmAudioReqParams.getCustomersId(), storeDomain);
 
             Lesson lesson = new Lesson();
             lesson.setAudioLink(mediaItemUrl.getResult_data().getUrl());

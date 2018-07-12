@@ -61,10 +61,10 @@ public class EDTCustomerInfoService {
                 email);
     }
 
-    public List<String> getBoughtIsbns(String sub, String email) {
+    public List<String> getBoughtIsbns(String sub, String email, String storeDomain) {
         return Stream.concat(
-                getPUCustomerInfo(sub, "", email).getResultData().getCustomer().getProductCodes().stream(),
-                getPcmCustomerInfo(sub, "", email).getResultData().getCustomer().getProductCodes().stream())
+                getPUCustomerInfo(sub, storeDomain, email).getResultData().getCustomer().getProductCodes().stream(),
+                getPcmCustomerInfo(sub, storeDomain, email).getResultData().getCustomer().getProductCodes().stream())
                 .collect(toList());
     }
 

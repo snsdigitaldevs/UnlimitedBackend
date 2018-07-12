@@ -36,13 +36,13 @@ public class AvailableProductsService {
     @Autowired
     private PUCourseInfoService puCourseInfoService;
 
-    public AvailableProductsDto getAvailableProducts(String sub, String email) {
+    public AvailableProductsDto getAvailableProducts(String sub, String email, String storeDomain) {
         if (sub == null) {
             return new AvailableProductsDto(emptyList(), getFreeProducts(emptyList()));
         }
 
         return CompletableFuture
-                .supplyAsync(() -> purchasedPUAndPcmProducts(sub, email))
+                .supplyAsync(() -> purchasedPUAndPcmProducts(sub, email, storeDomain))
                 .thenCombineAsync(
                         CompletableFuture.supplyAsync(() -> pcmFreeLessonsService.getPcmFreeLessons()),
                         this::getAvailableProductsDto)
@@ -54,12 +54,12 @@ public class AvailableProductsService {
         return new AvailableProductsDto(purchasedProducts, freeProducts);
     }
 
-    private List<AvailableProductDto> purchasedPUAndPcmProducts(String sub, String email) {
+    private List<AvailableProductDto> purchasedPUAndPcmProducts(String sub, String email, String storeDomain) {
 
         return CompletableFuture
-                .supplyAsync(() -> getPuAvailableProducts(sub, email))
+                .supplyAsync(() -> getPuAvailableProducts(sub, email, storeDomain))
                 .thenCombineAsync(
-                        CompletableFuture.supplyAsync(() -> getPcmAvailableProducts(sub, email)),
+                        CompletableFuture.supplyAsync(() -> getPcmAvailableProducts(sub, email, storeDomain)),
                         this::getAvailableProductDtos)
                 .join();
 
@@ -75,8 +75,8 @@ public class AvailableProductsService {
                 .collect(toList());
     }
 
-    private List<AvailableProductDto> getPuAvailableProducts(String sub, String email) {
-        CustomerInfo puCustInfo = customerInfoService.getPUCustomerInfo(sub, "", email);
+    private List<AvailableProductDto> getPuAvailableProducts(String sub, String email, String storeDomain) {
+        CustomerInfo puCustInfo = customerInfoService.getPUCustomerInfo(sub, storeDomain, email);
         if (puCustInfo.getResultData() != null) {
             List<AvailableProductDto> availableProductDto =
                     puCustInfo.getResultData().getCustomer().getAllOrdersProducts().stream()
@@ -110,8 +110,8 @@ public class AvailableProductsService {
                         .equals(puFreeCourse.getLanguageName() + purchasedCourse.getLevel()));
     }
 
-    private List<AvailableProductDto> getPcmAvailableProducts(String sub, String email) {
-        CustomerInfo pcmCustInfo = customerInfoService.getPcmCustomerInfo(sub, "", email);
+    private List<AvailableProductDto> getPcmAvailableProducts(String sub, String email, String storeDomain) {
+        CustomerInfo pcmCustInfo = customerInfoService.getPcmCustomerInfo(sub, storeDomain, email);
 
         if (pcmCustInfo.getResultData() != null) {
             return pcmCustInfo.getResultData()

@@ -42,9 +42,10 @@ public class ProductController {
                                        @RequestParam(name = "isFree", required = false) boolean isFree,
                                        @RequestParam(value = "productCode") String productCode,
                                        @RequestParam(value = "sub") String sub,
-                                       @RequestParam(value = "email") String email) {
+                                       @RequestParam(value = "email") String email,
+                                       @RequestParam(value = "storeDomain") String storeDomain) {
         validateProductCode(productCode);
-        return getProductInfos(isPUProductCode, isFree, productCode, sub, email)
+        return getProductInfos(isPUProductCode, isFree, productCode, sub, email, storeDomain)
                 .stream()
                 .filter(distinctByKey(Course::getProductCode))
                 // remove duplicate by isbn, sometimes there could be same isbn show up more than once
@@ -56,13 +57,13 @@ public class ProductController {
                                          boolean isFree,
                                          String productCode,
                                          String sub,
-                                         String email) {
+                                         String email, String storeDomain) {
         if (isFree && !isPUProductCode) {
             return pcmFreeCourseService.getPcmFreeCourseInfos(productCode);
         } else if (isPUProductCode) {
             return puCourseInfoService.getPuProductInfo(productCode).toDto();
         } else {
-            return pcmCourseInfoService.getCourses(productCode, sub, email);
+            return pcmCourseInfoService.getCourses(productCode, sub, email, storeDomain);
         }
     }
 

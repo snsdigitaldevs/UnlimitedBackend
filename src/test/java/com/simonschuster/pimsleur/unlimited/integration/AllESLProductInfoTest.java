@@ -35,6 +35,7 @@ public class AllESLProductInfoTest {
     AvailableProductsController availableProductsController;
     @Autowired
     ProductController productController;
+    private String storeDomain = "ios_inapp";
 
     @Ignore("This integration test need too long.")
     @Test
@@ -57,7 +58,7 @@ public class AllESLProductInfoTest {
         List<List<Course>> allESLProductsInfo = allSupportedESLProducts.stream()
                 .map(eslProduct -> productController.getProductInfo(eslProduct.isPuProduct(),
                         false, eslProduct.getProductCode(), allLanguageCoursesUserSub,
-                        "super@thoughtworks.com"))
+                        "super@thoughtworks.com", storeDomain))
                 .collect(Collectors.toList());
         assertEquals(20, allESLProductsInfo.size());
 
@@ -99,10 +100,10 @@ public class AllESLProductInfoTest {
                                                              String allPCMCoursesForNineBigLanguagesEmail) {
         AvailableProductsDto allLanguageCourses = availableProductsController.getAvailableProducts(
                         allLanguageCoursesUserSub,
-                        allLanguageCoursesUserEmail);
+                        allLanguageCoursesUserEmail, storeDomain);
         AvailableProductsDto allPCMCoursesForNineBigLanguages = availableProductsController.getAvailableProducts(
                 allPCMCoursesForNineBigLanguagesSub,
-                allPCMCoursesForNineBigLanguagesEmail);
+                allPCMCoursesForNineBigLanguagesEmail, storeDomain);
 
         List<AvailableProductDto> allSupportedCourses = new ArrayList<>();
         allSupportedCourses.addAll(allLanguageCourses.getPurchasedProducts());

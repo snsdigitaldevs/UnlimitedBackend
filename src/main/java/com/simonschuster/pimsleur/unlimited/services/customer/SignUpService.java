@@ -34,7 +34,7 @@ public class SignUpService {
         String appId = appIdService.getAppId(signUpBodyDTO.getStoreDomain());
         //EDT doesn't accept "alexa" as store_domain for this API, so set ss_pu for alexa only for this API.
         String storeDomain = signUpBodyDTO.getStoreDomain().equals(StoreDomainUtil.ALEXA_STORE_DOMAIN) ?
-                "ss_pu" : signUpBodyDTO.getStoreDomain();
+                "pimsleur.com" : signUpBodyDTO.getStoreDomain();
 
         HttpEntity<String> entity = new HttpEntity<>(String.format(
                 applicationConfiguration.getProperty("edt.api.signUp.parameters.signUp"),

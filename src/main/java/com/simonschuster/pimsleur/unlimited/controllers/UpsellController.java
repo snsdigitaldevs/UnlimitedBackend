@@ -16,7 +16,8 @@ public class UpsellController {
     @RequestMapping(value = "/product/{productCode}/upsell", method = RequestMethod.GET)
     public UpsellDto getUpsellInfo(@PathVariable("productCode") String isbn,
                                    @RequestParam(value = "sub", required = false) String sub,
-                                   @RequestParam(value = "email", required = false) String email) {
-        return upsellService.getUpsellInfoFor(isbn, sub, email);
+                                   @RequestParam(value = "email", required = false) String email,
+                                   @RequestParam(value = "storeDomain", required = false) String storeDomain) {
+        return upsellService.getUpsellInfoFor(isbn, sub, email, storeDomain);
     }
 }

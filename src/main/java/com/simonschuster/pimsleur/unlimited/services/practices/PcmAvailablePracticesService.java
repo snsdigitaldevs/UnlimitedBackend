@@ -23,8 +23,8 @@ public class PcmAvailablePracticesService {
     @Autowired
     private EDTCustomerInfoService edtCustomerInfoService;
 
-    public AvailablePractices getAvailablePractices(String productCode, String sub, String email) {
-        CustomerInfo pcmCustomerInfo = edtCustomerInfoService.getPcmCustomerInfo(sub, "", email);
+    public AvailablePractices getAvailablePractices(String productCode, String sub, String email, String storeDomain) {
+        CustomerInfo pcmCustomerInfo = edtCustomerInfoService.getPcmCustomerInfo(sub, storeDomain, email);
 
         if (pcmCustomerInfo.getResultData() != null) {
             return collectPractices(productCode, pcmCustomerInfo);

@@ -3,7 +3,6 @@ package com.simonschuster.pimsleur.unlimited.services.course;
 import com.github.dreamhead.moco.HttpServer;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Lesson;
-import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.AggregatedProductInfo;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +25,7 @@ public class PcmCourseInfoServiceTest {
 
     @Autowired
     private PcmCourseInfoService pcmCourseInfoService;
+    private String storeDomain = "android_inapp";
 
     @Test
     public void shouldGenerateDTOResponseCorrectlyFromPCM() throws Exception {
@@ -33,7 +33,7 @@ public class PcmCourseInfoServiceTest {
         String productCode = "9781508205333";
 
         running(server, () -> {
-            List<Course> courseDtos = pcmCourseInfoService.getCourses(productCode, "sub", "email");
+            List<Course> courseDtos = pcmCourseInfoService.getCourses(productCode, "sub", "email", storeDomain);
 
             Course levelOne = courseDtos.stream()
                     .filter(course -> course.getLevel() == 1).collect(Collectors.toList()).get(0);

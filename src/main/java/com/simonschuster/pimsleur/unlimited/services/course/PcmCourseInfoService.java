@@ -25,8 +25,8 @@ public class PcmCourseInfoService {
 
     private static final Logger logger = LoggerFactory.getLogger(PUCourseInfoService.class);
 
-    public List<Course> getCourses(String productCode, String sub, String email) {
-        PcmProduct pcmProductInfo = getPcmProductInfo(sub, email);
+    public List<Course> getCourses(String productCode, String sub, String email, String storeDomain) {
+        PcmProduct pcmProductInfo = getPcmProductInfo(sub, email, storeDomain);
         List<Course> pcmAudioInfo = pcmLessonInfoService.getPcmLessonInfo(productCode, pcmProductInfo);
 
         List<Course> courses = createInstanceForPcm(pcmProductInfo, pcmAudioInfo).toDto();
@@ -34,9 +34,9 @@ public class PcmCourseInfoService {
         return courses;
     }
 
-    private PcmProduct getPcmProductInfo(String sub, String email) {
+    private PcmProduct getPcmProductInfo(String sub, String email, String storeDomain) {
         try {
-            Customer customer = customerInfoService.getPcmCustomerInfo(sub, "", email)
+            Customer customer = customerInfoService.getPcmCustomerInfo(sub, storeDomain, email)
                     .getResultData().getCustomer();
 
             PcmProduct pcmProduct = new PcmProduct();

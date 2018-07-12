@@ -20,6 +20,7 @@ public class AllPuIsbnProductInfoTest {
 
     @Autowired
     private ProductController productController;
+    private String storeDomain = "android_inapp";
 
     @Test
     @Ignore // do not run this test in ci, we only need this to run locally
@@ -28,7 +29,7 @@ public class AllPuIsbnProductInfoTest {
         for (String puISBN : PUIsbnList.puISBNs) {
             System.out.println(PUIsbnList.puISBNs.indexOf(puISBN) + 1);
             System.out.println(puISBN + " will run");
-            List<Course> courseList = productController.getProductInfo(true, false, puISBN, "whatever", "super@thoughtworks.com");
+            List<Course> courseList = productController.getProductInfo(true, false, puISBN, "whatever", "super@thoughtworks.com", storeDomain);
             courseList
                     .stream()
                     .flatMap(it -> it.getLessons().stream())

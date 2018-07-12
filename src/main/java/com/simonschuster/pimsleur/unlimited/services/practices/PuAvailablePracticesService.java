@@ -15,9 +15,9 @@ public class PuAvailablePracticesService {
     @Autowired
     private ApplicationConfiguration config;
 
-    public PracticesUrls getPracticeUrls(String productCode) {
+    public PracticesUrls getPracticeUrls(String productCode, Object storeDomain) {
         InstallationFileList installationFileList = postToEdt(
-                createPostBody(productCode),
+                createPostBody(productCode, storeDomain),
                 config.getProperty("edt.api.installationFileListUrl"),
                 InstallationFileList.class
         );
@@ -25,12 +25,12 @@ public class PuAvailablePracticesService {
         return installationFileList.getPracticeUrls();
     }
 
-    private HttpEntity<String> createPostBody(String productCode) {
+    private HttpEntity<String> createPostBody(String productCode, Object storeDomain) {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
 
         return new HttpEntity<>(
-                String.format(config.getApiParameter("installationFileListParameters"), productCode),
+                String.format(config.getApiParameter("installationFileListParameters"), productCode, storeDomain),
                 headers);
     }
 }

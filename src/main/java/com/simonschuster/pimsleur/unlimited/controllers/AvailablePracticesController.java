@@ -38,9 +38,10 @@ public class AvailablePracticesController {
     @ApiOperation(value = "PU practices of one course",
             notes = "PU may have reading, quick match(skill), speak easy, flash card.")
     @RequestMapping(value = "/puProduct/{productCode}/availablePractices", method = RequestMethod.GET)
-    public AvailablePractices getPuAvailablePractices(@PathVariable("productCode") String productCode)
+    public AvailablePractices getPuAvailablePractices(@PathVariable("productCode") String productCode,
+                                                      @RequestParam(value = "storeDomain", required = false) String storeDomain)
             throws IOException {
-        PracticesUrls practicesUrls = puAvailablePracticesService.getPracticeUrls(productCode);
+        PracticesUrls practicesUrls = puAvailablePracticesService.getPracticeUrls(productCode, storeDomain);
 
         List<PracticesInUnit> speakEasies = csvToSpeakEasies(practicesUrls.getSpeakEasyUrl());
         List<PracticesInUnit> readings = csvToReadings(practicesUrls.getReadingUrl());

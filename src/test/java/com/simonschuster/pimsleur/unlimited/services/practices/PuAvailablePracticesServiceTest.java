@@ -32,10 +32,12 @@ public class PuAvailablePracticesServiceTest {
                 .response(file("src/test/resources/installationFileListResponse.json"));
 
         running(server, new Runnable() {
+            public String storeDomain = "pimsleur.com";
+
             @Override
             public void run() throws IOException {
                 PracticesUrls practiceCsvLocations =
-                        puAvailablePracticesService.getPracticeUrls("whatever");
+                        puAvailablePracticesService.getPracticeUrls("whatever", storeDomain);
                 assertThat(practiceCsvLocations.getFlashCardUrl(), is("https://install.pimsleurunlimited.com/staging_n/mobile/mandarinchinese/Mandarin Chinese I/metadata/timecode/9781442394872_Mandarin_1_FC.csv"));
                 assertThat(practiceCsvLocations.getQuickMatchUrl(), is("https://install.pimsleurunlimited.com/staging_n/mobile/mandarinchinese/Mandarin Chinese I/metadata/timecode/9781442394872_Mandarin_1_QZ.csv"));
                 assertThat(practiceCsvLocations.getReadingUrl(), is("https://install.pimsleurunlimited.com/staging_n/mobile/mandarinchinese/Mandarin Chinese I/metadata/timecode/9781442394872_Mandarin_1_RL.csv"));

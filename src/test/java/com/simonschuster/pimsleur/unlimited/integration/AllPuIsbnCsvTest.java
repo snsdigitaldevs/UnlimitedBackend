@@ -22,6 +22,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class AllPuIsbnCsvTest {
     @Autowired
     private AvailablePracticesController availablePracticesController;
+    private String storeDomain = "pimsleur.com";
 
     @Test
     @Ignore // do not run this test in ci, we only need this to run locally
@@ -32,7 +33,7 @@ public class AllPuIsbnCsvTest {
             out.println(puISBNs.indexOf(puISBN) + 1);
             out.println(puISBN + " will run");
 
-            AvailablePractices puAvailablePractices = availablePracticesController.getPuAvailablePractices(puISBN);
+            AvailablePractices puAvailablePractices = availablePracticesController.getPuAvailablePractices(puISBN, storeDomain);
             verifyFlashCardMp3FileName(puAvailablePractices);
 
             out.println(puISBN + " is ok");

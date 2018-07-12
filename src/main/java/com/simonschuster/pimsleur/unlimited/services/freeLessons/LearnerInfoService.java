@@ -4,6 +4,7 @@ import com.simonschuster.pimsleur.unlimited.common.exception.PimsleurException;
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.LearnerInfoBodyDTO;
 import com.simonschuster.pimsleur.unlimited.data.edt.CodeOnlyResponseEDT;
+import com.simonschuster.pimsleur.unlimited.services.AppIdService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -16,12 +17,16 @@ import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEd
 public class LearnerInfoService {
     @Autowired
     private ApplicationConfiguration config;
+    @Autowired
+    private AppIdService appIdService;
 
     public void LearnerInfo(LearnerInfoBodyDTO learnerInfoBodyDTO) {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
+        String appId = appIdService.getAppId(learnerInfoBodyDTO.getStoreDomain());
         HttpEntity<String> parameters = new HttpEntity<>(String.format(config.getProperty("edt.api.freeLesson.parameters"),
-                learnerInfoBodyDTO.getSource(), learnerInfoBodyDTO.getCountryCode(), learnerInfoBodyDTO.getEmail(), learnerInfoBodyDTO.getLanguageName()
+                learnerInfoBodyDTO.getSource(), learnerInfoBodyDTO.getCountryCode(), learnerInfoBodyDTO.getEmail(),
+                learnerInfoBodyDTO.getLanguageName(), appId
         ), headers);
         String url = config.getProperty("edt.api.freeLesson.url");
         CodeOnlyResponseEDT learnerInfoResponse = postToEdt(parameters, url, CodeOnlyResponseEDT.class);

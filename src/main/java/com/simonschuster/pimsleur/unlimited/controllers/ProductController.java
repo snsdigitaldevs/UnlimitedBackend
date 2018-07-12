@@ -59,7 +59,7 @@ public class ProductController {
                                          String sub,
                                          String email, String storeDomain) {
         if (isFree && !isPUProductCode) {
-            return pcmFreeCourseService.getPcmFreeCourseInfos(productCode);
+            return pcmFreeCourseService.getPcmFreeCourseInfos(productCode, storeDomain);
         } else if (isPUProductCode) {
             return puCourseInfoService.getPuProductInfo(productCode, storeDomain).toDto();
         } else {

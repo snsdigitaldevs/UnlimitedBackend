@@ -6,6 +6,7 @@ import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Lesson;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.MediaItem;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.pcmFreeCourse.PcmFreeCourseResponse;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.pcmFreeCourse.PcmFreeCourseResultData;
+import com.simonschuster.pimsleur.unlimited.services.AppIdService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -28,10 +29,12 @@ public class PcmFreeCourseService {
 
     @Autowired
     private ApplicationConfiguration configuration;
+    @Autowired
+    private AppIdService appIdService;
 
-    public List<Course> getPcmFreeCourseInfos(String productCode) {
+    public List<Course> getPcmFreeCourseInfos(String productCode, String storeDomain) {
 
-        PcmFreeCourseResponse pcmFreeCourseResponse = postToEdt(createPostBody(productCode),
+        PcmFreeCourseResponse pcmFreeCourseResponse = postToEdt(createPostBody(productCode, storeDomain),
                 configuration.getProperty("edt.api.pcmFreeCourseApiUrl"),
                 PcmFreeCourseResponse.class);
 
@@ -103,10 +106,11 @@ public class PcmFreeCourseService {
                 }).collect(toList());
     }
 
-    private HttpEntity<String> createPostBody(String productCode) {
+    private HttpEntity<String> createPostBody(String productCode, String storeDomain) {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
+        String appId = appIdService.getAppId(storeDomain);
         return new HttpEntity<>(
-                String.format(configuration.getApiParameter("pcmFreeCourseparameters"), productCode), headers);
+                String.format(configuration.getApiParameter("pcmFreeCourseparameters"), productCode, appId), headers);
     }
 }

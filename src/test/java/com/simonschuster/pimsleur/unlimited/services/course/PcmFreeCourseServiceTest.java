@@ -2,7 +2,6 @@ package com.simonschuster.pimsleur.unlimited.services.course;
 
 import com.github.dreamhead.moco.HttpServer;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
-import org.hamcrest.CoreMatchers;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,7 +32,8 @@ public class PcmFreeCourseServiceTest {
                 .response(file("src/test/resources/pcmFreeCourseResponse.json"));
 
         running(server, () -> {
-            List<Course> pcmFreeCourseInfos = pcmFreeCourseService.getPcmFreeCourseInfos("123");
+            String storeDomain = "pimsleur.com";
+            List<Course> pcmFreeCourseInfos = pcmFreeCourseService.getPcmFreeCourseInfos("123", storeDomain);
 
             Course course = pcmFreeCourseInfos.get(0);
 

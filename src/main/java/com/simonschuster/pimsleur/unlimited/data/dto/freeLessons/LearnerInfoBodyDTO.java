@@ -5,6 +5,7 @@ public class LearnerInfoBodyDTO {
     private String countryCode;
     private String languageName;
     private String source;
+    private String storeDomain;
 
     public String getEmail() {
         return email;
@@ -20,5 +21,9 @@ public class LearnerInfoBodyDTO {
 
     public String getSource() {
         return source;
+    }
+
+    public String getStoreDomain() {
+        return storeDomain;
     }
 }

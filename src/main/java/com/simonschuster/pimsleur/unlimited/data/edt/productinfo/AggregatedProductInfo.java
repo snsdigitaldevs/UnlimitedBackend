@@ -3,6 +3,7 @@ package com.simonschuster.pimsleur.unlimited.data.edt.productinfo;
 import com.simonschuster.pimsleur.unlimited.common.exception.PimsleurException;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.*;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Image;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.LanguageImageMetadata;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.OrdersProduct;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.OrdersProductAttribute;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.Product;
@@ -137,7 +138,9 @@ public class AggregatedProductInfo {
     }
 
     private Course buildPcmCourse(OrdersProduct orderProductInfo, Course courseWithLessonInfoOnly) {
-        List lessons = courseWithLessonInfoOnly.getLessons();
+        List<Lesson> lessons = courseWithLessonInfoOnly.getLessons();
+        setImageForLessons(orderProductInfo, lessons);
+
         String level = String.valueOf(courseWithLessonInfoOnly.getLevel());
         Map<Integer, Product> products = orderProductInfo.getOrdersProductsAttributes()
                 .stream()
@@ -157,6 +160,21 @@ public class AggregatedProductInfo {
         course.setProductCode(product.getIsbn13().replace("-", ""));
 
         return course;
+    }
+
+    private void setImageForLessons(OrdersProduct orderProductInfo, List<Lesson> lessons) {
+        lessons.forEach(lesson -> {
+            if (orderProductInfo.getProduct().getLanguageName() != null) {
+                LanguageImageMetadata languageImageMetadata = orderProductInfo.getProduct().getLanguageName().getLanguageImageMetadata();
+                String domain = "";
+                String path = languageImageMetadata.getImageFilePath() + languageImageMetadata.getImageFileName();
+                String imageFullPath = domain + path;
+                Image image = new Image();
+                image.setThumbImageAddress(imageFullPath);
+                image.setFullImageAddress(imageFullPath);
+                lesson.setImage(image);
+            }
+        });
     }
 
     private void transformLessonInfoFromPU(Course course, MediaSet mediaSet) {

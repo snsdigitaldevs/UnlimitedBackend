@@ -1,6 +1,7 @@
 package com.simonschuster.pimsleur.unlimited.services;
 
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,6 +13,7 @@ public class AppIdService {
 
     public String getAppId(String storeDomain) {
         String appId = "pims2.0";
+        storeDomain = StringUtils.isEmpty(storeDomain) ? "" : storeDomain;
         if (storeDomain.contains("android")) {
             appId = config.getProperty("APP_ID_ANDROID");
         } else if (storeDomain.contains("ios")) {

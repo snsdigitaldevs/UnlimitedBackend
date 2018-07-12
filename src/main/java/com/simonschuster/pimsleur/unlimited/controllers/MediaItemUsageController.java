@@ -24,6 +24,6 @@ public class MediaItemUsageController {
             @PathVariable("customerId") String customerId,
             @PathVariable("mediaItemId") String mediaItemId,
             @RequestBody MediaItemUsageBody mediaItemUsageBody) {
-        mediaItemUsageService.reportMediaItemUsage(customerId, mediaItemId, mediaItemUsageBody.getIdentityVerificationToken());
+        mediaItemUsageService.reportMediaItemUsage(customerId, mediaItemId, mediaItemUsageBody);
     }
 }

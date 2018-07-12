@@ -3,6 +3,7 @@ package com.simonschuster.pimsleur.unlimited.services.sendEmailPermission;
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.dto.sendEmailPermission.EmailPermissionDto;
 import com.simonschuster.pimsleur.unlimited.data.edt.sendEmailPermission.SendEmailPermissionDto;
+import com.simonschuster.pimsleur.unlimited.services.AppIdService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -18,6 +19,8 @@ import static org.springframework.http.MediaType.APPLICATION_FORM_URLENCODED;
 public class SendEmailPermissionService {
     @Autowired
     ApplicationConfiguration config;
+    @Autowired
+    private AppIdService appIdService;
 
     public HttpEntity setSendEmailPermission(EmailPermissionDto emailPermissionDto) {
         Integer allowSendEmail = emailPermissionDto.getAllowSendEmail() ? 1 : 0;
@@ -29,9 +32,10 @@ public class SendEmailPermissionService {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(APPLICATION_FORM_URLENCODED);
 
+        String appId = appIdService.getAppId(emailPermissionDto.getStoreDomain());
         SendEmailPermissionDto sendEmailPermissionDto = postToEdt(
                 new HttpEntity<>(
-                        String.format(requestParams, registrantId, allowSendEmail, allowSendEmail),
+                        String.format(requestParams, registrantId, allowSendEmail, allowSendEmail, appId),
                         headers),
                 requestUrl, SendEmailPermissionDto.class);
 

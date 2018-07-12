@@ -3,6 +3,7 @@ package com.simonschuster.pimsleur.unlimited.services.syncState;
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.edt.syncState.AggregatedSyncState;
 import com.simonschuster.pimsleur.unlimited.data.edt.syncState.SyncState;
+import com.simonschuster.pimsleur.unlimited.services.AppIdService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -16,6 +17,8 @@ import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEd
 public class EDTSyncStateService {
     @Autowired
     private ApplicationConfiguration config;
+    @Autowired
+    private AppIdService appIdService;
 
     public AggregatedSyncState getSyncStates(Integer customerId, String token) {
         return new AggregatedSyncState(
@@ -31,8 +34,9 @@ public class EDTSyncStateService {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
 
+        String appId = appIdService.getAppId(domain);
         return new HttpEntity<>(
-                String.format(config.getApiParameter("syncStateParameters"), customerId, token, domain),
+                String.format(config.getApiParameter("syncStateParameters"), customerId, token, domain, appId),
                 headers);
     }
 }

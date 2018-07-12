@@ -2,6 +2,7 @@ package com.simonschuster.pimsleur.unlimited.services.customer;
 
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.edt.customerinfo.SubUserInfo;
+import com.simonschuster.pimsleur.unlimited.services.AppIdService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -19,6 +20,8 @@ public class SubUserService {
 
     @Autowired
     private ApplicationConfiguration applicationConfiguration;
+    @Autowired
+    private AppIdService appIdService;
 
     public SubUserInfo create(String customerId, String name, String token)
             throws UnsupportedEncodingException {
@@ -30,11 +33,13 @@ public class SubUserService {
         return postToEdt(createSubUserBody, url, SubUserInfo.class);
     }
 
-    public SubUserInfo update(String customerId, String appUserId, String name, String token)
+    public SubUserInfo update(String customerId, String appUserId, String name, String token, String storeDomain)
             throws UnsupportedEncodingException {
         String url = applicationConfiguration.getProperty("edt.api.customerInfo");
+
+        String appId = appIdService.getAppId(storeDomain);
         String parameters = format(applicationConfiguration.getApiParameter("updateCustomerParameters"),
-                token, encode(name, "UTF-8"), customerId + "_" + appUserId, customerId);
+                token, encode(name, "UTF-8"), customerId + "_" + appUserId, customerId, appId);
 
         HttpEntity<String> updateCustomerParameters = getStringHttpEntity(parameters);
         return postToEdt(updateCustomerParameters, url, SubUserInfo.class);

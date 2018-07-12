@@ -25,14 +25,14 @@ public class CustomerInfoConverterForAlexa {
     @Autowired
     private AvailableProductsService availableProductsService;
 
-    public CustomerInfoDTO convertEDTModelToDto(AggregatedCustomerInfo customerInfos) throws IOException {
+    public CustomerInfoDTO convertEDTModelToDto(AggregatedCustomerInfo customerInfos, String storeDomain) throws IOException {
         CustomerInfo unlimitedCustomerInfo = customerInfos.getUnlimitedCustomerInfo();
         Customer puCustomer = unlimitedCustomerInfo.getResultData().getCustomer();
         SyncState pcmSyncState = customerInfos.getPcmSyncState();
         SyncState unlimitedSyncState = customerInfos.getUnlimitedSyncState();
 
         CustomerInfoDTO customerInfoDTO = new CustomerInfoDTO(
-                getPurchasedPUProductCodes(puCustomer, unlimitedCustomerInfo),
+                getPurchasedPUProductCodes(puCustomer, unlimitedCustomerInfo, storeDomain),
                 getPurchasedPCMProductCodes(customerInfos.getPcmCustomerInfo()),
                 unlimitedCustomerInfo.getResultData().getRegistrant().getProductActivations(),
                 customerInfos.getProgressDTOS(),
@@ -67,12 +67,12 @@ public class CustomerInfoConverterForAlexa {
         }
     }
 
-    private List<String> getPurchasedPUProductCodes(Customer puCustomer, CustomerInfo unlimitedCustomerInfo) {
+    private List<String> getPurchasedPUProductCodes(Customer puCustomer, CustomerInfo unlimitedCustomerInfo, String storeDomain) {
         if (unlimitedCustomerInfo.getResultData() != null) {
             return puCustomer.getAllOrdersProducts()
                     .stream()
                     .map(OrdersProduct::getProduct)
-                    .flatMap(product -> availableProductsService.puProductToDtos(product))
+                    .flatMap(product -> availableProductsService.puProductToDtos(product, storeDomain))
                     .filter(DataConverterUtil.distinctByKey(p -> p.getLanguageName() + p.getLevel())) // remove duplicate
                     .filter(this::isPurchased)
                     .map(AvailableProductDto::getProductCode)

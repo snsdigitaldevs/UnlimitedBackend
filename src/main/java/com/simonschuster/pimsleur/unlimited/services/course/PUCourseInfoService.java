@@ -32,11 +32,12 @@ public class PUCourseInfoService {
      * Get product info for Pimsleur Unlimited.
      *
      * @param productCode
+     * @param storeDomain
      */
-    public AggregatedProductInfo getPuProductInfo(String productCode) {
+    public AggregatedProductInfo getPuProductInfo(String productCode, String storeDomain) {
         try {
             AggregatedProductInfo productInfo = new AggregatedProductInfo();
-            productInfo.setPuProductInfo(getProductInfoFromPu(productCode));
+            productInfo.setPuProductInfo(getProductInfoFromPu(productCode, storeDomain));
             return productInfo;
         } catch (Exception exception) {
             logger.error("Exception occured when get product info with PU product code.");
@@ -49,9 +50,10 @@ public class PUCourseInfoService {
      * Send reqeust to get Pimsleur Unlimited product info.
      *
      * @param productCode
+     * @param storeDomain
      * @return
      */
-    private PuProductInfo getProductInfoFromPu(String productCode) {
+    private PuProductInfo getProductInfoFromPu(String productCode, String storeDomain) {
         MappingJackson2HttpMessageConverter converter = new MappingJackson2HttpMessageConverter();
         converter.setSupportedMediaTypes(asList(TEXT_HTML, APPLICATION_JSON));
 
@@ -59,7 +61,7 @@ public class PUCourseInfoService {
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
 
         HttpEntity<String> requestEntity = new HttpEntity<>(
-                String.format(config.getApiParameter("unlimitedProductInfoDefaultParameters"), productCode),
+                String.format(config.getApiParameter("unlimitedProductInfoDefaultParameters"), productCode, storeDomain),
                 headers);
 
         RestTemplate restTemplate = new RestTemplate();

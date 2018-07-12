@@ -37,6 +37,6 @@ public class CustomerInfoForAlexaController {
             throws IOException {
         //Kelly K will handle email missing for Alexa.
         AggregatedCustomerInfo customerInfos = edtCustomerInfoService.getCustomerInfos(sub, ALEXA_STORE_DOMAIN, "");
-        return customerInfoConverterForAlexa.convertEDTModelToDto(customerInfos);
+        return customerInfoConverterForAlexa.convertEDTModelToDto(customerInfos, ALEXA_STORE_DOMAIN);
     }
 }

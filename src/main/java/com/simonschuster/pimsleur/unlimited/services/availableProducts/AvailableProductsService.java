@@ -81,7 +81,7 @@ public class AvailableProductsService {
             List<AvailableProductDto> availableProductDto =
                     puCustInfo.getResultData().getCustomer().getAllOrdersProducts().stream()
                     .flatMap(order ->
-                            puProductToDtos(order.getProduct())
+                            puProductToDtos(order.getProduct(), storeDomain)
                                     .peek(dto -> dto.setIsSubscription(order.isSubscription())))
                     .collect(Collectors.toList());
 
@@ -142,8 +142,8 @@ public class AvailableProductsService {
                 .collect(toList());
     }
 
-    public Stream<AvailableProductDto> puProductToDtos(Product product) {
-        List<Course> courses = puCourseInfoService.getPuProductInfo(product.getProductCode()).toDto();
+    public Stream<AvailableProductDto> puProductToDtos(Product product, String storeDomain) {
+        List<Course> courses = puCourseInfoService.getPuProductInfo(product.getProductCode(), storeDomain).toDto();
         boolean hasMother = courses.size() > 1;
 
         return courses.stream().map(course -> {

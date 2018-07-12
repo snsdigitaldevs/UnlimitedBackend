@@ -27,13 +27,14 @@ public class PUCourseInfoServiceTest {
 
     @Autowired
     private PUCourseInfoService puCourseInfoService;
+    private String storeDomain = "pimsleur.com";
 
     @Test
     public void shouldGetCorrectResponseFromEDTService() throws Exception {
         HttpServer server = mockEDTResponseFromPU();
 
         running(server, () -> {
-            AggregatedProductInfo productInfo = puCourseInfoService.getPuProductInfo("9781508243328");
+            AggregatedProductInfo productInfo = puCourseInfoService.getPuProductInfo("9781508243328", storeDomain);
 
             assertThat(productInfo.getPuProductInfo().getResultCode(), is(1));
             assertNotNull(productInfo.getPuProductInfo().getResultData().getCourseConfigs());
@@ -69,7 +70,7 @@ public class PUCourseInfoServiceTest {
                 .response(file("src/test/resources/edtProductInfoResponseWithMultipleCourses.json"));
 
         running(server, () -> {
-            AggregatedProductInfo productInfo = puCourseInfoService.getPuProductInfo("9781508260257");
+            AggregatedProductInfo productInfo = puCourseInfoService.getPuProductInfo("9781508260257", storeDomain);
 
             assertThat(productInfo.getPuProductInfo().getResultCode(), is(1));
             assertNotNull(productInfo.getPuProductInfo().getResultData().getCourseConfigs());
@@ -92,7 +93,7 @@ public class PUCourseInfoServiceTest {
         HttpServer httpServer = mockEDTResponseFromPU();
 
         running(httpServer, () -> {
-            AggregatedProductInfo productInfo = puCourseInfoService.getPuProductInfo("9781508243328");
+            AggregatedProductInfo productInfo = puCourseInfoService.getPuProductInfo("9781508243328", storeDomain);
 
             List<Course> productInfos = productInfo.toDto();
             Course course = productInfos.get(0);

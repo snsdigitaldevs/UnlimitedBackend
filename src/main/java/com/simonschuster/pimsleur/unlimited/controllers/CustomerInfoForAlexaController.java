@@ -13,10 +13,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
 
+import static com.simonschuster.pimsleur.alexa.StoreDomainUtil.ALEXA_STORE_DOMAIN;
+
 @RestController
 public class CustomerInfoForAlexaController {
-
-    private static final String ALEXA_STORE_DOMAIN = "alexa";
 
     @Autowired
     private EDTCustomerInfoService edtCustomerInfoService;

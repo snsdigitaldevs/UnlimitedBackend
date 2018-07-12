@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 
+import static com.simonschuster.pimsleur.alexa.StoreDomainUtil.ALEXA_STORE_DOMAIN;
 import static com.simonschuster.pimsleur.unlimited.services.customer.SignUpService.EMAIL_ALREADY_REGISTERED_ERROR_MESSAGE;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
@@ -58,8 +59,7 @@ public class LoginRestController {
     private void noticeEDTForNewUserInAuth0(@RequestParam(name = "email") String email) {
         SignUpBodyDTO signUpBodyDto = new SignUpBodyDTO();
         signUpBodyDto.setEmail(email);
-        //Hardcode storedomain as android_inapp because EDT only accept "android_inapp" or "ios_inapp" in sign up API.
-        signUpBodyDto.setStoreDomain("android_inapp");
+        signUpBodyDto.setStoreDomain(ALEXA_STORE_DOMAIN);
         try {
             signUpService.signUp(signUpBodyDto);
         } catch (ParamInvalidException e) {

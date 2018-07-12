@@ -6,6 +6,7 @@ import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.dto.syncUp.SyncUpDto;
 import com.simonschuster.pimsleur.unlimited.data.edt.syncState.SyncUpItem;
 import com.simonschuster.pimsleur.unlimited.data.edt.syncState.syncUp.SyncUpResult;
+import com.simonschuster.pimsleur.unlimited.services.AppIdService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -24,6 +25,8 @@ public class SyncUpService {
 
     @Autowired
     private ApplicationConfiguration config;
+    @Autowired
+    private AppIdService appIdService;
 
     public long syncUpPUProgress(String customerId, String subUserId,
                                  String productCode, String mediaItemId,
@@ -74,7 +77,8 @@ public class SyncUpService {
 
         String syncUpParameters = format(config.getApiParameter("syncUpParameters"),
                 customerId, syncUpDto.getDeviceName(), syncUpDto.getLastSaveId(), edtJsonParameter,
-                syncUpDto.getProgress().getLastChangeTimestamp(), syncUpDto.getIdentityVerificationToken(), storeDomain);
+                syncUpDto.getProgress().getLastChangeTimestamp(), syncUpDto.getIdentityVerificationToken(), storeDomain,
+                appIdService.getAppId(storeDomain));
 
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(APPLICATION_FORM_URLENCODED);

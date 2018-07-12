@@ -16,6 +16,8 @@ public class AppIdService {
             appId = config.getProperty("APP_ID_ANDROID");
         } else if (storeDomain.contains("ios")) {
             appId = config.getProperty("APP_ID_IOS");
+        } else if (storeDomain.contains("alexa")) {
+            appId = config.getProperty("APP_ID_ALEXA");
         }
         return appId;
     }

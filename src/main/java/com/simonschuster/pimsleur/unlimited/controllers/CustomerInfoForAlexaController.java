@@ -16,6 +16,8 @@ import java.io.IOException;
 @RestController
 public class CustomerInfoForAlexaController {
 
+    private static final String ALEXA_STORE_DOMAIN = "alexa";
+
     @Autowired
     private EDTCustomerInfoService edtCustomerInfoService;
 
@@ -34,7 +36,7 @@ public class CustomerInfoForAlexaController {
     public CustomerInfoDTO getCustomerInfo(@RequestParam(value = "sub") String sub)
             throws IOException {
         //Kelly K will handle email missing for Alexa.
-        AggregatedCustomerInfo customerInfos = edtCustomerInfoService.getCustomerInfos(sub, "", "");
+        AggregatedCustomerInfo customerInfos = edtCustomerInfoService.getCustomerInfos(sub, ALEXA_STORE_DOMAIN, "");
         return customerInfoConverterForAlexa.convertEDTModelToDto(customerInfos);
     }
 }

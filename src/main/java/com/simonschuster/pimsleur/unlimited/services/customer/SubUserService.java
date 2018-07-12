@@ -23,11 +23,12 @@ public class SubUserService {
     @Autowired
     private AppIdService appIdService;
 
-    public SubUserInfo create(String customerId, String name, String token)
+    public SubUserInfo create(String customerId, String name, String token, String storeDomain)
             throws UnsupportedEncodingException {
         String url = applicationConfiguration.getProperty("edt.api.customerInfo");
+        String appId = appIdService.getAppId(storeDomain);
         String parameters = format(applicationConfiguration.getApiParameter("createCustomerParameters"),
-                token, encode(name, "UTF-8"), customerId);
+                token, encode(name, "UTF-8"), customerId, appId);
 
         HttpEntity<String> createSubUserBody = getStringHttpEntity(parameters);
         return postToEdt(createSubUserBody, url, SubUserInfo.class);

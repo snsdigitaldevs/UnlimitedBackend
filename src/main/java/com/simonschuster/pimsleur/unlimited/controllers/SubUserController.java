@@ -25,8 +25,9 @@ public class SubUserController {
                                      @ApiParam(value = "you can find identityVerificationToken in customerInfo api")
                                      @RequestParam String token,
                                      @ApiParam(value = "only need name of the new sub user")
-                                     @RequestBody SubUserDto userDto) throws UnsupportedEncodingException {
-        SubUserInfo subUserInfo = subUserService.create(customerId, userDto.getName(), token);
+                                     @RequestBody SubUserDto userDto,
+                                     @RequestParam(value = "storeDomain", required = false) String storeDomain) throws UnsupportedEncodingException {
+        SubUserInfo subUserInfo = subUserService.create(customerId, userDto.getName(), token, storeDomain);
         checkResultCode(subUserInfo);
         return subUserInfo.toDto(userDto.getName());
     }

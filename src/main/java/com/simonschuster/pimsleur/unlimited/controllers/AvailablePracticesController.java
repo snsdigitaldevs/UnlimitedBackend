@@ -60,7 +60,7 @@ public class AvailablePracticesController {
             @ApiParam(value = "sub should be from auth0 userinfo")
             @RequestParam(value = "sub") String sub,
             @RequestParam(value = "email") String email,
-            @RequestParam(value = "storeDomain") String storeDomain) {
+            @RequestParam(value = "storeDomain", required = false) String storeDomain) {
         return pcmAvailablePracticesService.getAvailablePractices(productCode, sub, email, storeDomain);
     }
 

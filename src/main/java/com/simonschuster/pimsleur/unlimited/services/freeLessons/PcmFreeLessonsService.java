@@ -4,6 +4,7 @@ import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.AvailableProductDto;
 import com.simonschuster.pimsleur.unlimited.data.edt.freeLessonsList.PCMProduct;
 import com.simonschuster.pimsleur.unlimited.data.edt.freeLessonsList.PCMProducts;
+import com.simonschuster.pimsleur.unlimited.services.AppIdService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -14,6 +15,7 @@ import java.util.Collection;
 import java.util.List;
 
 import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEdt;
+import static java.lang.String.format;
 import static java.util.Collections.emptyList;
 import static java.util.stream.Collectors.toList;
 
@@ -22,10 +24,12 @@ public class PcmFreeLessonsService {
 
     @Autowired
     private ApplicationConfiguration config;
+    @Autowired
+    private AppIdService appIdService;
 
-    public List<AvailableProductDto> getPcmFreeLessons() {
+    public List<AvailableProductDto> getPcmFreeLessons(String storeDomain) {
         PCMProducts pcmProducts =
-                postToEdt(createPostBody(), config.getProperty("edt.api.pcmProductsApiUrl"), PCMProducts.class);
+                postToEdt(createPostBody(storeDomain), config.getProperty("edt.api.pcmProductsApiUrl"), PCMProducts.class);
 
         if (pcmProducts.getResultData() != null) {
             return pcmProducts.getResultData().getCourseLanguages()
@@ -39,10 +43,11 @@ public class PcmFreeLessonsService {
         return emptyList();
     }
 
-    private HttpEntity<String> createPostBody() {
+    private HttpEntity<String> createPostBody(String storeDomain) {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
 
-        return new HttpEntity<>(config.getApiParameter("pcmProductsParameters"), headers);
+        String appId = appIdService.getAppId(storeDomain);
+        return new HttpEntity<>(format(config.getApiParameter("pcmProductsParameters"), appId), headers);
     }
 }

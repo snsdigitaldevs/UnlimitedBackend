@@ -38,13 +38,13 @@ public class AvailableProductsService {
 
     public AvailableProductsDto getAvailableProducts(String sub, String email, String storeDomain) {
         if (sub == null) {
-            return new AvailableProductsDto(emptyList(), getFreeProducts(emptyList()));
+            return new AvailableProductsDto(emptyList(), getFreeProducts(emptyList(), storeDomain));
         }
 
         return CompletableFuture
                 .supplyAsync(() -> purchasedPUAndPcmProducts(sub, email, storeDomain))
                 .thenCombineAsync(
-                        CompletableFuture.supplyAsync(() -> pcmFreeLessonsService.getPcmFreeLessons()),
+                        CompletableFuture.supplyAsync(() -> pcmFreeLessonsService.getPcmFreeLessons(storeDomain)),
                         this::getAvailableProductsDto)
                 .join();
     }
@@ -127,8 +127,8 @@ public class AvailableProductsService {
         }
     }
 
-    private List<AvailableProductDto> getFreeProducts(List<AvailableProductDto> purchasedProducts) {
-        return getFreeProducts(purchasedProducts, pcmFreeLessonsService.getPcmFreeLessons());
+    private List<AvailableProductDto> getFreeProducts(List<AvailableProductDto> purchasedProducts, String storeDomain) {
+        return getFreeProducts(purchasedProducts, pcmFreeLessonsService.getPcmFreeLessons(storeDomain));
     }
 
     private List<AvailableProductDto> getFreeProducts(List<AvailableProductDto> purchasedProducts,

@@ -23,6 +23,7 @@ public class PcmFreeLessonsServiceTest {
 
     @Autowired
     private PcmFreeLessonsService pcmFreeLessonsService;
+    private String storeDomain = "pimsleur.com";
 
     @Test
     public void shouldGetOnlyLevelOneFromEachLanguageAndIgnoreSubscriptions() throws Exception {
@@ -31,7 +32,7 @@ public class PcmFreeLessonsServiceTest {
                 .response(file("src/test/resources/pcmProducts.json"));
 
         running(server, () -> {
-            List<AvailableProductDto> pcmFreeLessons = pcmFreeLessonsService.getPcmFreeLessons();
+            List<AvailableProductDto> pcmFreeLessons = pcmFreeLessonsService.getPcmFreeLessons(storeDomain);
             assertThat(pcmFreeLessons.size(), is(57));
         });
     }

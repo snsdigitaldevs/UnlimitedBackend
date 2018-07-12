@@ -7,10 +7,7 @@ import com.simonschuster.pimsleur.unlimited.services.freeLessons.PcmFreeLessonsS
 import com.simonschuster.pimsleur.unlimited.services.freeLessons.PuFreeLessonsService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -27,9 +24,9 @@ public class FreeLessonsController {
 
     @ApiOperation(value = "Get a list of all free lessons of both PU and PCM")
     @RequestMapping(value = "/freeLessons", method = RequestMethod.GET)
-    public List<AvailableProductDto> getFreeLessons() {
+    public List<AvailableProductDto> getFreeLessons(@RequestParam(value = "storeDomain") String storeDomain) {
         return puFreeLessonsService
-                .mergePuWithPcmFreeLessons(pcmFreeLessonsService.getPcmFreeLessons());
+                .mergePuWithPcmFreeLessons(pcmFreeLessonsService.getPcmFreeLessons(storeDomain));
     }
 
     @ApiOperation(value = "Before trying free lessons, users are asked to fill in their emails. " +

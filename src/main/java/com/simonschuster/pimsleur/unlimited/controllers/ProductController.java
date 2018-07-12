@@ -42,8 +42,8 @@ public class ProductController {
                                        @RequestParam(name = "isFree", required = false) boolean isFree,
                                        @RequestParam(value = "productCode") String productCode,
                                        @RequestParam(value = "sub") String sub,
-                                       @RequestParam(value = "email") String email,
-                                       @RequestParam(value = "storeDomain") String storeDomain) {
+                                       @RequestParam(value = "email", required = false) String email,
+                                       @RequestParam(value = "storeDomain", required = false) String storeDomain) {
         validateProductCode(productCode);
         return getProductInfos(isPUProductCode, isFree, productCode, sub, email, storeDomain)
                 .stream()

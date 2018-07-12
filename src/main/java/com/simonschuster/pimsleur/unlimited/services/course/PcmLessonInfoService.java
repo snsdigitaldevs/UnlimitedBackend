@@ -45,7 +45,7 @@ public class PcmLessonInfoService {
             Course course = new Course();
             course.setLevel(Integer.valueOf(mediaItemsByLevel.getLevel()));
             if (isBatched) {
-                course.setLessons(batchFetchLessons(params, mediaItemsByLevel));
+                course.setLessons(batchFetchLessons(params, mediaItemsByLevel, storeDomain));
 
             } else {
                 course.setLessons(fetchLessonsOneByOne(params, mediaItemsByLevel, storeDomain));
@@ -56,7 +56,7 @@ public class PcmLessonInfoService {
         return coursesWithLessonInfoOnly;
     }
 
-    private List<Lesson> batchFetchLessons(PcmAudioReqParams pcmAudioReqParams, MediaItemsByLevel mediaItemsByLevel) {
+    private List<Lesson> batchFetchLessons(PcmAudioReqParams pcmAudioReqParams, MediaItemsByLevel mediaItemsByLevel, String storeDomain) {
         String level = mediaItemsByLevel.getLevel();
 
         Integer mediaSetId = getMatchedMediaSetId(pcmAudioReqParams, level);
@@ -66,7 +66,7 @@ public class PcmLessonInfoService {
                 pcmMediaItemUrlService.getBatchedMediaItemUrls(mediaSetId,
                         pcmAudioReqParams.getCustomerToken(),
                         entitlementToken,
-                        pcmAudioReqParams.getCustomersId());
+                        pcmAudioReqParams.getCustomersId(), storeDomain);
 
         return mediaItemsByLevel.getMediaItems().stream().map(mediaItem -> {
             Lesson lesson = new Lesson();

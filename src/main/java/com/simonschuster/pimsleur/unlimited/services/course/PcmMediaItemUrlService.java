@@ -36,13 +36,14 @@ public class PcmMediaItemUrlService {
     }
 
     public BatchedMediaItemUrls getBatchedMediaItemUrls(Integer mediaSetId, String customerToken,
-                                                        String entitlementToken, Integer customersId) {
+                                                        String entitlementToken, Integer customersId, String storeDomain) {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(APPLICATION_FORM_URLENCODED);
 
+        String appId = appIdService.getAppId(storeDomain);
         String parameters = format(config.getApiParameter("pCMBatchMp3Parameters"),
                 mediaSetId, customerToken,
-                entitlementToken, customersId);
+                entitlementToken, customersId, appId);
 
         return postToEdt(new HttpEntity<>(parameters, headers),
                 config.getProperty("edt.api.pcmBatchMp3ApiUrl"),

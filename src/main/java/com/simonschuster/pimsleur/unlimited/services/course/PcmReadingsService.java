@@ -51,7 +51,7 @@ public class PcmReadingsService {
 
         boolean isBatched = parseBoolean(config.getProperty("toggle.fetch.mp3.url.batch"));
         if (isBatched) {
-            return batchGetPcmReadings(download, pcmProduct, mediaItems);
+            return batchGetPcmReadings(download, pcmProduct, mediaItems, storeDomain);
         } else {
             return getPcmReadingsOneByOne(download, pcmProduct, mediaItems, storeDomain);
         }
@@ -86,12 +86,12 @@ public class PcmReadingsService {
         return readings;
     }
 
-    private Readings batchGetPcmReadings(OrdersProductsDownload download, PcmProduct pcmProduct, Stream<MediaItem> mediaItems) {
+    private Readings batchGetPcmReadings(OrdersProductsDownload download, PcmProduct pcmProduct, Stream<MediaItem> mediaItems, String storeDomain) {
         Readings readings = new Readings();
 
         BatchedMediaItemUrls batchedMediaItemUrls = pcmMediaItemUrlService.getBatchedMediaItemUrls(
                 download.getMediaSetId(), pcmProduct.getCustomerToken(),
-                download.getEntitlementToken(), pcmProduct.getCustomersId());
+                download.getEntitlementToken(), pcmProduct.getCustomersId(), storeDomain);
 
         mediaItems.forEach(mediaItem -> {
             if (mediaItem.isPdf()) {

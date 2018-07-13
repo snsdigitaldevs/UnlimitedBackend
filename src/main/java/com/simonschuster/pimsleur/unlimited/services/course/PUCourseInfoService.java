@@ -4,6 +4,7 @@ import com.simonschuster.pimsleur.unlimited.common.exception.PimsleurException;
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.AggregatedProductInfo;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.PuProductInfo;
+import com.simonschuster.pimsleur.unlimited.services.AppIdService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +28,8 @@ public class PUCourseInfoService {
     private ApplicationConfiguration config;
 
     private static final Logger logger = LoggerFactory.getLogger(PUCourseInfoService.class);
+    @Autowired
+    private AppIdService appIdService;
 
     /**
      * Get product info for Pimsleur Unlimited.
@@ -60,8 +63,9 @@ public class PUCourseInfoService {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
 
+        String appId = appIdService.getAppId(storeDomain);
         HttpEntity<String> requestEntity = new HttpEntity<>(
-                String.format(config.getApiParameter("unlimitedProductInfoDefaultParameters"), productCode, storeDomain),
+                String.format(config.getApiParameter("unlimitedProductInfoDefaultParameters"), productCode, appId),
                 headers);
 
         RestTemplate restTemplate = new RestTemplate();

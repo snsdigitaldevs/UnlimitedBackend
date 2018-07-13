@@ -26,6 +26,7 @@ import static java.util.stream.Collectors.toMap;
 public class AggregatedProductInfo {
     private static final String PREFIX_FOR_IMAGE_OF_PU = "https://install.pimsleurunlimited.com/staging_n/desktop/";
     private static final String PREFIX_FOR_AUDIO_OF_PU = "https://install.pimsleurunlimited.com/staging_n/common/";
+
     private static final Logger logger = LoggerFactory.getLogger(AggregatedProductInfo.class);
 
     private PuProductInfo puProductInfo;
@@ -137,7 +138,9 @@ public class AggregatedProductInfo {
     }
 
     private Course buildPcmCourse(OrdersProduct orderProductInfo, Course courseWithLessonInfoOnly) {
-        List lessons = courseWithLessonInfoOnly.getLessons();
+        List<Lesson> lessons = courseWithLessonInfoOnly.getLessons();
+        assignImageForPcmLessons(orderProductInfo, lessons);
+
         String level = String.valueOf(courseWithLessonInfoOnly.getLevel());
         Map<Integer, Product> products = orderProductInfo.getOrdersProductsAttributes()
                 .stream()
@@ -145,18 +148,25 @@ public class AggregatedProductInfo {
                 .collect(toMap(it -> it.getOrdersProductsDownloads().get(0).getMediaSet().getProduct().getProductsLevel(),
                         it -> it.getOrdersProductsDownloads().get(0).getMediaSet().getProduct()));
 
-        String languageName = orderProductInfo.getProduct().getProductsLanguageName();
-
         Course course = new Course();
+
+        String languageName = orderProductInfo.getProduct().getProductsLanguageName();
         course.setIsOneOfNineBig(isOneOfNineBig(languageName));
         course.setLanguageName(languageName);
+
         course.setLevel(parseInt(level));
         course.setLessons(filterAndOrder(lessons));
+
         Product product = products.get(parseInt(level));
         course.setCourseName(product.getProductsName());
         course.setProductCode(product.getIsbn13().replace("-", ""));
 
         return course;
+    }
+
+    private void assignImageForPcmLessons(OrdersProduct orderProductInfo, List<Lesson> lessons) {
+        Image pcmImage = orderProductInfo.getProduct().getPcmImage();
+        lessons.forEach(lesson -> lesson.setImage(pcmImage));
     }
 
     private void transformLessonInfoFromPU(Course course, MediaSet mediaSet) {

@@ -4,9 +4,15 @@ package com.simonschuster.pimsleur.unlimited.data.edt.customer;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.AvailableProductDto;
+import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Image;
 
+import java.io.IOException;
 import java.util.List;
+
+import static com.fasterxml.jackson.core.JsonParser.Feature.ALLOW_SINGLE_QUOTES;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
@@ -43,9 +49,14 @@ import java.util.List;
         "productsGuideType",
         "productsTitleExtended",
         "formattedProductInfo",
-        "productsAttributes"
+        "productsAttributes",
+        "languageName"
 })
 public class Product {
+
+    private static final String PCM_IMAGE_DOMAIN = "https://public.pimsleur.cdn.edtnet.us";
+    private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper()
+            .configure(ALLOW_SINGLE_QUOTES, true);
 
     @JsonProperty("productsId")
     private Integer productsId;
@@ -115,6 +126,8 @@ public class Product {
     private String formattedProductInfo;
     @JsonProperty("productsAttributes")
     private List<Object> productsAttributes = null;
+    @JsonProperty("languageName")
+    private LanguageName languageName;
 
     @JsonProperty("productsId")
     public Integer getProductsId() {
@@ -456,6 +469,16 @@ public class Product {
         this.productsAttributes = productsAttributes;
     }
 
+    @JsonProperty("languageName")
+    public LanguageName getLanguageName() {
+        return languageName;
+    }
+
+    @JsonProperty("languageName")
+    public void setLanguageName(LanguageName languageName) {
+        this.languageName = languageName;
+    }
+
     public String getProductCode() {
         return getIsbn13().replace("-", "");
     }
@@ -467,5 +490,25 @@ public class Product {
                 getProductCode(),
                 false,
                 getProductsLevel());
+    }
+
+    public Image getPcmImage() {
+        Image image = new Image();
+
+        if (languageName != null && languageName.getLanguageImageMetadata() != null) {
+            try {
+                LanguageImageMetadata metadata = OBJECT_MAPPER.readValue(languageName.getLanguageImageMetadata(), new TypeReference<LanguageImageMetadata>() {
+                });
+                String imageUrl = PCM_IMAGE_DOMAIN + metadata.getImageFilePath() + metadata.getImageFileName();
+
+                image.setThumbImageAddress(imageUrl);
+                image.setFullImageAddress(imageUrl);
+                return image;
+            } catch (IOException ignored) {
+                return image;
+            }
+        }
+
+        return image;
     }
 }

@@ -46,7 +46,6 @@ public class PcmLessonInfoService {
             course.setLevel(Integer.valueOf(mediaItemsByLevel.getLevel()));
             if (isBatched) {
                 course.setLessons(batchFetchLessons(params, mediaItemsByLevel, storeDomain));
-
             } else {
                 course.setLessons(fetchLessonsOneByOne(params, mediaItemsByLevel, storeDomain));
             }

@@ -2,6 +2,7 @@ package com.simonschuster.pimsleur.unlimited.services.practices;
 
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.edt.installationFileList.InstallationFileList;
+import com.simonschuster.pimsleur.unlimited.services.AppIdService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -14,8 +15,10 @@ import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEd
 public class PuAvailablePracticesService {
     @Autowired
     private ApplicationConfiguration config;
+    @Autowired
+    private AppIdService appIdService;
 
-    public PracticesUrls getPracticeUrls(String productCode, Object storeDomain) {
+    public PracticesUrls getPracticeUrls(String productCode, String storeDomain) {
         InstallationFileList installationFileList = postToEdt(
                 createPostBody(productCode, storeDomain),
                 config.getProperty("edt.api.installationFileListUrl"),
@@ -25,12 +28,13 @@ public class PuAvailablePracticesService {
         return installationFileList.getPracticeUrls();
     }
 
-    private HttpEntity<String> createPostBody(String productCode, Object storeDomain) {
+    private HttpEntity<String> createPostBody(String productCode, String storeDomain) {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
 
+        String appId = appIdService.getAppId(storeDomain);
         return new HttpEntity<>(
-                String.format(config.getApiParameter("installationFileListParameters"), productCode, storeDomain),
+                String.format(config.getApiParameter("installationFileListParameters"), productCode, appId),
                 headers);
     }
 }

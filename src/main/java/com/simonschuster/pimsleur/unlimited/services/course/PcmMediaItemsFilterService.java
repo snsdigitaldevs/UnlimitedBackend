@@ -1,9 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.services.course;
 
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.ChildMediaSet;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.MediaItem;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.OrdersProduct;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.OrdersProductAttribute;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.*;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.MediaItemsByLevel;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.MediaSetByLevel;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.PcmProduct;
@@ -98,12 +95,14 @@ public class PcmMediaItemsFilterService {
 
         if (attribute != null && attribute.getProductsOptions() != null) {
             //assume all the products level are the same
-            String level = attribute.getOrdersProductsDownloads()
-                    .get(0).getMediaSet().getProduct().getProductsLevel().toString();
-
             List<MediaItem> mediaItemsForOneLevel = new ArrayList<>();
 
-            attribute.getOrdersProductsDownloads()
+            List<OrdersProductsDownload> ordersProductsDownloads = attribute.getOrdersProductsDownloads();
+            String level = ordersProductsDownloads
+                    .get(0).getMediaSet().getProduct().getProductsLevel().toString();
+
+
+            ordersProductsDownloads
                     .stream()
                     .peek(download -> {
                         entitlementTokens.add(new MediaSetByLevel(level, download.getEntitlementToken(), download.getMediaSetId()));

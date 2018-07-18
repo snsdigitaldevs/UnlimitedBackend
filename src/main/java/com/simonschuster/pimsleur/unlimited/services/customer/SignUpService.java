@@ -17,7 +17,7 @@ import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEd
 
 @Service
 public class SignUpService {
-    public static final String EMAIL_ALREADY_REGISTERED_ERROR_MESSAGE = "This email is already registered.";
+    public static final String EMAIL_INVALID_ERROR_MESSAGE = "Invalid email. Please check its format or if it is already registered.";
     @Autowired
     private ApplicationConfiguration applicationConfiguration;
 
@@ -36,10 +36,13 @@ public class SignUpService {
         String storeDomain = signUpBodyDTO.getStoreDomain().equals(StoreDomainUtil.ALEXA_STORE_DOMAIN) ?
                 "ss_pu" : signUpBodyDTO.getStoreDomain();
 
+        String email = signUpBodyDTO.getEmail();
+        String password = signUpBodyDTO.getPassword();
+        String countryCode = signUpBodyDTO.getCountryCode();
         HttpEntity<String> entity = new HttpEntity<>(String.format(
                 applicationConfiguration.getProperty("edt.api.signUp.parameters.signUp"),
-                userName, signUpBodyDTO.getPassword(), appId,
-                signUpBodyDTO.getEmail(), storeDomain, signUpBodyDTO.getCountryCode()
+                userName, password, appId,
+                email, storeDomain, countryCode
         ), headers);
         SignUpEDT response = postToEdt(entity, url, SignUpEDT.class);
 
@@ -47,7 +50,7 @@ public class SignUpService {
             String errorMessage;
             switch (response.getResultCode()) {
                 case -3011:
-                    errorMessage = EMAIL_ALREADY_REGISTERED_ERROR_MESSAGE;
+                    errorMessage = EMAIL_INVALID_ERROR_MESSAGE;
                     break;
                 case -1:
                     errorMessage = "Password must be at least 8 characters,  " +
@@ -63,7 +66,7 @@ public class SignUpService {
                     break;
 */
                 default:
-                    errorMessage = "System error, please try latter.";
+                    errorMessage = "System error, please try later.";
                     break;
             }
             throw new ParamInvalidException(errorMessage);

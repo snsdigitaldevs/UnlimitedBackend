@@ -32,22 +32,24 @@ public class SyncUpService {
                                  String productCode, String mediaItemId,
                                  SyncUpDto syncUpDto) throws Exception {
 
-        SyncUpResult syncUpResult = postToEdt(createPuPostBody(customerId, subUserId, productCode, mediaItemId, syncUpDto),
+        HttpEntity<String> puPostBody = createPuPostBody(customerId, subUserId, productCode, mediaItemId, syncUpDto);
+        SyncUpResult syncUpResult = postToEdt(puPostBody,
                 config.getProperty("edt.api.syncUpUrl"),
                 SyncUpResult.class);
         if (syncUpResult.getResultCode() != 1) {
-            throw new Exception("EDT sync up Error");
+            throw new Exception("[ERROR] EDT sync up PUProgress Error:" + puPostBody.getBody() );
         }
         return syncUpResult.getResultData().getLastSaveId();
     }
 
     public long syncUpPcmProgress(String customerId, String productCode,
                                   String mediaItemId, SyncUpDto syncUpDto) throws Exception {
-        SyncUpResult syncUpResult = postToEdt(createPcmPostBody(customerId, productCode, mediaItemId, syncUpDto),
+        HttpEntity<String> pcmPostBody = createPcmPostBody(customerId, productCode, mediaItemId, syncUpDto);
+        SyncUpResult syncUpResult = postToEdt(pcmPostBody,
                 config.getProperty("edt.api.syncUpUrl"),
                 SyncUpResult.class);
         if (syncUpResult.getResultCode() != 1) {
-            throw new Exception("EDT sync up Error");
+            throw new Exception("[ERROR] EDT sync up PcmProgress Error:" + pcmPostBody.getBody());
         }
         return syncUpResult.getResultData().getLastSaveId();
     }

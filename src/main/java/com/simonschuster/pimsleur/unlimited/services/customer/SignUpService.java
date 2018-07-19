@@ -17,7 +17,7 @@ import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEd
 
 @Service
 public class SignUpService {
-    public static final String EMAIL_INVALID_ERROR_MESSAGE = "Invalid email. Please check its format or if it is already registered.";
+    public static final String EMAIL_INVALID_ERROR_MESSAGE = "Please check email format or if it is already registered.";
     @Autowired
     private ApplicationConfiguration applicationConfiguration;
 

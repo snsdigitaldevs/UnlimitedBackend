@@ -61,7 +61,7 @@ public class AggregatedProductInfo {
     public List<Course> toDto() {
         ArrayList<Course> courses = new ArrayList<>();
 
-        if (puProductInfo != null) {
+        if (puProductInfo != null && puProductInfo.getResultData() != null) {
             buildCourseInfoFromPU(courses);
         } else if (pcmProduct != null) {
             buildCourseInfoFromPCM(courses, pcmProduct, lessonAudioInfoFromPCM);

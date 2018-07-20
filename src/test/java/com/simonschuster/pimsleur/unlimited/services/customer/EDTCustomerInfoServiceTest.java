@@ -54,7 +54,13 @@ public class EDTCustomerInfoServiceTest {
         running(server, new Runnable() {
             @Override
             public void run() throws IOException {
-                CustomerInfoDTO customerInfoDTO = edtCustomerInfoService.getCustomerInfo("whatever", "", "email");
+                AggregatedCustomerInfo customerInfos =
+                        edtCustomerInfoService.getCustomerInfos("whatever", "", "email");
+
+                assertThat(customerInfos.getPcmCustomerInfo().getResultCode(), is(1));
+                assertThat(customerInfos.getUnlimitedCustomerInfo().getResultCode(), is(1));
+
+                CustomerInfoDTO customerInfoDTO = customerInfos.toDto();
                 List<ProgressDTO> currentProgresses = customerInfoDTO.getProgresses().stream()
                         .filter(prog -> prog.getCurrent())
                         .collect(toList());

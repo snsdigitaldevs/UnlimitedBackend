@@ -201,6 +201,13 @@ public class OrdersProduct {
         return getProduct().getProductsLevel() != 0;
     }
 
+    public boolean isPUProduct(){
+        String productsMedia = getProduct().getProductsMedia();
+        return productsMedia.equals("SW Boxed") ||
+                productsMedia.equals("SW Download") ||
+                productsMedia.equals("SW Subscription");
+    }
+
     public boolean isSubscription() {
         return this.getOrdersProductsAttributes().stream()
                 .anyMatch(attribute ->

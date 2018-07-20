@@ -62,7 +62,6 @@ public class AvailableProductsService {
                         CompletableFuture.supplyAsync(() -> getPcmAvailableProducts(sub, email, storeDomain)),
                         this::getAvailableProductDtos)
                 .join();
-
     }
 
     private List<AvailableProductDto> getAvailableProductDtos(List<AvailableProductDto> purchasedPuProducts, List<AvailableProductDto> purchasedPCMProducts) {

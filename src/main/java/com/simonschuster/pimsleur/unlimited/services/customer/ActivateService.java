@@ -50,6 +50,7 @@ public class ActivateService {
             activateDTO.setActivatedTime(activateResponse.getResultData().getActivation().getActivationCountMobile() +
                     activateResponse.getResultData().getActivation().getActivationCountDesktop());
         } else {
+            //-7010 means RESULT_ACTIVATION_USE_LIMIT_REACHED
             activateDTO.setActivatedTime(resultCode.equals(-7010) ? 4 : -1);
         }
         return activateDTO;

@@ -71,6 +71,30 @@ public class Customer {
 
     }
 
+    public List<String> getPUProductCodes() {
+        return this.getCustomersOrders().stream()
+                .flatMap(order -> order.getOrdersProducts()
+                        .stream()
+                        .filter(OrdersProduct::isNotHowToLearnForeignLang)
+                        .filter(OrdersProduct::isPUProduct)
+                        // we ignore "how to learn a foreign language"
+                        .map(product -> product.getProduct().getProductCode()))
+                .distinct()
+                .collect(toList());
+    }
+
+    public List<String> getPCMProductCodes() {
+        return this.getCustomersOrders().stream()
+                .flatMap(order -> order.getOrdersProducts()
+                        .stream()
+                        .filter(OrdersProduct::isNotHowToLearnForeignLang)
+                        .filter(OrdersProduct -> !OrdersProduct.isPUProduct())
+                        // we ignore "how to learn a foreign language"
+                        .map(product -> product.getProduct().getProductCode()))
+                .distinct()
+                .collect(toList());
+    }
+
     public List<OrdersProduct> getAllOrdersProducts() {
         return getCustomersOrders()
                 .stream()

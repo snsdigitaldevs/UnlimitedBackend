@@ -28,8 +28,14 @@ public class BatchedMediaItemUrls {
     }
 
     public String getUrlOfMediaItem(String fileName) {
-        Optional<ResultDataBean.UrlsBean> match = this.getResult_data().getUrls().stream()
-                .filter(x -> x.getUrl().contains(fileName))
+        //9781442321588_Unit_10.mp3
+        //***subscription/9781508218036_Korean_Level_2/9781508218036_Reading_U05.mp3?*
+        //for subscription, the product code isn't necessary the same,
+        // so we can just check by unit number
+        String unit = fileName.substring(fileName.indexOf("_"));
+        List<ResultDataBean.UrlsBean> urls = this.getResult_data().getUrls();
+        Optional<ResultDataBean.UrlsBean> match = urls.stream()
+                .filter(x -> x.getUrl().contains(unit))
                 .findFirst();
         if (match.isPresent()) {
             return match.get().getUrl();

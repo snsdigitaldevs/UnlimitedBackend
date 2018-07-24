@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
+import java.util.Arrays;
 
 import static com.simonschuster.pimsleur.alexa.StoreDomainUtil.ALEXA_STORE_DOMAIN;
 
@@ -35,6 +36,17 @@ public class CustomerInfoForAlexaController {
     public CustomerInfoDTO getCustomerInfo(@RequestParam(value = "sub") String sub)
             throws IOException {
         //Kelly K will handle email missing for Alexa.
-        return edtCustomerInfoService.getCustomerInfoDTO(sub, ALEXA_STORE_DOMAIN, "");
+        CustomerInfoDTO customerInfoDTO = edtCustomerInfoService.getCustomerInfoDTO(sub, ALEXA_STORE_DOMAIN, "");
+        customerInfoDTO.getProductActivations().forEach(activation -> {
+            String productCode = activation.getProductCode();
+            String childProductCodes = activation.getChildProductCodesString();
+            String[] childProductCodeArray = childProductCodes.split(",");
+            if(customerInfoDTO.getUnlimitedProductCodes().contains(productCode)){
+                customerInfoDTO.getUnlimitedProductCodes().addAll(Arrays.asList(childProductCodeArray));
+            }else if(customerInfoDTO.getPcmProductCodes().contains(productCode)){
+                customerInfoDTO.getPcmProductCodes().addAll(Arrays.asList(childProductCodeArray));
+            }
+        });
+        return customerInfoDTO;
     }
 }

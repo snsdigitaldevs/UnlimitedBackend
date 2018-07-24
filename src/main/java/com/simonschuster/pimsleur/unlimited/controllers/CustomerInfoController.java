@@ -28,6 +28,6 @@ public class CustomerInfoController {
                                            @RequestParam(value = "storeDomain", required = false, defaultValue = "") String storeDomain,
                                            @RequestParam(value = "email", required = false, defaultValue = "") String email)
             throws IOException {
-        return edtCustomerInfoService.getCustomerInfo(sub, storeDomain, email);
+        return edtCustomerInfoService.getCustomerInfoDTO(sub, storeDomain, email);
     }
 }

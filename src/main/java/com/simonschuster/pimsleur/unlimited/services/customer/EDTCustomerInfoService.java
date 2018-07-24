@@ -56,7 +56,7 @@ public class EDTCustomerInfoService {
         return new AggregatedCustomerInfo(pcCustomerInfo, pcmCustomerInfo, aggregatedSyncState);
     }
 
-    public CustomerInfoDTO getCustomerInfo(String sub, String storeDomain, String email) throws IOException {
+    public CustomerInfoDTO getCustomerInfoDTO(String sub, String storeDomain, String email) throws IOException {
         CustomerInfo puAndPCMCustomerInfo = getPuAndPCMCustomerInfos(sub, storeDomain, email);
         ResultData resultData = puAndPCMCustomerInfo.getResultData();
         Customer customer = resultData.getCustomer();

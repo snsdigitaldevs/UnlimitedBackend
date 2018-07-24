@@ -1,7 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.controllers;
 
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.CustomerInfoDTO;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.AggregatedCustomerInfo;
 import com.simonschuster.pimsleur.unlimited.services.CustomerInfoConverterForAlexa;
 import com.simonschuster.pimsleur.unlimited.services.customer.EDTCustomerInfoService;
 import io.swagger.annotations.ApiOperation;
@@ -36,6 +35,6 @@ public class CustomerInfoForAlexaController {
     public CustomerInfoDTO getCustomerInfo(@RequestParam(value = "sub") String sub)
             throws IOException {
         //Kelly K will handle email missing for Alexa.
-        return edtCustomerInfoService.getCustomerInfo(sub, ALEXA_STORE_DOMAIN, "");
+        return edtCustomerInfoService.getCustomerInfoDTO(sub, ALEXA_STORE_DOMAIN, "");
     }
 }

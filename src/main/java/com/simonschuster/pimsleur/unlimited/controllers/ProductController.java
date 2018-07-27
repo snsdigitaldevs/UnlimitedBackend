@@ -61,9 +61,7 @@ public class ProductController {
         if (isFree && !isPUProductCode) {
             return pcmFreeCourseService.getPcmFreeCourseInfos(productCode, storeDomain);
         } else if (isPUProductCode) {
-            List<Course> courses = puCourseInfoService.getPuProductInfo(productCode, storeDomain).toDto();
-            courses.forEach(course -> course.setIsFree(isFree));
-            return courses;
+            return puCourseInfoService.getPuProductInfo(productCode, storeDomain).toDto();
         } else {
             return pcmCourseInfoService.getCourses(productCode, sub, email, storeDomain);
         }

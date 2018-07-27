@@ -65,13 +65,10 @@ public class AvailableProductsService {
     }
 
     private List<AvailableProductDto> getAvailableProductDtos(List<AvailableProductDto> purchasedPuProducts, List<AvailableProductDto> purchasedPCMProducts) {
-        Stream<AvailableProductDto> filteredPcmProducts = purchasedPCMProducts.stream()
-                .filter((AvailableProductDto pcm) -> purchasedPuProducts.stream()
-                        .noneMatch(pu -> pu.isSameLevelSameLang(pcm)));
-
-        return concat(purchasedPuProducts.stream(), filteredPcmProducts)
+        List<AvailableProductDto> collect = concat(purchasedPuProducts.stream(), purchasedPCMProducts.stream())
                 .sorted(comparing(AvailableProductDto::getCourseName))
                 .collect(toList());
+        return collect;
     }
 
     private List<AvailableProductDto> getPuAvailableProducts(String sub, String email, String storeDomain) {
@@ -114,7 +111,7 @@ public class AvailableProductsService {
         CustomerInfo pcmCustInfo = customerInfoService.getPcmCustomerInfo(sub, storeDomain, email);
 
         if (pcmCustInfo.getResultData() != null) {
-            return pcmCustInfo.getResultData()
+            List<AvailableProductDto> productDtos = pcmCustInfo.getResultData()
                     .getCustomer().getCustomersOrders().stream()
                     .flatMap(customersOrder -> customersOrder.getOrdersProducts().stream()
                             .flatMap(order -> this.pcmOrderToDtos(order)
@@ -122,6 +119,7 @@ public class AvailableProductsService {
                     .filter(dto -> dto.getLevel() != 0) // remove "how to learn"
                     .filter(distinctByKey(AvailableProductDto::getProductCode)) // remove duplicate
                     .collect(toList());
+            return productDtos;
         } else {
             return emptyList();
         }

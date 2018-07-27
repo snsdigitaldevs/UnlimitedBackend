@@ -40,7 +40,8 @@ public class PUCourseInfoService {
     public AggregatedProductInfo getPuProductInfo(String productCode, String storeDomain) {
         try {
             AggregatedProductInfo productInfo = new AggregatedProductInfo();
-            productInfo.setPuProductInfo(getProductInfoFromPu(productCode, storeDomain));
+            PuProductInfo productInfoFromPu = getProductInfoFromPu(productCode, storeDomain);
+            productInfo.setPuProductInfo(productInfoFromPu);
             return productInfo;
         } catch (Exception exception) {
             logger.error("Exception occured when get product info with PU product code.");

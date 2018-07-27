@@ -84,12 +84,13 @@ public class AvailableProductsService {
                                     .peek(dto -> dto.setIsSubscription(order.isSubscription())))
                     .collect(Collectors.toList());
 
+            List<String> puFreeIsbns = HardCodedProductsUtil.puFreeIsbns;
             List<AvailableProductDto> purchasedCourses = availableProductDto.stream()
-                    .filter(p -> !HardCodedProductsUtil.puFreeIsbns.contains(p.getProductCode()))
+                    .filter(p -> !puFreeIsbns.contains(p.getProductCode()))
                     .collect(Collectors.toList());
 
             List<AvailableProductDto> freePUDistinctCourses = availableProductDto.stream()
-                    .filter(p -> HardCodedProductsUtil.puFreeIsbns.contains(p.getProductCode()))
+                    .filter(p -> puFreeIsbns.contains(p.getProductCode()))
                     .filter(puFreeCourse -> !freeCourseIsInPurchasedCourses(purchasedCourses, puFreeCourse))
                     .collect(Collectors.toList());
 

@@ -45,12 +45,13 @@ public class ProductController {
                                        @RequestParam(value = "email", required = false) String email,
                                        @RequestParam(value = "storeDomain", required = false) String storeDomain) {
         validateProductCode(productCode);
-        return getProductInfos(isPUProductCode, isFree, productCode, sub, email, storeDomain)
+        List<Course> courseList = getProductInfos(isPUProductCode, isFree, productCode, sub, email, storeDomain)
                 .stream()
                 .filter(distinctByKey(Course::getProductCode))
                 // remove duplicate by isbn, sometimes there could be same isbn show up more than once
                 // because user could have bought a product and a subscription that covers this product
                 .collect(toList());
+        return courseList;
     }
 
     private List<Course> getProductInfos(boolean isPUProductCode,

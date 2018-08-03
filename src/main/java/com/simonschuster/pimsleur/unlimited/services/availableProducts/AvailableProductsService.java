@@ -6,6 +6,7 @@ import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.CustomerInfo;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.OrdersProduct;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.Product;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.ResultData;
 import com.simonschuster.pimsleur.unlimited.services.course.PUCourseInfoService;
 import com.simonschuster.pimsleur.unlimited.services.customer.EDTCustomerInfoService;
 import com.simonschuster.pimsleur.unlimited.services.freeLessons.PcmFreeLessonsService;
@@ -23,7 +24,6 @@ import static com.simonschuster.pimsleur.unlimited.utils.DataConverterUtil.disti
 import static java.util.Collections.emptyList;
 import static java.util.Comparator.comparing;
 import static java.util.stream.Collectors.toList;
-import static java.util.stream.Stream.concat;
 
 @Service
 public class AvailableProductsService {
@@ -55,46 +55,45 @@ public class AvailableProductsService {
     }
 
     private List<AvailableProductDto> purchasedPUAndPcmProducts(String sub, String email, String storeDomain) {
-
-        return CompletableFuture
-                .supplyAsync(() -> getPuAvailableProducts(sub, email, storeDomain))
-                .thenCombineAsync(
-                        CompletableFuture.supplyAsync(() -> getPcmAvailableProducts(sub, email, storeDomain)),
-                        this::getAvailableProductDtos)
-                .join();
+        List<AvailableProductDto> join = getAllAvailableProducts(sub, email, storeDomain);
+        return join;
     }
 
-    private List<AvailableProductDto> getAvailableProductDtos(List<AvailableProductDto> purchasedPuProducts, List<AvailableProductDto> purchasedPCMProducts) {
-        List<AvailableProductDto> collect = concat(purchasedPuProducts.stream(), purchasedPCMProducts.stream())
-                .sorted(comparing(AvailableProductDto::getCourseName))
-                .collect(toList());
-        return collect;
-    }
-
-    private List<AvailableProductDto> getPuAvailableProducts(String sub, String email, String storeDomain) {
-        CustomerInfo puCustInfo = customerInfoService.getPUCustomerInfo(sub, storeDomain, email);
-        if (puCustInfo.getResultData() != null) {
+    private List<AvailableProductDto> getAllAvailableProducts(String sub, String email, String storeDomain)
+    {
+        CustomerInfo customerInfo = customerInfoService.getPuAndPCMCustomerInfos(sub, storeDomain, email);
+        ResultData resultData = customerInfo.getResultData();
+        if (resultData != null) {
             List<AvailableProductDto> availableProductDto =
-                    puCustInfo.getResultData().getCustomer().getAllOrdersProducts().stream()
-                    .flatMap(order ->
-                            puProductToDtos(order.getProduct(), storeDomain)
-                                    .peek(dto -> dto.setIsSubscription(order.isSubscription())))
-                    .collect(Collectors.toList());
+                    resultData.getCustomer().getAllOrdersProducts().stream()
+                            .flatMap(order ->
+                            {
+                                boolean puProduct = order.isPUProduct();
+                                Stream<AvailableProductDto> availableProductDtoStream =
+                                        puProduct ?
+                                        puProductToDtos(order.getProduct(), storeDomain) :
+                                        pcmOrderToDtos(order);
+                                return availableProductDtoStream
+                                        .peek(dto -> dto.setIsSubscription(order.isSubscription()));
+                            })
+                            .filter(dto -> dto.getLevel() != 0)
+                            .filter(distinctByKey(AvailableProductDto::getProductCode))
+                            .collect(Collectors.toList());
 
-            List<String> puFreeIsbns = HardCodedProductsUtil.puFreeIsbns;
+            List<String> freeIsbns = HardCodedProductsUtil.puFreeIsbns;
             List<AvailableProductDto> purchasedCourses = availableProductDto.stream()
-                    .filter(p -> !puFreeIsbns.contains(p.getProductCode()))
+                    .filter(p -> !freeIsbns.contains(p.getProductCode()))
                     .collect(Collectors.toList());
 
-            List<AvailableProductDto> freePUDistinctCourses = availableProductDto.stream()
-                    .filter(p -> puFreeIsbns.contains(p.getProductCode()))
+            List<AvailableProductDto> purchasedFreePUDistinctCourses = availableProductDto.stream()
+                    .filter(p -> freeIsbns.contains(p.getProductCode()))
                     .filter(puFreeCourse -> !freeCourseIsInPurchasedCourses(purchasedCourses, puFreeCourse))
                     .collect(Collectors.toList());
 
-            purchasedCourses.addAll(freePUDistinctCourses);
+            purchasedCourses.addAll(purchasedFreePUDistinctCourses);
 
             return purchasedCourses.stream()
-                    .filter(distinctByKey(p -> p.getLanguageName() + p.getLevel())) // remove duplicate
+                    .sorted(comparing(AvailableProductDto::getCourseName))
                     .collect(toList());
         } else {
             return emptyList();
@@ -105,24 +104,6 @@ public class AvailableProductsService {
         return purchasedCourses.stream().anyMatch(purchasedCourse ->
                 (purchasedCourse.getLanguageName() + purchasedCourse.getLevel())
                         .equals(puFreeCourse.getLanguageName() + purchasedCourse.getLevel()));
-    }
-
-    private List<AvailableProductDto> getPcmAvailableProducts(String sub, String email, String storeDomain) {
-        CustomerInfo pcmCustInfo = customerInfoService.getPcmCustomerInfo(sub, storeDomain, email);
-
-        if (pcmCustInfo.getResultData() != null) {
-            List<AvailableProductDto> productDtos = pcmCustInfo.getResultData()
-                    .getCustomer().getCustomersOrders().stream()
-                    .flatMap(customersOrder -> customersOrder.getOrdersProducts().stream()
-                            .flatMap(order -> this.pcmOrderToDtos(order)
-                                    .peek(dto -> dto.setIsSubscription(order.isSubscription()))))
-                    .filter(dto -> dto.getLevel() != 0) // remove "how to learn"
-                    .filter(distinctByKey(AvailableProductDto::getProductCode)) // remove duplicate
-                    .collect(toList());
-            return productDtos;
-        } else {
-            return emptyList();
-        }
     }
 
     private List<AvailableProductDto> getFreeProducts(List<AvailableProductDto> purchasedProducts, String storeDomain) {

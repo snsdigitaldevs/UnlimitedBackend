@@ -3,7 +3,16 @@ package com.simonschuster.pimsleur.unlimited.data.edt.productinfo.pcmFreeCourse;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Image;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.LanguageImageMetadata;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.LanguageName;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.MediaSet;
+
+import java.io.IOException;
+
+import static com.fasterxml.jackson.core.JsonParser.Feature.ALLOW_SINGLE_QUOTES;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
@@ -23,7 +32,11 @@ import com.simonschuster.pimsleur.unlimited.data.edt.customer.MediaSet;
         "mediaSet",
         "additionalProductData"
 })
+
 public class PcmFreeCourseResultData {
+    private static final String PCM_IMAGE_DOMAIN = "https://public.pimsleur.cdn.edtnet.us";
+    private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper()
+            .configure(ALLOW_SINGLE_QUOTES, true);
 
     @JsonProperty("productsId")
     private long productsId;
@@ -55,6 +68,8 @@ public class PcmFreeCourseResultData {
     private MediaSet mediaSet;
     @JsonProperty("additionalProductData")
     private AdditionalProductData additionalProductData;
+    @JsonProperty("languageName")
+    private LanguageName languageName;
 
     @JsonProperty("productsId")
     public long getProductsId() {
@@ -204,5 +219,36 @@ public class PcmFreeCourseResultData {
     @JsonProperty("additionalProductData")
     public void setAdditionalProductData(AdditionalProductData additionalProductData) {
         this.additionalProductData = additionalProductData;
+    }
+
+    @JsonProperty("languageName")
+    public LanguageName getLanguageName() {
+        return languageName;
+    }
+
+    @JsonProperty("languageName")
+    public void setLanguageName(LanguageName languageName) {
+        this.languageName = languageName;
+    }
+
+    public Image getPcmImage() {
+        Image image = new Image();
+        if (languageName != null && languageName.getLanguageImageMetadata() != null) {
+            try {
+                LanguageImageMetadata metadata =
+                        OBJECT_MAPPER.readValue(languageName.getLanguageImageMetadata(),
+                        new TypeReference<LanguageImageMetadata>() {
+                });
+                String imageUrl = PCM_IMAGE_DOMAIN + metadata.getImageFilePath() + metadata.getImageFileName();
+
+                image.setThumbImageAddress(imageUrl);
+                image.setFullImageAddress(imageUrl);
+                return image;
+            } catch (IOException ignored) {
+                return image;
+            }
+        }
+
+        return image;
     }
 }

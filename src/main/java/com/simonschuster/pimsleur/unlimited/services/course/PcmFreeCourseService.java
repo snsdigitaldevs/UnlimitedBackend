@@ -2,6 +2,7 @@ package com.simonschuster.pimsleur.unlimited.services.course;
 
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
+import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Image;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Lesson;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.MediaItem;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.pcmFreeCourse.PcmFreeCourseResponse;
@@ -95,6 +96,7 @@ public class PcmFreeCourseService {
     }
 
     private List<Lesson> createLessonsFromMediaSet(PcmFreeCourseResultData resultData) {
+        Image pcmImage = resultData.getPcmImage();
         return resultData.getMediaSet().getChildMediaSets().stream()
                 .flatMap(mediaSet -> mediaSet.getMediaItems().stream())
                 .filter(MediaItem::isLesson)
@@ -102,6 +104,7 @@ public class PcmFreeCourseService {
                     Lesson lesson = new Lesson();
                     lesson.setName(mediaItem.getMediaItemTitle());
                     lesson.setLessonNumber(mediaItem.getMediaItemTitle().split(" ")[1]);
+                    lesson.setImage(pcmImage);
                     return lesson;
                 }).collect(toList());
     }

@@ -243,6 +243,7 @@ public class PcmFreeCourseResultData {
 
                 image.setThumbImageAddress(imageUrl);
                 image.setFullImageAddress(imageUrl);
+                image.setCredits(metadata.getCredits());
                 return image;
             } catch (IOException ignored) {
                 return image;

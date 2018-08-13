@@ -3,6 +3,7 @@ package com.simonschuster.pimsleur.unlimited.data.dto.productinfo;
 public class Image {
     private String fullImageAddress;
     private String thumbImageAddress;
+    private String credits;
 
     public String getFullImageAddress() {
         return fullImageAddress;
@@ -18,5 +19,13 @@ public class Image {
 
     public void setThumbImageAddress(String thumbImageAddress) {
         this.thumbImageAddress = thumbImageAddress;
+    }
+
+    public String getCredits() {
+        return credits;
+    }
+
+    public void setCredits(String credits) {
+        this.credits = credits;
     }
 }

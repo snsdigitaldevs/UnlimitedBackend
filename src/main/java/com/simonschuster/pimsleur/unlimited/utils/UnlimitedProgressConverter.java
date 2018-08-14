@@ -24,10 +24,7 @@ public class UnlimitedProgressConverter {
                 .filter(UnlimitedProgressConverter::hasKeyWord)
                 .collect(Collectors.groupingBy(UserAppStateDatum::idPartOfKey))
                 .values().stream()
-                .map(group -> {
-                    ProgressDTO progressDTO = getProgressDTO(currentLastPlayedDateMap, group);
-                    return progressDTO;
-                })
+                .map(group -> getProgressDTO(currentLastPlayedDateMap, group))
                 .collect(toList());
 
         getCurrentForEachSubUser(result, currentLastPlayedDateMap);

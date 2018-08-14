@@ -69,7 +69,7 @@ public class SignUpService {
                     errorMessage = "System error, please try later.";
                     break;
             }
-            throw new ParamInvalidException(errorMessage);
+            throw new ParamInvalidException(errorMessage + "; email = " + email + "; password = " + password);
         }
         return response.dataFormat();
     }

@@ -25,16 +25,25 @@ public class UnlimitedProgressConverter {
                 .collect(Collectors.groupingBy(UserAppStateDatum::idPartOfKey))
                 .values().stream()
                 .map(group -> {
-                    String[] ids = group.get(0).getKey().split("#")[0].split("_");
-                    String subUserID = ids[2];
-                    ProgressDTO progressDTO = new ProgressDTO(Integer.parseInt(ids[4]), ids[3], subUserID, false, false);
-                    group.forEach(getUserAppStateDatumConsumer(subUserID, progressDTO, currentLastPlayedDateMap));
+                    ProgressDTO progressDTO = getProgressDTO(currentLastPlayedDateMap, group);
                     return progressDTO;
                 })
                 .collect(toList());
 
         getCurrentForEachSubUser(result, currentLastPlayedDateMap);
         return result;
+    }
+
+    private static ProgressDTO getProgressDTO(HashMap<String, Long> currentLastPlayedDateMap, List<UserAppStateDatum> group) {
+        String key = group.get(0).getKey();
+        String[] ids = key.split("#")[0].split("_");
+
+        String subUserID = ids.length == 5 ? ids[2] : ids[3];
+        int mediaItemId = ids.length == 5 ? Integer.parseInt(ids[4]) : Integer.parseInt(ids[5]);
+        String productCode = ids.length == 5 ? ids[3] : ids[4];
+        ProgressDTO progressDTO = new ProgressDTO(mediaItemId, productCode, subUserID, false, false);
+        group.forEach(getUserAppStateDatumConsumer(subUserID, progressDTO, currentLastPlayedDateMap));
+        return progressDTO;
     }
 
     private static void getCurrentForEachSubUser(List<ProgressDTO> result, HashMap<String, Long> currentLastPlayedDateMap) {

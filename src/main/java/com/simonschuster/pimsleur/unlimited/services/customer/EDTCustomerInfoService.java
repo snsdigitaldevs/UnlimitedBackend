@@ -129,10 +129,9 @@ public class EDTCustomerInfoService {
     }
 
     public List<String> getBoughtIsbns(String sub, String email, String storeDomain) {
-        return Stream.concat(
-                getPUCustomerInfo(sub, storeDomain, email).getResultData().getCustomer().getProductCodes().stream(),
-                getPcmCustomerInfo(sub, storeDomain, email).getResultData().getCustomer().getProductCodes().stream())
-                .collect(toList());
+        CustomerInfo customerInfos = getPuAndPCMCustomerInfos(sub, storeDomain, email);
+        List<String> productCodes = customerInfos.getResultData().getCustomer().getProductCodes();
+        return productCodes;
     }
 
     private CustomerInfo getCustomerInfo(String sub, String action, String domain, String email) {

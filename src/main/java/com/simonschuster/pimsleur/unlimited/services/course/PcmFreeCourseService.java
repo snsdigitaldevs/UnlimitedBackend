@@ -84,6 +84,7 @@ public class PcmFreeCourseService {
     private List<Lesson> createLessonsFromAdditionalInfo(PcmFreeCourseResultData resultData, List<Lesson> lessonsFromMediaSet) {
         String lessonNamePrefix = lessonsFromMediaSet.get(0).getName().split(" ")[0];
         int numberOfLessons = resultData.getAdditionalProductData().getLevel1FullCourseTotalLessons();
+        Image image = lessonsFromMediaSet.get(0).getImage();
 
         return rangeClosed(1, numberOfLessons).boxed()
                 .map(lessonNumber -> {
@@ -91,6 +92,7 @@ public class PcmFreeCourseService {
                     Lesson lesson = new Lesson();
                     lesson.setName(lessonNamePrefix + " " + lessonNumberString);
                     lesson.setLessonNumber(lessonNumberString);
+                    lesson.setImage(image);
                     return lesson;
                 }).collect(toList());
     }

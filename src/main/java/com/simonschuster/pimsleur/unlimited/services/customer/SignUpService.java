@@ -17,7 +17,7 @@ import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEd
 
 @Service
 public class SignUpService {
-    public static final String EMAIL_INVALID_ERROR_MESSAGE = "Please check email format or if it is already registered.";
+    public static final String EMAIL_ALREADY_REGISTERED_ERROR_MESSAGE = "This email is already registered.";
     @Autowired
     private ApplicationConfiguration applicationConfiguration;
 
@@ -50,7 +50,7 @@ public class SignUpService {
             String errorMessage;
             switch (response.getResultCode()) {
                 case -3011:
-                    errorMessage = EMAIL_INVALID_ERROR_MESSAGE;
+                    errorMessage = EMAIL_ALREADY_REGISTERED_ERROR_MESSAGE;
                     break;
                 case -1:
                     errorMessage = "Password must be at least 8 characters,  " +
@@ -69,7 +69,7 @@ public class SignUpService {
                     errorMessage = "System error, please try later.";
                     break;
             }
-            throw new ParamInvalidException(errorMessage + "; email = " + email + "; password = " + password);
+            throw new ParamInvalidException(errorMessage);
         }
         return response.dataFormat();
     }

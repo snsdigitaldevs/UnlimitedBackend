@@ -24,6 +24,7 @@ public class CustomerInfoDTO {
 
     private String customerId;
     private String registrantId;
+    private String registrantName;
     private String identityVerificationToken;
 
     private String optinNewProductInfo;
@@ -122,5 +123,13 @@ public class CustomerInfoDTO {
 
     public void setOptinNewProductInfo(String optinNewProductInfo) {
         this.optinNewProductInfo = optinNewProductInfo;
+    }
+
+    public String getRegistrantName() {
+        return registrantName;
+    }
+
+    public void setRegistrantName(String registrantName) {
+        this.registrantName = registrantName;
     }
 }

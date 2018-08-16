@@ -79,6 +79,7 @@ public class EDTCustomerInfoService {
         customerInfoDTO.setHasPendingAndroid(customer.hasPendingAndroid());
         customerInfoDTO.setHasPendingIos(customer.hasPendingIos());
         customerInfoDTO.setRegistrantId(registrant.getRegistrantId().toString());
+        customerInfoDTO.setRegistrantName(registrant.getFirstName());
         customerInfoDTO.setOptinNewProductInfo(registrant.getOptinNewProductInfo().toString());
         customerInfoDTO.setIdentityVerificationToken(customer.getIdentityVerificationToken());
         return customerInfoDTO;

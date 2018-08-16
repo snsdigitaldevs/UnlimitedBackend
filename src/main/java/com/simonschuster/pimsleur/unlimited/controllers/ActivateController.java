@@ -35,7 +35,10 @@ public class ActivateController {
 
             @ApiParam(value = "you can find identityVerificationToken in customerInfo api")
             @RequestBody ActivateBodyDTO activateBodyDTO) {
-        return activateService.active(registrantId, activateBodyDTO.getIdentityVerificationToken(),
-                activateBodyDTO.getIsbns(), activateBodyDTO.getStoreDomain());
+        return activateService.active(registrantId,
+                activateBodyDTO.getRegistrantName(),
+                activateBodyDTO.getIdentityVerificationToken(),
+                activateBodyDTO.getIsbns(),
+                activateBodyDTO.getStoreDomain());
     }
 }

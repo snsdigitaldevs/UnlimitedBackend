@@ -6,6 +6,7 @@ public class ActivateBodyDTO {
     private String identityVerificationToken;
     private List<String> isbns;
     private String storeDomain;
+    private String registrantName;
 
     public String getIdentityVerificationToken() {
         return identityVerificationToken;
@@ -29,5 +30,13 @@ public class ActivateBodyDTO {
 
     public void setStoreDomain(String storeDomain) {
         this.storeDomain = storeDomain;
+    }
+
+    public String getRegistrantName() {
+        return registrantName;
+    }
+
+    public void setRegistrantName(String registrantName) {
+        this.registrantName = registrantName;
     }
 }

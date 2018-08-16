@@ -25,22 +25,24 @@ public class ActivateService {
     @Autowired
     private AppIdService appIdService;
 
-    public ActivateDTO active(String registrantId, String identityVerificationToken, List<String> isbns, String storeDomain) {
+    public ActivateDTO active(String registrantId, String registrantName, String identityVerificationToken, List<String> isbns, String storeDomain) {
         String url = applicationConfiguration.getProperty("edt.api.activate.url");
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
 
         return new ActivateDTO(isbns.stream()
                 // Do not use parallelStream because updating data in same time is note supported by EDT now.
-                .map(isbn -> activateToEdt(registrantId, identityVerificationToken, url, headers, isbn, storeDomain))
+                .map(isbn -> activateToEdt(registrantId, registrantName, identityVerificationToken, url, headers, isbn, storeDomain))
                 .collect(Collectors.toList()));
     }
 
-    private ActivateResultDTO activateToEdt(String registrantId, String identityVerificationToken, String url, HttpHeaders headers, String isbn, String storeDomain) {
+    private ActivateResultDTO activateToEdt(String registrantId,
+                                            String registrantName,
+                                            String identityVerificationToken, String url, HttpHeaders headers, String isbn, String storeDomain) {
         String appId = appIdService.getAppId(storeDomain);
         HttpEntity<String> entity = new HttpEntity<>(String.format(
                 applicationConfiguration.getProperty("edt.api.activate.parameters.activate"),
-                identityVerificationToken, registrantId, isbn, appId
+                identityVerificationToken, registrantId, isbn, appId, registrantName
         ), headers);
         Activate activateResponse = postToEdt(entity, url, Activate.class);
         Integer resultCode = activateResponse.getResultCode();

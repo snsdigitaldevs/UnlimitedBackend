@@ -35,9 +35,9 @@ public class UnlimitedProgressConverter {
         String key = group.get(0).getKey();
         String[] ids = key.split("#")[0].split("_");
 
-        String subUserID = ids.length == 5 ? ids[1] + "_" + ids[2] : ids[1] + "_" + ids[2] + "_" + ids[3];
-        int mediaItemId = ids.length == 5 ? Integer.parseInt(ids[4]) : Integer.parseInt(ids[5]);
-        String productCode = ids.length == 5 ? ids[3] : ids[4];
+        String subUserID = ids.length <= 5 ? ids[2] : ids[3];
+        int mediaItemId = ids.length <= 5 ? Integer.parseInt(ids[4]) : Integer.parseInt(ids[5]);
+        String productCode = ids.length <= 5 ? ids[3] : ids[4];
         ProgressDTO progressDTO = new ProgressDTO(mediaItemId, productCode, subUserID, false, false);
         group.forEach(getUserAppStateDatumConsumer(subUserID, progressDTO, currentLastPlayedDateMap));
         return progressDTO;

@@ -2,10 +2,7 @@ package com.simonschuster.pimsleur.unlimited.services;
 
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.CustomerInfoDTO;
 import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.AvailableProductDto;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.AggregatedCustomerInfo;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.Customer;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.CustomerInfo;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.OrdersProduct;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.*;
 import com.simonschuster.pimsleur.unlimited.data.edt.syncState.SyncState;
 import com.simonschuster.pimsleur.unlimited.services.availableProducts.AvailableProductsService;
 import com.simonschuster.pimsleur.unlimited.utils.DataConverterUtil;
@@ -31,12 +28,13 @@ public class CustomerInfoConverterForAlexa {
         SyncState pcmSyncState = customerInfos.getPcmSyncState();
         SyncState unlimitedSyncState = customerInfos.getUnlimitedSyncState();
 
+        Registrant registrant = unlimitedCustomerInfo.getResultData().getRegistrant();
         CustomerInfoDTO customerInfoDTO = new CustomerInfoDTO(
                 getPurchasedPUProductCodes(puCustomer, unlimitedCustomerInfo, storeDomain),
                 getPurchasedPCMProductCodes(customerInfos.getPcmCustomerInfo()),
-                unlimitedCustomerInfo.getResultData().getRegistrant().getProductActivations(),
+                registrant.getProductActivations(),
                 customerInfos.getProgressDTOS(),
-                unlimitedCustomerInfo.getResultData().getRegistrant().getSubUsers());
+                registrant.getSubUsers());
 
         if (pcmSyncState.hasResultData()) {
             customerInfoDTO.setPcmLastSaveId(pcmSyncState.getResultData().getLastSaveId());
@@ -47,7 +45,7 @@ public class CustomerInfoConverterForAlexa {
         customerInfoDTO.setCustomerId(puCustomer.getCustomersId().toString());
         customerInfoDTO.setHasPendingAndroid(puCustomer.hasPendingAndroid());
         customerInfoDTO.setHasPendingIos(puCustomer.hasPendingIos());
-        customerInfoDTO.setRegistrantId(unlimitedCustomerInfo.getResultData().getRegistrant().getRegistrantId().toString());
+        customerInfoDTO.setRegistrantId(registrant.getRegistrantId().toString());
         customerInfoDTO.setIdentityVerificationToken(puCustomer.getIdentityVerificationToken());
         return customerInfoDTO;
     }

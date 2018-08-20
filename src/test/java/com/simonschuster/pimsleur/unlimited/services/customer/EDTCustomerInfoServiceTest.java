@@ -35,13 +35,8 @@ public class EDTCustomerInfoServiceTest {
         HttpServer server = httpServer(12306);
         server.post(and(
                 by(uri("/subscr_production_v_9/action_handlers/rsovkolfqxrjl.php")),
-                eq(form("action"), "pu_blmqide")))
-                .response(file("src/test/resources/unlimitedCustInfoResponse.json"));
-        server.post(and(
-                by(uri("/subscr_production_v_9/action_handlers/rsovkolfqxrjl.php")),
-                eq(form("action"), "pcm_blmqide")))
-                .response(file("src/test/resources/pcmCustInfoResponse.json"));
-
+                eq(form("action"), "tw_blmqide")))
+                .response(file("src/test/resources/edtCustInfoResponse.json"));
         server.post(and(
                 by(uri("/subscr_production_v_9/action_handlers/uxpzs.php")),
                 eq(form("store_domain"), "ss_pu")))
@@ -54,13 +49,9 @@ public class EDTCustomerInfoServiceTest {
         running(server, new Runnable() {
             @Override
             public void run() throws IOException {
-                AggregatedCustomerInfo customerInfos =
-                        edtCustomerInfoService.getCustomerInfos("whatever", "", "email");
+                CustomerInfoDTO customerInfoDTO =
+                        edtCustomerInfoService.getCustomerInfoDTO("whatever", "", "email");
 
-                assertThat(customerInfos.getPcmCustomerInfo().getResultCode(), is(1));
-                assertThat(customerInfos.getUnlimitedCustomerInfo().getResultCode(), is(1));
-
-                CustomerInfoDTO customerInfoDTO = customerInfos.toDto();
                 List<ProgressDTO> currentProgresses = customerInfoDTO.getProgresses().stream()
                         .filter(prog -> prog.getCurrent())
                         .collect(toList());

@@ -36,26 +36,6 @@ public class EDTCustomerInfoService {
     @Autowired
     private AppIdService appIdService;
 
-    public AggregatedCustomerInfo getCustomerInfos(String sub, String storeDomain, String email) {
-        CompletableFuture<CustomerInfo> puCustomerInfoCompletableFuture = CompletableFuture.supplyAsync(() -> {
-            CustomerInfo puCustomerInfo = getPUCustomerInfo(sub, storeDomain, email);
-            return puCustomerInfo;
-        });
-        CompletableFuture<CustomerInfo> pcmCustomerInfoCompletableFuture = CompletableFuture.supplyAsync(() -> getPcmCustomerInfo(sub, storeDomain, email));
-
-        AggregatedSyncState aggregatedSyncState = CompletableFuture.anyOf(puCustomerInfoCompletableFuture, pcmCustomerInfoCompletableFuture)
-                .thenApplyAsync(puOrPcmCustomerInfo -> {
-                    Customer customer = ((CustomerInfo) puOrPcmCustomerInfo).getResultData().getCustomer();
-                    return syncStateService
-                            .getSyncStates(customer.getCustomersId(), customer.getIdentityVerificationToken());
-                })
-                .join();
-
-        CustomerInfo pcCustomerInfo = puCustomerInfoCompletableFuture.join();
-        CustomerInfo pcmCustomerInfo = pcmCustomerInfoCompletableFuture.join();
-        return new AggregatedCustomerInfo(pcCustomerInfo, pcmCustomerInfo, aggregatedSyncState);
-    }
-
     public CustomerInfoDTO getCustomerInfoDTO(String sub, String storeDomain, String email) throws IOException {
         CustomerInfo puAndPCMCustomerInfo = getPuAndPCMCustomerInfos(sub, storeDomain, email);
         ResultData resultData = puAndPCMCustomerInfo.getResultData();

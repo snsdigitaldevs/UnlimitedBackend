@@ -78,4 +78,45 @@ public class ProgressDTO {
     public void setSubUserID(String subUserID) {
         this.subUserID = subUserID;
     }
+
+    @Override
+    public boolean equals(Object other) {
+        if (other instanceof ProgressDTO) {
+            ProgressDTO other1 = (ProgressDTO) other;
+            boolean b = isEquals(other1.getCurrent(), getCurrent()) &&
+                    isEquals(other1.getLastPlayedDate(), getLastPlayedDate()) &&
+                    isEquals(other1.getLastPlayHeadLocation(), getLastPlayHeadLocation()) &&
+                    isEquals(other1.getSubUserID(), getSubUserID()) &&
+                    isEquals(other1.getProductCode(), getProductCode()) &&
+                    isEquals(other1.getMediaItemId(), getMediaItemId());
+            return b;
+        }
+        return false;
+    }
+
+    private boolean isEquals(Object left, Object right) {
+        if(left == null && right == null)
+            return true;
+        if(left != null && right != null){
+            return left.equals(right);
+        }
+        return false;
+    }
+
+    @Override
+    public int hashCode() {
+        int complated_hashno = (getCompleted() == null ? 0 : getCompleted().hashCode());
+        int mediaItemId_hashno = (getMediaItemId() == null ? 0 : getMediaItemId().hashCode());
+        int current_hashno = (getCurrent() == null ? 0 : getCurrent().hashCode());
+        int lastPlayDate_hashno = (getLastPlayedDate() == null ? 0 : getLastPlayedDate().hashCode());
+        int productCode_hashno = (getProductCode() == null ? 0 : getProductCode().hashCode());
+        int playHead_hashno = (getLastPlayHeadLocation() == null ? 0 : getLastPlayHeadLocation().hashCode());
+        int hashno = complated_hashno +
+                mediaItemId_hashno +
+                current_hashno +
+                lastPlayDate_hashno +
+                productCode_hashno +
+                playHead_hashno;
+        return hashno;
+    }
 }

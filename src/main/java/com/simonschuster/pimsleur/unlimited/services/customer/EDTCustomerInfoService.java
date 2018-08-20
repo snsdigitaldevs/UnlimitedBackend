@@ -3,7 +3,10 @@ package com.simonschuster.pimsleur.unlimited.services.customer;
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.CustomerInfoDTO;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.ProgressDTO;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.*;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.Customer;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.CustomerInfo;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.Registrant;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.ResultData;
 import com.simonschuster.pimsleur.unlimited.data.edt.syncState.AggregatedSyncState;
 import com.simonschuster.pimsleur.unlimited.data.edt.syncState.SyncState;
 import com.simonschuster.pimsleur.unlimited.services.AppIdService;
@@ -16,8 +19,6 @@ import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.concurrent.CompletableFuture;
-import java.util.stream.Stream;
 
 import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEdt;
 import static com.simonschuster.pimsleur.unlimited.utils.PCMProgressConverter.pcmProgressToDto;
@@ -68,8 +69,8 @@ public class EDTCustomerInfoService {
     private List<ProgressDTO> getProgressDTOS(SyncState pcmSyncState, SyncState unlimitedSyncState) throws IOException {
         //both
         if (pcmSyncState.hasResultData() && unlimitedSyncState.hasResultData()) {
-            List<ProgressDTO> pcmProgressDTOs = pcmProgressToDto(pcmSyncState.getResultData().getUserAppStateData());
-            List<ProgressDTO> unlimitedProgressDTOs = UnlimitedSyncStateToDTO(unlimitedSyncState.getResultData().getUserAppStateData());
+            List<ProgressDTO> pcmProgressDTOs = pcmProgressToDto(pcmSyncState.getResultData().getUserAppStateData()).stream().distinct().collect(toList());
+            List<ProgressDTO> unlimitedProgressDTOs = UnlimitedSyncStateToDTO(unlimitedSyncState.getResultData().getUserAppStateData()).stream().distinct().collect(toList());
 
             return concat(pcmProgressDTOs.stream(), unlimitedProgressDTOs.stream()).collect(toList());
         }

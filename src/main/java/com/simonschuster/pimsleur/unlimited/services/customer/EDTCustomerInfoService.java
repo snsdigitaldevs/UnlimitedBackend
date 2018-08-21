@@ -133,14 +133,6 @@ public class EDTCustomerInfoService {
         return puAndPCMCustomerInfo;
     }
 
-    public CustomerInfo getPUCustomerInfo(String sub, String storeDomain, String email) {
-        CustomerInfo unlimitedCustomerAction = getCustomerInfo(sub,
-                config.getApiParameter("unlimitedCustomerAction"),
-                storeDomain,
-                email);
-        return unlimitedCustomerAction;
-    }
-
     public CustomerInfo getPcmCustomerInfo(String sub, String storeDomain, String email) {
         CustomerInfo pcmCustomerAction = getCustomerInfo(sub,
                 config.getApiParameter("pcmCustomerAction"),

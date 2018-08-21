@@ -71,7 +71,7 @@ public class EDTCustomerInfoService {
         //both
         if (pcmSyncState.hasResultData() && unlimitedSyncState.hasResultData()) {
             List<ProgressDTO> pcmCleaned = getCleanedPCMProgressDTOS(pcmSyncState);
-            List<ProgressDTO> unlimitedProgressDTOs = UnlimitedSyncStateToDTO(unlimitedSyncState.getResultData().getUserAppStateData()).stream().distinct().collect(toList());
+            List<ProgressDTO> unlimitedProgressDTOs = UnlimitedSyncStateToDTO(unlimitedSyncState.getResultData().getUserAppStateData());
             return concat(pcmCleaned.stream(), unlimitedProgressDTOs.stream()).collect(toList());
         }
         //only pcm
@@ -87,7 +87,7 @@ public class EDTCustomerInfoService {
     }
 
     private List<ProgressDTO> getCleanedPCMProgressDTOS(SyncState pcmSyncState) throws IOException {
-        List<ProgressDTO> pcmProgressDTOs = pcmProgressToDto(pcmSyncState.getResultData().getUserAppStateData()).stream().distinct().collect(toList());
+        List<ProgressDTO> pcmProgressDTOs = pcmProgressToDto(pcmSyncState.getResultData().getUserAppStateData());
         //map progress dtos by productCode + mediaItemId
         //filter completed = true, if so, skip all other items
         //if no completed = true, then filter current = true

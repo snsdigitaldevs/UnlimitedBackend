@@ -18,7 +18,8 @@ import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
 import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEdt;
 import static com.simonschuster.pimsleur.unlimited.utils.PCMProgressConverter.pcmProgressToDto;
@@ -69,14 +70,13 @@ public class EDTCustomerInfoService {
     private List<ProgressDTO> getProgressDTOS(SyncState pcmSyncState, SyncState unlimitedSyncState) throws IOException {
         //both
         if (pcmSyncState.hasResultData() && unlimitedSyncState.hasResultData()) {
-            List<ProgressDTO> pcmProgressDTOs = pcmProgressToDto(pcmSyncState.getResultData().getUserAppStateData()).stream().distinct().collect(toList());
+            List<ProgressDTO> pcmCleaned = getCleanedPCMProgressDTOS(pcmSyncState);
             List<ProgressDTO> unlimitedProgressDTOs = UnlimitedSyncStateToDTO(unlimitedSyncState.getResultData().getUserAppStateData()).stream().distinct().collect(toList());
-
-            return concat(pcmProgressDTOs.stream(), unlimitedProgressDTOs.stream()).collect(toList());
+            return concat(pcmCleaned.stream(), unlimitedProgressDTOs.stream()).collect(toList());
         }
         //only pcm
         else if (pcmSyncState.hasResultData()) {
-            return pcmProgressToDto(pcmSyncState.getResultData().getUserAppStateData());
+            return getCleanedPCMProgressDTOS(pcmSyncState);
         }
         //only unlimited
         else if (unlimitedSyncState.hasResultData()) {
@@ -84,6 +84,45 @@ public class EDTCustomerInfoService {
         }
         //neither
         return emptyList();
+    }
+
+    private List<ProgressDTO> getCleanedPCMProgressDTOS(SyncState pcmSyncState) throws IOException {
+        List<ProgressDTO> pcmProgressDTOs = pcmProgressToDto(pcmSyncState.getResultData().getUserAppStateData()).stream().distinct().collect(toList());
+        //map progress dtos by productCode + mediaItemId
+        //filter completed = true, if so, skip all other items
+        //if no completed = true, then filter current = true
+        //if no current = true, then select from current = false, order by last play date, choose the one with max lastplaydate
+        List<ProgressDTO> pcmCleaned = new ArrayList<>();
+        Map<String, List<ProgressDTO>> map = pcmProgressDTOs.stream().collect(
+                Collectors.groupingBy(ProgressDTO::computeIdentifier));
+        for (Map.Entry<String, List<ProgressDTO>> entry : map.entrySet()) {
+            List<ProgressDTO> value = entry.getValue();
+            Optional<ProgressDTO> completed = value.stream().filter(item -> item.getCompleted()).findFirst();
+            if(completed.isPresent()){
+                pcmCleaned.add(completed.get());
+            }
+            else {
+                Optional<ProgressDTO> current = value.stream().filter(item -> item.getCurrent()).findFirst();
+                if(current.isPresent()){
+                    pcmCleaned.add(current.get());
+                }else {
+                    Collections.sort(value, (b1, b2) -> {
+                        if(b1.getLastPlayedDate() == null && b2.getLastPlayedDate() == null)
+                            return 0;
+                        if(b1.getLastPlayedDate() == null && b2.getLastPlayedDate() != null){
+                            return -1;
+                        }
+                        if(b1.getLastPlayedDate() != null && b2.getLastPlayedDate() == null){
+                            return 1;
+                        }
+                        return b1.getLastPlayedDate().compareTo(b2.getLastPlayedDate());
+                    });
+                    ProgressDTO progressDTO = value.get(value.size() - 1);
+                    pcmCleaned.add(progressDTO);
+                }
+            }
+        }
+        return pcmCleaned;
     }
 
     public CustomerInfo getPuAndPCMCustomerInfos(String sub, String storeDomain, String email) {

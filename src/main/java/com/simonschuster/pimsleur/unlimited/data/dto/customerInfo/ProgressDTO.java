@@ -51,6 +51,10 @@ public class ProgressDTO {
         return lastPlayedDate;
     }
 
+    public String computeIdentifier(){
+        return productCode + "_" + mediaItemId;
+    }
+
     public void setLastPlayedDate(Long lastPlayedDate) {
         this.lastPlayedDate = lastPlayedDate;
     }

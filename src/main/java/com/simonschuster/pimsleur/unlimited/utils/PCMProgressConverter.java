@@ -18,16 +18,17 @@ public class PCMProgressConverter {
 
     private static final String CURRENT_MEDIA_SET_HISTORY_ID = "currentMediaSetHistoryId";
     private static final String CURRENT_MEDIA_ITEM_HISTORY_ID = "currentMediaItemHistoryId";
+    public static final int PRODUCT_CODE_LENGTH = 13;
 
     private static List<String> keyWordsToExtract =
             asList(AUDIO_TRACK_COMPLETE, LAST_ACCESS_DATE, LAST_AUDIO_POS_MILLIS);
 
     public static List<ProgressDTO> pcmProgressToDto(List<UserAppStateDatum> edtProgresses) {
-        pcmProgressParserDto dto = findCurrentMediaItem(edtProgresses);
+        pcmProgressParserDto currentMediaItemProgressDto = findCurrentMediaItem(edtProgresses);
         return edtProgresses.stream()
                 .filter(PCMProgressConverter::hasKeyWord)
                 .collect(groupingBy(UserAppStateDatum::idPartOfKey)).values().stream()
-                .map(group -> groupToDTO(group, dto))
+                .map(group -> groupToDTO(group, currentMediaItemProgressDto))
                 .collect(toList());
     }
 
@@ -51,9 +52,9 @@ public class PCMProgressConverter {
         return null;
     }
 
-    private static ProgressDTO groupToDTO(List<UserAppStateDatum> group, pcmProgressParserDto dto) {
+    private static ProgressDTO groupToDTO(List<UserAppStateDatum> group, pcmProgressParserDto currentMediaItemProgress) {
         ProgressDTO progressDTO = new ProgressDTO();
-        extractProductAndMediaItem(progressDTO, group.get(0).getKey(), dto);
+        extractProductAndMediaItem(progressDTO, group.get(0).getKey(), currentMediaItemProgress);
         group.forEach(progress -> {
             if (progress.getKey().contains(AUDIO_TRACK_COMPLETE) && (Boolean) progress.getValue()) {
                 progressDTO.setCompleted(true);
@@ -68,12 +69,21 @@ public class PCMProgressConverter {
         return progressDTO;
     }
 
-    private static void extractProductAndMediaItem(ProgressDTO progressDTO, String key, pcmProgressParserDto dto) {
-        if (key.contains(dto.getProductCode()) && key.contains(dto.getMediaItem())) {
+    private static void extractProductAndMediaItem(ProgressDTO progressDTO, String key, pcmProgressParserDto currentMediaItemProgress) {
+        //com.edt.models::MediaItemHistory_17892 9781 4423 1603 4 40339#lastAudioPosMillis
+        if (key.contains(currentMediaItemProgress.getProductCode()) && key.contains(currentMediaItemProgress.getMediaItem())) {
             progressDTO.setCurrent(true);
         }
-        progressDTO.setProductCode(dto.getProductCode());
-        progressDTO.setMediaItemId(Integer.parseInt(dto.getMediaItem()));
+
+        String s = key.split("#")[0];
+        int customerIdIndex = s.indexOf(currentMediaItemProgress.getCustomerId());
+        int productCodeIndex = customerIdIndex + currentMediaItemProgress.getCustomerId().length();
+        int mediaItemIndex = productCodeIndex + PRODUCT_CODE_LENGTH;
+        String code = s.substring(productCodeIndex, mediaItemIndex);
+        String mediaItem = s.substring(mediaItemIndex);
+
+        progressDTO.setProductCode(code);
+        progressDTO.setMediaItemId(Integer.parseInt(mediaItem));
     }
 
     private static boolean hasKeyWord(UserAppStateDatum progress) {

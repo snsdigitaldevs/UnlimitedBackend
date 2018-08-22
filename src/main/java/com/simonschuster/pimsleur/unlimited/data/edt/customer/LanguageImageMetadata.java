@@ -1,5 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.data.edt.customer;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -18,6 +19,8 @@ public class LanguageImageMetadata {
     private String credits;
     @JsonProperty("imageFilePath")
     private String imageFilePath;
+    @JsonIgnore
+    private String location;
 
     @JsonProperty("imageFileName")
     public String getImageFileName() {
@@ -49,4 +52,11 @@ public class LanguageImageMetadata {
         this.imageFilePath = imageFilePath;
     }
 
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
 }

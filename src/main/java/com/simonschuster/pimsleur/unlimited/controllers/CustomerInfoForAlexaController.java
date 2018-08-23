@@ -39,8 +39,6 @@ public class CustomerInfoForAlexaController {
     public CustomerInfoDTO getCustomerInfo(@RequestParam(value = "sub") String sub)
             throws IOException {
         //Kelly K will handle email missing for Alexa.
-//        AggregatedCustomerInfo customerInfo = edtCustomerInfoService.getCustomerInfos(sub, ALEXA_STORE_DOMAIN, "");
-//        CustomerInfoDTO customerInfoDTO = customerInfo.toDto();
         CustomerInfoDTO customerInfoDTO = edtCustomerInfoService.getCustomerInfoDTO(sub, ALEXA_STORE_DOMAIN, "");
         customerInfoDTO.getProductActivations().forEach(activation -> { String productCode = activation.getProductCode();
             if(activation.getChildProductCodesString() != null){

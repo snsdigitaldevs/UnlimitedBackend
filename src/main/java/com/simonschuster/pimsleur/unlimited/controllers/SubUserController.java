@@ -2,7 +2,11 @@ package com.simonschuster.pimsleur.unlimited.controllers;
 
 import com.simonschuster.pimsleur.unlimited.common.exception.ParamInvalidException;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.SubUserDto;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.CustomerInfo;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.Registrant;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.ResultData;
 import com.simonschuster.pimsleur.unlimited.data.edt.customerinfo.SubUserInfo;
+import com.simonschuster.pimsleur.unlimited.services.customer.EDTCustomerInfoService;
 import com.simonschuster.pimsleur.unlimited.services.customer.SubUserService;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
@@ -10,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.UnsupportedEncodingException;
+import java.util.List;
 
 import static com.simonschuster.pimsleur.unlimited.utils.EdtResponseCode.*;
 
@@ -18,6 +23,21 @@ public class SubUserController {
 
     @Autowired
     SubUserService subUserService;
+
+    @Autowired
+    EDTCustomerInfoService edtCustomerInfoService;
+
+    @ApiOperation(value = "Get all sub users for a customer")
+    @RequestMapping(value = "/appUsers", method = RequestMethod.GET)
+    public List<SubUserDto> getCustomerSubUsers(@RequestParam(value = "sub") String sub,
+                                                @RequestParam(value = "storeDomain", required = false, defaultValue = "") String storeDomain,
+                                                @RequestParam(value = "email", required = false, defaultValue = "") String email){
+        CustomerInfo customerInfos = edtCustomerInfoService
+                .getPuAndPCMCustomerInfos(sub, storeDomain, email);
+        ResultData resultData = customerInfos.getResultData();
+        Registrant registrant = resultData.getRegistrant();
+        return registrant.getSubUsers();
+    }
 
     @ApiOperation(value = "Create new sub user")
     @PostMapping(value = "customers/{customerId}/appUsers")

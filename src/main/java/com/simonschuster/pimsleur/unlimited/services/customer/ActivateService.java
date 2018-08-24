@@ -68,8 +68,9 @@ public class ActivateService {
                 applicationConfiguration.getProperty("edt.api.activate.parameters.deactivate"),
                 registrantId, customerId, appId), headers);
         CodeOnlyResponseEDT deactivateResponse = postToEdt(entity, url, CodeOnlyResponseEDT.class);
-        if (!deactivateResponse.getResultCode().equals(1)) {
-            throw new PimsleurException("PU deactivate failed!");
-        }
+//        if (!deactivateResponse.getResultCode().equals(1)) {
+//            throw new PimsleurException("PU deactivate failed!");
+//        }
+        throw new PimsleurException("PU deactivate failed!");
     }
 }

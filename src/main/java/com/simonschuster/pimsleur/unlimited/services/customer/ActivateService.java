@@ -40,10 +40,16 @@ public class ActivateService {
                                             String registrantName,
                                             String identityVerificationToken, String url, HttpHeaders headers, String isbn, String storeDomain) {
         String appId = appIdService.getAppId(storeDomain);
-        HttpEntity<String> entity = new HttpEntity<>(String.format(
+        String format = String.format(
                 applicationConfiguration.getProperty("edt.api.activate.parameters.activate"),
                 identityVerificationToken, registrantId, isbn, appId, registrantName
-        ), headers);
+        );
+        if(registrantName == null || registrantName.equals("")){
+            int index = format.indexOf("&nfua=");
+            format = format.substring(0, index);
+        }
+
+        HttpEntity<String> entity = new HttpEntity<>(format, headers);
         Activate activateResponse = postToEdt(entity, url, Activate.class);
         Integer resultCode = activateResponse.getResultCode();
         Boolean isActivated = resultCode.equals(1);

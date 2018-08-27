@@ -44,7 +44,7 @@ public class ActivateService {
                 applicationConfiguration.getProperty("edt.api.activate.parameters.activate"),
                 identityVerificationToken, registrantId, isbn, appId, registrantName
         );
-        if(registrantName == null || registrantName.equals("")){
+        if(registrantName == null || registrantName.equals("") || registrantName.equals("null") ){
             int index = format.indexOf("&nfua=");
             format = format.substring(0, index);
         }

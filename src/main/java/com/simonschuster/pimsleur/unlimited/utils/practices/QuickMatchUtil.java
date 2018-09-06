@@ -151,7 +151,8 @@ public class QuickMatchUtil {
         String transliteration = record.isSet("Transliteration") ? record.get("Transliteration") : "";
         String snippetName = getSnippetName(record, headerMap, quickMatchAudioBaseFileName);
 
-        QuickMatchItem quickMatchItem = new QuickMatchItem(record.get("Cue"),
+        String cue = record.isSet("Cue") ? record.get("Cue") : (record.isSet("Cue / Response Phrase") ? record.get("Cue / Response Phrase") : "");
+        QuickMatchItem quickMatchItem = new QuickMatchItem(cue,
                 transliteration, quickMatchAudioBaseUrl + snippetName);
 
         String qzWithoutGroup = qz.split("_")[0];

@@ -5,7 +5,6 @@ import com.simonschuster.pimsleur.unlimited.data.edt.customer.OrdersProduct;
 import java.util.List;
 
 public class PcmProduct {
-    private OrdersProduct orderProduct;
     private Integer customersId;
     private String customerToken;
     private List<OrdersProduct> ordersProducts;
@@ -16,14 +15,6 @@ public class PcmProduct {
 
     public void setOrdersProducts(List<OrdersProduct> ordersProducts) {
         this.ordersProducts = ordersProducts;
-    }
-
-    public void setOrderProduct(OrdersProduct orderProduct) {
-        this.orderProduct = orderProduct;
-    }
-
-    public OrdersProduct getOrderProduct() {
-        return orderProduct;
     }
 
     public void setCustomersId(Integer customersId) {

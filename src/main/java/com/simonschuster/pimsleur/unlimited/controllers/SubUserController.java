@@ -1,7 +1,9 @@
 package com.simonschuster.pimsleur.unlimited.controllers;
 
 import com.simonschuster.pimsleur.unlimited.common.exception.ParamInvalidException;
+import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.SimpleCustomerInfoDTO;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.SubUserDto;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.Customer;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.CustomerInfo;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.Registrant;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.ResultData;
@@ -14,7 +16,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.UnsupportedEncodingException;
-import java.util.List;
 
 import static com.simonschuster.pimsleur.unlimited.utils.EdtResponseCode.*;
 
@@ -29,14 +30,19 @@ public class SubUserController {
 
     @ApiOperation(value = "Get all sub users for a customer")
     @RequestMapping(value = "/appUsers", method = RequestMethod.GET)
-    public List<SubUserDto> getCustomerSubUsers(@RequestParam(value = "sub") String sub,
-                                                @RequestParam(value = "storeDomain", required = false, defaultValue = "") String storeDomain,
-                                                @RequestParam(value = "email", required = false, defaultValue = "") String email){
+    public SimpleCustomerInfoDTO getCustomerSubUsers(@RequestParam(value = "sub") String sub,
+                                                     @RequestParam(value = "storeDomain", required = false, defaultValue = "") String storeDomain,
+                                                     @RequestParam(value = "email", required = false, defaultValue = "") String email){
         CustomerInfo customerInfos = edtCustomerInfoService
                 .getPuAndPCMCustomerInfos(sub, storeDomain, email);
         ResultData resultData = customerInfos.getResultData();
         Registrant registrant = resultData.getRegistrant();
-        return registrant.getSubUsers();
+        SimpleCustomerInfoDTO dto = new SimpleCustomerInfoDTO();
+        dto.setSubUsers(registrant.getSubUsers());
+        Customer customer = resultData.getCustomer();
+        dto.setHasPendingAndroid(customer.hasPendingAndroid());
+        dto.setHasPendingIos(customer.hasPendingIos());
+        return dto;
     }
 
     @ApiOperation(value = "Create new sub user")

@@ -40,6 +40,7 @@ public class SubUserController {
         SimpleCustomerInfoDTO dto = new SimpleCustomerInfoDTO();
         dto.setSubUsers(registrant.getSubUsers());
         Customer customer = resultData.getCustomer();
+        dto.setCustomerId(customer.getCustomersId().toString());
         dto.setHasPendingAndroid(customer.hasPendingAndroid());
         dto.setHasPendingIos(customer.hasPendingIos());
         return dto;

@@ -10,6 +10,7 @@ import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL;
 public class SimpleCustomerInfoDTO {
 
     private List<SubUserDto> subUsers;
+    private String customerId;
 
     private boolean hasPendingIos;
     private boolean hasPendingAndroid;
@@ -36,5 +37,13 @@ public class SimpleCustomerInfoDTO {
 
     public void setSubUsers(List<SubUserDto> subUsers) {
         this.subUsers = subUsers;
+    }
+
+    public String getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(String customerId) {
+        this.customerId = customerId;
     }
 }

@@ -3543,5 +3543,60 @@
     "ISBN13": 9781508276326,
     "In App Display Name": "Spanish Premium Subscription",
     "In App Description": "150 thirty-minute Premium Spanish language lessons subscription"
+  },
+  {
+    "ISBN13": 9781508279891,
+    "In App Display Name": "French Level 1 Lessons 6-10",
+    "In App Description": "5 thirty-minute French language lessons"
+  },
+  {
+    "ISBN13": 9781508279907,
+    "In App Display Name": "French Level 1 Lessons 11-15",
+    "In App Description": "5 thirty-minute French language lessons"
+  },
+  {
+    "ISBN13": 9781508279921,
+    "In App Display Name": "French Level 1 Lessons 16-20",
+    "In App Description": "5 thirty-minute French language lessons"
+  },
+  {
+    "ISBN13": 9781508279952,
+    "In App Display Name": "French Level 1 Lessons 21-25",
+    "In App Description": "5 thirty-minute French language lessons"
+  },
+  {
+    "ISBN13": 9781508279969,
+    "In App Display Name": "French Level 1 Lessons 26-30",
+    "In App Description": "5 thirty-minute French language lessons"
+  },
+  {
+    "ISBN13": 9781508279976,
+    "In App Display Name": "French Level 1",
+    "In App Description": "30 thirty-minute French language lessons"
+  },
+  {
+    "ISBN13": 9781508280002,
+    "In App Display Name": "French Level 1 Premium",
+    "In App Description": "30 thirty-minute Premium French language lessons"
+  },
+  {
+    "ISBN13": 9781508280019,
+    "In App Display Name": "French Level 1 Premium Upgrade",
+    "In App Description": "30 thirty-minute Premium French language lessons"
+  },
+  {
+    "ISBN13": 9781508280026,
+    "In App Display Name": "French Levels 1-2 Premium Upgrade",
+    "In App Description": "60 thirty-minute Premium French language lessons"
+  },
+  {
+    "ISBN13": 9781508280071,
+    "In App Display Name": "French Levels 1-5 Premium Upgrade",
+    "In App Description": "150 thirty-minute Premium French language lessons"
+  },
+  {
+    "ISBN13": 9781508280101,
+    "In App Display Name": "French Levels 1-4 Premium Upgrade",
+    "In App Description": "120 thirty-minute Premium French language lessons"
   }
 ]

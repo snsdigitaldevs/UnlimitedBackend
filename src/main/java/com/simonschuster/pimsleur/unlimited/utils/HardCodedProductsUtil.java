@@ -9,7 +9,7 @@ import static java.util.stream.Collectors.toList;
 
 public class HardCodedProductsUtil {
     public static List<AvailableProductDto> PU_FREE_LESSONS = asList(
-            new AvailableProductDto("French", "9781508243281", true),
+            new AvailableProductDto("French", "9781508279709", true),
             new AvailableProductDto("German", "9781508243298", true),
             new AvailableProductDto("Italian", "9781508243304", true),
             new AvailableProductDto("Spanish", "9781508243274", true),//!!

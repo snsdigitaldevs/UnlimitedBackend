@@ -1,0 +1,857 @@
+Rec #,Lang,ISBN-13,Course,Unit Num,start,stop,QZ #,line #,spkr,Cue,#of words,Q or S,Course Name (Source),Snippet Name,Skills
+1,FR,9781508261131,French 1,1,N/A,N/A,01Q,N/A,N/A,Excuse me.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_001.mp3,"10,13,16"
+2,FR,9781508261131,French 1,1,N/A,N/A,01R,N/A,N/A,Excusez-moi.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_002.mp3,"10,13,16"
+3,FR,9781508261131,French 1,1,N/A,N/A,02Q,N/A,N/A,Do you understand?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_003.mp3,"10,15"
+4,FR,9781508261131,French 1,1,N/A,N/A,02R,N/A,N/A,Est-ce que vous comprenez?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_004.mp3,"10,15"
+5,FR,9781508261131,French 1,1,N/A,N/A,03Q,N/A,N/A,You understand English.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_005.mp3,15
+6,FR,9781508261131,French 1,1,N/A,N/A,03R,N/A,N/A,Vous comprenez l'anglais.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_006.mp3,15
+7,FR,9781508261131,French 1,1,N/A,N/A,04Q,N/A,N/A,Do you understand English?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_007.mp3,"10,15"
+8,FR,9781508261131,French 1,1,N/A,N/A,04R,N/A,N/A,Est-ce que vous comprenez l’anglais?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_008.mp3,"10,15"
+9,FR,9781508261131,French 1,1,N/A,N/A,05Q,N/A,N/A,Are you American?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_009.mp3,"10,16"
+10,FR,9781508261131,French 1,1,N/A,N/A,05R,N/A,N/A,Est-ce que vous êtes américain?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_010.mp3,"10,16"
+11,FR,9781508261131,French 1,1,N/A,N/A,06Q,N/A,N/A,I don't understand.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_011.mp3,15
+12,FR,9781508261131,French 1,1,N/A,N/A,06R,N/A,N/A,Je ne comprends pas.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_012.mp3,15
+13,FR,9781508261131,French 1,1,N/A,N/A,07Q,N/A,N/A,I understand French a little.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_013.mp3,"10,15"
+14,FR,9781508261131,French 1,1,N/A,N/A,07R,N/A,N/A,Je comprends un peu le français.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_014.mp3,"10,15"
+15,FR,9781508261131,French 1,1,N/A,N/A,08Q,N/A,N/A,You are American.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_015.mp3,10
+16,FR,9781508261131,French 1,1,N/A,N/A,08R,N/A,N/A,Vous êtes américain.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_016.mp3,10
+17,FR,9781508261131,French 1,1,N/A,N/A,09Q,N/A,N/A,I don't understand English.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_017.mp3,"10,15,16"
+18,FR,9781508261131,French 1,1,N/A,N/A,09R,N/A,N/A,Je ne comprends pas l'anglais.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_018.mp3,"10,15,16"
+19,FR,9781508261131,French 1,2,N/A,N/A,01Q,N/A,N/A,"I am well, thanks",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_019.mp3,"8,10,13"
+20,FR,9781508261131,French 1,2,N/A,N/A,01R,N/A,N/A,"Je vais bien, merci.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_020.mp3,"8,10,13"
+21,FR,9781508261131,French 1,2,N/A,N/A,02Q,N/A,N/A,I understand French.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_021.mp3,"10,15"
+22,FR,9781508261131,French 1,2,N/A,N/A,02R,N/A,N/A,Je comprends le français.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_022.mp3,"10,15"
+23,FR,9781508261131,French 1,2,N/A,N/A,03Q,N/A,N/A,"Excuse me, sir.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_023.mp3,"10,13,16"
+24,FR,9781508261131,French 1,2,N/A,N/A,03R,N/A,N/A,"Pardon, monsieur.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_024.mp3,"10,13,16"
+25,FR,9781508261131,French 1,2,N/A,N/A,04Q,N/A,N/A,Are you well? / How are you?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_025.mp3,"8,10,15"
+26,FR,9781508261131,French 1,2,N/A,N/A,04R,N/A,N/A,Vous allez bien?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_026.mp3,"8,10,15"
+27,FR,9781508261131,French 1,2,N/A,N/A,05Q,N/A,N/A,"Good morning, ma’am.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_027.mp3,10
+28,FR,9781508261131,French 1,2,N/A,N/A,05R,N/A,N/A,"Bonjour, madame.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_028.mp3,10
+29,FR,9781508261131,French 1,2,N/A,N/A,06Q,N/A,N/A,"Very well, sir.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_029.mp3,10
+30,FR,9781508261131,French 1,2,N/A,N/A,06R,N/A,N/A,"Très bien, monsieur.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_030.mp3,10
+31,FR,9781508261131,French 1,2,N/A,N/A,07Q,N/A,N/A,You understand French.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_031.mp3,"10,15"
+32,FR,9781508261131,French 1,2,N/A,N/A,07R,N/A,N/A,Vous comprenez le français.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_032.mp3,"10,15"
+33,FR,9781508261131,French 1,2,N/A,N/A,08Q,N/A,N/A,"Very well, thank you.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_033.mp3,"8,10"
+34,FR,9781508261131,French 1,2,N/A,N/A,08R,N/A,N/A,"Très bien, merci.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_034.mp3,"8,10"
+35,FR,9781508261131,French 1,2,N/A,N/A,09Q,N/A,N/A,Not very well.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_035.mp3,"8,10"
+36,FR,9781508261131,French 1,2,N/A,N/A,09R,N/A,N/A,Pas très bien.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_036.mp3,"8,10"
+37,FR,9781508261131,French 1,2,N/A,N/A,10Q,N/A,N/A,I don't understand very well.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_037.mp3,"10,15,16"
+38,FR,9781508261131,French 1,2,N/A,N/A,10R,N/A,N/A,Je ne comprends pas très bien.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_038.mp3,"10,15,16"
+39,FR,9781508261131,French 1,2,N/A,N/A,11Q,N/A,N/A,Goodbye.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_039.mp3,10
+40,FR,9781508261131,French 1,2,N/A,N/A,11R,N/A,N/A,Au revoir.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_040.mp3,10
+41,FR,9781508261131,French 1,3,N/A,N/A,01Q,N/A,N/A,You speak very well.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_041.mp3,"10,15"
+42,FR,9781508261131,French 1,3,N/A,N/A,01R,N/A,N/A,Vous parlez très bien.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_042.mp3,"10,15"
+43,FR,9781508261131,French 1,3,N/A,N/A,02Q,N/A,N/A,Please.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_043.mp3,"13,16"
+44,FR,9781508261131,French 1,3,N/A,N/A,02R,N/A,N/A,S’il vous plaît.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_044.mp3,"13,16"
+45,FR,9781508261131,French 1,3,N/A,N/A,03Q,N/A,N/A,"I (m) am American, and you?",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_045.mp3,"10,16"
+46,FR,9781508261131,French 1,3,N/A,N/A,03R,N/A,N/A,"Je suis américain, et vous?",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_046.mp3,"10,16"
+47,FR,9781508261131,French 1,3,N/A,N/A,04Q,N/A,N/A,I'm (m) French.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_047.mp3,10
+48,FR,9781508261131,French 1,3,N/A,N/A,04R,N/A,N/A,Je suis français.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_048.mp3,10
+49,FR,9781508261131,French 1,3,N/A,N/A,05Q,N/A,N/A,Are you (f) French?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_049.mp3,10
+50,FR,9781508261131,French 1,3,N/A,N/A,05R,N/A,N/A,Est-ce que vous êtes française?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_050.mp3,10
+51,FR,9781508261131,French 1,3,N/A,N/A,06Q,N/A,N/A,I (f) am not French.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_051.mp3,10
+52,FR,9781508261131,French 1,3,N/A,N/A,06R,N/A,N/A,Je ne suis pas française.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_052.mp3,10
+53,FR,9781508261131,French 1,3,N/A,N/A,07Q,N/A,N/A,"The restrooms, please.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_053.mp3,16
+54,FR,9781508261131,French 1,3,N/A,N/A,07R,N/A,N/A,"Les toilettes, s’il vous plaît.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_054.mp3,16
+55,FR,9781508261131,French 1,3,N/A,N/A,08Q,N/A,N/A,You (f) are not American.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_055.mp3,10
+56,FR,9781508261131,French 1,3,N/A,N/A,08R,N/A,N/A,Vous n'êtes pas américaine.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_056.mp3,10
+57,FR,9781508261131,French 1,3,N/A,N/A,09Q,N/A,N/A,Do you understand French?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_057.mp3,"10,15"
+58,FR,9781508261131,French 1,3,N/A,N/A,09R,N/A,N/A,Est-ce que vous comprenez le français?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_058.mp3,"10,15"
+59,FR,9781508261131,French 1,4,N/A,N/A,01Q,N/A,N/A,You don’t understand English?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_059.mp3,"10,15,16"
+60,FR,9781508261131,French 1,4,N/A,N/A,01R,N/A,N/A,Vous ne comprenez pas l’anglais?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_060.mp3,"10,15,16"
+61,FR,9781508261131,French 1,4,N/A,N/A,02Q,N/A,N/A,You speak well.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_061.mp3,"10,15"
+62,FR,9781508261131,French 1,4,N/A,N/A,02R,N/A,N/A,Vous parlez bien.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_062.mp3,"10,15"
+63,FR,9781508261131,French 1,4,N/A,N/A,03Q,N/A,N/A,Where is the street?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_063.mp3,"4,16"
+64,FR,9781508261131,French 1,4,N/A,N/A,03R,N/A,N/A,Où est la rue?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_064.mp3,"4,16"
+65,FR,9781508261131,French 1,4,N/A,N/A,04Q,N/A,N/A,It's here.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_065.mp3,4
+66,FR,9781508261131,French 1,4,N/A,N/A,04R,N/A,N/A,C'est ici.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_066.mp3,4
+67,FR,9781508261131,French 1,4,N/A,N/A,05Q,N/A,N/A,Is it here?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_067.mp3,4
+68,FR,9781508261131,French 1,4,N/A,N/A,05R,N/A,N/A,Est-ce que c'est ici?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_068.mp3,4
+69,FR,9781508261131,French 1,4,N/A,N/A,06Q,N/A,N/A,It's not here.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_069.mp3,4
+70,FR,9781508261131,French 1,4,N/A,N/A,06R,N/A,N/A,Ce n'est pas ici.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_070.mp3,4
+71,FR,9781508261131,French 1,4,N/A,N/A,07Q,N/A,N/A,It’s over there.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_071.mp3,4
+72,FR,9781508261131,French 1,4,N/A,N/A,07R,N/A,N/A,C’est là-bas.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_072.mp3,4
+73,FR,9781508261131,French 1,4,N/A,N/A,08Q,N/A,N/A,It’s not down there.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_073.mp3,4
+74,FR,9781508261131,French 1,4,N/A,N/A,08R,N/A,N/A,Ce n’est pas là-bas.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_074.mp3,4
+75,FR,9781508261131,French 1,5,N/A,N/A,01Q,N/A,N/A,"It’s not here, it’s down there.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_075.mp3,4
+76,FR,9781508261131,French 1,5,N/A,N/A,01R,N/A,N/A,"Ce n’est pas ici, c’est là-bas.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_076.mp3,4
+77,FR,9781508261131,French 1,5,N/A,N/A,02Q,N/A,N/A,I understand French well.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_077.mp3,"15,16"
+78,FR,9781508261131,French 1,5,N/A,N/A,02R,N/A,N/A,Je comprends bien le français.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_078.mp3,"15,16"
+79,FR,9781508261131,French 1,5,N/A,N/A,03Q,N/A,N/A,I don’t want to.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_079.mp3,7
+80,FR,9781508261131,French 1,5,N/A,N/A,03R,N/A,N/A,Je ne veux pas.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_080.mp3,7
+81,FR,9781508261131,French 1,5,N/A,N/A,04Q,N/A,N/A,I don’t know.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_081.mp3,"9,15"
+82,FR,9781508261131,French 1,5,N/A,N/A,04R,N/A,N/A,Je ne sais pas.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_082.mp3,"9,15"
+83,FR,9781508261131,French 1,5,N/A,N/A,05Q,N/A,N/A,"Me, I know.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_083.mp3,"9,15"
+84,FR,9781508261131,French 1,5,N/A,N/A,05R,N/A,N/A,"Moi, je sais.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_084.mp3,"9,15"
+85,FR,9781508261131,French 1,5,N/A,N/A,06Q,N/A,N/A,"But yes, I know",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_085.mp3,"9,15"
+86,FR,9781508261131,French 1,5,N/A,N/A,06R,N/A,N/A,"Mais si, je sais.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_086.mp3,"9,15"
+87,FR,9781508261131,French 1,5,N/A,N/A,07Q,N/A,N/A,"Ah yes, I know.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_087.mp3,"9,15"
+88,FR,9781508261131,French 1,5,N/A,N/A,07R,N/A,N/A,"Ah si, je sais.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_088.mp3,"9,15"
+89,FR,9781508261131,French 1,5,N/A,N/A,08Q,N/A,N/A,Do you know?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_089.mp3,"9,15"
+90,FR,9781508261131,French 1,5,N/A,N/A,08R,N/A,N/A,Est-ce que vous savez?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_090.mp3,"9,15"
+91,FR,9781508261131,French 1,5,N/A,N/A,09Q,N/A,N/A,Do you want to eat something?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_091.mp3,6
+92,FR,9781508261131,French 1,5,N/A,N/A,09R,N/A,N/A,Est-ce que vous voulez manger quelque chose?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_092.mp3,6
+93,FR,9781508261131,French 1,5,N/A,N/A,10Q,N/A,N/A,I would like to drink something.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_093.mp3,6
+94,FR,9781508261131,French 1,5,N/A,N/A,10R,N/A,N/A,Je voudrais boire quelque chose.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_094.mp3,6
+95,FR,9781508261131,French 1,5,N/A,N/A,11Q,N/A,N/A,Are you well?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_095.mp3,8
+96,FR,9781508261131,French 1,5,N/A,N/A,11R,N/A,N/A,Est-ce que vous allez bien?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_096.mp3,8
+97,FR,9781508261131,French 1,6,N/A,N/A,01Q,N/A,N/A,"Next door, at the café.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_097.mp3,"4,6"
+98,FR,9781508261131,French 1,6,N/A,N/A,01R,N/A,N/A,"A côté, au café.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_098.mp3,"4,6"
+99,FR,9781508261131,French 1,6,N/A,N/A,02Q,N/A,N/A,With pleasure.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_099.mp3,13
+100,FR,9781508261131,French 1,6,N/A,N/A,02R,N/A,N/A,Avec plaisir.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_100.mp3,13
+101,FR,9781508261131,French 1,6,N/A,N/A,03Q,N/A,N/A,Where do you want to eat?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_101.mp3,6
+102,FR,9781508261131,French 1,6,N/A,N/A,03R,N/A,N/A,Où est-ce que vous voulez manger?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_102.mp3,6
+103,FR,9781508261131,French 1,6,N/A,N/A,04Q,N/A,N/A,When do you want to eat?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_103.mp3,"6,17"
+104,FR,9781508261131,French 1,6,N/A,N/A,04R,N/A,N/A,Quand est-ce que vous voulez manger?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_104.mp3,"6,17"
+105,FR,9781508261131,French 1,6,N/A,N/A,05Q,N/A,N/A,Later.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_105.mp3,17
+106,FR,9781508261131,French 1,6,N/A,N/A,05R,N/A,N/A,Plus tard.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_106.mp3,17
+107,FR,9781508261131,French 1,6,N/A,N/A,06Q,N/A,N/A,Not me.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_107.mp3,7
+108,FR,9781508261131,French 1,6,N/A,N/A,06R,N/A,N/A,Pas moi.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_108.mp3,7
+109,FR,9781508261131,French 1,6,N/A,N/A,07Q,N/A,N/A,Not here.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_109.mp3,4
+110,FR,9781508261131,French 1,6,N/A,N/A,07R,N/A,N/A,Pas ici.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_110.mp3,4
+111,FR,9781508261131,French 1,6,N/A,N/A,08Q,N/A,N/A,Not now.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_111.mp3,17
+112,FR,9781508261131,French 1,6,N/A,N/A,08R,N/A,N/A,Pas maintenant.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_112.mp3,17
+113,FR,9781508261131,French 1,6,N/A,N/A,09Q,N/A,N/A,Do you want to drink something next door?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_113.mp3,"4,6"
+114,FR,9781508261131,French 1,6,N/A,N/A,09R,N/A,N/A,Vous voulez boire quelque chose à côté?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_114.mp3,"4,6"
+115,FR,9781508261131,French 1,6,N/A,N/A,10Q,N/A,N/A,"Yes, I’d be glad to.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_115.mp3,7
+116,FR,9781508261131,French 1,6,N/A,N/A,10R,N/A,N/A,"Oui, je veux bien.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_116.mp3,7
+117,FR,9781508261131,French 1,6,N/A,N/A,11Q,N/A,N/A,Do you want to eat over there?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_117.mp3,"4,6"
+118,FR,9781508261131,French 1,6,N/A,N/A,11R,N/A,N/A,Vous voulez manger là-bas?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_118.mp3,"4,6"
+119,FR,9781508261131,French 1,6,N/A,N/A,12Q,N/A,N/A,Me too.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_119.mp3,7
+120,FR,9781508261131,French 1,6,N/A,N/A,12R,N/A,N/A,Moi aussi.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_120.mp3,7
+121,FR,9781508261131,French 1,7,N/A,N/A,01Q,N/A,N/A,Agreed. / All right.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_121.mp3,7
+122,FR,9781508261131,French 1,7,N/A,N/A,01R,N/A,N/A,D’accord.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_122.mp3,7
+123,FR,9781508261131,French 1,7,N/A,N/A,02Q,N/A,N/A,Some water and some wine.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_123.mp3,6
+124,FR,9781508261131,French 1,7,N/A,N/A,02R,N/A,N/A,De l’eau et du vin.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_124.mp3,6
+125,FR,9781508261131,French 1,7,N/A,N/A,03Q,N/A,N/A,At the restaurant.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_125.mp3,6
+126,FR,9781508261131,French 1,7,N/A,N/A,03R,N/A,N/A,Au restaurant.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_126.mp3,6
+127,FR,9781508261131,French 1,7,N/A,N/A,04Q,N/A,N/A,I would like to eat too.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_127.mp3,6
+128,FR,9781508261131,French 1,7,N/A,N/A,04R,N/A,N/A,Je voudrais manger aussi.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_128.mp3,6
+129,FR,9781508261131,French 1,7,N/A,N/A,05Q,N/A,N/A,I'd like to drink some wine.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_129.mp3,6
+130,FR,9781508261131,French 1,7,N/A,N/A,05R,N/A,N/A,Je voudrais boire du vin.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_130.mp3,6
+131,FR,9781508261131,French 1,7,N/A,N/A,06Q,N/A,N/A,I'd like some water.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_131.mp3,6
+132,FR,9781508261131,French 1,7,N/A,N/A,06R,N/A,N/A,Je voudrais de l’eau.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_132.mp3,6
+133,FR,9781508261131,French 1,7,N/A,N/A,07Q,N/A,N/A,I don’t want to eat here.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_133.mp3,"4,6"
+134,FR,9781508261131,French 1,7,N/A,N/A,07R,N/A,N/A,Je ne veux pas manger ici.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_134.mp3,"4,6"
+135,FR,9781508261131,French 1,7,N/A,N/A,08Q,N/A,N/A,Some beer.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_135.mp3,6
+136,FR,9781508261131,French 1,7,N/A,N/A,08R,N/A,N/A,De la bière.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_136.mp3,6
+137,FR,9781508261131,French 1,7,N/A,N/A,09Q,N/A,N/A,What do you want to drink?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_137.mp3,6
+138,FR,9781508261131,French 1,7,N/A,N/A,09R,N/A,N/A,Qu’est-ce que vous voulez boire?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_138.mp3,6
+139,FR,9781508261131,French 1,7,N/A,N/A,10Q,N/A,N/A,You don’t want to drink something?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_139.mp3,6
+140,FR,9781508261131,French 1,7,N/A,N/A,10R,N/A,N/A,Vous ne voulez pas boire quelque chose?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_140.mp3,6
+141,FR,9781508261131,French 1,8,N/A,N/A,01Q,N/A,N/A,"Two coffees, please.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_141.mp3,"6,12,13"
+142,FR,9781508261131,French 1,8,N/A,N/A,01R,N/A,N/A,"Deux cafés, s’il vous plaît.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_142.mp3,"6,12,13"
+143,FR,9781508261131,French 1,8,N/A,N/A,02Q,N/A,N/A,Do you want to drink something with me?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_143.mp3,6
+144,FR,9781508261131,French 1,8,N/A,N/A,02R,N/A,N/A,Est-ce que vous voulez boire quelque chose avec moi?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_144.mp3,6
+145,FR,9781508261131,French 1,8,N/A,N/A,03Q,N/A,N/A,Some water or some coffee?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_145.mp3,6
+146,FR,9781508261131,French 1,8,N/A,N/A,03R,N/A,N/A,De l’eau ou du café?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_146.mp3,6
+147,FR,9781508261131,French 1,8,N/A,N/A,04Q,N/A,N/A,I’d like to have lunch with you.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_147.mp3,"1,6"
+148,FR,9781508261131,French 1,8,N/A,N/A,04R,N/A,N/A,Je voudrais déjeuner avec vous.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_148.mp3,"1,6"
+149,FR,9781508261131,French 1,8,N/A,N/A,05Q,N/A,N/A,With whom?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_149.mp3,7
+150,FR,9781508261131,French 1,8,N/A,N/A,05R,N/A,N/A,Avec qui?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_150.mp3,7
+151,FR,9781508261131,French 1,8,N/A,N/A,06Q,N/A,N/A,With you?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_151.mp3,7
+152,FR,9781508261131,French 1,8,N/A,N/A,06R,N/A,N/A,Avec vous?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_152.mp3,7
+153,FR,9781508261131,French 1,8,N/A,N/A,07Q,N/A,N/A,With me?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_153.mp3,7
+154,FR,9781508261131,French 1,8,N/A,N/A,07R,N/A,N/A,Avec moi?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_154.mp3,7
+155,FR,9781508261131,French 1,8,N/A,N/A,08Q,N/A,N/A,What do you want to do?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_155.mp3,"1,10"
+156,FR,9781508261131,French 1,8,N/A,N/A,08R,N/A,N/A,Qu'est-ce que vous voulez faire?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_156.mp3,"1,10"
+157,FR,9781508261131,French 1,8,N/A,N/A,09Q,N/A,N/A,I’d like to buy something.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_157.mp3,"1,14"
+158,FR,9781508261131,French 1,8,N/A,N/A,09R,N/A,N/A,Je voudrais acheter quelque chose.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_158.mp3,"1,14"
+159,FR,9781508261131,French 1,8,N/A,N/A,10Q,N/A,N/A,A little later.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_159.mp3,17
+160,FR,9781508261131,French 1,8,N/A,N/A,10R,N/A,N/A,Un peu plus tard.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_160.mp3,17
+161,FR,9781508261131,French 1,8,N/A,N/A,11Q,N/A,N/A,Or some wine.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_161.mp3,6
+162,FR,9781508261131,French 1,8,N/A,N/A,11R,N/A,N/A,Ou du vin.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_162.mp3,6
+163,FR,9781508261131,French 1,8,N/A,N/A,12Q,N/A,N/A,What do you want to buy?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_163.mp3,14
+164,FR,9781508261131,French 1,8,N/A,N/A,12R,N/A,N/A,Qu’est-ce que vous voulez acheter?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_164.mp3,14
+165,FR,9781508261131,French 1,9,N/A,N/A,01Q,N/A,N/A,At nine o'clock.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_165.mp3,"12,17"
+166,FR,9781508261131,French 1,9,N/A,N/A,01R,N/A,N/A,A neuf heures.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_166.mp3,"12,17"
+167,FR,9781508261131,French 1,9,N/A,N/A,02Q,N/A,N/A,Certainly not.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_167.mp3,7
+168,FR,9781508261131,French 1,9,N/A,N/A,02R,N/A,N/A,Certainement pas.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_168.mp3,7
+169,FR,9781508261131,French 1,9,N/A,N/A,03Q,N/A,N/A,I understand now.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_169.mp3,"15,17"
+170,FR,9781508261131,French 1,9,N/A,N/A,03R,N/A,N/A,Je comprends maintenant.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_170.mp3,"15,17"
+171,FR,9781508261131,French 1,9,N/A,N/A,04Q,N/A,N/A,At what time?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_171.mp3,"16,17"
+172,FR,9781508261131,French 1,9,N/A,N/A,04R,N/A,N/A,À quelle heure?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_172.mp3,"16,17"
+173,FR,9781508261131,French 1,9,N/A,N/A,05Q,N/A,N/A,Do you know where St. Jacques Street is?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_173.mp3,4
+174,FR,9781508261131,French 1,9,N/A,N/A,05R,N/A,N/A,Est-ce que vous savez où est la rue St. Jacques?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_174.mp3,4
+175,FR,9781508261131,French 1,9,N/A,N/A,06Q,N/A,N/A,"It’s over there, on St. Jacques Street?",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_175.mp3,4
+176,FR,9781508261131,French 1,9,N/A,N/A,06R,N/A,N/A,"C’est là-bas, rue St. Jacques?",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_176.mp3,4
+177,FR,9781508261131,French 1,9,N/A,N/A,07Q,N/A,N/A,Where is the hotel St. Jacques?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_177.mp3,4
+178,FR,9781508261131,French 1,9,N/A,N/A,07R,N/A,N/A,Où est l’hôtel St. Jacques?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_178.mp3,4
+179,FR,9781508261131,French 1,9,N/A,N/A,08Q,N/A,N/A,I don’t know at what time.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_179.mp3,17
+180,FR,9781508261131,French 1,9,N/A,N/A,08R,N/A,N/A,Je ne sais pas à quelle heure.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_180.mp3,17
+181,FR,9781508261131,French 1,9,N/A,N/A,09Q,N/A,N/A,"One coffee, please.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_181.mp3,"12,13"
+182,FR,9781508261131,French 1,9,N/A,N/A,09R,N/A,N/A,"Un café, s’il vous plaît.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_182.mp3,"12,13"
+183,FR,9781508261131,French 1,9,N/A,N/A,10Q,N/A,N/A,Do you accept?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_183.mp3,7
+184,FR,9781508261131,French 1,9,N/A,N/A,10R,N/A,N/A,Vous voulez bien?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_184.mp3,7
+185,FR,9781508261131,French 1,9,N/A,N/A,11Q,N/A,N/A,I’d be glad to drink something with you.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_185.mp3,"1,6"
+186,FR,9781508261131,French 1,9,N/A,N/A,11R,N/A,N/A,Je veux bien boire quelque chose avec vous.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_186.mp3,"1,6"
+187,FR,9781508261131,French 1,10,N/A,N/A,01Q,N/A,N/A,"But, no!",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_187.mp3,7
+188,FR,9781508261131,French 1,10,N/A,N/A,01R,N/A,N/A,"Mais, non!",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_188.mp3,7
+189,FR,9781508261131,French 1,10,N/A,N/A,02Q,N/A,N/A,What time is it?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_189.mp3,17
+190,FR,9781508261131,French 1,10,N/A,N/A,02R,N/A,N/A,Il est quelle heure?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_190.mp3,17
+191,FR,9781508261131,French 1,10,N/A,N/A,03Q,N/A,N/A,Is it four o’clock?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_191.mp3,"12,17"
+192,FR,9781508261131,French 1,10,N/A,N/A,03R,N/A,N/A,Il est quatre heures?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_192.mp3,"12,17"
+193,FR,9781508261131,French 1,10,N/A,N/A,04Q,N/A,N/A,But not me.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_193.mp3,7
+194,FR,9781508261131,French 1,10,N/A,N/A,04R,N/A,N/A,Mais pas moi.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_194.mp3,7
+195,FR,9781508261131,French 1,10,N/A,N/A,05Q,N/A,N/A,Is it nine o’clock?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_195.mp3,"12,17"
+196,FR,9781508261131,French 1,10,N/A,N/A,05R,N/A,N/A,Il est neuf heures?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_196.mp3,"12,17"
+197,FR,9781508261131,French 1,10,N/A,N/A,06Q,N/A,N/A,Is it eight o’clock?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_197.mp3,"12,17"
+198,FR,9781508261131,French 1,10,N/A,N/A,06R,N/A,N/A,Il est huit heures?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_198.mp3,"12,17"
+199,FR,9781508261131,French 1,10,N/A,N/A,07Q,N/A,N/A,Is it three o’clock?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_199.mp3,"12,17"
+200,FR,9781508261131,French 1,10,N/A,N/A,07R,N/A,N/A,Il est trois heures?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_200.mp3,"12,17"
+201,FR,9781508261131,French 1,10,N/A,N/A,08Q,N/A,N/A,Where are you going to have lunch?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_201.mp3,"4,6"
+202,FR,9781508261131,French 1,10,N/A,N/A,08R,N/A,N/A,Où est-ce que vous allez déjeuner?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_202.mp3,"4,6"
+203,FR,9781508261131,French 1,10,N/A,N/A,09Q,N/A,N/A,When do you want to have lunch?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_203.mp3,"6,17"
+204,FR,9781508261131,French 1,10,N/A,N/A,09R,N/A,N/A,Quand est-ce que vous voulez déjeuner?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_204.mp3,"6,17"
+205,FR,9781508261131,French 1,10,N/A,N/A,10Q,N/A,N/A,I’m going to eat at eight o’clock.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_205.mp3,"6,17"
+206,FR,9781508261131,French 1,10,N/A,N/A,10R,N/A,N/A,Je vais manger à huit heures.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_206.mp3,"6,17"
+207,FR,9781508261131,French 1,10,N/A,N/A,11Q,N/A,N/A,I’m going to have lunch at my place.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_207.mp3,"1,4,6"
+208,FR,9781508261131,French 1,10,N/A,N/A,11R,N/A,N/A,Je vais déjeuner chez moi.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_208.mp3,"1,4,6"
+209,FR,9781508261131,French 1,10,N/A,N/A,12Q,N/A,N/A,I want to eat at my place.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_209.mp3,"1,4,6"
+210,FR,9781508261131,French 1,10,N/A,N/A,12R,N/A,N/A,Je veux manger chez moi.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_210.mp3,"1,4,6"
+211,FR,9781508261131,French 1,10,N/A,N/A,13Q,N/A,N/A,Are you going to have lunch with me?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_211.mp3,"1,6"
+212,FR,9781508261131,French 1,10,N/A,N/A,13R,N/A,N/A,Est-ce que vous allez déjeuner avec moi?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_212.mp3,"1,6"
+213,FR,9781508261131,French 1,10,N/A,N/A,14Q,N/A,N/A,I’m going to have lunch with you,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_213.mp3,"1,6"
+214,FR,9781508261131,French 1,10,N/A,N/A,14R,N/A,N/A,Je vais déjeuner avec vous.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_214.mp3,"1,6"
+215,FR,9781508261131,French 1,11,N/A,N/A,01Q,N/A,N/A,So / then at seven o’clock.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_215.mp3,"12,17"
+216,FR,9781508261131,French 1,11,N/A,N/A,01R,N/A,N/A,"Alors, à sept heures.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_216.mp3,"12,17"
+217,FR,9781508261131,French 1,11,N/A,N/A,02Q,N/A,N/A,"Today, and tomorrow, too.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_217.mp3,17
+218,FR,9781508261131,French 1,11,N/A,N/A,02R,N/A,N/A,"Aujourd’hui, et demain aussi.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_218.mp3,17
+219,FR,9781508261131,French 1,11,N/A,N/A,03Q,N/A,N/A,"Tonight, I’m going to have dinner at ten o’clock.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_219.mp3,"6,12,17"
+220,FR,9781508261131,French 1,11,N/A,N/A,03R,N/A,N/A,"Ce soir, je vais dîner à dix heures.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_220.mp3,"6,12,17"
+221,FR,9781508261131,French 1,11,N/A,N/A,04Q,N/A,N/A,"All right, but listen.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_221.mp3,7
+222,FR,9781508261131,French 1,11,N/A,N/A,04R,N/A,N/A,"D’accord, mais écoutez.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_222.mp3,7
+223,FR,9781508261131,French 1,11,N/A,N/A,05Q,N/A,N/A,"Tomorrow, I am going to have dinner with you.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_223.mp3,"1,6,17"
+224,FR,9781508261131,French 1,11,N/A,N/A,05R,N/A,N/A,"Demain, je vais dîner avec vous.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_224.mp3,"1,6,17"
+225,FR,9781508261131,French 1,11,N/A,N/A,06Q,N/A,N/A,Not at nine o’clock.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_225.mp3,"12,17"
+226,FR,9781508261131,French 1,11,N/A,N/A,06R,N/A,N/A,Pas à neuf heures.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_226.mp3,"12,17"
+227,FR,9781508261131,French 1,11,N/A,N/A,07Q,N/A,N/A,Tomorrow evening at seven o’clock.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_227.mp3,"12,17"
+228,FR,9781508261131,French 1,11,N/A,N/A,07R,N/A,N/A,Demain soir à sept heures.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_228.mp3,"12,17"
+229,FR,9781508261131,French 1,11,N/A,N/A,08Q,N/A,N/A,"Listen, I accept.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_229.mp3,13
+230,FR,9781508261131,French 1,11,N/A,N/A,08R,N/A,N/A,"Ecoutez, je veux bien.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_230.mp3,13
+231,FR,9781508261131,French 1,11,N/A,N/A,09Q,N/A,N/A,"Not today, tomorrow.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_231.mp3,17
+232,FR,9781508261131,French 1,11,N/A,N/A,09R,N/A,N/A,"Pas aujourd’hui, demain.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_232.mp3,17
+233,FR,9781508261131,French 1,11,N/A,N/A,10Q,N/A,N/A,See you tomorrow.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_233.mp3,"13,17"
+234,FR,9781508261131,French 1,11,N/A,N/A,10R,N/A,N/A,A demain.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_234.mp3,"13,17"
+235,FR,9781508261131,French 1,11,N/A,N/A,11Q,N/A,N/A,Do you know what time it is?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_235.mp3,17
+236,FR,9781508261131,French 1,11,N/A,N/A,11R,N/A,N/A,Vous savez quelle heure il est?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_236.mp3,17
+237,FR,9781508261131,French 1,11,N/A,N/A,12Q,N/A,N/A,"Repeat, please.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_237.mp3,"13,15"
+238,FR,9781508261131,French 1,11,N/A,N/A,12R,N/A,N/A,"Répétez, s’il vous plaît.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_238.mp3,"13,15"
+239,FR,9781508261131,French 1,11,N/A,N/A,13Q,N/A,N/A,I would like to have dinner this evening.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_239.mp3,"6,17"
+240,FR,9781508261131,French 1,11,N/A,N/A,13R,N/A,N/A,Je voudrais dîner ce soir.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_240.mp3,"6,17"
+241,FR,9781508261131,French 1,11,N/A,N/A,14Q,N/A,N/A,I’m going to have dinner this evening.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_241.mp3,"6,17"
+242,FR,9781508261131,French 1,11,N/A,N/A,14R,N/A,N/A,Je vais dîner ce soir.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_242.mp3,"6,17"
+243,FR,9781508261131,French 1,12,N/A,N/A,01Q,N/A,N/A,"Ah yes, pardon me.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_243.mp3,13
+244,FR,9781508261131,French 1,12,N/A,N/A,01R,N/A,N/A,"Ah oui, pardon.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_244.mp3,13
+245,FR,9781508261131,French 1,12,N/A,N/A,02Q,N/A,N/A,"How much is it, please?",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_245.mp3,"11,13,14"
+246,FR,9781508261131,French 1,12,N/A,N/A,02R,N/A,N/A,"C’est combien, s’il vous plaît?",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_246.mp3,"11,13,14"
+247,FR,9781508261131,French 1,12,N/A,N/A,03Q,N/A,N/A,"That makes how much, please?",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_247.mp3,"11,13,14"
+248,FR,9781508261131,French 1,12,N/A,N/A,03R,N/A,N/A,"Ça fait combien, s’il vous plaît?",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_248.mp3,"11,13,14"
+249,FR,9781508261131,French 1,12,N/A,N/A,04Q,N/A,N/A,That comes to eleven euros.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_249.mp3,"11,12"
+250,FR,9781508261131,French 1,12,N/A,N/A,04R,N/A,N/A,Ça fait onze euros.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_250.mp3,"11,12"
+251,FR,9781508261131,French 1,12,N/A,N/A,05Q,N/A,N/A,"How much do I owe you, please?",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_251.mp3,"11,13"
+252,FR,9781508261131,French 1,12,N/A,N/A,05R,N/A,N/A,"Je vous dois combien, s’il vous plaît?",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_252.mp3,"11,13"
+253,FR,9781508261131,French 1,12,N/A,N/A,06Q,N/A,N/A,You owe me twelve euros.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_253.mp3,"11,12"
+254,FR,9781508261131,French 1,12,N/A,N/A,06R,N/A,N/A,Vous me devez douze euros.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_254.mp3,"11,12"
+255,FR,9781508261131,French 1,12,N/A,N/A,07Q,N/A,N/A,I owe you twelve euros.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_255.mp3,"11,12"
+256,FR,9781508261131,French 1,12,N/A,N/A,07R,N/A,N/A,Je vous dois douze euros.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_256.mp3,"11,12"
+257,FR,9781508261131,French 1,12,N/A,N/A,08Q,N/A,N/A,"Seven and four, that makes eleven.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_257.mp3,12
+258,FR,9781508261131,French 1,12,N/A,N/A,08R,N/A,N/A,"Sept et quatre, ça fait onze.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_258.mp3,12
+259,FR,9781508261131,French 1,12,N/A,N/A,09Q,N/A,N/A,"Then, see you tomorrow.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_259.mp3,"13,17"
+260,FR,9781508261131,French 1,12,N/A,N/A,09R,N/A,N/A,"Alors, à demain.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_260.mp3,"13,17"
+261,FR,9781508261131,French 1,12,N/A,N/A,10Q,N/A,N/A,You’re not going to drink any wine?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_261.mp3,6
+262,FR,9781508261131,French 1,12,N/A,N/A,10R,N/A,N/A,Vous n’allez pas boire de vin?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_262.mp3,6
+263,FR,9781508261131,French 1,12,N/A,N/A,11Q,N/A,N/A,Not later?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_263.mp3,17
+264,FR,9781508261131,French 1,12,N/A,N/A,11R,N/A,N/A,Pas plus tard?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_264.mp3,17
+265,FR,9781508261131,French 1,12,N/A,N/A,12Q,N/A,N/A,I understand you.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_265.mp3,15
+266,FR,9781508261131,French 1,12,N/A,N/A,12R,N/A,N/A,Je vous comprends.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_266.mp3,15
+267,FR,9781508261131,French 1,12,N/A,N/A,13Q,N/A,N/A,No wine today.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_267.mp3,"6,17"
+268,FR,9781508261131,French 1,12,N/A,N/A,13R,N/A,N/A,Pas d’vin aujourd’hui.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_268.mp3,"6,17"
+269,FR,9781508261131,French 1,12,N/A,N/A,14Q,N/A,N/A,Thirteen euros.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_269.mp3,"11,12"
+270,FR,9781508261131,French 1,12,N/A,N/A,14R,N/A,N/A,Treize euros.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_270.mp3,"11,12"
+271,FR,9781508261131,French 1,12,N/A,N/A,15Q,N/A,N/A,Three euros.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_271.mp3,"11,12"
+272,FR,9781508261131,French 1,12,N/A,N/A,15R,N/A,N/A,Trois euros.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_272.mp3,"11,12"
+273,FR,9781508261131,French 1,12,N/A,N/A,16Q,N/A,N/A,Twelve euros.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_273.mp3,"11,12"
+274,FR,9781508261131,French 1,12,N/A,N/A,16R,N/A,N/A,Douze euros.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_274.mp3,"11,12"
+275,FR,9781508261131,French 1,12,N/A,N/A,17Q,N/A,N/A,Two euros.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_275.mp3,"11,12"
+276,FR,9781508261131,French 1,12,N/A,N/A,17R,N/A,N/A,Deux euros.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_276.mp3,"11,12"
+277,FR,9781508261131,French 1,13,N/A,N/A,01Q,N/A,N/A,"Then, it’s fourteen euros.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_277.mp3,"11,12"
+278,FR,9781508261131,French 1,13,N/A,N/A,01R,N/A,N/A,"Alors, c’est quatorze euros.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_278.mp3,"11,12"
+279,FR,9781508261131,French 1,13,N/A,N/A,02Q,N/A,N/A,How many euros do you have?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_279.mp3,11
+280,FR,9781508261131,French 1,13,N/A,N/A,02R,N/A,N/A,Vous avez combien d’euros?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_280.mp3,11
+281,FR,9781508261131,French 1,13,N/A,N/A,03Q,N/A,N/A,Do you have fifteen euros?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_281.mp3,"11,12"
+282,FR,9781508261131,French 1,13,N/A,N/A,03R,N/A,N/A,Est-ce que vous avez quinze euros?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_282.mp3,"11,12"
+283,FR,9781508261131,French 1,13,N/A,N/A,04Q,N/A,N/A,Do you want to pay now?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_283.mp3,"14,17"
+284,FR,9781508261131,French 1,13,N/A,N/A,04R,N/A,N/A,Est-ce que vous voulez payer maintenant?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_284.mp3,"14,17"
+285,FR,9781508261131,French 1,13,N/A,N/A,05Q,N/A,N/A,I’m listening.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_285.mp3,15
+286,FR,9781508261131,French 1,13,N/A,N/A,05R,N/A,N/A,J’écoute.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_286.mp3,15
+287,FR,9781508261131,French 1,13,N/A,N/A,06Q,N/A,N/A,I’m repeating.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_287.mp3,15
+288,FR,9781508261131,French 1,13,N/A,N/A,06R,N/A,N/A,Je répète.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_288.mp3,15
+289,FR,9781508261131,French 1,13,N/A,N/A,07Q,N/A,N/A,Good evening.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_289.mp3,"10,13"
+290,FR,9781508261131,French 1,13,N/A,N/A,07R,N/A,N/A,Bonsoir.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_290.mp3,"10,13"
+291,FR,9781508261131,French 1,13,N/A,N/A,08Q,N/A,N/A,I don’t have any euros.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_291.mp3,11
+292,FR,9781508261131,French 1,13,N/A,N/A,08R,N/A,N/A,Je n’ai pas d’euros.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_292.mp3,11
+293,FR,9781508261131,French 1,13,N/A,N/A,09Q,N/A,N/A,I don’t have one euro.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_293.mp3,"11,12"
+294,FR,9781508261131,French 1,13,N/A,N/A,09R,N/A,N/A,Je n’ai pas un euro.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_294.mp3,"11,12"
+295,FR,9781508261131,French 1,13,N/A,N/A,10Q,N/A,N/A,It comes to sixteen euros.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_295.mp3,"11,12"
+296,FR,9781508261131,French 1,13,N/A,N/A,10R,N/A,N/A,Ça fait seize euros.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_296.mp3,"11,12"
+297,FR,9781508261131,French 1,13,N/A,N/A,11Q,N/A,N/A,Do you have sixteen euros?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_297.mp3,"11,12"
+298,FR,9781508261131,French 1,13,N/A,N/A,11R,N/A,N/A,Vous avez seize euros?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_298.mp3,"11,12"
+299,FR,9781508261131,French 1,13,N/A,N/A,12Q,N/A,N/A,I would like to pay.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_299.mp3,"11,14"
+300,FR,9781508261131,French 1,13,N/A,N/A,12R,N/A,N/A,Je voudrais payer.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_300.mp3,"11,14"
+301,FR,9781508261131,French 1,13,N/A,N/A,13Q,N/A,N/A,I have a (credit) card.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_301.mp3,14
+302,FR,9781508261131,French 1,13,N/A,N/A,13R,N/A,N/A,J’ai une carte.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_302.mp3,14
+303,FR,9781508261131,French 1,13,N/A,N/A,14Q,N/A,N/A,I have fourteen euros.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_303.mp3,"11,12"
+304,FR,9781508261131,French 1,13,N/A,N/A,14R,N/A,N/A,J’ai quatorze euros.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_304.mp3,"11,12"
+305,FR,9781508261131,French 1,13,N/A,N/A,15Q,N/A,N/A,But not fifteen.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_305.mp3,"11,12"
+306,FR,9781508261131,French 1,13,N/A,N/A,15R,N/A,N/A,Mais pas quinze.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_306.mp3,"11,12"
+307,FR,9781508261131,French 1,13,N/A,N/A,16Q,N/A,N/A,I don’t understand you.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_307.mp3,"15,16"
+308,FR,9781508261131,French 1,13,N/A,N/A,16R,N/A,N/A,Je ne vous comprends pas.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_308.mp3,"15,16"
+309,FR,9781508261131,French 1,14,N/A,N/A,01Q,N/A,N/A,It’s a lot.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_309.mp3,11
+310,FR,9781508261131,French 1,14,N/A,N/A,01R,N/A,N/A,C’est beaucoup.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_310.mp3,11
+311,FR,9781508261131,French 1,14,N/A,N/A,02Q,N/A,N/A,I have a lot of euros.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_311.mp3,11
+312,FR,9781508261131,French 1,14,N/A,N/A,02R,N/A,N/A,J’ai beaucoup d’euros.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_312.mp3,11
+313,FR,9781508261131,French 1,14,N/A,N/A,03Q,N/A,N/A,I’m going to pay in euros.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_313.mp3,"11,14"
+314,FR,9781508261131,French 1,14,N/A,N/A,03R,N/A,N/A,Je vais payer en euros.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_314.mp3,"11,14"
+315,FR,9781508261131,French 1,14,N/A,N/A,04Q,N/A,N/A,Do you have some euros?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_315.mp3,11
+316,FR,9781508261131,French 1,14,N/A,N/A,04R,N/A,N/A,Est-ce que vous avez des euros?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_316.mp3,11
+317,FR,9781508261131,French 1,14,N/A,N/A,05Q,N/A,N/A,Give me nineteen euros.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_317.mp3,"11,12"
+318,FR,9781508261131,French 1,14,N/A,N/A,05R,N/A,N/A,Donnez-moi dix-neuf euros.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_318.mp3,"11,12"
+319,FR,9781508261131,French 1,14,N/A,N/A,06Q,N/A,N/A,I’m giving you seventeen euros.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_319.mp3,"11,12"
+320,FR,9781508261131,French 1,14,N/A,N/A,06R,N/A,N/A,Je vous donne dix-sept euros.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_320.mp3,"11,12"
+321,FR,9781508261131,French 1,14,N/A,N/A,07Q,N/A,N/A,I have no card with me.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_321.mp3,14
+322,FR,9781508261131,French 1,14,N/A,N/A,07R,N/A,N/A,Je n’ai pas de carte avec moi.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_322.mp3,14
+323,FR,9781508261131,French 1,14,N/A,N/A,08Q,N/A,N/A,I'd be glad to pay.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_323.mp3,14
+324,FR,9781508261131,French 1,14,N/A,N/A,08R,N/A,N/A,Je veux bien payer.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_324.mp3,14
+325,FR,9781508261131,French 1,14,N/A,N/A,09Q,N/A,N/A,Here you are.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_325.mp3,7
+326,FR,9781508261131,French 1,14,N/A,N/A,09R,N/A,N/A,Voilà.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_326.mp3,7
+327,FR,9781508261131,French 1,14,N/A,N/A,10Q,N/A,N/A,I don’t have many euros.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_327.mp3,11
+328,FR,9781508261131,French 1,14,N/A,N/A,10R,N/A,N/A,Je n’ai pas beaucoup d’euros.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_328.mp3,11
+329,FR,9781508261131,French 1,14,N/A,N/A,11Q,N/A,N/A,What are you going to do?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_329.mp3,1
+330,FR,9781508261131,French 1,14,N/A,N/A,11R,N/A,N/A,Qu’est-ce que vous allez faire?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_330.mp3,1
+331,FR,9781508261131,French 1,14,N/A,N/A,12Q,N/A,N/A,I’m going to pay by blue card.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_331.mp3,14
+332,FR,9781508261131,French 1,14,N/A,N/A,12R,N/A,N/A,Je vais payer par carte bleue.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_332.mp3,14
+333,FR,9781508261131,French 1,14,N/A,N/A,13Q,N/A,N/A,That’s not a lot.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_333.mp3,11
+334,FR,9781508261131,French 1,14,N/A,N/A,13R,N/A,N/A,Ce n’est pas beaucoup.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_334.mp3,11
+335,FR,9781508261131,French 1,15,N/A,N/A,01Q,N/A,N/A,How much is a beer?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_335.mp3,"6,11"
+336,FR,9781508261131,French 1,15,N/A,N/A,01R,N/A,N/A,"C’est combien, une bière?",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_336.mp3,"6,11"
+337,FR,9781508261131,French 1,15,N/A,N/A,02Q,N/A,N/A,I have some beers.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_337.mp3,6
+338,FR,9781508261131,French 1,15,N/A,N/A,02R,N/A,N/A,J’ai des bières.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_338.mp3,6
+339,FR,9781508261131,French 1,15,N/A,N/A,03Q,N/A,N/A,I can’t.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_339.mp3,7
+340,FR,9781508261131,French 1,15,N/A,N/A,03R,N/A,N/A,Je ne peux pas.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_340.mp3,7
+341,FR,9781508261131,French 1,15,N/A,N/A,04Q,N/A,N/A,I don't have any.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_341.mp3,7
+342,FR,9781508261131,French 1,15,N/A,N/A,04R,N/A,N/A,Je n’en ai pas.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_342.mp3,7
+343,FR,9781508261131,French 1,15,N/A,N/A,05Q,N/A,N/A,I don't have many.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_343.mp3,7
+344,FR,9781508261131,French 1,15,N/A,N/A,05R,N/A,N/A,Je n’en ai pas beaucoup.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_344.mp3,7
+345,FR,9781508261131,French 1,15,N/A,N/A,06Q,N/A,N/A,The beer is for me.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_345.mp3,6
+346,FR,9781508261131,French 1,15,N/A,N/A,06R,N/A,N/A,La bière est pour moi.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_346.mp3,6
+347,FR,9781508261131,French 1,15,N/A,N/A,07Q,N/A,N/A,"Yes, I have some.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_347.mp3,7
+348,FR,9781508261131,French 1,15,N/A,N/A,07R,N/A,N/A,"Oui, j’en ai.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_348.mp3,7
+349,FR,9781508261131,French 1,15,N/A,N/A,08Q,N/A,N/A,"Yes, I can.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_349.mp3,7
+350,FR,9781508261131,French 1,15,N/A,N/A,08R,N/A,N/A,"Oui, je peux.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_350.mp3,7
+351,FR,9781508261131,French 1,15,N/A,N/A,09Q,N/A,N/A,You want some.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_351.mp3,7
+352,FR,9781508261131,French 1,15,N/A,N/A,09R,N/A,N/A,Vous en voulez.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_352.mp3,7
+353,FR,9781508261131,French 1,15,N/A,N/A,10Q,N/A,N/A,You can’t?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_353.mp3,7
+354,FR,9781508261131,French 1,15,N/A,N/A,10R,N/A,N/A,Vous ne pouvez pas?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_354.mp3,7
+355,FR,9781508261131,French 1,15,N/A,N/A,11Q,N/A,N/A,Can you eat now?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_355.mp3,"6,17"
+356,FR,9781508261131,French 1,15,N/A,N/A,11R,N/A,N/A,Vous pouvez manger maintenant?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_356.mp3,"6,17"
+357,FR,9781508261131,French 1,15,N/A,N/A,12Q,N/A,N/A,You don’t have any change?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_357.mp3,11
+358,FR,9781508261131,French 1,15,N/A,N/A,12R,N/A,N/A,Vous n’avez pas de monnaie?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_358.mp3,11
+359,FR,9781508261131,French 1,15,N/A,N/A,13Q,N/A,N/A,Now I have some change.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_359.mp3,11
+360,FR,9781508261131,French 1,15,N/A,N/A,13R,N/A,N/A,Maintenant j’ai de la monnaie.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_360.mp3,11
+361,FR,9781508261131,French 1,15,N/A,N/A,14Q,N/A,N/A,Do you want to pay by card?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_361.mp3,14
+362,FR,9781508261131,French 1,15,N/A,N/A,14R,N/A,N/A,Est-ce que vous voulez payer par carte?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_362.mp3,14
+363,FR,9781508261131,French 1,15,N/A,N/A,15Q,N/A,N/A,But I don’t want any.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_363.mp3,7
+364,FR,9781508261131,French 1,15,N/A,N/A,15R,N/A,N/A,Mais je n’en veux pas.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_364.mp3,7
+365,FR,9781508261131,French 1,15,N/A,N/A,16Q,N/A,N/A,But I don’t want to.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_365.mp3,7
+366,FR,9781508261131,French 1,15,N/A,N/A,16R,N/A,N/A,Mais je ne veux pas.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_366.mp3,7
+367,FR,9781508261131,French 1,16,N/A,N/A,01Q,N/A,N/A,That’s a lot of money.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_367.mp3,11
+368,FR,9781508261131,French 1,16,N/A,N/A,01R,N/A,N/A,C’est beaucoup d’argent.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_368.mp3,11
+369,FR,9781508261131,French 1,16,N/A,N/A,02Q,N/A,N/A,That’s too much money.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_369.mp3,11
+370,FR,9781508261131,French 1,16,N/A,N/A,02R,N/A,N/A,C’est trop d’argent.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_370.mp3,11
+371,FR,9781508261131,French 1,16,N/A,N/A,03Q,N/A,N/A,Is that too much?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_371.mp3,7
+372,FR,9781508261131,French 1,16,N/A,N/A,03R,N/A,N/A,Est-ce que c’est trop?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_372.mp3,7
+373,FR,9781508261131,French 1,16,N/A,N/A,04Q,N/A,N/A,Do you have some money?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_373.mp3,11
+374,FR,9781508261131,French 1,16,N/A,N/A,04R,N/A,N/A,Est-ce que vous avez de l’argent?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_374.mp3,11
+375,FR,9781508261131,French 1,16,N/A,N/A,05Q,N/A,N/A,I have no money.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_375.mp3,11
+376,FR,9781508261131,French 1,16,N/A,N/A,05R,N/A,N/A,Je n’ai pas d’argent.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_376.mp3,11
+377,FR,9781508261131,French 1,16,N/A,N/A,06Q,N/A,N/A,I am going to give you a card.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_377.mp3,14
+378,FR,9781508261131,French 1,16,N/A,N/A,06R,N/A,N/A,Je vais vous donner une carte.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_378.mp3,14
+379,FR,9781508261131,French 1,16,N/A,N/A,07Q,N/A,N/A,What is it?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_379.mp3,7
+380,FR,9781508261131,French 1,16,N/A,N/A,07R,N/A,N/A,Qu’est-ce que c’est?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_380.mp3,7
+381,FR,9781508261131,French 1,16,N/A,N/A,08Q,N/A,N/A,How much money do you have?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_381.mp3,11
+382,FR,9781508261131,French 1,16,N/A,N/A,08R,N/A,N/A,Vous avez combien d’argent?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_382.mp3,11
+383,FR,9781508261131,French 1,16,N/A,N/A,09Q,N/A,N/A,It’s for you.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_383.mp3,7
+384,FR,9781508261131,French 1,16,N/A,N/A,09R,N/A,N/A,C’est pour vous.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_384.mp3,7
+385,FR,9781508261131,French 1,16,N/A,N/A,10Q,N/A,N/A,"You owe me nineteen euros, please.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_385.mp3,"11,12"
+386,FR,9781508261131,French 1,16,N/A,N/A,10R,N/A,N/A,"Vous me devez dix-neuf euros, s’il vous plaît.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_386.mp3,"11,12"
+387,FR,9781508261131,French 1,16,N/A,N/A,11Q,N/A,N/A,That’s enough.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_387.mp3,7
+388,FR,9781508261131,French 1,16,N/A,N/A,11R,N/A,N/A,Ça suffit.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_388.mp3,7
+389,FR,9781508261131,French 1,16,N/A,N/A,12Q,N/A,N/A,I can give you forty euros.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_389.mp3,"11,12"
+390,FR,9781508261131,French 1,16,N/A,N/A,12R,N/A,N/A,Je peux vous donner quarante euros.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_390.mp3,"11,12"
+391,FR,9781508261131,French 1,16,N/A,N/A,13Q,N/A,N/A,I would like forty-seven euros.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_391.mp3,"11,12"
+392,FR,9781508261131,French 1,16,N/A,N/A,13R,N/A,N/A,Je voudrais quarante-sept euros.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_392.mp3,"11,12"
+393,FR,9781508261131,French 1,16,N/A,N/A,14Q,N/A,N/A,I’m giving you twenty-eight euros,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_393.mp3,"11,12"
+394,FR,9781508261131,French 1,16,N/A,N/A,14R,N/A,N/A,Je vous donne vingt-huit euros.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_394.mp3,"11,12"
+395,FR,9781508261131,French 1,16,N/A,N/A,15Q,N/A,N/A,Thirty-five or forty-eight.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_395.mp3,12
+396,FR,9781508261131,French 1,16,N/A,N/A,15R,N/A,N/A,Trente-cinq ou quarante-huit.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_396.mp3,12
+397,FR,9781508261131,French 1,16,N/A,N/A,16Q,N/A,N/A,Twenty-five or thirty.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_397.mp3,12
+398,FR,9781508261131,French 1,16,N/A,N/A,16R,N/A,N/A,Vingt-cinq ou trente.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_398.mp3,12
+399,FR,9781508261131,French 1,17,N/A,N/A,01Q,N/A,N/A,Is it enough money?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_399.mp3,11
+400,FR,9781508261131,French 1,17,N/A,N/A,01R,N/A,N/A,C’est assez d’argent?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_400.mp3,11
+401,FR,9781508261131,French 1,17,N/A,N/A,02Q,N/A,N/A,That's too expensive.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_401.mp3,14
+402,FR,9781508261131,French 1,17,N/A,N/A,02R,N/A,N/A,C’est trop cher.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_402.mp3,14
+403,FR,9781508261131,French 1,17,N/A,N/A,03Q,N/A,N/A,It’s not too difficult.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_403.mp3,7
+404,FR,9781508261131,French 1,17,N/A,N/A,03R,N/A,N/A,Ce n’est pas trop difficile.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_404.mp3,7
+405,FR,9781508261131,French 1,17,N/A,N/A,04Q,N/A,N/A,That’s not enough money.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_405.mp3,14
+406,FR,9781508261131,French 1,17,N/A,N/A,04R,N/A,N/A,Ce n’est pas assez d’argent.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_406.mp3,14
+407,FR,9781508261131,French 1,17,N/A,N/A,05Q,N/A,N/A,I don’t speak fast.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_407.mp3,15
+408,FR,9781508261131,French 1,17,N/A,N/A,05R,N/A,N/A,Je ne parle pas vite.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_408.mp3,15
+409,FR,9781508261131,French 1,17,N/A,N/A,06Q,N/A,N/A,Will that do? / Is that enough?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_409.mp3,14
+410,FR,9781508261131,French 1,17,N/A,N/A,06R,N/A,N/A,Est-ce que ça suffit?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_410.mp3,14
+411,FR,9781508261131,French 1,17,N/A,N/A,07Q,N/A,N/A,I have enough money.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_411.mp3,
+412,FR,9781508261131,French 1,17,N/A,N/A,07R,N/A,N/A,J’ai assez d’argent.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_412.mp3,
+413,FR,9781508261131,French 1,17,N/A,N/A,08Q,N/A,N/A,I don’t have enough.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_413.mp3,14
+414,FR,9781508261131,French 1,17,N/A,N/A,08R,N/A,N/A,Je n’en ai pas assez.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_414.mp3,14
+415,FR,9781508261131,French 1,17,N/A,N/A,09Q,N/A,N/A,I can give you some.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_415.mp3,7
+416,FR,9781508261131,French 1,17,N/A,N/A,09R,N/A,N/A,Je peux vous en donner.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_416.mp3,7
+417,FR,9781508261131,French 1,17,N/A,N/A,10Q,N/A,N/A,You speak very fast.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_417.mp3,15
+418,FR,9781508261131,French 1,17,N/A,N/A,10R,N/A,N/A,Vous parlez très vite.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_418.mp3,15
+419,FR,9781508261131,French 1,17,N/A,N/A,11Q,N/A,N/A,Fifty-one or sixty-five.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_419.mp3,12
+420,FR,9781508261131,French 1,17,N/A,N/A,11R,N/A,N/A,Cinquante et un ou soixante-cinq.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_420.mp3,12
+421,FR,9781508261131,French 1,17,N/A,N/A,12Q,N/A,N/A,The wine is too expensive.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_421.mp3,"6,14"
+422,FR,9781508261131,French 1,17,N/A,N/A,12R,N/A,N/A,Le vin est trop cher.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_422.mp3,"6,14"
+423,FR,9781508261131,French 1,17,N/A,N/A,13Q,N/A,N/A,You speak too fast.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_423.mp3,15
+424,FR,9781508261131,French 1,17,N/A,N/A,13R,N/A,N/A,Vous parlez trop vite.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_424.mp3,15
+425,FR,9781508261131,French 1,17,N/A,N/A,14Q,N/A,N/A,Thirty-three or forty four.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_425.mp3,12
+426,FR,9781508261131,French 1,17,N/A,N/A,14R,N/A,N/A,Trente-trois ou quarante-quatre.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_426.mp3,12
+427,FR,9781508261131,French 1,18,N/A,N/A,01Q,N/A,N/A,With me and my wife.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_427.mp3,5
+428,FR,9781508261131,French 1,18,N/A,N/A,01R,N/A,N/A,Avec moi et ma femme.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_428.mp3,5
+429,FR,9781508261131,French 1,18,N/A,N/A,02Q,N/A,N/A,It’s more expensive.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_429.mp3,14
+430,FR,9781508261131,French 1,18,N/A,N/A,02R,N/A,N/A,C’est plus cher.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_430.mp3,14
+431,FR,9781508261131,French 1,18,N/A,N/A,03Q,N/A,N/A,That’s your wife.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_431.mp3,5
+432,FR,9781508261131,French 1,18,N/A,N/A,03R,N/A,N/A,C’est votre femme.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_432.mp3,5
+433,FR,9781508261131,French 1,18,N/A,N/A,04Q,N/A,N/A,I’m going to have dinner with my husband this evening.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_433.mp3,"1,5,6,17"
+434,FR,9781508261131,French 1,18,N/A,N/A,04R,N/A,N/A,Je vais dîner avec mon mari ce soir.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_434.mp3,"1,5,6,17"
+435,FR,9781508261131,French 1,18,N/A,N/A,05Q,N/A,N/A,My husband is over there.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_435.mp3,"4,5"
+436,FR,9781508261131,French 1,18,N/A,N/A,05R,N/A,N/A,Mon mari est là-bas.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_436.mp3,"4,5"
+437,FR,9781508261131,French 1,18,N/A,N/A,06Q,N/A,N/A,My wife is over there.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_437.mp3,"4,5"
+438,FR,9781508261131,French 1,18,N/A,N/A,06R,N/A,N/A,Ma femme est là-bas.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_438.mp3,"4,5"
+439,FR,9781508261131,French 1,18,N/A,N/A,07Q,N/A,N/A,My husband doesn’t speak French.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_439.mp3,"5,15"
+440,FR,9781508261131,French 1,18,N/A,N/A,07R,N/A,N/A,Mon mari ne parle pas français.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_440.mp3,"5,15"
+441,FR,9781508261131,French 1,18,N/A,N/A,08Q,N/A,N/A,Where’s my wife?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_441.mp3,"4,5"
+442,FR,9781508261131,French 1,18,N/A,N/A,08R,N/A,N/A,Où est ma femme?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_442.mp3,"4,5"
+443,FR,9781508261131,French 1,18,N/A,N/A,09Q,N/A,N/A,Speak more quickly.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_443.mp3,15
+444,FR,9781508261131,French 1,18,N/A,N/A,09R,N/A,N/A,Parlez plus vite.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_444.mp3,15
+445,FR,9781508261131,French 1,18,N/A,N/A,10Q,N/A,N/A,What does your wife want to do?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_445.mp3,"1,5"
+446,FR,9781508261131,French 1,18,N/A,N/A,10R,N/A,N/A,Qu’est-ce que votre femme veut faire?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_446.mp3,"1,5"
+447,FR,9781508261131,French 1,18,N/A,N/A,11Q,N/A,N/A,What does your husband want to drink?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_447.mp3,"5,6"
+448,FR,9781508261131,French 1,18,N/A,N/A,11R,N/A,N/A,Qu’est-ce que votre mari veut boire?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_448.mp3,"5,6"
+449,FR,9781508261131,French 1,18,N/A,N/A,12Q,N/A,N/A,Here’s your wife.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_449.mp3,5
+450,FR,9781508261131,French 1,18,N/A,N/A,12R,N/A,N/A,Voilà votre femme.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_450.mp3,5
+451,FR,9781508261131,French 1,18,N/A,N/A,13Q,N/A,N/A,Your husband can eat something.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_451.mp3,"5,6"
+452,FR,9781508261131,French 1,18,N/A,N/A,13R,N/A,N/A,Votre mari peut manger quelque chose.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_452.mp3,"5,6"
+453,FR,9781508261131,French 1,18,N/A,N/A,14Q,N/A,N/A,Don’t speak too fast!,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_453.mp3,15
+454,FR,9781508261131,French 1,18,N/A,N/A,14R,N/A,N/A,Ne parlez pas trop vite!,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_454.mp3,15
+455,FR,9781508261131,French 1,18,N/A,N/A,15Q,N/A,N/A,My husband wants to drink some coffee.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_455.mp3,"5,6"
+456,FR,9781508261131,French 1,18,N/A,N/A,15R,N/A,N/A,Mon mari veut boire du café.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_456.mp3,"5,6"
+457,FR,9781508261131,French 1,18,N/A,N/A,16Q,N/A,N/A,My husband would like a coffee.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_457.mp3,"5,6"
+458,FR,9781508261131,French 1,18,N/A,N/A,16R,N/A,N/A,Mon mari voudrait un café.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_458.mp3,"5,6"
+459,FR,9781508261131,French 1,19,N/A,N/A,01Q,N/A,N/A,It’s much too difficult.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_459.mp3,7
+460,FR,9781508261131,French 1,19,N/A,N/A,01R,N/A,N/A,C’est beaucoup trop difficile.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_460.mp3,7
+461,FR,9781508261131,French 1,19,N/A,N/A,02Q,N/A,N/A,"Come in, please.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_461.mp3,13
+462,FR,9781508261131,French 1,19,N/A,N/A,02R,N/A,N/A,"Entrez, s’il vous plaît.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_462.mp3,13
+463,FR,9781508261131,French 1,19,N/A,N/A,03Q,N/A,N/A,Pleased (f) to meet you.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_463.mp3,"10,13"
+464,FR,9781508261131,French 1,19,N/A,N/A,03R,N/A,N/A,Enchantée.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_464.mp3,"10,13"
+465,FR,9781508261131,French 1,19,N/A,N/A,04Q,N/A,N/A,Does she speak French?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_465.mp3,15
+466,FR,9781508261131,French 1,19,N/A,N/A,04R,N/A,N/A,Est-ce qu’elle parle français?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_466.mp3,15
+467,FR,9781508261131,French 1,19,N/A,N/A,05Q,N/A,N/A,She’s around.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_467.mp3,"4,9"
+468,FR,9781508261131,French 1,19,N/A,N/A,05R,N/A,N/A,Elle est là.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_468.mp3,"4,9"
+469,FR,9781508261131,French 1,19,N/A,N/A,06Q,N/A,N/A,I live here.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_469.mp3,"4,10"
+470,FR,9781508261131,French 1,19,N/A,N/A,06R,N/A,N/A,J’habite ici.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_470.mp3,"4,10"
+471,FR,9781508261131,French 1,19,N/A,N/A,07Q,N/A,N/A,"We can drink something, and talk.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_471.mp3,"1,6"
+472,FR,9781508261131,French 1,19,N/A,N/A,07R,N/A,N/A,"On peut boire quelque chose, et parler.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_472.mp3,"1,6"
+473,FR,9781508261131,French 1,19,N/A,N/A,08Q,N/A,N/A,What would she like to drink?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_473.mp3,6
+474,FR,9781508261131,French 1,19,N/A,N/A,08R,N/A,N/A,Qu’est-ce qu’elle voudrait boire?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_474.mp3,6
+475,FR,9781508261131,French 1,19,N/A,N/A,09Q,N/A,N/A,What does he want to drink?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_475.mp3,6
+476,FR,9781508261131,French 1,19,N/A,N/A,09R,N/A,N/A,Qu’est-ce qu’il veut boire?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_476.mp3,6
+477,FR,9781508261131,French 1,19,N/A,N/A,10Q,N/A,N/A,My wife and I.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_477.mp3,5
+478,FR,9781508261131,French 1,19,N/A,N/A,10R,N/A,N/A,Ma femme et moi.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_478.mp3,5
+479,FR,9781508261131,French 1,19,N/A,N/A,11Q,N/A,N/A,You live here.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_479.mp3,"4,9"
+480,FR,9781508261131,French 1,19,N/A,N/A,11R,N/A,N/A,Vous habitez ici.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_480.mp3,"4,9"
+481,FR,9781508261131,French 1,19,N/A,N/A,12Q,N/A,N/A,He’s around.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_481.mp3,"4,9"
+482,FR,9781508261131,French 1,19,N/A,N/A,12R,N/A,N/A,Il est là.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_482.mp3,"4,9"
+483,FR,9781508261131,French 1,19,N/A,N/A,13Q,N/A,N/A,He’s not around.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_483.mp3,"4,9"
+484,FR,9781508261131,French 1,19,N/A,N/A,13R,N/A,N/A,Il n’est pas là.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_484.mp3,"4,9"
+485,FR,9781508261131,French 1,19,N/A,N/A,14Q,N/A,N/A,Where do you live?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_485.mp3,9
+486,FR,9781508261131,French 1,19,N/A,N/A,14R,N/A,N/A,Où est-ce que vous habitez?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_486.mp3,9
+487,FR,9781508261131,French 1,19,N/A,N/A,15Q,N/A,N/A,We live here.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_487.mp3,"4,9"
+488,FR,9781508261131,French 1,19,N/A,N/A,15R,N/A,N/A,On habite ici.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_488.mp3,"4,9"
+489,FR,9781508261131,French 1,19,N/A,N/A,16Q,N/A,N/A,We’d like to drink tea.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_489.mp3,6
+490,FR,9781508261131,French 1,19,N/A,N/A,16R,N/A,N/A,On voudrait boire du thé.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_490.mp3,6
+491,FR,9781508261131,French 1,19,N/A,N/A,17Q,N/A,N/A,We can also drink tea.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_491.mp3,6
+492,FR,9781508261131,French 1,19,N/A,N/A,17R,N/A,N/A,On peut aussi boire du thé.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_492.mp3,6
+493,FR,9781508261131,French 1,19,N/A,N/A,18Q,N/A,N/A,She would like to drink tea.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_493.mp3,6
+494,FR,9781508261131,French 1,19,N/A,N/A,18R,N/A,N/A,Elle voudrait boire du thé.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_494.mp3,6
+495,FR,9781508261131,French 1,20,N/A,N/A,01Q,N/A,N/A,She is with the children.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_495.mp3,"5,9"
+496,FR,9781508261131,French 1,20,N/A,N/A,01R,N/A,N/A,Elle est avec les enfants.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_496.mp3,"5,9"
+497,FR,9781508261131,French 1,20,N/A,N/A,02Q,N/A,N/A,Do you have (any) children?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_497.mp3,"5,10"
+498,FR,9781508261131,French 1,20,N/A,N/A,02R,N/A,N/A,Est-ce que vous avez des enfants?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_498.mp3,"5,10"
+499,FR,9781508261131,French 1,20,N/A,N/A,03Q,N/A,N/A,He is in the United States.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_499.mp3,18
+500,FR,9781508261131,French 1,20,N/A,N/A,03R,N/A,N/A,Il est aux Etats-Unis.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_500.mp3,18
+501,FR,9781508261131,French 1,20,N/A,N/A,04Q,N/A,N/A,Where is she?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_501.mp3,4
+502,FR,9781508261131,French 1,20,N/A,N/A,04R,N/A,N/A,Elle est où?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_502.mp3,4
+503,FR,9781508261131,French 1,20,N/A,N/A,05Q,N/A,N/A,We have no children.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_503.mp3,"5,10"
+504,FR,9781508261131,French 1,20,N/A,N/A,05R,N/A,N/A,On n’a pas d’enfants.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_504.mp3,"5,10"
+505,FR,9781508261131,French 1,20,N/A,N/A,06Q,N/A,N/A,The girl is grown.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_505.mp3,5
+506,FR,9781508261131,French 1,20,N/A,N/A,06R,N/A,N/A,La fille est grande.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_506.mp3,5
+507,FR,9781508261131,French 1,20,N/A,N/A,07Q,N/A,N/A,We live in the United States.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_507.mp3,18
+508,FR,9781508261131,French 1,20,N/A,N/A,07R,N/A,N/A,On habite aux Etats-Unis.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_508.mp3,18
+509,FR,9781508261131,French 1,20,N/A,N/A,08Q,N/A,N/A,No girls.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_509.mp3,5
+510,FR,9781508261131,French 1,20,N/A,N/A,08R,N/A,N/A,Pas de filles.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_510.mp3,5
+511,FR,9781508261131,French 1,20,N/A,N/A,09Q,N/A,N/A,"Who, me?",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_511.mp3,7
+512,FR,9781508261131,French 1,20,N/A,N/A,09R,N/A,N/A,"Qui, moi?",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_512.mp3,7
+513,FR,9781508261131,French 1,20,N/A,N/A,10Q,N/A,N/A,How many children do you have?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_513.mp3,"5,10"
+514,FR,9781508261131,French 1,20,N/A,N/A,10R,N/A,N/A,Vous avez combien d’enfants?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_514.mp3,"5,10"
+515,FR,9781508261131,French 1,20,N/A,N/A,11Q,N/A,N/A,You live in the United States?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_515.mp3,"10,18"
+516,FR,9781508261131,French 1,20,N/A,N/A,11R,N/A,N/A,Vous habitez aux Etats-Unis?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_516.mp3,"10,18"
+517,FR,9781508261131,French 1,20,N/A,N/A,12Q,N/A,N/A,I don’t know where he is.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_517.mp3,"4,9"
+518,FR,9781508261131,French 1,20,N/A,N/A,12R,N/A,N/A,Je ne sais pas où il est.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_518.mp3,"4,9"
+519,FR,9781508261131,French 1,20,N/A,N/A,13Q,N/A,N/A,The children are big.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_519.mp3,5
+520,FR,9781508261131,French 1,20,N/A,N/A,13R,N/A,N/A,Les enfants sont grands.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_520.mp3,5
+521,FR,9781508261131,French 1,20,N/A,N/A,14Q,N/A,N/A,I accept some tea.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_521.mp3,6
+522,FR,9781508261131,French 1,20,N/A,N/A,14R,N/A,N/A,Je veux bien du thé.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_522.mp3,6
+523,FR,9781508261131,French 1,20,N/A,N/A,15Q,N/A,N/A,We can drink a Coke.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_523.mp3,6
+524,FR,9781508261131,French 1,20,N/A,N/A,15R,N/A,N/A,On peut boire un coca.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_524.mp3,6
+525,FR,9781508261131,French 1,21,N/A,N/A,01Q,N/A,N/A,She is too small.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_525.mp3,7
+526,FR,9781508261131,French 1,21,N/A,N/A,01R,N/A,N/A,Elle est trop petite.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_526.mp3,7
+527,FR,9781508261131,French 1,21,N/A,N/A,02Q,N/A,N/A,She is not in France with us.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_527.mp3,18
+528,FR,9781508261131,French 1,21,N/A,N/A,02R,N/A,N/A,Elle n’est pas en France avec nous.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_528.mp3,18
+529,FR,9781508261131,French 1,21,N/A,N/A,03Q,N/A,N/A,Is it big?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_529.mp3,7
+530,FR,9781508261131,French 1,21,N/A,N/A,03R,N/A,N/A,Est-ce qu’elle est grande?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_530.mp3,7
+531,FR,9781508261131,French 1,21,N/A,N/A,04Q,N/A,N/A,Can you wait?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_531.mp3,7
+532,FR,9781508261131,French 1,21,N/A,N/A,04R,N/A,N/A,Est-ce que vous pouvez attendre?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_532.mp3,7
+533,FR,9781508261131,French 1,21,N/A,N/A,05Q,N/A,N/A,He’s really little.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_533.mp3,7
+534,FR,9781508261131,French 1,21,N/A,N/A,05R,N/A,N/A,Il est vraiment petit.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_534.mp3,7
+535,FR,9781508261131,French 1,21,N/A,N/A,06Q,N/A,N/A,They are over there too.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_535.mp3,4
+536,FR,9781508261131,French 1,21,N/A,N/A,06R,N/A,N/A,Ils sont là-bas aussi.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_536.mp3,4
+537,FR,9781508261131,French 1,21,N/A,N/A,07Q,N/A,N/A,Where are they?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_537.mp3,4
+538,FR,9781508261131,French 1,21,N/A,N/A,07R,N/A,N/A,Ils sont où?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_538.mp3,4
+539,FR,9781508261131,French 1,21,N/A,N/A,08Q,N/A,N/A,The little girls.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_539.mp3,5
+540,FR,9781508261131,French 1,21,N/A,N/A,08R,N/A,N/A,Les petites filles.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_540.mp3,5
+541,FR,9781508261131,French 1,21,N/A,N/A,09Q,N/A,N/A,Our apartment is very small.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_541.mp3,9
+542,FR,9781508261131,French 1,21,N/A,N/A,09R,N/A,N/A,Notre appartement est très petit.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_542.mp3,9
+543,FR,9781508261131,French 1,21,N/A,N/A,10Q,N/A,N/A,Our apartment isn’t big.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_543.mp3,9
+544,FR,9781508261131,French 1,21,N/A,N/A,10R,N/A,N/A,Notre appartement n’est pas grand.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_544.mp3,9
+545,FR,9781508261131,French 1,21,N/A,N/A,11Q,N/A,N/A,We can wait a little.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_545.mp3,7
+546,FR,9781508261131,French 1,21,N/A,N/A,11R,N/A,N/A,On peut attendre un peu.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_546.mp3,7
+547,FR,9781508261131,French 1,21,N/A,N/A,12Q,N/A,N/A,Where is your house?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_547.mp3,4
+548,FR,9781508261131,French 1,21,N/A,N/A,12R,N/A,N/A,Où est votre maison?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_548.mp3,4
+549,FR,9781508261131,French 1,21,N/A,N/A,13Q,N/A,N/A,Not really.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_549.mp3,7
+550,FR,9781508261131,French 1,21,N/A,N/A,13R,N/A,N/A,Pas vraiment.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_550.mp3,7
+551,FR,9781508261131,French 1,21,N/A,N/A,14Q,N/A,N/A,The big boy.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_551.mp3,5
+552,FR,9781508261131,French 1,21,N/A,N/A,14R,N/A,N/A,Le grand garcon.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_552.mp3,5
+553,FR,9781508261131,French 1,21,N/A,N/A,15Q,N/A,N/A,Your family is really big.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_553.mp3,"5,10"
+554,FR,9781508261131,French 1,21,N/A,N/A,15R,N/A,N/A,Votre famille est vraiment grande.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_554.mp3,"5,10"
+555,FR,9781508261131,French 1,21,N/A,N/A,16Q,N/A,N/A,We have a house.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_555.mp3,9
+556,FR,9781508261131,French 1,21,N/A,N/A,16R,N/A,N/A,On a une maison.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_556.mp3,9
+557,FR,9781508261131,French 1,22,N/A,N/A,01Q,N/A,N/A,How many people?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_557.mp3,
+558,FR,9781508261131,French 1,22,N/A,N/A,01R,N/A,N/A,Combien de personnes?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_558.mp3,
+559,FR,9781508261131,French 1,22,N/A,N/A,02Q,N/A,N/A,It isn’t really small.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_559.mp3,7
+560,FR,9781508261131,French 1,22,N/A,N/A,02R,N/A,N/A,Elle n’est pas vraiment petite.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_560.mp3,7
+561,FR,9781508261131,French 1,22,N/A,N/A,03Q,N/A,N/A,Is it big or small?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_561.mp3,7
+562,FR,9781508261131,French 1,22,N/A,N/A,03R,N/A,N/A,Est-ce qu’elle est grande ou petite?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_562.mp3,7
+563,FR,9781508261131,French 1,22,N/A,N/A,04Q,N/A,N/A,Is there gas in the car?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_563.mp3,18
+564,FR,9781508261131,French 1,22,N/A,N/A,04R,N/A,N/A,Il y a de l’essence dans la voiture?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_564.mp3,18
+565,FR,9781508261131,French 1,22,N/A,N/A,05Q,N/A,N/A,Do you have a car?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_565.mp3,18
+566,FR,9781508261131,French 1,22,N/A,N/A,05R,N/A,N/A,Est-ce que vous avez une voiture?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_566.mp3,18
+567,FR,9781508261131,French 1,22,N/A,N/A,06Q,N/A,N/A,There are many bikes.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_567.mp3,18
+568,FR,9781508261131,French 1,22,N/A,N/A,06R,N/A,N/A,Il y a beaucoup de vélos.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_568.mp3,18
+569,FR,9781508261131,French 1,22,N/A,N/A,07Q,N/A,N/A,There are how many people in your family?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_569.mp3,10
+570,FR,9781508261131,French 1,22,N/A,N/A,07R,N/A,N/A,Il y a combien de personnes dans votre famille?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_570.mp3,10
+571,FR,9781508261131,French 1,22,N/A,N/A,08Q,N/A,N/A,I have a car.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_571.mp3,"9,18"
+572,FR,9781508261131,French 1,22,N/A,N/A,08R,N/A,N/A,J’ai une voiture.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_572.mp3,"9,18"
+573,FR,9781508261131,French 1,22,N/A,N/A,09Q,N/A,N/A,I can’t take my bike.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_573.mp3,"9,18"
+574,FR,9781508261131,French 1,22,N/A,N/A,09R,N/A,N/A,Je ne peux pas prendre mon vélo.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_574.mp3,"9,18"
+575,FR,9781508261131,French 1,22,N/A,N/A,10Q,N/A,N/A,I’m going to take my bike.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_575.mp3,"9,18"
+576,FR,9781508261131,French 1,22,N/A,N/A,10R,N/A,N/A,Je vais prendre mon vélo.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_576.mp3,"9,18"
+577,FR,9781508261131,French 1,22,N/A,N/A,11Q,N/A,N/A,My car is big enough.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_577.mp3,18
+578,FR,9781508261131,French 1,22,N/A,N/A,11R,N/A,N/A,Ma voiture est assez grande.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_578.mp3,18
+579,FR,9781508261131,French 1,22,N/A,N/A,12Q,N/A,N/A,We are going to take my car.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_579.mp3,"9,18"
+580,FR,9781508261131,French 1,22,N/A,N/A,12R,N/A,N/A,On va prendre ma voiture.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_580.mp3,"9,18"
+581,FR,9781508261131,French 1,22,N/A,N/A,13Q,N/A,N/A,We would like some gas.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_581.mp3,"16,18"
+582,FR,9781508261131,French 1,22,N/A,N/A,13R,N/A,N/A,On voudrait de l’essence.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_582.mp3,"16,18"
+583,FR,9781508261131,French 1,22,N/A,N/A,14Q,N/A,N/A,If you want.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_583.mp3,13
+584,FR,9781508261131,French 1,22,N/A,N/A,14R,N/A,N/A,Si vous voulez.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_584.mp3,13
+585,FR,9781508261131,French 1,22,N/A,N/A,15Q,N/A,N/A,I’m going to get some gas.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_585.mp3,"14,18"
+586,FR,9781508261131,French 1,22,N/A,N/A,15R,N/A,N/A,Je vais prendre de l’essence.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_586.mp3,"14,18"
+587,FR,9781508261131,French 1,22,N/A,N/A,16Q,N/A,N/A,But there isn’t any gas in our car.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_587.mp3,"9,18"
+588,FR,9781508261131,French 1,22,N/A,N/A,16R,N/A,N/A,Mais il n’y a pas d’essence dans notre voiture.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_588.mp3,"9,18"
+589,FR,9781508261131,French 1,23,N/A,N/A,01Q,N/A,N/A,Enough for seventy-five kilometers?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_589.mp3,"12,18"
+590,FR,9781508261131,French 1,23,N/A,N/A,01R,N/A,N/A,Assez pour soixante-quinze kilomètres?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_590.mp3,"12,18"
+591,FR,9781508261131,French 1,23,N/A,N/A,02Q,N/A,N/A,"Wait a minute, no.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_591.mp3,17
+592,FR,9781508261131,French 1,23,N/A,N/A,02R,N/A,N/A,"Attendez, non.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_592.mp3,17
+593,FR,9781508261131,French 1,23,N/A,N/A,03Q,N/A,N/A,It’s not too far away.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_593.mp3,"4,18"
+594,FR,9781508261131,French 1,23,N/A,N/A,03R,N/A,N/A,Ce n’est pas trop loin.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_594.mp3,"4,18"
+595,FR,9781508261131,French 1,23,N/A,N/A,04Q,N/A,N/A,It’s the route.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_595.mp3,"4,18"
+596,FR,9781508261131,French 1,23,N/A,N/A,04R,N/A,N/A,C’est la route.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_596.mp3,"4,18"
+597,FR,9781508261131,French 1,23,N/A,N/A,05Q,N/A,N/A,Which road is it?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_597.mp3,"4,18"
+598,FR,9781508261131,French 1,23,N/A,N/A,05R,N/A,N/A,C’est quelle route?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_598.mp3,"4,18"
+599,FR,9781508261131,French 1,23,N/A,N/A,06Q,N/A,N/A,It’s straight ahead.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_599.mp3,"4,18"
+600,FR,9781508261131,French 1,23,N/A,N/A,06R,N/A,N/A,C’est tout droit.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_600.mp3,"4,18"
+601,FR,9781508261131,French 1,23,N/A,N/A,07Q,N/A,N/A,It makes how many kilometers?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_601.mp3,"12,18"
+602,FR,9781508261131,French 1,23,N/A,N/A,07R,N/A,N/A,Ça fait combien de kilomètres?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_602.mp3,"12,18"
+603,FR,9781508261131,French 1,23,N/A,N/A,08Q,N/A,N/A,Two big people (i.e. grown ups).,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_603.mp3,7
+604,FR,9781508261131,French 1,23,N/A,N/A,08R,N/A,N/A,Deux grandes personnes.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_604.mp3,7
+605,FR,9781508261131,French 1,23,N/A,N/A,09Q,N/A,N/A,"By car, not by bike.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_605.mp3,"4,18"
+606,FR,9781508261131,French 1,23,N/A,N/A,09R,N/A,N/A,"En voiture, pas en vélo.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_606.mp3,"4,18"
+607,FR,9781508261131,French 1,23,N/A,N/A,10Q,N/A,N/A,It’s not the Paris road.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_607.mp3,"4,18"
+608,FR,9781508261131,French 1,23,N/A,N/A,10R,N/A,N/A,Ce n’est pas la route de Paris.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_608.mp3,"4,18"
+609,FR,9781508261131,French 1,23,N/A,N/A,11Q,N/A,N/A,Paris is far.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_609.mp3,18
+610,FR,9781508261131,French 1,23,N/A,N/A,11R,N/A,N/A,"C’est loin, Paris.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_610.mp3,18
+611,FR,9781508261131,French 1,23,N/A,N/A,12Q,N/A,N/A,I’m going to Paris tomorrow.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_611.mp3,"17,18"
+612,FR,9781508261131,French 1,23,N/A,N/A,12R,N/A,N/A,Je vais à Paris demain.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_612.mp3,"17,18"
+613,FR,9781508261131,French 1,23,N/A,N/A,13Q,N/A,N/A,The route is over there.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_613.mp3,4
+614,FR,9781508261131,French 1,23,N/A,N/A,13R,N/A,N/A,La route est là-bas.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_614.mp3,4
+615,FR,9781508261131,French 1,23,N/A,N/A,14Q,N/A,N/A,We have enough gas.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_615.mp3,18
+616,FR,9781508261131,French 1,23,N/A,N/A,14R,N/A,N/A,On a assez d’essence.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_616.mp3,18
+617,FR,9781508261131,French 1,23,N/A,N/A,15Q,N/A,N/A,If we don’t go too fast.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_617.mp3,"9,18"
+618,FR,9781508261131,French 1,23,N/A,N/A,15R,N/A,N/A,Si on ne va pas trop vite.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_618.mp3,"9,18"
+619,FR,9781508261131,French 1,23,N/A,N/A,16Q,N/A,N/A,If we are going to Paris.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_619.mp3,18
+620,FR,9781508261131,French 1,23,N/A,N/A,16R,N/A,N/A,Si on va à Paris.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_620.mp3,18
+621,FR,9781508261131,French 1,23,N/A,N/A,17Q,N/A,N/A,Where are you going?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_621.mp3,18
+622,FR,9781508261131,French 1,23,N/A,N/A,17R,N/A,N/A,Où est-ce que vous allez?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_622.mp3,18
+623,FR,9781508261131,French 1,24,N/A,N/A,01Q,N/A,N/A,It’s to the right.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_623.mp3,"4,18"
+624,FR,9781508261131,French 1,24,N/A,N/A,01R,N/A,N/A,C’est à droite.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_624.mp3,"4,18"
+625,FR,9781508261131,French 1,24,N/A,N/A,02Q,N/A,N/A,It’s the correct road.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_625.mp3,"4,18"
+626,FR,9781508261131,French 1,24,N/A,N/A,02R,N/A,N/A,C’est la bonne route.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_626.mp3,"4,18"
+627,FR,9781508261131,French 1,24,N/A,N/A,03Q,N/A,N/A,It’s not the good one.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_627.mp3,7
+628,FR,9781508261131,French 1,24,N/A,N/A,03R,N/A,N/A,Ce n’est pas la bonne.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_628.mp3,7
+629,FR,9781508261131,French 1,24,N/A,N/A,04Q,N/A,N/A,Two euros per liter.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_629.mp3,"11,12"
+630,FR,9781508261131,French 1,24,N/A,N/A,04R,N/A,N/A,Deux euros le litre.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_630.mp3,"11,12"
+631,FR,9781508261131,French 1,24,N/A,N/A,05Q,N/A,N/A,Listen well.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_631.mp3,15
+632,FR,9781508261131,French 1,24,N/A,N/A,05R,N/A,N/A,Ecoutez bien.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_632.mp3,15
+633,FR,9781508261131,French 1,24,N/A,N/A,06Q,N/A,N/A,Is gas expensive in France?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_633.mp3,"14,18"
+634,FR,9781508261131,French 1,24,N/A,N/A,06R,N/A,N/A,Est-ce que l’essence est chère en France?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_634.mp3,"14,18"
+635,FR,9781508261131,French 1,24,N/A,N/A,07Q,N/A,N/A,Is the correct route to the left?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_635.mp3,"4,18"
+636,FR,9781508261131,French 1,24,N/A,N/A,07R,N/A,N/A,Est-ce que la bonne route est à gauche?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_636.mp3,"4,18"
+637,FR,9781508261131,French 1,24,N/A,N/A,08Q,N/A,N/A,And then?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_637.mp3,4
+638,FR,9781508261131,French 1,24,N/A,N/A,08R,N/A,N/A,Et puis?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_638.mp3,4
+639,FR,9781508261131,French 1,24,N/A,N/A,09Q,N/A,N/A,Which route do I take?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_639.mp3,"4,18"
+640,FR,9781508261131,French 1,24,N/A,N/A,09R,N/A,N/A,Je prends quelle route?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_640.mp3,"4,18"
+641,FR,9781508261131,French 1,24,N/A,N/A,10Q,N/A,N/A,The correct route is to the right.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_641.mp3,"4,18"
+642,FR,9781508261131,French 1,24,N/A,N/A,10R,N/A,N/A,La bonne route est à droite.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_642.mp3,"4,18"
+643,FR,9781508261131,French 1,24,N/A,N/A,11Q,N/A,N/A,The small one or the big?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_643.mp3,7
+644,FR,9781508261131,French 1,24,N/A,N/A,11R,N/A,N/A,La petite ou la grande?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_644.mp3,7
+645,FR,9781508261131,French 1,24,N/A,N/A,12Q,N/A,N/A,Not to the left.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_645.mp3,4
+646,FR,9781508261131,French 1,24,N/A,N/A,12R,N/A,N/A,Pas à gauche.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_646.mp3,4
+647,FR,9781508261131,French 1,24,N/A,N/A,13Q,N/A,N/A,Go (take) to the left.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_647.mp3,4
+648,FR,9781508261131,French 1,24,N/A,N/A,13R,N/A,N/A,Prenez à gauche.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_648.mp3,4
+649,FR,9781508261131,French 1,24,N/A,N/A,14Q,N/A,N/A,Take the route to the right.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_649.mp3,"4,18"
+650,FR,9781508261131,French 1,24,N/A,N/A,14R,N/A,N/A,Prenez la route à droite.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_650.mp3,"4,18"
+651,FR,9781508261131,French 1,24,N/A,N/A,15Q,N/A,N/A,Go (take) straight ahead.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_651.mp3,"4,18"
+652,FR,9781508261131,French 1,24,N/A,N/A,15R,N/A,N/A,Prenez tout droit.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_652.mp3,"4,18"
+653,FR,9781508261131,French 1,24,N/A,N/A,16Q,N/A,N/A,Fifteen kilometers farther.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_653.mp3,"4,12,18"
+654,FR,9781508261131,French 1,24,N/A,N/A,16R,N/A,N/A,Quinze kilomètres plus loin.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_654.mp3,"4,12,18"
+655,FR,9781508261131,French 1,24,N/A,N/A,17Q,N/A,N/A,Ouch! That’s expensive!,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_655.mp3,14
+656,FR,9781508261131,French 1,24,N/A,N/A,17R,N/A,N/A,Oh là là! C’est cher!,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_656.mp3,14
+657,FR,9781508261131,French 1,24,N/A,N/A,18Q,N/A,N/A,Whoa! Wait a minute!,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_657.mp3,17
+658,FR,9781508261131,French 1,24,N/A,N/A,18R,N/A,N/A,Oh là là! Attendez!,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_658.mp3,17
+659,FR,9781508261131,French 1,25,N/A,N/A,01Q,N/A,N/A,Go straight ahead.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_659.mp3,"4,18"
+660,FR,9781508261131,French 1,25,N/A,N/A,01R,N/A,N/A,Allez tout droit.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_660.mp3,"4,18"
+661,FR,9781508261131,French 1,25,N/A,N/A,02Q,N/A,N/A,Is it to the left?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_661.mp3,4
+662,FR,9781508261131,French 1,25,N/A,N/A,02R,N/A,N/A,C’est à gauche?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_662.mp3,4
+663,FR,9781508261131,French 1,25,N/A,N/A,03Q,N/A,N/A,Is it to the right?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_663.mp3,4
+664,FR,9781508261131,French 1,25,N/A,N/A,03R,N/A,N/A,C’est à droite?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_664.mp3,4
+665,FR,9781508261131,French 1,25,N/A,N/A,04Q,N/A,N/A,It goes fast.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_665.mp3,18
+666,FR,9781508261131,French 1,25,N/A,N/A,04R,N/A,N/A,Ça va vite.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_666.mp3,18
+667,FR,9781508261131,French 1,25,N/A,N/A,05Q,N/A,N/A,It’s fine.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_667.mp3,7
+668,FR,9781508261131,French 1,25,N/A,N/A,05R,N/A,N/A,Ça va.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_668.mp3,7
+669,FR,9781508261131,French 1,25,N/A,N/A,06Q,N/A,N/A,"This evening, they are open.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_669.mp3,"14,17"
+670,FR,9781508261131,French 1,25,N/A,N/A,06R,N/A,N/A,"Ce soir, ils sont ouverts.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_670.mp3,"14,17"
+671,FR,9781508261131,French 1,25,N/A,N/A,07Q,N/A,N/A,"Tomorrow, the supermarkets are closed.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_671.mp3,"14,17"
+672,FR,9781508261131,French 1,25,N/A,N/A,07R,N/A,N/A,"Demain, les supermarchés sont fermés.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_672.mp3,"14,17"
+673,FR,9781508261131,French 1,25,N/A,N/A,08Q,N/A,N/A,Can I buy something?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_673.mp3,14
+674,FR,9781508261131,French 1,25,N/A,N/A,08R,N/A,N/A,Est-ce que je peux acheter quelque chose?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_674.mp3,14
+675,FR,9781508261131,French 1,25,N/A,N/A,09Q,N/A,N/A,It’s not late.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_675.mp3,17
+676,FR,9781508261131,French 1,25,N/A,N/A,09R,N/A,N/A,Il n’est pas tard.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_676.mp3,17
+677,FR,9781508261131,French 1,25,N/A,N/A,10Q,N/A,N/A,They are open now.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_677.mp3,"14,17"
+678,FR,9781508261131,French 1,25,N/A,N/A,10R,N/A,N/A,Ils sont ouverts maintenant.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_678.mp3,"14,17"
+679,FR,9781508261131,French 1,25,N/A,N/A,11Q,N/A,N/A,The department stores are closed.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_679.mp3,14
+680,FR,9781508261131,French 1,25,N/A,N/A,11R,N/A,N/A,Les grands magasins sont fermés.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_680.mp3,14
+681,FR,9781508261131,French 1,25,N/A,N/A,12Q,N/A,N/A,"Now, they’re open.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_681.mp3,"14,17"
+682,FR,9781508261131,French 1,25,N/A,N/A,12R,N/A,N/A,"Maintenant, ils sont ouverts.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_682.mp3,"14,17"
+683,FR,9781508261131,French 1,25,N/A,N/A,13Q,N/A,N/A,Because it’s late.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_683.mp3,17
+684,FR,9781508261131,French 1,25,N/A,N/A,13R,N/A,N/A,Parce qu’il est tard.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_684.mp3,17
+685,FR,9781508261131,French 1,25,N/A,N/A,14Q,N/A,N/A,Because they are open this evening.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_685.mp3,"14,17"
+686,FR,9781508261131,French 1,25,N/A,N/A,14R,N/A,N/A,Parce qu’ils sont ouverts ce soir.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_686.mp3,"14,17"
+687,FR,9781508261131,French 1,25,N/A,N/A,15Q,N/A,N/A,Eighty kilometers by car?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_687.mp3,"12,17"
+688,FR,9781508261131,French 1,25,N/A,N/A,15R,N/A,N/A,Quatre-vingts kilomètres en voiture?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_688.mp3,"12,17"
+689,FR,9781508261131,French 1,25,N/A,N/A,16Q,N/A,N/A,Something to eat.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_689.mp3,6
+690,FR,9781508261131,French 1,25,N/A,N/A,16R,N/A,N/A,Quelque chose à manger.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_690.mp3,6
+691,FR,9781508261131,French 1,25,N/A,N/A,17Q,N/A,N/A,Can I?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_691.mp3,7
+692,FR,9781508261131,French 1,25,N/A,N/A,17R,N/A,N/A,Est-ce que je peux?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_692.mp3,7
+693,FR,9781508261131,French 1,26,N/A,N/A,01Q,N/A,N/A,"Then, it’s fine.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_693.mp3,7
+694,FR,9781508261131,French 1,26,N/A,N/A,01R,N/A,N/A,"Alors, ça va.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_694.mp3,7
+695,FR,9781508261131,French 1,26,N/A,N/A,02Q,N/A,N/A,It’s going very well!,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_695.mp3,7
+696,FR,9781508261131,French 1,26,N/A,N/A,02R,N/A,N/A,Ça va très bien!,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_696.mp3,7
+697,FR,9781508261131,French 1,26,N/A,N/A,03Q,N/A,N/A,Are you going to see him?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_697.mp3,7
+698,FR,9781508261131,French 1,26,N/A,N/A,03R,N/A,N/A,Est-ce que tu vas le voir?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_698.mp3,7
+699,FR,9781508261131,French 1,26,N/A,N/A,04Q,N/A,N/A,And you?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_699.mp3,7
+700,FR,9781508261131,French 1,26,N/A,N/A,04R,N/A,N/A,Et toi?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_700.mp3,7
+701,FR,9781508261131,French 1,26,N/A,N/A,05Q,N/A,N/A,I have a few friends over there.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_701.mp3,18
+702,FR,9781508261131,French 1,26,N/A,N/A,05R,N/A,N/A,J’ai quelques amis là-bas.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_702.mp3,18
+703,FR,9781508261131,French 1,26,N/A,N/A,06Q,N/A,N/A,I believe so.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_703.mp3,7
+704,FR,9781508261131,French 1,26,N/A,N/A,06R,N/A,N/A,Je crois.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_704.mp3,7
+705,FR,9781508261131,French 1,26,N/A,N/A,07Q,N/A,N/A,I believe that I’m going to see him.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_705.mp3,9
+706,FR,9781508261131,French 1,26,N/A,N/A,07R,N/A,N/A,Je crois que je vais le voir.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_706.mp3,9
+707,FR,9781508261131,French 1,26,N/A,N/A,08Q,N/A,N/A,I’m going to see him.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_707.mp3,9
+708,FR,9781508261131,French 1,26,N/A,N/A,08R,N/A,N/A,Je vais le voir.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_708.mp3,9
+709,FR,9781508261131,French 1,26,N/A,N/A,09Q,N/A,N/A,"Three days, maybe.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_709.mp3,17
+710,FR,9781508261131,French 1,26,N/A,N/A,09R,N/A,N/A,"Trois jours, peut-être.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_710.mp3,17
+711,FR,9781508261131,French 1,26,N/A,N/A,10Q,N/A,N/A,You think so?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_711.mp3,7
+712,FR,9781508261131,French 1,26,N/A,N/A,10R,N/A,N/A,Tu crois?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_712.mp3,7
+713,FR,9781508261131,French 1,26,N/A,N/A,11Q,N/A,N/A,A few days.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_713.mp3,17
+714,FR,9781508261131,French 1,26,N/A,N/A,11R,N/A,N/A,Quelques jours.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_714.mp3,17
+715,FR,9781508261131,French 1,26,N/A,N/A,12Q,N/A,N/A,Are you well?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_715.mp3,"8,13"
+716,FR,9781508261131,French 1,26,N/A,N/A,12R,N/A,N/A,Tu vas bien?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_716.mp3,"8,13"
+717,FR,9781508261131,French 1,26,N/A,N/A,13Q,N/A,N/A,You are going to spend how many days?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_717.mp3,"17,18"
+718,FR,9781508261131,French 1,26,N/A,N/A,13R,N/A,N/A,Tu vas passer combien de jours?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_718.mp3,"17,18"
+719,FR,9781508261131,French 1,26,N/A,N/A,14Q,N/A,N/A,You’re going to see some friends.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_719.mp3,"9,18"
+720,FR,9781508261131,French 1,26,N/A,N/A,14R,N/A,N/A,Tu vas voir des amis.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_720.mp3,"9,18"
+721,FR,9781508261131,French 1,26,N/A,N/A,15Q,N/A,N/A,I’m going to spend three days over there.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_721.mp3,"12,17,18"
+722,FR,9781508261131,French 1,26,N/A,N/A,15R,N/A,N/A,Je vais passer trois jours là-bas.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_722.mp3,"12,17,18"
+723,FR,9781508261131,French 1,26,N/A,N/A,16Q,N/A,N/A,What are you going to buy?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_723.mp3,14
+724,FR,9781508261131,French 1,26,N/A,N/A,16R,N/A,N/A,Qu’est-ce que tu vas acheter?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_724.mp3,14
+725,FR,9781508261131,French 1,27,N/A,N/A,01Q,N/A,N/A,It doesn’t matter. (lit. That makes nothing.),N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_725.mp3,7
+726,FR,9781508261131,French 1,27,N/A,N/A,01R,N/A,N/A,Ça ne fait rien.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_726.mp3,7
+727,FR,9781508261131,French 1,27,N/A,N/A,02Q,N/A,N/A,Are you going to work?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_727.mp3,9
+728,FR,9781508261131,French 1,27,N/A,N/A,02R,N/A,N/A,Est-ce que tu vas travailler?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_728.mp3,9
+729,FR,9781508261131,French 1,27,N/A,N/A,03Q,N/A,N/A,I have nothing to do.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_729.mp3,1
+730,FR,9781508261131,French 1,27,N/A,N/A,03R,N/A,N/A,Je n’ai rien à faire.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_730.mp3,1
+731,FR,9781508261131,French 1,27,N/A,N/A,04Q,N/A,N/A,I have nothing.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_731.mp3,7
+732,FR,9781508261131,French 1,27,N/A,N/A,04R,N/A,N/A,Je n’ai rien.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_732.mp3,7
+733,FR,9781508261131,French 1,27,N/A,N/A,05Q,N/A,N/A,I don’t want anything.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_733.mp3,"6,14"
+734,FR,9781508261131,French 1,27,N/A,N/A,05R,N/A,N/A,Je ne veux rien.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_734.mp3,"6,14"
+735,FR,9781508261131,French 1,27,N/A,N/A,06Q,N/A,N/A,I’m all alone.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_735.mp3,9
+736,FR,9781508261131,French 1,27,N/A,N/A,06R,N/A,N/A,Je suis toute seule.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_736.mp3,9
+737,FR,9781508261131,French 1,27,N/A,N/A,07Q,N/A,N/A,"I’m going to work, too.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_737.mp3,9
+738,FR,9781508261131,French 1,27,N/A,N/A,07R,N/A,N/A,Je vais aussi travailler.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_738.mp3,9
+739,FR,9781508261131,French 1,27,N/A,N/A,08Q,N/A,N/A,I’m going to see them.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_739.mp3,18
+740,FR,9781508261131,French 1,27,N/A,N/A,08R,N/A,N/A,Je vais les voir.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_740.mp3,18
+741,FR,9781508261131,French 1,27,N/A,N/A,09Q,N/A,N/A,I’m going to leave tomorrow.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_741.mp3,"17,18"
+742,FR,9781508261131,French 1,27,N/A,N/A,09R,N/A,N/A,Je vais partir demain.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_742.mp3,"17,18"
+743,FR,9781508261131,French 1,27,N/A,N/A,10Q,N/A,N/A,I want to leave with you.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_743.mp3,"9,18"
+744,FR,9781508261131,French 1,27,N/A,N/A,10R,N/A,N/A,Je veux partir avec toi.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_744.mp3,"9,18"
+745,FR,9781508261131,French 1,27,N/A,N/A,11Q,N/A,N/A,We’re going to leave together.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_745.mp3,"9,18"
+746,FR,9781508261131,French 1,27,N/A,N/A,11R,N/A,N/A,On va partir ensemble.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_746.mp3,"9,18"
+747,FR,9781508261131,French 1,27,N/A,N/A,12Q,N/A,N/A,Not all alone.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_747.mp3,7
+748,FR,9781508261131,French 1,27,N/A,N/A,12R,N/A,N/A,Pas tout seul.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_748.mp3,7
+749,FR,9781508261131,French 1,27,N/A,N/A,13Q,N/A,N/A,What do you want to do? (Casual),N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_749.mp3,1
+750,FR,9781508261131,French 1,27,N/A,N/A,13R,N/A,N/A,Qu’est-ce que tu veux faire?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_750.mp3,1
+751,FR,9781508261131,French 1,27,N/A,N/A,14Q,N/A,N/A,Can you leave tonight?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_751.mp3,"17,18"
+752,FR,9781508261131,French 1,27,N/A,N/A,14R,N/A,N/A,Tu peux partir ce soir?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_752.mp3,"17,18"
+753,FR,9781508261131,French 1,28,N/A,N/A,01Q,N/A,N/A,It’s a French word.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_753.mp3,"9,15"
+754,FR,9781508261131,French 1,28,N/A,N/A,01R,N/A,N/A,C’est un mot français.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_754.mp3,"9,15"
+755,FR,9781508261131,French 1,28,N/A,N/A,02Q,N/A,N/A,That’s not much.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_755.mp3,"11,14"
+756,FR,9781508261131,French 1,28,N/A,N/A,02R,N/A,N/A,Ce n’est pas beaucoup.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_756.mp3,"11,14"
+757,FR,9781508261131,French 1,28,N/A,N/A,03Q,N/A,N/A,How long?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_757.mp3,17
+758,FR,9781508261131,French 1,28,N/A,N/A,03R,N/A,N/A,Combien de temps?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_758.mp3,17
+759,FR,9781508261131,French 1,28,N/A,N/A,04Q,N/A,N/A,For/since how long?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_759.mp3,17
+760,FR,9781508261131,French 1,28,N/A,N/A,04R,N/A,N/A,Depuis combien de temps?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_760.mp3,17
+761,FR,9781508261131,French 1,28,N/A,N/A,05Q,N/A,N/A,Since when?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_761.mp3,17
+762,FR,9781508261131,French 1,28,N/A,N/A,05R,N/A,N/A,Depuis quand?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_762.mp3,17
+763,FR,9781508261131,French 1,28,N/A,N/A,06Q,N/A,N/A,For/since a few days.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_763.mp3,17
+764,FR,9781508261131,French 1,28,N/A,N/A,06R,N/A,N/A,Depuis quelques jours.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_764.mp3,17
+765,FR,9781508261131,French 1,28,N/A,N/A,07Q,N/A,N/A,Are you (casual f) American?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_765.mp3,10
+766,FR,9781508261131,French 1,28,N/A,N/A,07R,N/A,N/A,Est-ce que tu es américaine?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_766.mp3,10
+767,FR,9781508261131,French 1,28,N/A,N/A,08Q,N/A,N/A,I believe that it’s French.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_767.mp3,9
+768,FR,9781508261131,French 1,28,N/A,N/A,08R,N/A,N/A,Je crois que c’est français.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_768.mp3,9
+769,FR,9781508261131,French 1,28,N/A,N/A,09Q,N/A,N/A,I don’t have the time.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_769.mp3,17
+770,FR,9781508261131,French 1,28,N/A,N/A,09R,N/A,N/A,Je n’ai pas le temps.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_770.mp3,17
+771,FR,9781508261131,French 1,28,N/A,N/A,10Q,N/A,N/A,I don’t have a lot of time.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_771.mp3,17
+772,FR,9781508261131,French 1,28,N/A,N/A,10R,N/A,N/A,Je n’ai pas beaucoup de temps.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_772.mp3,17
+773,FR,9781508261131,French 1,28,N/A,N/A,11Q,N/A,N/A,I don’t know what that means.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_773.mp3,"15,16"
+774,FR,9781508261131,French 1,28,N/A,N/A,11R,N/A,N/A,Je ne sais pas ce que ça veut dire.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_774.mp3,"15,16"
+775,FR,9781508261131,French 1,28,N/A,N/A,12Q,N/A,N/A,I don’t want to work.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_775.mp3,9
+776,FR,9781508261131,French 1,28,N/A,N/A,12R,N/A,N/A,Je ne veux pas travailler.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_776.mp3,9
+777,FR,9781508261131,French 1,28,N/A,N/A,13Q,N/A,N/A,Forget it. / Let it drop.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_777.mp3,7
+778,FR,9781508261131,French 1,28,N/A,N/A,13R,N/A,N/A,Laisse tomber.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_778.mp3,7
+779,FR,9781508261131,French 1,28,N/A,N/A,14Q,N/A,N/A,We can’t stay here.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_779.mp3,18
+780,FR,9781508261131,French 1,28,N/A,N/A,14R,N/A,N/A,On ne peut pas rester ici.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_780.mp3,18
+781,FR,9781508261131,French 1,28,N/A,N/A,15Q,N/A,N/A,We are / we’ve been around.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_781.mp3,9
+782,FR,9781508261131,French 1,28,N/A,N/A,15R,N/A,N/A,On est là.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_782.mp3,9
+783,FR,9781508261131,French 1,28,N/A,N/A,16Q,N/A,N/A,Where do you (casual) want to go?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_783.mp3,"1,18"
+784,FR,9781508261131,French 1,28,N/A,N/A,16R,N/A,N/A,Où est-ce que tu veux aller?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_784.mp3,"1,18"
+785,FR,9781508261131,French 1,28,N/A,N/A,17Q,N/A,N/A,What does that / it mean?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_785.mp3,15
+786,FR,9781508261131,French 1,28,N/A,N/A,17R,N/A,N/A,Qu’est-ce que ça veut dire?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_786.mp3,15
+787,FR,9781508261131,French 1,29,N/A,N/A,01Q,N/A,N/A,Many things.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_787.mp3,9
+788,FR,9781508261131,French 1,29,N/A,N/A,01R,N/A,N/A,Beaucoup de choses.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_788.mp3,9
+789,FR,9781508261131,French 1,29,N/A,N/A,02Q,N/A,N/A,Since yesterday.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_789.mp3,17
+790,FR,9781508261131,French 1,29,N/A,N/A,02R,N/A,N/A,Depuis hier.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_790.mp3,17
+791,FR,9781508261131,French 1,29,N/A,N/A,03Q,N/A,N/A,Some good coffee.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_791.mp3,6
+792,FR,9781508261131,French 1,29,N/A,N/A,03R,N/A,N/A,Du bon café.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_792.mp3,6
+793,FR,9781508261131,French 1,29,N/A,N/A,04Q,N/A,N/A,Have you (casual) eaten something?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_793.mp3,"1,6"
+794,FR,9781508261131,French 1,29,N/A,N/A,04R,N/A,N/A,Est-ce que tu as mangé quelque chose?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_794.mp3,"1,6"
+795,FR,9781508261131,French 1,29,N/A,N/A,05Q,N/A,N/A,"Yesterday, I bought something.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_795.mp3,"14,17"
+796,FR,9781508261131,French 1,29,N/A,N/A,05R,N/A,N/A,"Hier, j’ai acheté quelque chose.",N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_796.mp3,"14,17"
+797,FR,9781508261131,French 1,29,N/A,N/A,06Q,N/A,N/A,I bought a scarf.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_797.mp3,14
+798,FR,9781508261131,French 1,29,N/A,N/A,06R,N/A,N/A,J’ai acheté une écharpe.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_798.mp3,14
+799,FR,9781508261131,French 1,29,N/A,N/A,07Q,N/A,N/A,I have the time.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_799.mp3,17
+800,FR,9781508261131,French 1,29,N/A,N/A,07R,N/A,N/A,J’ai le temps.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_800.mp3,17
+801,FR,9781508261131,French 1,29,N/A,N/A,08Q,N/A,N/A,Do you like milk?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_801.mp3,6
+802,FR,9781508261131,French 1,29,N/A,N/A,08R,N/A,N/A,Est-ce que tu aimes le lait?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_802.mp3,6
+803,FR,9781508261131,French 1,29,N/A,N/A,09Q,N/A,N/A,I like to eat.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_803.mp3,6
+804,FR,9781508261131,French 1,29,N/A,N/A,09R,N/A,N/A,J’aime manger.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_804.mp3,6
+805,FR,9781508261131,French 1,29,N/A,N/A,10Q,N/A,N/A,I don’t have anything to eat.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_805.mp3,6
+806,FR,9781508261131,French 1,29,N/A,N/A,10R,N/A,N/A,Je n’ai rien à manger.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_806.mp3,6
+807,FR,9781508261131,French 1,29,N/A,N/A,11Q,N/A,N/A,I didn’t eat.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_807.mp3,6
+808,FR,9781508261131,French 1,29,N/A,N/A,11R,N/A,N/A,Je n’ai pas mangé.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_808.mp3,6
+809,FR,9781508261131,French 1,29,N/A,N/A,12Q,N/A,N/A,I don’t like to eat all alone. (m),N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_809.mp3,6
+810,FR,9781508261131,French 1,29,N/A,N/A,12R,N/A,N/A,Je n’aime pas manger tout seul.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_810.mp3,6
+811,FR,9781508261131,French 1,29,N/A,N/A,13Q,N/A,N/A,I bought something to drink.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_811.mp3,"6,14"
+812,FR,9781508261131,French 1,29,N/A,N/A,13R,N/A,N/A,J’ai acheté quelque chose à boire.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_812.mp3,"6,14"
+813,FR,9781508261131,French 1,29,N/A,N/A,14Q,N/A,N/A,What did you (casual) buy?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_813.mp3,14
+814,FR,9781508261131,French 1,29,N/A,N/A,14R,N/A,N/A,Qu’est-ce que tu as acheté?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_814.mp3,14
+815,FR,9781508261131,French 1,29,N/A,N/A,15Q,N/A,N/A,What don’t you understand?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_815.mp3,15
+816,FR,9781508261131,French 1,29,N/A,N/A,15R,N/A,N/A,Qu’est-ce que tu ne comprends pas?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_816.mp3,15
+817,FR,9781508261131,French 1,29,N/A,N/A,16Q,N/A,N/A,You (casual) like hats.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_817.mp3,9
+818,FR,9781508261131,French 1,29,N/A,N/A,16R,N/A,N/A,Tu aimes les chapeaux.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_818.mp3,9
+819,FR,9781508261131,French 1,29,N/A,N/A,17Q,N/A,N/A,You (casual) understand?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_819.mp3,15
+820,FR,9781508261131,French 1,29,N/A,N/A,17R,N/A,N/A,Tu comprends?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_820.mp3,15
+821,FR,9781508261131,French 1,29,N/A,N/A,18Q,N/A,N/A,You (casual) ate?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_821.mp3,"1,6"
+822,FR,9781508261131,French 1,29,N/A,N/A,18R,N/A,N/A,Tu as mangé?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_822.mp3,"1,6"
+823,FR,9781508261131,French 1,30,N/A,N/A,01Q,N/A,N/A,It’s really beautiful!,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_823.mp3,7
+824,FR,9781508261131,French 1,30,N/A,N/A,01R,N/A,N/A,C’est vraiment beau!,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_824.mp3,7
+825,FR,9781508261131,French 1,30,N/A,N/A,02Q,N/A,N/A,How does one say that?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_825.mp3,15
+826,FR,9781508261131,French 1,30,N/A,N/A,02R,N/A,N/A,Comment on dit ça?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_826.mp3,15
+827,FR,9781508261131,French 1,30,N/A,N/A,03Q,N/A,N/A,How does one say this word in English?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_827.mp3,15
+828,FR,9781508261131,French 1,30,N/A,N/A,03R,N/A,N/A,Comment on dit ce mot en anglais?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_828.mp3,15
+829,FR,9781508261131,French 1,30,N/A,N/A,04Q,N/A,N/A,How does one say that in English?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_829.mp3,15
+830,FR,9781508261131,French 1,30,N/A,N/A,04R,N/A,N/A,Comment est-ce qu’on dit ça en anglais?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_830.mp3,15
+831,FR,9781508261131,French 1,30,N/A,N/A,05Q,N/A,N/A,Do you (casual) like France?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_831.mp3,"10,18"
+832,FR,9781508261131,French 1,30,N/A,N/A,05R,N/A,N/A,Est-ce que tu aimes la France?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_832.mp3,"10,18"
+833,FR,9781508261131,French 1,30,N/A,N/A,06Q,N/A,N/A,Did you speak French?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_833.mp3,"10,15"
+834,FR,9781508261131,French 1,30,N/A,N/A,06R,N/A,N/A,Est-ce que vous avez parlé français?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_834.mp3,"10,15"
+835,FR,9781508261131,French 1,30,N/A,N/A,07Q,N/A,N/A,We ate well in France.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_835.mp3,"6,18"
+836,FR,9781508261131,French 1,30,N/A,N/A,07R,N/A,N/A,On a bien mangé en France.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_836.mp3,"6,18"
+837,FR,9781508261131,French 1,30,N/A,N/A,08Q,N/A,N/A,We spoke French.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_837.mp3,"15,18"
+838,FR,9781508261131,French 1,30,N/A,N/A,08R,N/A,N/A,On a parlé français.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_838.mp3,"15,18"
+839,FR,9781508261131,French 1,30,N/A,N/A,09Q,N/A,N/A,My wife would like to see France.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_839.mp3,"5,18"
+840,FR,9781508261131,French 1,30,N/A,N/A,09R,N/A,N/A,Ma femme voudrait voir France.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_840.mp3,"5,18"
+841,FR,9781508261131,French 1,30,N/A,N/A,10Q,N/A,N/A,When did you arrive in France?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_841.mp3,"17,18"
+842,FR,9781508261131,French 1,30,N/A,N/A,10R,N/A,N/A,Quand est-ce que vous êtes arrivés en France?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_842.mp3,"17,18"
+843,FR,9781508261131,French 1,30,N/A,N/A,11Q,N/A,N/A,Us too!,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_843.mp3,7
+844,FR,9781508261131,French 1,30,N/A,N/A,11R,N/A,N/A,Nous aussi!,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_844.mp3,7
+845,FR,9781508261131,French 1,30,N/A,N/A,12Q,N/A,N/A,We bought a lot of things.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_845.mp3,"1,14"
+846,FR,9781508261131,French 1,30,N/A,N/A,12R,N/A,N/A,On a acheté beaucoup de choses.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_846.mp3,"1,14"
+847,FR,9781508261131,French 1,30,N/A,N/A,13Q,N/A,N/A,We ate in a good restaurant.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_847.mp3,"1,6"
+848,FR,9781508261131,French 1,30,N/A,N/A,13R,N/A,N/A,On a mangé dans un bon restaurant.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_848.mp3,"1,6"
+849,FR,9781508261131,French 1,30,N/A,N/A,14Q,N/A,N/A,We like wine.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_849.mp3,6
+850,FR,9781508261131,French 1,30,N/A,N/A,14R,N/A,N/A,On aime le vin.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_850.mp3,6
+851,FR,9781508261131,French 1,30,N/A,N/A,15Q,N/A,N/A,When did you arrive?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_851.mp3,"17,18"
+852,FR,9781508261131,French 1,30,N/A,N/A,15R,N/A,N/A,Quand est-ce que vous êtes arrivés?,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_852.mp3,"17,18"
+853,FR,9781508261131,French 1,30,N/A,N/A,16Q,N/A,N/A,I didn’t buy anything.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_853.mp3,14
+854,FR,9781508261131,French 1,30,N/A,N/A,16R,N/A,N/A,Je n’ai rien acheté.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_854.mp3,14
+855,FR,9781508261131,French 1,30,N/A,N/A,17Q,N/A,N/A,Yesterday morning.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_855.mp3,17
+856,FR,9781508261131,French 1,30,N/A,N/A,17R,N/A,N/A,Hier matin.,N/A,N/A,Pimsleur French Level 1 Core Update MP3,9781508261131_French_1_QM_856.mp3,17

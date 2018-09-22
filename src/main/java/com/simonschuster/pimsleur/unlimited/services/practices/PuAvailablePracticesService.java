@@ -26,13 +26,6 @@ public class PuAvailablePracticesService {
         );
 
         return installationFileList.getPracticeUrls();
-//        PracticesUrls urls = new PracticesUrls();
-//        urls.setReviewAudioBaseUrl("https://install.pimsleurunlimited.com/staging_n/mobile/french/French I 2018/audio/9781508261131_REVIEW_AUDIO_SNIPPETS/");
-//        urls.setFlashCardUrl("https://install.pimsleurunlimited.com/staging_n/mobile/french/French I 2018/metadata/timecode/9781508261131_French_1_FC.csv");
-//        urls.setQuickMatchUrl("https://install.pimsleurunlimited.com/staging_n/mobile/french/French I 2018/metadata/timecode/9781508261131_French_1_QZ.csv");
-//        urls.setReadingUrl("https://install.pimsleurunlimited.com/staging_n/mobile/french/French I 2018/metadata/timecode/9781508261131_French_1_RL.csv");
-//        urls.setSpeakEasyUrl("https://install.pimsleurunlimited.com/staging_n/mobile/french/French I 2018/metadata/timecode/9781508261131_French_1_VC.csv");
-//        return urls;
     }
 
     private HttpEntity<String> createPostBody(String productCode, String storeDomain) {

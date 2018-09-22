@@ -121,7 +121,8 @@ public class FileListItem {
     }
 
     public boolean isCsvFileOf(String csvFileType) {
-        return this.path.contains(csvFileType + ".csv");
+        return this.path.contains(csvFileType + ".csv") &&
+                this.getSourceURL().contains("/staging_n/mobile/");
     }
 
     public boolean isReviewAudioZipFile() {

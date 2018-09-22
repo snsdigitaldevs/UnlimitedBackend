@@ -47,7 +47,10 @@ public class InstallationFileList {
     public PracticesUrls getPracticeUrls() {
         PracticesUrls practicesUrls = new PracticesUrls();
         if (this.getResultData() != null) {
-            this.getResultData().getFileList().getFileListItems().forEach((fileListItem) -> {
+            this.getResultData().getFileList().getFileListItems().stream()
+                    .filter(f -> f.getPath().contains(".csv") ||
+                    f.getPath().contains("REVIEW_AUDIO.zip"))
+                    .forEach((fileListItem) -> {
                 if (fileListItem.isCsvFileOf(FlashCard)) {
                     practicesUrls.setFlashCardUrl(fileListItem.getFullUrl());
                 } else if (fileListItem.isCsvFileOf(QuickMatch)) {

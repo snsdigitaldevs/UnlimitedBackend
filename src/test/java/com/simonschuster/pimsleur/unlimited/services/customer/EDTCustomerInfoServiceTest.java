@@ -4,7 +4,6 @@ import com.github.dreamhead.moco.HttpServer;
 import com.github.dreamhead.moco.Runnable;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.CustomerInfoDTO;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.ProgressDTO;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.AggregatedCustomerInfo;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

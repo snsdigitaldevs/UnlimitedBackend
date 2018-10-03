@@ -6,6 +6,10 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.simonschuster.pimsleur.unlimited.services.practices.PracticesUrls;
 
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
+
 import static com.simonschuster.pimsleur.unlimited.data.edt.installationFileList.FileListItem.*;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -47,23 +51,51 @@ public class InstallationFileList {
     public PracticesUrls getPracticeUrls() {
         PracticesUrls practicesUrls = new PracticesUrls();
         if (this.getResultData() != null) {
-            this.getResultData().getFileList().getFileListItems().stream()
-                    .filter(f -> f.getPath().contains(".csv") ||
-                    f.getPath().contains("REVIEW_AUDIO.zip"))
-                    .forEach((fileListItem) -> {
-                if (fileListItem.isCsvFileOf(FlashCard)) {
-                    practicesUrls.setFlashCardUrl(fileListItem.getFullUrl());
-                } else if (fileListItem.isCsvFileOf(QuickMatch)) {
-                    practicesUrls.setQuickMatchUrl(fileListItem.getFullUrl());
-                } else if (fileListItem.isCsvFileOf(Reading)) {
-                    practicesUrls.setReadingUrl(fileListItem.getFullUrl());
-                } else if (fileListItem.isCsvFileOf(SpeakEasy)) {
-                    practicesUrls.setSpeakEasyUrl(fileListItem.getFullUrl());
-                } else if (fileListItem.isReviewAudioZipFile()) {
-                    practicesUrls.setReviewAudioBaseUrl(fileListItem.getReviewAudioBaseUrl());
-                }
-            });
+            List<FileListItem> list = this.getResultData().getFileList().getFileListItems();
+            List<FileListItem> flashCardFiles = list.stream().filter(f -> isExpectedFiles(f, FlashCard)).collect(Collectors.toList());
+            List<FileListItem> quickMatchFiles = list.stream().filter(f -> isExpectedFiles(f, QuickMatch)).collect(Collectors.toList());
+            List<FileListItem> speakEasyFiles = list.stream().filter(f -> isExpectedFiles(f, SpeakEasy)).collect(Collectors.toList());
+            List<FileListItem> readingFiles = list.stream().filter(f -> isExpectedFiles(f, Reading)).collect(Collectors.toList());
+            List<FileListItem> ReviewAudioZipFiles = list.stream().filter(f -> f.getPath().contains("REVIEW_AUDIO.zip")).collect(Collectors.toList());
+
+            FileListItem flashCardFile = filterFileByType(flashCardFiles, FlashCard);
+            if(!flashCardFile.equals(null)) {
+                practicesUrls.setFlashCardUrl(flashCardFile.getFullUrl());
+            }
+
+            FileListItem quickMatchFile = filterFileByType(quickMatchFiles, QuickMatch);
+            if(!quickMatchFile.equals(null)){
+                practicesUrls.setQuickMatchUrl(quickMatchFile.getFullUrl());
+            }
+
+            FileListItem speakEasyFile = filterFileByType(speakEasyFiles, SpeakEasy);
+            if(!speakEasyFile.equals(null)){
+                practicesUrls.setSpeakEasyUrl(speakEasyFile.getFullUrl());
+            }
+
+            FileListItem readingFile = filterFileByType(readingFiles, Reading);
+            if(!readingFile.equals(null)){
+                practicesUrls.setReadingUrl(readingFile.getFullUrl());
+            }
+
+            if(ReviewAudioZipFiles.size() > 0){
+                practicesUrls.setReviewAudioBaseUrl(ReviewAudioZipFiles.get(0).getReviewAudioBaseUrl());
+            }
         }
         return practicesUrls;
+    }
+
+    private boolean isExpectedFiles(FileListItem f, String fileType) {
+        return f.getPath().contains(fileType + ".csv");
+    }
+
+    FileListItem filterFileByType(List<FileListItem> files, String fileType){
+        Optional<FileListItem> first =
+                files.stream().filter(f -> f.getPath().endsWith(fileType + ".csv")).findFirst();
+        if(files.size() == 1 || !first.isPresent()){
+            return files.get(0);
+        }else{
+            return first.get();
+        }
     }
 }

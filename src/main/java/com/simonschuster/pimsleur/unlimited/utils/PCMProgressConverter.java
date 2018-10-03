@@ -74,32 +74,22 @@ public class PCMProgressConverter {
 
     private static void extractProductAndMediaItem(ProgressDTO progressDTO, String key, pcmProgressParserDto currentMediaItemProgress) {
         //com.edt.models::MediaItemHistory_17892 9781 4423 1603 4 40339#lastAudioPosMillis
-        String s = key.split("#")[0];
         if (currentMediaItemProgress != null) {
             if (key.contains(currentMediaItemProgress.getProductCode()) && key.contains(currentMediaItemProgress.getMediaItem())) {
                 progressDTO.setCurrent(true);
             }
-            int customerIdIndex = s.indexOf(currentMediaItemProgress.getCustomerId());
-            int productCodeIndex = customerIdIndex + currentMediaItemProgress.getCustomerId().length();
-            int mediaItemIndex = productCodeIndex + PRODUCT_CODE_LENGTH;
-            String code = s.substring(productCodeIndex, mediaItemIndex);
-            String mediaItem = s.substring(mediaItemIndex);
-            progressDTO.setProductCode(code);
-            progressDTO.setMediaItemId(Integer.parseInt(mediaItem));
-        }else {
-            /*com.edt.models::MediaItemHistory_68277978150821796170464*/
-            String[] splitByUnderline = s.split("_");
-            if (splitByUnderline.length == 2) {
-                String totalCode = splitByUnderline[1];
-                String regex = "(\\d{4,})(978\\d{10})(\\d+)";
-                Pattern p = Pattern.compile(regex);
-                Matcher m = p.matcher(totalCode);
-                while (m.find()) {
-                    String productCode = m.group(2);
-                    String mediaItem = m.group(3);
-                    progressDTO.setProductCode(productCode);
-                    progressDTO.setMediaItemId(Integer.parseInt(mediaItem));
-                }
+        }
+        String[] splitByUnderline = key.split("#")[0].split("_");
+        if (splitByUnderline.length == 2) {
+            String totalCode = splitByUnderline[1];
+            String regex = "(\\d{4,})(978\\d{10})(\\d+)";
+            Pattern p = Pattern.compile(regex);
+            Matcher m = p.matcher(totalCode);
+            if (m.find()) {
+                String productCode = m.group(2);
+                String mediaItem = m.group(3);
+                progressDTO.setProductCode(productCode);
+                progressDTO.setMediaItemId(Integer.parseInt(mediaItem));
             }
         }
     }

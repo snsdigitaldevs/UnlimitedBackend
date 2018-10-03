@@ -33,6 +33,7 @@ public class UnlimitedProgressConverter {
 
     private static ProgressDTO getProgressDTO(HashMap<String, Long> currentLastPlayedDateMap, List<UserAppStateDatum> group) {
         String key = group.get(0).getKey();
+        //com.ss.models::UserLessonHistory_68277_5baa718586383_9781508222033_4000030#lastPlayedDate
         String[] ids = key.split("#")[0].split("_");
 
         String subUserID = ids.length <= 5 ? ids[2] : ids[3];

@@ -13,15 +13,8 @@ public class AggregatedSyncState {
         return unlimitedSyncState;
     }
 
-    public void setUnlimitedSyncState(SyncState unlimitedSyncState) {
-        this.unlimitedSyncState = unlimitedSyncState;
-    }
-
     public SyncState getPcmSyncState() {
         return pcmSyncState;
     }
 
-    public void setPcmSyncState(SyncState pcmSyncState) {
-        this.pcmSyncState = pcmSyncState;
-    }
 }

@@ -6,6 +6,7 @@ import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.VerifyReceiptD
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.verifyReceipt.VerifyReceipt;
 import com.simonschuster.pimsleur.unlimited.services.AppIdService;
 import com.simonschuster.pimsleur.unlimited.utils.EdtErrorCodeUtil;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -51,7 +52,7 @@ public class VerifyReceiptService {
         String activeAppVersion = config.getProperty("verifyReceipt.appVersion");
         String verifyReceiptProperty = config.getProperty("edt.api.verifyReceipt.parameters");
         //if app is in apple evaluation process, purchase is verified by apple test environment
-        boolean verifyPurchaseInAppleTestEnv = (appVersion.equals(activeAppVersion)) && storeDomain.toLowerCase().contains("ios");
+        boolean verifyPurchaseInAppleTestEnv = mainVersionEquals(appVersion, activeAppVersion) && storeDomain.toLowerCase().contains("ios");
 
         if (verifyPurchaseInAppleTestEnv) {
             String format = String.format(verifyReceiptProperty,
@@ -75,6 +76,16 @@ public class VerifyReceiptService {
                 verifyReceiptBody.getIsMultiple() ? multipleAction : singleAction
         );
         return new HttpEntity<>(format, headers);
+    }
+
+    private boolean mainVersionEquals(String appVersion, String activeAppVersion) {
+        int matchVersions = StringUtils.countMatches(appVersion, ".");
+        if(matchVersions >= 2){
+            int minVersionIndex = appVersion.indexOf(".", appVersion.indexOf(".") + 1);
+            String mainVersion = appVersion.substring(0, minVersionIndex);
+            return mainVersion.equals(activeAppVersion);
+        }
+        return appVersion.equals(activeAppVersion);
     }
 }
 

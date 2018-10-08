@@ -34,4 +34,8 @@ public class SignUpBodyDTO {
     public String getCountryCode() {
         return countryCode;
     }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }

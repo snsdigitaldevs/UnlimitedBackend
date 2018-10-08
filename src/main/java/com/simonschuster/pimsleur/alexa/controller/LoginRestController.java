@@ -39,7 +39,7 @@ public class LoginRestController {
         try {
             String authorizationSub = loginService.getAuthorizationSub(email, password);
             //Generate necessary data in EDT backend for user who signed up on auth0
-            noticeEDTForNewUserInAuth0(email);
+            noticeEDTForNewUserInAuth0(email, password);
 
             responseRedirectUrl = new StringBuilder().append(redirectUri).append("#")
                     .append("state=").append(state).append("&")
@@ -56,9 +56,11 @@ public class LoginRestController {
         return responseRedirectUrl;
     }
 
-    private void noticeEDTForNewUserInAuth0(@RequestParam(name = "email") String email) {
+    private void noticeEDTForNewUserInAuth0(@RequestParam(name = "email") String email,
+                                            @RequestParam(name = "password") String password) {
         SignUpBodyDTO signUpBodyDto = new SignUpBodyDTO();
         signUpBodyDto.setEmail(email);
+        signUpBodyDto.setPassword(password);
         signUpBodyDto.setStoreDomain(ALEXA_STORE_DOMAIN);
         try {
             signUpService.signUp(signUpBodyDto);

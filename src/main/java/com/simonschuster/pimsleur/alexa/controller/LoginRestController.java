@@ -16,6 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import static com.simonschuster.pimsleur.alexa.StoreDomainUtil.ALEXA_STORE_DOMAIN;
 import static com.simonschuster.pimsleur.unlimited.services.customer.SignUpService.EMAIL_ALREADY_REGISTERED_ERROR_MESSAGE;
+import static com.simonschuster.pimsleur.unlimited.services.customer.SignUpService.PASSWORD_INVALID_MESSAGE;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
 @RestController
@@ -65,8 +66,9 @@ public class LoginRestController {
         try {
             signUpService.signUp(signUpBodyDto);
         } catch (ParamInvalidException e) {
-            //if error message is caused by sign up -3011 error, then we ignore it
-            if (!e.getMessage().equals(EMAIL_ALREADY_REGISTERED_ERROR_MESSAGE)) {
+            //if error message is caused by sign up -3011 or -1 error, then we ignore it
+            if (!e.getMessage().equals(EMAIL_ALREADY_REGISTERED_ERROR_MESSAGE)
+                    && !e.getMessage().equals(PASSWORD_INVALID_MESSAGE)) {
                 e.printStackTrace();
                 throw e;
             }

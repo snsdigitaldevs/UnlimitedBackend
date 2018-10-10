@@ -18,6 +18,7 @@ import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEd
 @Service
 public class SignUpService {
     public static final String EMAIL_ALREADY_REGISTERED_ERROR_MESSAGE = "This email is already registered.";
+    public static final String PASSWORD_INVALID_MESSAGE = "Password must be at least 8 characters,  \" +\n" + "\"including: lower case letters,  upper case letters,  numbers,  and special characters.";
     @Autowired
     private ApplicationConfiguration applicationConfiguration;
 
@@ -53,8 +54,7 @@ public class SignUpService {
                     errorMessage = EMAIL_ALREADY_REGISTERED_ERROR_MESSAGE;
                     break;
                 case -1:
-                    errorMessage = "Password must be at least 8 characters,  " +
-                            "including: lower case letters,  upper case letters,  numbers,  and special characters.";
+                    errorMessage = PASSWORD_INVALID_MESSAGE;
                     break;
 //                     invalid email cause different error codes
 //                     e.g.: xxx334.xxx.online cause -1

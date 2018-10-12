@@ -15,6 +15,7 @@ import com.simonschuster.pimsleur.unlimited.utils.HardCodedProductsUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
@@ -27,6 +28,7 @@ import static java.util.stream.Collectors.toList;
 
 @Service
 public class AvailableProductsService {
+    public static final int LESSON_LENGTH_FOR_ONE_COURSE = 30;
     @Autowired
     private EDTCustomerInfoService customerInfoService;
     @Autowired
@@ -122,20 +124,34 @@ public class AvailableProductsService {
     }
 
     public Stream<AvailableProductDto> puProductToDtos(Product product, String storeDomain) {
-        List<Course> courses = puCourseInfoService.getPuProductInfo(product.getProductCode(), storeDomain).toDto();
-        boolean hasMother = courses.size() > 1;
-
-        return courses.stream().map(course -> {
-            AvailableProductDto dto = course.toPuAvailableProductDto();
-            if (hasMother) {
+        if (PUProductHasChildren(product)) {
+            List<Course> courses = puCourseInfoService.getPuProductInfo(product.getProductCode(), storeDomain).toDto();
+            return courses.stream().map(course -> {
+                AvailableProductDto dto = course.toPuAvailableProductDto();
                 // if the pu product is kitted or subscription, use the mother isbn for upsell for all its children
-                dto.setProductCodeForUpsell(product.getProductCode());
-            } else {
                 // otherwise, use the single level isbn for upsell api
                 dto.setProductCodeForUpsell(product.getProductCode());
-            }
-            return dto;
-        });
+                return dto;
+            });
+        }else{
+            List<AvailableProductDto> dtos = new ArrayList<>();
+            AvailableProductDto dto =
+                    new AvailableProductDto(
+                            product.getProductsLanguageName(),
+                            product.getProductCode(),
+                            true);
+            dto.setCourseName(product.getProductsName());
+            dto.setProductCodeForUpsell(product.getProductCode());
+            dto.setLevel(product.getProductsLevel());
+            dtos.add(dto);
+            return dtos.stream();
+        }
+    }
+
+    private boolean PUProductHasChildren(Product product) {
+        return product.getProductsTotalLessons() > LESSON_LENGTH_FOR_ONE_COURSE
+                || product.getProductsLessonLength() > LESSON_LENGTH_FOR_ONE_COURSE
+                || product.getProductsNumMedia() > 1;
     }
 
     public Stream<AvailableProductDto> pcmOrderToDtos(OrdersProduct ordersProduct) {

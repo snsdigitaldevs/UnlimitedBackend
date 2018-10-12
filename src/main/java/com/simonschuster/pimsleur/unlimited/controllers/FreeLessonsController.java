@@ -25,8 +25,9 @@ public class FreeLessonsController {
     @ApiOperation(value = "Get a list of all free lessons of both PU and PCM")
     @RequestMapping(value = "/freeLessons", method = RequestMethod.GET)
     public List<AvailableProductDto> getFreeLessons(@RequestParam(value = "storeDomain") String storeDomain) {
+        List<AvailableProductDto> pcmFreeLessons = pcmFreeLessonsService.getPcmFreeLessons(storeDomain);
         return puFreeLessonsService
-                .mergePuWithPcmFreeLessons(pcmFreeLessonsService.getPcmFreeLessons(storeDomain));
+                .mergePuWithPcmFreeLessons(pcmFreeLessons);
     }
 
     @ApiOperation(value = "Before trying free lessons, users are asked to fill in their emails. " +

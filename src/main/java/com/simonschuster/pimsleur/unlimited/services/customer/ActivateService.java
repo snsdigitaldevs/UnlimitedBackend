@@ -4,8 +4,8 @@ import com.simonschuster.pimsleur.unlimited.common.exception.PimsleurException;
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.active.ActivateDTO;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.active.ActivateResultDTO;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.activate.Activate;
 import com.simonschuster.pimsleur.unlimited.data.edt.CodeOnlyResponseEDT;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.activate.Activate;
 import com.simonschuster.pimsleur.unlimited.services.AppIdService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
@@ -44,7 +44,9 @@ public class ActivateService {
                 applicationConfiguration.getProperty("edt.api.activate.parameters.activate"),
                 identityVerificationToken, registrantId, isbn, appId, registrantName
         );
-        if(registrantName == null || registrantName.equals("") || registrantName.equals("null") ){
+        if(registrantName == null || registrantName.equals("")
+                || registrantName.equals("null")
+                || registrantName.equals("undefined")){
             int index = format.indexOf("&nfua=");
             format = format.substring(0, index);
         }

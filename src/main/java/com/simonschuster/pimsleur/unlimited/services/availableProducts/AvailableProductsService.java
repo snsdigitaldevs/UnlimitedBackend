@@ -130,7 +130,6 @@ public class AvailableProductsService {
 
     private boolean PUProductHasChildren(Product product) {
         return product.getProductsTotalLessons() > LESSON_LENGTH_FOR_ONE_COURSE
-                || product.getProductsLessonLength() > LESSON_LENGTH_FOR_ONE_COURSE
                 || product.getProductsNumMedia() > 1;
     }
 

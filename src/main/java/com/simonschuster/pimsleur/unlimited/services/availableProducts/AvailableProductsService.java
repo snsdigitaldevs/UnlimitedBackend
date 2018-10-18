@@ -15,6 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
@@ -112,24 +113,23 @@ public class AvailableProductsService {
                 dto.setProductCodeForUpsell(product.getProductCode());
                 return dto;
             });
-        }else{
-            List<AvailableProductDto> dtos = new ArrayList<>();
+        }
+        else {
             AvailableProductDto dto =
                     new AvailableProductDto(
                             product.getProductsLanguageName(),
+                            product.getProductsName(),
                             product.getProductCode(),
-                            true);
-            dto.setCourseName(product.getProductsName());
+                            true,
+                            product.getProductsLevel());
             dto.setProductCodeForUpsell(product.getProductCode());
-            dto.setLevel(product.getProductsLevel());
-            dtos.add(dto);
+            List<AvailableProductDto> dtos = Arrays.asList(dto);
             return dtos.stream();
         }
     }
 
     private boolean PUProductHasChildren(Product product) {
-        return product.getProductsTotalLessons() > LESSON_LENGTH_FOR_ONE_COURSE
-                || product.getProductsNumMedia() > 1;
+        return product.getProductsTotalLessons() > LESSON_LENGTH_FOR_ONE_COURSE;
     }
 
     public Stream<AvailableProductDto> pcmOrderToDtos(OrdersProduct ordersProduct) {

@@ -28,24 +28,6 @@ public class SubUserController {
     @Autowired
     EDTCustomerInfoService edtCustomerInfoService;
 
-    @ApiOperation(value = "Get all sub users for a customer")
-    @RequestMapping(value = "/appUsers", method = RequestMethod.GET)
-    public SimpleCustomerInfoDTO getCustomerSubUsers(@RequestParam(value = "sub") String sub,
-                                                     @RequestParam(value = "storeDomain", required = false, defaultValue = "") String storeDomain,
-                                                     @RequestParam(value = "email", required = false, defaultValue = "") String email){
-        CustomerInfo customerInfos = edtCustomerInfoService
-                .getPuAndPCMCustomerInfos(sub, storeDomain, email);
-        ResultData resultData = customerInfos.getResultData();
-        Registrant registrant = resultData.getRegistrant();
-        SimpleCustomerInfoDTO dto = new SimpleCustomerInfoDTO();
-        dto.setSubUsers(registrant.getSubUsers());
-        Customer customer = resultData.getCustomer();
-        dto.setCustomerId(customer.getCustomersId().toString());
-        dto.setHasPendingAndroid(customer.hasPendingAndroid());
-        dto.setHasPendingIos(customer.hasPendingIos());
-        return dto;
-    }
-
     @ApiOperation(value = "Create new sub user")
     @PostMapping(value = "customers/{customerId}/appUsers")
     public SubUserDto createUserInfo(@PathVariable String customerId,

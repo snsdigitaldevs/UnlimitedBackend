@@ -78,7 +78,7 @@ public class Customer {
                         .filter(OrdersProduct::isNotHowToLearnForeignLang)
                         .filter(OrdersProduct::isPUProduct)
                         // we ignore "how to learn a foreign language"
-                        .map(product -> product.getProduct().getProductCode()))
+                        .map(ordersProduct -> ordersProduct.getProduct().getProductCode()))
                 .distinct()
                 .collect(toList());
     }

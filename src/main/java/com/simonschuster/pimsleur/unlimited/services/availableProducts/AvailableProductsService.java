@@ -11,10 +11,10 @@ import com.simonschuster.pimsleur.unlimited.services.course.PUCourseInfoService;
 import com.simonschuster.pimsleur.unlimited.services.customer.EDTCustomerInfoService;
 import com.simonschuster.pimsleur.unlimited.services.freeLessons.PcmFreeLessonsService;
 import com.simonschuster.pimsleur.unlimited.services.freeLessons.PuFreeLessonsService;
-import com.simonschuster.pimsleur.unlimited.utils.HardCodedProductsUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
@@ -27,6 +27,7 @@ import static java.util.stream.Collectors.toList;
 
 @Service
 public class AvailableProductsService {
+    public static final int LESSON_LENGTH_FOR_ONE_COURSE = 30;
     @Autowired
     private EDTCustomerInfoService customerInfoService;
     @Autowired
@@ -78,32 +79,12 @@ public class AvailableProductsService {
                             })
                             .filter(dto -> dto.getLevel() != 0)
                             .filter(distinctByKey(AvailableProductDto::getProductCode))
+                            .sorted(comparing(AvailableProductDto::getCourseName))
                             .collect(Collectors.toList());
-
-            List<String> freeIsbns = HardCodedProductsUtil.puFreeIsbns;
-            List<AvailableProductDto> purchasedCourses = availableProductDto.stream()
-                    .filter(p -> !freeIsbns.contains(p.getProductCode()))
-                    .collect(Collectors.toList());
-
-            List<AvailableProductDto> purchasedFreePUDistinctCourses = availableProductDto.stream()
-                    .filter(p -> freeIsbns.contains(p.getProductCode()))
-                    .filter(puFreeCourse -> !freeCourseIsInPurchasedCourses(purchasedCourses, puFreeCourse))
-                    .collect(Collectors.toList());
-
-            purchasedCourses.addAll(purchasedFreePUDistinctCourses);
-
-            return purchasedCourses.stream()
-                    .sorted(comparing(AvailableProductDto::getCourseName))
-                    .collect(toList());
+            return availableProductDto;
         } else {
             return emptyList();
         }
-    }
-
-    private boolean freeCourseIsInPurchasedCourses(List<AvailableProductDto> purchasedCourses, AvailableProductDto puFreeCourse) {
-        return purchasedCourses.stream().anyMatch(purchasedCourse ->
-                (purchasedCourse.getLanguageName() + purchasedCourse.getLevel())
-                        .equals(puFreeCourse.getLanguageName() + purchasedCourse.getLevel()));
     }
 
     private List<AvailableProductDto> getFreeProducts(List<AvailableProductDto> purchasedProducts, String storeDomain) {
@@ -122,20 +103,32 @@ public class AvailableProductsService {
     }
 
     public Stream<AvailableProductDto> puProductToDtos(Product product, String storeDomain) {
-        List<Course> courses = puCourseInfoService.getPuProductInfo(product.getProductCode(), storeDomain).toDto();
-        boolean hasMother = courses.size() > 1;
-
-        return courses.stream().map(course -> {
-            AvailableProductDto dto = course.toPuAvailableProductDto();
-            if (hasMother) {
+        if (PUProductHasChildren(product)) {
+            List<Course> courses = puCourseInfoService.getPuProductInfo(product.getProductCode(), storeDomain).toDto();
+            return courses.stream().map(course -> {
+                AvailableProductDto dto = course.toPuAvailableProductDto();
                 // if the pu product is kitted or subscription, use the mother isbn for upsell for all its children
-                dto.setProductCodeForUpsell(product.getProductCode());
-            } else {
                 // otherwise, use the single level isbn for upsell api
                 dto.setProductCodeForUpsell(product.getProductCode());
-            }
-            return dto;
-        });
+                return dto;
+            });
+        }
+        else {
+            AvailableProductDto dto =
+                    new AvailableProductDto(
+                            product.getProductsLanguageName(),
+                            product.getProductsName(),
+                            product.getProductCode(),
+                            true,
+                            product.getProductsLevel());
+            dto.setProductCodeForUpsell(product.getProductCode());
+            List<AvailableProductDto> dtos = Arrays.asList(dto);
+            return dtos.stream();
+        }
+    }
+
+    private boolean PUProductHasChildren(Product product) {
+        return product.getProductsTotalLessons() > LESSON_LENGTH_FOR_ONE_COURSE;
     }
 
     public Stream<AvailableProductDto> pcmOrderToDtos(OrdersProduct ordersProduct) {

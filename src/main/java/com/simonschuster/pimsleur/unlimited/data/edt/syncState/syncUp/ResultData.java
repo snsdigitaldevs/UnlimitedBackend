@@ -31,10 +31,4 @@ public class ResultData {
     public long getLastSaveId() {
         return lastSaveId;
     }
-
-    @JsonProperty("lastSaveId")
-    public void setLastSaveId(long lastSaveId) {
-        this.lastSaveId = lastSaveId;
-    }
-
 }

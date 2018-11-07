@@ -24,14 +24,6 @@ pipeline {
             }
         }
 
-        stage("Test") {
-            agent any
-            steps {
-                echo "Test"
-//                sh "mvn clean install"
-            }
-        }
-
         stage("Deploy to Dev") {
             agent any
             steps {
@@ -44,36 +36,11 @@ pipeline {
             }
         }
 
-        stage("Deploy to QA") {
-            steps {
-                echo "Deploy to QA"
-                script {
-                    try {
-                        timeout(time: 30, unit: 'MINUTES') {
-                            input message: 'build QA version?'
-                        }
-
-                        node {
-                            def config = readProperties file: 'jenkinsfiles/config/config.properties'
-                            def hostnames = config.QA_UnlimitedBackend_HostName.split(",")
-                            deploy(hostnames, "qa")
-                        }
-                    } catch (err) {
-                        currentBuild.result = 'SUCCESS'
-                        return true
-                    }
-                }
-            }
-        }
-
         stage("Deploy to UAT") {
             steps {
                 script {
                     try {
                         echo "Deploy to UAT"
-                        timeout(time: 30, unit: 'MINUTES') {
-                            input message: 'build UAT version?'
-                        }
 
                         node {
                             def config = readProperties file: 'jenkinsfiles/config/config.properties'

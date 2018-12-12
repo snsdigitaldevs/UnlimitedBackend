@@ -1,6 +1,7 @@
 package com.simonschuster.pimsleur.unlimited.controllers;
 
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.AvailablePractices;
+import com.simonschuster.pimsleur.unlimited.data.dto.practices.FlashCard;
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.PracticesInUnit;
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.QuickMatch;
 import com.simonschuster.pimsleur.unlimited.services.practices.PcmAvailablePracticesService;
@@ -49,6 +50,14 @@ public class AvailablePracticesController {
         List<PracticesInUnit> readings = csvToReadings(practicesUrls.getReadingUrl());
         List<PracticesInUnit> flashCards = csvToFlashCards(practicesUrls);
         List<PracticesInUnit> quickMatches = getQuickMatchesByCsvUrl(practicesUrls);
+
+        //make the order of flash cards list random
+        for (PracticesInUnit unit : flashCards) {
+            List<FlashCard> flashCardList = unit.getFlashCards();
+            Collections.shuffle(flashCardList);
+            unit.setFlashCards(flashCardList);
+        }
+
         //make the order of quick match list random
         for (PracticesInUnit unit : quickMatches) {
             List<QuickMatch> quickMatchList = unit.getQuickMatches();

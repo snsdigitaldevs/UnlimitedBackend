@@ -87,6 +87,10 @@ public class PracticesInUnit {
         return flashCards;
     }
 
+    public void setFlashCards(List<FlashCard> cards) {
+        this.flashCards = cards;
+    }
+
     public void setQuickMatches(List<QuickMatch> matches) {
         this.quickMatches = matches;
     }

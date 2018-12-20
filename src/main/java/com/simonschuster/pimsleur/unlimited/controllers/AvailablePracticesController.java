@@ -3,7 +3,6 @@ package com.simonschuster.pimsleur.unlimited.controllers;
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.AvailablePractices;
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.FlashCard;
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.PracticesInUnit;
-import com.simonschuster.pimsleur.unlimited.data.dto.practices.QuickMatch;
 import com.simonschuster.pimsleur.unlimited.services.practices.PcmAvailablePracticesService;
 import com.simonschuster.pimsleur.unlimited.services.practices.PracticesUrls;
 import com.simonschuster.pimsleur.unlimited.services.practices.PuAvailablePracticesService;
@@ -13,7 +12,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
-import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
@@ -50,21 +48,6 @@ public class AvailablePracticesController {
         List<PracticesInUnit> readings = csvToReadings(practicesUrls.getReadingUrl());
         List<PracticesInUnit> flashCards = csvToFlashCards(practicesUrls);
         List<PracticesInUnit> quickMatches = getQuickMatchesByCsvUrl(practicesUrls);
-
-        //make the order of flash cards list random
-        for (PracticesInUnit unit : flashCards) {
-            List<FlashCard> flashCardList = unit.getFlashCards();
-            Collections.shuffle(flashCardList);
-            unit.setFlashCards(flashCardList);
-        }
-
-        //make the order of quick match list random
-        for (PracticesInUnit unit : quickMatches) {
-            List<QuickMatch> quickMatchList = unit.getQuickMatches();
-            Collections.shuffle(quickMatchList);
-            unit.setQuickMatches(quickMatchList);
-        }
-
         return new AvailablePractices(mergeLists(readings, speakEasies, flashCards, quickMatches));
     }
 

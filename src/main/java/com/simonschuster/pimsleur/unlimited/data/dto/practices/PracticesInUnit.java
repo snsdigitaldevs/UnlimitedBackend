@@ -87,6 +87,7 @@ public class PracticesInUnit {
         return flashCards;
     }
 
+<<<<<<< HEAD
     public void setFlashCards(List<FlashCard> cards) {
         this.flashCards = cards;
     }
@@ -95,6 +96,8 @@ public class PracticesInUnit {
         this.quickMatches = matches;
     }
 
+=======
+>>>>>>> parent of 75a3d50... [taohui] #187 randomize PU practices quick match orders
     public List<SpeakEasyOrReading> getSpeakEasies() {
         return speakEasies;
     }

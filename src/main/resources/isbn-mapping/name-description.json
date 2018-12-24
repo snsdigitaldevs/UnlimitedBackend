@@ -3603,5 +3603,110 @@
     "ISBN13": 9781508282617,
     "In App Display Name": "French Premium Subscription",
     "In App Description": "150 thirty-minute Premium French language lessons"
+  },
+  {
+    "ISBN13": 9781508285823,
+    "In App Display Name": "Arabic (Eastern) Subscription",
+    "In App Description": "Unlimited access to the complete Arabic (Eastern) course"
+  },
+  {
+    "ISBN13": 9781508285830,
+    "In App Display Name": "Arabic (Modern Standard) Subscription",
+    "In App Description": "Unlimited access to the complete Arabic (Modern Standard) course"
+  },
+  {
+    "ISBN13": 9781508285847,
+    "In App Display Name": "Chinese (Mandarin) Subscription",
+    "In App Description": "Unlimited access to the complete Chinese (Mandarin) course"
+  },
+  {
+    "ISBN13": 9781508285854,
+    "In App Display Name": "Dari Persian Subscription",
+    "In App Description": "Unlimited access to the complete Dari Persian course"
+  },
+  {
+    "ISBN13": 9781508285861,
+    "In App Display Name": "ESL for Spanish Subscription",
+    "In App Description": "Unlimited access to the complete ESL for Spanish course"
+  },
+  {
+    "ISBN13": 9781508285878,
+    "In App Display Name": "Farsi Persian Subscription",
+    "In App Description": "Unlimited access to the complete Farsi Persian course"
+  },
+  {
+    "ISBN13": 9781508282525,
+    "In App Display Name": "French Subscription (2018)",
+    "In App Description": "Unlimited access to the complete French course"
+  },
+  {
+    "ISBN13": 9781508285892,
+    "In App Display Name": "German Subscription",
+    "In App Description": "Unlimited access to the complete German course"
+  },
+  {
+    "ISBN13": 9781508285908,
+    "In App Display Name": "Greek Subscription",
+    "In App Description": "Unlimited access to the complete Greek course"
+  },
+  {
+    "ISBN13": 9781508285915,
+    "In App Display Name": "Hebrew Subscription",
+    "In App Description": "Unlimited access to the complete Hebrew course"
+  },
+  {
+    "ISBN13": 9781508285922,
+    "In App Display Name": "Hindi Subscription",
+    "In App Description": "Unlimited access to the complete Hindi course"
+  },
+  {
+    "ISBN13": 9781508285939,
+    "In App Display Name": "Italian Subscription",
+    "In App Description": "Unlimited access to the complete Italian course"
+  },
+  {
+    "ISBN13": 9781508285946,
+    "In App Display Name": "Japanese Subscription",
+    "In App Description": "Unlimited access to the complete Japanese course"
+  },
+  {
+    "ISBN13": 9781508285953,
+    "In App Display Name": "Korean Subscription",
+    "In App Description": "Unlimited access to the complete Korean course"
+  },
+  {
+    "ISBN13": 9781508285960,
+    "In App Display Name": "Norwegian Subscription",
+    "In App Description": "Unlimited access to the complete Norwegian course"
+  },
+  {
+    "ISBN13": 9781508285977,
+    "In App Display Name": "Pashto Subscription",
+    "In App Description": "Unlimited access to the complete Pashto course"
+  },
+  {
+    "ISBN13": 9781508285984,
+    "In App Display Name": "Portuguese (Brazilian) Subscription",
+    "In App Description": "Unlimited access to the complete Portuguese (Brazilian) course"
+  },
+  {
+    "ISBN13": 9781508285991,
+    "In App Display Name": "Russian Subscription",
+    "In App Description": "Unlimited access to the complete Russian course"
+  },
+  {
+    "ISBN13": 9781508285489,
+    "In App Display Name": "Spanish Subscription (2018)",
+    "In App Description": "Unlimited access to the complete Spanish course"
+  },
+  {
+    "ISBN13": 9781508286011,
+    "In App Display Name": "Tagalog Subscription",
+    "In App Description": "Unlimited access to the complete Tagalog course"
+  },
+  {
+    "ISBN13": 9781508268635,
+    "In App Display Name": "Spanish (Castilian) Subscription",
+    "In App Description": "Unlimited access to the complete Spanish (Castilian) course"
   }
 ]

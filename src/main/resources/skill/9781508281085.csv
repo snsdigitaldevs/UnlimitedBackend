@@ -1,0 +1,667 @@
+Rec #,Lang,ISBN-13,Course,Unit Num,start,stop,QZ #,line #,spkr,Cue,#of words,Q or S,Course Name (Source),Snippet Name,Skills
+1,SP,9781508281085,Spanish 1,01,00:00.000,00:00.000,01Q,0,N,"Excuse me, miss.",n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_001.mp3,"10,13,16"
+2,SP,9781508281085,Spanish 1,01,00:00.000,00:00.000,01R,0,M,"Disculpe, señorita.",n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_002.mp3,"10,13,16"
+3,SP,9781508281085,Spanish 1,01,00:00.000,00:00.000,02Q,0,N,"Excuse me, do you understand English?",n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_003.mp3,"10,13,15,16"
+4,SP,9781508281085,Spanish 1,01,00:00.000,00:00.000,02R,0,M,"Disculpe, ¿entiende inglés?",n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_004.mp3,"10,13,15,16"
+5,SP,9781508281085,Spanish 1,01,00:00.000,00:00.000,03Q,0,N,"No, sir.",n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_005.mp3,"13,16"
+6,SP,9781508281085,Spanish 1,01,00:00.000,00:00.000,03R,0,F,"No, señor.",n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_006.mp3,"13,16"
+7,SP,9781508281085,Spanish 1,01,00:00.000,00:00.000,04Q,0,N,Do you understand Spanish?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_007.mp3,"10,15,16"
+8,SP,9781508281085,Spanish 1,01,00:00.000,00:00.000,04R,0,F,¿Entiende español?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_008.mp3,"10,15,16"
+9,SP,9781508281085,Spanish 1,01,00:00.000,00:00.000,05Q,0,N,Are you American?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_009.mp3,10
+10,SP,9781508281085,Spanish 1,01,00:00.000,00:00.000,05R,0,M,¿Es usted norteamericano?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_010.mp3,10
+11,SP,9781508281085,Spanish 1,01,00:00.000,00:00.000,06Q,0,N,Do you speak English?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_011.mp3,"10,15,16"
+12,SP,9781508281085,Spanish 1,01,00:00.000,00:00.000,06R,0,F,¿Habla inglés?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_012.mp3,"10,15,16"
+13,SP,9781508281085,Spanish 1,01,00:00.000,00:00.000,07Q,0,N,I speak Spanish a little.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_013.mp3,"10,15,16"
+14,SP,9781508281085,Spanish 1,01,00:00.000,00:00.000,07R,0,M,Hablo español un poco.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_014.mp3,"10,15,16"
+15,SP,9781508281085,Spanish 1,01,00:00.000,00:00.000,08Q,0,N,I don’t understand English.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_015.mp3,"10,15"
+16,SP,9781508281085,Spanish 1,01,00:00.000,00:00.000,08R,0,M,No entiendo inglés.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_016.mp3,"10,15"
+17,SP,9781508281085,Spanish 1,01,00:00.000,00:00.000,09Q,0,N,"Yes, miss.",n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_017.mp3,"13,16"
+18,SP,9781508281085,Spanish 1,01,00:00.000,00:00.000,09R,0,M,"Sí, señorita.",n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_018.mp3,"13,16"
+19,SP,9781508281085,Spanish 1,01,00:00.000,00:00.000,10Q,0,N,You speak a little.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_019.mp3,"10,15,16"
+20,SP,9781508281085,Spanish 1,01,00:00.000,00:00.000,10R,0,F,Habla un poco.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_020.mp3,"10,15,16"
+21,SP,9781508281085,Spanish 1,02,00:00.000,00:00.000,01Q,0,N,Good-bye sir.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_021.mp3,"10,13"
+22,SP,9781508281085,Spanish 1,02,00:00.000,00:00.000,01R,0,F,"Adiós, señor.",n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_022.mp3,"10,13"
+23,SP,9781508281085,Spanish 1,02,00:00.000,00:00.000,02Q,0,N,"Fine, thanks.",n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_023.mp3,"10,13"
+24,SP,9781508281085,Spanish 1,02,00:00.000,00:00.000,02R,0,M,"Bien, gracias.",n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_024.mp3,"10,13"
+25,SP,9781508281085,Spanish 1,02,00:00.000,00:00.000,03Q,0,N,Good morning.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_025.mp3,"10,13,17"
+26,SP,9781508281085,Spanish 1,02,00:00.000,00:00.000,03R,0,F,Buenos días.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_026.mp3,"10,13,17"
+27,SP,9781508281085,Spanish 1,02,00:00.000,00:00.000,04Q,0,N,"Good morning, ma’am.",n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_027.mp3,"10,13,17"
+28,SP,9781508281085,Spanish 1,02,00:00.000,00:00.000,04R,0,M,"Buenos días, señora.",n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_028.mp3,"10,13,17"
+29,SP,9781508281085,Spanish 1,02,00:00.000,00:00.000,05Q,0,N,How are you?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_029.mp3,"10,13,16"
+30,SP,9781508281085,Spanish 1,02,00:00.000,00:00.000,05R,0,M,¿Cómo está?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_030.mp3,"10,13,16"
+31,SP,9781508281085,Spanish 1,02,00:00.000,00:00.000,06Q,0,N,I understand very well.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_031.mp3,"10,15"
+32,SP,9781508281085,Spanish 1,02,00:00.000,00:00.000,06R,0,M,Entiendo muy bien.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_032.mp3,"10,15"
+33,SP,9781508281085,Spanish 1,02,00:00.000,00:00.000,07Q,0,N,I understand a little Spanish.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_033.mp3,"10,15,16"
+34,SP,9781508281085,Spanish 1,02,00:00.000,00:00.000,07R,0,F,Entiendo un poco de español.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_034.mp3,"10,15,16"
+35,SP,9781508281085,Spanish 1,02,00:00.000,00:00.000,08Q,0,N,Are you American? (f),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_035.mp3,10
+36,SP,9781508281085,Spanish 1,02,00:00.000,00:00.000,08R,0,M,¿Es usted norteamericana?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_036.mp3,10
+37,SP,9781508281085,Spanish 1,02,00:00.000,00:00.000,09Q,0,N,You speak Spanish very well.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_037.mp3,"10,15"
+38,SP,9781508281085,Spanish 1,02,00:00.000,00:00.000,09R,0,F,Habla español muy bien.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_038.mp3,"10,15"
+39,SP,9781508281085,Spanish 1,02,00:00.000,00:00.000,10Q,0,N,I speak a little Spanish.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_039.mp3,"10,15,16"
+40,SP,9781508281085,Spanish 1,02,00:00.000,00:00.000,10R,0,F,Hablo un poco de español.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_040.mp3,"10,15,16"
+41,SP,9781508281085,Spanish 1,02,00:00.000,00:00.000,11Q,0,N,"Very well, thanks",n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_041.mp3,"13,16"
+42,SP,9781508281085,Spanish 1,02,00:00.000,00:00.000,11R,0,F,"Muy bien, gracias.",n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_042.mp3,"13,16"
+43,SP,9781508281085,Spanish 1,03,00:00.000,00:00.000,01Q,0,N,Good evening.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_043.mp3,"7,10,13,17"
+44,SP,9781508281085,Spanish 1,03,00:00.000,00:00.000,01R,0,M,Buenas noches.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_044.mp3,"7,10,13,17"
+45,SP,9781508281085,Spanish 1,03,00:00.000,00:00.000,02Q,0,N,Good afternoon.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_045.mp3,"10,13,17"
+46,SP,9781508281085,Spanish 1,03,00:00.000,00:00.000,02R,0,F,Buenas tardes.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_046.mp3,"10,13,17"
+47,SP,9781508281085,Spanish 1,03,00:00.000,00:00.000,03Q,0,N,Where are you from?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_047.mp3,"7,10"
+48,SP,9781508281085,Spanish 1,03,00:00.000,00:00.000,03R,0,M,¿De dónde es usted?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_048.mp3,"7,10"
+49,SP,9781508281085,Spanish 1,03,00:00.000,00:00.000,04Q,0,N,I’m not American.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_049.mp3,"9,10"
+50,SP,9781508281085,Spanish 1,03,00:00.000,00:00.000,04R,0,M,No soy norteamericano.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_050.mp3,"9,10"
+51,SP,9781508281085,Spanish 1,03,00:00.000,00:00.000,05Q,0,N,I’m American. (f),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_051.mp3,"9,10,16"
+52,SP,9781508281085,Spanish 1,03,00:00.000,00:00.000,05R,0,F,Soy norteamericana.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_052.mp3,"9,10,16"
+53,SP,9781508281085,Spanish 1,03,00:00.000,00:00.000,06Q,0,N,You understand.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_053.mp3,"10,15"
+54,SP,9781508281085,Spanish 1,03,00:00.000,00:00.000,06R,0,F,Usted entiende.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_054.mp3,"10,15"
+55,SP,9781508281085,Spanish 1,03,00:00.000,00:00.000,07Q,0,N,You’re from Mexico.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_055.mp3,"9,10"
+56,SP,9781508281085,Spanish 1,03,00:00.000,00:00.000,07R,0,M,Usted es de México,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_056.mp3,"9,10"
+57,SP,9781508281085,Spanish 1,03,00:00.000,00:00.000,08Q,0,N,And you?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_057.mp3,"10,13"
+58,SP,9781508281085,Spanish 1,03,00:00.000,00:00.000,08R,0,M,¿Y usted?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_058.mp3,"10,13"
+59,SP,9781508281085,Spanish 1,03,00:00.000,00:00.000,09Q,0,N,From where?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_059.mp3,"7,10"
+60,SP,9781508281085,Spanish 1,03,00:00.000,00:00.000,09R,0,M,¿De dónde?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_060.mp3,"7,10"
+61,SP,9781508281085,Spanish 1,03,00:00.000,00:00.000,10Q,0,N,Very well.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_061.mp3,"7,13"
+62,SP,9781508281085,Spanish 1,03,00:00.000,00:00.000,10R,0,M,Muy bien.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_062.mp3,"7,13"
+63,SP,9781508281085,Spanish 1,04,00:00.000,00:00.000,01Q,0,N,Where are you?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_063.mp3,"7,10"
+64,SP,9781508281085,Spanish 1,04,00:00.000,00:00.000,01R,0,F,¿Dónde está?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_064.mp3,"7,10"
+65,SP,9781508281085,Spanish 1,04,00:00.000,00:00.000,02Q,0,N,The restaurant is here.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_065.mp3,"4,6"
+66,SP,9781508281085,Spanish 1,04,00:00.000,00:00.000,02R,0,F,El restaurante está aquí.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_066.mp3,"4,6"
+67,SP,9781508281085,Spanish 1,04,00:00.000,00:00.000,03Q,0,N,Pleased to meet you. (f),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_067.mp3,"13,16"
+68,SP,9781508281085,Spanish 1,04,00:00.000,00:00.000,03R,0,F,Encantada.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_068.mp3,"13,16"
+69,SP,9781508281085,Spanish 1,04,00:00.000,00:00.000,04Q,0,N,It’s here.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_069.mp3,4
+70,SP,9781508281085,Spanish 1,04,00:00.000,00:00.000,04R,0,M,Está aquí.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_070.mp3,4
+71,SP,9781508281085,Spanish 1,04,00:00.000,00:00.000,05Q,0,N,It’s over there.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_071.mp3,4
+72,SP,9781508281085,Spanish 1,04,00:00.000,00:00.000,05R,0,F,Está allí.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_072.mp3,4
+73,SP,9781508281085,Spanish 1,04,00:00.000,00:00.000,06Q,0,N,Do you speak Castilian?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_073.mp3,"10,15"
+74,SP,9781508281085,Spanish 1,04,00:00.000,00:00.000,06R,0,M,Habla castellano?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_074.mp3,"10,15"
+75,SP,9781508281085,Spanish 1,04,00:00.000,00:00.000,07Q,0,N,I speak English and Castilian.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_075.mp3,"10,15"
+76,SP,9781508281085,Spanish 1,04,00:00.000,00:00.000,07R,0,M,Hablo inglés y castellano.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_076.mp3,"10,15"
+77,SP,9781508281085,Spanish 1,04,00:00.000,00:00.000,08Q,0,N,It’s not here.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_077.mp3,4
+78,SP,9781508281085,Spanish 1,04,00:00.000,00:00.000,08R,0,F,No está aquí.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_078.mp3,4
+79,SP,9781508281085,Spanish 1,04,00:00.000,00:00.000,09Q,0,N,See you.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_079.mp3,"10,13"
+80,SP,9781508281085,Spanish 1,04,00:00.000,00:00.000,09R,0,F,Nos vemos.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_080.mp3,"10,13"
+81,SP,9781508281085,Spanish 1,04,00:00.000,00:00.000,10Q,0,N,I’m not Mexican. (f),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_081.mp3,"9,10"
+82,SP,9781508281085,Spanish 1,04,00:00.000,00:00.000,10R,0,F,No soy Mexicana.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_082.mp3,"9,10"
+83,SP,9781508281085,Spanish 1,05,00:00.000,00:00.000,01Q,0,N,Are you from here?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_083.mp3,"4,7,10"
+84,SP,9781508281085,Spanish 1,05,00:00.000,00:00.000,01R,0,M,¿Es usted de aquí?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_084.mp3,"4,7,10"
+85,SP,9781508281085,Spanish 1,05,00:00.000,00:00.000,02Q,0,N,I don’t know.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_085.mp3,"7,9"
+86,SP,9781508281085,Spanish 1,05,00:00.000,00:00.000,02R,0,F,No sé.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_086.mp3,"7,9"
+87,SP,9781508281085,Spanish 1,05,00:00.000,00:00.000,03Q,0,N,I don’t know where it is.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_087.mp3,4
+88,SP,9781508281085,Spanish 1,05,00:00.000,00:00.000,03R,0,M,No sé dónde está.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_088.mp3,4
+89,SP,9781508281085,Spanish 1,05,00:00.000,00:00.000,04Q,0,N,I’m not from here.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_089.mp3,"4,9,10,16"
+90,SP,9781508281085,Spanish 1,05,00:00.000,00:00.000,04R,0,M,No soy de aquí.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_090.mp3,"4,9,10,16"
+91,SP,9781508281085,Spanish 1,05,00:00.000,00:00.000,05Q,0,N,I don’t have any pesos.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_091.mp3,"11,12"
+92,SP,9781508281085,Spanish 1,05,00:00.000,00:00.000,05R,0,F,No tengo pesos.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_092.mp3,"11,12"
+93,SP,9781508281085,Spanish 1,05,00:00.000,00:00.000,06Q,0,N,I know where it is.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_093.mp3,"4,9"
+94,SP,9781508281085,Spanish 1,05,00:00.000,00:00.000,06R,0,F,Sé dónde está.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_094.mp3,"4,9"
+95,SP,9781508281085,Spanish 1,05,00:00.000,00:00.000,07Q,0,N,"Yes, I know.",n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_095.mp3,"7,9"
+96,SP,9781508281085,Spanish 1,05,00:00.000,00:00.000,07R,0,M,"Sí, sé.",n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_096.mp3,"7,9"
+97,SP,9781508281085,Spanish 1,05,00:00.000,00:00.000,08Q,0,N,I only have one peso.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_097.mp3,"11,12"
+98,SP,9781508281085,Spanish 1,05,00:00.000,00:00.000,08R,0,M,Sólo tengo un peso.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_098.mp3,"11,12"
+99,SP,9781508281085,Spanish 1,05,00:00.000,00:00.000,09Q,0,N,I’m from the United States.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_099.mp3,"9,10,16"
+100,SP,9781508281085,Spanish 1,05,00:00.000,00:00.000,09R,0,F,Soy de Estados Unidos.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_100.mp3,"9,10,16"
+101,SP,9781508281085,Spanish 1,05,00:00.000,00:00.000,10Q,0,N,Where’s the hotel?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_101.mp3,"4,18"
+102,SP,9781508281085,Spanish 1,05,00:00.000,00:00.000,10R,0,F,¿Dónde está el hotel?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_102.mp3,"4,18"
+103,SP,9781508281085,Spanish 1,06,00:00.000,00:00.000,01Q,0,N,How are you? (informal),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_103.mp3,"7,10"
+104,SP,9781508281085,Spanish 1,06,00:00.000,00:00.000,01R,0,F,¿Cómo estás tú?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_104.mp3,"7,10"
+105,SP,9781508281085,Spanish 1,06,00:00.000,00:00.000,02Q,0,N,How many do you want? (formal),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_105.mp3,11
+106,SP,9781508281085,Spanish 1,06,00:00.000,00:00.000,02R,0,M,¿Cuántos quiere?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_106.mp3,11
+107,SP,9781508281085,Spanish 1,06,00:00.000,00:00.000,03Q,0,N,How many do you want? (informal),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_107.mp3,11
+108,SP,9781508281085,Spanish 1,06,00:00.000,00:00.000,03R,0,M,¿Cuántos quieres?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_108.mp3,11
+109,SP,9781508281085,Spanish 1,06,00:00.000,00:00.000,04Q,0,N,You understand very well. (informal),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_109.mp3,"10,15"
+110,SP,9781508281085,Spanish 1,06,00:00.000,00:00.000,04R,0,F,Entiendes muy bien.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_110.mp3,"10,15"
+111,SP,9781508281085,Spanish 1,06,00:00.000,00:00.000,05Q,0,N,That’s OK.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_111.mp3,7
+112,SP,9781508281085,Spanish 1,06,00:00.000,00:00.000,05R,0,F,Está bien.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_112.mp3,7
+113,SP,9781508281085,Spanish 1,06,00:00.000,00:00.000,06Q,0,N,Thank you very much.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_113.mp3,"13,16"
+114,SP,9781508281085,Spanish 1,06,00:00.000,00:00.000,06R,0,M,Muchas gracias.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_114.mp3,"13,16"
+115,SP,9781508281085,Spanish 1,06,00:00.000,00:00.000,07Q,0,N,It’s not much.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_115.mp3,"7,11"
+116,SP,9781508281085,Spanish 1,06,00:00.000,00:00.000,07R,0,F,No es mucho.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_116.mp3,"7,11"
+117,SP,9781508281085,Spanish 1,06,00:00.000,00:00.000,08Q,0,N,I don’t want a lot.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_117.mp3,11
+118,SP,9781508281085,Spanish 1,06,00:00.000,00:00.000,08R,0,F,No quiero muchos.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_118.mp3,11
+119,SP,9781508281085,Spanish 1,06,00:00.000,00:00.000,09Q,0,N,I don’t have a lot.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_119.mp3,12
+120,SP,9781508281085,Spanish 1,06,00:00.000,00:00.000,09R,0,M,No tengo muchos.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_120.mp3,12
+121,SP,9781508281085,Spanish 1,06,00:00.000,00:00.000,10Q,0,N,You're not from here. (formal),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_121.mp3,"4,9,10"
+122,SP,9781508281085,Spanish 1,06,00:00.000,00:00.000,10R,0,F,No es de aquí.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_122.mp3,"4,9,10"
+123,SP,9781508281085,Spanish 1,07,00:00.000,00:00.000,01Q,0,N,Where do you want to eat? (informal),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_123.mp3,"4,6,7"
+124,SP,9781508281085,Spanish 1,07,00:00.000,00:00.000,01R,0,F,¿Dónde quieres comer?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_124.mp3,"4,6,7"
+125,SP,9781508281085,Spanish 1,07,00:00.000,00:00.000,02Q,0,N,"Nothing, thanks.",n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_125.mp3,"7,13"
+126,SP,9781508281085,Spanish 1,07,00:00.000,00:00.000,02R,0,M,"Nada, gracias.",n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_126.mp3,"7,13"
+127,SP,9781508281085,Spanish 1,07,00:00.000,00:00.000,03Q,0,N,You don’t want to eat. (informal),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_127.mp3,6
+128,SP,9781508281085,Spanish 1,07,00:00.000,00:00.000,03R,0,F,No quieres comer.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_128.mp3,6
+129,SP,9781508281085,Spanish 1,07,00:00.000,00:00.000,04Q,0,N,I don’t want to eat here.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_129.mp3,"4,6"
+130,SP,9781508281085,Spanish 1,07,00:00.000,00:00.000,04R,0,F,No quiero comer aquí.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_130.mp3,"4,6"
+131,SP,9781508281085,Spanish 1,07,00:00.000,00:00.000,05Q,0,N,I don’t want anything.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_131.mp3,6
+132,SP,9781508281085,Spanish 1,07,00:00.000,00:00.000,05R,0,M,No quiero nada.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_132.mp3,6
+133,SP,9781508281085,Spanish 1,07,00:00.000,00:00.000,06Q,0,N,I don’t have pesos here.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_133.mp3,"11,12"
+134,SP,9781508281085,Spanish 1,07,00:00.000,00:00.000,06R,0,F,No tengo pesos aquí.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_134.mp3,"11,12"
+135,SP,9781508281085,Spanish 1,07,00:00.000,00:00.000,07Q,0,N,What do you want? (informal),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_135.mp3,"6,7,16"
+136,SP,9781508281085,Spanish 1,07,00:00.000,00:00.000,07R,0,M,¿Qué quieres?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_136.mp3,"6,7,16"
+137,SP,9781508281085,Spanish 1,07,00:00.000,00:00.000,08Q,0,N,What do you want to eat? (informal),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_137.mp3,6
+138,SP,9781508281085,Spanish 1,07,00:00.000,00:00.000,08R,0,M,¿Qué quieres comer?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_138.mp3,6
+139,SP,9781508281085,Spanish 1,07,00:00.000,00:00.000,09Q,0,N,Do you want to eat something?  (informal),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_139.mp3,6
+140,SP,9781508281085,Spanish 1,07,00:00.000,00:00.000,09R,0,F,¿Quieres comer algo?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_140.mp3,6
+141,SP,9781508281085,Spanish 1,07,00:00.000,00:00.000,10Q,0,N,Let’s go (to) eat.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_141.mp3,"6,7"
+142,SP,9781508281085,Spanish 1,07,00:00.000,00:00.000,10R,0,F,Vamos a comer.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_142.mp3,"6,7"
+143,SP,9781508281085,Spanish 1,08,00:00.000,00:00.000,01Q,0,N,Here or there?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_143.mp3,4
+144,SP,9781508281085,Spanish 1,08,00:00.000,00:00.000,01R,0,M,¿Aquí o allí?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_144.mp3,4
+145,SP,9781508281085,Spanish 1,08,00:00.000,00:00.000,02Q,0,N,How much does it cost?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_145.mp3,"11,14,16"
+146,SP,9781508281085,Spanish 1,08,00:00.000,00:00.000,02R,0,M,¿Cuánto cuesta?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_146.mp3,"11,14,16"
+147,SP,9781508281085,Spanish 1,08,00:00.000,00:00.000,03Q,0,N,Where is the bathroom?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_147.mp3,"4,16"
+148,SP,9781508281085,Spanish 1,08,00:00.000,00:00.000,03R,0,F,¿Dónde está el baño?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_148.mp3,"4,16"
+149,SP,9781508281085,Spanish 1,08,00:00.000,00:00.000,04Q,0,N,Don’t you want to eat anything?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_149.mp3,6
+150,SP,9781508281085,Spanish 1,08,00:00.000,00:00.000,04R,0,F,¿No quiere comer nada?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_150.mp3,6
+151,SP,9781508281085,Spanish 1,08,00:00.000,00:00.000,05Q,0,N,I don’t want to.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_151.mp3,"6,7"
+152,SP,9781508281085,Spanish 1,08,00:00.000,00:00.000,05R,0,M,No quiero.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_152.mp3,"6,7"
+153,SP,9781508281085,Spanish 1,08,00:00.000,00:00.000,06Q,0,N,I don’t know where the bathroom is.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_153.mp3,"4,16"
+154,SP,9781508281085,Spanish 1,08,00:00.000,00:00.000,06R,0,F,No sé dónde está el baño.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_154.mp3,"4,16"
+155,SP,9781508281085,Spanish 1,08,00:00.000,00:00.000,07Q,0,N,What do you want to drink?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_155.mp3,6
+156,SP,9781508281085,Spanish 1,08,00:00.000,00:00.000,07R,0,M,¿Qué quiere tomar?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_156.mp3,6
+157,SP,9781508281085,Spanish 1,08,00:00.000,00:00.000,08Q,0,N,Do you want a soda?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_157.mp3,6
+158,SP,9781508281085,Spanish 1,08,00:00.000,00:00.000,08R,0,F,¿Quiere un refresco?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_158.mp3,6
+159,SP,9781508281085,Spanish 1,08,00:00.000,00:00.000,09Q,0,N,I want to drink a soda.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_159.mp3,6
+160,SP,9781508281085,Spanish 1,08,00:00.000,00:00.000,09R,0,M,Quiero tomar un refresco.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_160.mp3,6
+161,SP,9781508281085,Spanish 1,08,00:00.000,00:00.000,10Q,0,N,Let’s go drink a beer.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_161.mp3,6
+162,SP,9781508281085,Spanish 1,08,00:00.000,00:00.000,10R,0,M,Vamos a tomar una cerveza.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_162.mp3,6
+163,SP,9781508281085,Spanish 1,09,00:00.000,00:00.000,01Q,0,N,(To) where are you going? (informal),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_163.mp3,"4,7"
+164,SP,9781508281085,Spanish 1,09,00:00.000,00:00.000,01R,0,F,¿Adónde vas?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_164.mp3,"4,7"
+165,SP,9781508281085,Spanish 1,09,00:00.000,00:00.000,02Q,0,N,Here it is.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_165.mp3,"4,7"
+166,SP,9781508281085,Spanish 1,09,00:00.000,00:00.000,02R,0,M,Aquí está.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_166.mp3,"4,7"
+167,SP,9781508281085,Spanish 1,09,00:00.000,00:00.000,03Q,0,N,How much money do you have? (informal),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_167.mp3,"11,14"
+168,SP,9781508281085,Spanish 1,09,00:00.000,00:00.000,03R,0,F,¿Cuánto dinero tienes?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_168.mp3,"11,14"
+169,SP,9781508281085,Spanish 1,09,00:00.000,00:00.000,04Q,0,N,How much time do you have? (informal),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_169.mp3,"14,17"
+170,SP,9781508281085,Spanish 1,09,00:00.000,00:00.000,04R,0,F,¿Cuánto tiempo tienes?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_170.mp3,"14,17"
+171,SP,9781508281085,Spanish 1,09,00:00.000,00:00.000,05Q,0,N,I’m going to the bathroom.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_171.mp3,"7,16"
+172,SP,9781508281085,Spanish 1,09,00:00.000,00:00.000,05R,0,F,Voy al baño.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_172.mp3,"7,16"
+173,SP,9781508281085,Spanish 1,09,00:00.000,00:00.000,06Q,0,N,It’s only a little.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_173.mp3,"11,14"
+174,SP,9781508281085,Spanish 1,09,00:00.000,00:00.000,06R,0,M,Es sólo un poco.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_174.mp3,"11,14"
+175,SP,9781508281085,Spanish 1,09,00:00.000,00:00.000,07Q,0,N,It’s not much money.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_175.mp3,11
+176,SP,9781508281085,Spanish 1,09,00:00.000,00:00.000,07R,0,M,No es mucho dinero.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_176.mp3,11
+177,SP,9781508281085,Spanish 1,09,00:00.000,00:00.000,08Q,0,N,It’s nothing.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_177.mp3,7
+178,SP,9781508281085,Spanish 1,09,00:00.000,00:00.000,08R,0,M,No es nada.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_178.mp3,7
+179,SP,9781508281085,Spanish 1,09,00:00.000,00:00.000,09Q,0,N,I don’t have much time.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_179.mp3,"12,17"
+180,SP,9781508281085,Spanish 1,09,00:00.000,00:00.000,09R,0,M,No tengo mucho tiempo.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_180.mp3,"12,17"
+181,SP,9781508281085,Spanish 1,09,00:00.000,00:00.000,10Q,0,N,Me too.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_181.mp3,7
+182,SP,9781508281085,Spanish 1,09,00:00.000,00:00.000,10R,0,M,Yo también.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_182.mp3,7
+183,SP,9781508281085,Spanish 1,10,00:00.000,00:00.000,01Q,0,N,I like cold water.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_183.mp3,6
+184,SP,9781508281085,Spanish 1,10,00:00.000,00:00.000,01R,0,F,Me gusta el agua fría.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_184.mp3,6
+185,SP,9781508281085,Spanish 1,10,00:00.000,00:00.000,02Q,0,N,I like cold soda.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_185.mp3,6
+186,SP,9781508281085,Spanish 1,10,00:00.000,00:00.000,02R,0,M,Me gusta el refresco frío.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_186.mp3,6
+187,SP,9781508281085,Spanish 1,10,00:00.000,00:00.000,03Q,0,N,Here you have the torta. (informal),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_187.mp3,6
+188,SP,9781508281085,Spanish 1,10,00:00.000,00:00.000,03R,0,F,Aquí tienes la torta.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_188.mp3,6
+189,SP,9781508281085,Spanish 1,10,00:00.000,00:00.000,04Q,0,N,"All right, but I’m going to pay.",n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_189.mp3,11
+190,SP,9781508281085,Spanish 1,10,00:00.000,00:00.000,04R,0,F,"Bueno, pero yo voy a pagar.",n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_190.mp3,11
+191,SP,9781508281085,Spanish 1,10,00:00.000,00:00.000,05Q,0,N,I like to eat.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_191.mp3,6
+192,SP,9781508281085,Spanish 1,10,00:00.000,00:00.000,05R,0,M,Me gusta comer.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_192.mp3,6
+193,SP,9781508281085,Spanish 1,10,00:00.000,00:00.000,06Q,0,N,I don’t know why.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_193.mp3,7
+194,SP,9781508281085,Spanish 1,10,00:00.000,00:00.000,06R,0,M,No se porque.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_194.mp3,7
+195,SP,9781508281085,Spanish 1,10,00:00.000,00:00.000,07Q,0,N,Why not?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_195.mp3,7
+196,SP,9781508281085,Spanish 1,10,00:00.000,00:00.000,07R,0,F,¿Por qué no?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_196.mp3,7
+197,SP,9781508281085,Spanish 1,10,00:00.000,00:00.000,08Q,0,N,Why are you going to pay?  (informal),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_197.mp3,11
+198,SP,9781508281085,Spanish 1,10,00:00.000,00:00.000,08R,0,M,¿Por qué vas a pagar?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_198.mp3,11
+199,SP,9781508281085,Spanish 1,10,00:00.000,00:00.000,09Q,0,N,Because I don’t like it.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_199.mp3,7
+200,SP,9781508281085,Spanish 1,10,00:00.000,00:00.000,09R,0,F,Porque no me gusta.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_200.mp3,7
+201,SP,9781508281085,Spanish 1,10,00:00.000,00:00.000,10Q,0,N,Because I don’t have time.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_201.mp3,"12,17"
+202,SP,9781508281085,Spanish 1,10,00:00.000,00:00.000,10R,0,F,Porque no tengo tiempo.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_202.mp3,"12,17"
+203,SP,9781508281085,Spanish 1,11,00:00.000,00:00.000,01Q,0,N,You buy many things.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_203.mp3,14
+204,SP,9781508281085,Spanish 1,11,00:00.000,00:00.000,01R,0,F,Compras muchas cosas.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_204.mp3,14
+205,SP,9781508281085,Spanish 1,11,00:00.000,00:00.000,02Q,0,N,I buy things.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_205.mp3,14
+206,SP,9781508281085,Spanish 1,11,00:00.000,00:00.000,02R,0,F,Compro cosas.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_206.mp3,14
+207,SP,9781508281085,Spanish 1,11,00:00.000,00:00.000,03Q,0,N,How many conchas are there?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_207.mp3,"6,7"
+208,SP,9781508281085,Spanish 1,11,00:00.000,00:00.000,03R,0,M,¿Cuántas conchas hay?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_208.mp3,"6,7"
+209,SP,9781508281085,Spanish 1,11,00:00.000,00:00.000,04Q,0,N,Are there good things here?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_209.mp3,6
+210,SP,9781508281085,Spanish 1,11,00:00.000,00:00.000,04R,0,M,¿Hay cosas buenas aquí?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_210.mp3,6
+211,SP,9781508281085,Spanish 1,11,00:00.000,00:00.000,05Q,0,N,I like to buy good things.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_211.mp3,14
+212,SP,9781508281085,Spanish 1,11,00:00.000,00:00.000,05R,0,F,Me gusta comprar cosas buenas.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_212.mp3,14
+213,SP,9781508281085,Spanish 1,11,00:00.000,00:00.000,06Q,0,N,You can eat something.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_213.mp3,6
+214,SP,9781508281085,Spanish 1,11,00:00.000,00:00.000,06R,0,F,Puedes comer algo.  (informal),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_214.mp3,6
+215,SP,9781508281085,Spanish 1,11,00:00.000,00:00.000,07Q,0,N,I can buy many things.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_215.mp3,14
+216,SP,9781508281085,Spanish 1,11,00:00.000,00:00.000,07R,0,M,Puedo comprar muchas cosas.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_216.mp3,14
+217,SP,9781508281085,Spanish 1,11,00:00.000,00:00.000,08Q,0,N,Can I pay?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_217.mp3,"11,14"
+218,SP,9781508281085,Spanish 1,11,00:00.000,00:00.000,08R,0,M,¿Puedo pagar?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_218.mp3,"11,14"
+219,SP,9781508281085,Spanish 1,11,00:00.000,00:00.000,09Q,0,N,What do you buy?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_219.mp3,14
+220,SP,9781508281085,Spanish 1,11,00:00.000,00:00.000,09R,0,M,¿Qué compras?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_220.mp3,14
+221,SP,9781508281085,Spanish 1,11,00:00.000,00:00.000,10Q,0,N,If I can buy things.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_221.mp3,14
+222,SP,9781508281085,Spanish 1,11,00:00.000,00:00.000,10R,0,F,Si puedo comprar cosas.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_222.mp3,14
+223,SP,9781508281085,Spanish 1,12,00:00.000,00:00.000,01Q,0,N,At what time?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_223.mp3,17
+224,SP,9781508281085,Spanish 1,12,00:00.000,00:00.000,01R,0,F,¿A qué hora?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_224.mp3,17
+225,SP,9781508281085,Spanish 1,12,00:00.000,00:00.000,02Q,0,N,I eat many things.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_225.mp3,6
+226,SP,9781508281085,Spanish 1,12,00:00.000,00:00.000,02R,0,F,Como muchas cosas.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_226.mp3,6
+227,SP,9781508281085,Spanish 1,12,00:00.000,00:00.000,03Q,0,N,I buy and I pay.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_227.mp3,"11,14"
+228,SP,9781508281085,Spanish 1,12,00:00.000,00:00.000,03R,0,M,Compro y pago.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_228.mp3,"11,14"
+229,SP,9781508281085,Spanish 1,12,00:00.000,00:00.000,04Q,0,N,Is it OK if I pay?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_229.mp3,"11,14"
+230,SP,9781508281085,Spanish 1,12,00:00.000,00:00.000,04R,0,F,¿Está bien si pago?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_230.mp3,"11,14"
+231,SP,9781508281085,Spanish 1,12,00:00.000,00:00.000,05Q,0,N,Is it good? (f),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_231.mp3,6
+232,SP,9781508281085,Spanish 1,12,00:00.000,00:00.000,05R,0,F,¿Está buena?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_232.mp3,6
+233,SP,9781508281085,Spanish 1,12,00:00.000,00:00.000,06Q,0,N,Is there time?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_233.mp3,"7,17"
+234,SP,9781508281085,Spanish 1,12,00:00.000,00:00.000,06R,0,M,¿Hay tiempo?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_234.mp3,"7,17"
+235,SP,9781508281085,Spanish 1,12,00:00.000,00:00.000,07Q,0,N,Not today.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_235.mp3,"7,17"
+236,SP,9781508281085,Spanish 1,12,00:00.000,00:00.000,07R,0,F,Hoy no.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_236.mp3,"7,17"
+237,SP,9781508281085,Spanish 1,12,00:00.000,00:00.000,08Q,0,N,Tomorrow I can’t.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_237.mp3,"7,17"
+238,SP,9781508281085,Spanish 1,12,00:00.000,00:00.000,08R,0,M,Mañana no puedo.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_238.mp3,"7,17"
+239,SP,9781508281085,Spanish 1,12,00:00.000,00:00.000,09Q,0,N,There isn’t much time.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_239.mp3,"7,17"
+240,SP,9781508281085,Spanish 1,12,00:00.000,00:00.000,09R,0,M,No hay mucho tiempo.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_240.mp3,"7,17"
+241,SP,9781508281085,Spanish 1,12,00:00.000,00:00.000,10Q,0,N,You’re not going to drink anything? (informal),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_241.mp3,6
+242,SP,9781508281085,Spanish 1,12,00:00.000,00:00.000,10R,0,F,¿No vas a tomar nada?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_242.mp3,6
+243,SP,9781508281085,Spanish 1,12,00:00.000,00:00.000,11Q,0,N,"If there is no time, I don’t eat.",n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_243.mp3,"6,17"
+244,SP,9781508281085,Spanish 1,12,00:00.000,00:00.000,11R,0,F,"Si no hay tiempo, no como.",n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_244.mp3,"6,17"
+245,SP,9781508281085,Spanish 1,13,00:00.000,00:00.000,01Q,0,N,At what time do you eat? (informal),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_245.mp3,"6,17"
+246,SP,9781508281085,Spanish 1,13,00:00.000,00:00.000,01R,0,M,¿A qué hora comes?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_246.mp3,"6,17"
+247,SP,9781508281085,Spanish 1,13,00:00.000,00:00.000,02Q,0,N,Not now.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_247.mp3,"7,17"
+248,SP,9781508281085,Spanish 1,13,00:00.000,00:00.000,02R,0,M,Ahora no.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_248.mp3,"7,17"
+249,SP,9781508281085,Spanish 1,13,00:00.000,00:00.000,03Q,0,N,The coffee is good too.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_249.mp3,6
+250,SP,9781508281085,Spanish 1,13,00:00.000,00:00.000,03R,0,F,El café también es bueno.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_250.mp3,6
+251,SP,9781508281085,Spanish 1,13,00:00.000,00:00.000,04Q,0,N,The coffee here is very good.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_251.mp3,6
+252,SP,9781508281085,Spanish 1,13,00:00.000,00:00.000,04R,0,M,El café aquí es muy bueno.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_252.mp3,6
+253,SP,9781508281085,Spanish 1,13,00:00.000,00:00.000,05Q,0,N,There’s no time now.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_253.mp3,"7,17"
+254,SP,9781508281085,Spanish 1,13,00:00.000,00:00.000,05R,0,F,No hay tiempo ahora.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_254.mp3,"7,17"
+255,SP,9781508281085,Spanish 1,13,00:00.000,00:00.000,06Q,0,N,"Can you pay for them? (informal, f)",n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_255.mp3,11
+256,SP,9781508281085,Spanish 1,13,00:00.000,00:00.000,06R,0,M,¿Puedes pagarlas?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_256.mp3,11
+257,SP,9781508281085,Spanish 1,13,00:00.000,00:00.000,07Q,0,N,I can buy them.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_257.mp3,14
+258,SP,9781508281085,Spanish 1,13,00:00.000,00:00.000,07R,0,M,Puedo comprarlas. (f),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_258.mp3,14
+259,SP,9781508281085,Spanish 1,13,00:00.000,00:00.000,08Q,0,N,I can pay for them.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_259.mp3,11
+260,SP,9781508281085,Spanish 1,13,00:00.000,00:00.000,08R,0,M,Puedo pagarlas. (f),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_260.mp3,11
+261,SP,9781508281085,Spanish 1,13,00:00.000,00:00.000,09Q,0,N,I can have a coffee now.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_261.mp3,6
+262,SP,9781508281085,Spanish 1,13,00:00.000,00:00.000,09R,0,M,Puedo tomar un café ahora.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_262.mp3,6
+263,SP,9781508281085,Spanish 1,13,00:00.000,00:00.000,10Q,0,N,I drink a lot of coffee.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_263.mp3,"6,9"
+264,SP,9781508281085,Spanish 1,13,00:00.000,00:00.000,10R,0,F,Tomo mucho café.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_264.mp3,"6,9"
+265,SP,9781508281085,Spanish 1,13,00:00.000,00:00.000,11Q,0,N,Are you going to drink it?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_265.mp3,6
+266,SP,9781508281085,Spanish 1,13,00:00.000,00:00.000,11R,0,M,¿Vas a tomarla?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_266.mp3,6
+267,SP,9781508281085,Spanish 1,13,00:00.000,00:00.000,12Q,0,N,I’m going to buy it.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_267.mp3,14
+268,SP,9781508281085,Spanish 1,13,00:00.000,00:00.000,12R,0,F,Voy a comprarla.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_268.mp3,14
+269,SP,9781508281085,Spanish 1,14,00:00.000,00:00.000,01Q,0,N,"All right, you can speak it.",n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_269.mp3,"10,15"
+270,SP,9781508281085,Spanish 1,14,00:00.000,00:00.000,01R,0,M,"Bueno, puedes hablarlo.",n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_270.mp3,"10,15"
+271,SP,9781508281085,Spanish 1,14,00:00.000,00:00.000,02Q,0,N,In an hour and a half.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_271.mp3,17
+272,SP,9781508281085,Spanish 1,14,00:00.000,00:00.000,02R,0,F,En una hora y media.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_272.mp3,17
+273,SP,9781508281085,Spanish 1,14,00:00.000,00:00.000,03Q,0,N,It’s very early.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_273.mp3,"9,17"
+274,SP,9781508281085,Spanish 1,14,00:00.000,00:00.000,03R,0,F,Es muy temprano.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_274.mp3,"9,17"
+275,SP,9781508281085,Spanish 1,14,00:00.000,00:00.000,04Q,0,N,It’s late now.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_275.mp3,"9,17"
+276,SP,9781508281085,Spanish 1,14,00:00.000,00:00.000,04R,0,M,Es tarde ahora.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_276.mp3,"9,17"
+277,SP,9781508281085,Spanish 1,14,00:00.000,00:00.000,05Q,0,N,Is it late or early?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_277.mp3,17
+278,SP,9781508281085,Spanish 1,14,00:00.000,00:00.000,05R,0,M,¿Es tarde o temprano?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_278.mp3,17
+279,SP,9781508281085,Spanish 1,14,00:00.000,00:00.000,06Q,0,N,It’s not early.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_279.mp3,"9,17"
+280,SP,9781508281085,Spanish 1,14,00:00.000,00:00.000,06R,0,M,No es temprano.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_280.mp3,"9,17"
+281,SP,9781508281085,Spanish 1,14,00:00.000,00:00.000,07Q,0,N,I can’t talk now.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_281.mp3,"3,7,17"
+282,SP,9781508281085,Spanish 1,14,00:00.000,00:00.000,07R,0,M,No puedo hablar ahora.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_282.mp3,"7,17"
+283,SP,9781508281085,Spanish 1,14,00:00.000,00:00.000,08Q,0,N,I don’t want to talk now.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_283.mp3,"3,17"
+284,SP,9781508281085,Spanish 1,14,00:00.000,00:00.000,08R,0,F,No quiero hablar ahora.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_284.mp3,17
+285,SP,9781508281085,Spanish 1,14,00:00.000,00:00.000,09Q,0,N,What time is it?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_285.mp3,"13,16,17"
+286,SP,9781508281085,Spanish 1,14,00:00.000,00:00.000,09R,0,F,¿Qué hora es?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_286.mp3,"13,16,17"
+287,SP,9781508281085,Spanish 1,14,00:00.000,00:00.000,10Q,0,N,Do you want to have a coffee?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_287.mp3,"1,6"
+288,SP,9781508281085,Spanish 1,14,00:00.000,00:00.000,10R,0,F,¿Quieres tomar un café?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_288.mp3,"1,6"
+289,SP,9781508281085,Spanish 1,14,00:00.000,00:00.000,11Q,0,N,I want to talk later.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_289.mp3,"3,17"
+290,SP,9781508281085,Spanish 1,14,00:00.000,00:00.000,11R,0,M,Quiero hablar más tarde.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_290.mp3,17
+291,SP,9781508281085,Spanish 1,15,00:00.000,00:00.000,01Q,0,N,"All right, let’s go together.",n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_291.mp3,1
+292,SP,9781508281085,Spanish 1,15,00:00.000,00:00.000,01R,0,F,"Bueno, vamos juntos.",n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_292.mp3,1
+293,SP,9781508281085,Spanish 1,15,00:00.000,00:00.000,02Q,0,N,"Well, I’m going with you.",n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_293.mp3,1
+294,SP,9781508281085,Spanish 1,15,00:00.000,00:00.000,02R,0,F,"Bueno, voy contigo.",n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_294.mp3,1
+295,SP,9781508281085,Spanish 1,15,00:00.000,00:00.000,03Q,0,N,With whom?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_295.mp3,"1,7"
+296,SP,9781508281085,Spanish 1,15,00:00.000,00:00.000,03R,0,M,¿Con quién?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_296.mp3,"1,7"
+297,SP,9781508281085,Spanish 1,15,00:00.000,00:00.000,04Q,0,N,Who are you going to eat with?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_297.mp3,6
+298,SP,9781508281085,Spanish 1,15,00:00.000,00:00.000,04R,0,M,¿Con quién vas a comer?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_298.mp3,6
+299,SP,9781508281085,Spanish 1,15,00:00.000,00:00.000,05Q,0,N,Does it cost too much?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_299.mp3,"11,14,16"
+300,SP,9781508281085,Spanish 1,15,00:00.000,00:00.000,05R,0,F,¿Cuesta demasiado?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_300.mp3,"11,14,16"
+301,SP,9781508281085,Spanish 1,15,00:00.000,00:00.000,06Q,0,N,He isn’t here.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_301.mp3,7
+302,SP,9781508281085,Spanish 1,15,00:00.000,00:00.000,06R,0,M,Él no está aquí.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_302.mp3,7
+303,SP,9781508281085,Spanish 1,15,00:00.000,00:00.000,07Q,0,N,He doesn’t have time now.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_303.mp3,"9,17"
+304,SP,9781508281085,Spanish 1,15,00:00.000,00:00.000,07R,0,F,Él no tiene tiempo ahora.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_304.mp3,"9,17"
+305,SP,9781508281085,Spanish 1,15,00:00.000,00:00.000,08Q,0,N,He only has twenty minutes.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_305.mp3,"12,17"
+306,SP,9781508281085,Spanish 1,15,00:00.000,00:00.000,08R,0,M,Él sólo tiene veinte minutos.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_306.mp3,"12,17"
+307,SP,9781508281085,Spanish 1,15,00:00.000,00:00.000,09Q,0,N,It’s too much.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_307.mp3,"7,9"
+308,SP,9781508281085,Spanish 1,15,00:00.000,00:00.000,09R,0,F,Es demasiado.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_308.mp3,"7,9"
+309,SP,9781508281085,Spanish 1,15,00:00.000,00:00.000,10Q,0,N,Why don’t you like it?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_309.mp3,7
+310,SP,9781508281085,Spanish 1,15,00:00.000,00:00.000,10R,0,F,¿Por qué no té gusta?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_310.mp3,7
+311,SP,9781508281085,Spanish 1,15,00:00.000,00:00.000,11Q,0,N,Who’s going to pay for it?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_311.mp3,11
+312,SP,9781508281085,Spanish 1,15,00:00.000,00:00.000,11R,0,M,¿Quién va a pagarlo?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_312.mp3,11
+313,SP,9781508281085,Spanish 1,15,00:00.000,00:00.000,12Q,0,N,Let’s go together!,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_313.mp3,1
+314,SP,9781508281085,Spanish 1,15,00:00.000,00:00.000,12R,0,F,¡Vamos juntos!,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_314.mp3,1
+315,SP,9781508281085,Spanish 1,15,00:00.000,00:00.000,13Q,0,N,Just you and me? (informal),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_315.mp3,1
+316,SP,9781508281085,Spanish 1,15,00:00.000,00:00.000,13R,0,M,¿Sólo tú y yo?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_316.mp3,1
+317,SP,9781508281085,Spanish 1,16,00:00.000,00:00.000,01Q,0,N,With my friend (f.),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_317.mp3,"1,5"
+318,SP,9781508281085,Spanish 1,16,00:00.000,00:00.000,01R,0,F,Con mi amiga.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_318.mp3,"1,5"
+319,SP,9781508281085,Spanish 1,16,00:00.000,00:00.000,02Q,0,N,With my husband.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_319.mp3,"1,5"
+320,SP,9781508281085,Spanish 1,16,00:00.000,00:00.000,02R,0,F,Con mi esposo.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_320.mp3,"1,5"
+321,SP,9781508281085,Spanish 1,16,00:00.000,00:00.000,03Q,0,N,How much time do you (pl.) have?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_321.mp3,"14,17"
+322,SP,9781508281085,Spanish 1,16,00:00.000,00:00.000,03R,0,F,¿Cuánto tiempo tienen?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_322.mp3,"14,17"
+323,SP,9781508281085,Spanish 1,16,00:00.000,00:00.000,04Q,0,N,He doesn’t want to eat alone.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_323.mp3,6
+324,SP,9781508281085,Spanish 1,16,00:00.000,00:00.000,04R,0,M,Él no quiere comer solo.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_324.mp3,6
+325,SP,9781508281085,Spanish 1,16,00:00.000,00:00.000,05Q,0,N,He is just my friend.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_325.mp3,"5,9"
+326,SP,9781508281085,Spanish 1,16,00:00.000,00:00.000,05R,0,F,Él es sólo mi amigo.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_326.mp3,"5,9"
+327,SP,9781508281085,Spanish 1,16,00:00.000,00:00.000,06Q,0,N,He also is going with us.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_327.mp3,1
+328,SP,9781508281085,Spanish 1,16,00:00.000,00:00.000,06R,0,F,Él tambíen va con nosotros.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_328.mp3,1
+329,SP,9781508281085,Spanish 1,16,00:00.000,00:00.000,07Q,0,N,Is your husband here?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_329.mp3,5
+330,SP,9781508281085,Spanish 1,16,00:00.000,00:00.000,07R,0,M,¿Está tu esposo aquí?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_330.mp3,5
+331,SP,9781508281085,Spanish 1,16,00:00.000,00:00.000,08Q,0,N,My wife is here.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_331.mp3,5
+332,SP,9781508281085,Spanish 1,16,00:00.000,00:00.000,08R,0,M,Mi esposa está aquí.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_332.mp3,5
+333,SP,9781508281085,Spanish 1,16,00:00.000,00:00.000,09Q,0,N,My wife wants to eat with us.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_333.mp3,"5,6"
+334,SP,9781508281085,Spanish 1,16,00:00.000,00:00.000,09R,0,M,Mi esposa quiere comer con nosotros.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_334.mp3,"5,6"
+335,SP,9781508281085,Spanish 1,16,00:00.000,00:00.000,10Q,0,N,My wife and I.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_335.mp3,5
+336,SP,9781508281085,Spanish 1,16,00:00.000,00:00.000,10R,0,M,Mi esposa y yo,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_336.mp3,5
+337,SP,9781508281085,Spanish 1,16,00:00.000,00:00.000,11Q,0,N,We want to pay for them.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_337.mp3,11
+338,SP,9781508281085,Spanish 1,16,00:00.000,00:00.000,11R,0,F,Nosotros queremos pagarlas.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_338.mp3,11
+339,SP,9781508281085,Spanish 1,16,00:00.000,00:00.000,12Q,0,N,We have a lot of friends here.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_339.mp3,"5,12"
+340,SP,9781508281085,Spanish 1,16,00:00.000,00:00.000,12R,0,F,Tenemos muchos amigos aquí.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_340.mp3,"5,12"
+341,SP,9781508281085,Spanish 1,17,00:00.000,00:00.000,01Q,0,N,With our friends.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_341.mp3,5
+342,SP,9781508281085,Spanish 1,17,00:00.000,00:00.000,01R,0,F,Con nuestros amigos.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_342.mp3,5
+343,SP,9781508281085,Spanish 1,17,00:00.000,00:00.000,02Q,0,N,He’s with her?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_343.mp3,7
+344,SP,9781508281085,Spanish 1,17,00:00.000,00:00.000,02R,0,M,¿Él está con ella?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_344.mp3,7
+345,SP,9781508281085,Spanish 1,17,00:00.000,00:00.000,03Q,0,N,My husband also is American.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_345.mp3,5
+346,SP,9781508281085,Spanish 1,17,00:00.000,00:00.000,03R,0,F,Mi esposo también es norteamericano.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_346.mp3,5
+347,SP,9781508281085,Spanish 1,17,00:00.000,00:00.000,04Q,0,N,We’re not from here.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_347.mp3,"9,10,16"
+348,SP,9781508281085,Spanish 1,17,00:00.000,00:00.000,04R,0,M,No somos de aquí.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_348.mp3,"9,10,16"
+349,SP,9781508281085,Spanish 1,17,00:00.000,00:00.000,05Q,0,N,Can we eat with you? (pl),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_349.mp3,6
+350,SP,9781508281085,Spanish 1,17,00:00.000,00:00.000,05R,0,M,¿Podemos comer con ustedes?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_350.mp3,6
+351,SP,9781508281085,Spanish 1,17,00:00.000,00:00.000,06Q,0,N,We can eat together.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_351.mp3,6
+352,SP,9781508281085,Spanish 1,17,00:00.000,00:00.000,06R,0,F,Podemos comer juntos.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_352.mp3,6
+353,SP,9781508281085,Spanish 1,17,00:00.000,00:00.000,07Q,0,N,What do I know?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_353.mp3,7
+354,SP,9781508281085,Spanish 1,17,00:00.000,00:00.000,07R,0,M,¿Qué sé yo?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_354.mp3,7
+355,SP,9781508281085,Spanish 1,17,00:00.000,00:00.000,08Q,0,N,We want to eat together.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_355.mp3,6
+356,SP,9781508281085,Spanish 1,17,00:00.000,00:00.000,08R,0,M,Queremos comer juntos.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_356.mp3,6
+357,SP,9781508281085,Spanish 1,17,00:00.000,00:00.000,09Q,0,N,You want to buy something? (pl),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_357.mp3,14
+358,SP,9781508281085,Spanish 1,17,00:00.000,00:00.000,09R,0,F,¿Quieren comprar algo?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_358.mp3,14
+359,SP,9781508281085,Spanish 1,17,00:00.000,00:00.000,10Q,0,N,Do you want coffee? (pl),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_359.mp3,6
+360,SP,9781508281085,Spanish 1,17,00:00.000,00:00.000,10R,0,M,¿Ustedes quieren café?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_360.mp3,6
+361,SP,9781508281085,Spanish 1,18,00:00.000,00:00.000,01Q,0,N,Now we have enough.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_361.mp3,"9,12"
+362,SP,9781508281085,Spanish 1,18,00:00.000,00:00.000,01R,0,M,Ahora tenemos suficiente.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_362.mp3,"9,12"
+363,SP,9781508281085,Spanish 1,18,00:00.000,00:00.000,02Q,0,N,How many people are there here?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_363.mp3,7
+364,SP,9781508281085,Spanish 1,18,00:00.000,00:00.000,02R,0,F,¿Cuántas personas hay aquí?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_364.mp3,7
+365,SP,9781508281085,Spanish 1,18,00:00.000,00:00.000,03Q,0,N,How many people do you have?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_365.mp3,7
+366,SP,9781508281085,Spanish 1,18,00:00.000,00:00.000,03R,0,M,¿Cuántas personas tienes?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_366.mp3,7
+367,SP,9781508281085,Spanish 1,18,00:00.000,00:00.000,04Q,0,N,How many people are going?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_367.mp3,1
+368,SP,9781508281085,Spanish 1,18,00:00.000,00:00.000,04R,0,M,¿Cuántas personas van?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_368.mp3,1
+369,SP,9781508281085,Spanish 1,18,00:00.000,00:00.000,05Q,0,N,Does he / she eat meat?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_369.mp3,6
+370,SP,9781508281085,Spanish 1,18,00:00.000,00:00.000,05R,0,M,¿Come carne?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_370.mp3,6
+371,SP,9781508281085,Spanish 1,18,00:00.000,00:00.000,06Q,0,N,Is it enough time?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_371.mp3,17
+372,SP,9781508281085,Spanish 1,18,00:00.000,00:00.000,06R,0,F,¿Es suficiente tiempo?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_372.mp3,17
+373,SP,9781508281085,Spanish 1,18,00:00.000,00:00.000,07Q,0,N,We’re here together.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_373.mp3,1
+374,SP,9781508281085,Spanish 1,18,00:00.000,00:00.000,07R,0,F,Estamos aquí juntos.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_374.mp3,1
+375,SP,9781508281085,Spanish 1,18,00:00.000,00:00.000,08Q,0,N,Are you ready? (f),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_375.mp3,7
+376,SP,9781508281085,Spanish 1,18,00:00.000,00:00.000,08R,0,F,¿Estás lista?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_376.mp3,7
+377,SP,9781508281085,Spanish 1,18,00:00.000,00:00.000,09Q,0,N,I’m here with my husband.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_377.mp3,5
+378,SP,9781508281085,Spanish 1,18,00:00.000,00:00.000,09R,0,F,Estoy aquí con mi esposo.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_378.mp3,5
+379,SP,9781508281085,Spanish 1,18,00:00.000,00:00.000,10Q,0,N,My friends also are going.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_379.mp3,5
+380,SP,9781508281085,Spanish 1,18,00:00.000,00:00.000,10R,0,M,Mis amigos también van.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_380.mp3,5
+381,SP,9781508281085,Spanish 1,18,00:00.000,00:00.000,11Q,0,N,I’m leaving later.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_381.mp3,"1,9,17"
+382,SP,9781508281085,Spanish 1,18,00:00.000,00:00.000,11R,0,F,Me voy más tarde.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_382.mp3,"1,9,17"
+383,SP,9781508281085,Spanish 1,18,00:00.000,00:00.000,12Q,0,N,My wife right now is ready.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_383.mp3,5
+384,SP,9781508281085,Spanish 1,18,00:00.000,00:00.000,12R,0,M,Mi esposa ya está lista.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_384.mp3,5
+385,SP,9781508281085,Spanish 1,19,00:00.000,00:00.000,01Q,0,N,When are you leaving?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_385.mp3,"7,17"
+386,SP,9781508281085,Spanish 1,19,00:00.000,00:00.000,01R,0,M,¿Cuándo se van?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_386.mp3,"7,17"
+387,SP,9781508281085,Spanish 1,19,00:00.000,00:00.000,02Q,0,N,Right now are you leaving?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_387.mp3,7
+388,SP,9781508281085,Spanish 1,19,00:00.000,00:00.000,02R,0,F,¿Ya te vas?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_388.mp3,7
+389,SP,9781508281085,Spanish 1,19,00:00.000,00:00.000,03Q,0,N,In one month.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_389.mp3,"9,12,17"
+390,SP,9781508281085,Spanish 1,19,00:00.000,00:00.000,03R,0,M,En un mes.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_390.mp3,"9,12,17"
+391,SP,9781508281085,Spanish 1,19,00:00.000,00:00.000,04Q,0,N,In one week.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_391.mp3,"9,12,17"
+392,SP,9781508281085,Spanish 1,19,00:00.000,00:00.000,04R,0,F,En una semana.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_392.mp3,"9,12,17"
+393,SP,9781508281085,Spanish 1,19,00:00.000,00:00.000,05Q,0,N,Are you leaving in one week?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_393.mp3,"7,12,17"
+394,SP,9781508281085,Spanish 1,19,00:00.000,00:00.000,05R,0,M,¿Te vas en una semana?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_394.mp3,"7,12,17"
+395,SP,9781508281085,Spanish 1,19,00:00.000,00:00.000,06Q,0,N,We’re not leaving all together.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_395.mp3,1
+396,SP,9781508281085,Spanish 1,19,00:00.000,00:00.000,06R,0,F,No nos vamos todos juntos.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_396.mp3,1
+397,SP,9781508281085,Spanish 1,19,00:00.000,00:00.000,07Q,0,N,I don’t want to know.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_397.mp3,"7,9"
+398,SP,9781508281085,Spanish 1,19,00:00.000,00:00.000,07R,0,F,No quiero saber.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_398.mp3,"7,9"
+399,SP,9781508281085,Spanish 1,19,00:00.000,00:00.000,08Q,0,N,Do you want to know?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_399.mp3,7
+400,SP,9781508281085,Spanish 1,19,00:00.000,00:00.000,08R,0,F,¿Quieres saber?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_400.mp3,7
+401,SP,9781508281085,Spanish 1,19,00:00.000,00:00.000,09Q,0,N,I want to know more.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_401.mp3,9
+402,SP,9781508281085,Spanish 1,19,00:00.000,00:00.000,09R,0,F,Quiero saber más.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_402.mp3,9
+403,SP,9781508281085,Spanish 1,19,00:00.000,00:00.000,10Q,0,N,We’re all friends.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_403.mp3,"5,9"
+404,SP,9781508281085,Spanish 1,19,00:00.000,00:00.000,10R,0,F,Todos somos amigos.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_404.mp3,"5,9"
+405,SP,9781508281085,Spanish 1,19,00:00.000,00:00.000,11Q,0,N,Everybody’s going to eat together.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_405.mp3,6
+406,SP,9781508281085,Spanish 1,19,00:00.000,00:00.000,11R,0,M,Todos van a comer juntos.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_406.mp3,6
+407,SP,9781508281085,Spanish 1,19,00:00.000,00:00.000,12Q,0,N,Let’s all go.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_407.mp3,1
+408,SP,9781508281085,Spanish 1,19,00:00.000,00:00.000,12R,0,F,Vamos todos.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_408.mp3,1
+409,SP,9781508281085,Spanish 1,20,00:00.000,00:00.000,01Q,0,N,At one o’clock in the afternoon.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_409.mp3,"12,17"
+410,SP,9781508281085,Spanish 1,20,00:00.000,00:00.000,01R,0,F,A la una de la tarde.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_410.mp3,"12,17"
+411,SP,9781508281085,Spanish 1,20,00:00.000,00:00.000,02Q,0,N,When is he going to be here?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_411.mp3,"7,17,18"
+412,SP,9781508281085,Spanish 1,20,00:00.000,00:00.000,02R,0,M,¿Cuándo va a estar aquí?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_412.mp3,"7,17,18"
+413,SP,9781508281085,Spanish 1,20,00:00.000,00:00.000,03Q,0,N,How long is he going to be there?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_413.mp3,"7,18"
+414,SP,9781508281085,Spanish 1,20,00:00.000,00:00.000,03R,0,F,¿Cuánto tiempo va a estar allí?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_414.mp3,"7,18"
+415,SP,9781508281085,Spanish 1,20,00:00.000,00:00.000,04Q,0,N,What does he talk about?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_415.mp3,"3,7,15"
+416,SP,9781508281085,Spanish 1,20,00:00.000,00:00.000,04R,0,M,¿De qué habla?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_416.mp3,"7,15"
+417,SP,9781508281085,Spanish 1,20,00:00.000,00:00.000,05Q,0,N,He talks too much.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_417.mp3,"3,7,15"
+418,SP,9781508281085,Spanish 1,20,00:00.000,00:00.000,05R,0,M,Él habla demasiado.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_418.mp3,"7,15"
+419,SP,9781508281085,Spanish 1,20,00:00.000,00:00.000,06Q,0,N,He speaks too quickly.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_419.mp3,"10,15"
+420,SP,9781508281085,Spanish 1,20,00:00.000,00:00.000,06R,0,M,Habla demasiado rápido.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_420.mp3,"10,15"
+421,SP,9781508281085,Spanish 1,20,00:00.000,00:00.000,07Q,0,N,That’s true.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_421.mp3,9
+422,SP,9781508281085,Spanish 1,20,00:00.000,00:00.000,07R,0,M,Es verdad.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_422.mp3,9
+423,SP,9781508281085,Spanish 1,20,00:00.000,00:00.000,08Q,0,N,I’m leaving alone.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_423.mp3,"9,18"
+424,SP,9781508281085,Spanish 1,20,00:00.000,00:00.000,08R,0,M,Me voy solo.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_424.mp3,"9,18"
+425,SP,9781508281085,Spanish 1,20,00:00.000,00:00.000,09Q,0,N,I don’t know who this man is.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_425.mp3,9
+426,SP,9781508281085,Spanish 1,20,00:00.000,00:00.000,09R,0,F,No sé quién es este hombre.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_426.mp3,9
+427,SP,9781508281085,Spanish 1,20,00:00.000,00:00.000,10Q,0,N,If you speak slowly.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_427.mp3,"10,15"
+428,SP,9781508281085,Spanish 1,20,00:00.000,00:00.000,10R,0,F,Si hablas despacio.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_428.mp3,"10,15"
+429,SP,9781508281085,Spanish 1,20,00:00.000,00:00.000,11Q,0,N,You speak quickly.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_429.mp3,"10,15,16"
+430,SP,9781508281085,Spanish 1,20,00:00.000,00:00.000,11R,0,F,Tú hablas rápido.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_430.mp3,"10,15,16"
+431,SP,9781508281085,Spanish 1,21,00:00.000,00:00.000,01Q,0,N,How long are you going to be there?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_431.mp3,"7,10"
+432,SP,9781508281085,Spanish 1,21,00:00.000,00:00.000,01R,0,F,¿Cuánto tiempo vas a estar allí?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_432.mp3,"7,10"
+433,SP,9781508281085,Spanish 1,21,00:00.000,00:00.000,02Q,0,N,Give me a cup of tea.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_433.mp3,6
+434,SP,9781508281085,Spanish 1,21,00:00.000,00:00.000,02R,0,F,Dame una taza de té.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_434.mp3,6
+435,SP,9781508281085,Spanish 1,21,00:00.000,00:00.000,03Q,0,N,That woman is sick too.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_435.mp3,8
+436,SP,9781508281085,Spanish 1,21,00:00.000,00:00.000,03R,0,F,Esa mujer está enferma también.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_436.mp3,8
+437,SP,9781508281085,Spanish 1,21,00:00.000,00:00.000,04Q,0,N,That man is sick.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_437.mp3,8
+438,SP,9781508281085,Spanish 1,21,00:00.000,00:00.000,04R,0,F,Ese hombre está enfermo.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_438.mp3,8
+439,SP,9781508281085,Spanish 1,21,00:00.000,00:00.000,05Q,0,N,He’s sick.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_439.mp3,8
+440,SP,9781508281085,Spanish 1,21,00:00.000,00:00.000,05R,0,M,Está enfermo.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_440.mp3,8
+441,SP,9781508281085,Spanish 1,21,00:00.000,00:00.000,06Q,0,N,Are they sick? (f),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_441.mp3,8
+442,SP,9781508281085,Spanish 1,21,00:00.000,00:00.000,06R,0,F,¿Están enfermas?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_442.mp3,8
+443,SP,9781508281085,Spanish 1,21,00:00.000,00:00.000,07Q,0,N,Are you sick too? (f),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_443.mp3,8
+444,SP,9781508281085,Spanish 1,21,00:00.000,00:00.000,07R,0,M,¿Estás enferma también?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_444.mp3,8
+445,SP,9781508281085,Spanish 1,21,00:00.000,00:00.000,08Q,0,N,I’m sick. (f),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_445.mp3,"8,16"
+446,SP,9781508281085,Spanish 1,21,00:00.000,00:00.000,08R,0,F,Estoy enferma.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_446.mp3,"8,16"
+447,SP,9781508281085,Spanish 1,21,00:00.000,00:00.000,09Q,0,N,There are two women over there.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_447.mp3,"9,12"
+448,SP,9781508281085,Spanish 1,21,00:00.000,00:00.000,09R,0,M,Hay dos mujeres allí.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_448.mp3,"9,12"
+449,SP,9781508281085,Spanish 1,21,00:00.000,00:00.000,10Q,0,N,Who is that man?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_449.mp3,7
+450,SP,9781508281085,Spanish 1,21,00:00.000,00:00.000,10R,0,F,¿Quién es ese hombre?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_450.mp3,7
+451,SP,9781508281085,Spanish 1,21,00:00.000,00:00.000,11Q,0,N,I want a cup of tea.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_451.mp3,6
+452,SP,9781508281085,Spanish 1,21,00:00.000,00:00.000,11R,0,M,Quiero una taza de té.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_452.mp3,6
+453,SP,9781508281085,Spanish 1,21,00:00.000,00:00.000,12Q,0,N,She drinks tea when she is sick.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_453.mp3,"6,8"
+454,SP,9781508281085,Spanish 1,21,00:00.000,00:00.000,12R,0,F,Toma el té cuándo está enferma.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_454.mp3,"6,8"
+455,SP,9781508281085,Spanish 1,22,00:00.000,00:00.000,01Q,0,N,The men speak slowly.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_455.mp3,"10,15"
+456,SP,9781508281085,Spanish 1,22,00:00.000,00:00.000,01R,0,F,Los hombres hablan despacio.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_456.mp3,"10,15"
+457,SP,9781508281085,Spanish 1,22,00:00.000,00:00.000,02Q,0,N,Do you know a good doctor?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_457.mp3,"8,16"
+458,SP,9781508281085,Spanish 1,22,00:00.000,00:00.000,02R,0,M,¿Conoces a un buen médico?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_458.mp3,"8,16"
+459,SP,9781508281085,Spanish 1,22,00:00.000,00:00.000,03Q,0,N,I think that it’s true.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_459.mp3,"7,9"
+460,SP,9781508281085,Spanish 1,22,00:00.000,00:00.000,03R,0,F,Creo que es verdad.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_460.mp3,"7,9"
+461,SP,9781508281085,Spanish 1,22,00:00.000,00:00.000,04Q,0,N,I think I’m sick.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_461.mp3,"8,16"
+462,SP,9781508281085,Spanish 1,22,00:00.000,00:00.000,04R,0,F,Creo que estoy enfermo.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_462.mp3,"8,16"
+463,SP,9781508281085,Spanish 1,22,00:00.000,00:00.000,05Q,0,N,I think that I have it.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_463.mp3,"9,12"
+464,SP,9781508281085,Spanish 1,22,00:00.000,00:00.000,05R,0,F,Creo que lo tengo.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_464.mp3,"9,12"
+465,SP,9781508281085,Spanish 1,22,00:00.000,00:00.000,06Q,0,N,I don’t think so.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_465.mp3,7
+466,SP,9781508281085,Spanish 1,22,00:00.000,00:00.000,06R,0,F,Creo que no.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_466.mp3,7
+467,SP,9781508281085,Spanish 1,22,00:00.000,00:00.000,07Q,0,N,I think so.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_467.mp3,7
+468,SP,9781508281085,Spanish 1,22,00:00.000,00:00.000,07R,0,F,Creo que sí.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_468.mp3,7
+469,SP,9781508281085,Spanish 1,22,00:00.000,00:00.000,08Q,0,N,Where are they now?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_469.mp3,18
+470,SP,9781508281085,Spanish 1,22,00:00.000,00:00.000,08R,0,M,¿Dónde están ahora?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_470.mp3,18
+471,SP,9781508281085,Spanish 1,22,00:00.000,00:00.000,09Q,0,N,"Write it down for me, please.",n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_471.mp3,"7,16"
+472,SP,9781508281085,Spanish 1,22,00:00.000,00:00.000,09R,0,F,"Escríbelo para mi, por favor.",n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_472.mp3,"3,16"
+473,SP,9781508281085,Spanish 1,22,00:00.000,00:00.000,10Q,0,N,I don’t understand when you say it.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_473.mp3,"10,15,16"
+474,SP,9781508281085,Spanish 1,22,00:00.000,00:00.000,10R,0,M,No entiendo cuando lo dices.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_474.mp3,"10,15,16"
+475,SP,9781508281085,Spanish 1,22,00:00.000,00:00.000,11Q,0,N,I need a glass of water.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_475.mp3,6
+476,SP,9781508281085,Spanish 1,22,00:00.000,00:00.000,11R,0,F,Necesito un vaso de agua.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_476.mp3,6
+477,SP,9781508281085,Spanish 1,23,00:00.000,00:00.000,01Q,0,N,What is your name? (informal),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_477.mp3,"10,16"
+478,SP,9781508281085,Spanish 1,23,00:00.000,00:00.000,01R,0,F,¿Como te llamas?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_478.mp3,"10,16"
+479,SP,9781508281085,Spanish 1,23,00:00.000,00:00.000,02Q,0,N,What’s her / your  name? (formal),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_479.mp3,"10,13"
+480,SP,9781508281085,Spanish 1,23,00:00.000,00:00.000,02R,0,F,¿Cómo se llama?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_480.mp3,"10,13"
+481,SP,9781508281085,Spanish 1,23,00:00.000,00:00.000,03Q,0,N,Do you think that it’s close by?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_481.mp3,4
+482,SP,9781508281085,Spanish 1,23,00:00.000,00:00.000,03R,0,F,¿Crees que está cerca?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_482.mp3,4
+483,SP,9781508281085,Spanish 1,23,00:00.000,00:00.000,04Q,0,N,Do you think that it’s far?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_483.mp3,4
+484,SP,9781508281085,Spanish 1,23,00:00.000,00:00.000,04R,0,F,¿Crees que está lejos?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_484.mp3,4
+485,SP,9781508281085,Spanish 1,23,00:00.000,00:00.000,05Q,0,N,Where does he live?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_485.mp3,7
+486,SP,9781508281085,Spanish 1,23,00:00.000,00:00.000,05R,0,M,¿Dónde vive?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_486.mp3,7
+487,SP,9781508281085,Spanish 1,23,00:00.000,00:00.000,06Q,0,N,It is near or far?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_487.mp3,4
+488,SP,9781508281085,Spanish 1,23,00:00.000,00:00.000,06R,0,M,¿Está cerca o lejos?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_488.mp3,4
+489,SP,9781508281085,Spanish 1,23,00:00.000,00:00.000,07Q,0,N,I need a doctor.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_489.mp3,"8,16"
+490,SP,9781508281085,Spanish 1,23,00:00.000,00:00.000,07R,0,F,Necesito un médico.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_490.mp3,"8,16"
+491,SP,9781508281085,Spanish 1,23,00:00.000,00:00.000,08Q,0,N,I don’t remember it.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_491.mp3,9
+492,SP,9781508281085,Spanish 1,23,00:00.000,00:00.000,08R,0,F,No lo recuerdo.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_492.mp3,9
+493,SP,9781508281085,Spanish 1,23,00:00.000,00:00.000,09Q,0,N,Do you live here? (informal),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_493.mp3,7
+494,SP,9781508281085,Spanish 1,23,00:00.000,00:00.000,09R,0,F,¿Vives aquí?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_494.mp3,7
+495,SP,9781508281085,Spanish 1,23,00:00.000,00:00.000,10Q,0,N,I know her very well.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_495.mp3,7
+496,SP,9781508281085,Spanish 1,23,00:00.000,00:00.000,10R,0,F,La conozco muy bien.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_496.mp3,7
+497,SP,9781508281085,Spanish 1,24,00:00.000,00:00.000,01Q,0,N,To the right.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_497.mp3,4
+498,SP,9781508281085,Spanish 1,24,00:00.000,00:00.000,01R,0,F,A la derecha.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_498.mp3,4
+499,SP,9781508281085,Spanish 1,24,00:00.000,00:00.000,02Q,0,N,To the left.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_499.mp3,4
+500,SP,9781508281085,Spanish 1,24,00:00.000,00:00.000,02R,0,F,A la izquierda.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_500.mp3,4
+501,SP,9781508281085,Spanish 1,24,00:00.000,00:00.000,03Q,0,N,What is the name of the street?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_501.mp3,4
+502,SP,9781508281085,Spanish 1,24,00:00.000,00:00.000,03R,0,M,¿Cómo se llama la calle?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_502.mp3,4
+503,SP,9781508281085,Spanish 1,24,00:00.000,00:00.000,04Q,0,N,How do I go?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_503.mp3,18
+504,SP,9781508281085,Spanish 1,24,00:00.000,00:00.000,04R,0,M,¿Cómo voy?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_504.mp3,18
+505,SP,9781508281085,Spanish 1,24,00:00.000,00:00.000,05Q,0,N,"Can you write it? (m, formal)",n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_505.mp3,"7,16"
+506,SP,9781508281085,Spanish 1,24,00:00.000,00:00.000,05R,0,M,¿Puede escribirlo?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_506.mp3,"3,16"
+507,SP,9781508281085,Spanish 1,24,00:00.000,00:00.000,06Q,0,N,I need the address.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_507.mp3,"4,7,18"
+508,SP,9781508281085,Spanish 1,24,00:00.000,00:00.000,06R,0,F,Necesito la dirección.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_508.mp3,"4,7,18"
+509,SP,9781508281085,Spanish 1,24,00:00.000,00:00.000,07Q,0,N,That way.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_509.mp3,"4,18"
+510,SP,9781508281085,Spanish 1,24,00:00.000,00:00.000,07R,0,M,Por allí.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_510.mp3,"4,18"
+511,SP,9781508281085,Spanish 1,24,00:00.000,00:00.000,08Q,0,N,This way.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_511.mp3,"4,18"
+512,SP,9781508281085,Spanish 1,24,00:00.000,00:00.000,08R,0,F,Por aquí.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_512.mp3,"4,18"
+513,SP,9781508281085,Spanish 1,24,00:00.000,00:00.000,09Q,0,N,I can speak English.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_513.mp3,"10,15"
+514,SP,9781508281085,Spanish 1,24,00:00.000,00:00.000,09R,0,M,Puedo hablar inglés.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_514.mp3,"10,15"
+515,SP,9781508281085,Spanish 1,24,00:00.000,00:00.000,10Q,0,N,Continue straight ahead.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_515.mp3,4
+516,SP,9781508281085,Spanish 1,24,00:00.000,00:00.000,10R,0,F,Sigue derecho.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_516.mp3,4
+517,SP,9781508281085,Spanish 1,24,00:00.000,00:00.000,11Q,0,N,I’m going to write it down. (m),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_517.mp3,7
+518,SP,9781508281085,Spanish 1,24,00:00.000,00:00.000,11R,0,M,Voy a escribirlo.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_518.mp3,3
+519,SP,9781508281085,Spanish 1,25,00:00.000,00:00.000,01Q,0,N,You learn quickly.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_519.mp3,7
+520,SP,9781508281085,Spanish 1,25,00:00.000,00:00.000,01R,0,M,Aprendes rápido.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_520.mp3,7
+521,SP,9781508281085,Spanish 1,25,00:00.000,00:00.000,02Q,0,N,When are you going to go?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_521.mp3,"1,7,17"
+522,SP,9781508281085,Spanish 1,25,00:00.000,00:00.000,02R,0,M,¿Cuándo vas a ir?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_522.mp3,"1,7,17"
+523,SP,9781508281085,Spanish 1,25,00:00.000,00:00.000,03Q,0,N,He is my father.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_523.mp3,5
+524,SP,9781508281085,Spanish 1,25,00:00.000,00:00.000,03R,0,F,Es mi padre.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_524.mp3,5
+525,SP,9781508281085,Spanish 1,25,00:00.000,00:00.000,04Q,0,N,Is it close to here?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_525.mp3,4
+526,SP,9781508281085,Spanish 1,25,00:00.000,00:00.000,04R,0,F,¿Está cerca de aquí?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_526.mp3,4
+527,SP,9781508281085,Spanish 1,25,00:00.000,00:00.000,05Q,0,N,I study a lot.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_527.mp3,7
+528,SP,9781508281085,Spanish 1,25,00:00.000,00:00.000,05R,0,M,Estudio mucho.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_528.mp3,7
+529,SP,9781508281085,Spanish 1,25,00:00.000,00:00.000,06Q,0,N,I don’t learn enough.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_529.mp3,7
+530,SP,9781508281085,Spanish 1,25,00:00.000,00:00.000,06R,0,F,No aprendo suficiente.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_530.mp3,7
+531,SP,9781508281085,Spanish 1,25,00:00.000,00:00.000,07Q,0,N,I’m going to go with you.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_531.mp3,18
+532,SP,9781508281085,Spanish 1,25,00:00.000,00:00.000,07R,0,F,Voy a ir contigo.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_532.mp3,18
+533,SP,9781508281085,Spanish 1,25,00:00.000,00:00.000,08Q,0,N,It doesn’t matter.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_533.mp3,7
+534,SP,9781508281085,Spanish 1,25,00:00.000,00:00.000,08R,0,M,No importa.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_534.mp3,7
+535,SP,9781508281085,Spanish 1,25,00:00.000,00:00.000,09Q,0,N,It doesn’t matter if it’s today or tomorrow.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_535.mp3,"7,17"
+536,SP,9781508281085,Spanish 1,25,00:00.000,00:00.000,09R,0,F,No importa si es hoy o mañana.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_536.mp3,"7,17"
+537,SP,9781508281085,Spanish 1,25,00:00.000,00:00.000,10Q,0,N,I don’t need to write it down. (f),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_537.mp3,7
+538,SP,9781508281085,Spanish 1,25,00:00.000,00:00.000,10R,0,F,No necesito escribirla.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_538.mp3,3
+539,SP,9781508281085,Spanish 1,25,00:00.000,00:00.000,11Q,0,N,Can we study together?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_539.mp3,18
+540,SP,9781508281085,Spanish 1,25,00:00.000,00:00.000,11R,0,F,¿Podemos estudiar juntos?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_540.mp3,18
+541,SP,9781508281085,Spanish 1,25,00:00.000,00:00.000,12Q,0,N,What does that word mean?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_541.mp3,"7,16"
+542,SP,9781508281085,Spanish 1,25,00:00.000,00:00.000,12R,0,M,¿Qué significa esa palabra?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_542.mp3,"7,16"
+543,SP,9781508281085,Spanish 1,26,00:00.000,00:00.000,01Q,0,N,To his house.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_543.mp3,7
+544,SP,9781508281085,Spanish 1,26,00:00.000,00:00.000,01R,0,M,A su casa.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_544.mp3,7
+545,SP,9781508281085,Spanish 1,26,00:00.000,00:00.000,02Q,0,N,Where do you want to go?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_545.mp3,18
+546,SP,9781508281085,Spanish 1,26,00:00.000,00:00.000,02R,0,F,¿Adónde quieres ir?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_546.mp3,18
+547,SP,9781508281085,Spanish 1,26,00:00.000,00:00.000,03Q,0,N,How many times?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_547.mp3,17
+548,SP,9781508281085,Spanish 1,26,00:00.000,00:00.000,03R,0,M,¿Cuántas veces?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_548.mp3,17
+549,SP,9781508281085,Spanish 1,26,00:00.000,00:00.000,04Q,0,N,At my house.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_549.mp3,9
+550,SP,9781508281085,Spanish 1,26,00:00.000,00:00.000,04R,0,M,En mi casa.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_550.mp3,9
+551,SP,9781508281085,Spanish 1,26,00:00.000,00:00.000,05Q,0,N,That film is very good.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_551.mp3,"1,9"
+552,SP,9781508281085,Spanish 1,26,00:00.000,00:00.000,05R,0,M,Esa película es muy buena.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_552.mp3,"1,9"
+553,SP,9781508281085,Spanish 1,26,00:00.000,00:00.000,06Q,0,N,Many times this week.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_553.mp3,"12,17"
+554,SP,9781508281085,Spanish 1,26,00:00.000,00:00.000,06R,0,F,Muchas veces esta semana.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_554.mp3,"12,17"
+555,SP,9781508281085,Spanish 1,26,00:00.000,00:00.000,07Q,0,N,I need to study more.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_555.mp3,1
+556,SP,9781508281085,Spanish 1,26,00:00.000,00:00.000,07R,0,F,Necesito estudiar más.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_556.mp3,1
+557,SP,9781508281085,Spanish 1,26,00:00.000,00:00.000,08Q,0,N,You can come with me.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_557.mp3,18
+558,SP,9781508281085,Spanish 1,26,00:00.000,00:00.000,08R,0,M,Puedes venir conmigo.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_558.mp3,18
+559,SP,9781508281085,Spanish 1,26,00:00.000,00:00.000,09Q,0,N,Can I go with you?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_559.mp3,18
+560,SP,9781508281085,Spanish 1,26,00:00.000,00:00.000,09R,0,F,¿Puedo ir con usted?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_560.mp3,18
+561,SP,9781508281085,Spanish 1,26,00:00.000,00:00.000,10Q,0,N,Does your father live with you?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_561.mp3,5
+562,SP,9781508281085,Spanish 1,26,00:00.000,00:00.000,10R,0,F,¿Vive tu padre contigo?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_562.mp3,5
+563,SP,9781508281085,Spanish 1,26,00:00.000,00:00.000,11Q,0,N,Let’s go to see a film.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_563.mp3,1
+564,SP,9781508281085,Spanish 1,26,00:00.000,00:00.000,11R,0,M,Vamos a ver una película.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_564.mp3,1
+565,SP,9781508281085,Spanish 1,26,00:00.000,00:00.000,12Q,0,N,Come to his house with me.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_565.mp3,18
+566,SP,9781508281085,Spanish 1,26,00:00.000,00:00.000,12R,0,M,Ven a su casa conmigo.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_566.mp3,18
+567,SP,9781508281085,Spanish 1,26,00:00.000,00:00.000,13Q,0,N,Come if you want.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_567.mp3,18
+568,SP,9781508281085,Spanish 1,26,00:00.000,00:00.000,13R,0,F,Ven si quieres.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_568.mp3,18
+569,SP,9781508281085,Spanish 1,27,00:00.000,00:00.000,01Q,0,N,To my father’s house.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_569.mp3,5
+570,SP,9781508281085,Spanish 1,27,00:00.000,00:00.000,01R,0,M,A la casa de mi padre.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_570.mp3,5
+571,SP,9781508281085,Spanish 1,27,00:00.000,00:00.000,02Q,0,N,Really?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_571.mp3,"7,15"
+572,SP,9781508281085,Spanish 1,27,00:00.000,00:00.000,02R,0,M,¿De verdad?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_572.mp3,"7,15"
+573,SP,9781508281085,Spanish 1,27,00:00.000,00:00.000,03Q,0,N,He’s a Spanish teacher.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_573.mp3,6
+574,SP,9781508281085,Spanish 1,27,00:00.000,00:00.000,03R,0,M,Es profesor de español.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_574.mp3,6
+575,SP,9781508281085,Spanish 1,27,00:00.000,00:00.000,04Q,0,N,Have you see the teacher?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_575.mp3,6
+576,SP,9781508281085,Spanish 1,27,00:00.000,00:00.000,04R,0,M,¿Has visto al profesor?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_576.mp3,6
+577,SP,9781508281085,Spanish 1,27,00:00.000,00:00.000,05Q,0,N,I’ve spoken with her.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_577.mp3,15
+578,SP,9781508281085,Spanish 1,27,00:00.000,00:00.000,05R,0,F,He hablado con ella.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_578.mp3,15
+579,SP,9781508281085,Spanish 1,27,00:00.000,00:00.000,06Q,0,N,You’ve told me.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_579.mp3,15
+580,SP,9781508281085,Spanish 1,27,00:00.000,00:00.000,06R,0,F,Me has dicho.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_580.mp3,15
+581,SP,9781508281085,Spanish 1,27,00:00.000,00:00.000,07Q,0,N,What have you told her?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_581.mp3,15
+582,SP,9781508281085,Spanish 1,27,00:00.000,00:00.000,07R,0,M,¿Qué le has dicho?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_582.mp3,15
+583,SP,9781508281085,Spanish 1,27,00:00.000,00:00.000,08Q,0,N,I go a lot to the movies.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_583.mp3,1
+584,SP,9781508281085,Spanish 1,27,00:00.000,00:00.000,08R,0,M,Voy mucho al cine.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_584.mp3,1
+585,SP,9781508281085,Spanish 1,27,00:00.000,00:00.000,09Q,0,N,You’ve already said it.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_585.mp3,15
+586,SP,9781508281085,Spanish 1,27,00:00.000,00:00.000,09R,0,F,Ya lo has dicho.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_586.mp3,15
+587,SP,9781508281085,Spanish 1,27,00:00.000,00:00.000,10Q,0,N,I have not seen him today.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_587.mp3,17
+588,SP,9781508281085,Spanish 1,27,00:00.000,00:00.000,10R,0,M,No lo he visto hoy.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_588.mp3,17
+589,SP,9781508281085,Spanish 1,27,00:00.000,00:00.000,11Q,0,N,Let’s go to the movies.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_589.mp3,1
+590,SP,9781508281085,Spanish 1,27,00:00.000,00:00.000,11R,0,F,Vamos al cine.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_590.mp3,1
+591,SP,9781508281085,Spanish 1,27,00:00.000,00:00.000,12Q,0,N,Is your father at home now?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_591.mp3,5
+592,SP,9781508281085,Spanish 1,27,00:00.000,00:00.000,12R,0,F,¿Está tu padre en casa ahora?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_592.mp3,5
+593,SP,9781508281085,Spanish 1,28,00:00.000,00:00.000,01Q,0,N,Where have you lived? (pl),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_593.mp3,7
+594,SP,9781508281085,Spanish 1,28,00:00.000,00:00.000,01R,0,M,¿Dónde han vivido?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_594.mp3,7
+595,SP,9781508281085,Spanish 1,28,00:00.000,00:00.000,02Q,0,N,That film is excellent for learning Spanish.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_595.mp3,1
+596,SP,9781508281085,Spanish 1,28,00:00.000,00:00.000,02R,0,M,Esa película es excelente para aprender español.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_596.mp3,1
+597,SP,9781508281085,Spanish 1,28,00:00.000,00:00.000,03Q,0,N,Wait!,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_597.mp3,7
+598,SP,9781508281085,Spanish 1,28,00:00.000,00:00.000,03R,0,F,¡Espera!,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_598.mp3,7
+599,SP,9781508281085,Spanish 1,28,00:00.000,00:00.000,04Q,0,N,Have you eaten?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_599.mp3,6
+600,SP,9781508281085,Spanish 1,28,00:00.000,00:00.000,04R,0,M,¿Has comido?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_600.mp3,6
+601,SP,9781508281085,Spanish 1,28,00:00.000,00:00.000,05Q,0,N,Have you lived there?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_601.mp3,7
+602,SP,9781508281085,Spanish 1,28,00:00.000,00:00.000,05R,0,F,¿Has vivido allí?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_602.mp3,7
+603,SP,9781508281085,Spanish 1,28,00:00.000,00:00.000,06Q,0,N,There’s an interesting film.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_603.mp3,1
+604,SP,9781508281085,Spanish 1,28,00:00.000,00:00.000,06R,0,M,Hay una película interesante.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_604.mp3,1
+605,SP,9781508281085,Spanish 1,28,00:00.000,00:00.000,07Q,0,N,We have spoken Spanish at home.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_605.mp3,15
+606,SP,9781508281085,Spanish 1,28,00:00.000,00:00.000,07R,0,M,Hemos hablado español en casa.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_606.mp3,15
+607,SP,9781508281085,Spanish 1,28,00:00.000,00:00.000,08Q,0,N,She’s told me.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_607.mp3,"9,15"
+608,SP,9781508281085,Spanish 1,28,00:00.000,00:00.000,08R,0,M,Me ha dicho.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_608.mp3,"9,15"
+609,SP,9781508281085,Spanish 1,28,00:00.000,00:00.000,09Q,0,N,They’ve told me.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_609.mp3,"9,15"
+610,SP,9781508281085,Spanish 1,28,00:00.000,00:00.000,09R,0,F,Me han dicho.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_610.mp3,"9,15"
+611,SP,9781508281085,Spanish 1,28,00:00.000,00:00.000,10Q,0,N,Haven’t you seen it?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_611.mp3,1
+612,SP,9781508281085,Spanish 1,28,00:00.000,00:00.000,10R,0,F,¿No la has visto?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_612.mp3,1
+613,SP,9781508281085,Spanish 1,28,00:00.000,00:00.000,11Q,0,N,I don’t believe it.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_613.mp3,7
+614,SP,9781508281085,Spanish 1,28,00:00.000,00:00.000,11R,0,F,No lo creo.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_614.mp3,7
+615,SP,9781508281085,Spanish 1,28,00:00.000,00:00.000,12Q,0,N,I still don’t understand.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_615.mp3,"10,15,16"
+616,SP,9781508281085,Spanish 1,28,00:00.000,00:00.000,12R,0,F,Todavía no entiendo.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_616.mp3,"10,15,16"
+617,SP,9781508281085,Spanish 1,29,00:00.000,00:00.000,01Q,0,N,To our house.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_617.mp3,9
+618,SP,9781508281085,Spanish 1,29,00:00.000,00:00.000,01R,0,M,A nuestra casa.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_618.mp3,9
+619,SP,9781508281085,Spanish 1,29,00:00.000,00:00.000,02Q,0,N,With much pleasure.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_619.mp3,13
+620,SP,9781508281085,Spanish 1,29,00:00.000,00:00.000,02R,0,M,Con mucho gusto.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_620.mp3,13
+621,SP,9781508281085,Spanish 1,29,00:00.000,00:00.000,03Q,0,N,About interesting things.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_621.mp3,9
+622,SP,9781508281085,Spanish 1,29,00:00.000,00:00.000,03R,0,F,De cosas interesantes.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_622.mp3,9
+623,SP,9781508281085,Spanish 1,29,00:00.000,00:00.000,04Q,0,N,Wait a moment.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_623.mp3,"7,13,16"
+624,SP,9781508281085,Spanish 1,29,00:00.000,00:00.000,04R,0,M,Espera un momento.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_624.mp3,"7,13,16"
+625,SP,9781508281085,Spanish 1,29,00:00.000,00:00.000,05Q,0,N,You have not seen them at our house?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_625.mp3,7
+626,SP,9781508281085,Spanish 1,29,00:00.000,00:00.000,05R,0,F,¿No los has visto en nuestra casa?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_626.mp3,7
+627,SP,9781508281085,Spanish 1,29,00:00.000,00:00.000,06Q,0,N,See you soon.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_627.mp3,13
+628,SP,9781508281085,Spanish 1,29,00:00.000,00:00.000,06R,0,M,Hasta pronto.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_628.mp3,13
+629,SP,9781508281085,Spanish 1,29,00:00.000,00:00.000,07Q,0,N,I haven’t seen them in a long time.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_629.mp3,17
+630,SP,9781508281085,Spanish 1,29,00:00.000,00:00.000,07R,0,F,No los he visto en mucho tiempo.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_630.mp3,17
+631,SP,9781508281085,Spanish 1,29,00:00.000,00:00.000,08Q,0,N,I can’t tell you.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_631.mp3,9
+632,SP,9781508281085,Spanish 1,29,00:00.000,00:00.000,08R,0,M,No puedo decirte.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_632.mp3,9
+633,SP,9781508281085,Spanish 1,29,00:00.000,00:00.000,09Q,0,N,Can you help me?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_633.mp3,"13,16"
+634,SP,9781508281085,Spanish 1,29,00:00.000,00:00.000,09R,0,F,¿Puedes ayudarme?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_634.mp3,"13,16"
+635,SP,9781508281085,Spanish 1,29,00:00.000,00:00.000,10Q,0,N,I can help you.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_635.mp3,"9,13,16"
+636,SP,9781508281085,Spanish 1,29,00:00.000,00:00.000,10R,0,F,Puedo ayudarte.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_636.mp3,"9,13,16"
+637,SP,9781508281085,Spanish 1,29,00:00.000,00:00.000,11Q,0,N,What are you studying?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_637.mp3,7
+638,SP,9781508281085,Spanish 1,29,00:00.000,00:00.000,11R,0,M,¿Qué estudias?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_638.mp3,7
+639,SP,9781508281085,Spanish 1,29,00:00.000,00:00.000,12Q,0,N,How’s it going?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_639.mp3,"13,16"
+640,SP,9781508281085,Spanish 1,29,00:00.000,00:00.000,12R,0,M,¿Qué tal?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_640.mp3,"13,16"
+641,SP,9781508281085,Spanish 1,29,00:00.000,00:00.000,13Q,0,N,I have to leave.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_641.mp3,12
+642,SP,9781508281085,Spanish 1,29,00:00.000,00:00.000,13R,0,M,Tengo que irme.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_642.mp3,12
+643,SP,9781508281085,Spanish 1,30,00:00.000,00:00.000,01Q,0,N,Someone that you know. (formal),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_643.mp3,9
+644,SP,9781508281085,Spanish 1,30,00:00.000,00:00.000,01R,0,F,Alguien que usted conoce.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_644.mp3,9
+645,SP,9781508281085,Spanish 1,30,00:00.000,00:00.000,02Q,0,N,Certainly./ Sure.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_645.mp3,"9,13"
+646,SP,9781508281085,Spanish 1,30,00:00.000,00:00.000,02R,0,M,Cómo no.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_646.mp3,"9,13"
+647,SP,9781508281085,Spanish 1,30,00:00.000,00:00.000,03Q,0,N,With someone else.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_647.mp3,9
+648,SP,9781508281085,Spanish 1,30,00:00.000,00:00.000,03R,0,M,Con alguien más.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_648.mp3,9
+649,SP,9781508281085,Spanish 1,30,00:00.000,00:00.000,04Q,0,N,Agreed.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_649.mp3,7
+650,SP,9781508281085,Spanish 1,30,00:00.000,00:00.000,04R,0,M,De acuerdo.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_650.mp3,7
+651,SP,9781508281085,Spanish 1,30,00:00.000,00:00.000,05Q,0,N,There are too many people.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_651.mp3,9
+652,SP,9781508281085,Spanish 1,30,00:00.000,00:00.000,05R,0,F,Hay demasiada gente.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_652.mp3,9
+653,SP,9781508281085,Spanish 1,30,00:00.000,00:00.000,06Q,0,N,Don’t you like people?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_653.mp3,9
+654,SP,9781508281085,Spanish 1,30,00:00.000,00:00.000,06R,0,F,¿No te gusta la gente?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_654.mp3,9
+655,SP,9781508281085,Spanish 1,30,00:00.000,00:00.000,07Q,0,N,I prefer to go with you.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_655.mp3,18
+656,SP,9781508281085,Spanish 1,30,00:00.000,00:00.000,07R,0,M,Prefiero ir contigo.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_656.mp3,18
+657,SP,9781508281085,Spanish 1,30,00:00.000,00:00.000,08Q,0,N,I can help you with your English. (formal),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_657.mp3,"9,15"
+658,SP,9781508281085,Spanish 1,30,00:00.000,00:00.000,08R,0,M,Puedo ayudarle con su inglés.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_658.mp3,"9,15"
+659,SP,9781508281085,Spanish 1,30,00:00.000,00:00.000,09Q,0,N,What have you seen? (formal),n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_659.mp3,1
+660,SP,9781508281085,Spanish 1,30,00:00.000,00:00.000,09R,0,F,¿Qué ha visto?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_660.mp3,1
+661,SP,9781508281085,Spanish 1,30,00:00.000,00:00.000,10Q,0,N,Perhaps a coffee with milk.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_661.mp3,6
+662,SP,9781508281085,Spanish 1,30,00:00.000,00:00.000,10R,0,F,Tal vez un café con leche.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_662.mp3,6
+663,SP,9781508281085,Spanish 1,30,00:00.000,00:00.000,11Q,0,N,Are you going to go there?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_663.mp3,7
+664,SP,9781508281085,Spanish 1,30,00:00.000,00:00.000,11R,0,M,¿Va a ir allí?,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_664.mp3,7
+665,SP,9781508281085,Spanish 1,30,00:00.000,00:00.000,12Q,0,N,We’re going together to the theatre.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_665.mp3,1
+666,SP,9781508281085,Spanish 1,30,00:00.000,00:00.000,12R,0,F,Vamos juntos al teatro.,n/a,n/a,Spanish Level 1 Core Update,9781508281085_Spanish_1_QM_666.mp3,1

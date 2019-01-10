@@ -51,6 +51,7 @@ public class SignUpService {
             String errorMessage;
             switch (response.getResultCode()) {
                 case -3011:
+                case -9240:
                     errorMessage = EMAIL_ALREADY_REGISTERED_ERROR_MESSAGE;
                     break;
                 case -1:

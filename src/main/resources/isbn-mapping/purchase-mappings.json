@@ -1311,15 +1311,15 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781508231431,
-    "Course name": "Chinese (Mandarin) - Level 1 Unlimited",
+    "Course name": "Chinese (Mandarin) - Level 1 Premium",
     "Other format 1 ISBN": 9781508275565,
-    "Other format 1 Type": "Chinese (Mandarin) Level 1 Unlimited Upsell",
+    "Other format 1 Type": "Chinese (Mandarin) Level 1 Premium Upsell",
     "Other format 2 ISBN": 9781508275664,
-    "Other format 2 Type": "Chinese (Mandarin) Level 1 Unlimited Upgrade",
+    "Other format 2 Type": "Chinese (Mandarin) Level 1 Premium Upgrade",
     "Other format 3 ISBN": 9781442394872,
     "Other format 3 Type": "DVD",
     "Upsell in-app purchase ISBN": 9781508275572,
-    "Upsell course name": "Chinese (Mandarin) Level 2 Unlimited Upsell",
+    "Upsell course name": "Chinese (Mandarin) Level 2 Premium Upsell",
     "Upsell2 in-app purchase ISBN": "",
     "Upsell2 course name": "",
     "Upgrade in-app purchase ISBN": "",
@@ -1345,13 +1345,13 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781442394889,
-    "Course name": "Chinese (Mandarin) - Level 2 Unlimited",
+    "Course name": "Chinese (Mandarin) - Level 2 Premium",
     "Other format 1 ISBN": 9781508275572,
-    "Other format 1 Type": "Chinese (Mandarin) Level 2 Unlimited Upsell",
+    "Other format 1 Type": "Chinese (Mandarin) Level 2 Premium Upsell",
     "Other format 2 ISBN": 9781508275671,
-    "Other format 2 Type": "Chinese (Mandarin) Level 2 Unlimited Upgrade",
+    "Other format 2 Type": "Chinese (Mandarin) Level 2 Premium Upgrade",
     "Upsell in-app purchase ISBN": 9781508275589,
-    "Upsell course name": "Chinese (Mandarin) Level 3 Unlimited Upsell",
+    "Upsell course name": "Chinese (Mandarin) Level 3 Premium Upsell",
     "Other format 3 ISBN": "",
     "Other format 3 Type": "",
     "Upsell2 in-app purchase ISBN": "",
@@ -1379,13 +1379,13 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781442394896,
-    "Course name": "Chinese (Mandarin) - Level 3 Unlimited",
+    "Course name": "Chinese (Mandarin) - Level 3 Premium",
     "Other format 1 ISBN": 9781508275589,
-    "Other format 1 Type": "Chinese (Mandarin) Level 3 Unlimited Upsell",
+    "Other format 1 Type": "Chinese (Mandarin) Level 3 Premium Upsell",
     "Other format 2 ISBN": 9781508275688,
-    "Other format 2 Type": "Chinese (Mandarin) Level 3 Unlimited Upgrade",
+    "Other format 2 Type": "Chinese (Mandarin) Level 3 Premium Upgrade",
     "Upsell in-app purchase ISBN": 9781508275596,
-    "Upsell course name": "Chinese (Mandarin) Level 4 Unlimited Upsell",
+    "Upsell course name": "Chinese (Mandarin) Level 4 Premium Upsell",
     "Other format 3 ISBN": "",
     "Other format 3 Type": "",
     "Upsell2 in-app purchase ISBN": "",
@@ -1413,13 +1413,13 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781442394902,
-    "Course name": "Chinese (Mandarin) - Level 4 Unlimited",
+    "Course name": "Chinese (Mandarin) - Level 4 Premium",
     "Other format 1 ISBN": 9781508275596,
-    "Other format 1 Type": "Chinese (Mandarin) Level 4 Unlimited Upsell",
+    "Other format 1 Type": "Chinese (Mandarin) Level 4 Premium Upsell",
     "Other format 2 ISBN": 9781508275695,
-    "Other format 2 Type": "Chinese (Mandarin) Level 4 Unlimited Upgrade",
+    "Other format 2 Type": "Chinese (Mandarin) Level 4 Premium Upgrade",
     "Upsell in-app purchase ISBN": 9781508275602,
-    "Upsell course name": "Chinese (Mandarin) Level 5 Unlimited Upsell",
+    "Upsell course name": "Chinese (Mandarin) Level 5 Premium Upsell",
     "Other format 3 ISBN": "",
     "Other format 3 Type": "",
     "Upsell2 in-app purchase ISBN": "",
@@ -1447,11 +1447,11 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781508230823,
-    "Course name": "Chinese (Mandarin) - Level 5 Unlimited",
+    "Course name": "Chinese (Mandarin) - Level 5 Premium",
     "Other format 1 ISBN": 9781508275602,
-    "Other format 1 Type": "Chinese (Mandarin) Level 5 Unlimited Upsell",
+    "Other format 1 Type": "Chinese (Mandarin) Level 5 Premium Upsell",
     "Other format 2 ISBN": 9781508275701,
-    "Other format 2 Type": "Chinese (Mandarin) Level 5 Unlimited Upgrade",
+    "Other format 2 Type": "Chinese (Mandarin) Level 5 Premium Upgrade",
     "Other format 3 ISBN": "",
     "Other format 3 Type": "",
     "Upsell in-app purchase ISBN": "",
@@ -1481,9 +1481,9 @@
   {
     "Base Course Type": "Prem free lesson",
     "ISBN": 9781508243328,
-    "Course name": "Chinese (Mandarin) Level 1 Lesson 1 Demo Unlimited",
+    "Course name": "Chinese (Mandarin) Level 1 Lesson 1 Demo Premium",
     "Upsell in-app purchase ISBN": 9781508275565,
-    "Upsell course name": "Chinese (Mandarin) Level 1 Unlimited Upsell",
+    "Upsell course name": "Chinese (Mandarin) Level 1 Premium Upsell",
     "Upsell2 in-app purchase ISBN": 9781508276258,
     "Upsell2 course name": "Chinese (Mandarin) Premium Subscription",
     "Other format 1 ISBN": "",
@@ -1821,11 +1821,11 @@
   {
     "Base Course Type": "Prem Level 1-2",
     "ISBN": 9781508260257,
-    "Course name": "Chinese (Mandarin) Levels 1-2 Unlimited Software",
+    "Course name": "Chinese (Mandarin) Levels 1-2 Premium Software",
     "Other format 2 ISBN": 9781508276074,
-    "Other format 2 Type": "Chinese (Mandarin) Level 1-2 Unlimited Upgrade",
+    "Other format 2 Type": "Chinese (Mandarin) Level 1-2 Premium Upgrade",
     "Upsell in-app purchase ISBN": 9781508275589,
-    "Upsell course name": "Chinese (Mandarin) Level 3 Unlimited Upsell",
+    "Upsell course name": "Chinese (Mandarin) Level 3 Premium Upsell",
     "Other format 1 ISBN": "",
     "Other format 1 Type": "",
     "Other format 3 ISBN": "",
@@ -1872,11 +1872,11 @@
   {
     "Base Course Type": "Prem Level 1-4",
     "ISBN": 9781508231424,
-    "Course name": "Chinese (Mandarin) Levels 1-4 Unlimited Software",
+    "Course name": "Chinese (Mandarin) Levels 1-4 Premium Software",
     "Other format 3 ISBN": 9781442383265,
     "Other format 3 Type": "DVD",
     "Upsell in-app purchase ISBN": 9781508275602,
-    "Upsell course name": "Chinese (Mandarin) Level 5 Unlimited Upsell",
+    "Upsell course name": "Chinese (Mandarin) Level 5 Premium Upsell",
     "Other format 1 ISBN": "",
     "Other format 1 Type": "",
     "Other format 2 ISBN": "",
@@ -1906,9 +1906,9 @@
   {
     "Base Course Type": "Prem Level 1-5",
     "ISBN": 9781508227939,
-    "Course name": "Chinese (Mandarin) Levels 1-5 Unlimited Software",
+    "Course name": "Chinese (Mandarin) Levels 1-5 Premium Software",
     "Other format 2 ISBN": 9781508276197,
-    "Other format 2 Type": "Chinese (Mandarin) Level 1-5 Unlimited Upgrade",
+    "Other format 2 Type": "Chinese (Mandarin) Level 1-5 Premium Upgrade",
     "Other format 1 ISBN": "",
     "Other format 1 Type": "",
     "Other format 3 ISBN": "",
@@ -4507,7 +4507,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781508235927,
-    "Course name": "English for Spanish - Level 1 Unlimited",
+    "Course name": "English for Spanish - Level 1 Premium",
     "Other format 1 ISBN": 9781508275619,
     "Other format 1 Type": "English for Spanish Speakers Level 1 Premium Upsell",
     "Other format 2 ISBN": 9781508275718,
@@ -4524,7 +4524,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781508235934,
-    "Course name": "English for Spanish - Level 2 Unlimited",
+    "Course name": "English for Spanish - Level 2 Premium",
     "Other format 1 ISBN": 9781508275626,
     "Other format 1 Type": "English for Spanish Speakers Level 2 Premium Upsell",
     "Other format 2 ISBN": 9781508275725,
@@ -4541,7 +4541,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781508235941,
-    "Course name": "English for Spanish - Level 3 Unlimited",
+    "Course name": "English for Spanish - Level 3 Premium",
     "Other format 1 ISBN": 9781508275251,
     "Other format 1 Type": "English for Spanish Speakers Level 3 Premium Upsell",
     "Other format 2 ISBN": 9781508275732,
@@ -4626,7 +4626,7 @@
   {
     "Base Course Type": "Prem free lesson",
     "ISBN": 9781508243359,
-    "Course name": "English for Spanish Speakers Level 1 Lesson 1 Demo Unlimited",
+    "Course name": "English for Spanish Speakers Level 1 Lesson 1 Demo Premium",
     "Upsell in-app purchase ISBN": 9781508275619,
     "Upsell course name": "English for Spanish Speakers Level 1 Premium Upsell",
     "Upsell2 in-app purchase ISBN": 9781508204503,
@@ -4966,7 +4966,7 @@
   {
     "Base Course Type": "Prem Level 1-2",
     "ISBN": 9781508260233,
-    "Course name": "English for Spanish Speakers Levels 1-2 Unlimited Software",
+    "Course name": "English for Spanish Speakers Levels 1-2 Premium Software",
     "Other format 2 ISBN": 9781508276081,
     "Other format 2 Type": "English for Spanish Speakers Levels 1-2 Premium Upgrade",
     "Upsell in-app purchase ISBN": 9781508275251,
@@ -5000,7 +5000,7 @@
   {
     "Base Course Type": "Prem Level 1-3",
     "ISBN": 9781508227946,
-    "Course name": "English for Spanish Speakers Levels 1-3 Unlimited Software",
+    "Course name": "English for Spanish Speakers Levels 1-3 Premium Software",
     "Other format 2 ISBN": 9781508276166,
     "Other format 2 Type": "English for Spanish Speakers Levels 1-3 Premium Upgrade",
     "Other format 1 ISBN": "",
@@ -5612,7 +5612,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781508231165,
-    "Course name": "French - Level 1 Unlimited",
+    "Course name": "French - Level 1 Premium",
     "Other format 1 ISBN": 9781508275268,
     "Other format 1 Type": "French Level 1 Premium Upsell",
     "Other format 2 ISBN": 9781508275749,
@@ -5646,7 +5646,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781442350328,
-    "Course name": "French - Level 2 Unlimited",
+    "Course name": "French - Level 2 Premium",
     "Other format 1 ISBN": 9781508275275,
     "Other format 1 Type": "French Level 2 Premium Upsell",
     "Other format 2 ISBN": 9781508275756,
@@ -5680,7 +5680,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781442350335,
-    "Course name": "French - Level 3 Unlimited",
+    "Course name": "French - Level 3 Premium",
     "Other format 1 ISBN": 9781508275282,
     "Other format 1 Type": "French Level 3 Premium Upsell",
     "Other format 2 ISBN": 9781508275763,
@@ -5714,7 +5714,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781442370555,
-    "Course name": "French - Level 4 Unlimited",
+    "Course name": "French - Level 4 Premium",
     "Other format 1 ISBN": 9781508275299,
     "Other format 1 Type": "French Level 4 Premium Upsell",
     "Other format 2 ISBN": 9781508275770,
@@ -5748,7 +5748,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781442396173,
-    "Course name": "French - Level 5 Unlimited",
+    "Course name": "French - Level 5 Premium",
     "Other format 1 ISBN": 9781508275305,
     "Other format 1 Type": "French Level 5 Premium Upsell",
     "Other format 2 ISBN": 9781508275787,
@@ -5799,7 +5799,7 @@
   {
     "Base Course Type": "Prem free lesson",
     "ISBN": 9781508243281,
-    "Course name": "French Level 1 Lesson 1 Demo Unlimited",
+    "Course name": "French Level 1 Lesson 1 Demo Premium",
     "Upsell in-app purchase ISBN": 9781508280002,
     "Upsell course name": "French Level 1 Premium Upsell (2018)",
     "Upsell2 in-app purchase ISBN": 9781508282617,
@@ -6292,7 +6292,7 @@
   {
     "Base Course Type": "Prem Level 1-2",
     "ISBN": 9781508260141,
-    "Course name": "French Levels 1-2 Unlimited Software",
+    "Course name": "French Levels 1-2 Premium Software",
     "Other format 2 ISBN": 9781508276098,
     "Other format 2 Type": "French Levels 1-2 Premium Upgrade",
     "Upsell in-app purchase ISBN": 9781508275282,
@@ -6394,7 +6394,7 @@
   {
     "Base Course Type": "Prem Level 1-4",
     "ISBN": 9781508231370,
-    "Course name": "French Levels 1-4 Unlimited Software",
+    "Course name": "French Levels 1-4 Premium Software",
     "Other format 3 ISBN": 9781442368439,
     "Other format 3 Type": "DVD",
     "Upsell in-app purchase ISBN": 9781508275305,
@@ -6462,7 +6462,7 @@
   {
     "Base Course Type": "Prem Level 1-5",
     "ISBN": 9781508227847,
-    "Course name": "French Levels 1-5 Unlimited Software",
+    "Course name": "French Levels 1-5 Premium Software",
     "Other format 2 ISBN": 9781508276203,
     "Other format 2 Type": "French Levels 1-5 Premium Upgrade",
     "Other format 1 ISBN": "",
@@ -6496,7 +6496,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781508231387,
-    "Course name": "German - Level 1 Unlimited",
+    "Course name": "German - Level 1 Premium",
     "Other format 1 ISBN": 9781508275312,
     "Other format 1 Type": "German Level 1 Premium Upsell",
     "Other format 2 ISBN": 9781508275794,
@@ -6530,7 +6530,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781442350342,
-    "Course name": "German - Level 2 Unlimited",
+    "Course name": "German - Level 2 Premium",
     "Other format 1 ISBN": 9781508275329,
     "Other format 1 Type": "German Level 2 Premium Upsell",
     "Other format 2 ISBN": 9781508275800,
@@ -6564,7 +6564,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781442350359,
-    "Course name": "German - Level 3 Unlimited",
+    "Course name": "German - Level 3 Premium",
     "Other format 1 ISBN": 9781508275336,
     "Other format 1 Type": "German Level 3 Premium Upsell",
     "Other format 2 ISBN": 9781508275817,
@@ -6598,7 +6598,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781442370562,
-    "Course name": "German - Level 4 Unlimited",
+    "Course name": "German - Level 4 Premium",
     "Other format 1 ISBN": 9781508275343,
     "Other format 1 Type": "German Level 4 Premium Upsell",
     "Other format 2 ISBN": 9781508275824,
@@ -6632,7 +6632,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781508230892,
-    "Course name": "German - Level 5 Unlimited",
+    "Course name": "German - Level 5 Premium",
     "Other format 1 ISBN": 9781508275350,
     "Other format 1 Type": "German Level 5 Premium Upsell",
     "Other format 2 ISBN": 9781508275831,
@@ -6666,7 +6666,7 @@
   {
     "Base Course Type": "Prem free lesson",
     "ISBN": 9781508243298,
-    "Course name": "German Level 1 Lesson 1 Demo Unlimited",
+    "Course name": "German Level 1 Lesson 1 Demo Premium",
     "Upsell in-app purchase ISBN": 9781508275312,
     "Upsell course name": "German Level 1 Premium Upsell",
     "Upsell2 in-app purchase ISBN": 9781508276272,
@@ -7006,7 +7006,7 @@
   {
     "Base Course Type": "Prem Level 1-2",
     "ISBN": 9781508260189,
-    "Course name": "German Levels 1-2 Unlimited Software",
+    "Course name": "German Levels 1-2 Premium Software",
     "Other format 2 ISBN": 9781508276104,
     "Other format 2 Type": "German Levels 1-2 Premium Upgrade",
     "Upsell in-app purchase ISBN": 9781508275336,
@@ -7040,7 +7040,7 @@
   {
     "Base Course Type": "Prem Level 1-3",
     "ISBN": 9781442348684,
-    "Course name": "German Levels 1-3 Unlimited DVD",
+    "Course name": "German Levels 1-3 Premium DVD",
     "Other format 3 ISBN": 9781442348684,
     "Other format 3 Type": "DVD",
     "Upsell in-app purchase ISBN": 9781508275343,
@@ -7074,7 +7074,7 @@
   {
     "Base Course Type": "Prem Level 1-4",
     "ISBN": 9781508231394,
-    "Course name": "German Levels 1-4 Unlimited Software",
+    "Course name": "German Levels 1-4 Premium Software",
     "Other format 3 ISBN": 9781442369535,
     "Other format 3 Type": "DVD",
     "Upsell in-app purchase ISBN": 9781508275350,
@@ -7108,7 +7108,7 @@
   {
     "Base Course Type": "Prem Level 1-5",
     "ISBN": 9781508227878,
-    "Course name": "German Levels 1-5 Unlimited Software",
+    "Course name": "German Levels 1-5 Premium Software",
     "Other format 2 ISBN": 9781508276210,
     "Other format 2 Type": "German Levels 1-5 Premium Upgrade",
     "Other format 1 ISBN": "",
@@ -8706,7 +8706,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781508231400,
-    "Course name": "Italian - Level 1 Unlimited",
+    "Course name": "Italian - Level 1 Premium",
     "Other format 1 ISBN": 9781508275367,
     "Other format 1 Type": "Italian Level 1 Premium Upsell",
     "Other format 2 ISBN": 9781508275848,
@@ -8740,7 +8740,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781442350366,
-    "Course name": "Italian - Level 2 Unlimited",
+    "Course name": "Italian - Level 2 Premium",
     "Other format 1 ISBN": 9781508275374,
     "Other format 1 Type": "Italian Level 2 Premium Upsell",
     "Other format 2 ISBN": 9781508275855,
@@ -8774,7 +8774,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781442350373,
-    "Course name": "Italian - Level 3 Unlimited",
+    "Course name": "Italian - Level 3 Premium",
     "Other format 1 ISBN": 9781508275381,
     "Other format 1 Type": "Italian Level 3 Premium Upsell",
     "Other format 2 ISBN": 9781508275862,
@@ -8808,7 +8808,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781442370579,
-    "Course name": "Italian - Level 4 Unlimited",
+    "Course name": "Italian - Level 4 Premium",
     "Other format 1 ISBN": 9781508275398,
     "Other format 1 Type": "Italian Level 4 Premium Upsell",
     "Other format 2 ISBN": 9781508275879,
@@ -8842,7 +8842,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781508230922,
-    "Course name": "Italian - Level 5 Unlimited",
+    "Course name": "Italian - Level 5 Premium",
     "Other format 1 ISBN": 9781508275404,
     "Other format 1 Type": "Italian Level 5 Premium Upsell",
     "Other format 2 ISBN": 9781508275886,
@@ -8876,7 +8876,7 @@
   {
     "Base Course Type": "Prem free lesson",
     "ISBN": 9781508243304,
-    "Course name": "Italian Level 1 Lesson 1 Demo Unlimited",
+    "Course name": "Italian Level 1 Lesson 1 Demo Premium",
     "Upsell in-app purchase ISBN": 9781508275367,
     "Upsell course name": "Italian Level 1 Premium Upsell",
     "Upsell2 in-app purchase ISBN": 9781508276289,
@@ -9216,7 +9216,7 @@
   {
     "Base Course Type": "Prem Level 1-2",
     "ISBN": 9781508260202,
-    "Course name": "Italian Levels 1-2 Unlimited Software",
+    "Course name": "Italian Levels 1-2 Premium Software",
     "Other format 2 ISBN": 9781508276111,
     "Other format 2 Type": "Italian Levels 1-2 Premium Upgrade",
     "Upsell in-app purchase ISBN": 9781508275381,
@@ -9267,7 +9267,7 @@
   {
     "Base Course Type": "Prem Level 1-4",
     "ISBN": 9781508231417,
-    "Course name": "Italian Levels 1-4 Unlimited Software",
+    "Course name": "Italian Levels 1-4 Premium Software",
     "Other format 3 ISBN": 9781442367869,
     "Other format 3 Type": "DVD",
     "Upsell in-app purchase ISBN": 9781508275404,
@@ -9301,7 +9301,7 @@
   {
     "Base Course Type": "Prem Level 1-5",
     "ISBN": 9781442396180,
-    "Course name": "Italian Levels 1-5 Unlimited Software",
+    "Course name": "Italian Levels 1-5 Premium Software",
     "Other format 2 ISBN": 9781508276227,
     "Other format 2 Type": "Italian Levels 1-5 Premium Upgrade",
     "Other format 1 ISBN": "",
@@ -9335,7 +9335,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781508222033,
-    "Course name": "Japanese - Level 1 Unlimited",
+    "Course name": "Japanese - Level 1 Premium",
     "Other format 1 ISBN": 9781508275411,
     "Other format 1 Type": "Japanese Level 1 Premium Upsell",
     "Other format 2 ISBN": 9781508275893,
@@ -9369,7 +9369,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781508222040,
-    "Course name": "Japanese - Level 2 Unlimited",
+    "Course name": "Japanese - Level 2 Premium",
     "Other format 1 ISBN": 9781508275428,
     "Other format 1 Type": "Japanese Level 2 Premium Upsell",
     "Other format 2 ISBN": 9781508275909,
@@ -9403,7 +9403,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781508222057,
-    "Course name": "Japanese - Level 3 Unlimited",
+    "Course name": "Japanese - Level 3 Premium",
     "Other format 1 ISBN": 9781508275435,
     "Other format 1 Type": "Japanese Level 3 Premium Upsell",
     "Other format 2 ISBN": 9781508275916,
@@ -9437,7 +9437,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781508222064,
-    "Course name": "Japanese - Level 4 Unlimited",
+    "Course name": "Japanese - Level 4 Premium",
     "Other format 1 ISBN": 9781508275442,
     "Other format 1 Type": "Japanese Level 4 Premium Upsell",
     "Other format 2 ISBN": 9781508275923,
@@ -9471,7 +9471,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781508235972,
-    "Course name": "Japanese - Level 5 Unlimited",
+    "Course name": "Japanese - Level 5 Premium",
     "Other format 1 ISBN": 9781508275459,
     "Other format 1 Type": "Japanese Level 5 Premium Upsell",
     "Other format 2 ISBN": 9781508275930,
@@ -9505,7 +9505,7 @@
   {
     "Base Course Type": "Prem free lesson",
     "ISBN": 9781508243311,
-    "Course name": "Japanese Level 1 Lesson 1 Demo Unlimited",
+    "Course name": "Japanese Level 1 Lesson 1 Demo Premium",
     "Upsell in-app purchase ISBN": 9781508275411,
     "Upsell course name": "Japanese Level 1 Premium Upsell",
     "Upsell2 in-app purchase ISBN": 9781508276296,
@@ -9845,7 +9845,7 @@
   {
     "Base Course Type": "Prem Level 1-2",
     "ISBN": 9781508260240,
-    "Course name": "Japanese Levels 1-2 Unlimited Software",
+    "Course name": "Japanese Levels 1-2 Premium Software",
     "Other format 2 ISBN": 9781508276128,
     "Other format 2 Type": "Japanese Levels 1-2 Premium Upgrade",
     "Upsell in-app purchase ISBN": 9781508275435,
@@ -9896,7 +9896,7 @@
   {
     "Base Course Type": "Prem Level 1-4",
     "ISBN": 9781508216780,
-    "Course name": "Japanese Levels 1-4 Unlimited Software",
+    "Course name": "Japanese Levels 1-4 Premium Software",
     "Upsell in-app purchase ISBN": 9781508275459,
     "Upsell course name": "Japanese Level 5 Premium Upsell",
     "Other format 1 ISBN": "",
@@ -9930,7 +9930,7 @@
   {
     "Base Course Type": "Prem Level 1-5",
     "ISBN": 9781508235989,
-    "Course name": "Japanese Levels 1-5 Unlimited Software",
+    "Course name": "Japanese Levels 1-5 Premium Software",
     "Other format 2 ISBN": 9781508276234,
     "Other format 2 Type": "Japanese Levels 1-5 Premium Upgrade",
     "Other format 1 ISBN": "",
@@ -11157,14 +11157,14 @@
     "Course name": "Portuguese (Brazilian) - Level 4",
     "Other format 1 ISBN": 9781508272014,
     "Other format 1 Type": "Portuguese (Brazilian) Level 4 Upsell",
+    "Upsell in-app purchase ISBN": 9781508286899,
+    "Upsell course name": "Portuguese (Brazilian) Level 5 Upsell",
     "Upgrade in-app purchase ISBN": 9781508275978,
     "Upgrade course name": "Portuguese (Brazilian) Level 4 Premium Upgrade",
     "Other format 2 ISBN": "",
     "Other format 2 Type": "",
     "Other format 3 ISBN": "",
     "Other format 3 Type": "",
-    "Upsell in-app purchase ISBN": "",
-    "Upsell course name": "",
     "Upsell2 in-app purchase ISBN": "",
     "Upsell2 course name": ""
   },
@@ -11205,7 +11205,7 @@
   {
     "Base Course Type": "Prem free lesson",
     "ISBN": 9781508243342,
-    "Course name": "Portuguese (Brazilian) Level 1 Lesson 1 Demo Unlimited",
+    "Course name": "Portuguese (Brazilian) Level 1 Lesson 1 Demo Premium",
     "Upsell in-app purchase ISBN": 9781508275466,
     "Upsell course name": "Portuguese (Brazilian) Level 1 Premium Upsell",
     "Upsell2 in-app purchase ISBN": 9781508276302,
@@ -11324,7 +11324,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781508231448,
-    "Course name": "Portuguese (Brazilian) Level 1 Unlimited",
+    "Course name": "Portuguese (Brazilian) Level 1 Premium",
     "Other format 1 ISBN": 9781508275466,
     "Other format 1 Type": "Portuguese (Brazilian) Level 1 Premium Upsell",
     "Other format 2 ISBN": 9781508275947,
@@ -11443,7 +11443,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781442374997,
-    "Course name": "Portuguese (Brazilian) Level 2 Unlimited",
+    "Course name": "Portuguese (Brazilian) Level 2 Premium",
     "Other format 1 ISBN": 9781508275473,
     "Other format 1 Type": "Portuguese (Brazilian) Level 2 Premium Upsell",
     "Other format 2 ISBN": 9781508275954,
@@ -11562,7 +11562,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781442375000,
-    "Course name": "Portuguese (Brazilian) Level 3 Unlimited",
+    "Course name": "Portuguese (Brazilian) Level 3 Premium",
     "Other format 1 ISBN": 9781508275480,
     "Other format 1 Type": "Portuguese (Brazilian) Level 3 Premium Upsell",
     "Other format 2 ISBN": 9781508275961,
@@ -11579,15 +11579,15 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781508235842,
-    "Course name": "Portuguese (Brazilian) Level 4 Unlimited",
+    "Course name": "Portuguese (Brazilian) Level 4 Premium",
     "Other format 1 ISBN": 9781508275497,
     "Other format 1 Type": "Portuguese (Brazilian) Level 4 Premium Upsell",
     "Other format 2 ISBN": 9781508275978,
     "Other format 2 Type": "Portuguese (Brazilian) Level 4 Premium Upgrade",
+    "Upsell in-app purchase ISBN": 9781508286912,
+    "Upsell course name": "Portuguese (Brazilian) Level 5 Premium Upsell",
     "Other format 3 ISBN": "",
     "Other format 3 Type": "",
-    "Upsell in-app purchase ISBN": "",
-    "Upsell course name": "",
     "Upsell2 in-app purchase ISBN": "",
     "Upsell2 course name": "",
     "Upgrade in-app purchase ISBN": "",
@@ -11596,7 +11596,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781508286752,
-    "Course name": "Portuguese (Brazilian) Level 5 Unlimited",
+    "Course name": "Portuguese (Brazilian) Level 5 Premium",
     "Other format 1 ISBN": 9781508286912,
     "Other format 1 Type": "Portuguese (Brazilian) Level 5 Premium Upsell",
     "Other format 2 ISBN": 9781508286905,
@@ -11630,7 +11630,7 @@
   {
     "Base Course Type": "Prem Level 1-2",
     "ISBN": 9781508260264,
-    "Course name": "Portuguese (Brazilian) Levels 1-2 Unlimited Software",
+    "Course name": "Portuguese (Brazilian) Levels 1-2 Premium Software",
     "Other format 2 ISBN": 9781508276135,
     "Other format 2 Type": "Portuguese (Brazilian) Levels 1-2 Premium Upgrade",
     "Upsell in-app purchase ISBN": 9781508275480,
@@ -11664,7 +11664,7 @@
   {
     "Base Course Type": "Prem Level 1-3",
     "ISBN": 9781508231455,
-    "Course name": "Portuguese (Brazilian) Levels 1-3 Unlimited Software",
+    "Course name": "Portuguese (Brazilian) Levels 1-3 Premium Software",
     "Other format 3 ISBN": 9781442373723,
     "Other format 3 Type": "DVD",
     "Upsell in-app purchase ISBN": 9781508275497,
@@ -11696,6 +11696,23 @@
     "Upsell2 course name": ""
   },
   {
+    "Base Course Type": "Prem Level 1-4",
+    "ISBN": 9781508227915,
+    "Course name": "Portuguese (Brazilian) Levels 1-4 Premium Software",
+    "Other format 2 ISBN": 9781508276173,
+    "Other format 2 Type": "Portuguese (Brazilian) Levels 1-4 Premium Upgrade",
+    "Other format 1 ISBN": "",
+    "Other format 1 Type": "",
+    "Other format 3 ISBN": "",
+    "Other format 3 Type": "",
+    "Upsell in-app purchase ISBN": "",
+    "Upsell course name": "",
+    "Upsell2 in-app purchase ISBN": "",
+    "Upsell2 course name": "",
+    "Upgrade in-app purchase ISBN": "",
+    "Upgrade course name": ""
+  },
+  {
     "Base Course Type": "Audio Level 1-5",
     "ISBN": 9781508278207,
     "Course name": "Pimsleur Portuguese (Brazilian) Levels 1-5",
@@ -11711,23 +11728,6 @@
     "Upsell course name": "",
     "Upsell2 in-app purchase ISBN": "",
     "Upsell2 course name": ""
-  },
-  {
-    "Base Course Type": "Prem Level 1-4",
-    "ISBN": 9781508227915,
-    "Course name": "Portuguese (Brazilian) Levels 1-4 Unlimited Software",
-    "Other format 2 ISBN": 9781508276173,
-    "Other format 2 Type": "Portuguese (Brazilian) Levels 1-4 Premium Upgrade",
-    "Other format 1 ISBN": "",
-    "Other format 1 Type": "",
-    "Other format 3 ISBN": "",
-    "Other format 3 Type": "",
-    "Upsell in-app purchase ISBN": "",
-    "Upsell course name": "",
-    "Upsell2 in-app purchase ISBN": "",
-    "Upsell2 course name": "",
-    "Upgrade in-app purchase ISBN": "",
-    "Upgrade course name": ""
   },
   {
     "Base Course Type": "Prem Level 1-5",
@@ -12174,7 +12174,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781508231486,
-    "Course name": "Russian - Level 1 Unlimited",
+    "Course name": "Russian - Level 1 Premium",
     "Other format 1 ISBN": 9781508275503,
     "Other format 1 Type": "Russian Level 1 Premium Upsell",
     "Other format 2 ISBN": 9781508275985,
@@ -12208,7 +12208,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781442382831,
-    "Course name": "Russian - Level 2 Unlimited",
+    "Course name": "Russian - Level 2 Premium",
     "Other format 1 ISBN": 9781508275510,
     "Other format 1 Type": "Russian Level 2 Premium Upsell",
     "Other format 2 ISBN": 9781508275992,
@@ -12242,7 +12242,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781442384293,
-    "Course name": "Russian - Level 3 Unlimited",
+    "Course name": "Russian - Level 3 Premium",
     "Other format 1 ISBN": 9781508275527,
     "Other format 1 Type": "Russian Level 3 Premium Upsell",
     "Other format 2 ISBN": 9781508276005,
@@ -12276,7 +12276,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781508236030,
-    "Course name": "Russian - Level 4 Unlimited",
+    "Course name": "Russian - Level 4 Premium",
     "Other format 1 ISBN": 9781508275534,
     "Other format 1 Type": "Russian Level 4 Premium Upsell",
     "Other format 2 ISBN": 9781508276012,
@@ -12310,7 +12310,7 @@
   {
     "Base Course Type": "Prem free lesson",
     "ISBN": 9781508243335,
-    "Course name": "Russian Level 1 Lesson 1 Demo Unlimited",
+    "Course name": "Russian Level 1 Lesson 1 Demo Premium",
     "Upsell in-app purchase ISBN": 9781508275503,
     "Upsell course name": "Russian Level 1 Premium Upsell",
     "Upsell2 in-app purchase ISBN": 9781508276319,
@@ -12650,7 +12650,7 @@
   {
     "Base Course Type": "Prem Level 1-2",
     "ISBN": 9781508260226,
-    "Course name": "Russian Levels 1-2 Unlimited Software",
+    "Course name": "Russian Levels 1-2 Premium Software",
     "Other format 2 ISBN": 9781508276142,
     "Other format 2 Type": "Russian Levels 1-2 Premium Upgrade",
     "Upsell in-app purchase ISBN": 9781508275527,
@@ -12684,7 +12684,7 @@
   {
     "Base Course Type": "Prem Level 1-3",
     "ISBN": 9781508231493,
-    "Course name": "Russian Levels 1-3 Unlimited Software",
+    "Course name": "Russian Levels 1-3 Premium Software",
     "Other format 3 ISBN": 9781442381841,
     "Other format 3 Type": "DVD",
     "Upsell in-app purchase ISBN": 9781508275534,
@@ -12718,7 +12718,7 @@
   {
     "Base Course Type": "Prem Level 1-4",
     "ISBN": 9781508236023,
-    "Course name": "Russian Levels 1-4 Unlimited Software",
+    "Course name": "Russian Levels 1-4 Premium Software",
     "Other format 2 ISBN": 9781508276180,
     "Other format 2 Type": "Russian Levels 1-4 Premium Upgrade",
     "Other format 1 ISBN": "",
@@ -13041,7 +13041,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781508231509,
-    "Course name": "Spanish - Level 1 Unlimited",
+    "Course name": "Spanish - Level 1 Premium",
     "Other format 1 ISBN": 9781508275541,
     "Other format 1 Type": "Spanish Level 1 Premium Upsell",
     "Other format 2 ISBN": 9781508276029,
@@ -13058,7 +13058,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781508281085,
-    "Course name": "Spanish - Level 1 Unlimited (2018)",
+    "Course name": "Spanish - Level 1 Premium (2018)",
     "Other format 1 ISBN": 9781508285434,
     "Other format 1 Type": "Spanish Level 1 Premium Upsell (2018)",
     "Other format 2 ISBN": 9781508285441,
@@ -13092,7 +13092,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781442350380,
-    "Course name": "Spanish - Level 2 Unlimited",
+    "Course name": "Spanish - Level 2 Premium",
     "Other format 1 ISBN": 9781508275558,
     "Other format 1 Type": "Spanish Level 2 Premium Upsell",
     "Other format 2 ISBN": 9781508276036,
@@ -13126,7 +13126,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781442350397,
-    "Course name": "Spanish - Level 3 Unlimited",
+    "Course name": "Spanish - Level 3 Premium",
     "Other format 1 ISBN": 9781508275633,
     "Other format 1 Type": "Spanish Level 3 Premium Upsell",
     "Other format 2 ISBN": 9781508276043,
@@ -13160,7 +13160,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781442350403,
-    "Course name": "Spanish - Level 4 Unlimited",
+    "Course name": "Spanish - Level 4 Premium",
     "Other format 1 ISBN": 9781508275640,
     "Other format 1 Type": "Spanish Level 4 Premium Upsell",
     "Other format 2 ISBN": 9781508276050,
@@ -13194,7 +13194,7 @@
   {
     "Base Course Type": "Prem",
     "ISBN": 9781508230946,
-    "Course name": "Spanish - Level 5 Unlimited",
+    "Course name": "Spanish - Level 5 Premium",
     "Other format 1 ISBN": 9781508275657,
     "Other format 1 Type": "Spanish Level 5 Premium Upsell",
     "Other format 2 ISBN": 9781508276067,
@@ -13245,7 +13245,7 @@
   {
     "Base Course Type": "Prem free lesson",
     "ISBN": 9781508243274,
-    "Course name": "Spanish Level 1 Lesson 1 Demo Unlimited",
+    "Course name": "Spanish Level 1 Lesson 1 Demo Premium",
     "Upsell in-app purchase ISBN": 9781508285434,
     "Upsell course name": "Spanish Level 1 Premium Upsell (2018)",
     "Upsell2 in-app purchase ISBN": 9781508285496,
@@ -13262,7 +13262,7 @@
   {
     "Base Course Type": "Prem free lesson",
     "ISBN": 9781508283737,
-    "Course name": "Spanish Level 1 Lesson 1 Demo Unlimited (2018)",
+    "Course name": "Spanish Level 1 Lesson 1 Demo Premium (2018)",
     "Upsell in-app purchase ISBN": 9781508285434,
     "Upsell course name": "Spanish Level 1 Premium Upsell (2018)",
     "Upsell2 in-app purchase ISBN": 9781508285496,
@@ -13721,7 +13721,7 @@
   {
     "Base Course Type": "Prem Level 1-2",
     "ISBN": 9781508260219,
-    "Course name": "Spanish Levels 1-2 Unlimited Software",
+    "Course name": "Spanish Levels 1-2 Premium Software",
     "Other format 2 ISBN": 9781508276159,
     "Other format 2 Type": "Spanish Levels 1-2 Premium Upgrade",
     "Upsell in-app purchase ISBN": 9781508275633,
@@ -13738,7 +13738,7 @@
   {
     "Base Course Type": "Prem Level 1-2",
     "ISBN": 9781508283690,
-    "Course name": "Spanish Levels 1-2 Unlimited Software (2018)",
+    "Course name": "Spanish Levels 1-2 Premium Software (2018)",
     "Other format 2 ISBN": 9781508285458,
     "Other format 2 Type": "Spanish Levels 1-2 Premium Upgrade (2018)",
     "Upsell in-app purchase ISBN": 9781508275633,
@@ -13789,7 +13789,7 @@
   {
     "Base Course Type": "Prem Level 1-3",
     "ISBN": 9781442348707,
-    "Course name": "Spanish Levels 1-3 Unlimited DVD",
+    "Course name": "Spanish Levels 1-3 Premium DVD",
     "Upsell in-app purchase ISBN": 9781508275640,
     "Upsell course name": "Spanish Level 4 Premium Upsell",
     "Other format 1 ISBN": "",
@@ -13840,7 +13840,7 @@
   {
     "Base Course Type": "Prem Level 1-4",
     "ISBN": 9781508231516,
-    "Course name": "Spanish Levels 1-4 Unlimited Software",
+    "Course name": "Spanish Levels 1-4 Premium Software",
     "Other format 3 ISBN": 9781442348714,
     "Other format 3 Type": "DVD",
     "Upsell in-app purchase ISBN": 9781508275657,
@@ -13857,7 +13857,7 @@
   {
     "Base Course Type": "Prem Level 1-4",
     "ISBN": 9781508283706,
-    "Course name": "Spanish Levels 1-4 Unlimited Software (2018)",
+    "Course name": "Spanish Levels 1-4 Premium Software (2018)",
     "Other format 2 ISBN": 9781508285465,
     "Other format 2 Type": "Spanish Levels 1-4 Premium Upgrade (2018)",
     "Upsell in-app purchase ISBN": 9781508275657,
@@ -13908,7 +13908,7 @@
   {
     "Base Course Type": "Prem Level 1-5",
     "ISBN": 9781508227786,
-    "Course name": "Spanish Levels 1-5 Unlimited Software",
+    "Course name": "Spanish Levels 1-5 Premium Software",
     "Other format 2 ISBN": 9781508276241,
     "Other format 2 Type": "Spanish Levels 1-5 Premium Upgrade",
     "Other format 1 ISBN": "",
@@ -13925,7 +13925,7 @@
   {
     "Base Course Type": "Prem Level 1-5",
     "ISBN": 9781508283713,
-    "Course name": "Spanish Levels 1-5 Unlimited Software (2018)",
+    "Course name": "Spanish Levels 1-5 Premium Software (2018)",
     "Other format 2 ISBN": 9781508285472,
     "Other format 2 Type": "Spanish Levels 1-5 Premium Upgrade (2018)",
     "Other format 1 ISBN": "",

@@ -36,18 +36,6 @@ pipeline {
             }
         }
 
-        stage("Deploy to QA") {
-            agent any
-            steps {
-                echo "Deploy to QA"
-                script {
-                    def config = readProperties file: 'jenkinsfiles/config/config.properties'
-                    def hostnames = config.QA_UnlimitedBackend_HostName.split(",")
-                    deploy(hostnames, "qa")
-                }
-            }
-        }
-
         stage("Deploy to UAT") {
             steps {
                 script {

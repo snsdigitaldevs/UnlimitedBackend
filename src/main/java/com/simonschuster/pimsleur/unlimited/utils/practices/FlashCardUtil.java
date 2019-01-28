@@ -18,7 +18,6 @@ import static java.util.Collections.emptyList;
 import static java.util.Comparator.comparingInt;
 import static java.util.stream.Collectors.groupingBy;
 import static java.util.stream.Collectors.toList;
-import static java.util.stream.StreamSupport.stream;
 import static org.apache.commons.lang3.StringUtils.isNumeric;
 
 public class FlashCardUtil {
@@ -77,7 +76,9 @@ public class FlashCardUtil {
 
     private static String getMp3FileName(int unitNumber, String mp3FileKey,
                                          String flashCardAudioBaseFileName, CSVRecord csvRecord) {
-        String mp3FileName = getFromCsv(mp3FileKey, csvRecord);
+        // We expect mp3Filekey = 'MP3 snippet file name', however, sometimes, the column name is 'Snippet Name'
+        // String mp3FileName = getFromCsv(mp3FileKey, csvRecord);
+        String mp3FileName = getFromCsv(mp3FileKey, "Snippet Name", csvRecord);
         if (mp3FileName.length() != 0) {
             return mp3FileName;
         } else {

@@ -98,6 +98,15 @@ public class UnlimitedPracticeUtil {
         return "";
     }
 
+    public static String getFromCsv(String key, String backupKey, CSVRecord csvRecord) {
+        if (csvRecord.isSet(key)) {
+            return csvRecord.get(key).replace("\"", "");
+        } else if (csvRecord.isSet(backupKey)){
+            return csvRecord.get(backupKey).replace("\"", "");
+        }
+        return "";
+    }
+
     public static String specialCsvFiles(String csvString) {
         if (csvString.contains("Spanish 3")) {
             csvString = csvString.replace("\nplease", "please").replace("\nremoved", "removed");

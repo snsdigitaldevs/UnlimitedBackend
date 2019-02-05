@@ -40,22 +40,22 @@ public class CustomerInfoForAlexaController {
             throws IOException {
         //Kelly K will handle email missing for Alexa.
         CustomerInfoDTO customerInfoDTO = edtCustomerInfoService.getCustomerInfoDTO(sub, ALEXA_STORE_DOMAIN, "");
-        customerInfoDTO.getProductActivations().forEach(activation -> { String productCode = activation.getProductCode();
-            if(activation.getChildProductCodesString() != null){
-                String childProductCodes = activation.getChildProductCodesString();
-                String[] childProductCodeArray = childProductCodes.split(",");
-                if(customerInfoDTO.getUnlimitedProductCodes().contains(productCode)){
-                    customerInfoDTO.getUnlimitedProductCodes().addAll(Arrays.asList(childProductCodeArray));
-                }
-            }
-        });
+//        customerInfoDTO.getProductActivations().forEach(activation -> { String productCode = activation.getProductCode();
+//            if(activation.getChildProductCodesString() != null){
+//                String childProductCodes = activation.getChildProductCodesString();
+//                String[] childProductCodeArray = childProductCodes.split(",");
+//                if(customerInfoDTO.getUnlimitedProductCodes().contains(productCode)){
+//                    customerInfoDTO.getUnlimitedProductCodes().addAll(Arrays.asList(childProductCodeArray));
+//                }
+//            }
+//        });
 
-        AvailableProductsDto availableProducts = availableProductsService.getAvailableProducts(sub, "", ALEXA_STORE_DOMAIN);
-        List<String> purchasedPCMProductCodes = availableProducts.getPurchasedProducts()
-                .stream().filter(product -> product.isPuProduct() == false)
-                .map(product -> product.getProductCode())
-                .collect(Collectors.toList());
-        customerInfoDTO.getPcmProductCodes().addAll(purchasedPCMProductCodes);
+//        AvailableProductsDto availableProducts = availableProductsService.getAvailableProducts(sub, "", ALEXA_STORE_DOMAIN);
+//        List<String> purchasedPCMProductCodes = availableProducts.getPurchasedProducts()
+//                .stream().filter(product -> product.isPuProduct() == false)
+//                .map(product -> product.getProductCode())
+//                .collect(Collectors.toList());
+//        customerInfoDTO.getPcmProductCodes().addAll(purchasedPCMProductCodes);
         return customerInfoDTO;
     }
 }

@@ -16,7 +16,7 @@ public class HardCodedProductsUtil {
             new AvailableProductDto("Russian", "9781508243335", true),//!!skills
             new AvailableProductDto("Portuguese Brazilian", "9781508243342", true),
             new AvailableProductDto("Chinese Mandarin", "9781508243328", true),//!!skills
-            new AvailableProductDto("ESL Spanish", "9781508243359", true),
+            new AvailableProductDto("English for Spanish Speakers, Premium", "9781508243359", true),
             new AvailableProductDto("Japanese", "9781508243311", true)
     );
 

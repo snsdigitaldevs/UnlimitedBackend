@@ -276,7 +276,7 @@ public class PCMProduct {
 
     public AvailableProductDto pcmProductToDto() {
         return new AvailableProductDto(
-                this.productsLanguageName,
+                this.productsName,
                 this.isbn13.replaceAll("-", ""), false);
     }
 

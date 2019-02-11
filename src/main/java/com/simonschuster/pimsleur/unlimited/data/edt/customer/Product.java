@@ -477,6 +477,7 @@ public class Product {
 
     public AvailableProductDto toPCMAvailableProductDto() {
         return new AvailableProductDto(
+                getProductsName(),
                 getProductsLanguageName(),
                 getProductsName(),
                 getProductCode(),

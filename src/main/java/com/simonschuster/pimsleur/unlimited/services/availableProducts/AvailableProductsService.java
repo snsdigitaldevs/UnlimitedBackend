@@ -116,6 +116,7 @@ public class AvailableProductsService {
         else {
             AvailableProductDto dto =
                     new AvailableProductDto(
+                            product.getProductsName(),
                             product.getProductsLanguageName(),
                             product.getProductsName(),
                             product.getProductCode(),

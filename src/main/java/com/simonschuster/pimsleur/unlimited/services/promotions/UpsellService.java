@@ -28,9 +28,11 @@ public class UpsellService {
     public UpsellDto getUpsellInfoFor(String isbn, String sub, String email, String storeDomain) {
 
         PurchaseMapping purchaseMapping = purchaseMappingService.findPurchaseMappingFor(isbn);
+
+        UpsellDto upsellDto = new UpsellDto();
         if (purchaseMapping == null) {
             // return empty result if can not find mapping for this isbn
-            return new UpsellDto();
+            return upsellDto;
         } else {
             List<String> boughtIsbns = new ArrayList<>();
             if (!StringUtils.isEmpty(sub)) {
@@ -40,8 +42,15 @@ public class UpsellService {
             boolean subBought = isBought(boughtIsbns, purchaseMapping.getUpsell2InAppPurchaseISBN());
             boolean upgradeBought = isBought(boughtIsbns, purchaseMapping.getUpgradeInAppPurchaseISBN());
 
-            UpsellDto upsellDto = purchaseMapping.toUpsellDto(upsellBought, subBought, upgradeBought);
-            return isbnNameDescriptionService.updateNameDescription(upsellDto);
+            upsellDto = purchaseMapping.toUpsellDto(upsellBought, subBought, upgradeBought);
+            UpsellDto finalUpsellDto = isbnNameDescriptionService.updateNameDescription(upsellDto);
+
+            // if upsell in app purchase ISBN exists, then find the item with key 'Other format 1 ISBN' and value as upsell ISBN
+            PurchaseMapping upsellISBN = purchaseMappingService.findISBNWithOtherFormatAs(purchaseMapping.getUpsellInAppPurchaseISBN());
+            if(upsellISBN != null && finalUpsellDto.getNextLevel() != null){
+                finalUpsellDto.getNextLevel().setIsbn(upsellISBN.getISBN());
+            }
+            return finalUpsellDto;
         }
     }
 

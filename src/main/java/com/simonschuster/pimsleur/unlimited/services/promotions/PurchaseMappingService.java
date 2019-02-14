@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
+import java.util.stream.Stream;
 
 import static java.util.Collections.singletonList;
 
@@ -30,6 +31,11 @@ public class PurchaseMappingService {
                 .filter(x -> x.matches(isbn))
                 .findFirst()
                 .orElse(null);
+    }
+
+    public PurchaseMapping findISBNWithOtherFormatAs(String isbn) {
+        Stream<PurchaseMapping> purchaseMappingStream = purchaseMappings.stream().filter(x -> x.getOtherFormat1ISBN().equals(isbn));
+        return purchaseMappingStream.findFirst().orElse(null);
     }
 
     public List<String> getAllFormatsOf(String isbn) {

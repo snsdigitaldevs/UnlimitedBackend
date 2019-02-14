@@ -19,6 +19,10 @@ public class UpsellItem {
         return isbn;
     }
 
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+
     public String getName() {
         return name;
     }

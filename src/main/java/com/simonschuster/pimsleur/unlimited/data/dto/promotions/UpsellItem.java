@@ -7,6 +7,7 @@ import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_EMPTY;
 @JsonInclude(NON_EMPTY)
 public class UpsellItem {
     private String isbn;
+    private String formalISBN;
     private String name;
     private String description;
 
@@ -17,10 +18,6 @@ public class UpsellItem {
 
     public String getIsbn() {
         return isbn;
-    }
-
-    public void setIsbn(String isbn) {
-        this.isbn = isbn;
     }
 
     public String getName() {
@@ -37,5 +34,13 @@ public class UpsellItem {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public void setFormalISBN(String formalISBN) {
+        this.formalISBN = formalISBN;
+    }
+
+    public String getFormalISBN() {
+        return formalISBN;
     }
 }

@@ -46,10 +46,10 @@ public class UpsellService {
             UpsellDto finalUpsellDto = isbnNameDescriptionService.updateNameDescription(upsellDto);
 
             // if upsell in app purchase ISBN exists, then find the item with key 'Other format 1 ISBN' and value as upsell ISBN
-            PurchaseMapping upsellISBN = purchaseMappingService.findISBNWithOtherFormatAs(purchaseMapping.getUpsellInAppPurchaseISBN());
-            if(upsellISBN != null && finalUpsellDto.getNextLevel() != null){
-                finalUpsellDto.getNextLevel().setIsbn(upsellISBN.getISBN());
-            }
+//            PurchaseMapping upsellISBN = purchaseMappingService.findISBNWithOtherFormatAs(purchaseMapping.getUpsellInAppPurchaseISBN());
+//            if(upsellISBN != null && finalUpsellDto.getNextLevel() != null){
+//                finalUpsellDto.getNextLevel().setIsbn(upsellISBN.getISBN());
+//            }
             return finalUpsellDto;
         }
     }

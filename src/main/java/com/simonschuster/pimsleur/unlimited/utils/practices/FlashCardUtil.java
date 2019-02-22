@@ -78,7 +78,6 @@ public class FlashCardUtil {
                                          String flashCardAudioBaseFileName, CSVRecord csvRecord) {
         // We expect mp3Filekey = 'MP3 snippet file name', however, sometimes, the column name is 'Snippet Name'
          String mp3FileName = getFromCsv(mp3FileKey, csvRecord);
-//        String mp3FileName = getFromCsv(mp3FileKey, "Snippet Name", csvRecord);
         if (mp3FileName.length() != 0) {
             return mp3FileName;
         } else {

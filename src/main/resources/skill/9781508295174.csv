@@ -1,0 +1,853 @@
+Rec #,Lang,ISBN-13,Course,Unit Num,start,stop,QZ #,line #,spkr,Cue,#of words,Q or S,Course Name (Source),Snippet Name,SKills
+1,FR-Core,9781508256892,French 2,1,N/A,N/A,01Q,N/A,N,How long are you going to stay?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_001.mp3,18
+2,FR-Core,9781508256892,French 2,1,N/A,N/A,01R,N/A,M,Combien de temps est-ce que vous allez rester?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_002.mp3,18
+3,FR-Core,9781508256892,French 2,1,N/A,N/A,02Q,N/A,N,It’s very practical.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_003.mp3,7
+4,FR-Core,9781508256892,French 2,1,N/A,N/A,02R,N/A,M,C’est très pratique.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_004.mp3,7
+5,FR-Core,9781508256892,French 2,1,N/A,N/A,03Q,N/A,N,She likes candy.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_005.mp3,6
+6,FR-Core,9781508256892,French 2,1,N/A,N/A,03R,N/A,M,Elle aime les bonbons.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_006.mp3,6
+7,FR-Core,9781508256892,French 2,1,N/A,N/A,04Q,N/A,N,Does your older daughter speak French?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_007.mp3,"5,10"
+8,FR-Core,9781508256892,French 2,1,N/A,N/A,04R,N/A,M,Est-ce que votre fille aînée parle français?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_008.mp3,"5,10"
+9,FR-Core,9781508256892,French 2,1,N/A,N/A,05Q,N/A,N,I bought some candy.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_009.mp3,14
+10,FR-Core,9781508256892,French 2,1,N/A,N/A,05R,N/A,M,J’ai acheté des bonbons.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_010.mp3,14
+11,FR-Core,9781508256892,French 2,1,N/A,N/A,06Q,N/A,N,I didn’t do anything today.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_011.mp3,1
+12,FR-Core,9781508256892,French 2,1,N/A,N/A,06R,N/A,M,Je n’ai rien fait aujourd’hui.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_012.mp3,1
+13,FR-Core,9781508256892,French 2,1,N/A,N/A,07Q,N/A,N,I did a lot of things yesterday.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_013.mp3,17
+14,FR-Core,9781508256892,French 2,1,N/A,N/A,07R,N/A,M,J’ai fait beaucoup de choses hier.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_014.mp3,17
+15,FR-Core,9781508256892,French 2,1,N/A,N/A,08Q,N/A,N,We ate well.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_015.mp3,6
+16,FR-Core,9781508256892,French 2,1,N/A,N/A,08R,N/A,F,On a bien mangé.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_016.mp3,6
+17,FR-Core,9781508256892,French 2,1,N/A,N/A,09Q,N/A,N,We didn’t buy anything.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_017.mp3,14
+18,FR-Core,9781508256892,French 2,1,N/A,N/A,09R,N/A,F,On n’a rien acheté.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_018.mp3,14
+19,FR-Core,9781508256892,French 2,2,N/A,N/A,01Q,N/A,N,She rented a car.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_019.mp3,18
+20,FR-Core,9781508256892,French 2,2,N/A,N/A,01R,N/A,F,Elle a loué une voiture.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_020.mp3,18
+21,FR-Core,9781508256892,French 2,2,N/A,N/A,02Q,N/A,N,She doesn’t need a car.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_021.mp3,18
+22,FR-Core,9781508256892,French 2,2,N/A,N/A,02R,N/A,F,Elle n’a pas besoin de voiture.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_022.mp3,18
+23,FR-Core,9781508256892,French 2,2,N/A,N/A,03Q,N/A,N,We need a car.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_023.mp3,18
+24,FR-Core,9781508256892,French 2,2,N/A,N/A,03R,N/A,F,On a besoin d’une voiture.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_024.mp3,18
+25,FR-Core,9781508256892,French 2,2,N/A,N/A,04Q,N/A,N,Does she need a car?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_025.mp3,18
+26,FR-Core,9781508256892,French 2,2,N/A,N/A,04R,N/A,F,Est-ce qu’elle a besoin d’une voiture ?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_026.mp3,18
+27,FR-Core,9781508256892,French 2,2,N/A,N/A,05Q,N/A,N,I didn’t see anything.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_027.mp3,"1,7"
+28,FR-Core,9781508256892,French 2,2,N/A,N/A,05R,N/A,F,Je n’ai rien vu.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_028.mp3,"1,7"
+29,FR-Core,9781508256892,French 2,2,N/A,N/A,06Q,N/A,N,Our son rented a car.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_029.mp3,"5,18"
+30,FR-Core,9781508256892,French 2,2,N/A,N/A,06R,N/A,M,Notre fils a loué une voiture.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_030.mp3,"5,18"
+31,FR-Core,9781508256892,French 2,2,N/A,N/A,07Q,N/A,N,We didn’t see our son yesterday.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_031.mp3,"5,17"
+32,FR-Core,9781508256892,French 2,2,N/A,N/A,07R,N/A,M,On n’a pas vu notre fils hier.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_032.mp3,"5,17"
+33,FR-Core,9781508256892,French 2,2,N/A,N/A,08Q,N/A,N,Your wife rented a car?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_033.mp3,"5,18"
+34,FR-Core,9781508256892,French 2,2,N/A,N/A,08R,N/A,M,Votre femme a loué une voiture?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_034.mp3,"5,18"
+35,FR-Core,9781508256892,French 2,2,N/A,N/A,09Q,N/A,N,Our son arrived in Paris yesterday.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_035.mp3,"5,17,18"
+36,FR-Core,9781508256892,French 2,2,N/A,N/A,09R,N/A,M,Notre fils est arrivé à Paris hier.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_036.mp3,"5,17,18"
+37,FR-Core,9781508256892,French 2,2,N/A,N/A,10Q,N/A,N,Why are you in Paris?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_037.mp3,18
+38,FR-Core,9781508256892,French 2,2,N/A,N/A,10R,N/A,M,Pourquoi est-ce que vous êtes à Paris?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_038.mp3,18
+39,FR-Core,9781508256892,French 2,2,N/A,N/A,11Q,N/A,N,Our son rented a car in Paris yesterday.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_039.mp3,"5,17,18"
+40,FR-Core,9781508256892,French 2,2,N/A,N/A,11R,N/A,M,Notre fils a loué une voiture à Paris hier.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_040.mp3,"5,17,18"
+41,FR-Core,9781508256892,French 2,3,N/A,N/A,01Q,N/A,N,See you tonight.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_041.mp3,"7,17"
+42,FR-Core,9781508256892,French 2,3,N/A,N/A,01R,N/A,M,A ce soir.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_042.mp3,"7,17"
+43,FR-Core,9781508256892,French 2,3,N/A,N/A,02Q,N/A,N,See you later.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_043.mp3,17
+44,FR-Core,9781508256892,French 2,3,N/A,N/A,02R,N/A,F,A plus tard.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_044.mp3,17
+45,FR-Core,9781508256892,French 2,3,N/A,N/A,03Q,N/A,N,It’s not very big.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_045.mp3,7
+46,FR-Core,9781508256892,French 2,3,N/A,N/A,03R,N/A,F,Ce n’est pas très grand.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_046.mp3,7
+47,FR-Core,9781508256892,French 2,3,N/A,N/A,04Q,N/A,N,How long did you stay in Paris?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_047.mp3,18
+48,FR-Core,9781508256892,French 2,3,N/A,N/A,04R,N/A,F,Combien de temps est-ce que vous êtes restés à Paris?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_048.mp3,18
+49,FR-Core,9781508256892,French 2,3,N/A,N/A,05Q,N/A,N,She stayed in Paris.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_049.mp3,18
+50,FR-Core,9781508256892,French 2,3,N/A,N/A,05R,N/A,F,Elle est restée à Paris.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_050.mp3,18
+51,FR-Core,9781508256892,French 2,3,N/A,N/A,06Q,N/A,N,Did you go to Paris?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_051.mp3,18
+52,FR-Core,9781508256892,French 2,3,N/A,N/A,06R,N/A,F,Est-ce que vous êtes allés à Paris?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_052.mp3,18
+53,FR-Core,9781508256892,French 2,3,N/A,N/A,07Q,N/A,N,I have a lot of work tomorrow.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_053.mp3,"17,20"
+54,FR-Core,9781508256892,French 2,3,N/A,N/A,07R,N/A,F,J’ai beaucoup de travail demain.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_054.mp3,"17,20"
+55,FR-Core,9781508256892,French 2,3,N/A,N/A,08Q,N/A,N,I had a lot of work yesterday.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_055.mp3,"17,20"
+56,FR-Core,9781508256892,French 2,3,N/A,N/A,08R,N/A,F,J’ai eu beaucoup de travail hier.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_056.mp3,"17,20"
+57,FR-Core,9781508256892,French 2,3,N/A,N/A,09Q,N/A,N,I have too much work.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_057.mp3,20
+58,FR-Core,9781508256892,French 2,3,N/A,N/A,09R,N/A,M,J’ai trop de travail.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_058.mp3,20
+59,FR-Core,9781508256892,French 2,3,N/A,N/A,10Q,N/A,N,I’m out of here.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_059.mp3,7
+60,FR-Core,9781508256892,French 2,3,N/A,N/A,10R,N/A,M,Je te laisse.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_060.mp3,7
+61,FR-Core,9781508256892,French 2,4,N/A,N/A,01Q,N/A,N,He’s a friend of mine.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_061.mp3,5
+62,FR-Core,9781508256892,French 2,4,N/A,N/A,01R,N/A,M,C’est un ami à moi.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_062.mp3,5
+63,FR-Core,9781508256892,French 2,4,N/A,N/A,02Q,N/A,N,What’s his name?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_063.mp3,"10,13,16"
+64,FR-Core,9781508256892,French 2,4,N/A,N/A,02R,N/A,M,Comment il s’appelle?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_064.mp3,"10,13,16"
+65,FR-Core,9781508256892,French 2,4,N/A,N/A,03Q,N/A,N,Some friends of mine.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_065.mp3,5
+66,FR-Core,9781508256892,French 2,4,N/A,N/A,03R,N/A,M,Des amis à moi.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_066.mp3,5
+67,FR-Core,9781508256892,French 2,4,N/A,N/A,04Q,N/A,N,What’s his name?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_067.mp3,"10,13,16"
+68,FR-Core,9781508256892,French 2,4,N/A,N/A,04R,N/A,M,Il s’appelle comment?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_068.mp3,"10,13,16"
+69,FR-Core,9781508256892,French 2,4,N/A,N/A,05Q,N/A,N,I have to buy something.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_069.mp3,"14,16"
+70,FR-Core,9781508256892,French 2,4,N/A,N/A,05R,N/A,M,Je dois acheter quelque chose.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_070.mp3,"14,16"
+71,FR-Core,9781508256892,French 2,4,N/A,N/A,06Q,N/A,N,I have to go into town.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_071.mp3,18
+72,FR-Core,9781508256892,French 2,4,N/A,N/A,06R,N/A,F,Je dois aller en ville.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_072.mp3,18
+73,FR-Core,9781508256892,French 2,4,N/A,N/A,07Q,N/A,N,I have to leave now.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_073.mp3,18
+74,FR-Core,9781508256892,French 2,4,N/A,N/A,07R,N/A,F,Je dois partir maintenant.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_074.mp3,18
+75,FR-Core,9781508256892,French 2,4,N/A,N/A,08Q,N/A,N,I haven’t yet had the time.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_075.mp3,17
+76,FR-Core,9781508256892,French 2,4,N/A,N/A,08R,N/A,F,Je n’ai pas encore eu le temps.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_076.mp3,17
+77,FR-Core,9781508256892,French 2,4,N/A,N/A,09Q,N/A,N,Here’s a friend of mine. (m),N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_077.mp3,5
+78,FR-Core,9781508256892,French 2,4,N/A,N/A,09R,N/A,F,Voilà un ami à moi.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_078.mp3,5
+79,FR-Core,9781508256892,French 2,4,N/A,N/A,10Q,N/A,N,We don’t know yet.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_079.mp3,7
+80,FR-Core,9781508256892,French 2,4,N/A,N/A,10R,N/A,F,On ne sait pas encore.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_080.mp3,7
+81,FR-Core,9781508256892,French 2,5,N/A,N/A,01Q,N/A,N,Do you have the time to have a coffee?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_081.mp3,"6,17"
+82,FR-Core,9781508256892,French 2,5,N/A,N/A,01R,N/A,F,Est-ce que vous avez le temps de prendre un café?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_082.mp3,"6,17"
+83,FR-Core,9781508256892,French 2,5,N/A,N/A,02Q,N/A,N,Do you know Marseille well?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_083.mp3,18
+84,FR-Core,9781508256892,French 2,5,N/A,N/A,02R,N/A,F,Est-ce que vous connaissez bien Marseille?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_084.mp3,18
+85,FR-Core,9781508256892,French 2,5,N/A,N/A,03Q,N/A,N,I haven’t yet visited Marseille.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_085.mp3,18
+86,FR-Core,9781508256892,French 2,5,N/A,N/A,03R,N/A,M,Je n’ai pas encore visité Marseille.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_086.mp3,18
+87,FR-Core,9781508256892,French 2,5,N/A,N/A,04Q,N/A,N,His family lives in Marseille.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_087.mp3,"5,18"
+88,FR-Core,9781508256892,French 2,5,N/A,N/A,04R,N/A,M,Sa famille habite à Marseille.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_088.mp3,"5,18"
+89,FR-Core,9781508256892,French 2,5,N/A,N/A,05Q,N/A,N,I still have the time to have a coffee.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_089.mp3,"6,17"
+90,FR-Core,9781508256892,French 2,5,N/A,N/A,05R,N/A,M,J’ai encore le temps de prendre un café.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_090.mp3,"6,17"
+91,FR-Core,9781508256892,French 2,5,N/A,N/A,06Q,N/A,N,I still have a lot of work.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_091.mp3,20
+92,FR-Core,9781508256892,French 2,5,N/A,N/A,06R,N/A,M,J’ai encore beaucoup de travail.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_092.mp3,20
+93,FR-Core,9781508256892,French 2,5,N/A,N/A,07Q,N/A,N,I never drink white wine.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_093.mp3,6
+94,FR-Core,9781508256892,French 2,5,N/A,N/A,07R,N/A,M,Je ne bois jamais de vin blanc.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_094.mp3,6
+95,FR-Core,9781508256892,French 2,5,N/A,N/A,08Q,N/A,N,I always drink white wine.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_095.mp3,6
+96,FR-Core,9781508256892,French 2,5,N/A,N/A,08R,N/A,M,Je bois toujours du vin blanc.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_096.mp3,6
+97,FR-Core,9781508256892,French 2,5,N/A,N/A,09Q,N/A,N,I don’t drink.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_097.mp3,6
+98,FR-Core,9781508256892,French 2,5,N/A,N/A,09R,N/A,M,Je ne bois pas.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_098.mp3,6
+99,FR-Core,9781508256892,French 2,5,N/A,N/A,10Q,N/A,N,I am going to have a glass of white wine.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_099.mp3,6
+100,FR-Core,9781508256892,French 2,5,N/A,N/A,10R,N/A,F,Je vais prendre un verre de vin blanc.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_100.mp3,6
+101,FR-Core,9781508256892,French 2,5,N/A,N/A,11Q,N/A,N,What are you going to have?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_101.mp3,"6,13"
+102,FR-Core,9781508256892,French 2,5,N/A,N/A,11R,N/A,F,Qu’est-ce que vous allez prendre?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_102.mp3,"6,13"
+103,FR-Core,9781508256892,French 2,6,N/A,N/A,01Q,N/A,N,What’s her name?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_103.mp3,"10,13,16"
+104,FR-Core,9781508256892,French 2,6,N/A,N/A,01R,N/A,F,Comment elle s’appelle?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_104.mp3,"10,13,16"
+105,FR-Core,9781508256892,French 2,6,N/A,N/A,02Q,N/A,N,She’s coming with her husband.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_105.mp3,"5,18"
+106,FR-Core,9781508256892,French 2,6,N/A,N/A,02R,N/A,F,Elle vient avec son mari.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_106.mp3,"5,18"
+107,FR-Core,9781508256892,French 2,6,N/A,N/A,03Q,N/A,N,She’s coming to pay me a visit.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_107.mp3,"1,18"
+108,FR-Core,9781508256892,French 2,6,N/A,N/A,03R,N/A,F,Elle vient me rendre visite.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_108.mp3,"1,18"
+109,FR-Core,9781508256892,French 2,6,N/A,N/A,04Q,N/A,N,They’re coming today.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_109.mp3,18
+110,FR-Core,9781508256892,French 2,6,N/A,N/A,04R,N/A,F,Ils viennent aujourd’hui.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_110.mp3,18
+111,FR-Core,9781508256892,French 2,6,N/A,N/A,05Q,N/A,N,They’re coming together.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_111.mp3,18
+112,FR-Core,9781508256892,French 2,6,N/A,N/A,05R,N/A,F,Ils viennent ensemble.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_112.mp3,18
+113,FR-Core,9781508256892,French 2,6,N/A,N/A,06Q,N/A,N,I saw her in town.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_113.mp3,18
+114,FR-Core,9781508256892,French 2,6,N/A,N/A,06R,N/A,M,Je l’ai vue en ville.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_114.mp3,18
+115,FR-Core,9781508256892,French 2,6,N/A,N/A,07Q,N/A,N,I haven’t seen her since a year.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_115.mp3,17
+116,FR-Core,9781508256892,French 2,6,N/A,N/A,07R,N/A,M,Je ne l’ai pas vue depuis un an.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_116.mp3,17
+117,FR-Core,9781508256892,French 2,6,N/A,N/A,08Q,N/A,N,You don’t know her.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_117.mp3,10
+118,FR-Core,9781508256892,French 2,6,N/A,N/A,08R,N/A,M,Tu ne la connais pas.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_118.mp3,10
+119,FR-Core,9781508256892,French 2,6,N/A,N/A,09Q,N/A,N,Not always.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_119.mp3,7
+120,FR-Core,9781508256892,French 2,6,N/A,N/A,09R,N/A,M,Pas toujours.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_120.mp3,7
+121,FR-Core,9781508256892,French 2,6,N/A,N/A,10Q,N/A,N,You don’t know it yet.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_121.mp3,"7,13"
+122,FR-Core,9781508256892,French 2,6,N/A,N/A,10R,N/A,M,Tu ne le connais pas encore.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_122.mp3,"7,13"
+123,FR-Core,9781508256892,French 2,6,N/A,N/A,11Q,N/A,N,A friend of mine is coming today.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_123.mp3,"5,18"
+124,FR-Core,9781508256892,French 2,6,N/A,N/A,11R,N/A,M,Une amie à moi vient aujourd’hui.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_124.mp3,"5,18"
+125,FR-Core,9781508256892,French 2,6,N/A,N/A,12Q,N/A,N,I’d be glad to have a glass with you.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_125.mp3,6
+126,FR-Core,9781508256892,French 2,6,N/A,N/A,12R,N/A,M,Je veux bien prendre un verre avec toi.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_126.mp3,6
+127,FR-Core,9781508256892,French 2,7,N/A,N/A,01Q,N/A,N,"From time to time, I drink red wine.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_127.mp3,"6,17"
+128,FR-Core,9781508256892,French 2,7,N/A,N/A,01R,N/A,F,"De temps en temps, je bois du vin rouge.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_128.mp3,"6,17"
+129,FR-Core,9781508256892,French 2,7,N/A,N/A,02Q,N/A,N,"From time to time, I go back on foot.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_129.mp3,"17,18"
+130,FR-Core,9781508256892,French 2,7,N/A,N/A,02R,N/A,F,"De temps en temps, je rentre à pied.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_130.mp3,"17,18"
+131,FR-Core,9781508256892,French 2,7,N/A,N/A,03Q,N/A,N,Are we going there on foot?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_131.mp3,18
+132,FR-Core,9781508256892,French 2,7,N/A,N/A,03R,N/A,F,Est-ce qu’on y va à pied?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_132.mp3,18
+133,FR-Core,9781508256892,French 2,7,N/A,N/A,04Q,N/A,N,They always speak French with me.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_133.mp3,10
+134,FR-Core,9781508256892,French 2,7,N/A,N/A,04R,N/A,F,Ils parlent toujours français avec moi.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_134.mp3,10
+135,FR-Core,9781508256892,French 2,7,N/A,N/A,05Q,N/A,N,They both speak French.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_135.mp3,10
+136,FR-Core,9781508256892,French 2,7,N/A,N/A,05R,N/A,F,Ils parlent tous les deux français.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_136.mp3,10
+137,FR-Core,9781508256892,French 2,7,N/A,N/A,06Q,N/A,N,Now they live in Paris.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_137.mp3,18
+138,FR-Core,9781508256892,French 2,7,N/A,N/A,06R,N/A,F,Maintenant ils habitent à Paris.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_138.mp3,18
+139,FR-Core,9781508256892,French 2,7,N/A,N/A,07Q,N/A,N,They’ve lived in Paris since three years.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_139.mp3,"12,17,18"
+140,FR-Core,9781508256892,French 2,7,N/A,N/A,07R,N/A,F,Ils habitent à Paris depuis trois ans.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_140.mp3,"12,17,18"
+141,FR-Core,9781508256892,French 2,7,N/A,N/A,08Q,N/A,N,They both come from Paris.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_141.mp3,18
+142,FR-Core,9781508256892,French 2,7,N/A,N/A,08R,N/A,M,Ils viennent tous les deux de Paris.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_142.mp3,18
+143,FR-Core,9781508256892,French 2,7,N/A,N/A,09Q,N/A,N,They’ve lived there since two years.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_143.mp3,"12,17"
+144,FR-Core,9781508256892,French 2,7,N/A,N/A,09R,N/A,M,Ils y habitent depuis deux ans.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_144.mp3,"12,17"
+145,FR-Core,9781508256892,French 2,7,N/A,N/A,10Q,N/A,N,We can go back on foot.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_145.mp3,18
+146,FR-Core,9781508256892,French 2,7,N/A,N/A,10R,N/A,M,On peut rentrer à pied.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_146.mp3,18
+147,FR-Core,9781508256892,French 2,8,N/A,N/A,01Q,N/A,N,Of course (that) we can take the subway.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_147.mp3,18
+148,FR-Core,9781508256892,French 2,8,N/A,N/A,01R,N/A,M,Bien sûr qu’on peut prendre le métro.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_148.mp3,18
+149,FR-Core,9781508256892,French 2,8,N/A,N/A,02Q,N/A,N,How’s it going?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_149.mp3,13
+150,FR-Core,9781508256892,French 2,8,N/A,N/A,02R,N/A,M,Comment ça va?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_150.mp3,13
+151,FR-Core,9781508256892,French 2,8,N/A,N/A,03Q,N/A,N,What’s your colleague’s name?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_151.mp3,"10,13,16"
+152,FR-Core,9781508256892,French 2,8,N/A,N/A,03R,N/A,M,Comment s’appelle ton collègue?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_152.mp3,"10,13,16"
+153,FR-Core,9781508256892,French 2,8,N/A,N/A,04Q,N/A,N,Do they come to your place from time to time?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_153.mp3,17
+154,FR-Core,9781508256892,French 2,8,N/A,N/A,04R,N/A,M,Est-ce qu’ils viennent chez toi de temps en temps?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_154.mp3,17
+155,FR-Core,9781508256892,French 2,8,N/A,N/A,05Q,N/A,N,Would you like to go there by subway?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_155.mp3,18
+156,FR-Core,9781508256892,French 2,8,N/A,N/A,05R,N/A,F,Est-ce que tu voudrais y aller en métro?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_156.mp3,18
+157,FR-Core,9781508256892,French 2,8,N/A,N/A,06Q,N/A,N,Would you like to return by subway?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_157.mp3,18
+158,FR-Core,9781508256892,French 2,8,N/A,N/A,06R,N/A,F,Est-ce que tu voudrais rentrer en métro?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_158.mp3,18
+159,FR-Core,9781508256892,French 2,8,N/A,N/A,07Q,N/A,N,I go into town by subway.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_159.mp3,18
+160,FR-Core,9781508256892,French 2,8,N/A,N/A,07R,N/A,F,Je vais en ville en métro.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_160.mp3,18
+161,FR-Core,9781508256892,French 2,8,N/A,N/A,08Q,N/A,N,Can we use “tu” with each other?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_161.mp3,"13,16"
+162,FR-Core,9781508256892,French 2,8,N/A,N/A,08R,N/A,F,On peut se tutoyer?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_162.mp3,"13,16"
+163,FR-Core,9781508256892,French 2,8,N/A,N/A,09Q,N/A,N,We can go there on foot.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_163.mp3,18
+164,FR-Core,9781508256892,French 2,8,N/A,N/A,09R,N/A,F,On peut y aller à pied.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_164.mp3,18
+165,FR-Core,9781508256892,French 2,8,N/A,N/A,10Q,N/A,N,Until what time are the grocery stores open?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_165.mp3,"14,17"
+166,FR-Core,9781508256892,French 2,8,N/A,N/A,10R,N/A,F,Jusqu’à quelle heure est-ce que les épiceries sont ouvertes?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_166.mp3,"14,17"
+167,FR-Core,9781508256892,French 2,8,N/A,N/A,11Q,N/A,N,You want to have a coffee first?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_167.mp3,6
+168,FR-Core,9781508256892,French 2,8,N/A,N/A,11R,N/A,F,Tu veux prendre un café d’abord?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_168.mp3,6
+169,FR-Core,9781508256892,French 2,8,N/A,N/A,12Q,N/A,N,Would you like to go there tonight?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_169.mp3,1
+170,FR-Core,9781508256892,French 2,8,N/A,N/A,12R,N/A,M,Tu voudrais y aller ce soir?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_170.mp3,1
+171,FR-Core,9781508256892,French 2,9,N/A,N/A,01Q,N/A,N,At five to five.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_171.mp3,"12,17"
+172,FR-Core,9781508256892,French 2,9,N/A,N/A,01R,N/A,M,A cinq heures moins cinq.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_172.mp3,"12,17"
+173,FR-Core,9781508256892,French 2,9,N/A,N/A,02Q,N/A,N,See you Tuesday.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_173.mp3,17
+174,FR-Core,9781508256892,French 2,9,N/A,N/A,02R,N/A,M,A mardi.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_174.mp3,17
+175,FR-Core,9781508256892,French 2,9,N/A,N/A,03Q,N/A,N,"Wait, excuse-me.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_175.mp3,"13,16"
+176,FR-Core,9781508256892,French 2,9,N/A,N/A,03R,N/A,M,"Attends, excuse-moi.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_176.mp3,"13,16"
+177,FR-Core,9781508256892,French 2,9,N/A,N/A,04Q,N/A,N,It’s an email from a Swiss colleague.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_177.mp3,3
+178,FR-Core,9781508256892,French 2,9,N/A,N/A,04R,N/A,M,C’est un mail d’un collègue suisse.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_178.mp3,3
+179,FR-Core,9781508256892,French 2,9,N/A,N/A,05Q,N/A,N,How long are they staying at your place?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_179.mp3,18
+180,FR-Core,9781508256892,French 2,9,N/A,N/A,05R,N/A,M,Combien de temps est-ce qu’ils restent chez toi?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_180.mp3,18
+181,FR-Core,9781508256892,French 2,9,N/A,N/A,06Q,N/A,N,How are you going into town?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_181.mp3,18
+182,FR-Core,9781508256892,French 2,9,N/A,N/A,06R,N/A,M,Comment est-ce que tu vas en ville?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_182.mp3,18
+183,FR-Core,9781508256892,French 2,9,N/A,N/A,07Q,N/A,N,Do you need the car?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_183.mp3,18
+184,FR-Core,9781508256892,French 2,9,N/A,N/A,07R,N/A,F,Est-ce que tu as besoin de la voiture?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_184.mp3,18
+185,FR-Core,9781508256892,French 2,9,N/A,N/A,08Q,N/A,N,Do you have the time Tuesday?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_185.mp3,17
+186,FR-Core,9781508256892,French 2,9,N/A,N/A,08R,N/A,F,Est-ce-que tu as le temps mardi?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_186.mp3,17
+187,FR-Core,9781508256892,French 2,9,N/A,N/A,09Q,N/A,N,It’s twenty to five.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_187.mp3,"12,17"
+188,FR-Core,9781508256892,French 2,9,N/A,N/A,09R,N/A,F,Il est cinq heures moins vingt.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_188.mp3,"12,17"
+189,FR-Core,9781508256892,French 2,9,N/A,N/A,10Q,N/A,N,I’m going to the grocery store.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_189.mp3,"1,6,14"
+190,FR-Core,9781508256892,French 2,9,N/A,N/A,10R,N/A,F,Je vais à l’épicerie.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_190.mp3,"1,6,14"
+191,FR-Core,9781508256892,French 2,9,N/A,N/A,11Q,N/A,N,Not very often.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_191.mp3,7
+192,FR-Core,9781508256892,French 2,9,N/A,N/A,11R,N/A,F,Pas très souvent.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_192.mp3,7
+193,FR-Core,9781508256892,French 2,10,N/A,N/A,01Q,N/A,N,Today my husband is working until six o’clock.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_193.mp3,"5,12,17,20"
+194,FR-Core,9781508256892,French 2,10,N/A,N/A,01R,N/A,F,Aujourd’hui mon mari travaille jusqu’à six heures.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_194.mp3,"5,12,17,20"
+195,FR-Core,9781508256892,French 2,10,N/A,N/A,02Q,N/A,N,It’s very fine with me.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_195.mp3,"7,13"
+196,FR-Core,9781508256892,French 2,10,N/A,N/A,02R,N/A,F,Ça me va très bien.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_196.mp3,"7,13"
+197,FR-Core,9781508256892,French 2,10,N/A,N/A,03Q,N/A,N,She quite likes to travel.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_197.mp3,18
+198,FR-Core,9781508256892,French 2,10,N/A,N/A,03R,N/A,F,Elle aime bien voyager.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_198.mp3,18
+199,FR-Core,9781508256892,French 2,10,N/A,N/A,04Q,N/A,N,He prefers to go to a good restaurant.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_199.mp3,6
+200,FR-Core,9781508256892,French 2,10,N/A,N/A,04R,N/A,M,Il préfère aller dans un bon restaurant.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_200.mp3,6
+201,FR-Core,9781508256892,French 2,10,N/A,N/A,05Q,N/A,N,He prefers to stay at home.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_201.mp3,18
+202,FR-Core,9781508256892,French 2,10,N/A,N/A,05R,N/A,M,Il préfère rester chez lui.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_202.mp3,18
+203,FR-Core,9781508256892,French 2,10,N/A,N/A,06Q,N/A,N,They want to stay until Friday.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_203.mp3,"17,18"
+204,FR-Core,9781508256892,French 2,10,N/A,N/A,06R,N/A,M,Ils veulent rester jusqu'à vendredi.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_204.mp3,"17,18"
+205,FR-Core,9781508256892,French 2,10,N/A,N/A,07Q,N/A,N,My son prefers to travel.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_205.mp3,"5,18"
+206,FR-Core,9781508256892,French 2,10,N/A,N/A,07R,N/A,M,Mon fils préfère voyager.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_206.mp3,"5,18"
+207,FR-Core,9781508256892,French 2,10,N/A,N/A,08Q,N/A,N,Let’s go together if you want.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_207.mp3,1
+208,FR-Core,9781508256892,French 2,10,N/A,N/A,08R,N/A,M,On y va ensemble si tu veux.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_208.mp3,1
+209,FR-Core,9781508256892,French 2,10,N/A,N/A,09Q,N/A,N,We can have dinner the four of us.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_209.mp3,"6,12"
+210,FR-Core,9781508256892,French 2,10,N/A,N/A,09R,N/A,M,On peut dîner tous les quatre.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_210.mp3,"6,12"
+211,FR-Core,9781508256892,French 2,10,N/A,N/A,10Q,N/A,N,What if we went to the movies the two of us?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_211.mp3,"1,12"
+212,FR-Core,9781508256892,French 2,10,N/A,N/A,10R,N/A,M,Si on allait au cinéma tous les deux?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_212.mp3,"1,12"
+213,FR-Core,9781508256892,French 2,10,N/A,N/A,11Q,N/A,N,Her husband doesn’t like to travel.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_213.mp3,"5,18"
+214,FR-Core,9781508256892,French 2,10,N/A,N/A,11R,N/A,F,Son mari n’aime pas voyager.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_214.mp3,"5,18"
+215,FR-Core,9781508256892,French 2,10,N/A,N/A,12Q,N/A,N,You need a coffee.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_215.mp3,6
+216,FR-Core,9781508256892,French 2,10,N/A,N/A,12R,N/A,F,Tu as besoin d’un café.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_216.mp3,6
+217,FR-Core,9781508256892,French 2,10,N/A,N/A,13Q,N/A,N,I’m going to buy a sailor shirt for him.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_217.mp3,14
+218,FR-Core,9781508256892,French 2,10,N/A,N/A,13R,N/A,F,Je vais acheter un marinière pour lui.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_218.mp3,14
+219,FR-Core,9781508256892,French 2,11,N/A,N/A,01Q,N/A,N,At half past five.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_219.mp3,"12,17"
+220,FR-Core,9781508256892,French 2,11,N/A,N/A,01R,N/A,F,A cinq heures et demie.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_220.mp3,"12,17"
+221,FR-Core,9781508256892,French 2,11,N/A,N/A,02Q,N/A,N,It’s outdoors too.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_221.mp3,1
+222,FR-Core,9781508256892,French 2,11,N/A,N/A,02R,N/A,F,C’est en plein air aussi.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_222.mp3,1
+223,FR-Core,9781508256892,French 2,11,N/A,N/A,03Q,N/A,N,Is it OK with you?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_223.mp3,"7,13,16"
+224,FR-Core,9781508256892,French 2,11,N/A,N/A,03R,N/A,F,Ça te va?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_224.mp3,"7,13,16"
+225,FR-Core,9781508256892,French 2,11,N/A,N/A,04Q,N/A,N,He has some good wine at home.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_225.mp3,6
+226,FR-Core,9781508256892,French 2,11,N/A,N/A,04R,N/A,F,Il a du bon vin chez lui.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_226.mp3,6
+227,FR-Core,9781508256892,French 2,11,N/A,N/A,05Q,N/A,N,They want also some prints.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_227.mp3,14
+228,FR-Core,9781508256892,French 2,11,N/A,N/A,05R,N/A,M,Ils veulent aussi des lithographies.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_228.mp3,14
+229,FR-Core,9781508256892,French 2,11,N/A,N/A,06Q,N/A,N,They want to stay one week at our place?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_229.mp3,"12,17,18"
+230,FR-Core,9781508256892,French 2,11,N/A,N/A,06R,N/A,M,Ils veulent rester une semaine chez nous?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_230.mp3,"12,17,18"
+231,FR-Core,9781508256892,French 2,11,N/A,N/A,07Q,N/A,N,I prefer to go to an outdoor concert.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_231.mp3,1
+232,FR-Core,9781508256892,French 2,11,N/A,N/A,07R,N/A,M,Je préfère aller à un concert en plein air.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_232.mp3,1
+233,FR-Core,9781508256892,French 2,11,N/A,N/A,08Q,N/A,N,My friend is going to leave at quarter past nine.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_233.mp3,"5,12,17,18"
+234,FR-Core,9781508256892,French 2,11,N/A,N/A,08R,N/A,M,Mon amie va partir à neuf heures et quart.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_234.mp3,"5,12,17,18"
+235,FR-Core,9781508256892,French 2,11,N/A,N/A,09Q,N/A,N,We have the time on Saturday.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_235.mp3,17
+236,FR-Core,9781508256892,French 2,11,N/A,N/A,09R,N/A,M,On a le temps samedi.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_236.mp3,17
+237,FR-Core,9781508256892,French 2,11,N/A,N/A,10Q,N/A,N,Maybe that I’m going to stay until Friday.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_237.mp3,"17,18"
+238,FR-Core,9781508256892,French 2,11,N/A,N/A,10R,N/A,M,Peut-être que je vais rester jusqu’à vendredi.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_238.mp3,"17,18"
+239,FR-Core,9781508256892,French 2,11,N/A,N/A,11Q,N/A,N,When does the concert start?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_239.mp3,1
+240,FR-Core,9781508256892,French 2,11,N/A,N/A,11R,N/A,M,Quand est-ce que le concert commence?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_240.mp3,1
+241,FR-Core,9781508256892,French 2,11,N/A,N/A,12Q,N/A,N,What if we went to the brewery at nine o’clock?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_241.mp3,"12,17"
+242,FR-Core,9781508256892,French 2,11,N/A,N/A,12R,N/A,F,Si on allait à la brasserie à neuf heures?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_242.mp3,"12,17"
+243,FR-Core,9781508256892,French 2,11,N/A,N/A,13Q,N/A,N,Her husband prefers to go to a concert?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_243.mp3,"1,5"
+244,FR-Core,9781508256892,French 2,11,N/A,N/A,13R,N/A,F,Son mari préfère aller à un concert?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_244.mp3,"1,5"
+245,FR-Core,9781508256892,French 2,11,N/A,N/A,14Q,N/A,N,Her husband prefers to stay at home.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_245.mp3,"5,18"
+246,FR-Core,9781508256892,French 2,11,N/A,N/A,14R,N/A,F,Son mari préfère rester chez lui.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_246.mp3,"5,18"
+247,FR-Core,9781508256892,French 2,12,N/A,N/A,01Q,N/A,N,"So, you can come over to our place.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_247.mp3,1
+248,FR-Core,9781508256892,French 2,12,N/A,N/A,01R,N/A,F,"Alors, vous pouvez venir chez nous.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_248.mp3,1
+249,FR-Core,9781508256892,French 2,12,N/A,N/A,02Q,N/A,N,"With some milk, but without sugar.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_249.mp3,6
+250,FR-Core,9781508256892,French 2,12,N/A,N/A,02R,N/A,F,"Avec du lait, mais sans sucre.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_250.mp3,6
+251,FR-Core,9781508256892,French 2,12,N/A,N/A,03Q,N/A,N,That’s my name.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_251.mp3,"10,13,16"
+252,FR-Core,9781508256892,French 2,12,N/A,N/A,03R,N/A,F,C’est mon nom.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_252.mp3,"10,13,16"
+253,FR-Core,9781508256892,French 2,12,N/A,N/A,04Q,N/A,N,Is that fine with you?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_253.mp3,"7,13"
+254,FR-Core,9781508256892,French 2,12,N/A,N/A,04R,N/A,F,Ça vous va?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_254.mp3,"7,13"
+255,FR-Core,9781508256892,French 2,12,N/A,N/A,05Q,N/A,N,If that’s fine with you.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_255.mp3,"7,13"
+256,FR-Core,9781508256892,French 2,12,N/A,N/A,05R,N/A,M,Si ça vous va.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_256.mp3,"7,13"
+257,FR-Core,9781508256892,French 2,12,N/A,N/A,06Q,N/A,N,She quite likes to have a drink at the pub.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_257.mp3,6
+258,FR-Core,9781508256892,French 2,12,N/A,N/A,06R,N/A,M,Elle aime bien prendre un verre à la brasserie.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_258.mp3,6
+259,FR-Core,9781508256892,French 2,12,N/A,N/A,07Q,N/A,N,She isn’t in her office at the moment.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_259.mp3,20
+260,FR-Core,9781508256892,French 2,12,N/A,N/A,07R,N/A,M,Elle n’est pas dans son bureau en ce moment.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_260.mp3,20
+261,FR-Core,9781508256892,French 2,12,N/A,N/A,08Q,N/A,N,She is going to come a little later.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_261.mp3,17
+262,FR-Core,9781508256892,French 2,12,N/A,N/A,08R,N/A,M,Elle va venir un peu plus tard.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_262.mp3,17
+263,FR-Core,9781508256892,French 2,12,N/A,N/A,09Q,N/A,N,Can I offer you something to eat?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_263.mp3,6
+264,FR-Core,9781508256892,French 2,12,N/A,N/A,09R,N/A,M,Est-ce que je peux vous offrir quelque chose à manger?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_264.mp3,6
+265,FR-Core,9781508256892,French 2,12,N/A,N/A,10Q,N/A,N,Can I offer you something?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_265.mp3,"6,13"
+266,FR-Core,9781508256892,French 2,12,N/A,N/A,10R,N/A,M,Est-ce que je peux vous offrir quelque chose?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_266.mp3,"6,13"
+267,FR-Core,9781508256892,French 2,12,N/A,N/A,11Q,N/A,N,What can I offer you?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_267.mp3,"6,13"
+268,FR-Core,9781508256892,French 2,12,N/A,N/A,11R,N/A,M,Qu’est-ce que je peux vous offrir?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_268.mp3,"6,13"
+269,FR-Core,9781508256892,French 2,12,N/A,N/A,12Q,N/A,N,I take some sugar.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_269.mp3,6
+270,FR-Core,9781508256892,French 2,12,N/A,N/A,12R,N/A,F,Je prends du sucre.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_270.mp3,6
+271,FR-Core,9781508256892,French 2,12,N/A,N/A,13Q,N/A,N,They don’t want to travel together.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_271.mp3,18
+272,FR-Core,9781508256892,French 2,12,N/A,N/A,13R,N/A,F,Ils ne veulent pas voyager ensemble.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_272.mp3,18
+273,FR-Core,9781508256892,French 2,12,N/A,N/A,14Q,N/A,N,Can you wait a few minutes?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_273.mp3,17
+274,FR-Core,9781508256892,French 2,12,N/A,N/A,14R,N/A,F,Est-ce que vous pouvez attendre quelques minutes?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_274.mp3,17
+275,FR-Core,9781508256892,French 2,12,N/A,N/A,15Q,N/A,N,Do you want to come to our place?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_275.mp3,7
+276,FR-Core,9781508256892,French 2,12,N/A,N/A,15R,N/A,F,Est-ce que vous voulez venir chez nous?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_276.mp3,7
+277,FR-Core,9781508256892,French 2,12,N/A,N/A,16Q,N/A,N,Let’s go there together at five after eight.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_277.mp3,"12,17"
+278,FR-Core,9781508256892,French 2,12,N/A,N/A,16R,N/A,F,On y va ensemble à huit heures cinq.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_278.mp3,"12,17"
+279,FR-Core,9781508256892,French 2,12,N/A,N/A,17Q,N/A,N,Not at the moment.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_279.mp3,7
+280,FR-Core,9781508256892,French 2,12,N/A,N/A,17R,N/A,F,Pas en ce moment.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_280.mp3,7
+281,FR-Core,9781508256892,French 2,13,N/A,N/A,01Q,N/A,N,Today it’s Thursday.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_281.mp3,17
+282,FR-Core,9781508256892,French 2,13,N/A,N/A,01R,N/A,F,"Aujourd’hui, c’est jeudi.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_282.mp3,17
+283,FR-Core,9781508256892,French 2,13,N/A,N/A,02Q,N/A,N,"Tomorrow, it’s Friday.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_283.mp3,17
+284,FR-Core,9781508256892,French 2,13,N/A,N/A,02R,N/A,M,"Demain, c’est vendredi.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_284.mp3,17
+285,FR-Core,9781508256892,French 2,13,N/A,N/A,03Q,N/A,N,That’s her name.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_285.mp3,"10,13,16"
+286,FR-Core,9781508256892,French 2,13,N/A,N/A,03R,N/A,M,C’est son nom.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_286.mp3,"10,13,16"
+287,FR-Core,9781508256892,French 2,13,N/A,N/A,04Q,N/A,N,This cake is very good.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_287.mp3,6
+288,FR-Core,9781508256892,French 2,13,N/A,N/A,04R,N/A,M,Ce gâteau est très bon.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_288.mp3,6
+289,FR-Core,9781508256892,French 2,13,N/A,N/A,05Q,N/A,N,She has lived in Paris since January or February.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_289.mp3,"17,18"
+290,FR-Core,9781508256892,French 2,13,N/A,N/A,05R,N/A,M,Elle habite à Paris depuis janvier ou février.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_290.mp3,"17,18"
+291,FR-Core,9781508256892,French 2,13,N/A,N/A,06Q,N/A,N,Can we come a little later?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_291.mp3,17
+292,FR-Core,9781508256892,French 2,13,N/A,N/A,06R,N/A,M,Est-ce qu’on peut venir un peu plus tard?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_292.mp3,17
+293,FR-Core,9781508256892,French 2,13,N/A,N/A,07Q,N/A,N,Can I offer you a coffee?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_293.mp3,6
+294,FR-Core,9781508256892,French 2,13,N/A,N/A,07R,N/A,M,Est-ce que je peux t’offrir un café?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_294.mp3,6
+295,FR-Core,9781508256892,French 2,13,N/A,N/A,08Q,N/A,N,There’s no sugar.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_295.mp3,6
+296,FR-Core,9781508256892,French 2,13,N/A,N/A,08R,N/A,M,Il n’y a pas de sucre.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_296.mp3,6
+297,FR-Core,9781508256892,French 2,13,N/A,N/A,09Q,N/A,N,I have some good chocolate cake.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_297.mp3,6
+298,FR-Core,9781508256892,French 2,13,N/A,N/A,09R,N/A,F,J’ai du bon gâteau au chocolat.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_298.mp3,6
+299,FR-Core,9781508256892,French 2,13,N/A,N/A,10Q,N/A,N,I prefer tea.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_299.mp3,6
+300,FR-Core,9781508256892,French 2,13,N/A,N/A,10R,N/A,F,Je préfère le thé.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_300.mp3,6
+301,FR-Core,9781508256892,French 2,13,N/A,N/A,11Q,N/A,N,"Me, I take my tea without sugar.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_301.mp3,6
+302,FR-Core,9781508256892,French 2,13,N/A,N/A,11R,N/A,F,"Moi, je prends mon thé sans sucre.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_302.mp3,6
+303,FR-Core,9781508256892,French 2,13,N/A,N/A,12Q,N/A,N,We can come after.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_303.mp3,7
+304,FR-Core,9781508256892,French 2,13,N/A,N/A,12R,N/A,F,On peut venir après.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_304.mp3,7
+305,FR-Core,9781508256892,French 2,13,N/A,N/A,13Q,N/A,N,Without sugar but with a little milk.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_305.mp3,6
+306,FR-Core,9781508256892,French 2,13,N/A,N/A,13R,N/A,F,Sans sucre mais avec un peu de lait.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_306.mp3,6
+307,FR-Core,9781508256892,French 2,13,N/A,N/A,14Q,N/A,N,Do you have a few minutes?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_307.mp3,17
+308,FR-Core,9781508256892,French 2,13,N/A,N/A,14R,N/A,F,Tu as quelques minutes?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_308.mp3,17
+309,FR-Core,9781508256892,French 2,13,N/A,N/A,15Q,N/A,N,Do you take milk too?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_309.mp3,6
+310,FR-Core,9781508256892,French 2,13,N/A,N/A,15R,N/A,F,Tu prends du lait aussi?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_310.mp3,6
+311,FR-Core,9781508256892,French 2,13,N/A,N/A,16Q,N/A,N,You want a piece of cake?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_311.mp3,6
+312,FR-Core,9781508256892,French 2,13,N/A,N/A,16R,N/A,M,Tu veux un morceau de gâteau?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_312.mp3,6
+313,FR-Core,9781508256892,French 2,14,N/A,N/A,01Q,N/A,N,Have a good trip!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_313.mp3,18
+314,FR-Core,9781508256892,French 2,14,N/A,N/A,01R,N/A,M,Bon voyage!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_314.mp3,18
+315,FR-Core,9781508256892,French 2,14,N/A,N/A,02Q,N/A,N,That’s too bad!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_315.mp3,7
+316,FR-Core,9781508256892,French 2,14,N/A,N/A,02R,N/A,M,C’est dommage!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_316.mp3,7
+317,FR-Core,9781508256892,French 2,14,N/A,N/A,03Q,N/A,N,Never mind!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_317.mp3,"7,13,16"
+318,FR-Core,9781508256892,French 2,14,N/A,N/A,03R,N/A,M,Tant pis!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_318.mp3,"7,13,16"
+319,FR-Core,9781508256892,French 2,14,N/A,N/A,04Q,N/A,N,That’s too bad but never mind.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_319.mp3,"7,16"
+320,FR-Core,9781508256892,French 2,14,N/A,N/A,04R,N/A,M,C’est dommage mais tant pis.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_320.mp3,"7,16"
+321,FR-Core,9781508256892,French 2,14,N/A,N/A,05Q,N/A,N,I haven’t seen him.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_321.mp3,7
+322,FR-Core,9781508256892,French 2,14,N/A,N/A,05R,N/A,M,Je ne l’ai pas vu.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_322.mp3,7
+323,FR-Core,9781508256892,French 2,14,N/A,N/A,06Q,N/A,N,I’m not leaving yet.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_323.mp3,18
+324,FR-Core,9781508256892,French 2,14,N/A,N/A,06R,N/A,M,Je ne pars pas encore.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_324.mp3,18
+325,FR-Core,9781508256892,French 2,14,N/A,N/A,07Q,N/A,N,I never drink cold tea.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_325.mp3,6
+326,FR-Core,9781508256892,French 2,14,N/A,N/A,07R,N/A,F,Je ne bois jamais de thé froid.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_326.mp3,6
+327,FR-Core,9781508256892,French 2,14,N/A,N/A,08Q,N/A,N,I’m staying there until Saturday.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_327.mp3,"17,18"
+328,FR-Core,9781508256892,French 2,14,N/A,N/A,08R,N/A,F,J’y reste jusqu’à samedi.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_328.mp3,"17,18"
+329,FR-Core,9781508256892,French 2,14,N/A,N/A,09Q,N/A,N,I prefer honey in my tea.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_329.mp3,6
+330,FR-Core,9781508256892,French 2,14,N/A,N/A,09R,N/A,F,Je préfère le miel dans mon thé.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_330.mp3,6
+331,FR-Core,9781508256892,French 2,14,N/A,N/A,10Q,N/A,N,I take some lemon.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_331.mp3,6
+332,FR-Core,9781508256892,French 2,14,N/A,N/A,10R,N/A,F,Je prends du citron.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_332.mp3,6
+333,FR-Core,9781508256892,French 2,14,N/A,N/A,11Q,N/A,N,I prefer the hot tea.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_333.mp3,6
+334,FR-Core,9781508256892,French 2,14,N/A,N/A,11R,N/A,F,Je préfère le thé chaud.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_334.mp3,6
+335,FR-Core,9781508256892,French 2,14,N/A,N/A,12Q,N/A,N,"Us, we leave Tuesday morning.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_335.mp3,"17,18"
+336,FR-Core,9781508256892,French 2,14,N/A,N/A,12R,N/A,F,"Nous, on part mardi matin.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_336.mp3,"17,18"
+337,FR-Core,9781508256892,French 2,14,N/A,N/A,13Q,N/A,N,We are leaving on vacation.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_337.mp3,18
+338,FR-Core,9781508256892,French 2,14,N/A,N/A,13R,N/A,F,On part en vacances.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_338.mp3,18
+339,FR-Core,9781508256892,French 2,15,N/A,N/A,01Q,N/A,N,How long are you staying in London?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_339.mp3,18
+340,FR-Core,9781508256892,French 2,15,N/A,N/A,01R,N/A,M,Combien de temps est-ce que vous restez à Londres?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_340.mp3,18
+341,FR-Core,9781508256892,French 2,15,N/A,N/A,02Q,N/A,N,Is it cold in London?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_341.mp3,"18,19"
+342,FR-Core,9781508256892,French 2,15,N/A,N/A,02R,N/A,M,Est-ce qu’il fait froid à Londres?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_342.mp3,"18,19"
+343,FR-Core,9781508256892,French 2,15,N/A,N/A,03Q,N/A,N,How’s the weather in London now?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_343.mp3,"18,19"
+344,FR-Core,9781508256892,French 2,15,N/A,N/A,03R,N/A,M,Il fait quel temps à Londres maintenant?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_344.mp3,"18,19"
+345,FR-Core,9781508256892,French 2,15,N/A,N/A,04Q,N/A,N,It’s very nice.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_345.mp3,13
+346,FR-Core,9781508256892,French 2,15,N/A,N/A,04R,N/A,M,Il fait très beau.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_346.mp3,13
+347,FR-Core,9781508256892,French 2,15,N/A,N/A,05Q,N/A,N,The weather’s really bad.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_347.mp3,19
+348,FR-Core,9781508256892,French 2,15,N/A,N/A,05R,N/A,M,Il fait vraiment mauvais.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_348.mp3,19
+349,FR-Core,9781508256892,French 2,15,N/A,N/A,06Q,N/A,N,It’s not cold.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_349.mp3,19
+350,FR-Core,9781508256892,French 2,15,N/A,N/A,06R,N/A,M,Il ne fait pas froid.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_350.mp3,19
+351,FR-Core,9781508256892,French 2,15,N/A,N/A,07Q,N/A,N,There are a lot of things to discover over there.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_351.mp3,7
+352,FR-Core,9781508256892,French 2,15,N/A,N/A,07R,N/A,M,Il y a beaucoup de choses à découvrir là-bas.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_352.mp3,7
+353,FR-Core,9781508256892,French 2,15,N/A,N/A,08Q,N/A,N,I like Canada a lot.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_353.mp3,18
+354,FR-Core,9781508256892,French 2,15,N/A,N/A,08R,N/A,F,J’aime beaucoup le Canada.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_354.mp3,18
+355,FR-Core,9781508256892,French 2,15,N/A,N/A,09Q,N/A,N,I’m waiting for a letter from Canada.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_355.mp3,3
+356,FR-Core,9781508256892,French 2,15,N/A,N/A,09R,N/A,F,J’attends une lettre du Canada.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_356.mp3,3
+357,FR-Core,9781508256892,French 2,15,N/A,N/A,10Q,N/A,N,I’m going to Canada.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_357.mp3,18
+358,FR-Core,9781508256892,French 2,15,N/A,N/A,10R,N/A,F,Je vais au Canada.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_358.mp3,18
+359,FR-Core,9781508256892,French 2,15,N/A,N/A,11Q,N/A,N,The letter comes from Canada.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_359.mp3,3
+360,FR-Core,9781508256892,French 2,15,N/A,N/A,11R,N/A,F,La lettre vient du Canada.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_360.mp3,3
+361,FR-Core,9781508256892,French 2,15,N/A,N/A,12Q,N/A,N,"Canada, it’s beautiful.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_361.mp3,18
+362,FR-Core,9781508256892,French 2,15,N/A,N/A,12R,N/A,F,"Le Canada, c’est beau.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_362.mp3,18
+363,FR-Core,9781508256892,French 2,15,N/A,N/A,13Q,N/A,N,What are you having?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_363.mp3,"6,13"
+364,FR-Core,9781508256892,French 2,15,N/A,N/A,13R,N/A,F,Qu’est-ce que tu prends?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_364.mp3,"6,13"
+365,FR-Core,9781508256892,French 2,15,N/A,N/A,14Q,N/A,N,What bad weather!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_365.mp3,19
+366,FR-Core,9781508256892,French 2,15,N/A,N/A,14R,N/A,F,Quel mauvais temps!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_366.mp3,19
+367,FR-Core,9781508256892,French 2,15,N/A,N/A,15Q,N/A,N,Your loss! / Never mind for you!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_367.mp3,7
+368,FR-Core,9781508256892,French 2,15,N/A,N/A,15R,N/A,M,Tant pis pour vous!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_368.mp3,7
+369,FR-Core,9781508256892,French 2,16,N/A,N/A,01Q,N/A,N,"Before, it was less expensive.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_369.mp3,11
+370,FR-Core,9781508256892,French 2,16,N/A,N/A,01R,N/A,M,"Avant, c’était moins cher.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_370.mp3,11
+371,FR-Core,9781508256892,French 2,16,N/A,N/A,02Q,N/A,N,It’s more expensive.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_371.mp3,11
+372,FR-Core,9781508256892,French 2,16,N/A,N/A,02R,N/A,M,C’est plus cher.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_372.mp3,11
+373,FR-Core,9781508256892,French 2,16,N/A,N/A,03Q,N/A,N,That’s too expensive.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_373.mp3,11
+374,FR-Core,9781508256892,French 2,16,N/A,N/A,03R,N/A,M,C’est trop cher.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_374.mp3,11
+375,FR-Core,9781508256892,French 2,16,N/A,N/A,04Q,N/A,N,It was too complicated.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_375.mp3,7
+376,FR-Core,9781508256892,French 2,16,N/A,N/A,04R,N/A,M,C’était trop compliqué.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_376.mp3,7
+377,FR-Core,9781508256892,French 2,16,N/A,N/A,05Q,N/A,N,This week and the next week.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_377.mp3,17
+378,FR-Core,9781508256892,French 2,16,N/A,N/A,05R,N/A,M,Cette semaine et la semaine prochaine.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_378.mp3,17
+379,FR-Core,9781508256892,French 2,16,N/A,N/A,06Q,N/A,N,He’s coming with his two daughters and his son.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_379.mp3,"5,12,18"
+380,FR-Core,9781508256892,French 2,16,N/A,N/A,06R,N/A,M,Il vient avec ses deux filles et son fils.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_380.mp3,"5,12,18"
+381,FR-Core,9781508256892,French 2,16,N/A,N/A,07Q,N/A,N,It’s not bad (weather).,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_381.mp3,19
+382,FR-Core,9781508256892,French 2,16,N/A,N/A,07R,N/A,F,Il ne fait pas mauvais.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_382.mp3,19
+383,FR-Core,9781508256892,French 2,16,N/A,N/A,08Q,N/A,N,It’s not hot (weather).,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_383.mp3,19
+384,FR-Core,9781508256892,French 2,16,N/A,N/A,08R,N/A,F,Il ne fait pas chaud.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_384.mp3,19
+385,FR-Core,9781508256892,French 2,16,N/A,N/A,09Q,N/A,N,They like ice cream a lot.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_385.mp3,6
+386,FR-Core,9781508256892,French 2,16,N/A,N/A,09R,N/A,F,Ils aiment beaucoup les glaces.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_386.mp3,6
+387,FR-Core,9781508256892,French 2,16,N/A,N/A,10Q,N/A,N,They like lemon sorbets.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_387.mp3,6
+388,FR-Core,9781508256892,French 2,16,N/A,N/A,10R,N/A,F,Ils aiment les sorbets au citron.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_388.mp3,6
+389,FR-Core,9781508256892,French 2,16,N/A,N/A,11Q,N/A,N,They’re around without their children.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_389.mp3,5
+390,FR-Core,9781508256892,French 2,16,N/A,N/A,11R,N/A,F,Ils sont là sans leurs enfants.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_390.mp3,5
+391,FR-Core,9781508256892,French 2,16,N/A,N/A,12Q,N/A,N,I’m waiting for the letter since two days!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_391.mp3,"3,12"
+392,FR-Core,9781508256892,French 2,16,N/A,N/A,12R,N/A,F,J’attends la lettre depuis deux jours!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_392.mp3,"3,12"
+393,FR-Core,9781508256892,French 2,16,N/A,N/A,13Q,N/A,N,I believe that it’s too complicated.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_393.mp3,7
+394,FR-Core,9781508256892,French 2,16,N/A,N/A,13R,N/A,F,Je crois que c’est trop compliqué.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_394.mp3,7
+395,FR-Core,9781508256892,French 2,16,N/A,N/A,14Q,N/A,N,My friend is coming with his 3 children.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_395.mp3,"5,18"
+396,FR-Core,9781508256892,French 2,16,N/A,N/A,14R,N/A,M,Mon ami vient avec ses trois enfants.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_396.mp3,"5,18"
+397,FR-Core,9781508256892,French 2,16,N/A,N/A,15Q,N/A,N,His son and his two daughters.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_397.mp3,"5,12"
+398,FR-Core,9781508256892,French 2,16,N/A,N/A,15R,N/A,M,Son fils et ses deux filles.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_398.mp3,"5,12"
+399,FR-Core,9781508256892,French 2,16,N/A,N/A,16Q,N/A,N,When are you leaving?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_399.mp3,18
+400,FR-Core,9781508256892,French 2,16,N/A,N/A,16R,N/A,M,Quand est-ce que tu pars?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_400.mp3,18
+401,FR-Core,9781508256892,French 2,17,N/A,N/A,01Q,N/A,N,"In the spring, it’s not very hot!",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_401.mp3,"17,19"
+402,FR-Core,9781508256892,French 2,17,N/A,N/A,01R,N/A,M,"Au printemps, il ne fait pas très chaud!",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_402.mp3,"17,19"
+403,FR-Core,9781508256892,French 2,17,N/A,N/A,02Q,N/A,N,"Before, I had the time to discover the city.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_403.mp3,"17,18"
+404,FR-Core,9781508256892,French 2,17,N/A,N/A,02R,N/A,M,"Avant, j’avais le temps de découvrir la ville.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_404.mp3,"17,18"
+405,FR-Core,9781508256892,French 2,17,N/A,N/A,03Q,N/A,N,"Before, I used to have a small car.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_405.mp3,18
+406,FR-Core,9781508256892,French 2,17,N/A,N/A,03R,N/A,M,"Avant, j’avais une petite voiture.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_406.mp3,18
+407,FR-Core,9781508256892,French 2,17,N/A,N/A,04Q,N/A,N,It’s spring!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_407.mp3,17
+408,FR-Core,9781508256892,French 2,17,N/A,N/A,04R,N/A,M,C’est le printemps!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_408.mp3,17
+409,FR-Core,9781508256892,French 2,17,N/A,N/A,05Q,N/A,N,She is how old?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_409.mp3,5
+410,FR-Core,9781508256892,French 2,17,N/A,N/A,05R,N/A,F,Elle a quel âge?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_410.mp3,5
+411,FR-Core,9781508256892,French 2,17,N/A,N/A,06Q,N/A,N,She quite likes to travel with them.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_411.mp3,18
+412,FR-Core,9781508256892,French 2,17,N/A,N/A,06R,N/A,F,Elle aime bien voyager avec eux.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_412.mp3,18
+413,FR-Core,9781508256892,French 2,17,N/A,N/A,07Q,N/A,N,"In the fall, it’s pleasant.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_413.mp3,"17,19"
+414,FR-Core,9781508256892,French 2,17,N/A,N/A,07R,N/A,F,"En automne, il fait bon.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_414.mp3,"17,19"
+415,FR-Core,9781508256892,French 2,17,N/A,N/A,08Q,N/A,N,Are your children leaving too?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_415.mp3,18
+416,FR-Core,9781508256892,French 2,17,N/A,N/A,08R,N/A,F,Est-ce que vos enfants partent aussi?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_416.mp3,18
+417,FR-Core,9781508256892,French 2,17,N/A,N/A,09Q,N/A,N,He’s lived over there with them since two years.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_417.mp3,"12,17"
+418,FR-Core,9781508256892,French 2,17,N/A,N/A,09R,N/A,F,Il habite là-bas avec eux depuis deux ans.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_418.mp3,"12,17"
+419,FR-Core,9781508256892,French 2,17,N/A,N/A,10Q,N/A,N,They like the United States a lot.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_419.mp3,18
+420,FR-Core,9781508256892,French 2,17,N/A,N/A,10R,N/A,F,Ils aiment beaucoup les Etats-Unis.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_420.mp3,18
+421,FR-Core,9781508256892,French 2,17,N/A,N/A,11Q,N/A,N,They quite like to stay with their friends.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_421.mp3,"5,18"
+422,FR-Core,9781508256892,French 2,17,N/A,N/A,11R,N/A,F,Ils aiment bien rester avec leurs amis.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_422.mp3,"5,18"
+423,FR-Core,9781508256892,French 2,17,N/A,N/A,12Q,N/A,N,They’re leaving next Tuesday.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_423.mp3,"17,18"
+424,FR-Core,9781508256892,French 2,17,N/A,N/A,12R,N/A,M,Ils partent mardi prochain.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_424.mp3,"17,18"
+425,FR-Core,9781508256892,French 2,17,N/A,N/A,13Q,N/A,N,They’re staying here with them.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_425.mp3,18
+426,FR-Core,9781508256892,French 2,17,N/A,N/A,13R,N/A,M,Ils restent ici avec eux.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_426.mp3,18
+427,FR-Core,9781508256892,French 2,17,N/A,N/A,14Q,N/A,N,I had the time to travel.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_427.mp3,"17,18"
+428,FR-Core,9781508256892,French 2,17,N/A,N/A,14R,N/A,M,J’avais le temps de voyager.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_428.mp3,"17,18"
+429,FR-Core,9781508256892,French 2,18,N/A,N/A,01Q,N/A,N,"In the spring, it’s pleasant in Paris.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_429.mp3,"17,18,19"
+430,FR-Core,9781508256892,French 2,18,N/A,N/A,01R,N/A,M,Au printemps il fait bon à Paris.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_430.mp3,"17,18,19"
+431,FR-Core,9781508256892,French 2,18,N/A,N/A,02Q,N/A,N,"Before, I had a lot of things to do.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_431.mp3,1
+432,FR-Core,9781508256892,French 2,18,N/A,N/A,02R,N/A,M,"Avant, j’avais beaucoup de choses à faire.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_432.mp3,1
+433,FR-Core,9781508256892,French 2,18,N/A,N/A,03Q,N/A,N,"Before, I used to have the phone number.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_433.mp3,3
+434,FR-Core,9781508256892,French 2,18,N/A,N/A,03R,N/A,M,"Avant, j’avais le numéro de téléphone.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_434.mp3,3
+435,FR-Core,9781508256892,French 2,18,N/A,N/A,04Q,N/A,N,With their friends and also without them.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_435.mp3,5
+436,FR-Core,9781508256892,French 2,18,N/A,N/A,04R,N/A,M,Avec leurs amis et aussi sans eux.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_436.mp3,5
+437,FR-Core,9781508256892,French 2,18,N/A,N/A,05Q,N/A,N,It’s the number of the office.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_437.mp3,20
+438,FR-Core,9781508256892,French 2,18,N/A,N/A,05R,N/A,F,C’est le numéro du bureau.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_438.mp3,20
+439,FR-Core,9781508256892,French 2,18,N/A,N/A,06Q,N/A,N,Do you have the Wi-Fi password?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_439.mp3,"3,16"
+440,FR-Core,9781508256892,French 2,18,N/A,N/A,06R,N/A,F,Est-ce que vous avez le mot de passe du wifi?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_440.mp3,"3,16"
+441,FR-Core,9781508256892,French 2,18,N/A,N/A,07Q,N/A,N,Do you know the password for the Wi-Fi here?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_441.mp3,"3,16"
+442,FR-Core,9781508256892,French 2,18,N/A,N/A,07R,N/A,F,Est-ce que vous connaissez le mot de passe pour le wifi ici?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_442.mp3,"3,16"
+443,FR-Core,9781508256892,French 2,18,N/A,N/A,08Q,N/A,N,He has two sons.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_443.mp3,"5,12"
+444,FR-Core,9781508256892,French 2,18,N/A,N/A,08R,N/A,F,Il a deux fils.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_444.mp3,"5,12"
+445,FR-Core,9781508256892,French 2,18,N/A,N/A,09Q,N/A,N,He has a really interesting job.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_445.mp3,20
+446,FR-Core,9781508256892,French 2,18,N/A,N/A,09R,N/A,F,Il a un travail vraiment intéressant.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_446.mp3,20
+447,FR-Core,9781508256892,French 2,18,N/A,N/A,10Q,N/A,N,It was very cold. (weather),N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_447.mp3,19
+448,FR-Core,9781508256892,French 2,18,N/A,N/A,10R,N/A,F,Il faisait très froid.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_448.mp3,19
+449,FR-Core,9781508256892,French 2,18,N/A,N/A,11Q,N/A,N,He didn’t have a lot of things to do.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_449.mp3,1
+450,FR-Core,9781508256892,French 2,18,N/A,N/A,11R,N/A,F,Il n’avait pas beaucoup de choses à faire.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_450.mp3,1
+451,FR-Core,9781508256892,French 2,18,N/A,N/A,12Q,N/A,N,I need the Wi-Fi password.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_451.mp3,"3,16"
+452,FR-Core,9781508256892,French 2,18,N/A,N/A,12R,N/A,M,J’ai besoin du mot de passe du wifi.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_452.mp3,"3,16"
+453,FR-Core,9781508256892,French 2,18,N/A,N/A,13Q,N/A,N,I have to call my children.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_453.mp3,3
+454,FR-Core,9781508256892,French 2,18,N/A,N/A,13R,N/A,M,Je dois appeler mes enfants.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_454.mp3,3
+455,FR-Core,9781508256892,French 2,18,N/A,N/A,14Q,N/A,N,I leave often on vacation with them.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_455.mp3,18
+456,FR-Core,9781508256892,French 2,18,N/A,N/A,14R,N/A,M,Je pars souvent en vacances avec eux.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_456.mp3,18
+457,FR-Core,9781508256892,French 2,18,N/A,N/A,15Q,N/A,N,I can call back my daughter later.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_457.mp3,"5,17"
+458,FR-Core,9781508256892,French 2,18,N/A,N/A,15R,N/A,M,Je peux rappeler ma fille plus tard.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_458.mp3,"5,17"
+459,FR-Core,9781508256892,French 2,18,N/A,N/A,16Q,N/A,N,"I would like a piece of information, please.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_459.mp3,"7,13,16"
+460,FR-Core,9781508256892,French 2,18,N/A,N/A,16R,N/A,M,"Je voudrais un renseignement, s’il vous plaît.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_460.mp3,"7,13,16"
+461,FR-Core,9781508256892,French 2,19,N/A,N/A,01Q,N/A,N,"Ah, here is the password!",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_461.mp3,"3,16"
+462,FR-Core,9781508256892,French 2,19,N/A,N/A,01R,N/A,M,"Ah, voilà le mot de passe!",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_462.mp3,"3,16"
+463,FR-Core,9781508256892,French 2,19,N/A,N/A,02Q,N/A,N,"Wait one minute, please.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_463.mp3,"12,17"
+464,FR-Core,9781508256892,French 2,19,N/A,N/A,02R,N/A,M,"Attends une minute, s’il te plaît.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_464.mp3,"12,17"
+465,FR-Core,9781508256892,French 2,19,N/A,N/A,03Q,N/A,N,"Before, I had the wrong password for the Wi-Fi.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_465.mp3,"3,16"
+466,FR-Core,9781508256892,French 2,19,N/A,N/A,03R,N/A,F,"Avant, j’avais le mauvais mot de passe pour le wifi.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_466.mp3,"3,16"
+467,FR-Core,9781508256892,French 2,19,N/A,N/A,04Q,N/A,N,It’s the right number.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_467.mp3,3
+468,FR-Core,9781508256892,French 2,19,N/A,N/A,04R,N/A,F,C’est le bon numéro.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_468.mp3,3
+469,FR-Core,9781508256892,French 2,19,N/A,N/A,05Q,N/A,N,That’s her number.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_469.mp3,3
+470,FR-Core,9781508256892,French 2,19,N/A,N/A,05R,N/A,F,C’est son numéro.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_470.mp3,3
+471,FR-Core,9781508256892,French 2,19,N/A,N/A,06Q,N/A,N,That was the wrong password.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_471.mp3,"3,16"
+472,FR-Core,9781508256892,French 2,19,N/A,N/A,06R,N/A,F,C’était le mauvais mot de passe.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_472.mp3,"3,16"
+473,FR-Core,9781508256892,French 2,19,N/A,N/A,07Q,N/A,N,It works well.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_473.mp3,7
+474,FR-Core,9781508256892,French 2,19,N/A,N/A,07R,N/A,F,Ça marche bien.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_474.mp3,7
+475,FR-Core,9781508256892,French 2,19,N/A,N/A,08Q,N/A,N,It’s not working.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_475.mp3,"3,16"
+476,FR-Core,9781508256892,French 2,19,N/A,N/A,08R,N/A,F,Ça ne marche pas.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_476.mp3,"3,16"
+477,FR-Core,9781508256892,French 2,19,N/A,N/A,09Q,N/A,N,"This time, it works.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_477.mp3,"3,17"
+478,FR-Core,9781508256892,French 2,19,N/A,N/A,09R,N/A,F,"Cette fois, ça marche.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_478.mp3,"3,17"
+479,FR-Core,9781508256892,French 2,19,N/A,N/A,10Q,N/A,N,"This time, I see it.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_479.mp3,17
+480,FR-Core,9781508256892,French 2,19,N/A,N/A,10R,N/A,M,"Cette fois, je la vois.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_480.mp3,17
+481,FR-Core,9781508256892,French 2,19,N/A,N/A,11Q,N/A,N,It is over there on the right.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_481.mp3,4
+482,FR-Core,9781508256892,French 2,19,N/A,N/A,11R,N/A,M,"Elle est là-bas, sur la droite.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_482.mp3,4
+483,FR-Core,9781508256892,French 2,19,N/A,N/A,12Q,N/A,N,Are they at the university?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_483.mp3,7
+484,FR-Core,9781508256892,French 2,19,N/A,N/A,12R,N/A,M,Est-ce qu’ils sont à l’université?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_484.mp3,7
+485,FR-Core,9781508256892,French 2,19,N/A,N/A,13Q,N/A,N,She’s at the university.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_485.mp3,7
+486,FR-Core,9781508256892,French 2,19,N/A,N/A,13R,N/A,M,Elle est à l’université.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_486.mp3,7
+487,FR-Core,9781508256892,French 2,19,N/A,N/A,14Q,N/A,N,Do you know where that is?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_487.mp3,4
+488,FR-Core,9781508256892,French 2,19,N/A,N/A,14R,N/A,M,Est-ce que vous savez où c’est?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_488.mp3,4
+489,FR-Core,9781508256892,French 2,19,N/A,N/A,15Q,N/A,N,I need a small piece of information.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_489.mp3,7
+490,FR-Core,9781508256892,French 2,19,N/A,N/A,15R,N/A,M,J’ai besoin d’un petit renseignement.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_490.mp3,7
+491,FR-Core,9781508256892,French 2,19,N/A,N/A,16Q,N/A,N,I have to call home.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_491.mp3,"3,16"
+492,FR-Core,9781508256892,French 2,19,N/A,N/A,16R,N/A,M,Je dois appeler chez moi.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_492.mp3,"3,16"
+493,FR-Core,9781508256892,French 2,19,N/A,N/A,17Q,N/A,N,Can I have the Wi-Fi password please?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_493.mp3,"3,16"
+494,FR-Core,9781508256892,French 2,19,N/A,N/A,17R,N/A,F,Je peux avoir le mot de passe du wifi s’il te plait?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_494.mp3,"3,16"
+495,FR-Core,9781508256892,French 2,19,N/A,N/A,18Q,N/A,N,Can I have it?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_495.mp3,"7,16"
+496,FR-Core,9781508256892,French 2,19,N/A,N/A,18R,N/A,F,Je peux l’avoir?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_496.mp3,"7,16"
+497,FR-Core,9781508256892,French 2,20,N/A,N/A,01Q,N/A,N,She writes postcards.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_497.mp3,3
+498,FR-Core,9781508256892,French 2,20,N/A,N/A,01R,N/A,F,Elle écrit des cartes postales.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_498.mp3,3
+499,FR-Core,9781508256892,French 2,20,N/A,N/A,02Q,N/A,N,Are they students?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_499.mp3,7
+500,FR-Core,9781508256892,French 2,20,N/A,N/A,02R,N/A,F,Est-ce qu’elles sont étudiantes?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_500.mp3,7
+501,FR-Core,9781508256892,French 2,20,N/A,N/A,03Q,N/A,N,They are both students.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_501.mp3,7
+502,FR-Core,9781508256892,French 2,20,N/A,N/A,03R,N/A,F,Ils sont tous les deux étudiants.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_502.mp3,7
+503,FR-Core,9781508256892,French 2,20,N/A,N/A,04Q,N/A,N,I have a girlfriend now.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_503.mp3,5
+504,FR-Core,9781508256892,French 2,20,N/A,N/A,04R,N/A,M,J’ai une petite amie maintenant.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_504.mp3,5
+505,FR-Core,9781508256892,French 2,20,N/A,N/A,05Q,N/A,N,I need to charge my phone.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_505.mp3,"3,16"
+506,FR-Core,9781508256892,French 2,20,N/A,N/A,05R,N/A,F,J’ai besoin de charger mon téléphone.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_506.mp3,3
+507,FR-Core,9781508256892,French 2,20,N/A,N/A,06Q,N/A,N,I quite like to send text messages to my friends.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_507.mp3,"3,5"
+508,FR-Core,9781508256892,French 2,20,N/A,N/A,06R,N/A,F,J’aime bien envoyer des textos à mes amis.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_508.mp3,"3,5"
+509,FR-Core,9781508256892,French 2,20,N/A,N/A,07Q,N/A,N,I don’t write a lot of postcards.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_509.mp3,3
+510,FR-Core,9781508256892,French 2,20,N/A,N/A,07R,N/A,M,Je n’écris pas beaucoup de cartes postales.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_510.mp3,3
+511,FR-Core,9781508256892,French 2,20,N/A,N/A,08Q,N/A,N,I prefer to send an SMS.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_511.mp3,"3,16"
+512,FR-Core,9781508256892,French 2,20,N/A,N/A,08R,N/A,M,Je préfère envoyer un SMS.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_512.mp3,"3,16"
+513,FR-Core,9781508256892,French 2,20,N/A,N/A,09Q,N/A,N,I’m going to try to call back.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_513.mp3,3
+514,FR-Core,9781508256892,French 2,20,N/A,N/A,09R,N/A,M,Je vais essayer de rappeler.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_514.mp3,3
+515,FR-Core,9781508256892,French 2,20,N/A,N/A,10Q,N/A,N,My phone doesn’t work here.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_515.mp3,"3,16"
+516,FR-Core,9781508256892,French 2,20,N/A,N/A,10R,N/A,M,Mon téléphone ne marche pas ici.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_516.mp3,"3,16"
+517,FR-Core,9781508256892,French 2,20,N/A,N/A,11Q,N/A,N,What are you writing?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_517.mp3,3
+518,FR-Core,9781508256892,French 2,20,N/A,N/A,11R,N/A,M,Qu’est-ce que vous écrivez?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_518.mp3,3
+519,FR-Core,9781508256892,French 2,20,N/A,N/A,12Q,N/A,N,You want to charge your phone?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_519.mp3,3
+520,FR-Core,9781508256892,French 2,20,N/A,N/A,12R,N/A,M,Tu veux charger ton téléphone?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_520.mp3,3
+521,FR-Core,9781508256892,French 2,20,N/A,N/A,13Q,N/A,N,"A small piece of information, please?",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_521.mp3,7
+522,FR-Core,9781508256892,French 2,20,N/A,N/A,13R,N/A,M,"Un petit renseignement, s’il vous plaît?",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_522.mp3,7
+523,FR-Core,9781508256892,French 2,20,N/A,N/A,14Q,N/A,N,"An SMS, that’s more practical!",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_523.mp3,3
+524,FR-Core,9781508256892,French 2,20,N/A,N/A,14R,N/A,F,"Un SMS, c’est plus pratique!",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_524.mp3,3
+525,FR-Core,9781508256892,French 2,20,N/A,N/A,15Q,N/A,N,"An SMS, it goes faster!",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_525.mp3,3
+526,FR-Core,9781508256892,French 2,20,N/A,N/A,15R,N/A,F,"Un SMS, ça va plus vite!",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_526.mp3,3
+527,FR-Core,9781508256892,French 2,21,N/A,N/A,01Q,N/A,N,"Today, it’s a holiday.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_527.mp3,7
+528,FR-Core,9781508256892,French 2,21,N/A,N/A,01R,N/A,F,"Aujourd’hui, c’est un jour férié.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_528.mp3,7
+529,FR-Core,9781508256892,French 2,21,N/A,N/A,02Q,N/A,N,Things are not fine?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_529.mp3,7
+530,FR-Core,9781508256892,French 2,21,N/A,N/A,02R,N/A,F,Ça ne va pas?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_530.mp3,7
+531,FR-Core,9781508256892,French 2,21,N/A,N/A,03Q,N/A,N,Try again.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_531.mp3,7
+532,FR-Core,9781508256892,French 2,21,N/A,N/A,03R,N/A,F,Essayez encore une fois.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_532.mp3,7
+533,FR-Core,9781508256892,French 2,21,N/A,N/A,04Q,N/A,N,Can I assist you?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_533.mp3,"7,13"
+534,FR-Core,9781508256892,French 2,21,N/A,N/A,04R,N/A,F,Est-ce que je peux vous renseigner?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_534.mp3,"7,13"
+535,FR-Core,9781508256892,French 2,21,N/A,N/A,05Q,N/A,N,Are the pharmacies closed too?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_535.mp3,"8,16"
+536,FR-Core,9781508256892,French 2,21,N/A,N/A,05R,N/A,F,Est-ce que les pharmacies sont fermées aussi?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_536.mp3,"8,16"
+537,FR-Core,9781508256892,French 2,21,N/A,N/A,06Q,N/A,N,He is ill since yesterday.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_537.mp3,17
+538,FR-Core,9781508256892,French 2,21,N/A,N/A,06R,N/A,M,Il est malade depuis hier.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_538.mp3,17
+539,FR-Core,9781508256892,French 2,21,N/A,N/A,07Q,N/A,N,There are some pharmacies open.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_539.mp3,"8,16"
+540,FR-Core,9781508256892,French 2,21,N/A,N/A,07R,N/A,M,Il y a des pharmacies ouvertes.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_540.mp3,"8,16"
+541,FR-Core,9781508256892,French 2,21,N/A,N/A,08Q,N/A,N,My husband has a fever.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_541.mp3,"5,8,16"
+542,FR-Core,9781508256892,French 2,21,N/A,N/A,08R,N/A,F,Mon mari a de la fièvre.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_542.mp3,"5,8,16"
+543,FR-Core,9781508256892,French 2,21,N/A,N/A,09Q,N/A,N,I don’t write very often.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_543.mp3,3
+544,FR-Core,9781508256892,French 2,21,N/A,N/A,09R,N/A,M,Je n’écris pas très souvent.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_544.mp3,3
+545,FR-Core,9781508256892,French 2,21,N/A,N/A,10Q,N/A,N,Can I have the phone please?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_545.mp3,"3,13,16"
+546,FR-Core,9781508256892,French 2,21,N/A,N/A,10R,N/A,M,"Je peux avoir le téléphone, s’il te plaît?",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_546.mp3,"3,13,16"
+547,FR-Core,9781508256892,French 2,21,N/A,N/A,11Q,N/A,N,The pharmacy is ten minutes away.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_547.mp3,"4,12,17"
+548,FR-Core,9781508256892,French 2,21,N/A,N/A,11R,N/A,M,La pharmacie est à dix minutes.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_548.mp3,"4,12,17"
+549,FR-Core,9781508256892,French 2,21,N/A,N/A,12Q,N/A,N,The post office was closed yesterday.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_549.mp3,"3,17"
+550,FR-Core,9781508256892,French 2,21,N/A,N/A,12R,N/A,M,La poste était fermée hier.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_550.mp3,"3,17"
+551,FR-Core,9781508256892,French 2,21,N/A,N/A,13Q,N/A,N,The doctor’s practice is closed.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_551.mp3,"8,16"
+552,FR-Core,9781508256892,French 2,21,N/A,N/A,13R,N/A,M,Le cabinet du médecin est fermé.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_552.mp3,"8,16"
+553,FR-Core,9781508256892,French 2,21,N/A,N/A,14Q,N/A,N,Are you ill?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_553.mp3,"8,16"
+554,FR-Core,9781508256892,French 2,21,N/A,N/A,14R,N/A,F,Vous êtes malade?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_554.mp3,"8,16"
+555,FR-Core,9781508256892,French 2,21,N/A,N/A,15Q,N/A,N,Your husband is ill.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_555.mp3,5
+556,FR-Core,9781508256892,French 2,21,N/A,N/A,15R,N/A,F,Votre mari est malade.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_556.mp3,5
+557,FR-Core,9781508256892,French 2,21,N/A,N/A,16Q,N/A,N,What’s wrong?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_557.mp3,"8,13,16"
+558,FR-Core,9781508256892,French 2,21,N/A,N/A,16R,N/A,F,Qu’est-ce qu’il y a?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_558.mp3,"8,13,16"
+559,FR-Core,9781508256892,French 2,22,N/A,N/A,01Q,N/A,N,A lot of French drive fast.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_559.mp3,18
+560,FR-Core,9781508256892,French 2,22,N/A,N/A,01R,N/A,F,Beaucoup de Français conduisent vite.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_560.mp3,18
+561,FR-Core,9781508256892,French 2,22,N/A,N/A,02Q,N/A,N,It’s my wife who is ill.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_561.mp3,5
+562,FR-Core,9781508256892,French 2,22,N/A,N/A,02R,N/A,M,C’est ma femme qui est malade.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_562.mp3,5
+563,FR-Core,9781508256892,French 2,22,N/A,N/A,03Q,N/A,N,Do you know a pharmacy?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_563.mp3,"8,16"
+564,FR-Core,9781508256892,French 2,22,N/A,N/A,03R,N/A,F,Est-ce que vous connaissez une pharmacie?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_564.mp3,"8,16"
+565,FR-Core,9781508256892,French 2,22,N/A,N/A,04Q,N/A,N,"Them, they prefer to send text messages!",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_565.mp3,3
+566,FR-Core,9781508256892,French 2,22,N/A,N/A,04R,N/A,F,"Eux, ils préfèrent envoyer des textos!",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_566.mp3,3
+567,FR-Core,9781508256892,French 2,22,N/A,N/A,05Q,N/A,N,He has a practice not far from here.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_567.mp3,"4,8"
+568,FR-Core,9781508256892,French 2,22,N/A,N/A,05R,N/A,F,Il a un cabinet pas loin d’ici.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_568.mp3,4
+569,FR-Core,9781508256892,French 2,22,N/A,N/A,06Q,N/A,N,The French drive faster than the Americans.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_569.mp3,18
+570,FR-Core,9781508256892,French 2,22,N/A,N/A,06R,N/A,M,Les Français conduisent plus vite que les Américains.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_570.mp3,18
+571,FR-Core,9781508256892,French 2,22,N/A,N/A,07Q,N/A,N,Americans drive more slowly than the French.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_571.mp3,18
+572,FR-Core,9781508256892,French 2,22,N/A,N/A,07R,N/A,M,Les Américains conduisent plus lentement que les Français.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_572.mp3,18
+573,FR-Core,9781508256892,French 2,22,N/A,N/A,08Q,N/A,N,I can drive more slowly.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_573.mp3,18
+574,FR-Core,9781508256892,French 2,22,N/A,N/A,08R,N/A,M,Je peux conduire plus lentement.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_574.mp3,18
+575,FR-Core,9781508256892,French 2,22,N/A,N/A,09Q,N/A,N,France is smaller than the United States.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_575.mp3,18
+576,FR-Core,9781508256892,French 2,22,N/A,N/A,09R,N/A,M,La France est plus petite que les Etats-Unis.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_576.mp3,18
+577,FR-Core,9781508256892,French 2,22,N/A,N/A,10Q,N/A,N,"In the US, gas is less expensive than in France.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_577.mp3,11
+578,FR-Core,9781508256892,French 2,22,N/A,N/A,10R,N/A,M,"Aux Etats-Unis, l’essence est moins chère qu’en France.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_578.mp3,11
+579,FR-Core,9781508256892,French 2,22,N/A,N/A,11Q,N/A,N,The Americans drive slowly.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_579.mp3,18
+580,FR-Core,9781508256892,French 2,22,N/A,N/A,11R,N/A,M,Les Américains conduisent lentement.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_580.mp3,18
+581,FR-Core,9781508256892,French 2,22,N/A,N/A,12Q,N/A,N,The French prefer to drive fast.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_581.mp3,18
+582,FR-Core,9781508256892,French 2,22,N/A,N/A,12R,N/A,M,Les Français préfèrent conduire vite.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_582.mp3,18
+583,FR-Core,9781508256892,French 2,22,N/A,N/A,13Q,N/A,N,Take the first left.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_583.mp3,4
+584,FR-Core,9781508256892,French 2,22,N/A,N/A,13R,N/A,F,Prenez la première à gauche.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_584.mp3,4
+585,FR-Core,9781508256892,French 2,22,N/A,N/A,14Q,N/A,N,I don’t like to drive in France.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_585.mp3,18
+586,FR-Core,9781508256892,French 2,22,N/A,N/A,14R,N/A,F,Je n’aime pas conduire en France.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_586.mp3,18
+587,FR-Core,9781508256892,French 2,22,N/A,N/A,15Q,N/A,N,Maybe that you can send an SMS.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_587.mp3,"3,17"
+588,FR-Core,9781508256892,French 2,22,N/A,N/A,15R,N/A,F,Peut-être que vous pouvez envoyer un SMS.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_588.mp3,"3,17"
+589,FR-Core,9781508256892,French 2,23,N/A,N/A,01Q,N/A,N,Watch out for (the) pedestrians!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_589.mp3,7
+590,FR-Core,9781508256892,French 2,23,N/A,N/A,01R,N/A,F,Attention aux piétons!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_590.mp3,7
+591,FR-Core,9781508256892,French 2,23,N/A,N/A,02Q,N/A,N,Can you assist me?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_591.mp3,"13,16"
+592,FR-Core,9781508256892,French 2,23,N/A,N/A,02R,N/A,F,Est-ce que tu peux me renseigner?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_592.mp3,"13,16"
+593,FR-Core,9781508256892,French 2,23,N/A,N/A,03Q,N/A,N,He doesn’t have a fever.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_593.mp3,"8,16"
+594,FR-Core,9781508256892,French 2,23,N/A,N/A,03R,N/A,F,Il n’a pas de fièvre.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_594.mp3,"8,16"
+595,FR-Core,9781508256892,French 2,23,N/A,N/A,04Q,N/A,N,There are pedestrians in these streets.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_595.mp3,4
+596,FR-Core,9781508256892,French 2,23,N/A,N/A,04R,N/A,F,Il y a des piétons dans ces rues.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_596.mp3,4
+597,FR-Core,9781508256892,French 2,23,N/A,N/A,05Q,N/A,N,There are a lot of pedestrians.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_597.mp3,7
+598,FR-Core,9781508256892,French 2,23,N/A,N/A,05R,N/A,M,Il y a beaucoup de piétons.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_598.mp3,7
+599,FR-Core,9781508256892,French 2,23,N/A,N/A,06Q,N/A,N,I’m looking for a pharmacy not far from my place.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_599.mp3,4
+600,FR-Core,9781508256892,French 2,23,N/A,N/A,06R,N/A,M,Je cherche une pharmacie pas loin de chez moi.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_600.mp3,4
+601,FR-Core,9781508256892,French 2,23,N/A,N/A,07Q,N/A,N,I believe that there’s an intersection.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_601.mp3,18
+602,FR-Core,9781508256892,French 2,23,N/A,N/A,07R,N/A,M,Je crois qu’il y a un carrefour.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_602.mp3,18
+603,FR-Core,9781508256892,French 2,23,N/A,N/A,08Q,N/A,N,I have to go to buy some wine.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_603.mp3,"6,14"
+604,FR-Core,9781508256892,French 2,23,N/A,N/A,08R,N/A,M,Je dois aller acheter du vin.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_604.mp3,"6,14"
+605,FR-Core,9781508256892,French 2,23,N/A,N/A,09Q,N/A,N,I can take you into town.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_605.mp3,18
+606,FR-Core,9781508256892,French 2,23,N/A,N/A,09R,N/A,M,Je peux t’accompagner en ville.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_606.mp3,18
+607,FR-Core,9781508256892,French 2,23,N/A,N/A,10Q,N/A,N,Can I come along to the store?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_607.mp3,14
+608,FR-Core,9781508256892,French 2,23,N/A,N/A,10R,N/A,M,Je peux t’accompagner au magasin?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_608.mp3,14
+609,FR-Core,9781508256892,French 2,23,N/A,N/A,11Q,N/A,N,I can drop you off at the doctor’s.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_609.mp3,8
+610,FR-Core,9781508256892,French 2,23,N/A,N/A,11R,N/A,M,Je peux te déposer chez le médecin.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_610.mp3,8
+611,FR-Core,9781508256892,French 2,23,N/A,N/A,12Q,N/A,N,The wine is less expensive than in the US.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_611.mp3,"6,11"
+612,FR-Core,9781508256892,French 2,23,N/A,N/A,12R,N/A,F,Le vin est moins cher qu’aux Etats-Unis.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_612.mp3,"6,11"
+613,FR-Core,9781508256892,French 2,23,N/A,N/A,13Q,N/A,N,No worries.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_613.mp3,"7,13,16"
+614,FR-Core,9781508256892,French 2,23,N/A,N/A,13R,N/A,F,Pas de soucis.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_614.mp3,"7,13,16"
+615,FR-Core,9781508256892,French 2,23,N/A,N/A,14Q,N/A,N,To buy some lozenges.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_615.mp3,"8,14"
+616,FR-Core,9781508256892,French 2,23,N/A,N/A,14R,N/A,F,Pour acheter des pastilles.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_616.mp3,"8,14"
+617,FR-Core,9781508256892,French 2,23,N/A,N/A,15Q,N/A,N,Take these lozenges.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_617.mp3,8
+618,FR-Core,9781508256892,French 2,23,N/A,N/A,15R,N/A,F,Prends ces pastilles.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_618.mp3,8
+619,FR-Core,9781508256892,French 2,23,N/A,N/A,16Q,N/A,N,Take the first right at the intersection.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_619.mp3,4
+620,FR-Core,9781508256892,French 2,23,N/A,N/A,16R,N/A,F,Prends la première à droite au carrefour.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_620.mp3,4
+621,FR-Core,9781508256892,French 2,23,N/A,N/A,17Q,N/A,N,You drive a little fast.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_621.mp3,18
+622,FR-Core,9781508256892,French 2,23,N/A,N/A,17R,N/A,F,Tu conduis un peu vite.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_622.mp3,18
+623,FR-Core,9781508256892,French 2,24,N/A,N/A,01Q,N/A,N,Is that so?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_623.mp3,"7,13"
+624,FR-Core,9781508256892,French 2,24,N/A,N/A,01R,N/A,F,Ah bon?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_624.mp3,"7,13"
+625,FR-Core,9781508256892,French 2,24,N/A,N/A,02Q,N/A,N,"So, do you have the time Saturday?",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_625.mp3,17
+626,FR-Core,9781508256892,French 2,24,N/A,N/A,02R,N/A,M,"Alors, est-ce que tu as le temps samedi?",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_626.mp3,17
+627,FR-Core,9781508256892,French 2,24,N/A,N/A,03Q,N/A,N,Good idea!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_627.mp3,"7,13,16"
+628,FR-Core,9781508256892,French 2,24,N/A,N/A,03R,N/A,M,Bonne idée!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_628.mp3,"7,13,16"
+629,FR-Core,9781508256892,French 2,24,N/A,N/A,04Q,N/A,N,It’s the café where I play chess.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_629.mp3,1
+630,FR-Core,9781508256892,French 2,24,N/A,N/A,04R,N/A,M,C’est le café où je joue aux échecs.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_630.mp3,1
+631,FR-Core,9781508256892,French 2,24,N/A,N/A,05Q,N/A,N,That’s a good idea!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_631.mp3,"7,13"
+632,FR-Core,9781508256892,French 2,24,N/A,N/A,05R,N/A,M,C’est une bonne idée!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_632.mp3,"7,13"
+633,FR-Core,9781508256892,French 2,24,N/A,N/A,06Q,N/A,N,Tonight we can play tennis.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_633.mp3,"1,17"
+634,FR-Core,9781508256892,French 2,24,N/A,N/A,06R,N/A,M,Ce soir on peut jouer au tennis.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_634.mp3,"1,17"
+635,FR-Core,9781508256892,French 2,24,N/A,N/A,07Q,N/A,N,They prefer to play at the café.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_635.mp3,6
+636,FR-Core,9781508256892,French 2,24,N/A,N/A,07R,N/A,M,Ils préfèrent jouer au café.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_636.mp3,6
+637,FR-Core,9781508256892,French 2,24,N/A,N/A,08Q,N/A,N,I quite like (the) video games.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_637.mp3,1
+638,FR-Core,9781508256892,French 2,24,N/A,N/A,08R,N/A,M,J’aime bien les jeux vidéo.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_638.mp3,1
+639,FR-Core,9781508256892,French 2,24,N/A,N/A,09Q,N/A,N,I’m sorry.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_639.mp3,"13,16"
+640,FR-Core,9781508256892,French 2,24,N/A,N/A,09R,N/A,M,Je suis désolé.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_640.mp3,"13,16"
+641,FR-Core,9781508256892,French 2,24,N/A,N/A,10Q,N/A,N,I’m sorry that your car isn’t working.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_641.mp3,18
+642,FR-Core,9781508256892,French 2,24,N/A,N/A,10R,N/A,F,Je suis désolée que ta voiture ne marche pas.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_642.mp3,18
+643,FR-Core,9781508256892,French 2,24,N/A,N/A,11Q,N/A,N,I’d be glad to play video games with you.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_643.mp3,1
+644,FR-Core,9781508256892,French 2,24,N/A,N/A,11R,N/A,F,Je veux bien jouer aux jeux vidéo avec toi.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_644.mp3,1
+645,FR-Core,9781508256892,French 2,24,N/A,N/A,12Q,N/A,N,"On Saturday mornings, I play chess.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_645.mp3,"1,17"
+646,FR-Core,9781508256892,French 2,24,N/A,N/A,12R,N/A,F,"Le samedi matin, je joue aux échecs.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_646.mp3,"1,17"
+647,FR-Core,9781508256892,French 2,24,N/A,N/A,13Q,N/A,N,"On Saturday mornings, I prefer to play video games.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_647.mp3,17
+648,FR-Core,9781508256892,French 2,24,N/A,N/A,13R,N/A,F,"Le samedi matin, je préfère jouer aux jeux vidéo.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_648.mp3,17
+649,FR-Core,9781508256892,French 2,24,N/A,N/A,14Q,N/A,N,On Friday nights or on Saturday mornings.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_649.mp3,17
+650,FR-Core,9781508256892,French 2,24,N/A,N/A,14R,N/A,F,Le vendredi soir ou le samedi matin.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_650.mp3,17
+651,FR-Core,9781508256892,French 2,24,N/A,N/A,15Q,N/A,N,What are you doing?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_651.mp3,1
+652,FR-Core,9781508256892,French 2,24,N/A,N/A,15R,N/A,F,Qu’est-ce que tu fais?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_652.mp3,1
+653,FR-Core,9781508256892,French 2,24,N/A,N/A,16Q,N/A,N,"When you drive, whoa!",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_653.mp3,18
+654,FR-Core,9781508256892,French 2,24,N/A,N/A,16R,N/A,F,"Quand tu conduis, oh là là!",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_654.mp3,18
+655,FR-Core,9781508256892,French 2,24,N/A,N/A,17Q,N/A,N,Great!  See you tomorrow!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_655.mp3,17
+656,FR-Core,9781508256892,French 2,24,N/A,N/A,17R,N/A,M,Super!  A demain!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_656.mp3,17
+657,FR-Core,9781508256892,French 2,24,N/A,N/A,18Q,N/A,N,Can you take me and drop me off?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_657.mp3,18
+658,FR-Core,9781508256892,French 2,24,N/A,N/A,18R,N/A,M,Tu peux m’accompagner et me déposer?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_658.mp3,18
+659,FR-Core,9781508256892,French 2,25,N/A,N/A,01Q,N/A,N,"Tomorrow, it’s already Wednesday?",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_659.mp3,17
+660,FR-Core,9781508256892,French 2,25,N/A,N/A,01R,N/A,M,"Demain, c’est déjà mercredi?",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_660.mp3,17
+661,FR-Core,9781508256892,French 2,25,N/A,N/A,02Q,N/A,N,Since how long do you play tennis?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_661.mp3,"1,12"
+662,FR-Core,9781508256892,French 2,25,N/A,N/A,02R,N/A,M,Depuis combien de temps est-ce que tu joues au tennis?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_662.mp3,"1,12"
+663,FR-Core,9781508256892,French 2,25,N/A,N/A,03Q,N/A,N,She plays better than him?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_663.mp3,1
+664,FR-Core,9781508256892,French 2,25,N/A,N/A,03R,N/A,M,Elle joue mieux que lui?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_664.mp3,1
+665,FR-Core,9781508256892,French 2,25,N/A,N/A,04Q,N/A,N,Did you play tennis?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_665.mp3,1
+666,FR-Core,9781508256892,French 2,25,N/A,N/A,04R,N/A,M,Est-ce que tu as joué au tennis?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_666.mp3,1
+667,FR-Core,9781508256892,French 2,25,N/A,N/A,05Q,N/A,N,Can you drop me off over there?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_667.mp3,18
+668,FR-Core,9781508256892,French 2,25,N/A,N/A,05R,N/A,M,Est-ce que tu peux me déposer là-bas?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_668.mp3,18
+669,FR-Core,9781508256892,French 2,25,N/A,N/A,06Q,N/A,N,Do you want to play with us?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_669.mp3,1
+670,FR-Core,9781508256892,French 2,25,N/A,N/A,06R,N/A,F,Est-ce que tu veux jouer avec nous?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_670.mp3,1
+671,FR-Core,9781508256892,French 2,25,N/A,N/A,07Q,N/A,N,Are you going to play tennis?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_671.mp3,1
+672,FR-Core,9781508256892,French 2,25,N/A,N/A,07R,N/A,F,Est-ce que vous allez jouer au tennis?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_672.mp3,1
+673,FR-Core,9781508256892,French 2,25,N/A,N/A,08Q,N/A,N,He’s already eight years old?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_673.mp3,12
+674,FR-Core,9781508256892,French 2,25,N/A,N/A,08R,N/A,F,Il a déjà huit ans?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_674.mp3,12
+675,FR-Core,9781508256892,French 2,25,N/A,N/A,09Q,N/A,N,He plays already the guitar and the keyboard.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_675.mp3,1
+676,FR-Core,9781508256892,French 2,25,N/A,N/A,09R,N/A,F,Il joue déjà de la guitare et du clavier.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_676.mp3,1
+677,FR-Core,9781508256892,French 2,25,N/A,N/A,10Q,N/A,N,They have a keyboard and a guitar.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_677.mp3,1
+678,FR-Core,9781508256892,French 2,25,N/A,N/A,10R,N/A,F,Ils ont un clavier et une guitare.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_678.mp3,1
+679,FR-Core,9781508256892,French 2,25,N/A,N/A,11Q,N/A,N,I have an idea.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_679.mp3,7
+680,FR-Core,9781508256892,French 2,25,N/A,N/A,11R,N/A,F,J’ai une idée.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_680.mp3,7
+681,FR-Core,9781508256892,French 2,25,N/A,N/A,12Q,N/A,N,I can play video games with her.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_681.mp3,1
+682,FR-Core,9781508256892,French 2,25,N/A,N/A,12R,N/A,F,Je peux jouer aux jeux vidéo avec elle.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_682.mp3,1
+683,FR-Core,9781508256892,French 2,25,N/A,N/A,13Q,N/A,N,On Wednesdays I play with her.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_683.mp3,17
+684,FR-Core,9781508256892,French 2,25,N/A,N/A,13R,N/A,M,Le mercredi je joue avec elle.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_684.mp3,17
+685,FR-Core,9781508256892,French 2,25,N/A,N/A,14Q,N/A,N,"On Friday nights, I drive fast.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_685.mp3,"17,18"
+686,FR-Core,9781508256892,French 2,25,N/A,N/A,14R,N/A,M,"Le vendredi soir, je conduis vite.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_686.mp3,"17,18"
+687,FR-Core,9781508256892,French 2,25,N/A,N/A,15Q,N/A,N,Their children play too.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_687.mp3,1
+688,FR-Core,9781508256892,French 2,25,N/A,N/A,15R,N/A,M,Leurs enfants jouent aussi.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_688.mp3,1
+689,FR-Core,9781508256892,French 2,25,N/A,N/A,16Q,N/A,N,"Whoa, it’s already late!",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_689.mp3,17
+690,FR-Core,9781508256892,French 2,25,N/A,N/A,16R,N/A,M,"Oh là là, il est déjà tard!",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_690.mp3,17
+691,FR-Core,9781508256892,French 2,25,N/A,N/A,17Q,N/A,N,We played the keyboard at their place.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_691.mp3,1
+692,FR-Core,9781508256892,French 2,25,N/A,N/A,17R,N/A,M,On a joué du clavier chez eux.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_692.mp3,1
+693,FR-Core,9781508256892,French 2,25,N/A,N/A,18Q,N/A,N,If you prefer.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_693.mp3,7
+694,FR-Core,9781508256892,French 2,25,N/A,N/A,18R,N/A,M,Si tu préfères.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_694.mp3,7
+695,FR-Core,9781508256892,French 2,26,N/A,N/A,01Q,N/A,N,See you soon!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_695.mp3,"7,13,16"
+696,FR-Core,9781508256892,French 2,26,N/A,N/A,01R,N/A,M,A bientôt!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_696.mp3,"7,13,16"
+697,FR-Core,9781508256892,French 2,26,N/A,N/A,02Q,N/A,N,That’s really soon!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_697.mp3,7
+698,FR-Core,9781508256892,French 2,26,N/A,N/A,02R,N/A,F,C’est vraiment bientôt!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_698.mp3,7
+699,FR-Core,9781508256892,French 2,26,N/A,N/A,03Q,N/A,N,It really doesn’t matter.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_699.mp3,"7,13,16"
+700,FR-Core,9781508256892,French 2,26,N/A,N/A,03R,N/A,F,Ça ne fait vraiment rien.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_700.mp3,"7,13,16"
+701,FR-Core,9781508256892,French 2,26,N/A,N/A,04Q,N/A,N,There’s a movie at the library.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_701.mp3,1
+702,FR-Core,9781508256892,French 2,26,N/A,N/A,04R,N/A,F,Il y a un film à la bibliothèque.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_702.mp3,1
+703,FR-Core,9781508256892,French 2,26,N/A,N/A,05Q,N/A,N,There is a gym at the hotel.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_703.mp3,"1,18"
+704,FR-Core,9781508256892,French 2,26,N/A,N/A,05R,N/A,F,Il y a une salle de sport à l’hôtel.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_704.mp3,"1,18"
+705,FR-Core,9781508256892,French 2,26,N/A,N/A,06Q,N/A,N,I know their daughter.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_705.mp3,5
+706,FR-Core,9781508256892,French 2,26,N/A,N/A,06R,N/A,F,Je connais leur fille.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_706.mp3,5
+707,FR-Core,9781508256892,French 2,26,N/A,N/A,07Q,N/A,N,I already saw it.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_707.mp3,1
+708,FR-Core,9781508256892,French 2,26,N/A,N/A,07R,N/A,F,Je l’ai déjà vu.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_708.mp3,1
+709,FR-Core,9781508256892,French 2,26,N/A,N/A,08Q,N/A,N,We’re coming back on Saturday.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_709.mp3,"17,18"
+710,FR-Core,9781508256892,French 2,26,N/A,N/A,08R,N/A,F,On revient samedi.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_710.mp3,"17,18"
+711,FR-Core,9781508256892,French 2,26,N/A,N/A,09Q,N/A,N,I’m leaving soon.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_711.mp3,18
+712,FR-Core,9781508256892,French 2,26,N/A,N/A,09R,N/A,M,Je pars bientôt.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_712.mp3,18
+713,FR-Core,9781508256892,French 2,26,N/A,N/A,10Q,N/A,N,I go often to the gym.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_713.mp3,1
+714,FR-Core,9781508256892,French 2,26,N/A,N/A,10R,N/A,M,Je vais souvent à la salle de sport.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_714.mp3,1
+715,FR-Core,9781508256892,French 2,26,N/A,N/A,11Q,N/A,N,I would like to see this movie again.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_715.mp3,1
+716,FR-Core,9781508256892,French 2,26,N/A,N/A,11R,N/A,M,Je voudrais revoir ce film.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_716.mp3,1
+717,FR-Core,9781508256892,French 2,26,N/A,N/A,12Q,N/A,N,I would like to see her again.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_717.mp3,7
+718,FR-Core,9781508256892,French 2,26,N/A,N/A,12R,N/A,M,Je voudrais la revoir.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_718.mp3,7
+719,FR-Core,9781508256892,French 2,26,N/A,N/A,13Q,N/A,N,"On Wednesdays, I have the time.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_719.mp3,17
+720,FR-Core,9781508256892,French 2,26,N/A,N/A,13R,N/A,M,"Le mercredi, j’ai le temps.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_720.mp3,17
+721,FR-Core,9781508256892,French 2,26,N/A,N/A,14Q,N/A,N,We go to the gym.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_721.mp3,1
+722,FR-Core,9781508256892,French 2,26,N/A,N/A,14R,N/A,M,On va à la salle de sport.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_722.mp3,1
+723,FR-Core,9781508256892,French 2,26,N/A,N/A,15Q,N/A,N,When are you coming back?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_723.mp3,18
+724,FR-Core,9781508256892,French 2,26,N/A,N/A,15R,N/A,M,Quand est-ce que vous revenez?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_724.mp3,18
+725,FR-Core,9781508256892,French 2,26,N/A,N/A,16Q,N/A,N,You’re pretty athletic.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_725.mp3,1
+726,FR-Core,9781508256892,French 2,26,N/A,N/A,16R,N/A,F,Tu es assez sportive.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_726.mp3,1
+727,FR-Core,9781508256892,French 2,27,N/A,N/A,01Q,N/A,N,"After the meetings, I can go to the library.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_727.mp3,"1,20"
+728,FR-Core,9781508256892,French 2,27,N/A,N/A,01R,N/A,F,"Après les réunions, je peux aller à la bibliothèque.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_728.mp3,"1,20"
+729,FR-Core,9781508256892,French 2,27,N/A,N/A,02Q,N/A,N,She played better than me.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_729.mp3,1
+730,FR-Core,9781508256892,French 2,27,N/A,N/A,02R,N/A,F,Elle a joué mieux que moi.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_730.mp3,1
+731,FR-Core,9781508256892,French 2,27,N/A,N/A,03Q,N/A,N,She played really well.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_731.mp3,1
+732,FR-Core,9781508256892,French 2,27,N/A,N/A,03R,N/A,F,Elle a vraiment bien joué.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_732.mp3,1
+733,FR-Core,9781508256892,French 2,27,N/A,N/A,04Q,N/A,N,"In cash, please.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_733.mp3,"14,16"
+734,FR-Core,9781508256892,French 2,27,N/A,N/A,04R,N/A,F,"En liquide, s’il vous plaît.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_734.mp3,"14,16"
+735,FR-Core,9781508256892,French 2,27,N/A,N/A,05Q,N/A,N,Are the banks still open?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_735.mp3,11
+736,FR-Core,9781508256892,French 2,27,N/A,N/A,05R,N/A,F,Est-ce que les banques sont encore ouvertes?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_736.mp3,11
+737,FR-Core,9781508256892,French 2,27,N/A,N/A,06Q,N/A,N,Do you know where the bank is?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_737.mp3,"4,11"
+738,FR-Core,9781508256892,French 2,27,N/A,N/A,06R,N/A,F,Est-ce que vous savez où est la banque?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_738.mp3,"4,11"
+739,FR-Core,9781508256892,French 2,27,N/A,N/A,07Q,N/A,N,He was not in shape.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_739.mp3,1
+740,FR-Core,9781508256892,French 2,27,N/A,N/A,07R,N/A,M,Il n’était pas en forme.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_740.mp3,1
+741,FR-Core,9781508256892,French 2,27,N/A,N/A,08Q,N/A,N,There’s a bank over there.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_741.mp3,11
+742,FR-Core,9781508256892,French 2,27,N/A,N/A,08R,N/A,M,Il y a une banque là-bas.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_742.mp3,11
+743,FR-Core,9781508256892,French 2,27,N/A,N/A,09Q,N/A,N,I have to go to the bank to get some money.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_743.mp3,11
+744,FR-Core,9781508256892,French 2,27,N/A,N/A,09R,N/A,M,Je dois aller à la banque chercher de l’argent.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_744.mp3,11
+745,FR-Core,9781508256892,French 2,27,N/A,N/A,10Q,N/A,N,I play better than him.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_745.mp3,1
+746,FR-Core,9781508256892,French 2,27,N/A,N/A,10R,N/A,M,Je joue mieux que lui.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_746.mp3,1
+747,FR-Core,9781508256892,French 2,27,N/A,N/A,11Q,N/A,N,I’m coming back right away.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_747.mp3,18
+748,FR-Core,9781508256892,French 2,27,N/A,N/A,11R,N/A,M,Je reviens tout de suite.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_748.mp3,18
+749,FR-Core,9781508256892,French 2,27,N/A,N/A,12Q,N/A,N,I’ve already gone there.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_749.mp3,18
+750,FR-Core,9781508256892,French 2,27,N/A,N/A,12R,N/A,M,J’y suis déjà allée.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_750.mp3,18
+751,FR-Core,9781508256892,French 2,27,N/A,N/A,13Q,N/A,N,The banks are closed.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_751.mp3,11
+752,FR-Core,9781508256892,French 2,27,N/A,N/A,13R,N/A,M,Les banques sont fermées.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_752.mp3,11
+753,FR-Core,9781508256892,French 2,27,N/A,N/A,14Q,N/A,N,"No cards, sorry.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_753.mp3,"13,14,16"
+754,FR-Core,9781508256892,French 2,27,N/A,N/A,14R,N/A,F,"Pas de cartes, désolé.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_754.mp3,"13,14,16"
+755,FR-Core,9781508256892,French 2,27,N/A,N/A,15Q,N/A,N,If you leave right away.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_755.mp3,18
+756,FR-Core,9781508256892,French 2,27,N/A,N/A,15R,N/A,F,Si vous partez tout de suite.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_756.mp3,18
+757,FR-Core,9781508256892,French 2,27,N/A,N/A,16Q,N/A,F,To stay in shape.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_757.mp3,1
+758,FR-Core,9781508256892,French 2,27,N/A,N/A,16R,N/A,F,Pour rester en forme.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_758.mp3,1
+759,FR-Core,9781508256892,French 2,28,N/A,N/A,01Q,N/A,N,See you right away!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_759.mp3,7
+760,FR-Core,9781508256892,French 2,28,N/A,N/A,01R,N/A,F,À tout de suite!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_760.mp3,7
+761,FR-Core,9781508256892,French 2,28,N/A,N/A,02Q,N/A,N,How are you going there?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_761.mp3,18
+762,FR-Core,9781508256892,French 2,28,N/A,N/A,02R,N/A,F,Comment est-ce que vous y allez?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_762.mp3,18
+763,FR-Core,9781508256892,French 2,28,N/A,N/A,03Q,N/A,N,Have you already gone there?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_763.mp3,18
+764,FR-Core,9781508256892,French 2,28,N/A,N/A,03R,N/A,F,Est-ce que tu y es déjà allé?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_764.mp3,18
+765,FR-Core,9781508256892,French 2,28,N/A,N/A,04Q,N/A,N,It’s already noon.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_765.mp3,17
+766,FR-Core,9781508256892,French 2,28,N/A,N/A,04R,N/A,M,Il est déjà midi.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_766.mp3,17
+767,FR-Core,9781508256892,French 2,28,N/A,N/A,05Q,N/A,N,I saw again some friends.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_767.mp3,5
+768,FR-Core,9781508256892,French 2,28,N/A,N/A,05R,N/A,M,J’ai revu des amis.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_768.mp3,5
+769,FR-Core,9781508256892,French 2,28,N/A,N/A,06Q,N/A,N,I have soon to leave.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_769.mp3,18
+770,FR-Core,9781508256892,French 2,28,N/A,N/A,06R,N/A,M,Je dois bientôt partir.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_770.mp3,18
+771,FR-Core,9781508256892,French 2,28,N/A,N/A,07Q,N/A,N,I have to go there too.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_771.mp3,18
+772,FR-Core,9781508256892,French 2,28,N/A,N/A,07R,N/A,M,Je dois y aller aussi.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_772.mp3,18
+773,FR-Core,9781508256892,French 2,28,N/A,N/A,08Q,N/A,N,We always take the daily special.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_773.mp3,6
+774,FR-Core,9781508256892,French 2,28,N/A,N/A,08R,N/A,M,On prend toujours le plat du jour.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_774.mp3,6
+775,FR-Core,9781508256892,French 2,28,N/A,N/A,09Q,N/A,N,What do you do to stay in shape?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_775.mp3,1
+776,FR-Core,9781508256892,French 2,28,N/A,N/A,09R,N/A,M,Qu’est-ce que tu fais pour rester en forme?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_776.mp3,1
+777,FR-Core,9781508256892,French 2,28,N/A,N/A,10Q,N/A,N,Never mind for the daily special!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_777.mp3,6
+778,FR-Core,9781508256892,French 2,28,N/A,N/A,10R,N/A,M,Tant pis pour le plat du jour!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_778.mp3,6
+779,FR-Core,9781508256892,French 2,28,N/A,N/A,11Q,N/A,N,You want to come with me?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_779.mp3,"1,18"
+780,FR-Core,9781508256892,French 2,28,N/A,N/A,11R,N/A,F,Tu veux venir avec moi?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_780.mp3,"1,18"
+781,FR-Core,9781508256892,French 2,28,N/A,N/A,12Q,N/A,N,"Friday, we’re not taking the train.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_781.mp3,"17,18"
+782,FR-Core,9781508256892,French 2,28,N/A,N/A,12R,N/A,F,"Vendredi, on ne prend pas le train.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_782.mp3,"17,18"
+783,FR-Core,9781508256892,French 2,28,N/A,N/A,13Q,N/A,N,You’re going to take the plane?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_783.mp3,18
+784,FR-Core,9781508256892,French 2,28,N/A,N/A,13R,N/A,F,Vous allez prendre l’avion?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_784.mp3,18
+785,FR-Core,9781508256892,French 2,28,N/A,N/A,14Q,N/A,N,You are going there how?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_785.mp3,18
+786,FR-Core,9781508256892,French 2,28,N/A,N/A,14R,N/A,F,Vous y allez comment?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_786.mp3,18
+787,FR-Core,9781508256892,French 2,28,N/A,N/A,15Q,N/A,N,You are going there by train or by plane?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_787.mp3,18
+788,FR-Core,9781508256892,French 2,28,N/A,N/A,15R,N/A,F,Vous y allez en train ou en avion?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_788.mp3,18
+789,FR-Core,9781508256892,French 2,29,N/A,N/A,01Q,N/A,N,See you next Sunday!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_789.mp3,17
+790,FR-Core,9781508256892,French 2,29,N/A,N/A,01R,N/A,F,A dimanche prochain!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_790.mp3,17
+791,FR-Core,9781508256892,French 2,29,N/A,N/A,02Q,N/A,N,At four o’clock in the afternoon?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_791.mp3,"12,17"
+792,FR-Core,9781508256892,French 2,29,N/A,N/A,02R,N/A,F,A quatre heures de l’après-midi?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_792.mp3,"12,17"
+793,FR-Core,9781508256892,French 2,29,N/A,N/A,03Q,N/A,N,Before leaving.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_793.mp3,18
+794,FR-Core,9781508256892,French 2,29,N/A,N/A,03R,N/A,M,Avant de partir.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_794.mp3,18
+795,FR-Core,9781508256892,French 2,29,N/A,N/A,04Q,N/A,N,Can I borrow your phone?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_795.mp3,"3,13,16"
+796,FR-Core,9781508256892,French 2,29,N/A,N/A,04R,N/A,M,Est-ce que je peux emprunter votre téléphone?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_796.mp3,"3,13,16"
+797,FR-Core,9781508256892,French 2,29,N/A,N/A,05Q,N/A,N,Are you going there right away?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_797.mp3,18
+798,FR-Core,9781508256892,French 2,29,N/A,N/A,05R,N/A,M,Est-ce que vous y allez tout de suite?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_798.mp3,18
+799,FR-Core,9781508256892,French 2,29,N/A,N/A,06Q,N/A,N,I ate over there last week.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_799.mp3,"6,17"
+800,FR-Core,9781508256892,French 2,29,N/A,N/A,06R,N/A,M,J’ai mangé là-bas la semaine dernière.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_800.mp3,"6,17"
+801,FR-Core,9781508256892,French 2,29,N/A,N/A,07Q,N/A,N,I understand much better now.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_801.mp3,10
+802,FR-Core,9781508256892,French 2,29,N/A,N/A,07R,N/A,M,Je comprends beaucoup mieux maintenant.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_802.mp3,10
+803,FR-Core,9781508256892,French 2,29,N/A,N/A,08Q,N/A,N,I’d like to see today’s news.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_803.mp3,"1,17"
+804,FR-Core,9781508256892,French 2,29,N/A,N/A,08R,N/A,M,Je voudrais voir les nouvelles d’aujourd’hui.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_804.mp3,"1,17"
+805,FR-Core,9781508256892,French 2,29,N/A,N/A,09Q,N/A,N,"The afternoon, it’s fine with me.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_805.mp3,17
+806,FR-Core,9781508256892,French 2,29,N/A,N/A,09R,N/A,M,"L’après-midi, ça me va.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_806.mp3,17
+807,FR-Core,9781508256892,French 2,29,N/A,N/A,10Q,N/A,N,"My husband and me, we’re taking the train.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_807.mp3,"5,18"
+808,FR-Core,9781508256892,French 2,29,N/A,N/A,10R,N/A,F,"Mon mari et moi, on prend le train.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_808.mp3,"5,18"
+809,FR-Core,9781508256892,French 2,29,N/A,N/A,11Q,N/A,N,We’re coming back before the weekend.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_809.mp3,"17,18"
+810,FR-Core,9781508256892,French 2,29,N/A,N/A,11R,N/A,F,On revient avant le week-end.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_810.mp3,"17,18"
+811,FR-Core,9781508256892,French 2,29,N/A,N/A,12Q,N/A,N,What are you going to do next weekend?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_811.mp3,17
+812,FR-Core,9781508256892,French 2,29,N/A,N/A,12R,N/A,F,Qu’est-ce que vous allez faire le week-end prochain?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_812.mp3,17
+813,FR-Core,9781508256892,French 2,29,N/A,N/A,13Q,N/A,N,On (the) social media.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_813.mp3,3
+814,FR-Core,9781508256892,French 2,29,N/A,N/A,13R,N/A,F,Sur les réseaux sociaux.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_814.mp3,3
+815,FR-Core,9781508256892,French 2,29,N/A,N/A,14Q,N/A,N,You are not staying until Sunday?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_815.mp3,"17,18"
+816,FR-Core,9781508256892,French 2,29,N/A,N/A,14R,N/A,F,Vous ne restez pas jusqu’à dimanche?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_816.mp3,"17,18"
+817,FR-Core,9781508256892,French 2,29,N/A,N/A,15Q,N/A,N,You can read them in the newspaper.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_817.mp3,3
+818,FR-Core,9781508256892,French 2,29,N/A,N/A,15R,N/A,F,Vous pouvez les lire dans le journal.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_818.mp3,3
+819,FR-Core,9781508256892,French 2,30,N/A,N/A,01Q,N/A,N,Until Thursday afternoon!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_819.mp3,17
+820,FR-Core,9781508256892,French 2,30,N/A,N/A,01R,N/A,F,À jeudi après-midi!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_820.mp3,17
+821,FR-Core,9781508256892,French 2,30,N/A,N/A,02Q,N/A,N,Go ahead quickly!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_821.mp3,7
+822,FR-Core,9781508256892,French 2,30,N/A,N/A,02R,N/A,F,Allez-y vite!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_822.mp3,7
+823,FR-Core,9781508256892,French 2,30,N/A,N/A,03Q,N/A,N,It’s yesterday’s newspaper.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_823.mp3,17
+824,FR-Core,9781508256892,French 2,30,N/A,N/A,03R,N/A,M,C’est le journal d’hier.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_824.mp3,17
+825,FR-Core,9781508256892,French 2,30,N/A,N/A,04Q,N/A,N,How does one get to your place?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_825.mp3,4
+826,FR-Core,9781508256892,French 2,30,N/A,N/A,04R,N/A,M,Comment est-ce qu’on va chez vous?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_826.mp3,4
+827,FR-Core,9781508256892,French 2,30,N/A,N/A,05Q,N/A,N,Can I show you something?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_827.mp3,"7,13"
+828,FR-Core,9781508256892,French 2,30,N/A,N/A,05R,N/A,M,Est-ce que je peux vous montrer quelque chose?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_828.mp3,"7,13"
+829,FR-Core,9781508256892,French 2,30,N/A,N/A,06Q,N/A,N,I went there last weekend.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_829.mp3,17
+830,FR-Core,9781508256892,French 2,30,N/A,N/A,06R,N/A,M,J’y suis allé le week-end dernier.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_830.mp3,17
+831,FR-Core,9781508256892,French 2,30,N/A,N/A,07Q,N/A,N,I’m taking the plane tomorrow afternoon.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_831.mp3,"17,18"
+832,FR-Core,9781508256892,French 2,30,N/A,N/A,07R,N/A,M,Je prends l’avion demain après-midi.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_832.mp3,"17,18"
+833,FR-Core,9781508256892,French 2,30,N/A,N/A,08Q,N/A,N,I’m going to send you a map of Paris.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_833.mp3,"4,18"
+834,FR-Core,9781508256892,French 2,30,N/A,N/A,08R,N/A,M,Je vais vous envoyer un plan de Paris.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_834.mp3,"4,18"
+835,FR-Core,9781508256892,French 2,30,N/A,N/A,09Q,N/A,N,I would like to read The World online.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_835.mp3,"1,3"
+836,FR-Core,9781508256892,French 2,30,N/A,N/A,09R,N/A,M,Je voudrais lire Le Monde en ligne.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_836.mp3,"1,3"
+837,FR-Core,9781508256892,French 2,30,N/A,N/A,10Q,N/A,N,"Whoa, their wine list!",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_837.mp3,6
+838,FR-Core,9781508256892,French 2,30,N/A,N/A,10R,N/A,F,"Oh là là, leur carte des vins!",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_838.mp3,6
+839,FR-Core,9781508256892,French 2,30,N/A,N/A,11Q,N/A,N,We’re having a coffee at my place?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_839.mp3,6
+840,FR-Core,9781508256892,French 2,30,N/A,N/A,11R,N/A,F,On prend un café chez moi?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_840.mp3,6
+841,FR-Core,9781508256892,French 2,30,N/A,N/A,12Q,N/A,N,"Yes, yes, go ahead.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_841.mp3,7
+842,FR-Core,9781508256892,French 2,30,N/A,N/A,12R,N/A,F,"Oui, oui, vas-y.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_842.mp3,7
+843,FR-Core,9781508256892,French 2,30,N/A,N/A,13Q,N/A,N,"Fifteen o’clock, it’s fine with me.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_843.mp3,17
+844,FR-Core,9781508256892,French 2,30,N/A,N/A,13R,N/A,F,"Quinze heures, ça me va.",N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_844.mp3,17
+845,FR-Core,9781508256892,French 2,30,N/A,N/A,14Q,N/A,N,Look online.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_845.mp3,"1,3"
+846,FR-Core,9781508256892,French 2,30,N/A,N/A,14R,N/A,F,Regarde en ligne.,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_846.mp3,"1,3"
+847,FR-Core,9781508256892,French 2,30,N/A,N/A,15Q,N/A,N,You can read yesterday’s news!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_847.mp3,17
+848,FR-Core,9781508256892,French 2,30,N/A,N/A,15R,N/A,F,Tu peux lire les nouvelles d’hier!,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_848.mp3,17
+849,FR-Core,9781508256892,French 2,30,N/A,N/A,16Q,N/A,N,You want to read the news on social media?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_849.mp3,"1,3"
+850,FR-Core,9781508256892,French 2,30,N/A,N/A,16R,N/A,F,Tu veux lire les nouvelles sur les réseaux sociaux?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_850.mp3,"1,3"
+851,FR-Core,9781508256892,French 2,30,N/A,N/A,17Q,N/A,N,Can you show me this street on the map?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_851.mp3,4
+852,FR-Core,9781508256892,French 2,30,N/A,N/A,17R,N/A,M,Vous pouvez me montrer cette rue sur le plan?,N/A,N/A,Pimsleur French Level 2 Core Update MP3,9781508295174_French_Level_2_QM_852.mp3,4

@@ -275,6 +275,7 @@ public class PCMProduct {
     }
 
     public AvailableProductDto pcmProductToDto() {
+        //for PCM Free lessons, use productsName to represent languageName
         return new AvailableProductDto(
                 this.productsName,
                 this.productsLanguageName,

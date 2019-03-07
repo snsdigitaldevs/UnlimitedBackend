@@ -8,7 +8,6 @@ import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL;
 
 @JsonInclude(NON_NULL)
 public class AvailableProductDto {
-    private String productsName;
     private String languageName;
     private String productCode;
     private String courseName;
@@ -20,18 +19,17 @@ public class AvailableProductDto {
 
     private boolean isSubscription;
 
-    public AvailableProductDto(String productsName, String productsLanguageName, String productCode, boolean isPu) {
-        this.productsName = productsName.trim();
-        this.languageName = productsLanguageName.trim();
+    public AvailableProductDto(String languageName, String productCode, boolean isPu) {
+        this.languageName = languageName;
         this.productCode = productCode;
         this.isPuProduct = isPu;
     }
 
-    public AvailableProductDto(String productsName, String productsLanguageName, String courseName, String productCode, boolean isPu, Integer level) {
-        this(productsName, productsLanguageName, productCode, isPu);
+    public AvailableProductDto(String languageName, String courseName, String productCode, boolean isPu, Integer level) {
+        this(languageName, productCode, isPu);
 
         this.level = level;
-        this.courseName = courseName.trim();
+        this.courseName = courseName;
     }
 
     public boolean getIsSubscription() {
@@ -108,13 +106,5 @@ public class AvailableProductDto {
             return "Brazilian Portuguese";
         }
         return languageName;
-    }
-
-    public String getProductsName() {
-        return productsName;
-    }
-
-    public void setProductsName(String productsName) {
-        this.productsName = productsName;
     }
 }

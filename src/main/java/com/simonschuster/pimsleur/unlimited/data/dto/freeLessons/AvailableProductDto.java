@@ -8,8 +8,8 @@ import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL;
 
 @JsonInclude(NON_NULL)
 public class AvailableProductDto {
-    private String productsName;
     private String languageName;
+    private String filterLanguageName;
     private String productCode;
     private String courseName;
     // this is the isbn you should use when calling the upsell api
@@ -21,8 +21,8 @@ public class AvailableProductDto {
     private boolean isSubscription;
 
     public AvailableProductDto(String productsName, String productsLanguageName, String productCode, boolean isPu) {
-        this.productsName = productsName.trim();
-        this.languageName = productsLanguageName.trim();
+        this.languageName = productsName.trim();
+        this.filterLanguageName = productsLanguageName.trim();
         this.productCode = productCode;
         this.isPuProduct = isPu;
     }
@@ -96,7 +96,7 @@ public class AvailableProductDto {
     }
 
     public boolean isSameLang(AvailableProductDto that) {
-        return Objects.equals(normalizeLangName(this.languageName), normalizeLangName(that.languageName));
+        return Objects.equals(normalizeLangName(this.filterLanguageName), normalizeLangName(that.filterLanguageName));
     }
 
     private String normalizeLangName(String languageName) {
@@ -108,13 +108,5 @@ public class AvailableProductDto {
             return "Brazilian Portuguese";
         }
         return languageName;
-    }
-
-    public String getProductsName() {
-        return productsName;
-    }
-
-    public void setProductsName(String productsName) {
-        this.productsName = productsName;
     }
 }

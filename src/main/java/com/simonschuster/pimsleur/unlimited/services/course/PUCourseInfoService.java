@@ -62,8 +62,6 @@ public class PUCourseInfoService {
                 headers);
         String productInfoApiUrl = config.getProperty("edt.api.productInfoApiUrl");
 
-        PuProductInfo puProductInfo = EDTRequestUtil.postToEdt(requestEntity, productInfoApiUrl, PuProductInfo.class);
-
-        return puProductInfo;
+        return EDTRequestUtil.postToEdt(requestEntity, productInfoApiUrl, PuProductInfo.class);
     }
 }

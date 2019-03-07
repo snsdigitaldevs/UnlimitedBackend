@@ -20,15 +20,15 @@ public class AvailableProductDto {
 
     private boolean isSubscription;
 
-    public AvailableProductDto(String productsName, String productsLanguageName, String productCode, boolean isPu) {
-        this.languageName = productsName.trim();
+    public AvailableProductDto(String languageName, String productsLanguageName, String productCode, boolean isPu) {
+        this.languageName = languageName.trim();
         this.filterLanguageName = productsLanguageName.trim();
         this.productCode = productCode;
         this.isPuProduct = isPu;
     }
 
-    public AvailableProductDto(String productsName, String productsLanguageName, String courseName, String productCode, boolean isPu, Integer level) {
-        this(productsName, productsLanguageName, productCode, isPu);
+    public AvailableProductDto(String languageName, String productsLanguageName, String courseName, String productCode, boolean isPu, Integer level) {
+        this(languageName, productsLanguageName, productCode, isPu);
 
         this.level = level;
         this.courseName = courseName.trim();

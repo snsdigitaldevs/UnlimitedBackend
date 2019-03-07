@@ -83,7 +83,7 @@ public class Course {
     }
 
     public AvailableProductDto toPuAvailableProductDto() {
-        return new AvailableProductDto(getCourseName(), getLanguageName(), getCourseName(),
+        return new AvailableProductDto(getLanguageName(), getLanguageName(), getCourseName(),
                 getProductCode(), true, getLevel());
     }
 }

@@ -82,19 +82,18 @@ public class PcmFreeCourseService {
     }
 
     private List<Lesson> createLessonsFromAdditionalInfo(PcmFreeCourseResultData resultData, List<Lesson> lessonsFromMediaSet) {
-        String lessonNamePrefix = lessonsFromMediaSet.get(0).getName().split(" ")[0];
+        Lesson lesson1 = lessonsFromMediaSet.get(0);
         int numberOfLessons = resultData.getAdditionalProductData().getLevel1FullCourseTotalLessons();
-        Image image = lessonsFromMediaSet.get(0).getImage();
 
-        return rangeClosed(1, numberOfLessons).boxed()
-                .map(lessonNumber -> {
-                    String lessonNumberString = String.format("%02d", lessonNumber);
-                    Lesson lesson = new Lesson();
-                    lesson.setName(lessonNamePrefix + " " + lessonNumberString);
-                    lesson.setLessonNumber(lessonNumberString);
-                    lesson.setImage(image);
-                    return lesson;
-                }).collect(toList());
+        for(int i = 2; i <= numberOfLessons; i++){
+            String lessonNumberString = String.format("%02d", i);
+            Lesson lesson = new Lesson();
+            lesson.setName(lesson1.getName().split(" ")[0] + " " + lessonNumberString);
+            lesson.setLessonNumber(lessonNumberString);
+            lesson.setImage(lesson1.getImage());
+            lessonsFromMediaSet.add(lesson);
+        }
+        return lessonsFromMediaSet;
     }
 
     private List<Lesson> createLessonsFromMediaSet(PcmFreeCourseResultData resultData) {
@@ -105,6 +104,7 @@ public class PcmFreeCourseService {
                 .map(mediaItem -> {
                     Lesson lesson = new Lesson();
                     lesson.setName(mediaItem.getMediaItemTitle());
+                    lesson.setMediaItemId(mediaItem.getMediaItemId());
                     lesson.setLessonNumber(mediaItem.getMediaItemTitle().split(" ")[1]);
                     lesson.setImage(pcmImage);
                     return lesson;

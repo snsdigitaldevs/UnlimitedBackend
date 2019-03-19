@@ -33,11 +33,6 @@ public class PurchaseMappingService {
                 .orElse(null);
     }
 
-    public PurchaseMapping findISBNWithOtherFormatAs(String isbn) {
-        Stream<PurchaseMapping> purchaseMappingStream = purchaseMappings.stream().filter(x -> x.getOtherFormat1ISBN().equals(isbn));
-        return purchaseMappingStream.findFirst().orElse(null);
-    }
-
     public List<String> getAllFormatsOf(String isbn) {
         PurchaseMapping mapping = findPurchaseMappingFor(isbn);
         if (mapping == null) {
@@ -49,7 +44,7 @@ public class PurchaseMappingService {
 
     private static List<PurchaseMapping> readJsonFile() throws IOException {
         InputStream fileStream = UnlimitedApplication.class.getClassLoader()
-                .getResourceAsStream("isbn-mapping/purchase-mappings.json");
+                .getResourceAsStream("isbn-mapping/upsell-mapping.json");
 
         ObjectMapper objectMapper = new ObjectMapper();
         return objectMapper.readValue(fileStream, new TypeReference<List<PurchaseMapping>>() {

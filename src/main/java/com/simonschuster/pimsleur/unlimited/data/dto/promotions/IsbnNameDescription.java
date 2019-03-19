@@ -4,49 +4,92 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
+import java.util.List;
+import java.util.stream.Stream;
+
+import static java.util.stream.Collectors.toList;
+
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-        "ISBN13",
-        "In App Display Name",
-        "In App Description"
+        "Base Course Type",
+        "ISBN",
+        "Course name - Upsell Card & Library",
+        "Course name - Learn Page",
+        "Course Description - Upsell Card",
+        "Other format 1 (Upsell) ISBN",
+        "Other format 2 (Upgrade) ISBN",
+        "Other format 3 (DVD) ISBN"
 })
 public class IsbnNameDescription {
 
-    @JsonProperty("ISBN13")
-    private Long iSBN13;
-    @JsonProperty("In App Display Name")
+    @JsonProperty("Base Course Type")
+    private String baseCourseType;
+    @JsonProperty("ISBN")
+    private String iSBN;
+    @JsonProperty("Course name - Upsell Card & Library")
     private String inAppDisplayName;
-    @JsonProperty("In App Description")
+    @JsonProperty("Course name - Learn Page")
+    private String learnPageCourseName;
+    @JsonProperty("Course Description - Upsell Card")
     private String inAppDescription;
+    @JsonProperty("Other format 1 (Upsell) ISBN")
+    private String otherFormat1ISBN;
+    @JsonProperty("Other format 2 (Upgrade) ISBN")
+    private String otherFormat2ISBN;
+    @JsonProperty("Other format 3 (DVD) ISBN")
+    private String otherFormat3ISBN;
 
-    @JsonProperty("ISBN13")
-    public Long getISBN13() {
-        return iSBN13;
+
+    public String getISBN() {
+        return iSBN;
     }
 
-    @JsonProperty("ISBN13")
-    public void setISBN13(Long iSBN13) {
-        this.iSBN13 = iSBN13;
-    }
-
-    @JsonProperty("In App Display Name")
     public String getInAppDisplayName() {
         return inAppDisplayName;
     }
 
-    @JsonProperty("In App Display Name")
-    public void setInAppDisplayName(String inAppDisplayName) {
-        this.inAppDisplayName = inAppDisplayName;
-    }
-
-    @JsonProperty("In App Description")
     public String getInAppDescription() {
         return inAppDescription;
     }
 
-    @JsonProperty("In App Description")
-    public void setInAppDescription(String inAppDescription) {
-        this.inAppDescription = inAppDescription;
+    public String getLearnPageCourseName() {
+        return learnPageCourseName;
     }
+
+    public void setLearnPageCourseName(String learnPageCourseName) {
+        this.learnPageCourseName = learnPageCourseName;
+    }
+
+    public String getOtherFormat1ISBN() {
+        return otherFormat1ISBN;
+    }
+
+    public String getOtherFormat2ISBN() {
+        return otherFormat2ISBN;
+    }
+
+    public String getOtherFormat3ISBN() {
+        return otherFormat3ISBN;
+    }
+
+    public String getBaseCourseType() {
+        return baseCourseType;
+    }
+
+    public List<String> getAllFormats() {
+        return Stream
+                .of(this.getISBN(),
+                        this.getOtherFormat1ISBN(),
+                        this.getOtherFormat2ISBN(),
+                        this.getOtherFormat3ISBN())
+                .filter(isbn -> isbn.length() > 0)
+                .collect(toList());
+    }
+
+    public boolean matches(String isbn) {
+        return getAllFormats().stream()
+                .anyMatch(oneFormat -> oneFormat.equals(isbn));
+    }
+
 
 }

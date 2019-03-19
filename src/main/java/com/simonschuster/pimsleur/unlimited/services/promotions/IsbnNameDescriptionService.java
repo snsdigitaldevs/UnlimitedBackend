@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
-import java.util.Objects;
+import java.util.stream.Stream;
 
 import static java.util.stream.Stream.of;
 
@@ -36,22 +36,35 @@ public class IsbnNameDescriptionService {
 
     private void updateNameDescriptionForUpsellItem(UpsellItem upsellItem) {
         if (upsellItem != null) {
-            namesAndDescription.stream()
-                    .filter(nameDescription -> Objects.equals(nameDescription.getISBN13().toString(), upsellItem.getIsbn()))
-                    .findFirst()
-                    .ifPresent(nameDescription -> {
-                        upsellItem.setName(nameDescription.getInAppDisplayName());
-                        upsellItem.setDescription(nameDescription.getInAppDescription());
-                    });
+            IsbnNameDescription find = findFormatMappingFor(upsellItem.getIsbn());
+            if(find != null){
+                upsellItem.setName(find.getInAppDisplayName());
+                upsellItem.setDescription(find.getInAppDescription());
+            }
         }
     }
 
     private static List<IsbnNameDescription> readJsonFile() throws IOException {
         InputStream fileStream = UnlimitedApplication.class.getClassLoader()
-                .getResourceAsStream("isbn-mapping/name-description.json");
+                .getResourceAsStream("isbn-mapping/format-mapping.json");
 
         ObjectMapper objectMapper = new ObjectMapper();
         return objectMapper.readValue(fileStream, new TypeReference<List<IsbnNameDescription>>() {
         });
+    }
+
+    public IsbnNameDescription findFormatMappingFor(String isbn) {
+        return namesAndDescription.stream()
+                .filter(x -> x.matches(isbn))
+                .findFirst()
+                .orElse(null);
+    }
+
+    public IsbnNameDescription findISBNWithOtherFormatAs(String isbn) {
+        Stream<IsbnNameDescription> formatMappingStream = namesAndDescription.stream().filter(
+                x -> x.getOtherFormat1ISBN().equals(isbn) ||
+                x.getOtherFormat2ISBN().equals(isbn) ||
+                x.getOtherFormat3ISBN().equals(isbn));
+        return formatMappingStream.findFirst().orElse(null);
     }
 }

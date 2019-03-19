@@ -333,6 +333,7 @@ public class MediaItem {
     }
 
     boolean isReadingMp3() {
-        return getFilename().contains("_Reading.mp3");
+        //the “classId” in the media_item describes the file, for instance 100= “daily audio lesson”, 200=“audio reading lesson”
+        return getClassId().equals(200);
     }
 }

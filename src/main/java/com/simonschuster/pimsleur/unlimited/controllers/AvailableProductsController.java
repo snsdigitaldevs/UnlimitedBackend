@@ -1,6 +1,7 @@
 package com.simonschuster.pimsleur.unlimited.controllers;
 
 import com.simonschuster.pimsleur.unlimited.data.dto.availableProducts.AvailableProductsDto;
+import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.AvailableProductDto;
 import com.simonschuster.pimsleur.unlimited.data.dto.promotions.IsbnNameDescription;
 import com.simonschuster.pimsleur.unlimited.services.availableProducts.AvailableProductsService;
 import com.simonschuster.pimsleur.unlimited.services.promotions.IsbnNameDescriptionService;
@@ -32,8 +33,19 @@ public class AvailableProductsController {
             if(withOtherFormatAs != null){
                 item.setProductCode(withOtherFormatAs.getISBN());
             }
+            updateCourseName(item);
+        });
+        availableProducts.getFreeProducts().forEach(item -> {
+            updateCourseName(item);
         });
         return availableProducts;
+    }
+
+    private void updateCourseName(AvailableProductDto item) {
+        IsbnNameDescription formatMappingFor = isbnNameDescriptionService.findFormatMappingFor(item.getProductCode());
+        if (formatMappingFor != null) {
+            item.setCourseName(formatMappingFor.getInAppDisplayName());
+        }
     }
 
 }

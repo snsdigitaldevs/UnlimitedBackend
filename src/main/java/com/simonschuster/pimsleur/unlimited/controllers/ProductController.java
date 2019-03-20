@@ -5,13 +5,13 @@ import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.IntentionToBuy
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.VerifyReceiptBody;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.VerifyReceiptDTO;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
-import com.simonschuster.pimsleur.unlimited.data.dto.promotions.IsbnNameDescription;
+import com.simonschuster.pimsleur.unlimited.data.dto.promotions.FormatMapping;
 import com.simonschuster.pimsleur.unlimited.services.course.PUCourseInfoService;
 import com.simonschuster.pimsleur.unlimited.services.course.PcmCourseInfoService;
 import com.simonschuster.pimsleur.unlimited.services.course.PcmFreeCourseService;
 import com.simonschuster.pimsleur.unlimited.services.customer.IntentionToBuyService;
 import com.simonschuster.pimsleur.unlimited.services.customer.VerifyReceiptService;
-import com.simonschuster.pimsleur.unlimited.services.promotions.IsbnNameDescriptionService;
+import com.simonschuster.pimsleur.unlimited.services.promotions.FormatMappingService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -39,7 +39,7 @@ public class ProductController {
     private VerifyReceiptService verifyReceiptService;
 
     @Autowired
-    private IsbnNameDescriptionService isbnNameDescriptionService;
+    private FormatMappingService formatMappingService;
 
     @ApiOperation(value = "Get product info by ISBN. Product info includes audio links, images, culture contents, etc.")
     @RequestMapping(value = "/productInfo", method = RequestMethod.GET)
@@ -56,10 +56,10 @@ public class ProductController {
                 // remove duplicate by isbn, sometimes there could be same isbn show up more than once
                 // because user could have bought a product and a subscription that covers this product
                 .map(item -> {
-                    IsbnNameDescription formatMappingFor = isbnNameDescriptionService.findFormatMappingFor(item.getProductCode());
+                    FormatMapping formatMappingFor = formatMappingService.findFormatMappingFor(item.getProductCode());
                     if (formatMappingFor != null) {
-                        item.setCourseName(formatMappingFor.getInAppDisplayName());
-                        item.setSimpleCourseName(formatMappingFor.getLearnPageCourseName());
+                        item.setCourseName(formatMappingFor.getCourseName());
+                        item.setSimpleCourseName(formatMappingFor.getSimpleCourseName());
                     }
                     return item;
                 })

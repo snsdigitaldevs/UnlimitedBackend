@@ -1,6 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.services.promotions;
 
-import com.simonschuster.pimsleur.unlimited.data.dto.promotions.IsbnNameDescription;
+import com.simonschuster.pimsleur.unlimited.data.dto.promotions.FormatMapping;
 import com.simonschuster.pimsleur.unlimited.data.dto.promotions.PurchaseMapping;
 import com.simonschuster.pimsleur.unlimited.data.dto.promotions.UpsellDto;
 import com.simonschuster.pimsleur.unlimited.services.customer.EDTCustomerInfoService;
@@ -21,7 +21,7 @@ public class UpsellService {
     @Autowired
     private BundleIsbnService bundleIsbnService;
     @Autowired
-    private IsbnNameDescriptionService isbnNameDescriptionService;
+    private FormatMappingService formatMappingService;
 
     @Autowired
     private EDTCustomerInfoService customerInfoService;
@@ -44,10 +44,10 @@ public class UpsellService {
             boolean upgradeBought = isBought(boughtIsbns, purchaseMapping.getUpgradeInAppPurchaseISBN());
 
             upsellDto = purchaseMapping.toUpsellDto(upsellBought, subBought, upgradeBought);
-            UpsellDto finalUpsellDto = isbnNameDescriptionService.updateNameDescription(upsellDto);
+            UpsellDto finalUpsellDto = formatMappingService.updateNameDescription(upsellDto);
 
             // find the item whose 'Other format ISBN' equals upsell ISBN
-            IsbnNameDescription withOtherFormatAs = isbnNameDescriptionService.findISBNWithOtherFormatAs(
+            FormatMapping withOtherFormatAs = formatMappingService.findISBNWithOtherFormatAs(
                     purchaseMapping.getUpsellInAppPurchaseISBN());
             if(withOtherFormatAs != null && finalUpsellDto.getNextLevel() != null){
                 finalUpsellDto.getNextLevel().setBaseISBN(withOtherFormatAs.getISBN());

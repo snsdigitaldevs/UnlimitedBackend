@@ -20,18 +20,18 @@ import static java.util.stream.Collectors.toList;
         "Other format 2 (Upgrade) ISBN",
         "Other format 3 (DVD) ISBN"
 })
-public class IsbnNameDescription {
+public class FormatMapping {
 
     @JsonProperty("Base Course Type")
     private String baseCourseType;
     @JsonProperty("ISBN")
     private String iSBN;
     @JsonProperty("Course name - Upsell Card & Library")
-    private String inAppDisplayName;
+    private String courseName;
     @JsonProperty("Course name - Learn Page")
-    private String learnPageCourseName;
+    private String simpleCourseName;
     @JsonProperty("Course Description - Upsell Card")
-    private String inAppDescription;
+    private String courseDescription;
     @JsonProperty("Other format 1 (Upsell) ISBN")
     private String otherFormat1ISBN;
     @JsonProperty("Other format 2 (Upgrade) ISBN")
@@ -44,16 +44,16 @@ public class IsbnNameDescription {
         return iSBN;
     }
 
-    public String getInAppDisplayName() {
-        return inAppDisplayName;
+    public String getCourseName() {
+        return courseName;
     }
 
-    public String getInAppDescription() {
-        return inAppDescription;
+    public String getCourseDescription() {
+        return courseDescription;
     }
 
-    public String getLearnPageCourseName() {
-        return learnPageCourseName;
+    public String getSimpleCourseName() {
+        return simpleCourseName;
     }
 
     public String getOtherFormat1ISBN() {

@@ -3,7 +3,7 @@ package com.simonschuster.pimsleur.unlimited.services.promotions;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.simonschuster.pimsleur.unlimited.UnlimitedApplication;
-import com.simonschuster.pimsleur.unlimited.data.dto.promotions.IsbnNameDescription;
+import com.simonschuster.pimsleur.unlimited.data.dto.promotions.FormatMapping;
 import com.simonschuster.pimsleur.unlimited.data.dto.promotions.UpsellDto;
 import com.simonschuster.pimsleur.unlimited.data.dto.promotions.UpsellItem;
 import org.springframework.stereotype.Service;
@@ -16,14 +16,14 @@ import java.util.stream.Stream;
 import static java.util.stream.Stream.of;
 
 @Service
-public class IsbnNameDescriptionService {
+public class FormatMappingService {
 
-    private static List<IsbnNameDescription> namesAndDescription;
+    private static List<FormatMapping> formatMappings;
 
     static {
         try {
             //only do this once per runtime
-            namesAndDescription = readJsonFile();
+            formatMappings = readJsonFile();
         } catch (IOException ignored) {
         }
     }
@@ -36,32 +36,32 @@ public class IsbnNameDescriptionService {
 
     private void updateNameDescriptionForUpsellItem(UpsellItem upsellItem) {
         if (upsellItem != null) {
-            IsbnNameDescription find = findFormatMappingFor(upsellItem.getIsbn());
+            FormatMapping find = findFormatMappingFor(upsellItem.getIsbn());
             if(find != null){
-                upsellItem.setName(find.getInAppDisplayName());
-                upsellItem.setDescription(find.getInAppDescription());
+                upsellItem.setName(find.getCourseName());
+                upsellItem.setDescription(find.getCourseDescription());
             }
         }
     }
 
-    private static List<IsbnNameDescription> readJsonFile() throws IOException {
+    private static List<FormatMapping> readJsonFile() throws IOException {
         InputStream fileStream = UnlimitedApplication.class.getClassLoader()
                 .getResourceAsStream("isbn-mapping/format-mapping.json");
 
         ObjectMapper objectMapper = new ObjectMapper();
-        return objectMapper.readValue(fileStream, new TypeReference<List<IsbnNameDescription>>() {
+        return objectMapper.readValue(fileStream, new TypeReference<List<FormatMapping>>() {
         });
     }
 
-    public IsbnNameDescription findFormatMappingFor(String isbn) {
-        return namesAndDescription.stream()
+    public FormatMapping findFormatMappingFor(String isbn) {
+        return formatMappings.stream()
                 .filter(x -> x.matches(isbn))
                 .findFirst()
                 .orElse(null);
     }
 
-    public IsbnNameDescription findISBNWithOtherFormatAs(String isbn) {
-        Stream<IsbnNameDescription> formatMappingStream = namesAndDescription.stream().filter(
+    public FormatMapping findISBNWithOtherFormatAs(String isbn) {
+        Stream<FormatMapping> formatMappingStream = formatMappings.stream().filter(
                 x -> x.getOtherFormat1ISBN().equals(isbn) ||
                 x.getOtherFormat2ISBN().equals(isbn) ||
                 x.getOtherFormat3ISBN().equals(isbn));

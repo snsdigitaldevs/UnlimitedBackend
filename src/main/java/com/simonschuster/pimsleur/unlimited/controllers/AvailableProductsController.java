@@ -2,9 +2,9 @@ package com.simonschuster.pimsleur.unlimited.controllers;
 
 import com.simonschuster.pimsleur.unlimited.data.dto.availableProducts.AvailableProductsDto;
 import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.AvailableProductDto;
-import com.simonschuster.pimsleur.unlimited.data.dto.promotions.IsbnNameDescription;
+import com.simonschuster.pimsleur.unlimited.data.dto.promotions.FormatMapping;
 import com.simonschuster.pimsleur.unlimited.services.availableProducts.AvailableProductsService;
-import com.simonschuster.pimsleur.unlimited.services.promotions.IsbnNameDescriptionService;
+import com.simonschuster.pimsleur.unlimited.services.promotions.FormatMappingService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,7 +19,7 @@ public class AvailableProductsController {
     private AvailableProductsService availableProductsService;
 
     @Autowired
-    private IsbnNameDescriptionService isbnNameDescriptionService;
+    private FormatMappingService formatMappingService;
 
     @ApiOperation(value = "All products a customer can choose to learn(includes purchased and free)")
     @RequestMapping(value = "/availableProducts", method = RequestMethod.GET)
@@ -29,7 +29,7 @@ public class AvailableProductsController {
         AvailableProductsDto availableProducts = availableProductsService.getAvailableProducts(sub, email, storeDomain);
         availableProducts.getPurchasedProducts().forEach(item -> {
             String productCode = item.getProductCode();
-            IsbnNameDescription withOtherFormatAs = isbnNameDescriptionService.findISBNWithOtherFormatAs(productCode);
+            FormatMapping withOtherFormatAs = formatMappingService.findISBNWithOtherFormatAs(productCode);
             if(withOtherFormatAs != null){
                 item.setProductCode(withOtherFormatAs.getISBN());
             }
@@ -42,9 +42,9 @@ public class AvailableProductsController {
     }
 
     private void updateCourseName(AvailableProductDto item) {
-        IsbnNameDescription formatMappingFor = isbnNameDescriptionService.findFormatMappingFor(item.getProductCode());
+        FormatMapping formatMappingFor = formatMappingService.findFormatMappingFor(item.getProductCode());
         if (formatMappingFor != null) {
-            item.setCourseName(formatMappingFor.getInAppDisplayName());
+            item.setCourseName(formatMappingFor.getCourseName());
         }
     }
 

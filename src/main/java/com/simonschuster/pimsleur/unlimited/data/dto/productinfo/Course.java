@@ -11,6 +11,7 @@ import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_EMPTY;
 public class Course {
     private String languageName;
     private Integer level;
+    private String simpleCourseName;
     private List<Lesson> lessons;
     private String productCode;
     private String courseName;
@@ -85,5 +86,13 @@ public class Course {
     public AvailableProductDto toPuAvailableProductDto() {
         return new AvailableProductDto(getLanguageName(), getLanguageName(), getCourseName(),
                 getProductCode(), true, getLevel());
+    }
+
+    public String getSimpleCourseName() {
+        return simpleCourseName;
+    }
+
+    public void setSimpleCourseName(String simpleCourseName) {
+        this.simpleCourseName = simpleCourseName;
     }
 }

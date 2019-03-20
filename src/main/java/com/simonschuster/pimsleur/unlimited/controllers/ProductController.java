@@ -59,6 +59,7 @@ public class ProductController {
                     IsbnNameDescription formatMappingFor = isbnNameDescriptionService.findFormatMappingFor(item.getProductCode());
                     if (formatMappingFor != null) {
                         item.setCourseName(formatMappingFor.getInAppDisplayName());
+                        item.setSimpleCourseName(formatMappingFor.getLearnPageCourseName());
                     }
                     return item;
                 })

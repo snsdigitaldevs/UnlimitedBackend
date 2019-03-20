@@ -56,10 +56,6 @@ public class IsbnNameDescription {
         return learnPageCourseName;
     }
 
-    public void setLearnPageCourseName(String learnPageCourseName) {
-        this.learnPageCourseName = learnPageCourseName;
-    }
-
     public String getOtherFormat1ISBN() {
         return otherFormat1ISBN;
     }

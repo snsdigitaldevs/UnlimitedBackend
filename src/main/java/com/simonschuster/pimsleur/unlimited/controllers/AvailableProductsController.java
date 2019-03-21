@@ -35,9 +35,7 @@ public class AvailableProductsController {
             }
             updateCourseName(item);
         });
-        availableProducts.getFreeProducts().forEach(item -> {
-            updateCourseName(item);
-        });
+        availableProducts.getFreeProducts().forEach(item -> updateCourseName(item));
         return availableProducts;
     }
 

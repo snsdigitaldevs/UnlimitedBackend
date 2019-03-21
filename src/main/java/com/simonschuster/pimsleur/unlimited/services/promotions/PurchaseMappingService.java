@@ -9,9 +9,6 @@ import org.springframework.stereotype.Service;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
-import java.util.stream.Stream;
-
-import static java.util.Collections.singletonList;
 
 @Service
 public class PurchaseMappingService {
@@ -35,7 +32,7 @@ public class PurchaseMappingService {
 
     private static List<PurchaseMapping> readJsonFile() throws IOException {
         InputStream fileStream = UnlimitedApplication.class.getClassLoader()
-                .getResourceAsStream("isbn-mapping/upsell-mapping.json");
+                .getResourceAsStream("isbn-mapping/purchase-mapping.json");
 
         ObjectMapper objectMapper = new ObjectMapper();
         return objectMapper.readValue(fileStream, new TypeReference<List<PurchaseMapping>>() {

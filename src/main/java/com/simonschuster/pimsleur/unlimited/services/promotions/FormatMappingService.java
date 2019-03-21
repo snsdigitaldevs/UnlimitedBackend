@@ -13,6 +13,7 @@ import java.io.InputStream;
 import java.util.List;
 import java.util.stream.Stream;
 
+import static java.util.Collections.singletonList;
 import static java.util.stream.Stream.of;
 
 @Service
@@ -51,6 +52,15 @@ public class FormatMappingService {
         ObjectMapper objectMapper = new ObjectMapper();
         return objectMapper.readValue(fileStream, new TypeReference<List<FormatMapping>>() {
         });
+    }
+
+    public List<String> getAllFormatsOf(String isbn) {
+        FormatMapping mapping = findFormatMappingFor(isbn);
+        if (mapping == null) {
+            return singletonList(isbn);
+        } else {
+            return mapping.getAllFormats();
+        }
     }
 
     public FormatMapping findFormatMappingFor(String isbn) {

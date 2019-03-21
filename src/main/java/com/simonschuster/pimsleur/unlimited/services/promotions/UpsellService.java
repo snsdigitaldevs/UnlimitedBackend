@@ -27,7 +27,6 @@ public class UpsellService {
     private EDTCustomerInfoService customerInfoService;
 
     public UpsellDto getUpsellInfoFor(String isbn, String sub, String email, String storeDomain) {
-
         PurchaseMapping purchaseMapping = purchaseMappingService.findPurchaseMappingFor(isbn);
 
         UpsellDto upsellDto = new UpsellDto();
@@ -57,23 +56,18 @@ public class UpsellService {
     }
 
     private boolean isBought(List<String> boughtIsbns, String isbn) {
-        List<String> allFormatsOfIsbn = purchaseMappingService.getAllFormatsOf(isbn);
-
+        List<String> allFormatsOfIsbn = formatMappingService.getAllFormatsOf(isbn);
         boolean isIsbnBought = boughtIsbns.stream().anyMatch(allFormatsOfIsbn::contains);
         boolean isBundleBought = isBundleBought(boughtIsbns, allFormatsOfIsbn);
-
         return isIsbnBought || isBundleBought;
-
     }
 
     private boolean isBundleBought(List<String> boughtIsbns, List<String> allFormatsOfIsbn) {
         List<String> bundles = allFormatsOfIsbn.stream()
                 .flatMap(oneFormat -> bundleIsbnService.getBundleIsbnsOf(oneFormat).stream())
                 .distinct()
-                .flatMap(bundle -> purchaseMappingService.getAllFormatsOf(bundle).stream())
+                .flatMap(bundle -> formatMappingService.getAllFormatsOf(bundle).stream())
                 .collect(toList());
-
         return boughtIsbns.stream().anyMatch(bundles::contains);
     }
-
 }

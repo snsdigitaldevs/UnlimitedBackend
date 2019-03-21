@@ -33,15 +33,6 @@ public class PurchaseMappingService {
                 .orElse(null);
     }
 
-    public List<String> getAllFormatsOf(String isbn) {
-        PurchaseMapping mapping = findPurchaseMappingFor(isbn);
-        if (mapping == null) {
-            return singletonList(isbn);
-        } else {
-            return mapping.getAllFormats();
-        }
-    }
-
     private static List<PurchaseMapping> readJsonFile() throws IOException {
         InputStream fileStream = UnlimitedApplication.class.getClassLoader()
                 .getResourceAsStream("isbn-mapping/upsell-mapping.json");

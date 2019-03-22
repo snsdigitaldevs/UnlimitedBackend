@@ -1,11 +1,31 @@
 [
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442332782,
+    "Course name - Upsell Card & Library": "Albanian",
+    "Course name - Learn Page": "Albanian Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442332904,
     "Course name - Upsell Card & Library": "Albanian Level 1",
     "Course name - Learn Page": "Albanian Level 1",
     "Course Description - Upsell Card": "The complete level of 10 lessons",
     "Other format 1 (Upsell) ISBN": 9781508273639,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442332799,
+    "Course name - Upsell Card & Library": "Albanian Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Albanian Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -20,12 +40,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442306127,
+    "Course name - Upsell Card & Library": "Arabic (Eastern)",
+    "Course name - Learn Page": "Arabic (Eastern) Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442306554,
     "Course name - Upsell Card & Library": "Arabic (Eastern) Level 1",
     "Course name - Learn Page": "Arabic (Eastern) Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508273707,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442306110,
+    "Course name - Upsell Card & Library": "Arabic (Eastern) Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Arabic (Eastern) Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -240,12 +280,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442316928,
+    "Course name - Upsell Card & Library": "Arabic (Egyptian)",
+    "Course name - Learn Page": "Arabic (Egyptian) Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442317284,
     "Course name - Upsell Card & Library": "Arabic (Egyptian) Level 1",
     "Course name - Learn Page": "Arabic (Egyptian) Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508273738,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442316935,
+    "Course name - Upsell Card & Library": "Arabic (Egyptian) Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Arabic (Egyptian) Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -300,12 +360,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442359987,
+    "Course name - Upsell Card & Library": "Arabic (Modern Standard)",
+    "Course name - Learn Page": "Arabic (Modern Standard) Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442360341,
     "Course name - Upsell Card & Library": "Arabic (Modern Standard) Level 1",
     "Course name - Learn Page": "Arabic (Modern Standard) Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508273745,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442360037,
+    "Course name - Upsell Card & Library": "Arabic (Modern Standard) Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Arabic (Modern Standard) Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -520,6 +600,16 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442332911,
+    "Course name - Upsell Card & Library": "Armenian (Eastern)",
+    "Course name - Learn Page": "Armenian (Eastern) Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442333031,
     "Course name - Upsell Card & Library": "Armenian (Eastern) Level 1",
@@ -531,11 +621,31 @@
   },
   {
     "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442332928,
+    "Course name - Upsell Card & Library": "Armenian (Eastern) Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Armenian (Eastern) Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
     "ISBN": 9781442332980,
     "Course name - Upsell Card & Library": "Armenian (Eastern) Level 1 Lessons 6-10",
     "Course name - Learn Page": "Armenian (Eastern) Level 1",
     "Course Description - Upsell Card": "5 thirty-minute language lessons",
     "Other format 1 (Upsell) ISBN": 9781508269694,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442333048,
+    "Course name - Upsell Card & Library": "Armenian (Western)",
+    "Course name - Learn Page": "Armenian (Western) Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -551,11 +661,31 @@
   },
   {
     "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442333055,
+    "Course name - Upsell Card & Library": "Armenian (Western) Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Armenian (Western) Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
     "ISBN": 9781442333116,
     "Course name - Upsell Card & Library": "Armenian (Western) Level 1 Lessons 6-10",
     "Course name - Learn Page": "Armenian (Western) Level 1",
     "Course Description - Upsell Card": "5 thirty-minute language lessons",
     "Other format 1 (Upsell) ISBN": 9781508269700,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442317291,
+    "Course name - Upsell Card & Library": "Chinese (Cantonese)",
+    "Course name - Learn Page": "Chinese (Cantonese) Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -566,6 +696,16 @@
     "Course name - Learn Page": "Chinese (Cantonese) Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508273776,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442317307,
+    "Course name - Upsell Card & Library": "Chinese (Cantonese) Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Chinese (Cantonese) Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -620,12 +760,42 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442314474,
+    "Course name - Upsell Card & Library": "Chinese (Mandarin)",
+    "Course name - Learn Page": "Chinese (Mandarin) Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Prem free lesson",
+    "ISBN": 9781508243328,
+    "Course name - Upsell Card & Library": "Chinese (Mandarin)",
+    "Course name - Learn Page": "Chinese (Mandarin) Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442316034,
     "Course name - Upsell Card & Library": "Chinese (Mandarin) Level 1",
     "Course name - Learn Page": "Chinese (Mandarin) Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508273783,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442314481,
+    "Course name - Upsell Card & Library": "Chinese (Mandarin) Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Chinese (Mandarin) Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -940,12 +1110,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442317666,
+    "Course name - Upsell Card & Library": "Croatian",
+    "Course name - Learn Page": "Croatian Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442318021,
     "Course name - Upsell Card & Library": "Croatian Level 1",
     "Course name - Learn Page": "Croatian Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508274551,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442317673,
+    "Course name - Upsell Card & Library": "Croatian Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Croatian Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -1000,12 +1190,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442318038,
+    "Course name - Upsell Card & Library": "Czech",
+    "Course name - Learn Page": "Czech Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442318397,
     "Course name - Upsell Card & Library": "Czech Level 1",
     "Course name - Learn Page": "Czech Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508274568,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442318045,
+    "Course name - Upsell Card & Library": "Czech Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Czech Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -1060,12 +1270,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781508277279,
+    "Course name - Upsell Card & Library": "Danish",
+    "Course name - Learn Page": "Danish Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442388161,
     "Course name - Upsell Card & Library": "Danish Level 1",
     "Course name - Learn Page": "Danish Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508274575,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442389670,
+    "Course name - Upsell Card & Library": "Danish Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Danish Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -1120,12 +1350,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442318403,
+    "Course name - Upsell Card & Library": "Dari Persian",
+    "Course name - Learn Page": "Dari Persian Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442318762,
     "Course name - Upsell Card & Library": "Dari Persian Level 1",
     "Course name - Learn Page": "Dari Persian Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508274582,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442318410,
+    "Course name - Upsell Card & Library": "Dari Persian Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Dari Persian Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -1270,12 +1520,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442318779,
+    "Course name - Upsell Card & Library": "Dutch",
+    "Course name - Learn Page": "Dutch Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442319134,
     "Course name - Upsell Card & Library": "Dutch Level 1",
     "Course name - Learn Page": "Dutch Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508274605,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442318786,
+    "Course name - Upsell Card & Library": "Dutch Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Dutch Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -1330,12 +1600,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442324930,
+    "Course name - Upsell Card & Library": "English for Arabic Speakers",
+    "Course name - Learn Page": "English for Arabic Speakers Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442325296,
     "Course name - Upsell Card & Library": "English for Arabic Speakers Level 1",
     "Course name - Learn Page": "English for Arabic Speakers Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508274612,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442324947,
+    "Course name - Upsell Card & Library": "English for Arabic Speakers Level 1 Lessons 1-5",
+    "Course name - Learn Page": "English for Arabic Speakers Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -1390,12 +1680,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442325302,
+    "Course name - Upsell Card & Library": "English for Chinese (Cantonese) Speakers",
+    "Course name - Learn Page": "English for Chinese (Cantonese) Speakers Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442331921,
     "Course name - Upsell Card & Library": "English for Chinese (Cantonese) Speakers Level 1",
     "Course name - Learn Page": "English for Chinese (Cantonese) Speakers Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508274629,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442325319,
+    "Course name - Upsell Card & Library": "English for Chinese (Cantonese) Speakers Level 1 Lessons 1-5",
+    "Course name - Learn Page": "English for Chinese (Cantonese) Speakers Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -1450,12 +1760,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442331938,
+    "Course name - Upsell Card & Library": "English for Chinese (Mandarin) Speakers",
+    "Course name - Learn Page": "English for Chinese (Mandarin) Speakers Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442332294,
     "Course name - Upsell Card & Library": "English for Chinese (Mandarin) Speakers Level 1",
     "Course name - Learn Page": "English for Chinese (Mandarin) Speakers Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508274636,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442331945,
+    "Course name - Upsell Card & Library": "English for Chinese (Mandarin) Speakers Level 1 Lessons 1-5",
+    "Course name - Learn Page": "English for Chinese (Mandarin) Speakers Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -1510,12 +1840,42 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442327214,
+    "Course name - Upsell Card & Library": "English for Farsi Persian Speakers",
+    "Course name - Learn Page": "English for Farsi Persian Speakers Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442332300,
+    "Course name - Upsell Card & Library": "English for French Speakers",
+    "Course name - Learn Page": "English for French Speakers Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442332669,
     "Course name - Upsell Card & Library": "English for French Speakers Level 1",
     "Course name - Learn Page": "English for French Speakers Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508274643,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442332317,
+    "Course name - Upsell Card & Library": "English for French Speakers Level 1 Lessons 1-5",
+    "Course name - Learn Page": "English for French Speakers Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -1570,12 +1930,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442332676,
+    "Course name - Upsell Card & Library": "English for German Speakers",
+    "Course name - Learn Page": "English for German Speakers Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442325715,
     "Course name - Upsell Card & Library": "English for German Speakers Level 1",
     "Course name - Learn Page": "English for German Speakers Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508274650,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442332683,
+    "Course name - Upsell Card & Library": "English for German Speakers Level 1 Lessons 1-5",
+    "Course name - Learn Page": "English for German Speakers Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -1641,6 +2021,16 @@
   },
   {
     "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442325739,
+    "Course name - Upsell Card & Library": "English for Haitian Creole Speakers Level 1 Lessons 1-5",
+    "Course name - Learn Page": "English for Haitian Creole Speakers Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
     "ISBN": 9781442325852,
     "Course name - Upsell Card & Library": "English for Haitian Creole Speakers Level 1 Lessons 11-15",
     "Course name - Learn Page": "English for Haitian Creole Speakers Level 1",
@@ -1690,12 +2080,42 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442325722,
+    "Course name - Upsell Card & Library": "English for Haitian Speakers",
+    "Course name - Learn Page": "English for Haitian Creole Speakers Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442373266,
+    "Course name - Upsell Card & Library": "English for Hindi Speakers",
+    "Course name - Learn Page": "English for Hindi Speakers Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442373471,
     "Course name - Upsell Card & Library": "English for Hindi Speakers Level 1",
     "Course name - Learn Page": "English for Hindi Speakers Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508274674,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442373570,
+    "Course name - Upsell Card & Library": "English for Hindi Speakers Level 1 Lessons 1-5",
+    "Course name - Learn Page": "English for Hindi Speakers Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -1750,12 +2170,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442326095,
+    "Course name - Upsell Card & Library": "English for Italian Speakers",
+    "Course name - Learn Page": "English for Italian Speakers Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442326453,
     "Course name - Upsell Card & Library": "English for Italian Speakers Level 1",
     "Course name - Learn Page": "English for Italian Speakers Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508274681,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442326101,
+    "Course name - Upsell Card & Library": "English for Italian Speakers Level 1 Lessons 1-5",
+    "Course name - Learn Page": "English for Italian Speakers Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -1880,12 +2320,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442326842,
+    "Course name - Upsell Card & Library": "English for Korean Speakers",
+    "Course name - Learn Page": "English for Korean Speakers Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442327207,
     "Course name - Upsell Card & Library": "English for Korean Speakers Level 1",
     "Course name - Learn Page": "English for Korean Speakers Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508274704,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442326859,
+    "Course name - Upsell Card & Library": "English for Korean Speakers Level 1 Lessons 1-5",
+    "Course name - Learn Page": "English for Korean Speakers Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -1951,6 +2411,16 @@
   },
   {
     "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442327221,
+    "Course name - Upsell Card & Library": "English for Persian (Farsi) Speakers Level 1 Lessons 1-5",
+    "Course name - Learn Page": "English for Persian (Farsi) Speakers Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
     "ISBN": 9781442327344,
     "Course name - Upsell Card & Library": "English for Persian (Farsi) Speakers Level 1 Lessons 11-15",
     "Course name - Learn Page": "English for Persian (Farsi) Speakers Level 1",
@@ -2011,6 +2481,16 @@
   },
   {
     "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442327597,
+    "Course name - Upsell Card & Library": "English for Portuguese (Brazilian) Speakers Level 1 Lessons 1-5",
+    "Course name - Learn Page": "English for Portuguese (Brazilian) Speakers Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
     "ISBN": 9781442327719,
     "Course name - Upsell Card & Library": "English for Portuguese (Brazilian) Speakers Level 1 Lessons 11-15",
     "Course name - Learn Page": "English for Portuguese (Brazilian) Speakers Level 1",
@@ -2060,12 +2540,42 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442327580,
+    "Course name - Upsell Card & Library": "English for Portuguese Speakers",
+    "Course name - Learn Page": "English for Portuguese (Brazilian) Speakers Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442327955,
+    "Course name - Upsell Card & Library": "English for Russian Speakers",
+    "Course name - Learn Page": "English for Russian Speakers Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442328310,
     "Course name - Upsell Card & Library": "English for Russian Speakers Level 1",
     "Course name - Learn Page": "English for Russian Speakers Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508274735,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442327962,
+    "Course name - Upsell Card & Library": "English for Russian Speakers Level 1 Lessons 1-5",
+    "Course name - Learn Page": "English for Russian Speakers Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -2123,7 +2633,7 @@
     "Base Course Type": "Prem Level 1",
     "ISBN": 9781508235927,
     "Course name - Upsell Card & Library": "English for Spanish Level 1 Premium",
-    "Course name - Learn Page": "English for Spanish Level 1",
+    "Course name - Learn Page": "English for Spanish Speakers Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons and access to all premium features",
     "Other format 1 (Upsell) ISBN": 9781508275619,
     "Other format 2 (Upgrade) ISBN": 9781508275718,
@@ -2133,7 +2643,7 @@
     "Base Course Type": "Prem Level 2",
     "ISBN": 9781508235934,
     "Course name - Upsell Card & Library": "English for Spanish Level 2 Premium",
-    "Course name - Learn Page": "English for Spanish Level 2",
+    "Course name - Learn Page": "English for Spanish Speakers Level 2",
     "Course Description - Upsell Card": "The complete level of 30 lessons and access to all premium features",
     "Other format 1 (Upsell) ISBN": 9781508275626,
     "Other format 2 (Upgrade) ISBN": 9781508275725,
@@ -2143,10 +2653,30 @@
     "Base Course Type": "Prem Level 3",
     "ISBN": 9781508235941,
     "Course name - Upsell Card & Library": "English for Spanish Level 3 Premium",
-    "Course name - Learn Page": "English for Spanish Level 3",
+    "Course name - Learn Page": "English for Spanish Speakers Level 3",
     "Course Description - Upsell Card": "The complete level of 30 lessons and access to all premium features",
     "Other format 1 (Upsell) ISBN": 9781508275251,
     "Other format 2 (Upgrade) ISBN": 9781508275732,
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442328327,
+    "Course name - Upsell Card & Library": "English for Spanish Speakers",
+    "Course name - Learn Page": "English for Spanish Speakers Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Prem free lesson",
+    "ISBN": 9781508243359,
+    "Course name - Upsell Card & Library": "English for Spanish Speakers",
+    "Course name - Learn Page": "English for Spanish Speakers Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
   {
@@ -2156,6 +2686,16 @@
     "Course name - Learn Page": "English for Spanish Speakers Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508274742,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442328334,
+    "Course name - Upsell Card & Library": "English for Spanish Speakers Level 1 Lessons 1-5",
+    "Course name - Learn Page": "English for Spanish Speakers Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -2400,12 +2940,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442329447,
+    "Course name - Upsell Card & Library": "English for Vietnamese Speakers",
+    "Course name - Learn Page": "English for Vietnamese Speakers Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442329805,
     "Course name - Upsell Card & Library": "English for Vietnamese Speakers Level 1",
     "Course name - Learn Page": "English for Vietnamese Speakers Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508274773,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442329454,
+    "Course name - Upsell Card & Library": "English for Vietnamese Speakers Level 1 Lessons 1-5",
+    "Course name - Learn Page": "English for Vietnamese Speakers Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -2460,12 +3020,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442319141,
+    "Course name - Upsell Card & Library": "Farsi Persian",
+    "Course name - Learn Page": "Farsi Persian Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442319509,
     "Course name - Upsell Card & Library": "Farsi Persian Level 1",
     "Course name - Learn Page": "Farsi Persian Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508274780,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442319158,
+    "Course name - Upsell Card & Library": "Farsi Persian Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Farsi Persian Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -2610,12 +3190,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442357952,
+    "Course name - Upsell Card & Library": "Finnish",
+    "Course name - Learn Page": "Finnish Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442358416,
     "Course name - Upsell Card & Library": "Finnish Level 1",
     "Course name - Learn Page": "Finnish Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508274803,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442358355,
+    "Course name - Upsell Card & Library": "Finnish Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Finnish Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -2670,6 +3270,46 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442307315,
+    "Course name - Upsell Card & Library": "French",
+    "Course name - Learn Page": "French Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781508279686,
+    "Course name - Upsell Card & Library": "French",
+    "Course name - Learn Page": "French Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Prem free lesson",
+    "ISBN": 9781508243281,
+    "Course name - Upsell Card & Library": "French",
+    "Course name - Learn Page": "French Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Prem free lesson",
+    "ISBN": 9781508279709,
+    "Course name - Upsell Card & Library": "French",
+    "Course name - Learn Page": "French Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781508255475,
     "Course name - Upsell Card & Library": "French Level 1",
@@ -2691,11 +3331,31 @@
   },
   {
     "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781508255482,
+    "Course name - Upsell Card & Library": "French Level 1 Lessons  1-5",
+    "Course name - Learn Page": "French Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
     "ISBN": 9781508255499,
     "Course name - Upsell Card & Library": "French Level 1 Lessons  6-10",
     "Course name - Learn Page": "French Level 1",
     "Course Description - Upsell Card": "5 thirty-minute language lessons",
     "Other format 1 (Upsell) ISBN": 9781508279891,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442307322,
+    "Course name - Upsell Card & Library": "French Level 1 Lessons 1-5",
+    "Course name - Learn Page": "French Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -3230,12 +3890,42 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442308565,
+    "Course name - Upsell Card & Library": "German",
+    "Course name - Learn Page": "German Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Prem free lesson",
+    "ISBN": 9781508243298,
+    "Course name - Upsell Card & Library": "German",
+    "Course name - Learn Page": "German Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442308923,
     "Course name - Upsell Card & Library": "German Level 1",
     "Course name - Learn Page": "German Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508274865,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442308572,
+    "Course name - Upsell Card & Library": "German Level 1 Lessons 1-5",
+    "Course name - Learn Page": "German Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -3560,12 +4250,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442333925,
+    "Course name - Upsell Card & Library": "Greek (Modern)",
+    "Course name - Learn Page": "Greek (Modern) Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442319875,
     "Course name - Upsell Card & Library": "Greek (Modern) Level 1",
     "Course name - Learn Page": "Greek (Modern) Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508274919,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442319523,
+    "Course name - Upsell Card & Library": "Greek (Modern) Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Greek (Modern) Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -3710,12 +4420,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442333307,
+    "Course name - Upsell Card & Library": "Haitian Creole",
+    "Course name - Learn Page": "Haitian Creole Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442336865,
     "Course name - Upsell Card & Library": "Haitian Creole Level 1",
     "Course name - Learn Page": "Haitian Creole Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508274933,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442336803,
+    "Course name - Upsell Card & Library": "Haitian Creole Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Haitian Creole Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -3770,12 +4500,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442320260,
+    "Course name - Upsell Card & Library": "Hebrew",
+    "Course name - Learn Page": "Hebrew Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442330436,
     "Course name - Upsell Card & Library": "Hebrew Level 1",
     "Course name - Learn Page": "Hebrew Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508274940,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442320277,
+    "Course name - Upsell Card & Library": "Hebrew Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Hebrew Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -3990,12 +4740,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442331198,
+    "Course name - Upsell Card & Library": "Hindi",
+    "Course name - Learn Page": "Hindi Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442331556,
     "Course name - Upsell Card & Library": "Hindi Level 1",
     "Course name - Learn Page": "Hindi Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508274971,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442331204,
+    "Course name - Upsell Card & Library": "Hindi Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Hindi Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -4140,12 +4910,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442331662,
+    "Course name - Upsell Card & Library": "Hungarian",
+    "Course name - Learn Page": "Hungarian Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442320840,
     "Course name - Upsell Card & Library": "Hungarian Level 1",
     "Course name - Learn Page": "Hungarian Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508274995,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442331563,
+    "Course name - Upsell Card & Library": "Hungarian Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Hungarian Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -4200,12 +4990,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781508277262,
+    "Course name - Upsell Card & Library": "Icelandic",
+    "Course name - Learn Page": "Icelandic Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442397002,
     "Course name - Upsell Card & Library": "Icelandic Level 1",
     "Course name - Learn Page": "Icelandic Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508275008,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442397019,
+    "Course name - Upsell Card & Library": "Icelandic Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Icelandic Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -4260,12 +5070,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442339118,
+    "Course name - Upsell Card & Library": "Indonesian",
+    "Course name - Learn Page": "Indonesian Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442339477,
     "Course name - Upsell Card & Library": "Indonesian Level 1",
     "Course name - Learn Page": "Indonesian Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508275015,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442339415,
+    "Course name - Upsell Card & Library": "Indonesian Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Indonesian Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -4320,12 +5150,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442333567,
+    "Course name - Upsell Card & Library": "Irish",
+    "Course name - Learn Page": "Irish Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442333680,
     "Course name - Upsell Card & Library": "Irish Level 1",
     "Course name - Learn Page": "Irish Level 1",
     "Course Description - Upsell Card": "The complete level of 10 lessons",
     "Other format 1 (Upsell) ISBN": 9781508273660,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442333574,
+    "Course name - Upsell Card & Library": "Irish Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Irish Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -4340,12 +5190,42 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442309814,
+    "Course name - Upsell Card & Library": "Italian",
+    "Course name - Learn Page": "Italian Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Prem free lesson",
+    "ISBN": 9781508243304,
+    "Course name - Upsell Card & Library": "Italian",
+    "Course name - Learn Page": "Italian Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442314931,
     "Course name - Upsell Card & Library": "Italian Level 1",
     "Course name - Learn Page": "Italian Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508275022,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442309821,
+    "Course name - Upsell Card & Library": "Italian Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Italian Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -4660,12 +5540,42 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442309869,
+    "Course name - Upsell Card & Library": "Japanese",
+    "Course name - Learn Page": "Japanese Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Prem free lesson",
+    "ISBN": 9781508243311,
+    "Course name - Upsell Card & Library": "Japanese",
+    "Course name - Learn Page": "Japanese Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442310223,
     "Course name - Upsell Card & Library": "Japanese Level 1",
     "Course name - Learn Page": "Japanese Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508275077,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442309876,
+    "Course name - Upsell Card & Library": "Japanese Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Japanese Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -4970,12 +5880,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781508277286,
+    "Course name - Upsell Card & Library": "Korean",
+    "Course name - Learn Page": "Korean Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781508217916,
     "Course name - Upsell Card & Library": "Korean Level 1",
     "Course name - Learn Page": "Korean Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508275121,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781508217961,
+    "Course name - Upsell Card & Library": "Korean Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Korean Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -5120,12 +6050,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442333697,
+    "Course name - Upsell Card & Library": "Lithuanian",
+    "Course name - Learn Page": "Lithuanian Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442333819,
     "Course name - Upsell Card & Library": "Lithuanian Level 1",
     "Course name - Learn Page": "Lithuanian Level 1",
     "Course Description - Upsell Card": "The complete level of 10 lessons",
     "Other format 1 (Upsell) ISBN": 9781508273677,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442333703,
+    "Course name - Upsell Card & Library": "Lithuanian Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Lithuanian Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -5140,12 +6090,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442321601,
+    "Course name - Upsell Card & Library": "Norwegian",
+    "Course name - Learn Page": "Norwegian Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442321960,
     "Course name - Upsell Card & Library": "Norwegian Level 1",
     "Course name - Learn Page": "Norwegian Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508275145,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442321618,
+    "Course name - Upsell Card & Library": "Norwegian Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Norwegian Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -5290,12 +6260,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442321977,
+    "Course name - Upsell Card & Library": "Ojibwe",
+    "Course name - Learn Page": "Ojibwe Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442322332,
     "Course name - Upsell Card & Library": "Ojibwe Level 1",
     "Course name - Learn Page": "Ojibwe Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508271949,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442321984,
+    "Course name - Upsell Card & Library": "Ojibwe Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Ojibwe Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -5350,12 +6340,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442303140,
+    "Course name - Upsell Card & Library": "Pashto",
+    "Course name - Learn Page": "Pashto Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442338531,
     "Course name - Upsell Card & Library": "Pashto Level 1",
     "Course name - Learn Page": "Pashto Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508271956,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442338470,
+    "Course name - Upsell Card & Library": "Pashto Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Pashto Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -5500,12 +6510,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442322349,
+    "Course name - Upsell Card & Library": "Polish",
+    "Course name - Learn Page": "Polish Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442322707,
     "Course name - Upsell Card & Library": "Polish Level 1",
     "Course name - Learn Page": "Polish Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508271970,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442322356,
+    "Course name - Upsell Card & Library": "Polish Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Polish Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -5560,12 +6590,42 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442373747,
+    "Course name - Upsell Card & Library": "Portuguese (Brazilian)",
+    "Course name - Learn Page": "Portuguese (Brazilian) Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Prem free lesson",
+    "ISBN": 9781508243342,
+    "Course name - Upsell Card & Library": "Portuguese (Brazilian)",
+    "Course name - Learn Page": "Portuguese (Brazilian) Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442374140,
     "Course name - Upsell Card & Library": "Portuguese (Brazilian) Level 1",
     "Course name - Learn Page": "Portuguese (Brazilian) Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508271987,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442374089,
+    "Course name - Upsell Card & Library": "Portuguese (Brazilian) Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Portuguese (Brazilian) Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -5890,12 +6950,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781508277293,
+    "Course name - Upsell Card & Library": "Portuguese (European)",
+    "Course name - Learn Page": "Portuguese (European) Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442395411,
     "Course name - Upsell Card & Library": "Portuguese (European) Level 1",
     "Course name - Learn Page": "Portuguese (European) Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508272021,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442395428,
+    "Course name - Upsell Card & Library": "Portuguese (European) Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Portuguese (European) Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -5950,12 +7030,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442356641,
+    "Course name - Upsell Card & Library": "Punjabi",
+    "Course name - Learn Page": "Punjabi Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442357006,
     "Course name - Upsell Card & Library": "Punjabi Level 1",
     "Course name - Learn Page": "Punjabi Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508272038,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442356948,
+    "Course name - Upsell Card & Library": "Punjabi Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Punjabi Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -6010,12 +7110,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442322714,
+    "Course name - Upsell Card & Library": "Romanian",
+    "Course name - Learn Page": "Romanian Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442323070,
     "Course name - Upsell Card & Library": "Romanian Level 1",
     "Course name - Learn Page": "Romanian Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508272045,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442322721,
+    "Course name - Upsell Card & Library": "Romanian Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Romanian Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -6070,12 +7190,42 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442312104,
+    "Course name - Upsell Card & Library": "Russian",
+    "Course name - Learn Page": "Russian Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Prem free lesson",
+    "ISBN": 9781508243335,
+    "Course name - Upsell Card & Library": "Russian",
+    "Course name - Learn Page": "Russian Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442312463,
     "Course name - Upsell Card & Library": "Russian Level 1",
     "Course name - Learn Page": "Russian Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508272052,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442312111,
+    "Course name - Upsell Card & Library": "Russian Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Russian Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -6370,12 +7520,72 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442313224,
+    "Course name - Upsell Card & Library": "Spanish",
+    "Course name - Learn Page": "Spanish Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781508283720,
+    "Course name - Upsell Card & Library": "Spanish",
+    "Course name - Learn Page": "Spanish Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Prem free lesson",
+    "ISBN": 9781508243274,
+    "Course name - Upsell Card & Library": "Spanish",
+    "Course name - Learn Page": "Spanish Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Prem free lesson",
+    "ISBN": 9781508283737,
+    "Course name - Upsell Card & Library": "Spanish",
+    "Course name - Learn Page": "Spanish Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442355040,
+    "Course name - Upsell Card & Library": "Spanish (Castilian)",
+    "Course name - Learn Page": "Spanish (Castilian) Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442355408,
     "Course name - Upsell Card & Library": "Spanish (Castilian) Level 1",
     "Course name - Learn Page": "Spanish (Castilian) Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508272090,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442355347,
+    "Course name - Upsell Card & Library": "Spanish (Castilian) Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Spanish (Castilian) Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -6536,6 +7746,26 @@
     "Course name - Learn Page": "Spanish Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508272106,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442313231,
+    "Course name - Upsell Card & Library": "Spanish Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Spanish Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781508255550,
+    "Course name - Upsell Card & Library": "Spanish Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Spanish Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -6950,12 +8180,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442350410,
+    "Course name - Upsell Card & Library": "Swahili",
+    "Course name - Learn Page": "Swahili Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442350786,
     "Course name - Upsell Card & Library": "Swahili Level 1",
     "Course name - Learn Page": "Swahili Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508272151,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442350724,
+    "Course name - Upsell Card & Library": "Swahili Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Swahili Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -7010,12 +8260,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442343337,
+    "Course name - Upsell Card & Library": "Swedish",
+    "Course name - Learn Page": "Swedish Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442343702,
     "Course name - Upsell Card & Library": "Swedish Level 1",
     "Course name - Learn Page": "Swedish Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508272168,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442343344,
+    "Course name - Upsell Card & Library": "Swedish Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Swedish Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -7070,12 +8340,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442330153,
+    "Course name - Upsell Card & Library": "Swiss German",
+    "Course name - Learn Page": "Swiss German Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442330276,
     "Course name - Upsell Card & Library": "Swiss German Level 1",
     "Course name - Learn Page": "Swiss German Level 1",
     "Course Description - Upsell Card": "The complete level of 10 lessons",
     "Other format 1 (Upsell) ISBN": 9781508273684,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442330160,
+    "Course name - Upsell Card & Library": "Swiss German Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Swiss German Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -7090,12 +8380,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442323087,
+    "Course name - Upsell Card & Library": "Tagalog",
+    "Course name - Learn Page": "Tagalog Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442323445,
     "Course name - Upsell Card & Library": "Tagalog Level 1",
     "Course name - Learn Page": "Tagalog Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508272175,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442323094,
+    "Course name - Upsell Card & Library": "Tagalog Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Tagalog Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -7240,12 +8550,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442323452,
+    "Course name - Upsell Card & Library": "Thai",
+    "Course name - Learn Page": "Thai Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442323810,
     "Course name - Upsell Card & Library": "Thai Level 1",
     "Course name - Learn Page": "Thai Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508272199,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442323469,
+    "Course name - Upsell Card & Library": "Thai Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Thai Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -7300,12 +8630,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442323827,
+    "Course name - Upsell Card & Library": "Turkish",
+    "Course name - Learn Page": "Turkish Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442324183,
     "Course name - Upsell Card & Library": "Turkish Level 1",
     "Course name - Learn Page": "Turkish Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508272205,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442323834,
+    "Course name - Upsell Card & Library": "Turkish Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Turkish Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -7360,12 +8710,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442330283,
+    "Course name - Upsell Card & Library": "Twi",
+    "Course name - Learn Page": "Twi Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442330405,
     "Course name - Upsell Card & Library": "Twi Level 1",
     "Course name - Learn Page": "Twi Level 1",
     "Course Description - Upsell Card": "The complete level of 10 lessons",
     "Other format 1 (Upsell) ISBN": 9781508273691,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442330290,
+    "Course name - Upsell Card & Library": "Twi Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Twi Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -7380,12 +8750,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442324190,
+    "Course name - Upsell Card & Library": "Ukrainian",
+    "Course name - Learn Page": "Ukrainian Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442324558,
     "Course name - Upsell Card & Library": "Ukrainian Level 1",
     "Course name - Learn Page": "Ukrainian Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508272212,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442324206,
+    "Course name - Upsell Card & Library": "Ukrainian Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Ukrainian Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -7440,12 +8830,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442337688,
+    "Course name - Upsell Card & Library": "Urdu",
+    "Course name - Learn Page": "Urdu Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9780743596671,
     "Course name - Upsell Card & Library": "Urdu Level 1",
     "Course name - Learn Page": "Urdu Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508272229,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442337718,
+    "Course name - Upsell Card & Library": "Urdu Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Urdu Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -7500,12 +8910,32 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio free lesson",
+    "ISBN": 9781442324565,
+    "Course name - Upsell Card & Library": "Vietnamese",
+    "Course name - Learn Page": "Vietnamese Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442324923,
     "Course name - Upsell Card & Library": "Vietnamese Level 1",
     "Course name - Learn Page": "Vietnamese Level 1",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508272236,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Audio 5 Lesson",
+    "ISBN": 9781442324572,
+    "Course name - Upsell Card & Library": "Vietnamese Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Vietnamese Level 1",
+    "Course Description - Upsell Card": "5 thirty-minute language lessons",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },

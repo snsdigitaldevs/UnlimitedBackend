@@ -1,5 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.services.promotions;
 
+import com.simonschuster.pimsleur.unlimited.data.dto.promotions.FormatMapping;
 import com.simonschuster.pimsleur.unlimited.data.dto.promotions.PurchaseMapping;
 import com.simonschuster.pimsleur.unlimited.data.dto.promotions.UpsellDto;
 import com.simonschuster.pimsleur.unlimited.services.customer.EDTCustomerInfoService;
@@ -20,13 +21,12 @@ public class UpsellService {
     @Autowired
     private BundleIsbnService bundleIsbnService;
     @Autowired
-    private IsbnNameDescriptionService isbnNameDescriptionService;
+    private FormatMappingService formatMappingService;
 
     @Autowired
     private EDTCustomerInfoService customerInfoService;
 
     public UpsellDto getUpsellInfoFor(String isbn, String sub, String email, String storeDomain) {
-
         PurchaseMapping purchaseMapping = purchaseMappingService.findPurchaseMappingFor(isbn);
 
         UpsellDto upsellDto = new UpsellDto();
@@ -43,35 +43,31 @@ public class UpsellService {
             boolean upgradeBought = isBought(boughtIsbns, purchaseMapping.getUpgradeInAppPurchaseISBN());
 
             upsellDto = purchaseMapping.toUpsellDto(upsellBought, subBought, upgradeBought);
-            UpsellDto finalUpsellDto = isbnNameDescriptionService.updateNameDescription(upsellDto);
+            UpsellDto finalUpsellDto = formatMappingService.updateNameDescription(upsellDto);
 
-            // find the item whose 'Other format 1 ISBN' equals upsell ISBN
-            PurchaseMapping upsellISBN = purchaseMappingService.findISBNWithOtherFormatAs(purchaseMapping.getUpsellInAppPurchaseISBN());
-            if(upsellISBN != null && finalUpsellDto.getNextLevel() != null){
-                finalUpsellDto.getNextLevel().setBaseISBN(upsellISBN.getISBN());
+            // find the item whose 'Other format ISBN' equals upsell ISBN
+            FormatMapping withOtherFormatAs = formatMappingService.findISBNWithOtherFormatAs(
+                    purchaseMapping.getUpsellInAppPurchaseISBN());
+            if(withOtherFormatAs != null && finalUpsellDto.getNextLevel() != null){
+                finalUpsellDto.getNextLevel().setBaseISBN(withOtherFormatAs.getISBN());
             }
             return finalUpsellDto;
         }
     }
 
     private boolean isBought(List<String> boughtIsbns, String isbn) {
-        List<String> allFormatsOfIsbn = purchaseMappingService.getAllFormatsOf(isbn);
-
+        List<String> allFormatsOfIsbn = formatMappingService.getAllFormatsOf(isbn);
         boolean isIsbnBought = boughtIsbns.stream().anyMatch(allFormatsOfIsbn::contains);
         boolean isBundleBought = isBundleBought(boughtIsbns, allFormatsOfIsbn);
-
         return isIsbnBought || isBundleBought;
-
     }
 
     private boolean isBundleBought(List<String> boughtIsbns, List<String> allFormatsOfIsbn) {
         List<String> bundles = allFormatsOfIsbn.stream()
                 .flatMap(oneFormat -> bundleIsbnService.getBundleIsbnsOf(oneFormat).stream())
                 .distinct()
-                .flatMap(bundle -> purchaseMappingService.getAllFormatsOf(bundle).stream())
+                .flatMap(bundle -> formatMappingService.getAllFormatsOf(bundle).stream())
                 .collect(toList());
-
         return boughtIsbns.stream().anyMatch(bundles::contains);
     }
-
 }

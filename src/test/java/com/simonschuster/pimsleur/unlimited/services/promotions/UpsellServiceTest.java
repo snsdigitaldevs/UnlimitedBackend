@@ -35,7 +35,7 @@ public class UpsellServiceTest {
 
     @Autowired
     @Spy
-    private IsbnNameDescriptionService isbnNameDescriptionService;
+    private FormatMappingService formatMappingService;
 
     @InjectMocks
     private UpsellService upsellService;

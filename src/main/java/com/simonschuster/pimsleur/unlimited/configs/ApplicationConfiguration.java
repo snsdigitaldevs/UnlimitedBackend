@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 @Configuration
 @ConfigurationProperties
@@ -23,7 +24,7 @@ public class ApplicationConfiguration {
         return env.getProperty("oauth.login.api.parameters." + propertyName);
     }
 
-    public String getProperty(String propertyName) {
+    public String getProperty(String propertyName){
         return env.getProperty(propertyName);
     }
 
@@ -32,9 +33,9 @@ public class ApplicationConfiguration {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/**")
-                        .allowedOrigins("*")
-                        .allowedMethods("GET", "HEAD", "POST","PUT", "DELETE", "OPTIONS");
+                registry.addMapping("/alexa/alexa_image.png")
+                        .allowedOrigins("https://ask-ifr-download.s3.amazonaws.com")
+                        .allowedMethods("GET");
             }
         };
     }

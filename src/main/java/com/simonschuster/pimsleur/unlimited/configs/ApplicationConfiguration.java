@@ -30,11 +30,13 @@ public class ApplicationConfiguration {
     @Bean
     public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurer() {
+
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("*")
-                        .allowedMethods("GET", "HEAD", "POST","PUT", "DELETE", "OPTIONS")
+                        .allowedOrigins("http://pimsleur-web-qa.s3-website-us-east-1.amazonaws.com",
+                                "https://ask-ifr-download.s3.amazonaws.com")
+                        .allowedMethods("GET", "HEAD", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowCredentials(true);
             }
         };

@@ -35,7 +35,8 @@ public class ApplicationConfiguration {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
                         .allowedOrigins("http://pimsleur-web-qa.s3-website-us-east-1.amazonaws.com",
-                                "https://ask-ifr-download.s3.amazonaws.com")
+                                "https://ask-ifr-download.s3.amazonaws.com",
+                                "http://d5vvzkykh1agb.cloudfront.net")
                         .allowedMethods("GET", "HEAD", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowCredentials(true);
             }

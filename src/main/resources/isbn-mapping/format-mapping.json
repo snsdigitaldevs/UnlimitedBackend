@@ -6100,6 +6100,16 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Prem free lesson",
+    "ISBN": 9781508299646,
+    "Course name - Upsell Card & Library": "Norwegian",
+    "Course name - Learn Page": "Norwegian Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442321960,
     "Course name - Upsell Card & Library": "Norwegian Level 1",
@@ -6107,6 +6117,16 @@
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508275145,
     "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Prem Level 1",
+    "ISBN": 9781508296782,
+    "Course name - Upsell Card & Library": "Norwegian Level 1 Premium",
+    "Course name - Learn Page": "Norwegian Level 1",
+    "Course Description - Upsell Card": "The complete level of 30 lessons and access to all premium features",
+    "Other format 2 (Upgrade) ISBN": 9781508296812,
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
   {
@@ -6236,6 +6256,36 @@
     "Course name - Learn Page": "Norwegian Level 2",
     "Course Description - Upsell Card": "5 thirty-minute language lessons",
     "Other format 1 (Upsell) ISBN": 9781508272748,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Prem Level 2",
+    "ISBN": 9781508296799,
+    "Course name - Upsell Card & Library": "Norwegian Level 2 Premium",
+    "Course name - Learn Page": "Norwegian Level 2",
+    "Course Description - Upsell Card": "The complete level of 30 lessons and access to all premium features",
+    "Other format 2 (Upgrade) ISBN": 9781508296829,
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Prem Level 1-2",
+    "ISBN": 9781508286868,
+    "Course name - Upsell Card & Library": "Norwegian Levels 1-2 Premium",
+    "Course name - Learn Page": "Norwegian Levels 1-2",
+    "Course Description - Upsell Card": "Two complete levels totaling 60 lessons and access to all premium features",
+    "Other format 2 (Upgrade) ISBN": 9781508296836,
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Subscription",
+    "ISBN": 9781508296850,
+    "Course name - Upsell Card & Library": "Norwegian Premium Subscription",
+    "Course Description - Upsell Card": "Unlimited access to the complete course and all premium features",
+    "Course name - Learn Page": "",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -6880,7 +6930,7 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
-    "Base Course Type": "Prem Level 2",
+    "Base Course Type": "Prem Level 5",
     "ISBN": 9781508286752,
     "Course name - Upsell Card & Library": "Portuguese (Brazilian) Level 5 Premium",
     "Course name - Learn Page": "Portuguese (Brazilian) Level 5",
@@ -7470,6 +7520,26 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Audio Level 5",
+    "ISBN": 9781508278184,
+    "Course name - Upsell Card & Library": "Russian Level 5",
+    "Course name - Learn Page": "Russian Level 5",
+    "Course Description - Upsell Card": "The complete level of 30 lessons",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Prem Level 5",
+    "ISBN": 9781508282600,
+    "Course name - Upsell Card & Library": "Russian Level 5 Premium",
+    "Course name - Learn Page": "Russian Level 5",
+    "Course Description - Upsell Card": "The complete level of 30 lessons and access to all premium features",
+    "Other format 2 (Upgrade) ISBN": 9781508298182,
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Prem Level 1-2",
     "ISBN": 9781508260226,
     "Course name - Upsell Card & Library": "Russian Levels 1-2 Premium",
@@ -7496,6 +7566,16 @@
     "Course name - Learn Page": "Russian Levels 1-4",
     "Course Description - Upsell Card": "Four complete levels totaling 120 lessons and access to all premium features",
     "Other format 2 (Upgrade) ISBN": 9781508276180,
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Prem Level 1-5",
+    "ISBN": 9781508294092,
+    "Course name - Upsell Card & Library": "Russian Levels 1-5 Premium",
+    "Course name - Learn Page": "Russian Levels 1-5",
+    "Course Description - Upsell Card": "Five complete levels totaling 150 lessons and access to all premium features",
+    "Other format 2 (Upgrade) ISBN": 9781508298199,
     "Other format 1 (Upsell) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },

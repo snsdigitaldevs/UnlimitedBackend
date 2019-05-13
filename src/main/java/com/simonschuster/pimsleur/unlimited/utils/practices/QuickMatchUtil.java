@@ -196,6 +196,8 @@ public class QuickMatchUtil {
                 return key;
             } else if (originHeader.equals("ISBN") && key.toUpperCase().contains(originHeader)) {
                 return key;
+            } else if (originHeader.equals("QZ #") && key.toUpperCase().equals("QUIZ #")) {
+                return key;
             }
         }
         return originHeader;

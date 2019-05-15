@@ -14,6 +14,7 @@ import java.util.Objects;
 import static com.simonschuster.pimsleur.unlimited.data.dto.practices.PracticesInUnit.createWithReadings;
 import static com.simonschuster.pimsleur.unlimited.data.dto.practices.PracticesInUnit.createWithSpeakEasies;
 import static com.simonschuster.pimsleur.unlimited.utils.UnlimitedPracticeUtil.*;
+import static com.simonschuster.pimsleur.unlimited.utils.dict.SpeakEasyAndReadingHeaders.*;
 import static java.lang.Integer.parseInt;
 import static java.util.Collections.emptyList;
 import static java.util.Comparator.comparingInt;
@@ -31,11 +32,11 @@ public class SpeakEasyAndReadingUtil {
     private static DateTimeFormatter beginStarTimeFormatter = forPattern("*mm:*ss.*SSS");
 
     public static List<PracticesInUnit> csvToSpeakEasies(String csvUrl) throws IOException {
-        return getPracticesInUnits(csvUrl, "Text", "NativeText", "Vis Conv", false);
+        return getPracticesInUnits(csvUrl, HEADER_TEXT, HEADER_NATIVE_TEXT, HEADER_VIS_CONV, false);
     }
 
     public static List<PracticesInUnit> csvToReadings(String csvUrl) throws IOException {
-        return getPracticesInUnits(csvUrl, "English Translation", "Language", "RL Item #", true);
+        return getPracticesInUnits(csvUrl, HEADER_ENGLISH_TRANSLATION, HEADER_LANGUAGE, HEADER_RL_ITEM, true);
     }
 
     private static List<PracticesInUnit> getPracticesInUnits(String csvUrl, String text, String nativeText, String order, boolean isReading) throws IOException {
@@ -45,12 +46,12 @@ public class SpeakEasyAndReadingUtil {
 
         List<CSVRecord> csvRecords = urlToCsv(csvUrl);
 
-        String unitNumKey = findRealHeaderName(csvRecords.get(0), "Unit Num");
-        String startKey = findRealHeaderName(csvRecords.get(0), "Start");
-        String stopKey = findRealHeaderName(csvRecords.get(0), "Stop");
-        String speakerKey = findRealHeaderName(csvRecords.get(0), "Spkr");
-        String transliterationKey = findRealHeaderName(csvRecords.get(0), "Transliteration");
-        String helpTextKey = findRealHeaderName(csvRecords.get(0), "xlitHelp");
+        String unitNumKey = findRealHeaderName(csvRecords.get(0), HEADER_UNIT_NUM);
+        String startKey = findRealHeaderName(csvRecords.get(0), HEADER_START);
+        String stopKey = findRealHeaderName(csvRecords.get(0), HEADER_STOP);
+        String speakerKey = findRealHeaderName(csvRecords.get(0), HEADER_SPKR);
+        String transliterationKey = findRealHeaderName(csvRecords.get(0), HEADER_TRANSLITERATION);
+        String helpTextKey = findRealHeaderName(csvRecords.get(0), HEADER_XLITHELP);
         String textKey = findRealHeaderName(csvRecords.get(0), text);
         String nativeTextKey = findRealHeaderName(csvRecords.get(0), nativeText);
         String orderKey = findRealHeaderName(csvRecords.get(0), order);
@@ -59,7 +60,7 @@ public class SpeakEasyAndReadingUtil {
                 .collect(groupingBy(csvRecord -> getUnitNumString(csvRecord, unitNumKey)))
                 .entrySet().stream()
                 .map(group -> {
-                    String unitNumString = group.getKey();
+                    String unitNumString = group.getKey().trim();
                     if (isNumeric(unitNumString)) {
                         return groupToUnit(unitNumString, startKey, stopKey, speakerKey, textKey,
                                 nativeTextKey, orderKey, group, transliterationKey, helpTextKey, isReading);
@@ -102,7 +103,7 @@ public class SpeakEasyAndReadingUtil {
         // for german level 5, the unit number in reading csv is wrong, should add 10 to all of them
         // also for french 5 and italian 5, same thing
 
-        String courseKey = findRealHeaderName(csvRecord, "Course");
+        String courseKey = findRealHeaderName(csvRecord, HEADER_COURSE);
         boolean hasCourseColumn = csvRecord.isSet(courseKey);
         boolean isGerman5 = csvRecord.get(courseKey).contains("German 5");
         boolean isFrench5 = csvRecord.get(courseKey).contains("Pimsleur French Level 5");

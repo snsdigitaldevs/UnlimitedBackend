@@ -12,6 +12,7 @@ import java.util.Objects;
 
 import static com.simonschuster.pimsleur.unlimited.data.dto.practices.PracticesInUnit.createWithFlashCards;
 import static com.simonschuster.pimsleur.unlimited.utils.UnlimitedPracticeUtil.*;
+import static com.simonschuster.pimsleur.unlimited.utils.dict.FlashCardHeaders.*;
 import static java.lang.Integer.parseInt;
 import static java.lang.String.valueOf;
 import static java.util.Collections.emptyList;
@@ -29,11 +30,11 @@ public class FlashCardUtil {
 
         List<CSVRecord> csvRecords = urlToCsv(practicesUrls.getFlashCardUrl());
 
-        String unitNumKey = findRealHeaderName(csvRecords.get(0), "Unit Num");
-        String transliterationKey = findRealHeaderName(csvRecords.get(0), "Transliteration");
-        String translationKey = findRealHeaderName(csvRecords.get(0), "English Translation");
-        String LanguageKey = findRealHeaderName(csvRecords.get(0), "Language");
-        String mp3FileKey = findRealHeaderName(csvRecords.get(0), "MP3 snippet file name");
+        String unitNumKey = findRealHeaderName(csvRecords.get(0), HEADER_UNIT_NUM);
+        String transliterationKey = findRealHeaderName(csvRecords.get(0), HEADER_TRANSLITERATION);
+        String translationKey = findRealHeaderName(csvRecords.get(0), HEADER_ENGLISH_TRANSLATION);
+        String languageKey = findRealHeaderName(csvRecords.get(0), HEADER_LANGUAGE);
+        String mp3FileKey = findRealHeaderName(csvRecords.get(0), HEADER_MP3_SNIPPET_FILE_NAME);
 
         return csvRecords.stream()
                 .collect(groupingBy(csvRecord -> getUnitNumString(csvRecord, unitNumKey)))
@@ -43,7 +44,7 @@ public class FlashCardUtil {
                     if (isNumeric(unitNumString)) {
                         return groupToUnit(unitNumString,
                                 transliterationKey, translationKey,
-                                LanguageKey, mp3FileKey,
+                                languageKey, mp3FileKey,
                                 practicesUrls.getFlashCardAudioBaseUrl(),
                                 practicesUrls.getFlashCardAudioBaseFileName(),
                                 group);
@@ -57,7 +58,7 @@ public class FlashCardUtil {
 
     private static PracticesInUnit groupToUnit(String unitNumString,
                                                String transliterationKey, String translationKey,
-                                               String LanguageKey, String mp3FileKey,
+                                               String languageKey, String mp3FileKey,
                                                String flashCardAudioBaseUrl,
                                                String flashCardAudioBaseFileName,
                                                Map.Entry<String, List<CSVRecord>> group) {
@@ -67,7 +68,7 @@ public class FlashCardUtil {
                 .map(csvRecord -> new FlashCard(
                         getFromCsv(transliterationKey, csvRecord),
                         getFromCsv(translationKey, csvRecord),
-                        getFromCsv(LanguageKey, csvRecord),
+                        getFromCsv(languageKey, csvRecord),
                         flashCardAudioBaseUrl + getMp3FileName(unitNumber, mp3FileKey, flashCardAudioBaseFileName, csvRecord)))
                 .collect(toList());
 
@@ -87,7 +88,7 @@ public class FlashCardUtil {
     private static String constructMp3FileNameByPattern(int unitNumber,
                                                         String flashCardAudioBaseFileName,
                                                         CSVRecord csvRecord) {
-        String flashCardNumberKey = findRealHeaderName(csvRecord, "Flash Card #");
+        String flashCardNumberKey = findRealHeaderName(csvRecord, HEADER_FLASH_CARD);
 
         return flashCardAudioBaseFileName
                 .concat("_U")

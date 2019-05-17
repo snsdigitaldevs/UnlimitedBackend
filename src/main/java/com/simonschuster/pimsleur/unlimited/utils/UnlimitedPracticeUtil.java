@@ -2,25 +2,28 @@ package com.simonschuster.pimsleur.unlimited.utils;
 
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVRecord;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
 import java.io.StringReader;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 import static java.nio.charset.Charset.forName;
 import static java.util.Collections.frequency;
 
 public class UnlimitedPracticeUtil {
+    private final static String NO_SUCH_KEY = "NoSuchKey";
+    private static Logger logger = LoggerFactory.getLogger(UnlimitedPracticeUtil.class);
 
     public static String getUnitNumString(CSVRecord record, String unitNumKey) {
         if (record.isSet(unitNumKey)) {
             return record.get(unitNumKey).replace("\"", "");
         }
-        return "NoSuchKey";
+        return NO_SUCH_KEY;
     }
 
     public static String findRealHeaderName(CSVRecord oneRecord, String key) {
@@ -39,6 +42,40 @@ public class UnlimitedPracticeUtil {
         return key;
     }
 
+    public static Map<String, String> convertToUpperCSVRecordHeaderMap(CSVRecord headerRecord) {
+        // format csv header
+        Map<String, String> headerNameMaps = headerRecord.toMap();
+        Map<String, String> upperHeaderNameMap = new HashMap<>();
+        for (String realHeaderName : headerNameMaps.keySet()) {
+            upperHeaderNameMap.put(realHeaderName.trim().toUpperCase(), realHeaderName);
+        }
+        return upperHeaderNameMap;
+    }
+
+    public static String findRealHeaderName(Map<String, String> headersMaps, String... keys) {
+
+        for (String key : keys) {
+            if (headersMaps.containsKey(key.toUpperCase())) {
+                return headersMaps.get(key.toUpperCase());
+            }
+        }
+        List<String> upperKeys = new ArrayList<>();
+        for (String obj : keys) {
+            String s = obj.trim().toUpperCase();
+            upperKeys.add(s);
+        }
+        // contain the key also be allow
+        for (String header : headersMaps.keySet()) {
+            for (String key : upperKeys) {
+                if (header.contains(key)) {
+                    return headersMaps.get(header);
+                }
+            }
+        }
+        logger.error("the {} can't find a right name from csv file", Arrays.toString(keys));
+        return NO_SUCH_KEY;
+    }
+
     public static String replaceDuplicateHeaders(String csvString) {
         final Integer[] columnIndex = {0};
 
@@ -52,7 +89,7 @@ public class UnlimitedPracticeUtil {
                 columnIndex[0] = columnIndex[0] + 1;
                 return column.substring(0, column.length() - 1) +
                         columnIndex[0] +
-                        column.substring(column.length() - 1, column.length());
+                        column.substring(column.length() - 1);
             }
             return column;
         }).collect(Collectors.toList());
@@ -74,7 +111,7 @@ public class UnlimitedPracticeUtil {
         return csvStringToObj(csvString);
     }
 
-    private static List<CSVRecord> csvStringToObj(String csvString) throws IOException {
+    public static List<CSVRecord> csvStringToObj(String csvString) throws IOException {
         CSVFormat csvFormat = CSVFormat.EXCEL
                 .withFirstRecordAsHeader()
                 .withIgnoreEmptyLines()
@@ -101,7 +138,7 @@ public class UnlimitedPracticeUtil {
     public static String getFromCsv(String key, String backupKey, CSVRecord csvRecord) {
         if (csvRecord.isSet(key)) {
             return csvRecord.get(key).replace("\"", "");
-        } else if (csvRecord.isSet(backupKey)){
+        } else if (csvRecord.isSet(backupKey)) {
             return csvRecord.get(backupKey).replace("\"", "");
         }
         return "";

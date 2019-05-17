@@ -46,15 +46,17 @@ public class SpeakEasyAndReadingUtil {
 
         List<CSVRecord> csvRecords = urlToCsv(csvUrl);
 
-        String unitNumKey = findRealHeaderName(csvRecords.get(0), HEADER_UNIT_NUM);
-        String startKey = findRealHeaderName(csvRecords.get(0), HEADER_START);
-        String stopKey = findRealHeaderName(csvRecords.get(0), HEADER_STOP);
-        String speakerKey = findRealHeaderName(csvRecords.get(0), HEADER_SPKR);
-        String transliterationKey = findRealHeaderName(csvRecords.get(0), HEADER_TRANSLITERATION);
-        String helpTextKey = findRealHeaderName(csvRecords.get(0), HEADER_XLITHELP);
-        String textKey = findRealHeaderName(csvRecords.get(0), text);
-        String nativeTextKey = findRealHeaderName(csvRecords.get(0), nativeText);
-        String orderKey = findRealHeaderName(csvRecords.get(0), order);
+        CSVRecord csvRecordHeader = csvRecords.get(0);
+
+        String unitNumKey = findRealHeaderName(csvRecordHeader, HEADER_UNIT_NUM);
+        String startKey = findRealHeaderName(csvRecordHeader, HEADER_START);
+        String stopKey = findRealHeaderName(csvRecordHeader, HEADER_STOP);
+        String speakerKey = findRealHeaderName(csvRecordHeader, HEADER_SPKR);
+        String transliterationKey = findRealHeaderName(csvRecordHeader, HEADER_TRANSLITERATION);
+        String helpTextKey = findRealHeaderName(csvRecordHeader, HEADER_XLITHELP);
+        String textKey = findRealHeaderName(csvRecordHeader, text);
+        String nativeTextKey = findRealHeaderName(csvRecordHeader, nativeText);
+        String orderKey = findRealHeaderName(csvRecordHeader, order);
 
         return csvRecords.stream()
                 .collect(groupingBy(csvRecord -> getUnitNumString(csvRecord, unitNumKey)))

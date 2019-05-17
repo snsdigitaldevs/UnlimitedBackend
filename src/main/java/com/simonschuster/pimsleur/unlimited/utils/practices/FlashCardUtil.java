@@ -30,11 +30,13 @@ public class FlashCardUtil {
 
         List<CSVRecord> csvRecords = urlToCsv(practicesUrls.getFlashCardUrl());
 
-        String unitNumKey = findRealHeaderName(csvRecords.get(0), HEADER_UNIT_NUM);
-        String transliterationKey = findRealHeaderName(csvRecords.get(0), HEADER_TRANSLITERATION);
-        String translationKey = findRealHeaderName(csvRecords.get(0), HEADER_ENGLISH_TRANSLATION);
-        String languageKey = findRealHeaderName(csvRecords.get(0), HEADER_LANGUAGE);
-        String mp3FileKey = findRealHeaderName(csvRecords.get(0), HEADER_MP3_SNIPPET_FILE_NAME);
+        Map<String, String> csvRecordHeader = convertToUpperCSVRecordHeaderMap(csvRecords.get(0));
+
+        String unitNumKey = findRealHeaderName(csvRecordHeader, HEADER_UNIT_NUM);
+        String transliterationKey = findRealHeaderName(csvRecordHeader, HEADER_TRANSLITERATION);
+        String translationKey = findRealHeaderName(csvRecordHeader, HEADER_ENGLISH_TRANSLATION);
+        String languageKey = findRealHeaderName(csvRecordHeader, HEADER_LANGUAGE);
+        String mp3FileKey = findRealHeaderName(csvRecordHeader, HEADER_MP3_SNIPPET_FILE_NAME);
 
         return csvRecords.stream()
                 .collect(groupingBy(csvRecord -> getUnitNumString(csvRecord, unitNumKey)))

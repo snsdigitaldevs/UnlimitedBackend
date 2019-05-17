@@ -18,8 +18,7 @@ import java.io.StringReader;
 import java.util.*;
 import java.util.stream.Collectors;
 
-import static com.simonschuster.pimsleur.unlimited.utils.UnlimitedPracticeUtil.replaceDuplicateHeaders;
-import static com.simonschuster.pimsleur.unlimited.utils.UnlimitedPracticeUtil.specialCsvFiles;
+import static com.simonschuster.pimsleur.unlimited.utils.UnlimitedPracticeUtil.*;
 import static com.simonschuster.pimsleur.unlimited.utils.dict.QuickMatchHeaders.*;
 import static java.nio.charset.Charset.forName;
 
@@ -64,8 +63,8 @@ public class QuickMatchUtil {
         CSVParser csvRecords = CSVFormat.EXCEL
                 .withFirstRecordAsHeader()
                 .parse(new StringReader(csvString));
-        String[] needIgnoreCaseHeaders = {HEADER_QZ, HEADER_SNIPPET_NAME, HEADER_MP3_AUDIO_ISBN};
-        Map<String, String> headerMap = getHeaderMap(csvRecords, Arrays.asList(needIgnoreCaseHeaders));
+
+        Map<String, String> headerMap = getRealCsvHeaderMap(csvRecords.getHeaderMap());
 
         String quickMatchAudioBaseFileName = practicesUrls.getQuickMatchAudioBaseFileName();
         String quickMatchAudioBaseUrl = practicesUrls.getQuickMatchAudioBaseUrl();
@@ -93,8 +92,7 @@ public class QuickMatchUtil {
         CSVParser csvRecords = CSVFormat.EXCEL
                 .withFirstRecordAsHeader()
                 .parse(new StringReader(csvString));
-        String[] needIgnoreCaseHeaders = {HEADER_QZ, HEADER_SNIPPET_NAME, HEADER_MP3_AUDIO_ISBN};
-        Map<String, String> headerMap = getHeaderMap(csvRecords, Arrays.asList(needIgnoreCaseHeaders));
+        Map<String, String> headerMap = getRealCsvHeaderMap(csvRecords.getHeaderMap());
         for (CSVRecord record : csvRecords) {
             parseSkillCsvLine(result, SKILL_KEYS_MAP, headerMap, record);
         }
@@ -113,11 +111,29 @@ public class QuickMatchUtil {
         return result;
     }
 
+    public static Map<String, String> getRealCsvHeaderMap(Map<String, ?> realCsvHeaderMaps) {
+        Map<String, String> upperRealCsvRecordName = new HashMap<>(realCsvHeaderMaps.size());
+        for (String key : realCsvHeaderMaps.keySet()) {
+            upperRealCsvRecordName.put(key.toUpperCase(), key);
+        }
+        Map<String, String> realCsvRecordHeaderMap = new HashMap<>(realCsvHeaderMaps.size());
+        String qz = findRealHeaderName(upperRealCsvRecordName, HEADER_QZ);
+        realCsvRecordHeaderMap.put(HEADER_QZ, qz);
+        String snippetName = findRealHeaderName(upperRealCsvRecordName, HEADER_SNIPPET_NAME, HEADER_MP_SNIPPET_FILE_NAME);
+        realCsvRecordHeaderMap.put(HEADER_SNIPPET_NAME, snippetName);
+        String audioIsbn = findRealHeaderName(upperRealCsvRecordName, HEADER_MP3_AUDIO_ISBN, HEADER_ISBN);
+        realCsvRecordHeaderMap.put(HEADER_ISBN, audioIsbn);
+        String unitNum = findRealHeaderName(upperRealCsvRecordName, HEADER_UNIT_NUM, HEADER_LESSON);
+        realCsvRecordHeaderMap.put(HEADER_UNIT_NUM, unitNum);
+
+        return realCsvRecordHeaderMap;
+    }
+
     private static void parseCsvLine(List<PracticesInUnit> result, CSVRecord record,
                                      Map<String, String> headerMap,
                                      String quickMatchAudioBaseUrl, String quickMatchAudioBaseFileName) {
         String qz = record.get(headerMap.get(HEADER_QZ));
-        Integer unit = Integer.parseInt(record.get(HEADER_UNIT_NUM));
+        Integer unit = Integer.parseInt(record.get(headerMap.get(HEADER_UNIT_NUM)));
         String group = qz.contains("_") ? unit.toString() + "_" + qz.substring(0, 2) : "00";
 
         List<QuickMatch> quickMatches = result.stream()
@@ -169,13 +185,13 @@ public class QuickMatchUtil {
 
     private static String getSnippetName(CSVRecord record, Map<String, String> headerMap,
                                          String quickMatchAudioBaseFileName) {
-        String snippetNameKey = getSnippetNameKey(record);
+        String snippetNameKey = headerMap.get(HEADER_SNIPPET_NAME);
         if (record.isSet(snippetNameKey)) {
             return record.get(snippetNameKey);
         } else {
             return quickMatchAudioBaseFileName
                     .concat("_U")
-                    .concat(String.valueOf(Integer.parseInt(record.get(HEADER_UNIT_NUM))))
+                    .concat(String.valueOf(Integer.parseInt(record.get(headerMap.get(HEADER_UNIT_NUM)))))
                     .concat("_")
                     .concat(record.get(headerMap.get(HEADER_QZ)))
                     .concat(".mp3");
@@ -195,7 +211,7 @@ public class QuickMatchUtil {
         for (String key : csvRecords.getHeaderMap().keySet()) {
             if (key.toLowerCase().equals(originHeader.toLowerCase())) {
                 return key;
-            } else if (originHeader.equals(HEADER_MP3_AUDIO_ISBN) && key.toUpperCase().contains(originHeader)) {
+            } else if (originHeader.equals(HEADER_ISBN) && key.toUpperCase().contains(originHeader)) {
                 return key;
             } else if (originHeader.equals(HEADER_QZ) && key.toUpperCase().equals(HEADER_QUIZ)) {
                 return key;
@@ -207,7 +223,7 @@ public class QuickMatchUtil {
     private static void parseSkillCsvLine(List<PracticesInUnit> result, Map<String, String> skillKeyMap, Map<String, String> headerMap, CSVRecord record) {
 
         String qz = record.get(headerMap.get(HEADER_QZ));
-        Integer unit = Integer.parseInt(record.get(HEADER_UNIT_NUM));
+        Integer unit = Integer.parseInt(record.get(headerMap.get(HEADER_UNIT_NUM)));
 
         PracticesInUnit practices = result.stream()
                 .filter(practicesInUnit -> practicesInUnit.getUnitNumber().equals(unit))

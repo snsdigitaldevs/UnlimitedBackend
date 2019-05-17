@@ -32,9 +32,9 @@ public class FlashCardUtil {
 
         Map<String, String> csvRecordHeader = convertToUpperCSVRecordHeaderMap(csvRecords.get(0));
 
-        String unitNumKey = findRealHeaderName(csvRecordHeader, HEADER_UNIT_NUM);
+        String unitNumKey = findRealHeaderName(csvRecordHeader, HEADER_UNIT_NUM, HEADER_LESSON);
         String transliterationKey = findRealHeaderName(csvRecordHeader, HEADER_TRANSLITERATION);
-        String translationKey = findRealHeaderName(csvRecordHeader, HEADER_ENGLISH_TRANSLATION);
+        String translationKey = findRealHeaderName(csvRecordHeader, HEADER_ENGLISH_TRANSLATION, HEADER_TRANSLATION);
         String languageKey = findRealHeaderName(csvRecordHeader, HEADER_LANGUAGE);
         String mp3FileKey = findRealHeaderName(csvRecordHeader, HEADER_MP3_SNIPPET_FILE_NAME);
 
@@ -42,7 +42,7 @@ public class FlashCardUtil {
                 .collect(groupingBy(csvRecord -> getUnitNumString(csvRecord, unitNumKey)))
                 .entrySet().stream()
                 .map(group -> {
-                    String unitNumString = group.getKey();
+                    String unitNumString = group.getKey().trim();
                     if (isNumeric(unitNumString)) {
                         return groupToUnit(unitNumString,
                                 transliterationKey, translationKey,
@@ -79,7 +79,7 @@ public class FlashCardUtil {
 
     private static String getMp3FileName(int unitNumber, String mp3FileKey,
                                          String flashCardAudioBaseFileName, CSVRecord csvRecord) {
-         String mp3FileName = getFromCsv(mp3FileKey, csvRecord);
+        String mp3FileName = getFromCsv(mp3FileKey, csvRecord);
         if (mp3FileName.length() != 0) {
             return mp3FileName;
         } else {

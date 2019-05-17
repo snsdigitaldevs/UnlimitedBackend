@@ -32,29 +32,29 @@ public class SpeakEasyAndReadingUtil {
     private static DateTimeFormatter beginStarTimeFormatter = forPattern("*mm:*ss.*SSS");
 
     public static List<PracticesInUnit> csvToSpeakEasies(String csvUrl) throws IOException {
-        return getPracticesInUnits(csvUrl, HEADER_TEXT, HEADER_NATIVE_TEXT, HEADER_VIS_CONV, false);
+        return getPracticesInUnits(csvUrl, HEADER_LESSON, HEADER_TEXT, HEADER_NATIVE_TEXT, HEADER_VIS_CONV, false);
     }
 
     public static List<PracticesInUnit> csvToReadings(String csvUrl) throws IOException {
-        return getPracticesInUnits(csvUrl, HEADER_ENGLISH_TRANSLATION, HEADER_LANGUAGE, HEADER_RL_ITEM, true);
+        return getPracticesInUnits(csvUrl, HEADER_MP3_AUDIO_COURSE_RL_NUMBER, HEADER_ENGLISH_TRANSLATION, HEADER_LANGUAGE, HEADER_RL_ITEM, true);
     }
 
-    private static List<PracticesInUnit> getPracticesInUnits(String csvUrl, String text, String nativeText, String order, boolean isReading) throws IOException {
+    private static List<PracticesInUnit> getPracticesInUnits(String csvUrl, String alterKey, String text, String nativeText, String order, boolean isReading) throws IOException {
         if (csvUrl == null) {
             return emptyList();
         }
 
         List<CSVRecord> csvRecords = urlToCsv(csvUrl);
 
-        CSVRecord csvRecordHeader = csvRecords.get(0);
+        Map<String, String> csvRecordHeader = convertToUpperCSVRecordHeaderMap(csvRecords.get(0));
 
-        String unitNumKey = findRealHeaderName(csvRecordHeader, HEADER_UNIT_NUM);
+        String unitNumKey = findRealHeaderName(csvRecordHeader, HEADER_UNIT_NUM, alterKey);
         String startKey = findRealHeaderName(csvRecordHeader, HEADER_START);
         String stopKey = findRealHeaderName(csvRecordHeader, HEADER_STOP);
-        String speakerKey = findRealHeaderName(csvRecordHeader, HEADER_SPKR);
+        String speakerKey = findRealHeaderName(csvRecordHeader, HEADER_SPKR, HEADER_SPKR);
         String transliterationKey = findRealHeaderName(csvRecordHeader, HEADER_TRANSLITERATION);
         String helpTextKey = findRealHeaderName(csvRecordHeader, HEADER_XLITHELP);
-        String textKey = findRealHeaderName(csvRecordHeader, text);
+        String textKey = findRealHeaderName(csvRecordHeader, text, HEADER_TRANSLATION);
         String nativeTextKey = findRealHeaderName(csvRecordHeader, nativeText);
         String orderKey = findRealHeaderName(csvRecordHeader, order);
 

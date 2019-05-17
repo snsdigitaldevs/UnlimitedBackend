@@ -53,6 +53,7 @@ public class ApplicationConfiguration {
                                 "http://d3u965pxjxbjuz.cloudfront.net",
                                 "http://learn-qa.pimsleur.com")
                         .allowedMethods("GET", "HEAD", "POST", "PUT", "DELETE", "OPTIONS")
+                        .allowedHeaders("*")
                         .allowCredentials(true);
             }
         };

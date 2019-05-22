@@ -117,7 +117,7 @@ public class QuickMatchUtil {
             upperRealCsvRecordName.put(key.toUpperCase(), key);
         }
         Map<String, String> realCsvRecordHeaderMap = new HashMap<>(realCsvHeaderMaps.size());
-        String qz = findRealHeaderName(upperRealCsvRecordName, HEADER_QZ);
+        String qz = findRealHeaderName(upperRealCsvRecordName, HEADER_QUIZ, HEADER_QZ);
         realCsvRecordHeaderMap.put(HEADER_QZ, qz);
         String snippetName = findRealHeaderName(upperRealCsvRecordName, HEADER_SNIPPET_NAME, HEADER_MP_SNIPPET_FILE_NAME);
         realCsvRecordHeaderMap.put(HEADER_SNIPPET_NAME, snippetName);

@@ -19,6 +19,8 @@ public class SpeakEasyAndReadingHeaders {
      */
     public static final String HEADER_LESSON = "Lesson";
     public static final String HEADER_UNIT_NUM = "Unit Num";
+    public static final String HEADER_PREMIUM_RL_DAY = "Premium RL Day";
+
     public static final String HEADER_MP3_AUDIO_COURSE_RL_NUMBER = "MP3 Audio Course RL Number";
 
     public static final String HEADER_START = "Start";

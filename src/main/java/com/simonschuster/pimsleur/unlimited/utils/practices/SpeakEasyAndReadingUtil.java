@@ -36,7 +36,7 @@ public class SpeakEasyAndReadingUtil {
     }
 
     public static List<PracticesInUnit> csvToReadings(String csvUrl) throws IOException {
-        return getPracticesInUnits(csvUrl, HEADER_MP3_AUDIO_COURSE_RL_NUMBER, HEADER_ENGLISH_TRANSLATION, HEADER_LANGUAGE, HEADER_RL_ITEM, true);
+        return getPracticesInUnits(csvUrl, HEADER_PREMIUM_RL_DAY, HEADER_ENGLISH_TRANSLATION, HEADER_LANGUAGE, HEADER_RL_ITEM, true);
     }
 
     private static List<PracticesInUnit> getPracticesInUnits(String csvUrl, String alterKey, String text, String nativeText, String order, boolean isReading) throws IOException {

@@ -8,34 +8,33 @@ import java.util.Map;
 import static java.lang.String.format;
 
 public class SyncUpDto {
+    private static final String PU_Sync_Key = "com.ss.models::UserLessonHistory_%s_%s_%s_%s#%s";
+    private static final String PCM_Sync_Key = "com.edt.models::MediaItemHistory_%s%s%s#%s";
+    private static final String PCM_Sync_Media_Item_Key = "com.edt.models::MediaSetHistory_%s%s#%s";
+    private static final String PCM_Sync_Media_Set_Key = "com.edt.models::Customer_%s#currentMediaSetHistoryId";
     private String deviceName;
     private String identityVerificationToken;
     private Long lastSaveId;
     private SyncUpProgressDto progress;
 
-    private static final String PU_Sync_Key = "com.ss.models::UserLessonHistory_%s_%s_%s_%s#%s";
-    private static final String PCM_Sync_Key = "com.edt.models::MediaItemHistory_%s%s%s#%s";
-    private static final String PCM_Sync_Media_Item_Key = "com.edt.models::MediaSetHistory_%s%s#%s";
-    private static final String PCM_Sync_Media_Set_Key = "com.edt.models::Customer_%s#currentMediaSetHistoryId";
-
     public String getDeviceName() {
         return deviceName;
-    }
-
-    public String getIdentityVerificationToken() {
-        return identityVerificationToken;
-    }
-
-    public Long getLastSaveId() {
-        return lastSaveId;
     }
 
     public void setDeviceName(String deviceName) {
         this.deviceName = deviceName;
     }
 
+    public String getIdentityVerificationToken() {
+        return identityVerificationToken;
+    }
+
     public void setIdentityVerificationToken(String identityVerificationToken) {
         this.identityVerificationToken = identityVerificationToken;
+    }
+
+    public Long getLastSaveId() {
+        return lastSaveId;
     }
 
     public void setLastSaveId(Long lastSaveId) {
@@ -62,9 +61,10 @@ public class SyncUpDto {
                 "lastPlayedDate", this.getProgress().getLastPlayedDate());
         createPuSyncItem(customerId, subUserId, productCode, mediaItemId, syncUpItemsMap,
                 "lastCompletionDate", this.getProgress().getLastCompletionDate());
-        if (this.getProgress().getIsCompleted() != null && this.getProgress().getIsCompleted()) {
+        if (this.getProgress().getIsCompleted() != null) {
+            long isCompleted = this.getProgress().getIsCompleted() ? 1L : 0L;
             createPuSyncItem(customerId, subUserId, productCode, mediaItemId, syncUpItemsMap,
-                    "isCompleted", 1L);
+                    "isCompleted", isCompleted);
         }
 
         return syncUpItemsMap;

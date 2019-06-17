@@ -43,7 +43,7 @@ public class UpsellService {
             boolean upgradeBought = isBought(boughtIsbns, purchaseMapping.getUpgradeInAppPurchaseISBN());
 
             upsellDto = purchaseMapping.toUpsellDto(upsellBought, subBought, upgradeBought);
-            UpsellDto finalUpsellDto = formatMappingService.updateNameDescription(upsellDto);
+            UpsellDto finalUpsellDto = formatMappingService.updateNameDescriptionLink(upsellDto);
 
             // find the item whose 'Other format ISBN' equals upsell ISBN
             FormatMapping withOtherFormatAs = formatMappingService.findISBNWithOtherFormatAs(

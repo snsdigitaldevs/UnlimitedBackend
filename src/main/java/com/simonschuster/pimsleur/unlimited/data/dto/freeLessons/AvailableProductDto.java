@@ -19,6 +19,7 @@ public class AvailableProductDto {
     private Integer level = 1; // default level 1 for free lessons
 
     private boolean isSubscription;
+    private String storeDomain;
 
     public AvailableProductDto(String languageName, String productsLanguageName, String productCode, boolean isPu) {
         this.languageName = languageName.trim();
@@ -88,6 +89,14 @@ public class AvailableProductDto {
 
     public void setCourseName(String courseName) {
         this.courseName = courseName;
+    }
+
+    public String getStoreDomain() {
+        return storeDomain;
+    }
+
+    public void setStoreDomain(String storeDomain) {
+        this.storeDomain = storeDomain;
     }
 
     public boolean isSameLevelSameLang(AvailableProductDto that) {

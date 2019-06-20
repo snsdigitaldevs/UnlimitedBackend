@@ -21,6 +21,9 @@ public class AvailableProductDto {
     private boolean isSubscription;
     private String storeDomain;
 
+    public AvailableProductDto() {
+    }
+
     public AvailableProductDto(String languageName, String productsLanguageName, String productCode, boolean isPu) {
         this.languageName = languageName.trim();
         this.filterLanguageName = productsLanguageName.trim();

@@ -1,6 +1,7 @@
 [
   {
     "languageName": "French",
+    "filterLanguageName": "French",
     "productCode": "9781508279709",
     "level": 1,
     "isSubscription": false,
@@ -8,6 +9,7 @@
   },
   {
     "languageName": "German",
+    "filterLanguageName": "German",
     "productCode": "9781508243298",
     "level": 1,
     "isSubscription": false,
@@ -15,6 +17,7 @@
   },
   {
     "languageName": "Italian",
+    "filterLanguageName": "Italian",
     "productCode": "9781508243304",
     "level": 1,
     "isSubscription": false,
@@ -22,6 +25,7 @@
   },
   {
     "languageName": "Spanish",
+    "filterLanguageName": "Spanish",
     "productCode": "9781508283737",
     "level": 1,
     "isSubscription": false,
@@ -29,6 +33,7 @@
   },
   {
     "languageName": "Russian",
+    "filterLanguageName": "Russian",
     "productCode": "9781508243335",
     "level": 1,
     "isSubscription": false,
@@ -36,6 +41,7 @@
   },
   {
     "languageName": "Portuguese Brazilian",
+    "filterLanguageName": "Portuguese Brazilian",
     "productCode": "9781508243342",
     "level": 1,
     "isSubscription": false,
@@ -43,6 +49,7 @@
   },
   {
     "languageName": "Chinese Mandarin",
+    "filterLanguageName": "Chinese Mandarin",
     "productCode": "9781508243328",
     "level": 1,
     "isSubscription": false,
@@ -50,6 +57,7 @@
   },
   {
     "languageName": "English for Spanish Speakers",
+    "filterLanguageName": "ESL Spanish",
     "productCode": "9781508243359",
     "level": 1,
     "isSubscription": false,
@@ -57,6 +65,7 @@
   },
   {
     "languageName": "Japanese",
+    "filterLanguageName": "Japanese",
     "productCode": "9781508243311",
     "level": 1,
     "isSubscription": false,
@@ -64,6 +73,7 @@
   },
   {
     "languageName": "Norwegian",
+    "filterLanguageName": "Norwegian",
     "productCode": "9781508299646",
     "level": 1,
     "isSubscription": false,

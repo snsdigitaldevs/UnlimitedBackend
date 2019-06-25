@@ -16,10 +16,13 @@ import static java.util.stream.Collectors.toList;
         "Course name",
         "Upsell in-app purchase ISBN",
         "Upsell course name",
+        "Upsell web app add-to-cart",
         "Upsell2 in-app purchase ISBN",
         "Upsell2 course name",
+        "Upsell2 web app add-to-cart",
         "Upgrade in-app purchase ISBN",
         "Upgrade course name",
+        "Upgrade web app add-to-cart",
         "Other format 1 (Upsell) ISBN",
         "Other format 2 (Upgrade) ISBN",
         "Other format 3 (DVD) ISBN",
@@ -36,14 +39,20 @@ public class PurchaseMapping {
     private String upsellInAppPurchaseISBN;
     @JsonProperty("Upsell course name")
     private String upsellCourseName;
+    @JsonProperty("Upsell web app add-to-cart")
+    private String upsellWebAppAddToCart;
     @JsonProperty("Upsell2 in-app purchase ISBN")
     private String upsell2InAppPurchaseISBN;
     @JsonProperty("Upsell2 course name")
     private String upsell2CourseName;
+    @JsonProperty("Upsell2 web app add-to-cart")
+    private String upsell2WebAppAddToCart;
     @JsonProperty("Upgrade in-app purchase ISBN")
     private String upgradeInAppPurchaseISBN;
     @JsonProperty("Upgrade course name")
     private String upgradeCourseName;
+    @JsonProperty("Upgrade web app add-to-cart")
+    private String upgradeWebAppAddToCart;
     @JsonProperty("Other format 1 (Upsell) ISBN")
     private String otherFormat1ISBN;
     @JsonProperty("Other format 2 (Upgrade) ISBN")
@@ -102,6 +111,18 @@ public class PurchaseMapping {
         return otherFormat3ISBN;
     }
 
+    public String getUpsellWebAppAddToCart() {
+        return upsellWebAppAddToCart;
+    }
+
+    public String getUpsell2WebAppAddToCart() {
+        return upsell2WebAppAddToCart;
+    }
+
+    public String getUpgradeWebAppAddToCart() {
+        return upgradeWebAppAddToCart;
+    }
+
     public boolean matches(String isbn) {
         return getAllFormats().stream()
                 .anyMatch(oneFormat -> oneFormat.equals(isbn));
@@ -116,21 +137,21 @@ public class PurchaseMapping {
 
     private UpsellItem createNextLevel(boolean ignoreUpsell) {
         if (!ignoreUpsell && getUpsellInAppPurchaseISBN().length() > 0) {
-            return new UpsellItem(getUpsellInAppPurchaseISBN(), getUpsellCourseName());
+            return new UpsellItem(getUpsellInAppPurchaseISBN(), getUpsellCourseName(), getUpsellWebAppAddToCart());
         }
         return null;
     }
 
     private UpsellItem createNextSub(boolean isSubIgnored) {
         if (!isSubIgnored && getUpsell2InAppPurchaseISBN().length() > 0) {
-            return new UpsellItem(getUpsell2InAppPurchaseISBN(), getUpsell2CourseName());
+            return new UpsellItem(getUpsell2InAppPurchaseISBN(), getUpsell2CourseName(), getUpsell2WebAppAddToCart());
         }
         return null;
     }
 
     private UpsellItem createNextVersion(boolean ignoreUpgrade) {
         if (!ignoreUpgrade && getUpgradeInAppPurchaseISBN().length() > 0) {
-            return new UpsellItem(getUpgradeInAppPurchaseISBN(), getUpgradeCourseName());
+            return new UpsellItem(getUpgradeInAppPurchaseISBN(), getUpgradeCourseName(), getUpgradeWebAppAddToCart());
         }
         return null;
     }

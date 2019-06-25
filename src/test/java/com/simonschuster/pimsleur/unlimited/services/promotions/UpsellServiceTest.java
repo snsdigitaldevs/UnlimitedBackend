@@ -4,12 +4,10 @@ import com.simonschuster.pimsleur.unlimited.data.dto.promotions.UpsellDto;
 import com.simonschuster.pimsleur.unlimited.services.customer.EDTCustomerInfoService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.Spy;
-import org.mockito.junit.MockitoJUnitRunner;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import static java.util.Arrays.asList;
 import static java.util.Collections.emptyList;
@@ -18,26 +16,14 @@ import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.nullValue;
 import static org.mockito.Mockito.when;
 
-@RunWith(MockitoJUnitRunner.class)
+@RunWith(SpringRunner.class)
 @SpringBootTest
 public class UpsellServiceTest {
 
-    @Mock
+    @MockBean
     private EDTCustomerInfoService customerInfoService;
 
     @Autowired
-    @Spy
-    private PurchaseMappingService purchaseMappingService;
-
-    @Autowired
-    @Spy
-    private BundleIsbnService bundleIsbnService;
-
-    @Autowired
-    @Spy
-    private FormatMappingService formatMappingService;
-
-    @InjectMocks
     private UpsellService upsellService;
     private String storeDomain = "android_inapp";
 
@@ -53,6 +39,9 @@ public class UpsellServiceTest {
 
         assertThat(upsellInfo.getNextLevel().getName(),
                 containsString("Chinese (Mandarin) Level 2"));
+
+        assertThat(upsellInfo.getNextLevel().getWebLink(),
+                containsString("https://shop.pimsleur.com/on/demandware.store/Sites-Pimsleur-Site/default/Cart-AddProduct?pid="));
 
         assertThat(upsellInfo.getNextVersion().getName(),
                 containsString("Chinese (Mandarin) Level 1"));

@@ -98,6 +98,14 @@ public class Customer {
     public List<OrdersProduct> getAllOrdersProducts() {
         return getCustomersOrders()
                 .stream()
+                .peek(customersOrder -> {
+                    String storeDomain = customersOrder.getStoreDomain();
+                    customersOrder.setOrdersProducts(
+                            customersOrder.getOrdersProducts().stream().map(ordersProduct -> {
+                                ordersProduct.setStoreDomain(storeDomain);
+                                return ordersProduct;
+                            }).collect(toList()));
+                })
                 .flatMap(customersOrder -> customersOrder.getOrdersProducts().stream())
                 .collect(toList());
     }

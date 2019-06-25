@@ -41,12 +41,16 @@ public class ApplicationConfiguration {
                                 "https://learn.pimsleur.com",
                                 "https://learn-uat.pimsleur.com",
                                 "https://learn-qa.pimsleur.com",
+                                "https://d22h8kdloqwqsy.cloudfront.net",
+                                "https://d3u965pxjxbjuz.cloudfront.net",
                                 "http://pimsleur-web-qa.s3-website-us-east-1.amazonaws.com",
                                 "http://ask-ifr-download.s3.amazonaws.com",
                                 "http://d5vvzkykh1agb.cloudfront.net",
                                 "http://pims-qa.dogememe.tk",
                                 "http://learn.pimsleur.com",
                                 "http://learn-uat.pimsleur.com",
+                                "http://d22h8kdloqwqsy.cloudfront.net",
+                                "http://d3u965pxjxbjuz.cloudfront.net",
                                 "http://learn-qa.pimsleur.com")
                         .allowedMethods("GET", "HEAD", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowCredentials(true);

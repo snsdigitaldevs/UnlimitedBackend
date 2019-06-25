@@ -75,7 +75,10 @@ public class AvailableProductsService {
                                         puProductToDtos(order.getProduct(), storeDomain) :
                                         pcmOrderToDtos(order);
                                 return availableProductDtoStream
-                                        .peek(dto -> dto.setIsSubscription(order.isSubscription()));
+                                        .peek(dto -> {
+                                            dto.setIsSubscription(order.isSubscription());
+                                            dto.setStoreDomain(order.getStoreDomain());
+                                        });
                             })
                             .filter(dto -> dto.getLevel() != 0)
                             .filter(distinctByKey(AvailableProductDto::getProductCode))

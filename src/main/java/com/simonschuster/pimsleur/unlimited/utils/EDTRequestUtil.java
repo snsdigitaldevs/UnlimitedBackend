@@ -1,6 +1,8 @@
 package com.simonschuster.pimsleur.unlimited.utils;
 
 import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
 
@@ -17,6 +19,16 @@ public class EDTRequestUtil {
         restTemplate.getMessageConverters().add(converter);
 
         return restTemplate.postForObject(url, entity, responseType);
+    }
+
+    public static <T> T getFromEdt(String url, Class<T> responseType, HttpEntity<String> entity) {
+        RestTemplate restTemplate = new RestTemplate();
+        MappingJackson2HttpMessageConverter converter = new MappingJackson2HttpMessageConverter();
+        converter.setSupportedMediaTypes(asList(TEXT_HTML, APPLICATION_JSON));
+
+        restTemplate.getMessageConverters().add(converter);
+
+        return restTemplate.exchange(url, HttpMethod.GET, entity, responseType).getBody();
     }
 
 }

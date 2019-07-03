@@ -35,7 +35,7 @@ public class PriceService {
                     String.format(config.getProperty("demandware.api.getPrice.url"), productCode),
                     DemandwareShopInfo.class,
                     new HttpEntity<>(headers));
-            return new PriceInfoDTO(info.getPrice(), info.getCurrency(), info.getName());
+            return new PriceInfoDTO(info.getPrice(), info.getCurrency(), info.getName(), productCode);
         } catch (Exception e) {
             logger.error("Error when request price from Demandware.");
         }
@@ -64,7 +64,7 @@ public class PriceService {
             MG2Offer offer = info.getResult().getOffers().get(0);
             Float price = offer.getDryRunAmount();
             String currency = offer.getProducts().get(0).getCurrency();
-            return new PriceInfoDTO(price, currency, offer.getName(), offer.getSubscriptionLevel());
+            return new PriceInfoDTO(price, currency, offer.getName(), offer.getSubscriptionLevel(), pid);
         } else {
             return new PriceInfoDTO();
         }

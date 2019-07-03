@@ -14,20 +14,24 @@ public class PriceInfoDTO {
 
     private Integer subscriptionLevel;
 
+    private String code;
+
     public PriceInfoDTO() {
     }
 
-    public PriceInfoDTO(Float price, String currency, String name) {
+    public PriceInfoDTO(Float price, String currency, String name, String code) {
         this.price = price;
         this.currency = currency;
         this.name = name;
+        this.code = code;
     }
 
-    public PriceInfoDTO(Float price, String currency, String name, Integer subscriptionLevel) {
+    public PriceInfoDTO(Float price, String currency, String name, Integer subscriptionLevel, String code) {
         this.price = price;
         this.currency = currency;
         this.name = name;
         this.subscriptionLevel = subscriptionLevel;
+        this.code = code;
     }
 
     public Float getPrice() {
@@ -60,5 +64,13 @@ public class PriceInfoDTO {
 
     public void setSubscriptionLevel(Integer subscriptionLevel) {
         this.subscriptionLevel = subscriptionLevel;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
     }
 }

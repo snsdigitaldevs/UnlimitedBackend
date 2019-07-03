@@ -1,6 +1,5 @@
 package com.simonschuster.pimsleur.unlimited.controllers;
 
-import com.simonschuster.pimsleur.unlimited.data.dto.price.DemandwareShopInfo;
 import com.simonschuster.pimsleur.unlimited.data.dto.price.PriceInfoDTO;
 import com.simonschuster.pimsleur.unlimited.services.price.PriceService;
 import io.swagger.annotations.ApiOperation;
@@ -19,8 +18,7 @@ public class PriceController {
     @GetMapping("/price")
     public PriceInfoDTO getPrice(@RequestParam("isSubscription") Boolean isSubscription,
                                  @RequestParam("productCode") String productCode) {
-        DemandwareShopInfo info = priceService.getDemandwareShopInfo(productCode);
-
-        return new PriceInfoDTO(info.getPrice(), info.getCurrency());
+        return isSubscription ?
+                priceService.getMG2ShopInfo(productCode) : priceService.getDemandwareShopInfo(productCode);
     }
 }

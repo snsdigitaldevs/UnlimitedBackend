@@ -12,14 +12,12 @@ public class DemandwareShopInfo {
     private String name;
 
     @JsonProperty("price")
-    private int price;
+    private Float price;
 
     @JsonProperty("fault")
     private FaultMessage fault;
 
     public DemandwareShopInfo() {
-        this.setPrice(0);
-        this.setCurrency("");
     }
 
     public String getCurrency() {
@@ -38,11 +36,11 @@ public class DemandwareShopInfo {
         this.name = name;
     }
 
-    public int getPrice() {
+    public Float getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(Float price) {
         this.price = price;
     }
 

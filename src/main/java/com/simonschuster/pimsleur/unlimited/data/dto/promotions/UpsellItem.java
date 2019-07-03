@@ -11,6 +11,7 @@ public class UpsellItem {
     private String name;
     private String description;
     private String webLink;
+    private String pid;
 
     public UpsellItem(String isbn, String name, String webLink) {
         this.isbn = isbn;
@@ -52,5 +53,13 @@ public class UpsellItem {
 
     public void setWebLink(String webLink) {
         this.webLink = webLink;
+    }
+
+    public String getPid() {
+        return pid;
+    }
+
+    public void setPid(String pid) {
+        this.pid = pid;
     }
 }

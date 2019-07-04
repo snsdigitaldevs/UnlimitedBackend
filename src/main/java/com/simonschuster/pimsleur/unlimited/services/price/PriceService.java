@@ -37,7 +37,7 @@ public class PriceService {
                     new HttpEntity<>(headers));
             return new PriceInfoDTO(info.getPrice(), info.getCurrency(), info.getName(), productCode);
         } catch (Exception e) {
-            logger.error("Error when request price from Demandware.");
+            logger.error("Error when request price from Demandware.", e);
         }
         return new PriceInfoDTO();
     }

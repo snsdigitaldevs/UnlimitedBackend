@@ -62,6 +62,7 @@ public class FormatMappingService {
 
     private void updateWebCartLinkForItem(UpsellItem upsellItem, String link) {
         if (upsellItem != null && StringUtils.isNotEmpty(upsellItem.getWebLink())) {
+            upsellItem.setPid(upsellItem.getWebLink());
             upsellItem.setWebLink(format(link, upsellItem.getWebLink()));
         }
     }

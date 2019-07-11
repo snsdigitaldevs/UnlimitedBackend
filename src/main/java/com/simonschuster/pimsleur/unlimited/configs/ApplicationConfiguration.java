@@ -51,6 +51,8 @@ public class ApplicationConfiguration {
                                 "http://learn-uat.pimsleur.com",
                                 "http://d22h8kdloqwqsy.cloudfront.net",
                                 "http://d3u965pxjxbjuz.cloudfront.net",
+                                "https://d7bcyw9tdqg2v.cloudfront.net",
+                                "https://d3vu3jnt00sinm.cloudfront.net",
                                 "http://learn-qa.pimsleur.com")
                         .allowedMethods("GET", "HEAD", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowCredentials(true);

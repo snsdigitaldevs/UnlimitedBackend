@@ -40,7 +40,8 @@ public class LocationMappingService {
     }
 
     static {
-        InputStream stream = LocationMappingService.class.getResourceAsStream("/data/GeoLite2-City.mmdb");
+        InputStream stream = LocationMappingService.class.getClassLoader()
+                .getResourceAsStream("data/GeoLite2-City.mmdb");
         try {
             dbReader = new DatabaseReader.Builder(stream).build();
         } catch (IOException e) {

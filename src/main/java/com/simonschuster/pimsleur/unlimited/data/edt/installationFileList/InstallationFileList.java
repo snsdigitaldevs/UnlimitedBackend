@@ -98,8 +98,13 @@ public class InstallationFileList {
             return null;
         }
         String lastItem = basePathItems[basePathItems.length - 1];
-        String productCode = StringUtils.isEmpty(lastItem) ? lastItem.split("_")[0] : "";
-        String path = String.format("%s/%s/%s_REVIEW_AUDIO__SNIPPETS/", basePathItems[0], basePathItems[1], productCode);
+        String productCode = "";
+        if (!StringUtils.isEmpty(lastItem)) {
+            productCode = lastItem.split("_")[0];
+        } else {
+            new RuntimeException("error, can't parse the product code ");
+        }
+        String path = String.format("%s/%s/%s_REVIEW_AUDIO_SNIPPETS/", basePathItems[0], basePathItems[1], productCode);
         return audioFileListItem.getSourceURL() + path;
     }
 

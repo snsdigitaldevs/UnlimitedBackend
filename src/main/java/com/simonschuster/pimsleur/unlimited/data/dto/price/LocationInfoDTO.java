@@ -10,13 +10,24 @@ public class LocationInfoDTO {
 
     private String ip;
 
+    private String isoCode;
+
     public LocationInfoDTO(String ip) {
         this.ip = ip;
     }
 
-    public LocationInfoDTO(String name, String ip) {
+    public LocationInfoDTO(String name, String ip, String isoCode) {
         this.name = name;
         this.ip = ip;
+        this.isoCode = isoCode;
+    }
+
+    public String getIsoCode() {
+        return isoCode;
+    }
+
+    public void setIsoCode(String isoCode) {
+        this.isoCode = isoCode;
     }
 
     public String getName() {

@@ -3,6 +3,7 @@ package com.simonschuster.pimsleur.unlimited.services.promotions;
 import com.maxmind.geoip2.DatabaseReader;
 import com.maxmind.geoip2.exception.GeoIp2Exception;
 import com.maxmind.geoip2.model.CityResponse;
+import com.maxmind.geoip2.record.Country;
 import com.simonschuster.pimsleur.unlimited.data.dto.price.LocationInfoDTO;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -38,9 +39,13 @@ public class LocationMappingService {
         }
     }
 
-    public LocationMappingService() throws IOException {
+    static {
         InputStream stream = LocationMappingService.class.getResourceAsStream("/data/GeoLite2-City.mmdb");
-        dbReader = new DatabaseReader.Builder(stream).build();
+        try {
+            dbReader = new DatabaseReader.Builder(stream).build();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public LocationInfoDTO getLocation(HttpServletRequest request) {
@@ -49,7 +54,8 @@ public class LocationMappingService {
         try {
             ipAddress = InetAddress.getByName(ip);
             CityResponse response = dbReader.city(ipAddress);
-            return new LocationInfoDTO(response.getCountry().getName(), ip  );
+            Country country = response.getCountry();
+            return new LocationInfoDTO(country.getName(), ip, country.getIsoCode() );
         } catch (IOException | GeoIp2Exception e) {
             logger.error("Error occur when query ip from GeoIp.");
         }

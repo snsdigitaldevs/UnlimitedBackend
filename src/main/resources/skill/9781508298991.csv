@@ -1,612 +1,611 @@
-ÔªøRec #,Lang,Course,Lesson,Cluster,Qz #,Spkr,Cue,Transliteration,MP3 Snippet File Name,MP3 Audio ISBN,Premium ISBN,Skills
-1,KO,Korean 1,1,,01Q,N,"No, I canÔøΩt.",,9781508298205_Korean_Level_1_QM_001.mp3,9781508217916,9781797103051,"15,16"
-2,KO,Korean 1,1,,01R,F,"___, _ __","aniyo, mot haeyo.",9781508298205_Korean_Level_1_QM_002.mp3,9781508217916,9781797103051,"15,16"
-3,KO,Korean 1,1,,02Q,N,Hello.,,9781508298205_Korean_Level_1_QM_003.mp3,9781508217916,9781797103051,"10,13,16"
-4,KO,Korean 1,1,,02R,F,_____.,annyong haseyo.,9781508298205_Korean_Level_1_QM_004.mp3,9781508217916,9781797103051,"10,13,16"
-5,KO,Korean 1,1,,03Q,N,Do you speak Korean?,,9781508298205_Korean_Level_1_QM_005.mp3,9781508217916,9781797103051,"10,13,15,16"
-6,KO,Korean 1,1,,03R,F,___ ___?,hankuk mal haseyo?,9781508298205_Korean_Level_1_QM_006.mp3,9781508217916,9781797103051,"10,13,15,16"
-7,KO,Korean 1,1,,04Q,N,Do you speak English?,,9781508298205_Korean_Level_1_QM_007.mp3,9781508217916,9781797103051,"10,13,15,16"
-8,KO,Korean 1,1,,04R,F,__ ___?,youngeo haseyo?,9781508298205_Korean_Level_1_QM_008.mp3,9781508217916,9781797103051,"10,13,15,16"
-9,KO,Korean 1,1,,05Q,N,A little.,,9781508298205_Korean_Level_1_QM_009.mp3,9781508217916,9781797103051,"7,15,16"
-10,KO,Korean 1,1,,05R,F,___.,jokeum yo.,9781508298205_Korean_Level_1_QM_010.mp3,9781508217916,9781797103051,"7,15,16"
-11,KO,Korean 1,1,,06Q,N,I canÔøΩt speak Korean.,,9781508298205_Korean_Level_1_QM_011.mp3,9781508217916,9781797103051,"15,16"
-12,KO,Korean 1,1,,06R,M,___ _ __.,hankuk mal mot haeyo.,9781508298205_Korean_Level_1_QM_012.mp3,9781508217916,9781797103051,"15,16"
-13,KO,Korean 1,1,,07Q,N,I canÔøΩt speak English.,,9781508298205_Korean_Level_1_QM_013.mp3,9781508217916,9781797103051,"15,16"
-14,KO,Korean 1,1,,07R,M,__ _ __.,youngeo mot haeyo.,9781508298205_Korean_Level_1_QM_014.mp3,9781508217916,9781797103051,"15,16"
-15,KO,Korean 1,1,,08Q,N,IÔøΩm glad to meet you.,,9781508298205_Korean_Level_1_QM_015.mp3,9781508217916,9781797103051,"10,13,16"
-16,KO,Korean 1,1,,08R,M,___ _____.,manna seo ban gap seum nita.,9781508298205_Korean_Level_1_QM_016.mp3,9781508217916,9781797103051,"10,13,16"
-17,KO,Korean 1,1,,09Q,N,I came from America.,,9781508298205_Korean_Level_1_QM_017.mp3,9781508217916,9781797103051,10
-18,KO,Korean 1,1,,09R,M,____ ____.,mikuk eseo oass-seum nita.,9781508298205_Korean_Level_1_QM_018.mp3,9781508217916,9781797103051,10
-19,KO,Korean 1,1,,10Q,N,Did you come from America?,,9781508298205_Korean_Level_1_QM_019.mp3,9781508217916,9781797103051,10
-20,KO,Korean 1,1,,10R,M,____ ____?,mikuk eseo osyeoss eoyo?,9781508298205_Korean_Level_1_QM_020.mp3,9781508217916,9781797103051,10
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
+Rec #,Lang,Course,Lesson,Cluster,Qz #,Spkr,Cue,Transliteration,MP3 Snippet File Name,MP3 Audio ISBN,Premium ISBN,Skills
+1,TA,Tagalog 2,1,,01Q,N,Are you going to leave already?,,9781508298991_Tagalog_Level_2_QM_001.mp3,9781508224976,9781508298991,7
+2,TA,Tagalog 2,1,,01R,M,Aalis ka na ba?,,9781508298991_Tagalog_Level_2_QM_002.mp3,9781508224976,9781508298991,7
+3,TA,Tagalog 2,1,,02Q,N,What did you do last night?,,9781508298991_Tagalog_Level_2_QM_003.mp3,9781508224976,9781508298991,1
+4,TA,Tagalog 2,1,,02R,M,Anong ginawa mo kagabi?,,9781508298991_Tagalog_Level_2_QM_004.mp3,9781508224976,9781508298991,1
+5,TA,Tagalog 2,1,,03Q,N,I don’t want to eat at the hotel.,,9781508298991_Tagalog_Level_2_QM_005.mp3,9781508224976,9781508298991,"6,18"
+6,TA,Tagalog 2,1,,03R,M,Ayokong kumain sa hotel.,,9781508298991_Tagalog_Level_2_QM_006.mp3,9781508224976,9781508298991,"6,18"
+7,TA,Tagalog 2,1,,04Q,N,When are you going to leave?,,9781508298991_Tagalog_Level_2_QM_007.mp3,9781508224976,9781508298991,"7,17,18"
+8,TA,Tagalog 2,1,,04R,M,Kailan ka aalis?,,9781508298991_Tagalog_Level_2_QM_008.mp3,9781508224976,9781508298991,"7,17,18"
+9,TA,Tagalog 2,1,,05Q,N,Did you buy a lot of drinks?,,9781508298991_Tagalog_Level_2_QM_009.mp3,9781508224976,9781508298991,"6,14"
+10,TA,Tagalog 2,1,,05R,M,Marami ka bang biniling mga inumin?,,9781508298991_Tagalog_Level_2_QM_010.mp3,9781508224976,9781508298991,"6,14"
+11,TA,Tagalog 2,1,,06Q,N,I have a car.,,9781508298991_Tagalog_Level_2_QM_011.mp3,9781508224976,9781508298991,18
+12,TA,Tagalog 2,1,,06R,F,Meron akong kotse.,,9781508298991_Tagalog_Level_2_QM_012.mp3,9781508224976,9781508298991,18
+13,TA,Tagalog 2,1,,07Q,N,I did nothing last night.,,9781508298991_Tagalog_Level_2_QM_013.mp3,9781508224976,9781508298991,1
+14,TA,Tagalog 2,1,,07R,F,Wala akong ginawa kagabi.,,9781508298991_Tagalog_Level_2_QM_014.mp3,9781508224976,9781508298991,1
+15,TA,Tagalog 2,1,,08Q,N,How about you?,,9781508298991_Tagalog_Level_2_QM_015.mp3,9781508224976,9781508298991,"13,16"
+16,TA,Tagalog 2,1,,08R,F,E ikaw?,,9781508298991_Tagalog_Level_2_QM_016.mp3,9781508224976,9781508298991,"13,16"
+17,TA,Tagalog 2,1,,09Q,N,I don’t want a storm!,,9781508298991_Tagalog_Level_2_QM_017.mp3,9781508224976,9781508298991,19
+18,TA,Tagalog 2,1,,09R,F,Ayoko ng bagyo!,,9781508298991_Tagalog_Level_2_QM_018.mp3,9781508224976,9781508298991,19
+19,TA,Tagalog 2,1,,10Q,N,See you tomorrow!,,9781508298991_Tagalog_Level_2_QM_019.mp3,9781508224976,9781508298991,"10,16,17"
+20,TA,Tagalog 2,1,,10R,F,Kita-kita bukas!,,9781508298991_Tagalog_Level_2_QM_020.mp3,9781508224976,9781508298991,"10,16,17"
+21,TA,Tagalog 2,2,,01Q,N,What did you see?,,9781508298991_Tagalog_Level_2_QM_021.mp3,9781508224976,9781508298991,"1,18"
+22,TA,Tagalog 2,2,,01R,M,Anong nakita mo?,,9781508298991_Tagalog_Level_2_QM_022.mp3,9781508224976,9781508298991,"1,18"
+23,TA,Tagalog 2,2,,02Q,N,I didn’t want to eat in a restaurant.,,9781508298991_Tagalog_Level_2_QM_023.mp3,9781508224976,9781508298991,6
+24,TA,Tagalog 2,2,,02R,M,Ayokong kumain sa restawran.,,9781508298991_Tagalog_Level_2_QM_024.mp3,9781508224976,9781508298991,6
+25,TA,Tagalog 2,2,,03Q,N,She doesn’t need a car.,,9781508298991_Tagalog_Level_2_QM_025.mp3,9781508224976,9781508298991,18
+26,TA,Tagalog 2,2,,03R,M,Hindi niya kailangan ng kotse.,,9781508298991_Tagalog_Level_2_QM_026.mp3,9781508224976,9781508298991,18
+27,TA,Tagalog 2,2,,04Q,N,Do you need a car?,,9781508298991_Tagalog_Level_2_QM_027.mp3,9781508224976,9781508298991,18
+28,TA,Tagalog 2,2,,04R,M,Kailangan mo ba ng kotse?,,9781508298991_Tagalog_Level_2_QM_028.mp3,9781508224976,9781508298991,18
+29,TA,Tagalog 2,2,,05Q,N,Are you here alone?,,9781508298991_Tagalog_Level_2_QM_029.mp3,9781508224976,9781508298991,"1,18"
+30,TA,Tagalog 2,2,,05R,M,Mag-isa ka ba dito?,,9781508298991_Tagalog_Level_2_QM_030.mp3,9781508224976,9781508298991,"1,18"
+31,TA,Tagalog 2,2,,06Q,N,I also need a car.,,9781508298991_Tagalog_Level_2_QM_031.mp3,9781508224976,9781508298991,18
+32,TA,Tagalog 2,2,,06R,F,Kailangan ko rin ng kotse.,,9781508298991_Tagalog_Level_2_QM_032.mp3,9781508224976,9781508298991,18
+33,TA,Tagalog 2,2,,07Q,N,Does your son also need a car?,,9781508298991_Tagalog_Level_2_QM_033.mp3,9781508224976,9781508298991,"5,18"
+34,TA,Tagalog 2,2,,07R,F,Kailangan din ba ng anak mong lalaki ng kotse?,,9781508298991_Tagalog_Level_2_QM_034.mp3,9781508224976,9781508298991,"5,18"
+35,TA,Tagalog 2,2,,08Q,N,Does she speak Tagalog?,,9781508298991_Tagalog_Level_2_QM_035.mp3,9781508224976,9781508298991,"7,16"
+36,TA,Tagalog 2,2,,08R,F,Nagtatagalog ba siya?,,9781508298991_Tagalog_Level_2_QM_036.mp3,9781508224976,9781508298991,"7,16"
+37,TA,Tagalog 2,2,,09Q,N,I’m going to stop here for a few weeks.,,9781508298991_Tagalog_Level_2_QM_037.mp3,9781508224976,9781508298991,17
+38,TA,Tagalog 2,2,,09R,F,Titigil ako rito ng ilang linggo.,,9781508298991_Tagalog_Level_2_QM_038.mp3,9781508224976,9781508298991,17
+39,TA,Tagalog 2,2,,10Q,N,I didn’t see anything.,,9781508298991_Tagalog_Level_2_QM_039.mp3,9781508224976,9781508298991,"1,18"
+40,TA,Tagalog 2,2,,10R,F,Wala akong nakita.,,9781508298991_Tagalog_Level_2_QM_040.mp3,9781508224976,9781508298991,"1,18"
+41,TA,Tagalog 2,3,,01Q,N,Our son liked that very much.,,9781508298991_Tagalog_Level_2_QM_041.mp3,9781508224976,9781508298991,5
+42,TA,Tagalog 2,3,,01R,M,Gustung-gusto iyon ng anak naming lalaki.,,9781508298991_Tagalog_Level_2_QM_042.mp3,9781508224976,9781508298991,5
+43,TA,Tagalog 2,3,,02Q,N,We liked him very much.,,9781508298991_Tagalog_Level_2_QM_043.mp3,9781508224976,9781508298991,5
+44,TA,Tagalog 2,3,,02R,M,Gustung-gusto namin siya.,,9781508298991_Tagalog_Level_2_QM_044.mp3,9781508224976,9781508298991,5
+45,TA,Tagalog 2,3,,03Q,N,He liked it very much.,,9781508298991_Tagalog_Level_2_QM_045.mp3,9781508224976,9781508298991,5
+46,TA,Tagalog 2,3,,03R,M,Gustung-gusto niya.,,9781508298991_Tagalog_Level_2_QM_046.mp3,9781508224976,9781508298991,5
+47,TA,Tagalog 2,3,,04Q,N,I don’t need a car.,,9781508298991_Tagalog_Level_2_QM_047.mp3,9781508224976,9781508298991,18
+48,TA,Tagalog 2,3,,04R,M,Hindi kokailangan ng kotse.,,9781508298991_Tagalog_Level_2_QM_048.mp3,9781508224976,9781508298991,18
+49,TA,Tagalog 2,3,,05Q,N,You all need a car with a driver.,,9781508298991_Tagalog_Level_2_QM_049.mp3,9781508224976,9781508298991,18
+50,TA,Tagalog 2,3,,05R,M,Kailangan ninyo ng kotse kasama ang drayber.,,9781508298991_Tagalog_Level_2_QM_050.mp3,9781508224976,9781508298991,18
+51,TA,Tagalog 2,3,,06Q,N,Was your driver okay?,,9781508298991_Tagalog_Level_2_QM_051.mp3,9781508224976,9781508298991,18
+52,TA,Tagalog 2,3,,06R,F,Okey ba ang drayber ninyo?,,9781508298991_Tagalog_Level_2_QM_052.mp3,9781508224976,9781508298991,18
+53,TA,Tagalog 2,3,,07Q,N,There is some work she did there.,,9781508298991_Tagalog_Level_2_QM_053.mp3,9781508224976,9781508298991,"5,20"
+54,TA,Tagalog 2,3,,07R,F,Meron siyang ginawang trabaho roon.,,9781508298991_Tagalog_Level_2_QM_054.mp3,9781508224976,9781508298991,"5,20"
+55,TA,Tagalog 2,3,,08Q,N,He can take a taxi.,,9781508298991_Tagalog_Level_2_QM_055.mp3,9781508224976,9781508298991,18
+56,TA,Tagalog 2,3,,08R,F,Puwede siyang mag-taksi.,,9781508298991_Tagalog_Level_2_QM_056.mp3,9781508224976,9781508298991,18
+57,TA,Tagalog 2,3,,09Q,N,We stopped there for one day.,,9781508298991_Tagalog_Level_2_QM_057.mp3,9781508224976,9781508298991,"12,17,18"
+58,TA,Tagalog 2,3,,09R,F,Tumigil kami roon nang isang araw.,,9781508298991_Tagalog_Level_2_QM_058.mp3,9781508224976,9781508298991,"12,17,18"
+59,TA,Tagalog 2,3,,10Q,N,We stopped in a hotel there.,,9781508298991_Tagalog_Level_2_QM_059.mp3,9781508224976,9781508298991,18
+60,TA,Tagalog 2,3,,10R,F,Tumigil kami sa isang hotel doon.,,9781508298991_Tagalog_Level_2_QM_060.mp3,9781508224976,9781508298991,18
+61,TA,Tagalog 2,4,,01Q,N,What’s the name of your child?,,9781508298991_Tagalog_Level_2_QM_061.mp3,9781508224976,9781508298991,"5,10,13"
+62,TA,Tagalog 2,4,,01R,M,Anong pangalan ng anak mo?,,9781508298991_Tagalog_Level_2_QM_062.mp3,9781508224976,9781508298991,"5,10,13"
+63,TA,Tagalog 2,4,,02Q,N,But of course!,,9781508298991_Tagalog_Level_2_QM_063.mp3,9781508224976,9781508298991,7
+64,TA,Tagalog 2,4,,02R,M,Syempre naman!,,9781508298991_Tagalog_Level_2_QM_064.mp3,9781508224976,9781508298991,7
+65,TA,Tagalog 2,4,,03Q,N,I also haven’t been there yet.,,9781508298991_Tagalog_Level_2_QM_065.mp3,9781508224976,9781508298991,18
+66,TA,Tagalog 2,4,,03R,M,Hindi pa rin ako nakakapunta roon.,,9781508298991_Tagalog_Level_2_QM_066.mp3,9781508224976,9781508298991,18
+67,TA,Tagalog 2,4,,04Q,N,Does one need to take a plane?,,9781508298991_Tagalog_Level_2_QM_067.mp3,9781508224976,9781508298991,"16,18"
+68,TA,Tagalog 2,4,,04R,M,Kailangan bang mag-eroplano?,,9781508298991_Tagalog_Level_2_QM_068.mp3,9781508224976,9781508298991,"16,18"
+69,TA,Tagalog 2,4,,05Q,N,My younger son is with me.,,9781508298991_Tagalog_Level_2_QM_069.mp3,9781508224976,9781508298991,5
+70,TA,Tagalog 2,4,,05R,M,Kasama ko ang mas batang anak kong lalaki.,,9781508298991_Tagalog_Level_2_QM_070.mp3,9781508224976,9781508298991,5
+71,TA,Tagalog 2,4,,06Q,N,I have already been there!,,9781508298991_Tagalog_Level_2_QM_071.mp3,9781508224976,9781508298991,18
+72,TA,Tagalog 2,4,,06R,F,Nakapunta na ako roon!,,9781508298991_Tagalog_Level_2_QM_072.mp3,9781508224976,9781508298991,18
+73,TA,Tagalog 2,4,,07Q,N,We saw the monument.,,9781508298991_Tagalog_Level_2_QM_073.mp3,9781508224976,9781508298991,"1,18"
+74,TA,Tagalog 2,4,,07R,F,Nakita namin ang monumento.,,9781508298991_Tagalog_Level_2_QM_074.mp3,9781508224976,9781508298991,"1,18"
+75,TA,Tagalog 2,4,,08Q,N,You all need to see Puerto Princesa.,,9781508298991_Tagalog_Level_2_QM_075.mp3,9781508224976,9781508298991,18
+76,TA,Tagalog 2,4,,08R,F,Kailangang makita ninyo ang Puerto Princesa.,,9781508298991_Tagalog_Level_2_QM_076.mp3,9781508224976,9781508298991,18
+77,TA,Tagalog 2,4,,09Q,N,We also need to see Puerto Princesa.,,9781508298991_Tagalog_Level_2_QM_077.mp3,9781508224976,9781508298991,18
+78,TA,Tagalog 2,4,,09R,F,Kailangang makita rin namin ang Puerto Princesa,,9781508298991_Tagalog_Level_2_QM_078.mp3,9781508224976,9781508298991,18
+79,TA,Tagalog 2,4,,10Q,N,No need to take a plane.,,9781508298991_Tagalog_Level_2_QM_079.mp3,9781508224976,9781508298991,18
+80,TA,Tagalog 2,4,,10R,F,Hindi kailangang mag-eroplano.,,9781508298991_Tagalog_Level_2_QM_080.mp3,9781508224976,9781508298991,18
+81,TA,Tagalog 2,5,,01Q,N,What are you going to do in town?,,9781508298991_Tagalog_Level_2_QM_081.mp3,9781508224976,9781508298991,18
+82,TA,Tagalog 2,5,,01R,M,Anong gagawin mo sa bayan?,,9781508298991_Tagalog_Level_2_QM_082.mp3,9781508224976,9781508298991,18
+83,TA,Tagalog 2,5,,02Q,N,My spouse hasn’t yet seen the town.,,9781508298991_Tagalog_Level_2_QM_083.mp3,9781508224976,9781508298991,5
+84,TA,Tagalog 2,5,,02R,M,Hindi pa nakikita ng asawa ko ang bayan.,,9781508298991_Tagalog_Level_2_QM_084.mp3,9781508224976,9781508298991,5
+85,TA,Tagalog 2,5,,03Q,N,She hasn’t been there yet!,,9781508298991_Tagalog_Level_2_QM_085.mp3,9781508224976,9781508298991,18
+86,TA,Tagalog 2,5,,03R,M,Hindi pa siya nakakapunta roon!,,9781508298991_Tagalog_Level_2_QM_086.mp3,9781508224976,9781508298991,18
+87,TA,Tagalog 2,5,,04Q,N,I need to go to town.,,9781508298991_Tagalog_Level_2_QM_087.mp3,9781508224976,9781508298991,18
+88,TA,Tagalog 2,5,,04R,M,Kailangan kong pumunta sa bayan.,,9781508298991_Tagalog_Level_2_QM_088.mp3,9781508224976,9781508298991,18
+89,TA,Tagalog 2,5,,05Q,N,I also know her spouse very well.,,9781508298991_Tagalog_Level_2_QM_089.mp3,9781508224976,9781508298991,"5,10"
+90,TA,Tagalog 2,5,,05R,M,Kilalang-kilala ko rin ang asawa niya.,,9781508298991_Tagalog_Level_2_QM_090.mp3,9781508224976,9781508298991,"5,10"
+91,TA,Tagalog 2,5,,06Q,N,I know her very well.,,9781508298991_Tagalog_Level_2_QM_091.mp3,9781508224976,9781508298991,10
+92,TA,Tagalog 2,5,,06R,F,Kilalang-kilala ko siya.,,9781508298991_Tagalog_Level_2_QM_092.mp3,9781508224976,9781508298991,10
+93,TA,Tagalog 2,5,,07Q,N,Were there many people there?,,9781508298991_Tagalog_Level_2_QM_093.mp3,9781508224976,9781508298991,5
+94,TA,Tagalog 2,5,,07R,F,Marami bang tao doon?,,9781508298991_Tagalog_Level_2_QM_094.mp3,9781508224976,9781508298991,5
+95,TA,Tagalog 2,5,,08Q,N,There is something I want to do.,,9781508298991_Tagalog_Level_2_QM_095.mp3,9781508224976,9781508298991,1
+96,TA,Tagalog 2,5,,08R,F,Meron akong gustong gawin.,,9781508298991_Tagalog_Level_2_QM_096.mp3,9781508224976,9781508298991,1
+97,TA,Tagalog 2,5,,09Q,N,There are a lot of people in town today.,,9781508298991_Tagalog_Level_2_QM_097.mp3,9781508224976,9781508298991,"17,18"
+98,TA,Tagalog 2,5,,09R,F,Maraming tao sa bayan ngayong araw.,,9781508298991_Tagalog_Level_2_QM_098.mp3,9781508224976,9781508298991,"17,18"
+99,TA,Tagalog 2,5,,10Q,N,There were many people there.,,9781508298991_Tagalog_Level_2_QM_099.mp3,9781508224976,9781508298991,5
+100,TA,Tagalog 2,5,,10R,F,Maraming tao doon.,,9781508298991_Tagalog_Level_2_QM_100.mp3,9781508224976,9781508298991,5
+101,TA,Tagalog 2,5,,11Q,N,We stopped there for the whole day.,,9781508298991_Tagalog_Level_2_QM_101.mp3,9781508224976,9781508298991,"17,18"
+102,TA,Tagalog 2,5,,11R,M,Tumigil kami doon nang buong araw.,,9781508298991_Tagalog_Level_2_QM_102.mp3,9781508224976,9781508298991,"17,18"
+103,TA,Tagalog 2,6,,01Q,N,What time will she come?,,9781508298991_Tagalog_Level_2_QM_103.mp3,9781508224976,9781508298991,"5,17"
+104,TA,Tagalog 2,6,,01R,M,Anong oras siya darating?,,9781508298991_Tagalog_Level_2_QM_104.mp3,9781508224976,9781508298991,"5,17"
+105,TA,Tagalog 2,6,,02Q,N,What’s the name of your colleague?,,9781508298991_Tagalog_Level_2_QM_105.mp3,9781508224976,9781508298991,"10,20"
+106,TA,Tagalog 2,6,,02R,M,Anong pangalan ng kaopisina mo?,,9781508298991_Tagalog_Level_2_QM_106.mp3,9781508224976,9781508298991,"10,20"
+107,TA,Tagalog 2,6,,03Q,N,My colleague is going to visit me.,,9781508298991_Tagalog_Level_2_QM_107.mp3,9781508224976,9781508298991,20
+108,TA,Tagalog 2,6,,03R,M,Bibisitahin ako ng kaopisina ko.,,9781508298991_Tagalog_Level_2_QM_108.mp3,9781508224976,9781508298991,20
+109,TA,Tagalog 2,6,,04Q,N,She will also visit her family.,,9781508298991_Tagalog_Level_2_QM_109.mp3,9781508224976,9781508298991,5
+110,TA,Tagalog 2,6,,04R,M,Bibisitahin din niya ang pamilya niya.,,9781508298991_Tagalog_Level_2_QM_110.mp3,9781508224976,9781508298991,5
+111,TA,Tagalog 2,6,,05Q,N,She’s going to visit me.,,9781508298991_Tagalog_Level_2_QM_111.mp3,9781508224976,9781508298991,"1,5"
+112,TA,Tagalog 2,6,,05R,M,Bibisitahin niya ako.,,9781508298991_Tagalog_Level_2_QM_112.mp3,9781508224976,9781508298991,"1,5"
+113,TA,Tagalog 2,6,,06Q,N,Will she come alone?,,9781508298991_Tagalog_Level_2_QM_113.mp3,9781508224976,9781508298991,5
+114,TA,Tagalog 2,6,,06R,F,Darating ba siya mag-isa?,,9781508298991_Tagalog_Level_2_QM_114.mp3,9781508224976,9781508298991,5
+115,TA,Tagalog 2,6,,07Q,N,They’re going to come today.,,9781508298991_Tagalog_Level_2_QM_115.mp3,9781508224976,9781508298991,17
+116,TA,Tagalog 2,6,,07R,F,Darating sila ngayong araw.,,9781508298991_Tagalog_Level_2_QM_116.mp3,9781508224976,9781508298991,17
+117,TA,Tagalog 2,6,,08Q,N,I don’t know yet.,,9781508298991_Tagalog_Level_2_QM_117.mp3,9781508224976,9781508298991,7
+118,TA,Tagalog 2,6,,08R,F,Hindi ko pa alam.,,9781508298991_Tagalog_Level_2_QM_118.mp3,9781508224976,9781508298991,7
+119,TA,Tagalog 2,6,,09Q,N,It’s been a year already.,,9781508298991_Tagalog_Level_2_QM_119.mp3,9781508224976,9781508298991,17
+120,TA,Tagalog 2,6,,09R,F,Isang taon na.,,9781508298991_Tagalog_Level_2_QM_120.mp3,9781508224976,9781508298991,17
+121,TA,Tagalog 2,6,,10Q,N,A friend of mine is in town.,,9781508298991_Tagalog_Level_2_QM_121.mp3,9781508224976,9781508298991,5
+122,TA,Tagalog 2,6,,10R,F,Nasa bayan ang isang kaibigan ko.,,9781508298991_Tagalog_Level_2_QM_122.mp3,9781508224976,9781508298991,5
+123,TA,Tagalog 2,7,,01Q,N,I am not going to work tomorrow.,,9781508298991_Tagalog_Level_2_QM_123.mp3,9781508224976,9781508298991,"17,20"
+124,TA,Tagalog 2,7,,01R,M,Hindi ako magtatrabaho bukas.,,9781508298991_Tagalog_Level_2_QM_124.mp3,9781508224976,9781508298991,"17,20"
+125,TA,Tagalog 2,7,,02Q,N,I never eat there!,,9781508298991_Tagalog_Level_2_QM_125.mp3,9781508224976,9781508298991,6
+126,TA,Tagalog 2,7,,02R,M,Hinding-hindi ako kumakain doon!,,9781508298991_Tagalog_Level_2_QM_126.mp3,9781508224976,9781508298991,6
+127,TA,Tagalog 2,7,,03Q,N,I never go to the beach!,,9781508298991_Tagalog_Level_2_QM_127.mp3,9781508224976,9781508298991,1
+128,TA,Tagalog 2,7,,03R,M,Hinding-hindi ako pumupunta sa tabing-dagat!,,9781508298991_Tagalog_Level_2_QM_128.mp3,9781508224976,9781508298991,1
+129,TA,Tagalog 2,7,,04Q,N,She never drinks coffee!,,9781508298991_Tagalog_Level_2_QM_129.mp3,9781508224976,9781508298991,6
+130,TA,Tagalog 2,7,,04R,M,Hinding-hindi siya umiinom ng kape!,,9781508298991_Tagalog_Level_2_QM_130.mp3,9781508224976,9781508298991,6
+131,TA,Tagalog 2,7,,05Q,N,Tomorrow is a special day.,,9781508298991_Tagalog_Level_2_QM_131.mp3,9781508224976,9781508298991,17
+132,TA,Tagalog 2,7,,05R,M,Ispesyal na araw bukas.,,9781508298991_Tagalog_Level_2_QM_132.mp3,9781508224976,9781508298991,17
+133,TA,Tagalog 2,7,,06Q,N,Do you know them very well?,,9781508298991_Tagalog_Level_2_QM_133.mp3,9781508224976,9781508298991,10
+134,TA,Tagalog 2,7,,06R,F,Kilalang-kilala mo ba sila?,,9781508298991_Tagalog_Level_2_QM_134.mp3,9781508224976,9781508298991,10
+135,TA,Tagalog 2,7,,07Q,N,See you at the beach!,,9781508298991_Tagalog_Level_2_QM_135.mp3,9781508224976,9781508298991,1
+136,TA,Tagalog 2,7,,07R,F,Kita-kita sa tabing-dagat!,,9781508298991_Tagalog_Level_2_QM_136.mp3,9781508224976,9781508298991,1
+137,TA,Tagalog 2,7,,08Q,N,That’s delicious!,,9781508298991_Tagalog_Level_2_QM_137.mp3,9781508224976,9781508298991,"6,13,16"
+138,TA,Tagalog 2,7,,08R,F,Masarap iyan!,,9781508298991_Tagalog_Level_2_QM_138.mp3,9781508224976,9781508298991,"6,13,16"
+139,TA,Tagalog 2,7,,09Q,N,We always eat delicious food there.,,9781508298991_Tagalog_Level_2_QM_139.mp3,9781508224976,9781508298991,6
+140,TA,Tagalog 2,7,,09R,F,Palagi kaming kumakain ng masarap na pagkain doon.,,9781508298991_Tagalog_Level_2_QM_140.mp3,9781508224976,9781508298991,6
+141,TA,Tagalog 2,7,,10Q,N,We always go to the beach.,,9781508298991_Tagalog_Level_2_QM_141.mp3,9781508224976,9781508298991,1
+142,TA,Tagalog 2,7,,10R,F,Palagi kaming pumupunta sa tabing-dagat.,,9781508298991_Tagalog_Level_2_QM_142.mp3,9781508224976,9781508298991,1
+143,TA,Tagalog 2,8,,01Q,N,I want to have dinner first.,,9781508298991_Tagalog_Level_2_QM_143.mp3,9781508224976,9781508298991,6
+144,TA,Tagalog 2,8,,01R,M,Gusto kong maghapunan muna.,,9781508298991_Tagalog_Level_2_QM_144.mp3,9781508224976,9781508298991,6
+145,TA,Tagalog 2,8,,02Q,N,Until what time?,,9781508298991_Tagalog_Level_2_QM_145.mp3,9781508224976,9781508298991,"16,17"
+146,TA,Tagalog 2,8,,02R,M,Hanggang anong oras?,,9781508298991_Tagalog_Level_2_QM_146.mp3,9781508224976,9781508298991,"16,17"
+147,TA,Tagalog 2,8,,03Q,N,"In that case, no problem!",,9781508298991_Tagalog_Level_2_QM_147.mp3,9781508224976,9781508298991,"7,13,16"
+148,TA,Tagalog 2,8,,03R,M,"Kung ganoon, walang problema!",,9781508298991_Tagalog_Level_2_QM_148.mp3,9781508224976,9781508298991,"7,13,16"
+149,TA,Tagalog 2,8,,04Q,N,We often eat there.,,9781508298991_Tagalog_Level_2_QM_149.mp3,9781508224976,9781508298991,6
+150,TA,Tagalog 2,8,,04R,M,Madalas kaming kumakain doon.,,9781508298991_Tagalog_Level_2_QM_150.mp3,9781508224976,9781508298991,6
+151,TA,Tagalog 2,8,,05Q,N,He goes here often.,,9781508298991_Tagalog_Level_2_QM_151.mp3,9781508224976,9781508298991,5
+152,TA,Tagalog 2,8,,05R,M,Madalas siyang pumupunta rito.,,9781508298991_Tagalog_Level_2_QM_152.mp3,9781508224976,9781508298991,5
+153,TA,Tagalog 2,8,,06Q,N,We’re going to walk too!,,9781508298991_Tagalog_Level_2_QM_153.mp3,9781508224976,9781508298991,1
+154,TA,Tagalog 2,8,,06R,F,Maglalakad din kami!,,9781508298991_Tagalog_Level_2_QM_154.mp3,9781508224976,9781508298991,1
+155,TA,Tagalog 2,8,,07Q,N,You are still going to walk!,,9781508298991_Tagalog_Level_2_QM_155.mp3,9781508224976,9781508298991,1
+156,TA,Tagalog 2,8,,07R,F,Maglalakad ka pa!,,9781508298991_Tagalog_Level_2_QM_156.mp3,9781508224976,9781508298991,1
+157,TA,Tagalog 2,8,,08Q,N,Is she going to walk?,,9781508298991_Tagalog_Level_2_QM_157.mp3,9781508224976,9781508298991,1
+158,TA,Tagalog 2,8,,08R,F,Maglalakad ba siya?,,9781508298991_Tagalog_Level_2_QM_158.mp3,9781508224976,9781508298991,1
+159,TA,Tagalog 2,8,,09Q,N,Is that close to the beach?,,9781508298991_Tagalog_Level_2_QM_159.mp3,9781508224976,9781508298991,1
+160,TA,Tagalog 2,8,,09R,F,Malapit ba iyon sa tabing-dagat?,,9781508298991_Tagalog_Level_2_QM_160.mp3,9781508224976,9781508298991,1
+161,TA,Tagalog 2,8,,10Q,N,We can have dinner there.,,9781508298991_Tagalog_Level_2_QM_161.mp3,9781508224976,9781508298991,6
+162,TA,Tagalog 2,8,,10R,F,Puwede kaming maghapunan doon.,,9781508298991_Tagalog_Level_2_QM_162.mp3,9781508224976,9781508298991,6
+163,TA,Tagalog 2,9,,01Q,N,It’s half past ten already!,,9781508298991_Tagalog_Level_2_QM_163.mp3,9781508224976,9781508298991,"12,17"
+164,TA,Tagalog 2,9,,01R,M,Alas dyes i medya na!,,9781508298991_Tagalog_Level_2_QM_164.mp3,9781508224976,9781508298991,"12,17"
+165,TA,Tagalog 2,9,,02Q,N,Half past six in the morning.,,9781508298991_Tagalog_Level_2_QM_165.mp3,9781508224976,9781508298991,"12,17"
+166,TA,Tagalog 2,9,,02R,M,Alas sais i medya nang umaga.,,9781508298991_Tagalog_Level_2_QM_166.mp3,9781508224976,9781508298991,"12,17"
+167,TA,Tagalog 2,9,,03Q,N,They are open until half past ten.,,9781508298991_Tagalog_Level_2_QM_167.mp3,9781508224976,9781508298991,"12,14,17"
+168,TA,Tagalog 2,9,,03R,M,Bukas sila hanggang alas dyes i medya.,,9781508298991_Tagalog_Level_2_QM_168.mp3,9781508224976,9781508298991,"12,14,17"
+169,TA,Tagalog 2,9,,04Q,N,He is going to come on Monday.,,9781508298991_Tagalog_Level_2_QM_169.mp3,9781508224976,9781508298991,"5,17"
+170,TA,Tagalog 2,9,,04R,M,Darating siya sa Lunes.,,9781508298991_Tagalog_Level_2_QM_170.mp3,9781508224976,9781508298991,"5,17"
+171,TA,Tagalog 2,9,,05Q,N,He wants to buy a T-shirt.,,9781508298991_Tagalog_Level_2_QM_171.mp3,9781508224976,9781508298991,14
+172,TA,Tagalog 2,9,,05R,M,Gusto niyang bumili ng kamiseta.,,9781508298991_Tagalog_Level_2_QM_172.mp3,9781508224976,9781508298991,14
+173,TA,Tagalog 2,9,,06Q,N,Until half past ten at night.,,9781508298991_Tagalog_Level_2_QM_173.mp3,9781508224976,9781508298991,"12,17"
+174,TA,Tagalog 2,9,,06R,F,Hanggang alas dyes i medya nang gabi.,,9781508298991_Tagalog_Level_2_QM_174.mp3,9781508224976,9781508298991,"12,17"
+175,TA,Tagalog 2,9,,07Q,N,I often walk there.,,9781508298991_Tagalog_Level_2_QM_175.mp3,9781508224976,9781508298991,1
+176,TA,Tagalog 2,9,,07R,F,Madalas akong naglalakad papunta roon.,,9781508298991_Tagalog_Level_2_QM_176.mp3,9781508224976,9781508298991,1
+177,TA,Tagalog 2,9,,08Q,N,We are going to have lunch there.,,9781508298991_Tagalog_Level_2_QM_177.mp3,9781508224976,9781508298991,6
+178,TA,Tagalog 2,9,,08R,F,Magtatanghalian kami roon.,,9781508298991_Tagalog_Level_2_QM_178.mp3,9781508224976,9781508298991,6
+179,TA,Tagalog 2,9,,09Q,N,I always walk back home.,,9781508298991_Tagalog_Level_2_QM_179.mp3,9781508224976,9781508298991,1
+180,TA,Tagalog 2,9,,09R,F,Palagi akong naglalakad pauwi.,,9781508298991_Tagalog_Level_2_QM_180.mp3,9781508224976,9781508298991,1
+181,TA,Tagalog 2,9,,10Q,N,I always walk on the beach.,,9781508298991_Tagalog_Level_2_QM_181.mp3,9781508224976,9781508298991,1
+182,TA,Tagalog 2,9,,10R,F,Palagi akong naglalakad sa tabing-dagat.,,9781508298991_Tagalog_Level_2_QM_182.mp3,9781508224976,9781508298991,1
+183,TA,Tagalog 2,10,,01Q,N,Friday until Monday.,,9781508298991_Tagalog_Level_2_QM_183.mp3,9781508224976,9781508298991,17
+184,TA,Tagalog 2,10,,01R,M,Byernes hanggang Lunes.,,9781508298991_Tagalog_Level_2_QM_184.mp3,9781508224976,9781508298991,17
+185,TA,Tagalog 2,10,,02Q,N,I also work late.,,9781508298991_Tagalog_Level_2_QM_185.mp3,9781508224976,9781508298991,"17,20"
+186,TA,Tagalog 2,10,,02R,M,Ginagabi rin ako sa trabaho.,,9781508298991_Tagalog_Level_2_QM_186.mp3,9781508224976,9781508298991,"17,20"
+187,TA,Tagalog 2,10,,03Q,N,My spouse works late.,,9781508298991_Tagalog_Level_2_QM_187.mp3,9781508224976,9781508298991,"5,17,20"
+188,TA,Tagalog 2,10,,03R,M,Ginagabi sa trabaho ang asawa ko.,,9781508298991_Tagalog_Level_2_QM_188.mp3,9781508224976,9781508298991,"5,17,20"
+189,TA,Tagalog 2,10,,04Q,N,See you on Friday!,,9781508298991_Tagalog_Level_2_QM_189.mp3,9781508224976,9781508298991,17
+190,TA,Tagalog 2,10,,04R,M,Kita-kita sa Byernes!,,9781508298991_Tagalog_Level_2_QM_190.mp3,9781508224976,9781508298991,17
+191,TA,Tagalog 2,10,,05Q,N,Are we going to walk?,,9781508298991_Tagalog_Level_2_QM_191.mp3,9781508224976,9781508298991,1
+192,TA,Tagalog 2,10,,05R,M,Maglalakad ba tayo?,,9781508298991_Tagalog_Level_2_QM_192.mp3,9781508224976,9781508298991,1
+193,TA,Tagalog 2,10,,06Q,N,I’m really keen on traveling.,,9781508298991_Tagalog_Level_2_QM_193.mp3,9781508224976,9781508298991,18
+194,TA,Tagalog 2,10,,06R,F,Mahilig talaga akong magbyahe.,,9781508298991_Tagalog_Level_2_QM_194.mp3,9781508224976,9781508298991,18
+195,TA,Tagalog 2,10,,07Q,N,It’s ten to eleven already.,,9781508298991_Tagalog_Level_2_QM_195.mp3,9781508224976,9781508298991,"12,17"
+196,TA,Tagalog 2,10,,07R,F,Menos dyes para alas onse na.,,9781508298991_Tagalog_Level_2_QM_196.mp3,9781508224976,9781508298991,"12,17"
+197,TA,Tagalog 2,10,,08Q,N,He always has a lot of work.,,9781508298991_Tagalog_Level_2_QM_197.mp3,9781508224976,9781508298991,"5,20"
+198,TA,Tagalog 2,10,,08R,F,Palagi siyang maraming trabaho.,,9781508298991_Tagalog_Level_2_QM_198.mp3,9781508224976,9781508298991,"5,20"
+199,TA,Tagalog 2,10,,09Q,N,I can travel alone.,,9781508298991_Tagalog_Level_2_QM_199.mp3,9781508224976,9781508298991,18
+200,TA,Tagalog 2,10,,09R,F,Puwede akong magbyahe mag-isa.,,9781508298991_Tagalog_Level_2_QM_200.mp3,9781508224976,9781508298991,18
+201,TA,Tagalog 2,10,,10Q,N,He does not have time.,,9781508298991_Tagalog_Level_2_QM_201.mp3,9781508224976,9781508298991,17
+202,TA,Tagalog 2,10,,10R,F,Wala siyang oras.,,9781508298991_Tagalog_Level_2_QM_202.mp3,9781508224976,9781508298991,17
+203,TA,Tagalog 2,10,,11Q,N,Do you work late?,,9781508298991_Tagalog_Level_2_QM_203.mp3,9781508224976,9781508298991,"17,20"
+204,TA,Tagalog 2,10,,11R,F,Ginagabi ka ba sa trabaho?,,9781508298991_Tagalog_Level_2_QM_204.mp3,9781508224976,9781508298991,"17,20"
+205,TA,Tagalog 2,11,,01Q,N,What time will the movie start?,,9781508298991_Tagalog_Level_2_QM_205.mp3,9781508224976,9781508298991,"1,16,17"
+206,TA,Tagalog 2,11,,01R,M,Anong oras magsisimula ang sine?,,9781508298991_Tagalog_Level_2_QM_206.mp3,9781508224976,9781508298991,"1,16,17"
+207,TA,Tagalog 2,11,,02Q,N,I should buy a T-shirt.,,9781508298991_Tagalog_Level_2_QM_207.mp3,9781508224976,9781508298991,14
+208,TA,Tagalog 2,11,,02R,M,Dapat akong bumili ng kamiseta.,,9781508298991_Tagalog_Level_2_QM_208.mp3,9781508224976,9781508298991,14
+209,TA,Tagalog 2,11,,03Q,N,My spouse wants to attend a concert.,,9781508298991_Tagalog_Level_2_QM_209.mp3,9781508224976,9781508298991,"1,5"
+210,TA,Tagalog 2,11,,03R,M,Gustong manood ng asawa ko ng konsert.,,9781508298991_Tagalog_Level_2_QM_210.mp3,9781508224976,9781508298991,"1,5"
+211,TA,Tagalog 2,11,,04Q,N,He is not keen on traveling.,,9781508298991_Tagalog_Level_2_QM_211.mp3,9781508224976,9781508298991,"5,18"
+212,TA,Tagalog 2,11,,04R,M,Hindi siya mahilig magbyahe.,,9781508298991_Tagalog_Level_2_QM_212.mp3,9781508224976,9781508298991,"5,18"
+213,TA,Tagalog 2,11,,05Q,N,Often I work late.,,9781508298991_Tagalog_Level_2_QM_213.mp3,9781508224976,9781508298991,"17,20"
+214,TA,Tagalog 2,11,,05R,M,Madalas akong ginagabi sa trabaho.,,9781508298991_Tagalog_Level_2_QM_214.mp3,9781508224976,9781508298991,"17,20"
+215,TA,Tagalog 2,11,,06Q,N,I will come from work.,,9781508298991_Tagalog_Level_2_QM_215.mp3,9781508224976,9781508298991,20
+216,TA,Tagalog 2,11,,06R,F,Manggagaling ako sa trabaho.,,9781508298991_Tagalog_Level_2_QM_216.mp3,9781508224976,9781508298991,20
+217,TA,Tagalog 2,11,,07Q,N,Her spouse always works late.,,9781508298991_Tagalog_Level_2_QM_217.mp3,9781508224976,9781508298991,"5,17,20"
+218,TA,Tagalog 2,11,,07R,F,Palaging ginagabi sa trabaho ang asawa niya.,,9781508298991_Tagalog_Level_2_QM_218.mp3,9781508224976,9781508298991,"5,17,20"
+219,TA,Tagalog 2,11,,08Q,N,She prefers to attend a concert.,,9781508298991_Tagalog_Level_2_QM_219.mp3,9781508224976,9781508298991,1
+220,TA,Tagalog 2,11,,08R,F,Mas gusto niyang manood ng konsert.,,9781508298991_Tagalog_Level_2_QM_220.mp3,9781508224976,9781508298991,1
+221,TA,Tagalog 2,11,,09Q,N,Is she keen on traveling?,,9781508298991_Tagalog_Level_2_QM_221.mp3,9781508224976,9781508298991,18
+222,TA,Tagalog 2,11,,09R,F,Mahilig ba siyang magbyahe?,,9781508298991_Tagalog_Level_2_QM_222.mp3,9781508224976,9781508298991,18
+223,TA,Tagalog 2,11,,10Q,N,It’s twenty to five already.,,9781508298991_Tagalog_Level_2_QM_223.mp3,9781508224976,9781508298991,"12,17"
+224,TA,Tagalog 2,11,,10R,F,Menos beynte para alas singko na.,,9781508298991_Tagalog_Level_2_QM_224.mp3,9781508224976,9781508298991,"12,17"
+225,TA,Tagalog 2,12,,01Q,N,Why do you want to talk to her?,,9781508298991_Tagalog_Level_2_QM_225.mp3,9781508224976,9781508298991,"3,18"
+226,TA,Tagalog 2,12,,01R,M,Bakit gusto mo siyang kausapin?,,9781508298991_Tagalog_Level_2_QM_226.mp3,9781508224976,9781508298991,"3,18"
+227,TA,Tagalog 2,12,,02Q,N,Do you all want to come over to our place?,,9781508298991_Tagalog_Level_2_QM_227.mp3,9781508224976,9781508298991,"1,5"
+228,TA,Tagalog 2,12,,02R,M,Gusto ba ninyong pumasyal sa amin?,,9781508298991_Tagalog_Level_2_QM_228.mp3,9781508224976,9781508298991,"1,5"
+229,TA,Tagalog 2,12,,03Q,N,Would you like milk or sugar?,,9781508298991_Tagalog_Level_2_QM_229.mp3,9781508224976,9781508298991,6
+230,TA,Tagalog 2,12,,03R,M,Gusto mo ba ng gatas o asukal?,,9781508298991_Tagalog_Level_2_QM_230.mp3,9781508224976,9781508298991,6
+231,TA,Tagalog 2,12,,04Q,N,Coffee with a little sugar.,,9781508298991_Tagalog_Level_2_QM_231.mp3,9781508224976,9781508298991,"6,16"
+232,TA,Tagalog 2,12,,04R,M,Kapeng may konting asukal.,,9781508298991_Tagalog_Level_2_QM_232.mp3,9781508224976,9781508298991,"6,16"
+233,TA,Tagalog 2,12,,05Q,N,Just a little sugar.,,9781508298991_Tagalog_Level_2_QM_233.mp3,9781508224976,9781508298991,6
+234,TA,Tagalog 2,12,,05R,M,Konting asukal lang.,,9781508298991_Tagalog_Level_2_QM_234.mp3,9781508224976,9781508298991,6
+235,TA,Tagalog 2,12,,06Q,N,I prefer the Saturday night.,,9781508298991_Tagalog_Level_2_QM_235.mp3,9781508224976,9781508298991,17
+236,TA,Tagalog 2,12,,06R,F,Mas gusto ko ang Sabado nang gabi.,,9781508298991_Tagalog_Level_2_QM_236.mp3,9781508224976,9781508298991,17
+237,TA,Tagalog 2,12,,07Q,N,Can you come over tomorrow?,,9781508298991_Tagalog_Level_2_QM_237.mp3,9781508224976,9781508298991,"5,17"
+238,TA,Tagalog 2,12,,07R,F,Puwede ka bang pumasyal bukas?,,9781508298991_Tagalog_Level_2_QM_238.mp3,9781508224976,9781508298991,"5,17"
+239,TA,Tagalog 2,12,,08Q,N,Can I talk to him now?,,9781508298991_Tagalog_Level_2_QM_239.mp3,9781508224976,9781508298991,"3,17"
+240,TA,Tagalog 2,12,,08R,F,Puwede ko ba siyang kausapin ngayon?,,9781508298991_Tagalog_Level_2_QM_240.mp3,9781508224976,9781508298991,"3,17"
+241,TA,Tagalog 2,12,,09Q,N,Can I talk to him?,,9781508298991_Tagalog_Level_2_QM_241.mp3,9781508224976,9781508298991,"3,13,16"
+242,TA,Tagalog 2,12,,09R,F,Puwede ko ba siyang kausapin?,,9781508298991_Tagalog_Level_2_QM_242.mp3,9781508224976,9781508298991,"3,13,16"
+243,TA,Tagalog 2,12,,10Q,N,Let’s go to his office!,,9781508298991_Tagalog_Level_2_QM_243.mp3,9781508224976,9781508298991,20
+244,TA,Tagalog 2,12,,10R,F,Tayo na sa opisina niya!,,9781508298991_Tagalog_Level_2_QM_244.mp3,9781508224976,9781508298991,20
+245,TA,Tagalog 2,13,,01Q,N,What time are you all going to start?,,9781508298991_Tagalog_Level_2_QM_245.mp3,9781508224976,9781508298991,"1,17"
+246,TA,Tagalog 2,13,,01R,M,Anong oras ba kayo magsisimula?,,9781508298991_Tagalog_Level_2_QM_246.mp3,9781508224976,9781508298991,"1,17"
+247,TA,Tagalog 2,13,,02Q,N,"Two coffees with milk, please!",,9781508298991_Tagalog_Level_2_QM_247.mp3,9781508224976,9781508298991,"6,12,13,16"
+248,TA,Tagalog 2,13,,02R,M,Dalawang kapeng may gatas nga!,,9781508298991_Tagalog_Level_2_QM_248.mp3,9781508224976,9781508298991,"6,12,13,16"
+249,TA,Tagalog 2,13,,03Q,N,The movie is two hours and fifteen minutes.,,9781508298991_Tagalog_Level_2_QM_249.mp3,9781508224976,9781508298991,"1,12,17"
+250,TA,Tagalog 2,13,,03R,M,Dalawang oras at kinse minuto ang sine.,,9781508298991_Tagalog_Level_2_QM_250.mp3,9781508224976,9781508298991,"1,12,17"
+251,TA,Tagalog 2,13,,04Q,N,A slice of cake.,,9781508298991_Tagalog_Level_2_QM_251.mp3,9781508224976,9781508298991,6
+252,TA,Tagalog 2,13,,04R,M,Isang hiwa ng keyk.,,9781508298991_Tagalog_Level_2_QM_252.mp3,9781508224976,9781508298991,6
+253,TA,Tagalog 2,13,,05Q,N,I need to talk to her.,,9781508298991_Tagalog_Level_2_QM_253.mp3,9781508224976,9781508298991,"3,16"
+254,TA,Tagalog 2,13,,05R,M,Kailangan ko siyang kausapin.,,9781508298991_Tagalog_Level_2_QM_254.mp3,9781508224976,9781508298991,"3,16"
+255,TA,Tagalog 2,13,,06Q,N,The rice cake is delicious!,,9781508298991_Tagalog_Level_2_QM_255.mp3,9781508224976,9781508298991,"6,13"
+256,TA,Tagalog 2,13,,06R,F,Masarap ang sapin-sapin!,,9781508298991_Tagalog_Level_2_QM_256.mp3,9781508224976,9781508298991,"6,13"
+257,TA,Tagalog 2,13,,07Q,N,After the movie?,,9781508298991_Tagalog_Level_2_QM_257.mp3,9781508224976,9781508298991,1
+258,TA,Tagalog 2,13,,07R,F,Pagkatapos ng sine?,,9781508298991_Tagalog_Level_2_QM_258.mp3,9781508224976,9781508298991,1
+259,TA,Tagalog 2,13,,08Q,N,Do you go here every Thursday?,,9781508298991_Tagalog_Level_2_QM_259.mp3,9781508224976,9781508298991,17
+260,TA,Tagalog 2,13,,08R,F,Pumupunta ka ba rito tuwing Hwebes?,,9781508298991_Tagalog_Level_2_QM_260.mp3,9781508224976,9781508298991,17
+261,TA,Tagalog 2,13,,09Q,N,I can come over to your place after.,,9781508298991_Tagalog_Level_2_QM_261.mp3,9781508224976,9781508298991,"1,5"
+262,TA,Tagalog 2,13,,09R,F,Puwede akong pumasyal sa inyo pagkatapos.,,9781508298991_Tagalog_Level_2_QM_262.mp3,9781508224976,9781508298991,"1,5"
+263,TA,Tagalog 2,13,,10Q,N,For our vacation.,,9781508298991_Tagalog_Level_2_QM_263.mp3,9781508224976,9781508298991,18
+264,TA,Tagalog 2,13,,10R,F,Para sa bakasyon namin.,,9781508298991_Tagalog_Level_2_QM_264.mp3,9781508224976,9781508298991,18
+265,TA,Tagalog 2,14,,01Q,N,It’s not too cold over there.,,9781508298991_Tagalog_Level_2_QM_265.mp3,9781508224976,9781508298991,19
+266,TA,Tagalog 2,14,,01R,M,Hindi masyadong malamig doon.,,9781508298991_Tagalog_Level_2_QM_266.mp3,9781508224976,9781508298991,19
+267,TA,Tagalog 2,14,,02Q,N,Not on Wednesday.,,9781508298991_Tagalog_Level_2_QM_267.mp3,9781508224976,9781508298991,17
+268,TA,Tagalog 2,14,,02R,M,Hindi sa Myerkules.,,9781508298991_Tagalog_Level_2_QM_268.mp3,9781508224976,9781508298991,17
+269,TA,Tagalog 2,14,,03Q,N,When is your vacation?,,9781508298991_Tagalog_Level_2_QM_269.mp3,9781508224976,9781508298991,18
+270,TA,Tagalog 2,14,,03R,M,Kailan ang bakasyon mo?,,9781508298991_Tagalog_Level_2_QM_270.mp3,9781508224976,9781508298991,18
+271,TA,Tagalog 2,14,,04Q,N,When will you go on vacation?,,9781508298991_Tagalog_Level_2_QM_271.mp3,9781508224976,9781508298991,18
+272,TA,Tagalog 2,14,,04R,M,Kailan ka magbabakasyon?,,9781508298991_Tagalog_Level_2_QM_272.mp3,9781508224976,9781508298991,18
+273,TA,Tagalog 2,14,,05Q,N,Five minutes by car.,,9781508298991_Tagalog_Level_2_QM_273.mp3,9781508224976,9781508298991,"12,18"
+274,TA,Tagalog 2,14,,05R,M,Limang minuto sa kotse.,,9781508298991_Tagalog_Level_2_QM_274.mp3,9781508224976,9781508298991,"12,18"
+275,TA,Tagalog 2,14,,06Q,N,Is it hot also there?,,9781508298991_Tagalog_Level_2_QM_275.mp3,9781508224976,9781508298991,19
+276,TA,Tagalog 2,14,,06R,F,Mainit din ba roon?,,9781508298991_Tagalog_Level_2_QM_276.mp3,9781508224976,9781508298991,19
+277,TA,Tagalog 2,14,,07Q,N,Is it colder there?,,9781508298991_Tagalog_Level_2_QM_277.mp3,9781508224976,9781508298991,19
+278,TA,Tagalog 2,14,,07R,F,Mas malamig ba roon?,,9781508298991_Tagalog_Level_2_QM_278.mp3,9781508224976,9781508298991,19
+279,TA,Tagalog 2,14,,08Q,N,My coffee is too hot!,,9781508298991_Tagalog_Level_2_QM_279.mp3,9781508224976,9781508298991,"6,16"
+280,TA,Tagalog 2,14,,08R,F,Masyadong mainit ang kape ko!,,9781508298991_Tagalog_Level_2_QM_280.mp3,9781508224976,9781508298991,"6,16"
+281,TA,Tagalog 2,14,,09Q,N,Is it okay on Thursday?,,9781508298991_Tagalog_Level_2_QM_281.mp3,9781508224976,9781508298991,17
+282,TA,Tagalog 2,14,,09R,F,Okey ba sa Hwebes?,,9781508298991_Tagalog_Level_2_QM_282.mp3,9781508224976,9781508298991,17
+283,TA,Tagalog 2,14,,10Q,N,Will go on vacation my spouse and I.,,9781508298991_Tagalog_Level_2_QM_283.mp3,9781508224976,9781508298991,"5,18"
+284,TA,Tagalog 2,14,,10R,F,Magbabakasyon kami ng asawa ko.,,9781508298991_Tagalog_Level_2_QM_284.mp3,9781508224976,9781508298991,"5,18"
+285,TA,Tagalog 2,15,,01Q,N,I don't like cold coffee.,,9781508298991_Tagalog_Level_2_QM_285.mp3,9781508224976,9781508298991,6
+286,TA,Tagalog 2,15,,01R,M,Ayoko ng malamig na kape.,,9781508298991_Tagalog_Level_2_QM_286.mp3,9781508224976,9781508298991,6
+287,TA,Tagalog 2,15,,02Q,N,I know the weather there very well.,,9781508298991_Tagalog_Level_2_QM_287.mp3,9781508224976,9781508298991,19
+288,TA,Tagalog 2,15,,02R,M,Kabisadong-kabisado ko ang panahon doon.,,9781508298991_Tagalog_Level_2_QM_288.mp3,9781508224976,9781508298991,19
+289,TA,Tagalog 2,15,,03Q,N,She knows that very well.,,9781508298991_Tagalog_Level_2_QM_289.mp3,9781508224976,9781508298991,5
+290,TA,Tagalog 2,15,,03R,M,Kabisadong-kabisado niya iyon.,,9781508298991_Tagalog_Level_2_QM_290.mp3,9781508224976,9781508298991,5
+291,TA,Tagalog 2,15,,04Q,N,Often the weather is very beautiful there.,,9781508298991_Tagalog_Level_2_QM_291.mp3,9781508224976,9781508298991,19
+292,TA,Tagalog 2,15,,04R,M,Madalas napakaganda ng panahon doon.,,9781508298991_Tagalog_Level_2_QM_292.mp3,9781508224976,9781508298991,19
+293,TA,Tagalog 2,15,,05Q,N,Is your coffee still hot?,,9781508298991_Tagalog_Level_2_QM_293.mp3,9781508224976,9781508298991,6
+294,TA,Tagalog 2,15,,05R,M,Mainit pa ba ang kape mo?,,9781508298991_Tagalog_Level_2_QM_294.mp3,9781508224976,9781508298991,6
+295,TA,Tagalog 2,15,,06Q,N,It’s too windy!,,9781508298991_Tagalog_Level_2_QM_295.mp3,9781508224976,9781508298991,19
+296,TA,Tagalog 2,15,,06R,F,Masyadong mahangin!,,9781508298991_Tagalog_Level_2_QM_296.mp3,9781508224976,9781508298991,19
+297,TA,Tagalog 2,15,,07Q,N,The weather is really bad.,,9781508298991_Tagalog_Level_2_QM_297.mp3,9781508224976,9781508298991,19
+298,TA,Tagalog 2,15,,07R,F,Masama talaga ang panahon.,,9781508298991_Tagalog_Level_2_QM_298.mp3,9781508224976,9781508298991,19
+299,TA,Tagalog 2,15,,08Q,N,Not until next week.,,9781508298991_Tagalog_Level_2_QM_299.mp3,9781508224976,9781508298991,17
+300,TA,Tagalog 2,15,,08R,F,Sa susunod na linggo pa.,,9781508298991_Tagalog_Level_2_QM_300.mp3,9781508224976,9781508298991,17
+301,TA,Tagalog 2,15,,09Q,N,Thank you for the coffee and cake.,,9781508298991_Tagalog_Level_2_QM_301.mp3,9781508224976,9781508298991,"6,13,16"
+302,TA,Tagalog 2,15,,09R,F,Salamat para sa kape at keyk.,,9781508298991_Tagalog_Level_2_QM_302.mp3,9781508224976,9781508298991,"6,13,16"
+303,TA,Tagalog 2,15,,10Q,N,It’s raining still!,,9781508298991_Tagalog_Level_2_QM_303.mp3,9781508224976,9781508298991,19
+304,TA,Tagalog 2,15,,10R,F,Umuulan pa!,,9781508298991_Tagalog_Level_2_QM_304.mp3,9781508224976,9781508298991,19
+305,TA,Tagalog 2,15,,11Q,N,"So, it’s raining!",,9781508298991_Tagalog_Level_2_QM_305.mp3,9781508224976,9781508298991,19
+306,TA,Tagalog 2,15,,11R,M,Umuulan pala!,,9781508298991_Tagalog_Level_2_QM_306.mp3,9781508224976,9781508298991,19
+307,TA,Tagalog 2,16,,01Q,N,I’m going to leave without my spouse.,,9781508298991_Tagalog_Level_2_QM_307.mp3,9781508224976,9781508298991,5
+308,TA,Tagalog 2,16,,01R,M,Aalis ako nang hindi kasama ang asawa ko.,,9781508298991_Tagalog_Level_2_QM_308.mp3,9781508224976,9781508298991,5
+309,TA,Tagalog 2,16,,02Q,N,I don’t want to attend without you.,,9781508298991_Tagalog_Level_2_QM_309.mp3,9781508224976,9781508298991,1
+310,TA,Tagalog 2,16,,02R,M,Ayokong manood nang hindi ka kasama.,,9781508298991_Tagalog_Level_2_QM_310.mp3,9781508224976,9781508298991,1
+311,TA,Tagalog 2,16,,03Q,N,Our son used to work there.,,9781508298991_Tagalog_Level_2_QM_311.mp3,9781508224976,9781508298991,"5,20"
+312,TA,Tagalog 2,16,,03R,M,Dati nagtatrabaho roon ang anak naming lalaki.,,9781508298991_Tagalog_Level_2_QM_312.mp3,9781508224976,9781508298991,"5,20"
+313,TA,Tagalog 2,16,,04Q,N,Do you want to order hot coffee?,,9781508298991_Tagalog_Level_2_QM_313.mp3,9781508224976,9781508298991,6
+314,TA,Tagalog 2,16,,04R,M,Gusto mo bang umorder ng mainit na kape?,,9781508298991_Tagalog_Level_2_QM_314.mp3,9781508224976,9781508298991,6
+315,TA,Tagalog 2,16,,05Q,N,It’s not too windy.,,9781508298991_Tagalog_Level_2_QM_315.mp3,9781508224976,9781508298991,19
+316,TA,Tagalog 2,16,,05R,M,Hindi masyadong mahangin.,,9781508298991_Tagalog_Level_2_QM_316.mp3,9781508224976,9781508298991,19
+317,TA,Tagalog 2,16,,06Q,N,Not really!,,9781508298991_Tagalog_Level_2_QM_317.mp3,9781508224976,9781508298991,7
+318,TA,Tagalog 2,16,,06R,F,Hindi naman!,,9781508298991_Tagalog_Level_2_QM_318.mp3,9781508224976,9781508298991,7
+319,TA,Tagalog 2,16,,07Q,N,This is an invitation for what?,,9781508298991_Tagalog_Level_2_QM_319.mp3,9781508224976,9781508298991,1
+320,TA,Tagalog 2,16,,07R,F,Imbitasyon ito para sa ano?,,9781508298991_Tagalog_Level_2_QM_320.mp3,9781508224976,9781508298991,1
+321,TA,Tagalog 2,16,,08Q,N,Coffee is delicious if it’s raining.,,9781508298991_Tagalog_Level_2_QM_321.mp3,9781508224976,9781508298991,"6,19"
+322,TA,Tagalog 2,16,,08R,F,Masarap ang kape kung umuulan.,,9781508298991_Tagalog_Level_2_QM_322.mp3,9781508224976,9781508298991,"6,19"
+323,TA,Tagalog 2,16,,09Q,N,There used to be.,,9781508298991_Tagalog_Level_2_QM_323.mp3,9781508224976,9781508298991,7
+324,TA,Tagalog 2,16,,09R,F,Meron dati.,,9781508298991_Tagalog_Level_2_QM_324.mp3,9781508224976,9781508298991,7
+325,TA,Tagalog 2,16,,10Q,N,It’s always raining every morning.,,9781508298991_Tagalog_Level_2_QM_325.mp3,9781508224976,9781508298991,"17,19"
+326,TA,Tagalog 2,16,,10R,F,Palaging umuulan tuwing umaga.,,9781508298991_Tagalog_Level_2_QM_326.mp3,9781508224976,9781508298991,"17,19"
+327,TA,Tagalog 2,17,,01Q,N,"Before, it was not expensive to travel.",,9781508298991_Tagalog_Level_2_QM_327.mp3,9781508224976,9781508298991,"11,18"
+328,TA,Tagalog 2,17,,01R,M,"Dati, hindi mahal magbyahe.",,9781508298991_Tagalog_Level_2_QM_328.mp3,9781508224976,9781508298991,"11,18"
+329,TA,Tagalog 2,17,,02Q,N,Currently he has a lot of work.,,9781508298991_Tagalog_Level_2_QM_329.mp3,9781508224976,9781508298991,"5,20"
+330,TA,Tagalog 2,17,,02R,M,"Sa kasalukuyan, marami siyang trabaho.",,9781508298991_Tagalog_Level_2_QM_330.mp3,9781508224976,9781508298991,"5,20"
+331,TA,Tagalog 2,17,,03Q,N,How old is she?,,9781508298991_Tagalog_Level_2_QM_331.mp3,9781508224976,9781508298991,5
+332,TA,Tagalog 2,17,,03R,M,IIang taon na siya?,,9781508298991_Tagalog_Level_2_QM_332.mp3,9781508224976,9781508298991,5
+333,TA,Tagalog 2,17,,04Q,N,She’s nice.,,9781508298991_Tagalog_Level_2_QM_333.mp3,9781508224976,9781508298991,"5,13"
+334,TA,Tagalog 2,17,,04R,M,Mabait siya.,,9781508298991_Tagalog_Level_2_QM_334.mp3,9781508224976,9781508298991,"5,13"
+335,TA,Tagalog 2,17,,05Q,N,Our youngest is really nice.,,9781508298991_Tagalog_Level_2_QM_335.mp3,9781508224976,9781508298991,5
+336,TA,Tagalog 2,17,,05R,M,Mabait talaga ang bunso namin.,,9781508298991_Tagalog_Level_2_QM_336.mp3,9781508224976,9781508298991,5
+337,TA,Tagalog 2,17,,06Q,N,My eldest works there.,,9781508298991_Tagalog_Level_2_QM_337.mp3,9781508224976,9781508298991,"5,20"
+338,TA,Tagalog 2,17,,06R,F,Nagtatrabaho ang panganay ko roon.,,9781508298991_Tagalog_Level_2_QM_338.mp3,9781508224976,9781508298991,"5,20"
+339,TA,Tagalog 2,17,,07Q,N,He works there currently.,,9781508298991_Tagalog_Level_2_QM_339.mp3,9781508224976,9781508298991,"5,20"
+340,TA,Tagalog 2,17,,07R,F,Nagtatrabaho siya roon sa kasalukuyan.,,9781508298991_Tagalog_Level_2_QM_340.mp3,9781508224976,9781508298991,"5,20"
+341,TA,Tagalog 2,17,,08Q,N,They’re both nice.,,9781508298991_Tagalog_Level_2_QM_341.mp3,9781508224976,9781508298991,"5,13"
+342,TA,Tagalog 2,17,,08R,F,Pareho silang mabait.,,9781508298991_Tagalog_Level_2_QM_342.mp3,9781508224976,9781508298991,"5,13"
+343,TA,Tagalog 2,17,,09Q,N,We can order for them.,,9781508298991_Tagalog_Level_2_QM_343.mp3,9781508224976,9781508298991,6
+344,TA,Tagalog 2,17,,09R,F,Puwede tayong umorder para sa kanila.,,9781508298991_Tagalog_Level_2_QM_344.mp3,9781508224976,9781508298991,6
+345,TA,Tagalog 2,17,,10Q,N,That’s next month already!,,9781508298991_Tagalog_Level_2_QM_345.mp3,9781508224976,9781508298991,17
+346,TA,Tagalog 2,17,,10R,F,Sa susunod na buwan na iyon!,,9781508298991_Tagalog_Level_2_QM_346.mp3,9781508224976,9781508298991,17
+347,TA,Tagalog 2,18,,01Q,N,What time did you call?,,9781508298991_Tagalog_Level_2_QM_347.mp3,9781508224976,9781508298991,"3,17"
+348,TA,Tagalog 2,18,,01R,M,Anong oras ka tumawag?,,9781508298991_Tagalog_Level_2_QM_348.mp3,9781508224976,9781508298991,"3,17"
+349,TA,Tagalog 2,18,,02Q,N,Why didn’t you answer?,,9781508298991_Tagalog_Level_2_QM_349.mp3,9781508224976,9781508298991,3
+350,TA,Tagalog 2,18,,02R,M,Bakit hindi ka sumagot?,,9781508298991_Tagalog_Level_2_QM_350.mp3,9781508224976,9781508298991,3
+351,TA,Tagalog 2,18,,03Q,N,She didn’t answer.,,9781508298991_Tagalog_Level_2_QM_351.mp3,9781508224976,9781508298991,3
+352,TA,Tagalog 2,18,,03R,M,Hindi siya sumagot.,,9781508298991_Tagalog_Level_2_QM_352.mp3,9781508224976,9781508298991,3
+353,TA,Tagalog 2,18,,04Q,N,They are nice children.,,9781508298991_Tagalog_Level_2_QM_353.mp3,9781508224976,9781508298991,5
+354,TA,Tagalog 2,18,,04R,M,Mababait na anak sila.,,9781508298991_Tagalog_Level_2_QM_354.mp3,9781508224976,9781508298991,5
+355,TA,Tagalog 2,18,,05Q,N,That’s a big company.,,9781508298991_Tagalog_Level_2_QM_355.mp3,9781508224976,9781508298991,20
+356,TA,Tagalog 2,18,,05R,M,Malaking kompanya iyon.,,9781508298991_Tagalog_Level_2_QM_356.mp3,9781508224976,9781508298991,20
+357,TA,Tagalog 2,18,,06Q,N,A lot of magnificent views!,,9781508298991_Tagalog_Level_2_QM_357.mp3,9781508224976,9781508298991,18
+358,TA,Tagalog 2,18,,06R,F,Maraming nakakamanghang tanawin!,,9781508298991_Tagalog_Level_2_QM_358.mp3,9781508224976,9781508298991,18
+359,TA,Tagalog 2,18,,07Q,N,Are they in the same company?,,9781508298991_Tagalog_Level_2_QM_359.mp3,9781508224976,9781508298991,"5,20"
+360,TA,Tagalog 2,18,,07R,F,Nasa parehong kompanya ba sila?,,9781508298991_Tagalog_Level_2_QM_360.mp3,9781508224976,9781508298991,"5,20"
+361,TA,Tagalog 2,18,,08Q,N,Did she answer?,,9781508298991_Tagalog_Level_2_QM_361.mp3,9781508224976,9781508298991,3
+362,TA,Tagalog 2,18,,08R,F,Sumagot ba siya?,,9781508298991_Tagalog_Level_2_QM_362.mp3,9781508224976,9781508298991,3
+363,TA,Tagalog 2,18,,09Q,N,I called her again.,,9781508298991_Tagalog_Level_2_QM_363.mp3,9781508224976,9781508298991,3
+364,TA,Tagalog 2,18,,09R,F,Tumawag ulit ako sa kanya.,,9781508298991_Tagalog_Level_2_QM_364.mp3,9781508224976,9781508298991,3
+365,TA,Tagalog 2,18,,10Q,N,Did you call again?,,9781508298991_Tagalog_Level_2_QM_365.mp3,9781508224976,9781508298991,3
+366,TA,Tagalog 2,18,,10R,F,Tumawag ka ba ulit?,,9781508298991_Tagalog_Level_2_QM_366.mp3,9781508224976,9781508298991,3
+367,TA,Tagalog 2,19,,01Q,N,I used to work there.,,9781508298991_Tagalog_Level_2_QM_367.mp3,9781508224976,9781508298991,20
+368,TA,Tagalog 2,19,,01R,M,Dati nagtatrabaho ako roon.,,9781508298991_Tagalog_Level_2_QM_368.mp3,9781508224976,9781508298991,20
+369,TA,Tagalog 2,19,,02Q,N,I want to call her again.,,9781508298991_Tagalog_Level_2_QM_369.mp3,9781508224976,9781508298991,3
+370,TA,Tagalog 2,19,,02R,M,Gusto kong tumawag sa kanya ulit.,,9781508298991_Tagalog_Level_2_QM_370.mp3,9781508224976,9781508298991,3
+371,TA,Tagalog 2,19,,03Q,N,That’s why I will try again.,,9781508298991_Tagalog_Level_2_QM_371.mp3,9781508224976,9781508298991,7
+372,TA,Tagalog 2,19,,03R,M,Kaya susubukan ko ulit.,,9781508298991_Tagalog_Level_2_QM_372.mp3,9781508224976,9781508298991,7
+373,TA,Tagalog 2,19,,04Q,N,They study well.,,9781508298991_Tagalog_Level_2_QM_373.mp3,9781508224976,9781508298991,5
+374,TA,Tagalog 2,19,,04R,M,Nag-aaral silang mabuti.,,9781508298991_Tagalog_Level_2_QM_374.mp3,9781508224976,9781508298991,5
+375,TA,Tagalog 2,19,,05Q,N,Let’s go to the front.,,9781508298991_Tagalog_Level_2_QM_375.mp3,9781508224976,9781508298991,1
+376,TA,Tagalog 2,19,,05R,M,Pumunta tayo sa harap.,,9781508298991_Tagalog_Level_2_QM_376.mp3,9781508224976,9781508298991,1
+377,TA,Tagalog 2,19,,06Q,N,You may make a call in my office.,,9781508298991_Tagalog_Level_2_QM_377.mp3,9781508224976,9781508298991,3
+378,TA,Tagalog 2,19,,06R,F,Puwede kang makitawag sa opisina ko.,,9781508298991_Tagalog_Level_2_QM_378.mp3,9781508224976,9781508298991,3
+379,TA,Tagalog 2,19,,07Q,N,You may make a call on my cell phone.,,9781508298991_Tagalog_Level_2_QM_379.mp3,9781508224976,9781508298991,3
+380,TA,Tagalog 2,19,,07R,F,Puwede kang makitawag sa cell phone ko.,,9781508298991_Tagalog_Level_2_QM_380.mp3,9781508224976,9781508298991,3
+381,TA,Tagalog 2,19,,08Q,N,Where is he studying?,,9781508298991_Tagalog_Level_2_QM_381.mp3,9781508224976,9781508298991,5
+382,TA,Tagalog 2,19,,08R,F,Saan siya nag-aaral?,,9781508298991_Tagalog_Level_2_QM_382.mp3,9781508224976,9781508298991,5
+383,TA,Tagalog 2,19,,09Q,N,I will try to call again later.,,9781508298991_Tagalog_Level_2_QM_383.mp3,9781508224976,9781508298991,"3,17"
+384,TA,Tagalog 2,19,,09R,F,Susubukan kong tumawag ulit mamaya.,,9781508298991_Tagalog_Level_2_QM_384.mp3,9781508224976,9781508298991,"3,17"
+385,TA,Tagalog 2,19,,10Q,N,I called them earlier.,,9781508298991_Tagalog_Level_2_QM_385.mp3,9781508224976,9781508298991,3
+386,TA,Tagalog 2,19,,10R,F,Tumawag ako sa kanila kanina.,,9781508298991_Tagalog_Level_2_QM_386.mp3,9781508224976,9781508298991,3
+387,TA,Tagalog 2,20,,01Q,N,My eldest is already a doctor.,,9781508298991_Tagalog_Level_2_QM_387.mp3,9781508224976,9781508298991,"5,8,20"
+388,TA,Tagalog 2,20,,01R,M,Doktor na ang panganay ko.,,9781508298991_Tagalog_Level_2_QM_388.mp3,9781508224976,9781508298991,"5,8,20"
+389,TA,Tagalog 2,20,,02Q,N,So your spouse is a doctor!,,9781508298991_Tagalog_Level_2_QM_389.mp3,9781508224976,9781508298991,"5,8,20"
+390,TA,Tagalog 2,20,,02R,M,Doktor pala ang asawa mo!,,9781508298991_Tagalog_Level_2_QM_390.mp3,9781508224976,9781508298991,"5,8,20"
+391,TA,Tagalog 2,20,,03Q,N,My youngest is still a student.,,9781508298991_Tagalog_Level_2_QM_391.mp3,9781508224976,9781508298991,5
+392,TA,Tagalog 2,20,,03R,M,Estudyante pa ang bunso ko.,,9781508298991_Tagalog_Level_2_QM_392.mp3,9781508224976,9781508298991,5
+393,TA,Tagalog 2,20,,04Q,N,They’re not studying now.,,9781508298991_Tagalog_Level_2_QM_393.mp3,9781508224976,9781508298991,"5,17"
+394,TA,Tagalog 2,20,,04R,M,Hindi sila nag-aaral ngayon.,,9781508298991_Tagalog_Level_2_QM_394.mp3,9781508224976,9781508298991,"5,17"
+395,TA,Tagalog 2,20,,05Q,N,It is already low on battery.,,9781508298991_Tagalog_Level_2_QM_395.mp3,9781508224976,9781508298991,"3,16"
+396,TA,Tagalog 2,20,,05R,M,Lobat na ito.,,9781508298991_Tagalog_Level_2_QM_396.mp3,9781508224976,9781508298991,"3,16"
+397,TA,Tagalog 2,20,,06Q,N,May is also hot.,,9781508298991_Tagalog_Level_2_QM_397.mp3,9781508224976,9781508298991,"17,19"
+398,TA,Tagalog 2,20,,06R,F,Mainit din ang Mayo.,,9781508298991_Tagalog_Level_2_QM_398.mp3,9781508224976,9781508298991,"17,19"
+399,TA,Tagalog 2,20,,07Q,N,I have a headache.,,9781508298991_Tagalog_Level_2_QM_399.mp3,9781508224976,9781508298991,"8,16"
+400,TA,Tagalog 2,20,,07R,F,Masakit ang ulo ko.,,9781508298991_Tagalog_Level_2_QM_400.mp3,9781508224976,9781508298991,"8,16"
+401,TA,Tagalog 2,20,,08Q,N,I really have a headache!,,9781508298991_Tagalog_Level_2_QM_401.mp3,9781508224976,9781508298991,8
+402,TA,Tagalog 2,20,,08R,F,Masakit talaga ang ulo ko!,,9781508298991_Tagalog_Level_2_QM_402.mp3,9781508224976,9781508298991,8
+403,TA,Tagalog 2,20,,09Q,N,I have a missed call.,,9781508298991_Tagalog_Level_2_QM_403.mp3,9781508224976,9781508298991,3
+404,TA,Tagalog 2,20,,09R,F,Meron akong miskol.,,9781508298991_Tagalog_Level_2_QM_404.mp3,9781508224976,9781508298991,3
+405,TA,Tagalog 2,20,,10Q,N,My daughter is tired.,,9781508298991_Tagalog_Level_2_QM_405.mp3,9781508224976,9781508298991,"5,8"
+406,TA,Tagalog 2,20,,10R,F,Pagod ang anak kong babae.,,9781508298991_Tagalog_Level_2_QM_406.mp3,9781508224976,9781508298991,"5,8"
+407,TA,Tagalog 2,20,,11Q,N,My cell phone is acting up.,,9781508298991_Tagalog_Level_2_QM_407.mp3,9781508224976,9781508298991,3
+408,TA,Tagalog 2,20,,11R,F,Nagluluko ang cell phone ko.,,9781508298991_Tagalog_Level_2_QM_408.mp3,9781508224976,9781508298991,3
+409,TA,Tagalog 2,21,,01Q,N,Her clinic is two hours away.,,9781508298991_Tagalog_Level_2_QM_409.mp3,9781508224976,9781508298991,"8,12,17"
+410,TA,Tagalog 2,21,,01R,M,Dalawang oras ang layo ng klinika niya.,,9781508298991_Tagalog_Level_2_QM_410.mp3,9781508224976,9781508298991,"8,12,17"
+411,TA,Tagalog 2,21,,02Q,N,They should rest if they are tired.,,9781508298991_Tagalog_Level_2_QM_411.mp3,9781508224976,9781508298991,8
+412,TA,Tagalog 2,21,,02R,M,Dapat silang magpahinga kung pagod sila.,,9781508298991_Tagalog_Level_2_QM_412.mp3,9781508224976,9781508298991,8
+413,TA,Tagalog 2,21,,03Q,N,He should go see the doctor.,,9781508298991_Tagalog_Level_2_QM_413.mp3,9781508224976,9781508298991,"8,16"
+414,TA,Tagalog 2,21,,03R,M,Dapat siyang magpatingin sa doktor.,,9781508298991_Tagalog_Level_2_QM_414.mp3,9781508224976,9781508298991,"8,16"
+415,TA,Tagalog 2,21,,04Q,N,She didn’t answer when I called.,,9781508298991_Tagalog_Level_2_QM_415.mp3,9781508224976,9781508298991,3
+416,TA,Tagalog 2,21,,04R,M,Hindi siya sumagot noong tumawag ako.,,9781508298991_Tagalog_Level_2_QM_416.mp3,9781508224976,9781508298991,3
+417,TA,Tagalog 2,21,,05Q,N,He needs to rest.,,9781508298991_Tagalog_Level_2_QM_417.mp3,9781508224976,9781508298991,8
+418,TA,Tagalog 2,21,,05R,M,Kailangan niyang magpahinga.,,9781508298991_Tagalog_Level_2_QM_418.mp3,9781508224976,9781508298991,8
+419,TA,Tagalog 2,21,,06Q,N,"Does he have a headache, too?",,9781508298991_Tagalog_Level_2_QM_419.mp3,9781508224976,9781508298991,8
+420,TA,Tagalog 2,21,,06R,F,Masakit din ba ang ulo niya?,,9781508298991_Tagalog_Level_2_QM_420.mp3,9781508224976,9781508298991,8
+421,TA,Tagalog 2,21,,07Q,N,Do you know an excellent doctor?,,9781508298991_Tagalog_Level_2_QM_421.mp3,9781508224976,9781508298991,"8,16"
+422,TA,Tagalog 2,21,,07R,F,Meron ka bang kilalang magaling na doktor?,,9781508298991_Tagalog_Level_2_QM_422.mp3,9781508224976,9781508298991,"8,16"
+423,TA,Tagalog 2,21,,08Q,N,Always she’s tired.,,9781508298991_Tagalog_Level_2_QM_423.mp3,9781508224976,9781508298991,8
+424,TA,Tagalog 2,21,,08R,F,Palagi siyang pagod.,,9781508298991_Tagalog_Level_2_QM_424.mp3,9781508224976,9781508298991,8
+425,TA,Tagalog 2,21,,09Q,N,They are both excellent students.,,9781508298991_Tagalog_Level_2_QM_425.mp3,9781508224976,9781508298991,5
+426,TA,Tagalog 2,21,,09R,F,Pareho silang magaling na estudyante.,,9781508298991_Tagalog_Level_2_QM_426.mp3,9781508224976,9781508298991,5
+427,TA,Tagalog 2,21,,10Q,N,Doctors are used to a lot of work.,,9781508298991_Tagalog_Level_2_QM_427.mp3,9781508224976,9781508298991,"16,20"
+428,TA,Tagalog 2,21,,10R,F,Sanay ang mga doktor sa maraming trabaho.,,9781508298991_Tagalog_Level_2_QM_428.mp3,9781508224976,9781508298991,"16,20"
+429,TA,Tagalog 2,22,,01Q,N,Maybe I need help to drive on Monday.,,9781508298991_Tagalog_Level_2_QM_429.mp3,9781508224976,9781508298991,"17,18"
+430,TA,Tagalog 2,22,,01R,M,Baka kailangan ko ng tulong magmaneho sa Lunes.,,9781508298991_Tagalog_Level_2_QM_430.mp3,9781508224976,9781508298991,"17,18"
+431,TA,Tagalog 2,22,,02Q,N,I don’t need help.,,9781508298991_Tagalog_Level_2_QM_431.mp3,9781508224976,9781508298991,"7,16"
+432,TA,Tagalog 2,22,,02R,M,Hindi ko kailangan ng tulong.,,9781508298991_Tagalog_Level_2_QM_432.mp3,9781508224976,9781508298991,"7,16"
+433,TA,Tagalog 2,22,,03Q,N,Do you need help to drive?,,9781508298991_Tagalog_Level_2_QM_433.mp3,9781508224976,9781508298991,18
+434,TA,Tagalog 2,22,,03R,M,Kailangan mo ba ng tulong magmaneho?,,9781508298991_Tagalog_Level_2_QM_434.mp3,9781508224976,9781508298991,18
+435,TA,Tagalog 2,22,,04Q,N,That’s why I drive slowly here.,,9781508298991_Tagalog_Level_2_QM_435.mp3,9781508224976,9781508298991,18
+436,TA,Tagalog 2,22,,04R,M,Kaya mabagal akong magmaneho rito.,,9781508298991_Tagalog_Level_2_QM_436.mp3,9781508224976,9781508298991,18
+437,TA,Tagalog 2,22,,05Q,N,Riding a bike is slow.,,9781508298991_Tagalog_Level_2_QM_437.mp3,9781508224976,9781508298991,1
+438,TA,Tagalog 2,22,,05R,M,Mabagal ang magbisikleta.,,9781508298991_Tagalog_Level_2_QM_438.mp3,9781508224976,9781508298991,1
+439,TA,Tagalog 2,22,,06Q,N,Do you drive fast?,,9781508298991_Tagalog_Level_2_QM_439.mp3,9781508224976,9781508298991,18
+440,TA,Tagalog 2,22,,06R,F,Mabilis ka bang magmaneho?,,9781508298991_Tagalog_Level_2_QM_440.mp3,9781508224976,9781508298991,18
+441,TA,Tagalog 2,22,,07Q,N,I drive more slowly than you.,,9781508298991_Tagalog_Level_2_QM_441.mp3,9781508224976,9781508298991,18
+442,TA,Tagalog 2,22,,07R,F,Mas mabagal akong magmaneho kaysa sa iyo.,,9781508298991_Tagalog_Level_2_QM_442.mp3,9781508224976,9781508298991,18
+443,TA,Tagalog 2,22,,08Q,N,My eyes hurt.,,9781508298991_Tagalog_Level_2_QM_443.mp3,9781508224976,9781508298991,"8,16"
+444,TA,Tagalog 2,22,,08R,F,Masakit ang mga mata ko.,,9781508298991_Tagalog_Level_2_QM_444.mp3,9781508224976,9781508298991,"8,16"
+445,TA,Tagalog 2,22,,09Q,N,I know an excellent doctor.,,9781508298991_Tagalog_Level_2_QM_445.mp3,9781508224976,9781508298991,"8,16"
+446,TA,Tagalog 2,22,,09R,F,Meron akong kilalang magaling na doktor.,,9781508298991_Tagalog_Level_2_QM_446.mp3,9781508224976,9781508298991,"8,16"
+447,TA,Tagalog 2,22,,10Q,N,That’s annoying!,,9781508298991_Tagalog_Level_2_QM_447.mp3,9781508224976,9781508298991,7
+448,TA,Tagalog 2,22,,10R,F,Nakakainis iyon!,,9781508298991_Tagalog_Level_2_QM_448.mp3,9781508224976,9781508298991,7
+449,TA,Tagalog 2,23,,01Q,N,What are you looking for?,,9781508298991_Tagalog_Level_2_QM_449.mp3,9781508224976,9781508298991,"13,16"
+450,TA,Tagalog 2,23,,01R,M,Ano ba ang hinahanap mo?,,9781508298991_Tagalog_Level_2_QM_450.mp3,9781508224976,9781508298991,"13,16"
+451,TA,Tagalog 2,23,,02Q,N,Just slow down a little.,,9781508298991_Tagalog_Level_2_QM_451.mp3,9781508224976,9781508298991,"16,18"
+452,TA,Tagalog 2,23,,02R,M,Bagalan mo lang ng konti.,,9781508298991_Tagalog_Level_2_QM_452.mp3,9781508224976,9781508298991,"16,18"
+453,TA,Tagalog 2,23,,03Q,N,You should rest at home.,,9781508298991_Tagalog_Level_2_QM_453.mp3,9781508224976,9781508298991,8
+454,TA,Tagalog 2,23,,03R,M,Dapat kang magpahinga sa bahay.,,9781508298991_Tagalog_Level_2_QM_454.mp3,9781508224976,9781508298991,8
+455,TA,Tagalog 2,23,,04Q,N,I don’t know the street.,,9781508298991_Tagalog_Level_2_QM_455.mp3,9781508224976,9781508298991,"7,16"
+456,TA,Tagalog 2,23,,04R,M,Hindi ko alam ang kalye.,,9781508298991_Tagalog_Level_2_QM_456.mp3,9781508224976,9781508298991,"7,16"
+457,TA,Tagalog 2,23,,05Q,N,Not too slow!,,9781508298991_Tagalog_Level_2_QM_457.mp3,9781508224976,9781508298991,7
+458,TA,Tagalog 2,23,,05R,M,Hindi masyadong mabagal!,,9781508298991_Tagalog_Level_2_QM_458.mp3,9781508224976,9781508298991,7
+459,TA,Tagalog 2,23,,06Q,N,You don’t need medication.,,9781508298991_Tagalog_Level_2_QM_459.mp3,9781508224976,9781508298991,"8,16"
+460,TA,Tagalog 2,23,,06R,F,Hindi mo kailangan ng gamot.,,9781508298991_Tagalog_Level_2_QM_460.mp3,9781508224976,9781508298991,"8,16"
+461,TA,Tagalog 2,23,,07Q,N,You need to fill up.,,9781508298991_Tagalog_Level_2_QM_461.mp3,9781508224976,9781508298991,18
+462,TA,Tagalog 2,23,,07R,F,Kailangan mong magpagasolina.,,9781508298991_Tagalog_Level_2_QM_462.mp3,9781508224976,9781508298991,18
+463,TA,Tagalog 2,23,,08Q,N,I’m able to drive.,,9781508298991_Tagalog_Level_2_QM_463.mp3,9781508224976,9781508298991,18
+464,TA,Tagalog 2,23,,08R,F,Káya kong magmaneho.,,9781508298991_Tagalog_Level_2_QM_464.mp3,9781508224976,9781508298991,18
+465,TA,Tagalog 2,23,,09Q,N,The clinic is near a gas station.,,9781508298991_Tagalog_Level_2_QM_465.mp3,9781508224976,9781508298991,"8,16"
+466,TA,Tagalog 2,23,,09R,F,Malapit ang klinika sa isang gasolinahan.,,9781508298991_Tagalog_Level_2_QM_466.mp3,9781508224976,9781508298991,"8,16"
+467,TA,Tagalog 2,23,,10Q,N,We can fill up there.,,9781508298991_Tagalog_Level_2_QM_467.mp3,9781508224976,9781508298991,"7,16"
+468,TA,Tagalog 2,23,,10R,F,Puwede tayong magpagasolina doon.,,9781508298991_Tagalog_Level_2_QM_468.mp3,9781508224976,9781508298991,"7,16"
+469,TA,Tagalog 2,24,,01Q,N,Is it unsafe here?,,9781508298991_Tagalog_Level_2_QM_469.mp3,9781508224976,9781508298991,"16,18"
+470,TA,Tagalog 2,24,,01R,M,Delikado ba rito?,,9781508298991_Tagalog_Level_2_QM_470.mp3,9781508224976,9781508298991,"16,18"
+471,TA,Tagalog 2,24,,02Q,N,I want to send a gift to my spouse.,,9781508298991_Tagalog_Level_2_QM_471.mp3,9781508224976,9781508298991,"5,14"
+472,TA,Tagalog 2,24,,02R,M,Gusto kong magpadala ng regalo sa asawa ko.,,9781508298991_Tagalog_Level_2_QM_472.mp3,9781508224976,9781508298991,"5,14"
+473,TA,Tagalog 2,24,,03Q,N,Do you like to play tennis?,,9781508298991_Tagalog_Level_2_QM_473.mp3,9781508224976,9781508298991,1
+474,TA,Tagalog 2,24,,03R,M,Gusto mo bang maglaro ng tennis?,,9781508298991_Tagalog_Level_2_QM_474.mp3,9781508224976,9781508298991,1
+475,TA,Tagalog 2,24,,04Q,N,We are not lost.,,9781508298991_Tagalog_Level_2_QM_475.mp3,9781508224976,9781508298991,"7,16,18"
+476,TA,Tagalog 2,24,,04R,M,Hindi tayo nawawala.,,9781508298991_Tagalog_Level_2_QM_476.mp3,9781508224976,9781508298991,"7,16,18"
+477,TA,Tagalog 2,24,,05Q,N,If I am able to afford the payment.,,9781508298991_Tagalog_Level_2_QM_477.mp3,9781508224976,9781508298991,11
+478,TA,Tagalog 2,24,,05R,M,Kung kaya ko ang bayad.,,9781508298991_Tagalog_Level_2_QM_478.mp3,9781508224976,9781508298991,11
+479,TA,Tagalog 2,24,,06Q,N,That’s why I’m in a hurry.,,9781508298991_Tagalog_Level_2_QM_479.mp3,9781508224976,9781508298991,18
+480,TA,Tagalog 2,24,,06R,F,Kaya nagmamadali ako.,,9781508298991_Tagalog_Level_2_QM_480.mp3,9781508224976,9781508298991,18
+481,TA,Tagalog 2,24,,07Q,N,Is the payment more expensive?,,9781508298991_Tagalog_Level_2_QM_481.mp3,9781508224976,9781508298991,"11,14"
+482,TA,Tagalog 2,24,,07R,F,Mas mahal ba ang bayad?,,9781508298991_Tagalog_Level_2_QM_482.mp3,9781508224976,9781508298991,"11,14"
+483,TA,Tagalog 2,24,,08Q,N,There’s heavy traffic on this street later.,,9781508298991_Tagalog_Level_2_QM_483.mp3,9781508224976,9781508298991,"17,18"
+484,TA,Tagalog 2,24,,08R,F,Matrapik sa kalyeng ito mamaya.,,9781508298991_Tagalog_Level_2_QM_484.mp3,9781508224976,9781508298991,"17,18"
+485,TA,Tagalog 2,24,,09Q,N,Are you in a hurry?,,9781508298991_Tagalog_Level_2_QM_485.mp3,9781508224976,9781508298991,18
+486,TA,Tagalog 2,24,,09R,F,Nagmamadali ka ba?,,9781508298991_Tagalog_Level_2_QM_486.mp3,9781508224976,9781508298991,18
+487,TA,Tagalog 2,24,,10Q,N,When can he play tennis?,,9781508298991_Tagalog_Level_2_QM_487.mp3,9781508224976,9781508298991,1
+488,TA,Tagalog 2,24,,10R,F,Kailan siya puwedeng maglaro ng tennis?,,9781508298991_Tagalog_Level_2_QM_488.mp3,9781508224976,9781508298991,1
+489,TA,Tagalog 2,25,,01Q,N,Why are you in a hurry?,,9781508298991_Tagalog_Level_2_QM_489.mp3,9781508224976,9781508298991,18
+490,TA,Tagalog 2,25,,01R,M,Bakit ka ba nagmamadali?,,9781508298991_Tagalog_Level_2_QM_490.mp3,9781508224976,9781508298991,18
+491,TA,Tagalog 2,25,,02Q,N,Isn’t it dangerous there?,,9781508298991_Tagalog_Level_2_QM_491.mp3,9781508224976,9781508298991,16
+492,TA,Tagalog 2,25,,02R,M,Hindi ba delikado roon?,,9781508298991_Tagalog_Level_2_QM_492.mp3,9781508224976,9781508298991,16
+493,TA,Tagalog 2,25,,03Q,N,Is that a special celebration?,,9781508298991_Tagalog_Level_2_QM_493.mp3,9781508224976,9781508298991,1
+494,TA,Tagalog 2,25,,03R,M,Ispesyal na kasayahan ba iyon?,,9781508298991_Tagalog_Level_2_QM_494.mp3,9781508224976,9781508298991,1
+495,TA,Tagalog 2,25,,04Q,N,How was your vacation?,,9781508298991_Tagalog_Level_2_QM_495.mp3,9781508224976,9781508298991,18
+496,TA,Tagalog 2,25,,04R,M,Kumusta ang bakasyon mo?,,9781508298991_Tagalog_Level_2_QM_496.mp3,9781508224976,9781508298991,18
+497,TA,Tagalog 2,25,,05Q,N,How were the shows?,,9781508298991_Tagalog_Level_2_QM_497.mp3,9781508224976,9781508298991,1
+498,TA,Tagalog 2,25,,05R,M,Kumusta ang mga palabas?,,9781508298991_Tagalog_Level_2_QM_498.mp3,9781508224976,9781508298991,1
+499,TA,Tagalog 2,25,,06Q,N,There’s heavy traffic on our street.,,9781508298991_Tagalog_Level_2_QM_499.mp3,9781508224976,9781508298991,18
+500,TA,Tagalog 2,25,,06R,F,Matrapik sa kalye namin.,,9781508298991_Tagalog_Level_2_QM_500.mp3,9781508224976,9781508298991,18
+501,TA,Tagalog 2,25,,07Q,N,There are several parades and shows.,,9781508298991_Tagalog_Level_2_QM_501.mp3,9781508224976,9781508298991,1
+502,TA,Tagalog 2,25,,07R,F,Merong mga parada at palabas.,,9781508298991_Tagalog_Level_2_QM_502.mp3,9781508224976,9781508298991,1
+503,TA,Tagalog 2,25,,08Q,N,There is drumming and dancing.,,9781508298991_Tagalog_Level_2_QM_503.mp3,9781508224976,9781508298991,1
+504,TA,Tagalog 2,25,,08R,F,Merong tugtog sa tambol at sayawan.,,9781508298991_Tagalog_Level_2_QM_504.mp3,9781508224976,9781508298991,1
+505,TA,Tagalog 2,25,,09Q,N,The big expense is annoying.,,9781508298991_Tagalog_Level_2_QM_505.mp3,9781508224976,9781508298991,"11,14"
+506,TA,Tagalog 2,25,,09R,F,Nakakainis ang malaking gastos.,,9781508298991_Tagalog_Level_2_QM_506.mp3,9781508224976,9781508298991,"11,14"
+507,TA,Tagalog 2,25,,10Q,N,They both have colorful costumes.,,9781508298991_Tagalog_Level_2_QM_507.mp3,9781508224976,9781508298991,1
+508,TA,Tagalog 2,25,,10R,F,Pareho silang merong makukulay na suot.,,9781508298991_Tagalog_Level_2_QM_508.mp3,9781508224976,9781508298991,1
+509,TA,Tagalog 2,25,,11Q,N,Are there colorful costumes?,,9781508298991_Tagalog_Level_2_QM_509.mp3,9781508224976,9781508298991,1
+510,TA,Tagalog 2,25,,11R,M,Meron bang makukulay na suot?,,9781508298991_Tagalog_Level_2_QM_510.mp3,9781508224976,9781508298991,1
+511,TA,Tagalog 2,26,,01Q,N,At five in the afternoon.,,9781508298991_Tagalog_Level_2_QM_511.mp3,9781508224976,9781508298991,12
+512,TA,Tagalog 2,26,,01R,M,Nang alas singko nang hapon.,,9781508298991_Tagalog_Level_2_QM_512.mp3,9781508224976,9781508298991,12
+513,TA,Tagalog 2,26,,02Q,N,What time will you come back?,,9781508298991_Tagalog_Level_2_QM_513.mp3,9781508224976,9781508298991,"1,16,17"
+514,TA,Tagalog 2,26,,02R,M,Anong oras ka babalik?,,9781508298991_Tagalog_Level_2_QM_514.mp3,9781508224976,9781508298991,"1,16,17"
+515,TA,Tagalog 2,26,,03Q,N,My spouse is also not tall.,,9781508298991_Tagalog_Level_2_QM_515.mp3,9781508224976,9781508298991,5
+516,TA,Tagalog 2,26,,03R,M,Hindi rin matangkad ang asawa ko.,,9781508298991_Tagalog_Level_2_QM_516.mp3,9781508224976,9781508298991,5
+517,TA,Tagalog 2,26,,04Q,N,Not the same.,,9781508298991_Tagalog_Level_2_QM_517.mp3,9781508224976,9781508298991,7
+518,TA,Tagalog 2,26,,04R,M,Hindi pareho.,,9781508298991_Tagalog_Level_2_QM_518.mp3,9781508224976,9781508298991,7
+519,TA,Tagalog 2,26,,05Q,N,I need another gift.,,9781508298991_Tagalog_Level_2_QM_519.mp3,9781508224976,9781508298991,14
+520,TA,Tagalog 2,26,,05R,M,Kailangan ko ng isa pang regalo.,,9781508298991_Tagalog_Level_2_QM_520.mp3,9781508224976,9781508298991,14
+521,TA,Tagalog 2,26,,06Q,N,The colorful costumes are expensive.,,9781508298991_Tagalog_Level_2_QM_521.mp3,9781508224976,9781508298991,"11,14"
+522,TA,Tagalog 2,26,,06R,F,Mahal ang makukulay na suot.,,9781508298991_Tagalog_Level_2_QM_522.mp3,9781508224976,9781508298991,"11,14"
+523,TA,Tagalog 2,26,,07Q,N,Her birthday is soon.,,9781508298991_Tagalog_Level_2_QM_523.mp3,9781508224976,9781508298991,"5,17"
+524,TA,Tagalog 2,26,,07R,F,Malapit na ang birthday niya.,,9781508298991_Tagalog_Level_2_QM_524.mp3,9781508224976,9781508298991,"5,17"
+525,TA,Tagalog 2,26,,08Q,N,I prefer to play basketball.,,9781508298991_Tagalog_Level_2_QM_525.mp3,9781508224976,9781508298991,1
+526,TA,Tagalog 2,26,,08R,F,Mas gusto kong maglaro ng basketbol.,,9781508298991_Tagalog_Level_2_QM_526.mp3,9781508224976,9781508298991,1
+527,TA,Tagalog 2,26,,09Q,N,I have another meeting.,,9781508298991_Tagalog_Level_2_QM_527.mp3,9781508224976,9781508298991,20
+528,TA,Tagalog 2,26,,09R,F,Meron akong isa pang miting,,9781508298991_Tagalog_Level_2_QM_528.mp3,9781508224976,9781508298991,20
+529,TA,Tagalog 2,26,,10Q,N,I really enjoyed my vacation.,,9781508298991_Tagalog_Level_2_QM_529.mp3,9781508224976,9781508298991,18
+530,TA,Tagalog 2,26,,10R,F,Talagang nag-enjoy ako sa bakasyon ko.,,9781508298991_Tagalog_Level_2_QM_530.mp3,9781508224976,9781508298991,18
+531,TA,Tagalog 2,27,,01Q,N,Maybe the exchange rate there is better.,,9781508298991_Tagalog_Level_2_QM_531.mp3,9781508224976,9781508298991,"11,16"
+532,TA,Tagalog 2,27,,01R,M,Baka mas mabuti ang palit doon.,,9781508298991_Tagalog_Level_2_QM_532.mp3,9781508224976,9781508298991,"11,16"
+533,TA,Tagalog 2,27,,02Q,N,I should be careful.,,9781508298991_Tagalog_Level_2_QM_533.mp3,9781508224976,9781508298991,18
+534,TA,Tagalog 2,27,,02R,M,Dapat akong mag-ingat.,,9781508298991_Tagalog_Level_2_QM_534.mp3,9781508224976,9781508298991,18
+535,TA,Tagalog 2,27,,03Q,N,I want to exchange dollars.,,9781508298991_Tagalog_Level_2_QM_535.mp3,9781508224976,9781508298991,"11,16"
+536,TA,Tagalog 2,27,,03R,M,Gusto kong magpapalit ng dolyar.,,9781508298991_Tagalog_Level_2_QM_536.mp3,9781508224976,9781508298991,"11,16"
+537,TA,Tagalog 2,27,,04Q,N,We are not tall but we are fast!,,9781508298991_Tagalog_Level_2_QM_537.mp3,9781508224976,9781508298991,7
+538,TA,Tagalog 2,27,,04R,M,Hindi kami matangkad pero mabilis kami!,,9781508298991_Tagalog_Level_2_QM_538.mp3,9781508224976,9781508298991,7
+539,TA,Tagalog 2,27,,05Q,N,Often it’s just the same.,,9781508298991_Tagalog_Level_2_QM_539.mp3,9781508224976,9781508298991,7
+540,TA,Tagalog 2,27,,05R,M,Madalas pareho lang.,,9781508298991_Tagalog_Level_2_QM_540.mp3,9781508224976,9781508298991,7
+541,TA,Tagalog 2,27,,06Q,N,Just be careful.,,9781508298991_Tagalog_Level_2_QM_541.mp3,9781508224976,9781508298991,18
+542,TA,Tagalog 2,27,,06R,F,Mag-ingat ka lang.,,9781508298991_Tagalog_Level_2_QM_542.mp3,9781508224976,9781508298991,18
+543,TA,Tagalog 2,27,,07Q,N,That is indeed a beautiful place.,,9781508298991_Tagalog_Level_2_QM_543.mp3,9781508224976,9781508298991,18
+544,TA,Tagalog 2,27,,07R,F,Magandang lugar nga iyon.,,9781508298991_Tagalog_Level_2_QM_544.mp3,9781508224976,9781508298991,18
+545,TA,Tagalog 2,27,,08Q,N,I prefer to take the bus.,,9781508298991_Tagalog_Level_2_QM_545.mp3,9781508224976,9781508298991,"16,18"
+546,TA,Tagalog 2,27,,08R,F,Mas gusto kong magbus.,,9781508298991_Tagalog_Level_2_QM_546.mp3,9781508224976,9781508298991,"16,18"
+547,TA,Tagalog 2,27,,09Q,N,It’s better to take the bus.,,9781508298991_Tagalog_Level_2_QM_547.mp3,9781508224976,9781508298991,18
+548,TA,Tagalog 2,27,,09R,F,Mas mabuting magbus.,,9781508298991_Tagalog_Level_2_QM_548.mp3,9781508224976,9781508298991,18
+549,TA,Tagalog 2,27,,10Q,N,I can rest on the trip.,,9781508298991_Tagalog_Level_2_QM_549.mp3,9781508224976,9781508298991,18
+550,TA,Tagalog 2,27,,10R,F,Puwede akong magpahinga sa byahe.,,9781508298991_Tagalog_Level_2_QM_550.mp3,9781508224976,9781508298991,18
+551,TA,Tagalog 2,28,,01Q,N,You should be careful.,,9781508298991_Tagalog_Level_2_QM_551.mp3,9781508224976,9781508298991,18
+552,TA,Tagalog 2,28,,01R,M,Dapat kang mag-ingat.,,9781508298991_Tagalog_Level_2_QM_552.mp3,9781508224976,9781508298991,18
+553,TA,Tagalog 2,28,,02Q,N,My spouse likes seafood very much.,,9781508298991_Tagalog_Level_2_QM_553.mp3,9781508224976,9781508298991,"5,6"
+554,TA,Tagalog 2,28,,02R,M,Gustung-gusto ng asawa ko ang pagkaing-dagat.,,9781508298991_Tagalog_Level_2_QM_554.mp3,9781508224976,9781508298991,"5,6"
+555,TA,Tagalog 2,28,,03Q,N,The prices there are lower.,,9781508298991_Tagalog_Level_2_QM_555.mp3,9781508224976,9781508298991,"11,14"
+556,TA,Tagalog 2,28,,03R,M,Mas mababa ang mga presyo roon.,,9781508298991_Tagalog_Level_2_QM_556.mp3,9781508224976,9781508298991,"11,14"
+557,TA,Tagalog 2,28,,04Q,N,The price is lower if you take the bus.,,9781508298991_Tagalog_Level_2_QM_557.mp3,9781508224976,9781508298991,18
+558,TA,Tagalog 2,28,,04R,M,Mas mababa ang presyo kung magbus ka.,,9781508298991_Tagalog_Level_2_QM_558.mp3,9781508224976,9781508298991,18
+559,TA,Tagalog 2,28,,05Q,N,The expense is higher if you drive.,,9781508298991_Tagalog_Level_2_QM_559.mp3,9781508224976,9781508298991,18
+560,TA,Tagalog 2,28,,05R,M,Mas mataas ang gastos kung magmaneho ka.,,9781508298991_Tagalog_Level_2_QM_560.mp3,9781508224976,9781508298991,18
+561,TA,Tagalog 2,28,,06Q,N,The beaches have white sand.,,9781508298991_Tagalog_Level_2_QM_561.mp3,9781508224976,9781508298991,1
+562,TA,Tagalog 2,28,,06R,F,May puting buhangin ang mga tabing-dagat.,,9781508298991_Tagalog_Level_2_QM_562.mp3,9781508224976,9781508298991,1
+563,TA,Tagalog 2,28,,07Q,N,White sand and clear water.,,9781508298991_Tagalog_Level_2_QM_563.mp3,9781508224976,9781508298991,18
+564,TA,Tagalog 2,28,,07R,F,Puting buhangin at malinaw na tubig.,,9781508298991_Tagalog_Level_2_QM_564.mp3,9781508224976,9781508298991,18
+565,TA,Tagalog 2,28,,08Q,N,"In my opinion, that’s not worth it.",,9781508298991_Tagalog_Level_2_QM_565.mp3,9781508224976,9781508298991,7
+566,TA,Tagalog 2,28,,08R,F,"Sa palagay ko, hindi sulit iyon.",,9781508298991_Tagalog_Level_2_QM_566.mp3,9781508224976,9781508298991,7
+567,TA,Tagalog 2,28,,09Q,N,Was the trip worth it?,,9781508298991_Tagalog_Level_2_QM_567.mp3,9781508224976,9781508298991,18
+568,TA,Tagalog 2,28,,09R,F,Sulit ba ang byahe?,,9781508298991_Tagalog_Level_2_QM_568.mp3,9781508224976,9781508298991,18
+569,TA,Tagalog 2,28,,10Q,N,My trip there was really worth it.,,9781508298991_Tagalog_Level_2_QM_569.mp3,9781508224976,9781508298991,18
+570,TA,Tagalog 2,28,,10R,F,Talagang sulit ang byahe ko roon.,,9781508298991_Tagalog_Level_2_QM_570.mp3,9781508224976,9781508298991,18
+571,TA,Tagalog 2,29,,01Q,N,What did you all do last Christmas?,,9781508298991_Tagalog_Level_2_QM_571.mp3,9781508224976,9781508298991,1
+572,TA,Tagalog 2,29,,01R,M,Anong ginawa ninyo noong nakaraang Pasko?,,9781508298991_Tagalog_Level_2_QM_572.mp3,9781508224976,9781508298991,1
+573,TA,Tagalog 2,29,,02Q,N,A few restaurants are still open at midnight.,,9781508298991_Tagalog_Level_2_QM_573.mp3,9781508224976,9781508298991,"6,16,17"
+574,TA,Tagalog 2,29,,02R,M,Bukas pa ang ilang restawran nang hatinggabi.,,9781508298991_Tagalog_Level_2_QM_574.mp3,9781508224976,9781508298991,"6,16,17"
+575,TA,Tagalog 2,29,,03Q,N,We won’t go back right away there.,,9781508298991_Tagalog_Level_2_QM_575.mp3,9781508224976,9781508298991,18
+576,TA,Tagalog 2,29,,03R,M,Hindi kami babalik agad doon.,,9781508298991_Tagalog_Level_2_QM_576.mp3,9781508224976,9781508298991,18
+577,TA,Tagalog 2,29,,04Q,N,Monday at midnight last week.,,9781508298991_Tagalog_Level_2_QM_577.mp3,9781508224976,9781508298991,17
+578,TA,Tagalog 2,29,,04R,M,Lunes nang hatinggabi noong nakaraang linggo.,,9781508298991_Tagalog_Level_2_QM_578.mp3,9781508224976,9781508298991,17
+579,TA,Tagalog 2,29,,05Q,N,There are still many people at midnight.,,9781508298991_Tagalog_Level_2_QM_579.mp3,9781508224976,9781508298991,1
+580,TA,Tagalog 2,29,,05R,M,Marami pang tao nang hatinggabi.,,9781508298991_Tagalog_Level_2_QM_580.mp3,9781508224976,9781508298991,1
+581,TA,Tagalog 2,29,,06Q,N,It’s better to drive.,,9781508298991_Tagalog_Level_2_QM_581.mp3,9781508224976,9781508298991,18
+582,TA,Tagalog 2,29,,06R,F,Mas mabuting magmaneho.,,9781508298991_Tagalog_Level_2_QM_582.mp3,9781508224976,9781508298991,18
+583,TA,Tagalog 2,29,,07Q,N,We enjoyed Christmas here.,,9781508298991_Tagalog_Level_2_QM_583.mp3,9781508224976,9781508298991,1
+584,TA,Tagalog 2,29,,07R,F,Nag-enjoy kami sa Pasko rito.,,9781508298991_Tagalog_Level_2_QM_584.mp3,9781508224976,9781508298991,1
+585,TA,Tagalog 2,29,,08Q,N,Are you preparing already?,,9781508298991_Tagalog_Level_2_QM_585.mp3,9781508224976,9781508298991,7
+586,TA,Tagalog 2,29,,08R,F,Naghahanda ka na ba?,,9781508298991_Tagalog_Level_2_QM_586.mp3,9781508224976,9781508298991,7
+587,TA,Tagalog 2,29,,09Q,N,There are many problems about nature.,,9781508298991_Tagalog_Level_2_QM_587.mp3,9781508224976,9781508298991,7
+588,TA,Tagalog 2,29,,09R,F,Maraming problema tungkol sa kalikasan.,,9781508298991_Tagalog_Level_2_QM_588.mp3,9781508224976,9781508298991,7
+589,TA,Tagalog 2,29,,10Q,N,Every Christmas season.,,9781508298991_Tagalog_Level_2_QM_589.mp3,9781508224976,9781508298991,1
+590,TA,Tagalog 2,29,,10R,F,Tuwing panahon ng Pasko.,,9781508298991_Tagalog_Level_2_QM_590.mp3,9781508224976,9781508298991,1
+591,TA,Tagalog 2,30,,01Q,N,I cannot bring fresh fruits.,,9781508298991_Tagalog_Level_2_QM_591.mp3,9781508224976,9781508298991,6
+592,TA,Tagalog 2,30,,01R,M,Hindi ako puwedeng magdala ng mga sariwang prutas.,,9781508298991_Tagalog_Level_2_QM_592.mp3,9781508224976,9781508298991,6
+593,TA,Tagalog 2,30,,02Q,N,Is that also a special occasion?,,9781508298991_Tagalog_Level_2_QM_593.mp3,9781508224976,9781508298991,1
+594,TA,Tagalog 2,30,,02R,M,Ispesyal na okasyon din ba iyon?,,9781508298991_Tagalog_Level_2_QM_594.mp3,9781508224976,9781508298991,1
+595,TA,Tagalog 2,30,,03Q,N,All the houses have lanterns and lights.,,9781508298991_Tagalog_Level_2_QM_595.mp3,9781508224976,9781508298991,1
+596,TA,Tagalog 2,30,,03R,M,Lahat ng bahay merong mga parol at ilaw.,,9781508298991_Tagalog_Level_2_QM_596.mp3,9781508224976,9781508298991,1
+597,TA,Tagalog 2,30,,04Q,N,I will bring a lantern for our house.,,9781508298991_Tagalog_Level_2_QM_597.mp3,9781508224976,9781508298991,1
+598,TA,Tagalog 2,30,,04R,M,Magdadala ako ng parol para sa bahay namin.,,9781508298991_Tagalog_Level_2_QM_598.mp3,9781508224976,9781508298991,1
+599,TA,Tagalog 2,30,,05Q,N,Many fireworks on the street!,,9781508298991_Tagalog_Level_2_QM_599.mp3,9781508224976,9781508298991,1
+600,TA,Tagalog 2,30,,05R,M,Maraming paputok sa kalye!,,9781508298991_Tagalog_Level_2_QM_600.mp3,9781508224976,9781508298991,1
+601,TA,Tagalog 2,30,,06Q,N,There are also several gatherings at work.,,9781508298991_Tagalog_Level_2_QM_601.mp3,9781508224976,9781508298991,"1,20"
+602,TA,Tagalog 2,30,,06R,F,Meron ding mga salu-salo sa trabaho.,,9781508298991_Tagalog_Level_2_QM_602.mp3,9781508224976,9781508298991,"1,20"
+603,TA,Tagalog 2,30,,07Q,N,There is also a farewell party for you all!,,9781508298991_Tagalog_Level_2_QM_603.mp3,9781508224976,9781508298991,1
+604,TA,Tagalog 2,30,,07R,F,Meron ding despedida para sa inyo!,,9781508298991_Tagalog_Level_2_QM_604.mp3,9781508224976,9781508298991,1
+605,TA,Tagalog 2,30,,08Q,N,There is a farewell party for a colleague of mine.,,9781508298991_Tagalog_Level_2_QM_605.mp3,9781508224976,9781508298991,"1,20"
+606,TA,Tagalog 2,30,,08R,F,Merong despedida para sa isang kaopisina ko.,,9781508298991_Tagalog_Level_2_QM_606.mp3,9781508224976,9781508298991,"1,20"
+607,TA,Tagalog 2,30,,09Q,N,They can attend the fireworks.,,9781508298991_Tagalog_Level_2_QM_607.mp3,9781508224976,9781508298991,1
+608,TA,Tagalog 2,30,,09R,F,Puwede silang manood ng paputok.,,9781508298991_Tagalog_Level_2_QM_608.mp3,9781508224976,9781508298991,1
+609,TA,Tagalog 2,30,,10Q,N,Where can one attend the fireworks?,,9781508298991_Tagalog_Level_2_QM_609.mp3,9781508224976,9781508298991,1
+610,TA,Tagalog 2,30,,10R,F,Saan puwedeng manood ng paputok?,,9781508298991_Tagalog_Level_2_QM_610.mp3,9781508224976,9781508298991,1

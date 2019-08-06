@@ -1,23 +1,29 @@
 package com.simonschuster.pimsleur.unlimited.controllers;
 
+import static com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode.NO_RESULT;
+import static com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode.RESULT_GENERAL_ERROR;
+import static com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode.RESULT_OK;
+import static com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode.RESULT_USER_ID_ALREADY_EXISTS;
+
 import com.simonschuster.pimsleur.unlimited.common.exception.ParamInvalidException;
-import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.SimpleCustomerInfoDTO;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.SubUserDto;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.Customer;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.CustomerInfo;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.Registrant;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.ResultData;
 import com.simonschuster.pimsleur.unlimited.data.edt.customerinfo.SubUserInfo;
 import com.simonschuster.pimsleur.unlimited.services.customer.EDTCustomerInfoService;
 import com.simonschuster.pimsleur.unlimited.services.customer.SubUserService;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
-
 import java.io.UnsupportedEncodingException;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
-import static com.simonschuster.pimsleur.unlimited.utils.EdtResponseCode.*;
+
+
 
 @RestController
 public class SubUserController {

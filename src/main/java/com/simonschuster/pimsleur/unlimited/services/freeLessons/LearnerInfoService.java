@@ -3,7 +3,7 @@ package com.simonschuster.pimsleur.unlimited.services.freeLessons;
 import com.simonschuster.pimsleur.unlimited.common.exception.PimsleurException;
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.LearnerInfoBodyDTO;
-import com.simonschuster.pimsleur.unlimited.data.edt.CodeOnlyResponseEDT;
+import com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode;
 import com.simonschuster.pimsleur.unlimited.services.AppIdService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
@@ -29,7 +29,7 @@ public class LearnerInfoService {
                 learnerInfoBodyDTO.getLanguageName(), appId
         ), headers);
         String url = config.getProperty("edt.api.freeLesson.url");
-        CodeOnlyResponseEDT learnerInfoResponse = postToEdt(parameters, url, CodeOnlyResponseEDT.class);
+        EdtResponseCode learnerInfoResponse = postToEdt(parameters, url, EdtResponseCode.class);
         if (!learnerInfoResponse.getResultCode().equals(1)) {
             throw new PimsleurException("send learner info to EDT failed!");
         }

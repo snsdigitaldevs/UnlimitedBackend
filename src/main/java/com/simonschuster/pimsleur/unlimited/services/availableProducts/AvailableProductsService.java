@@ -1,5 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.services.availableProducts;
 
+import com.simonschuster.pimsleur.unlimited.aop.annotation.LogCostTime;
 import com.simonschuster.pimsleur.unlimited.data.dto.availableProducts.AvailableProductsDto;
 import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.AvailableProductDto;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
@@ -37,6 +38,7 @@ public class AvailableProductsService {
     @Autowired
     private PUCourseInfoService puCourseInfoService;
 
+    @LogCostTime
     public AvailableProductsDto getAvailableProducts(String sub, String email, String storeDomain) {
         if (sub == null) {
             return new AvailableProductsDto(emptyList(), getFreeProducts(emptyList(), storeDomain));

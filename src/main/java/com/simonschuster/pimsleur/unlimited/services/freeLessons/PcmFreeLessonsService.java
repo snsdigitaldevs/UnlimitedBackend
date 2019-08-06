@@ -1,5 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.services.freeLessons;
 
+import com.simonschuster.pimsleur.unlimited.aop.annotation.LogCostTime;
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.AvailableProductDto;
 import com.simonschuster.pimsleur.unlimited.data.edt.freeLessonsList.PCMProduct;
@@ -27,6 +28,7 @@ public class PcmFreeLessonsService {
     @Autowired
     private AppIdService appIdService;
 
+    @LogCostTime
     public List<AvailableProductDto> getPcmFreeLessons(String storeDomain) {
         PCMProducts pcmProducts =
                 postToEdt(createPostBody(storeDomain), config.getProperty("edt.api.pcmProductsApiUrl"), PCMProducts.class);

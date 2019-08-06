@@ -1,5 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.services.promotions;
 
+import com.simonschuster.pimsleur.unlimited.aop.annotation.LogCostTime;
 import com.simonschuster.pimsleur.unlimited.data.dto.promotions.FormatMapping;
 import com.simonschuster.pimsleur.unlimited.data.dto.promotions.PurchaseMapping;
 import com.simonschuster.pimsleur.unlimited.data.dto.promotions.UpsellDto;
@@ -27,6 +28,7 @@ public class UpsellService {
     private EDTCustomerInfoService customerInfoService;
 
 
+    @LogCostTime
     public UpsellDto getUpsellInfoFor(String isbn, String sub, String email, String storeDomain) {
         PurchaseMapping purchaseMapping = purchaseMappingService.findPurchaseMappingFor(isbn);
 

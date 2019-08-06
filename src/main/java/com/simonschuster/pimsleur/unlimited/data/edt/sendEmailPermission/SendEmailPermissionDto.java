@@ -1,22 +1,25 @@
 package com.simonschuster.pimsleur.unlimited.data.edt.sendEmailPermission;
 
-public class SendEmailPermissionDto {
-    String result_code;
-    Object result_data;
 
-    public Object getResult_data() {
-        return result_data;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+    "result_data",
+    "result_code"
+})
+public class SendEmailPermissionDto extends EdtResponseCode {
+    @JsonProperty("result_data")
+    Object resultData;
+
+    public Object getResultData() {
+        return resultData;
     }
 
-    public void setResult_data(Object result_data) {
-        this.result_data = result_data;
-    }
-
-    public String getResult_code() {
-        return result_code;
-    }
-
-    public void setResult_code(String result_code) {
-        this.result_code = result_code;
+    public void setResultData(Object resultData) {
+        this.resultData = resultData;
     }
 }

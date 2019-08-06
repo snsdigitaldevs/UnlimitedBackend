@@ -46,7 +46,7 @@ public class EDTRequestUtil {
     if (response instanceof EdtResponseCode) {
       int resultCode = ((EdtResponseCode) response).getResultCode();
       if (EdtResponseCode.RESULT_OK != resultCode) {
-        LOG.error("Request:[{}] data is", url, httpEntity);
+        LOG.error("Request:[{}] execute error is", url);
         throw new EdtResponseException("Edt response error,code is " + resultCode);
       }
     }

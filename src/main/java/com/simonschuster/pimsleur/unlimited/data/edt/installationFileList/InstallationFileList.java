@@ -1,4 +1,3 @@
-
 package com.simonschuster.pimsleur.unlimited.data.edt.installationFileList;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -6,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode;
 import com.simonschuster.pimsleur.unlimited.services.practices.PracticesUrls;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.List;
 import java.util.Optional;
@@ -48,42 +48,65 @@ public class InstallationFileList extends EdtResponseCode {
             List<FileListItem> ReviewAudioZipFiles = list.stream().filter(f -> f.getPath().contains("REVIEW_AUDIO.zip")).collect(Collectors.toList());
 
             FileListItem flashCardFile = filterFileByType(flashCardFiles, FlashCard);
-            if(!flashCardFile.equals(null)) {
+            if (!flashCardFile.equals(null)) {
                 practicesUrls.setFlashCardUrl(flashCardFile.getFullUrl());
             }
 
             FileListItem quickMatchFile = filterFileByType(quickMatchFiles, QuickMatch);
-            if(!quickMatchFile.equals(null)){
+            if (!quickMatchFile.equals(null)) {
                 practicesUrls.setQuickMatchUrl(quickMatchFile.getFullUrl());
             }
 
             FileListItem speakEasyFile = filterFileByType(speakEasyFiles, SpeakEasy);
-            if(!speakEasyFile.equals(null)){
+            if (!speakEasyFile.equals(null)) {
                 practicesUrls.setSpeakEasyUrl(speakEasyFile.getFullUrl());
             }
 
             FileListItem readingFile = filterFileByType(readingFiles, Reading);
-            if(!readingFile.equals(null)){
+            if (!readingFile.equals(null)) {
                 practicesUrls.setReadingUrl(readingFile.getFullUrl());
             }
 
-            if(ReviewAudioZipFiles.size() > 0){
+            if (ReviewAudioZipFiles.size() > 0) {
                 practicesUrls.setReviewAudioBaseUrl(ReviewAudioZipFiles.get(0).getReviewAudioBaseUrl());
+            } else {
+                List<FileListItem> audioFiles = list.stream().filter(f -> isAudioFiles(f)).collect(Collectors.toList());
+                practicesUrls.setReviewAudioBaseUrl(getReviewAudioBaseUrl(audioFiles.get(0)));
             }
         }
         return practicesUrls;
+    }
+
+    private boolean isAudioFiles(FileListItem f) {
+        return f.getPath().contains(".mp3") && f.getMimeType().equals("audio-mp3");
+    }
+
+    private String getReviewAudioBaseUrl(FileListItem audioFileListItem) {
+        String[] basePathItems = audioFileListItem.getPath().split("/");
+        if (basePathItems.length != 3) {
+            return null;
+        }
+        String lastItem = basePathItems[basePathItems.length - 1];
+        String productCode = "";
+        if (!StringUtils.isEmpty(lastItem)) {
+            productCode = lastItem.split("_")[0];
+        } else {
+            new RuntimeException("error, can't parse the product code ");
+        }
+        String path = String.format("%s/%s/%s_REVIEW_AUDIO_SNIPPETS/", basePathItems[0], basePathItems[1], productCode);
+        return audioFileListItem.getSourceURL() + path;
     }
 
     private boolean isExpectedFiles(FileListItem f, String fileType) {
         return f.getPath().contains(fileType + ".csv");
     }
 
-    FileListItem filterFileByType(List<FileListItem> files, String fileType){
+    FileListItem filterFileByType(List<FileListItem> files, String fileType) {
         Optional<FileListItem> first =
                 files.stream().filter(f -> f.getPath().endsWith(fileType + ".csv")).findFirst();
-        if(files.size() == 1 || !first.isPresent()){
+        if (files.size() == 1 || !first.isPresent()) {
             return files.get(0);
-        }else{
+        } else {
             return first.get();
         }
     }

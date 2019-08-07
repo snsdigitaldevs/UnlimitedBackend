@@ -133,7 +133,7 @@ public class QuickMatchUtil {
                                      Map<String, String> headerMap,
                                      String quickMatchAudioBaseUrl, String quickMatchAudioBaseFileName) {
         String qz = record.get(headerMap.get(HEADER_QZ));
-        Integer unit = Integer.parseInt(record.get(headerMap.get(HEADER_UNIT_NUM)));
+        Integer unit = Integer.parseInt(record.get(headerMap.get(HEADER_UNIT_NUM)).trim());
         String group = qz.contains("_") ? unit.toString() + "_" + qz.substring(0, 2) : "00";
 
         List<QuickMatch> quickMatches = result.stream()

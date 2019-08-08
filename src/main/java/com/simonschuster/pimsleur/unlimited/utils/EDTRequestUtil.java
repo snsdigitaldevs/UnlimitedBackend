@@ -46,7 +46,8 @@ public class EDTRequestUtil {
     if (response instanceof EdtResponseCode) {
       int resultCode = ((EdtResponseCode) response).getResultCode();
       if (EdtResponseCode.RESULT_OK != resultCode) {
-        LOG.error("Request:[{}] execute error is", url);
+        LOG.error("Request:[{}] execute error, params is {} ,response code is {}", url,
+            httpEntity.toString(), resultCode);
         throw new EdtResponseException("Edt response error,code is " + resultCode);
       }
     }

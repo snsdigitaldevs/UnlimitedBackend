@@ -42,7 +42,6 @@ public class GlobalExceptionHandler {
 
   @ExceptionHandler({EdtResponseException.class})
   public ResponseEntity<?> handleEdtResponseException(Exception e) {
-    recordLog(e);
     return parseResponseEntity(of(INTERNAL_SERVER_ERROR.value(), e.getMessage()),
         INTERNAL_SERVER_ERROR);
 

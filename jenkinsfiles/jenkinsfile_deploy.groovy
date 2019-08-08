@@ -87,7 +87,7 @@ node {
                               sh "/usr/local/bin/ansible -i ${hostname}, all -u ${hostuser} -m script -a 'jenkinsfiles/scripts/startupApp.sh ~/${project_name} ${dpkg}'"
                         }
 
-                        sleep 5
+                        sleep 10
 
                         timeout(time:3,unit:'SECONDS') {
                               retry(3) {

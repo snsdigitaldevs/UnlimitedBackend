@@ -1,7 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.utils;
 
 import com.simonschuster.pimsleur.unlimited.aop.LogCostTimeAspect;
-import com.simonschuster.pimsleur.unlimited.common.exception.EdtResponseException;
 import com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -48,7 +47,6 @@ public class EDTRequestUtil {
       if (EdtResponseCode.RESULT_OK != resultCode) {
         LOG.error("Request:[{}] execute error, params is {} ,response code is {}", url,
             httpEntity.toString(), resultCode);
-        throw new EdtResponseException("Edt response error,code is " + resultCode);
       }
     }
   }

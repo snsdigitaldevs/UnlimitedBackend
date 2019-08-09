@@ -40,13 +40,6 @@ public class GlobalExceptionHandler {
         INTERNAL_SERVER_ERROR);
   }
 
-  @ExceptionHandler({EdtResponseException.class})
-  public ResponseEntity<?> handleEdtResponseException(Exception e) {
-    return parseResponseEntity(of(INTERNAL_SERVER_ERROR.value(), e.getMessage()),
-        INTERNAL_SERVER_ERROR);
-
-  }
-
   @ExceptionHandler({MissingServletRequestParameterException.class, ParamInvalidException.class})
   public ResponseEntity<ErrorResponse> handleMethodArgumentNotValidException(Exception e) {
     String errorMessage = e.getMessage();

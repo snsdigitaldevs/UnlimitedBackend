@@ -19,9 +19,9 @@ public class LogCostTimeAspect {
 
   @Around("@annotation(com.simonschuster.pimsleur.unlimited.aop.annotation.LogCostTime)")
   public Object aroundPrintCostTime(ProceedingJoinPoint joinPoint) throws Throwable {
-    MethodSignature signature = (MethodSignature) joinPoint.getSignature(); //方法签名
+    MethodSignature signature = (MethodSignature) joinPoint.getSignature();
     LogCostTime logCostTime = signature.getMethod()
-        .getAnnotation(LogCostTime.class);//从签名注解中获取注解内容配置项
+        .getAnnotation(LogCostTime.class);
     String className = signature.getDeclaringType().getSimpleName();
     String methodName =
         StringUtils.isEmpty(logCostTime.value()) ? signature.getName() : logCostTime.value();

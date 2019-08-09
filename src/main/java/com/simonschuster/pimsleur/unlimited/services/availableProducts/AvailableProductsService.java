@@ -61,10 +61,14 @@ public class AvailableProductsService {
 
     private List<AvailableProductDto> purchasedPUAndPcmProducts(String sub, String email,
         String storeDomain) {
-        if (!StringUtils.isEmpty(sub)) {
+        if (isLogin(sub)) {
             return getAllAvailableProducts(sub, email, storeDomain);
         }
         return new ArrayList<>();
+    }
+
+    private boolean isLogin(String sub){
+      return !StringUtils.isEmpty(sub);
     }
 
     private List<AvailableProductDto> getAllAvailableProducts(String sub, String email, String storeDomain)

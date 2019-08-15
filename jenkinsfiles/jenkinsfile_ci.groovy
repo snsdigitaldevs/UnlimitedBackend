@@ -116,7 +116,7 @@ def deploy(hostnames, env) {
                 sh "/usr/local/bin/ansible -i ${hostname}, all -u ${hostuser} -m script -a 'jenkinsfiles/scripts/startupApp.sh  ${env} ~/${project_name} ${dpkg}'"
             }
 
-            sleep 5
+            sleep 10
 
             timeout(time: 30, unit: 'SECONDS') {
                 retry(3) {

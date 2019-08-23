@@ -1,5 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.services.course;
 
+import com.simonschuster.pimsleur.unlimited.aop.annotation.LogCostTime;
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Image;
@@ -33,6 +34,7 @@ public class PcmFreeCourseService {
     @Autowired
     private AppIdService appIdService;
 
+    @LogCostTime
     public List<Course> getPcmFreeCourseInfos(String productCode, String storeDomain) {
 
         PcmFreeCourseResponse pcmFreeCourseResponse = postToEdt(createPostBody(productCode, storeDomain),

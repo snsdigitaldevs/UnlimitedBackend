@@ -1,5 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.services.course;
 
+import com.simonschuster.pimsleur.unlimited.aop.annotation.LogCostTime;
 import com.simonschuster.pimsleur.unlimited.common.exception.PimsleurException;
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.AggregatedProductInfo;
@@ -32,6 +33,7 @@ public class PUCourseInfoService {
      * @param productCode
      * @param storeDomain
      */
+    @LogCostTime
     public AggregatedProductInfo getPuProductInfo(String productCode, String storeDomain) {
         try {
             AggregatedProductInfo productInfo = new AggregatedProductInfo();

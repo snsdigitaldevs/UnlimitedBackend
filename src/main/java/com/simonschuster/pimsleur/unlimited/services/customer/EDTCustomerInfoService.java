@@ -1,5 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.services.customer;
 
+import com.simonschuster.pimsleur.unlimited.aop.annotation.LogCostTime;
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.CustomerInfoDTO;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.ProgressDTO;
@@ -37,6 +38,7 @@ public class EDTCustomerInfoService {
     @Autowired
     private AppIdService appIdService;
 
+    @LogCostTime
     public CustomerInfoDTO getCustomerInfoDTO(String sub, String storeDomain, String email) throws IOException {
         CustomerInfo puAndPCMCustomerInfo = getPuAndPCMCustomerInfos(sub, storeDomain, email);
         ResultData resultData = puAndPCMCustomerInfo.getResultData();

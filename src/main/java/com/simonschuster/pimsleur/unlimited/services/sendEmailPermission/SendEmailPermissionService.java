@@ -2,6 +2,7 @@ package com.simonschuster.pimsleur.unlimited.services.sendEmailPermission;
 
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.dto.sendEmailPermission.EmailPermissionDto;
+import com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode;
 import com.simonschuster.pimsleur.unlimited.data.edt.sendEmailPermission.SendEmailPermissionDto;
 import com.simonschuster.pimsleur.unlimited.services.AppIdService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,7 +40,7 @@ public class SendEmailPermissionService {
                         headers),
                 requestUrl, SendEmailPermissionDto.class);
 
-        if (sendEmailPermissionDto.getResult_code().equals("1")) {
+        if (sendEmailPermissionDto.getResultCode().equals(EdtResponseCode.RESULT_OK)) {
             return new ResponseEntity<>(OK);
         } else {
             return new ResponseEntity<>(BAD_REQUEST);

@@ -18,7 +18,7 @@
     </filter>
     　　　
     <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">　　　　　　　　　
-      <fileNamePattern>${logging.path}/server-%d{yyyy-MM-dd}.log</fileNamePattern>　　　　　　　　　
+      <fileNamePattern>${logging.path}/server-%d{yyyy-MM-dd}.log.zip</fileNamePattern>　　　　　　　　　
       <maxHistory>30</maxHistory>　　　　　　
     </rollingPolicy>
     　　　　　　
@@ -34,7 +34,7 @@
     </filter>
     　
     <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">　　　　　　　　　
-      <fileNamePattern>${logging.path}/error-%d{yyyy-MM-dd}.log</fileNamePattern>　　　　　　　　　
+      <fileNamePattern>${logging.path}/error-%d{yyyy-MM-dd}.log.zip</fileNamePattern>　　　　　　　　　
       <maxHistory>30</maxHistory>　　　　　　
     </rollingPolicy>
     　　　　　　

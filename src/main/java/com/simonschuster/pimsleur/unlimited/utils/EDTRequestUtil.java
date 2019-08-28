@@ -1,6 +1,5 @@
 package com.simonschuster.pimsleur.unlimited.utils;
 
-import com.simonschuster.pimsleur.unlimited.aop.LogCostTimeAspect;
 import com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,7 +14,7 @@ import static org.springframework.http.MediaType.TEXT_HTML;
 
 public class EDTRequestUtil {
 
-  private static final Logger LOG = LoggerFactory.getLogger(LogCostTimeAspect.class);
+  private static final Logger LOG = LoggerFactory.getLogger(EDTRequestUtil.class);
   private static final RestTemplate REST_TEMPLATE;
 
   static {

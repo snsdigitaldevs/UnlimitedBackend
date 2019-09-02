@@ -19,7 +19,7 @@
     　　　
     <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">　　　　　　　　　
       <fileNamePattern>${logging.path}/server-%d{yyyy-MM-dd}.log.zip</fileNamePattern>　　　　　　　　　
-      <maxHistory>7</maxHistory>　　　　　　
+      <maxHistory>30</maxHistory>　　　　　　
     </rollingPolicy>
     　　　　　　
     <encoder>　　　　　　　　　
@@ -35,11 +35,11 @@
     　
     <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">　　　　　　　　　
       <fileNamePattern>${logging.path}/error-%d{yyyy-MM-dd}.log.zip</fileNamePattern>　　　　　　　　　
-      <maxHistory>7</maxHistory>　　　　　　
+      <maxHistory>30</maxHistory>　　　　　　
     </rollingPolicy>
     　　　　　　
     <encoder>　　　　　　　　　
-      <pattern>${APP_Name} %d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>　　　　　　
+      <pattern>${APP_Name} %d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>　　　　　　
     </encoder>
     　
   </appender>

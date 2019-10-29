@@ -38,15 +38,16 @@ public class VerifyReceiptService {
         HttpEntity<String> entity = createPostBody(verifyReceiptBody, customerId);
         VerifyReceipt verifyReceiptResponse =
             postToEdt(entity, config.getProperty("edt.api.verifyReceipt.url"), VerifyReceipt.class);
-        if (!verifyReceiptResponse.getResultCode().equals(1)) {
+        int resultCode = verifyReceiptResponse.getResultCode();
+        if (resultCode != 1) {
             if (verifyReceiptBody.getIsMultiple()) {
                 LOG.error(String
-                    .format("Restore failed! CustomerId is %s, and VerifyReceiptBody is %s",
-                        customerId, JsonUtils.toJsonString(verifyReceiptBody)));
+                    .format("Restore failed! CustomerId is %s, resultCode is %s, and VerifyReceiptBody is %s",
+                        customerId, resultCode, JsonUtils.toJsonString(verifyReceiptBody)));
             } else {
                 LOG.error(String
-                    .format("Verify failed! CustomerId is %s, and VerifyReceiptBody is %s",
-                        customerId, JsonUtils.toJsonString(verifyReceiptBody)));
+                    .format("Verify failed! CustomerId is %s,resultCode is %s, and VerifyReceiptBody is %s",
+                        customerId, resultCode, JsonUtils.toJsonString(verifyReceiptBody)));
             }
             EdtErrorCodeUtil
                 .throwError(verifyReceiptResponse.getResultCode(), "verify receipt failed!");

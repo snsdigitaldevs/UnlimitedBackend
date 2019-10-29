@@ -50,6 +50,49 @@
     <appender-ref ref="STDOUT"/>
   </logger>
 
+  <appender name="ACCESS" class="ch.qos.logback.core.rolling.RollingFileAppender">　
+    <file>${logging.path}/access.log</file>　　
+    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+      <level>INFO</level>
+    </filter>
+    　　　
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">　　　　　　　　　
+      <fileNamePattern>${logging.path}/access-%d{yyyy-MM-dd}.log.zip</fileNamePattern>　　　　　　　　　
+      <maxHistory>30</maxHistory>　　　　　　
+    </rollingPolicy>
+    　　　　　　
+    <encoder>　　　　　　　　　
+      <pattern>${APP_Name} %d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>　　　　　　
+    </encoder>
+  </appender>
+
+  <logger name="com.simonschuster.pimsleur.unlimited.filter" level="info" additivity="false">
+    <appender-ref ref="ACCESS"/>
+    <appender-ref ref="STDOUT"/>
+  </logger>
+
+  <appender name="PURCHASE" class="ch.qos.logback.core.rolling.RollingFileAppender">　
+    <file>${logging.path}/purchase.log</file>　　
+    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+      <level>INFO</level>
+    </filter>
+    　　　
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">　　　　　　　　　
+      <fileNamePattern>${logging.path}/purchase-%d{yyyy-MM-dd}.log.zip</fileNamePattern>　　　　　　　　　
+      <maxHistory>30</maxHistory>　　　　　　
+    </rollingPolicy>
+    　　　　　　
+    <encoder>　　　　　　　　　
+      <pattern>${APP_Name} %d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>　　　　　　
+    </encoder>
+  </appender>
+
+  <logger name="com.simonschuster.pimsleur.unlimited.services.purchase" level="info" additivity="false">
+    <appender-ref ref="PURCHASE"/>
+    <appender-ref ref="STDOUT"/>
+  </logger>
+
+
   <root level="info">
     <appender-ref ref="STDOUT"/>
   </root>

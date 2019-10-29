@@ -1,9 +1,11 @@
-package com.simonschuster.pimsleur.unlimited.services.customer;
+package com.simonschuster.pimsleur.unlimited.services.purchase;
 
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode;
 import com.simonschuster.pimsleur.unlimited.services.AppIdService;
 import com.simonschuster.pimsleur.unlimited.utils.EdtErrorCodeUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -14,6 +16,8 @@ import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEd
 
 @Service
 public class IntentionToBuyService {
+
+    private static final Logger LOG = LoggerFactory.getLogger(IntentionToBuyService.class);
     @Autowired
     private ApplicationConfiguration config;
     @Autowired
@@ -29,7 +33,12 @@ public class IntentionToBuyService {
         EdtResponseCode intentionToBuyResponse = postToEdt(entity, url, EdtResponseCode.class);
 
         if (!intentionToBuyResponse.getResultCode().equals(1)) {
-            EdtErrorCodeUtil.throwError(intentionToBuyResponse.getResultCode(), "intention to buy failed!");
+            EdtErrorCodeUtil
+                .throwError(intentionToBuyResponse.getResultCode(), "intention to buy failed!");
+            LOG.error(String
+                .format("intentionToBuy error, customerId is %s, isbn is %s", customerId, isbn));
         }
+        LOG.info(String
+            .format("intentionToBuy success, customerId is %s, isbn is %s", customerId, isbn));
     }
 }

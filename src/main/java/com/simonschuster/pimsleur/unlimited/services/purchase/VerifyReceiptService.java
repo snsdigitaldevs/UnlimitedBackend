@@ -1,4 +1,4 @@
-package com.simonschuster.pimsleur.unlimited.services.customer;
+package com.simonschuster.pimsleur.unlimited.services.purchase;
 
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.VerifyReceiptBody;
@@ -6,6 +6,9 @@ import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.VerifyReceiptD
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.verifyReceipt.VerifyReceipt;
 import com.simonschuster.pimsleur.unlimited.services.AppIdService;
 import com.simonschuster.pimsleur.unlimited.utils.EdtErrorCodeUtil;
+import com.simonschuster.pimsleur.unlimited.utils.JsonUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -20,6 +23,8 @@ import static java.net.URLEncoder.encode;
 @Service
 public class VerifyReceiptService {
 
+    private static final Logger LOG = LoggerFactory.getLogger(VerifyReceiptService.class);
+
     private String singleAction = "kljh";
     private String multipleAction = "gfds";
 
@@ -29,13 +34,26 @@ public class VerifyReceiptService {
     private AppIdService appIdService;
 
     public VerifyReceiptDTO verifyReceipt(VerifyReceiptBody verifyReceiptBody, String customerId)
-            throws UnsupportedEncodingException {
+        throws UnsupportedEncodingException {
         HttpEntity<String> entity = createPostBody(verifyReceiptBody, customerId);
         VerifyReceipt verifyReceiptResponse =
-                postToEdt(entity, config.getProperty("edt.api.verifyReceipt.url"), VerifyReceipt.class);
+            postToEdt(entity, config.getProperty("edt.api.verifyReceipt.url"), VerifyReceipt.class);
         if (!verifyReceiptResponse.getResultCode().equals(1)) {
-            EdtErrorCodeUtil.throwError(verifyReceiptResponse.getResultCode(), "verify receipt failed!");
+            if (verifyReceiptBody.getIsMultiple()) {
+                LOG.error(String
+                    .format("Restore failed! CustomerId is %s, and VerifyReceiptBody is %s",
+                        customerId, JsonUtils.toJsonString(verifyReceiptBody)));
+            } else {
+                LOG.error(String
+                    .format("Verify failed! CustomerId is %s, and VerifyReceiptBody is %s",
+                        customerId, JsonUtils.toJsonString(verifyReceiptBody)));
+            }
+            EdtErrorCodeUtil
+                .throwError(verifyReceiptResponse.getResultCode(), "verify receipt failed!");
         }
+        LOG.info(String
+            .format("Restore success!  CustomerId is %s, and VerifyReceiptBody is %s", customerId,
+                JsonUtils.toJsonString(verifyReceiptBody)));
         return verifyReceiptResponse.fomartToDOT();
     }
 

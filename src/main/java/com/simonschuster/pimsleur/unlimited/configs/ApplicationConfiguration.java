@@ -1,7 +1,10 @@
 package com.simonschuster.pimsleur.unlimited.configs;
 
+import com.simonschuster.pimsleur.unlimited.filter.RequestLogFilter;
+import javax.servlet.Filter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
@@ -58,5 +61,18 @@ public class ApplicationConfiguration {
                         .allowCredentials(true);
             }
         };
+    }
+
+    @Bean
+    public FilterRegistrationBean<Filter> requestLogFilterRegistration() {
+        FilterRegistrationBean<Filter> registration = new FilterRegistrationBean<>();
+        RequestLogFilter requestLogFilter = new RequestLogFilter();
+        requestLogFilter.setIncludeQueryString(true);
+        requestLogFilter.setIncludePayload(true);
+        registration.setFilter(requestLogFilter);
+        registration.addUrlPatterns("/*");
+        registration.setName("requestLogFilter");
+        registration.setOrder(3);
+        return registration;
     }
 }

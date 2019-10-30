@@ -37,7 +37,6 @@ public class PUCourseInfoService {
             productInfo.setPuProductInfo(productInfoFromPu);
             return productInfo;
         } catch (Exception exception) {
-            exception.printStackTrace();
             throw new PimsleurException(
                 "Exception occurred when get product info with PU product code " + productCode);
         }

@@ -93,12 +93,25 @@ public class InstallationFileList extends EdtResponseCode {
         return audioFileListItem.getSourceURL() + path;
     }
 
-    private FileListItem getFileItemByFileType(List<FileListItem> fileListItemList,String fileType){
-        return fileListItemList.stream().filter(fileListItem -> isExpectedFiles(fileListItem, fileType)).findFirst().orElse(null);
+    private FileListItem getFileItemByFileType(List<FileListItem> allListItemList,
+        String fileType) {
+        List<FileListItem> fileListItems = allListItemList.stream()
+            .filter(fileListItem -> isContainedFileType(fileListItem, fileType)).collect(
+                Collectors.toList());
+        if (fileListItems.size() == 1) {
+            return fileListItems.get(0);
+        } else {
+            return fileListItems.stream().filter(fileListItem -> isEndFileType(fileListItem, fileType))
+                .findFirst().orElse(null);
+        }
+    }
+
+    private boolean isEndFileType(FileListItem f, String fileType) {
+        return f.getPath().endsWith(fileType + ".csv");
     }
 
 
-    private boolean isExpectedFiles(FileListItem f, String fileType) {
-        return f.getPath().endsWith(fileType + ".csv");
+    private boolean isContainedFileType(FileListItem f, String fileType) {
+        return f.getPath().contains(fileType + ".csv");
     }
 }

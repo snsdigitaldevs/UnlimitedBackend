@@ -42,7 +42,7 @@ public class PUCourseInfoService {
             return productInfo;
         } catch (Exception exception) {
             logger.error("Exception occurred when get product info with PU product code {}",
-                productCode);
+                productCode, exception);
             exception.printStackTrace();
             throw new PimsleurException(
                 "Exception occurred when get product info with PU product code " + productCode);

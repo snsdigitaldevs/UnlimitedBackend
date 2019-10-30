@@ -7,8 +7,6 @@ import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.AggregatedProdu
 import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.PuProductInfo;
 import com.simonschuster.pimsleur.unlimited.services.AppIdService;
 import com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -22,8 +20,6 @@ public class PUCourseInfoService {
 
     @Autowired
     private ApplicationConfiguration config;
-
-    private static final Logger logger = LoggerFactory.getLogger(PUCourseInfoService.class);
     @Autowired
     private AppIdService appIdService;
 
@@ -41,8 +37,6 @@ public class PUCourseInfoService {
             productInfo.setPuProductInfo(productInfoFromPu);
             return productInfo;
         } catch (Exception exception) {
-            logger.error("Exception occurred when get product info with PU product code {}",
-                productCode, exception);
             exception.printStackTrace();
             throw new PimsleurException(
                 "Exception occurred when get product info with PU product code " + productCode);

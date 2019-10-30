@@ -40,21 +40,11 @@ public class VerifyReceiptService {
             postToEdt(entity, config.getProperty("edt.api.verifyReceipt.url"), VerifyReceipt.class);
         int resultCode = verifyReceiptResponse.getResultCode();
         if (resultCode != 1) {
-            if (verifyReceiptBody.getIsMultiple()) {
-                LOG.error(String
-                    .format("Restore failed! CustomerId is %s, resultCode is %s, and VerifyReceiptBody is %s",
-                        customerId, resultCode, JsonUtils.toJsonString(verifyReceiptBody)));
-            } else {
-                LOG.error(String
-                    .format("Verify failed! CustomerId is %s,resultCode is %s, and VerifyReceiptBody is %s",
-                        customerId, resultCode, JsonUtils.toJsonString(verifyReceiptBody)));
-            }
+            logError(resultCode, verifyReceiptBody, customerId);
             EdtErrorCodeUtil
                 .throwError(verifyReceiptResponse.getResultCode(), "verify receipt failed!");
         }
-        LOG.info(String
-            .format("Restore success!  CustomerId is %s, and VerifyReceiptBody is %s", customerId,
-                JsonUtils.toJsonString(verifyReceiptBody)));
+        logSuccess(verifyReceiptBody, customerId);
         return verifyReceiptResponse.fomartToDOT();
     }
 
@@ -94,6 +84,33 @@ public class VerifyReceiptService {
                 verifyReceiptBody.getIsMultiple() ? multipleAction : singleAction
         );
         return new HttpEntity<>(format, headers);
+    }
+
+    private void logError(Integer resultCode, VerifyReceiptBody verifyReceiptBody,
+        String customerId) {
+        if (verifyReceiptBody.getIsMultiple()) {
+            LOG.error(String
+                .format(
+                    "Restore failed! CustomerId is %s, resultCode is %s, and VerifyReceiptBody is %s",
+                    customerId, resultCode, JsonUtils.toJsonString(verifyReceiptBody)));
+        } else {
+            LOG.error(String
+                .format(
+                    "Verify failed! CustomerId is %s,resultCode is %s, and VerifyReceiptBody is %s",
+                    customerId, resultCode, JsonUtils.toJsonString(verifyReceiptBody)));
+        }
+    }
+
+    private void logSuccess(VerifyReceiptBody verifyReceiptBody, String customerId) {
+        if (verifyReceiptBody.getIsMultiple()) {
+            LOG.info(String
+                .format("Restore success! CustomerId is %s, and VerifyReceiptBody is %s",
+                    customerId, JsonUtils.toJsonString(verifyReceiptBody)));
+        } else {
+            LOG.info(String
+                .format("Verify success! CustomerId is %s, and VerifyReceiptBody is %s",
+                    customerId, JsonUtils.toJsonString(verifyReceiptBody)));
+        }
     }
 }
 

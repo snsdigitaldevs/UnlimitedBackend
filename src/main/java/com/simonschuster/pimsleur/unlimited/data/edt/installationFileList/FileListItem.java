@@ -120,14 +120,6 @@ public class FileListItem {
         this.dlCategory = dlCategory;
     }
 
-    public boolean isCsvFileOf(String csvFileType) {
-        return this.path.contains(csvFileType + ".csv");
-    }
-
-    public boolean isReviewAudioZipFile() {
-        return this.path.contains("REVIEW_AUDIO.zip");
-    }
-
     public String getFullUrl() {
         return this.sourceURL +
                 // pu free lessons have encrypted csv files, just remove the encr part

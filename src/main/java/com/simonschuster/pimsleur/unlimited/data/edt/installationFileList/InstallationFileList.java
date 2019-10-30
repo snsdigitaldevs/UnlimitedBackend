@@ -41,36 +41,32 @@ public class InstallationFileList extends EdtResponseCode {
         PracticesUrls practicesUrls = new PracticesUrls();
         if (this.getResultData() != null) {
             List<FileListItem> list = this.getResultData().getFileList().getFileListItems();
-            List<FileListItem> flashCardFiles = list.stream().filter(f -> isExpectedFiles(f, FlashCard)).collect(Collectors.toList());
-            List<FileListItem> quickMatchFiles = list.stream().filter(f -> isExpectedFiles(f, QuickMatch)).collect(Collectors.toList());
-            List<FileListItem> speakEasyFiles = list.stream().filter(f -> isExpectedFiles(f, SpeakEasy)).collect(Collectors.toList());
-            List<FileListItem> readingFiles = list.stream().filter(f -> isExpectedFiles(f, Reading)).collect(Collectors.toList());
             List<FileListItem> ReviewAudioZipFiles = list.stream().filter(f -> f.getPath().contains("REVIEW_AUDIO.zip")).collect(Collectors.toList());
 
-            FileListItem flashCardFile = filterFileByType(flashCardFiles, FlashCard);
-            if (!flashCardFile.equals(null)) {
+            FileListItem flashCardFile = getFileItemByFileType(list, FlashCard);
+            if (flashCardFile != null) {
                 practicesUrls.setFlashCardUrl(flashCardFile.getFullUrl());
             }
 
-            FileListItem quickMatchFile = filterFileByType(quickMatchFiles, QuickMatch);
-            if (!quickMatchFile.equals(null)) {
+            FileListItem quickMatchFile = getFileItemByFileType(list, QuickMatch);
+            if (quickMatchFile != null) {
                 practicesUrls.setQuickMatchUrl(quickMatchFile.getFullUrl());
             }
 
-            FileListItem speakEasyFile = filterFileByType(speakEasyFiles, SpeakEasy);
-            if (!speakEasyFile.equals(null)) {
+            FileListItem speakEasyFile = getFileItemByFileType(list, SpeakEasy);
+            if (speakEasyFile != null) {
                 practicesUrls.setSpeakEasyUrl(speakEasyFile.getFullUrl());
             }
 
-            FileListItem readingFile = filterFileByType(readingFiles, Reading);
-            if (!readingFile.equals(null)) {
+            FileListItem readingFile = getFileItemByFileType(list, Reading);
+            if (readingFile != null) {
                 practicesUrls.setReadingUrl(readingFile.getFullUrl());
             }
 
             if (ReviewAudioZipFiles.size() > 0) {
                 practicesUrls.setReviewAudioBaseUrl(ReviewAudioZipFiles.get(0).getReviewAudioBaseUrl());
             } else {
-                List<FileListItem> audioFiles = list.stream().filter(f -> isAudioFiles(f)).collect(Collectors.toList());
+                List<FileListItem> audioFiles = list.stream().filter(this::isAudioFiles).collect(Collectors.toList());
                 practicesUrls.setReviewAudioBaseUrl(getReviewAudioBaseUrl(audioFiles.get(0)));
             }
         }
@@ -87,27 +83,22 @@ public class InstallationFileList extends EdtResponseCode {
             return null;
         }
         String lastItem = basePathItems[basePathItems.length - 1];
-        String productCode = "";
+        String productCode;
         if (!StringUtils.isEmpty(lastItem)) {
             productCode = lastItem.split("_")[0];
         } else {
-            new RuntimeException("error, can't parse the product code ");
+            throw new RuntimeException("error, can't parse the product code ");
         }
         String path = String.format("%s/%s/%s_REVIEW_AUDIO_SNIPPETS/", basePathItems[0], basePathItems[1], productCode);
         return audioFileListItem.getSourceURL() + path;
     }
 
-    private boolean isExpectedFiles(FileListItem f, String fileType) {
-        return f.getPath().contains(fileType + ".csv");
+    private FileListItem getFileItemByFileType(List<FileListItem> fileListItemList,String fileType){
+        return fileListItemList.stream().filter(fileListItem -> isExpectedFiles(fileListItem, fileType)).findFirst().orElse(null);
     }
 
-    FileListItem filterFileByType(List<FileListItem> files, String fileType) {
-        Optional<FileListItem> first =
-                files.stream().filter(f -> f.getPath().endsWith(fileType + ".csv")).findFirst();
-        if (files.size() == 1 || !first.isPresent()) {
-            return files.get(0);
-        } else {
-            return first.get();
-        }
+
+    private boolean isExpectedFiles(FileListItem f, String fileType) {
+        return f.getPath().endsWith(fileType + ".csv");
     }
 }

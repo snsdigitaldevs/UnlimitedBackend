@@ -93,7 +93,6 @@ public class AvailableProductsService {
                             })
                             .filter(dto -> dto.getLevel() != 0)
                             .filter(distinctByKey(AvailableProductDto::getProductCode))
-                            .sorted(comparing(AvailableProductDto::getCourseName))
                             .collect(Collectors.toList());
             return availableProductDto;
         } else {

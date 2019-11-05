@@ -1,5 +1,9 @@
 package com.simonschuster.pimsleur.unlimited.services.promotions;
 
+import static java.lang.String.format;
+import static java.util.Collections.singletonList;
+import static java.util.stream.Stream.of;
+
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.simonschuster.pimsleur.unlimited.UnlimitedApplication;
@@ -8,24 +12,14 @@ import com.simonschuster.pimsleur.unlimited.controllers.StoreMainConstants;
 import com.simonschuster.pimsleur.unlimited.data.dto.promotions.FormatMapping;
 import com.simonschuster.pimsleur.unlimited.data.dto.promotions.UpsellDto;
 import com.simonschuster.pimsleur.unlimited.data.dto.promotions.UpsellItem;
-import java.util.Objects;
-import javax.servlet.http.HttpServletRequest;
-import org.apache.commons.lang3.StringUtils;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
+import com.simonschuster.pimsleur.unlimited.utils.RequestThreadLocalUtils;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Stream;
-import org.springframework.web.context.request.RequestContextHolder;
-import org.springframework.web.context.request.ServletRequestAttributes;
-import org.springframework.web.servlet.support.RequestContextUtils;
-
-import static java.lang.String.format;
-import static java.util.Collections.singletonList;
-import static java.util.stream.Stream.of;
+import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 @Service
 public class FormatMappingService {
@@ -68,16 +62,12 @@ public class FormatMappingService {
 
     private void updateWebCartLinkForItem(UpsellItem upsellItem, String link) {
         // cao suggest android and ios don't return webLink and pid
-        ServletRequestAttributes servletRequestAttributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
-        if(upsellItem != null && servletRequestAttributes != null){
-            HttpServletRequest request = servletRequestAttributes.getRequest();
-            if (StoreMainConstants.ANDROID_IN_APP.equalsIgnoreCase(request.getParameter("storeDomain"))
-                || StoreMainConstants.IOS_IN_APP
-                .equalsIgnoreCase(request.getParameter("storeDomain"))) {
-                upsellItem.setPid(null);
-                upsellItem.setWebLink(null);
-                return;
-            }
+        String storeDomain = RequestThreadLocalUtils.getParameter("storeDomain");
+        if (upsellItem != null && (StoreMainConstants.ANDROID_IN_APP.equalsIgnoreCase(storeDomain)
+            || StoreMainConstants.IOS_IN_APP.equalsIgnoreCase(storeDomain))) {
+            upsellItem.setPid(null);
+            upsellItem.setWebLink(null);
+            return;
         }
         if (upsellItem != null && StringUtils.isNotEmpty(upsellItem.getWebLink())) {
             upsellItem.setPid(upsellItem.getWebLink());

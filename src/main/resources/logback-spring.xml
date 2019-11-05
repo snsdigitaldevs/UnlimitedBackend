@@ -66,7 +66,7 @@
     </encoder>
   </appender>
 
-  <logger name="com.simonschuster.pimsleur.unlimited.filter" level="info" additivity="false">
+  <logger name="com.simonschuster.pimsleur.unlimited.filter" level="info">
     <appender-ref ref="ACCESS"/>
     <appender-ref ref="STDOUT"/>
   </logger>
@@ -87,7 +87,7 @@
     </encoder>
   </appender>
 
-  <logger name="com.simonschuster.pimsleur.unlimited.services.purchase" level="info" additivity="false">
+  <logger name="com.simonschuster.pimsleur.unlimited.services.purchase" level="info">
     <appender-ref ref="PURCHASE"/>
     <appender-ref ref="STDOUT"/>
   </logger>

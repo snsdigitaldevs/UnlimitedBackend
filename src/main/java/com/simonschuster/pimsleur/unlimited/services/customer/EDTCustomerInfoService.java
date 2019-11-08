@@ -4,6 +4,8 @@ import com.simonschuster.pimsleur.unlimited.aop.annotation.LogCostTime;
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.CustomerInfoDTO;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.ProgressDTO;
+import com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.AuthDescriptor;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.Customer;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.CustomerInfo;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.Registrant;
@@ -12,6 +14,8 @@ import com.simonschuster.pimsleur.unlimited.data.edt.syncState.AggregatedSyncSta
 import com.simonschuster.pimsleur.unlimited.data.edt.syncState.SyncState;
 import com.simonschuster.pimsleur.unlimited.services.AppIdService;
 import com.simonschuster.pimsleur.unlimited.services.syncState.EDTSyncStateService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -30,6 +34,8 @@ import static java.util.stream.Stream.concat;
 
 @Service
 public class EDTCustomerInfoService {
+
+    private static final Logger LOG = LoggerFactory.getLogger(EDTCustomerInfoService.class);
 
     @Autowired
     private ApplicationConfiguration config;
@@ -88,32 +94,29 @@ public class EDTCustomerInfoService {
     }
 
     public CustomerInfo getPuAndPCMCustomerInfos(String sub, String storeDomain, String email) {
-        CustomerInfo puAndPCMCustomerInfo = getCustomerInfo(sub,
+        return getCustomerInfo(sub,
                 config.getApiParameter("pcmAndUnlimitedCustomerAction"),
                 storeDomain,
                 email);
-        return puAndPCMCustomerInfo;
     }
 
     public CustomerInfo getPcmCustomerInfo(String sub, String storeDomain, String email) {
-        CustomerInfo pcmCustomerAction = getCustomerInfo(sub,
+        return getCustomerInfo(sub,
                 config.getApiParameter("pcmCustomerAction"),
                 storeDomain,
                 email);
-        return pcmCustomerAction;
     }
 
     public List<String> getBoughtIsbns(String sub, String email, String storeDomain) {
         CustomerInfo customerInfos = getPuAndPCMCustomerInfos(sub, storeDomain, email);
-        List<String> productCodes = customerInfos.getResultData().getCustomer().getProductCodes();
-        return productCodes;
+        return customerInfos.getResultData().getCustomer().getProductCodes();
     }
 
     private CustomerInfo getCustomerInfo(String sub, String action, String domain, String email) {
-        return postToEdt(
-                createPostBody(sub, action, domain, email),
-                config.getProperty("edt.api.customerInfoApiUrl"),
-                CustomerInfo.class);
+        CustomerInfo customerInfo = postToEdt(createPostBody(sub, action, domain, email),
+            config.getProperty("edt.api.customerInfoApiUrl"), CustomerInfo.class);
+        checkAuthDescriptors(customerInfo);
+        return customerInfo;
     }
 
     private HttpEntity<String> createPostBody(String sub, String action, String domain, String email) {
@@ -124,5 +127,19 @@ public class EDTCustomerInfoService {
                 String.format(config.getApiParameter("customerInfoDefaultParameters"),
                         sub, email, action, domain, appIdService.getAppId(domain)),
                 headers);
+    }
+
+    private void checkAuthDescriptors(CustomerInfo customerInfo) {
+        List<AuthDescriptor> authDescriptors = customerInfo.getResultData().getCustomer()
+            .getAuthDescriptors();
+        for (AuthDescriptor authDescriptor : authDescriptors) {
+            if (authDescriptor.getResultCode() != EdtResponseCode.RESULT_OK
+                && authDescriptor.getResultCode()
+                != EdtResponseCode.RESULT_COULD_NOT_AUTHENTICATE) {
+                LOG.error("CustomerId is {}, AuthProvider{} is error, resultCode is{}",
+                    authDescriptor.getCustomersId(), authDescriptor.getAuthProvidersId(),
+                    authDescriptor.getResultCode());
+            }
+        }
     }
 }

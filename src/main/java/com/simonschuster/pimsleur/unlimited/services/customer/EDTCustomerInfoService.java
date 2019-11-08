@@ -136,7 +136,7 @@ public class EDTCustomerInfoService {
             if (authDescriptor.getResultCode() != EdtResponseCode.RESULT_OK
                 && authDescriptor.getResultCode()
                 != EdtResponseCode.RESULT_COULD_NOT_AUTHENTICATE) {
-                LOG.error("CustomerId is {}, AuthProvider{} is error, resultCode is{}",
+                LOG.error("CustomerId is {}, AuthProvider {} is error, resultCode is {}",
                     authDescriptor.getCustomersId(), authDescriptor.getAuthProvidersId(),
                     authDescriptor.getResultCode());
             }

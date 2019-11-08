@@ -32,7 +32,7 @@ public class UnlimitedThreadLocalUtils {
     public static String getExtraInfo(String key) {
         Map<String, String> info = extraInfoThreadLocal.get();
         if (info != null) {
-            info.get(key);
+            return info.get(key);
         }
         return null;
     }

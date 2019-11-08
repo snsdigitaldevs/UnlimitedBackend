@@ -1,5 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.controllers;
 
+import com.simonschuster.pimsleur.unlimited.aop.annotation.LogCostTime;
 import com.simonschuster.pimsleur.unlimited.common.exception.ParamInvalidException;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.IntentionToBuyBody;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.VerifyReceiptBody;
@@ -91,6 +92,7 @@ public class ProductController {
 
     @ApiOperation(value = "Send transaction result and receipt to EDT, so that EDT can create order for user.")
     @RequestMapping(value = "/account/{customerId}/receipt", method = RequestMethod.POST)
+    @LogCostTime
     public VerifyReceiptDTO verifyReceipt(@PathVariable("customerId") String customerId,
                                           @RequestBody VerifyReceiptBody verifyReceiptBody)
             throws UnsupportedEncodingException {

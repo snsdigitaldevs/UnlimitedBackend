@@ -1,5 +1,7 @@
 package com.simonschuster.pimsleur.unlimited.common.exception;
 
+import com.simonschuster.pimsleur.unlimited.utils.RequestThreadLocalUtils;
+import javax.servlet.http.HttpServletRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpHeaders;
@@ -19,51 +21,53 @@ import static org.springframework.http.HttpStatus.INTERNAL_SERVER_ERROR;
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
-  private static final Logger LOG = LoggerFactory.getLogger(GlobalExceptionHandler.class);
+    private static final Logger LOG = LoggerFactory.getLogger(GlobalExceptionHandler.class);
 
-  @ExceptionHandler()
-  public ResponseEntity<?> handleException(Exception ex) {
-    HttpStatus httpStatus = resolveAnnotatedResponseStatus(ex);
-    String message = ex.getMessage();
-    if (message == null) {
-      message = "System error";
-    }
-    recordLog(ex);
-    return parseResponseEntity(of(httpStatus.value(), message), httpStatus);
-  }
-
-  @ExceptionHandler({RestClientException.class})
-  public ResponseEntity<?> handleEdtRequestException(Exception e) {
-    recordLog(e);
-    return parseResponseEntity(
-        of(INTERNAL_SERVER_ERROR.value(), e.getMessage()),
-        INTERNAL_SERVER_ERROR);
-  }
-
-  @ExceptionHandler({MissingServletRequestParameterException.class, ParamInvalidException.class})
-  public ResponseEntity<ErrorResponse> handleMethodArgumentNotValidException(Exception e) {
-    String errorMessage = e.getMessage();
-    ErrorResponse response = of(BAD_REQUEST.value(), errorMessage);
-    recordLog(e);
-    return new ResponseEntity<>(response, new HttpHeaders(), BAD_REQUEST);
-  }
-
-  private HttpStatus resolveAnnotatedResponseStatus(Exception exception) {
-
-    ResponseStatus annotation = findMergedAnnotation(exception.getClass(), ResponseStatus.class);
-
-    if (annotation != null) {
-      return annotation.value();
+    @ExceptionHandler()
+    public ResponseEntity<?> handleException(Exception ex) {
+        HttpStatus httpStatus = resolveAnnotatedResponseStatus(ex);
+        String message = ex.getMessage();
+        if (message == null) {
+            message = "System error";
+        }
+        recordLog(ex);
+        return parseResponseEntity(of(httpStatus.value(), message), httpStatus);
     }
 
-    return INTERNAL_SERVER_ERROR;
-  }
+    @ExceptionHandler({RestClientException.class})
+    public ResponseEntity<?> handleEdtRequestException(Exception e) {
+        recordLog(e);
+        return parseResponseEntity(
+            of(INTERNAL_SERVER_ERROR.value(), e.getMessage()),
+            INTERNAL_SERVER_ERROR);
+    }
 
-  private void recordLog(Exception e) {
-    LOG.error(e.getMessage(), e);
-  }
+    @ExceptionHandler({MissingServletRequestParameterException.class, ParamInvalidException.class})
+    public ResponseEntity<ErrorResponse> handleMethodArgumentNotValidException(Exception e) {
+        String errorMessage = e.getMessage();
+        ErrorResponse response = of(BAD_REQUEST.value(), errorMessage);
+        recordLog(e);
+        return new ResponseEntity<>(response, new HttpHeaders(), BAD_REQUEST);
+    }
 
-  private ResponseEntity<?> parseResponseEntity(ErrorResponse response, HttpStatus httpStatus) {
-    return new ResponseEntity<>(response, new HttpHeaders(), httpStatus);
-  }
+    private HttpStatus resolveAnnotatedResponseStatus(Exception exception) {
+        ResponseStatus annotation = findMergedAnnotation(exception.getClass(),
+            ResponseStatus.class);
+        if (annotation != null) {
+            return annotation.value();
+        }
+        return INTERNAL_SERVER_ERROR;
+    }
+
+    private void recordLog(Exception e) {
+        HttpServletRequest httpServletRequest = RequestThreadLocalUtils.getHttpServletRequest();
+        if (httpServletRequest != null) {
+            LOG.error("Request:[{}] execute error", httpServletRequest.getRequestURI(), e);
+        }
+        LOG.error(e.getMessage(), e);
+    }
+
+    private ResponseEntity<?> parseResponseEntity(ErrorResponse response, HttpStatus httpStatus) {
+        return new ResponseEntity<>(response, new HttpHeaders(), httpStatus);
+    }
 }

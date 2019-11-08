@@ -12,7 +12,7 @@ import com.simonschuster.pimsleur.unlimited.controllers.StoreMainConstants;
 import com.simonschuster.pimsleur.unlimited.data.dto.promotions.FormatMapping;
 import com.simonschuster.pimsleur.unlimited.data.dto.promotions.UpsellDto;
 import com.simonschuster.pimsleur.unlimited.data.dto.promotions.UpsellItem;
-import com.simonschuster.pimsleur.unlimited.utils.RequestThreadLocalUtils;
+import com.simonschuster.pimsleur.unlimited.utils.UnlimitedThreadLocalUtils;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
@@ -62,7 +62,7 @@ public class FormatMappingService {
 
     private void updateWebCartLinkForItem(UpsellItem upsellItem, String link) {
         // cao suggest android and ios don't return webLink and pid
-        String storeDomain = RequestThreadLocalUtils.getParameter("storeDomain");
+        String storeDomain = UnlimitedThreadLocalUtils.getRequestParameter("storeDomain");
         if (upsellItem != null && (StoreMainConstants.ANDROID_IN_APP.equalsIgnoreCase(storeDomain)
             || StoreMainConstants.IOS_IN_APP.equalsIgnoreCase(storeDomain))) {
             upsellItem.setPid(null);

@@ -1,6 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.common.exception;
 
-import com.simonschuster.pimsleur.unlimited.utils.RequestThreadLocalUtils;
+import com.simonschuster.pimsleur.unlimited.utils.UnlimitedThreadLocalUtils;
 import javax.servlet.http.HttpServletRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -60,9 +60,11 @@ public class GlobalExceptionHandler {
     }
 
     private void recordLog(Exception e) {
-        HttpServletRequest httpServletRequest = RequestThreadLocalUtils.getHttpServletRequest();
+        HttpServletRequest httpServletRequest = UnlimitedThreadLocalUtils.getHttpServletRequest();
         if (httpServletRequest != null) {
-            LOG.error("Request:[{}] execute error", httpServletRequest.getRequestURI(), e);
+            LOG.error("RequestId:{},uri={} execute error",
+                UnlimitedThreadLocalUtils.getExtraInfo(UnlimitedThreadLocalUtils.REQUEST_ID),
+                httpServletRequest.getRequestURI(), e);
         }
         LOG.error(e.getMessage(), e);
     }

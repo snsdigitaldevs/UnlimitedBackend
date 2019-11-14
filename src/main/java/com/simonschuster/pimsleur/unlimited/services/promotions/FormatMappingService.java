@@ -8,7 +8,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.simonschuster.pimsleur.unlimited.UnlimitedApplication;
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
-import com.simonschuster.pimsleur.unlimited.controllers.StoreMainConstants;
+import com.simonschuster.pimsleur.unlimited.constants.StoreDomainConstants;
 import com.simonschuster.pimsleur.unlimited.data.dto.promotions.FormatMapping;
 import com.simonschuster.pimsleur.unlimited.data.dto.promotions.UpsellDto;
 import com.simonschuster.pimsleur.unlimited.data.dto.promotions.UpsellItem;
@@ -63,8 +63,8 @@ public class FormatMappingService {
     private void updateWebCartLinkForItem(UpsellItem upsellItem, String link) {
         // cao suggest android and ios don't return webLink and pid
         String storeDomain = UnlimitedThreadLocalUtils.getRequestParameter("storeDomain");
-        if (upsellItem != null && (StoreMainConstants.ANDROID_IN_APP.equalsIgnoreCase(storeDomain)
-            || StoreMainConstants.IOS_IN_APP.equalsIgnoreCase(storeDomain))) {
+        if (upsellItem != null && (StoreDomainConstants.ANDROID_IN_APP.equalsIgnoreCase(storeDomain)
+            || StoreDomainConstants.IOS_IN_APP.equalsIgnoreCase(storeDomain))) {
             upsellItem.setPid(null);
             upsellItem.setWebLink(null);
             return;

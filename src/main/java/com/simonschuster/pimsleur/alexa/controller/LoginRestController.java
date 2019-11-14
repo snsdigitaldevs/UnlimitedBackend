@@ -1,6 +1,7 @@
 package com.simonschuster.pimsleur.alexa.controller;
 
 import com.simonschuster.pimsleur.unlimited.common.exception.ParamInvalidException;
+import com.simonschuster.pimsleur.unlimited.constants.StoreDomainConstants;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.signUp.SignUpBodyDTO;
 import com.simonschuster.pimsleur.unlimited.services.customer.SignUpService;
 import com.simonschuster.pimsleur.unlimited.services.login.LoginService;
@@ -14,7 +15,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 
-import static com.simonschuster.pimsleur.alexa.StoreDomainUtil.ALEXA_STORE_DOMAIN;
 import static com.simonschuster.pimsleur.unlimited.services.customer.SignUpService.EMAIL_ALREADY_REGISTERED_ERROR_MESSAGE;
 import static com.simonschuster.pimsleur.unlimited.services.customer.SignUpService.PASSWORD_INVALID_MESSAGE;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
@@ -62,7 +62,7 @@ public class LoginRestController {
         SignUpBodyDTO signUpBodyDto = new SignUpBodyDTO();
         signUpBodyDto.setEmail(email);
         signUpBodyDto.setPassword(password);
-        signUpBodyDto.setStoreDomain(ALEXA_STORE_DOMAIN);
+        signUpBodyDto.setStoreDomain(StoreDomainConstants.ALEXA_STORE_DOMAIN);
         try {
             signUpService.signUp(signUpBodyDto);
         } catch (ParamInvalidException e) {

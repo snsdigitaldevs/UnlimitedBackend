@@ -32,11 +32,11 @@ public class IntentionToBuyService {
                 isbn, storeDomain, customerId, appIdService.getAppId(storeDomain)), headers);
         EdtResponseCode intentionToBuyResponse = postToEdt(entity, url, EdtResponseCode.class);
 
-        if (!intentionToBuyResponse.getResultCode().equals(1)) {
-            EdtErrorCodeUtil
-                .throwError(intentionToBuyResponse.getResultCode(), "intention to buy failed!");
+        if (intentionToBuyResponse.getResultCode() != EdtResponseCode.RESULT_OK){
             LOG.error(String
                 .format("intentionToBuy error, customerId is %s, isbn is %s", customerId, isbn));
+            EdtErrorCodeUtil
+                .throwError(intentionToBuyResponse.getResultCode(), "intention to buy failed!");
         }
         LOG.info(String
             .format("intentionToBuy success, customerId is %s, isbn is %s", customerId, isbn));

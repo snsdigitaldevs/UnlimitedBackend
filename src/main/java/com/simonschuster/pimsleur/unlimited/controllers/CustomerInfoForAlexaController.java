@@ -1,5 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.controllers;
 
+import com.simonschuster.pimsleur.unlimited.constants.StoreDomainConstants;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.CustomerInfoDTO;
 import com.simonschuster.pimsleur.unlimited.services.customer.EDTCustomerInfoService;
 import io.swagger.annotations.ApiOperation;
@@ -11,7 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
 
-import static com.simonschuster.pimsleur.alexa.StoreDomainUtil.ALEXA_STORE_DOMAIN;
 
 @RestController
 public class CustomerInfoForAlexaController {
@@ -31,7 +31,6 @@ public class CustomerInfoForAlexaController {
     public CustomerInfoDTO getCustomerInfo(@RequestParam(value = "sub") String sub)
             throws IOException {
         //Kelly K will handle email missing for Alexa.
-        CustomerInfoDTO customerInfoDTO = edtCustomerInfoService.getCustomerInfoDTO(sub, ALEXA_STORE_DOMAIN, "");
-        return customerInfoDTO;
+        return edtCustomerInfoService.getCustomerInfoDTO(sub, StoreDomainConstants.ALEXA_STORE_DOMAIN, "");
     }
 }

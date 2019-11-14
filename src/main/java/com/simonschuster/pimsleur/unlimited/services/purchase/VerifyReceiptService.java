@@ -3,6 +3,7 @@ package com.simonschuster.pimsleur.unlimited.services.purchase;
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.VerifyReceiptBody;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.VerifyReceiptDTO;
+import com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.verifyReceipt.VerifyReceipt;
 import com.simonschuster.pimsleur.unlimited.services.AppIdService;
 import com.simonschuster.pimsleur.unlimited.utils.EdtErrorCodeUtil;
@@ -39,7 +40,7 @@ public class VerifyReceiptService {
         VerifyReceipt verifyReceiptResponse =
             postToEdt(entity, config.getProperty("edt.api.verifyReceipt.url"), VerifyReceipt.class);
         int resultCode = verifyReceiptResponse.getResultCode();
-        if (resultCode != 1) {
+        if (resultCode != EdtResponseCode.RESULT_OK) {
             logError(resultCode, verifyReceiptBody, customerId);
             EdtErrorCodeUtil
                 .throwError(verifyReceiptResponse.getResultCode(), "verify receipt failed!");

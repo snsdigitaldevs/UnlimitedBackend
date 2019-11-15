@@ -105,12 +105,10 @@ public class VerifyReceiptService {
     private void logSuccess(VerifyReceiptBody verifyReceiptBody, String customerId) {
         if (verifyReceiptBody.getIsMultiple()) {
             LOG.info(String
-                .format("Restore success! CustomerId is %s, and VerifyReceiptBody is %s",
-                    customerId, JsonUtils.toJsonString(verifyReceiptBody)));
+                .format("Restore success! CustomerId is %s", customerId));
         } else {
             LOG.info(String
-                .format("Verify success! CustomerId is %s, and VerifyReceiptBody is %s",
-                    customerId, JsonUtils.toJsonString(verifyReceiptBody)));
+                .format("Verify success! CustomerId is %s", customerId));
         }
     }
 }

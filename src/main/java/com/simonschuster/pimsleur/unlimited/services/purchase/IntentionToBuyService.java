@@ -35,8 +35,7 @@ public class IntentionToBuyService {
 
         if (intentionToBuyResponse.getResultCode() != EdtResponseCode.RESULT_OK) {
             LOG.error("intentionToBuy error, customerId is {}, isbn is {}, error is {}", customerId,
-                isbn,
-                JsonUtils.toJsonString(intentionToBuyResponse));
+                isbn, JsonUtils.toJsonString(intentionToBuyResponse));
             EdtErrorCodeUtil
                 .throwError(intentionToBuyResponse.getResultCode(), "intention to buy failed!");
         }

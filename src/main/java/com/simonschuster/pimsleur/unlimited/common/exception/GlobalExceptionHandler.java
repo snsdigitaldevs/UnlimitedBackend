@@ -65,8 +65,9 @@ public class GlobalExceptionHandler {
             LOG.error("RequestId:{},uri={} execute error",
                 UnlimitedThreadLocalUtils.getExtraInfo(UnlimitedThreadLocalUtils.REQUEST_ID),
                 httpServletRequest.getRequestURI(), e);
+        } else {
+            LOG.error(e.getMessage(), e);
         }
-        LOG.error(e.getMessage(), e);
     }
 
     private ResponseEntity<?> parseResponseEntity(ErrorResponse response, HttpStatus httpStatus) {

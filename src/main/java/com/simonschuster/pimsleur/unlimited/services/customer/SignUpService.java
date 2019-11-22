@@ -1,8 +1,8 @@
 package com.simonschuster.pimsleur.unlimited.services.customer;
 
-import com.simonschuster.pimsleur.alexa.StoreDomainUtil;
 import com.simonschuster.pimsleur.unlimited.common.exception.ParamInvalidException;
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
+import com.simonschuster.pimsleur.unlimited.constants.StoreDomainConstants;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.signUp.SignUpBodyDTO;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.signUp.SignUpDTO;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.SignUp.SignUpEDT;
@@ -34,7 +34,7 @@ public class SignUpService {
 
         String appId = appIdService.getAppId(signUpBodyDTO.getStoreDomain());
         //EDT doesn't accept "alexa" as store_domain for this API, so set ss_pu for alexa only for this API.
-        String storeDomain = signUpBodyDTO.getStoreDomain().equals(StoreDomainUtil.ALEXA_STORE_DOMAIN) ?
+        String storeDomain = signUpBodyDTO.getStoreDomain().equals(StoreDomainConstants.ALEXA_STORE_DOMAIN) ?
                 "ss_pu" : signUpBodyDTO.getStoreDomain();
 
         String email = signUpBodyDTO.getEmail();

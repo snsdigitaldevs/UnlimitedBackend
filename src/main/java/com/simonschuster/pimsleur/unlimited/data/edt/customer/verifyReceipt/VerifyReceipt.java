@@ -5,18 +5,17 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.VerifyReceiptDTO;
+import com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
         "result_data",
         "result_code"
 })
-public class VerifyReceipt {
+public class VerifyReceipt extends EdtResponseCode {
 
     @JsonProperty("result_data")
     private ResultData resultData;
-    @JsonProperty("result_code")
-    private Integer resultCode;
 
     @JsonProperty("result_data")
     public ResultData getResultData() {
@@ -26,16 +25,6 @@ public class VerifyReceipt {
     @JsonProperty("result_data")
     public void setResultData(ResultData resultData) {
         this.resultData = resultData;
-    }
-
-    @JsonProperty("result_code")
-    public Integer getResultCode() {
-        return resultCode;
-    }
-
-    @JsonProperty("result_code")
-    public void setResultCode(Integer resultCode) {
-        this.resultCode = resultCode;
     }
 
     public VerifyReceiptDTO fomartToDOT() {

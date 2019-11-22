@@ -1,5 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.services.course;
 
+import com.simonschuster.pimsleur.unlimited.aop.annotation.LogCostTime;
 import com.simonschuster.pimsleur.unlimited.common.exception.PimsleurException;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.*;
@@ -25,6 +26,7 @@ public class PcmCourseInfoService {
 
     private static final Logger logger = LoggerFactory.getLogger(PUCourseInfoService.class);
 
+    @LogCostTime
     public List<Course> getCourses(String productCode, String sub, String email, String storeDomain) {
         PcmProduct pcmProductInfo = getPcmProductInfo(sub, email, storeDomain);
         List<Course> pcmAudioInfo = pcmLessonInfoService.getPcmLessonInfo(productCode, pcmProductInfo, storeDomain);

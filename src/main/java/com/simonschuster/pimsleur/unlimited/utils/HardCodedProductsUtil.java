@@ -1,24 +1,17 @@
 package com.simonschuster.pimsleur.unlimited.utils;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.AvailableProductDto;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
 
-import static java.util.Arrays.asList;
 import static java.util.stream.Collectors.toList;
 
 public class HardCodedProductsUtil {
-    public static List<AvailableProductDto> PU_FREE_LESSONS = asList(
-            new AvailableProductDto("French","French", "9781508279709", true),
-            new AvailableProductDto("German","German", "9781508243298", true),
-            new AvailableProductDto("Italian","Italian", "9781508243304", true),
-            new AvailableProductDto("Spanish","Spanish", "9781508283737", true),//!!
-            new AvailableProductDto("Russian","Russian", "9781508243335", true),//!!skills
-            new AvailableProductDto("Portuguese Brazilian","Portuguese Brazilian", "9781508243342", true),
-            new AvailableProductDto("Chinese Mandarin","Chinese Mandarin", "9781508243328", true),//!!skills
-            new AvailableProductDto("English for Spanish Speakers","ESL Spanish", "9781508243359", true),
-            new AvailableProductDto("Japanese","Japanese", "9781508243311", true)
-    );
+    public static List<AvailableProductDto> PU_FREE_LESSONS = readJsonFile();
 
     private static final List<String> nineBigLanguageNames = PU_FREE_LESSONS.stream()
             .map(AvailableProductDto::getLanguageName)
@@ -34,5 +27,19 @@ public class HardCodedProductsUtil {
 
     public static boolean isPuFreeLesson(String productCode) {
         return puFreeIsbns.contains(productCode);
+    }
+
+    private static List<AvailableProductDto> readJsonFile() {
+        InputStream fileStream = HardCodedProductsUtil.class.getClassLoader()
+                .getResourceAsStream("isbn-mapping/puFreeLesson.json");
+
+        ObjectMapper objectMapper = new ObjectMapper();
+        try {
+            return objectMapper.readValue(fileStream, new TypeReference<List<AvailableProductDto>>() {
+            });
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }

@@ -1,5 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.controllers;
 
+import com.simonschuster.pimsleur.unlimited.aop.annotation.LogCostTime;
 import com.simonschuster.pimsleur.unlimited.common.exception.ParamInvalidException;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.IntentionToBuyBody;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.VerifyReceiptBody;
@@ -9,8 +10,8 @@ import com.simonschuster.pimsleur.unlimited.data.dto.promotions.FormatMapping;
 import com.simonschuster.pimsleur.unlimited.services.course.PUCourseInfoService;
 import com.simonschuster.pimsleur.unlimited.services.course.PcmCourseInfoService;
 import com.simonschuster.pimsleur.unlimited.services.course.PcmFreeCourseService;
-import com.simonschuster.pimsleur.unlimited.services.customer.IntentionToBuyService;
-import com.simonschuster.pimsleur.unlimited.services.customer.VerifyReceiptService;
+import com.simonschuster.pimsleur.unlimited.services.purchase.IntentionToBuyService;
+import com.simonschuster.pimsleur.unlimited.services.purchase.VerifyReceiptService;
 import com.simonschuster.pimsleur.unlimited.services.promotions.FormatMappingService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -91,6 +92,7 @@ public class ProductController {
 
     @ApiOperation(value = "Send transaction result and receipt to EDT, so that EDT can create order for user.")
     @RequestMapping(value = "/account/{customerId}/receipt", method = RequestMethod.POST)
+    @LogCostTime
     public VerifyReceiptDTO verifyReceipt(@PathVariable("customerId") String customerId,
                                           @RequestBody VerifyReceiptBody verifyReceiptBody)
             throws UnsupportedEncodingException {

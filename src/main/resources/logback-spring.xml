@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false" scan="true" scanPeriod="60 seconds">
+
+  <springProperty scope="context" name="logging.path" source="logging.path"/>
+  <property name="APP_Name" value="UnlimitedBackend"/>
+  <contextName>${APP_Name}</contextName>
+
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <layout class="ch.qos.logback.classic.PatternLayout">
+      <Pattern>${APP_Name} %d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</Pattern>
+    </layout>
+  </appender>
+
+  <appender name="SERVER" class="ch.qos.logback.core.rolling.RollingFileAppender">　
+    <file>${logging.path}/server.log</file>　　
+    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+      <level>INFO</level>
+    </filter>
+    　　　
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">　　　　　　　　　
+      <fileNamePattern>${logging.path}/server-%d{yyyy-MM-dd}.log.zip</fileNamePattern>　　　　　　　　　
+      <maxHistory>30</maxHistory>　　　　　　
+    </rollingPolicy>
+    　　　　　　
+    <encoder>　　　　　　　　　
+      <pattern>${APP_Name} %d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>　　　　　　
+    </encoder>
+  </appender>
+
+  <appender name="ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>${logging.path}/error.log</file>　　　　　
+    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+      <level>ERROR</level>
+    </filter>
+    　
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">　　　　　　　　　
+      <fileNamePattern>${logging.path}/error-%d{yyyy-MM-dd}.log.zip</fileNamePattern>　　　　　　　　　
+      <maxHistory>30</maxHistory>　　　　　　
+    </rollingPolicy>
+    　　　　　　
+    <encoder>　　　　　　　　　
+      <pattern>${APP_Name} %d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>　　　　　　
+    </encoder>
+    　
+  </appender>
+
+  <logger name="com.simonschuster.pimsleur" level="info" additivity="false">
+    <appender-ref ref="SERVER"/>
+    <appender-ref ref="ERROR"/>
+    <appender-ref ref="STDOUT"/>
+  </logger>
+
+  <appender name="ACCESS" class="ch.qos.logback.core.rolling.RollingFileAppender">　
+    <file>${logging.path}/access.log</file>　　
+    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+      <level>INFO</level>
+    </filter>
+    　　　
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">　　　　　　　　　
+      <fileNamePattern>${logging.path}/access-%d{yyyy-MM-dd}.log.zip</fileNamePattern>　　　　　　　　　
+      <maxHistory>30</maxHistory>　　　　　　
+    </rollingPolicy>
+    　　　　　　
+    <encoder>　　　　　　　　　
+      <pattern>${APP_Name} %d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>　　　　　　
+    </encoder>
+  </appender>
+
+  <logger name="com.simonschuster.pimsleur.unlimited.filter" level="info">
+    <appender-ref ref="ACCESS"/>
+    <appender-ref ref="STDOUT"/>
+  </logger>
+
+  <appender name="PURCHASE" class="ch.qos.logback.core.rolling.RollingFileAppender">　
+    <file>${logging.path}/purchase.log</file>　　
+    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+      <level>INFO</level>
+    </filter>
+    　　　
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">　　　　　　　　　
+      <fileNamePattern>${logging.path}/purchase-%d{yyyy-MM-dd}.log.zip</fileNamePattern>　　　　　　　　　
+      <maxHistory>30</maxHistory>　　　　　　
+    </rollingPolicy>
+    　　　　　　
+    <encoder>　　　　　　　　　
+      <pattern>${APP_Name} %d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>　　　　　　
+    </encoder>
+  </appender>
+
+  <logger name="com.simonschuster.pimsleur.unlimited.services.purchase" level="info">
+    <appender-ref ref="PURCHASE"/>
+    <appender-ref ref="STDOUT"/>
+  </logger>
+
+
+  <root level="info">
+    <appender-ref ref="STDOUT"/>
+  </root>
+
+</configuration>

@@ -21,6 +21,11 @@ public class AvailableProductsDto {
         return purchasedProducts;
     }
 
+    public void setPurchasedProducts(
+        List<AvailableProductDto> purchasedProducts) {
+        this.purchasedProducts = purchasedProducts;
+    }
+
     public List<AvailableProductDto> getFreeProducts() {
         return freeProducts;
     }

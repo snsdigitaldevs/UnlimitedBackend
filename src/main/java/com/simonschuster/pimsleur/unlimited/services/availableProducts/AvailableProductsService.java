@@ -1,5 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.services.availableProducts;
 
+import com.simonschuster.pimsleur.unlimited.aop.annotation.LogCostTime;
 import com.simonschuster.pimsleur.unlimited.data.dto.availableProducts.AvailableProductsDto;
 import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.AvailableProductDto;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
@@ -11,6 +12,7 @@ import com.simonschuster.pimsleur.unlimited.services.course.PUCourseInfoService;
 import com.simonschuster.pimsleur.unlimited.services.customer.EDTCustomerInfoService;
 import com.simonschuster.pimsleur.unlimited.services.freeLessons.PcmFreeLessonsService;
 import com.simonschuster.pimsleur.unlimited.services.freeLessons.PuFreeLessonsService;
+import java.util.ArrayList;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,6 +21,7 @@ import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+import org.springframework.util.StringUtils;
 
 import static com.simonschuster.pimsleur.unlimited.utils.DataConverterUtil.distinctByKey;
 import static java.util.Collections.emptyList;
@@ -37,6 +40,7 @@ public class AvailableProductsService {
     @Autowired
     private PUCourseInfoService puCourseInfoService;
 
+    @LogCostTime
     public AvailableProductsDto getAvailableProducts(String sub, String email, String storeDomain) {
         if (sub == null) {
             return new AvailableProductsDto(emptyList(), getFreeProducts(emptyList(), storeDomain));
@@ -55,9 +59,16 @@ public class AvailableProductsService {
         return new AvailableProductsDto(purchasedProducts, freeProducts);
     }
 
-    private List<AvailableProductDto> purchasedPUAndPcmProducts(String sub, String email, String storeDomain) {
-        List<AvailableProductDto> join = getAllAvailableProducts(sub, email, storeDomain);
-        return join;
+    private List<AvailableProductDto> purchasedPUAndPcmProducts(String sub, String email,
+        String storeDomain) {
+        if (isLogin(sub)) {
+            return getAllAvailableProducts(sub, email, storeDomain);
+        }
+        return new ArrayList<>();
+    }
+
+    private boolean isLogin(String sub){
+      return !StringUtils.isEmpty(sub);
     }
 
     private List<AvailableProductDto> getAllAvailableProducts(String sub, String email, String storeDomain)
@@ -75,11 +86,13 @@ public class AvailableProductsService {
                                         puProductToDtos(order.getProduct(), storeDomain) :
                                         pcmOrderToDtos(order);
                                 return availableProductDtoStream
-                                        .peek(dto -> dto.setIsSubscription(order.isSubscription()));
+                                        .peek(dto -> {
+                                            dto.setIsSubscription(order.isSubscription());
+                                            dto.setStoreDomain(order.getStoreDomain());
+                                        });
                             })
                             .filter(dto -> dto.getLevel() != 0)
                             .filter(distinctByKey(AvailableProductDto::getProductCode))
-                            .sorted(comparing(AvailableProductDto::getCourseName))
                             .collect(Collectors.toList());
             return availableProductDto;
         } else {

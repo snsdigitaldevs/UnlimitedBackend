@@ -56,6 +56,16 @@ public class OrdersProduct {
     @JsonProperty("product")
     private Product product;
 
+    private String storeDomain;
+
+    public String getStoreDomain() {
+        return storeDomain;
+    }
+
+    public void setStoreDomain(String storeDomain) {
+        this.storeDomain = storeDomain;
+    }
+
     @JsonProperty("ordersProductsId")
     public String getOrdersProductsId() {
         return ordersProductsId;

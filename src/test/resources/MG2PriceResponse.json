@@ -1,0 +1,170 @@
+{
+    "Code": 200,
+    "Errors": [],
+    "Result": {
+        "Offers": [
+            {
+                "PlanId": 201,
+                "Promotion": {
+                    "PromotionId": 200,
+                    "PromotionName": "Arabic Mod 14.95 no trial",
+                    "PromotionText": null,
+                    "Image": {
+                        "ImageId": 34,
+                        "ImagePath": "https://pimsleur.solicitor-concierge.com/images/upload/Spanish.png",
+                        "ImageDescription": "Spanish"
+                    },
+                    "PaymentOptions": [
+                        {
+                            "PaymentOptionId": 1,
+                            "PaymentOptionName": "Credit Card",
+                            "PaymentOptionCode": "CC"
+                        },
+                        {
+                            "PaymentOptionId": 11,
+                            "PaymentOptionName": "Address Required",
+                            "PaymentOptionCode": "AR"
+                        },
+                        {
+                            "PaymentOptionId": 14,
+                            "PaymentOptionName": "PayPal",
+                            "PaymentOptionCode": "PAY"
+                        }
+                    ],
+                    "AddressValidationRules": {
+                        "ValidateZipProducts": true,
+                        "ValidateDeliveryAddress": true,
+                        "ValidateBillingAddress": true,
+                        "ValidateAddressDeliverable": true,
+                        "ValidateNoExistingSubscriptionAtAddress": true,
+                        "ValidateNoPreviousSubscriptionStoppedLast30": true,
+                        "ValidateNoPreviousSubscriptionOutstandingBalance": true
+                    }
+                },
+                "DisplayOrder": 1,
+                "Name": "Arabic (Modern Standard) 14.95 monthly no trial",
+                "OfferText": "Pimsleur Arabic (Modern Standard) Monthly Subscription| | | | ",
+                "MarketingText": "<ul>\r\n    <li>Complete access to every lesson</li>\r\n    <li>$14.95/month, plus applicable taxes if any</li>\r\n    <li>Cancel anytime, no questions asked</li>\r\n    <li><a href=\"https://www.pimsleur.com/terms-of-use#pimsleur-subscriptions\" target=\"_blank\">Click here for complete terms</a></li>\r\n</ul>",
+                "Weeks": "",
+                "IsBestPlan": false,
+                "IsEzPay": true,
+                "IsEzPayOptional": false,
+                "RequiresEmail": false,
+                "Details": null,
+                "PlanCode": "",
+                "FinePrint": "<b>By clicking below, you acknowledge that your order contains an auto-renewing subscription. You will be billed $14.95 (plus tax, if applicable) per month until you cancel. To cancel, visit accounts.pimsleur.com and follow the prompts. <a href=\"https://www.pimsleur.com/terms-of-use#pimsleur-subscriptions\" target=\"_blank\">Click here for full details. </a> </b> Use of Pimsleur app is required. Must have a US billing address to subscribe.",
+                "Image": {
+                    "ImageId": 21,
+                    "ImagePath": "https://pimsleur.solicitor-concierge.com/images/upload/ModernStandartArabic.png",
+                    "ImageDescription": "ModernStandartArabic"
+                },
+                "DealerName": null,
+                "DealerPhone": null,
+                "PricingDisplay": "W",
+                "PassOrTrialDays": 0,
+                "SubscriptionLevel": 2,
+                "AllowPreviousSunday": false,
+                "ExternalBillingPlanId": "cbf974fab0e9b0b3a25ae9b38e92b92788acbb46",
+                "PlanCampaignCode": "",
+                "DryRunAmount": 14.95,
+                "DryRunDailyAmount": 0.5,
+                "BillingCycles": 0,
+                "BaseProductId": "af221e9214d8da6355ecc1e499a25a8fc72c53b0                                                                                        ",
+                "Products": [
+                    {
+                        "ProductId": 100001,
+                        "ExternalProductId": "af221e9214d8da6355ecc1e499a25a8fc72c53b0",
+                        "ExternalMerchantId": "100001",
+                        "Name": "Arabic (Modern Standard)",
+                        "Price": 0,
+                        "Currency": "USD",
+                        "Active": true,
+                        "PaperCode": "PIM",
+                        "NewspaperId": 1,
+                        "ServiceTypeId": 6,
+                        "IsPrint": false,
+                        "IsDigital": true,
+                        "ServiceType": {
+                            "ServiceTypeId": 6,
+                            "Name": "DIGITAL",
+                            "Description": "DigitalOnly",
+                            "Sequence": 6,
+                            "Days": 0,
+                            "Code": "DIGITAL",
+                            "Active": true,
+                            "eEditionAccess": true,
+                            "ServiceDays": [
+                                {
+                                    "Day": 0,
+                                    "DayName": "Sunday",
+                                    "PrintAllowed": false,
+                                    "DigitalAllowed": true
+                                },
+                                {
+                                    "Day": 1,
+                                    "DayName": "Monday",
+                                    "PrintAllowed": false,
+                                    "DigitalAllowed": true
+                                },
+                                {
+                                    "Day": 2,
+                                    "DayName": "Tuesday",
+                                    "PrintAllowed": false,
+                                    "DigitalAllowed": true
+                                },
+                                {
+                                    "Day": 3,
+                                    "DayName": "Wednesday",
+                                    "PrintAllowed": false,
+                                    "DigitalAllowed": true
+                                },
+                                {
+                                    "Day": 4,
+                                    "DayName": "Thursday",
+                                    "PrintAllowed": false,
+                                    "DigitalAllowed": true
+                                },
+                                {
+                                    "Day": 5,
+                                    "DayName": "Friday",
+                                    "PrintAllowed": false,
+                                    "DigitalAllowed": true
+                                },
+                                {
+                                    "Day": 6,
+                                    "DayName": "Saturday",
+                                    "PrintAllowed": false,
+                                    "DigitalAllowed": true
+                                }
+                            ]
+                        },
+                        "Discount": null,
+                        "Description": "Arabic (Modern Standard)",
+                        "IsAddOn": false,
+                        "DeliveryMethod": "5",
+                        "OneTimeCharge": false,
+                        "RegularRate": 0
+                    }
+                ],
+                "PremiumGifts": null,
+                "ExternalProducts": [
+                    {
+                        "ExternalProductId": "af221e9214d8da6355ecc1e499a25a8fc72c53b0",
+                        "ProductCampaignCode": null,
+                        "MerchantProductId": "100001"
+                    }
+                ],
+                "OfferProducts": null,
+                "IsPrint": false,
+                "IsDigital": true,
+                "IsEedition": true,
+                "BillingSystem": 1,
+                "UpsellPromotionId": null,
+                "OfferDisplayText": "",
+                "RegistrationCount": 0
+            }
+        ]
+    },
+    "SessionId": "d92cbc9c-cfbe-45f8-aab8-7b2347e98b8f",
+    "RequestId": "f81f35ca-5a9d-43f2-b32a-fb050fcca68f"
+}

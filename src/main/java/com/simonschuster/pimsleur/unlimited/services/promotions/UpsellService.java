@@ -1,5 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.services.promotions;
 
+import com.simonschuster.pimsleur.unlimited.aop.annotation.LogCostTime;
 import com.simonschuster.pimsleur.unlimited.data.dto.promotions.FormatMapping;
 import com.simonschuster.pimsleur.unlimited.data.dto.promotions.PurchaseMapping;
 import com.simonschuster.pimsleur.unlimited.data.dto.promotions.UpsellDto;
@@ -26,6 +27,8 @@ public class UpsellService {
     @Autowired
     private EDTCustomerInfoService customerInfoService;
 
+
+    @LogCostTime
     public UpsellDto getUpsellInfoFor(String isbn, String sub, String email, String storeDomain) {
         PurchaseMapping purchaseMapping = purchaseMappingService.findPurchaseMappingFor(isbn);
 
@@ -43,7 +46,7 @@ public class UpsellService {
             boolean upgradeBought = isBought(boughtIsbns, purchaseMapping.getUpgradeInAppPurchaseISBN());
 
             upsellDto = purchaseMapping.toUpsellDto(upsellBought, subBought, upgradeBought);
-            UpsellDto finalUpsellDto = formatMappingService.updateNameDescription(upsellDto);
+            UpsellDto finalUpsellDto = formatMappingService.updateNameDescriptionLink(upsellDto);
 
             // find the item whose 'Other format ISBN' equals upsell ISBN
             FormatMapping withOtherFormatAs = formatMappingService.findISBNWithOtherFormatAs(

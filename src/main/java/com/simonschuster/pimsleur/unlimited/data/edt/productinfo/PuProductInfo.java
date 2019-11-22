@@ -1,24 +1,13 @@
 package com.simonschuster.pimsleur.unlimited.data.edt.productinfo;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode;
 
-public class PuProductInfo {
-    @JsonProperty("result_code")
-    private Integer resultCode;
+public class PuProductInfo extends EdtResponseCode {
 
     //Mandatory field for correct response
     @JsonProperty("result_data")
     private ResultData resultData;
-
-    @JsonProperty("result_code")
-    public Integer getResultCode() {
-        return resultCode;
-    }
-
-    @JsonProperty("result_code")
-    public void setResultCode(Integer resultCode) {
-        this.resultCode = resultCode;
-    }
 
     @JsonProperty("result_data")
     public ResultData getResultData() {

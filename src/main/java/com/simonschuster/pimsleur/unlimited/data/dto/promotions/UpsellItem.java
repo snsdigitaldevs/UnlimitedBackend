@@ -10,10 +10,13 @@ public class UpsellItem {
     private String baseISBN;
     private String name;
     private String description;
+    private String webLink;
+    private String pid;
 
-    public UpsellItem(String isbn, String name) {
+    public UpsellItem(String isbn, String name, String webLink) {
         this.isbn = isbn;
         this.name = name;
+        this.webLink = webLink;
     }
 
     public String getIsbn() {
@@ -42,5 +45,21 @@ public class UpsellItem {
 
     public String getBaseISBN() {
         return baseISBN;
+    }
+
+    public String getWebLink() {
+        return webLink;
+    }
+
+    public void setWebLink(String webLink) {
+        this.webLink = webLink;
+    }
+
+    public String getPid() {
+        return pid;
+    }
+
+    public void setPid(String pid) {
+        this.pid = pid;
     }
 }

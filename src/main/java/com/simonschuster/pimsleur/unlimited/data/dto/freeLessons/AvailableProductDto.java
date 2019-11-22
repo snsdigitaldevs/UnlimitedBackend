@@ -1,6 +1,7 @@
 package com.simonschuster.pimsleur.unlimited.data.dto.freeLessons;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.Objects;
 
@@ -9,6 +10,8 @@ import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL;
 @JsonInclude(NON_NULL)
 public class AvailableProductDto {
     private String languageName;
+
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String filterLanguageName;
     private String productCode;
     private String courseName;
@@ -19,6 +22,10 @@ public class AvailableProductDto {
     private Integer level = 1; // default level 1 for free lessons
 
     private boolean isSubscription;
+    private String storeDomain;
+
+    public AvailableProductDto() {
+    }
 
     public AvailableProductDto(String languageName, String productsLanguageName, String productCode, boolean isPu) {
         this.languageName = languageName.trim();
@@ -32,6 +39,14 @@ public class AvailableProductDto {
 
         this.level = level;
         this.courseName = courseName.trim();
+    }
+
+    public String getFilterLanguageName() {
+        return filterLanguageName;
+    }
+
+    public void setFilterLanguageName(String filterLanguageName) {
+        this.filterLanguageName = filterLanguageName;
     }
 
     public boolean getIsSubscription() {
@@ -88,6 +103,14 @@ public class AvailableProductDto {
 
     public void setCourseName(String courseName) {
         this.courseName = courseName;
+    }
+
+    public String getStoreDomain() {
+        return storeDomain;
+    }
+
+    public void setStoreDomain(String storeDomain) {
+        this.storeDomain = storeDomain;
     }
 
     public boolean isSameLevelSameLang(AvailableProductDto that) {

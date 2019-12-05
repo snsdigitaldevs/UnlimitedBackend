@@ -14,6 +14,7 @@ import com.simonschuster.pimsleur.unlimited.services.purchase.IntentionToBuyServ
 import com.simonschuster.pimsleur.unlimited.services.purchase.VerifyReceiptService;
 import com.simonschuster.pimsleur.unlimited.services.promotions.FormatMappingService;
 import io.swagger.annotations.ApiOperation;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -96,6 +97,9 @@ public class ProductController {
     public VerifyReceiptDTO verifyReceipt(@PathVariable("customerId") String customerId,
                                           @RequestBody VerifyReceiptBody verifyReceiptBody)
             throws UnsupportedEncodingException {
+        if (StringUtils.isBlank(verifyReceiptBody.getReceipt())) {
+            throw new ParamInvalidException("receipt can not be blank");
+        }
         return verifyReceiptService.verifyReceipt(verifyReceiptBody, customerId);
     }
 

@@ -97,9 +97,9 @@ public class ProductController {
     public VerifyReceiptDTO verifyReceipt(@PathVariable("customerId") String customerId,
                                           @RequestBody VerifyReceiptBody verifyReceiptBody)
             throws UnsupportedEncodingException {
-        if (StringUtils.isBlank(verifyReceiptBody.getReceipt())) {
-            throw new ParamInvalidException("receipt can not be blank");
-        }
+//        if (StringUtils.isBlank(verifyReceiptBody.getReceipt())) {
+//            throw new ParamInvalidException("receipt can not be blank");
+//        }
         return verifyReceiptService.verifyReceipt(verifyReceiptBody, customerId);
     }
 

@@ -11,7 +11,6 @@ public class JsonUtils {
 
     public static String toJsonString(Object object) {
         if (object != null) {
-
             try {
                 return OBJECT_MAPPER.writeValueAsString(object);
             } catch (Exception e) {

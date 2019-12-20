@@ -8,6 +8,7 @@ import com.simonschuster.pimsleur.unlimited.data.edt.customer.verifyReceipt.Veri
 import com.simonschuster.pimsleur.unlimited.services.AppIdService;
 import com.simonschuster.pimsleur.unlimited.utils.EdtErrorCodeUtil;
 import com.simonschuster.pimsleur.unlimited.utils.JsonUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,6 +37,10 @@ public class VerifyReceiptService {
 
     public VerifyReceiptDTO verifyReceipt(VerifyReceiptBody verifyReceiptBody, String customerId)
         throws UnsupportedEncodingException {
+        if (StringUtils.isBlank(verifyReceiptBody.getReceipt())) {
+            LOG.error("receipt is empty, customerId is {}, verify body is {}", customerId,
+                JsonUtils.toJsonString(verifyReceiptBody));
+        }
         HttpEntity<String> entity = createPostBody(verifyReceiptBody, customerId);
         VerifyReceipt verifyReceiptResponse =
             postToEdt(entity, config.getProperty("edt.api.verifyReceipt.url"), VerifyReceipt.class);

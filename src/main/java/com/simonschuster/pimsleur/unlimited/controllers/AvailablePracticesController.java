@@ -1,7 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.controllers;
 
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.AvailablePractices;
-import com.simonschuster.pimsleur.unlimited.data.dto.practices.FlashCard;
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.PracticesInUnit;
 import com.simonschuster.pimsleur.unlimited.services.practices.PcmAvailablePracticesService;
 import com.simonschuster.pimsleur.unlimited.services.practices.PracticesUrls;

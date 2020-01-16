@@ -25,6 +25,7 @@ pipeline {
         }
 
         stage("Deploy to Qa") {
+            agent any
             steps {
                 echo "Deploy to Qa"
                 script {

@@ -24,47 +24,17 @@ pipeline {
             }
         }
 
-        stage("Deploy to UAT") {
+        stage("Deploy to Qa") {
             steps {
+                echo "Deploy to Qa"
                 script {
-                    try {
-                        echo "Deploy to UAT"
-
-                        node {
-                            def config = readProperties file: 'jenkinsfiles/config/config.properties'
-                            def hostnames = config.UAT_UnlimitedBackend_HostName.split(",")
-                            deploy(hostnames, "uat")
-                        }
-                    } catch (err) {
-                        currentBuild.result = 'SUCCESS'
-                        return true
-                    }
-                }
-
-            }
-        }
-
-        stage("Deploy to PROD") {
-            steps {
-                script {
-                    try {
-                        echo "Deploy to PROD"
-                        timeout(time: 30, unit: 'MINUTES') {
-                            input message: 'build PROD version?'
-                        }
-
-                        node {
-                            def config = readProperties file: 'jenkinsfiles/config/config.properties'
-                            def hostnames = config.PROD_UnlimitedBackend_HostName.split(",")
-                            deploy(hostnames, "prod")
-                        }
-                    } catch (err) {
-                        currentBuild.result = 'SUCCESS'
-                        return true
-                    }
+                    def config = readProperties file: 'jenkinsfiles/config/config.properties'
+                    def hostnames = config.QA_UnlimitedBackend_HostName.split(",")
+                    deploy(hostnames, "qa")
                 }
             }
         }
+
     }
     post {
         aborted {

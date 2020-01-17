@@ -24,14 +24,14 @@ pipeline {
             }
         }
 
-        stage("Deploy to Qa") {
+        stage("Deploy to Integration") {
             agent any
             steps {
-                echo "Deploy to Qa"
+                echo "Deploy to Integration"
                 script {
                     def config = readProperties file: 'jenkinsfiles/config/config.properties'
-                    def hostnames = config.QA_UnlimitedBackend_HostName.split(",")
-                    deploy(hostnames, "qa")
+                    def hostnames = config.ITG_UnlimitedBackend_HostName.split(",")
+                    deploy(hostnames, "itg")
                 }
             }
         }

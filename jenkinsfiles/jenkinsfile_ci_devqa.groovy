@@ -35,6 +35,28 @@ pipeline {
                 }
             }
         }
+
+        stage("Deploy to Qa") {
+            steps {
+                script {
+                    try {
+                        echo "Deploy to Qa"
+                        timeout(time: 30, unit: 'MINUTES') {
+                            input message: 'build QA version?'
+                        }
+
+                        node {
+                            def config = readProperties file: 'jenkinsfiles/config/config.properties'
+                            def hostnames = config.PROD_UnlimitedBackend_HostName.split(",")
+                            deploy(hostnames, "qa")
+                        }
+                    } catch (err) {
+                        currentBuild.result = 'SUCCESS'
+                        return true
+                    }
+                }
+            }
+        }
     }
     post {
         aborted {

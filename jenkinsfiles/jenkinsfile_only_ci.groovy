@@ -7,7 +7,7 @@ pipeline {
                 echo "Compile"
 
                 script {
-                    env.GIT_REVISION = sh(returnStdout: true, script: 'echo -n $(git rev-parse --short HEAD)')
+                    env.GIT_REVISION = sh(returnStdout: true, script: 'echo $(git rev-parse --short HEAD)')
                     echo "${env.GIT_REVISION}"
                     checkout scm
 

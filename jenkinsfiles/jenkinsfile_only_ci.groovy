@@ -8,7 +8,7 @@ pipeline {
 
                 script {
                     env.GIT_REVISION = sh(returnStdout: true, script: 'echo -n $(git rev-parse --short HEAD)')
-
+                    echo "${env.GIT_REVISION}"
                     checkout scm
 
                     def project_name = "UnlimitedBackend"
@@ -18,12 +18,13 @@ pipeline {
 
                     def build_package = "${WORKSPACE}/target/${build_package_name}"
                     def all_build_package_dir = "~/jenkins_build_package/${project_name}"
-                    def build_package_new_name = "${project_name}_${env.GIT_REVISION}_${BUILD_ID}.jar"
+                    def build_package_new_name = "${project_name}-${env.GIT_REVISION}-${BUILD_ID}.jar"
+                    echo "${build_package_new_name}"
 
                     sh "mkdir -p  ${all_build_package_dir}"
                     sh([returnStdout: true, script: "python jenkinsfiles/scripts/savePkgLocal.py ${build_package}  ${all_build_package_dir} ${build_package_new_name}"])
 
-                    description = "${description}\n${project_name}_${env.GIT_REVISION}_${BUILD_ID}.jar build success!"
+                    description = "${description}\n${project_name}-${env.GIT_REVISION}-${BUILD_ID}.jar build success!"
                 }
             }
         }
@@ -35,62 +36,5 @@ pipeline {
             }
         }
     }
-}
-
-def deploy(hostnames, env) {
-
-    def project_name = "UnlimitedBackend"
-    def config = readProperties file: 'jenkinsfiles/config/config.properties'
-
-    def all_build_package_dir = "~/jenkins_build_package/${project_name}"
-
-    def dpkg = "${project_name}_${BUILD_ID}.jar"
-
-    def hostuser = config.Host_User
-    def hostcertid = config.Host_Cert_ID
-    def apport = config.APP_UnlimitedBackend_Port
-
-    def ci_build_package = "${all_build_package_dir}/${dpkg}"
-
-    def description = ""
-
-    for (int n = 0; n < hostnames.size(); n++) {
-
-        def hostname = hostnames[n]
-        def appurl = "http://${hostname}:${apport}"
-
-        try {
-            sshagent(["${hostcertid}"]) {
-                sh "/usr/local/bin/ansible -i ${hostname}, all -u ${hostuser} -m file -a 'path=~/${project_name} state=directory'"
-                sh "/usr/local/bin/ansible -i ${hostname}, all -u ${hostuser} -m copy -a 'src=${ci_build_package} dest=~/${project_name}/${dpkg} mode=755 backup=yes'"
-                sh "/usr/local/bin/ansible -i ${hostname}, all -u ${hostuser} -m script -a 'jenkinsfiles/scripts/startupApp.sh  ${env} ~/${project_name} ${dpkg}'"
-            }
-
-            sleep 10
-
-            timeout(time: 30, unit: 'SECONDS') {
-                retry(3) {
-                    def response = httpRequest url: "${appurl}", validResponseContent: 'Greetings from Spring Boot', validResponseCodes: '200'
-                    println("Response Status: " + response.status)
-                    println("Response Content: " + response.content)
-                }
-            }
-
-            description = "${description}\n${hostname.split("\\.")[0]} deploy success!"
-        }
-        catch (exc) {
-
-            description = "${description}\n${hostname.split("\\.")[0]} deploy failure!"
-            throw exc
-
-        }
-        finally {
-
-            currentBuild.description = "${description}"
-
-        }
-
-    }
-
 }
 

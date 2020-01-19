@@ -33,7 +33,7 @@ def deploy(hostnames, env) {
 
     def all_build_package_dir = "~/jenkins_build_package/${project_name}"
 
-    def dpkg = "${project_name}_${BUILD_VERSION}.jar"
+    def dpkg = "${project_name}-${BUILD_VERSION}.jar"
 
     def hostuser = config.Host_User
     def hostcertid = config.Host_Cert_ID

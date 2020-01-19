@@ -6,12 +6,15 @@ pipeline {
             steps {
                 echo "Deploy to ${ENVIRONMENT}"
                 script {
-                    def env_lower_case = ${ENVIRONMENT}.toLowerCase()
-                    def env_upper_case = ${ENVIRONMENT}.toUpperCase()
+                    print("${ENVIRONMENT}")
+                    def env_lower_case = "${ENVIRONMENT}".toLowerCase()
+                    def env_upper_case = "${ENVIRONMENT}".toUpperCase()
+                    print("${env_lower_case}-${env_upper_case}")
 
                     def config = readProperties file: 'jenkinsfiles/config/config.properties'
-                    def hostname_parameter = ${env_upper_case}_UnlimitedBackend_HostName
-                    def hostnames = config.${hostname_parameter}.split(",")
+                    def hostname_parameter = "${env_upper_case}_UnlimitedBackend_HostName"
+                    print("${hostname_parameter}")
+                    def hostnames = config."${hostname_parameter}".split(",")
                     deploy(hostnames, ${env_lower_case})
                 }
             }
@@ -83,4 +86,3 @@ def deploy(hostnames, env) {
     }
 
 }
-

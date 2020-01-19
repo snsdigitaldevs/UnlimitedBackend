@@ -7,9 +7,8 @@ pipeline {
                 echo "Compile"
 
                 script {
-                    env.GIT_BRANCH =  getGitBranchName()
                     env.GIT_REVISION = sh(returnStdout: true, script: 'git rev-parse --short HEAD').trim()
-                    echo "${GIT_BRANCH}-${env.GIT_REVISION}"
+                    echo "${env.GIT_REVISION}"
                     checkout scm
 
                     def project_name = "UnlimitedBackend"
@@ -19,7 +18,7 @@ pipeline {
 
                     def build_package = "${WORKSPACE}/target/${build_package_name}"
                     def all_build_package_dir = "~/jenkins_build_package/${project_name}"
-                    def build_package_new_name = "${project_name}-${env.GIT_BRANCH}.${env.GIT_REVISION}-${BUILD_ID}.jar"
+                    def build_package_new_name = "${project_name}-${env.GIT_REVISION}-${BUILD_ID}.jar"
                     echo "${build_package_new_name}"
 
                     sh "mkdir -p  ${all_build_package_dir}"
@@ -36,9 +35,5 @@ pipeline {
             }
         }
     }
-}
-
-def getGitBranchName() {
-    return scm.branches.first().getExpandedName(env.getEnvironment())
 }
 

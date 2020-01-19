@@ -7,7 +7,7 @@ pipeline {
                 echo "Compile"
 
                 script {
-                    env.GIT_BRANCH = sh(returnStdout: true, script: 'git symbolic-ref --short -q HEAD').trim()
+                    env.GIT_BRANCH =  getGitBranchName()
                     env.GIT_REVISION = sh(returnStdout: true, script: 'git rev-parse --short HEAD').trim()
                     echo "${GIT_BRANCH}-${env.GIT_REVISION}"
                     checkout scm
@@ -36,5 +36,9 @@ pipeline {
             }
         }
     }
+}
+
+def getGitBranchName() {
+    return scm.branches.first().getExpandedName(env.getEnvironment())
 }
 

@@ -23,10 +23,10 @@ pipeline {
 
                     sh "mkdir -p  ${all_build_package_dir}"
                     sh([returnStdout: true, script: "python jenkinsfiles/scripts/savePkgLocal.py ${build_package}  ${all_build_package_dir} ${build_package_new_name}"])
+                    currentBuild.description = "${build_package_new_name} build success!"
                 }
             }
         }
-        currentBuild.description = "${build_package_new_name} build success!"
     }
     post {
         aborted {

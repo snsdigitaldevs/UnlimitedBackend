@@ -1,7 +1,7 @@
 pipeline {
     agent none
     stages {
-        stage("Deploy to ${ENVIRONMENT}") {
+        stage("Deploy") {
             agent any
             steps {
                 echo "Deploy to ${ENVIRONMENT}"

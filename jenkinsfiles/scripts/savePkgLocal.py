@@ -16,8 +16,8 @@ def save(SourcePath,DestPath):
 def delExpirePkgs(SaveDir):
 
     jarslist = os.listdir(SaveDir)
-    jarslist.sort(key=lambda x: int(os.path.splitext(x)[0].split("_")[1]),reverse=True)
-    
+    jarslist.sort(key=lambda x: os.path.getctime(os.path.join(SaveDir, x)))
+
     if len(jarslist) > ReservePkgNum:
 
     	NeedDelPkgs = jarslist[ReservePkgNum::]
@@ -32,7 +32,7 @@ def delExpirePkgs(SaveDir):
 # main
 OriPkgPath = sys.argv[1]
 SaveDir = sys.argv[2]
-NewPkgName = sys.argv[3]  
+NewPkgName = sys.argv[3]
 NewPkgPath = SaveDir + os.sep + NewPkgName
 
 save(OriPkgPath,NewPkgPath)

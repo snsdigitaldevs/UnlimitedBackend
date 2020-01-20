@@ -24,6 +24,7 @@ def delExpirePkgs(SaveDir):
 
     		subprocess.call("rm -f %s"%PkgPath,shell=True)
 
+SaveDir = sys.argv[1]
 delExpirePkgs(SaveDir)
 
 

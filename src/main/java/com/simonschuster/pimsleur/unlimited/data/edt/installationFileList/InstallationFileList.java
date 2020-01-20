@@ -115,4 +115,17 @@ public class InstallationFileList extends EdtResponseCode {
     private boolean isContainedFileType(FileListItem f, String fileType) {
         return f.getPath().contains(fileType + ".csv");
     }
+
+    public String getReadingPdfUrlByFileName(String readingIntroPdfName) {
+        FileListItem fileListItem = this.resultData.getFileList().getFileListItems().stream()
+                .filter(this::isPdfFiles).filter(fileItem -> fileItem.getPath().contains(readingIntroPdfName)).findFirst().orElse(null);
+        if (fileListItem != null) {
+            return fileListItem.getSourceURL().concat(fileListItem.getPath());
+        }
+        return null;
+    }
+
+    private boolean isPdfFiles(FileListItem fileListItem) {
+        return fileListItem.getPath().contains(".pdf") && fileListItem.getMimeType().equals("pdf");
+    }
 }

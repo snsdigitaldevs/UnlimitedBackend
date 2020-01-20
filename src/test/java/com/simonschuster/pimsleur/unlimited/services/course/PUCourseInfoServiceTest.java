@@ -65,9 +65,12 @@ public class PUCourseInfoServiceTest {
         HttpServer server = httpServer(12306);
         server.post(and(
                 by(uri("/subscr_production_v_9/action_handlers/qwsfrecv.php")),
-                eq(form("action"), "fgtyh")
-        ))
+                eq(form("action"), "fgtyh")))
                 .response(file("src/test/resources/edtProductInfoResponseWithMultipleCourses.json"));
+        server.post(and(
+                by(uri("/subscr_production_v_9/action_handlers/hflfg.php")),
+                eq(form("action"), "gfl")))
+                .response(file("src/test/resources/installationFileListResponse.json"));
 
         running(server, () -> {
             AggregatedProductInfo productInfo = puCourseInfoService.getPuProductInfo("9781508260257", storeDomain);
@@ -123,6 +126,11 @@ public class PUCourseInfoServiceTest {
                 eq(form("action"), "fgtyh"),
                 eq(form("gccfs"), "[\"9781508243328\"]")))
                 .response(file("src/test/resources/edtProductInfoResponse.json"));
+        server.post(and(
+                by(uri("/subscr_production_v_9/action_handlers/hflfg.php")),
+                eq(form("action"), "gfl"),
+                eq(form("nbsi"), "9781508243328")))
+                .response(file("src/test/resources/installationFileListResponse.json"));
         return server;
     }
 

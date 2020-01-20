@@ -336,4 +336,16 @@ public class MediaItem {
         //the “classId” in the media_item describes the file, for instance 100= “daily audio lesson”, 200=“audio reading lesson”
         return getClassId().equals(200);
     }
+
+    boolean isReadingAlphabet() {
+        //the “classId” in the media_item describes the file, for instance 1001= “reading alphabet pdf”
+        return getClassId().equals(1001);
+    }
+
+    boolean isReadingIntroduction() {
+        //the “classId” in the media_item describes the file, for instance 1000= “reading introduction pdf”
+        return getClassId().equals(1000);
+    }
+
+
 }

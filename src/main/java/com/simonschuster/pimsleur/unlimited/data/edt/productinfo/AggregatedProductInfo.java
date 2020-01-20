@@ -1,11 +1,16 @@
 package com.simonschuster.pimsleur.unlimited.data.edt.productinfo;
 
 import com.simonschuster.pimsleur.unlimited.common.exception.PimsleurException;
-import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.*;
+import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
+import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.CultureContent;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Image;
+import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Lesson;
+import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.ReadingAudio;
+import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Readings;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.OrdersProduct;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.OrdersProductAttribute;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.Product;
+import com.simonschuster.pimsleur.unlimited.data.edt.installationFileList.InstallationFileList;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.StringUtils;
@@ -30,6 +35,7 @@ public class AggregatedProductInfo {
     private static final Logger logger = LoggerFactory.getLogger(AggregatedProductInfo.class);
 
     private PuProductInfo puProductInfo;
+    private InstallationFileList installationFileList;
     private PcmProduct pcmProduct;
     private List<Course> lessonAudioInfoFromPCM;
 
@@ -47,6 +53,14 @@ public class AggregatedProductInfo {
 
     public PuProductInfo getPuProductInfo() {
         return puProductInfo;
+    }
+
+    public InstallationFileList getInstallationFileList() {
+        return installationFileList;
+    }
+
+    public void setInstallationFileList(InstallationFileList installationFileList) {
+        this.installationFileList = installationFileList;
     }
 
     // factory method
@@ -103,22 +117,53 @@ public class AggregatedProductInfo {
         try {
             Readings readings = new Readings();
 
-            CourseLevelDef courseLevelDef = findCourseLevelDef(mediaSet);
-            String audioBaseUrl = (PREFIX_FOR_AUDIO_OF_PU + mediaSet.getCourseLanguageName()
-                    .replace(" ", "").toLowerCase() + "/") + courseLevelDef.getAudioPath();
+            List<ReadingAudio> readingAudios = getReadingAudiosInfo(mediaSet);
+            String puReadingAlphabetPdfUrl = getReadingAlphabetPdfUrl(mediaSet);
+            String puReadingIntroPdfUrl = getReadingIntroPdfUrl(mediaSet);
 
-            List<MediaItem> mediaItems = mediaSet.getMediaItems().stream()
-                    .filter(MediaItem::isReadingMp3).collect(toList());
-
-            for (MediaItem mediaItem : mediaItems) {
-                String encodedAudioLink = encodeUrl(PREFIX_FOR_AUDIO_OF_PU, audioBaseUrl + mediaItem.getFilename());
-                readings.getAudios().add(new ReadingAudio(parseInt(mediaItem.getUnit()), encodedAudioLink));
-            }
-
+            readings.setAudios(readingAudios);
+            readings.setPuReadingAlphabetPdf(puReadingAlphabetPdfUrl);
+            readings.setPuReadingIntroPdf(puReadingIntroPdfUrl);
             course.setReadings(readings);
         } catch (Exception ignored) {
             throw new PimsleurException("Error occured when convert pu reading audio links.");
         }
+    }
+
+    private String getReadingIntroPdfUrl(MediaSet mediaSet) {
+        List<MediaItem> mediaItems = mediaSet.getMediaItems()
+                        .stream().filter(MediaItem::isReadingIntroduction).collect(toList());
+        if(!mediaItems.isEmpty()) {
+            String readingIntroPdfName = mediaItems.get(0).getFilename();
+            return installationFileList.getReadingPdfUrlByFileName(readingIntroPdfName);
+        }
+        return null;
+    }
+
+    private String getReadingAlphabetPdfUrl(MediaSet mediaSet) {
+        List<MediaItem> mediaItems = mediaSet.getMediaItems()
+                        .stream().filter(MediaItem::isReadingAlphabet).collect(toList());
+        if(!mediaItems.isEmpty()) {
+            String readingAlphabetPdfName = mediaItems.get(0).getFilename();
+            return this.installationFileList.getReadingPdfUrlByFileName(readingAlphabetPdfName);
+        }
+        return null;
+    }
+
+
+    private List<ReadingAudio> getReadingAudiosInfo(MediaSet mediaSet) throws Exception {
+        CourseLevelDef courseLevelDef = findCourseLevelDef(mediaSet);
+        String audioBaseUrl = (PREFIX_FOR_AUDIO_OF_PU + mediaSet.getCourseLanguageName()
+                .replace(" ", "").toLowerCase() + "/") + courseLevelDef.getAudioPath();
+
+        List<MediaItem> mediaItems = mediaSet.getMediaItems().stream()
+                .filter(MediaItem::isReadingMp3).collect(toList());
+        List<ReadingAudio> readingAudios = new ArrayList<ReadingAudio>();
+        for (MediaItem mediaItem : mediaItems) {
+            String encodedAudioLink = encodeUrl(PREFIX_FOR_AUDIO_OF_PU, audioBaseUrl + mediaItem.getFilename());
+            readingAudios.add(new ReadingAudio(parseInt(mediaItem.getUnit()), encodedAudioLink));
+        }
+        return readingAudios;
     }
 
     private void buildCourseInfoFromPCM(List<Course> courses,

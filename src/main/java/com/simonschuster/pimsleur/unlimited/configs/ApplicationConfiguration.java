@@ -37,7 +37,8 @@ public class ApplicationConfiguration {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("https://pimsleur-web-qa.s3-website-us-east-1.amazonaws.com",
+                        .allowedOrigins(
+                                "https://pimsleur-web-qa.s3-website-us-east-1.amazonaws.com",
                                 "https://ask-ifr-download.s3.amazonaws.com",
                                 "https://d5vvzkykh1agb.cloudfront.net",
                                 "https://pims-qa.dogememe.tk",
@@ -46,6 +47,9 @@ public class ApplicationConfiguration {
                                 "https://learn-qa.pimsleur.com",
                                 "https://d22h8kdloqwqsy.cloudfront.net",
                                 "https://d3u965pxjxbjuz.cloudfront.net",
+                                "https://d7bcyw9tdqg2v.cloudfront.net",
+                                "https://d3vu3jnt00sinm.cloudfront.net",
+                                "https://d3v8tijfb44l02.cloudfront.net",
                                 "http://pimsleur-web-qa.s3-website-us-east-1.amazonaws.com",
                                 "http://ask-ifr-download.s3.amazonaws.com",
                                 "http://d5vvzkykh1agb.cloudfront.net",
@@ -54,10 +58,9 @@ public class ApplicationConfiguration {
                                 "http://learn-uat.pimsleur.com",
                                 "http://d22h8kdloqwqsy.cloudfront.net",
                                 "http://d3u965pxjxbjuz.cloudfront.net",
-                                "https://d7bcyw9tdqg2v.cloudfront.net",
-                                "https://d3vu3jnt00sinm.cloudfront.net",
+                                "http://d3v8tijfb44l02.cloudfront.net",
                                 "http://learn-qa.pimsleur.com",
-                                "http://learn-dev.pimsleur.com.s3-website-us-east-1.amazonaws.com/")
+                                "http://learn-dev.pimsleur.com.s3-website-us-east-1.amazonaws.com")
                         .allowedMethods("GET", "HEAD", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowCredentials(true);
             }

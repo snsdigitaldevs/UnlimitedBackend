@@ -23,6 +23,7 @@ pipeline {
 
                     sh "mkdir -p  ${all_build_package_dir}"
                     sh "cp ${build_package} ${all_build_package_dir}/${build_package_new_name}"
+                    sh([returnStdout: true, script: "python jenkinsfiles/scripts/delHistoryPkg.py"])
                     currentBuild.description = "${build_package_new_name} build success!"
                 }
             }

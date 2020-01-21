@@ -50,6 +50,7 @@ public class ApplicationConfiguration {
                                 "https://d7bcyw9tdqg2v.cloudfront.net",
                                 "https://d3vu3jnt00sinm.cloudfront.net",
                                 "https://d3v8tijfb44l02.cloudfront.net",
+                                "https://learn-dev.pimsleur.com.s3-website-us-east-1.amazonaws.com",
                                 "http://pimsleur-web-qa.s3-website-us-east-1.amazonaws.com",
                                 "http://ask-ifr-download.s3.amazonaws.com",
                                 "http://d5vvzkykh1agb.cloudfront.net",

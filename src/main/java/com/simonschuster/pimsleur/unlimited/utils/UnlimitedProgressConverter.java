@@ -60,7 +60,11 @@ public class UnlimitedProgressConverter {
         return progress -> {
             switch (progress.getKey().split("#")[1]) {
                 case COMPLETED:
-                    progressDTO.setCompleted((Integer) progress.getValue() == 1);
+                    if (progress.getValue() instanceof Integer) {
+                        progressDTO.setCompleted((Integer) progress.getValue() == 1);
+                    } else if (progress.getValue() instanceof Boolean) {
+                        progressDTO.setCompleted((Boolean) progress.getValue());
+                    }
                     break;
                 case LAST_PLAYED_DATE:
                     Long value = Long.parseLong(progress.getValue().toString());

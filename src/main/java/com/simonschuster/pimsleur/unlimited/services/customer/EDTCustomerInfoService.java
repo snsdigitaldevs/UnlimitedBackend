@@ -130,16 +130,20 @@ public class EDTCustomerInfoService {
     }
 
     private void checkAuthDescriptors(CustomerInfo customerInfo) {
-        List<AuthDescriptor> authDescriptors = customerInfo.getResultData().getCustomer()
-            .getAuthDescriptors();
-        for (AuthDescriptor authDescriptor : authDescriptors) {
-            if (authDescriptor.getResultCode() != EdtResponseCode.RESULT_OK
-                && authDescriptor.getResultCode()
-                != EdtResponseCode.RESULT_COULD_NOT_AUTHENTICATE) {
-                LOG.error("CustomerId is {}, AuthProvider {} is error, resultCode is {}",
-                    authDescriptor.getCustomersId(), authDescriptor.getAuthProvidersId(),
-                    authDescriptor.getResultCode());
+        try {
+            List<AuthDescriptor> authDescriptors = customerInfo.getResultData().getCustomer()
+                .getAuthDescriptors();
+            for (AuthDescriptor authDescriptor : authDescriptors) {
+                if (authDescriptor.getResultCode() != EdtResponseCode.RESULT_OK
+                    && authDescriptor.getResultCode()
+                    != EdtResponseCode.RESULT_COULD_NOT_AUTHENTICATE) {
+                    LOG.error("CustomerId is {}, AuthProvider {} is error, resultCode is {}",
+                        authDescriptor.getCustomersId(), authDescriptor.getAuthProvidersId(),
+                        authDescriptor.getResultCode());
+                }
             }
+        } catch (Exception e) {
+            LOG.error("AuthDescriptor error", e);
         }
     }
 }

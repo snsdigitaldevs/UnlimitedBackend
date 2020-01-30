@@ -7701,46 +7701,6 @@
     },
     {
         "Base Course Type": "Audio free lesson",
-        "ISBN": 9781442313224,
-        "Course name - Upsell Card & Library": "Spanish",
-        "Course name - Learn Page": "Spanish Level 1",
-        "Course Description - Upsell Card": "",
-        "Other format 1 (Upsell) ISBN": "",
-        "Other format 2 (Upgrade) ISBN": "",
-        "Other format 3 (DVD) ISBN": ""
-    },
-    {
-        "Base Course Type": "Audio free lesson",
-        "ISBN": 9781508283720,
-        "Course name - Upsell Card & Library": "Spanish",
-        "Course name - Learn Page": "Spanish Level 1",
-        "Course Description - Upsell Card": "",
-        "Other format 1 (Upsell) ISBN": "",
-        "Other format 2 (Upgrade) ISBN": "",
-        "Other format 3 (DVD) ISBN": ""
-    },
-    {
-        "Base Course Type": "Prem free lesson",
-        "ISBN": 9781508243274,
-        "Course name - Upsell Card & Library": "Spanish",
-        "Course name - Learn Page": "Spanish Level 1",
-        "Course Description - Upsell Card": "",
-        "Other format 1 (Upsell) ISBN": "",
-        "Other format 2 (Upgrade) ISBN": "",
-        "Other format 3 (DVD) ISBN": ""
-    },
-    {
-        "Base Course Type": "Prem free lesson",
-        "ISBN": 9781508283737,
-        "Course name - Upsell Card & Library": "Spanish",
-        "Course name - Learn Page": "Spanish Level 1",
-        "Course Description - Upsell Card": "",
-        "Other format 1 (Upsell) ISBN": "",
-        "Other format 2 (Upgrade) ISBN": "",
-        "Other format 3 (DVD) ISBN": ""
-    },
-    {
-        "Base Course Type": "Audio free lesson",
         "ISBN": 9781442355040,
         "Course name - Upsell Card & Library": "Spanish (Castilian)",
         "Course name - Learn Page": "Spanish (Castilian) Level 1",
@@ -7900,11 +7860,41 @@
         "Other format 3 (DVD) ISBN": ""
     },
     {
-        "Base Course Type": "Subscription",
-        "ISBN": 9781508276326,
-        "Course name - Upsell Card & Library": "Spanish (Latin American) Premium Subscription",
-        "Course Description - Upsell Card": "• Unlimited access to all 150 lessons\r\n• Small monthly fee is easy on wallet\r\n• Full course access today!",
-        "Course name - Learn Page": "",
+        "Base Course Type": "Audio free lesson",
+        "ISBN": 9781442313224,
+        "Course name - Upsell Card & Library": "Spanish",
+        "Course name - Learn Page": "Spanish Level 1",
+        "Course Description - Upsell Card": "",
+        "Other format 1 (Upsell) ISBN": "",
+        "Other format 2 (Upgrade) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Audio free lesson",
+        "ISBN": 9781508283720,
+        "Course name - Upsell Card & Library": "Spanish",
+        "Course name - Learn Page": "Spanish Level 1",
+        "Course Description - Upsell Card": "",
+        "Other format 1 (Upsell) ISBN": "",
+        "Other format 2 (Upgrade) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Prem free lesson",
+        "ISBN": 9781508243274,
+        "Course name - Upsell Card & Library": "Spanish",
+        "Course name - Learn Page": "Spanish Level 1",
+        "Course Description - Upsell Card": "",
+        "Other format 1 (Upsell) ISBN": "",
+        "Other format 2 (Upgrade) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Prem free lesson",
+        "ISBN": 9781508283737,
+        "Course name - Upsell Card & Library": "Spanish",
+        "Course name - Learn Page": "Spanish Level 1",
+        "Course Description - Upsell Card": "",
         "Other format 1 (Upsell) ISBN": "",
         "Other format 2 (Upgrade) ISBN": "",
         "Other format 3 (DVD) ISBN": ""
@@ -8071,11 +8061,31 @@
     },
     {
         "Base Course Type": "Audio Level 2",
+        "ISBN": 9781508257028,
+        "Course name - Upsell Card & Library": "Spanish Level 2",
+        "Course name - Learn Page": "Spanish Level 2",
+        "Course Description - Upsell Card": "The complete level of 30 lessons",
+        "Other format 1 (Upsell) ISBN": "",
+        "Other format 2 (Upgrade) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Audio Level 2",
         "ISBN": 9781442313958,
         "Course name - Upsell Card & Library": "Spanish Level 2",
         "Course name - Learn Page": "Spanish Level 2",
         "Course Description - Upsell Card": "The complete level of 30 lessons",
         "Other format 1 (Upsell) ISBN": 9781508272113,
+        "Other format 2 (Upgrade) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Audio 5 Lesson",
+        "ISBN": 9781508283584,
+        "Course name - Upsell Card & Library": "Spanish Level 2 Lessons 1-5",
+        "Course name - Learn Page": "Spanish Level 2",
+        "Course Description - Upsell Card": "5 thirty-minute language lessons",
+        "Other format 1 (Upsell) ISBN": "",
         "Other format 2 (Upgrade) ISBN": "",
         "Other format 3 (DVD) ISBN": ""
     },
@@ -8091,11 +8101,31 @@
     },
     {
         "Base Course Type": "Audio 5 Lesson",
+        "ISBN": 9781508283607,
+        "Course name - Upsell Card & Library": "Spanish Level 2 Lessons 11-15",
+        "Course name - Learn Page": "Spanish Level 2",
+        "Course Description - Upsell Card": "5 thirty-minute language lessons",
+        "Other format 1 (Upsell) ISBN": "",
+        "Other format 2 (Upgrade) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Audio 5 Lesson",
         "ISBN": 9781442313729,
         "Course name - Upsell Card & Library": "Spanish Level 2 Lessons 11-15",
         "Course name - Learn Page": "Spanish Level 2",
         "Course Description - Upsell Card": "5 thirty-minute language lessons",
         "Other format 1 (Upsell) ISBN": 9781508274131,
+        "Other format 2 (Upgrade) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Audio 5 Lesson",
+        "ISBN": 9781508283614,
+        "Course name - Upsell Card & Library": "Spanish Level 2 Lessons 16-20",
+        "Course name - Learn Page": "Spanish Level 2",
+        "Course Description - Upsell Card": "5 thirty-minute language lessons",
+        "Other format 1 (Upsell) ISBN": "",
         "Other format 2 (Upgrade) ISBN": "",
         "Other format 3 (DVD) ISBN": ""
     },
@@ -8111,11 +8141,31 @@
     },
     {
         "Base Course Type": "Audio 5 Lesson",
+        "ISBN": 9781508283621,
+        "Course name - Upsell Card & Library": "Spanish Level 2 Lessons 21-25",
+        "Course name - Learn Page": "Spanish Level 2",
+        "Course Description - Upsell Card": "5 thirty-minute language lessons",
+        "Other format 1 (Upsell) ISBN": "",
+        "Other format 2 (Upgrade) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Audio 5 Lesson",
         "ISBN": 9781442313842,
         "Course name - Upsell Card & Library": "Spanish Level 2 Lessons 21-25",
         "Course name - Learn Page": "Spanish Level 2",
         "Course Description - Upsell Card": "5 thirty-minute language lessons",
         "Other format 1 (Upsell) ISBN": 9781508274155,
+        "Other format 2 (Upgrade) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Audio 5 Lesson",
+        "ISBN": 9781508283638,
+        "Course name - Upsell Card & Library": "Spanish Level 2 Lessons 26-30",
+        "Course name - Learn Page": "Spanish Level 2",
+        "Course Description - Upsell Card": "5 thirty-minute language lessons",
+        "Other format 1 (Upsell) ISBN": "",
         "Other format 2 (Upgrade) ISBN": "",
         "Other format 3 (DVD) ISBN": ""
     },
@@ -8131,12 +8181,32 @@
     },
     {
         "Base Course Type": "Audio 5 Lesson",
+        "ISBN": 9781508283591,
+        "Course name - Upsell Card & Library": "Spanish Level 2 Lessons 6-10",
+        "Course name - Learn Page": "Spanish Level 2",
+        "Course Description - Upsell Card": "5 thirty-minute language lessons",
+        "Other format 1 (Upsell) ISBN": "",
+        "Other format 2 (Upgrade) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Audio 5 Lesson",
         "ISBN": 9781442313668,
         "Course name - Upsell Card & Library": "Spanish Level 2 Lessons 6-10",
         "Course name - Learn Page": "Spanish Level 2",
         "Course Description - Upsell Card": "5 thirty-minute language lessons",
         "Other format 1 (Upsell) ISBN": 9781508274124,
         "Other format 2 (Upgrade) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Prem Level 2",
+        "ISBN": 9781508283683,
+        "Course name - Upsell Card & Library": "Spanish Level 2 Premium",
+        "Course name - Learn Page": "Spanish Level 2",
+        "Course Description - Upsell Card": "The complete level of 30 lessons and access to all premium features",
+        "Other format 2 (Upgrade) ISBN": 9781797109060,
+        "Other format 1 (Upsell) ISBN": "",
         "Other format 3 (DVD) ISBN": ""
     },
     {
@@ -8271,6 +8341,16 @@
     },
     {
         "Base Course Type": "Prem Level 1-2",
+        "ISBN": 9781797109008,
+        "Course name - Upsell Card & Library": "Spanish Levels 1-2 Premium",
+        "Course name - Learn Page": "Spanish Levels 1-2",
+        "Course Description - Upsell Card": "Two complete levels totaling 60 lessons and access to all premium features",
+        "Other format 2 (Upgrade) ISBN": 9781797109077,
+        "Other format 1 (Upsell) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Prem Level 1-2",
         "ISBN": 9781508283690,
         "Course name - Upsell Card & Library": "Spanish Levels 1-2 Premium",
         "Course name - Learn Page": "Spanish Levels 1-2",
@@ -8286,6 +8366,16 @@
         "Course name - Learn Page": "Spanish Levels 1-2",
         "Course Description - Upsell Card": "Two complete levels totaling 60 lessons and access to all premium features",
         "Other format 2 (Upgrade) ISBN": 9781508276159,
+        "Other format 1 (Upsell) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Prem Level 1-4",
+        "ISBN": 9781797109039,
+        "Course name - Upsell Card & Library": "Spanish Levels 1-4 Premium",
+        "Course name - Learn Page": "Spanish Levels 1-4",
+        "Course Description - Upsell Card": "Four complete levels totaling 120 lessons and access to all premium features",
+        "Other format 2 (Upgrade) ISBN": 9781797109084,
         "Other format 1 (Upsell) ISBN": "",
         "Other format 3 (DVD) ISBN": ""
     },
@@ -8311,6 +8401,16 @@
     },
     {
         "Base Course Type": "Prem Level 1-5",
+        "ISBN": 9781797109053,
+        "Course name - Upsell Card & Library": "Spanish Levels 1-5 Premium",
+        "Course name - Learn Page": "Spanish Levels 1-5",
+        "Course Description - Upsell Card": "Five complete levels totaling 150 lessons and access to all premium features",
+        "Other format 2 (Upgrade) ISBN": 9781797109091,
+        "Other format 1 (Upsell) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Prem Level 1-5",
         "ISBN": 9781508283713,
         "Course name - Upsell Card & Library": "Spanish Levels 1-5 Premium",
         "Course name - Learn Page": "Spanish Levels 1-5",
@@ -8331,8 +8431,38 @@
     },
     {
         "Base Course Type": "Subscription",
+        "ISBN": 9781797109114,
+        "Course name - Upsell Card & Library": "Spanish Premium Subscription",
+        "Course Description - Upsell Card": "• Unlimited access to all 150 lessons\r\n• Small monthly fee is easy on wallet\r\n• Full course access today!",
+        "Course name - Learn Page": "",
+        "Other format 1 (Upsell) ISBN": "",
+        "Other format 2 (Upgrade) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Subscription",
+        "ISBN": 9781508276326,
+        "Course name - Upsell Card & Library": "Spanish (Latin American) Premium Subscription",
+        "Course Description - Upsell Card": "• Unlimited access to all 150 lessons\r\n• Small monthly fee is easy on wallet\r\n• Full course access today!",
+        "Course name - Learn Page": "",
+        "Other format 1 (Upsell) ISBN": "",
+        "Other format 2 (Upgrade) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Subscription",
         "ISBN": 9781508285496,
         "Course name - Upsell Card & Library": "Spanish Premium Subscription",
+        "Course Description - Upsell Card": "• Unlimited access to all 150 lessons\r\n• Small monthly fee is easy on wallet\r\n• Full course access today!",
+        "Course name - Learn Page": "",
+        "Other format 1 (Upsell) ISBN": "",
+        "Other format 2 (Upgrade) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Subscription",
+        "ISBN": 9781797109107,
+        "Course name - Upsell Card & Library": "Spanish Subscription",
         "Course Description - Upsell Card": "• Unlimited access to all 150 lessons\r\n• Small monthly fee is easy on wallet\r\n• Full course access today!",
         "Course name - Learn Page": "",
         "Other format 1 (Upsell) ISBN": "",

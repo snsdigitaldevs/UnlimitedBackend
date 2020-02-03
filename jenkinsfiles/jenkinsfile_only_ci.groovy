@@ -7,7 +7,7 @@ pipeline {
                 echo "Compile"
 
                 script {
-                    env.GIT_BRANCH_NAME = scm.branches[0].name
+                    env.GIT_BRANCH_NAME = env.GIT_BRANCH.substring(7)
                     echo "${env.GIT_BRANCH_NAME}"
                     checkout scm
 

@@ -1,10 +1,14 @@
 pipeline {
     agent none
+    parameters {
+        choice(name: "ENVIRONMENT", choices: "dev\nqa\nitg\nuat\nprod", description: "请选择部署环境")
+        string(name: "BUILD_VERSION", defaultValue: "master-1", description: "请输入构建分支和版本")
+    }
     stages {
         stage("Deploy") {
             agent any
             steps {
-                echo "Deploy to ${ENVIRONMENT}"
+                echo "Deploy ${BUILD_VERSION} to ${ENVIRONMENT}"
                 script {
                     def environment_upper_case = "${ENVIRONMENT}".toUpperCase()
 

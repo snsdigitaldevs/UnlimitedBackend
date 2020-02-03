@@ -8,7 +8,7 @@ pipeline {
         stage("Deploy") {
             agent any
             steps {
-                echo "Deploy to ${ENVIRONMENT}"
+                echo "Deploy ${BUILD_VERSION} to ${ENVIRONMENT}"
                 script {
                     def environment_upper_case = "${ENVIRONMENT}".toUpperCase()
 

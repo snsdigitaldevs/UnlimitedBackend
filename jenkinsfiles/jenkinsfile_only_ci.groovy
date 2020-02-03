@@ -18,7 +18,7 @@ pipeline {
 
                     def build_package = "${WORKSPACE}/target/${build_package_name}"
                     def all_build_package_dir = "~/jenkins_build_package/${project_name}"
-                    def build_package_new_name = "${project_name}-${env.GIT_REVISION}-${BUILD_ID}.jar"
+                    def build_package_new_name = "${project_name}-${env.GIT_BRANCH}-${BUILD_ID}.jar"
                     echo "${build_package_new_name}"
 
                     sh "mkdir -p  ${all_build_package_dir}"

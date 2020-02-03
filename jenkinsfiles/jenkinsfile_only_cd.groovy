@@ -1,7 +1,7 @@
 pipeline {
     agent none
     parameters {
-        choice(name: "ENVIRONMENT", choice: "dev\nqa\nitg\nuat\nprod", description: "请选择部署环境")
+        choice(name: "ENVIRONMENT", choices: "dev\nqa\nitg\nuat\nprod", description: "请选择部署环境")
         string(name: "BUILD_VERSION", defaultValue: "master", description: "请输入构建分支和版本")
     }
     stages {

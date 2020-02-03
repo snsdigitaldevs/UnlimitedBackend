@@ -7,7 +7,7 @@ pipeline {
                 echo "Compile"
 
                 script {
-                    env.GIT_BRANCH_NAME = sh(returnStdout: true, script: 'git symbolic-ref --short -q HEAD').trim()
+                    env.GIT_BRANCH_NAME = scm.branches[0].name
                     echo "${env.GIT_BRANCH_NAME}"
                     checkout scm
 

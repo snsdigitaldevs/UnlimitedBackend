@@ -36,7 +36,7 @@ public class FlashCardUtil {
         String transliterationKey = findRealHeaderName(csvRecordHeader, HEADER_TRANSLITERATION);
         String translationKey = findRealHeaderName(csvRecordHeader, HEADER_ENGLISH_TRANSLATION, HEADER_TRANSLATION);
         String languageKey = findRealHeaderName(csvRecordHeader, HEADER_LANGUAGE);
-        String mp3FileKey = findRealHeaderName(csvRecordHeader, HEADER_MP3_SNIPPET_FILE_NAME);
+        String mp3FileKey = findRealHeaderName(csvRecordHeader, HEADER_MP3_SNIPPET_FILE_NAME, HEADER_SNIPPET_NAME);
 
         return csvRecords.stream()
                 .collect(groupingBy(csvRecord -> getUnitNumString(csvRecord, unitNumKey)))

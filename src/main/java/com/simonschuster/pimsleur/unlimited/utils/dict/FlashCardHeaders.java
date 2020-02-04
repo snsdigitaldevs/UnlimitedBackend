@@ -12,6 +12,7 @@ public class FlashCardHeaders {
     public final static String HEADER_LANGUAGE = "Language";
 
     public final static String HEADER_MP3_SNIPPET_FILE_NAME = "MP3 snippet file name";
+    public final static String HEADER_SNIPPET_NAME = "Snippet Name";
     public final static String HEADER_MP3_AUDIO_ISBN = "MP3 Audio ISBN";
 
     public final static String HEADER_FLASH_CARD = "Flash Card #";

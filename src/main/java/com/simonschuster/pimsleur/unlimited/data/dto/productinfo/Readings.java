@@ -10,21 +10,21 @@ import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_EMPTY;
 @JsonInclude(NON_EMPTY)
 public class Readings {
 
-    private String pcmReadingPdf;
+    private String pdf;
     private String puReadingAlphabetPdf;
     private String puReadingIntroPdf;
     private List<ReadingAudio> audios = new ArrayList<>();
 
     public String getPcmReadingPdf() {
-        return pcmReadingPdf;
+        return pdf;
     }
 
     public List<ReadingAudio> getAudios() {
         return audios;
     }
 
-    public void setPcmReadingPdf(String pcmReadingPdf) {
-        this.pcmReadingPdf = pcmReadingPdf;
+    public void setPdf(String pcmReadingPdf) {
+        this.pdf = pcmReadingPdf;
     }
 
     public String getPuReadingAlphabetPdf() {

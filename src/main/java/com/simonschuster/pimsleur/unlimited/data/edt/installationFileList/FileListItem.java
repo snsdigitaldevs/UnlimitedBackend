@@ -22,6 +22,7 @@ public class FileListItem {
     public static String SpeakEasy = "VC";
     public static String Reading = "RL";
     public static String QuickMatch = "QZ";
+    public static String BonusPack = "BP";
 
     @JsonProperty("fileListItemId")
     private Integer fileListItemId;

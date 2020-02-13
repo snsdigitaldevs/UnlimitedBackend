@@ -100,7 +100,7 @@ public class InstallationFileList extends EdtResponseCode {
                 Collectors.toList());
         Optional<FileListItem> first = fileListItems.stream().filter(fileListItem -> isEndFileType(fileListItem, fileType))
             .findFirst();
-        if (fileListItems.size() == 1 || !first.isPresent()) {
+        if (fileListItems.size() == 1 || first.isPresent()) {
             return fileListItems.get(0);
         } else {
             return first.orElse(null);
@@ -127,5 +127,16 @@ public class InstallationFileList extends EdtResponseCode {
 
     private boolean isPdfFiles(FileListItem fileListItem) {
         return fileListItem.getPath().contains(".pdf") && fileListItem.getMimeType().equals("pdf");
+    }
+
+    public String getBonusPackFileUrl() {
+        if (this.resultData != null) {
+            List<FileListItem> fileListItems = this.resultData.getFileList().getFileListItems();
+            FileListItem bonusPacksFile = getFileItemByFileType(fileListItems, BonusPack);
+            if (bonusPacksFile != null) {
+                return bonusPacksFile.getFullUrl();
+            }
+        }
+        return null;
     }
 }

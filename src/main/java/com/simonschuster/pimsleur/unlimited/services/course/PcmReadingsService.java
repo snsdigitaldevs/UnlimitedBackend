@@ -72,7 +72,7 @@ public class PcmReadingsService {
             MediaItemUrl mediaItemUrl = pcmMediaItemUrlService.getMediaItemUrl(mediaItem.getMediaItemId(),
                     pcmProduct.getCustomerToken(), download.getEntitlementToken(), pcmProduct.getCustomersId(), storeDomain);
             if (mediaItem.isPdf()) {
-                readings.setPcmReadingPdf(mediaItemUrl.getResult_data().getUrl());
+                readings.setPdf(mediaItemUrl.getResult_data().getUrl());
             } else {
                 ReadingAudio readingAudio = createFrom(
                         mediaItem.getMediaItemTitle(),
@@ -95,7 +95,7 @@ public class PcmReadingsService {
 
         mediaItems.forEach(mediaItem -> {
             if (mediaItem.isPdf()) {
-                readings.setPcmReadingPdf(batchedMediaItemUrls.getUrlOfMediaItem(mediaItem.getMediaItemFileNameWithoutExtension()));
+                readings.setPdf(batchedMediaItemUrls.getUrlOfMediaItem(mediaItem.getMediaItemFileNameWithoutExtension()));
             } else {
                 ReadingAudio readingAudio = createFrom(
                         mediaItem.getMediaItemTitle(),

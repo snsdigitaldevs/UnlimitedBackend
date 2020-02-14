@@ -1,6 +1,8 @@
 package com.simonschuster.pimsleur.unlimited.utils;
 
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.simonschuster.pimsleur.unlimited.data.edt.installationFileList.InstallationFileList;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -8,6 +10,9 @@ public class JsonUtils {
 
     private static final Logger LOG = LoggerFactory.getLogger(JsonUtils.class);
     private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
+    static {
+        OBJECT_MAPPER.setSerializationInclusion(Include.NON_NULL);
+    }
 
     public static String toJsonString(Object object) {
         if (object != null) {
@@ -18,6 +23,11 @@ public class JsonUtils {
             }
         }
         return "";
+    }
+
+    public static void main(String[] args) {
+        InstallationFileList fileList = new InstallationFileList();
+        System.out.println(toJsonString(fileList));
     }
 
 }

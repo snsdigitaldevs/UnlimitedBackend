@@ -8,7 +8,7 @@ public class UrlUtil {
         String urlWithoutPrefix = audioUrl.replace(prefixWithDomain, "");
         String[] split = urlWithoutPrefix.split("/");
         for (int i = 0; i < split.length; i++) {
-            split[i] = URLEncoder.encode(split[i], "UTF-8");
+            split[i] = URLEncoder.encode(split[i], "UTF-8").replace("+", "%20");
         }
 
         return prefixWithDomain + String.join("/", split);

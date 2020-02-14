@@ -126,6 +126,6 @@ public class InstallationFileList extends EdtResponseCode {
     }
 
     private boolean isPdfFiles(FileListItem fileListItem) {
-        return fileListItem.getPath().contains(".pdf") && fileListItem.getMimeType().equals("pdf");
+        return fileListItem.getPath().endsWith(".pdf") && fileListItem.getMimeType().equals("pdf");
     }
 }

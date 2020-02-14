@@ -23,9 +23,11 @@ public class BonusPackUtil {
 
     public static List<BonusPackInUnit> csvToBonusPacks(BonusPacksUrls bonusPacksUrls) throws IOException {
         List<BonusPackInUnit> bonusPacksInUnit = new ArrayList<>();
-        String bonusPackFileUrl = "https://install.pimsleurunlimited.com/staging_n/common/spanish/Spanish I 2018/metadata/timecode/9781508281085_Spanish_1_BP.csv";
-//        String bonusPackFileUrl = bonusPacksUrls.getBonusPacksFileUrl();
+
+        //replace would be remove after edt adjust the sourceUrl for bonus packs csv file
+        String bonusPackFileUrl = bonusPacksUrls.getBonusPacksFileUrl().replaceAll("mobile", "common");
         String reviewAudioBaseUrl = bonusPacksUrls.getReviewAudioBaseUrl();
+
         List<CSVRecord> csvRecords = urlToCsv(bonusPackFileUrl);
         if (csvRecords.size() != 0 ) {
             Map<String, String> csvRecordHeader = convertToUpperCSVRecordHeaderMap(csvRecords.get(0));

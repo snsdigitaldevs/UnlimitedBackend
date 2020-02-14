@@ -5,6 +5,7 @@ import com.simonschuster.pimsleur.unlimited.data.dto.practices.PracticesInUnit;
 import com.simonschuster.pimsleur.unlimited.services.practices.PcmAvailablePracticesService;
 import com.simonschuster.pimsleur.unlimited.services.practices.PracticesUrls;
 import com.simonschuster.pimsleur.unlimited.services.practices.PuAvailablePracticesService;
+import edu.emory.mathcs.backport.java.util.Collections;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,12 +43,15 @@ public class AvailablePracticesController {
                                                       @RequestParam(value = "storeDomain", required = false) String storeDomain)
             throws IOException {
         PracticesUrls practicesUrls = puAvailablePracticesService.getPracticeUrls(productCode, storeDomain);
-
-        List<PracticesInUnit> speakEasies = csvToSpeakEasies(practicesUrls.getSpeakEasyUrl());
-        List<PracticesInUnit> readings = csvToReadings(practicesUrls.getReadingUrl());
-        List<PracticesInUnit> flashCards = csvToFlashCards(practicesUrls);
-        List<PracticesInUnit> quickMatches = getQuickMatchesByCsvUrl(practicesUrls);
-        return new AvailablePractices(mergeLists(readings, speakEasies, flashCards, quickMatches));
+        if(practicesUrls != null){
+            List<PracticesInUnit> speakEasies = csvToSpeakEasies(practicesUrls.getSpeakEasyUrl());
+            List<PracticesInUnit> readings = csvToReadings(practicesUrls.getReadingUrl());
+            List<PracticesInUnit> flashCards = csvToFlashCards(practicesUrls);
+            List<PracticesInUnit> quickMatches = getQuickMatchesByCsvUrl(practicesUrls);
+            return new AvailablePractices(mergeLists(readings, speakEasies, flashCards, quickMatches));
+        }else {
+            return new AvailablePractices(mergeLists(Collections.emptyList(), Collections.emptyList(), Collections.emptyList(), Collections.emptyList()));
+        }
     }
 
     @ApiOperation(value = "PCM practices of one course",

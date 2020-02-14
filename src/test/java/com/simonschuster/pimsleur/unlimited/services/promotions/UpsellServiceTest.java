@@ -41,7 +41,7 @@ public class UpsellServiceTest {
                 containsString("Chinese (Mandarin) Level 2"));
 
         assertThat(upsellInfo.getNextLevel().getWebLink(),
-                containsString("https://shop.pimsleur.com/on/demandware.store/Sites-Pimsleur-Site/default/Cart-AddProduct?pid="));
+                containsString("https://stage.shop.pimsleur.com/on/demandware.store/Sites-Pimsleur-Site/default/Cart-AddProduct?pid="));
 
         assertThat(upsellInfo.getNextVersion().getName(),
                 containsString("Chinese (Mandarin) Level 1"));

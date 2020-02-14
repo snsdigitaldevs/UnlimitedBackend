@@ -38,7 +38,7 @@ public class InstallationFileList extends EdtResponseCode {
     // if the product code is a kitted product like "spanish level 1-4", then installation file list
     // will include all csv files of all levels
     // this code will be correct if the front end only send requests with single product code, not kitted
-    public PracticesUrls getPracticeUrls() {
+    public PracticesUrls collectPracticeUrls() {
         PracticesUrls practicesUrls = new PracticesUrls();
         if (this.getResultData() != null) {
             List<FileListItem> list = this.getResultData().getFileList().getFileListItems();

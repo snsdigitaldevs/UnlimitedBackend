@@ -15,7 +15,7 @@ public class Readings {
     private String puReadingIntroPdf;
     private List<ReadingAudio> audios = new ArrayList<>();
 
-    public String getPcmReadingPdf() {
+    public String getPdf() {
         return pdf;
     }
 

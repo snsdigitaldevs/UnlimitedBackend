@@ -64,6 +64,10 @@ public class BonusPackUtil {
     }
 
     private static String getMp3FileName(String mp3FileKey, CSVRecord csvRecord,String reviewAudioBaseUrl) {
-        return reviewAudioBaseUrl.concat(getFromCsv(mp3FileKey, csvRecord));
+        String mp3FileName = getFromCsv(mp3FileKey, csvRecord);
+        if (mp3FileName != null) {
+            return reviewAudioBaseUrl.concat(getFromCsv(mp3FileKey, csvRecord));
+        }
+        return null;
     }
 }

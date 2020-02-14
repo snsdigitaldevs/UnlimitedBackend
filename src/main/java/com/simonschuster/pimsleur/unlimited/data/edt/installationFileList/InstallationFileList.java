@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode;
+import com.simonschuster.pimsleur.unlimited.services.bonusPacks.BonusPacksUrls;
 import com.simonschuster.pimsleur.unlimited.services.practices.PracticesUrls;
 import org.apache.commons.lang3.StringUtils;
 
@@ -41,7 +42,6 @@ public class InstallationFileList extends EdtResponseCode {
         PracticesUrls practicesUrls = new PracticesUrls();
         if (this.getResultData() != null) {
             List<FileListItem> list = this.getResultData().getFileList().getFileListItems();
-            List<FileListItem> ReviewAudioZipFiles = list.stream().filter(f -> f.getPath().contains("REVIEW_AUDIO.zip")).collect(Collectors.toList());
 
             FileListItem flashCardFile = getFileItemByFileType(list, FlashCard);
             if (flashCardFile != null) {
@@ -63,21 +63,36 @@ public class InstallationFileList extends EdtResponseCode {
                 practicesUrls.setReadingUrl(readingFile.getFullUrl());
             }
 
-            if (ReviewAudioZipFiles.size() > 0) {
-                practicesUrls.setReviewAudioBaseUrl(ReviewAudioZipFiles.get(0).getReviewAudioBaseUrl());
-            } else {
-                List<FileListItem> audioFiles = list.stream().filter(this::isAudioFiles).collect(Collectors.toList());
-                practicesUrls.setReviewAudioBaseUrl(getReviewAudioBaseUrl(audioFiles.get(0)));
-            }
+            String reviewAudioBaseUrl = getReviewAudioBaseUrl();
+            practicesUrls.setReviewAudioBaseUrl(reviewAudioBaseUrl);
         }
         return practicesUrls;
+    }
+
+    public BonusPacksUrls getBonusPacksUrls() {
+        String bonusPackFileUrl = getBonusPackFileUrl();
+        String reviewAudioBaseUrl = getReviewAudioBaseUrl();
+        return new BonusPacksUrls(bonusPackFileUrl, reviewAudioBaseUrl);
+
+    }
+
+    private String getReviewAudioBaseUrl() {
+        List<FileListItem> fileListItems = this.getResultData().getFileList().getFileListItems();
+        List<FileListItem> ReviewAudioZipFiles = fileListItems.stream().filter(f -> f.getPath().contains("REVIEW_AUDIO.zip")).collect(Collectors.toList());
+
+        if (ReviewAudioZipFiles.size() > 0) {
+            return ReviewAudioZipFiles.get(0).getReviewAudioBaseUrl();
+        } else {
+            List<FileListItem> audioFiles = fileListItems.stream().filter(this::isAudioFiles).collect(Collectors.toList());
+            return getReviewAudioBaseUrlFromAudioFiles(audioFiles.get(0));
+        }
     }
 
     private boolean isAudioFiles(FileListItem f) {
         return f.getPath().contains(".mp3") && f.getMimeType().equals("audio-mp3");
     }
 
-    private String getReviewAudioBaseUrl(FileListItem audioFileListItem) {
+    private String getReviewAudioBaseUrlFromAudioFiles(FileListItem audioFileListItem) {
         String[] basePathItems = audioFileListItem.getPath().split("/");
         if (basePathItems.length != 3) {
             return null;
@@ -129,7 +144,7 @@ public class InstallationFileList extends EdtResponseCode {
         return fileListItem.getPath().endsWith(".pdf") && fileListItem.getMimeType().equals("pdf");
     }
 
-    public String getBonusPackFileUrl() {
+    private String getBonusPackFileUrl() {
         if (this.resultData != null) {
             List<FileListItem> fileListItems = this.resultData.getFileList().getFileListItems();
             FileListItem bonusPacksFile = getFileItemByFileType(fileListItems, BonusPack);

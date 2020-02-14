@@ -9,6 +9,13 @@ public class BonusCard {
     private String language;
     private String mp3FileName;
 
+    public BonusCard(String transliteration, String translation, String language, String mp3FileName) {
+        this.transliteration = transliteration;
+        this.translation = translation;
+        this.language = language;
+        this.mp3FileName = mp3FileName;
+    }
+
     public String getTransliteration() {
         return transliteration;
     }

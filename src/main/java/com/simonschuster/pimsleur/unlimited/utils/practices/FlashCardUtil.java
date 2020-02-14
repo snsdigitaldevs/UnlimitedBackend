@@ -12,7 +12,7 @@ import java.util.Objects;
 
 import static com.simonschuster.pimsleur.unlimited.data.dto.practices.PracticesInUnit.createWithFlashCards;
 import static com.simonschuster.pimsleur.unlimited.utils.UnlimitedPracticeUtil.*;
-import static com.simonschuster.pimsleur.unlimited.utils.dict.FlashCardHeaders.*;
+import static com.simonschuster.pimsleur.unlimited.utils.dict.FlashCardBonusCardHeaders.*;
 import static java.lang.Integer.parseInt;
 import static java.lang.String.valueOf;
 import static java.util.Collections.emptyList;

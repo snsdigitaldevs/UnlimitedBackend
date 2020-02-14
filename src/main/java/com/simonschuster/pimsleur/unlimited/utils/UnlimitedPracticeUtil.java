@@ -5,6 +5,7 @@ import org.apache.commons.csv.CSVRecord;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.converter.StringHttpMessageConverter;
+import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
@@ -99,16 +100,23 @@ public class UnlimitedPracticeUtil {
                 headerAndBody[1];
     }
 
-    public static List<CSVRecord> urlToCsv(String url) throws IOException {
+    public static List<CSVRecord> urlToCsv(String url) throws IOException, RestClientException {
         RestTemplate restTemplate = new RestTemplate();
         restTemplate.getMessageConverters()
                 .add(0, new StringHttpMessageConverter(forName("UTF-8")));
-        String csvString = replaceDuplicateHeaders(restTemplate.getForObject(url, String.class));
-        if (csvString.contains("Italian 2")) {
-            csvString = specialCsvFiles(csvString);
+        String csvString = new String();
+        try {
+            csvString = replaceDuplicateHeaders(restTemplate.getForObject(url, String.class));
+        } catch (RestClientException e) {
+            logger.error("get csv string from the path: " + url + "failed: " + e);
         }
+        finally {
+            if (csvString.contains("Italian 2")) {
+                csvString = specialCsvFiles(csvString);
+            }
 
-        return csvStringToObj(csvString);
+            return csvStringToObj(csvString);
+        }
     }
 
     public static List<CSVRecord> csvStringToObj(String csvString) throws IOException {

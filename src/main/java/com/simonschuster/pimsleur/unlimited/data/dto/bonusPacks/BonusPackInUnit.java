@@ -4,7 +4,7 @@ package com.simonschuster.pimsleur.unlimited.data.dto.bonusPacks;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BonusPacksInUnit {
+public class BonusPackInUnit {
 
     private Integer unitNumber;
 

@@ -24,8 +24,7 @@ public class BonusPackUtil {
     public static List<BonusPackInUnit> csvToBonusPacks(BonusPacksUrls bonusPacksUrls) throws IOException {
         List<BonusPackInUnit> bonusPacksInUnit = new ArrayList<>();
 
-        //replace would be remove after edt adjust the sourceUrl for bonus packs csv file
-        String bonusPackFileUrl = bonusPacksUrls.getBonusPacksFileUrl().replaceAll("mobile", "common");
+        String bonusPackFileUrl = bonusPacksUrls.getBonusPacksFileUrl();
         String reviewAudioBaseUrl = bonusPacksUrls.getReviewAudioBaseUrl();
 
         List<CSVRecord> csvRecords = urlToCsv(bonusPackFileUrl);

@@ -101,8 +101,7 @@ public class AggregatedProductInfo {
                         .getIsbnToCourseName()
                         .get(course.getProductCode()));
             } catch (Exception e) {
-                logger.error("Error occured when get product name from PU EDT API.");
-                e.printStackTrace();
+                logger.error("Error occured when get product name from PU EDT API.", e);
                 throw new PimsleurException("Error occured when get product name from PU EDT API.");
             }
             transformLessonInfoFromPU(course, mediaSet);
@@ -125,7 +124,8 @@ public class AggregatedProductInfo {
             readings.setPuReadingAlphabetPdf(puReadingAlphabetPdfUrl);
             readings.setPuReadingIntroPdf(puReadingIntroPdfUrl);
             course.setReadings(readings);
-        } catch (Exception ignored) {
+        } catch (Exception e) {
+            logger.error("Error occured when convert pu reading audio links.", e);
             throw new PimsleurException("Error occured when convert pu reading audio links.");
         }
     }

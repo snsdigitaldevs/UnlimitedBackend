@@ -113,12 +113,12 @@ public class InstallationFileList extends EdtResponseCode {
         List<FileListItem> fileListItems = allListItemList.stream()
             .filter(fileListItem -> isContainedFileType(fileListItem, fileType)).collect(
                 Collectors.toList());
-        Optional<FileListItem> first = fileListItems.stream().filter(fileListItem -> isEndFileType(fileListItem, fileType))
+        Optional<FileListItem> firstEndWithFileTypeItem = fileListItems.stream().filter(fileListItem -> isEndFileType(fileListItem, fileType))
             .findFirst();
-        if (fileListItems.size() == 1 || first.isPresent()) {
+        if (fileListItems.size() == 1) {
             return fileListItems.get(0);
         } else {
-            return first.orElse(null);
+            return firstEndWithFileTypeItem.orElse(null);
         }
     }
 

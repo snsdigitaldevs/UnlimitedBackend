@@ -108,7 +108,7 @@ public class UnlimitedPracticeUtil {
         try {
             csvString = replaceDuplicateHeaders(restTemplate.getForObject(url, String.class));
         } catch (RestClientException e) {
-            logger.error("get csv string from the path: " + url + "failed: " + e);
+            logger.error("get csv string from the path: " + url + "failed", e);
         }
         finally {
             if (csvString.contains("Italian 2")) {

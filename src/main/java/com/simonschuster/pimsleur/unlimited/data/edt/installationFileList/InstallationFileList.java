@@ -132,10 +132,14 @@ public class InstallationFileList extends EdtResponseCode {
     }
 
     public String getReadingPdfUrlByFileName(String readingIntroPdfName) {
-        FileListItem fileListItem = this.resultData.getFileList().getFileListItems().stream()
-                .filter(this::isPdfFiles).filter(fileItem -> fileItem.getPath().contains(readingIntroPdfName)).findFirst().orElse(null);
-        if (fileListItem != null) {
-            return fileListItem.getSourceURL().concat(fileListItem.getPath());
+        if (this.getResultData() != null) {
+            FileListItem fileListItem = this.resultData.getFileList().getFileListItems().stream()
+                .filter(this::isPdfFiles)
+                .filter(fileItem -> fileItem.getPath().contains(readingIntroPdfName)).findFirst()
+                .orElse(null);
+            if (fileListItem != null) {
+                return fileListItem.getSourceURL().concat(fileListItem.getPath());
+            }
         }
         return null;
     }

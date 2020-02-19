@@ -115,10 +115,10 @@ public class InstallationFileList extends EdtResponseCode {
                 Collectors.toList());
         Optional<FileListItem> firstEndWithFileTypeItem = fileListItems.stream().filter(fileListItem -> isEndFileType(fileListItem, fileType))
             .findFirst();
-        if (fileListItems.size() == 1) {
-            return fileListItems.get(0);
-        } else {
+        if (firstEndWithFileTypeItem.isPresent()) {
             return firstEndWithFileTypeItem.orElse(null);
+        } else {
+            return fileListItems.stream().findFirst().orElse(null);
         }
     }
 

@@ -37,11 +37,10 @@ public class VerifyReceiptService {
 
     public VerifyReceiptDTO verifyReceipt(VerifyReceiptBody verifyReceiptBody, String customerId)
         throws UnsupportedEncodingException {
-        //todo log the receipt
-//        if (StringUtils.isBlank(verifyReceiptBody.getReceipt())) {
+        if (StringUtils.isBlank(verifyReceiptBody.getReceipt())) {
             LOG.error("receipt is empty, customerId is {}, verify body is {}", customerId,
                 JsonUtils.toJsonString(verifyReceiptBody));
-//        }
+        }
         HttpEntity<String> entity = createPostBody(verifyReceiptBody, customerId);
         VerifyReceipt verifyReceiptResponse =
             postToEdt(entity, config.getProperty("edt.api.verifyReceipt.url"), VerifyReceipt.class);

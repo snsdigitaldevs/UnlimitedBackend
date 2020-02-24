@@ -30,10 +30,10 @@ public class BonusPackUtil {
         List<CSVRecord> csvRecords = urlToCsv(bonusPackFileUrl);
         if (csvRecords.size() != 0 ) {
             Map<String, String> csvRecordHeader = convertToUpperCSVRecordHeaderMap(csvRecords.get(0));
-            String unitNumKey = findRealHeaderName(csvRecordHeader, HEADER_FP);
+            String packGroupNumberKey = findRealHeaderName(csvRecordHeader, HEADER_FP);
 
             bonusPacksInUnit = csvRecords.stream()
-                    .collect(groupingBy(csvRecord -> getUnitNumString(csvRecord, unitNumKey)))
+                    .collect(groupingBy(csvRecord -> getUnitNumString(csvRecord, packGroupNumberKey)))
                     .entrySet().stream()
                     .map(group -> groupToBonusPacksInUnit(group, csvRecordHeader, reviewAudioBaseUrl))
                     .collect(Collectors.toList());
@@ -42,13 +42,13 @@ public class BonusPackUtil {
     }
 
     private static BonusPackInUnit groupToBonusPacksInUnit(Map.Entry<String, List<CSVRecord>> group, Map<String, String> csvRecordHeader, String reviewAudioBaseUrl) {
-        String unitNum = group.getKey().trim();
+        String packGroupNumber = group.getKey().trim();
         BonusPackInUnit bonusPackInUnit = new BonusPackInUnit();
-        if (isNumeric(unitNum)) {
+        if (isNumeric(packGroupNumber)) {
             List<BonusCard> bonusPack = group.getValue().stream()
                     .map(csvRecord -> csvRecordToBonusCard(csvRecord, csvRecordHeader, reviewAudioBaseUrl))
                     .collect(Collectors.toList());
-            bonusPackInUnit.setUnitNumber(parseInt(unitNum) * 5);
+            bonusPackInUnit.setPackGroupNumber(parseInt(packGroupNumber));
             bonusPackInUnit.setBonusPack(bonusPack);
         }
         return bonusPackInUnit;

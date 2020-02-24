@@ -6,16 +6,16 @@ import java.util.List;
 
 public class BonusPackInUnit {
 
-    private Integer unitNumber;
+    private Integer packGroupNumber;
 
     private List<BonusCard> bonusPack = new ArrayList<>();
 
-    public Integer getUnitNumber() {
-        return unitNumber;
+    public Integer getPackGroupNumber() {
+        return packGroupNumber;
     }
 
-    public void setUnitNumber(Integer unitNumber) {
-        this.unitNumber = unitNumber;
+    public void setPackGroupNumber(Integer packGroupNumber) {
+        this.packGroupNumber = packGroupNumber;
     }
 
     public List<BonusCard> getBonusPack() {

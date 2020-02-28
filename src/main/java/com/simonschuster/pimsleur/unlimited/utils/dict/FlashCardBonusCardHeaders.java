@@ -4,6 +4,7 @@ public class FlashCardBonusCardHeaders {
     public final static String HEADER_UNIT_NUM = "Unit Num";
     public final static String HEADER_LESSON = "Lesson";
     public final static String HEADER_FP = "FP #";
+    public final static String HEADER_BP = "BP #";
 
     public final static String HEADER_TRANSLITERATION = "Transliteration";
 

@@ -33,10 +33,10 @@ pipeline {
             agent any
             steps{
                 sh '''
-                BRIDGES_IP=`/sbin/ifconfig -a|grep inet|grep -v 127.0.0.1|grep -v inet6 | awk '{print $2}' | tr -d "addr:"`
+                SONAR_SERVER_IP=`/sbin/ifconfig -a|grep inet|grep -v 127.0.0.1|grep -v inet6 | awk '{print $2}' | tr -d "addr:"`
                 /usr/local/bin/mvn sonar:sonar \
                 -Dsonar.projectKey=sonarqube \
-                -Dsonar.host.url=http://{BRIDGES_IP}:9000 \
+                -Dsonar.host.url=http://${SONAR_SERVER_IP}:9000 \
                 -Dsonar.login=admin  \
                 -Dsonar.password=admin
                 '''

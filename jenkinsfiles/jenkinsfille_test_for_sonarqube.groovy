@@ -32,14 +32,19 @@ pipeline {
         stage('Sonar-Scan'){
             agent any
             steps{
-                sh '''
-                SONAR_SERVER_IP=`/sbin/ifconfig -a|grep inet|grep -v 127.0.0.1|grep -v inet6 | awk '{print $2}' | tr -d "addr:"`
-                /usr/local/bin/mvn sonar:sonar \
-                -Dsonar.projectKey=sonarqube \
-                -Dsonar.host.url=http://${SONAR_SERVER_IP}:9000 \
-                -Dsonar.login=admin  \
-                -Dsonar.password=admin
-                '''
+                withSonarQubeEnv('sonarqube-7') {
+                    sh '''
+                    /usr/local/bin/mvn sonar:sonar 
+                    '''
+                }
+            }
+        }
+
+        stage("Quality Gate") {
+            steps {
+                timeout(time: 1, unit: 'HOURS') {
+                    waitForQualityGate abortPipeline: true
+                }
             }
         }
     }

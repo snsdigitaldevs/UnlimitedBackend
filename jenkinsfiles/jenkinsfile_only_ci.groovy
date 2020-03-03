@@ -28,6 +28,25 @@ pipeline {
                 }
             }
         }
+
+        stage('Sonar-Scan'){
+            agent any
+            steps{
+                withSonarQubeEnv('sonarqube-host') {
+                    sh '''
+                    /usr/local/bin/mvn sonar:sonar 
+                    '''
+                }
+            }
+        }
+
+        stage("Quality Gate") {
+            steps {
+                timeout(time: 1, unit: 'HOURS') {
+                    waitForQualityGate abortPipeline: true
+                }
+            }
+        }
     }
     post {
         aborted {

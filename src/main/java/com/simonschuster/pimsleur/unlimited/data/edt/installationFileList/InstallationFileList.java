@@ -70,9 +70,12 @@ public class InstallationFileList extends EdtResponseCode {
     }
 
     public BonusPacksUrls getBonusPacksUrls() {
-        String bonusPackFileUrl = getBonusPackFileUrl();
-        String reviewAudioBaseUrl = getReviewAudioBaseUrl();
-        return new BonusPacksUrls(bonusPackFileUrl, reviewAudioBaseUrl);
+        if (this.getResultData() != null) {
+            String bonusPackFileUrl = getBonusPackFileUrl();
+            String reviewAudioBaseUrl = getReviewAudioBaseUrl();
+            return new BonusPacksUrls(bonusPackFileUrl, reviewAudioBaseUrl);
+        }
+        return null;
 
     }
 
@@ -109,12 +112,12 @@ public class InstallationFileList extends EdtResponseCode {
     }
 
     private FileListItem getFileItemByFileType(List<FileListItem> allListItemList,
-        String fileType) {
+                                               String fileType) {
         List<FileListItem> fileListItems = allListItemList.stream()
-            .filter(fileListItem -> isContainedFileType(fileListItem, fileType)).collect(
-                Collectors.toList());
+                .filter(fileListItem -> isContainedFileType(fileListItem, fileType)).collect(
+                        Collectors.toList());
         Optional<FileListItem> firstEndWithFileTypeItem = fileListItems.stream().filter(fileListItem -> isEndFileType(fileListItem, fileType))
-            .findFirst();
+                .findFirst();
         if (firstEndWithFileTypeItem.isPresent()) {
             return firstEndWithFileTypeItem.orElse(null);
         } else {
@@ -134,9 +137,9 @@ public class InstallationFileList extends EdtResponseCode {
     public String getReadingPdfUrlByFileName(String readingIntroPdfName) {
         if (this.getResultData() != null) {
             FileListItem fileListItem = this.resultData.getFileList().getFileListItems().stream()
-                .filter(this::isPdfFiles)
-                .filter(fileItem -> fileItem.getPath().contains(readingIntroPdfName)).findFirst()
-                .orElse(null);
+                    .filter(this::isPdfFiles)
+                    .filter(fileItem -> fileItem.getPath().contains(readingIntroPdfName)).findFirst()
+                    .orElse(null);
             if (fileListItem != null) {
                 return fileListItem.getSourceURL().concat(fileListItem.getPath());
             }
@@ -149,12 +152,10 @@ public class InstallationFileList extends EdtResponseCode {
     }
 
     private String getBonusPackFileUrl() {
-        if (this.resultData != null) {
-            List<FileListItem> fileListItems = this.resultData.getFileList().getFileListItems();
-            FileListItem bonusPacksFile = getFileItemByFileType(fileListItems, BonusPack);
-            if (bonusPacksFile != null) {
-                return bonusPacksFile.getFullUrl();
-            }
+        List<FileListItem> fileListItems = this.resultData.getFileList().getFileListItems();
+        FileListItem bonusPacksFile = getFileItemByFileType(fileListItems, BonusPack);
+        if (bonusPacksFile != null) {
+            return bonusPacksFile.getFullUrl();
         }
         return null;
     }

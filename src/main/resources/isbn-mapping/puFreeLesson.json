@@ -78,5 +78,21 @@
     "level": 1,
     "isSubscription": false,
     "puProduct": true
+  },
+  {
+    "languageName": "Korean",
+    "filterLanguageName": "Korean",
+    "productCode": "9781797103051",
+    "level": 1,
+    "isSubscription": false,
+    "puProduct": true
+  },
+  {
+    "languageName": "Tagalog",
+    "filterLanguageName": "Tagalog",
+    "productCode": "9781797103648",
+    "level": 1,
+    "isSubscription": false,
+    "puProduct": true
   }
 ]

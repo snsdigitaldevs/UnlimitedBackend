@@ -11,7 +11,7 @@ import com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode;
     "result_code",
     "result_data"
 })
-public class VocabularyOperationResponse extends EdtResponseCode {
+public class VocabularyResponseFromEdt extends EdtResponseCode {
 
     @JsonProperty("result_data")
     private VocabularyItemsResultData vocabularyItemsResultData;

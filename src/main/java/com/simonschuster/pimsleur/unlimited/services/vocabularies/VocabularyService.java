@@ -1,11 +1,13 @@
 package com.simonschuster.pimsleur.unlimited.services.vocabularies;
 
-import com.simonschuster.pimsleur.unlimited.common.exception.PimsleurException;
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.dto.vocabularies.VocabularyInfoBodyDTO;
+import com.simonschuster.pimsleur.unlimited.data.dto.vocabularies.VocabularyInfoResponseDTO;
 import com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode;
-import com.simonschuster.pimsleur.unlimited.data.edt.vocabularies.VocabularyOperationResponse;
+import com.simonschuster.pimsleur.unlimited.data.edt.vocabularies.VocabularyResponseFromEdt;
 import com.simonschuster.pimsleur.unlimited.services.AppIdService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -25,7 +27,9 @@ public class VocabularyService {
     @Autowired
     private AppIdService appIdService;
 
-    public VocabularyOperationResponse saveVocabularyToEdt(VocabularyInfoBodyDTO vocabularyInfoBodyDTO, String storeDomain) {
+    private static final Logger logger = LoggerFactory.getLogger(VocabularyService.class);
+
+    public VocabularyInfoResponseDTO saveVocabularyToEdt(VocabularyInfoBodyDTO vocabularyInfoBodyDTO, String storeDomain) {
         HttpHeaders httpHeaders = new HttpHeaders();
         httpHeaders.setContentType(APPLICATION_FORM_URLENCODED);
         String appId = appIdService.getAppId(storeDomain);
@@ -42,13 +46,15 @@ public class VocabularyService {
                             new Date().getTime(),
                             vocabularySourceString);
 
-        VocabularyOperationResponse vocabularyOperationResponse = postToEdt(new HttpEntity<>(parameters, httpHeaders),
-                        config.getProperty("edt.api.addVocabItem.url"), VocabularyOperationResponse.class);
+        VocabularyResponseFromEdt vocabularyResponseFromEdt = postToEdt(new HttpEntity<>(parameters, httpHeaders),
+                        config.getProperty("edt.api.addVocabItem.url"), VocabularyResponseFromEdt.class);
 
-        if (!vocabularyOperationResponse.getResultCode().equals(EdtResponseCode.RESULT_OK)) {
-            throw new PimsleurException("Request failed, please check vocabularyInfoBodyDTO and try again!");
+        if (!vocabularyResponseFromEdt.getResultCode().equals(EdtResponseCode.RESULT_OK)) {
+            logger.info("Request failed, please check vocabularyInfoBodyDTO and try again!");
+            return new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.FAILED);
         }
-        return vocabularyOperationResponse;
+
+        return new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.SUCCESS, vocabularyResponseFromEdt.getVocabularyItemsResultData().getVocabularyItemList());
     }
 
     private String getVocabularySourceString(VocabularyInfoBodyDTO vocabularyInfoBodyDTO) {

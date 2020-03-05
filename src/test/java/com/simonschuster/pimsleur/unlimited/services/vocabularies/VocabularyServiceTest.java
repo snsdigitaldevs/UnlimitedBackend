@@ -2,8 +2,7 @@ package com.simonschuster.pimsleur.unlimited.services.vocabularies;
 
 import com.github.dreamhead.moco.HttpServer;
 import com.simonschuster.pimsleur.unlimited.data.dto.vocabularies.VocabularyInfoBodyDTO;
-import com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode;
-import com.simonschuster.pimsleur.unlimited.data.edt.vocabularies.VocabularyOperationResponse;
+import com.simonschuster.pimsleur.unlimited.data.dto.vocabularies.VocabularyInfoResponseDTO;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,14 +32,12 @@ public class VocabularyServiceTest {
 
         running(server, () -> {
             VocabularyInfoBodyDTO vocabularyInfoBodyDTO = new VocabularyInfoBodyDTO("118950", "118950_5ae0ced61cb1f", "9781508235972", "test", "some_transliteration_text", "", "123.mp3",1, null);
-            VocabularyOperationResponse response = vocabularyService.saveVocabularyToEdt(vocabularyInfoBodyDTO, null);
+            VocabularyInfoResponseDTO response = vocabularyService.saveVocabularyToEdt(vocabularyInfoBodyDTO, null);
 
-            assertEquals(response.getResultCode().intValue(), EdtResponseCode.RESULT_OK);
-            assertEquals(response.getVocabularyItemsResultData().getVocabularyItemList().size(), 1);
-            assertEquals(response.getVocabularyItemsResultData().getVocabularyItemList().get(0).getCustomerId(), "118950");
-            assertEquals(response.getVocabularyItemsResultData().getVocabularyItemList().get(0).getSubUserId(), "118950_5ae0ced61cb1f");
-            assertEquals(response.getVocabularyItemsResultData().getVocabularyItemList().get(0).getIsbn(), "9781508235972");
-            assertEquals(response.getVocabularyItemsResultData().getVocabularyItemList().get(0).getLanguage(), "test");
+            assertEquals(response.getVocabularyItemList().get(0).getCustomerId(), "118950");
+            assertEquals(response.getVocabularyItemList().get(0).getSubUserId(), "118950_5ae0ced61cb1f");
+            assertEquals(response.getVocabularyItemList().get(0).getIsbn(), "9781508235972");
+            assertEquals(response.getVocabularyItemList().get(0).getLanguage(), "test");
 
         });
 

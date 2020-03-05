@@ -1,0 +1,19 @@
+{
+  "result_code": 1,
+  "result_data": {
+    "vocabularyItemsList": [
+      {
+        "customerId": 118950,
+        "subUserId": "118950_5ae0ced61cb1f",
+        "lessonNumber": null,
+        "transliteration": "some_transliteration_text",
+        "translation": "",
+        "savedTime": 1534567890987,
+        "packGroupNumber": null,
+        "language": "test",
+        "mp3FileName": null,
+        "isbn": "9781508235972"
+      }
+    ]
+  }
+}

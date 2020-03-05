@@ -37,7 +37,7 @@ public class VocabularyService {
 
         String parameters = String.format(config.getProperty("edt.api.addVocabItem.parameters"), appId,
                             vocabularyInfoBodyDTO.getCustomerId(),
-                            vocabularyInfoBodyDTO.getSubUserId(),
+                            vocabularyInfoBodyDTO.getCustomerId().concat("_").concat(vocabularyInfoBodyDTO.getSubUserId()),
                             vocabularyInfoBodyDTO.getProductCode(),
                             vocabularyInfoBodyDTO.getLanguage(),
                             vocabularyInfoBodyDTO.getTransliteration(),

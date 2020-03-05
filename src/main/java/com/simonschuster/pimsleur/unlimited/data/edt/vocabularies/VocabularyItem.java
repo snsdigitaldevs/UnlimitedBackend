@@ -1,43 +1,55 @@
 package com.simonschuster.pimsleur.unlimited.data.edt.vocabularies;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-@JsonInclude(JsonInclude.Include.NON_NULL)
-@JsonPropertyOrder({
-        "customerId",
-        "subUserId",
-        "lessonNumber",
-        "transliteration",
-        "translation",
-        "savedTime",
-        "packGroupNumber",
-        "language",
-        "mp3FileName",
-        "isbn"
-})
 public class VocabularyItem {
     @JsonProperty("customerId")
     private String customerId;
+
     @JsonProperty("subUserId")
     private String subUserId;
-    @JsonProperty("isbn")
-    private String isbn;
+
+    @JsonProperty("productCode")
+    @JsonAlias({"isbn"})
+    private String productCode;
+
     @JsonProperty("language")
     private String language;
+
     @JsonProperty("transliteration")
     private String transliteration;
+
     @JsonProperty("translation")
     private String translation;
+
     @JsonProperty("mp3FileName")
     private String mp3FileName;
+
     @JsonProperty("lessonNumber")
     private Integer lessonNumber;
+
     @JsonProperty("packGroupNumber")
     private Integer packGroupNumber;
+
     @JsonProperty("savedTime")
     private long savedTime;
+
+    public VocabularyItem() {
+    }
+
+    public VocabularyItem(String customerId, String subUserId, String productCode, String language, String transliteration, String translation, String mp3FileName, Integer lessonNumber, Integer packGroupNumber, long savedTime) {
+        this.customerId = customerId;
+        this.subUserId = subUserId;
+        this.productCode = productCode;
+        this.language = language;
+        this.transliteration = transliteration;
+        this.translation = translation;
+        this.mp3FileName = mp3FileName;
+        this.lessonNumber = lessonNumber;
+        this.packGroupNumber = packGroupNumber;
+        this.savedTime = savedTime;
+    }
 
     @JsonProperty("customerId")
     public String getCustomerId() {
@@ -57,13 +69,11 @@ public class VocabularyItem {
     public void setSubUserId(String subUserId) {
         this.subUserId = subUserId;
     }
-    @JsonProperty("isbn")
-    public String getIsbn() {
-        return isbn;
+    public String getProductCode() {
+        return productCode;
     }
-    @JsonProperty("isbn")
-    public void setIsbn(String isbn) {
-        this.isbn = isbn;
+    public void setProductCode(String productCode) {
+        this.productCode = productCode;
     }
     @JsonProperty("language")
     public String getLanguage() {

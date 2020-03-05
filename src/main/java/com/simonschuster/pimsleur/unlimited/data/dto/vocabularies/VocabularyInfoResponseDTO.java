@@ -12,7 +12,6 @@ public class VocabularyInfoResponseDTO {
 
     public static final String FAILED = "FAILED";
 
-
     private String status;
 
     private List<VocabularyItem> vocabularyItemList;

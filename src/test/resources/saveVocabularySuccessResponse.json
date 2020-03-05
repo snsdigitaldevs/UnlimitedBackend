@@ -3,8 +3,8 @@
   "result_data": {
     "vocabularyItemsList": [
       {
-        "customerId": 118950,
-        "subUserId": "118950_5ae0ced61cb1f",
+        "customerId": "118950",
+        "subUserId": "5ae0ced61cb1f",
         "lessonNumber": null,
         "transliteration": "some_transliteration_text",
         "translation": "",

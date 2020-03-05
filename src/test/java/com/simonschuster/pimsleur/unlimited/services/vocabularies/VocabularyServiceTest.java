@@ -23,21 +23,40 @@ public class VocabularyServiceTest {
     private VocabularyService vocabularyService;
 
     @Test
-    public void should_returned_correct_result_when_call_save_vocabulary_method_given_valid_vocabulary_info() throws Exception {
+    public void should_returned_success_status_and_corresponding_vocabularies_list_when_call_save_vocabulary_method_given_valid_vocabulary_info() throws Exception {
         HttpServer server = httpServer(12306);
         server.post(and(
                 by(uri("/subscr_production_v_9/action_handlers/gnsrs.php")),
                 eq(form("action"), "afiva")))
-                .response(file("src/test/resources/saveVocabularyResponse.json"));
+                .response(file("src/test/resources/saveVocabularySuccessResponse.json"));
 
         running(server, () -> {
             VocabularyInfoBodyDTO vocabularyInfoBodyDTO = new VocabularyInfoBodyDTO("118950", "118950_5ae0ced61cb1f", "9781508235972", "test", "some_transliteration_text", "", "123.mp3",1, null);
             VocabularyInfoResponseDTO response = vocabularyService.saveVocabularyToEdt(vocabularyInfoBodyDTO, null);
 
+            assertEquals(response.getStatus(), VocabularyInfoResponseDTO.SUCCESS);
             assertEquals(response.getVocabularyItemList().get(0).getCustomerId(), "118950");
             assertEquals(response.getVocabularyItemList().get(0).getSubUserId(), "118950_5ae0ced61cb1f");
             assertEquals(response.getVocabularyItemList().get(0).getIsbn(), "9781508235972");
             assertEquals(response.getVocabularyItemList().get(0).getLanguage(), "test");
+
+        });
+
+    }
+
+    @Test
+    public void should_returned_correct_failed_status_when_call_save_vocabulary_method_given_valid_vocabulary_info() throws Exception {
+        HttpServer server = httpServer(12306);
+        server.post(and(
+                by(uri("/subscr_production_v_9/action_handlers/gnsrs.php")),
+                eq(form("action"), "afiva")))
+                .response(file("src/test/resources/saveVocabularyFailedResponse.json"));
+
+        running(server, () -> {
+            VocabularyInfoBodyDTO vocabularyInfoBodyDTO = new VocabularyInfoBodyDTO("118950", "118950", "9781508235972", "test", "some_transliteration_text", "", "123.mp3",1, null);
+            VocabularyInfoResponseDTO response = vocabularyService.saveVocabularyToEdt(vocabularyInfoBodyDTO, null);
+
+            assertEquals(response.getStatus(), VocabularyInfoResponseDTO.FAILED);
 
         });
 

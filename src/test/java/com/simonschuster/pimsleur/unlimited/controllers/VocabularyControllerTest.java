@@ -46,16 +46,7 @@ public class VocabularyControllerTest {
                                         .setTransliteration("some_transliteration_text")
                                         .setMp3FileName("123.mp3")
                                         .setPackGroupNumber(1);
-        VocabularyItem vocabularyItem = new VocabularyItem();
-        vocabularyItem.setCustomerId("118950");
-        vocabularyItem.setSubUserId("5ae0ced61cb1f");
-        vocabularyItem.setProductCode("9781508235972");
-        vocabularyItem.setLanguage("test");
-        vocabularyItem.setTransliteration("some_transliteration_text");
-        vocabularyItem.setMp3FileName("123.mp3");
-        vocabularyItem.setPackGroupNumber(1);
-        List<VocabularyItem> vocabularyItemList = new ArrayList<>();
-        vocabularyItemList.add(vocabularyItem);
+        List<VocabularyItem> vocabularyItemList = mockVocabularyItemList();
 
         VocabularyInfoResponseDTO vocabularyInfoResponseDTO =
                 new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.SUCCESS, vocabularyItemList);
@@ -67,15 +58,15 @@ public class VocabularyControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.status").value(VocabularyInfoResponseDTO.SUCCESS))
                 .andExpect(jsonPath("$.vocabularyItemList.length()").value(1))
-                .andExpect(jsonPath("$.vocabularyItemList[0].customerId").value(vocabularyItem.getCustomerId()))
-                .andExpect(jsonPath("$.vocabularyItemList[0].subUserId").value(vocabularyItem.getSubUserId()))
-                .andExpect(jsonPath("$.vocabularyItemList[0].productCode").value(vocabularyItem.getProductCode()))
-                .andExpect(jsonPath("$.vocabularyItemList[0].language").value(vocabularyItem.getLanguage()))
-                .andExpect(jsonPath("$.vocabularyItemList[0].packGroupNumber").value(vocabularyItem.getPackGroupNumber()));
+                .andExpect(jsonPath("$.vocabularyItemList[0].customerId").value(vocabularyItemList.get(0).getCustomerId()))
+                .andExpect(jsonPath("$.vocabularyItemList[0].subUserId").value(vocabularyItemList.get(0).getSubUserId()))
+                .andExpect(jsonPath("$.vocabularyItemList[0].productCode").value(vocabularyItemList.get(0).getProductCode()))
+                .andExpect(jsonPath("$.vocabularyItemList[0].language").value(vocabularyItemList.get(0).getLanguage()))
+                .andExpect(jsonPath("$.vocabularyItemList[0].packGroupNumber").value(vocabularyItemList.get(0).getPackGroupNumber()));
     }
 
     @Test
-    public void should_save_vocabulary_faild_when_call_save_vocabulary_api_given_customerId_null_value() throws Exception {
+    public void should_save_vocabulary_failed_when_call_save_vocabulary_api_given_customerId_null_value() throws Exception {
         VocabularyInfoBodyDTO vocabularyInfoBodyDTO = new VocabularyInfoBodyDTO()
                                                         .setCustomerId(null)
                                                         .setSubUserId("5ae0ced61cb1f")
@@ -110,16 +101,7 @@ public class VocabularyControllerTest {
 
     @Test
     public void should_get_vocabulary_list_success_when_call_get_vocabulary_list_api_given_valid_customer_info_and_product_code() throws Exception {
-        VocabularyItem vocabularyItem = new VocabularyItem();
-        vocabularyItem.setCustomerId("118950");
-        vocabularyItem.setSubUserId("5ae0ced61cb1f");
-        vocabularyItem.setProductCode("9781508235972");
-        vocabularyItem.setLanguage("test");
-        vocabularyItem.setTransliteration("some_transliteration_text");
-        vocabularyItem.setMp3FileName("123.mp3");
-        vocabularyItem.setPackGroupNumber(1);
-        List<VocabularyItem> vocabularyItemList = new ArrayList<>();
-        vocabularyItemList.add(vocabularyItem);
+        List<VocabularyItem> vocabularyItemList = mockVocabularyItemList();
 
         VocabularyInfoResponseDTO vocabularyInfoResponseDTO =
                 new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.SUCCESS, vocabularyItemList);
@@ -133,6 +115,20 @@ public class VocabularyControllerTest {
                     .param("subUserId", "5ae0ced61cb1f")
                     .param("productCode", "9781508235972"))
                 .andExpect(status().isOk());
+    }
+
+    private List<VocabularyItem> mockVocabularyItemList() {
+        VocabularyItem vocabularyItem = new VocabularyItem();
+        vocabularyItem.setCustomerId("118950");
+        vocabularyItem.setSubUserId("5ae0ced61cb1f");
+        vocabularyItem.setProductCode("9781508235972");
+        vocabularyItem.setLanguage("test");
+        vocabularyItem.setTransliteration("some_transliteration_text");
+        vocabularyItem.setMp3FileName("123.mp3");
+        vocabularyItem.setPackGroupNumber(1);
+        List<VocabularyItem> vocabularyItemList = new ArrayList<>();
+        vocabularyItemList.add(vocabularyItem);
+        return vocabularyItemList;
     }
 
     @Test

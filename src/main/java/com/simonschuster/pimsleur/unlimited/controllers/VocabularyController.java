@@ -4,6 +4,7 @@ import com.simonschuster.pimsleur.unlimited.data.dto.vocabularies.VocabularyInfo
 import com.simonschuster.pimsleur.unlimited.data.dto.vocabularies.VocabularyInfoResponseDTO;
 import com.simonschuster.pimsleur.unlimited.services.vocabularies.VocabularyService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,5 +24,13 @@ public class VocabularyController {
     public VocabularyInfoResponseDTO saveVocabulary(@Valid @RequestBody VocabularyInfoBodyDTO vocabularyInfoBodyDTO,
                                                     @RequestParam(required = false) String storeDomain) {
         return vocabularyService.saveVocabularyToEdt(vocabularyInfoBodyDTO, storeDomain);
+    }
+
+    @GetMapping
+    public VocabularyInfoResponseDTO getVocabularyList(@RequestParam String customerId,
+                                                    @RequestParam String subUserId,
+                                                    @RequestParam String productCode,
+                                                    @RequestParam(required = false) String storeDomain) {
+        return vocabularyService.getSaveVocabularyList(customerId, subUserId, productCode, storeDomain);
     }
 }

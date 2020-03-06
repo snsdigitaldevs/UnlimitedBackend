@@ -86,7 +86,7 @@ public class VocabularyService {
     }
 
     private List<VocabularyItem> getVocabularyList(VocabularyResponseFromEdt vocabularyResponseFromEdt) {
-        List<VocabularyItem> vocabularyItemList = vocabularyResponseFromEdt.getVocabularyItemsResultData().getVocabularyItemList()
+        return vocabularyResponseFromEdt.getVocabularyItemsResultData().getVocabularyItemList()
                 .stream()
                 .filter(Objects::nonNull)
                 .map(vocabularyItem -> {
@@ -98,8 +98,6 @@ public class VocabularyService {
                     return vocabularyItem;
                 })
                 .collect(Collectors.toList());
-
-        return vocabularyItemList;
     }
 
     private String getVocabularySourceString(VocabularyInfoBodyDTO vocabularyInfoBodyDTO) {

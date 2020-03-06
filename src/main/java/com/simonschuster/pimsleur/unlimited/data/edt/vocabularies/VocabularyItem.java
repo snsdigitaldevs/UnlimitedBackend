@@ -35,28 +35,11 @@ public class VocabularyItem {
     @JsonProperty("savedTime")
     private long savedTime;
 
-    public VocabularyItem() {
-    }
-
-    public VocabularyItem(String customerId, String subUserId, String productCode, String language, String transliteration, String translation, String mp3FileName, Integer lessonNumber, Integer packGroupNumber, long savedTime) {
-        this.customerId = customerId;
-        this.subUserId = subUserId;
-        this.productCode = productCode;
-        this.language = language;
-        this.transliteration = transliteration;
-        this.translation = translation;
-        this.mp3FileName = mp3FileName;
-        this.lessonNumber = lessonNumber;
-        this.packGroupNumber = packGroupNumber;
-        this.savedTime = savedTime;
-    }
-
     @JsonProperty("customerId")
     public String getCustomerId() {
         return customerId;
     }
 
-    @JsonProperty("customerId")
     public void setCustomerId(String customerId) {
         this.customerId = customerId;
     }

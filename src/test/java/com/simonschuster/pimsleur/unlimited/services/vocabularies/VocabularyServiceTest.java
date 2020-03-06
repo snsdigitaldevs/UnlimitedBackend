@@ -31,7 +31,14 @@ public class VocabularyServiceTest {
                 .response(file("src/test/resources/VocabularyOperateSuccessResponse.json"));
 
         running(server, () -> {
-            VocabularyInfoBodyDTO vocabularyInfoBodyDTO = new VocabularyInfoBodyDTO("118950", "5ae0ced61cb1f", "9781508235972", "test", "some_transliteration_text", "", "123.mp3",1, null);
+            VocabularyInfoBodyDTO vocabularyInfoBodyDTO = new VocabularyInfoBodyDTO()
+                    .setCustomerId("118950")
+                    .setSubUserId("5ae0ced61cb1f")
+                    .setProductCode("9781508235972")
+                    .setLanguage("test")
+                    .setTransliteration("some_transliteration_text")
+                    .setMp3FileName("123.mp3")
+                    .setLessonNumber(1);
             VocabularyInfoResponseDTO response = vocabularyService.saveVocabularyToEdt(vocabularyInfoBodyDTO, null);
 
             assertEquals(VocabularyInfoResponseDTO.SUCCESS, response.getStatus());
@@ -53,7 +60,14 @@ public class VocabularyServiceTest {
                 .response(file("src/test/resources/VocabularyOperateFailedResponse.json"));
 
         running(server, () -> {
-            VocabularyInfoBodyDTO vocabularyInfoBodyDTO = new VocabularyInfoBodyDTO("118950", "118950", "9781508235972", "test", "some_transliteration_text", "", "123.mp3",1, null);
+            VocabularyInfoBodyDTO vocabularyInfoBodyDTO = new VocabularyInfoBodyDTO()
+                    .setCustomerId("118950")
+                    .setSubUserId("118950")
+                    .setProductCode("9781508235972")
+                    .setLanguage("test")
+                    .setTransliteration("some_transliteration_text")
+                    .setMp3FileName("123.mp3")
+                    .setLessonNumber(1);
             VocabularyInfoResponseDTO response = vocabularyService.saveVocabularyToEdt(vocabularyInfoBodyDTO, null);
 
             assertEquals(VocabularyInfoResponseDTO.FAILED, response.getStatus());

@@ -37,8 +37,22 @@ public class VocabularyControllerTest {
 
     @Test
     public void should_save_vocabulary_success_when_call_save_vocabulary_api_given_a_valid_vocabulary_info_body() throws Exception {
-        VocabularyInfoBodyDTO vocabularyInfoBodyDTO = new VocabularyInfoBodyDTO("118950", "5ae0ced61cb1f", "9781508235972", "test", "some_transliteration_text", "", "123.mp3",null, 1);
-        VocabularyItem vocabularyItem = new VocabularyItem("118950", "5ae0ced61cb1f", "9781508235972", "myword3", "some_transliteration", "some_translation", "some_mp3_file_name", null, 1, 1534567890987L);
+        VocabularyInfoBodyDTO vocabularyInfoBodyDTO = new VocabularyInfoBodyDTO()
+                                        .setCustomerId("118950")
+                                        .setSubUserId("5ae0ced61cb1f")
+                                        .setProductCode("9781508235972")
+                                        .setLanguage("test")
+                                        .setTransliteration("some_transliteration_text")
+                                        .setMp3FileName("123.mp3")
+                                        .setPackGroupNumber(1);
+        VocabularyItem vocabularyItem = new VocabularyItem();
+        vocabularyItem.setCustomerId("118950");
+        vocabularyItem.setSubUserId("5ae0ced61cb1f");
+        vocabularyItem.setProductCode("9781508235972");
+        vocabularyItem.setLanguage("test");
+        vocabularyItem.setTransliteration("some_transliteration_text");
+        vocabularyItem.setMp3FileName("123.mp3");
+        vocabularyItem.setPackGroupNumber(1);
         List<VocabularyItem> vocabularyItemList = new ArrayList<>();
         vocabularyItemList.add(vocabularyItem);
 
@@ -61,7 +75,14 @@ public class VocabularyControllerTest {
 
     @Test
     public void should_save_vocabulary_faild_when_call_save_vocabulary_api_given_customerId_null_value() throws Exception {
-        VocabularyInfoBodyDTO vocabularyInfoBodyDTO = new VocabularyInfoBodyDTO(null, "5ae0ced61cb1f", "9781508235972", "test", "some_transliteration_text", "", "123.mp3",null, 1);
+        VocabularyInfoBodyDTO vocabularyInfoBodyDTO = new VocabularyInfoBodyDTO()
+                                                        .setCustomerId(null)
+                                                        .setSubUserId("5ae0ced61cb1f")
+                                                        .setProductCode("9781508235972")
+                                                        .setLanguage("test")
+                                                        .setTransliteration("some_transliteration_text")
+                                                        .setMp3FileName("123.mp3")
+                                                        .setPackGroupNumber(1);
 
         mockMvc.perform(post("/puProduct/vocabulary")
                 .contentType(MediaType.APPLICATION_JSON)
@@ -70,8 +91,15 @@ public class VocabularyControllerTest {
     }
 
     @Test
-    public void should_save_vocabulary_faild_when_call_save_vocabulary_api_given_language_empty_value() throws Exception {
-        VocabularyInfoBodyDTO vocabularyInfoBodyDTO = new VocabularyInfoBodyDTO("118950", "5ae0ced61cb1f", "9781508235972", "", "some_transliteration_text", "", "123.mp3",null, 1);
+    public void should_save_vocabulary_failed_when_call_save_vocabulary_api_given_language_empty_value() throws Exception {
+        VocabularyInfoBodyDTO vocabularyInfoBodyDTO = new VocabularyInfoBodyDTO()
+                .setCustomerId("118950")
+                .setSubUserId("5ae0ced61cb1f")
+                .setProductCode("9781508235972")
+                .setLanguage("")
+                .setTransliteration("some_transliteration_text")
+                .setMp3FileName("123.mp3")
+                .setPackGroupNumber(1);
 
         mockMvc.perform(post("/puProduct/vocabulary")
                 .contentType(MediaType.APPLICATION_JSON)

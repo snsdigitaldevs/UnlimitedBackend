@@ -20,90 +20,85 @@ public class VocabularyInfoBodyDTO {
     private Integer lessonNumber;
     private Integer packGroupNumber;
 
-    public VocabularyInfoBodyDTO() {
-    }
-
-    public VocabularyInfoBodyDTO(String customerId, String subUserId, String productCode, String language, String transliteration, String translation, String mp3FileName, Integer lessonNumber, Integer packGroupNumber) {
-        this.customerId = customerId;
-        this.subUserId = subUserId;
-        this.productCode = productCode;
-        this.language = language;
-        this.transliteration = transliteration;
-        this.translation = translation;
-        this.mp3FileName = mp3FileName;
-        this.lessonNumber = lessonNumber;
-        this.packGroupNumber = packGroupNumber;
-    }
 
     public String getCustomerId() {
         return customerId;
     }
 
-    public void setCustomerId(String customerId) {
+    public VocabularyInfoBodyDTO setCustomerId(String customerId) {
         this.customerId = customerId;
+        return this;
     }
 
     public String getSubUserId() {
         return subUserId;
     }
 
-    public void setSubUserId(String subUserId) {
+    public VocabularyInfoBodyDTO setSubUserId(String subUserId) {
         this.subUserId = subUserId;
+        return this;
     }
 
     public String getProductCode() {
         return productCode;
     }
 
-    public void setProductCode(String productCode) {
+    public VocabularyInfoBodyDTO setProductCode(String productCode) {
         this.productCode = productCode;
+        return this;
     }
 
     public String getLanguage() {
         return language;
     }
 
-    public void setLanguage(String language) {
+    public VocabularyInfoBodyDTO setLanguage(String language) {
         this.language = language;
+        return this;
     }
 
     public String getTransliteration() {
         return transliteration;
     }
 
-    public void setTransliteration(String transliteration) {
+    public VocabularyInfoBodyDTO setTransliteration(String transliteration) {
         this.transliteration = transliteration;
+        return this;
     }
 
     public String getTranslation() {
         return translation;
     }
 
-    public void setTranslation(String translation) {
+    public VocabularyInfoBodyDTO setTranslation(String translation) {
         this.translation = translation;
+        return this;
     }
 
     public String getMp3FileName() {
         return mp3FileName;
     }
 
-    public void setMp3FileName(String mp3FileName) {
+    public VocabularyInfoBodyDTO setMp3FileName(String mp3FileName) {
         this.mp3FileName = mp3FileName;
+        return this;
     }
 
     public Integer getLessonNumber() {
         return lessonNumber;
     }
 
-    public void setLessonNumber(Integer lessonNumber) {
+    public VocabularyInfoBodyDTO setLessonNumber(Integer lessonNumber) {
         this.lessonNumber = lessonNumber;
+        return this;
     }
 
     public Integer getPackGroupNumber() {
         return packGroupNumber;
     }
 
-    public void setPackGroupNumber(Integer packGroupNumber) {
+    public VocabularyInfoBodyDTO setPackGroupNumber(Integer packGroupNumber) {
         this.packGroupNumber = packGroupNumber;
+        return this;
     }
 }

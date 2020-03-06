@@ -21,13 +21,13 @@ import static org.springframework.http.MediaType.APPLICATION_FORM_URLENCODED;
 @Service
 public class VocabularyService {
 
+    private static final Logger logger = LoggerFactory.getLogger(VocabularyService.class);
+
     @Autowired
     private ApplicationConfiguration config;
 
     @Autowired
     private AppIdService appIdService;
-
-    private static final Logger logger = LoggerFactory.getLogger(VocabularyService.class);
 
     public VocabularyInfoResponseDTO saveVocabularyToEdt(VocabularyInfoBodyDTO vocabularyInfoBodyDTO, String storeDomain) {
         HttpHeaders httpHeaders = new HttpHeaders();

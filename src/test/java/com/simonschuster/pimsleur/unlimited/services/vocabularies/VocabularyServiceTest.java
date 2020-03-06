@@ -34,11 +34,11 @@ public class VocabularyServiceTest {
             VocabularyInfoBodyDTO vocabularyInfoBodyDTO = new VocabularyInfoBodyDTO("118950", "5ae0ced61cb1f", "9781508235972", "test", "some_transliteration_text", "", "123.mp3",1, null);
             VocabularyInfoResponseDTO response = vocabularyService.saveVocabularyToEdt(vocabularyInfoBodyDTO, null);
 
-            assertEquals(response.getStatus(), VocabularyInfoResponseDTO.SUCCESS);
-            assertEquals(response.getVocabularyItemList().get(0).getCustomerId(), "118950");
-            assertEquals(response.getVocabularyItemList().get(0).getSubUserId(), "5ae0ced61cb1f");
-            assertEquals(response.getVocabularyItemList().get(0).getProductCode(), "9781508235972");
-            assertEquals(response.getVocabularyItemList().get(0).getLanguage(), "test");
+            assertEquals(VocabularyInfoResponseDTO.SUCCESS, response.getStatus());
+            assertEquals("118950", response.getVocabularyItemList().get(0).getCustomerId());
+            assertEquals("5ae0ced61cb1f", response.getVocabularyItemList().get(0).getSubUserId());
+            assertEquals("9781508235972", response.getVocabularyItemList().get(0).getProductCode());
+            assertEquals("test", response.getVocabularyItemList().get(0).getLanguage());
 
         });
 
@@ -56,7 +56,7 @@ public class VocabularyServiceTest {
             VocabularyInfoBodyDTO vocabularyInfoBodyDTO = new VocabularyInfoBodyDTO("118950", "118950", "9781508235972", "test", "some_transliteration_text", "", "123.mp3",1, null);
             VocabularyInfoResponseDTO response = vocabularyService.saveVocabularyToEdt(vocabularyInfoBodyDTO, null);
 
-            assertEquals(response.getStatus(), VocabularyInfoResponseDTO.FAILED);
+            assertEquals(VocabularyInfoResponseDTO.FAILED, response.getStatus());
 
         });
 

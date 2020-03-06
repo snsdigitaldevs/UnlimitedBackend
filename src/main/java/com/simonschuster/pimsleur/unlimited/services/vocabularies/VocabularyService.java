@@ -4,6 +4,7 @@ import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.dto.vocabularies.VocabularyInfoBodyDTO;
 import com.simonschuster.pimsleur.unlimited.data.dto.vocabularies.VocabularyInfoResponseDTO;
 import com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode;
+import com.simonschuster.pimsleur.unlimited.data.edt.vocabularies.VocabularyItem;
 import com.simonschuster.pimsleur.unlimited.data.edt.vocabularies.VocabularyResponseFromEdt;
 import com.simonschuster.pimsleur.unlimited.services.AppIdService;
 import org.slf4j.Logger;
@@ -14,6 +15,9 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
+import java.util.List;
+import java.util.Objects;
+import java.util.stream.Collectors;
 
 import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEdt;
 import static org.springframework.http.MediaType.APPLICATION_FORM_URLENCODED;
@@ -53,9 +57,11 @@ public class VocabularyService {
             logger.info("Request failed, please check vocabularyInfoBodyDTO and try again!");
             return new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.FAILED);
         }
+        List<VocabularyItem> vocabularyItemList = getVocabularyList(vocabularyResponseFromEdt);
 
-        return new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.SUCCESS, vocabularyResponseFromEdt.getVocabularyItemsResultData().getVocabularyItemList());
+        return new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.SUCCESS, vocabularyItemList);
     }
+
 
     public VocabularyInfoResponseDTO getSaveVocabularyList(String customerId, String subUserId, String productCode, String storeDomain) {
         HttpHeaders httpHeaders = new HttpHeaders();
@@ -73,7 +79,27 @@ public class VocabularyService {
             return new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.FAILED);
         }
 
-        return new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.SUCCESS, vocabularyResponseFromEdt.getVocabularyItemsResultData().getVocabularyItemList());
+        List<VocabularyItem> vocabularyItemList = getVocabularyList(vocabularyResponseFromEdt);
+
+        return new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.SUCCESS, vocabularyItemList);
+
+    }
+
+    private List<VocabularyItem> getVocabularyList(VocabularyResponseFromEdt vocabularyResponseFromEdt) {
+        List<VocabularyItem> vocabularyItemList = vocabularyResponseFromEdt.getVocabularyItemsResultData().getVocabularyItemList()
+                .stream()
+                .filter(Objects::nonNull)
+                .map(vocabularyItem -> {
+                    String subUserId = vocabularyItem.getSubUserId();
+                    String[] subUserIdArray = subUserId.split("_");
+                    if (subUserIdArray.length == 2){
+                        vocabularyItem.setSubUserId(subUserIdArray[1]);
+                    }
+                    return vocabularyItem;
+                })
+                .collect(Collectors.toList());
+
+        return vocabularyItemList;
     }
 
     private String getVocabularySourceString(VocabularyInfoBodyDTO vocabularyInfoBodyDTO) {

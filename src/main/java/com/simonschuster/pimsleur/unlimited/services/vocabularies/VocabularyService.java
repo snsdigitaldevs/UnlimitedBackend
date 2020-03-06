@@ -57,9 +57,8 @@ public class VocabularyService {
             logger.info("Request failed, please check vocabularyInfoBodyDTO and try again!");
             return new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.FAILED);
         }
-        List<VocabularyItem> vocabularyItemList = getVocabularyList(vocabularyResponseFromEdt);
 
-        return new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.SUCCESS, vocabularyItemList);
+        return new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.SUCCESS);
     }
 
 

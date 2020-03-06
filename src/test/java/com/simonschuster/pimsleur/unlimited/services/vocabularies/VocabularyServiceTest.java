@@ -42,10 +42,6 @@ public class VocabularyServiceTest {
             VocabularyInfoResponseDTO response = vocabularyService.saveVocabularyToEdt(vocabularyInfoBodyDTO, null);
 
             assertEquals(VocabularyInfoResponseDTO.SUCCESS, response.getStatus());
-            assertEquals("118950", response.getVocabularyItemList().get(0).getCustomerId());
-            assertEquals("5ae0ced61cb1f", response.getVocabularyItemList().get(0).getSubUserId());
-            assertEquals("9781508235972", response.getVocabularyItemList().get(0).getProductCode());
-            assertEquals("test", response.getVocabularyItemList().get(0).getLanguage());
 
         });
 

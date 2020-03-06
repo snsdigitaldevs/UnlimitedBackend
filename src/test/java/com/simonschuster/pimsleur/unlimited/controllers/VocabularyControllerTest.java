@@ -56,13 +56,7 @@ public class VocabularyControllerTest {
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(JSONObject.toJSONString(vocabularyInfoBodyDTO)))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.status").value(VocabularyInfoResponseDTO.SUCCESS))
-                .andExpect(jsonPath("$.vocabularyItemList.length()").value(1))
-                .andExpect(jsonPath("$.vocabularyItemList[0].customerId").value(vocabularyItemList.get(0).getCustomerId()))
-                .andExpect(jsonPath("$.vocabularyItemList[0].subUserId").value(vocabularyItemList.get(0).getSubUserId()))
-                .andExpect(jsonPath("$.vocabularyItemList[0].productCode").value(vocabularyItemList.get(0).getProductCode()))
-                .andExpect(jsonPath("$.vocabularyItemList[0].language").value(vocabularyItemList.get(0).getLanguage()))
-                .andExpect(jsonPath("$.vocabularyItemList[0].packGroupNumber").value(vocabularyItemList.get(0).getPackGroupNumber()));
+                .andExpect(jsonPath("$.status").value(VocabularyInfoResponseDTO.SUCCESS));
     }
 
     @Test

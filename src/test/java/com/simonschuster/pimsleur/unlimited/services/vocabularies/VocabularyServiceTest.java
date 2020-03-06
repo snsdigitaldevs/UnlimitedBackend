@@ -23,12 +23,12 @@ public class VocabularyServiceTest {
     private VocabularyService vocabularyService;
 
     @Test
-    public void should_returned_success_status_and_corresponding_vocabularies_list_when_call_save_vocabulary_method_given_valid_vocabulary_info() throws Exception {
+    public void should_return_success_status_and_corresponding_vocabularies_list_when_call_save_vocabulary_method_given_valid_vocabulary_info() throws Exception {
         HttpServer server = httpServer(12306);
         server.post(and(
                 by(uri("/subscr_production_v_9/action_handlers/gnsrs.php")),
                 eq(form("action"), "afiva")))
-                .response(file("src/test/resources/saveVocabularySuccessResponse.json"));
+                .response(file("src/test/resources/VocabularyOperateSuccessResponse.json"));
 
         running(server, () -> {
             VocabularyInfoBodyDTO vocabularyInfoBodyDTO = new VocabularyInfoBodyDTO("118950", "5ae0ced61cb1f", "9781508235972", "test", "some_transliteration_text", "", "123.mp3",1, null);
@@ -45,12 +45,12 @@ public class VocabularyServiceTest {
     }
 
     @Test
-    public void should_returned_correct_failed_status_when_call_save_vocabulary_method_given_invalid_vocabulary_info() throws Exception {
+    public void should_return_correct_failed_status_when_call_save_vocabulary_method_given_invalid_vocabulary_info() throws Exception {
         HttpServer server = httpServer(12306);
         server.post(and(
                 by(uri("/subscr_production_v_9/action_handlers/gnsrs.php")),
                 eq(form("action"), "afiva")))
-                .response(file("src/test/resources/saveVocabularyFailedResponse.json"));
+                .response(file("src/test/resources/VocabularyOperateFailedResponse.json"));
 
         running(server, () -> {
             VocabularyInfoBodyDTO vocabularyInfoBodyDTO = new VocabularyInfoBodyDTO("118950", "118950", "9781508235972", "test", "some_transliteration_text", "", "123.mp3",1, null);
@@ -58,6 +58,44 @@ public class VocabularyServiceTest {
 
             assertEquals(VocabularyInfoResponseDTO.FAILED, response.getStatus());
 
+        });
+
+    }
+
+    @Test
+    public void should_return_success_status_and_corresponding_vocabularies_list_when_call_get_vocabulary_list_method_given_valid_customer_and_course_info() throws Exception {
+        HttpServer server = httpServer(12306);
+        server.post(and(
+                by(uri("/subscr_production_v_9/action_handlers/gnsrs.php")),
+                eq(form("action"), "afig")))
+                .response(file("src/test/resources/VocabularyOperateSuccessResponse.json"));
+
+        running(server, () -> {
+            VocabularyInfoResponseDTO response = vocabularyService.getSaveVocabularyList("118950", "5ae0ced61cb1f", "9781508235972", null);
+
+            assertEquals(VocabularyInfoResponseDTO.SUCCESS, response.getStatus());
+            assertEquals("118950", response.getVocabularyItemList().get(0).getCustomerId());
+            assertEquals("5ae0ced61cb1f", response.getVocabularyItemList().get(0).getSubUserId());
+            assertEquals("9781508235972", response.getVocabularyItemList().get(0).getProductCode());
+            assertEquals("test", response.getVocabularyItemList().get(0).getLanguage());
+
+        });
+
+    }
+
+
+    @Test
+    public void should_return_failed_status_when_call_get_vocabulary_list_method_given_invalid_course_info() throws Exception {
+        HttpServer server = httpServer(12306);
+        server.post(and(
+                by(uri("/subscr_production_v_9/action_handlers/gnsrs.php")),
+                eq(form("action"), "afig")))
+                .response(file("src/test/resources/VocabularyOperateFailedResponse.json"));
+
+        running(server, () -> {
+            VocabularyInfoResponseDTO response = vocabularyService.getSaveVocabularyList("118950", "5ae0ced61cb1f", null, null);
+
+            assertEquals(VocabularyInfoResponseDTO.FAILED, response.getStatus());
         });
 
     }

@@ -57,6 +57,25 @@ public class VocabularyService {
         return new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.SUCCESS, vocabularyResponseFromEdt.getVocabularyItemsResultData().getVocabularyItemList());
     }
 
+    public VocabularyInfoResponseDTO getSaveVocabularyList(String customerId, String subUserId, String productCode, String storeDomain) {
+        HttpHeaders httpHeaders = new HttpHeaders();
+        httpHeaders.setContentType(APPLICATION_FORM_URLENCODED);
+        String appId = appIdService.getAppId(storeDomain);
+
+        String parameters = String.format(config.getProperty("edt.api.getVocabItems.parameters"), appId, customerId,
+                                        customerId.concat("_").concat(subUserId), productCode);
+
+        VocabularyResponseFromEdt vocabularyResponseFromEdt = postToEdt(new HttpEntity<>(parameters, httpHeaders),
+                        config.getProperty("edt.api.getVocabItems.url"), VocabularyResponseFromEdt.class);
+
+        if (!vocabularyResponseFromEdt.getResultCode().equals(EdtResponseCode.RESULT_OK)) {
+            logger.info("Request failed, please check input and try again!");
+            return new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.FAILED);
+        }
+
+        return new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.SUCCESS, vocabularyResponseFromEdt.getVocabularyItemsResultData().getVocabularyItemList());
+    }
+
     private String getVocabularySourceString(VocabularyInfoBodyDTO vocabularyInfoBodyDTO) {
         Integer lessonNumber = vocabularyInfoBodyDTO.getLessonNumber();
         Integer packGroupNumber = vocabularyInfoBodyDTO.getPackGroupNumber();

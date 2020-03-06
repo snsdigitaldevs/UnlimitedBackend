@@ -20,6 +20,7 @@ import java.util.List;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -105,5 +106,41 @@ public class VocabularyControllerTest {
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(JSONObject.toJSONString(vocabularyInfoBodyDTO)))
                 .andExpect(status().is5xxServerError());
+    }
+
+    @Test
+    public void should_get_vocabulary_list_success_when_call_get_vocabulary_list_api_given_valid_customer_info_and_product_code() throws Exception {
+        VocabularyItem vocabularyItem = new VocabularyItem();
+        vocabularyItem.setCustomerId("118950");
+        vocabularyItem.setSubUserId("5ae0ced61cb1f");
+        vocabularyItem.setProductCode("9781508235972");
+        vocabularyItem.setLanguage("test");
+        vocabularyItem.setTransliteration("some_transliteration_text");
+        vocabularyItem.setMp3FileName("123.mp3");
+        vocabularyItem.setPackGroupNumber(1);
+        List<VocabularyItem> vocabularyItemList = new ArrayList<>();
+        vocabularyItemList.add(vocabularyItem);
+
+        VocabularyInfoResponseDTO vocabularyInfoResponseDTO =
+                new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.SUCCESS, vocabularyItemList);
+
+        when(vocabularyService.getSaveVocabularyList("118950", "5ae0ced61cb1f", "9781508235972", null ))
+                .thenReturn(vocabularyInfoResponseDTO);
+
+
+        mockMvc.perform(get("/puProduct/vocabulary")
+                    .param("customerId", "118950")
+                    .param("subUserId", "5ae0ced61cb1f")
+                    .param("productCode", "9781508235972"))
+                .andExpect(status().isOk());
+    }
+
+    @Test
+    public void should_get_vocabulary_list_failed_when_call_get_vocabulary_list_api_given_null_productCode() throws Exception {
+
+        mockMvc.perform(get("/puProduct/vocabulary")
+                .param("customerId", "118950")
+                .param("subUserId", "5ae0ced61cb1f"))
+                .andExpect(status().is4xxClientError());
     }
 }

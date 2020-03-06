@@ -36,7 +36,7 @@ public class VocabularyControllerTest {
     private VocabularyService vocabularyService;
 
     @Test
-    public void saveVocabulary() throws Exception {
+    public void should_save_vocabulary_success_when_call_save_vocabulary_api_given_a_valid_vocabulary_info_body() throws Exception {
         VocabularyInfoBodyDTO vocabularyInfoBodyDTO = new VocabularyInfoBodyDTO("118950", "5ae0ced61cb1f", "9781508235972", "test", "some_transliteration_text", "", "123.mp3",null, 1);
         VocabularyItem vocabularyItem = new VocabularyItem("118950", "5ae0ced61cb1f", "9781508235972", "myword3", "some_transliteration", "some_translation", "some_mp3_file_name", null, 1, 1534567890987L);
         List<VocabularyItem> vocabularyItemList = new ArrayList<>();
@@ -59,4 +59,23 @@ public class VocabularyControllerTest {
                 .andExpect(jsonPath("$.vocabularyItemList[0].packGroupNumber").value(vocabularyItem.getPackGroupNumber()));
     }
 
+    @Test
+    public void should_save_vocabulary_faild_when_call_save_vocabulary_api_given_customerId_null_value() throws Exception {
+        VocabularyInfoBodyDTO vocabularyInfoBodyDTO = new VocabularyInfoBodyDTO(null, "5ae0ced61cb1f", "9781508235972", "test", "some_transliteration_text", "", "123.mp3",null, 1);
+
+        mockMvc.perform(post("/puProduct/vocabulary")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(JSONObject.toJSONString(vocabularyInfoBodyDTO)))
+                .andExpect(status().is5xxServerError());
+    }
+
+    @Test
+    public void should_save_vocabulary_faild_when_call_save_vocabulary_api_given_language_empty_value() throws Exception {
+        VocabularyInfoBodyDTO vocabularyInfoBodyDTO = new VocabularyInfoBodyDTO("118950", "5ae0ced61cb1f", "9781508235972", "", "some_transliteration_text", "", "123.mp3",null, 1);
+
+        mockMvc.perform(post("/puProduct/vocabulary")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(JSONObject.toJSONString(vocabularyInfoBodyDTO)))
+                .andExpect(status().is5xxServerError());
+    }
 }

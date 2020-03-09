@@ -84,6 +84,26 @@ public class VocabularyService {
 
     }
 
+    public VocabularyInfoResponseDTO deleteVocabularies(String customerId, String subUserId, String productCode, List<String> languageList, String storeDomain) {
+        HttpHeaders httpHeaders = new HttpHeaders();
+        httpHeaders.setContentType(APPLICATION_FORM_URLENCODED);
+        String appId = appIdService.getAppId(storeDomain);
+
+        String parameters = String.format(config.getProperty("edt.api.deleteVocabItems.parameters"), appId, customerId,
+                customerId.concat("_").concat(subUserId), productCode, languageList);
+
+        VocabularyResponseFromEdt vocabularyResponseFromEdt = postToEdt(new HttpEntity<>(parameters, httpHeaders),
+                config.getProperty("edt.api.deleteVocabItems.url"), VocabularyResponseFromEdt.class);
+
+        if (!vocabularyResponseFromEdt.getResultCode().equals(EdtResponseCode.RESULT_OK)) {
+            logger.info("Request failed, please check input and try again!");
+            return new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.FAILED);
+        }
+
+        return new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.SUCCESS);
+
+    }
+
     private List<VocabularyItem> getVocabularyList(VocabularyResponseFromEdt vocabularyResponseFromEdt) {
         return vocabularyResponseFromEdt.getVocabularyItemsResultData().getVocabularyItemList()
                 .stream()

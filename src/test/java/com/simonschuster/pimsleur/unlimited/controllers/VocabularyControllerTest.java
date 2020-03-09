@@ -16,10 +16,12 @@ import org.springframework.test.web.servlet.MockMvc;
 import com.alibaba.fastjson.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
@@ -132,5 +134,25 @@ public class VocabularyControllerTest {
                 .param("customerId", "118950")
                 .param("subUserId", "5ae0ced61cb1f"))
                 .andExpect(status().is4xxClientError());
+    }
+
+
+    @Test
+    public void should_delete_vocabularies_success_when_delete_vocabularies_api_given_valid_input() throws Exception {
+        VocabularyInfoResponseDTO vocabularyInfoResponseDTO =
+                new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.SUCCESS);
+        List<String> languageList = Arrays.asList("myword1", "myword2");
+
+        when(vocabularyService.deleteVocabularies(any(), any(), any(), any(), any()))
+                .thenReturn(vocabularyInfoResponseDTO);
+
+        mockMvc.perform(delete("/puProduct/vocabulary")
+                .param("customerId", "118950")
+                .param("subUserId", "5ae0ced61cb1f")
+                .param("productCode", "9781508235972")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(JSONObject.toJSONString(languageList)))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.status").value(VocabularyInfoResponseDTO.SUCCESS));
     }
 }

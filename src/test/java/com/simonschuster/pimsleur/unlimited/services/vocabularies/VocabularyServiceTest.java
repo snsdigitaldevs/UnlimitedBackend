@@ -10,6 +10,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.Arrays;
+import java.util.List;
+
 import static com.github.dreamhead.moco.Moco.*;
 import static com.github.dreamhead.moco.Runner.running;
 import static org.junit.Assert.assertEquals;
@@ -48,7 +51,7 @@ public class VocabularyServiceTest {
     }
 
     @Test
-    public void should_return_correct_failed_status_when_call_save_vocabulary_method_given_invalid_vocabulary_info() throws Exception {
+    public void should_return_failed_status_when_call_save_vocabulary_method_given_invalid_vocabulary_info() throws Exception {
         HttpServer server = httpServer(12306);
         server.post(and(
                 by(uri("/subscr_production_v_9/action_handlers/gnsrs.php")),
@@ -109,4 +112,39 @@ public class VocabularyServiceTest {
         });
 
     }
+
+    @Test
+    public void should_return_success_status_when_call_delete_vocabularies_method_given_valid_customer_and_course_info_and_language_list() throws Exception {
+        HttpServer server = httpServer(12306);
+        server.post(and(
+                by(uri("/subscr_production_v_9/action_handlers/gnsrs.php")),
+                eq(form("action"), "afivr")))
+                .response(file("src/test/resources/VocabularyOperateSuccessResponse.json"));
+
+        running(server, () -> {
+            List<String> languageList = Arrays.asList("myword1", "myword2");
+            VocabularyInfoResponseDTO response = vocabularyService.deleteVocabularies("118950", "5ae0ced61cb1f", "9781508235972", languageList, null);
+            assertEquals(VocabularyInfoResponseDTO.SUCCESS, response.getStatus());
+
+        });
+    }
+
+
+    @Test
+    public void should_return_failed_status_when_call_delete_vocabularies_method_given_invalid_course_info() throws Exception {
+        HttpServer server = httpServer(12306);
+        server.post(and(
+                by(uri("/subscr_production_v_9/action_handlers/gnsrs.php")),
+                eq(form("action"), "afivr")))
+                .response(file("src/test/resources/VocabularyOperateFailedResponse.json"));
+
+        running(server, () -> {
+            List<String> languageList = Arrays.asList("myword1", "myword2");
+            VocabularyInfoResponseDTO response = vocabularyService.deleteVocabularies("118950", "5ae0ced61cb1f", null, languageList, null);
+
+            assertEquals(VocabularyInfoResponseDTO.FAILED, response.getStatus());
+        });
+
+    }
+
 }

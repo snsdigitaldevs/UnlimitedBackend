@@ -49,7 +49,7 @@ public class VocabularyController {
                                                        @RequestParam String subUserId,
                                                        @RequestParam String productCode,
                                                        @RequestBody List<String> languageList,
-                                                       @RequestParam(required = false) String storeDomain) {
+                                                       @RequestParam(required = false) String storeDomain) throws UnsupportedEncodingException {
         return vocabularyService.deleteVocabularies(customerId, subUserId, productCode, languageList, storeDomain);
     }
 }

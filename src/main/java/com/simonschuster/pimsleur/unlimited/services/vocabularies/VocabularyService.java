@@ -7,6 +7,7 @@ import com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode;
 import com.simonschuster.pimsleur.unlimited.data.edt.vocabularies.VocabularyItem;
 import com.simonschuster.pimsleur.unlimited.data.edt.vocabularies.VocabularyResponseFromEdt;
 import com.simonschuster.pimsleur.unlimited.services.AppIdService;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -86,13 +87,13 @@ public class VocabularyService {
 
     }
 
-    public VocabularyInfoResponseDTO deleteVocabularies(String customerId, String subUserId, String productCode, List<String> languageList, String storeDomain) {
+    public VocabularyInfoResponseDTO deleteVocabularies(String customerId, String subUserId, String productCode, List<String> languageList, String storeDomain) throws UnsupportedEncodingException {
         HttpHeaders httpHeaders = new HttpHeaders();
         httpHeaders.setContentType(APPLICATION_FORM_URLENCODED);
         String appId = appIdService.getAppId(storeDomain);
 
         String parameters = String.format(config.getProperty("edt.api.deleteVocabItems.parameters"), appId, customerId,
-                customerId.concat("_").concat(subUserId), productCode, languageList);
+                customerId.concat("_").concat(subUserId), productCode, encodeString(StringUtils.join(languageList, ",")));
 
         VocabularyResponseFromEdt vocabularyResponseFromEdt = postToEdt(new HttpEntity<>(parameters, httpHeaders),
                 config.getProperty("edt.api.deleteVocabItems.url"), VocabularyResponseFromEdt.class);

@@ -14,6 +14,8 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Service;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.util.Date;
 import java.util.List;
 import java.util.Objects;
@@ -33,7 +35,7 @@ public class VocabularyService {
     @Autowired
     private AppIdService appIdService;
 
-    public VocabularyInfoResponseDTO saveVocabularyToEdt(VocabularyInfoBodyDTO vocabularyInfoBodyDTO, String storeDomain) {
+    public VocabularyInfoResponseDTO saveVocabularyToEdt(VocabularyInfoBodyDTO vocabularyInfoBodyDTO, String storeDomain) throws UnsupportedEncodingException {
         HttpHeaders httpHeaders = new HttpHeaders();
         httpHeaders.setContentType(APPLICATION_FORM_URLENCODED);
         String appId = appIdService.getAppId(storeDomain);
@@ -43,10 +45,10 @@ public class VocabularyService {
                             vocabularyInfoBodyDTO.getCustomerId(),
                             vocabularyInfoBodyDTO.getCustomerId().concat("_").concat(vocabularyInfoBodyDTO.getSubUserId()),
                             vocabularyInfoBodyDTO.getProductCode(),
-                            vocabularyInfoBodyDTO.getLanguage(),
-                            vocabularyInfoBodyDTO.getTransliteration(),
-                            vocabularyInfoBodyDTO.getTranslation(),
-                            vocabularyInfoBodyDTO.getMp3FileName(),
+                            URLEncoder.encode(vocabularyInfoBodyDTO.getLanguage(), "UTF-8"),
+                            URLEncoder.encode(vocabularyInfoBodyDTO.getTransliteration(), "UTF-8"),
+                            URLEncoder.encode(vocabularyInfoBodyDTO.getTranslation(), "UTF-8"),
+                            URLEncoder.encode(vocabularyInfoBodyDTO.getMp3FileName(), "UTF-8"),
                             new Date().getTime(),
                             vocabularySourceString);
 

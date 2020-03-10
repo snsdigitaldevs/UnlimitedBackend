@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
+import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 @RestController
@@ -27,7 +28,7 @@ public class VocabularyController {
             notes = "save a vocabulary by one time for PU course")
     @PostMapping
     public VocabularyInfoResponseDTO saveVocabulary(@Valid @RequestBody VocabularyInfoBodyDTO vocabularyInfoBodyDTO,
-                                                    @RequestParam(required = false) String storeDomain) {
+                                                    @RequestParam(required = false) String storeDomain) throws UnsupportedEncodingException {
         return vocabularyService.saveVocabularyToEdt(vocabularyInfoBodyDTO, storeDomain);
     }
 

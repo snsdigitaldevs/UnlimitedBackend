@@ -15,11 +15,10 @@ public class VocabularyItemsResultData {
     @JsonProperty("vocabularyItemsList")
     private List<VocabularyItem> vocabularyItemList = null;
 
-    @JsonProperty("vocabularyItemsList")
     public List<VocabularyItem> getVocabularyItemList() {
         return vocabularyItemList;
     }
-    @JsonProperty("vocabularyItemsList")
+
     public void setVocabularyItemList(List<VocabularyItem> vocabularyItemList) {
         this.vocabularyItemList = vocabularyItemList;
     }

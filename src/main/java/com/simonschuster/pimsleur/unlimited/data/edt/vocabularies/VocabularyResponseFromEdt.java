@@ -16,12 +16,12 @@ public class VocabularyResponseFromEdt extends EdtResponseCode {
     @JsonProperty("result_data")
     private VocabularyItemsResultData vocabularyItemsResultData;
 
-    @JsonProperty("result_data")
+//    @JsonProperty("result_data")
     public VocabularyItemsResultData getVocabularyItemsResultData() {
         return vocabularyItemsResultData;
     }
 
-    @JsonProperty("result_data")
+//    @JsonProperty("result_data")
     public void setVocabularyItemsResultData(VocabularyItemsResultData  vocabularyItemsResultData) {
         this.vocabularyItemsResultData = vocabularyItemsResultData;
     }

@@ -4,6 +4,7 @@ import com.simonschuster.pimsleur.unlimited.data.dto.vocabularies.VocabularyInfo
 import com.simonschuster.pimsleur.unlimited.data.dto.vocabularies.VocabularyInfoResponseDTO;
 import com.simonschuster.pimsleur.unlimited.data.edt.vocabularies.VocabularyItem;
 import com.simonschuster.pimsleur.unlimited.services.vocabularies.VocabularyService;
+import com.simonschuster.pimsleur.unlimited.utils.JsonUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +14,6 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
-import com.alibaba.fastjson.JSONObject;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -51,12 +51,12 @@ public class VocabularyControllerTest {
         List<VocabularyItem> vocabularyItemList = mockVocabularyItemList();
 
         VocabularyInfoResponseDTO vocabularyInfoResponseDTO =
-                new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.SUCCESS, vocabularyItemList);
+                new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.SUCCESS);
 
         when(vocabularyService.saveVocabularyToEdt(any(), any())).thenReturn(vocabularyInfoResponseDTO);
         mockMvc.perform(post("/puProduct/vocabulary")
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content(JSONObject.toJSONString(vocabularyInfoBodyDTO)))
+                        .content(JsonUtils.toJsonString(vocabularyInfoBodyDTO)))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.status").value(VocabularyInfoResponseDTO.SUCCESS));
     }
@@ -74,7 +74,7 @@ public class VocabularyControllerTest {
 
         mockMvc.perform(post("/puProduct/vocabulary")
                 .contentType(MediaType.APPLICATION_JSON)
-                .content(JSONObject.toJSONString(vocabularyInfoBodyDTO)))
+                .content(JsonUtils.toJsonString(vocabularyInfoBodyDTO)))
                 .andExpect(status().is5xxServerError());
     }
 
@@ -91,7 +91,7 @@ public class VocabularyControllerTest {
 
         mockMvc.perform(post("/puProduct/vocabulary")
                 .contentType(MediaType.APPLICATION_JSON)
-                .content(JSONObject.toJSONString(vocabularyInfoBodyDTO)))
+                .content(JsonUtils.toJsonString(vocabularyInfoBodyDTO)))
                 .andExpect(status().is5xxServerError());
     }
 
@@ -110,7 +110,15 @@ public class VocabularyControllerTest {
                     .param("customerId", "118950")
                     .param("subUserId", "5ae0ced61cb1f")
                     .param("productCode", "9781508235972"))
-                .andExpect(status().isOk());
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.status").value(VocabularyInfoResponseDTO.SUCCESS))
+                .andExpect(jsonPath("$.vocabularyItemList[0].customerId").value("118950"))
+                .andExpect(jsonPath("$.vocabularyItemList[0].subUserId").value("5ae0ced61cb1f"))
+                .andExpect(jsonPath("$.vocabularyItemList[0].productCode").value("9781508235972"))
+                .andExpect(jsonPath("$.vocabularyItemList[0].language").value("test"))
+                .andExpect(jsonPath("$.vocabularyItemList[0].transliteration").value("some_transliteration_text"))
+                .andExpect(jsonPath("$.vocabularyItemList[0].mp3FileName").value("123.mp3"))
+                .andExpect(jsonPath("$.vocabularyItemList[0].packGroupNumber").value(1));
     }
 
     private List<VocabularyItem> mockVocabularyItemList() {
@@ -151,8 +159,18 @@ public class VocabularyControllerTest {
                 .param("subUserId", "5ae0ced61cb1f")
                 .param("productCode", "9781508235972")
                 .contentType(MediaType.APPLICATION_JSON)
-                .content(JSONObject.toJSONString(languageList)))
+                .content(JsonUtils.toJsonString(languageList)))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.status").value(VocabularyInfoResponseDTO.SUCCESS));
+    }
+
+    @Test
+    public void should_delete_vocabularies_failed_when_delete_vocabularies_api_given_invalid_input() throws Exception {
+
+
+        mockMvc.perform(delete("/puProduct/vocabulary")
+                .param("customerId", "118950")
+                .param("subUserId", "5ae0ced61cb1f"))
+                .andExpect(status().is4xxClientError());
     }
 }

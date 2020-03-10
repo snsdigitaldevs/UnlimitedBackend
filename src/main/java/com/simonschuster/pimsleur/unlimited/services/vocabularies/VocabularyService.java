@@ -45,10 +45,10 @@ public class VocabularyService {
                             vocabularyInfoBodyDTO.getCustomerId(),
                             vocabularyInfoBodyDTO.getCustomerId().concat("_").concat(vocabularyInfoBodyDTO.getSubUserId()),
                             vocabularyInfoBodyDTO.getProductCode(),
-                            URLEncoder.encode(vocabularyInfoBodyDTO.getLanguage(), "UTF-8"),
-                            URLEncoder.encode(vocabularyInfoBodyDTO.getTransliteration(), "UTF-8"),
-                            URLEncoder.encode(vocabularyInfoBodyDTO.getTranslation(), "UTF-8"),
-                            URLEncoder.encode(vocabularyInfoBodyDTO.getMp3FileName(), "UTF-8"),
+                            encodeString(vocabularyInfoBodyDTO.getLanguage()),
+                            encodeString(vocabularyInfoBodyDTO.getTransliteration()),
+                            encodeString(vocabularyInfoBodyDTO.getTranslation()),
+                            encodeString(vocabularyInfoBodyDTO.getMp3FileName()),
                             new Date().getTime(),
                             vocabularySourceString);
 
@@ -135,5 +135,12 @@ public class VocabularyService {
             return "&".concat(packGroupNumberKey).concat("=").concat(String.valueOf(packGroupNumber));
         }
         return "";
+    }
+
+    private String encodeString(String str) throws UnsupportedEncodingException {
+        if (str !=null) {
+            return URLEncoder.encode(str, "UTF-8");
+        }
+        return null;
     }
 }

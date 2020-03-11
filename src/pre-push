@@ -1,1 +1,4 @@
-exit 1
+#!/bin/sh
+mvn checkstyle:checkstyle
+RESULT=$?
+exit $RESULT

@@ -38,7 +38,7 @@ public class PcmCourseInfoService {
 
     private PcmProduct getPcmProductInfo(String sub, String email, String storeDomain) {
         try {
-            Customer customer = customerInfoService.getPuAndPCMCustomerInfos(sub, storeDomain, email)
+            Customer customer = customerInfoService.getPcmCustomerInfo(sub, storeDomain, email)
                     .getResultData().getCustomer();
 
             PcmProduct pcmProduct = new PcmProduct();

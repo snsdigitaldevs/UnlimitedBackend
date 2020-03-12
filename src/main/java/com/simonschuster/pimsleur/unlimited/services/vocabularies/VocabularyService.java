@@ -3,10 +3,12 @@ package com.simonschuster.pimsleur.unlimited.services.vocabularies;
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.dto.vocabularies.VocabularyInfoBodyDTO;
 import com.simonschuster.pimsleur.unlimited.data.dto.vocabularies.VocabularyInfoResponseDTO;
+import com.simonschuster.pimsleur.unlimited.data.dto.vocabularies.VocabularyListInfoDTO;
 import com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode;
 import com.simonschuster.pimsleur.unlimited.data.edt.vocabularies.VocabularyItem;
 import com.simonschuster.pimsleur.unlimited.data.edt.vocabularies.VocabularyResponseFromEdt;
 import com.simonschuster.pimsleur.unlimited.services.AppIdService;
+import com.simonschuster.pimsleur.unlimited.utils.JsonUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -105,6 +107,34 @@ public class VocabularyService {
 
         return new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.SUCCESS);
 
+    }
+
+    public VocabularyInfoResponseDTO saveVocabulariesToEdt(VocabularyListInfoDTO vocabularyListInfoDTO, String storeDomain) throws UnsupportedEncodingException {
+        HttpHeaders httpHeaders = new HttpHeaders();
+        httpHeaders.setContentType(APPLICATION_FORM_URLENCODED);
+        String appId = appIdService.getAppId(storeDomain);
+
+        String VocabularyItemsString = StringUtils.join(vocabularyListInfoDTO.getVocabularyItemList()
+                .stream()
+                .map(JsonUtils::toJsonString)
+                .collect(Collectors.toList()), ",");
+
+        String parameters = String.format(config.getProperty("edt.api.addVocabItems.parameters"), appId,
+                                        vocabularyListInfoDTO.getCustomerId(),
+                                        vocabularyListInfoDTO.getSubUserId(),
+                                        vocabularyListInfoDTO.getProductCode(),
+                                        new Date().getTime(),
+                                        encodeString(VocabularyItemsString));
+
+        VocabularyResponseFromEdt vocabularyResponseFromEdt = postToEdt(new HttpEntity<>(parameters, httpHeaders),
+                config.getProperty("edt.api.addVocabItems.url"), VocabularyResponseFromEdt.class);
+
+        if (!vocabularyResponseFromEdt.getResultCode().equals(EdtResponseCode.RESULT_OK)) {
+            logger.info("Request failed, please check input and try again!");
+            return new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.FAILED);
+        }
+
+        return new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.SUCCESS);
     }
 
     private List<VocabularyItem> getVocabularyList(VocabularyResponseFromEdt vocabularyResponseFromEdt) {

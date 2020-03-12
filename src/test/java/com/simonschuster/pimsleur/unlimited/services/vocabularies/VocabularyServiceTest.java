@@ -3,6 +3,8 @@ package com.simonschuster.pimsleur.unlimited.services.vocabularies;
 import com.github.dreamhead.moco.HttpServer;
 import com.simonschuster.pimsleur.unlimited.data.dto.vocabularies.VocabularyInfoBodyDTO;
 import com.simonschuster.pimsleur.unlimited.data.dto.vocabularies.VocabularyInfoResponseDTO;
+import com.simonschuster.pimsleur.unlimited.data.dto.vocabularies.VocabularyItemDTO;
+import com.simonschuster.pimsleur.unlimited.data.dto.vocabularies.VocabularyListInfoDTO;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -145,6 +147,54 @@ public class VocabularyServiceTest {
             assertEquals(VocabularyInfoResponseDTO.FAILED, response.getStatus());
         });
 
+    }
+
+    @Test
+    public void should_return_success_status_when_call_save_vocabularies_method_given_valid_vocabulary_list_info() throws Exception {
+        HttpServer server = httpServer(12306);
+        server.post(and(
+                by(uri("/subscr_production_v_9/action_handlers/gnsrs.php")),
+                eq(form("action"), "afsiva")))
+                .response(file("src/test/resources/VocabularyOperateSuccessResponse.json"));
+
+        running(server, () -> {
+            VocabularyListInfoDTO vocabularyListInfoDTO = mockVocabularyListInfoDTO();
+            VocabularyInfoResponseDTO response = vocabularyService.saveVocabulariesToEdt(vocabularyListInfoDTO, null);
+
+            assertEquals(VocabularyInfoResponseDTO.SUCCESS, response.getStatus());
+        });
+    }
+
+
+
+    @Test
+    public void should_return_failed_status_when_call_save_vocabularies_method_given_invalid_input() throws Exception {
+        HttpServer server = httpServer(12306);
+        server.post(and(
+                by(uri("/subscr_production_v_9/action_handlers/gnsrs.php")),
+                eq(form("action"), "afsiva")))
+                .response(file("src/test/resources/VocabularyOperateFailedResponse.json"));
+
+        running(server, () -> {
+            VocabularyInfoResponseDTO response = vocabularyService.saveVocabulariesToEdt(new VocabularyListInfoDTO(), null);
+
+            assertEquals(VocabularyInfoResponseDTO.FAILED, response.getStatus());
+        });
+    }
+
+
+    private VocabularyListInfoDTO mockVocabularyListInfoDTO() {
+        VocabularyItemDTO vocabularyItem = new VocabularyItemDTO()
+                .setLanguage("test")
+                .setTransliteration("some_transliteration_text")
+                .setTranslation("")
+                .setPackGroupNumber(1);
+        List<VocabularyItemDTO> vocabularyList = Arrays.asList(vocabularyItem);
+        return new VocabularyListInfoDTO()
+                .setCustomerId("118950")
+                .setSubUserId("5ae0ced61cb1f")
+                .setProductCode("9781508235972")
+                .setVocabularyItemList(vocabularyList);
     }
 
 }

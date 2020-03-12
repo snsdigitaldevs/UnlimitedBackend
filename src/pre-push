@@ -1,4 +1,4 @@
-#!/bin/sh
-mvn checkstyle:checkstyle
+#!/usr/bin/env bash
+mvn clean install
 RESULT=$?
 exit $RESULT

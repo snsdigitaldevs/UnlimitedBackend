@@ -34,6 +34,8 @@ public class VocabularyService {
 
     private static final Logger logger = LoggerFactory.getLogger(VocabularyService.class);
 
+    private static final String loggerMessage = "Request failed, please check input and try again!";
+
     @Autowired
     private ApplicationConfiguration config;
 
@@ -58,7 +60,7 @@ public class VocabularyService {
         VocabularyResponseFromEdt vocabularyResponseFromEdt = requestVocabularyOperationToEdt(parameters);
 
         if (!vocabularyResponseFromEdt.getResultCode().equals(EdtResponseCode.RESULT_OK)) {
-            logger.info("Request failed, please check vocabularyInfoBodyDTO and try again!");
+            logger.info("Request failed, please check vocabularyInfoBodyDTO and try again! " + JsonUtils.toJsonString(vocabularyInfoBodyDTO));
             return new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.FAILED);
         }
 
@@ -77,7 +79,7 @@ public class VocabularyService {
         Integer resultCode = vocabularyResponseFromEdt.getResultCode();
 
         if (!resultCode.equals(EdtResponseCode.RESULT_OK) && !resultCode.equals(EdtResponseCode.RESULT_RECORD_NOT_FOUND)) {
-            logger.info("Request failed, please check input and try again!");
+            logger.info(loggerMessage);
             return new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.FAILED);
         }
 
@@ -96,7 +98,7 @@ public class VocabularyService {
         VocabularyResponseFromEdt vocabularyResponseFromEdt = requestVocabularyOperationToEdt(parameters);
 
         if (!vocabularyResponseFromEdt.getResultCode().equals(EdtResponseCode.RESULT_OK)) {
-            logger.info("Request failed, please check input and try again!");
+            logger.info(loggerMessage);
             return new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.FAILED);
         }
 
@@ -107,7 +109,7 @@ public class VocabularyService {
     public VocabularyInfoResponseDTO saveVocabulariesToEdt(VocabularyListInfoDTO vocabularyListInfoDTO, String storeDomain) throws UnsupportedEncodingException {
         String appId = appIdService.getAppId(storeDomain);
 
-        String VocabularyItemsString = StringUtils.join(vocabularyListInfoDTO.getVocabularyItemList()
+        String vocabularyItemsString = StringUtils.join(vocabularyListInfoDTO.getVocabularyItemList()
                 .stream()
                 .map(JsonUtils::toJsonString)
                 .collect(Collectors.toList()), ",");
@@ -117,12 +119,12 @@ public class VocabularyService {
                                         vocabularyListInfoDTO.getSubUserId(),
                                         vocabularyListInfoDTO.getProductCode(),
                                         new Date().getTime(),
-                                        encodeString(VocabularyItemsString));
+                                        encodeString(vocabularyItemsString));
 
         VocabularyResponseFromEdt vocabularyResponseFromEdt = requestVocabularyOperationToEdt(parameters);
 
         if (!vocabularyResponseFromEdt.getResultCode().equals(EdtResponseCode.RESULT_OK)) {
-            logger.info("Request failed, please check input and try again!");
+            logger.info("Request failed, please check vocabularyListInfoDTO and try again! " + JsonUtils.toJsonString(vocabularyListInfoDTO));
             return new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.FAILED);
         }
 

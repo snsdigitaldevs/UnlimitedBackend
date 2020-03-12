@@ -58,7 +58,7 @@ public class VocabularyServiceTest {
         server.post(and(
                 by(uri("/subscr_production_v_9/action_handlers/gnsrs.php")),
                 eq(form("action"), "afiva")))
-                .response(file("src/test/resources/VocabularyOperateFailedResponse.json"));
+                .response(file("src/test/resources/VocabularyOperateFailedResponseNoResultFound.json"));
 
         running(server, () -> {
             VocabularyInfoBodyDTO vocabularyInfoBodyDTO = new VocabularyInfoBodyDTO()
@@ -100,17 +100,18 @@ public class VocabularyServiceTest {
 
 
     @Test
-    public void should_return_failed_status_when_call_get_vocabulary_list_method_given_invalid_course_info() throws Exception {
+    public void should_return_success_status_but_empty_vocabulary_list_when_call_get_vocabulary_list_method_given_invalid_course_info() throws Exception {
         HttpServer server = httpServer(12306);
         server.post(and(
                 by(uri("/subscr_production_v_9/action_handlers/gnsrs.php")),
                 eq(form("action"), "afig")))
-                .response(file("src/test/resources/VocabularyOperateFailedResponse.json"));
+                .response(file("src/test/resources/VocabularyOperateFailedResponseNoResultFound.json"));
 
         running(server, () -> {
             VocabularyInfoResponseDTO response = vocabularyService.getSaveVocabularyList("118950", "5ae0ced61cb1f", null, null);
 
-            assertEquals(VocabularyInfoResponseDTO.FAILED, response.getStatus());
+            assertEquals(VocabularyInfoResponseDTO.SUCCESS, response.getStatus());
+            assertEquals(0, response.getVocabularyItemList().size());
         });
 
     }
@@ -138,7 +139,7 @@ public class VocabularyServiceTest {
         server.post(and(
                 by(uri("/subscr_production_v_9/action_handlers/gnsrs.php")),
                 eq(form("action"), "afivr")))
-                .response(file("src/test/resources/VocabularyOperateFailedResponse.json"));
+                .response(file("src/test/resources/VocabularyOperateFailedResponseNoResultFound.json"));
 
         running(server, () -> {
             List<String> languageList = Arrays.asList("myword1", "myword2");
@@ -171,7 +172,7 @@ public class VocabularyServiceTest {
         server.post(and(
                 by(uri("/subscr_production_v_9/action_handlers/gnsrs.php")),
                 eq(form("action"), "afsiva")))
-                .response(file("src/test/resources/VocabularyOperateFailedResponse.json"));
+                .response(file("src/test/resources/VocabularyOperateFailedResponseNoResultFound.json"));
 
         running(server, () -> {
             VocabularyInfoResponseDTO response = vocabularyService.saveVocabulariesToEdt(new VocabularyListInfoDTO(), null);

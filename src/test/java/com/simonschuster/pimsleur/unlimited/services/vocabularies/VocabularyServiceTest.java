@@ -165,8 +165,6 @@ public class VocabularyServiceTest {
         });
     }
 
-
-
     @Test
     public void should_return_failed_status_when_call_save_vocabularies_method_given_invalid_input() throws Exception {
         HttpServer server = httpServer(12306);

@@ -39,8 +39,6 @@ public class VocabularyService {
     private AppIdService appIdService;
 
     public VocabularyInfoResponseDTO saveVocabularyToEdt(VocabularyInfoBodyDTO vocabularyInfoBodyDTO, String storeDomain) throws UnsupportedEncodingException {
-        HttpHeaders httpHeaders = new HttpHeaders();
-        httpHeaders.setContentType(APPLICATION_FORM_URLENCODED);
         String appId = appIdService.getAppId(storeDomain);
         String vocabularySourceString = getVocabularySourceString(vocabularyInfoBodyDTO);
 
@@ -55,8 +53,7 @@ public class VocabularyService {
                             new Date().getTime(),
                             vocabularySourceString);
 
-        VocabularyResponseFromEdt vocabularyResponseFromEdt = postToEdt(new HttpEntity<>(parameters, httpHeaders),
-                        config.getProperty("edt.api.addVocabItem.url"), VocabularyResponseFromEdt.class);
+        VocabularyResponseFromEdt vocabularyResponseFromEdt = requestVocabularyOperationToEdt(parameters);
 
         if (!vocabularyResponseFromEdt.getResultCode().equals(EdtResponseCode.RESULT_OK)) {
             logger.info("Request failed, please check vocabularyInfoBodyDTO and try again!");
@@ -68,15 +65,12 @@ public class VocabularyService {
 
 
     public VocabularyInfoResponseDTO getSaveVocabularyList(String customerId, String subUserId, String productCode, String storeDomain) {
-        HttpHeaders httpHeaders = new HttpHeaders();
-        httpHeaders.setContentType(APPLICATION_FORM_URLENCODED);
         String appId = appIdService.getAppId(storeDomain);
 
         String parameters = String.format(config.getProperty("edt.api.getVocabItems.parameters"), appId, customerId,
                                         customerId.concat("_").concat(subUserId), productCode);
 
-        VocabularyResponseFromEdt vocabularyResponseFromEdt = postToEdt(new HttpEntity<>(parameters, httpHeaders),
-                        config.getProperty("edt.api.getVocabItems.url"), VocabularyResponseFromEdt.class);
+        VocabularyResponseFromEdt vocabularyResponseFromEdt = requestVocabularyOperationToEdt(parameters);
 
         if (!vocabularyResponseFromEdt.getResultCode().equals(EdtResponseCode.RESULT_OK)) {
             logger.info("Request failed, please check input and try again!");
@@ -90,15 +84,12 @@ public class VocabularyService {
     }
 
     public VocabularyInfoResponseDTO deleteVocabularies(String customerId, String subUserId, String productCode, List<String> languageList, String storeDomain) throws UnsupportedEncodingException {
-        HttpHeaders httpHeaders = new HttpHeaders();
-        httpHeaders.setContentType(APPLICATION_FORM_URLENCODED);
         String appId = appIdService.getAppId(storeDomain);
 
         String parameters = String.format(config.getProperty("edt.api.deleteVocabItems.parameters"), appId, customerId,
                 customerId.concat("_").concat(subUserId), productCode, encodeString(StringUtils.join(languageList, ",")));
 
-        VocabularyResponseFromEdt vocabularyResponseFromEdt = postToEdt(new HttpEntity<>(parameters, httpHeaders),
-                config.getProperty("edt.api.deleteVocabItems.url"), VocabularyResponseFromEdt.class);
+        VocabularyResponseFromEdt vocabularyResponseFromEdt = requestVocabularyOperationToEdt(parameters);
 
         if (!vocabularyResponseFromEdt.getResultCode().equals(EdtResponseCode.RESULT_OK)) {
             logger.info("Request failed, please check input and try again!");
@@ -110,8 +101,6 @@ public class VocabularyService {
     }
 
     public VocabularyInfoResponseDTO saveVocabulariesToEdt(VocabularyListInfoDTO vocabularyListInfoDTO, String storeDomain) throws UnsupportedEncodingException {
-        HttpHeaders httpHeaders = new HttpHeaders();
-        httpHeaders.setContentType(APPLICATION_FORM_URLENCODED);
         String appId = appIdService.getAppId(storeDomain);
 
         String VocabularyItemsString = StringUtils.join(vocabularyListInfoDTO.getVocabularyItemList()
@@ -126,8 +115,7 @@ public class VocabularyService {
                                         new Date().getTime(),
                                         encodeString(VocabularyItemsString));
 
-        VocabularyResponseFromEdt vocabularyResponseFromEdt = postToEdt(new HttpEntity<>(parameters, httpHeaders),
-                config.getProperty("edt.api.addVocabItems.url"), VocabularyResponseFromEdt.class);
+        VocabularyResponseFromEdt vocabularyResponseFromEdt = requestVocabularyOperationToEdt(parameters);
 
         if (!vocabularyResponseFromEdt.getResultCode().equals(EdtResponseCode.RESULT_OK)) {
             logger.info("Request failed, please check input and try again!");
@@ -173,5 +161,14 @@ public class VocabularyService {
             return URLEncoder.encode(str, "UTF-8");
         }
         return null;
+    }
+
+    private VocabularyResponseFromEdt requestVocabularyOperationToEdt(String parameters) {
+        HttpHeaders httpHeaders = new HttpHeaders();
+        httpHeaders.setContentType(APPLICATION_FORM_URLENCODED);
+
+        return postToEdt(new HttpEntity<>(parameters, httpHeaders),
+                config.getProperty("edt.api.vocabOperation.url"), VocabularyResponseFromEdt.class);
+
     }
 }

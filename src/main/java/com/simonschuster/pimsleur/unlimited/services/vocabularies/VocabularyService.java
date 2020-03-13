@@ -34,7 +34,7 @@ public class VocabularyService {
 
     private static final Logger logger = LoggerFactory.getLogger(VocabularyService.class);
 
-    private static final String loggerMessage = "Request failed, please check input and try again!";
+    private static final String VOCABULARY_OPERATION_LOGGER_MESSAGE = "Request failed, please check input and try again!";
 
     @Autowired
     private ApplicationConfiguration config;
@@ -60,7 +60,7 @@ public class VocabularyService {
         VocabularyResponseFromEdt vocabularyResponseFromEdt = requestVocabularyOperationToEdt(parameters);
 
         if (!vocabularyResponseFromEdt.getResultCode().equals(EdtResponseCode.RESULT_OK)) {
-            logger.info("Request failed, please check vocabularyInfoBodyDTO and try again! " + JsonUtils.toJsonString(vocabularyInfoBodyDTO));
+            logger.info("Request failed, please check vocabularyInfoBodyDTO and try again!");
             return new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.FAILED);
         }
 
@@ -79,7 +79,7 @@ public class VocabularyService {
         Integer resultCode = vocabularyResponseFromEdt.getResultCode();
 
         if (!resultCode.equals(EdtResponseCode.RESULT_OK) && !resultCode.equals(EdtResponseCode.RESULT_RECORD_NOT_FOUND)) {
-            logger.info(loggerMessage);
+            logger.info(VOCABULARY_OPERATION_LOGGER_MESSAGE);
             return new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.FAILED);
         }
 
@@ -98,7 +98,7 @@ public class VocabularyService {
         VocabularyResponseFromEdt vocabularyResponseFromEdt = requestVocabularyOperationToEdt(parameters);
 
         if (!vocabularyResponseFromEdt.getResultCode().equals(EdtResponseCode.RESULT_OK)) {
-            logger.info(loggerMessage);
+            logger.info(VOCABULARY_OPERATION_LOGGER_MESSAGE);
             return new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.FAILED);
         }
 
@@ -124,7 +124,7 @@ public class VocabularyService {
         VocabularyResponseFromEdt vocabularyResponseFromEdt = requestVocabularyOperationToEdt(parameters);
 
         if (!vocabularyResponseFromEdt.getResultCode().equals(EdtResponseCode.RESULT_OK)) {
-            logger.info("Request failed, please check vocabularyListInfoDTO and try again! " + JsonUtils.toJsonString(vocabularyListInfoDTO));
+            logger.info("Request failed, please check vocabularyListInfoDTO and try again!");
             return new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.FAILED);
         }
 

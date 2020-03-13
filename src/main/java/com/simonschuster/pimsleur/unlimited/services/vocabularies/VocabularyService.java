@@ -12,7 +12,6 @@ import com.simonschuster.pimsleur.unlimited.data.edt.vocabularies.VocabularyItem
 import com.simonschuster.pimsleur.unlimited.data.edt.vocabularies.VocabularyResponseFromEdt;
 import com.simonschuster.pimsleur.unlimited.services.AppIdService;
 import com.simonschuster.pimsleur.unlimited.utils.JsonUtils;
-import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -95,8 +94,10 @@ public class VocabularyService {
     public VocabularyInfoResponseDTO deleteVocabularies(String customerId, String subUserId, String productCode, List<String> languageList, String storeDomain) throws UnsupportedEncodingException {
         String appId = appIdService.getAppId(storeDomain);
 
+        String languageListString = JsonUtils.toJsonString(languageList);
+
         String parameters = String.format(config.getProperty("edt.api.deleteVocabItems.parameters"), appId, customerId,
-                customerId.concat("_").concat(subUserId), productCode, encodeString(StringUtils.join(languageList, ",")));
+                customerId.concat("_").concat(subUserId), productCode, encodeString(languageListString));
 
         VocabularyResponseFromEdt vocabularyResponseFromEdt = requestVocabularyOperationToEdt(parameters);
 

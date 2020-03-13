@@ -3,7 +3,7 @@ package com.simonschuster.pimsleur.unlimited.data.edt.vocabularies;
 import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class VocabularyItem {
+public class VocabularyItemFromEdt {
     @JsonProperty("customerId")
     private String customerId;
 

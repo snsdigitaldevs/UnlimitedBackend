@@ -13,13 +13,13 @@ import java.util.List;
 public class VocabularyItemsResultData {
 
     @JsonProperty("vocabularyItemsList")
-    private List<VocabularyItem> vocabularyItemList = null;
+    private List<VocabularyItemFromEdt> vocabularyItemFromEdtList = null;
 
-    public List<VocabularyItem> getVocabularyItemList() {
-        return vocabularyItemList;
+    public List<VocabularyItemFromEdt> getVocabularyItemFromEdtList() {
+        return vocabularyItemFromEdtList;
     }
 
-    public void setVocabularyItemList(List<VocabularyItem> vocabularyItemList) {
-        this.vocabularyItemList = vocabularyItemList;
+    public void setVocabularyItemFromEdtList(List<VocabularyItemFromEdt> vocabularyItemFromEdtList) {
+        this.vocabularyItemFromEdtList = vocabularyItemFromEdtList;
     }
 }

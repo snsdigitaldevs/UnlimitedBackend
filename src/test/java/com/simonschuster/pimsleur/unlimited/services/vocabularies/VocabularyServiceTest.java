@@ -89,10 +89,10 @@ public class VocabularyServiceTest {
             VocabularyInfoResponseDTO response = vocabularyService.getSaveVocabularyList("118950", "5ae0ced61cb1f", "9781508235972", null);
 
             assertEquals(VocabularyInfoResponseDTO.SUCCESS, response.getStatus());
-            assertEquals("118950", response.getVocabularyItemList().get(0).getCustomerId());
-            assertEquals("5ae0ced61cb1f", response.getVocabularyItemList().get(0).getSubUserId());
-            assertEquals("9781508235972", response.getVocabularyItemList().get(0).getProductCode());
-            assertEquals("test", response.getVocabularyItemList().get(0).getLanguage());
+            assertEquals("118950", response.getVocabularyItemFromEdtList().get(0).getCustomerId());
+            assertEquals("5ae0ced61cb1f", response.getVocabularyItemFromEdtList().get(0).getSubUserId());
+            assertEquals("9781508235972", response.getVocabularyItemFromEdtList().get(0).getProductCode());
+            assertEquals("test", response.getVocabularyItemFromEdtList().get(0).getLanguage());
 
         });
 
@@ -111,7 +111,7 @@ public class VocabularyServiceTest {
             VocabularyInfoResponseDTO response = vocabularyService.getSaveVocabularyList("118950", "5ae0ced61cb1f", null, null);
 
             assertEquals(VocabularyInfoResponseDTO.SUCCESS, response.getStatus());
-            assertEquals(0, response.getVocabularyItemList().size());
+            assertEquals(0, response.getVocabularyItemFromEdtList().size());
         });
 
     }

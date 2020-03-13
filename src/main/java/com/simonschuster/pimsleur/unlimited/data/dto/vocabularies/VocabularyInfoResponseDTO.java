@@ -1,7 +1,7 @@
 package com.simonschuster.pimsleur.unlimited.data.dto.vocabularies;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.simonschuster.pimsleur.unlimited.data.edt.vocabularies.VocabularyItem;
+import com.simonschuster.pimsleur.unlimited.data.edt.vocabularies.VocabularyItemFromEdt;
 
 import java.util.List;
 
@@ -14,15 +14,15 @@ public class VocabularyInfoResponseDTO {
 
     private String status;
 
-    private List<VocabularyItem> vocabularyItemList;
+    private List<VocabularyItemFromEdt> vocabularyItemFromEdtList;
 
     public VocabularyInfoResponseDTO(String status) {
         this.status = status;
     }
 
-    public VocabularyInfoResponseDTO(String status, List<VocabularyItem> vocabularyItemList) {
+    public VocabularyInfoResponseDTO(String status, List<VocabularyItemFromEdt> vocabularyItemFromEdtList) {
         this.status = status;
-        this.vocabularyItemList = vocabularyItemList;
+        this.vocabularyItemFromEdtList = vocabularyItemFromEdtList;
     }
 
     public String getStatus() {
@@ -33,11 +33,11 @@ public class VocabularyInfoResponseDTO {
         this.status = status;
     }
 
-    public List<VocabularyItem> getVocabularyItemList() {
-        return vocabularyItemList;
+    public List<VocabularyItemFromEdt> getVocabularyItemFromEdtList() {
+        return vocabularyItemFromEdtList;
     }
 
-    public void setVocabularyItemList(List<VocabularyItem> vocabularyItemList) {
-        this.vocabularyItemList = vocabularyItemList;
+    public void setVocabularyItemFromEdtList(List<VocabularyItemFromEdt> vocabularyItemFromEdtList) {
+        this.vocabularyItemFromEdtList = vocabularyItemFromEdtList;
     }
 }

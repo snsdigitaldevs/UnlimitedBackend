@@ -6,7 +6,7 @@ import com.simonschuster.pimsleur.unlimited.data.dto.vocabularies.VocabularyInfo
 import com.simonschuster.pimsleur.unlimited.data.dto.vocabularies.VocabularyItemDTO;
 import com.simonschuster.pimsleur.unlimited.data.dto.vocabularies.VocabularyListInfoDTO;
 import com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode;
-import com.simonschuster.pimsleur.unlimited.data.edt.vocabularies.VocabularyItem;
+import com.simonschuster.pimsleur.unlimited.data.edt.vocabularies.VocabularyItemFromEdt;
 import com.simonschuster.pimsleur.unlimited.data.edt.vocabularies.VocabularyItemToEdt;
 import com.simonschuster.pimsleur.unlimited.data.edt.vocabularies.VocabularyItemsResultData;
 import com.simonschuster.pimsleur.unlimited.data.edt.vocabularies.VocabularyResponseFromEdt;
@@ -86,9 +86,9 @@ public class VocabularyService {
             return new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.FAILED);
         }
 
-        List<VocabularyItem> vocabularyItemList = getVocabularyList(vocabularyResponseFromEdt.getVocabularyItemsResultData());
+        List<VocabularyItemFromEdt> vocabularyItemFromEdtList = getVocabularyList(vocabularyResponseFromEdt.getVocabularyItemsResultData());
 
-        return new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.SUCCESS, vocabularyItemList);
+        return new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.SUCCESS, vocabularyItemFromEdtList);
 
     }
 
@@ -143,18 +143,18 @@ public class VocabularyService {
         return "";
     }
 
-    private List<VocabularyItem> getVocabularyList(VocabularyItemsResultData vocabularyItemsResultData) {
+    private List<VocabularyItemFromEdt> getVocabularyList(VocabularyItemsResultData vocabularyItemsResultData) {
         if (vocabularyItemsResultData != null) {
-            return vocabularyItemsResultData.getVocabularyItemList()
+            return vocabularyItemsResultData.getVocabularyItemFromEdtList()
                     .stream()
                     .filter(Objects::nonNull)
-                    .map(vocabularyItem -> {
-                        String subUserId = vocabularyItem.getSubUserId();
+                    .map(vocabularyItemFromEdt -> {
+                        String subUserId = vocabularyItemFromEdt.getSubUserId();
                         String[] subUserIdArray = subUserId.split("_");
                         if (subUserIdArray.length == 2){
-                            vocabularyItem.setSubUserId(subUserIdArray[1]);
+                            vocabularyItemFromEdt.setSubUserId(subUserIdArray[1]);
                         }
-                        return vocabularyItem;
+                        return vocabularyItemFromEdt;
                     })
                     .collect(Collectors.toList());
         }

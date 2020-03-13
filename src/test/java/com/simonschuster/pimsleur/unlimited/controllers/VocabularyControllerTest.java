@@ -2,7 +2,7 @@ package com.simonschuster.pimsleur.unlimited.controllers;
 
 import com.simonschuster.pimsleur.unlimited.data.dto.vocabularies.VocabularyInfoBodyDTO;
 import com.simonschuster.pimsleur.unlimited.data.dto.vocabularies.VocabularyInfoResponseDTO;
-import com.simonschuster.pimsleur.unlimited.data.edt.vocabularies.VocabularyItem;
+import com.simonschuster.pimsleur.unlimited.data.edt.vocabularies.VocabularyItemFromEdt;
 import com.simonschuster.pimsleur.unlimited.services.vocabularies.VocabularyService;
 import com.simonschuster.pimsleur.unlimited.utils.JsonUtils;
 import org.junit.Test;
@@ -48,7 +48,7 @@ public class VocabularyControllerTest {
                                         .setTransliteration("some_transliteration_text")
                                         .setMp3FileName("123.mp3")
                                         .setPackGroupNumber(1);
-        List<VocabularyItem> vocabularyItemList = mockVocabularyItemList();
+        List<VocabularyItemFromEdt> vocabularyItemFromEdtList = mockVocabularyItemList();
 
         VocabularyInfoResponseDTO vocabularyInfoResponseDTO =
                 new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.SUCCESS);
@@ -97,10 +97,10 @@ public class VocabularyControllerTest {
 
     @Test
     public void should_get_vocabulary_list_success_when_call_get_vocabulary_list_api_given_valid_customer_info_and_product_code() throws Exception {
-        List<VocabularyItem> vocabularyItemList = mockVocabularyItemList();
+        List<VocabularyItemFromEdt> vocabularyItemFromEdtList = mockVocabularyItemList();
 
         VocabularyInfoResponseDTO vocabularyInfoResponseDTO =
-                new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.SUCCESS, vocabularyItemList);
+                new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.SUCCESS, vocabularyItemFromEdtList);
 
         when(vocabularyService.getSaveVocabularyList("118950", "5ae0ced61cb1f", "9781508235972", null ))
                 .thenReturn(vocabularyInfoResponseDTO);
@@ -112,27 +112,27 @@ public class VocabularyControllerTest {
                     .param("productCode", "9781508235972"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.status").value(VocabularyInfoResponseDTO.SUCCESS))
-                .andExpect(jsonPath("$.vocabularyItemList[0].customerId").value("118950"))
-                .andExpect(jsonPath("$.vocabularyItemList[0].subUserId").value("5ae0ced61cb1f"))
-                .andExpect(jsonPath("$.vocabularyItemList[0].productCode").value("9781508235972"))
-                .andExpect(jsonPath("$.vocabularyItemList[0].language").value("test"))
-                .andExpect(jsonPath("$.vocabularyItemList[0].transliteration").value("some_transliteration_text"))
-                .andExpect(jsonPath("$.vocabularyItemList[0].mp3FileName").value("123.mp3"))
-                .andExpect(jsonPath("$.vocabularyItemList[0].packGroupNumber").value(1));
+                .andExpect(jsonPath("$.vocabularyItemFromEdtList[0].customerId").value("118950"))
+                .andExpect(jsonPath("$.vocabularyItemFromEdtList[0].subUserId").value("5ae0ced61cb1f"))
+                .andExpect(jsonPath("$.vocabularyItemFromEdtList[0].productCode").value("9781508235972"))
+                .andExpect(jsonPath("$.vocabularyItemFromEdtList[0].language").value("test"))
+                .andExpect(jsonPath("$.vocabularyItemFromEdtList[0].transliteration").value("some_transliteration_text"))
+                .andExpect(jsonPath("$.vocabularyItemFromEdtList[0].mp3FileName").value("123.mp3"))
+                .andExpect(jsonPath("$.vocabularyItemFromEdtList[0].packGroupNumber").value(1));
     }
 
-    private List<VocabularyItem> mockVocabularyItemList() {
-        VocabularyItem vocabularyItem = new VocabularyItem();
-        vocabularyItem.setCustomerId("118950");
-        vocabularyItem.setSubUserId("5ae0ced61cb1f");
-        vocabularyItem.setProductCode("9781508235972");
-        vocabularyItem.setLanguage("test");
-        vocabularyItem.setTransliteration("some_transliteration_text");
-        vocabularyItem.setMp3FileName("123.mp3");
-        vocabularyItem.setPackGroupNumber(1);
-        List<VocabularyItem> vocabularyItemList = new ArrayList<>();
-        vocabularyItemList.add(vocabularyItem);
-        return vocabularyItemList;
+    private List<VocabularyItemFromEdt> mockVocabularyItemList() {
+        VocabularyItemFromEdt vocabularyItemFromEdt = new VocabularyItemFromEdt();
+        vocabularyItemFromEdt.setCustomerId("118950");
+        vocabularyItemFromEdt.setSubUserId("5ae0ced61cb1f");
+        vocabularyItemFromEdt.setProductCode("9781508235972");
+        vocabularyItemFromEdt.setLanguage("test");
+        vocabularyItemFromEdt.setTransliteration("some_transliteration_text");
+        vocabularyItemFromEdt.setMp3FileName("123.mp3");
+        vocabularyItemFromEdt.setPackGroupNumber(1);
+        List<VocabularyItemFromEdt> vocabularyItemFromEdtList = new ArrayList<>();
+        vocabularyItemFromEdtList.add(vocabularyItemFromEdt);
+        return vocabularyItemFromEdtList;
     }
 
     @Test

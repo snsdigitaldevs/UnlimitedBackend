@@ -175,7 +175,11 @@ public class VocabularyServiceTest {
                 .response(file("src/test/resources/VocabularyOperateFailedResponseNoResultFound.json"));
 
         running(server, () -> {
-            VocabularyInfoResponseDTO response = vocabularyService.saveVocabulariesToEdt(new VocabularyListInfoDTO(), null);
+            VocabularyListInfoDTO vocabularyListInfoDTO = new VocabularyListInfoDTO()
+                                                        .setCustomerId("118950")
+                                                        .setSubUserId("5ae0ced61cb1f")
+                                                        .setProductCode("9781508235972");
+            VocabularyInfoResponseDTO response = vocabularyService.saveVocabulariesToEdt(vocabularyListInfoDTO, null);
 
             assertEquals(VocabularyInfoResponseDTO.FAILED, response.getStatus());
         });

@@ -3,9 +3,11 @@ package com.simonschuster.pimsleur.unlimited.services.vocabularies;
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.dto.vocabularies.VocabularyInfoBodyDTO;
 import com.simonschuster.pimsleur.unlimited.data.dto.vocabularies.VocabularyInfoResponseDTO;
+import com.simonschuster.pimsleur.unlimited.data.dto.vocabularies.VocabularyItemDTO;
 import com.simonschuster.pimsleur.unlimited.data.dto.vocabularies.VocabularyListInfoDTO;
 import com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode;
 import com.simonschuster.pimsleur.unlimited.data.edt.vocabularies.VocabularyItem;
+import com.simonschuster.pimsleur.unlimited.data.edt.vocabularies.VocabularyItemToEdt;
 import com.simonschuster.pimsleur.unlimited.data.edt.vocabularies.VocabularyItemsResultData;
 import com.simonschuster.pimsleur.unlimited.data.edt.vocabularies.VocabularyResponseFromEdt;
 import com.simonschuster.pimsleur.unlimited.services.AppIdService;
@@ -21,6 +23,7 @@ import org.springframework.stereotype.Service;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 import java.util.Objects;
@@ -109,14 +112,11 @@ public class VocabularyService {
     public VocabularyInfoResponseDTO saveVocabulariesToEdt(VocabularyListInfoDTO vocabularyListInfoDTO, String storeDomain) throws UnsupportedEncodingException {
         String appId = appIdService.getAppId(storeDomain);
 
-        String vocabularyItemsString = StringUtils.join(vocabularyListInfoDTO.getVocabularyItemList()
-                .stream()
-                .map(JsonUtils::toJsonString)
-                .collect(Collectors.toList()), ",");
+        String vocabularyItemsString = convertVocabularyListToString(vocabularyListInfoDTO.getVocabularyItemList());
 
         String parameters = String.format(config.getProperty("edt.api.addVocabItems.parameters"), appId,
                                         vocabularyListInfoDTO.getCustomerId(),
-                                        vocabularyListInfoDTO.getSubUserId(),
+                                        vocabularyListInfoDTO.getCustomerId().concat("_").concat(vocabularyListInfoDTO.getSubUserId()),
                                         vocabularyListInfoDTO.getProductCode(),
                                         new Date().getTime(),
                                         encodeString(vocabularyItemsString));
@@ -129,6 +129,18 @@ public class VocabularyService {
         }
 
         return new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.SUCCESS);
+    }
+
+    private String convertVocabularyListToString(List<VocabularyItemDTO> vocabularyItemList) {
+        if (vocabularyItemList != null && vocabularyItemList.size() > 0) {
+            List<VocabularyItemToEdt> vocabularyItemToEdtList = vocabularyItemList.stream()
+                        .map(VocabularyItemToEdt::new)
+                        .collect(Collectors.toList());
+
+            return Arrays.toString(vocabularyItemToEdtList.stream()
+                    .map(JsonUtils::toJsonString).toArray());
+        }
+        return "";
     }
 
     private List<VocabularyItem> getVocabularyList(VocabularyItemsResultData vocabularyItemsResultData) {

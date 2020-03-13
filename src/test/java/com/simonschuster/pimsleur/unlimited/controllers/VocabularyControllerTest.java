@@ -2,6 +2,8 @@ package com.simonschuster.pimsleur.unlimited.controllers;
 
 import com.simonschuster.pimsleur.unlimited.data.dto.vocabularies.VocabularyInfoBodyDTO;
 import com.simonschuster.pimsleur.unlimited.data.dto.vocabularies.VocabularyInfoResponseDTO;
+import com.simonschuster.pimsleur.unlimited.data.dto.vocabularies.VocabularyItemDTO;
+import com.simonschuster.pimsleur.unlimited.data.dto.vocabularies.VocabularyListInfoDTO;
 import com.simonschuster.pimsleur.unlimited.data.edt.vocabularies.VocabularyItemFromEdt;
 import com.simonschuster.pimsleur.unlimited.services.vocabularies.VocabularyService;
 import com.simonschuster.pimsleur.unlimited.utils.JsonUtils;
@@ -121,20 +123,6 @@ public class VocabularyControllerTest {
                 .andExpect(jsonPath("$.vocabularyItemFromEdtList[0].packGroupNumber").value(1));
     }
 
-    private List<VocabularyItemFromEdt> mockVocabularyItemList() {
-        VocabularyItemFromEdt vocabularyItemFromEdt = new VocabularyItemFromEdt();
-        vocabularyItemFromEdt.setCustomerId("118950");
-        vocabularyItemFromEdt.setSubUserId("5ae0ced61cb1f");
-        vocabularyItemFromEdt.setProductCode("9781508235972");
-        vocabularyItemFromEdt.setLanguage("test");
-        vocabularyItemFromEdt.setTransliteration("some_transliteration_text");
-        vocabularyItemFromEdt.setMp3FileName("123.mp3");
-        vocabularyItemFromEdt.setPackGroupNumber(1);
-        List<VocabularyItemFromEdt> vocabularyItemFromEdtList = new ArrayList<>();
-        vocabularyItemFromEdtList.add(vocabularyItemFromEdt);
-        return vocabularyItemFromEdtList;
-    }
-
     @Test
     public void should_get_vocabulary_list_failed_when_call_get_vocabulary_list_api_given_null_productCode() throws Exception {
 
@@ -172,5 +160,51 @@ public class VocabularyControllerTest {
                 .param("customerId", "118950")
                 .param("subUserId", "5ae0ced61cb1f"))
                 .andExpect(status().is4xxClientError());
+    }
+
+    @Test
+    public void should_save_vocabularies_success_when_call_save_vocabularies_api_given_a_valid_vocabulary_info_body() throws Exception {
+        VocabularyListInfoDTO vocabularyListInfoDTO = mockVocabularyListInfoDTO();
+
+        VocabularyInfoResponseDTO vocabularyInfoResponseDTO =
+                new VocabularyInfoResponseDTO(VocabularyInfoResponseDTO.SUCCESS);
+
+        when(vocabularyService.saveVocabulariesToEdt(any(), any())).thenReturn(vocabularyInfoResponseDTO);
+        mockMvc.perform(post("/puProduct/vocabularies")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(JsonUtils.toJsonString(vocabularyListInfoDTO)))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.status").value(VocabularyInfoResponseDTO.SUCCESS));
+    }
+
+    private List<VocabularyItemFromEdt> mockVocabularyItemList() {
+        VocabularyItemFromEdt vocabularyItemFromEdt = new VocabularyItemFromEdt();
+        vocabularyItemFromEdt.setCustomerId("118950");
+        vocabularyItemFromEdt.setSubUserId("5ae0ced61cb1f");
+        vocabularyItemFromEdt.setProductCode("9781508235972");
+        vocabularyItemFromEdt.setLanguage("test");
+        vocabularyItemFromEdt.setTransliteration("some_transliteration_text");
+        vocabularyItemFromEdt.setMp3FileName("123.mp3");
+        vocabularyItemFromEdt.setPackGroupNumber(1);
+        List<VocabularyItemFromEdt> vocabularyItemFromEdtList = new ArrayList<>();
+        vocabularyItemFromEdtList.add(vocabularyItemFromEdt);
+        return vocabularyItemFromEdtList;
+    }
+
+    private VocabularyListInfoDTO mockVocabularyListInfoDTO() {
+        VocabularyItemDTO vocabularyItemDTO = new VocabularyItemDTO()
+                                            .setLanguage("对不起")
+                                            .setTransliteration("duì bù qĭ.")
+                                            .setTranslation("duì bù qĭ.")
+                                            .setTransliteration("https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/Mandarin Chinese I/audio/9781442394872_REVIEW_AUDIO_SNIPPETS/quiz/9781442394872_Mandarin_Chinese_1_QZ_002.mp3")
+                                            .setLessonNumber(1);
+
+        List<VocabularyItemDTO> vocabularyItemDTOList = Arrays.asList(vocabularyItemDTO);
+        return new VocabularyListInfoDTO()
+                                        .setCustomerId("118950")
+                                        .setSubUserId("5ae0ced61cb1f")
+                                        .setProductCode("9781508235972")
+                                        .setVocabularyItemList(vocabularyItemDTOList);
+
     }
 }

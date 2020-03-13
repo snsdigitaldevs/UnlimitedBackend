@@ -2,6 +2,7 @@ package com.simonschuster.pimsleur.unlimited.controllers;
 
 import com.simonschuster.pimsleur.unlimited.data.dto.vocabularies.VocabularyInfoBodyDTO;
 import com.simonschuster.pimsleur.unlimited.data.dto.vocabularies.VocabularyInfoResponseDTO;
+import com.simonschuster.pimsleur.unlimited.data.dto.vocabularies.VocabularyListInfoDTO;
 import com.simonschuster.pimsleur.unlimited.services.vocabularies.VocabularyService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +10,6 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,7 +18,6 @@ import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 @RestController
-@RequestMapping("/puProduct/vocabulary")
 public class VocabularyController {
 
     @Autowired
@@ -26,7 +25,7 @@ public class VocabularyController {
 
     @ApiOperation(value = "save vocabulary for PU course",
             notes = "save a vocabulary by one time for PU course")
-    @PostMapping
+    @PostMapping("/puProduct/vocabulary")
     public VocabularyInfoResponseDTO saveVocabulary(@Valid @RequestBody VocabularyInfoBodyDTO vocabularyInfoBodyDTO,
                                                     @RequestParam(required = false) String storeDomain) throws UnsupportedEncodingException {
         return vocabularyService.saveVocabularyToEdt(vocabularyInfoBodyDTO, storeDomain);
@@ -34,7 +33,7 @@ public class VocabularyController {
 
     @ApiOperation(value = "get vocabulary list for PU course",
             notes = "get vocabulary list by customerId, subUserId and productCode")
-    @GetMapping
+    @GetMapping("/puProduct/vocabulary")
     public VocabularyInfoResponseDTO getVocabularyList(@RequestParam String customerId,
                                                     @RequestParam String subUserId,
                                                     @RequestParam String productCode,
@@ -44,12 +43,21 @@ public class VocabularyController {
 
     @ApiOperation(value = "delete vocabularies for PU course",
             notes = "delete vocabularies by customerId, subUserId, productCode and language array")
-    @DeleteMapping
+    @DeleteMapping("/puProduct/vocabulary")
     public VocabularyInfoResponseDTO deleteVocabularies(@RequestParam String customerId,
                                                        @RequestParam String subUserId,
                                                        @RequestParam String productCode,
                                                        @RequestBody List<String> languageList,
                                                        @RequestParam(required = false) String storeDomain) throws UnsupportedEncodingException {
         return vocabularyService.deleteVocabularies(customerId, subUserId, productCode, languageList, storeDomain);
+    }
+
+
+    @ApiOperation(value = "save multiple vocabularies for PU course",
+            notes = "save multiple vocabularies by one time for PU course")
+    @PostMapping("/puProduct/vocabularies")
+    public VocabularyInfoResponseDTO saveVocabularyList(@Valid @RequestBody VocabularyListInfoDTO vocabularyListInfoDTO,
+                                                        @RequestParam(required = false) String storeDomain) throws UnsupportedEncodingException {
+        return vocabularyService.saveVocabulariesToEdt(vocabularyListInfoDTO, storeDomain);
     }
 }

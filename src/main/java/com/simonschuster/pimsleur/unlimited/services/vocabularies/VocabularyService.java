@@ -135,6 +135,7 @@ public class VocabularyService {
     private String convertVocabularyListToString(List<VocabularyItemDTO> vocabularyItemList) {
         if (vocabularyItemList != null && vocabularyItemList.size() > 0) {
             List<VocabularyItemToEdt> vocabularyItemToEdtList = vocabularyItemList.stream()
+                        .filter(vocabularyItem -> vocabularyItem.getLanguage() != null && !vocabularyItem.getLanguage().equals(""))
                         .map(VocabularyItemToEdt::new)
                         .collect(Collectors.toList());
 

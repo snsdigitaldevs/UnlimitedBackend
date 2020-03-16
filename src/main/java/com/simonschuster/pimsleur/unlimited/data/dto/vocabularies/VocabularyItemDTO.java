@@ -1,10 +1,8 @@
 package com.simonschuster.pimsleur.unlimited.data.dto.vocabularies;
 
-import javax.validation.constraints.NotEmpty;
 
 public class VocabularyItemDTO {
 
-    @NotEmpty
     private String language;
     private String transliteration;
     private String translation;

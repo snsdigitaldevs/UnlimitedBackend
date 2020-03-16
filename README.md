@@ -4,6 +4,13 @@
 ### Start services:
 ```java -jar target/unlimited-0.0.1-SNAPSHOT.jar```
 
+### Deploy to aws ec2 host on local:
+1. copy private key file to project root path and rename as pimsleur.pem
+2. run below commands
+```
+chmod 400 ./pimsleur.pem
+./jenkinsfiles/scripts/deploy.sh {env}   #DEV||QA||ITG||UAT
+```
 
 ### deploy to aws
     - go to jenkins: http://10.206.8.4:8080/job/Pimsleur_Backend/job/UmlimitedBackend_Deploy/    (username: admin, password: pimsleur)

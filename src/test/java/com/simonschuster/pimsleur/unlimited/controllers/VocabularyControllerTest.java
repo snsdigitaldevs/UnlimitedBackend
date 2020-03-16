@@ -177,6 +177,18 @@ public class VocabularyControllerTest {
                 .andExpect(jsonPath("$.status").value(VocabularyInfoResponseDTO.SUCCESS));
     }
 
+    @Test
+    public void should_save_vocabularies_failed_when_call_save_vocabularies_api_given_a_invalid_vocabulary_info_body() throws Exception {
+        VocabularyListInfoDTO vocabularyListInfoDTO = new VocabularyListInfoDTO()
+                            .setCustomerId("118950")
+                            .setSubUserId("5ae0ced61cb1f");
+
+        mockMvc.perform(post("/puProduct/vocabularies")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(JsonUtils.toJsonString(vocabularyListInfoDTO)))
+                .andExpect(status().is5xxServerError());
+    }
+
     private List<VocabularyItemFromEdt> mockVocabularyItemList() {
         VocabularyItemFromEdt vocabularyItemFromEdt = new VocabularyItemFromEdt();
         vocabularyItemFromEdt.setCustomerId("118950");

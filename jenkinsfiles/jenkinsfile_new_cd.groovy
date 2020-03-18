@@ -49,10 +49,15 @@ def deploy(hostnames, env) {
         def appurl = "http://${hostname}:${apport}"
 
         try {
-
-            sh "scp ${ci_build_package} ${hostuser}@${hostname}:~/${project_name}/${package_name}"
-            sh "scp jenkinsfiles/scripts/startupApp.sh  ${hostuser}@${hostname}:~/${project_name}/startupApp.sh"
-            sh "ssh ${hostuser}@${hostname} '~/${project_name}/startupApp.sh ${env} ~/${project_name} ${package_name}'  > /dev/null 2>&1 & "
+            if ( env == "dev" ) {
+                sh "sudo cp ${ci_build_package} /home/${hostuser}/${project_name}/${package_name}"
+                sh "sudo cp jenkinsfiles/scripts/startupApp.sh  /home/${hostuser}/${project_name}/startupApp.sh"
+                sh "sudo ~/${project_name}/startupApp.sh ${env} /home/${hostuser}/${project_name} ${package_name}  > /dev/null 2>&1 & "
+            } else {
+                sh "scp ${ci_build_package} ${hostuser}@${hostname}:~/${project_name}/${package_name}"
+                sh "scp jenkinsfiles/scripts/startupApp.sh  ${hostuser}@${hostname}:~/${project_name}/startupApp.sh"
+                sh "ssh ${hostuser}@${hostname} '~/${project_name}/startupApp.sh ${env} ~/${project_name} ${package_name}'  > /dev/null 2>&1 & "
+            }
 
             sleep 10
 

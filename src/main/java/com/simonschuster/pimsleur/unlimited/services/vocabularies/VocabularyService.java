@@ -46,17 +46,17 @@ public class VocabularyService {
 
     public VocabularyInfoResponseDTO saveVocabularyToEdt(VocabularyInfoBodyDTO vocabularyInfoBodyDTO, String storeDomain) throws UnsupportedEncodingException {
         String appId = appIdService.getAppId(storeDomain);
-        String vocabularySourceString = getVocabularySourceString(vocabularyInfoBodyDTO);
+        String vocabularySourceString = convertVocabularySourceString(vocabularyInfoBodyDTO);
 
         String parameters = String.format(config.getProperty("edt.api.addVocabItem.parameters"), appId,
                             vocabularyInfoBodyDTO.getCustomerId(),
                             vocabularyInfoBodyDTO.getCustomerId().concat("_").concat(vocabularyInfoBodyDTO.getSubUserId()),
                             vocabularyInfoBodyDTO.getProductCode(),
                             encodeString(vocabularyInfoBodyDTO.getLanguage()),
-                            encodeString(vocabularyInfoBodyDTO.getTransliteration()),
-                            encodeString(vocabularyInfoBodyDTO.getTranslation()),
-                            encodeString(vocabularyInfoBodyDTO.getMp3FileName()),
                             new Date().getTime(),
+                            encodeString(convertTransliterationString(vocabularyInfoBodyDTO.getTransliteration())),
+                            encodeString(convertTranslationString(vocabularyInfoBodyDTO.getTranslation())),
+                            encodeString(convertTranslationString(vocabularyInfoBodyDTO.getMp3FileName())),
                             vocabularySourceString);
 
         VocabularyResponseFromEdt vocabularyResponseFromEdt = requestVocabularyOperationToEdt(parameters);
@@ -164,7 +164,7 @@ public class VocabularyService {
 
     }
 
-    private String getVocabularySourceString(VocabularyInfoBodyDTO vocabularyInfoBodyDTO) {
+    private String convertVocabularySourceString(VocabularyInfoBodyDTO vocabularyInfoBodyDTO) {
         Integer lessonNumber = vocabularyInfoBodyDTO.getLessonNumber();
         Integer packGroupNumber = vocabularyInfoBodyDTO.getPackGroupNumber();
 
@@ -176,6 +176,30 @@ public class VocabularyService {
         if (packGroupNumber != null && lessonNumber == null) {
             String packGroupNumberKey = config.getProperty("edt.api.addVocabItem.packageGroupNumber.key");
             return "&".concat(packGroupNumberKey).concat("=").concat(String.valueOf(packGroupNumber));
+        }
+        return "";
+    }
+
+    private String convertTransliterationString(String transliteration) {
+        if (transliteration != null) {
+            String transliterationKey = config.getProperty("edt.api.addVocabItem.transliteration.key");
+            return "&".concat(transliterationKey).concat("=").concat(String.valueOf(transliteration));
+        }
+        return "";
+    }
+
+    private String convertTranslationString(String translation) {
+        if (translation != null) {
+            String transliterationKey = config.getProperty("edt.api.addVocabItem.translation.key");
+            return "&".concat(transliterationKey).concat("=").concat(String.valueOf(translation));
+        }
+        return "";
+    }
+
+    private String convertMp3FileNameString(String mp3FileName) {
+        if (mp3FileName != null) {
+            String mp3FileNameKey = config.getProperty("edt.api.addVocabItem.mp3FileName.key");
+            return "&".concat(mp3FileNameKey).concat("=").concat(String.valueOf(mp3FileName));
         }
         return "";
     }

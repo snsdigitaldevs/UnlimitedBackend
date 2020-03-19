@@ -54,9 +54,9 @@ public class VocabularyService {
                             vocabularyInfoBodyDTO.getProductCode(),
                             encodeString(vocabularyInfoBodyDTO.getLanguage()),
                             new Date().getTime(),
-                            encodeString(convertTransliterationString(vocabularyInfoBodyDTO.getTransliteration())),
-                            encodeString(convertTranslationString(vocabularyInfoBodyDTO.getTranslation())),
-                            encodeString(convertTranslationString(vocabularyInfoBodyDTO.getMp3FileName())),
+                            convertTransliterationString(vocabularyInfoBodyDTO.getTransliteration()),
+                            convertTranslationString(vocabularyInfoBodyDTO.getTranslation()),
+                            convertMp3FileNameString(vocabularyInfoBodyDTO.getMp3FileName()),
                             vocabularySourceString);
 
         VocabularyResponseFromEdt vocabularyResponseFromEdt = requestVocabularyOperationToEdt(parameters);
@@ -180,26 +180,26 @@ public class VocabularyService {
         return "";
     }
 
-    private String convertTransliterationString(String transliteration) {
+    private String convertTransliterationString(String transliteration) throws UnsupportedEncodingException {
         if (transliteration != null) {
             String transliterationKey = config.getProperty("edt.api.addVocabItem.transliteration.key");
-            return "&".concat(transliterationKey).concat("=").concat(String.valueOf(transliteration));
+            return "&".concat(transliterationKey).concat("=").concat(encodeString(transliteration));
         }
         return "";
     }
 
-    private String convertTranslationString(String translation) {
+    private String convertTranslationString(String translation) throws UnsupportedEncodingException {
         if (translation != null) {
             String transliterationKey = config.getProperty("edt.api.addVocabItem.translation.key");
-            return "&".concat(transliterationKey).concat("=").concat(String.valueOf(translation));
+            return "&".concat(transliterationKey).concat("=").concat(encodeString(translation));
         }
         return "";
     }
 
-    private String convertMp3FileNameString(String mp3FileName) {
+    private String convertMp3FileNameString(String mp3FileName) throws UnsupportedEncodingException {
         if (mp3FileName != null) {
             String mp3FileNameKey = config.getProperty("edt.api.addVocabItem.mp3FileName.key");
-            return "&".concat(mp3FileNameKey).concat("=").concat(String.valueOf(mp3FileName));
+            return "&".concat(mp3FileNameKey).concat("=").concat(encodeString(mp3FileName));
         }
         return "";
     }

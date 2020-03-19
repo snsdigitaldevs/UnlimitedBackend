@@ -184,7 +184,7 @@ public class VocabularyService {
         if (str !=null) {
             return URLEncoder.encode(str, "UTF-8");
         }
-        return null;
+        return "";
     }
 
     private VocabularyResponseFromEdt requestVocabularyOperationToEdt(String parameters) {

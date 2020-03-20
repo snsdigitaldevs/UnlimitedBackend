@@ -8,7 +8,7 @@ import com.simonschuster.pimsleur.unlimited.data.edt.customer.verifyReceipt.Veri
 import com.simonschuster.pimsleur.unlimited.services.AppIdService;
 import com.simonschuster.pimsleur.unlimited.utils.EdtErrorCodeUtil;
 import com.simonschuster.pimsleur.unlimited.utils.JsonUtils;
-import org.apache.commons.lang3.StringUtils;
+import java.util.concurrent.TimeUnit;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +26,10 @@ import static java.net.URLEncoder.encode;
 public class VerifyReceiptService {
 
     private static final Logger LOG = LoggerFactory.getLogger(VerifyReceiptService.class);
+    private static final String RESTORE_SUCCESS = "Restore success! CustomerId is {}，and VerifyReceiptBody is {}";
+    private static final String VERIFY_SUCCESS = "Restore success! CustomerId is {}，and VerifyReceiptBody is {}";
+    private static final String RESTORE_FAILED = "Restore failed! resultCode is {}, CustomerId is {}，and VerifyReceiptBody is {}";
+    private static final String VERIFY_FAILED = "Restore failed! resultCode is {}, CustomerId is {}，and VerifyReceiptBody is {}";
 
     private String singleAction = "kljh";
     private String multipleAction = "gfds";
@@ -37,25 +41,31 @@ public class VerifyReceiptService {
 
     public VerifyReceiptDTO verifyReceipt(VerifyReceiptBody verifyReceiptBody, String customerId)
         throws UnsupportedEncodingException {
-        if (StringUtils.isBlank(verifyReceiptBody.getReceipt())) {
-            LOG.error("receipt is empty, customerId is {}, verify body is {}", customerId,
-                JsonUtils.toJsonString(verifyReceiptBody));
-        }
         HttpEntity<String> entity = createPostBody(verifyReceiptBody, customerId);
         VerifyReceipt verifyReceiptResponse =
             postToEdt(entity, config.getProperty("edt.api.verifyReceipt.url"), VerifyReceipt.class);
-        int resultCode = verifyReceiptResponse.getResultCode();
+        int resultCode;
+        int retryTimes = 0;
+        do {
+            resultCode = verifyReceiptResponse.getResultCode();
+            logVerifyResult(resultCode, verifyReceiptBody, customerId, retryTimes);
+            retryTimes++;
+            try {
+                TimeUnit.SECONDS.sleep(2);
+            } catch (InterruptedException e) {
+                LOG.error("verify receipt sleep error", e);
+            }
+        } while (resultCode == EdtResponseCode.RESULT_APP_STORE_ERROR && retryTimes <= 3);
         if (resultCode != EdtResponseCode.RESULT_OK) {
-            logError(resultCode, verifyReceiptBody, customerId);
             EdtErrorCodeUtil
                 .throwError(verifyReceiptResponse.getResultCode(), "verify receipt failed!");
         }
-        logSuccess(verifyReceiptBody, customerId);
         return verifyReceiptResponse.fomartToDOT();
     }
 
-    private HttpEntity<String> createPostBody(VerifyReceiptBody verifyReceiptBody, String customerId)
-            throws UnsupportedEncodingException {
+    private HttpEntity<String> createPostBody(VerifyReceiptBody verifyReceiptBody,
+        String customerId)
+        throws UnsupportedEncodingException {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
 
@@ -66,54 +76,51 @@ public class VerifyReceiptService {
         String activeAppVersion = config.getProperty("verifyReceipt.appVersion");
         String verifyReceiptProperty = config.getProperty("edt.api.verifyReceipt.parameters");
         //if app is in apple evaluation process, purchase is verified by apple test environment
-        boolean verifyPurchaseInAppleTestEnv = (appVersion.equals(activeAppVersion)) && storeDomain.toLowerCase().contains("ios");
+        boolean verifyPurchaseInAppleTestEnv =
+            (appVersion.equals(activeAppVersion)) && storeDomain.toLowerCase().contains("ios");
 
         if (verifyPurchaseInAppleTestEnv) {
             String format = String.format(verifyReceiptProperty,
-                    storeDomain,
-                    customerId,
-                    appIdService.getAppId(storeDomain),
-                    transactionResult,
-                    receipt,
-                    verifyReceiptBody.getIsMultiple() ? multipleAction : singleAction,
-                    1
-            );
-            return new HttpEntity<>(format, headers);
-        }
-        verifyReceiptProperty = verifyReceiptProperty.replace("&glft=%d", "");
-        String format = String.format(verifyReceiptProperty,
                 storeDomain,
                 customerId,
                 appIdService.getAppId(storeDomain),
                 transactionResult,
                 receipt,
-                verifyReceiptBody.getIsMultiple() ? multipleAction : singleAction
+                verifyReceiptBody.getIsMultiple() ? multipleAction : singleAction,
+                1
+            );
+            return new HttpEntity<>(format, headers);
+        }
+        verifyReceiptProperty = verifyReceiptProperty.replace("&glft=%d", "");
+        String format = String.format(verifyReceiptProperty,
+            storeDomain,
+            customerId,
+            appIdService.getAppId(storeDomain),
+            transactionResult,
+            receipt,
+            verifyReceiptBody.getIsMultiple() ? multipleAction : singleAction
         );
         return new HttpEntity<>(format, headers);
     }
 
-    private void logError(Integer resultCode, VerifyReceiptBody verifyReceiptBody,
-        String customerId) {
-        if (verifyReceiptBody.getIsMultiple()) {
-            LOG.error(String
-                .format(
-                    "Restore failed! CustomerId is %s, resultCode is %s, and VerifyReceiptBody is %s",
-                    customerId, resultCode, JsonUtils.toJsonString(verifyReceiptBody)));
-        } else {
-            LOG.error(String
-                .format(
-                    "Verify failed! CustomerId is %s,resultCode is %s, and VerifyReceiptBody is %s",
-                    customerId, resultCode, JsonUtils.toJsonString(verifyReceiptBody)));
-        }
-    }
 
-    private void logSuccess(VerifyReceiptBody verifyReceiptBody, String customerId) {
-        if (verifyReceiptBody.getIsMultiple()) {
-            LOG.info(String
-                .format("Restore success! CustomerId is %s", customerId));
+    private void logVerifyResult(int resultCode, VerifyReceiptBody verifyReceiptBody,
+        String customerId, int retryTimes) {
+        LOG.info("verify receipt retry {} times", retryTimes);
+        if (resultCode == EdtResponseCode.RESULT_OK) {
+            if (verifyReceiptBody.getIsMultiple()) {
+                LOG.info(RESTORE_SUCCESS, customerId, JsonUtils.toJsonString(verifyReceiptBody));
+            } else {
+                LOG.info(VERIFY_SUCCESS, customerId, JsonUtils.toJsonString(verifyReceiptBody));
+            }
         } else {
-            LOG.info(String
-                .format("Verify success! CustomerId is %s", customerId));
+            if (verifyReceiptBody.getIsMultiple()) {
+                LOG.error(RESTORE_FAILED, resultCode, customerId,
+                    JsonUtils.toJsonString(verifyReceiptBody));
+            } else {
+                LOG.error(VERIFY_FAILED, resultCode, customerId,
+                    JsonUtils.toJsonString(verifyReceiptBody));
+            }
         }
     }
 }

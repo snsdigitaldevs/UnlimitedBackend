@@ -46,6 +46,7 @@ public class VerifyReceiptService {
             postToEdt(entity, config.getProperty("edt.api.verifyReceipt.url"), VerifyReceipt.class);
         int resultCode = verifyReceiptResponse.getResultCode();
         int retryTimes = 0;
+        logVerifyResult(resultCode, verifyReceiptBody, customerId, retryTimes);
         while (resultCode == EdtResponseCode.RESULT_APP_STORE_ERROR && retryTimes < 3) {
             try {
                 TimeUnit.SECONDS.sleep(2);

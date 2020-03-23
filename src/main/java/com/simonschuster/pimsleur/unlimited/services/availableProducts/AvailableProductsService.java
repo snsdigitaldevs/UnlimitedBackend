@@ -92,7 +92,6 @@ public class AvailableProductsService {
                                         });
                             })
                             .filter(dto -> dto.getLevel() != 0)
-                            .filter(distinctByKey(AvailableProductDto::getProductCode))
                             .collect(Collectors.toList());
             return availableProductDto;
         } else {

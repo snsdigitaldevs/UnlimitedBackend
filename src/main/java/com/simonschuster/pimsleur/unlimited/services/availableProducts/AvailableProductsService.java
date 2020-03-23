@@ -23,9 +23,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import org.springframework.util.StringUtils;
 
-import static com.simonschuster.pimsleur.unlimited.utils.DataConverterUtil.distinctByKey;
 import static java.util.Collections.emptyList;
-import static java.util.Comparator.comparing;
 import static java.util.stream.Collectors.toList;
 
 @Service

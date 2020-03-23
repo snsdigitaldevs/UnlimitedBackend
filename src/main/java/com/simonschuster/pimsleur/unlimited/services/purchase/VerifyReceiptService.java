@@ -44,18 +44,18 @@ public class VerifyReceiptService {
         HttpEntity<String> entity = createPostBody(verifyReceiptBody, customerId);
         VerifyReceipt verifyReceiptResponse =
             postToEdt(entity, config.getProperty("edt.api.verifyReceipt.url"), VerifyReceipt.class);
-        int resultCode;
+        int resultCode = verifyReceiptResponse.getResultCode();
         int retryTimes = 0;
-        do {
-            resultCode = verifyReceiptResponse.getResultCode();
-            logVerifyResult(resultCode, verifyReceiptBody, customerId, retryTimes);
-            retryTimes++;
+        while (resultCode == EdtResponseCode.RESULT_APP_STORE_ERROR && retryTimes < 3) {
             try {
                 TimeUnit.SECONDS.sleep(2);
             } catch (InterruptedException e) {
                 LOG.error("verify receipt sleep error", e);
             }
-        } while (resultCode == EdtResponseCode.RESULT_APP_STORE_ERROR && retryTimes <= 3);
+            resultCode = verifyReceiptResponse.getResultCode();
+            retryTimes++;
+            logVerifyResult(resultCode, verifyReceiptBody, customerId, retryTimes);
+        }
         if (resultCode != EdtResponseCode.RESULT_OK) {
             EdtErrorCodeUtil
                 .throwError(verifyReceiptResponse.getResultCode(), "verify receipt failed!");

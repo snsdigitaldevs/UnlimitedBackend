@@ -52,6 +52,8 @@ public class VerifyReceiptService {
             } catch (InterruptedException e) {
                 LOG.error("verify receipt sleep error", e);
             }
+            verifyReceiptResponse = postToEdt(entity,
+                config.getProperty("edt.api.verifyReceipt.url"), VerifyReceipt.class);
             resultCode = verifyReceiptResponse.getResultCode();
             retryTimes++;
             logVerifyResult(resultCode, verifyReceiptBody, customerId, retryTimes);

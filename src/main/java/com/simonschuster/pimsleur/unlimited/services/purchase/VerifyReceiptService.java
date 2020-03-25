@@ -26,6 +26,8 @@ import static java.net.URLEncoder.encode;
 public class VerifyReceiptService {
 
     private static final Logger LOG = LoggerFactory.getLogger(VerifyReceiptService.class);
+    public static final int MAX_TIME = 3;
+    public static final long SLEEP_UNIT = 500;
     private static final String RESTORE_SUCCESS = "Restore success! CustomerId is {}，and VerifyReceiptBody is {}";
     private static final String VERIFY_SUCCESS = "Restore success! CustomerId is {}，and VerifyReceiptBody is {}";
     private static final String RESTORE_FAILED = "Restore failed! resultCode is {}, CustomerId is {}，and VerifyReceiptBody is {}";
@@ -47,9 +49,9 @@ public class VerifyReceiptService {
         int resultCode = verifyReceiptResponse.getResultCode();
         int retryTimes = 0;
         logVerifyResult(resultCode, verifyReceiptBody, customerId, retryTimes);
-        while (resultCode == EdtResponseCode.RESULT_APP_STORE_ERROR && retryTimes < 3) {
+        while (resultCode == EdtResponseCode.RESULT_APP_STORE_ERROR && retryTimes++ < MAX_TIME) {
             try {
-                TimeUnit.SECONDS.sleep(2);
+                TimeUnit.MICROSECONDS.sleep(retryTimes * SLEEP_UNIT);
             } catch (InterruptedException e) {
                 LOG.error("verify receipt sleep error", e);
             }

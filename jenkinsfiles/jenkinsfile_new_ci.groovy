@@ -30,10 +30,12 @@ pipeline {
         stage('Sonar-Scan'){
             agent any
             steps{
-                withSonarQubeEnv('sonarqube-host') {
-                    sh '''
-                    mvn sonar:sonar -Dsonar.projectKey=UnlimitedBackend_${env.BRANCH_NAME} -Dsonar.projectName=UnlimitedBackend_${env.BRANCH_NAME}
-                    '''
+                script {
+                    withSonarQubeEnv('sonarqube-host') {
+                        def project_key="UnlimitedBackend_${env.BRANCH_NAME}"
+                        echo "${project_key}"
+                        sh "mvn sonar:sonar -Dsonar.projectKey=${project_key} -Dsonar.projectName=${project_key}"
+                    }
                 }
             }
         }

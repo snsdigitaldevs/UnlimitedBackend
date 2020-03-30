@@ -13,7 +13,7 @@ public class VocabularyItemToEdt {
 
     public VocabularyItemToEdt(VocabularyItemDTO vocabularyItemDTO) {
         this.key = vocabularyItemDTO.getLanguage();
-        this.trlitn = vocabularyItemDTO.getTranslation();
+        this.trlitn = vocabularyItemDTO.getTransliteration();
         this.trln = vocabularyItemDTO.getTranslation();
         this.fnm = vocabularyItemDTO.getMp3FileName();
         this.kln = vocabularyItemDTO.getLessonNumber();

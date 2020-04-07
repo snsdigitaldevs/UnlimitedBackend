@@ -67,6 +67,11 @@ public class PcmCourseInfoServiceTest {
                 .response(file("src/test/resources/pcmCustInfoResponse.json"));
 
         server.post(and(
+            by(uri("/subscr_production_v_9/action_handlers/rsovkolfqxrjl.php")),
+            eq(form("action"), "tw_blmqide")))
+            .response(file("src/test/resources/pcmCustInfoResponse.json"));
+
+        server.post(and(
                 by(uri("/subscr_dev/action_handlers/nwdft.php")),
                 eq(form("action"), "slruldr")))
                 .response(file("src/test/resources/pcmNewVersionAudioLinkRequest.json"));

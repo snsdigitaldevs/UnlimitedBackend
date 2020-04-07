@@ -17,6 +17,7 @@ public class EdtResponseCode {
   public static final int RESULT_GENERAL_ERROR = -1;
   public static final int RESULT_USER_ID_ALREADY_EXISTS = -1043;
   public static final int RESULT_RECORD_NOT_FOUND = -201;
+  public static final int RESULT_APP_STORE_ERROR = -9302;
 
   @JsonProperty("result_code")
   private Integer resultCode;

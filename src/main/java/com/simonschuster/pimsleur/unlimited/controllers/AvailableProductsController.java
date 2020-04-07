@@ -1,5 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.controllers;
 
+import static com.simonschuster.pimsleur.unlimited.utils.DataConverterUtil.distinctByKey;
 import static java.util.Comparator.comparing;
 
 import com.simonschuster.pimsleur.unlimited.data.dto.availableProducts.AvailableProductsDto;
@@ -39,7 +40,9 @@ public class AvailableProductsController {
                     item.setProductCode(withOtherFormatAs.getISBN());
                 }
                 updateCourseName(item);
-            }).sorted(comparing(AvailableProductDto::getCourseName)).collect(Collectors.toList()));
+            }).sorted(comparing(AvailableProductDto::getCourseName))
+                .filter(distinctByKey(AvailableProductDto::getProductCode))
+                .collect(Collectors.toList()));
         availableProducts.getFreeProducts().forEach(this::updateCourseName);
         return availableProducts;
     }

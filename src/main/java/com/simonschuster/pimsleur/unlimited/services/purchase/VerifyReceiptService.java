@@ -25,8 +25,8 @@ import static java.net.URLEncoder.encode;
 public class VerifyReceiptService {
 
     private static final Logger LOG = LoggerFactory.getLogger(VerifyReceiptService.class);
-    public static final int MAX_TIME = 3;
-    public static final long SLEEP_UNIT = 500;
+    private static final int MAX_TIME = 3;
+    private static final long SLEEP_UNIT = 500;
     private static final String RESTORE_SUCCESS = "Restore success! CustomerId is {} and VerifyReceiptBody is {}";
     private static final String VERIFY_SUCCESS = "Verify success! CustomerId is {} and VerifyReceiptBody is {}";
     private static final String RESTORE_FAILED = "Restore failed! resultCode is {} CustomerId is {} and VerifyReceiptBody is {}";

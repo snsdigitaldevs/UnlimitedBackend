@@ -57,7 +57,6 @@ public class VerifyReceiptService {
             verifyReceiptResponse = postToEdt(entity,
                 config.getProperty("edt.api.verifyReceipt.url"), VerifyReceiptResponse.class);
             resultCode = verifyReceiptResponse.getResultCode();
-            retryTimes++;
             logVerifyResult(resultCode, verifyReceiptBody, customerId, retryTimes);
         }
         return VerifyReceiptDTO.fromVerifyResponse(verifyReceiptResponse);

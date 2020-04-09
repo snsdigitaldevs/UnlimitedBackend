@@ -28,7 +28,7 @@ public class VerifyReceiptDTO {
         if (response.getResultCode() == EdtResponseCode.RESULT_OK) {
             verifyReceiptDTO
                 .setPurchaseStatusDidChange(response.getResultData().getPurchaseStatusDidChange());
-        } else if (response.getResultCode() == EdtResponseCode.RESULT_GENERAL_ERROR) {
+        } else if (response.getResultCode() == EdtResponseCode.RESULT_APPSTORE_RECEIPT_DATA_MISSING) {
             verifyReceiptDTO.setShouldUpdateReceipt(true);
         }
         return verifyReceiptDTO;

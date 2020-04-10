@@ -36,9 +36,8 @@ public class EDTRequestUtil {
             checkResult(url, httpEntity, response);
             return response;
         } catch (Exception e) {
-            LOG.error("Request:[{}] EDT execute error, params is {}", url, httpEntity.toString(),
-                e);
-            throw new PimsleurException("EDT execute error");
+            LOG.error("Request:[{}] EDT execute error, params is {}", url, httpEntity.toString());
+            throw e;
         }
     }
 

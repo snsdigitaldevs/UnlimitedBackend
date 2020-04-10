@@ -29,6 +29,11 @@ Instance:  i-0e7490d0b50185618 (QA_UnlimitedBackend)
 
 Public DNS: ec2-34-232-139-149.compute-1.amazonaws.com
 
+#### ITG:
+Instance: i-0e46cc08c799b1235 (ITG_UnlimitedBackend)
+
+Public DNS: ec2-34-229-55-156.compute-1.amazonaws.com
+
 #### UAT:
 Instance:  i-0e46cc08c799b1235 (UAT_UnlimitedBackend)
 

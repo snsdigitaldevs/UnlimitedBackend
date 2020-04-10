@@ -1,13 +1,11 @@
 package com.simonschuster.pimsleur.unlimited.utils;
 
-import com.simonschuster.pimsleur.unlimited.common.exception.PimsleurException;
 import com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
-import org.springframework.web.client.HttpServerErrorException;
 import org.springframework.web.client.RestTemplate;
 
 import static java.util.Arrays.asList;
@@ -29,9 +27,8 @@ public class EDTRequestUtil {
     public static <T> T postToEdt(HttpEntity<String> httpEntity, String url,
         Class<T> responseType) {
         long startTime = System.currentTimeMillis();
-        T response;
         try {
-            response = REST_TEMPLATE.postForObject(url, httpEntity, responseType);
+            T response = REST_TEMPLATE.postForObject(url, httpEntity, responseType);
             LOG.info("Request[{}] for EDT cost {}ms", url, System.currentTimeMillis() - startTime);
             checkResult(url, httpEntity, response);
             return response;

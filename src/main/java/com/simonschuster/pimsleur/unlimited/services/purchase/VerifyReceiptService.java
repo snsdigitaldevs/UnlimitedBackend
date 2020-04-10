@@ -7,6 +7,8 @@ import com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.verifyReceipt.VerifyReceiptResponse;
 import com.simonschuster.pimsleur.unlimited.services.AppIdService;
 import com.simonschuster.pimsleur.unlimited.utils.JsonUtils;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -35,6 +37,8 @@ public class VerifyReceiptService {
     private String singleAction = "kljh";
     private String multipleAction = "gfds";
 
+    private Set<String> testSet = new HashSet<>();
+
     @Autowired
     private ApplicationConfiguration config;
     @Autowired
@@ -42,6 +46,10 @@ public class VerifyReceiptService {
 
     public VerifyReceiptDTO verifyReceipt(VerifyReceiptBody verifyReceiptBody, String customerId)
         throws UnsupportedEncodingException {
+        if(!testSet.contains(customerId)){
+            testSet.add(customerId);
+            return VerifyReceiptDTO.buildTestDTO();
+        }
         HttpEntity<String> entity = createPostBody(verifyReceiptBody, customerId);
         VerifyReceiptResponse verifyReceiptResponse =
             postToEdt(entity, config.getProperty("edt.api.verifyReceipt.url"), VerifyReceiptResponse.class);
@@ -59,6 +67,7 @@ public class VerifyReceiptService {
             resultCode = verifyReceiptResponse.getResultCode();
             logVerifyResult(resultCode, verifyReceiptBody, customerId, retryTimes);
         }
+        testSet.remove(customerId);
         return VerifyReceiptDTO.fromVerifyResponse(verifyReceiptResponse);
     }
 

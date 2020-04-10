@@ -34,4 +34,10 @@ public class VerifyReceiptDTO {
         }
         return verifyReceiptDTO;
     }
+
+    public static VerifyReceiptDTO buildTestDTO() {
+        VerifyReceiptDTO verifyReceiptDTO = new VerifyReceiptDTO();
+        verifyReceiptDTO.setShouldUpdateReceipt(true);
+        return verifyReceiptDTO;
+    }
 }

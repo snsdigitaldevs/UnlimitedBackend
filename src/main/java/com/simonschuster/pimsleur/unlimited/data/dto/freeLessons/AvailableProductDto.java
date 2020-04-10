@@ -2,6 +2,7 @@ package com.simonschuster.pimsleur.unlimited.data.dto.freeLessons;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.simonschuster.pimsleur.unlimited.data.dto.promotions.UpsellDto;
 
 import java.util.Objects;
 
@@ -23,6 +24,8 @@ public class AvailableProductDto {
 
     private boolean isSubscription;
     private String storeDomain;
+
+    private UpsellDto upsellDto;
 
     public AvailableProductDto() {
     }
@@ -131,5 +134,13 @@ public class AvailableProductDto {
             return "Brazilian Portuguese";
         }
         return languageName;
+    }
+
+    public UpsellDto getUpsellDto() {
+        return upsellDto;
+    }
+
+    public void setUpsellDto(UpsellDto upsellDto) {
+        this.upsellDto = upsellDto;
     }
 }

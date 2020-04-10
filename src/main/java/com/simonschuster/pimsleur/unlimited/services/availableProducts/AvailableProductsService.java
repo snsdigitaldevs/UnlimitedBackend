@@ -4,6 +4,7 @@ import com.simonschuster.pimsleur.unlimited.aop.annotation.LogCostTime;
 import com.simonschuster.pimsleur.unlimited.data.dto.availableProducts.AvailableProductsDto;
 import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.AvailableProductDto;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
+import com.simonschuster.pimsleur.unlimited.data.dto.promotions.UpsellDto;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.CustomerInfo;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.OrdersProduct;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.Product;
@@ -13,6 +14,8 @@ import com.simonschuster.pimsleur.unlimited.services.customer.EDTCustomerInfoSer
 import com.simonschuster.pimsleur.unlimited.services.freeLessons.PcmFreeLessonsService;
 import com.simonschuster.pimsleur.unlimited.services.freeLessons.PuFreeLessonsService;
 import java.util.ArrayList;
+
+import com.simonschuster.pimsleur.unlimited.services.promotions.UpsellService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -37,6 +40,8 @@ public class AvailableProductsService {
     private PuFreeLessonsService puFreeLessonsService;
     @Autowired
     private PUCourseInfoService puCourseInfoService;
+    @Autowired
+    private UpsellService upsellService;
 
     @LogCostTime
     public AvailableProductsDto getAvailableProducts(String sub, String email, String storeDomain) {
@@ -108,18 +113,30 @@ public class AvailableProductsService {
         return freeProducts.stream()
                 .filter(free -> purchasedProducts.stream().noneMatch(purchased -> purchased.isSameLang(free)))
                 //for free lessons, the isbn used to call upsell api is always the original isbn itself
-                .peek(free -> free.setProductCodeForUpsell(free.getProductCode()))
+                .peek(free -> {
+                    setUpsellInfo(free);
+                })
                 .collect(toList());
     }
 
+    private void setUpsellInfo(AvailableProductDto free) {
+        String productCode = free.getProductCode();
+        UpsellDto upsellDto = upsellService.getUpsellInfoForAvailableProduct(productCode);
+        free.setProductCodeForUpsell(productCode);
+        free.setUpsellDto(upsellDto);
+    }
+
     public Stream<AvailableProductDto> puProductToDtos(Product product, String storeDomain) {
+        String productCode = product.getProductCode();
         if (PUProductHasChildren(product)) {
             List<Course> courses = puCourseInfoService.getPuProductInfo(product.getProductCode(), storeDomain).toDto();
             return courses.stream().map(course -> {
                 AvailableProductDto dto = course.toPuAvailableProductDto();
                 // if the pu product is kitted or subscription, use the mother isbn for upsell for all its children
                 // otherwise, use the single level isbn for upsell api
-                dto.setProductCodeForUpsell(product.getProductCode());
+                dto.setProductCodeForUpsell(productCode);
+                UpsellDto upsellDto = upsellService.getUpsellInfoForAvailableProduct(productCode);
+                dto.setUpsellDto(upsellDto);
                 return dto;
             });
         }
@@ -132,7 +149,9 @@ public class AvailableProductsService {
                             product.getProductCode(),
                             true,
                             product.getProductsLevel());
-            dto.setProductCodeForUpsell(product.getProductCode());
+            dto.setProductCodeForUpsell(productCode);
+            UpsellDto upsellDto = upsellService.getUpsellInfoForAvailableProduct(productCode);
+            dto.setUpsellDto(upsellDto);
             List<AvailableProductDto> dtos = Arrays.asList(dto);
             return dtos.stream();
         }

@@ -1,6 +1,7 @@
 package com.simonschuster.pimsleur.unlimited.services.purchase;
 
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
+import com.simonschuster.pimsleur.unlimited.constants.StoreDomainConstants;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.VerifyReceiptBody;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.VerifyReceiptDTO;
 import com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode;
@@ -10,6 +11,7 @@ import com.simonschuster.pimsleur.unlimited.utils.JsonUtils;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -85,7 +87,10 @@ public class VerifyReceiptService {
         //if app is in apple evaluation process, purchase is verified by apple test environment
         boolean verifyPurchaseInAppleTestEnv =
             (appVersion.equals(activeAppVersion)) && storeDomain.toLowerCase().contains("ios");
-
+        if (StringUtils.equalsIgnoreCase(StoreDomainConstants.ANDROID_IN_APP, storeDomain)
+            && StringUtils.isBlank(verifyReceiptBody.getReceipt())) {
+            receipt = "nothing";
+        }
         if (verifyPurchaseInAppleTestEnv) {
             String format = String.format(verifyReceiptProperty,
                 storeDomain,

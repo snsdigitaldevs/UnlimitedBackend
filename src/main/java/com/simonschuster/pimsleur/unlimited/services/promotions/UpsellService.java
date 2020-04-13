@@ -58,25 +58,6 @@ public class UpsellService {
         }
     }
 
-    public UpsellDto getUpsellInfoForAvailableProduct(String productCode) {
-        PurchaseMapping purchaseMapping = purchaseMappingService.findPurchaseMappingFor(productCode);
-
-        UpsellDto upsellDto = new UpsellDto();
-        if (purchaseMapping == null) {
-            return upsellDto;
-        }
-        upsellDto = purchaseMapping.toUpsellDto();
-        UpsellDto finalUpsellDto = formatMappingService.updateNameDescriptionLink(upsellDto);
-
-        FormatMapping withOtherFormatAs = formatMappingService.findISBNWithOtherFormatAs(
-                purchaseMapping.getUpsellInAppPurchaseISBN());
-        if(withOtherFormatAs != null && finalUpsellDto.getNextLevel() != null){
-            finalUpsellDto.getNextLevel().setBaseISBN(withOtherFormatAs.getISBN());
-        }
-        return finalUpsellDto;
-
-    }
-
     private boolean isBought(List<String> boughtIsbns, String isbn) {
         List<String> allFormatsOfIsbn = formatMappingService.getAllFormatsOf(isbn);
         boolean isIsbnBought = boughtIsbns.stream().anyMatch(allFormatsOfIsbn::contains);

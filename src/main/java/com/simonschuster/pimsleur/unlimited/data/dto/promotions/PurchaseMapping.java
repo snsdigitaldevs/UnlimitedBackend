@@ -135,13 +135,6 @@ public class PurchaseMapping {
                 createNextVersion(isUpgradeIgnored));
     }
 
-    public UpsellDto toUpsellDto() {
-        return new UpsellDto(
-                new UpsellItem(getUpsellInAppPurchaseISBN(), getUpsellCourseName(), getUpsellWebAppAddToCart()),
-                new UpsellItem(getUpsell2InAppPurchaseISBN(), getUpsell2CourseName(), getUpsell2WebAppAddToCart()),
-                new UpsellItem(getUpgradeInAppPurchaseISBN(), getUpgradeCourseName(), getUpgradeWebAppAddToCart()));
-    }
-
     private UpsellItem createNextLevel(boolean ignoreUpsell) {
         if (!ignoreUpsell && getUpsellInAppPurchaseISBN().length() > 0) {
             return new UpsellItem(getUpsellInAppPurchaseISBN(), getUpsellCourseName(), getUpsellWebAppAddToCart());

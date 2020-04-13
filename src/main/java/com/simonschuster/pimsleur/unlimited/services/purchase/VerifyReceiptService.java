@@ -48,8 +48,9 @@ public class VerifyReceiptService {
 
     public VerifyReceiptDTO verifyReceipt(VerifyReceiptBody verifyReceiptBody, String customerId)
         throws UnsupportedEncodingException {
-        if(!testSet.contains(customerId)){
+        if (!testSet.contains(customerId)) {
             testSet.add(customerId);
+            LOG.error("test verifyReceiptBody is {}", JsonUtils.toJsonString(verifyReceiptBody));
             return VerifyReceiptDTO.buildTestDTO();
         }
         HttpEntity<String> entity = createPostBody(verifyReceiptBody, customerId);

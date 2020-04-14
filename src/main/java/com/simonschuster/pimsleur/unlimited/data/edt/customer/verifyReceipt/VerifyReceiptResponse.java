@@ -12,7 +12,7 @@ import com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode;
         "result_data",
         "result_code"
 })
-public class VerifyReceipt extends EdtResponseCode {
+public class VerifyReceiptResponse extends EdtResponseCode {
 
     @JsonProperty("result_data")
     private ResultData resultData;
@@ -25,9 +25,5 @@ public class VerifyReceipt extends EdtResponseCode {
     @JsonProperty("result_data")
     public void setResultData(ResultData resultData) {
         this.resultData = resultData;
-    }
-
-    public VerifyReceiptDTO fomartToDOT() {
-        return new VerifyReceiptDTO(this.getResultData().getPurchaseStatusDidChange());
     }
 }

@@ -18,6 +18,8 @@ public class EdtResponseCode {
   public static final int RESULT_USER_ID_ALREADY_EXISTS = -1043;
   public static final int RESULT_RECORD_NOT_FOUND = -201;
   public static final int RESULT_APP_STORE_ERROR = -9302;
+  public static final int RESULT_APPSTORE_RECEIPT_DATA_MISSING = -9315;
+  public static final int RESULT_APPSTORE_VALIDATION_ERROR_RECEIPT_TOO_OLD = -9314;
 
   @JsonProperty("result_code")
   private Integer resultCode;

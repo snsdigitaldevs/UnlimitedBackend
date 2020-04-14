@@ -27,10 +27,15 @@ public class EDTRequestUtil {
     public static <T> T postToEdt(HttpEntity<String> httpEntity, String url,
         Class<T> responseType) {
         long startTime = System.currentTimeMillis();
-        T response = REST_TEMPLATE.postForObject(url, httpEntity, responseType);
-        LOG.info("Request[{}] for EDT cost {}ms", url, System.currentTimeMillis() - startTime);
-        checkResult(url, httpEntity, response);
-        return response;
+        try {
+            T response = REST_TEMPLATE.postForObject(url, httpEntity, responseType);
+            LOG.info("Request[{}] for EDT cost {}ms", url, System.currentTimeMillis() - startTime);
+            checkResult(url, httpEntity, response);
+            return response;
+        } catch (Exception e) {
+            LOG.error("Request:[{}] EDT execute error, params is {}", url, httpEntity.toString());
+            throw e;
+        }
     }
 
     public static <T> T getFromEdt(String url, Class<T> responseType,

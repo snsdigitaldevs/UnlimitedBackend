@@ -1,14 +1,17 @@
 package com.simonschuster.pimsleur.unlimited.services.purchase;
 
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
+import com.simonschuster.pimsleur.unlimited.constants.StoreDomainConstants;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.VerifyReceiptBody;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.VerifyReceiptDTO;
 import com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode;
-import com.simonschuster.pimsleur.unlimited.data.edt.customer.verifyReceipt.VerifyReceipt;
+import com.simonschuster.pimsleur.unlimited.data.edt.customer.verifyReceipt.VerifyReceiptResponse;
 import com.simonschuster.pimsleur.unlimited.services.AppIdService;
-import com.simonschuster.pimsleur.unlimited.utils.EdtErrorCodeUtil;
 import com.simonschuster.pimsleur.unlimited.utils.JsonUtils;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,8 +29,8 @@ import static java.net.URLEncoder.encode;
 public class VerifyReceiptService {
 
     private static final Logger LOG = LoggerFactory.getLogger(VerifyReceiptService.class);
-    public static final int MAX_TIME = 3;
-    public static final long SLEEP_UNIT = 500;
+    private static final int MAX_TIME = 3;
+    private static final long SLEEP_UNIT = 500;
     private static final String RESTORE_SUCCESS = "Restore success! CustomerId is {} and VerifyReceiptBody is {}";
     private static final String VERIFY_SUCCESS = "Verify success! CustomerId is {} and VerifyReceiptBody is {}";
     private static final String RESTORE_FAILED = "Restore failed! resultCode is {} CustomerId is {} and VerifyReceiptBody is {}";
@@ -36,6 +39,8 @@ public class VerifyReceiptService {
     private String singleAction = "kljh";
     private String multipleAction = "gfds";
 
+    private Set<String> testSet = new HashSet<>();
+
     @Autowired
     private ApplicationConfiguration config;
     @Autowired
@@ -43,9 +48,14 @@ public class VerifyReceiptService {
 
     public VerifyReceiptDTO verifyReceipt(VerifyReceiptBody verifyReceiptBody, String customerId)
         throws UnsupportedEncodingException {
+        if (!testSet.contains(customerId)) {
+            testSet.add(customerId);
+            LOG.error("test verifyReceiptBody is {}", JsonUtils.toJsonString(verifyReceiptBody));
+            return VerifyReceiptDTO.buildTestDTO();
+        }
         HttpEntity<String> entity = createPostBody(verifyReceiptBody, customerId);
-        VerifyReceipt verifyReceiptResponse =
-            postToEdt(entity, config.getProperty("edt.api.verifyReceipt.url"), VerifyReceipt.class);
+        VerifyReceiptResponse verifyReceiptResponse =
+            postToEdt(entity, config.getProperty("edt.api.verifyReceipt.url"), VerifyReceiptResponse.class);
         int resultCode = verifyReceiptResponse.getResultCode();
         int retryTimes = 0;
         logVerifyResult(resultCode, verifyReceiptBody, customerId, retryTimes);
@@ -56,21 +66,16 @@ public class VerifyReceiptService {
                 LOG.error("verify receipt sleep error", e);
             }
             verifyReceiptResponse = postToEdt(entity,
-                config.getProperty("edt.api.verifyReceipt.url"), VerifyReceipt.class);
+                config.getProperty("edt.api.verifyReceipt.url"), VerifyReceiptResponse.class);
             resultCode = verifyReceiptResponse.getResultCode();
-            retryTimes++;
             logVerifyResult(resultCode, verifyReceiptBody, customerId, retryTimes);
         }
-        if (resultCode != EdtResponseCode.RESULT_OK) {
-            EdtErrorCodeUtil
-                .throwError(verifyReceiptResponse.getResultCode(), "verify receipt failed!");
-        }
-        return verifyReceiptResponse.fomartToDOT();
+        testSet.remove(customerId);
+        return VerifyReceiptDTO.fromVerifyResponse(verifyReceiptResponse);
     }
 
     private HttpEntity<String> createPostBody(VerifyReceiptBody verifyReceiptBody,
-        String customerId)
-        throws UnsupportedEncodingException {
+        String customerId) throws UnsupportedEncodingException {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
 
@@ -83,7 +88,10 @@ public class VerifyReceiptService {
         //if app is in apple evaluation process, purchase is verified by apple test environment
         boolean verifyPurchaseInAppleTestEnv =
             (appVersion.equals(activeAppVersion)) && storeDomain.toLowerCase().contains("ios");
-
+        if (StringUtils.equalsIgnoreCase(StoreDomainConstants.ANDROID_IN_APP, storeDomain)
+            && StringUtils.isBlank(verifyReceiptBody.getReceipt())) {
+            receipt = "nothing";
+        }
         if (verifyPurchaseInAppleTestEnv) {
             String format = String.format(verifyReceiptProperty,
                 storeDomain,

@@ -29,6 +29,7 @@ public class VerifyReceiptService {
     private static final Logger LOG = LoggerFactory.getLogger(VerifyReceiptService.class);
     private static final int MAX_TIME = 3;
     private static final long SLEEP_UNIT = 500;
+    private static final String BFF_RESPONSE = "CustomerId is {} and Response is {}";
     private static final String RESTORE_SUCCESS = "Restore success! CustomerId is {} and VerifyReceiptBody is {}";
     private static final String VERIFY_SUCCESS = "Verify success! CustomerId is {} and VerifyReceiptBody is {}";
     private static final String RESTORE_FAILED = "Restore failed! resultCode is {} CustomerId is {} and VerifyReceiptBody is {}";
@@ -46,7 +47,8 @@ public class VerifyReceiptService {
         throws UnsupportedEncodingException {
         HttpEntity<String> entity = createPostBody(verifyReceiptBody, customerId);
         VerifyReceiptResponse verifyReceiptResponse =
-            postToEdt(entity, config.getProperty("edt.api.verifyReceipt.url"), VerifyReceiptResponse.class);
+            postToEdt(entity, config.getProperty("edt.api.verifyReceipt.url"),
+                VerifyReceiptResponse.class);
         int resultCode = verifyReceiptResponse.getResultCode();
         int retryTimes = 0;
         logVerifyResult(resultCode, verifyReceiptBody, customerId, retryTimes);
@@ -61,7 +63,10 @@ public class VerifyReceiptService {
             resultCode = verifyReceiptResponse.getResultCode();
             logVerifyResult(resultCode, verifyReceiptBody, customerId, retryTimes);
         }
-        return VerifyReceiptDTO.fromVerifyResponse(verifyReceiptResponse);
+        VerifyReceiptDTO verifyReceiptDTO = VerifyReceiptDTO
+            .fromVerifyResponse(verifyReceiptResponse);
+        LOG.info(BFF_RESPONSE, customerId, JsonUtils.toJsonString(verifyReceiptDTO));
+        return verifyReceiptDTO;
     }
 
     private HttpEntity<String> createPostBody(VerifyReceiptBody verifyReceiptBody,

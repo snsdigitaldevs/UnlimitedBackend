@@ -8,8 +8,6 @@ import com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.verifyReceipt.VerifyReceiptResponse;
 import com.simonschuster.pimsleur.unlimited.services.AppIdService;
 import com.simonschuster.pimsleur.unlimited.utils.JsonUtils;
-import java.util.HashSet;
-import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -36,10 +34,8 @@ public class VerifyReceiptService {
     private static final String RESTORE_FAILED = "Restore failed! resultCode is {} CustomerId is {} and VerifyReceiptBody is {}";
     private static final String VERIFY_FAILED = "Verify failed! resultCode is {} CustomerId is {} and VerifyReceiptBody is {}";
 
-    private String singleAction = "kljh";
-    private String multipleAction = "gfds";
-
-    private Set<String> testSet = new HashSet<>();
+    private static final String SINGLE_ACTION = "kljh";
+    private static final String MULTIPLE_ACTION = "gfds";
 
     @Autowired
     private ApplicationConfiguration config;
@@ -48,11 +44,6 @@ public class VerifyReceiptService {
 
     public VerifyReceiptDTO verifyReceipt(VerifyReceiptBody verifyReceiptBody, String customerId)
         throws UnsupportedEncodingException {
-        if (!testSet.contains(customerId)) {
-            testSet.add(customerId);
-            LOG.error("test verifyReceiptBody is {}", JsonUtils.toJsonString(verifyReceiptBody));
-            return VerifyReceiptDTO.buildTestDTO();
-        }
         HttpEntity<String> entity = createPostBody(verifyReceiptBody, customerId);
         VerifyReceiptResponse verifyReceiptResponse =
             postToEdt(entity, config.getProperty("edt.api.verifyReceipt.url"), VerifyReceiptResponse.class);
@@ -70,7 +61,6 @@ public class VerifyReceiptService {
             resultCode = verifyReceiptResponse.getResultCode();
             logVerifyResult(resultCode, verifyReceiptBody, customerId, retryTimes);
         }
-        testSet.remove(customerId);
         return VerifyReceiptDTO.fromVerifyResponse(verifyReceiptResponse);
     }
 
@@ -99,7 +89,7 @@ public class VerifyReceiptService {
                 appIdService.getAppId(storeDomain),
                 transactionResult,
                 receipt,
-                verifyReceiptBody.getIsMultiple() ? multipleAction : singleAction,
+                verifyReceiptBody.getIsMultiple() ? MULTIPLE_ACTION : SINGLE_ACTION,
                 1
             );
             return new HttpEntity<>(format, headers);
@@ -111,7 +101,7 @@ public class VerifyReceiptService {
             appIdService.getAppId(storeDomain),
             transactionResult,
             receipt,
-            verifyReceiptBody.getIsMultiple() ? multipleAction : singleAction
+            verifyReceiptBody.getIsMultiple() ? MULTIPLE_ACTION : SINGLE_ACTION
         );
         return new HttpEntity<>(format, headers);
     }

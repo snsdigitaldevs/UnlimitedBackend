@@ -151,16 +151,12 @@ public class AggregatedProductInfo {
     }
 
 
-    private List<ReadingAudio> getReadingAudiosInfo(MediaSet mediaSet) throws Exception {
-        CourseLevelDef courseLevelDef = findCourseLevelDef(mediaSet);
-        String audioBaseUrl = (PREFIX_FOR_AUDIO_OF_PU + mediaSet.getCourseLanguageName()
-                .replace(" ", "").toLowerCase() + "/") + courseLevelDef.getAudioPath();
-
+    private List<ReadingAudio> getReadingAudiosInfo(MediaSet mediaSet) {
         List<MediaItem> mediaItems = mediaSet.getMediaItems().stream()
                 .filter(MediaItem::isReadingMp3).collect(toList());
         List<ReadingAudio> readingAudios = new ArrayList<ReadingAudio>();
         for (MediaItem mediaItem : mediaItems) {
-            String encodedAudioLink = encodeUrl(PREFIX_FOR_AUDIO_OF_PU, audioBaseUrl + mediaItem.getFilename());
+            String encodedAudioLink = installationFileList.getUrlByFileName(mediaItem.getFilename());
             readingAudios.add(new ReadingAudio(parseInt(mediaItem.getUnit()), encodedAudioLink));
         }
         return readingAudios;
@@ -271,6 +267,18 @@ public class AggregatedProductInfo {
         setImageAndAudio(lesson, mediaItem, courseLevelDef, pathMiddlePart);
     }
 
+    private void setImageAndAudio(Lesson lesson, MediaItem mediaItem, CourseLevelDef courseLevelDef, String middlePart) {
+        Image image = new Image();
+        String thumbImageName = courseLevelDef.getMainLessonsThumbImagePath() + mediaItem.getImageURL();
+        String fullImageName = courseLevelDef.getMainLessonsFullImagePath() + mediaItem.getImageURL();
+        image.setThumbImageAddress(installationFileList.getUrlByFileName(thumbImageName));
+        image.setFullImageAddress(installationFileList.getUrlByFileName(fullImageName));
+        lesson.setImage(image);
+
+        String audioUrl = PREFIX_FOR_AUDIO_OF_PU + middlePart + courseLevelDef.getAudioPath() + mediaItem.getFilename();
+        lesson.setAudioLink(encodeUrl(PREFIX_FOR_AUDIO_OF_PU, audioUrl));
+    }
+
     private CourseLevelDef findCourseLevelDef(MediaSet mediaSet) throws Exception {
         String courseConfigKey = mediaSet.getCourseLanguageName().replace(" ", "_");
         CourseConfig courseConfig = puProductInfo.getResultData().getCourseConfigs().get(courseConfigKey);
@@ -283,20 +291,6 @@ public class AggregatedProductInfo {
             }
         }
         return courseLevelDef;
-    }
-
-    private void setImageAndAudio(Lesson lesson, MediaItem mediaItem,
-                                  CourseLevelDef courseLevelDef, String middlePart)
-            throws UnsupportedEncodingException {
-        Image image = new Image();
-        String thumbImageAddress = PREFIX_FOR_IMAGE_OF_PU + middlePart + courseLevelDef.getMainLessonsThumbImagePath() + mediaItem.getImageURL();
-        String fullImageAddress = PREFIX_FOR_IMAGE_OF_PU + middlePart + courseLevelDef.getMainLessonsFullImagePath() + mediaItem.getImageURL();
-        image.setFullImageAddress(encodeUrl(PREFIX_FOR_IMAGE_OF_PU, fullImageAddress));
-        image.setThumbImageAddress(encodeUrl(PREFIX_FOR_IMAGE_OF_PU, thumbImageAddress));
-        lesson.setImage(image);
-
-        String audioUrl = PREFIX_FOR_AUDIO_OF_PU + middlePart + courseLevelDef.getAudioPath() + mediaItem.getFilename();
-        lesson.setAudioLink(encodeUrl(PREFIX_FOR_AUDIO_OF_PU, audioUrl));
     }
 
     private void setPcmAudioInfo(List<Course> lessonAudioInfoFromPCM) {

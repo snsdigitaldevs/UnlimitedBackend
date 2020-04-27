@@ -275,8 +275,7 @@ public class AggregatedProductInfo {
         image.setFullImageAddress(installationFileList.getUrlByFileName(fullImageName));
         lesson.setImage(image);
 
-        String audioUrl = PREFIX_FOR_AUDIO_OF_PU + middlePart + courseLevelDef.getAudioPath() + mediaItem.getFilename();
-        lesson.setAudioLink(encodeUrl(PREFIX_FOR_AUDIO_OF_PU, audioUrl));
+        lesson.setAudioLink(installationFileList.getUrlByFileName(mediaItem.getFilename()));
     }
 
     private CourseLevelDef findCourseLevelDef(MediaSet mediaSet) throws Exception {

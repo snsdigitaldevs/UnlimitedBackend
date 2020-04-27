@@ -15,7 +15,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.StringUtils;
 
-import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -23,14 +22,13 @@ import java.util.stream.Collectors;
 
 import static com.simonschuster.pimsleur.unlimited.utils.HardCodedProductsUtil.isOneOfNineBig;
 import static com.simonschuster.pimsleur.unlimited.utils.HardCodedProductsUtil.isPuFreeLesson;
-import static com.simonschuster.pimsleur.unlimited.utils.UrlUtil.encodeUrl;
 import static java.lang.Integer.parseInt;
 import static java.util.stream.Collectors.toList;
 import static java.util.stream.Collectors.toMap;
 
 public class AggregatedProductInfo {
-    private static final String PREFIX_FOR_IMAGE_OF_PU = "https://install.pimsleurunlimited.com/staging_n/desktop/";
-    private static final String PREFIX_FOR_AUDIO_OF_PU = "https://install.pimsleurunlimited.com/staging_n/common/";
+    private static final String THUMB = "/images/thumb/";
+    private static final String FULL = "/images/full/";
 
     private static final Logger logger = LoggerFactory.getLogger(AggregatedProductInfo.class);
 
@@ -229,7 +227,7 @@ public class AggregatedProductInfo {
                     deleteQuotation(mediaItem.getImageCredits())));
             lesson.setMediaItemId(mediaItem.getMediaItemId());
             try {
-                getImageAndAudioFromPU(lesson, mediaItem, mediaSet);
+                getImageAndAudioFromPU(lesson, mediaItem);
             } catch (Exception e) {
                 logger.error("Error occured when convert product info from PU EDT API.");
                 e.printStackTrace();
@@ -259,18 +257,14 @@ public class AggregatedProductInfo {
                 .collect(Collectors.toList());
     }
 
-    private void getImageAndAudioFromPU(Lesson lesson, MediaItem mediaItem, MediaSet mediaSet)
-            throws Exception {
-        CourseLevelDef courseLevelDef = findCourseLevelDef(mediaSet);
-        String pathMiddlePart = mediaSet.getCourseLanguageName().replace(" ", "").toLowerCase() + "/";
-
-        setImageAndAudio(lesson, mediaItem, courseLevelDef, pathMiddlePart);
+    private void getImageAndAudioFromPU(Lesson lesson, MediaItem mediaItem) {
+        setImageAndAudio(lesson, mediaItem);
     }
 
-    private void setImageAndAudio(Lesson lesson, MediaItem mediaItem, CourseLevelDef courseLevelDef, String middlePart) {
+    private void setImageAndAudio(Lesson lesson, MediaItem mediaItem) {
         Image image = new Image();
-        String thumbImageName = courseLevelDef.getMainLessonsThumbImagePath() + mediaItem.getImageURL();
-        String fullImageName = courseLevelDef.getMainLessonsFullImagePath() + mediaItem.getImageURL();
+        String thumbImageName = THUMB + mediaItem.getImageURL();
+        String fullImageName = FULL + mediaItem.getImageURL();
         image.setThumbImageAddress(installationFileList.getUrlByFileName(thumbImageName));
         image.setFullImageAddress(installationFileList.getUrlByFileName(fullImageName));
         lesson.setImage(image);

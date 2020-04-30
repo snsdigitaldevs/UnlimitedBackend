@@ -9,6 +9,7 @@ import com.simonschuster.pimsleur.unlimited.data.edt.productinfo.PuProductInfo;
 import com.simonschuster.pimsleur.unlimited.services.AppIdService;
 import com.simonschuster.pimsleur.unlimited.services.InstallationFileService;
 import com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil;
+import com.simonschuster.pimsleur.unlimited.utils.JsonUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -38,6 +39,7 @@ public class PUCourseInfoService {
         try {
             AggregatedProductInfo productInfo = new AggregatedProductInfo();
             PuProductInfo productInfoFromPu = getProductInfoFromPu(productCode, storeDomain);
+            System.out.println(JsonUtils.toJsonString(productInfoFromPu));
             InstallationFileList installationFileList = installationFileService.getInstallationFileList(productCode, storeDomain);
             productInfo.setPuProductInfo(productInfoFromPu);
             productInfo.setInstallationFileList(installationFileList);

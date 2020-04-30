@@ -23,30 +23,31 @@ import static com.simonschuster.pimsleur.unlimited.utils.dict.QuickMatchHeaders.
 import static java.nio.charset.Charset.forName;
 
 public class QuickMatchUtil {
-    private static Map<String, String> SKILL_KEYS_MAP = new HashMap<String, String>() {
-        {
-            put("1", "Activities");
-            put("2", "Animals");
-            put("3", "Communications");
-            put("4", "Directions");
-            put("5", "Friends + Family");
-            put("6", "Food");
-            put("7", "General Phrases");
-            put("8", "Health");
-            put("9", "Information");
-            put("10", "Meet + Greet");
-            put("11", "Money");
-            put("12", "Numbers");
-            put("13", "Polite Phrases");
-            put("14", "Shopping");
-            put("15", "Speak + Understand");
-            put("16", "Survival Skills");
-            put("17", "Time");
-            put("18", "Travel");
-            put("19", "Weather");
-            put("20", "Work Business");
-        }
-    };
+
+    private static Map<String, String> SKILL_KEYS_MAP = new HashMap<>();
+
+    static {
+        SKILL_KEYS_MAP.put("1", "Activities");
+        SKILL_KEYS_MAP.put("2", "Animals");
+        SKILL_KEYS_MAP.put("3", "Communications");
+        SKILL_KEYS_MAP.put("4", "Directions");
+        SKILL_KEYS_MAP.put("5", "Friends + Family");
+        SKILL_KEYS_MAP.put("6", "Food");
+        SKILL_KEYS_MAP.put("7", "General Phrases");
+        SKILL_KEYS_MAP.put("8", "Health");
+        SKILL_KEYS_MAP.put("9", "Information");
+        SKILL_KEYS_MAP.put("10", "Meet + Greet");
+        SKILL_KEYS_MAP.put("11", "Money");
+        SKILL_KEYS_MAP.put("12", "Numbers");
+        SKILL_KEYS_MAP.put("13", "Polite Phrases");
+        SKILL_KEYS_MAP.put("14", "Shopping");
+        SKILL_KEYS_MAP.put("15", "Speak + Understand");
+        SKILL_KEYS_MAP.put("16", "Survival Skills");
+        SKILL_KEYS_MAP.put("17", "Time");
+        SKILL_KEYS_MAP.put("18", "Travel");
+        SKILL_KEYS_MAP.put("19", "Weather");
+        SKILL_KEYS_MAP.put("20", "Work Business");
+    }
 
     public static List<PracticesInUnit> getQuickMatchesByCsvUrl(PracticesUrls practicesUrls) throws IOException {
         List<PracticesInUnit> result = new ArrayList<>();

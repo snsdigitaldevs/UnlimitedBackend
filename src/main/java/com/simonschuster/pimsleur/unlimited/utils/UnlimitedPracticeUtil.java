@@ -36,7 +36,7 @@ public class UnlimitedPracticeUtil {
             return quotedKey;
         } else if (oneRecord.isMapped(quotedKeyLowerCase)) {
             return quotedKeyLowerCase;
-        } else if (oneRecord.isMapped(quotedKeyLowerCase)) {
+        } else if (oneRecord.isMapped(keyLowerCase)) {
             return keyLowerCase;
         }
 
@@ -114,9 +114,8 @@ public class UnlimitedPracticeUtil {
             if (csvString.contains("Italian 2")) {
                 csvString = specialCsvFiles(csvString);
             }
-
-            return csvStringToObj(csvString);
         }
+        return csvStringToObj(csvString);
     }
 
     public static List<CSVRecord> csvStringToObj(String csvString) throws IOException {

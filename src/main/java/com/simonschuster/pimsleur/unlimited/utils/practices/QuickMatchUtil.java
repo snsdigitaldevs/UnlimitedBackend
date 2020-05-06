@@ -24,7 +24,7 @@ import static java.nio.charset.Charset.forName;
 
 public class QuickMatchUtil {
 
-    private static Map<String, String> SKILL_KEYS_MAP = new HashMap<>();
+    private static final Map<String, String> SKILL_KEYS_MAP = new HashMap<>();
 
     static {
         SKILL_KEYS_MAP.put("1", "Activities");
@@ -170,7 +170,7 @@ public class QuickMatchUtil {
         String snippetName = getSnippetName(record, headerMap, quickMatchAudioBaseFileName);
 
         Collection<String> values = record.toMap().values();
-        List valueList = new ArrayList(values);
+        List<String> valueList = new ArrayList(values);
 
         String cue = record.isSet(HEADER_CUE) ? record.get(HEADER_CUE) : valueList.get(10).toString();
         QuickMatchItem quickMatchItem = new QuickMatchItem(cue,

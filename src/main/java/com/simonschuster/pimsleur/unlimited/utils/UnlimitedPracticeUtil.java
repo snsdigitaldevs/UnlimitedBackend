@@ -18,7 +18,7 @@ import static java.util.Collections.frequency;
 
 public class UnlimitedPracticeUtil {
     private final static String NO_SUCH_KEY = "NoSuchKey";
-    private static Logger logger = LoggerFactory.getLogger(UnlimitedPracticeUtil.class);
+    private final static Logger logger = LoggerFactory.getLogger(UnlimitedPracticeUtil.class);
 
     public static String getUnitNumString(CSVRecord record, String unitNumKey) {
         if (record.isSet(unitNumKey)) {
@@ -176,5 +176,12 @@ public class UnlimitedPracticeUtil {
                     return line;
                 })
                 .collect(Collectors.joining("\n"));
+    }
+
+    public static String movePeriodToLeftForArabic(String translation) {
+        if (translation.charAt(translation.length() - 1) == '.') {
+            return "." + translation.substring(0, translation.length() - 1);
+        }
+        return translation;
     }
 }

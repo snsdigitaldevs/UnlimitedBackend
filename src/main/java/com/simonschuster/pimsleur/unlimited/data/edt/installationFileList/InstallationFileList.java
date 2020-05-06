@@ -74,10 +74,12 @@ public class InstallationFileList extends EdtResponseCode {
         if (this.getResultData() != null) {
             String bonusPackFileUrl = getBonusPackFileUrl();
             String reviewAudioBaseUrl = getReviewAudioBaseUrl();
-            return new BonusPacksUrls(bonusPackFileUrl, reviewAudioBaseUrl);
+            if (StringUtils.isNotBlank(bonusPackFileUrl) && StringUtils
+                .isNotBlank(reviewAudioBaseUrl)) {
+                return new BonusPacksUrls(bonusPackFileUrl, reviewAudioBaseUrl);
+            }
         }
         return null;
-
     }
 
     public String getUrlByFileName(String fileName) {

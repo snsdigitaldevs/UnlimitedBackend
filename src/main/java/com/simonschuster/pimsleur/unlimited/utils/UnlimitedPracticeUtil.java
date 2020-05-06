@@ -178,9 +178,10 @@ public class UnlimitedPracticeUtil {
                 .collect(Collectors.joining("\n"));
     }
 
-    public static String movePeriodToLeftForArabic(String translation) {
-        if (translation.charAt(translation.length() - 1) == '.') {
-            return "." + translation.substring(0, translation.length() - 1);
+    public static String moveEndToLeftIfNeed(String translation) {
+        char end = translation.charAt(translation.length() - 1);
+        if (end == '.' || end == '!') {
+            return end + translation.substring(0, translation.length() - 1);
         }
         return translation;
     }

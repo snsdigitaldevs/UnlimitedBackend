@@ -98,16 +98,16 @@ public class AvailablePracticesController {
     private void movePeriodToLeftForArabic(List<PracticesInUnit> allPracticesInUnits)  {
         allPracticesInUnits.forEach(practicesInUnit -> {
             practicesInUnit.getQuickMatches().forEach(quickMatch -> {
-                quickMatch.getAnswer().setCue(UnlimitedPracticeUtil.movePeriodToLeftForArabic(quickMatch.getAnswer().getCue()));
+                quickMatch.getAnswer().setCue(UnlimitedPracticeUtil.moveEndToLeftIfNeed(quickMatch.getAnswer().getCue()));
             });
             practicesInUnit.getFlashCards().forEach(flashCard -> {
-                flashCard.setLanguage(UnlimitedPracticeUtil.movePeriodToLeftForArabic(flashCard.getLanguage()));
+                flashCard.setLanguage(UnlimitedPracticeUtil.moveEndToLeftIfNeed(flashCard.getLanguage()));
             });
             practicesInUnit.getSpeakEasies().forEach(speakEasy -> {
-                speakEasy.setNativeText(UnlimitedPracticeUtil.movePeriodToLeftForArabic(speakEasy.getNativeText()));
+                speakEasy.setNativeText(UnlimitedPracticeUtil.moveEndToLeftIfNeed(speakEasy.getNativeText()));
             });
             practicesInUnit.getReadings().forEach(reading -> {
-                reading.setNativeText(UnlimitedPracticeUtil.movePeriodToLeftForArabic(reading.getNativeText()));
+                reading.setNativeText(UnlimitedPracticeUtil.moveEndToLeftIfNeed(reading.getNativeText()));
             });
         });
     }

@@ -22,7 +22,7 @@ public class UnlimitedPracticeUtil {
     private final static Logger logger = LoggerFactory.getLogger(UnlimitedPracticeUtil.class);
     private static final String PERIOD = ".";
     private static final String EXCLAMATION_MARK = "!";
-    private static final String ELLIPSES_THREE = "...…";
+    private static final String ELLIPSES_THREE = "...";
     private static final String ELLIPSES_ONE = "…";
 
     public static String getUnitNumString(CSVRecord record, String unitNumKey) {

@@ -183,15 +183,15 @@ public class UnlimitedPracticeUtil {
     }
 
     public static String moveEndToLeftIfNeed(String translation) {
+        if (StringUtils.endsWith(translation, ELLIPSES)) {
+            return ELLIPSES + translation.substring(0, translation.length() - ELLIPSES.length());
+        }
         if (StringUtils.endsWith(translation, PEROID)) {
             return PEROID + translation.substring(0, translation.length() - PEROID.length());
         }
         if (StringUtils.endsWith(translation, EXCLAMATION_MARK)) {
             return EXCLAMATION_MARK + translation
                 .substring(0, translation.length() - EXCLAMATION_MARK.length());
-        }
-        if (StringUtils.endsWith(translation, ELLIPSES)) {
-            return ELLIPSES + translation.substring(0, translation.length() - ELLIPSES.length());
         }
         return translation;
     }

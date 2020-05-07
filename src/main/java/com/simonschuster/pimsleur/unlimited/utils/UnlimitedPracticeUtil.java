@@ -20,9 +20,10 @@ import static java.util.Collections.frequency;
 public class UnlimitedPracticeUtil {
     private final static String NO_SUCH_KEY = "NoSuchKey";
     private final static Logger logger = LoggerFactory.getLogger(UnlimitedPracticeUtil.class);
-    private static final String PEROID = ".";
+    private static final String PERIOD = ".";
     private static final String EXCLAMATION_MARK = "!";
-    private static final String ELLIPSES = "...";
+    private static final String ELLIPSES_THREE = "...…";
+    private static final String ELLIPSES_ONE = "…";
 
     public static String getUnitNumString(CSVRecord record, String unitNumKey) {
         if (record.isSet(unitNumKey)) {
@@ -183,11 +184,16 @@ public class UnlimitedPracticeUtil {
     }
 
     public static String moveEndToLeftIfNeed(String translation) {
-        if (StringUtils.endsWith(translation, ELLIPSES)) {
-            return ELLIPSES + translation.substring(0, translation.length() - ELLIPSES.length());
+        if (StringUtils.endsWith(translation, ELLIPSES_THREE)) {
+            return ELLIPSES_THREE + translation
+                .substring(0, translation.length() - ELLIPSES_THREE.length());
         }
-        if (StringUtils.endsWith(translation, PEROID)) {
-            return PEROID + translation.substring(0, translation.length() - PEROID.length());
+        if (StringUtils.endsWith(translation, ELLIPSES_ONE)) {
+            return ELLIPSES_ONE + translation
+                .substring(0, translation.length() - ELLIPSES_ONE.length());
+        }
+        if (StringUtils.endsWith(translation, PERIOD)) {
+            return PERIOD + translation.substring(0, translation.length() - PERIOD.length());
         }
         if (StringUtils.endsWith(translation, EXCLAMATION_MARK)) {
             return EXCLAMATION_MARK + translation

@@ -2,6 +2,7 @@ package com.simonschuster.pimsleur.unlimited.utils;
 
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVRecord;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.converter.StringHttpMessageConverter;
@@ -19,6 +20,9 @@ import static java.util.Collections.frequency;
 public class UnlimitedPracticeUtil {
     private final static String NO_SUCH_KEY = "NoSuchKey";
     private final static Logger logger = LoggerFactory.getLogger(UnlimitedPracticeUtil.class);
+    private static final String PEROID = ".";
+    private static final String EXCLAMATION_MARK = "!";
+    private static final String ELLIPSES = "...";
 
     public static String getUnitNumString(CSVRecord record, String unitNumKey) {
         if (record.isSet(unitNumKey)) {
@@ -179,9 +183,15 @@ public class UnlimitedPracticeUtil {
     }
 
     public static String moveEndToLeftIfNeed(String translation) {
-        char end = translation.charAt(translation.length() - 1);
-        if (end == '.' || end == '!') {
-            return end + translation.substring(0, translation.length() - 1);
+        if (StringUtils.endsWith(translation, PEROID)) {
+            return PEROID + translation.substring(0, translation.length() - PEROID.length());
+        }
+        if (StringUtils.endsWith(translation, EXCLAMATION_MARK)) {
+            return EXCLAMATION_MARK + translation
+                .substring(0, translation.length() - EXCLAMATION_MARK.length());
+        }
+        if (StringUtils.endsWith(translation, ELLIPSES)) {
+            return ELLIPSES + translation.substring(0, translation.length() - ELLIPSES.length());
         }
         return translation;
     }

@@ -1,6 +1,7 @@
 package com.simonschuster.pimsleur.unlimited.controllers;
 
 import com.simonschuster.pimsleur.unlimited.constants.CommonConstants;
+import com.simonschuster.pimsleur.unlimited.constants.StoreDomainConstants;
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.AvailablePractices;
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.PracticesInUnit;
 import com.simonschuster.pimsleur.unlimited.services.practices.PcmAvailablePracticesService;
@@ -10,6 +11,7 @@ import com.simonschuster.pimsleur.unlimited.utils.UnlimitedPracticeUtil;
 import edu.emory.mathcs.backport.java.util.Collections;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -51,7 +53,8 @@ public class AvailablePracticesController {
             List<PracticesInUnit> flashCards = csvToFlashCards(practicesUrls);
             List<PracticesInUnit> quickMatches = getQuickMatchesByCsvUrl(practicesUrls);
             AvailablePractices availablePractices = new AvailablePractices(mergeLists(readings, speakEasies, flashCards, quickMatches));
-            if (CommonConstants.ARABIC_PU_ISBN.contains(productCode)) {
+            if (!StoreDomainConstants.MOBILE_DOMAIN.contains(storeDomain)
+                && CommonConstants.ARABIC_PU_ISBN.contains(productCode)) {
                 movePeriodToLeftForArabic(availablePractices.getPracticesInUnits());
             }
             return availablePractices;

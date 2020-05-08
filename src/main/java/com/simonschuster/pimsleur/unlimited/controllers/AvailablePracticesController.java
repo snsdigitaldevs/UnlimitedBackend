@@ -53,10 +53,7 @@ public class AvailablePracticesController {
             List<PracticesInUnit> flashCards = csvToFlashCards(practicesUrls);
             List<PracticesInUnit> quickMatches = getQuickMatchesByCsvUrl(practicesUrls);
             AvailablePractices availablePractices = new AvailablePractices(mergeLists(readings, speakEasies, flashCards, quickMatches));
-            if (!StoreDomainConstants.MOBILE_DOMAIN.contains(storeDomain)
-                && CommonConstants.ARABIC_PU_ISBN.contains(productCode)) {
-                movePeriodToLeftForArabic(availablePractices.getPracticesInUnits());
-            }
+            puAvailablePracticesService.handleForArabic(productCode, storeDomain, availablePractices.getPracticesInUnits());
             return availablePractices;
         }else {
             return new AvailablePractices(mergeLists(Collections.emptyList(), Collections.emptyList(), Collections.emptyList(), Collections.emptyList()));
@@ -96,22 +93,5 @@ public class AvailablePracticesController {
                 })
                 .sorted(comparingInt(PracticesInUnit::getUnitNumber))
                 .collect(toList());
-    }
-
-    private void movePeriodToLeftForArabic(List<PracticesInUnit> allPracticesInUnits)  {
-        allPracticesInUnits.forEach(practicesInUnit -> {
-            practicesInUnit.getQuickMatches().forEach(quickMatch -> {
-                quickMatch.getAnswer().setCue(UnlimitedPracticeUtil.moveEndToLeftIfNeed(quickMatch.getAnswer().getCue()));
-            });
-            practicesInUnit.getFlashCards().forEach(flashCard -> {
-                flashCard.setLanguage(UnlimitedPracticeUtil.moveEndToLeftIfNeed(flashCard.getLanguage()));
-            });
-            practicesInUnit.getSpeakEasies().forEach(speakEasy -> {
-                speakEasy.setNativeText(UnlimitedPracticeUtil.moveEndToLeftIfNeed(speakEasy.getNativeText()));
-            });
-            practicesInUnit.getReadings().forEach(reading -> {
-                reading.setNativeText(UnlimitedPracticeUtil.moveEndToLeftIfNeed(reading.getNativeText()));
-            });
-        });
     }
 }

@@ -60,6 +60,16 @@
         "Other format 3 (DVD) ISBN": ""
     },
     {
+        "Base Course Type": "Prem free lesson",
+        "ISBN": 9781797115139,
+        "Course name - Upsell Card & Library": "Arabic (Eastern)",
+        "Course name - Learn Page": "Arabic (Eastern) Level 1",
+        "Course Description - Upsell Card": "The complete level of 30 lessons and access to all premium features",
+        "Other format 1 (Upsell) ISBN": "",
+        "Other format 2 (Upgrade) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
         "Base Course Type": "Audio Level 1",
         "ISBN": 9781442306554,
         "Course name - Upsell Card & Library": "Arabic (Eastern) Level 1",
@@ -127,6 +137,16 @@
         "Course Description - Upsell Card": "5 thirty-minute language lessons",
         "Other format 1 (Upsell) ISBN": 9781508269304,
         "Other format 2 (Upgrade) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Prem Level 1",
+        "ISBN": 9781797115108,
+        "Course name - Upsell Card & Library": "Arabic (Eastern) Level 1 Premium",
+        "Course name - Learn Page": "Arabic (Eastern) Level 1",
+        "Course Description - Upsell Card": "• Purchase 30 lessons at a time\r\n• Purchased lessons never expire\r\n• Start with Level 1 today!",
+        "Other format 2 (Upgrade) ISBN": 9781797115153,
+        "Other format 1 (Upsell) ISBN": "",
         "Other format 3 (DVD) ISBN": ""
     },
     {
@@ -200,6 +220,16 @@
         "Other format 3 (DVD) ISBN": ""
     },
     {
+        "Base Course Type": "Prem Level 2",
+        "ISBN": 9781797115115,
+        "Course name - Upsell Card & Library": "Arabic (Eastern) Level 2 Premium",
+        "Course name - Learn Page": "Arabic (Eastern) Level 2",
+        "Course Description - Upsell Card": "The complete level of 30 lessons and access to all premium features",
+        "Other format 2 (Upgrade) ISBN": 9781797115160,
+        "Other format 1 (Upsell) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
         "Base Course Type": "Audio Level 3",
         "ISBN": 9781442307292,
         "Course name - Upsell Card & Library": "Arabic (Eastern) Level 3",
@@ -266,6 +296,46 @@
         "Course name - Learn Page": "Arabic (Eastern) Level 3",
         "Course Description - Upsell Card": "5 thirty-minute language lessons",
         "Other format 1 (Upsell) ISBN": 9781508269427,
+        "Other format 2 (Upgrade) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Prem Level 3",
+        "ISBN": 9781797115122,
+        "Course name - Upsell Card & Library": "Arabic (Eastern) Level 3 Premium",
+        "Course name - Learn Page": "Arabic (Eastern) Level 3",
+        "Course Description - Upsell Card": "The complete level of 30 lessons and access to all premium features",
+        "Other format 2 (Upgrade) ISBN": 9781797115177,
+        "Other format 1 (Upsell) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Prem Level 1-2",
+        "ISBN": 9781797112305,
+        "Course name - Upsell Card & Library": "Arabic (Eastern) Levels 1-2 Premium",
+        "Course name - Learn Page": "Arabic (Eastern) Levels 1-2",
+        "Course Description - Upsell Card": "Two complete levels totaling 60 lessons and access to all premium features",
+        "Other format 2 (Upgrade) ISBN": 9781797115184,
+        "Other format 1 (Upsell) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Prem Level 1-3",
+        "ISBN": 9781797106229,
+        "Course name - Upsell Card & Library": "Arabic (Eastern) Levels 1-3 Premium",
+        "Course name - Learn Page": "Arabic (Eastern) Levels 1-3",
+        "Course Description - Upsell Card": "Three complete levels totaling 90 lessons and access to all premium features",
+        "Other format 2 (Upgrade) ISBN": 9781797115191,
+        "Other format 1 (Upsell) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Subscription",
+        "ISBN": 9781797115146,
+        "Course name - Upsell Card & Library": "Arabic (Eastern) Premium Subscription",
+        "Course Description - Upsell Card": "• Unlimited access to all 90 lessons\r\n• Small monthly fee is easy on wallet\r\n• Full course access today!",
+        "Course name - Learn Page": "",
+        "Other format 1 (Upsell) ISBN": "",
         "Other format 2 (Upgrade) ISBN": "",
         "Other format 3 (DVD) ISBN": ""
     },
@@ -380,6 +450,16 @@
         "Other format 3 (DVD) ISBN": ""
     },
     {
+        "Base Course Type": "Prem free lesson",
+        "ISBN": 9781797112312,
+        "Course name - Upsell Card & Library": "Arabic (Modern Standard)",
+        "Course name - Learn Page": "Arabic (Modern Standard) Level 1",
+        "Course Description - Upsell Card": "",
+        "Other format 1 (Upsell) ISBN": "",
+        "Other format 2 (Upgrade) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
         "Base Course Type": "Audio Level 1",
         "ISBN": 9781442360341,
         "Course name - Upsell Card & Library": "Arabic (Modern Standard) Level 1",
@@ -447,6 +527,16 @@
         "Course Description - Upsell Card": "5 thirty-minute language lessons",
         "Other format 1 (Upsell) ISBN": 9781508269526,
         "Other format 2 (Upgrade) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Prem Level 1",
+        "ISBN": 9781797112237,
+        "Course name - Upsell Card & Library": "Arabic (Modern Standard) Level 1 Premium",
+        "Course name - Learn Page": "Arabic (Modern Standard) Level 1",
+        "Course Description - Upsell Card": "• Purchase 30 lessons at a time\r\n• Purchased lessons never expire\r\n• Start with Level 1 today!",
+        "Other format 2 (Upgrade) ISBN": 9781797112336,
+        "Other format 1 (Upsell) ISBN": "",
         "Other format 3 (DVD) ISBN": ""
     },
     {
@@ -520,6 +610,16 @@
         "Other format 3 (DVD) ISBN": ""
     },
     {
+        "Base Course Type": "Prem Level 2",
+        "ISBN": 9781797112244,
+        "Course name - Upsell Card & Library": "Arabic (Modern Standard) Level 2 Premium",
+        "Course name - Learn Page": "Arabic (Modern Standard) Level 2",
+        "Course Description - Upsell Card": "The complete level of 30 lessons and access to all premium features",
+        "Other format 2 (Upgrade) ISBN": 9781797112343,
+        "Other format 1 (Upsell) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
         "Base Course Type": "Audio Level 3",
         "ISBN": 9781442395480,
         "Course name - Upsell Card & Library": "Arabic (Modern Standard) Level 3",
@@ -586,6 +686,46 @@
         "Course name - Learn Page": "Arabic (Modern Standard) Level 3",
         "Course Description - Upsell Card": "5 thirty-minute language lessons",
         "Other format 1 (Upsell) ISBN": 9781508269649,
+        "Other format 2 (Upgrade) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Prem Level 3",
+        "ISBN": 9781797112251,
+        "Course name - Upsell Card & Library": "Arabic (Modern Standard) Level 3 Premium",
+        "Course name - Learn Page": "Arabic (Modern Standard) Level 3",
+        "Course Description - Upsell Card": "The complete level of 30 lessons and access to all premium features",
+        "Other format 2 (Upgrade) ISBN": 9781797112350,
+        "Other format 1 (Upsell) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Prem Level 1-2",
+        "ISBN": 9781797112268,
+        "Course name - Upsell Card & Library": "Arabic (Modern Standard) Levels 1-2 Premium",
+        "Course name - Learn Page": "Arabic (Modern Standard) Levels 1-2",
+        "Course Description - Upsell Card": "Two complete levels totaling 60 lessons and access to all premium features",
+        "Other format 2 (Upgrade) ISBN": 9781797112367,
+        "Other format 1 (Upsell) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Prem Level 1-3",
+        "ISBN": 9781797106212,
+        "Course name - Upsell Card & Library": "Arabic (Modern Standard) Levels 1-3 Premium",
+        "Course name - Learn Page": "Arabic (Modern Standard) Levels 1-3",
+        "Course Description - Upsell Card": "Three complete levels totaling 90 lessons and access to all premium features",
+        "Other format 2 (Upgrade) ISBN": 9781797112374,
+        "Other format 1 (Upsell) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Subscription",
+        "ISBN": 9781797112329,
+        "Course name - Upsell Card & Library": "Arabic (Modern Standard) Premium Subscription",
+        "Course Description - Upsell Card": "• Unlimited access to all 90 lessons\r\n• Small monthly fee is easy on wallet\r\n• Full course access today!",
+        "Course name - Learn Page": "",
+        "Other format 1 (Upsell) ISBN": "",
         "Other format 2 (Upgrade) ISBN": "",
         "Other format 3 (DVD) ISBN": ""
     },
@@ -3342,7 +3482,7 @@
     {
         "Base Course Type": "Audio 5 Lesson",
         "ISBN": 9781508255482,
-        "Course name - Upsell Card & Library": "French Level 1 Lessons  1-5",
+        "Course name - Upsell Card & Library": "French Level 1 Lessons 1-5",
         "Course name - Learn Page": "French Level 1",
         "Course Description - Upsell Card": "5 thirty-minute language lessons",
         "Other format 1 (Upsell) ISBN": "",
@@ -3352,7 +3492,7 @@
     {
         "Base Course Type": "Audio 5 Lesson",
         "ISBN": 9781508255499,
-        "Course name - Upsell Card & Library": "French Level 1 Lessons  6-10",
+        "Course name - Upsell Card & Library": "French Level 1 Lessons 6-10",
         "Course name - Learn Page": "French Level 1",
         "Course Description - Upsell Card": "5 thirty-minute language lessons",
         "Other format 1 (Upsell) ISBN": 9781508279891,
@@ -3502,7 +3642,7 @@
     {
         "Base Course Type": "Audio 5 Lesson",
         "ISBN": 9781508256908,
-        "Course name - Upsell Card & Library": "French Level 2 Lessons  1-5",
+        "Course name - Upsell Card & Library": "French Level 2 Lessons 1-5",
         "Course name - Learn Page": "French Level 2",
         "Course Description - Upsell Card": "5 thirty-minute language lessons",
         "Other format 1 (Upsell) ISBN": "",
@@ -3512,7 +3652,7 @@
     {
         "Base Course Type": "Audio 5 Lesson",
         "ISBN": 9781508256915,
-        "Course name - Upsell Card & Library": "French Level 2 Lessons  6-10",
+        "Course name - Upsell Card & Library": "French Level 2 Lessons 6-10",
         "Course name - Learn Page": "French Level 2",
         "Course Description - Upsell Card": "5 thirty-minute language lessons",
         "Other format 1 (Upsell) ISBN": "",
@@ -9206,146 +9346,6 @@
         "Course name - Learn Page": "Urdu Level 1",
         "Course Description - Upsell Card": "The complete level of 30 lessons",
         "Other format 1 (Upsell) ISBN": 9781508272229,
-        "Other format 2 (Upgrade) ISBN": "",
-        "Other format 3 (DVD) ISBN": ""
-    },
-    {
-        "Base Course Type": "Audio 5 Lesson",
-        "ISBN": 9781442337718,
-        "Course name - Upsell Card & Library": "Urdu Level 1 Lessons 1-5",
-        "Course name - Learn Page": "Urdu Level 1",
-        "Course Description - Upsell Card": "5 thirty-minute language lessons",
-        "Other format 1 (Upsell) ISBN": "",
-        "Other format 2 (Upgrade) ISBN": "",
-        "Other format 3 (DVD) ISBN": ""
-    },
-    {
-        "Base Course Type": "Audio 5 Lesson",
-        "ISBN": 9781442337817,
-        "Course name - Upsell Card & Library": "Urdu Level 1 Lessons 11-15",
-        "Course name - Learn Page": "Urdu Level 1",
-        "Course Description - Upsell Card": "5 thirty-minute language lessons",
-        "Other format 1 (Upsell) ISBN": 9781508273547,
-        "Other format 2 (Upgrade) ISBN": "",
-        "Other format 3 (DVD) ISBN": ""
-    },
-    {
-        "Base Course Type": "Audio 5 Lesson",
-        "ISBN": 9781442337879,
-        "Course name - Upsell Card & Library": "Urdu Level 1 Lessons 16-20",
-        "Course name - Learn Page": "Urdu Level 1",
-        "Course Description - Upsell Card": "5 thirty-minute language lessons",
-        "Other format 1 (Upsell) ISBN": 9781508273554,
-        "Other format 2 (Upgrade) ISBN": "",
-        "Other format 3 (DVD) ISBN": ""
-    },
-    {
-        "Base Course Type": "Audio 5 Lesson",
-        "ISBN": 9781442337930,
-        "Course name - Upsell Card & Library": "Urdu Level 1 Lessons 21-25",
-        "Course name - Learn Page": "Urdu Level 1",
-        "Course Description - Upsell Card": "5 thirty-minute language lessons",
-        "Other format 1 (Upsell) ISBN": 9781508273561,
-        "Other format 2 (Upgrade) ISBN": "",
-        "Other format 3 (DVD) ISBN": ""
-    },
-    {
-        "Base Course Type": "Audio 5 Lesson",
-        "ISBN": 9780743596732,
-        "Course name - Upsell Card & Library": "Urdu Level 1 Lessons 26-30",
-        "Course name - Learn Page": "Urdu Level 1",
-        "Course Description - Upsell Card": "5 thirty-minute language lessons",
-        "Other format 1 (Upsell) ISBN": 9781508273578,
-        "Other format 2 (Upgrade) ISBN": "",
-        "Other format 3 (DVD) ISBN": ""
-    },
-    {
-        "Base Course Type": "Audio 5 Lesson",
-        "ISBN": 9781442337756,
-        "Course name - Upsell Card & Library": "Urdu Level 1 Lessons 6-10",
-        "Course name - Learn Page": "Urdu Level 1",
-        "Course Description - Upsell Card": "5 thirty-minute language lessons",
-        "Other format 1 (Upsell) ISBN": 9781508273530,
-        "Other format 2 (Upgrade) ISBN": "",
-        "Other format 3 (DVD) ISBN": ""
-    },
-    {
-        "Base Course Type": "Audio free lesson",
-        "ISBN": 9781442324565,
-        "Course name - Upsell Card & Library": "Vietnamese",
-        "Course name - Learn Page": "Vietnamese Level 1",
-        "Course Description - Upsell Card": "",
-        "Other format 1 (Upsell) ISBN": "",
-        "Other format 2 (Upgrade) ISBN": "",
-        "Other format 3 (DVD) ISBN": ""
-    },
-    {
-        "Base Course Type": "Audio Level 1",
-        "ISBN": 9781442324923,
-        "Course name - Upsell Card & Library": "Vietnamese Level 1",
-        "Course name - Learn Page": "Vietnamese Level 1",
-        "Course Description - Upsell Card": "The complete level of 30 lessons",
-        "Other format 1 (Upsell) ISBN": 9781508272236,
-        "Other format 2 (Upgrade) ISBN": "",
-        "Other format 3 (DVD) ISBN": ""
-    },
-    {
-        "Base Course Type": "Audio 5 Lesson",
-        "ISBN": 9781442324572,
-        "Course name - Upsell Card & Library": "Vietnamese Level 1 Lessons 1-5",
-        "Course name - Learn Page": "Vietnamese Level 1",
-        "Course Description - Upsell Card": "5 thirty-minute language lessons",
-        "Other format 1 (Upsell) ISBN": "",
-        "Other format 2 (Upgrade) ISBN": "",
-        "Other format 3 (DVD) ISBN": ""
-    },
-    {
-        "Base Course Type": "Audio 5 Lesson",
-        "ISBN": 9781442324695,
-        "Course name - Upsell Card & Library": "Vietnamese Level 1 Lessons 11-15",
-        "Course name - Learn Page": "Vietnamese Level 1",
-        "Course Description - Upsell Card": "5 thirty-minute language lessons",
-        "Other format 1 (Upsell) ISBN": 9781508273592,
-        "Other format 2 (Upgrade) ISBN": "",
-        "Other format 3 (DVD) ISBN": ""
-    },
-    {
-        "Base Course Type": "Audio 5 Lesson",
-        "ISBN": 9781442324756,
-        "Course name - Upsell Card & Library": "Vietnamese Level 1 Lessons 16-20",
-        "Course name - Learn Page": "Vietnamese Level 1",
-        "Course Description - Upsell Card": "5 thirty-minute language lessons",
-        "Other format 1 (Upsell) ISBN": 9781508273608,
-        "Other format 2 (Upgrade) ISBN": "",
-        "Other format 3 (DVD) ISBN": ""
-    },
-    {
-        "Base Course Type": "Audio 5 Lesson",
-        "ISBN": 9781442324817,
-        "Course name - Upsell Card & Library": "Vietnamese Level 1 Lessons 21-25",
-        "Course name - Learn Page": "Vietnamese Level 1",
-        "Course Description - Upsell Card": "5 thirty-minute language lessons",
-        "Other format 1 (Upsell) ISBN": 9781508273615,
-        "Other format 2 (Upgrade) ISBN": "",
-        "Other format 3 (DVD) ISBN": ""
-    },
-    {
-        "Base Course Type": "Audio 5 Lesson",
-        "ISBN": 9781442324879,
-        "Course name - Upsell Card & Library": "Vietnamese Level 1 Lessons 26-30",
-        "Course name - Learn Page": "Vietnamese Level 1",
-        "Course Description - Upsell Card": "5 thirty-minute language lessons",
-        "Other format 1 (Upsell) ISBN": 9781508273622,
-        "Other format 2 (Upgrade) ISBN": "",
-        "Other format 3 (DVD) ISBN": ""
-    },
-    {
-        "Base Course Type": "Audio 5 Lesson",
-        "ISBN": 9781442324633,
-        "Course name - Upsell Card & Library": "Vietnamese Level 1 Lessons 6-10",
-        "Course name - Learn Page": "Vietnamese Level 1",
-        "Course Description - Upsell Card": "5 thirty-minute language lessons",
-        "Other format 1 (Upsell) ISBN": 9781508273585,
         "Other format 2 (Upgrade) ISBN": "",
         "Other format 3 (DVD) ISBN": ""
     }

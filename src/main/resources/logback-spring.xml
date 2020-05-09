@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration debug="false" scan="true" scanPeriod="60 seconds">
 
-  <springProperty scope="context" name="logging.path" source="logging.path"/>
+  <property name="logging.path" value="${LOG_HOME:-/home/ec2-user/logs}"/>
   <property name="APP_Name" value="UnlimitedBackend"/>
   <contextName>${APP_Name}</contextName>
 

@@ -58,7 +58,7 @@ public class PcmFreeCourseService {
 
         course.setCourseName(resultData.getProductsName());
         course.setLanguageName(resultData.getProductsLanguageName());
-        course.setLevel(new Long(resultData.getProductsLevel()).intValue());
+        course.setLevel((int) resultData.getProductsLevel());
         course.setProductCode(productCode);
         course.setIsFree(true);
         course.setIsOneOfNineBig(isOneOfNineBig(course.getLanguageName()));

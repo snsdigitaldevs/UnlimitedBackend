@@ -38,10 +38,10 @@ public class PuAvailablePracticesServiceTest {
             public void run() throws IOException {
                 PracticesUrls practiceCsvLocations =
                         puAvailablePracticesService.getPracticeUrls("whatever", storeDomain);
-                assertThat(practiceCsvLocations.getFlashCardUrl(), is("https://install.pimsleurunlimited.com/staging_n/mobile/mandarinchinese/Mandarin Chinese I/metadata/timecode/9781442394872_Mandarin_1_FC.csv"));
-                assertThat(practiceCsvLocations.getQuickMatchUrl(), is("https://install.pimsleurunlimited.com/staging_n/mobile/mandarinchinese/Mandarin Chinese I/metadata/timecode/9781442394872_Mandarin_1_QZ.csv"));
-                assertThat(practiceCsvLocations.getReadingUrl(), is("https://install.pimsleurunlimited.com/staging_n/mobile/mandarinchinese/Mandarin Chinese I/metadata/timecode/9781442394872_Mandarin_1_RL.csv"));
-                assertThat(practiceCsvLocations.getSpeakEasyUrl(), is("https://install.pimsleurunlimited.com/staging_n/mobile/mandarinchinese/Mandarin Chinese I/metadata/timecode/9781442394872_Mandarin_1_VC.csv"));
+                assertThat(practiceCsvLocations.getFlashCardUrl(), is("https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/Mandarin Chinese Demo/metadata/timecode/9781508243328_Mandarin_1_FC.csv"));
+                assertThat(practiceCsvLocations.getQuickMatchUrl(), is("https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/Mandarin Chinese Demo/metadata/timecode/9781508243328_Mandarin_1_QZ.csv"));
+                assertThat(practiceCsvLocations.getReadingUrl(), is("https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/Mandarin Chinese Demo/metadata/timecode/9781508243328_Mandarin_1_RL.csv"));
+                assertThat(practiceCsvLocations.getSpeakEasyUrl(), is("https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese/Mandarin Chinese Demo/metadata/timecode/9781508243328_Mandarin_1_VC.csv"));
             }
         });
     }

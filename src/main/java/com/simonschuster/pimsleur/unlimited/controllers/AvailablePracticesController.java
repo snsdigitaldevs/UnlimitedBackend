@@ -1,13 +1,17 @@
 package com.simonschuster.pimsleur.unlimited.controllers;
 
+import com.simonschuster.pimsleur.unlimited.constants.CommonConstants;
+import com.simonschuster.pimsleur.unlimited.constants.StoreDomainConstants;
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.AvailablePractices;
 import com.simonschuster.pimsleur.unlimited.data.dto.practices.PracticesInUnit;
 import com.simonschuster.pimsleur.unlimited.services.practices.PcmAvailablePracticesService;
 import com.simonschuster.pimsleur.unlimited.services.practices.PracticesUrls;
 import com.simonschuster.pimsleur.unlimited.services.practices.PuAvailablePracticesService;
+import com.simonschuster.pimsleur.unlimited.utils.UnlimitedPracticeUtil;
 import edu.emory.mathcs.backport.java.util.Collections;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -48,7 +52,9 @@ public class AvailablePracticesController {
             List<PracticesInUnit> readings = csvToReadings(practicesUrls.getReadingUrl());
             List<PracticesInUnit> flashCards = csvToFlashCards(practicesUrls);
             List<PracticesInUnit> quickMatches = getQuickMatchesByCsvUrl(practicesUrls);
-            return new AvailablePractices(mergeLists(readings, speakEasies, flashCards, quickMatches));
+            AvailablePractices availablePractices = new AvailablePractices(mergeLists(readings, speakEasies, flashCards, quickMatches));
+            puAvailablePracticesService.handleForArabic(productCode, storeDomain, availablePractices.getPracticesInUnits());
+            return availablePractices;
         }else {
             return new AvailablePractices(mergeLists(Collections.emptyList(), Collections.emptyList(), Collections.emptyList(), Collections.emptyList()));
         }

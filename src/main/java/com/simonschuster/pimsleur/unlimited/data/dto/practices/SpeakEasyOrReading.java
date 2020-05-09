@@ -63,4 +63,36 @@ public class SpeakEasyOrReading {
     public String getHelpText() {
         return helpText;
     }
+
+    public void setStart(long start) {
+        this.start = start;
+    }
+
+    public void setStop(long stop) {
+        this.stop = stop;
+    }
+
+    public void setSpeaker(String speaker) {
+        this.speaker = speaker;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public void setNativeText(String nativeText) {
+        this.nativeText = nativeText;
+    }
+
+    public void setOptionalText(String optionalText) {
+        this.optionalText = optionalText;
+    }
+
+    public void setHelpText(String helpText) {
+        this.helpText = helpText;
+    }
+
+    public void setOrder(int order) {
+        this.order = order;
+    }
 }

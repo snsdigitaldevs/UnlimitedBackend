@@ -6,6 +6,7 @@ import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.AvailableProduc
 import java.util.List;
 
 import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_EMPTY;
+import static com.simonschuster.pimsleur.unlimited.constants.CommonConstants.ARABIC_PU_ISBN;
 
 @JsonInclude(NON_EMPTY)
 public class Course {
@@ -94,5 +95,9 @@ public class Course {
 
     public void setSimpleCourseName(String simpleCourseName) {
         this.simpleCourseName = simpleCourseName;
+    }
+
+    public Boolean getPuArabic() {
+        return ARABIC_PU_ISBN.contains(productCode);
     }
 }

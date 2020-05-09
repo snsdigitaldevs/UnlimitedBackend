@@ -15,11 +15,23 @@ public class QuickMatchItem {
         return cue;
     }
 
+    public void setCue(String cue) {
+        this.cue = cue;
+    }
+
     public String getTransliteration() {
         return transliteration;
     }
 
+    public void setTransliteration(String transliteration) {
+        this.transliteration = transliteration;
+    }
+
     public String getMp3FileName() {
         return mp3FileName;
+    }
+
+    public void setMp3FileName(String mp3FileName) {
+        this.mp3FileName = mp3FileName;
     }
 }

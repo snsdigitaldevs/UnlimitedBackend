@@ -18,6 +18,7 @@ import java.util.List;
 import static com.github.dreamhead.moco.Moco.*;
 import static com.github.dreamhead.moco.Runner.running;
 import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.core.StringContains.containsString;
 import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
@@ -70,7 +71,7 @@ public class PUCourseInfoServiceTest {
         server.post(and(
                 by(uri("/subscr_production_v_9/action_handlers/hflfg.php")),
                 eq(form("action"), "gfl")))
-                .response(file("src/test/resources/installationFileListResponse.json"));
+                .response(file("src/test/resources/installationFileListWithMultipleCourseResponse.json"));
 
         running(server, () -> {
             AggregatedProductInfo productInfo = puCourseInfoService.getPuProductInfo("9781508260257", storeDomain);
@@ -86,8 +87,8 @@ public class PUCourseInfoServiceTest {
             assertEquals(new Integer(2), courses.get(1).getLevel());
             Lesson lesson1InLevel1 = courses.get(0).getLessons().get(0);
             assertEquals(new Integer(330006), lesson1InLevel1.getMediaItemId());
-            assertEquals("https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/Mandarin%20Chinese%20I/images/thumb/MA_1_M_01.jpg",
-                    lesson1InLevel1.getImage().getThumbImageAddress());
+            assertThat(lesson1InLevel1.getImage().getThumbImageAddress(),
+                containsString("Mandarin%20Chinese%20I/images/thumb/MA_1_M_01.jpg"));
         });
     }
 
@@ -104,18 +105,17 @@ public class PUCourseInfoServiceTest {
             assertEquals("Mandarin Chinese", course.getLanguageName());
 
             Lesson lesson1InLevel1 = course.getLessons().get(0);
-            assertEquals("https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese"
-                            + "/Mandarin%20Chinese%20Demo/images/full/MA_1_M_01.jpg",
-                    lesson1InLevel1.getImage().getFullImageAddress());
+            assertThat(lesson1InLevel1.getAudioLink(), containsString(
+                "Mandarin%20Chinese%20Demo/audio/9781508243328_Mandarin_Chinese1_U01_Lesson.mp3"));
+            assertThat(lesson1InLevel1.getImage().getFullImageAddress(),
+                containsString("Mandarin%20Chinese%20Demo/images/full/MA_1_M_01.jpg"));
+            assertThat(lesson1InLevel1.getImage().getThumbImageAddress(),
+                containsString("Mandarin%20Chinese%20Demo/images/thumb/MA_1_M_01.jpg"));
 
-            assertEquals("https://install.pimsleurunlimited.com/staging_n/common/mandarinchinese"
-                            + "/Mandarin%20Chinese%20Demo/audio/9781508243328_Mandarin_Chinese1_U01_Lesson.mp3",
-                    lesson1InLevel1.getAudioLink());
             assertEquals(new Integer(331006), lesson1InLevel1.getMediaItemId());
             assertEquals("Lesson 1", lesson1InLevel1.getName());
             assertEquals("01", lesson1InLevel1.getLessonNumber());
-            assertEquals("https://install.pimsleurunlimited.com/staging_n/desktop/mandarinchinese/Mandarin%20Chinese%20Demo/images/thumb/MA_1_M_01.jpg",
-                    lesson1InLevel1.getImage().getThumbImageAddress());
+
         });
     }
 

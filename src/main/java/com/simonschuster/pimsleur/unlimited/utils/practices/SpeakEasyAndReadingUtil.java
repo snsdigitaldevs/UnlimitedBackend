@@ -25,11 +25,11 @@ import static org.joda.time.format.DateTimeFormat.forPattern;
 
 public class SpeakEasyAndReadingUtil {
 
-    private static DateTimeFormatter colonColonTimeFormatter = forPattern("mm:ss:SSS");
-    private static DateTimeFormatter colonDotTimeFormatter = forPattern("mm:ss.SSS");
-    private static DateTimeFormatter starTimeFormatter = forPattern("mm:*ss.*SSS");
-    private static DateTimeFormatter dotDotTimeFormatter = forPattern("mm:ss..SSS");
-    private static DateTimeFormatter beginStarTimeFormatter = forPattern("*mm:*ss.*SSS");
+    private static final DateTimeFormatter COLON_COLON_TIME_FORMATTER = forPattern("mm:ss:SSS");
+    private static final DateTimeFormatter COLON_DOT_TIME_FORMATTER = forPattern("mm:ss.SSS");
+    private static final DateTimeFormatter STAR_TIME_FORMATTER = forPattern("mm:*ss.*SSS");
+    private static final DateTimeFormatter DOT_DOT_TIME_FORMATTER = forPattern("mm:ss..SSS");
+    private static final DateTimeFormatter BEGIN_STAR_TIME_FORMATTER = forPattern("*mm:*ss.*SSS");
 
     public static List<PracticesInUnit> csvToSpeakEasies(String csvUrl) throws IOException {
         return getPracticesInUnits(csvUrl, HEADER_LESSON, HEADER_TEXT, HEADER_NATIVE_TEXT, HEADER_VIS_CONV, false);
@@ -134,15 +134,15 @@ public class SpeakEasyAndReadingUtil {
         String timeString = getFromCsv(key, csvRecord).trim();
 
         if (timeString.startsWith("*")) {
-            return beginStarTimeFormatter.parseDateTime(timeString).getMillisOfDay();
+            return BEGIN_STAR_TIME_FORMATTER.parseDateTime(timeString).getMillisOfDay();
         } else if (timeString.contains("..")) {
-            return dotDotTimeFormatter.parseDateTime(timeString).getMillisOfDay();
+            return DOT_DOT_TIME_FORMATTER.parseDateTime(timeString).getMillisOfDay();
         } else if (timeString.contains("*")) {
-            return starTimeFormatter.parseDateTime(timeString).getMillisOfDay();
+            return STAR_TIME_FORMATTER.parseDateTime(timeString).getMillisOfDay();
         } else if (timeString.contains(".")) {
-            return colonDotTimeFormatter.parseDateTime(timeString).getMillisOfDay();
+            return COLON_DOT_TIME_FORMATTER.parseDateTime(timeString).getMillisOfDay();
         } else {
-            return colonColonTimeFormatter.parseDateTime(timeString).getMillisOfDay();
+            return COLON_COLON_TIME_FORMATTER.parseDateTime(timeString).getMillisOfDay();
         }
     }
 

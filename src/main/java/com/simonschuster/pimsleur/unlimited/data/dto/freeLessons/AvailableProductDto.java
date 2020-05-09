@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.Objects;
+import org.apache.commons.lang3.StringUtils;
 
 import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL;
 
@@ -28,8 +29,8 @@ public class AvailableProductDto {
     }
 
     public AvailableProductDto(String languageName, String productsLanguageName, String productCode, boolean isPu) {
-        this.languageName = languageName.trim();
-        this.filterLanguageName = productsLanguageName.trim();
+        this.languageName = StringUtils.trim(languageName);
+        this.filterLanguageName = StringUtils.trim(productsLanguageName);
         this.productCode = productCode;
         this.isPuProduct = isPu;
     }
@@ -38,7 +39,7 @@ public class AvailableProductDto {
         this(languageName, productsLanguageName, productCode, isPu);
 
         this.level = level;
-        this.courseName = courseName.trim();
+        this.courseName = StringUtils.trim(courseName);
     }
 
     public String getFilterLanguageName() {

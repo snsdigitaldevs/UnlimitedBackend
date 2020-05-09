@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode;
 import com.simonschuster.pimsleur.unlimited.services.bonusPacks.BonusPacksUrls;
 import com.simonschuster.pimsleur.unlimited.services.practices.PracticesUrls;
+import com.simonschuster.pimsleur.unlimited.utils.UrlUtil;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.List;
@@ -73,7 +74,22 @@ public class InstallationFileList extends EdtResponseCode {
         if (this.getResultData() != null) {
             String bonusPackFileUrl = getBonusPackFileUrl();
             String reviewAudioBaseUrl = getReviewAudioBaseUrl();
-            return new BonusPacksUrls(bonusPackFileUrl, reviewAudioBaseUrl);
+            if (StringUtils.isNotBlank(bonusPackFileUrl) && StringUtils
+                .isNotBlank(reviewAudioBaseUrl)) {
+                return new BonusPacksUrls(bonusPackFileUrl, reviewAudioBaseUrl);
+            }
+        }
+        return null;
+    }
+
+    public String getUrlByFileName(String fileName) {
+        if (this.getResultData() != null) {
+            FileListItem fileListItem = this.resultData.getFileList().getFileListItems().stream()
+                .filter(fileItem -> fileItem.getPath().endsWith(fileName)).findFirst()
+                .orElse(null);
+            if (fileListItem != null) {
+                return fileListItem.getSourceURL().concat(UrlUtil.encodeUrl(fileListItem.getPath()));
+            }
         }
         return null;
 

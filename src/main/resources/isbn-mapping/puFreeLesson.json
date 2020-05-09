@@ -94,5 +94,21 @@
     "level": 1,
     "isSubscription": false,
     "puProduct": true
+  },
+  {
+    "languageName": "Arabic (Modern Standard)",
+    "filterLanguageName": "Arabic (Modern Standard)",
+    "productCode": "9781797112312",
+    "level": 1,
+    "isSubscription": false,
+    "puProduct": true
+  },
+  {
+    "languageName": "Arabic (Eastern)",
+    "filterLanguageName": "Arabic Eastern",
+    "productCode": "9781797115139",
+    "level": 1,
+    "isSubscription": false,
+    "puProduct": true
   }
 ]

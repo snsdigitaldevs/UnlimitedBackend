@@ -2,6 +2,7 @@ package com.simonschuster.pimsleur.unlimited.services.syncState;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.simonschuster.pimsleur.unlimited.common.exception.ParamInvalidException;
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
 import com.simonschuster.pimsleur.unlimited.data.dto.syncUp.SyncUpDto;
 import com.simonschuster.pimsleur.unlimited.data.edt.syncState.SyncUpItem;
@@ -22,6 +23,7 @@ import static org.springframework.http.MediaType.APPLICATION_FORM_URLENCODED;
 public class SyncUpService {
 
     private static ObjectMapper mapper = new ObjectMapper();
+    private static final String UNDEFINED = "undefined";
 
     @Autowired
     private ApplicationConfiguration config;
@@ -31,7 +33,7 @@ public class SyncUpService {
     public long syncUpPUProgress(String customerId, String subUserId,
                                  String productCode, String mediaItemId,
                                  SyncUpDto syncUpDto) throws Exception {
-
+        checkParam(customerId, productCode, mediaItemId);
         HttpEntity<String> puPostBody = createPuPostBody(customerId, subUserId, productCode, mediaItemId, syncUpDto);
         SyncUpResult syncUpResult = postToEdt(puPostBody,
                 config.getProperty("edt.api.syncUpUrl"),
@@ -42,8 +44,21 @@ public class SyncUpService {
         return syncUpResult.getResultData().getLastSaveId();
     }
 
+    private void checkParam(String customerId, String productCode, String mediaItemId) {
+        if (UNDEFINED.equals(customerId)) {
+            throw new ParamInvalidException("Invalid Param " + customerId);
+        }
+        if (UNDEFINED.equals(productCode)) {
+            throw new ParamInvalidException("Invalid Param " + productCode);
+        }
+        if (UNDEFINED.equals(mediaItemId)) {
+            throw new ParamInvalidException("Invalid Param " + mediaItemId);
+        }
+    }
+
     public long syncUpPcmProgress(String customerId, String productCode,
                                   String mediaItemId, SyncUpDto syncUpDto) throws Exception {
+        checkParam(customerId, productCode, mediaItemId);
         HttpEntity<String> pcmPostBody = createPcmPostBody(customerId, productCode, mediaItemId, syncUpDto);
         SyncUpResult syncUpResult = postToEdt(pcmPostBody,
                 config.getProperty("edt.api.syncUpUrl"),

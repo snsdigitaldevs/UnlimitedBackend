@@ -28,16 +28,9 @@ public class VerifyReceiptDTO {
         if (response.getResultCode() == EdtResponseCode.RESULT_OK) {
             verifyReceiptDTO
                 .setPurchaseStatusDidChange(response.getResultData().getPurchaseStatusDidChange());
-        } else if (response.getResultCode() == EdtResponseCode.RESULT_APPSTORE_RECEIPT_DATA_MISSING
-            || response.getResultCode() == EdtResponseCode.RESULT_APPSTORE_VALIDATION_ERROR_RECEIPT_TOO_OLD) {
+        } else if (response.getResultCode() == EdtResponseCode.RESULT_APPSTORE_RECEIPT_DATA_MISSING) {
             verifyReceiptDTO.setShouldUpdateReceipt(true);
         }
-        return verifyReceiptDTO;
-    }
-
-    public static VerifyReceiptDTO buildTestDTO() {
-        VerifyReceiptDTO verifyReceiptDTO = new VerifyReceiptDTO();
-        verifyReceiptDTO.setShouldUpdateReceipt(true);
         return verifyReceiptDTO;
     }
 }

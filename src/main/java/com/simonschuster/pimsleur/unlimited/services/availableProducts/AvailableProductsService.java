@@ -1,6 +1,8 @@
 package com.simonschuster.pimsleur.unlimited.services.availableProducts;
 
 import com.simonschuster.pimsleur.unlimited.aop.annotation.LogCostTime;
+import com.simonschuster.pimsleur.unlimited.constants.StoreDomainConstants;
+import com.simonschuster.pimsleur.unlimited.data.dto.InAppProduct;
 import com.simonschuster.pimsleur.unlimited.data.dto.availableProducts.AvailableProductsDto;
 import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.AvailableProductDto;
 import com.simonschuster.pimsleur.unlimited.data.dto.productinfo.Course;
@@ -13,6 +15,7 @@ import com.simonschuster.pimsleur.unlimited.services.customer.EDTCustomerInfoSer
 import com.simonschuster.pimsleur.unlimited.services.freeLessons.PcmFreeLessonsService;
 import com.simonschuster.pimsleur.unlimited.services.freeLessons.PuFreeLessonsService;
 import java.util.ArrayList;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,7 +24,6 @@ import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-import org.springframework.util.StringUtils;
 
 import static java.util.Collections.emptyList;
 import static java.util.stream.Collectors.toList;
@@ -157,4 +159,34 @@ public class AvailableProductsService {
         }
         return dtos.stream();
     }
+
+    public List<InAppProduct> purchaseInApp(String sub, String email, String storeDomain) {
+        if (sub == null) {
+            return new ArrayList<>();
+        }
+        CustomerInfo customerInfo = customerInfoService
+            .getPuAndPCMCustomerInfos(sub, storeDomain, email);
+        ResultData resultData = customerInfo.getResultData();
+        if (resultData != null) {
+            return resultData.getCustomer().getCustomersOrders().stream()
+                .filter(customersOrder -> isInAppPurchase(customersOrder.getStoreDomain()))
+                .flatMap(customersOrder -> customersOrder.getOrdersProducts().stream()
+                    .map(ordersProduct -> {
+                        InAppProduct inAppProduct = new InAppProduct();
+                        inAppProduct.setProductCode(ordersProduct.getProduct().getIsbn13NoDashes());
+                        inAppProduct.setStoreDomain(customersOrder.getStoreDomain());
+                        return inAppProduct;
+                    }).collect(Collectors.toList()).stream()).collect(Collectors.toList());
+
+        } else {
+            return emptyList();
+        }
+    }
+
+    private boolean isInAppPurchase(String storeDomain) {
+        return StringUtils.equalsIgnoreCase(StoreDomainConstants.ANDROID_IN_APP, storeDomain)
+            || StringUtils.equalsIgnoreCase(StoreDomainConstants.IOS_IN_APP, storeDomain);
+    }
+
+
 }

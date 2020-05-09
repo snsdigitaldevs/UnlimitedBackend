@@ -8,8 +8,6 @@ import com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.verifyReceipt.VerifyReceiptResponse;
 import com.simonschuster.pimsleur.unlimited.services.AppIdService;
 import com.simonschuster.pimsleur.unlimited.utils.JsonUtils;
-import java.util.HashSet;
-import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -31,15 +29,14 @@ public class VerifyReceiptService {
     private static final Logger LOG = LoggerFactory.getLogger(VerifyReceiptService.class);
     private static final int MAX_TIME = 3;
     private static final long SLEEP_UNIT = 500;
+    private static final String BFF_RESPONSE = "CustomerId is {} and Response is {}";
     private static final String RESTORE_SUCCESS = "Restore success! CustomerId is {} and VerifyReceiptBody is {}";
     private static final String VERIFY_SUCCESS = "Verify success! CustomerId is {} and VerifyReceiptBody is {}";
     private static final String RESTORE_FAILED = "Restore failed! resultCode is {} CustomerId is {} and VerifyReceiptBody is {}";
     private static final String VERIFY_FAILED = "Verify failed! resultCode is {} CustomerId is {} and VerifyReceiptBody is {}";
 
-    private String singleAction = "kljh";
-    private String multipleAction = "gfds";
-
-    private Set<String> testSet = new HashSet<>();
+    private static final String SINGLE_ACTION = "kljh";
+    private static final String MULTIPLE_ACTION = "gfds";
 
     @Autowired
     private ApplicationConfiguration config;
@@ -48,14 +45,10 @@ public class VerifyReceiptService {
 
     public VerifyReceiptDTO verifyReceipt(VerifyReceiptBody verifyReceiptBody, String customerId)
         throws UnsupportedEncodingException {
-        if (!testSet.contains(customerId)) {
-            testSet.add(customerId);
-            LOG.error("test verifyReceiptBody is {}", JsonUtils.toJsonString(verifyReceiptBody));
-            return VerifyReceiptDTO.buildTestDTO();
-        }
         HttpEntity<String> entity = createPostBody(verifyReceiptBody, customerId);
         VerifyReceiptResponse verifyReceiptResponse =
-            postToEdt(entity, config.getProperty("edt.api.verifyReceipt.url"), VerifyReceiptResponse.class);
+            postToEdt(entity, config.getProperty("edt.api.verifyReceipt.url"),
+                VerifyReceiptResponse.class);
         int resultCode = verifyReceiptResponse.getResultCode();
         int retryTimes = 0;
         logVerifyResult(resultCode, verifyReceiptBody, customerId, retryTimes);
@@ -70,8 +63,10 @@ public class VerifyReceiptService {
             resultCode = verifyReceiptResponse.getResultCode();
             logVerifyResult(resultCode, verifyReceiptBody, customerId, retryTimes);
         }
-        testSet.remove(customerId);
-        return VerifyReceiptDTO.fromVerifyResponse(verifyReceiptResponse);
+        VerifyReceiptDTO verifyReceiptDTO = VerifyReceiptDTO
+            .fromVerifyResponse(verifyReceiptResponse);
+        LOG.info(BFF_RESPONSE, customerId, JsonUtils.toJsonString(verifyReceiptDTO));
+        return verifyReceiptDTO;
     }
 
     private HttpEntity<String> createPostBody(VerifyReceiptBody verifyReceiptBody,
@@ -99,7 +94,7 @@ public class VerifyReceiptService {
                 appIdService.getAppId(storeDomain),
                 transactionResult,
                 receipt,
-                verifyReceiptBody.getIsMultiple() ? multipleAction : singleAction,
+                verifyReceiptBody.getIsMultiple() ? MULTIPLE_ACTION : SINGLE_ACTION,
                 1
             );
             return new HttpEntity<>(format, headers);
@@ -111,7 +106,7 @@ public class VerifyReceiptService {
             appIdService.getAppId(storeDomain),
             transactionResult,
             receipt,
-            verifyReceiptBody.getIsMultiple() ? multipleAction : singleAction
+            verifyReceiptBody.getIsMultiple() ? MULTIPLE_ACTION : SINGLE_ACTION
         );
         return new HttpEntity<>(format, headers);
     }

@@ -38,8 +38,12 @@ public class FormatMappingService {
     }
 
     public UpsellDto updateNameDescriptionLink(UpsellDto upsellDto) {
-        of(upsellDto.getNextLevel(), upsellDto.getNextVersion(), upsellDto.getNextSubscription())
+        of(upsellDto.getNextLevel(), upsellDto.getNextVersion())
                 .forEach(this::updateNameDescriptionForUpsellItem);
+        if (upsellDto.getSubscriptionMap() != null) {
+            upsellDto.getSubscriptionMap().values()
+                .forEach(this::updateNameDescriptionForUpsellItem);
+        }
         return updateWebCartLink(upsellDto);
     }
 
@@ -55,8 +59,12 @@ public class FormatMappingService {
 
     private UpsellDto updateWebCartLink(UpsellDto upsellDto) {
         updateWebCartLinkForItem(upsellDto.getNextLevel(), config.getProperty("cart.api.purchase"));
-        updateWebCartLinkForItem(upsellDto.getNextSubscription(), config.getProperty("cart.api.subscription"));
         updateWebCartLinkForItem(upsellDto.getNextVersion(), config.getProperty("cart.api.purchase"));
+        if (upsellDto.getSubscriptionMap() != null) {
+            upsellDto.getSubscriptionMap().values()
+                .forEach(upsellItem -> updateWebCartLinkForItem(upsellItem,
+                    config.getProperty("cart.api.subscription")));
+        }
         return upsellDto;
     }
 

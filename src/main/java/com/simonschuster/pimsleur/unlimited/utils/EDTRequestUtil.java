@@ -29,7 +29,7 @@ public class EDTRequestUtil {
         long startTime = System.currentTimeMillis();
         try {
             T response = REST_TEMPLATE.postForObject(url, httpEntity, responseType);
-            LOG.info("Request[{}] for EDT cost {}ms", url, System.currentTimeMillis() - startTime);
+            LOG.info("Request[{}] for EDT cost {} ms", url, System.currentTimeMillis() - startTime);
             checkResult(url, httpEntity, response);
             return response;
         } catch (Exception e) {

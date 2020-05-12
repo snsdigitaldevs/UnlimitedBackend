@@ -17,6 +17,7 @@ import java.io.InputStreamReader;
 import java.io.StringReader;
 import java.util.*;
 import java.util.stream.Collectors;
+import org.thymeleaf.util.StringUtils;
 
 import static com.simonschuster.pimsleur.unlimited.utils.UnlimitedPracticeUtil.*;
 import static com.simonschuster.pimsleur.unlimited.utils.dict.QuickMatchHeaders.*;
@@ -210,11 +211,9 @@ public class QuickMatchUtil {
 
     private static String getHeaderInCsv(CSVParser csvRecords, String originHeader) {
         for (String key : csvRecords.getHeaderMap().keySet()) {
-            if (key.toLowerCase().equals(originHeader.toLowerCase())) {
-                return key;
-            } else if (originHeader.equals(HEADER_ISBN) && key.toUpperCase().contains(originHeader)) {
-                return key;
-            } else if (originHeader.equals(HEADER_QZ) && key.toUpperCase().equals(HEADER_QUIZ)) {
+            if (StringUtils.equalsIgnoreCase(key, originHeader) || (originHeader.equals(HEADER_ISBN)
+                && key.toUpperCase().contains(originHeader)) || (originHeader.equals(HEADER_QZ)
+                && key.toUpperCase().equals(HEADER_QUIZ))) {
                 return key;
             }
         }

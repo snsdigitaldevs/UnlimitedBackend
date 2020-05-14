@@ -22,7 +22,7 @@ import static org.springframework.http.MediaType.APPLICATION_FORM_URLENCODED;
 @Service
 public class SyncUpService {
 
-    private static ObjectMapper mapper = new ObjectMapper();
+    private static final ObjectMapper mapper = new ObjectMapper();
     private static final String UNDEFINED = "undefined";
 
     @Autowired
@@ -46,13 +46,13 @@ public class SyncUpService {
 
     private void checkParam(String customerId, String productCode, String mediaItemId) {
         if (UNDEFINED.equals(customerId)) {
-            throw new ParamInvalidException("Invalid Param " + customerId);
+            throw new ParamInvalidException("Invalid Param customerId" + customerId);
         }
         if (UNDEFINED.equals(productCode)) {
-            throw new ParamInvalidException("Invalid Param " + productCode);
+            throw new ParamInvalidException("Invalid Param productCode" + productCode);
         }
         if (UNDEFINED.equals(mediaItemId)) {
-            throw new ParamInvalidException("Invalid Param " + mediaItemId);
+            throw new ParamInvalidException("Invalid Param mediaItemId" + mediaItemId);
         }
     }
 

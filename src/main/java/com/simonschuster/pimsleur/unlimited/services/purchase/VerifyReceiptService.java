@@ -1,6 +1,8 @@
 package com.simonschuster.pimsleur.unlimited.services.purchase;
 
+import com.simonschuster.pimsleur.unlimited.common.exception.ParamInvalidException;
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
+import com.simonschuster.pimsleur.unlimited.constants.CommonConstants;
 import com.simonschuster.pimsleur.unlimited.constants.StoreDomainConstants;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.VerifyReceiptBody;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.VerifyReceiptDTO;
@@ -45,6 +47,9 @@ public class VerifyReceiptService {
 
     public VerifyReceiptDTO verifyReceipt(VerifyReceiptBody verifyReceiptBody, String customerId)
         throws UnsupportedEncodingException {
+        if (CommonConstants.UNDEFINED.equals(customerId)) {
+            throw new ParamInvalidException("Invalid Param customerId" + customerId);
+        }
         HttpEntity<String> entity = createPostBody(verifyReceiptBody, customerId);
         VerifyReceiptResponse verifyReceiptResponse =
             postToEdt(entity, config.getProperty("edt.api.verifyReceipt.url"),

@@ -15,6 +15,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Map;
 
+import static com.simonschuster.pimsleur.unlimited.constants.CommonConstants.UNDEFINED;
 import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEdt;
 import static java.lang.String.format;
 import static org.springframework.http.MediaType.APPLICATION_FORM_URLENCODED;
@@ -23,7 +24,6 @@ import static org.springframework.http.MediaType.APPLICATION_FORM_URLENCODED;
 public class SyncUpService {
 
     private static final ObjectMapper mapper = new ObjectMapper();
-    private static final String UNDEFINED = "undefined";
 
     @Autowired
     private ApplicationConfiguration config;

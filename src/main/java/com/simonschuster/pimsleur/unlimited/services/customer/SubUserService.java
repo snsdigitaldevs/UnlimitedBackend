@@ -1,6 +1,8 @@
 package com.simonschuster.pimsleur.unlimited.services.customer;
 
+import com.simonschuster.pimsleur.unlimited.common.exception.ParamInvalidException;
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
+import com.simonschuster.pimsleur.unlimited.constants.CommonConstants;
 import com.simonschuster.pimsleur.unlimited.data.edt.customerinfo.SubUserInfo;
 import com.simonschuster.pimsleur.unlimited.services.AppIdService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +27,9 @@ public class SubUserService {
 
     public SubUserInfo create(String customerId, String name, String token, String storeDomain)
             throws UnsupportedEncodingException {
+        if (CommonConstants.UNDEFINED.equals(customerId)) {
+            throw new ParamInvalidException("Invalid Param customerId" + customerId);
+        }
         String url = applicationConfiguration.getProperty("edt.api.customerInfo");
         String appId = appIdService.getAppId(storeDomain);
         String parameters = format(applicationConfiguration.getApiParameter("createCustomerParameters"),

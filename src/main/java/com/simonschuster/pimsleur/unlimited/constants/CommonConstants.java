@@ -9,6 +9,7 @@ public class CommonConstants {
     public static final String CANADA = "CANADA";
     public static final String USA = "USA";
     public static final String AUSTRALIA = "AUSTRALIA";
+    public static final String UNDEFINED = "undefined";
 
     public static final Set<String> ARABIC_PU_ISBN = Sets
         .newHashSet("9781797115139", "9781797115108", "9781797115115", "9781797115122",

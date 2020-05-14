@@ -77,6 +77,7 @@ public class ApplicationConfiguration {
         RequestLogFilter requestLogFilter = new RequestLogFilter();
         requestLogFilter.setIncludeQueryString(true);
         requestLogFilter.setIncludePayload(true);
+        requestLogFilter.setMaxPayloadLength(1000);
         registration.setFilter(requestLogFilter);
         registration.addUrlPatterns("/*");
         registration.setName("requestLogFilter");

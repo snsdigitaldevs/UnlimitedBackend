@@ -21,6 +21,7 @@ public class UnlimitedPracticeUtil {
     private final static String NO_SUCH_KEY = "NoSuchKey";
     private final static Logger logger = LoggerFactory.getLogger(UnlimitedPracticeUtil.class);
     private static final String PERIOD = ".";
+    private static final String ARABIC_PERIOD = ".\u200E";
     private static final String EXCLAMATION_MARK = "!";
     private static final String ELLIPSES_THREE = "...";
     private static final String ELLIPSES_ONE = "…";
@@ -194,6 +195,9 @@ public class UnlimitedPracticeUtil {
         }
         if (StringUtils.endsWith(translation, PERIOD)) {
             return PERIOD + translation.substring(0, translation.length() - PERIOD.length());
+        }
+        if (StringUtils.endsWith(translation, ARABIC_PERIOD)) {
+            return PERIOD + translation.substring(0, translation.length() - ARABIC_PERIOD.length());
         }
         if (StringUtils.endsWith(translation, EXCLAMATION_MARK)) {
             return EXCLAMATION_MARK + translation

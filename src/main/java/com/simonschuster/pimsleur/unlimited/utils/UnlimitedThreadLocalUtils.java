@@ -18,7 +18,7 @@ public class UnlimitedThreadLocalUtils {
      * record the extraInfo that will need in some other place;
      * if you use it, you must call remove() finally
      */
-    private static ThreadLocal<Map<String, String>> extraInfoThreadLocal = new ThreadLocal<>();
+    private static final ThreadLocal<Map<String, String>> extraInfoThreadLocal = new ThreadLocal<>();
 
     public static void putExtraInfo(String key, String value) {
         Map<String, String> extraInfo = extraInfoThreadLocal.get();

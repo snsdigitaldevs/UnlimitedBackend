@@ -1,21 +1,609 @@
 ﻿Rec #,Lang,Course,Lesson,Cluster,Qz #,Spkr,Cue,Transliteration,MP3 Snippet File Name,MP3 Audio ISBN,Premium ISBN,Skills
-1,EA,Eastern Arabic 1,1,,01Q,N,I know Arabic.,,9781797115108_Eastern_Arabic_1_QZ_001.mp3,9781442306554,9781797115108,15
-2,EA,Eastern Arabic 1,1,,01R,F,أنا بعرف عَرَبي.,ana ba`ref `arabi.,9781797115108_Eastern_Arabic_1_QZ_002.mp3,9781442306554,9781797115108,15
-3,EA,Eastern Arabic 1,1,,02Q,N,I know a little.,,9781797115108_Eastern_Arabic_1_QZ_003.mp3,9781442306554,9781797115108,"7,16"
-4,EA,Eastern Arabic 1,1,,02R,F,أنا بعرف شويّه.,ana ba`ref shwayyeh.,9781797115108_Eastern_Arabic_1_QZ_004.mp3,9781442306554,9781797115108,"7,16"
-5,EA,Eastern Arabic 1,1,,03Q,N,I don’t know.,,9781797115108_Eastern_Arabic_1_QZ_005.mp3,9781442306554,9781797115108,"7,16"
-6,EA,Eastern Arabic 1,1,,03R,F,أنا ما بعرف.,ana maa ba`ref.,9781797115108_Eastern_Arabic_1_QZ_006.mp3,9781442306554,9781797115108,"7,16"
-7,EA,Eastern Arabic 1,1,,04Q,N,You're American. (m),,9781797115108_Eastern_Arabic_1_QZ_007.mp3,9781442306554,9781797115108,13
-8,EA,Eastern Arabic 1,1,,04R,F,إنت أميركي.,inteh amerki.,9781797115108_Eastern_Arabic_1_QZ_008.mp3,9781442306554,9781797115108,13
-9,EA,Eastern Arabic 1,1,,05Q,N,Are you American? (m),,9781797115108_Eastern_Arabic_1_QZ_009.mp3,9781442306554,9781797115108,13
-10,EA,Eastern Arabic 1,1,,05R,F,إنت أميركي؟,inteh amerki?,9781797115108_Eastern_Arabic_1_QZ_010.mp3,9781442306554,9781797115108,13
-11,EA,Eastern Arabic 1,1,,06Q,N,Do you understand? (m),,9781797115108_Eastern_Arabic_1_QZ_011.mp3,9781442306554,9781797115108,"10,15,16"
-12,EA,Eastern Arabic 1,1,,06R,M,إنت بْتَعْرِف؟,inteh bta`ref?,9781797115108_Eastern_Arabic_1_QZ_012.mp3,9781442306554,9781797115108,"10,15,16"
-13,EA,Eastern Arabic 1,1,,07Q,N,Do you understand Arabic? (m),,9781797115108_Eastern_Arabic_1_QZ_013.mp3,9781442306554,9781797115108,"10,15,16"
-14,EA,Eastern Arabic 1,1,,07R,M,إنت بْتَعرِف عَرَبي؟,inteh bta`ref `arabi?,9781797115108_Eastern_Arabic_1_QZ_014.mp3,9781442306554,9781797115108,"10,15,16"
-15,EA,Eastern Arabic 1,1,,08Q,N,Do you know English? (f),,9781797115108_Eastern_Arabic_1_QZ_015.mp3,9781442306554,9781797115108,15
-16,EA,Eastern Arabic 1,1,,08R,M,إنتي بتَعِرفي إنكليزي؟,inti bta`irfi inglizi?,9781797115108_Eastern_Arabic_1_QZ_016.mp3,9781442306554,9781797115108,15
-17,EA,Eastern Arabic 1,1,,09Q,N,"No, I don’t know.",,9781797115108_Eastern_Arabic_1_QZ_017.mp3,9781442306554,9781797115108,"7,16"
-18,EA,Eastern Arabic 1,1,,09R,M,"لأ، أنا ما بعرف.","la’, ana maa ba`ref.",9781797115108_Eastern_Arabic_1_QZ_018.mp3,9781442306554,9781797115108,"7,16"
-19,EA,Eastern Arabic 1,1,,10Q,N,"Yes, miss.",,9781797115108_Eastern_Arabic_1_QZ_019.mp3,9781442306554,9781797115108,13
-20,EA,Eastern Arabic 1,1,,10R,M,نعم يا آنِسه.,"na`am, ya aniseh.",9781797115108_Eastern_Arabic_1_QZ_020.mp3,9781442306554,9781797115108,13
+1,EA,Eastern Arabic 1,1,,01Q,N,I know Arabic.,,9781797115108_Arabic_Eastern_1_QZ_001.mp3,9781442306554,9781797115139,15
+2,EA,Eastern Arabic 1,1,,01R,F,أنا بعرف عَرَبي.,ana ba`ref `arabi.,9781797115108_Arabic_Eastern_1_QZ_002.mp3,9781442306554,9781797115139,15
+3,EA,Eastern Arabic 1,1,,02Q,N,I know a little.,,9781797115108_Arabic_Eastern_1_QZ_003.mp3,9781442306554,9781797115139,"7,16"
+4,EA,Eastern Arabic 1,1,,02R,F,أنا بعرف شويّه.,ana ba`ref shwayyeh.,9781797115108_Arabic_Eastern_1_QZ_004.mp3,9781442306554,9781797115139,"7,16"
+5,EA,Eastern Arabic 1,1,,03Q,N,I don’t know.,,9781797115108_Arabic_Eastern_1_QZ_005.mp3,9781442306554,9781797115139,"7,16"
+6,EA,Eastern Arabic 1,1,,03R,F,أنا ما بعرف.,ana maa ba`ref.,9781797115108_Arabic_Eastern_1_QZ_006.mp3,9781442306554,9781797115139,"7,16"
+7,EA,Eastern Arabic 1,1,,04Q,N,You're American. (m),,9781797115108_Arabic_Eastern_1_QZ_007.mp3,9781442306554,9781797115139,13
+8,EA,Eastern Arabic 1,1,,04R,F,إنت أميركي.,inteh ameerki.,9781797115108_Arabic_Eastern_1_QZ_008.mp3,9781442306554,9781797115139,13
+9,EA,Eastern Arabic 1,1,,05Q,N,Are you American? (m),,9781797115108_Arabic_Eastern_1_QZ_009.mp3,9781442306554,9781797115139,13
+10,EA,Eastern Arabic 1,1,,05R,F,إنت أميركي؟,inteh ameerki?,9781797115108_Arabic_Eastern_1_QZ_010.mp3,9781442306554,9781797115139,13
+11,EA,Eastern Arabic 1,1,,06Q,N,Do you understand? (m),,9781797115108_Arabic_Eastern_1_QZ_011.mp3,9781442306554,9781797115139,"10,15,16"
+12,EA,Eastern Arabic 1,1,,06R,M,إنت بْتَعْرِف؟,inteh bta`ref?,9781797115108_Arabic_Eastern_1_QZ_012.mp3,9781442306554,9781797115139,"10,15,16"
+13,EA,Eastern Arabic 1,1,,07Q,N,Do you understand Arabic? (m),,9781797115108_Arabic_Eastern_1_QZ_013.mp3,9781442306554,9781797115139,"10,15,16"
+14,EA,Eastern Arabic 1,1,,07R,M,إنت بْتَعرِف عَرَبي؟,inteh bta`ref `arabi?,9781797115108_Arabic_Eastern_1_QZ_014.mp3,9781442306554,9781797115139,"10,15,16"
+15,EA,Eastern Arabic 1,1,,08Q,N,Do you know English? (f),,9781797115108_Arabic_Eastern_1_QZ_015.mp3,9781442306554,9781797115139,15
+16,EA,Eastern Arabic 1,1,,08R,M,إنتي بتَعِرفي إنكليزي؟,inti bta`irfi ingliizi?,9781797115108_Arabic_Eastern_1_QZ_016.mp3,9781442306554,9781797115139,15
+17,EA,Eastern Arabic 1,1,,09Q,N,"No, I don’t know.",,9781797115108_Arabic_Eastern_1_QZ_017.mp3,9781442306554,9781797115139,"7,16"
+18,EA,Eastern Arabic 1,1,,09R,M,"لأ، أنا ما بعرف.","la’, ana maa ba`ref.",9781797115108_Arabic_Eastern_1_QZ_018.mp3,9781442306554,9781797115139,"7,16"
+19,EA,Eastern Arabic 1,1,,10Q,N,"Yes, miss.",,9781797115108_Arabic_Eastern_1_QZ_019.mp3,9781442306554,9781797115139,13
+20,EA,Eastern Arabic 1,1,,10R,M,نعم يا آنِسه.,"na`am, ya aanseh.",9781797115108_Arabic_Eastern_1_QZ_020.mp3,9781442306554,9781797115139,13
+21,EA,Eastern Arabic 1,2,,01Q,N,I know well.,,9781797115108_Arabic_Eastern_1_QZ_021.mp3,9781442306554,9781797115139,10
+22,EA,Eastern Arabic 1,2,,01R,F,أنا بعرف منيح.,ana ba`ref mniiH.,9781797115108_Arabic_Eastern_1_QZ_022.mp3,9781442306554,9781797115139,10
+23,EA,Eastern Arabic 1,2,,02Q,N,I know a little Arabic.,,9781797115108_Arabic_Eastern_1_QZ_023.mp3,9781442306554,9781797115139,"15,16"
+24,EA,Eastern Arabic 1,2,,02R,F,أنا بعر ف شوية عَرَبي.,ana ba`ref shwayyet `arabi.,9781797115108_Arabic_Eastern_1_QZ_024.mp3,9781442306554,9781797115139,"15,16"
+25,EA,Eastern Arabic 1,2,,03Q,N,I don’t know well.,,9781797115108_Arabic_Eastern_1_QZ_025.mp3,9781442306554,9781797115139,10
+26,EA,Eastern Arabic 1,2,,03R,F,أنا ما بعرف منيح.,ana maa ba`ref mniiH.,9781797115108_Arabic_Eastern_1_QZ_026.mp3,9781442306554,9781797115139,10
+27,EA,Eastern Arabic 1,2,,04Q,N,Good-bye.,,9781797115108_Arabic_Eastern_1_QZ_027.mp3,9781442306554,9781797115139,"10,16"
+28,EA,Eastern Arabic 1,2,,04R,F,مَعَ السلامه.,ma`assalameh.,9781797115108_Arabic_Eastern_1_QZ_028.mp3,9781442306554,9781797115139,"10,16"
+29,EA,Eastern Arabic 1,2,,05Q,N,I know a little English.,,9781797115108_Arabic_Eastern_1_QZ_029.mp3,9781442306554,9781797115139,15
+30,EA,Eastern Arabic 1,2,,05R,F,أنا بعرف شْوَيّة إنكليزي.,ana ba`ref shwayyet ingliizi.,9781797115108_Arabic_Eastern_1_QZ_030.mp3,9781442306554,9781797115139,15
+31,EA,Eastern Arabic 1,2,,06Q,N,Not very well.,,9781797115108_Arabic_Eastern_1_QZ_031.mp3,9781442306554,9781797115139,10
+32,EA,Eastern Arabic 1,2,,06R,M,مو منيح كتير.,muu mniiH kteer.,9781797115108_Arabic_Eastern_1_QZ_032.mp3,9781442306554,9781797115139,10
+33,EA,Eastern Arabic 1,2,,07Q,N,Good morning. (greeting),,9781797115108_Arabic_Eastern_1_QZ_033.mp3,9781442306554,9781797115139,"10,16"
+34,EA,Eastern Arabic 1,2,,07R,M,صباح الخير.,SabaH el-kheer.,9781797115108_Arabic_Eastern_1_QZ_034.mp3,9781442306554,9781797115139,"10,16"
+35,EA,Eastern Arabic 1,2,,08Q,N,Good morning. (response),,9781797115108_Arabic_Eastern_1_QZ_035.mp3,9781442306554,9781797115139,"10,16"
+36,EA,Eastern Arabic 1,2,,08R,M,صباح النور.,SabaH ennuur.,9781797115108_Arabic_Eastern_1_QZ_036.mp3,9781442306554,9781797115139,"10,16"
+37,EA,Eastern Arabic 1,2,,09Q,N,I don’t know English.,,9781797115108_Arabic_Eastern_1_QZ_037.mp3,9781442306554,9781797115139,15
+38,EA,Eastern Arabic 1,2,,09R,M,أنا ما بعرف إنكليزي.,ana maa ba`ref ingliizi.,9781797115108_Arabic_Eastern_1_QZ_038.mp3,9781442306554,9781797115139,15
+39,EA,Eastern Arabic 1,2,,10Q,N,I don’t know Arabic.,,9781797115108_Arabic_Eastern_1_QZ_039.mp3,9781442306554,9781797115139,15
+40,EA,Eastern Arabic 1,2,,10R,M,أنا ما بعرف عَرَبي.,ana maa ba`ref `arabi.,9781797115108_Arabic_Eastern_1_QZ_040.mp3,9781442306554,9781797115139,15
+41,EA,Eastern Arabic 1,3,,01Q,N,But I know Arabic.,,9781797115108_Arabic_Eastern_1_QZ_041.mp3,9781442306554,9781797115139,15
+42,EA,Eastern Arabic 1,3,,01R,F,لاكِن أنا بعرف عربي.,laakin ana ba`ref `arabi.,9781797115108_Arabic_Eastern_1_QZ_042.mp3,9781442306554,9781797115139,15
+43,EA,Eastern Arabic 1,3,,02Q,N,I'm American. (f),,9781797115108_Arabic_Eastern_1_QZ_043.mp3,9781442306554,9781797115139,"7,16"
+44,EA,Eastern Arabic 1,3,,02R,F,أنا أميركيه.,ana ameerkiyyeh.,9781797115108_Arabic_Eastern_1_QZ_044.mp3,9781442306554,9781797115139,"7,16"
+45,EA,Eastern Arabic 1,3,,03Q,N,Are you American? (f),,9781797115108_Arabic_Eastern_1_QZ_045.mp3,9781442306554,9781797115139,"13,16"
+46,EA,Eastern Arabic 1,3,,03R,F,إنتي أميركيه؟,inti ameerkiyyeh?,9781797115108_Arabic_Eastern_1_QZ_046.mp3,9781442306554,9781797115139,"13,16"
+47,EA,Eastern Arabic 1,3,,04Q,N,You don't know English. (f),,9781797115108_Arabic_Eastern_1_QZ_047.mp3,9781442306554,9781797115139,15
+48,EA,Eastern Arabic 1,3,,04R,F,إنتي ما بتَعِرفي إنكليزي.,inti maa bta`irfi ingliizi.,9781797115108_Arabic_Eastern_1_QZ_048.mp3,9781442306554,9781797115139,15
+49,EA,Eastern Arabic 1,3,,05Q,N,"How are you, well? (f)",,9781797115108_Arabic_Eastern_1_QZ_049.mp3,9781442306554,9781797115139,"10,13,16"
+50,EA,Eastern Arabic 1,3,,05R,F,"كيفِك، منيحه؟","Kiifek, mniiHah?",9781797115108_Arabic_Eastern_1_QZ_050.mp3,9781442306554,9781797115139,"10,13,16"
+51,EA,Eastern Arabic 1,3,,06Q,N,And you? (m),,9781797115108_Arabic_Eastern_1_QZ_051.mp3,9781442306554,9781797115139,13
+52,EA,Eastern Arabic 1,3,,06R,M,وإنت؟,w-inteh?,9781797115108_Arabic_Eastern_1_QZ_052.mp3,9781442306554,9781797115139,13
+53,EA,Eastern Arabic 1,3,,07Q,N,I'm not well. (m),,9781797115108_Arabic_Eastern_1_QZ_053.mp3,9781442306554,9781797115139,"10,16"
+54,EA,Eastern Arabic 1,3,,07R,M,أنا مو منيح.,ana muu mniiH.,9781797115108_Arabic_Eastern_1_QZ_054.mp3,9781442306554,9781797115139,"10,16"
+55,EA,Eastern Arabic 1,3,,08Q,N,I'm American. (m),,9781797115108_Arabic_Eastern_1_QZ_055.mp3,9781442306554,9781797115139,16
+56,EA,Eastern Arabic 1,3,,08R,M,أنا أميركي.,ana ameerki.,9781797115108_Arabic_Eastern_1_QZ_056.mp3,9781442306554,9781797115139,16
+57,EA,Eastern Arabic 1,3,,09Q,N,And you? (f),,9781797115108_Arabic_Eastern_1_QZ_057.mp3,9781442306554,9781797115139,13
+58,EA,Eastern Arabic 1,3,,09R,M,وإنتي؟,w-inti?,9781797115108_Arabic_Eastern_1_QZ_058.mp3,9781442306554,9781797115139,13
+59,EA,Eastern Arabic 1,3,,10Q,N,You are not American. (f),,9781797115108_Arabic_Eastern_1_QZ_059.mp3,9781442306554,9781797115139,7
+60,EA,Eastern Arabic 1,3,,10R,M,إنتي مو أميركية.,inti muu ameerkiyyeh.,9781797115108_Arabic_Eastern_1_QZ_060.mp3,9781442306554,9781797115139,7
+61,EA,Eastern Arabic 1,4,,01Q,N,I know Arabic very well.,,9781797115108_Arabic_Eastern_1_QZ_061.mp3,9781442306554,9781797115139,15
+62,EA,Eastern Arabic 1,4,,01R,F,أنا بعرف عربي منيح كتير.,ana ba`ref `arabi mniiH kteer.,9781797115108_Arabic_Eastern_1_QZ_062.mp3,9781442306554,9781797115139,15
+63,EA,Eastern Arabic 1,4,,02Q,N,I don’t know Arabic well.,,9781797115108_Arabic_Eastern_1_QZ_063.mp3,9781442306554,9781797115139,"15,16"
+64,EA,Eastern Arabic 1,4,,02R,F,أنا ما بعرف عربي منيح.,ana maa ba`ref `arabi mniiH.,9781797115108_Arabic_Eastern_1_QZ_064.mp3,9781442306554,9781797115139,"15,16"
+65,EA,Eastern Arabic 1,4,,03Q,N,I don’t speak English well.,,9781797115108_Arabic_Eastern_1_QZ_065.mp3,9781442306554,9781797115139,"10,15"
+66,EA,Eastern Arabic 1,4,,03R,F,أنا ما بحكي إنكليزي منيح.,ana maa beHki ingliizi mniiH.,9781797115108_Arabic_Eastern_1_QZ_066.mp3,9781442306554,9781797115139,"10,15"
+67,EA,Eastern Arabic 1,4,,04Q,N,It's over there. (f),,9781797115108_Arabic_Eastern_1_QZ_067.mp3,9781442306554,9781797115139,4
+68,EA,Eastern Arabic 1,4,,04R,F,هِيّه هنيك.,hiyyeh hniik.,9781797115108_Arabic_Eastern_1_QZ_068.mp3,9781442306554,9781797115139,4
+69,EA,Eastern Arabic 1,4,,05Q,N,Is it here? (f),,9781797115108_Arabic_Eastern_1_QZ_069.mp3,9781442306554,9781797115139,4
+70,EA,Eastern Arabic 1,4,,05R,F,هِيّه هون؟,hiyyeh hoon?,9781797115108_Arabic_Eastern_1_QZ_070.mp3,9781442306554,9781797115139,4
+71,EA,Eastern Arabic 1,4,,06Q,N,It’s not here. (f),,9781797115108_Arabic_Eastern_1_QZ_071.mp3,9781442306554,9781797115139,4
+72,EA,Eastern Arabic 1,4,,06R,M,هِيّه مو هون.,hiyyeh muu hoon.,9781797115108_Arabic_Eastern_1_QZ_072.mp3,9781442306554,9781797115139,4
+73,EA,Eastern Arabic 1,4,,07Q,N,It's here. (m),,9781797115108_Arabic_Eastern_1_QZ_073.mp3,9781442306554,9781797115139,4
+74,EA,Eastern Arabic 1,4,,07R,M,هوّه هون.,howweh hoon.,9781797115108_Arabic_Eastern_1_QZ_074.mp3,9781442306554,9781797115139,4
+75,EA,Eastern Arabic 1,4,,08Q,N,Do you speak English? (f),,9781797115108_Arabic_Eastern_1_QZ_075.mp3,9781442306554,9781797115139,"10,15,16"
+76,EA,Eastern Arabic 1,4,,08R,M,إنتي بْتِحكي إنكليزي؟,inti btiHki ingliizi?,9781797115108_Arabic_Eastern_1_QZ_076.mp3,9781442306554,9781797115139,"10,15,16"
+77,EA,Eastern Arabic 1,4,,09Q,N,You speak well.,,9781797115108_Arabic_Eastern_1_QZ_077.mp3,9781442306554,9781797115139,"13,15"
+78,EA,Eastern Arabic 1,4,,09R,M,إنتي بتحكي منيح.,inti btiHki mniiH.,9781797115108_Arabic_Eastern_1_QZ_078.mp3,9781442306554,9781797115139,"13,15"
+79,EA,Eastern Arabic 1,4,,10Q,N,And I speak a little.,,9781797115108_Arabic_Eastern_1_QZ_079.mp3,9781442306554,9781797115139,15
+80,EA,Eastern Arabic 1,4,,10R,M,وأنا بحكي شويّه.,w-ana beHki shwayyeh.,9781797115108_Arabic_Eastern_1_QZ_080.mp3,9781442306554,9781797115139,15
+81,EA,Eastern Arabic 1,5,,01Q,N,I would like to eat.,,9781797115108_Arabic_Eastern_1_QZ_081.mp3,9781442306554,9781797115139,"6,16"
+82,EA,Eastern Arabic 1,5,,01R,F,أنا بحب آكُل.,ana bHib aakul.,9781797115108_Arabic_Eastern_1_QZ_082.mp3,9781442306554,9781797115139,"6,16"
+83,EA,Eastern Arabic 1,5,,02Q,N,I would like to drink something.,,9781797115108_Arabic_Eastern_1_QZ_083.mp3,9781442306554,9781797115139,"6,16"
+84,EA,Eastern Arabic 1,5,,02R,F,أنا بحب إشرب شي.,ana bHib ishrab shii.,9781797115108_Arabic_Eastern_1_QZ_084.mp3,9781442306554,9781797115139,"6,16"
+85,EA,Eastern Arabic 1,5,,03Q,N,"Yes, I would like to eat something.",,9781797115108_Arabic_Eastern_1_QZ_085.mp3,9781442306554,9781797115139,6
+86,EA,Eastern Arabic 1,5,,03R,F,"نعم، أنا بحب آكل شي.","na`am, ana bHib aakul shii.",9781797115108_Arabic_Eastern_1_QZ_086.mp3,9781442306554,9781797115139,6
+87,EA,Eastern Arabic 1,5,,04Q,N,"It’s not here, it’s over there. (m)",,9781797115108_Arabic_Eastern_1_QZ_087.mp3,9781442306554,9781797115139,4
+88,EA,Eastern Arabic 1,5,,04R,F,"هوّه مو هون، هوّه هنيك.","howweh muu hoon, howweh hniik.",9781797115108_Arabic_Eastern_1_QZ_088.mp3,9781442306554,9781797115139,4
+89,EA,Eastern Arabic 1,5,,05Q,N,It’s not over there. (f),,9781797115108_Arabic_Eastern_1_QZ_089.mp3,9781442306554,9781797115139,4
+90,EA,Eastern Arabic 1,5,,05R,F,هيّه مو هنيك.,hiyyeh muu hniik.,9781797115108_Arabic_Eastern_1_QZ_090.mp3,9781442306554,9781797115139,4
+91,EA,Eastern Arabic 1,5,,06Q,N,You would like to eat something. (f),,9781797115108_Arabic_Eastern_1_QZ_091.mp3,9781442306554,9781797115139,6
+92,EA,Eastern Arabic 1,5,,06R,M,إنتي بِتحِبّي تاكلي شي.,inti bit-Hibbi taaklii shii.,9781797115108_Arabic_Eastern_1_QZ_092.mp3,9781442306554,9781797115139,6
+93,EA,Eastern Arabic 1,5,,07Q,N,Do you know? (f),,9781797115108_Arabic_Eastern_1_QZ_093.mp3,9781442306554,9781797115139,"7,16"
+94,EA,Eastern Arabic 1,5,,07R,M,إنتي بْتَعرفي؟,inti bta`irfi?,9781797115108_Arabic_Eastern_1_QZ_094.mp3,9781442306554,9781797115139,"7,16"
+95,EA,Eastern Arabic 1,5,,08Q,N,I would like to eat something.,,9781797115108_Arabic_Eastern_1_QZ_095.mp3,9781442306554,9781797115139,6
+96,EA,Eastern Arabic 1,5,,08R,M,أنا بحب آكل شي.,ana bHib aakul shii.,9781797115108_Arabic_Eastern_1_QZ_096.mp3,9781442306554,9781797115139,6
+97,EA,Eastern Arabic 1,5,,09Q,N,Would you like to eat something? (f),,9781797115108_Arabic_Eastern_1_QZ_097.mp3,9781442306554,9781797115139,6
+98,EA,Eastern Arabic 1,5,,09R,M,إنتي بِتحِبّي تاكلي شي,inti bit-Hibbi taaklii shii ?,9781797115108_Arabic_Eastern_1_QZ_098.mp3,9781442306554,9781797115139,6
+99,EA,Eastern Arabic 1,5,,10Q,N,Would you like to drink something? (f),,9781797115108_Arabic_Eastern_1_QZ_099.mp3,9781442306554,9781797115139,6
+100,EA,Eastern Arabic 1,5,,10R,M,إنتي بِتحِبّي تشربي شي؟,inti bit-Hibbi tishrabi shii ?,9781797115108_Arabic_Eastern_1_QZ_100.mp3,9781442306554,9781797115139,6
+101,EA,Eastern Arabic 1,5,,11Q,N,Very well!,,9781797115108_Arabic_Eastern_1_QZ_101.mp3,9781442306554,9781797115139,"7,10"
+102,EA,Eastern Arabic 1,5,,11R,F,منيح كتير!,mniiH ktiir!,9781797115108_Arabic_Eastern_1_QZ_102.mp3,9781442306554,9781797115139,"7,10"
+103,EA,Eastern Arabic 1,6,,01Q,N,Me too.,,9781797115108_Arabic_Eastern_1_QZ_103.mp3,9781442306554,9781797115139,16
+104,EA,Eastern Arabic 1,6,,01R,F,أنا كمان.,ana kamaan.,9781797115108_Arabic_Eastern_1_QZ_104.mp3,9781442306554,9781797115139,16
+105,EA,Eastern Arabic 1,6,,02Q,N,I too would like to eat.,,9781797115108_Arabic_Eastern_1_QZ_105.mp3,9781442306554,9781797115139,6
+106,EA,Eastern Arabic 1,6,,02R,F,أنا كمان بحب آكل.,ana kamaan bHib aakul.,9781797115108_Arabic_Eastern_1_QZ_106.mp3,9781442306554,9781797115139,6
+107,EA,Eastern Arabic 1,6,,03Q,N,At the restaurant?,,9781797115108_Arabic_Eastern_1_QZ_107.mp3,9781442306554,9781797115139,6
+108,EA,Eastern Arabic 1,6,,03R,F,بالمطعم؟,bil-mat`am?,9781797115108_Arabic_Eastern_1_QZ_108.mp3,9781442306554,9781797115139,6
+109,EA,Eastern Arabic 1,6,,04Q,N,Would you like to drink something? (f),,9781797115108_Arabic_Eastern_1_QZ_109.mp3,9781442306554,9781797115139,6
+110,EA,Eastern Arabic 1,6,,04R,F,بتحبي تشربي شي؟,bit-Hibbi tishrabi shii ?,9781797115108_Arabic_Eastern_1_QZ_110.mp3,9781442306554,9781797115139,6
+111,EA,Eastern Arabic 1,6,,05Q,N,I would like to drink something.,,9781797115108_Arabic_Eastern_1_QZ_111.mp3,9781442306554,9781797115139,6
+112,EA,Eastern Arabic 1,6,,05R,F,بحب إشرب شي.,bHib ishrab shii.,9781797115108_Arabic_Eastern_1_QZ_112.mp3,9781442306554,9781797115139,6
+113,EA,Eastern Arabic 1,6,,06Q,N,Do you know? (f),,9781797115108_Arabic_Eastern_1_QZ_113.mp3,9781442306554,9781797115139,7
+114,EA,Eastern Arabic 1,6,,06R,M,بتَعرفي؟,bta`irfi?,9781797115108_Arabic_Eastern_1_QZ_114.mp3,9781442306554,9781797115139,7
+115,EA,Eastern Arabic 1,6,,07Q,N,I don't know.,,9781797115108_Arabic_Eastern_1_QZ_115.mp3,9781442306554,9781797115139,"7,16"
+116,EA,Eastern Arabic 1,6,,07R,M,ما بعرف.,maa ba`ref.,9781797115108_Arabic_Eastern_1_QZ_116.mp3,9781442306554,9781797115139,"7,16"
+117,EA,Eastern Arabic 1,6,,08Q,N,Not now.,,9781797115108_Arabic_Eastern_1_QZ_117.mp3,9781442306554,9781797115139,"7,16"
+118,EA,Eastern Arabic 1,6,,08R,M,مو هلأ.,Muu hal-la’.,9781797115108_Arabic_Eastern_1_QZ_118.mp3,9781442306554,9781797115139,"7,16"
+119,EA,Eastern Arabic 1,6,,09Q,N,When would you like to drink something? (m),,9781797115108_Arabic_Eastern_1_QZ_119.mp3,9781442306554,9781797115139,6
+120,EA,Eastern Arabic 1,6,,09R,M,إمتى بتحب تشرب شي؟,eemta bit-Hib tishrab shii ?,9781797115108_Arabic_Eastern_1_QZ_120.mp3,9781442306554,9781797115139,6
+121,EA,Eastern Arabic 1,6,,10Q,N,Where would you like to eat? (f),,9781797115108_Arabic_Eastern_1_QZ_121.mp3,9781442306554,9781797115139,6
+122,EA,Eastern Arabic 1,6,,10R,M,وين بتحبي تاكلي؟,ween bit-Hibbi taakli?,9781797115108_Arabic_Eastern_1_QZ_122.mp3,9781442306554,9781797115139,6
+123,EA,Eastern Arabic 1,7,,01Q,N,I'd like to eat here.,,9781797115108_Arabic_Eastern_1_QZ_123.mp3,9781442306554,9781797115139,6
+124,EA,Eastern Arabic 1,7,,01R,F,بحب آكل هون.,bHib aakul hoon.,9781797115108_Arabic_Eastern_1_QZ_124.mp3,9781442306554,9781797115139,6
+125,EA,Eastern Arabic 1,7,,02Q,N,I'd like to drink some coffee.,,9781797115108_Arabic_Eastern_1_QZ_125.mp3,9781442306554,9781797115139,"6,16"
+126,EA,Eastern Arabic 1,7,,02R,F,بحب إشرب شوية أهوه.,bHib ishrab shwayyet ahweh.,9781797115108_Arabic_Eastern_1_QZ_126.mp3,9781442306554,9781797115139,"6,16"
+127,EA,Eastern Arabic 1,7,,03Q,N,I would like some tea.,,9781797115108_Arabic_Eastern_1_QZ_127.mp3,9781442306554,9781797115139,"6,16"
+128,EA,Eastern Arabic 1,7,,03R,F,بحب شوية شاي.,bHib shwayyet shaay.,9781797115108_Arabic_Eastern_1_QZ_128.mp3,9781442306554,9781797115139,"6,16"
+129,EA,Eastern Arabic 1,7,,04Q,N,What would you like to eat? (m),,9781797115108_Arabic_Eastern_1_QZ_129.mp3,9781442306554,9781797115139,6
+130,EA,Eastern Arabic 1,7,,04R,F,شو بتحب تاكل؟,Shuu bit-Hib taakul?,9781797115108_Arabic_Eastern_1_QZ_130.mp3,9781442306554,9781797115139,6
+131,EA,Eastern Arabic 1,7,,05Q,N,What would you like to drink? (f),,9781797115108_Arabic_Eastern_1_QZ_131.mp3,9781442306554,9781797115139,6
+132,EA,Eastern Arabic 1,7,,05R,F,شو بتحبي تشربي؟,Shuu bit-Hibbi tishrabi?,9781797115108_Arabic_Eastern_1_QZ_132.mp3,9781442306554,9781797115139,6
+133,EA,Eastern Arabic 1,7,,06Q,N,What would you like to eat? (m),,9781797115108_Arabic_Eastern_1_QZ_133.mp3,9781442306554,9781797115139,6
+134,EA,Eastern Arabic 1,7,,06R,M,شو بتحب تاكل؟,Shuu bit-Hib taakul?,9781797115108_Arabic_Eastern_1_QZ_134.mp3,9781442306554,9781797115139,6
+135,EA,Eastern Arabic 1,7,,07Q,N,What would you like to eat? (f),,9781797115108_Arabic_Eastern_1_QZ_135.mp3,9781442306554,9781797115139,6
+136,EA,Eastern Arabic 1,7,,07R,M,شو بتحبي تاكلي؟,shoo bit-hibbi takli?,9781797115108_Arabic_Eastern_1_QZ_136.mp3,9781442306554,9781797115139,6
+137,EA,Eastern Arabic 1,7,,08Q,N,Where would you like to eat? (m),,9781797115108_Arabic_Eastern_1_QZ_137.mp3,9781442306554,9781797115139,6
+138,EA,Eastern Arabic 1,7,,08R,M,وين بتحب تاكل؟,ween bit-Hib taakul?,9781797115108_Arabic_Eastern_1_QZ_138.mp3,9781442306554,9781797115139,6
+139,EA,Eastern Arabic 1,7,,09Q,N,Where would you like to drink some coffee? (f),,9781797115108_Arabic_Eastern_1_QZ_139.mp3,9781442306554,9781797115139,6
+140,EA,Eastern Arabic 1,7,,09R,M,وين بتحبي تشربي شوية أهوه؟,ween bit-Hibbi tishrabi shwayyet ahweh?,9781797115108_Arabic_Eastern_1_QZ_140.mp3,9781442306554,9781797115139,6
+141,EA,Eastern Arabic 1,7,,10Q,N,Where is the restaurant?,,9781797115108_Arabic_Eastern_1_QZ_141.mp3,9781442306554,9781797115139,"4,6,16"
+142,EA,Eastern Arabic 1,7,,10R,M,وين المطعم؟,ween el-mat`am?,9781797115108_Arabic_Eastern_1_QZ_142.mp3,9781442306554,9781797115139,"4,6,16"
+143,EA,Eastern Arabic 1,8,,01Q,N,I would like to do something.,,9781797115108_Arabic_Eastern_1_QZ_143.mp3,9781442306554,9781797115139,1
+144,EA,Eastern Arabic 1,8,,01R,F,بحب أَعْمِل شي.,bHib a`mel shii.,9781797115108_Arabic_Eastern_1_QZ_144.mp3,9781442306554,9781797115139,1
+145,EA,Eastern Arabic 1,8,,02Q,N,I would like to buy something.,,9781797115108_Arabic_Eastern_1_QZ_145.mp3,9781442306554,9781797115139,14
+146,EA,Eastern Arabic 1,8,,02R,F,بحب إشتري شي.,bHib ishtiri shii.,9781797115108_Arabic_Eastern_1_QZ_146.mp3,9781442306554,9781797115139,14
+147,EA,Eastern Arabic 1,8,,03Q,N,What would you like to do? (m),,9781797115108_Arabic_Eastern_1_QZ_147.mp3,9781442306554,9781797115139,1
+148,EA,Eastern Arabic 1,8,,03R,F,شو بتحب تعمل؟,Shuu bit-Hib ta`mel?,9781797115108_Arabic_Eastern_1_QZ_148.mp3,9781442306554,9781797115139,1
+149,EA,Eastern Arabic 1,8,,04Q,N,What would you like to buy? (m),,9781797115108_Arabic_Eastern_1_QZ_149.mp3,9781442306554,9781797115139,14
+150,EA,Eastern Arabic 1,8,,04R,F,شو بتحب تشتري؟,Shuu bit-Hib tishtiri?,9781797115108_Arabic_Eastern_1_QZ_150.mp3,9781442306554,9781797115139,14
+151,EA,Eastern Arabic 1,8,,05Q,N,What would you like to do? (f),,9781797115108_Arabic_Eastern_1_QZ_151.mp3,9781442306554,9781797115139,1
+152,EA,Eastern Arabic 1,8,,05R,F,شو بتحبي تعملي؟,Shuu bit-Hibbi ta`emli?,9781797115108_Arabic_Eastern_1_QZ_152.mp3,9781442306554,9781797115139,1
+153,EA,Eastern Arabic 1,8,,06Q,N,"What would you like to drink, coffee or tea? (f)",,9781797115108_Arabic_Eastern_1_QZ_153.mp3,9781442306554,9781797115139,6
+154,EA,Eastern Arabic 1,8,,06R,M,"شو بتحبي تشربي، أهوة وللا شاي؟","Shuu bit-Hibbi tishrabi, ahweh wella shaay?",9781797115108_Arabic_Eastern_1_QZ_154.mp3,9781442306554,9781797115139,6
+155,EA,Eastern Arabic 1,8,,07Q,N,It’s on Elhamra Street.,,9781797115108_Arabic_Eastern_1_QZ_155.mp3,9781442306554,9781797115139,4
+156,EA,Eastern Arabic 1,8,,07R,M,هوّه بشارع الحمرا.,howweh bi-shari` elHamra.,9781797115108_Arabic_Eastern_1_QZ_156.mp3,9781442306554,9781797115139,4
+157,EA,Eastern Arabic 1,8,,08Q,N,"Yes, yes, I know.",,9781797115108_Arabic_Eastern_1_QZ_157.mp3,9781442306554,9781797115139,7
+158,EA,Eastern Arabic 1,8,,08R,M,"نعم، نعم، بعرف.","na`am, na`am, ba`ref.",9781797115108_Arabic_Eastern_1_QZ_158.mp3,9781442306554,9781797115139,7
+159,EA,Eastern Arabic 1,8,,09Q,N,Would you like to eat something with me? (f),,9781797115108_Arabic_Eastern_1_QZ_159.mp3,9781442306554,9781797115139,6
+160,EA,Eastern Arabic 1,8,,09R,M,بتحبي تاكلي شي معي؟,bit-Hibbi taakli shii ma`i?,9781797115108_Arabic_Eastern_1_QZ_160.mp3,9781442306554,9781797115139,6
+161,EA,Eastern Arabic 1,8,,10Q,N,Where is “esh-shaam” restaurant?,,9781797115108_Arabic_Eastern_1_QZ_161.mp3,9781442306554,9781797115139,"4,6"
+162,EA,Eastern Arabic 1,8,,10R,M,وين مطعم »الشام«؟,"ween mat`am ""esh-shaam""?",9781797115108_Arabic_Eastern_1_QZ_162.mp3,9781442306554,9781797115139,"4,6"
+163,EA,Eastern Arabic 1,9,,01Q,N,At what time?,,9781797115108_Arabic_Eastern_1_QZ_163.mp3,9781442306554,9781797115139,"16,17"
+164,EA,Eastern Arabic 1,9,,01R,F,أيّ ساعه؟,ayya saa`ah?,9781797115108_Arabic_Eastern_1_QZ_164.mp3,9781442306554,9781797115139,"16,17"
+165,EA,Eastern Arabic 1,9,,02Q,N,"At one o'clock, or at two o'clock?",,9781797115108_Arabic_Eastern_1_QZ_165.mp3,9781442306554,9781797115139,"12,17"
+166,EA,Eastern Arabic 1,9,,02R,F,"الساعه وحده، وللا الساعه تنتين؟","essa`ah waHdeh, wella essa`ah tinteen?",9781797115108_Arabic_Eastern_1_QZ_166.mp3,9781442306554,9781797115139,"12,17"
+167,EA,Eastern Arabic 1,9,,03Q,N,Would you too like to eat? (f),,9781797115108_Arabic_Eastern_1_QZ_167.mp3,9781442306554,9781797115139,6
+168,EA,Eastern Arabic 1,9,,03R,F,إنتي كمان بتحبي تاكلي؟,inti kamaan bit-Hibbi taakli?,9781797115108_Arabic_Eastern_1_QZ_168.mp3,9781442306554,9781797115139,6
+169,EA,Eastern Arabic 1,9,,04Q,N,I don’t know at what time. (f),,9781797115108_Arabic_Eastern_1_QZ_169.mp3,9781442306554,9781797115139,17
+170,EA,Eastern Arabic 1,9,,04R,F,ما بعرف أي ساعه.,ma ba`ref ayya saa`ah.,9781797115108_Arabic_Eastern_1_QZ_170.mp3,9781442306554,9781797115139,17
+171,EA,Eastern Arabic 1,9,,05Q,N,At nine o'clock.,,9781797115108_Arabic_Eastern_1_QZ_171.mp3,9781442306554,9781797115139,"12,16,17"
+172,EA,Eastern Arabic 1,9,,05R,F,الساعه تسعه.,esaa`ah tis`ah.,9781797115108_Arabic_Eastern_1_QZ_172.mp3,9781442306554,9781797115139,"12,16,17"
+173,EA,Eastern Arabic 1,9,,06Q,N,I understand now. (m),,9781797115108_Arabic_Eastern_1_QZ_173.mp3,9781442306554,9781797115139,15
+174,EA,Eastern Arabic 1,9,,06R,M,فهمت هلأ.,fhimet hal-la’.,9781797115108_Arabic_Eastern_1_QZ_174.mp3,9781442306554,9781797115139,15
+175,EA,Eastern Arabic 1,9,,07Q,N,I don't want to.,,9781797115108_Arabic_Eastern_1_QZ_175.mp3,9781442306554,9781797115139,16
+176,EA,Eastern Arabic 1,9,,07R,M,ما بِدّي.,maa biddi.,9781797115108_Arabic_Eastern_1_QZ_176.mp3,9781442306554,9781797115139,16
+177,EA,Eastern Arabic 1,9,,08Q,N,Not miss ---ma’am!,,9781797115108_Arabic_Eastern_1_QZ_177.mp3,9781442306554,9781797115139,13
+178,EA,Eastern Arabic 1,9,,08R,F,مو يا آنسه -- يا ست!,Muu yaa aaniseh --- yaa sit!,9781797115108_Arabic_Eastern_1_QZ_178.mp3,9781442306554,9781797115139,13
+179,EA,Eastern Arabic 1,9,,09Q,N,Where is Esh-sham Hotel?,,9781797115108_Arabic_Eastern_1_QZ_179.mp3,9781442306554,9781797115139,"4,16,18"
+180,EA,Eastern Arabic 1,9,,09R,M,وين اوتيل الشام؟,ween oteel esh-sham?,9781797115108_Arabic_Eastern_1_QZ_180.mp3,9781442306554,9781797115139,"4,16,18"
+181,EA,Eastern Arabic 1,9,,10Q,N,And not later.,,9781797115108_Arabic_Eastern_1_QZ_181.mp3,9781442306554,9781797115139,17
+182,EA,Eastern Arabic 1,9,,10R,M,ومو بعدين.,w-muu ba`deen.,9781797115108_Arabic_Eastern_1_QZ_182.mp3,9781442306554,9781797115139,17
+183,EA,Eastern Arabic 1,10,,01Q,N,What time is it?,,9781797115108_Arabic_Eastern_1_QZ_183.mp3,9781442306554,9781797115139,"16,17"
+184,EA,Eastern Arabic 1,10,,01R,F,أدّيش الساعه؟,ad-deesh essaa`ah?,9781797115108_Arabic_Eastern_1_QZ_184.mp3,9781442306554,9781797115139,"16,17"
+185,EA,Eastern Arabic 1,10,,02Q,N,What time is it now?,,9781797115108_Arabic_Eastern_1_QZ_185.mp3,9781442306554,9781797115139,"16,17"
+186,EA,Eastern Arabic 1,10,,02R,F,أدّيش الساعه هلأ؟,ad-deesh essaa`ah hal-la’?,9781797115108_Arabic_Eastern_1_QZ_186.mp3,9781442306554,9781797115139,"16,17"
+187,EA,Eastern Arabic 1,10,,03Q,N,It's one o'clock now.,,9781797115108_Arabic_Eastern_1_QZ_187.mp3,9781442306554,9781797115139,"12,16,17"
+188,EA,Eastern Arabic 1,10,,03R,F,الساعه وحده هلأ.,essaa`ah waHdeh hal-la’.,9781797115108_Arabic_Eastern_1_QZ_188.mp3,9781442306554,9781797115139,"12,16,17"
+189,EA,Eastern Arabic 1,10,,04Q,N,I'm going to eat now.,,9781797115108_Arabic_Eastern_1_QZ_189.mp3,9781442306554,9781797115139,6
+190,EA,Eastern Arabic 1,10,,04R,F,حآكل هلأ.,Ha-aakul hal-la’.,9781797115108_Arabic_Eastern_1_QZ_190.mp3,9781442306554,9781797115139,6
+191,EA,Eastern Arabic 1,10,,05Q,N,I'm going to drink something.,,9781797115108_Arabic_Eastern_1_QZ_191.mp3,9781442306554,9781797115139,6
+192,EA,Eastern Arabic 1,10,,05R,F,حإشرب شي.,Ha-ishrab shii.,9781797115108_Arabic_Eastern_1_QZ_192.mp3,9781442306554,9781797115139,6
+193,EA,Eastern Arabic 1,10,,06Q,N,"At three o’clock, or at four o’clock.",,9781797115108_Arabic_Eastern_1_QZ_193.mp3,9781442306554,9781797115139,"12,17"
+194,EA,Eastern Arabic 1,10,,06R,M,الساعه تلاته أو الساعه أربعه.,"essaa`ah tlateh, aw essaa`ah arb`ah.",9781797115108_Arabic_Eastern_1_QZ_194.mp3,9781442306554,9781797115139,"12,17"
+195,EA,Eastern Arabic 1,10,,07Q,N,"It’s five o’clock, brother.",,9781797115108_Arabic_Eastern_1_QZ_195.mp3,9781442306554,9781797115139,"5,12,17"
+196,EA,Eastern Arabic 1,10,,07R,M,"الساعه خمسه، يا أخ.","essaa`ah khamseh, ya akh.",9781797115108_Arabic_Eastern_1_QZ_196.mp3,9781442306554,9781797115139,"5,12,17"
+197,EA,Eastern Arabic 1,10,,08Q,N,I would like to drink coffee or tea.,,9781797115108_Arabic_Eastern_1_QZ_197.mp3,9781442306554,9781797115139,6
+198,EA,Eastern Arabic 1,10,,08R,M,بحب إشرب أهوه أو شاي.,bHib ishrab ahweh aw shaay.,9781797115108_Arabic_Eastern_1_QZ_198.mp3,9781442306554,9781797115139,6
+199,EA,Eastern Arabic 1,10,,09Q,N,I will drink something at nine o'clock.,,9781797115108_Arabic_Eastern_1_QZ_199.mp3,9781442306554,9781797115139,"6,12,17"
+200,EA,Eastern Arabic 1,10,,09R,M,حإشرب شي الساعه تسعه.,Ha-ishrab shii essaa`ah tis`ah.,9781797115108_Arabic_Eastern_1_QZ_200.mp3,9781442306554,9781797115139,"6,12,17"
+201,EA,Eastern Arabic 1,10,,10Q,N,Will you eat at five o'clock? (m),,9781797115108_Arabic_Eastern_1_QZ_201.mp3,9781442306554,9781797115139,"6,12,17"
+202,EA,Eastern Arabic 1,10,,10R,M,حَتاكُل الساعة خمسه؟,Ha-takul es-sa`ah khamseh?,9781797115108_Arabic_Eastern_1_QZ_202.mp3,9781442306554,9781797115139,"6,12,17"
+203,EA,Eastern Arabic 1,10,,11Q,N,You don't understand. (f),,9781797115108_Arabic_Eastern_1_QZ_203.mp3,9781442306554,9781797115139,"15,16"
+204,EA,Eastern Arabic 1,10,,11R,M,ما فْهِمْتي.,maa fhimti.,9781797115108_Arabic_Eastern_1_QZ_204.mp3,9781442306554,9781797115139,"15,16"
+205,EA,Eastern Arabic 1,11,,01Q,N,And tomorrow?,,9781797115108_Arabic_Eastern_1_QZ_205.mp3,9781442306554,9781797115139,17
+206,EA,Eastern Arabic 1,11,,01R,F,وبُكره؟,w-bukrah?,9781797115108_Arabic_Eastern_1_QZ_206.mp3,9781442306554,9781797115139,17
+207,EA,Eastern Arabic 1,11,,02Q,N,I would like to eat with you tonight.,,9781797115108_Arabic_Eastern_1_QZ_207.mp3,9781442306554,9781797115139,6
+208,EA,Eastern Arabic 1,11,,02R,F,بحب آكل معك اليوم بالليل.,bHib aakul ma`ak ilyoom billeel.,9781797115108_Arabic_Eastern_1_QZ_208.mp3,9781442306554,9781797115139,6
+209,EA,Eastern Arabic 1,11,,03Q,N,Tomorrow night at seven o’clock.,,9781797115108_Arabic_Eastern_1_QZ_209.mp3,9781442306554,9781797115139,"12,17"
+210,EA,Eastern Arabic 1,11,,03R,F,بكره بالليل الساعة سبعه.,bukrah billeel essaa`ah sab`ah.,9781797115108_Arabic_Eastern_1_QZ_210.mp3,9781442306554,9781797115139,"12,17"
+211,EA,Eastern Arabic 1,11,,04Q,N,I will eat at ten o’clock tonight.,,9781797115108_Arabic_Eastern_1_QZ_211.mp3,9781442306554,9781797115139,"6,12,17"
+212,EA,Eastern Arabic 1,11,,04R,F,حآكل الساعة عَشَره اليوم بالليل.,Ha-aakul essaa`ah `ashrah ilyoom billeel.,9781797115108_Arabic_Eastern_1_QZ_212.mp3,9781442306554,9781797115139,"6,12,17"
+213,EA,Eastern Arabic 1,11,,05Q,N,I will eat at ten o’clock.,,9781797115108_Arabic_Eastern_1_QZ_213.mp3,9781442306554,9781797115139,"6,12,17"
+214,EA,Eastern Arabic 1,11,,05R,F,حآكل الساعة عَشَره.,Ha-aakul essaa`ah `ashrah.,9781797115108_Arabic_Eastern_1_QZ_214.mp3,9781442306554,9781797115139,"6,12,17"
+215,EA,Eastern Arabic 1,11,,06Q,N,I will eat with you tomorrow. (m),,9781797115108_Arabic_Eastern_1_QZ_215.mp3,9781442306554,9781797115139,"6,17"
+216,EA,Eastern Arabic 1,11,,06R,M,حآكل معَك بكره.,Ha-aakul ma`ak bukrah.,9781797115108_Arabic_Eastern_1_QZ_216.mp3,9781442306554,9781797115139,"6,17"
+217,EA,Eastern Arabic 1,11,,07Q,N,"Today, and tomorrow too.",,9781797115108_Arabic_Eastern_1_QZ_217.mp3,9781442306554,9781797115139,17
+218,EA,Eastern Arabic 1,11,,07R,M,اليوم وبكرة كَمان.,"ilyoom, w-bukrah kamaan.",9781797115108_Arabic_Eastern_1_QZ_218.mp3,9781442306554,9781797115139,17
+219,EA,Eastern Arabic 1,11,,08Q,N,"Then, at seven o’clock.",,9781797115108_Arabic_Eastern_1_QZ_219.mp3,9781442306554,9781797115139,"12,17"
+220,EA,Eastern Arabic 1,11,,08R,M,إزَن الساعة سبعه.,"izan, essaa`ah sab`ah.",9781797115108_Arabic_Eastern_1_QZ_220.mp3,9781442306554,9781797115139,"12,17"
+221,EA,Eastern Arabic 1,11,,09Q,N,I don’t want to eat now.,,9781797115108_Arabic_Eastern_1_QZ_221.mp3,9781442306554,9781797115139,6
+222,EA,Eastern Arabic 1,11,,09R,M,ما بدي آكل هلأ.,maa biddi aakul hal-la’.,9781797115108_Arabic_Eastern_1_QZ_222.mp3,9781442306554,9781797115139,6
+223,EA,Eastern Arabic 1,11,,10Q,N,"Not today, tomorrow.",,9781797115108_Arabic_Eastern_1_QZ_223.mp3,9781442306554,9781797115139,17
+224,EA,Eastern Arabic 1,11,,10R,M,"مو اليوم، بكره.","muu-lyoom, bukrah.",9781797115108_Arabic_Eastern_1_QZ_224.mp3,9781442306554,9781797115139,17
+225,EA,Eastern Arabic 1,12,,01Q,N,How much is this?,,9781797115108_Arabic_Eastern_1_QZ_225.mp3,9781442306554,9781797115139,16
+226,EA,Eastern Arabic 1,12,,01R,F,بأديش هادا؟,b-ad-deesh haadaa?,9781797115108_Arabic_Eastern_1_QZ_226.mp3,9781442306554,9781797115139,16
+227,EA,Eastern Arabic 1,12,,02Q,N,"Yes, this is ten pounds.",,9781797115108_Arabic_Eastern_1_QZ_227.mp3,9781442306554,9781797115139,"11,12"
+228,EA,Eastern Arabic 1,12,,02R,F,"نعم.، هادا بعشر ليرات.","na`am, haadaa b-`ashr leeraat.",9781797115108_Arabic_Eastern_1_QZ_228.mp3,9781442306554,9781797115139,"11,12"
+229,EA,Eastern Arabic 1,12,,03Q,N,Is this ten pounds?,,9781797115108_Arabic_Eastern_1_QZ_229.mp3,9781442306554,9781797115139,"11,12"
+230,EA,Eastern Arabic 1,12,,03R,F,هادا بعشر ليرات؟,haadaa b-`ashr leehrat?,9781797115108_Arabic_Eastern_1_QZ_230.mp3,9781442306554,9781797115139,"11,12"
+231,EA,Eastern Arabic 1,12,,04Q,N,I'm not going to drink tea today.,,9781797115108_Arabic_Eastern_1_QZ_231.mp3,9781442306554,9781797115139,6
+232,EA,Eastern Arabic 1,12,,04R,F,ما حإشرب شاي اليوم.,maa Ha-ishrab shaay ilyoom.,9781797115108_Arabic_Eastern_1_QZ_232.mp3,9781442306554,9781797115139,6
+233,EA,Eastern Arabic 1,12,,05Q,N,You’re not going to drink tea? (f),,9781797115108_Arabic_Eastern_1_QZ_233.mp3,9781442306554,9781797115139,6
+234,EA,Eastern Arabic 1,12,,05R,F,ما حتشربي شاي؟,maa Ha-tishrabi shaay? (f),9781797115108_Arabic_Eastern_1_QZ_234.mp3,9781442306554,9781797115139,6
+235,EA,Eastern Arabic 1,12,,06Q,N,"Not tonight, but tomorrow night.",,9781797115108_Arabic_Eastern_1_QZ_235.mp3,9781442306554,9781797115139,17
+236,EA,Eastern Arabic 1,12,,06R,M,"مو اليوم بالليل، لكن بكرة بالليل.","Muu -lyoom billeel, laakin bukrah billeel.",9781797115108_Arabic_Eastern_1_QZ_236.mp3,9781442306554,9781797115139,17
+237,EA,Eastern Arabic 1,12,,07Q,N,"Tell me, will you drink coffee? (f)",,9781797115108_Arabic_Eastern_1_QZ_237.mp3,9781442306554,9781797115139,6
+238,EA,Eastern Arabic 1,12,,07R,M,"إليلي، حتشربي أهوه؟","iliili, Ha-tishrabi ahweh?",9781797115108_Arabic_Eastern_1_QZ_238.mp3,9781442306554,9781797115139,6
+239,EA,Eastern Arabic 1,12,,08Q,N,"No, I will drink tea.",,9781797115108_Arabic_Eastern_1_QZ_239.mp3,9781442306554,9781797115139,6
+240,EA,Eastern Arabic 1,12,,08R,M,"لأ، حإشرب شاي.","la’, Ha-ishrab shaay.",9781797115108_Arabic_Eastern_1_QZ_240.mp3,9781442306554,9781797115139,6
+241,EA,Eastern Arabic 1,12,,09Q,N,"Today, I will eat at seven o’clock.",,9781797115108_Arabic_Eastern_1_QZ_241.mp3,9781442306554,9781797115139,"6,12,17"
+242,EA,Eastern Arabic 1,12,,09R,M,"اليوم، حآكل الساعة سبعه.","ilyoom, Ha-aakul essaa`ah sab`ah.",9781797115108_Arabic_Eastern_1_QZ_242.mp3,9781442306554,9781797115139,"6,12,17"
+243,EA,Eastern Arabic 1,12,,10Q,N,"OK. Then, at ten o'clock.",,9781797115108_Arabic_Eastern_1_QZ_243.mp3,9781442306554,9781797115139,"12,17"
+244,EA,Eastern Arabic 1,12,,10R,M,طيب. إزن الساعة عشَره.,tayyib. izan essa`ah `ashrah.,9781797115108_Arabic_Eastern_1_QZ_244.mp3,9781442306554,9781797115139,"12,17"
+245,EA,Eastern Arabic 1,13,,01Q,N,"And, in dollars?",,9781797115108_Arabic_Eastern_1_QZ_245.mp3,9781442306554,9781797115139,"11,16"
+246,EA,Eastern Arabic 1,13,,01R,F,وبالدولار؟,w-bi-ddolar?,9781797115108_Arabic_Eastern_1_QZ_246.mp3,9781442306554,9781797115139,"11,16"
+247,EA,Eastern Arabic 1,13,,02Q,N,"In pounds, this is fifteen pounds.",,9781797115108_Arabic_Eastern_1_QZ_247.mp3,9781442306554,9781797115139,14
+248,EA,Eastern Arabic 1,13,,02R,F,"بالليره، هادا بخمسطعشر ليره","bil-leerah, haadaa bi-khamsta`shar leerah.",9781797115108_Arabic_Eastern_1_QZ_248.mp3,9781442306554,9781797115139,14
+249,EA,Eastern Arabic 1,13,,03Q,N,How many pounds would you like? (f),,9781797115108_Arabic_Eastern_1_QZ_249.mp3,9781442306554,9781797115139,14
+250,EA,Eastern Arabic 1,13,,03R,F,بتحبي كم ليره؟,bit-Hibbi kaam leerah?,9781797115108_Arabic_Eastern_1_QZ_250.mp3,9781442306554,9781797115139,14
+251,EA,Eastern Arabic 1,13,,04Q,N,But I have fifteen dollars.,,9781797115108_Arabic_Eastern_1_QZ_251.mp3,9781442306554,9781797115139,11
+252,EA,Eastern Arabic 1,13,,04R,F,لكن معي خمسطَعشَر دولار.,laakin ma`ii khamsta`shar dolar.,9781797115108_Arabic_Eastern_1_QZ_252.mp3,9781442306554,9781797115139,11
+253,EA,Eastern Arabic 1,13,,05Q,N,How many pounds do you have? (m),,9781797115108_Arabic_Eastern_1_QZ_253.mp3,9781442306554,9781797115139,14
+254,EA,Eastern Arabic 1,13,,05R,F,كم ليره معَك؟,kam leerah ma`ak?,9781797115108_Arabic_Eastern_1_QZ_254.mp3,9781442306554,9781797115139,14
+255,EA,Eastern Arabic 1,13,,06Q,N,How many dollars do you have? (m),,9781797115108_Arabic_Eastern_1_QZ_255.mp3,9781442306554,9781797115139,11
+256,EA,Eastern Arabic 1,13,,06R,M,كم دولار معَك؟,kam dolar ma`ak?,9781797115108_Arabic_Eastern_1_QZ_256.mp3,9781442306554,9781797115139,11
+257,EA,Eastern Arabic 1,13,,07Q,N,Do you have five dollars?,,9781797115108_Arabic_Eastern_1_QZ_257.mp3,9781442306554,9781797115139,"11,12"
+258,EA,Eastern Arabic 1,13,,07R,M,معَك خمس دولارات؟,ma`ak khams dolaraat?,9781797115108_Arabic_Eastern_1_QZ_258.mp3,9781442306554,9781797115139,"11,12"
+259,EA,Eastern Arabic 1,13,,08Q,N,Good evening. (response),,9781797115108_Arabic_Eastern_1_QZ_259.mp3,9781442306554,9781797115139,"10,16"
+260,EA,Eastern Arabic 1,13,,08R,M,مسا النور.,masa-nnuur.,9781797115108_Arabic_Eastern_1_QZ_260.mp3,9781442306554,9781797115139,"10,16"
+261,EA,Eastern Arabic 1,13,,09Q,N,Good evening. (greeting),,9781797115108_Arabic_Eastern_1_QZ_261.mp3,9781442306554,9781797115139,"10,16"
+262,EA,Eastern Arabic 1,13,,09R,M,مسا الخير.,masa-l-kheer.,9781797115108_Arabic_Eastern_1_QZ_262.mp3,9781442306554,9781797115139,"10,16"
+263,EA,Eastern Arabic 1,14,,01Q,N,"Give me pounds, please. (f)",,9781797115108_Arabic_Eastern_1_QZ_263.mp3,9781442306554,9781797115139,13
+264,EA,Eastern Arabic 1,14,,01R,F,"أعطيني ليرات، من فضلِك.","atiinii leeraat, min fadlik.",9781797115108_Arabic_Eastern_1_QZ_264.mp3,9781442306554,9781797115139,13
+265,EA,Eastern Arabic 1,14,,02Q,N,I have a lot of dollars.,,9781797115108_Arabic_Eastern_1_QZ_265.mp3,9781442306554,9781797115139,11
+266,EA,Eastern Arabic 1,14,,02R,F,معي دولارات كتير.,ma`ii dolaraat kteer.,9781797115108_Arabic_Eastern_1_QZ_266.mp3,9781442306554,9781797115139,11
+267,EA,Eastern Arabic 1,14,,03Q,N,I have a lot of pounds.,,9781797115108_Arabic_Eastern_1_QZ_267.mp3,9781442306554,9781797115139,14
+268,EA,Eastern Arabic 1,14,,03R,F,معي ليرات كتير.,ma`ii leeraat kteer.,9781797115108_Arabic_Eastern_1_QZ_268.mp3,9781442306554,9781797115139,14
+269,EA,Eastern Arabic 1,14,,04Q,N,That's a lot.,,9781797115108_Arabic_Eastern_1_QZ_269.mp3,9781442306554,9781797115139,7
+270,EA,Eastern Arabic 1,14,,04R,F,هادا كتير.,haadaa kteer.,9781797115108_Arabic_Eastern_1_QZ_270.mp3,9781442306554,9781797115139,7
+271,EA,Eastern Arabic 1,14,,05Q,N,That's not a lot.,,9781797115108_Arabic_Eastern_1_QZ_271.mp3,9781442306554,9781797115139,7
+272,EA,Eastern Arabic 1,14,,05R,F,هادا مو كتير.,haadaa muu kteer.,9781797115108_Arabic_Eastern_1_QZ_272.mp3,9781442306554,9781797115139,7
+273,EA,Eastern Arabic 1,14,,06Q,N,You don’t have any dollars? (m),,9781797115108_Arabic_Eastern_1_QZ_273.mp3,9781442306554,9781797115139,11
+274,EA,Eastern Arabic 1,14,,06R,M,ما معَك وَلا دولار؟,maa ma`ak wala dolar?,9781797115108_Arabic_Eastern_1_QZ_274.mp3,9781442306554,9781797115139,11
+275,EA,Eastern Arabic 1,14,,07Q,N,I don’t have any dollars.,,9781797115108_Arabic_Eastern_1_QZ_275.mp3,9781442306554,9781797115139,11
+276,EA,Eastern Arabic 1,14,,07R,M,ما معي وَلا دولار.,maa ma`ii wala dolar.,9781797115108_Arabic_Eastern_1_QZ_276.mp3,9781442306554,9781797115139,11
+277,EA,Eastern Arabic 1,14,,08Q,N,I have twelve pounds.,,9781797115108_Arabic_Eastern_1_QZ_277.mp3,9781442306554,9781797115139,"11,12"
+278,EA,Eastern Arabic 1,14,,08R,M,معي طنعشر ليرة.,ma`ii tna`shar leerah.,9781797115108_Arabic_Eastern_1_QZ_278.mp3,9781442306554,9781797115139,"11,12"
+279,EA,Eastern Arabic 1,14,,09Q,N,Here's ten dollars.,,9781797115108_Arabic_Eastern_1_QZ_279.mp3,9781442306554,9781797115139,"11,12"
+280,EA,Eastern Arabic 1,14,,09R,M,تفضّلي عشر دولارات.,tfaDDali `ashr dolaraat.,9781797115108_Arabic_Eastern_1_QZ_280.mp3,9781442306554,9781797115139,"11,12"
+281,EA,Eastern Arabic 1,14,,10Q,N,Here's fourteen pounds.,,9781797115108_Arabic_Eastern_1_QZ_281.mp3,9781442306554,9781797115139,"11,12"
+282,EA,Eastern Arabic 1,14,,10R,M,تفضَّلي أربَطَعشر ليرة.,tfaDDali arbata`shar leerah.,9781797115108_Arabic_Eastern_1_QZ_282.mp3,9781442306554,9781797115139,"11,12"
+283,EA,Eastern Arabic 1,15,,01Q,N,How much is the tea?,,9781797115108_Arabic_Eastern_1_QZ_283.mp3,9781442306554,9781797115139,"6,16"
+284,EA,Eastern Arabic 1,15,,01R,F,بأديش الشاي؟,b-ad-deesh esh-shaay?,9781797115108_Arabic_Eastern_1_QZ_284.mp3,9781442306554,9781797115139,"6,16"
+285,EA,Eastern Arabic 1,15,,02Q,N,The coffee is for you. (f),,9781797115108_Arabic_Eastern_1_QZ_285.mp3,9781442306554,9781797115139,6
+286,EA,Eastern Arabic 1,15,,02R,F,الأهوه إلِك.,el-ahweh ilek.,9781797115108_Arabic_Eastern_1_QZ_286.mp3,9781442306554,9781797115139,6
+287,EA,Eastern Arabic 1,15,,03Q,N,The tea is one pound.,,9781797115108_Arabic_Eastern_1_QZ_287.mp3,9781442306554,9781797115139,"6,12,14"
+288,EA,Eastern Arabic 1,15,,03R,F,الشاي بليرة.,esh-shaay b-leerah.,9781797115108_Arabic_Eastern_1_QZ_288.mp3,9781442306554,9781797115139,"6,12,14"
+289,EA,Eastern Arabic 1,15,,04Q,N,The tea is for me.,,9781797115108_Arabic_Eastern_1_QZ_289.mp3,9781442306554,9781797115139,6
+290,EA,Eastern Arabic 1,15,,04R,F,الشاي إلي.,esh-shaay ilii.,9781797115108_Arabic_Eastern_1_QZ_290.mp3,9781442306554,9781797115139,6
+291,EA,Eastern Arabic 1,15,,05Q,N,"For you, ma'am.",,9781797115108_Arabic_Eastern_1_QZ_291.mp3,9781442306554,9781797115139,13
+292,EA,Eastern Arabic 1,15,,05R,F,"إلِك، يا ست.","ilek, ya sit.",9781797115108_Arabic_Eastern_1_QZ_292.mp3,9781442306554,9781797115139,13
+293,EA,Eastern Arabic 1,15,,06Q,N,How many dollars?,,9781797115108_Arabic_Eastern_1_QZ_293.mp3,9781442306554,9781797115139,"11,16"
+294,EA,Eastern Arabic 1,15,,06R,M,كم دولار؟,kam dolar?,9781797115108_Arabic_Eastern_1_QZ_294.mp3,9781442306554,9781797115139,"11,16"
+295,EA,Eastern Arabic 1,15,,07Q,N,You don't have any dollars. (f),,9781797115108_Arabic_Eastern_1_QZ_295.mp3,9781442306554,9781797115139,11
+296,EA,Eastern Arabic 1,15,,07R,M,ما معِك ولا دولار.,maa ma`ek wala dolar.,9781797115108_Arabic_Eastern_1_QZ_296.mp3,9781442306554,9781797115139,11
+297,EA,Eastern Arabic 1,15,,08Q,N,I have a few dollars.,,9781797115108_Arabic_Eastern_1_QZ_297.mp3,9781442306554,9781797115139,11
+298,EA,Eastern Arabic 1,15,,08R,M,معي كم دولار.,ma`ii kam dolar.,9781797115108_Arabic_Eastern_1_QZ_298.mp3,9781442306554,9781797115139,11
+299,EA,Eastern Arabic 1,15,,09Q,N,You can eat now. (f),,9781797115108_Arabic_Eastern_1_QZ_299.mp3,9781442306554,9781797115139,6
+300,EA,Eastern Arabic 1,15,,09R,M,ممكن تاكلي هللأ.,mumken taaklii hal-la’.,9781797115108_Arabic_Eastern_1_QZ_300.mp3,9781442306554,9781797115139,6
+301,EA,Eastern Arabic 1,15,,10Q,N,"Yes, I can.",,9781797115108_Arabic_Eastern_1_QZ_301.mp3,9781442306554,9781797115139,"13,16"
+302,EA,Eastern Arabic 1,15,,10R,M,نعم ممكن.,"na`am, mumken.",9781797115108_Arabic_Eastern_1_QZ_302.mp3,9781442306554,9781797115139,"13,16"
+303,EA,Eastern Arabic 1,15,,11Q,N,And the coffee is two pounds.,,9781797115108_Arabic_Eastern_1_QZ_303.mp3,9781442306554,9781797115139,"6,12,14"
+304,EA,Eastern Arabic 1,15,,11R,F,والأهوه بليرتين.,w-el-ahweh b-leerteen.,9781797115108_Arabic_Eastern_1_QZ_304.mp3,9781442306554,9781797115139,"6,12,14"
+305,EA,Eastern Arabic 1,16,,01Q,N,This amount is too big.,,9781797115108_Arabic_Eastern_1_QZ_305.mp3,9781442306554,9781797115139,14
+306,EA,Eastern Arabic 1,16,,01R,F,هادا مبلغ كبير.,haadaa mablagh kbeer.,9781797115108_Arabic_Eastern_1_QZ_306.mp3,9781442306554,9781797115139,14
+307,EA,Eastern Arabic 1,16,,02Q,N,That's not enough.,,9781797115108_Arabic_Eastern_1_QZ_307.mp3,9781442306554,9781797115139,14
+308,EA,Eastern Arabic 1,16,,02R,F,هادا مو كافي.,haadaa muu kaafi.,9781797115108_Arabic_Eastern_1_QZ_308.mp3,9781442306554,9781797115139,14
+309,EA,Eastern Arabic 1,16,,03Q,N,That's enough.,,9781797115108_Arabic_Eastern_1_QZ_309.mp3,9781442306554,9781797115139,14
+310,EA,Eastern Arabic 1,16,,03R,F,هادا كافي.,haadaa kaafi.,9781797115108_Arabic_Eastern_1_QZ_310.mp3,9781442306554,9781797115139,14
+311,EA,Eastern Arabic 1,16,,04Q,N,Do you have money? (m),,9781797115108_Arabic_Eastern_1_QZ_311.mp3,9781442306554,9781797115139,"11,16"
+312,EA,Eastern Arabic 1,16,,04R,F,معَك مَصاري؟,ma`ak maSaari?,9781797115108_Arabic_Eastern_1_QZ_312.mp3,9781442306554,9781797115139,"11,16"
+313,EA,Eastern Arabic 1,16,,05Q,N,You have a lot of money. (m),,9781797115108_Arabic_Eastern_1_QZ_313.mp3,9781442306554,9781797115139,11
+314,EA,Eastern Arabic 1,16,,05R,F,معَك مصاري كتير.,ma`ak maSaari ktiir.,9781797115108_Arabic_Eastern_1_QZ_314.mp3,9781442306554,9781797115139,11
+315,EA,Eastern Arabic 1,16,,06Q,N,What's this?,,9781797115108_Arabic_Eastern_1_QZ_315.mp3,9781442306554,9781797115139,"7,16"
+316,EA,Eastern Arabic 1,16,,06R,M,شو هادا؟,Shuu haadaa?,9781797115108_Arabic_Eastern_1_QZ_316.mp3,9781442306554,9781797115139,"7,16"
+317,EA,Eastern Arabic 1,16,,07Q,N,"No, but this is enough.",,9781797115108_Arabic_Eastern_1_QZ_317.mp3,9781442306554,9781797115139,14
+318,EA,Eastern Arabic 1,16,,07R,M,"لأ، لكن هادا كافي.","la’, laaken haadaa kaafi.",9781797115108_Arabic_Eastern_1_QZ_318.mp3,9781442306554,9781797115139,14
+319,EA,Eastern Arabic 1,16,,08Q,N,"Give me forty pounds, please. (f)",,9781797115108_Arabic_Eastern_1_QZ_319.mp3,9781442306554,9781797115139,"11,12,13"
+320,EA,Eastern Arabic 1,16,,08R,M,أعطيني أربْعين ليره من فضلِك.,"atiinii arb`iin leerah, min faDlik.",9781797115108_Arabic_Eastern_1_QZ_320.mp3,9781442306554,9781797115139,"11,12,13"
+321,EA,Eastern Arabic 1,16,,09Q,N,"Give me a little money, please. (m)",,9781797115108_Arabic_Eastern_1_QZ_321.mp3,9781442306554,9781797115139,"11,13,16"
+322,EA,Eastern Arabic 1,16,,09R,M,أعطيني شوية مصاري من فضلَك.,"atiinii shwayyet maSaari, min faDlak.",9781797115108_Arabic_Eastern_1_QZ_322.mp3,9781442306554,9781797115139,"11,13,16"
+323,EA,Eastern Arabic 1,16,,10Q,N,"Forty-six, that’s enough.",,9781797115108_Arabic_Eastern_1_QZ_323.mp3,9781442306554,9781797115139,"11,12"
+324,EA,Eastern Arabic 1,16,,10R,M,"سته وأربعين، هادا كافي.","sitteh w-arb`iin, haadaa kaafi.",9781797115108_Arabic_Eastern_1_QZ_324.mp3,9781442306554,9781797115139,"11,12"
+325,EA,Eastern Arabic 1,17,,01Q,N,You speak too fast.,,9781797115108_Arabic_Eastern_1_QZ_325.mp3,9781442306554,9781797115139,"15,16"
+326,EA,Eastern Arabic 1,17,,01R,F,بتحكي بسرعه كتير.,btiHki bi-ser`ah kteer.,9781797115108_Arabic_Eastern_1_QZ_326.mp3,9781442306554,9781797115139,"15,16"
+327,EA,Eastern Arabic 1,17,,02Q,N,You speak Arabic too fast.,,9781797115108_Arabic_Eastern_1_QZ_327.mp3,9781442306554,9781797115139,"15,16"
+328,EA,Eastern Arabic 1,17,,02R,F,بتحكي عربي بسرعه كتير.,btiHki `arabi bi-ser`ah kteer.,9781797115108_Arabic_Eastern_1_QZ_328.mp3,9781442306554,9781797115139,"15,16"
+329,EA,Eastern Arabic 1,17,,03Q,N,I'm going to give you (m) the money.,,9781797115108_Arabic_Eastern_1_QZ_329.mp3,9781442306554,9781797115139,11
+330,EA,Eastern Arabic 1,17,,03R,F,حأعطيك المصاري.,Ha-a`Tiik el-maSaari.,9781797115108_Arabic_Eastern_1_QZ_330.mp3,9781442306554,9781797115139,11
+331,EA,Eastern Arabic 1,17,,04Q,N,I will give you (m) a few pounds.,,9781797115108_Arabic_Eastern_1_QZ_331.mp3,9781442306554,9781797115139,14
+332,EA,Eastern Arabic 1,17,,04R,F,حَأعطيك كم ليرة.,Ha-a`Tiik kam leerah.,9781797115108_Arabic_Eastern_1_QZ_332.mp3,9781442306554,9781797115139,14
+333,EA,Eastern Arabic 1,17,,05Q,N,I'm going to give you (m) forty-five pounds.,,9781797115108_Arabic_Eastern_1_QZ_333.mp3,9781442306554,9781797115139,"11,12"
+334,EA,Eastern Arabic 1,17,,05R,F,حأعطيك خمسة وأربعين ليرة.,Ha-a`Tiik khamseh w-arb`iin lehra.,9781797115108_Arabic_Eastern_1_QZ_334.mp3,9781442306554,9781797115139,"11,12"
+335,EA,Eastern Arabic 1,17,,06Q,N,That’s too expensive.,,9781797115108_Arabic_Eastern_1_QZ_335.mp3,9781442306554,9781797115139,"14,16"
+336,EA,Eastern Arabic 1,17,,06R,M,هادا غالي كتير.,haadaa ghaali kteer.,9781797115108_Arabic_Eastern_1_QZ_336.mp3,9781442306554,9781797115139,"14,16"
+337,EA,Eastern Arabic 1,17,,07Q,N,This is not expensive.,,9781797115108_Arabic_Eastern_1_QZ_337.mp3,9781442306554,9781797115139,"14,16"
+338,EA,Eastern Arabic 1,17,,07R,M,هادا مو غالي.,haadaa muu ghaali.,9781797115108_Arabic_Eastern_1_QZ_338.mp3,9781442306554,9781797115139,"14,16"
+339,EA,Eastern Arabic 1,17,,08Q,N,This is some money for you. (f),,9781797115108_Arabic_Eastern_1_QZ_339.mp3,9781442306554,9781797115139,11
+340,EA,Eastern Arabic 1,17,,08R,M,هَيْ شوية مصاري إلِك.,hay shwayyet maSaari ilek.,9781797115108_Arabic_Eastern_1_QZ_340.mp3,9781442306554,9781797115139,11
+341,EA,Eastern Arabic 1,17,,09Q,N,I don't speak fast.,,9781797115108_Arabic_Eastern_1_QZ_341.mp3,9781442306554,9781797115139,15
+342,EA,Eastern Arabic 1,17,,09R,M,ما بِحكي بسرعة.,maa beHki bi-ser`ah.,9781797115108_Arabic_Eastern_1_QZ_342.mp3,9781442306554,9781797115139,15
+343,EA,Eastern Arabic 1,17,,10Q,N,I don’t speak English fast.,,9781797115108_Arabic_Eastern_1_QZ_343.mp3,9781442306554,9781797115139,15
+344,EA,Eastern Arabic 1,17,,10R,M,ما بحكي إنكليزي بسرعة.,maa beHki ingliizi bi-ser`ah.,9781797115108_Arabic_Eastern_1_QZ_344.mp3,9781442306554,9781797115139,15
+345,EA,Eastern Arabic 1,18,,01Q,N,That's a lot of money.,,9781797115108_Arabic_Eastern_1_QZ_345.mp3,9781442306554,9781797115139,11
+346,EA,Eastern Arabic 1,18,,01R,F,هَيْ مصاري كتير.,hay maSaari kteer.,9781797115108_Arabic_Eastern_1_QZ_346.mp3,9781442306554,9781797115139,11
+347,EA,Eastern Arabic 1,18,,02Q,N,My husband's over there.,,9781797115108_Arabic_Eastern_1_QZ_347.mp3,9781442306554,9781797115139,5
+348,EA,Eastern Arabic 1,18,,02R,F,جوزي هنيك.,joozi hniik.,9781797115108_Arabic_Eastern_1_QZ_348.mp3,9781442306554,9781797115139,5
+349,EA,Eastern Arabic 1,18,,03Q,N,Where’s my husband?,,9781797115108_Arabic_Eastern_1_QZ_349.mp3,9781442306554,9781797115139,5
+350,EA,Eastern Arabic 1,18,,03R,F,وين جوزي؟,ween joozi?,9781797115108_Arabic_Eastern_1_QZ_350.mp3,9781442306554,9781797115139,5
+351,EA,Eastern Arabic 1,18,,04Q,N,Your wife’s here.,,9781797115108_Arabic_Eastern_1_QZ_351.mp3,9781442306554,9781797115139,5
+352,EA,Eastern Arabic 1,18,,04R,F,مرتَك هون.,martak hoon.,9781797115108_Arabic_Eastern_1_QZ_352.mp3,9781442306554,9781797115139,5
+353,EA,Eastern Arabic 1,18,,05Q,N,Your husband’s here.,,9781797115108_Arabic_Eastern_1_QZ_353.mp3,9781442306554,9781797115139,5
+354,EA,Eastern Arabic 1,18,,05R,F,جوزِك هون.,joozek hoon.,9781797115108_Arabic_Eastern_1_QZ_354.mp3,9781442306554,9781797115139,5
+355,EA,Eastern Arabic 1,18,,06Q,N,Who is over there?,,9781797115108_Arabic_Eastern_1_QZ_355.mp3,9781442306554,9781797115139,7
+356,EA,Eastern Arabic 1,18,,06R,M,مين هنيك؟,miin hniik?,9781797115108_Arabic_Eastern_1_QZ_356.mp3,9781442306554,9781797115139,7
+357,EA,Eastern Arabic 1,18,,07Q,N,What would your wife like to drink?,,9781797115108_Arabic_Eastern_1_QZ_357.mp3,9781442306554,9781797115139,"5,6"
+358,EA,Eastern Arabic 1,18,,07R,M,شو بتحب تشرب مرتك؟,shuu bit-Hib tishrab martak?,9781797115108_Arabic_Eastern_1_QZ_358.mp3,9781442306554,9781797115139,"5,6"
+359,EA,Eastern Arabic 1,18,,08Q,N,"One tea, please.",,9781797115108_Arabic_Eastern_1_QZ_359.mp3,9781442306554,9781797115139,"6,13,16"
+360,EA,Eastern Arabic 1,18,,08R,M,واحد شاي من فضلَك.,"waHid shaay, min fadlak.",9781797115108_Arabic_Eastern_1_QZ_360.mp3,9781442306554,9781797115139,"6,13,16"
+361,EA,Eastern Arabic 1,18,,09Q,N,Where's my wife?,,9781797115108_Arabic_Eastern_1_QZ_361.mp3,9781442306554,9781797115139,5
+362,EA,Eastern Arabic 1,18,,09R,M,وين مرتي؟,ween marti?,9781797115108_Arabic_Eastern_1_QZ_362.mp3,9781442306554,9781797115139,5
+363,EA,Eastern Arabic 1,18,,10Q,N,My wife would like some water.,,9781797115108_Arabic_Eastern_1_QZ_363.mp3,9781442306554,9781797115139,"5,6"
+364,EA,Eastern Arabic 1,18,,10R,M,مرتي بتحب شوية مَيّ.,marti bit-Hib shwayyet mayy.,9781797115108_Arabic_Eastern_1_QZ_364.mp3,9781442306554,9781797115139,"5,6"
+365,EA,Eastern Arabic 1,19,,01Q,N,My husband would like to drink tea.,,9781797115108_Arabic_Eastern_1_QZ_365.mp3,9781442306554,9781797115139,"5,6"
+366,EA,Eastern Arabic 1,19,,01R,F,أنا وجوزي منحب نشرب شاي.,joozi biHibb yeshrab shaay.,9781797115108_Arabic_Eastern_1_QZ_366.mp3,9781442306554,9781797115139,"5,6"
+367,EA,Eastern Arabic 1,19,,02Q,N,I live here. (f),,9781797115108_Arabic_Eastern_1_QZ_367.mp3,9781442306554,9781797115139,7
+368,EA,Eastern Arabic 1,19,,02R,F,أنا ساكنه هون.,Ana saakneh hoon.,9781797115108_Arabic_Eastern_1_QZ_368.mp3,9781442306554,9781797115139,7
+369,EA,Eastern Arabic 1,19,,03Q,N,Where do you live? (f),,9781797115108_Arabic_Eastern_1_QZ_369.mp3,9781442306554,9781797115139,7
+370,EA,Eastern Arabic 1,19,,03R,F,وين ساكنة؟,ween saakneh?,9781797115108_Arabic_Eastern_1_QZ_370.mp3,9781442306554,9781797115139,7
+371,EA,Eastern Arabic 1,19,,04Q,N,What would your husband like to drink?,,9781797115108_Arabic_Eastern_1_QZ_371.mp3,9781442306554,9781797115139,"5,6"
+372,EA,Eastern Arabic 1,19,,04R,F,شو بِحب يشرب جوزِك؟,shuu biHibb yeshrab joozek?,9781797115108_Arabic_Eastern_1_QZ_372.mp3,9781442306554,9781797115139,"5,6"
+373,EA,Eastern Arabic 1,19,,05Q,N,We live here.,,9781797115108_Arabic_Eastern_1_QZ_373.mp3,9781442306554,9781797115139,"5,7"
+374,EA,Eastern Arabic 1,19,,05R,F,نحنا ساكنين هون.,neHna saakniin hoon.,9781797115108_Arabic_Eastern_1_QZ_374.mp3,9781442306554,9781797115139,"5,7"
+375,EA,Eastern Arabic 1,19,,06Q,N,We're here.,,9781797115108_Arabic_Eastern_1_QZ_375.mp3,9781442306554,9781797115139,7
+376,EA,Eastern Arabic 1,19,,06R,M,نحنا هون.,neHna hoon.,9781797115108_Arabic_Eastern_1_QZ_376.mp3,9781442306554,9781797115139,7
+377,EA,Eastern Arabic 1,19,,07Q,N,We don’t live here.,,9781797115108_Arabic_Eastern_1_QZ_377.mp3,9781442306554,9781797115139,"5,7"
+378,EA,Eastern Arabic 1,19,,07R,M,نحنا مو ساكنين هون.,neHna muu saakniin hoon.,9781797115108_Arabic_Eastern_1_QZ_378.mp3,9781442306554,9781797115139,"5,7"
+379,EA,Eastern Arabic 1,19,,08Q,N,We would like to drink something.,,9781797115108_Arabic_Eastern_1_QZ_379.mp3,9781442306554,9781797115139,6
+380,EA,Eastern Arabic 1,19,,08R,M,نحنا منحب نشرب شي.,neHna minHebb neshrab shii.,9781797115108_Arabic_Eastern_1_QZ_380.mp3,9781442306554,9781797115139,6
+381,EA,Eastern Arabic 1,19,,09Q,N,My wife and I don't live here.,,9781797115108_Arabic_Eastern_1_QZ_381.mp3,9781442306554,9781797115139,5
+382,EA,Eastern Arabic 1,19,,09R,M,أنا ومرتي مو ساكنين هون.,ana w-marti muu saakniin hoon.,9781797115108_Arabic_Eastern_1_QZ_382.mp3,9781442306554,9781797115139,5
+383,EA,Eastern Arabic 1,19,,10Q,N,"Yes, I live here. (m)",,9781797115108_Arabic_Eastern_1_QZ_383.mp3,9781442306554,9781797115139,"7,16"
+384,EA,Eastern Arabic 1,19,,10R,M,"نعم، ساكن هون.","na`am, saakin hoon.",9781797115108_Arabic_Eastern_1_QZ_384.mp3,9781442306554,9781797115139,"7,16"
+385,EA,Eastern Arabic 1,20,,01Q,N,Do you have children? (m),,9781797115108_Arabic_Eastern_1_QZ_385.mp3,9781442306554,9781797115139,5
+386,EA,Eastern Arabic 1,20,,01R,F,عندَك ولاد؟,andak wlaad?,9781797115108_Arabic_Eastern_1_QZ_386.mp3,9781442306554,9781797115139,5
+387,EA,Eastern Arabic 1,20,,02Q,N,We have children.,,9781797115108_Arabic_Eastern_1_QZ_387.mp3,9781442306554,9781797115139,5
+388,EA,Eastern Arabic 1,20,,02R,F,عنا ولاد.,anna wlaad.,9781797115108_Arabic_Eastern_1_QZ_388.mp3,9781442306554,9781797115139,5
+389,EA,Eastern Arabic 1,20,,03Q,N,"We want a boy, too.",,9781797115108_Arabic_Eastern_1_QZ_389.mp3,9781442306554,9781797115139,5
+390,EA,Eastern Arabic 1,20,,03R,F,بدنا ولد كمان.,"bidna walad, kamaan.",9781797115108_Arabic_Eastern_1_QZ_390.mp3,9781442306554,9781797115139,5
+391,EA,Eastern Arabic 1,20,,04Q,N,The girl is grown up.,,9781797115108_Arabic_Eastern_1_QZ_391.mp3,9781442306554,9781797115139,5
+392,EA,Eastern Arabic 1,20,,04R,F,البنت كبيره.,el-bint kbiireh.,9781797115108_Arabic_Eastern_1_QZ_392.mp3,9781442306554,9781797115139,5
+393,EA,Eastern Arabic 1,20,,05Q,N,The boy is very big.,,9781797115108_Arabic_Eastern_1_QZ_393.mp3,9781442306554,9781797115139,5
+394,EA,Eastern Arabic 1,20,,05R,F,الولد كبير كتير.,el-walad kbiir ktiir.,9781797115108_Arabic_Eastern_1_QZ_394.mp3,9781442306554,9781797115139,5
+395,EA,Eastern Arabic 1,20,,06Q,N,The two boys are very big.,,9781797115108_Arabic_Eastern_1_QZ_395.mp3,9781442306554,9781797115139,"5,12"
+396,EA,Eastern Arabic 1,20,,06R,M,الولدين كبار كتير.,el-waladeen kbaar ktiir.,9781797115108_Arabic_Eastern_1_QZ_396.mp3,9781442306554,9781797115139,"5,12"
+397,EA,Eastern Arabic 1,20,,07Q,N,They’re not here with me.,,9781797115108_Arabic_Eastern_1_QZ_397.mp3,9781442306554,9781797115139,5
+398,EA,Eastern Arabic 1,20,,07R,M,هنّه مو هون معي.,henneh muu hoon ma`ii.,9781797115108_Arabic_Eastern_1_QZ_398.mp3,9781442306554,9781797115139,5
+399,EA,Eastern Arabic 1,20,,08Q,N,Is the girl big?,,9781797115108_Arabic_Eastern_1_QZ_399.mp3,9781442306554,9781797115139,5
+400,EA,Eastern Arabic 1,20,,08R,M,البنت كبيره؟,el-bint kbiireh?,9781797115108_Arabic_Eastern_1_QZ_400.mp3,9781442306554,9781797115139,5
+401,EA,Eastern Arabic 1,20,,09Q,N,She's not big.,,9781797115108_Arabic_Eastern_1_QZ_401.mp3,9781442306554,9781797115139,5
+402,EA,Eastern Arabic 1,20,,09R,M,هيّه مو كبيره.,hiyyeh muu kbiireh.,9781797115108_Arabic_Eastern_1_QZ_402.mp3,9781442306554,9781797115139,5
+403,EA,Eastern Arabic 1,20,,10Q,N,He's not big.,,9781797115108_Arabic_Eastern_1_QZ_403.mp3,9781442306554,9781797115139,5
+404,EA,Eastern Arabic 1,20,,10R,M,هوّه مو كبير.,howweh muu kbiir.,9781797115108_Arabic_Eastern_1_QZ_404.mp3,9781442306554,9781797115139,5
+405,EA,Eastern Arabic 1,20,,11Q,N,How many children do you have?,,9781797115108_Arabic_Eastern_1_QZ_405.mp3,9781442306554,9781797115139,5
+406,EA,Eastern Arabic 1,20,,11R,F,كم ولد عندكن؟,kam walad andkon?,9781797115108_Arabic_Eastern_1_QZ_406.mp3,9781442306554,9781797115139,5
+407,EA,Eastern Arabic 1,21,,01Q,N,Your (m) family is big.,,9781797115108_Arabic_Eastern_1_QZ_407.mp3,9781442306554,9781797115139,5
+408,EA,Eastern Arabic 1,21,,01R,F,عيلتَك كبيره.,eeltak kbiireh.,9781797115108_Arabic_Eastern_1_QZ_408.mp3,9781442306554,9781797115139,5
+409,EA,Eastern Arabic 1,21,,02Q,N,We want a lot of children.,,9781797115108_Arabic_Eastern_1_QZ_409.mp3,9781442306554,9781797115139,5
+410,EA,Eastern Arabic 1,21,,02R,F,بدنا ولاد كتير.,bidna wlaad ktiir.,9781797115108_Arabic_Eastern_1_QZ_410.mp3,9781442306554,9781797115139,5
+411,EA,Eastern Arabic 1,21,,03Q,N,She is little.,,9781797115108_Arabic_Eastern_1_QZ_411.mp3,9781442306554,9781797115139,5
+412,EA,Eastern Arabic 1,21,,03R,F,هيّه صغيره.,hiyyeh Sghiireh.,9781797115108_Arabic_Eastern_1_QZ_412.mp3,9781442306554,9781797115139,5
+413,EA,Eastern Arabic 1,21,,04Q,N,Our son isn't big.,,9781797115108_Arabic_Eastern_1_QZ_413.mp3,9781442306554,9781797115139,5
+414,EA,Eastern Arabic 1,21,,04R,F,إبِنّا مو كبير.,ibenna muu kbiir.,9781797115108_Arabic_Eastern_1_QZ_414.mp3,9781442306554,9781797115139,5
+415,EA,Eastern Arabic 1,21,,05Q,N,Our son is little.,,9781797115108_Arabic_Eastern_1_QZ_415.mp3,9781442306554,9781797115139,5
+416,EA,Eastern Arabic 1,21,,05R,F,إبِنّا صغير.,ibenna Sghiir.,9781797115108_Arabic_Eastern_1_QZ_416.mp3,9781442306554,9781797115139,5
+417,EA,Eastern Arabic 1,21,,06Q,N,Where is your (m) family?,,9781797115108_Arabic_Eastern_1_QZ_417.mp3,9781442306554,9781797115139,5
+418,EA,Eastern Arabic 1,21,,06R,M,وين عيلتَك؟,ween eeltak?,9781797115108_Arabic_Eastern_1_QZ_418.mp3,9781442306554,9781797115139,5
+419,EA,Eastern Arabic 1,21,,07Q,N,Where is your daughter. (pl),,9781797115108_Arabic_Eastern_1_QZ_419.mp3,9781442306554,9781797115139,5
+420,EA,Eastern Arabic 1,21,,07R,M,وين بنتكُن؟,ween bintkon?,9781797115108_Arabic_Eastern_1_QZ_420.mp3,9781442306554,9781797115139,5
+421,EA,Eastern Arabic 1,21,,08Q,N,Where is the bathroom?,,9781797115108_Arabic_Eastern_1_QZ_421.mp3,9781442306554,9781797115139,"4,16"
+422,EA,Eastern Arabic 1,21,,08R,M,وين الحمّام؟,ween el-Hammaam?,9781797115108_Arabic_Eastern_1_QZ_422.mp3,9781442306554,9781797115139,"4,16"
+423,EA,Eastern Arabic 1,21,,09Q,N,"Where is it, the bathroom?",,9781797115108_Arabic_Eastern_1_QZ_423.mp3,9781442306554,9781797115139,"4,16"
+424,EA,Eastern Arabic 1,21,,09R,M,وين هوّه الحمام؟,"ween huwweh, el-Hammaam?",9781797115108_Arabic_Eastern_1_QZ_424.mp3,9781442306554,9781797115139,"4,16"
+425,EA,Eastern Arabic 1,21,,10Q,N,My son is little.,,9781797115108_Arabic_Eastern_1_QZ_425.mp3,9781442306554,9781797115139,5
+426,EA,Eastern Arabic 1,21,,10R,M,إبني صغير.,Ibni Sghiir.,9781797115108_Arabic_Eastern_1_QZ_426.mp3,9781442306554,9781797115139,5
+427,EA,Eastern Arabic 1,22,,01Q,N,"Give me twenty five-liters of gas, please. (m)",,9781797115108_Arabic_Eastern_1_QZ_427.mp3,9781442306554,9781797115139,"12,13,16,18"
+428,EA,Eastern Arabic 1,22,,01R,F,"أعطيني خمسا عشرين ليتر بنزين، من فضلَك.","atiinii khamsah `ishreen liter banzeen, min faDlak.",9781797115108_Arabic_Eastern_1_QZ_428.mp3,9781442306554,9781797115139,"12,13,16,18"
+429,EA,Eastern Arabic 1,22,,02Q,N,We want gas.,,9781797115108_Arabic_Eastern_1_QZ_429.mp3,9781442306554,9781797115139,"16,18"
+430,EA,Eastern Arabic 1,22,,02R,F,بدنا بنزين.,bidna banzeen.,9781797115108_Arabic_Eastern_1_QZ_430.mp3,9781442306554,9781797115139,"16,18"
+431,EA,Eastern Arabic 1,22,,03Q,N,Our family is in America.,,9781797115108_Arabic_Eastern_1_QZ_431.mp3,9781442306554,9781797115139,5
+432,EA,Eastern Arabic 1,22,,03R,F,عيلتنا بأميركا.,eeletna b-ameerkah.,9781797115108_Arabic_Eastern_1_QZ_432.mp3,9781442306554,9781797115139,5
+433,EA,Eastern Arabic 1,22,,04Q,N,Our family is here in Syria.,,9781797115108_Arabic_Eastern_1_QZ_433.mp3,9781442306554,9781797115139,5
+434,EA,Eastern Arabic 1,22,,04R,F,عيلتنا هون بالشام.,eeletna hoon bi-sh-shaam.,9781797115108_Arabic_Eastern_1_QZ_434.mp3,9781442306554,9781797115139,5
+435,EA,Eastern Arabic 1,22,,05Q,N,There are four persons in my family.,,9781797115108_Arabic_Eastern_1_QZ_435.mp3,9781442306554,9781797115139,"5,12"
+436,EA,Eastern Arabic 1,22,,05R,F,في أربع أشخاص بعيلتي.,fii arba` ashkhaaS bi-`eelti.,9781797115108_Arabic_Eastern_1_QZ_436.mp3,9781442306554,9781797115139,"5,12"
+437,EA,Eastern Arabic 1,22,,06Q,N,There are how many persons in your (m) family?,,9781797115108_Arabic_Eastern_1_QZ_437.mp3,9781442306554,9781797115139,5
+438,EA,Eastern Arabic 1,22,,06R,M,في كم شخص بعيلتَك؟,fii kam shakhS bi-`eeltak?,9781797115108_Arabic_Eastern_1_QZ_438.mp3,9781442306554,9781797115139,5
+439,EA,Eastern Arabic 1,22,,07Q,N,Is your (m) family in Syria?,,9781797115108_Arabic_Eastern_1_QZ_439.mp3,9781442306554,9781797115139,5
+440,EA,Eastern Arabic 1,22,,07R,M,عيلتَك بالشام؟,eeltak bi-sh-shaam?,9781797115108_Arabic_Eastern_1_QZ_440.mp3,9781442306554,9781797115139,5
+441,EA,Eastern Arabic 1,22,,08Q,N,That’s a lot of gas.,,9781797115108_Arabic_Eastern_1_QZ_441.mp3,9781442306554,9781797115139,18
+442,EA,Eastern Arabic 1,22,,08R,M,هادا بنزين كتير.,haadaa banziin ktiir.,9781797115108_Arabic_Eastern_1_QZ_442.mp3,9781442306554,9781797115139,18
+443,EA,Eastern Arabic 1,22,,09Q,N,Is it big or small? (f),,9781797115108_Arabic_Eastern_1_QZ_443.mp3,9781442306554,9781797115139,7
+444,EA,Eastern Arabic 1,22,,09R,M,هيّه كبيره وللا صغيره؟,hiyyeh kbiireh wella Sghiireh?,9781797115108_Arabic_Eastern_1_QZ_444.mp3,9781442306554,9781797115139,7
+445,EA,Eastern Arabic 1,22,,10Q,N,How many persons?,,9781797115108_Arabic_Eastern_1_QZ_445.mp3,9781442306554,9781797115139,5
+446,EA,Eastern Arabic 1,22,,10R,M,كم شخص؟,kam shakhS?,9781797115108_Arabic_Eastern_1_QZ_446.mp3,9781442306554,9781797115139,5
+447,EA,Eastern Arabic 1,23,,01Q,N,Damascus is far away.,,9781797115108_Arabic_Eastern_1_QZ_447.mp3,9781442306554,9781797115139,"4,18"
+448,EA,Eastern Arabic 1,23,,01R,F,الشام بعيده.,esh-shaam b`iideh.,9781797115108_Arabic_Eastern_1_QZ_448.mp3,9781442306554,9781797115139,"4,18"
+449,EA,Eastern Arabic 1,23,,02Q,N,I’m going to Damascus. (f),,9781797115108_Arabic_Eastern_1_QZ_449.mp3,9781442306554,9781797115139,18
+450,EA,Eastern Arabic 1,23,,02R,F,رايحه عالشام.,rayHah ash-shaam.,9781797115108_Arabic_Eastern_1_QZ_450.mp3,9781442306554,9781797115139,18
+451,EA,Eastern Arabic 1,23,,03Q,N,I’m going to Damascus tomorrow.,,9781797115108_Arabic_Eastern_1_QZ_451.mp3,9781442306554,9781797115139,"17,18"
+452,EA,Eastern Arabic 1,23,,03R,F,رايحه عالشام بكره.,rayHah ash-shaam bukrah.,9781797115108_Arabic_Eastern_1_QZ_452.mp3,9781442306554,9781797115139,"17,18"
+453,EA,Eastern Arabic 1,23,,04Q,N,This is not the Damascus route.,,9781797115108_Arabic_Eastern_1_QZ_453.mp3,9781442306554,9781797115139,"4,18"
+454,EA,Eastern Arabic 1,23,,04R,F,هادا مو طريء الشام.,haadaa muu Tarii’ esh-shaam.,9781797115108_Arabic_Eastern_1_QZ_454.mp3,9781442306554,9781797115139,"4,18"
+455,EA,Eastern Arabic 1,23,,05Q,N,That’s the Damascus route.,,9781797115108_Arabic_Eastern_1_QZ_455.mp3,9781442306554,9781797115139,"4,18"
+456,EA,Eastern Arabic 1,23,,05R,F,هادا طريء الشام.,haadaa Tarii’ esh-shaam.,9781797115108_Arabic_Eastern_1_QZ_456.mp3,9781442306554,9781797115139,"4,18"
+457,EA,Eastern Arabic 1,23,,06Q,N,"One moment, please! (m)",,9781797115108_Arabic_Eastern_1_QZ_457.mp3,9781442306554,9781797115139,"12,13"
+458,EA,Eastern Arabic 1,23,,06R,M,"لحظه، من فضلَك!","laHzah, min faDlak!",9781797115108_Arabic_Eastern_1_QZ_458.mp3,9781442306554,9781797115139,"12,13"
+459,EA,Eastern Arabic 1,23,,07Q,N,For sixty kilometers.,,9781797115108_Arabic_Eastern_1_QZ_459.mp3,9781442306554,9781797115139,"12,18"
+460,EA,Eastern Arabic 1,23,,07R,M,لستين كيلومتر.,la sittiin kiilometer.,9781797115108_Arabic_Eastern_1_QZ_460.mp3,9781442306554,9781797115139,"12,18"
+461,EA,Eastern Arabic 1,23,,08Q,N,Not very fast!,,9781797115108_Arabic_Eastern_1_QZ_461.mp3,9781442306554,9781797115139,7
+462,EA,Eastern Arabic 1,23,,08R,M,مو بسرعة كتير!,muu b-ser`ah ktiir!,9781797115108_Arabic_Eastern_1_QZ_462.mp3,9781442306554,9781797115139,7
+463,EA,Eastern Arabic 1,23,,09Q,N,What route is this?,,9781797115108_Arabic_Eastern_1_QZ_463.mp3,9781442306554,9781797115139,"4,16"
+464,EA,Eastern Arabic 1,23,,09R,M,طريء شو هادا؟,Tarii’ shuu haadaa?,9781797115108_Arabic_Eastern_1_QZ_464.mp3,9781442306554,9781797115139,"4,16"
+465,EA,Eastern Arabic 1,23,,10Q,N,Where are you going? (f),,9781797115108_Arabic_Eastern_1_QZ_465.mp3,9781442306554,9781797115139,18
+466,EA,Eastern Arabic 1,23,,10R,M,وين رايحه؟,ween rayHah?,9781797115108_Arabic_Eastern_1_QZ_466.mp3,9781442306554,9781797115139,18
+467,EA,Eastern Arabic 1,24,,01Q,N,"Then, go to the left. (f)",,9781797115108_Arabic_Eastern_1_QZ_467.mp3,9781442306554,9781797115139,"4,16"
+468,EA,Eastern Arabic 1,24,,01R,F,"بعدين، روحي عالشمال.","ba`deen, ruuHi `ash-shmaal.",9781797115108_Arabic_Eastern_1_QZ_468.mp3,9781442306554,9781797115139,"4,16"
+469,EA,Eastern Arabic 1,24,,02Q,N,There is a road over there to the left.,,9781797115108_Arabic_Eastern_1_QZ_469.mp3,9781442306554,9781797115139,4
+470,EA,Eastern Arabic 1,24,,02R,F,في طريء هنيك عالشمال.,fii tarii’ hniik `ash-shmaal.,9781797115108_Arabic_Eastern_1_QZ_470.mp3,9781442306554,9781797115139,4
+471,EA,Eastern Arabic 1,24,,03Q,N,That’s not the correct road.,,9781797115108_Arabic_Eastern_1_QZ_471.mp3,9781442306554,9781797115139,"4,16"
+472,EA,Eastern Arabic 1,24,,03R,F,هادا مو الطريء المزبوط.,haadaa muu eT Tarii’ el mazbuut.,9781797115108_Arabic_Eastern_1_QZ_472.mp3,9781442306554,9781797115139,"4,16"
+473,EA,Eastern Arabic 1,24,,04Q,N,It’s to the right.,,9781797115108_Arabic_Eastern_1_QZ_473.mp3,9781442306554,9781797115139,"4,16"
+474,EA,Eastern Arabic 1,24,,04R,F,هوّه عاليَمين.,huwweh `al yamiin.,9781797115108_Arabic_Eastern_1_QZ_474.mp3,9781442306554,9781797115139,"4,16"
+475,EA,Eastern Arabic 1,24,,05Q,N,It’s the correct route.,,9781797115108_Arabic_Eastern_1_QZ_475.mp3,9781442306554,9781797115139,4
+476,EA,Eastern Arabic 1,24,,05R,F,هوّه الطريء المزبوط.,huwweh eT-Tarii’ el-mazbuut.,9781797115108_Arabic_Eastern_1_QZ_476.mp3,9781442306554,9781797115139,4
+477,EA,Eastern Arabic 1,24,,06Q,N,"How many liters of gas do you want, ma'am?",,9781797115108_Arabic_Eastern_1_QZ_477.mp3,9781442306554,9781797115139,"16,18"
+478,EA,Eastern Arabic 1,24,,06R,M,"كم لتر بنزين بدِّك، يا ست؟","kam liter banziin biddik, yaa sit?",9781797115108_Arabic_Eastern_1_QZ_478.mp3,9781442306554,9781797115139,"16,18"
+479,EA,Eastern Arabic 1,24,,07Q,N,Go to the right. (f),,9781797115108_Arabic_Eastern_1_QZ_479.mp3,9781442306554,9781797115139,4
+480,EA,Eastern Arabic 1,24,,07R,M,روحي عاليمين.,ruuHi al-yamiin.,9781797115108_Arabic_Eastern_1_QZ_480.mp3,9781442306554,9781797115139,4
+481,EA,Eastern Arabic 1,24,,08Q,N,Go to the left. (f),,9781797115108_Arabic_Eastern_1_QZ_481.mp3,9781442306554,9781797115139,4
+482,EA,Eastern Arabic 1,24,,08R,M,روحي عالشمال.,ruuhi ash shmaal.,9781797115108_Arabic_Eastern_1_QZ_482.mp3,9781442306554,9781797115139,4
+483,EA,Eastern Arabic 1,24,,09Q,N,And then?,,9781797115108_Arabic_Eastern_1_QZ_483.mp3,9781442306554,9781797115139,7
+484,EA,Eastern Arabic 1,24,,09R,M,وبعدين؟,w-ba`deen?,9781797115108_Arabic_Eastern_1_QZ_484.mp3,9781442306554,9781797115139,7
+485,EA,Eastern Arabic 1,24,,10Q,N,And then straight ahead.,,9781797115108_Arabic_Eastern_1_QZ_485.mp3,9781442306554,9781797115139,"4,16"
+486,EA,Eastern Arabic 1,24,,10R,M,وبعدين دغري.,w ba`deen deghri.,9781797115108_Arabic_Eastern_1_QZ_486.mp3,9781442306554,9781797115139,"4,16"
+487,EA,Eastern Arabic 1,25,,01Q,N,"No, the stores are open.",,9781797115108_Arabic_Eastern_1_QZ_487.mp3,9781442306554,9781797115139,14
+488,EA,Eastern Arabic 1,25,,01R,F,"لأ، المحلات مفتوحه.","la’, el-maHallaat maftuuHah.",9781797115108_Arabic_Eastern_1_QZ_488.mp3,9781442306554,9781797115139,14
+489,EA,Eastern Arabic 1,25,,02Q,N,The stores are open now.,,9781797115108_Arabic_Eastern_1_QZ_489.mp3,9781442306554,9781797115139,14
+490,EA,Eastern Arabic 1,25,,02R,F,المحلات مفتوحه هللأ.,el maHallaat maftuuHah hal la’.,9781797115108_Arabic_Eastern_1_QZ_490.mp3,9781442306554,9781797115139,14
+491,EA,Eastern Arabic 1,25,,03Q,N,"Tomorrow, the stores are closed.",,9781797115108_Arabic_Eastern_1_QZ_491.mp3,9781442306554,9781797115139,"14,17"
+492,EA,Eastern Arabic 1,25,,03R,F,بكره المحلات مْسَكْره.,"bukrah, el-maHallaat msakkrah.",9781797115108_Arabic_Eastern_1_QZ_492.mp3,9781442306554,9781797115139,"14,17"
+493,EA,Eastern Arabic 1,25,,04Q,N,The stores are closed now.,,9781797115108_Arabic_Eastern_1_QZ_493.mp3,9781442306554,9781797115139,14
+494,EA,Eastern Arabic 1,25,,04R,F,المحلات مْسَكره هللأ.,el maHallaat msakkrah hal la’.,9781797115108_Arabic_Eastern_1_QZ_494.mp3,9781442306554,9781797115139,14
+495,EA,Eastern Arabic 1,25,,05Q,N,Is this the correct route?,,9781797115108_Arabic_Eastern_1_QZ_495.mp3,9781442306554,9781797115139,"4,16"
+496,EA,Eastern Arabic 1,25,,05R,F,هادا الطريء المزبوط؟,haadaa eT-Tarii’ el mazbuut?,9781797115108_Arabic_Eastern_1_QZ_496.mp3,9781442306554,9781797115139,"4,16"
+497,EA,Eastern Arabic 1,25,,06Q,N,Because the stores are open at night.,,9781797115108_Arabic_Eastern_1_QZ_497.mp3,9781442306554,9781797115139,14
+498,EA,Eastern Arabic 1,25,,06R,M,لإنه المحلات مفتوحه بالليل.,la’ennoh el maHallaat maftuuHah billeel.,9781797115108_Arabic_Eastern_1_QZ_498.mp3,9781442306554,9781797115139,14
+499,EA,Eastern Arabic 1,25,,07Q,N,Because the stores are closed.,,9781797115108_Arabic_Eastern_1_QZ_499.mp3,9781442306554,9781797115139,14
+500,EA,Eastern Arabic 1,25,,07R,M,لإنه المحلاّت مْسكره.,la’ennoh el maHallaat msakkrah.,9781797115108_Arabic_Eastern_1_QZ_500.mp3,9781442306554,9781797115139,14
+501,EA,Eastern Arabic 1,25,,08Q,N,Because the time is late.,,9781797115108_Arabic_Eastern_1_QZ_501.mp3,9781442306554,9781797115139,17
+502,EA,Eastern Arabic 1,25,,08R,M,لأن الوأت متأخر.,la’ennoh el wa’t met’akhkher.,9781797115108_Arabic_Eastern_1_QZ_502.mp3,9781442306554,9781797115139,17
+503,EA,Eastern Arabic 1,25,,09Q,N,It's not late.,,9781797115108_Arabic_Eastern_1_QZ_503.mp3,9781442306554,9781797115139,17
+504,EA,Eastern Arabic 1,25,,09R,M,مو متأخر.,muu met’akhkher.,9781797115108_Arabic_Eastern_1_QZ_504.mp3,9781442306554,9781797115139,17
+505,EA,Eastern Arabic 1,25,,10Q,N,Can I buy something in Damascus?,,9781797115108_Arabic_Eastern_1_QZ_505.mp3,9781442306554,9781797115139,14
+506,EA,Eastern Arabic 1,25,,10R,M,ممكن إشتري شي بالشام؟,mumken ishtiri shii bi sh shaam?,9781797115108_Arabic_Eastern_1_QZ_506.mp3,9781442306554,9781797115139,14
+507,EA,Eastern Arabic 1,25,,11Q,N,The stores are closed in Damascus.,,9781797115108_Arabic_Eastern_1_QZ_507.mp3,9781442306554,9781797115139,"14,16"
+508,EA,Eastern Arabic 1,25,,11R,M,المحلاّت مْسَكره بالشام.,el-maHallaat msakkrah bi-sh-shaam.,9781797115108_Arabic_Eastern_1_QZ_508.mp3,9781442306554,9781797115139,"14,16"
+509,EA,Eastern Arabic 1,26,,01Q,N,I have friends there.,,9781797115108_Arabic_Eastern_1_QZ_509.mp3,9781442306554,9781797115139,5
+510,EA,Eastern Arabic 1,26,,01R,F,عندي رفَآت هنيك.,andi refa’aat hniik.,9781797115108_Arabic_Eastern_1_QZ_510.mp3,9781442306554,9781797115139,5
+511,EA,Eastern Arabic 1,26,,02Q,N,I will take a lot of money.,,9781797115108_Arabic_Eastern_1_QZ_511.mp3,9781442306554,9781797115139,11
+512,EA,Eastern Arabic 1,26,,02R,F,حآخد مصاري كتير.,Ha-aakhod maSaari ktiir.,9781797115108_Arabic_Eastern_1_QZ_512.mp3,9781442306554,9781797115139,11
+513,EA,Eastern Arabic 1,26,,03Q,N,I will spend three days there.,,9781797115108_Arabic_Eastern_1_QZ_513.mp3,9781442306554,9781797115139,"12,17,18"
+514,EA,Eastern Arabic 1,26,,03R,F,حأضّي تلت إيام هنيك.,Ha-’aDDi tlet iyyaam hniik.,9781797115108_Arabic_Eastern_1_QZ_514.mp3,9781442306554,9781797115139,"12,17,18"
+515,EA,Eastern Arabic 1,26,,04Q,N,I will work a little.,,9781797115108_Arabic_Eastern_1_QZ_515.mp3,9781442306554,9781797115139,7
+516,EA,Eastern Arabic 1,26,,04R,F,حإشتغل شويه.,Ha-ishteghel shwayyeh.,9781797115108_Arabic_Eastern_1_QZ_516.mp3,9781442306554,9781797115139,7
+517,EA,Eastern Arabic 1,26,,05Q,N,I will see my friends.,,9781797115108_Arabic_Eastern_1_QZ_517.mp3,9781442306554,9781797115139,5
+518,EA,Eastern Arabic 1,26,,05R,F,حشوف رفآتي.,Ha-shuuf refa’aati.,9781797115108_Arabic_Eastern_1_QZ_518.mp3,9781442306554,9781797115139,5
+519,EA,Eastern Arabic 1,26,,06Q,N,How many days?,,9781797115108_Arabic_Eastern_1_QZ_519.mp3,9781442306554,9781797115139,17
+520,EA,Eastern Arabic 1,26,,06R,M,كم يوم؟,kam yoom?,9781797115108_Arabic_Eastern_1_QZ_520.mp3,9781442306554,9781797115139,17
+521,EA,Eastern Arabic 1,26,,07Q,N,Take a taxi. (f),,9781797115108_Arabic_Eastern_1_QZ_521.mp3,9781442306554,9781797115139,"16,18"
+522,EA,Eastern Arabic 1,26,,07R,M,خدي تكسي.,khedi taxi.,9781797115108_Arabic_Eastern_1_QZ_522.mp3,9781442306554,9781797115139,"16,18"
+523,EA,Eastern Arabic 1,26,,08Q,N,What will you do there? (f),,9781797115108_Arabic_Eastern_1_QZ_523.mp3,9781442306554,9781797115139,18
+524,EA,Eastern Arabic 1,26,,08R,M,شو حتعملي هنيك؟,shuu Ha-ta`emli hniik?,9781797115108_Arabic_Eastern_1_QZ_524.mp3,9781442306554,9781797115139,18
+525,EA,Eastern Arabic 1,26,,09Q,N,Maybe a few days.,,9781797115108_Arabic_Eastern_1_QZ_525.mp3,9781442306554,9781797115139,17
+526,EA,Eastern Arabic 1,26,,09R,M,ممكن كم يوم.,mumkin kam yoom.,9781797115108_Arabic_Eastern_1_QZ_526.mp3,9781442306554,9781797115139,17
+527,EA,Eastern Arabic 1,26,,10Q,N,Maybe three days.,,9781797115108_Arabic_Eastern_1_QZ_527.mp3,9781442306554,9781797115139,"12,17"
+528,EA,Eastern Arabic 1,26,,10R,M,ممكن تلت إيام.,mumkin tlet iyyaam.,9781797115108_Arabic_Eastern_1_QZ_528.mp3,9781442306554,9781797115139,"12,17"
+529,EA,Eastern Arabic 1,27,,01Q,N,I don’t want to leave. (f),,9781797115108_Arabic_Eastern_1_QZ_529.mp3,9781442306554,9781797115139,18
+530,EA,Eastern Arabic 1,27,,01R,F,ما بدي إمشي.,maa biddi imshi.,9781797115108_Arabic_Eastern_1_QZ_530.mp3,9781442306554,9781797115139,18
+531,EA,Eastern Arabic 1,27,,02Q,N,I don’t want anything. (f),,9781797115108_Arabic_Eastern_1_QZ_531.mp3,9781442306554,9781797115139,7
+532,EA,Eastern Arabic 1,27,,02R,F,ما بدّي شي.,maa biddi shii.,9781797115108_Arabic_Eastern_1_QZ_532.mp3,9781442306554,9781797115139,7
+533,EA,Eastern Arabic 1,27,,03Q,N,I think so.,,9781797115108_Arabic_Eastern_1_QZ_533.mp3,9781442306554,9781797115139,"7,16"
+534,EA,Eastern Arabic 1,27,,03R,F,بظن هيك.,bzin heek.,9781797115108_Arabic_Eastern_1_QZ_534.mp3,9781442306554,9781797115139,"7,16"
+535,EA,Eastern Arabic 1,27,,04Q,N,I want a hundred pounds.,,9781797115108_Arabic_Eastern_1_QZ_535.mp3,9781442306554,9781797115139,"11,12"
+536,EA,Eastern Arabic 1,27,,04R,F,بدّي ميت ليرة.,biddi miit leerah.,9781797115108_Arabic_Eastern_1_QZ_536.mp3,9781442306554,9781797115139,"11,12"
+537,EA,Eastern Arabic 1,27,,05Q,N,Here's a hundred pounds.,,9781797115108_Arabic_Eastern_1_QZ_537.mp3,9781442306554,9781797115139,"12,14"
+538,EA,Eastern Arabic 1,27,,05R,F,اتفضّل ميت ليرة.,tfaDDal miit leerah.,9781797115108_Arabic_Eastern_1_QZ_538.mp3,9781442306554,9781797115139,"12,14"
+539,EA,Eastern Arabic 1,27,,06Q,N,I think it's over there. (m),,9781797115108_Arabic_Eastern_1_QZ_539.mp3,9781442306554,9781797115139,4
+540,EA,Eastern Arabic 1,27,,06R,M,بظن هوَّ هنيك.,bzin huwweh hniik.,9781797115108_Arabic_Eastern_1_QZ_540.mp3,9781442306554,9781797115139,4
+541,EA,Eastern Arabic 1,27,,07Q,N,I want to leave. (m),,9781797115108_Arabic_Eastern_1_QZ_541.mp3,9781442306554,9781797115139,7
+542,EA,Eastern Arabic 1,27,,07R,M,بدّي إمشي.,biddi imshii.,9781797115108_Arabic_Eastern_1_QZ_542.mp3,9781442306554,9781797115139,7
+543,EA,Eastern Arabic 1,27,,08Q,N,I will leave tomorrow.,,9781797115108_Arabic_Eastern_1_QZ_543.mp3,9781442306554,9781797115139,17
+544,EA,Eastern Arabic 1,27,,08R,M,حإمشي بكرة.,Ha imshi bukrah.,9781797115108_Arabic_Eastern_1_QZ_544.mp3,9781442306554,9781797115139,17
+545,EA,Eastern Arabic 1,27,,09Q,N,I don’t have anything.,,9781797115108_Arabic_Eastern_1_QZ_545.mp3,9781442306554,9781797115139,7
+546,EA,Eastern Arabic 1,27,,09R,M,ما معي شي.,maa ma`ii shii.,9781797115108_Arabic_Eastern_1_QZ_546.mp3,9781442306554,9781797115139,7
+547,EA,Eastern Arabic 1,27,,10Q,N,"Yes, I will work there.",,9781797115108_Arabic_Eastern_1_QZ_547.mp3,9781442306554,9781797115139,7
+548,EA,Eastern Arabic 1,27,,10R,M,"نعم، حإشتغل هنيك.","na`am, Ha-ishteghel hniik.",9781797115108_Arabic_Eastern_1_QZ_548.mp3,9781442306554,9781797115139,7
+549,EA,Eastern Arabic 1,28,,01Q,N,I'd like to go to Beirut.,,9781797115108_Arabic_Eastern_1_QZ_549.mp3,9781442306554,9781797115139,18
+550,EA,Eastern Arabic 1,28,,01R,F,بحب روح لبيروت.,bHib ruuH la-beeruut.,9781797115108_Arabic_Eastern_1_QZ_550.mp3,9781442306554,9781797115139,18
+551,EA,Eastern Arabic 1,28,,02Q,N,Now you can leave.,,9781797115108_Arabic_Eastern_1_QZ_551.mp3,9781442306554,9781797115139,7
+552,EA,Eastern Arabic 1,28,,02R,F,هللأ ممكن تمشي.,hal-la’ mumkin timshii.,9781797115108_Arabic_Eastern_1_QZ_552.mp3,9781442306554,9781797115139,7
+553,EA,Eastern Arabic 1,28,,03Q,N,Is this an Arabic word?,,9781797115108_Arabic_Eastern_1_QZ_553.mp3,9781442306554,9781797115139,"15,16"
+554,EA,Eastern Arabic 1,28,,03R,F,هي كلمة بالعربي؟,hay kilmeh bil `arabi?,9781797115108_Arabic_Eastern_1_QZ_554.mp3,9781442306554,9781797115139,"15,16"
+555,EA,Eastern Arabic 1,28,,04Q,N,Are you American? (pl),,9781797115108_Arabic_Eastern_1_QZ_555.mp3,9781442306554,9781797115139,13
+556,EA,Eastern Arabic 1,28,,04R,F,إنتو أميركان؟,intuu ameerkaan?,9781797115108_Arabic_Eastern_1_QZ_556.mp3,9781442306554,9781797115139,13
+557,EA,Eastern Arabic 1,28,,05Q,N,You’ve been here since when? (pl),,9781797115108_Arabic_Eastern_1_QZ_557.mp3,9781442306554,9781797115139,7
+558,EA,Eastern Arabic 1,28,,05R,F,إنتو هون من إمتى؟,intuu hoon min eemta?,9781797115108_Arabic_Eastern_1_QZ_558.mp3,9781442306554,9781797115139,7
+559,EA,Eastern Arabic 1,28,,06Q,N,I’m here with my wife.,,9781797115108_Arabic_Eastern_1_QZ_559.mp3,9781442306554,9781797115139,5
+560,EA,Eastern Arabic 1,28,,06R,M,أنا هون مع مرتي.,ana hoon ma` marti.,9781797115108_Arabic_Eastern_1_QZ_560.mp3,9781442306554,9781797115139,5
+561,EA,Eastern Arabic 1,28,,07Q,N,What does it mean?,,9781797115108_Arabic_Eastern_1_QZ_561.mp3,9781442306554,9781797115139,"15,16"
+562,EA,Eastern Arabic 1,28,,07R,M,شو يعني؟,shuu ya`ni?,9781797115108_Arabic_Eastern_1_QZ_562.mp3,9781442306554,9781797115139,"15,16"
+563,EA,Eastern Arabic 1,28,,08Q,N,Since how long?,,9781797115108_Arabic_Eastern_1_QZ_563.mp3,9781442306554,9781797115139,7
+564,EA,Eastern Arabic 1,28,,08R,M,من إيمتى؟,min eemta?,9781797115108_Arabic_Eastern_1_QZ_564.mp3,9781442306554,9781797115139,7
+565,EA,Eastern Arabic 1,28,,09Q,N,You can leave.,,9781797115108_Arabic_Eastern_1_QZ_565.mp3,9781442306554,9781797115139,7
+566,EA,Eastern Arabic 1,28,,09R,M,ممكن تمشي.,mumkin timshi.,9781797115108_Arabic_Eastern_1_QZ_566.mp3,9781442306554,9781797115139,7
+567,EA,Eastern Arabic 1,28,,10Q,N,What will you do now? (m),,9781797115108_Arabic_Eastern_1_QZ_567.mp3,9781442306554,9781797115139,1
+568,EA,Eastern Arabic 1,28,,10R,M,شو حتعمل هللأ؟,shuu Ha-ta`mil hal-la’?,9781797115108_Arabic_Eastern_1_QZ_568.mp3,9781442306554,9781797115139,1
+569,EA,Eastern Arabic 1,29,,01Q,N,Did you eat something?,,9781797115108_Arabic_Eastern_1_QZ_569.mp3,9781442306554,9781797115139,6
+570,EA,Eastern Arabic 1,29,,01R,F,أكلتي شي؟,akalti shii?,9781797115108_Arabic_Eastern_1_QZ_570.mp3,9781442306554,9781797115139,6
+571,EA,Eastern Arabic 1,29,,02Q,N,Do you like coffee? (f),,9781797115108_Arabic_Eastern_1_QZ_571.mp3,9781442306554,9781797115139,6
+572,EA,Eastern Arabic 1,29,,02R,F,بتحبي الأهوه؟,bit Hibbi el ahweh?,9781797115108_Arabic_Eastern_1_QZ_571.mp3,9781442306554,9781797115139,6
+573,EA,Eastern Arabic 1,29,,03Q,N,Do you like to eat?,,9781797115108_Arabic_Eastern_1_QZ_573.mp3,9781442306554,9781797115139,6
+574,EA,Eastern Arabic 1,29,,03R,F,بتحبي تاكلي؟,bit-Hibbi taakli?,9781797115108_Arabic_Eastern_1_QZ_574.mp3,9781442306554,9781797115139,6
+575,EA,Eastern Arabic 1,29,,04Q,N,I didn’t eat anything.,,9781797115108_Arabic_Eastern_1_QZ_575.mp3,9781442306554,9781797115139,6
+576,EA,Eastern Arabic 1,29,,04R,F,ما أكلت شي.,maa akalt shii.,9781797115108_Arabic_Eastern_1_QZ_576.mp3,9781442306554,9781797115139,6
+577,EA,Eastern Arabic 1,29,,05Q,N,What did you eat?,,9781797115108_Arabic_Eastern_1_QZ_577.mp3,9781442306554,9781797115139,6
+578,EA,Eastern Arabic 1,29,,05R,F,شو أكلتي؟,shuu akalti?,9781797115108_Arabic_Eastern_1_QZ_578.mp3,9781442306554,9781797115139,6
+579,EA,Eastern Arabic 1,29,,06Q,N,I didn’t eat anything.,,9781797115108_Arabic_Eastern_1_QZ_579.mp3,9781442306554,9781797115139,6
+580,EA,Eastern Arabic 1,29,,06R,M,ما أكلت شي.,maa akalt shii.,9781797115108_Arabic_Eastern_1_QZ_580.mp3,9781442306554,9781797115139,6
+581,EA,Eastern Arabic 1,29,,07Q,N,We’ve been here for a week.,,9781797115108_Arabic_Eastern_1_QZ_581.mp3,9781442306554,9781797115139,"17,18"
+582,EA,Eastern Arabic 1,29,,07R,M,نحنا هون من إسبوع.,neHna hoon min esbuu`.,9781797115108_Arabic_Eastern_1_QZ_582.mp3,9781442306554,9781797115139,"17,18"
+583,EA,Eastern Arabic 1,29,,08Q,N,Did you buy a book? (f),,9781797115108_Arabic_Eastern_1_QZ_583.mp3,9781442306554,9781797115139,14
+584,EA,Eastern Arabic 1,29,,08R,M,اشتريتي كتاب؟,shtareeti ktaab?,9781797115108_Arabic_Eastern_1_QZ_584.mp3,9781442306554,9781797115139,14
+585,EA,Eastern Arabic 1,29,,09Q,N,What did you buy yesterday? (f),,9781797115108_Arabic_Eastern_1_QZ_585.mp3,9781442306554,9781797115139,14
+586,EA,Eastern Arabic 1,29,,09R,M,شو اشتريتي مبارح؟,shuu shtareeti mbaareH?,9781797115108_Arabic_Eastern_1_QZ_586.mp3,9781442306554,9781797115139,14
+587,EA,Eastern Arabic 1,29,,10Q,N,I bought something.,,9781797115108_Arabic_Eastern_1_QZ_587.mp3,9781442306554,9781797115139,14
+588,EA,Eastern Arabic 1,29,,10R,M,اشتريت شي.,shtareet shii.,9781797115108_Arabic_Eastern_1_QZ_588.mp3,9781442306554,9781797115139,14
+589,EA,Eastern Arabic 1,30,,01Q,N,We arrived this morning.,,9781797115108_Arabic_Eastern_1_QZ_589.mp3,9781442306554,9781797115139,17
+590,EA,Eastern Arabic 1,30,,01R,F,وصلنا الصبح.,wselna eS-SebeH.,9781797115108_Arabic_Eastern_1_QZ_590.mp3,9781442306554,9781797115139,17
+591,EA,Eastern Arabic 1,30,,02Q,N,We arrived yesterday morning.,,9781797115108_Arabic_Eastern_1_QZ_591.mp3,9781442306554,9781797115139,17
+592,EA,Eastern Arabic 1,30,,02R,F,وصلنا مبارح الصبح.,wselna mbaareH eS-SebeH.,9781797115108_Arabic_Eastern_1_QZ_592.mp3,9781442306554,9781797115139,17
+593,EA,Eastern Arabic 1,30,,03Q,N,Did you go to Beirut this morning?,,9781797115108_Arabic_Eastern_1_QZ_593.mp3,9781442306554,9781797115139,"17,18"
+594,EA,Eastern Arabic 1,30,,03R,F,رحتو لبيروت الصبح؟,reHtu la-beeruut eS-SebeH?,9781797115108_Arabic_Eastern_1_QZ_594.mp3,9781442306554,9781797115139,"17,18"
+595,EA,Eastern Arabic 1,30,,04Q,N,We bought something yesterday.,,9781797115108_Arabic_Eastern_1_QZ_595.mp3,9781442306554,9781797115139,14
+596,EA,Eastern Arabic 1,30,,04R,F,اشترينا شي مبارح.,shtareena shii mbaareH.,9781797115108_Arabic_Eastern_1_QZ_596.mp3,9781442306554,9781797115139,14
+597,EA,Eastern Arabic 1,30,,05Q,N,Did you buy something? (pl),,9781797115108_Arabic_Eastern_1_QZ_597.mp3,9781442306554,9781797115139,14
+598,EA,Eastern Arabic 1,30,,05R,F,اشتريتو شي؟,shtareetu shii?,9781797115108_Arabic_Eastern_1_QZ_598.mp3,9781442306554,9781797115139,14
+599,EA,Eastern Arabic 1,30,,06Q,N,And we ate at a good restaurant.,,9781797115108_Arabic_Eastern_1_QZ_599.mp3,9781442306554,9781797115139,6
+600,EA,Eastern Arabic 1,30,,06R,M,وأكلنا بمطعم منيح.,w-akalna bi-mat`am mniiH.,9781797115108_Arabic_Eastern_1_QZ_600.mp3,9781442306554,9781797115139,6
+601,EA,Eastern Arabic 1,30,,07Q,N,Are you going to spend a lot of time?,,9781797115108_Arabic_Eastern_1_QZ_601.mp3,9781442306554,9781797115139,18
+602,EA,Eastern Arabic 1,30,,07R,M,حتأضّي وأت كتير؟,Ha-t’aDDi wa’t ktiir?,9781797115108_Arabic_Eastern_1_QZ_602.mp3,9781442306554,9781797115139,18
+603,EA,Eastern Arabic 1,30,,08Q,N,When did you arrive in Damascus? (pl),,9781797115108_Arabic_Eastern_1_QZ_603.mp3,9781442306554,9781797115139,18
+604,EA,Eastern Arabic 1,30,,08R,M,إمتى وصلتو للشام؟,eemta wseltu la-sh-shaam?,9781797115108_Arabic_Eastern_1_QZ_604.mp3,9781442306554,9781797115139,18
+605,EA,Eastern Arabic 1,30,,09Q,N,We are American.,,9781797115108_Arabic_Eastern_1_QZ_605.mp3,9781442306554,9781797115139,"5,7"
+606,EA,Eastern Arabic 1,30,,09R,M,نحنا أميركان.,neHna ameerkaan.,9781797115108_Arabic_Eastern_1_QZ_606.mp3,9781442306554,9781797115139,"5,7"
+607,EA,Eastern Arabic 1,30,,10Q,N,We arrived in Syria.,,9781797115108_Arabic_Eastern_1_QZ_607.mp3,9781442306554,9781797115139,18
+608,EA,Eastern Arabic 1,30,,10R,M,وصلنا لسوريه.,wselna la-suuriya.,9781797115108_Arabic_Eastern_1_QZ_608.mp3,9781442306554,9781797115139,18

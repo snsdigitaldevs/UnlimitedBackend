@@ -1,26 +1,5 @@
 package com.simonschuster.pimsleur.unlimited.controllers;
 
-import com.simonschuster.pimsleur.unlimited.constants.CommonConstants;
-import com.simonschuster.pimsleur.unlimited.constants.StoreDomainConstants;
-import com.simonschuster.pimsleur.unlimited.data.dto.practices.AvailablePractices;
-import com.simonschuster.pimsleur.unlimited.data.dto.practices.PracticesInUnit;
-import com.simonschuster.pimsleur.unlimited.services.practices.PcmAvailablePracticesService;
-import com.simonschuster.pimsleur.unlimited.services.practices.PracticesUrls;
-import com.simonschuster.pimsleur.unlimited.services.practices.PuAvailablePracticesService;
-import com.simonschuster.pimsleur.unlimited.utils.UnlimitedPracticeUtil;
-import edu.emory.mathcs.backport.java.util.Collections;
-import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiParam;
-import org.apache.commons.lang3.StringUtils;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
-
-import java.io.IOException;
-import java.util.List;
-import java.util.concurrent.atomic.AtomicReference;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
 import static com.simonschuster.pimsleur.unlimited.utils.practices.FlashCardUtil.csvToFlashCards;
 import static com.simonschuster.pimsleur.unlimited.utils.practices.QuickMatchUtil.getQuickMatchesByCsvUrl;
 import static com.simonschuster.pimsleur.unlimited.utils.practices.SpeakEasyAndReadingUtil.csvToReadings;
@@ -28,6 +7,26 @@ import static com.simonschuster.pimsleur.unlimited.utils.practices.SpeakEasyAndR
 import static java.util.Comparator.comparingInt;
 import static java.util.stream.Collectors.toList;
 import static java.util.stream.Stream.concat;
+
+import com.simonschuster.pimsleur.unlimited.data.dto.practices.AvailablePractices;
+import com.simonschuster.pimsleur.unlimited.data.dto.practices.PracticesInUnit;
+import com.simonschuster.pimsleur.unlimited.services.practices.PcmAvailablePracticesService;
+import com.simonschuster.pimsleur.unlimited.services.practices.PracticesUrls;
+import com.simonschuster.pimsleur.unlimited.services.practices.PuAvailablePracticesService;
+import edu.emory.mathcs.backport.java.util.Collections;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
+import java.io.IOException;
+import java.util.List;
+import java.util.concurrent.atomic.AtomicReference;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 //this api tells you what kind of practices are available for each lesson inside a course
 

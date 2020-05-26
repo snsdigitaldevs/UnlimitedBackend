@@ -27,9 +27,7 @@ public class PuAvailablePracticesService {
     public void handleForArabic(String productCode, String storeDomain,
         List<PracticesInUnit> allPracticesInUnits) {
         if (CommonConstants.ARABIC_PU_ISBN.contains(productCode)) {
-            if (StringUtils.equalsIgnoreCase(StoreDomainConstants.WEB_DOMAIN, storeDomain)
-                // web will send email
-                || StringUtils.isNotBlank(UnlimitedThreadLocalUtils.getRequestParameter("email"))) {
+            if (StringUtils.equalsIgnoreCase(StoreDomainConstants.WEB_DOMAIN, storeDomain)) {
                 movePeriodToLeftForArabic(allPracticesInUnits);
             }
         }

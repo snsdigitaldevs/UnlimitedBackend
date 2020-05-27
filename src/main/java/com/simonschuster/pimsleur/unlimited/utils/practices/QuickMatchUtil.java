@@ -223,7 +223,7 @@ public class QuickMatchUtil {
     private static void parseSkillCsvLine(List<PracticesInUnit> result, Map<String, String> skillKeyMap, Map<String, String> headerMap, CSVRecord record) {
 
         String qz = record.get(headerMap.get(HEADER_QZ));
-        Integer unit = Integer.parseInt(record.get(headerMap.get(HEADER_UNIT_NUM)));
+        Integer unit = Integer.parseInt(record.get(headerMap.get(HEADER_UNIT_NUM)).trim());
 
         PracticesInUnit practices = result.stream()
                 .filter(practicesInUnit -> practicesInUnit.getUnitNumber().equals(unit))

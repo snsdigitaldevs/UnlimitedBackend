@@ -1,16 +1,16 @@
 package com.simonschuster.pimsleur.unlimited.data.dto.vocabularies;
 
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.NotBlank;
 import java.util.ArrayList;
 import java.util.List;
 
 public class VocabularyListInfoDTO {
 
-    @NotNull
+    @NotBlank
     private String customerId;
-    @NotNull
+    @NotBlank
     private String subUserId;
-    @NotNull
+    @NotBlank
     private String productCode;
 
     private List<VocabularyItemDTO> vocabularyItemList = new ArrayList<>();

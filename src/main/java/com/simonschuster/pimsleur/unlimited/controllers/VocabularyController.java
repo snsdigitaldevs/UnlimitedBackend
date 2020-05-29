@@ -5,7 +5,9 @@ import com.simonschuster.pimsleur.unlimited.data.dto.vocabularies.VocabularyInfo
 import com.simonschuster.pimsleur.unlimited.data.dto.vocabularies.VocabularyListInfoDTO;
 import com.simonschuster.pimsleur.unlimited.services.vocabularies.VocabularyService;
 import io.swagger.annotations.ApiOperation;
+import javax.validation.constraints.NotBlank;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,6 +20,7 @@ import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 @RestController
+@Validated
 public class VocabularyController {
 
     @Autowired
@@ -34,9 +37,9 @@ public class VocabularyController {
     @ApiOperation(value = "get vocabulary list for PU course",
             notes = "get vocabulary list by customerId, subUserId and productCode")
     @GetMapping("/puProduct/vocabulary")
-    public VocabularyInfoResponseDTO getVocabularyList(@RequestParam String customerId,
-                                                    @RequestParam String subUserId,
-                                                    @RequestParam String productCode,
+    public VocabularyInfoResponseDTO getVocabularyList(@RequestParam @NotBlank String customerId,
+                                                    @RequestParam @NotBlank String subUserId,
+                                                    @RequestParam @NotBlank String productCode,
                                                     @RequestParam(required = false) String storeDomain) {
         return vocabularyService.getSaveVocabularyList(customerId, subUserId, productCode, storeDomain);
     }
@@ -44,9 +47,9 @@ public class VocabularyController {
     @ApiOperation(value = "delete vocabularies for PU course",
             notes = "delete vocabularies by customerId, subUserId, productCode and language array")
     @DeleteMapping("/puProduct/vocabulary")
-    public VocabularyInfoResponseDTO deleteVocabularies(@RequestParam String customerId,
-                                                       @RequestParam String subUserId,
-                                                       @RequestParam String productCode,
+    public VocabularyInfoResponseDTO deleteVocabularies(@RequestParam @NotBlank String customerId,
+                                                       @RequestParam @NotBlank String subUserId,
+                                                       @RequestParam @NotBlank String productCode,
                                                        @RequestBody List<String> languageList,
                                                        @RequestParam(required = false) String storeDomain) throws UnsupportedEncodingException {
         return vocabularyService.deleteVocabularies(customerId, subUserId, productCode, languageList, storeDomain);

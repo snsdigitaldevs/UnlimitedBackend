@@ -6,11 +6,11 @@ import javax.validation.constraints.NotNull;
 
 public class VocabularyInfoBodyDTO {
 
-    @NotNull
+    @NotBlank
     private String customerId;
-    @NotNull
+    @NotBlank
     private String subUserId;
-    @NotNull
+    @NotBlank
     private String productCode;
     @NotBlank
     private String language;

@@ -55,7 +55,9 @@ public class LocationMappingService {
             ipAddress = InetAddress.getByName(ip);
             CityResponse response = dbReader.city(ipAddress);
             Country country = response.getCountry();
-            return new LocationInfoDTO(country.getName(), ip, country.getIsoCode() );
+            //TODO 进行测试
+            return new LocationInfoDTO("Australia",ip, "AU");
+//            return new LocationInfoDTO(country.getName(), ip, country.getIsoCode());
         } catch (IOException | GeoIp2Exception e) {
             logger.error("Error occur when query ip from GeoIp.");
         }

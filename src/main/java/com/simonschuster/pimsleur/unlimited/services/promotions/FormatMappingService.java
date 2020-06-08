@@ -8,6 +8,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.simonschuster.pimsleur.unlimited.UnlimitedApplication;
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
+import com.simonschuster.pimsleur.unlimited.constants.CommonConstants;
 import com.simonschuster.pimsleur.unlimited.constants.StoreDomainConstants;
 import com.simonschuster.pimsleur.unlimited.data.dto.promotions.FormatMapping;
 import com.simonschuster.pimsleur.unlimited.data.dto.promotions.UpsellDto;
@@ -59,11 +60,17 @@ public class FormatMappingService {
 
     private UpsellDto updateWebCartLink(UpsellDto upsellDto) {
         updateWebCartLinkForItem(upsellDto.getNextLevel(), config.getProperty("cart.api.purchase"));
-        updateWebCartLinkForItem(upsellDto.getNextVersion(), config.getProperty("cart.api.purchase"));
+        updateWebCartLinkForItem(upsellDto.getNextVersion(),
+            config.getProperty("cart.api.purchase"));
         if (upsellDto.getSubscriptionMap() != null) {
-            upsellDto.getSubscriptionMap().values()
-                .forEach(upsellItem -> updateWebCartLinkForItem(upsellItem,
-                    config.getProperty("cart.api.subscription")));
+            upsellDto.getSubscriptionMap().forEach((key, value) -> {
+                if (StringUtils.equals(key, CommonConstants.USA)) {
+                    updateWebCartLinkForItem(value, config.getProperty("cart.api.subscription"));
+                } else {
+                    updateWebCartLinkForItem(value,
+                        config.getProperty("cart.api.subscription.new"));
+                }
+            });
         }
         return upsellDto;
     }

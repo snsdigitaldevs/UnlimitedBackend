@@ -59,12 +59,7 @@ public class LocationMappingService {
             ipAddress = InetAddress.getByName(ip);
             CityResponse response = dbReader.city(ipAddress);
             Country country = response.getCountry();
-            List<String> countryList = Lists
-                .newArrayList(CommonConstants.AUSTRALIA, CommonConstants.USA,
-                    CommonConstants.UK, CommonConstants.CANADA);
-            return new LocationInfoDTO(country.getName(), ip,
-                countryList.get(RandomUtils.nextInt(0, countryList.size())));
-//            return new LocationInfoDTO(country.getName(), ip, country.getIsoCode());
+            return new LocationInfoDTO(country.getName(), ip, country.getIsoCode());
         } catch (IOException | GeoIp2Exception e) {
             logger.error("Error occur when query ip from GeoIp.");
         }

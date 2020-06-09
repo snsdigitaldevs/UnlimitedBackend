@@ -1,10 +1,14 @@
 package com.simonschuster.pimsleur.unlimited.services.promotions;
 
+import com.google.common.collect.Lists;
 import com.maxmind.geoip2.DatabaseReader;
 import com.maxmind.geoip2.exception.GeoIp2Exception;
 import com.maxmind.geoip2.model.CityResponse;
 import com.maxmind.geoip2.record.Country;
+import com.simonschuster.pimsleur.unlimited.constants.CommonConstants;
 import com.simonschuster.pimsleur.unlimited.data.dto.price.LocationInfoDTO;
+import java.util.List;
+import org.apache.commons.lang3.RandomUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -55,7 +59,12 @@ public class LocationMappingService {
             ipAddress = InetAddress.getByName(ip);
             CityResponse response = dbReader.city(ipAddress);
             Country country = response.getCountry();
-            return new LocationInfoDTO(country.getName(), ip, country.getIsoCode());
+            List<String> countryList = Lists
+                .newArrayList(CommonConstants.AUSTRALIA, CommonConstants.USA,
+                    CommonConstants.UK, CommonConstants.CANADA);
+            return new LocationInfoDTO(country.getName(), ip,
+                countryList.get(RandomUtils.nextInt(0, countryList.size())));
+//            return new LocationInfoDTO(country.getName(), ip, country.getIsoCode());
         } catch (IOException | GeoIp2Exception e) {
             logger.error("Error occur when query ip from GeoIp.");
         }

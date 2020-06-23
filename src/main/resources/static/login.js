@@ -3,18 +3,18 @@ const AUTH0_CLIENT_ID = "OYONqZ4zLlVruKMT9FhCtlV1idp7wrPJ";
 
 var webAuth;
 
-function initAuth0ForFBLogin() {
-    logUtil('initAuth0ForFBLogin: initializing Auth0..');
+function initAuth0() {
+    logUtil('initAuth0: initializing Auth0..');
     try {
         webAuth = new auth0.WebAuth({
             domain: AUTH0_DOMAIN,
             clientID: AUTH0_CLIENT_ID
         });
-        logUtil('initAuth0ForFBLogin: successful auth0 initialization.');
+        logUtil('initAuth0: successful auth0 initialization.');
         console.log(webAuth);
         return true;
     } catch (e) {
-        logUtil("initAuth0ForFBLogin: Auth0 exception:" + e.message);
+        logUtil("initAuth0: Auth0 exception:" + e.message);
     }
     return false;
 }
@@ -22,7 +22,7 @@ function initAuth0ForFBLogin() {
 function fbAuth() {
     showSpinner();
 
-    if (initAuth0ForFBLogin()) {
+    if (initAuth0()) {
 
         try {
             logUtil('fbAuth: initializing Auth0..');
@@ -40,6 +40,25 @@ function fbAuth() {
     }
 }
 
+function appleSignIn() {
+    showSpinner();
+    if (initAuth0()) {
+        try {
+            logUtil('appleSignIn: initializing Auth0..');
+
+            // Running auth0 Apple auth flow...
+            webAuth.authorize({
+                connection: 'apple',
+                responseType: 'token',
+                redirectUri: window.location.origin + window.location.pathname
+            });
+            logUtil('appleSignIn: successful auth0 initialization.');
+        } catch (e) {
+            logUtil("appleSignIn: Auth0 exception:" + e.message);
+        }
+    }
+}
+
 function logUtil(message) {
     console.log(message);
 }
@@ -50,7 +69,7 @@ function loginWithFaceBook() {
 
         try {
             logUtil("fbAuth: attempting to parse hash with token from social login..");
-            if (initAuth0ForFBLogin()) {
+            if (initAuth0()) {
                 webAuth.parseHash(window.location.hash, function (err, authResult) {
                     if (err) {
                         hideSpinner();
@@ -153,6 +172,10 @@ function initLoginFormAction() {
 $(document).ready(function () {
     document.getElementById("fb-login").addEventListener("click", function () {
         fbAuth();
+    });
+    
+    document.getElementById("apple-login").addEventListener("click", function () {
+        appleSignIn();
     });
 
     storeFieldsFromAlexa();

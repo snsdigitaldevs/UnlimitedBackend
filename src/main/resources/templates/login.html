@@ -41,8 +41,14 @@
     </div>
 
     <div id="form-container">
-        <button id="fb-login" class="social-button fb-btn">Log in with Facebook</button>
-        <!-- button id="goog-login" class="social-button goog-btn">Login with Google</button -->
+        <button id="fb-login" class="social-button fb-btn">
+            <img src="/logo/social_logo_facebook.png" class="social-logo">
+            Log in with Facebook
+        </button>
+        <button id="apple-login" class="social-button apple-btn">
+            <img src="/logo/social_logo_apple.png" class="social-logo">
+            Log in with Apple
+        </button>
 
         <div class="login-form">
             <input type="hidden" name="state" th:value="${state}">

@@ -1,5 +1,7 @@
 package com.simonschuster.pimsleur.alexa.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,6 +11,9 @@ import javax.servlet.http.HttpServletRequest;
 
 @Controller
 public class LoginController {
+
+    @Autowired
+    private Environment env;
 
 
     @GetMapping("/login")
@@ -23,6 +28,8 @@ public class LoginController {
                         Model model) {
         model.addAttribute("state", state);
         model.addAttribute("redirect_uri", redirectUri);
+        model.addAttribute("auth0_domain", env.getProperty("alexa.auth0.domain"));
+        model.addAttribute("auth0_client_id", env.getProperty("alexa.auth0.client.id"));
 
         return "login";
     }

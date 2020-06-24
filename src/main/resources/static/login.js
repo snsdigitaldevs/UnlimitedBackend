@@ -1,14 +1,26 @@
-const AUTH0_DOMAIN = "mg2-ss-prod.auth0.com";
-const AUTH0_CLIENT_ID = "OYONqZ4zLlVruKMT9FhCtlV1idp7wrPJ";
-
 var webAuth;
+
+function getAuth0DomainAndClientId() {
+    let domain = $("input[name='auth0_domain']").val();
+    let clientId = $("input[name='auth0_client_id']").val();
+    if (domain && clientId && domain !== "" && clientId !=="") {
+        return {
+            auth0Domain: domain,
+            auth0ClientId:clientId
+        }
+    } else {
+        logUtil('Auth0 Domain or Client ID is null.');
+        throw new Error('Auth0 Domain or Client ID is null.');
+    }
+}
 
 function initAuth0() {
     logUtil('initAuth0: initializing Auth0..');
     try {
+        let auth0Config = getAuth0DomainAndClientId();
         webAuth = new auth0.WebAuth({
-            domain: AUTH0_DOMAIN,
-            clientID: AUTH0_CLIENT_ID
+            domain: auth0Config.auth0Domain,
+            clientID: auth0Config.auth0ClientId
         });
         logUtil('initAuth0: successful auth0 initialization.');
         console.log(webAuth);
@@ -173,7 +185,7 @@ $(document).ready(function () {
     document.getElementById("fb-login").addEventListener("click", function () {
         fbAuth();
     });
-    
+
     document.getElementById("apple-login").addEventListener("click", function () {
         appleSignIn();
     });

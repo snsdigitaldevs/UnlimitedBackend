@@ -53,6 +53,8 @@
         <div class="login-form">
             <input type="hidden" name="state" th:value="${state}">
             <input type="hidden" name="redirect_uri" th:value="${redirect_uri}">
+            <input type="hidden" name="auth0_domain" th:value="${auth0_domain}">
+            <input type="hidden" name="auth0_client_id" th:value="${auth0_client_id}">
 
             <div id="email-err" class="off">Required field:</div>
             <input id="email-username-field" type="email" name="email" placeholder="email" autocorrect="off" autocapitalize="none">

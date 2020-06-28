@@ -1,41 +1,31 @@
 var webAuth;
 
 function getAuth0DomainAndClientId() {
-    let domain = $("input[name='auth0_domain']").val();
-    let clientId = $("input[name='auth0_client_id']").val();
-    if (domain && clientId && domain !== "" && clientId !=="") {
-        return {
-            auth0Domain: domain,
-            auth0ClientId:clientId
-        }
-    } else {
-        logUtil('Auth0 Domain or Client ID is null.');
-        throw new Error('Auth0 Domain or Client ID is null.');
-    }
+    const domain = $("input[name='auth0_domain']").val() || "";
+    const clientId = $("input[name='auth0_client_id']").val() || "";
+    return {
+        auth0Domain: domain,
+        auth0ClientId:clientId
+    };
 }
 
 function initAuth0() {
     logUtil('initAuth0: initializing Auth0..');
-    try {
-        let auth0Config = getAuth0DomainAndClientId();
+    const auth0Config = getAuth0DomainAndClientId();
+    if (auth0Config.auth0Domain !== "" && auth0Config.auth0ClientId !== "") {
         webAuth = new auth0.WebAuth({
             domain: auth0Config.auth0Domain,
             clientID: auth0Config.auth0ClientId
         });
         logUtil('initAuth0: successful auth0 initialization.');
-        console.log(webAuth);
         return true;
-    } catch (e) {
-        logUtil("initAuth0: Auth0 exception:" + e.message);
     }
     return false;
 }
 
 function fbAuth() {
-    showSpinner();
-
     if (initAuth0()) {
-
+        showSpinner();
         try {
             logUtil('fbAuth: initializing Auth0..');
 
@@ -47,14 +37,15 @@ function fbAuth() {
             });
             logUtil('fbAuth: successful auth0 initialization.');
         } catch (e) {
+            hideSpinner();
             logUtil("fbAuth: Auth0 exception:" + e.message);
         }
     }
 }
 
 function appleSignIn() {
-    showSpinner();
     if (initAuth0()) {
+        showSpinner();
         try {
             logUtil('appleSignIn: initializing Auth0..');
 
@@ -66,6 +57,7 @@ function appleSignIn() {
             });
             logUtil('appleSignIn: successful auth0 initialization.');
         } catch (e) {
+            hideSpinner();
             logUtil("appleSignIn: Auth0 exception:" + e.message);
         }
     }
@@ -77,11 +69,10 @@ function logUtil(message) {
 
 function loginWithFaceBook() {
     if (window.location.hash) {
-        showSpinner();
-
         try {
             logUtil("fbAuth: attempting to parse hash with token from social login..");
             if (initAuth0()) {
+                showSpinner();
                 webAuth.parseHash(window.location.hash, function (err, authResult) {
                     if (err) {
                         hideSpinner();

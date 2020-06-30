@@ -17,6 +17,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static com.simonschuster.pimsleur.unlimited.data.dto.productinfo.ReadingAudio.createFrom;
@@ -50,11 +51,15 @@ public class PcmReadingsService {
         Stream<MediaItem> mediaItems = findReadingMediaItems(download.getMediaSet().getChildMediaSets());
 
         boolean isBatched = parseBoolean(config.getProperty("toggle.fetch.mp3.url.batch"));
-        if (isBatched) {
-            return batchGetPcmReadings(download, pcmProduct, mediaItems, storeDomain);
-        } else {
-            return getPcmReadingsOneByOne(download, pcmProduct, mediaItems, storeDomain);
-        }
+        Readings readings = isBatched ? batchGetPcmReadings(download, pcmProduct, mediaItems, storeDomain) : getPcmReadingsOneByOne(download, pcmProduct, mediaItems, storeDomain);
+
+        List<ReadingAudio> audios = readings.getAudios();
+        List<ReadingAudio> cultureNotesAudios = audios.stream().filter(ReadingAudio::isCultureNotes).collect(Collectors.toList());
+        audios.removeAll(cultureNotesAudios);
+        audios.addAll(cultureNotesAudios);
+        readings.setAudios(audios);
+
+        return readings;
     }
 
     private Stream<MediaItem> findReadingMediaItems(List<ChildMediaSet> childMediaSets) {

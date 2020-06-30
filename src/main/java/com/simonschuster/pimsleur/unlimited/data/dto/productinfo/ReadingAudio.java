@@ -166,4 +166,8 @@ public class ReadingAudio {
             this.endPage = endPage;
         }
     }
+
+    public boolean isCultureNotes() {
+        return this.title.contains(CULTURE_NOTES);
+    }
 }

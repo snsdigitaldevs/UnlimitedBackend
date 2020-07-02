@@ -1,5 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.data.dto.productinfo;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -167,7 +168,8 @@ public class ReadingAudio {
         }
     }
 
+    @JsonIgnore
     public boolean isCultureNotes() {
-        return this.title.contains(CULTURE_NOTES);
+        return this.title != null && this.title.contains(CULTURE_NOTES);
     }
 }

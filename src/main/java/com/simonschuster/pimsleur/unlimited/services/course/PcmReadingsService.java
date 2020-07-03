@@ -58,6 +58,7 @@ public class PcmReadingsService {
         audios.removeAll(cultureNotesAudios);
         audios.addAll(cultureNotesAudios);
         readings.setAudios(audios);
+        readings.setPdfName();
 
         return readings;
     }

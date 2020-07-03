@@ -172,4 +172,9 @@ public class ReadingAudio {
     public boolean isCultureNotes() {
         return this.title != null && this.title.contains(CULTURE_NOTES);
     }
+
+    @JsonIgnore
+    public boolean isReadingLesson() {
+        return this.title != null && (this.title.contains(READING_LESSON) || this.title.contains(ESL_SPANISH_READING_LESSON));
+    }
 }

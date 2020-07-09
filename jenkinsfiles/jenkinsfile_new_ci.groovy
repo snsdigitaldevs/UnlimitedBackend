@@ -42,6 +42,15 @@ pipeline {
                 }
             }
         }
+        stage('Dependency-Check'){
+            agent any
+            steps{
+                script {
+                    echo "Use hawkeye to scan dependency"
+                    sh "docker run --rm -v ${WORKSPACE}/target hawkeyesec/scanner-cli:latest"
+                }
+            }
+        }
     }
     post {
         aborted {

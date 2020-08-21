@@ -5,14 +5,20 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
+import java.util.HashMap;
+
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "purchaseStatusDidChange"
+    "purchaseStatusDidChange",
+    "purchaseRecord"
 })
 public class ResultData {
 
     @JsonProperty("purchaseStatusDidChange")
     private Boolean purchaseStatusDidChange;
+
+    @JsonProperty("purchaseRecord")
+    private HashMap<String, Object> purchaseRecord;
 
     @JsonProperty("purchaseStatusDidChange")
     public Boolean getPurchaseStatusDidChange() {
@@ -24,4 +30,13 @@ public class ResultData {
         this.purchaseStatusDidChange = purchaseStatusDidChange;
     }
 
+    @JsonProperty("purchaseRecord")
+    public HashMap<String, Object> getPurchaseRecord() {
+        return purchaseRecord;
+    }
+
+    @JsonProperty("purchaseRecord")
+    public void setPurchaseRecord(HashMap<String, Object> purchaseRecord) {
+        this.purchaseRecord = purchaseRecord;
+    }
 }

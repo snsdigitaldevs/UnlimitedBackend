@@ -23,7 +23,7 @@ function initAuth0() {
     return false;
 }
 
-function fbAuth() {
+function fbSignIn() {
     if (initAuth0()) {
         showSpinner();
         try {
@@ -63,6 +63,26 @@ function appleSignIn() {
     }
 }
 
+function googleSignIn() {
+    if (initAuth0()) {
+        showSpinner();
+        try {
+            logUtil('googleSignIn: initializing Auth0..');
+
+            // Running auth0 google auth flow...
+            webAuth.authorize({
+                connection: 'google-oauth2',
+                responseType: 'token',
+                redirectUri: window.location.origin + window.location.pathname
+            });
+            logUtil('googleSignIn: successful auth0 initialization.');
+        } catch (e) {
+            hideSpinner();
+            logUtil("googleSignIn: Auth0 exception:" + e.message);
+        }
+    }
+}
+
 function logUtil(message) {
     console.log(message);
 }
@@ -70,26 +90,26 @@ function logUtil(message) {
 function loginWithFaceBook() {
     if (window.location.hash) {
         try {
-            logUtil("fbAuth: attempting to parse hash with token from social login..");
+            logUtil("attempting to parse hash with token from social login..");
             if (initAuth0()) {
                 showSpinner();
                 webAuth.parseHash(window.location.hash, function (err, authResult) {
                     if (err) {
                         hideSpinner();
-                        logUtil("fbAuth: err from parse hash(maybe just bad login credentials): " + JSON.stringify(err));
-                        logUtil("login fail when login with Facebook");
-                        var errorMessage = "The email address and/or password you provided to Facebook does not match a valid Pimsleur account.";
+                        logUtil("social login: err from parse hash(maybe just bad login credentials): " + JSON.stringify(err));
+                        logUtil("login fail when login with social media");
+                        var errorMessage = "The email address and/or password you provided does not match a valid Pimsleur account.";
                         showFailAlert(errorMessage);
                     } else {
-                        logUtil("fbAuth: successfully parsed url hash. Attempting to get user info..");
+                        logUtil("social login: successfully parsed url hash. Attempting to get user info..");
                         webAuth.client.userInfo(authResult.accessToken, function (err, user) {
                             hideSpinner();
                             if (err) {
-                                logUtil("fbAuth: err from client.userInfo : " + JSON.stringify(err));
+                                logUtil("social login: err from client.userInfo : " + JSON.stringify(err));
                                 var errorMessage = "Invalid Login, " + "Autentication error.";
                                 showFailAlert(errorMessage);
                             } else {
-                                logUtil("fbAuth: successfully retrieved user info: " + JSON.stringify(user));
+                                logUtil("social login: successfully retrieved user info: " + JSON.stringify(user));
                                 var fullRedirectUrl = window.localStorage.getItem("redirect_uri") + "#"
                                     + "state=" + window.localStorage.getItem("state") + "&"
                                     + "access_token=" + user.sub + "&"
@@ -103,7 +123,7 @@ function loginWithFaceBook() {
             }
         }
         catch (e) {
-            logUtil("loginWithFaceBook: exception: " + e.message);
+            logUtil("loginWithSocialMedia: exception: " + e.message);
         }
     }
 }
@@ -174,11 +194,13 @@ function initLoginFormAction() {
 
 $(document).ready(function () {
     document.getElementById("fb-login").addEventListener("click", function () {
-        fbAuth();
+        fbSignIn();
     });
-
     document.getElementById("apple-login").addEventListener("click", function () {
         appleSignIn();
+    });
+    document.getElementById("google-login").addEventListener("click", function () {
+        googleSignIn();
     });
 
     storeFieldsFromAlexa();

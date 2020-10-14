@@ -4790,6 +4790,16 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Prem free lesson",
+    "ISBN": 9781797115214,
+    "Course name - Upsell Card & Library": "Hebrew",
+    "Course name - Learn Page": "Hebrew Level 1",
+    "Course Description - Upsell Card": "",
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442330436,
     "Course name - Upsell Card & Library": "Hebrew Level 1",
@@ -4857,6 +4867,16 @@
     "Course Description - Upsell Card": "5 thirty-minute language lessons",
     "Other format 1 (Upsell) ISBN": 9781508271734,
     "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Prem Level 1",
+    "ISBN": 9781797114446,
+    "Course name - Upsell Card & Library": "Hebrew Level 1 Premium",
+    "Course name - Learn Page": "Hebrew Level 1",
+    "Course Description - Upsell Card": "• Purchase 30 lessons at a time\r\n• Purchased lessons never expire\r\n• Start with Level 1 today!",
+    "Other format 2 (Upgrade) ISBN": 9781797115238,
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
   {
@@ -4930,6 +4950,16 @@
     "Other format 3 (DVD) ISBN": ""
   },
   {
+    "Base Course Type": "Prem Level 2",
+    "ISBN": 9781797114514,
+    "Course name - Upsell Card & Library": "Hebrew Level 2 Premium",
+    "Course name - Learn Page": "Hebrew Level 2",
+    "Course Description - Upsell Card": "The complete level of 30 lessons and access to all premium features",
+    "Other format 2 (Upgrade) ISBN": 9781797115245,
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
     "Base Course Type": "Audio Level 3",
     "ISBN": 9781442331174,
     "Course name - Upsell Card & Library": "Hebrew Level 3",
@@ -4996,6 +5026,46 @@
     "Course name - Learn Page": "Hebrew Level 3",
     "Course Description - Upsell Card": "5 thirty-minute language lessons",
     "Other format 1 (Upsell) ISBN": 9781508271857,
+    "Other format 2 (Upgrade) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Prem Level 3",
+    "ISBN": 9781797114552,
+    "Course name - Upsell Card & Library": "Hebrew Level 3 Premium",
+    "Course name - Learn Page": "Hebrew Level 3",
+    "Course Description - Upsell Card": "The complete level of 30 lessons and access to all premium features",
+    "Other format 2 (Upgrade) ISBN": 9781797115252,
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Prem Level 1-2",
+    "ISBN": 9781797115207,
+    "Course name - Upsell Card & Library": "Hebrew Levels 1-2 Premium",
+    "Course name - Learn Page": "Hebrew Levels 1-2",
+    "Course Description - Upsell Card": "Two complete levels totaling 60 lessons and access to all premium features",
+    "Other format 2 (Upgrade) ISBN": 9781797115269,
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Prem Level 1-3",
+    "ISBN": 9781797106205,
+    "Course name - Upsell Card & Library": "Hebrew Levels 1-3 Premium",
+    "Course name - Learn Page": "Hebrew Levels 1-3",
+    "Course Description - Upsell Card": "Three complete levels totaling 90 lessons and access to all premium features",
+    "Other format 2 (Upgrade) ISBN": 9781797115276,
+    "Other format 1 (Upsell) ISBN": "",
+    "Other format 3 (DVD) ISBN": ""
+  },
+  {
+    "Base Course Type": "Subscription",
+    "ISBN": 9781797115221,
+    "Course name - Upsell Card & Library": "Hebrew Premium Subscription",
+    "Course Description - Upsell Card": "• Unlimited access to all 90 lessons\r\n• Small monthly fee is easy on wallet\r\n• Full course access today!",
+    "Course name - Learn Page": "",
+    "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
     "Other format 3 (DVD) ISBN": ""
   },
@@ -7962,8 +8032,8 @@
   {
     "Base Course Type": "Audio free lesson",
     "ISBN": 9781442355040,
-    "Course name - Upsell Card & Library": "Spanish (Castilian)",
-    "Course name - Learn Page": "Spanish (Castilian) Level 1",
+    "Course name - Upsell Card & Library": "Spanish (Spain)",
+    "Course name - Learn Page": "Spanish (Spain) Level 1",
     "Course Description - Upsell Card": "",
     "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
@@ -7972,8 +8042,8 @@
   {
     "Base Course Type": "Audio Level 1",
     "ISBN": 9781442355408,
-    "Course name - Upsell Card & Library": "Spanish (Castilian) Level 1",
-    "Course name - Learn Page": "Spanish (Castilian) Level 1",
+    "Course name - Upsell Card & Library": "Spanish (Spain) Level 1",
+    "Course name - Learn Page": "Spanish (Spain) Level 1",
     "Course Description - Upsell Card": "• Purchase 30 lessons at a time\r\n• Purchased lessons never expire\r\n• Start with Level 1 today!",
     "Other format 1 (Upsell) ISBN": 9781508272090,
     "Other format 2 (Upgrade) ISBN": "",
@@ -7982,8 +8052,8 @@
   {
     "Base Course Type": "Audio 5 Lesson",
     "ISBN": 9781442355347,
-    "Course name - Upsell Card & Library": "Spanish (Castilian) Level 1 Lessons 1-5",
-    "Course name - Learn Page": "Spanish (Castilian) Level 1",
+    "Course name - Upsell Card & Library": "Spanish (Spain) Level 1 Lessons 1-5",
+    "Course name - Learn Page": "Spanish (Spain) Level 1",
     "Course Description - Upsell Card": "5 thirty-minute language lessons",
     "Other format 1 (Upsell) ISBN": "",
     "Other format 2 (Upgrade) ISBN": "",
@@ -7992,8 +8062,8 @@
   {
     "Base Course Type": "Audio 5 Lesson",
     "ISBN": 9781442355361,
-    "Course name - Upsell Card & Library": "Spanish (Castilian) Level 1 Lessons 11-15",
-    "Course name - Learn Page": "Spanish (Castilian) Level 1",
+    "Course name - Upsell Card & Library": "Spanish (Spain) Level 1 Lessons 11-15",
+    "Course name - Learn Page": "Spanish (Spain) Level 1",
     "Course Description - Upsell Card": "5 thirty-minute language lessons",
     "Other format 1 (Upsell) ISBN": 9781508274025,
     "Other format 2 (Upgrade) ISBN": "",
@@ -8002,8 +8072,8 @@
   {
     "Base Course Type": "Audio 5 Lesson",
     "ISBN": 9781442355378,
-    "Course name - Upsell Card & Library": "Spanish (Castilian) Level 1 Lessons 16-20",
-    "Course name - Learn Page": "Spanish (Castilian) Level 1",
+    "Course name - Upsell Card & Library": "Spanish (Spain) Level 1 Lessons 16-20",
+    "Course name - Learn Page": "Spanish (Spain) Level 1",
     "Course Description - Upsell Card": "5 thirty-minute language lessons",
     "Other format 1 (Upsell) ISBN": 9781508274032,
     "Other format 2 (Upgrade) ISBN": "",
@@ -8012,8 +8082,8 @@
   {
     "Base Course Type": "Audio 5 Lesson",
     "ISBN": 9781442355385,
-    "Course name - Upsell Card & Library": "Spanish (Castilian) Level 1 Lessons 21-25",
-    "Course name - Learn Page": "Spanish (Castilian) Level 1",
+    "Course name - Upsell Card & Library": "Spanish (Spain) Level 1 Lessons 21-25",
+    "Course name - Learn Page": "Spanish (Spain) Level 1",
     "Course Description - Upsell Card": "5 thirty-minute language lessons",
     "Other format 1 (Upsell) ISBN": 9781508274049,
     "Other format 2 (Upgrade) ISBN": "",
@@ -8022,8 +8092,8 @@
   {
     "Base Course Type": "Audio 5 Lesson",
     "ISBN": 9781442355392,
-    "Course name - Upsell Card & Library": "Spanish (Castilian) Level 1 Lessons 26-30",
-    "Course name - Learn Page": "Spanish (Castilian) Level 1",
+    "Course name - Upsell Card & Library": "Spanish (Spain) Level 1 Lessons 26-30",
+    "Course name - Learn Page": "Spanish (Spain) Level 1",
     "Course Description - Upsell Card": "5 thirty-minute language lessons",
     "Other format 1 (Upsell) ISBN": 9781508274056,
     "Other format 2 (Upgrade) ISBN": "",
@@ -8032,8 +8102,8 @@
   {
     "Base Course Type": "Audio 5 Lesson",
     "ISBN": 9781442355354,
-    "Course name - Upsell Card & Library": "Spanish (Castilian) Level 1 Lessons 6-10",
-    "Course name - Learn Page": "Spanish (Castilian) Level 1",
+    "Course name - Upsell Card & Library": "Spanish (Spain) Level 1 Lessons 6-10",
+    "Course name - Learn Page": "Spanish (Spain) Level 1",
     "Course Description - Upsell Card": "5 thirty-minute language lessons",
     "Other format 1 (Upsell) ISBN": 9781508274018,
     "Other format 2 (Upgrade) ISBN": "",
@@ -8042,8 +8112,8 @@
   {
     "Base Course Type": "Audio Level 2",
     "ISBN": 9781508253297,
-    "Course name - Upsell Card & Library": "Spanish (Castilian) Level 2",
-    "Course name - Learn Page": "Spanish (Castilian) Level 2",
+    "Course name - Upsell Card & Library": "Spanish (Spain) Level 2",
+    "Course name - Learn Page": "Spanish (Spain) Level 2",
     "Course Description - Upsell Card": "The complete level of 30 lessons",
     "Other format 1 (Upsell) ISBN": 9781508281177,
     "Other format 2 (Upgrade) ISBN": "",
@@ -8052,8 +8122,8 @@
   {
     "Base Course Type": "Audio 5 Lesson",
     "ISBN": 9781508281108,
-    "Course name - Upsell Card & Library": "Spanish (Castilian) Level 2 Lessons 1-5",
-    "Course name - Learn Page": "Spanish (Castilian) Level 2",
+    "Course name - Upsell Card & Library": "Spanish (Spain) Level 2 Lessons 1-5",
+    "Course name - Learn Page": "Spanish (Spain) Level 2",
     "Course Description - Upsell Card": "5 thirty-minute language lessons",
     "Other format 1 (Upsell) ISBN": 9781508281108,
     "Other format 2 (Upgrade) ISBN": "",
@@ -8062,8 +8132,8 @@
   {
     "Base Course Type": "Audio 5 Lesson",
     "ISBN": 9781508281139,
-    "Course name - Upsell Card & Library": "Spanish (Castilian) Level 2 Lessons 11-15",
-    "Course name - Learn Page": "Spanish (Castilian) Level 2",
+    "Course name - Upsell Card & Library": "Spanish (Spain) Level 2 Lessons 11-15",
+    "Course name - Learn Page": "Spanish (Spain) Level 2",
     "Course Description - Upsell Card": "5 thirty-minute language lessons",
     "Other format 1 (Upsell) ISBN": 9781508281139,
     "Other format 2 (Upgrade) ISBN": "",
@@ -8072,8 +8142,8 @@
   {
     "Base Course Type": "Audio 5 Lesson",
     "ISBN": 9781508281146,
-    "Course name - Upsell Card & Library": "Spanish (Castilian) Level 2 Lessons 16-20",
-    "Course name - Learn Page": "Spanish (Castilian) Level 2",
+    "Course name - Upsell Card & Library": "Spanish (Spain) Level 2 Lessons 16-20",
+    "Course name - Learn Page": "Spanish (Spain) Level 2",
     "Course Description - Upsell Card": "5 thirty-minute language lessons",
     "Other format 1 (Upsell) ISBN": 9781508281146,
     "Other format 2 (Upgrade) ISBN": "",
@@ -8082,8 +8152,8 @@
   {
     "Base Course Type": "Audio 5 Lesson",
     "ISBN": 9781508281153,
-    "Course name - Upsell Card & Library": "Spanish (Castilian) Level 2 Lessons 21-25",
-    "Course name - Learn Page": "Spanish (Castilian) Level 2",
+    "Course name - Upsell Card & Library": "Spanish (Spain) Level 2 Lessons 21-25",
+    "Course name - Learn Page": "Spanish (Spain) Level 2",
     "Course Description - Upsell Card": "5 thirty-minute language lessons",
     "Other format 1 (Upsell) ISBN": 9781508281153,
     "Other format 2 (Upgrade) ISBN": "",
@@ -8092,8 +8162,8 @@
   {
     "Base Course Type": "Audio 5 Lesson",
     "ISBN": 9781508281160,
-    "Course name - Upsell Card & Library": "Spanish (Castilian) Level 2 Lessons 26-30",
-    "Course name - Learn Page": "Spanish (Castilian) Level 2",
+    "Course name - Upsell Card & Library": "Spanish (Spain) Level 2 Lessons 26-30",
+    "Course name - Learn Page": "Spanish (Spain) Level 2",
     "Course Description - Upsell Card": "5 thirty-minute language lessons",
     "Other format 1 (Upsell) ISBN": 9781508281160,
     "Other format 2 (Upgrade) ISBN": "",
@@ -8102,8 +8172,8 @@
   {
     "Base Course Type": "Audio 5 Lesson",
     "ISBN": 9781508281122,
-    "Course name - Upsell Card & Library": "Spanish (Castilian) Level 2 Lessons 6-10",
-    "Course name - Learn Page": "Spanish (Castilian) Level 2",
+    "Course name - Upsell Card & Library": "Spanish (Spain) Level 2 Lessons 6-10",
+    "Course name - Learn Page": "Spanish (Spain) Level 2",
     "Course Description - Upsell Card": "5 thirty-minute language lessons",
     "Other format 1 (Upsell) ISBN": 9781508281122,
     "Other format 2 (Upgrade) ISBN": "",
@@ -8112,7 +8182,7 @@
   {
     "Base Course Type": "Subscription",
     "ISBN": 9781508268635,
-    "Course name - Upsell Card & Library": "Spanish (Castilian) Subscription",
+    "Course name - Upsell Card & Library": "Spanish (Spain) Subscription",
     "Course Description - Upsell Card": "• Unlimited access to all 60 lessons\r\n• Small monthly fee is easy on wallet\r\n• Full course access today!",
     "Course name - Learn Page": "",
     "Other format 1 (Upsell) ISBN": "",

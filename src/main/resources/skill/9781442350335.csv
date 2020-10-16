@@ -1,4 +1,4 @@
-Rec #,Lang,ISBN-13,Course,Unit Num,start,stop,QZ #,line #,spkr,Cue,# of words,Q or S,Course Name (Source),Skills
+﻿Rec #,Lang,ISBN-13,Course,Unit Num,start,stop,QZ #,line #,spkr,Cue,# of words,Q or S,Course Name (Source),Skills
 1,FR,978-1-4423-5033-5,French 3,1,0:02:23,0:02:26,01Q,35,N,Can you show me on the map where the post office is?,,,"French Phase 3, Units 1-30 (2005)","4,16"
 2,FR,978-1-4423-5033-5,French 3,1,0:02:32,0:02:35,01R,36,M,Est-ce que vous pouvez me montrer sur le plan où est la poste?,13,Q,"French Phase 3, Units 1-30 (2005)","4,16"
 3,FR,978-1-4423-5033-5,French 3,1,0:02:51,0:02:52,02Q,38,N,You don’t need this map.,,,"French Phase 3, Units 1-30 (2005)","4,18"
@@ -463,149 +463,147 @@ Rec #,Lang,ISBN-13,Course,Unit Num,start,stop,QZ #,line #,spkr,Cue,# of words,Q 
 462,FR,978-1-4423-5033-5,French 3,23,0:25:34,0:25:36,09R,257,M,Ici le projet est presque terminé.,6,S,"French Phase 3, Units 1-30 (2005)","9,20"
 463,FR,978-1-4423-5033-5,French 3,23,0:29:36,0:29:38,10Q,293,N,Can I bring you another beer?,,,"French Phase 3, Units 1-30 (2005)",6
 464,FR,978-1-4423-5033-5,French 3,23,0:29:42,0:29:44,10R,294,F,Est-ce que je peux vous apporter une autre bière?,9,Q,"French Phase 3, Units 1-30 (2005)",6
-465,FR,978-1-4423-5033-5,French 3,24,0:04:22,0:04:25,01Q,51,N,Say that it’s necessary that you go back next week.,,,"French Phase 3, Units 1-30 (2005)","9,17,18"
-466,FR,978-1-4423-5033-5,French 3,24,0:04:30,0:04:33,01R,52,M,Il faut que je rentre la semaine prochaine.,8,S,"French Phase 3, Units 1-30 (2005)","9,17,18"
-467,FR,978-1-4423-5033-5,French 3,24,0:06:03,0:06:04,02Q,67,N,If you don’t mind.,,,"French Phase 3, Units 1-30 (2005)","7,13"
-468,FR,978-1-4423-5033-5,French 3,24,0:06:06,0:06:08,02R,68,M,Si ça ne vous ennuie pas.,6,S,"French Phase 3, Units 1-30 (2005)","7,13"
-469,FR,978-1-4423-5033-5,French 3,24,0:09:25,0:09:26,03Q,100,N,I’d like to go to see the church.,,,"French Phase 3, Units 1-30 (2005)","1,9"
-470,FR,978-1-4423-5033-5,French 3,24,0:09:30,0:09:33,03R,101,M,J’aimerais bien aller voir l’église.,5,S,"French Phase 3, Units 1-30 (2005)","1,9"
-471,FR,978-1-4423-5033-5,French 3,24,0:10:31,0:10:32,04Q,108,N,I have a book on this church.,,,"French Phase 3, Units 1-30 (2005)",9
-472,FR,978-1-4423-5033-5,French 3,24,0:10:36,0:10:39,04R,109,F,J’ai un livre sur cette église.,6,S,"French Phase 3, Units 1-30 (2005)",9
-473,FR,978-1-4423-5033-5,French 3,24,0:10:50,0:10:52,05Q,111,N,It’s in my car.,,,"French Phase 3, Units 1-30 (2005)",18
-474,FR,978-1-4423-5033-5,French 3,24,0:10:55,0:10:56,05R,112,F,Il est dans ma voiture.,5,S,"French Phase 3, Units 1-30 (2005)",18
-475,FR,978-1-4423-5033-5,French 3,24,0:18:50,0:18:54,06Q,189,N,Do you do sports?,,,"French Phase 3, Units 1-30 (2005)","1,7"
-476,FR,978-1-4423-5033-5,French 3,24,0:18:55,0:18:59,06R,190,M,Est-ce que vous faites du sport?,6,Q,"French Phase 3, Units 1-30 (2005)","1,7"
-477,FR,978-1-4423-5033-5,French 3,24,0:19:39,0:19:41,07Q,195,N,Golf is pretty expensive.,,,"French Phase 3, Units 1-30 (2005)",14
-478,FR,978-1-4423-5033-5,French 3,24,0:19:44,0:19:46,07R,196,M,Le golf est assez cher.,5,S,"French Phase 3, Units 1-30 (2005)",14
-479,FR,978-1-4423-5033-5,French 3,24,0:21:50,0:21:54,08Q,215,N,There are some courts around here.,,,"French Phase 3, Units 1-30 (2005)",1
-480,FR,978-1-4423-5033-5,French 3,24,0:21:55,0:21:59,08R,216,F,Il y a des courts par ici.,7,S,"French Phase 3, Units 1-30 (2005)",1
-481,FR,978-1-4423-5033-5,French 3,24,0:23:36,0:23:37,09Q,232,N,The flowers weren’t very beautiful.,,,"French Phase 3, Units 1-30 (2005)",9
-482,FR,978-1-4423-5033-5,French 3,24,0:23:41,0:23:42,09R,233,M,Les fleurs n’étaient pas très belles.,6,S,"French Phase 3, Units 1-30 (2005)",9
-483,FR,978-1-4423-5033-5,French 3,24,0:25:44,0:25:46,10Q,254,N,What do you do in order to relax?,,,"French Phase 3, Units 1-30 (2005)",1
-484,FR,978-1-4423-5033-5,French 3,24,0:25:50,0:25:51,10R,255,F,Qu’est-ce que vous faites pour vous détendre?,7,Q,"French Phase 3, Units 1-30 (2005)",1
-485,FR,978-1-4423-5033-5,French 3,25,0:03:25,0:03:27,01Q,46,N,I’m going to bring you a glass of water.,,,"French Phase 3, Units 1-30 (2005)",6
-486,FR,978-1-4423-5033-5,French 3,25,0:03:30,0:03:32,01R,47,F,Je vais vous apporter un verre d’eau.,7,S,"French Phase 3, Units 1-30 (2005)",6
-487,FR,978-1-4423-5033-5,French 3,25,0:10:48,0:10:50,02Q,119,N,"But golf, that takes a lot of time.",,,"French Phase 3, Units 1-30 (2005)","1,17"
-488,FR,978-1-4423-5033-5,French 3,25,0:10:55,0:10:57,02R,120,F,"Mais le golf, ça prend beaucoup de temps.",8,S,"French Phase 3, Units 1-30 (2005)","1,17"
-489,FR,978-1-4423-5033-5,French 3,25,0:11:11,0:11:13,03Q,122,N,I play a little tennis.,,,"French Phase 3, Units 1-30 (2005)",1
-490,FR,978-1-4423-5033-5,French 3,25,0:11:17,0:11:18,03R,123,F,Je joue un peu au tennis.,6,S,"French Phase 3, Units 1-30 (2005)",1
-491,FR,978-1-4423-5033-5,French 3,25,0:13:03,0:13:04,04Q,142,N,She’s looking for some work.,,,"French Phase 3, Units 1-30 (2005)","7,20"
-492,FR,978-1-4423-5033-5,French 3,25,0:13:08,0:13:09,04R,143,F,Elle cherche du travail.,4,S,"French Phase 3, Units 1-30 (2005)","7,20"
-493,FR,978-1-4423-5033-5,French 3,25,0:13:31,0:13:32,05Q,147,N,What kind of job?,,,"French Phase 3, Units 1-30 (2005)","7,20"
-494,FR,978-1-4423-5033-5,French 3,25,0:13:35,0:13:36,05R,148,M,Quel genre de travail?,4,Q,"French Phase 3, Units 1-30 (2005)","7,20"
-495,FR,978-1-4423-5033-5,French 3,25,0:14:12,0:14:14,06Q,152,N,What kind of job is she looking for?,,,"French Phase 3, Units 1-30 (2005)","7,20"
-496,FR,978-1-4423-5033-5,French 3,25,0:14:18,0:14:20,06R,153,M,Quel genre de travail est-ce qu’elle cherche?,7,Q,"French Phase 3, Units 1-30 (2005)","7,20"
-497,FR,978-1-4423-5033-5,French 3,25,0:15:26,0:15:28,07Q,161,N,She’s looking for a job as a teacher.,,,"French Phase 3, Units 1-30 (2005)","5,20"
-498,FR,978-1-4423-5033-5,French 3,25,0:15:32,0:15:34,07R,162,F,Elle cherche un travail de professeur.,6,S,"French Phase 3, Units 1-30 (2005)","5,20"
-499,FR,978-1-4423-5033-5,French 3,25,0:17:56,0:17:59,08Q,184,N,She wants to be a history teacher in high school.,,,"French Phase 3, Units 1-30 (2005)","5,20"
-500,FR,978-1-4423-5033-5,French 3,25,0:18:03,0:18:06,08R,185,F,Elle veut être professeur d’histoire au lycèe.,7,S,"French Phase 3, Units 1-30 (2005)","5,20"
-501,FR,978-1-4423-5033-5,French 3,25,0:18:36,0:18:38,09Q,191,N,She has always wanted to be a teacher.,,,"French Phase 3, Units 1-30 (2005)","5,20"
-502,FR,978-1-4423-5033-5,French 3,25,0:18:41,0:18:43,09R,192,F,Elle a toujours voulu être professeur.,6,S,"French Phase 3, Units 1-30 (2005)","5,20"
-503,FR,978-1-4423-5033-5,French 3,25,0:22:32,0:22:34,10Q,229,N,He has always liked computers.,,,"French Phase 3, Units 1-30 (2005)","1,3"
-504,FR,978-1-4423-5033-5,French 3,25,0:22:36,0:22:38,10R,230,F,Il a toujours aimé les ordinateurs.,6,S,"French Phase 3, Units 1-30 (2005)","1,3"
-505,FR,978-1-4423-5033-5,French 3,25,0:23:56,0:23:58,11Q,241,N,He has always wanted to be a computer programmer.,,,"French Phase 3, Units 1-30 (2005)","3,17,20"
-506,FR,978-1-4423-5033-5,French 3,25,0:24:04,0:24:07,11R,242,F,Il a toujours voulu être programmeur dans l’informatique.,8,S,"French Phase 3, Units 1-30 (2005)","3,17,20"
-507,FR,978-1-4423-5033-5,French 3,25,0:25:01,0:25:03,12Q,252,N,She’s always wanted to be a history teacher.,,,"French Phase 3, Units 1-30 (2005)","5,20"
-508,FR,978-1-4423-5033-5,French 3,25,0:25:08,0:25:11,12R,253,F,Elle a toujours voulu être professeur d’histoire.,7,S,"French Phase 3, Units 1-30 (2005)","5,20"
-509,FR,978-1-4423-5033-5,French 3,26,0:04:00,0:04:03,01Q,48,N,My son wants to work in information technology.,,,"French Phase 3, Units 1-30 (2005)","5,20"
-510,FR,978-1-4423-5033-5,French 3,26,0:04:09,0:04:11,01R,49,F,Mon fils veut travailler dans l’informatique.,6,S,"French Phase 3, Units 1-30 (2005)","5,20"
-511,FR,978-1-4423-5033-5,French 3,26,0:04:34,0:04:37,02Q,52,N,I think that he’s going to look for a job as a programmer.,,,"French Phase 3, Units 1-30 (2005)","3,20"
-512,FR,978-1-4423-5033-5,French 3,26,0:04:42,0:04:45,02R,53,F,Je crois qu’il va chercher un travail de programmeur.,9,S,"French Phase 3, Units 1-30 (2005)","3,20"
-513,FR,978-1-4423-5033-5,French 3,26,0:05:18,0:05:20,03Q,58,N,What do they do for work?,,,"French Phase 3, Units 1-30 (2005)",20
-514,FR,978-1-4423-5033-5,French 3,26,0:05:22,0:05:24,03R,59,F,Qu’est-ce qu’ils font comme travail?,5,Q,"French Phase 3, Units 1-30 (2005)",20
-515,FR,978-1-4423-5033-5,French 3,26,0:11:53,0:11:54,04Q,117,N,I reserved a room.,,,"French Phase 3, Units 1-30 (2005)","16,18"
-516,FR,978-1-4423-5033-5,French 3,26,0:11:58,0:11:59,04R,118,M,J’ai réservé une chambre.,4,S,"French Phase 3, Units 1-30 (2005)","16,18"
-517,FR,978-1-4423-5033-5,French 3,26,0:12:22,0:12:23,05Q,121,N,For one night.,,,"French Phase 3, Units 1-30 (2005)","12,17"
-518,FR,978-1-4423-5033-5,French 3,26,0:12:26,0:12:27,05R,122,M,Pour une nuit.,3,S,"French Phase 3, Units 1-30 (2005)","12,17"
-519,FR,978-1-4423-5033-5,French 3,26,0:16:41,0:16:42,06Q,161,N,Where can I park?,,,"French Phase 3, Units 1-30 (2005)","7,16,18"
-520,FR,978-1-4423-5033-5,French 3,26,0:16:46,0:16:48,06R,162,M,Oú est-ce que je peux me garer?,7,Q,"French Phase 3, Units 1-30 (2005)","7,16,18"
-521,FR,978-1-4423-5033-5,French 3,26,0:18:03,0:18:05,07Q,175,N,There’s a small parking lot.,,,"French Phase 3, Units 1-30 (2005)","4,7,18"
-522,FR,978-1-4423-5033-5,French 3,26,0:18:08,0:18:10,07R,176,F,Il y a un petit parking.,6,S,"French Phase 3, Units 1-30 (2005)","4,7,18"
-523,FR,978-1-4423-5033-5,French 3,26,0:18:14,0:18:15,08Q,177,N,You can park over there.,,,"French Phase 3, Units 1-30 (2005)","4,18"
-524,FR,978-1-4423-5033-5,French 3,26,0:18:19,0:18:20,08R,178,F,Vous pouvez vous garer là-bas.,5,S,"French Phase 3, Units 1-30 (2005)","4,18"
-525,FR,978-1-4423-5033-5,French 3,26,0:18:50,0:18:51,09Q,183,N,Here’s your key.,,,"French Phase 3, Units 1-30 (2005)","7,18"
-526,FR,978-1-4423-5033-5,French 3,26,0:18:54,0:18:55,09R,184,F,Voilà votre clé.,3,S,"French Phase 3, Units 1-30 (2005)","7,18"
-527,FR,978-1-4423-5033-5,French 3,26,0:20:23,0:20:24,10Q,196,N,It’s not ready yet.,,,"French Phase 3, Units 1-30 (2005)",7
-528,FR,978-1-4423-5033-5,French 3,26,0:20:27,0:20:28,10R,197,M,Elle n’est pas encore prête.,5,S,"French Phase 3, Units 1-30 (2005)",7
-529,FR,978-1-4423-5033-5,French 3,26,0:24:42,0:24:43,11Q,239,N,Do you have your luggage?,,,"French Phase 3, Units 1-30 (2005)",18
-530,FR,978-1-4423-5033-5,French 3,26,0:24:47,0:24:48,11R,240,F,Est-ce que vous avez vos bagages?,6,Q,"French Phase 3, Units 1-30 (2005)",18
-531,FR,978-1-4423-5033-5,French 3,27,0:01:24,0:01:26,01Q,26,N,There’s a parking lot just across.,,,"French Phase 3, Units 1-30 (2005)","4,9"
-532,FR,978-1-4423-5033-5,French 3,27,0:01:30,0:01:32,01R,27,F,Il y a un parking juste en face.,8,S,"French Phase 3, Units 1-30 (2005)","4,9"
-533,FR,978-1-4423-5033-5,French 3,27,0:05:14,0:05:15,02Q,65,N,His luggage is over there.,,,"French Phase 3, Units 1-30 (2005)","4,5,18"
-534,FR,978-1-4423-5033-5,French 3,27,0:05:22,0:05:24,02R,67,F,Ses bagages sont là-bas.,4,S,"French Phase 3, Units 1-30 (2005)","4,5,18"
-535,FR,978-1-4423-5033-5,French 3,27,0:06:42,0:06:43,03Q,84,N,He already has his key.,,,"French Phase 3, Units 1-30 (2005)","7,18"
-536,FR,978-1-4423-5033-5,French 3,27,0:06:46,0:06:47,03R,85,F,Il a déjà sa clé.,5,S,"French Phase 3, Units 1-30 (2005)","7,18"
-537,FR,978-1-4423-5033-5,French 3,27,0:10:54,0:10:56,04Q,121,N,My nephew has room forty.,,,"French Phase 3, Units 1-30 (2005)","5,12"
-538,FR,978-1-4423-5033-5,French 3,27,0:11:00,0:11:02,04R,122,F,Mon neveu a la chambre quarante.,6,S,"French Phase 3, Units 1-30 (2005)","5,12"
-539,FR,978-1-4423-5033-5,French 3,27,0:11:46,0:11:48,05Q,129,N,May I introduce to you my nephew.,,,"French Phase 3, Units 1-30 (2005)",5
-540,FR,978-1-4423-5033-5,French 3,27,0:11:50,0:11:51,05R,130,F,Je vous présente mon neveu.,5,S,"French Phase 3, Units 1-30 (2005)",5
-541,FR,978-1-4423-5033-5,French 3,27,0:15:06,0:15:08,06Q,160,N,I want to open an account.,,,"French Phase 3, Units 1-30 (2005)","11,20"
-542,FR,978-1-4423-5033-5,French 3,27,0:15:12,0:15:15,06R,161,M,Je veux ouvrir un compte.,5,S,"French Phase 3, Units 1-30 (2005)","11,20"
-543,FR,978-1-4423-5033-5,French 3,27,0:17:14,0:17:15,07Q,177,N,"Sign here, please.",,,"French Phase 3, Units 1-30 (2005)",7
-544,FR,978-1-4423-5033-5,French 3,27,0:17:19,0:17:20,07R,178,F,"Signez ici, s’il vous plaît.",5,S,"French Phase 3, Units 1-30 (2005)",7
-545,FR,978-1-4423-5033-5,French 3,27,0:19:03,0:19:04,08Q,197,N,Do you have a piece of identification?,,,"French Phase 3, Units 1-30 (2005)","7,16"
-546,FR,978-1-4423-5033-5,French 3,27,0:19:09,0:19:12,08R,198,F,Est-ce que vous avez une pièce d’identité?,7,Q,"French Phase 3, Units 1-30 (2005)","7,16"
-547,FR,978-1-4423-5033-5,French 3,27,0:19:31,0:19:32,09Q,201,N,Here’s my passport.,,,"French Phase 3, Units 1-30 (2005)","16,18"
-548,FR,978-1-4423-5033-5,French 3,27,0:19:37,0:19:38,09R,202,M,Voilà mon passeport.,3,S,"French Phase 3, Units 1-30 (2005)","16,18"
-549,FR,978-1-4423-5033-5,French 3,27,0:22:10,0:22:12,10Q,223,N,Here’s your checking account number.,,,"French Phase 3, Units 1-30 (2005)","11,20"
-550,FR,978-1-4423-5033-5,French 3,27,0:22:17,0:22:19,10R,224,F,Voilà votre numéro de compte courant.,6,S,"French Phase 3, Units 1-30 (2005)","11,20"
-551,FR,978-1-4423-5033-5,French 3,28,0:01:45,0:01:48,01Q,30,N,May I introduce to you our new female client.,,,"French Phase 3, Units 1-30 (2005)",20
-552,FR,978-1-4423-5033-5,French 3,28,0:01:52,0:01:55,01R,31,M,Je vous présente notre nouvelle cliente.,6,S,"French Phase 3, Units 1-30 (2005)",20
-553,FR,978-1-4423-5033-5,French 3,28,0:03:42,0:03:44,02Q,48,N,It will be ready in ten minutes.,,,"French Phase 3, Units 1-30 (2005)","12,17"
-554,FR,978-1-4423-5033-5,French 3,28,0:03:48,0:03:50,02R,49,F,Elle sera prête dans dix minutes.,6,S,"French Phase 3, Units 1-30 (2005)","12,17"
-555,FR,978-1-4423-5033-5,French 3,28,0:04:01,0:04:01,03Q,50,N,Pardon me?,,,"French Phase 3, Units 1-30 (2005)","7,13"
-556,FR,978-1-4423-5033-5,French 3,28,0:04:03,0:04:04,03R,51,M,Pardon?,1,Q,"French Phase 3, Units 1-30 (2005)","7,13"
-557,FR,978-1-4423-5033-5,French 3,28,0:04:12,0:04:14,04Q,53,N,"Pardon me, when will it be ready?",,,"French Phase 3, Units 1-30 (2005)",7
-558,FR,978-1-4423-5033-5,French 3,28,0:04:18,0:04:20,04R,54,M,"Pardon, quand est-ce qu’elle sera prête?",6,Q,"French Phase 3, Units 1-30 (2005)",7
-559,FR,978-1-4423-5033-5,French 3,28,0:14:53,0:14:54,05Q,155,N,I have my debit card.,,,"French Phase 3, Units 1-30 (2005)","11,14,18"
-560,FR,978-1-4423-5033-5,French 3,28,0:14:57,0:14:58,05R,156,F,J’ai ma carte bleue.,4,S,"French Phase 3, Units 1-30 (2005)","11,14,18"
-561,FR,978-1-4423-5033-5,French 3,28,0:16:12,0:16:14,06Q,167,N,I’m going with you to the ATM.,,,"French Phase 3, Units 1-30 (2005)","11,20"
-562,FR,978-1-4423-5033-5,French 3,28,0:16:19,0:16:21,06R,168,M,Je t’accompage au distributeur.,4,S,"French Phase 3, Units 1-30 (2005)","11,20"
-563,FR,978-1-4423-5033-5,French 3,28,0:20:43,0:20:45,07Q,210,N,We can’t change the date of our meeting.,,,"French Phase 3, Units 1-30 (2005)","17,20"
-564,FR,978-1-4423-5033-5,French 3,28,0:20:52,0:20:55,07R,211,F,On ne peut pas changer la date de notre réunion.,10,S,"French Phase 3, Units 1-30 (2005)","17,20"
-565,FR,978-1-4423-5033-5,French 3,28,0:23:23,0:23:26,08Q,234,N,Maybe that you can send me the information.,,,"French Phase 3, Units 1-30 (2005)",7
-566,FR,978-1-4423-5033-5,French 3,28,0:23:32,0:23:35,08R,235,M,Peut être que vous pouvez m’envoyer les renseignements.,8,S,"French Phase 3, Units 1-30 (2005)",7
-567,FR,978-1-4423-5033-5,French 3,28,0:24:06,0:24:06,09Q,239,N,By e-mail?,,,"French Phase 3, Units 1-30 (2005)",3
-568,FR,978-1-4423-5033-5,French 3,28,0:24:01,0:24:02,09R,238,F,Par courriel?,2,Q,"French Phase 3, Units 1-30 (2005)",3
-569,FR,978-1-4423-5033-5,French 3,28,0:25:16,0:25:18,10Q,250,N,You want to open a checking account.,,,"French Phase 3, Units 1-30 (2005)",11
-570,FR,978-1-4423-5033-5,French 3,28,0:25:22,0:25:24,10R,252,M,Vous voulez ouvrir un compte courant.,6,S,"French Phase 3, Units 1-30 (2005)",11
-571,FR,978-1-4423-5033-5,French 3,29,0:02:32,0:02:33,01Q,38,N,Do you want a debit card?,,,"French Phase 3, Units 1-30 (2005)","11,14,18"
-572,FR,978-1-4423-5033-5,French 3,29,0:02:37,0:02:39,01R,39,F,Est-ce que vous voulez une carte bleue?,7,Q,"French Phase 3, Units 1-30 (2005)","11,14,18"
-573,FR,978-1-4423-5033-5,French 3,29,0:04:42,0:04:43,02Q,61,N,Is everything ready?,,,"French Phase 3, Units 1-30 (2005)","7,20"
-574,FR,978-1-4423-5033-5,French 3,29,0:04:48,0:04:50,02R,63,F,Est-ce que tout est prêt?,5,Q,"French Phase 3, Units 1-30 (2005)","7,20"
-575,FR,978-1-4423-5033-5,French 3,29,0:05:26,0:05:29,03Q,69,N,Say that everything’s ready for the conference.,,,"French Phase 3, Units 1-30 (2005)",20
-576,FR,978-1-4423-5033-5,French 3,29,0:05:33,0:05:35,03R,70,M,Tout est prêt pour le congrès.,6,S,"French Phase 3, Units 1-30 (2005)",20
-577,FR,978-1-4423-5033-5,French 3,29,0:07:48,0:07:49,04Q,94,N,It’s too late.,,,"French Phase 3, Units 1-30 (2005)","7,17"
-578,FR,978-1-4423-5033-5,French 3,29,0:07:52,0:07:53,04R,95,M,Il est trop tard.,4,S,"French Phase 3, Units 1-30 (2005)","7,17"
-579,FR,978-1-4423-5033-5,French 3,29,0:10:34,0:10:35,05Q,120,N,I’m going to bring my computer.,,,"French Phase 3, Units 1-30 (2005)",3
-580,FR,978-1-4423-5033-5,French 3,29,0:10:41,0:10:43,05R,121,F,Je vais apporter mon ordinateur.,5,S,"French Phase 3, Units 1-30 (2005)",3
-581,FR,978-1-4423-5033-5,French 3,29,0:15:36,0:15:38,06Q,165,N,I’d like to ask you a question.,,,"French Phase 3, Units 1-30 (2005)",7
-582,FR,978-1-4423-5033-5,French 3,29,0:15:40,0:15:42,06R,166,M,J’aimerais bien vous poser une question.,6,S,"French Phase 3, Units 1-30 (2005)",7
-583,FR,978-1-4423-5033-5,French 3,29,0:19:40,0:19:42,07Q,199,N,She wants to spend a year.,,,"French Phase 3, Units 1-30 (2005)","17,18"
-584,FR,978-1-4423-5033-5,French 3,29,0:19:45,0:19:47,07R,200,M,Elle veut passer un an.,5,S,"French Phase 3, Units 1-30 (2005)","17,18"
-585,FR,978-1-4423-5033-5,French 3,29,0:24:19,0:24:21,08Q,245,N,There’s one of those just across.,,,"French Phase 3, Units 1-30 (2005)","4,7"
-586,FR,978-1-4423-5033-5,French 3,29,0:24:25,0:24:26,08R,246,F,Il y en a une juste en face.,8,S,"French Phase 3, Units 1-30 (2005)","4,7"
-587,FR,978-1-4423-5033-5,French 3,29,0:29:07,0:29:09,09Q,289,N,Can I ask you a small question?,,,"French Phase 3, Units 1-30 (2005)","7,13"
-588,FR,978-1-4423-5033-5,French 3,29,0:29:13,0:29:16,09R,290,M,Est-ce que je peux vous poser une petite question?,9,Q,"French Phase 3, Units 1-30 (2005)","7,13"
-589,FR,978-1-4423-5033-5,French 3,29,0:29:57,0:29:58,10Q,298,N,Do you have everything?,,,"French Phase 3, Units 1-30 (2005)",7
-590,FR,978-1-4423-5033-5,French 3,29,0:30:01,0:30:02,10R,290,F,Est-ce que vous avez tout?,5,Q,"French Phase 3, Units 1-30 (2005)",7
-591,FR,978-1-4423-5033-5,French 3,30,0:04:10,0:04:13,01Q,54,N,Would it be necessary to change the date of the conference?,,,"French Phase 3, Units 1-30 (2005)","17,20"
-592,FR,978-1-4423-5033-5,French 3,30,0:04:17,0:04:20,01R,56,M,Est-ce qu’il faudrait changer la date du congrès?,8,Q,"French Phase 3, Units 1-30 (2005)","17,20"
-593,FR,978-1-4423-5033-5,French 3,30,0:06:37,0:06:38,02Q,83,N,Good luck.,,,"French Phase 3, Units 1-30 (2005)","7,13"
-594,FR,978-1-4423-5033-5,French 3,30,0:06:35,0:06:36,02R,84,F,Bonne chance.,2,S,"French Phase 3, Units 1-30 (2005)","7,13"
-595,FR,978-1-4423-5033-5,French 3,30,0:10:15,0:10:17,03Q,119,N,Is there an ATM around here?,,,"French Phase 3, Units 1-30 (2005)",11
-596,FR,978-1-4423-5033-5,French 3,30,0:10:21,0:10:23,03R,120,M,Est-ce qu’il y a un distributeur par ici?,8,Q,"French Phase 3, Units 1-30 (2005)",11
-597,FR,978-1-4423-5033-5,French 3,30,0:16:19,0:16:20,04Q,180,N,The kitchen’s pretty small.,,,"French Phase 3, Units 1-30 (2005)",9
-598,FR,978-1-4423-5033-5,French 3,30,0:16:24,0:16:26,04R,181,F,La cuisine est assez petite.,5,S,"French Phase 3, Units 1-30 (2005)",9
-599,FR,978-1-4423-5033-5,French 3,30,0:17:42,0:17:43,05Q,193,N,There’s some coffee in the kitchen.,,,"French Phase 3, Units 1-30 (2005)","6,12"
-600,FR,978-1-4423-5033-5,French 3,30,0:17:47,0:17:49,05R,194,F,Il y a du café dans la cuisine.,8,S,"French Phase 3, Units 1-30 (2005)","6,12"
-601,FR,978-1-4423-5033-5,French 3,30,0:18:12,0:18:13,06Q,197,N,I’m thirsty.,,,"French Phase 3, Units 1-30 (2005)",6
-602,FR,978-1-4423-5033-5,French 3,30,0:18:15,0:18:16,06R,198,M,J’ai soif.,2,S,"French Phase 3, Units 1-30 (2005)",6
-603,FR,978-1-4423-5033-5,French 3,30,0:19:41,0:19:42,07Q,212,N,Come with me into the kitchen.,,,"French Phase 3, Units 1-30 (2005)",9
-604,FR,978-1-4423-5033-5,French 3,30,0:19:46,0:19:48,07R,213,F,Venez avec moi dans la cuisine.,6,S,"French Phase 3, Units 1-30 (2005)",9
-605,FR,978-1-4423-5033-5,French 3,30,0:22:40,0:22:41,08Q,243,N,Why are you asking me that?,,,"French Phase 3, Units 1-30 (2005)",7
-606,FR,978-1-4423-5033-5,French 3,30,0:22:45,0:22:47,08R,244,M,Pourquoi est-ce que vous me demandez ça?,7,Q,"French Phase 3, Units 1-30 (2005)",7
-607,FR,978-1-4423-5033-5,French 3,30,0:24:07,0:24:08,09Q,257,N,That’s very nice of you.,,,"French Phase 3, Units 1-30 (2005)",7
-608,FR,978-1-4423-5033-5,French 3,30,0:24:03,0:24:05,09R,256,F,C’est très gentil à vous.,5,S,"French Phase 3, Units 1-30 (2005)",7
-609,FR,978-1-4423-5033-5,French 3,30,0:27:36,0:27:38,10Q,294,N,I’m sorry but I have to leave.,,,"French Phase 3, Units 1-30 (2005)",13
-610,FR,978-1-4423-5033-5,French 3,30,0:27:42,0:27:45,10R,295,M,Je suis désolé mais je dois partir.,7,S,"French Phase 3, Units 1-30 (2005)",13
+465,FR,978-1-4423-5033-5,French 3,24,0:06:03,0:06:04,02Q,67,N,If you don’t mind.,,,"French Phase 3, Units 1-30 (2005)","7,13"
+466,FR,978-1-4423-5033-5,French 3,24,0:06:06,0:06:08,02R,68,M,Si ça ne vous ennuie pas.,6,S,"French Phase 3, Units 1-30 (2005)","7,13"
+467,FR,978-1-4423-5033-5,French 3,24,0:09:25,0:09:26,03Q,100,N,I’d like to go to see the church.,,,"French Phase 3, Units 1-30 (2005)","1,9"
+468,FR,978-1-4423-5033-5,French 3,24,0:09:30,0:09:33,03R,101,M,J’aimerais bien aller voir l’église.,5,S,"French Phase 3, Units 1-30 (2005)","1,9"
+469,FR,978-1-4423-5033-5,French 3,24,0:10:31,0:10:32,04Q,108,N,I have a book on this church.,,,"French Phase 3, Units 1-30 (2005)",9
+470,FR,978-1-4423-5033-5,French 3,24,0:10:36,0:10:39,04R,109,F,J’ai un livre sur cette église.,6,S,"French Phase 3, Units 1-30 (2005)",9
+471,FR,978-1-4423-5033-5,French 3,24,0:10:50,0:10:52,05Q,111,N,It’s in my car.,,,"French Phase 3, Units 1-30 (2005)",18
+472,FR,978-1-4423-5033-5,French 3,24,0:10:55,0:10:56,05R,112,F,Il est dans ma voiture.,5,S,"French Phase 3, Units 1-30 (2005)",18
+473,FR,978-1-4423-5033-5,French 3,24,0:18:50,0:18:54,06Q,189,N,Do you do sports?,,,"French Phase 3, Units 1-30 (2005)","1,7"
+474,FR,978-1-4423-5033-5,French 3,24,0:18:55,0:18:59,06R,190,M,Est-ce que vous faites du sport?,6,Q,"French Phase 3, Units 1-30 (2005)","1,7"
+475,FR,978-1-4423-5033-5,French 3,24,0:19:39,0:19:41,07Q,195,N,Golf is pretty expensive.,,,"French Phase 3, Units 1-30 (2005)",14
+476,FR,978-1-4423-5033-5,French 3,24,0:19:44,0:19:46,07R,196,M,Le golf est assez cher.,5,S,"French Phase 3, Units 1-30 (2005)",14
+477,FR,978-1-4423-5033-5,French 3,24,0:21:50,0:21:54,08Q,215,N,There are some courts around here.,,,"French Phase 3, Units 1-30 (2005)",1
+478,FR,978-1-4423-5033-5,French 3,24,0:21:55,0:21:59,08R,216,F,Il y a des courts par ici.,7,S,"French Phase 3, Units 1-30 (2005)",1
+479,FR,978-1-4423-5033-5,French 3,24,0:23:36,0:23:37,09Q,232,N,The flowers weren’t very beautiful.,,,"French Phase 3, Units 1-30 (2005)",9
+480,FR,978-1-4423-5033-5,French 3,24,0:23:41,0:23:42,09R,233,M,Les fleurs n’étaient pas très belles.,6,S,"French Phase 3, Units 1-30 (2005)",9
+481,FR,978-1-4423-5033-5,French 3,24,0:25:44,0:25:46,10Q,254,N,What do you do in order to relax?,,,"French Phase 3, Units 1-30 (2005)",1
+482,FR,978-1-4423-5033-5,French 3,24,0:25:50,0:25:51,10R,255,F,Qu’est-ce que vous faites pour vous détendre?,7,Q,"French Phase 3, Units 1-30 (2005)",1
+483,FR,978-1-4423-5033-5,French 3,25,0:03:25,0:03:27,01Q,46,N,I’m going to bring you a glass of water.,,,"French Phase 3, Units 1-30 (2005)",6
+484,FR,978-1-4423-5033-5,French 3,25,0:03:30,0:03:32,01R,47,F,Je vais vous apporter un verre d’eau.,7,S,"French Phase 3, Units 1-30 (2005)",6
+485,FR,978-1-4423-5033-5,French 3,25,0:10:48,0:10:50,02Q,119,N,"But golf, that takes a lot of time.",,,"French Phase 3, Units 1-30 (2005)","1,17"
+486,FR,978-1-4423-5033-5,French 3,25,0:10:55,0:10:57,02R,120,F,"Mais le golf, ça prend beaucoup de temps.",8,S,"French Phase 3, Units 1-30 (2005)","1,17"
+487,FR,978-1-4423-5033-5,French 3,25,0:11:11,0:11:13,03Q,122,N,I play a little tennis.,,,"French Phase 3, Units 1-30 (2005)",1
+488,FR,978-1-4423-5033-5,French 3,25,0:11:17,0:11:18,03R,123,F,Je joue un peu au tennis.,6,S,"French Phase 3, Units 1-30 (2005)",1
+489,FR,978-1-4423-5033-5,French 3,25,0:13:03,0:13:04,04Q,142,N,She’s looking for some work.,,,"French Phase 3, Units 1-30 (2005)","7,20"
+490,FR,978-1-4423-5033-5,French 3,25,0:13:08,0:13:09,04R,143,F,Elle cherche du travail.,4,S,"French Phase 3, Units 1-30 (2005)","7,20"
+491,FR,978-1-4423-5033-5,French 3,25,0:13:31,0:13:32,05Q,147,N,What kind of job?,,,"French Phase 3, Units 1-30 (2005)","7,20"
+492,FR,978-1-4423-5033-5,French 3,25,0:13:35,0:13:36,05R,148,M,Quel genre de travail?,4,Q,"French Phase 3, Units 1-30 (2005)","7,20"
+493,FR,978-1-4423-5033-5,French 3,25,0:14:12,0:14:14,06Q,152,N,What kind of job is she looking for?,,,"French Phase 3, Units 1-30 (2005)","7,20"
+494,FR,978-1-4423-5033-5,French 3,25,0:14:18,0:14:20,06R,153,M,Quel genre de travail est-ce qu’elle cherche?,7,Q,"French Phase 3, Units 1-30 (2005)","7,20"
+495,FR,978-1-4423-5033-5,French 3,25,0:15:26,0:15:28,07Q,161,N,She’s looking for a job as a teacher.,,,"French Phase 3, Units 1-30 (2005)","5,20"
+496,FR,978-1-4423-5033-5,French 3,25,0:15:32,0:15:34,07R,162,F,Elle cherche un travail de professeur.,6,S,"French Phase 3, Units 1-30 (2005)","5,20"
+497,FR,978-1-4423-5033-5,French 3,25,0:17:56,0:17:59,08Q,184,N,She wants to be a history teacher in high school.,,,"French Phase 3, Units 1-30 (2005)","5,20"
+498,FR,978-1-4423-5033-5,French 3,25,0:18:03,0:18:06,08R,185,F,Elle veut être professeur d’histoire au lycèe.,7,S,"French Phase 3, Units 1-30 (2005)","5,20"
+499,FR,978-1-4423-5033-5,French 3,25,0:18:36,0:18:38,09Q,191,N,She has always wanted to be a teacher.,,,"French Phase 3, Units 1-30 (2005)","5,20"
+500,FR,978-1-4423-5033-5,French 3,25,0:18:41,0:18:43,09R,192,F,Elle a toujours voulu être professeur.,6,S,"French Phase 3, Units 1-30 (2005)","5,20"
+501,FR,978-1-4423-5033-5,French 3,25,0:22:32,0:22:34,10Q,229,N,He has always liked computers.,,,"French Phase 3, Units 1-30 (2005)","1,3"
+502,FR,978-1-4423-5033-5,French 3,25,0:22:36,0:22:38,10R,230,F,Il a toujours aimé les ordinateurs.,6,S,"French Phase 3, Units 1-30 (2005)","1,3"
+503,FR,978-1-4423-5033-5,French 3,25,0:23:56,0:23:58,11Q,241,N,He has always wanted to be a computer programmer.,,,"French Phase 3, Units 1-30 (2005)","3,17,20"
+504,FR,978-1-4423-5033-5,French 3,25,0:24:04,0:24:07,11R,242,F,Il a toujours voulu être programmeur dans l’informatique.,8,S,"French Phase 3, Units 1-30 (2005)","3,17,20"
+505,FR,978-1-4423-5033-5,French 3,25,0:25:01,0:25:03,12Q,252,N,She’s always wanted to be a history teacher.,,,"French Phase 3, Units 1-30 (2005)","5,20"
+506,FR,978-1-4423-5033-5,French 3,25,0:25:08,0:25:11,12R,253,F,Elle a toujours voulu être professeur d’histoire.,7,S,"French Phase 3, Units 1-30 (2005)","5,20"
+507,FR,978-1-4423-5033-5,French 3,26,0:04:00,0:04:03,01Q,48,N,My son wants to work in information technology.,,,"French Phase 3, Units 1-30 (2005)","5,20"
+508,FR,978-1-4423-5033-5,French 3,26,0:04:09,0:04:11,01R,49,F,Mon fils veut travailler dans l’informatique.,6,S,"French Phase 3, Units 1-30 (2005)","5,20"
+509,FR,978-1-4423-5033-5,French 3,26,0:04:34,0:04:37,02Q,52,N,I think that he’s going to look for a job as a programmer.,,,"French Phase 3, Units 1-30 (2005)","3,20"
+510,FR,978-1-4423-5033-5,French 3,26,0:04:42,0:04:45,02R,53,F,Je crois qu’il va chercher un travail de programmeur.,9,S,"French Phase 3, Units 1-30 (2005)","3,20"
+511,FR,978-1-4423-5033-5,French 3,26,0:05:18,0:05:20,03Q,58,N,What do they do for work?,,,"French Phase 3, Units 1-30 (2005)",20
+512,FR,978-1-4423-5033-5,French 3,26,0:05:22,0:05:24,03R,59,F,Qu’est-ce qu’ils font comme travail?,5,Q,"French Phase 3, Units 1-30 (2005)",20
+513,FR,978-1-4423-5033-5,French 3,26,0:11:53,0:11:54,04Q,117,N,I reserved a room.,,,"French Phase 3, Units 1-30 (2005)","16,18"
+514,FR,978-1-4423-5033-5,French 3,26,0:11:58,0:11:59,04R,118,M,J’ai réservé une chambre.,4,S,"French Phase 3, Units 1-30 (2005)","16,18"
+515,FR,978-1-4423-5033-5,French 3,26,0:12:22,0:12:23,05Q,121,N,For one night.,,,"French Phase 3, Units 1-30 (2005)","12,17"
+516,FR,978-1-4423-5033-5,French 3,26,0:12:26,0:12:27,05R,122,M,Pour une nuit.,3,S,"French Phase 3, Units 1-30 (2005)","12,17"
+517,FR,978-1-4423-5033-5,French 3,26,0:16:41,0:16:42,06Q,161,N,Where can I park?,,,"French Phase 3, Units 1-30 (2005)","7,16,18"
+518,FR,978-1-4423-5033-5,French 3,26,0:16:46,0:16:48,06R,162,M,Oú est-ce que je peux me garer?,7,Q,"French Phase 3, Units 1-30 (2005)","7,16,18"
+519,FR,978-1-4423-5033-5,French 3,26,0:18:03,0:18:05,07Q,175,N,There’s a small parking lot.,,,"French Phase 3, Units 1-30 (2005)","4,7,18"
+520,FR,978-1-4423-5033-5,French 3,26,0:18:08,0:18:10,07R,176,F,Il y a un petit parking.,6,S,"French Phase 3, Units 1-30 (2005)","4,7,18"
+521,FR,978-1-4423-5033-5,French 3,26,0:18:14,0:18:15,08Q,177,N,You can park over there.,,,"French Phase 3, Units 1-30 (2005)","4,18"
+522,FR,978-1-4423-5033-5,French 3,26,0:18:19,0:18:20,08R,178,F,Vous pouvez vous garer là-bas.,5,S,"French Phase 3, Units 1-30 (2005)","4,18"
+523,FR,978-1-4423-5033-5,French 3,26,0:18:50,0:18:51,09Q,183,N,Here’s your key.,,,"French Phase 3, Units 1-30 (2005)","7,18"
+524,FR,978-1-4423-5033-5,French 3,26,0:18:54,0:18:55,09R,184,F,Voilà votre clé.,3,S,"French Phase 3, Units 1-30 (2005)","7,18"
+525,FR,978-1-4423-5033-5,French 3,26,0:20:23,0:20:24,10Q,196,N,It’s not ready yet.,,,"French Phase 3, Units 1-30 (2005)",7
+526,FR,978-1-4423-5033-5,French 3,26,0:20:27,0:20:28,10R,197,M,Elle n’est pas encore prête.,5,S,"French Phase 3, Units 1-30 (2005)",7
+527,FR,978-1-4423-5033-5,French 3,26,0:24:42,0:24:43,11Q,239,N,Do you have your luggage?,,,"French Phase 3, Units 1-30 (2005)",18
+528,FR,978-1-4423-5033-5,French 3,26,0:24:47,0:24:48,11R,240,F,Est-ce que vous avez vos bagages?,6,Q,"French Phase 3, Units 1-30 (2005)",18
+529,FR,978-1-4423-5033-5,French 3,27,0:01:24,0:01:26,01Q,26,N,There’s a parking lot just across.,,,"French Phase 3, Units 1-30 (2005)","4,9"
+530,FR,978-1-4423-5033-5,French 3,27,0:01:30,0:01:32,01R,27,F,Il y a un parking juste en face.,8,S,"French Phase 3, Units 1-30 (2005)","4,9"
+531,FR,978-1-4423-5033-5,French 3,27,0:05:14,0:05:15,02Q,65,N,His luggage is over there.,,,"French Phase 3, Units 1-30 (2005)","4,5,18"
+532,FR,978-1-4423-5033-5,French 3,27,0:05:22,0:05:24,02R,67,F,Ses bagages sont là-bas.,4,S,"French Phase 3, Units 1-30 (2005)","4,5,18"
+533,FR,978-1-4423-5033-5,French 3,27,0:06:42,0:06:43,03Q,84,N,He already has his key.,,,"French Phase 3, Units 1-30 (2005)","7,18"
+534,FR,978-1-4423-5033-5,French 3,27,0:06:46,0:06:47,03R,85,F,Il a déjà sa clé.,5,S,"French Phase 3, Units 1-30 (2005)","7,18"
+535,FR,978-1-4423-5033-5,French 3,27,0:10:54,0:10:56,04Q,121,N,My nephew has room forty.,,,"French Phase 3, Units 1-30 (2005)","5,12"
+536,FR,978-1-4423-5033-5,French 3,27,0:11:00,0:11:02,04R,122,F,Mon neveu a la chambre quarante.,6,S,"French Phase 3, Units 1-30 (2005)","5,12"
+537,FR,978-1-4423-5033-5,French 3,27,0:11:46,0:11:48,05Q,129,N,May I introduce to you my nephew.,,,"French Phase 3, Units 1-30 (2005)",5
+538,FR,978-1-4423-5033-5,French 3,27,0:11:50,0:11:51,05R,130,F,Je vous présente mon neveu.,5,S,"French Phase 3, Units 1-30 (2005)",5
+539,FR,978-1-4423-5033-5,French 3,27,0:15:06,0:15:08,06Q,160,N,I want to open an account.,,,"French Phase 3, Units 1-30 (2005)","11,20"
+540,FR,978-1-4423-5033-5,French 3,27,0:15:12,0:15:15,06R,161,M,Je veux ouvrir un compte.,5,S,"French Phase 3, Units 1-30 (2005)","11,20"
+541,FR,978-1-4423-5033-5,French 3,27,0:17:14,0:17:15,07Q,177,N,"Sign here, please.",,,"French Phase 3, Units 1-30 (2005)",7
+542,FR,978-1-4423-5033-5,French 3,27,0:17:19,0:17:20,07R,178,F,"Signez ici, s’il vous plaît.",5,S,"French Phase 3, Units 1-30 (2005)",7
+543,FR,978-1-4423-5033-5,French 3,27,0:19:03,0:19:04,08Q,197,N,Do you have a piece of identification?,,,"French Phase 3, Units 1-30 (2005)","7,16"
+544,FR,978-1-4423-5033-5,French 3,27,0:19:09,0:19:12,08R,198,F,Est-ce que vous avez une pièce d’identité?,7,Q,"French Phase 3, Units 1-30 (2005)","7,16"
+545,FR,978-1-4423-5033-5,French 3,27,0:19:31,0:19:32,09Q,201,N,Here’s my passport.,,,"French Phase 3, Units 1-30 (2005)","16,18"
+546,FR,978-1-4423-5033-5,French 3,27,0:19:37,0:19:38,09R,202,M,Voilà mon passeport.,3,S,"French Phase 3, Units 1-30 (2005)","16,18"
+547,FR,978-1-4423-5033-5,French 3,27,0:22:10,0:22:12,10Q,223,N,Here’s your checking account number.,,,"French Phase 3, Units 1-30 (2005)","11,20"
+548,FR,978-1-4423-5033-5,French 3,27,0:22:17,0:22:19,10R,224,F,Voilà votre numéro de compte courant.,6,S,"French Phase 3, Units 1-30 (2005)","11,20"
+549,FR,978-1-4423-5033-5,French 3,28,0:01:45,0:01:48,01Q,30,N,May I introduce to you our new female client.,,,"French Phase 3, Units 1-30 (2005)",20
+550,FR,978-1-4423-5033-5,French 3,28,0:01:52,0:01:55,01R,31,M,Je vous présente notre nouvelle cliente.,6,S,"French Phase 3, Units 1-30 (2005)",20
+551,FR,978-1-4423-5033-5,French 3,28,0:03:42,0:03:44,02Q,48,N,It will be ready in ten minutes.,,,"French Phase 3, Units 1-30 (2005)","12,17"
+552,FR,978-1-4423-5033-5,French 3,28,0:03:48,0:03:50,02R,49,F,Elle sera prête dans dix minutes.,6,S,"French Phase 3, Units 1-30 (2005)","12,17"
+553,FR,978-1-4423-5033-5,French 3,28,0:04:01,0:04:01,03Q,50,N,Pardon me?,,,"French Phase 3, Units 1-30 (2005)","7,13"
+554,FR,978-1-4423-5033-5,French 3,28,0:04:03,0:04:04,03R,51,M,Pardon?,1,Q,"French Phase 3, Units 1-30 (2005)","7,13"
+555,FR,978-1-4423-5033-5,French 3,28,0:04:12,0:04:14,04Q,53,N,"Pardon me, when will it be ready?",,,"French Phase 3, Units 1-30 (2005)",7
+556,FR,978-1-4423-5033-5,French 3,28,0:04:18,0:04:20,04R,54,M,"Pardon, quand est-ce qu’elle sera prête?",6,Q,"French Phase 3, Units 1-30 (2005)",7
+557,FR,978-1-4423-5033-5,French 3,28,0:14:53,0:14:54,05Q,155,N,I have my debit card.,,,"French Phase 3, Units 1-30 (2005)","11,14,18"
+558,FR,978-1-4423-5033-5,French 3,28,0:14:57,0:14:58,05R,156,F,J’ai ma carte bleue.,4,S,"French Phase 3, Units 1-30 (2005)","11,14,18"
+559,FR,978-1-4423-5033-5,French 3,28,0:16:12,0:16:14,06Q,167,N,I’m going with you to the ATM.,,,"French Phase 3, Units 1-30 (2005)","11,20"
+560,FR,978-1-4423-5033-5,French 3,28,0:16:19,0:16:21,06R,168,M,Je t’accompage au distributeur.,4,S,"French Phase 3, Units 1-30 (2005)","11,20"
+561,FR,978-1-4423-5033-5,French 3,28,0:20:43,0:20:45,07Q,210,N,We can’t change the date of our meeting.,,,"French Phase 3, Units 1-30 (2005)","17,20"
+562,FR,978-1-4423-5033-5,French 3,28,0:20:52,0:20:55,07R,211,F,On ne peut pas changer la date de notre réunion.,10,S,"French Phase 3, Units 1-30 (2005)","17,20"
+563,FR,978-1-4423-5033-5,French 3,28,0:23:23,0:23:26,08Q,234,N,Maybe that you can send me the information.,,,"French Phase 3, Units 1-30 (2005)",7
+564,FR,978-1-4423-5033-5,French 3,28,0:23:32,0:23:35,08R,235,M,Peut être que vous pouvez m’envoyer les renseignements.,8,S,"French Phase 3, Units 1-30 (2005)",7
+565,FR,978-1-4423-5033-5,French 3,28,0:24:06,0:24:06,09Q,239,N,By e-mail?,,,"French Phase 3, Units 1-30 (2005)",3
+566,FR,978-1-4423-5033-5,French 3,28,0:24:01,0:24:02,09R,238,F,Par courriel?,2,Q,"French Phase 3, Units 1-30 (2005)",3
+567,FR,978-1-4423-5033-5,French 3,28,0:25:16,0:25:18,10Q,250,N,You want to open a checking account.,,,"French Phase 3, Units 1-30 (2005)",11
+568,FR,978-1-4423-5033-5,French 3,28,0:25:22,0:25:24,10R,252,M,Vous voulez ouvrir un compte courant.,6,S,"French Phase 3, Units 1-30 (2005)",11
+569,FR,978-1-4423-5033-5,French 3,29,0:02:32,0:02:33,01Q,38,N,Do you want a debit card?,,,"French Phase 3, Units 1-30 (2005)","11,14,18"
+570,FR,978-1-4423-5033-5,French 3,29,0:02:37,0:02:39,01R,39,F,Est-ce que vous voulez une carte bleue?,7,Q,"French Phase 3, Units 1-30 (2005)","11,14,18"
+571,FR,978-1-4423-5033-5,French 3,29,0:04:42,0:04:43,02Q,61,N,Is everything ready?,,,"French Phase 3, Units 1-30 (2005)","7,20"
+572,FR,978-1-4423-5033-5,French 3,29,0:04:48,0:04:50,02R,63,F,Est-ce que tout est prêt?,5,Q,"French Phase 3, Units 1-30 (2005)","7,20"
+573,FR,978-1-4423-5033-5,French 3,29,0:07:48,0:07:49,03Q,94,N,It’s too late.,,,"French Phase 3, Units 1-30 (2005)","7,17"
+574,FR,978-1-4423-5033-5,French 3,29,0:07:52,0:07:53,03R,95,M,Il est trop tard.,4,S,"French Phase 3, Units 1-30 (2005)","7,17"
+575,FR,978-1-4423-5033-5,French 3,29,0:10:34,0:10:35,04Q,120,N,I’m going to bring my computer.,,,"French Phase 3, Units 1-30 (2005)",3
+576,FR,978-1-4423-5033-5,French 3,29,0:10:41,0:10:43,04R,121,F,Je vais apporter mon ordinateur.,5,S,"French Phase 3, Units 1-30 (2005)",3
+577,FR,978-1-4423-5033-5,French 3,29,0:15:36,0:15:38,05Q,165,N,I’d like to ask you a question.,,,"French Phase 3, Units 1-30 (2005)",7
+578,FR,978-1-4423-5033-5,French 3,29,0:15:40,0:15:42,05R,166,M,J’aimerais bien vous poser une question.,6,S,"French Phase 3, Units 1-30 (2005)",7
+579,FR,978-1-4423-5033-5,French 3,29,0:19:40,0:19:42,06Q,199,N,She wants to spend a year.,,,"French Phase 3, Units 1-30 (2005)","17,18"
+580,FR,978-1-4423-5033-5,French 3,29,0:19:45,0:19:47,06R,200,M,Elle veut passer un an.,5,S,"French Phase 3, Units 1-30 (2005)","17,18"
+581,FR,978-1-4423-5033-5,French 3,29,0:24:19,0:24:21,07Q,245,N,There’s one of those just across.,,,"French Phase 3, Units 1-30 (2005)","4,7"
+582,FR,978-1-4423-5033-5,French 3,29,0:24:25,0:24:26,07R,246,F,Il y en a une juste en face.,8,S,"French Phase 3, Units 1-30 (2005)","4,7"
+583,FR,978-1-4423-5033-5,French 3,29,0:29:07,0:29:09,08Q,289,N,Can I ask you a small question?,,,"French Phase 3, Units 1-30 (2005)","7,13"
+584,FR,978-1-4423-5033-5,French 3,29,0:29:13,0:29:16,08R,290,M,Est-ce que je peux vous poser une petite question?,9,Q,"French Phase 3, Units 1-30 (2005)","7,13"
+585,FR,978-1-4423-5033-5,French 3,29,0:29:57,0:29:58,09Q,298,N,Do you have everything?,,,"French Phase 3, Units 1-30 (2005)",7
+586,FR,978-1-4423-5033-5,French 3,29,0:30:01,0:30:02,09R,290,F,Est-ce que vous avez tout?,5,Q,"French Phase 3, Units 1-30 (2005)",7
+587,FR,978-1-4423-5033-5,French 3,30,0:04:10,0:04:13,01Q,54,N,Would it be necessary to change the date of the conference?,,,"French Phase 3, Units 1-30 (2005)","17,20"
+588,FR,978-1-4423-5033-5,French 3,30,0:04:17,0:04:20,01R,56,M,Est-ce qu’il faudrait changer la date du congrès?,8,Q,"French Phase 3, Units 1-30 (2005)","17,20"
+589,FR,978-1-4423-5033-5,French 3,30,0:06:37,0:06:38,02Q,83,N,Good luck.,,,"French Phase 3, Units 1-30 (2005)","7,13"
+590,FR,978-1-4423-5033-5,French 3,30,0:06:35,0:06:36,02R,84,F,Bonne chance.,2,S,"French Phase 3, Units 1-30 (2005)","7,13"
+591,FR,978-1-4423-5033-5,French 3,30,0:10:15,0:10:17,03Q,119,N,Is there an ATM around here?,,,"French Phase 3, Units 1-30 (2005)",11
+592,FR,978-1-4423-5033-5,French 3,30,0:10:21,0:10:23,03R,120,M,Est-ce qu’il y a un distributeur par ici?,8,Q,"French Phase 3, Units 1-30 (2005)",11
+593,FR,978-1-4423-5033-5,French 3,30,0:16:19,0:16:20,04Q,180,N,The kitchen’s pretty small.,,,"French Phase 3, Units 1-30 (2005)",9
+594,FR,978-1-4423-5033-5,French 3,30,0:16:24,0:16:26,04R,181,F,La cuisine est assez petite.,5,S,"French Phase 3, Units 1-30 (2005)",9
+595,FR,978-1-4423-5033-5,French 3,30,0:17:42,0:17:43,05Q,193,N,There’s some coffee in the kitchen.,,,"French Phase 3, Units 1-30 (2005)","6,12"
+596,FR,978-1-4423-5033-5,French 3,30,0:17:47,0:17:49,05R,194,F,Il y a du café dans la cuisine.,8,S,"French Phase 3, Units 1-30 (2005)","6,12"
+597,FR,978-1-4423-5033-5,French 3,30,0:18:12,0:18:13,06Q,197,N,I’m thirsty.,,,"French Phase 3, Units 1-30 (2005)",6
+598,FR,978-1-4423-5033-5,French 3,30,0:18:15,0:18:16,06R,198,M,J’ai soif.,2,S,"French Phase 3, Units 1-30 (2005)",6
+599,FR,978-1-4423-5033-5,French 3,30,0:19:41,0:19:42,07Q,212,N,Come with me into the kitchen.,,,"French Phase 3, Units 1-30 (2005)",9
+600,FR,978-1-4423-5033-5,French 3,30,0:19:46,0:19:48,07R,213,F,Venez avec moi dans la cuisine.,6,S,"French Phase 3, Units 1-30 (2005)",9
+601,FR,978-1-4423-5033-5,French 3,30,0:22:40,0:22:41,08Q,243,N,Why are you asking me that?,,,"French Phase 3, Units 1-30 (2005)",7
+602,FR,978-1-4423-5033-5,French 3,30,0:22:45,0:22:47,08R,244,M,Pourquoi est-ce que vous me demandez ça?,7,Q,"French Phase 3, Units 1-30 (2005)",7
+603,FR,978-1-4423-5033-5,French 3,30,0:24:07,0:24:08,09Q,257,N,That’s very nice of you.,,,"French Phase 3, Units 1-30 (2005)",7
+604,FR,978-1-4423-5033-5,French 3,30,0:24:03,0:24:05,09R,256,F,C’est très gentil à vous.,5,S,"French Phase 3, Units 1-30 (2005)",7
+605,FR,978-1-4423-5033-5,French 3,30,0:27:36,0:27:38,10Q,294,N,I’m sorry but I have to leave.,,,"French Phase 3, Units 1-30 (2005)",13
+606,FR,978-1-4423-5033-5,French 3,30,0:27:42,0:27:45,10R,295,M,Je suis désolé mais je dois partir.,7,S,"French Phase 3, Units 1-30 (2005)",13
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,

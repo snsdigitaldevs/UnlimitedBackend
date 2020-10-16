@@ -21,7 +21,6 @@ public class PuFreeLessonsService {
                                 PU_FREE_LESSONS.stream().noneMatch(puFree -> puFree.isSameLang(pcmFree)));
 
         return concat(pcmFreeLessonsWithoutOverlappingPU, PU_FREE_LESSONS.stream())
-                .sorted(comparing(AvailableProductDto::getLanguageName))
                 .collect(toList());
     }
 }

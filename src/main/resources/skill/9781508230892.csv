@@ -1,4 +1,4 @@
-Control #,Rec #,Lang,Source Audio ISBN_13,Course,Unit Num,start,stop,Cluster,QZ #,Speaker,Cue,#of words,_Q_or_S,Course Name _Source_,Snippet Name,Skills
+﻿Control #,Rec #,Lang,Source Audio ISBN_13,Course,Unit Num,start,stop,Cluster,QZ #,Speaker,Cue,#of words,_Q_or_S,Course Name _Source_,Snippet Name,Skills
 1,1,GR,9781442395497,German 5,1,,,U01-01,01Q_A,N,The food was excellent.,,,,9781508230892_German_5_QZ_0001.mp3,6
 2,2,GR,9781442395497,German 5,1,,,U01-01,01R_A,F,Das Essen war ausgezeichnet.,,,,9781508230892_German_5_QZ_0002.mp3,6
 3,3,GR,9781442395497,German 5,1,,,U01-01,01Q_B,N,The food is excellent.,,,,9781508230892_German_5_QZ_0003.mp3,6
@@ -40,8 +40,8 @@ Control #,Rec #,Lang,Source Audio ISBN_13,Course,Unit Num,start,stop,Cluster,QZ 
 39,39,GR,9781442395497,German 5,1,,,U01-05,05Q_D,N,The weather there is always very changeable.,,,,9781508230892_German_5_QZ_0039.mp3,"8,19"
 40,40,GR,9781442395497,German 5,1,,,U01-05,05R_D,F,Das Wetter dort ist immer sehr wechselhaft.,,,,9781508230892_German_5_QZ_0040.mp3,"8,19"
 41,41,GR,9781442395497,German 5,1,,,U01-06,06Q_A,N,I didn’t sleep well.,,,,9781508230892_German_5_QZ_0041.mp3,"8,18"
-42,42,GR,9781442395497,German 5,1,,,U01-06,06R_A,M,Ich habe nicht gut schlafen.,,,,9781508230892_German_5_QZ_0042.mp3,"8,18"
-43,43,GR,9781442395497,German 5,1,,,U01-06,06Q_B,N,I scarcely slept.,,,,9781508230892_German_5_QZ_0043.mp3,"8,18"
+42,42,GR,9781442395497,German 5,1,,,U01-06,06R_A,M,Ich habe nicht gut geschlafen.,,,,9781508230892_German_5_QZ_0042.mp3,8
+43,43,GR,9781442395497,German 5,1,,,U01-06,06Q_B,N,I scarcely slept.,,,,9781508230892_German_5_QZ_0043.mp3,8
 44,44,GR,9781442395497,German 5,1,,,U01-06,06R_B,M,Ich habe kaum geschlafen.,,,,9781508230892_German_5_QZ_0044.mp3,"8,18"
 45,45,GR,9781442395497,German 5,1,,,U01-06,06Q_C,N,I didn’t sleep much.,,,,9781508230892_German_5_QZ_0045.mp3,"8,18"
 46,46,GR,9781442395497,German 5,1,,,U01-06,06R_C,F,Ich habe nicht viel geschlafen.,,,,9781508230892_German_5_QZ_0046.mp3,"8,18"
@@ -245,7 +245,7 @@ Control #,Rec #,Lang,Source Audio ISBN_13,Course,Unit Num,start,stop,Cluster,QZ 
 244,244,GR,9781442395497,German 5,4,,,U04-07,07R_B,M,Es ist sehr langweilig geworden.,,,,9781508230892_German_5_QZ_0244.mp3,7
 245,245,GR,9781442395497,German 5,4,,,U04-07,07Q_C,N,It’s gotten somewhat humid.,,,,9781508230892_German_5_QZ_0245.mp3,19
 246,246,GR,9781442395497,German 5,4,,,U04-07,07R_C,F,Es ist etwas schwül geworden.,,,,9781508230892_German_5_QZ_0246.mp3,19
-247,247,GR,9781442395497,German 5,4,,,U04-07,07Q_D,N,It’s gotten very stressfull.,,,,9781508230892_German_5_QZ_0247.mp3,"7,8,20"
+247,247,GR,9781442395497,German 5,4,,,U04-07,07Q_D,N,It’s gotten very stressful.,,,,9781508230892_German_5_QZ_0247.mp3,"7,8,20"
 248,248,GR,9781442395497,German 5,4,,,U04-07,07R_D,M,Es ist sehr stressig geworden.,,,,9781508230892_German_5_QZ_0248.mp3,"7,8,20"
 249,249,GR,9781442395497,German 5,4,,,U04-08,08Q_A,N,I dropped mine.,,,,9781508230892_German_5_QZ_0249.mp3,7
 250,250,GR,9781442395497,German 5,4,,,U04-08,08R_A,M,Ich habe meine fallen lassen.,,,,9781508230892_German_5_QZ_0250.mp3,7
@@ -381,7 +381,7 @@ Control #,Rec #,Lang,Source Audio ISBN_13,Course,Unit Num,start,stop,Cluster,QZ 
 380,380,GR,9781442395497,German 5,6,,,U06-08,08R_B,F,Wir waren beide enttäuscht.,,,,9781508230892_German_5_QZ_0380.mp3,"7,9"
 381,381,GR,9781442395497,German 5,6,,,U06-08,08Q_C,N,We were surprised.,,,,9781508230892_German_5_QZ_0381.mp3,"7,9"
 382,382,GR,9781442395497,German 5,6,,,U06-08,08R_C,M,Wir waren überrascht.,,,,9781508230892_German_5_QZ_0382.mp3,"7,9"
-383,383,GR,9781442395497,German 5,6,,,U06-08,08Q_D,N,We were both suprised.,,,,9781508230892_German_5_QZ_0383.mp3,"7,9"
+383,383,GR,9781442395497,German 5,6,,,U06-08,08Q_D,N,We were both surprised.,,,,9781508230892_German_5_QZ_0383.mp3,"7,9"
 384,384,GR,9781442395497,German 5,6,,,U06-08,08R_D,F,Wir waren beide überrascht.,,,,9781508230892_German_5_QZ_0384.mp3,"7,9"
 385,385,GR,9781442395497,German 5,7,,,U07-01,01Q_A,N,"When I wanted to pay, I couldn’t find my credit card.",,,,9781508230892_German_5_QZ_0385.mp3,"11,14"
 386,386,GR,9781442395497,German 5,7,,,U07-01,01R_A,M,"Als ich bezahlen wollte, konnte ich meine Kreditkarte nicht finden.",,,,9781508230892_German_5_QZ_0386.mp3,"11,14"
@@ -601,7 +601,7 @@ Control #,Rec #,Lang,Source Audio ISBN_13,Course,Unit Num,start,stop,Cluster,QZ 
 600,600,GR,9781442395497,German 5,10,,,U10-03,03R_D,F,Es gab einen Unfall wegen des Schnees.,,,,9781508230892_German_5_QZ_0600.mp3,"18,19"
 601,601,GR,9781442395497,German 5,10,,,U10-04,04Q_A,N,I’m in suspense who wins.,,,,9781508230892_German_5_QZ_0601.mp3,7
 602,602,GR,9781442395497,German 5,10,,,U10-04,04R_A,M,"Ich bin gespannt, wer gewinnt.",,,,9781508230892_German_5_QZ_0602.mp3,7
-603,603,GR,9781442395497,German 5,10,,,U10-04,04Q_B,N,I’m suprised whether he wins.,,,,9781508230892_German_5_QZ_0603.mp3,7
+603,603,GR,9781442395497,German 5,10,,,U10-04,04Q_B,N,I’m surprised whether he wins.,,,,9781508230892_German_5_QZ_0603.mp3,7
 604,604,GR,9781442395497,German 5,10,,,U10-04,04R_B,F,"Ich bin überrascht, wenn er gewinnt.",,,,9781508230892_German_5_QZ_0604.mp3,7
 605,605,GR,9781442395497,German 5,10,,,U10-04,04Q_C,N,I’m disappointed if he lost.,,,,9781508230892_German_5_QZ_0605.mp3,9
 606,606,GR,9781442395497,German 5,10,,,U10-04,04R_C,M,"Ich bin enttäuscht, dass er verloren hat.",,,,9781508230892_German_5_QZ_0606.mp3,9
@@ -859,7 +859,7 @@ Control #,Rec #,Lang,Source Audio ISBN_13,Course,Unit Num,start,stop,Cluster,QZ 
 858,858,GR,9781442395497,German 5,14,,,U14-04,04R_A,M,Welches Handtuch ist meins?,,,,9781508230892_German_5_QZ_0858.mp3,"7,16"
 859,859,GR,9781442395497,German 5,14,,,U14-04,04Q_B,N,Which towel is yours?,,,,9781508230892_German_5_QZ_0859.mp3,"7,16"
 860,860,GR,9781442395497,German 5,14,,,U14-04,04R_B,F,Welches Handtuch ist Ihrs?,,,,9781508230892_German_5_QZ_0860.mp3,"7,16"
-861,861,GR,9781442395497,German 5,14,,,U14-04,04Q_C,N,Is the yellow towel mine? ,,,,9781508230892_German_5_QZ_0861.mp3,"7,16"
+861,861,GR,9781442395497,German 5,14,,,U14-04,04Q_C,N,Is the yellow towel mine?,,,,9781508230892_German_5_QZ_0861.mp3,"7,16"
 862,862,GR,9781442395497,German 5,14,,,U14-04,04R_C,M,Ist das gelbe Handtuch meins?,,,,9781508230892_German_5_QZ_0862.mp3,"7,16"
 863,863,GR,9781442395497,German 5,14,,,U14-04,04Q_D,N,Is the blue towel yours?,,,,9781508230892_German_5_QZ_0863.mp3,"7,16"
 864,864,GR,9781442395497,German 5,14,,,U14-04,04R_D,F,Ist das blaue Handtuch Ihrs?,,,,9781508230892_German_5_QZ_0864.mp3,"7,16"
@@ -897,7 +897,7 @@ Control #,Rec #,Lang,Source Audio ISBN_13,Course,Unit Num,start,stop,Cluster,QZ 
 896,896,GR,9781442395497,German 5,14,,,U14-08,08R_D,F,"Sie können gern mit uns essen, wenn Sie Zeit haben.",,,,9781508230892_German_5_QZ_0896.mp3,"6,13,17"
 897,897,GR,9781442395497,German 5,15,,,U15-01,01Q_A,N,That pleases me.,,,,9781508230892_German_5_QZ_0897.mp3,13
 898,898,GR,9781442395497,German 5,15,,,U15-01,01R_A,M,Das freut mich.,,,,9781508230892_German_5_QZ_0898.mp3,13
-899,899,GR,9781442395497,German 5,15,,,U15-01,01Q_B,N,That suprises me.,,,,9781508230892_German_5_QZ_0899.mp3,7
+899,899,GR,9781442395497,German 5,15,,,U15-01,01Q_B,N,That surprises me.,,,,9781508230892_German_5_QZ_0899.mp3,7
 900,900,GR,9781442395497,German 5,15,,,U15-01,01R_B,F,Das überrascht mich.,,,,9781508230892_German_5_QZ_0900.mp3,7
 901,901,GR,9781442395497,German 5,15,,,U15-01,01Q_C,N,That pleases me very much.,,,,9781508230892_German_5_QZ_0901.mp3,13
 902,902,GR,9781442395497,German 5,15,,,U15-01,01R_C,M,Das freut mich sehr.,,,,9781508230892_German_5_QZ_0902.mp3,13
@@ -1149,7 +1149,7 @@ Control #,Rec #,Lang,Source Audio ISBN_13,Course,Unit Num,start,stop,Cluster,QZ 
 1148,1148,GR,9781442395497,German 5,18,,,U18-08,08R_B,F,Dann hat sie bestimmt den ADAC angerufen.,,,,9781508230892_German_5_QZ_1148.mp3,"3,18"
 1149,1149,GR,9781442395497,German 5,18,,,U18-08,08Q_C,N,Then she will certainly call the ADAC.,,,,9781508230892_German_5_QZ_1149.mp3,"3,18"
 1150,1150,GR,9781442395497,German 5,18,,,U18-08,08R_C,M,Dann wird sie bestimmt den ADAC anrufen.,,,,9781508230892_German_5_QZ_1150.mp3,"3,18"
-1151,1151,GR,9781442395497,German 5,18,,,U18-08,08Q_D,N,Then she would immediatly have called the ADAC.,,,,9781508230892_German_5_QZ_1151.mp3,"3,18"
+1151,1151,GR,9781442395497,German 5,18,,,U18-08,08Q_D,N,Then she would immediately have called the ADAC.,,,,9781508230892_German_5_QZ_1151.mp3,"3,18"
 1152,1152,GR,9781442395497,German 5,18,,,U18-08,08R_D,F,Dann hätte sie sofort den ADAC angerufen.,,,,9781508230892_German_5_QZ_1152.mp3,"3,18"
 1153,1153,GR,9781442395497,German 5,19,,,U19-01,01Q_A,N,Did you yourself go to Southern Germany?,,,,9781508230892_German_5_QZ_1153.mp3,18
 1154,1154,GR,9781442395497,German 5,19,,,U19-01,01R_A,M,Bist du selber nach Süddeutschland gefahren?,,,,9781508230892_German_5_QZ_1154.mp3,18

@@ -46,14 +46,13 @@ public class AvailableProductsController {
                 .filter(distinctByKey(AvailableProductDto::getProductCode))
                 .collect(Collectors.toList()));
         availableProducts.getFreeProducts().forEach(this::updateCourseName);
+        availableProducts.getFreeProducts().sort(comparing(AvailableProductDto::getCourseName));
         return availableProducts;
     }
 
     private void updateCourseName(AvailableProductDto item) {
         FormatMapping formatMappingFor = formatMappingService.findFormatMappingFor(item.getProductCode());
-        if (formatMappingFor != null) {
-            item.setCourseName(formatMappingFor.getCourseName());
-        }
+        item.setCourseName(formatMappingFor != null ? formatMappingFor.getCourseName() : item.getLanguageName());
     }
 
 

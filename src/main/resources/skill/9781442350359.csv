@@ -1,4 +1,4 @@
-Rec #,Lang,Source Audio ISBN_13,Course,Unit Num,start,stop,QZ #,line #,Speaker,Cue,#of words,_Q_or_S,Course Name _Source_,Skills
+﻿Rec #,Lang,Source Audio ISBN_13,Course,Unit Num,start,stop,QZ #,line #,Speaker,Cue,#of words,_Q_or_S,Course Name _Source_,Skills
 1,GR,978-1-4423-5035-9,German 3,1,0:02:43,0:02:45,01Q,42,N,Can you show me the way to the post office?,,,"German Phase 3, Units 1-30 (2006)","4,20"
 2,GR,978-1-4423-5035-9,German 3,1,0:02:51,0:02:52,01R,43,M,Können Sie mir den Weg zur Post zeigen?,8,Q,"German Phase 3, Units 1-30 (2006)","4,20"
 3,GR,978-1-4423-5035-9,German 3,1,0:02:59,0:03:01,02Q,44,N,I’m trying to show you the house.,,,"German Phase 3, Units 1-30 (2006)","4,9"
@@ -114,13 +114,13 @@ Rec #,Lang,Source Audio ISBN_13,Course,Unit Num,start,stop,QZ #,line #,Speaker,C
 113,GR,978-1-4423-5035-9,German 3,6,0:15:55,0:15:57,07Q,174,N,Let’s order a bottle of white wine.,,,"German Phase 3, Units 1-30 (2006)","1,6"
 114,GR,978-1-4423-5035-9,German 3,6,0:16:01,0:16:03,07R,176,M,Bestellen wir doch eine Flasche Weißwein.,6,S,"German Phase 3, Units 1-30 (2006)","1,6"
 115,GR,978-1-4423-5035-9,German 3,6,0:16:56,0:16:58,08Q,187,N,Which one can you recommend?,,,"German Phase 3, Units 1-30 (2006)","12,14"
-116,GR,978-1-4423-5035-9,German 3,6,0:17:01,0:17:02,08R,189,M,Welchen können Sie empfehlen?,4,Q,"German Phase 3, Units 1-30 (2006)","12,14"
-117,GR,978-1-4423-5035-9,German 3,6,0:17:59,0:18:00,09Q,200,N,Can you recommend this one here?,,,"German Phase 3, Units 1-30 (2006)","12,14"
-118,GR,978-1-4423-5035-9,German 3,6,0:18:04,0:18:05,09R,201,M,Können Sie diesen hier empfehlen?,5,Q,"German Phase 3, Units 1-30 (2006)","12,14"
-119,GR,978-1-4423-5035-9,German 3,6,0:18:29,0:18:30,10Q,206,N,Let’s order this one here.,,,"German Phase 3, Units 1-30 (2006)","6,12,14"
-120,GR,978-1-4423-5035-9,German 3,6,0:18:33,0:18:35,10R,207,M,Bestellen wir doch diesen hier.,5,S,"German Phase 3, Units 1-30 (2006)","6,12,14"
-121,GR,978-1-4423-5035-9,German 3,6,0:20:32,0:20:34,11Q,227,N,Already since five years.,,,"German Phase 3, Units 1-30 (2006)",12
-122,GR,978-1-4423-5035-9,German 3,6,0:20:37,0:20:39,11R,228,F,Schon seit fünf Jahren.,4,S,"German Phase 3, Units 1-30 (2006)",12
+116,GR,978-1-4423-5035-9,German 3,6,17:00.881,17:02.208,08R,189,M,Welchen können Sie empfehlen?,4,Q,"German Phase 3, Units 1-30 (2006)","12,14"
+117,GR,978-1-4423-5035-9,German 3,6,17:58.584,18:00.481,09Q,200,N,Can you recommend this one here?,,,"German Phase 3, Units 1-30 (2006)","12,14"
+118,GR,978-1-4423-5035-9,German 3,6,18:03.610,18:05.080,09R,201,M,Können Sie diesen hier empfehlen?,5,Q,"German Phase 3, Units 1-30 (2006)","12,14"
+119,GR,978-1-4423-5035-9,German 3,6,18:28.550,18:30.067,10Q,206,N,Let’s order this one here.,,,"German Phase 3, Units 1-30 (2006)","6,12,14"
+120,GR,978-1-4423-5035-9,German 3,6,18:33.054,18:34.524,10R,207,M,Bestellen wir doch diesen hier.,5,S,"German Phase 3, Units 1-30 (2006)","6,12,14"
+121,GR,978-1-4423-5035-9,German 3,6,20:32.207,20:34.009,11Q,227,N,Already since five years.,,,"German Phase 3, Units 1-30 (2006)",12
+122,GR,978-1-4423-5035-9,German 3,6,20:37.138,20:38.703,11R,228,F,Schon seit fünf Jahren.,4,S,"German Phase 3, Units 1-30 (2006)",12
 123,GR,978-1-4423-5035-9,German 3,7,0:01:22,0:01:23,01Q,27,N,Something to drink?,,,"German Phase 3, Units 1-30 (2006)",6
 124,GR,978-1-4423-5035-9,German 3,7,0:01:25,0:01:26,01R,28,F,Etwas zu trinken?,3,Q,"German Phase 3, Units 1-30 (2006)",6
 125,GR,978-1-4423-5035-9,German 3,7,0:01:53,0:01:55,02Q,33,N,We’d like to order a white wine.,,,"German Phase 3, Units 1-30 (2006)","6,14"
@@ -441,14 +441,14 @@ Rec #,Lang,Source Audio ISBN_13,Course,Unit Num,start,stop,QZ #,line #,Speaker,C
 440,GR,978-1-4423-5035-9,German 3,22,0:13:28,0:13:28,06R,143,F,Schade!,1,S,"German Phase 3, Units 1-30 (2006)",7
 441,GR,978-1-4423-5035-9,German 3,22,0:13:32,0:13:34,07Q,144,N,Perhaps you’ll come along next time.,,,"German Phase 3, Units 1-30 (2006)",7
 442,GR,978-1-4423-5035-9,German 3,22,0:13:42,0:13:44,07R,146,F,Vielleicht kommen Sie nächstes Mal mit.,6,S,"German Phase 3, Units 1-30 (2006)",7
-443,GR,978-1-4423-5035-9,German 3,22,0:15:59,0:16:00,07Q,170,N,That I didn’t know.,,,"German Phase 3, Units 1-30 (2006)",7
-444,GR,978-1-4423-5035-9,German 3,22,0:15:53,0:15:54,07R,171,F,Das habe ich nicht gewusst.,5,S,"German Phase 3, Units 1-30 (2006)",7
-445,GR,978-1-4423-5035-9,German 3,22,0:18:35,0:18:35,08Q,199,N,Me neither.,,,"German Phase 3, Units 1-30 (2006)",7
-446,GR,978-1-4423-5035-9,German 3,22,0:18:38,0:18:38,08R,200,M,Ich auch nicht.,3,S,"German Phase 3, Units 1-30 (2006)",7
-447,GR,978-1-4423-5035-9,German 3,22,0:18:42,0:18:44,09Q,201,N,I found that out only yesterday.,,,"German Phase 3, Units 1-30 (2006)",17
-448,GR,978-1-4423-5035-9,German 3,22,0:18:46,0:18:48,09R,202,M,Ich habe das erst gestern erfahren.,6,S,"German Phase 3, Units 1-30 (2006)",17
-449,GR,978-1-4423-5035-9,German 3,22,0:20:05,0:20:07,10Q,215,N,Our project is completed.,,,"German Phase 3, Units 1-30 (2006)","9,20"
-450,GR,978-1-4423-5035-9,German 3,22,0:20:10,0:20:12,10R,216,M,Unser Projekt ist abgeschlossen.,4,S,"German Phase 3, Units 1-30 (2006)","9,20"
+443,GR,978-1-4423-5035-9,German 3,22,15:59.171,16:00.177,08Q,170,N,That I didn’t know.,,,"German Phase 3, Units 1-30 (2006)",7
+444,GR,978-1-4423-5035-9,German 3,22,15:53.075,15:54.444,08R,171,F,Das habe ich nicht gewusst.,5,S,"German Phase 3, Units 1-30 (2006)",7
+445,GR,978-1-4423-5035-9,German 3,22,18:34.810,18:35.419,09Q,199,N,Me neither.,,,"German Phase 3, Units 1-30 (2006)",7
+446,GR,978-1-4423-5035-9,German 3,22,18:37.853,18:38.481,09R,200,M,Ich auch nicht.,3,S,"German Phase 3, Units 1-30 (2006)",7
+447,GR,978-1-4423-5035-9,German 3,22,18:42.299,18:44.025,10Q,201,N,I found that out only yesterday.,,,"German Phase 3, Units 1-30 (2006)",17
+448,GR,978-1-4423-5035-9,German 3,22,18:46.275,18:48.056,10R,202,M,Ich habe das erst gestern erfahren.,6,S,"German Phase 3, Units 1-30 (2006)",17
+449,GR,978-1-4423-5035-9,German 3,22,20:05.229,20:06.595,11Q,215,N,Our project is completed.,,,"German Phase 3, Units 1-30 (2006)","9,20"
+450,GR,978-1-4423-5035-9,German 3,22,20:10.108,20:11.610,11R,216,M,Unser Projekt ist abgeschlossen.,4,S,"German Phase 3, Units 1-30 (2006)","9,20"
 451,GR,978-1-4423-5035-9,German 3,23,0:04:14,0:04:17,01Q,55,N,One hundred twenty kilometers an hour or still faster.,,,"German Phase 3, Units 1-30 (2006)","12,17"
 452,GR,978-1-4423-5035-9,German 3,23,0:04:22,0:04:25,01R,56,M,Einhundertzwanzig Kilometer in der Stunde oder noch schneller.,8,S,"German Phase 3, Units 1-30 (2006)","12,17"
 453,GR,978-1-4423-5035-9,German 3,23,0:05:53,0:05:56,02Q,72,N,Most cars drive ninety-five kilometers an hour.,,,"German Phase 3, Units 1-30 (2006)","12,17,18"
@@ -529,8 +529,8 @@ Rec #,Lang,Source Audio ISBN_13,Course,Unit Num,start,stop,QZ #,line #,Speaker,C
 528,GR,978-1-4423-5035-9,German 3,26,0:14:17,0:14:18,08R,153,M,Wo kann ich mein Auto parken?,6,Q,"German Phase 3, Units 1-30 (2006)","4,18"
 529,GR,978-1-4423-5035-9,German 3,26,0:16:54,0:16:56,09Q,180,N,You can fetch your luggage.,,,"German Phase 3, Units 1-30 (2006)",18
 530,GR,978-1-4423-5035-9,German 3,26,0:16:59,0:17:01,09R,181,F,Sie können Ihr Gepäck holen.,5,S,"German Phase 3, Units 1-30 (2006)",18
-531,GR,978-1-4423-5035-9,German 3,26,0:17:45,0:17:47,10Q,188,N,"Here you are, your key.",,,"German Phase 3, Units 1-30 (2006)","13,18,20"
-532,GR,978-1-4423-5035-9,German 3,26,0:17:51,0:17:52,10R,189,F,"Hier bitte, Ihr Schüssel.",4,S,"German Phase 3, Units 1-30 (2006)","13,18,20"
+531,GR,978-1-4423-5035-9,German 3,26,0:17:45,0:17:47,10Q,188,N,"Here you are, your key.",,,"German Phase 3, Units 1-30 (2006)","13,18"
+532,GR,978-1-4423-5035-9,German 3,26,17:50.536,17:51.939,10R,189,F,"Hier bitte, Ihr Schlüssel.",4,S,"German Phase 3, Units 1-30 (2006)","13,18"
 533,GR,978-1-4423-5035-9,German 3,26,0:19:46,0:19:46,11Q,206,N,I’m sorry.,,,"German Phase 3, Units 1-30 (2006)",13
 534,GR,978-1-4423-5035-9,German 3,26,0:19:51,0:19:52,11R,207,F,Tut mir leid.,3,S,"German Phase 3, Units 1-30 (2006)",13
 535,GR,978-1-4423-5035-9,German 3,26,0:19:55,0:19:57,12Q,208,N,Your room is not yet ready.,,,"German Phase 3, Units 1-30 (2006)","16,18"

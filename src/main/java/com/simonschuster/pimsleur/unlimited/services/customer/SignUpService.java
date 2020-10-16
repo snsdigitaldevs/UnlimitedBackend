@@ -12,6 +12,9 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
+import org.springframework.util.LinkedMultiValueMap;
+import org.springframework.util.MultiValueMap;
+import org.springframework.web.util.UriComponentsBuilder;
 
 import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEdt;
 
@@ -40,11 +43,13 @@ public class SignUpService {
         String email = signUpBodyDTO.getEmail();
         String password = signUpBodyDTO.getPassword();
         String countryCode = signUpBodyDTO.getCountryCode();
-        HttpEntity<String> entity = new HttpEntity<>(String.format(
-                applicationConfiguration.getProperty("edt.api.signUp.parameters.signUp"),
-                userName, password, appId,
-                email, storeDomain, countryCode
-        ), headers);
+
+        String template = applicationConfiguration.getProperty("edt.api.signUp.parameters.signUp").replace("wpc=%s&", "");
+        String queryStrings = "/?" + String.format(template, userName, appId, email, storeDomain, countryCode);
+        MultiValueMap<String, String> params = new LinkedMultiValueMap<>(UriComponentsBuilder.fromUriString(queryStrings).build().getQueryParams());
+        params.add("wpc", password);
+
+        HttpEntity<MultiValueMap<String, String>> entity = new HttpEntity<>(params, headers);
         SignUpEDT response = postToEdt(entity, url, SignUpEDT.class);
 
         if (!response.getResultCode().equals(1)) {
@@ -57,15 +62,6 @@ public class SignUpService {
                 case -1:
                     errorMessage = PASSWORD_INVALID_MESSAGE;
                     break;
-//                     invalid email cause different error codes
-//                     e.g.: xxx334.xxx.online cause -1
-//                           xxx333.xxx.online cause -3011
-//                           in some situations cause 0
-/*
-                case 0:
-                    errorMessage = "Please input valid email address.";
-                    break;
-*/
                 default:
                     errorMessage = "System error, please try later.";
                     break;

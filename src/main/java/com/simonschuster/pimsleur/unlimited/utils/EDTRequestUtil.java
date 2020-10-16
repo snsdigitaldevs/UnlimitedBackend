@@ -24,7 +24,7 @@ public class EDTRequestUtil {
         REST_TEMPLATE.getMessageConverters().add(converter);
     }
 
-    public static <T> T postToEdt(HttpEntity<String> httpEntity, String url,
+    public static <T, R> T postToEdt(HttpEntity<R> httpEntity, String url,
         Class<T> responseType) {
         long startTime = System.currentTimeMillis();
         try {
@@ -48,7 +48,7 @@ public class EDTRequestUtil {
         return response;
     }
 
-    private static <T> void checkResult(String url, HttpEntity<String> httpEntity, T response) {
+    private static <T, R> void checkResult(String url, HttpEntity<R> httpEntity, T response) {
         if (response instanceof EdtResponseCode) {
             int resultCode = ((EdtResponseCode) response).getResultCode();
             if (EdtResponseCode.RESULT_OK != resultCode) {

@@ -86,7 +86,7 @@ public class SpeakEasyAndReadingUtil {
                         getMilliSeconds(startKey, csvRecord),
                         getMilliSeconds(stopKey, csvRecord),
                         getFromCsv(speakerKey, csvRecord),
-                        getFromCsv(textKey, csvRecord),
+                        generateText(isReading, textKey, csvRecord),
                         getFromCsv(nativeTextKey, csvRecord),
                         getFromCsv(transliterationKey, csvRecord),
                         Jsoup.parse(getFromCsv(helpTextKey, csvRecord)).text(),
@@ -144,6 +144,10 @@ public class SpeakEasyAndReadingUtil {
         } else {
             return COLON_COLON_TIME_FORMATTER.parseDateTime(timeString).getMillisOfDay();
         }
+    }
+
+    private static String generateText(boolean isReading, String textKey, CSVRecord csvRecord) {
+        return isReading ? (csvRecord.isSet(textKey) ? csvRecord.get(textKey) : "") : getFromCsv(textKey, csvRecord);
     }
 
 }

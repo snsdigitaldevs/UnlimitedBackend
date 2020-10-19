@@ -53,6 +53,7 @@ public class AvailablePracticesController {
             List<PracticesInUnit> quickMatches = getQuickMatchesByCsvUrl(practicesUrls);
             AvailablePractices availablePractices = new AvailablePractices(mergeLists(readings, speakEasies, flashCards, quickMatches));
             puAvailablePracticesService.handleForArabic(productCode, storeDomain, availablePractices.getPracticesInUnits());
+            puAvailablePracticesService.handlePunctuatorForHebrew(productCode, availablePractices.getPracticesInUnits());
             return availablePractices;
         }else {
             return new AvailablePractices(mergeLists(Collections.emptyList(), Collections.emptyList(), Collections.emptyList(), Collections.emptyList()));

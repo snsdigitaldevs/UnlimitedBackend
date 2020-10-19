@@ -18,9 +18,11 @@ import static java.nio.charset.Charset.forName;
 import static java.util.Collections.frequency;
 
 public class UnlimitedPracticeUtil {
+    public static final String QUOTE = "?";
+    public static final String EXCLAMATION = "!";
     private final static String NO_SUCH_KEY = "NoSuchKey";
     private final static Logger logger = LoggerFactory.getLogger(UnlimitedPracticeUtil.class);
-    private static final String PERIOD = ".";
+    public static final String PERIOD = ".";
     private static final String ARABIC_PERIOD = ".\u200E";
     private static final String EXCLAMATION_MARK = "!";
     private static final String ELLIPSES_THREE = "...";
@@ -204,5 +206,14 @@ public class UnlimitedPracticeUtil {
                 .substring(0, translation.length() - EXCLAMATION_MARK.length());
         }
         return translation;
+    }
+
+    public static String movePunctuatorToLeftForHebrew(String sentence) {
+        for (String punctuator : Arrays.asList(QUOTE, EXCLAMATION, PERIOD)) {
+            if (sentence.endsWith(punctuator)) {
+                return punctuator + sentence.substring(0, sentence.length() - punctuator.length());
+            }
+        }
+        return sentence;
     }
 }

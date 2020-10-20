@@ -7,6 +7,7 @@ import java.util.List;
 
 import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_EMPTY;
 import static com.simonschuster.pimsleur.unlimited.constants.CommonConstants.ARABIC_PU_ISBN;
+import static com.simonschuster.pimsleur.unlimited.constants.CommonConstants.HEBREW_PU_ISBN;
 
 @JsonInclude(NON_EMPTY)
 public class Course {
@@ -98,6 +99,7 @@ public class Course {
     }
 
     public Boolean getPuArabic() {
-        return ARABIC_PU_ISBN.contains(productCode);
+        //For old app versions, add hebrew to display form right to left
+        return ARABIC_PU_ISBN.contains(productCode) || HEBREW_PU_ISBN.contains(productCode);
     }
 }

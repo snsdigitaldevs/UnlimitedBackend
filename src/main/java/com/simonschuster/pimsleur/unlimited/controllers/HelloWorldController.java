@@ -8,13 +8,13 @@ import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
 @RestController
 public class HelloWorldController {
-//    @Autowired
-//    private AddressBookRepository addressBookRepository;
-//
-//    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-//    public AddressBook getUser(@PathVariable("id") int addressBookId) {
-//        return addressBookRepository.getOne(addressBookId);
-//    }
+    //    @Autowired
+    //    private AddressBookRepository addressBookRepository;
+    //
+    //    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    //    public AddressBook getUser(@PathVariable("id") int addressBookId) {
+    //        return addressBookRepository.getOne(addressBookId);
+    //    }
 
     @ApiOperation(value = "This api is called after a new deployment to verify if the new version is up and running")
     @RequestMapping(value = "/", method = GET)

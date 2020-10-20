@@ -15,14 +15,14 @@ public class Utils {
     private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper()
             .configure(ALLOW_SINGLE_QUOTES, true);
 
-    public static Image GetImageFromLanguageMetaData(LanguageName languageName){
+    public static Image GetImageFromLanguageMetaData(LanguageName languageName) {
         Image image = new Image();
 
         if (languageName != null && languageName.getLanguageImageMetadata() != null) {
             try {
                 LanguageImageMetadata metadata = OBJECT_MAPPER.readValue(languageName.getLanguageImageMetadata(),
-                        new TypeReference<LanguageImageMetadata>() {
-                });
+                    new TypeReference<LanguageImageMetadata>() {
+                    });
                 String imageUrl = PCM_IMAGE_DOMAIN + metadata.getImageFilePath() + metadata.getImageFileName();
 
                 image.setThumbImageAddress(imageUrl);

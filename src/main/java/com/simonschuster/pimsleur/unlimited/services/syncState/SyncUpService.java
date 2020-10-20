@@ -39,7 +39,7 @@ public class SyncUpService {
                 config.getProperty("edt.api.syncUpUrl"),
                 SyncUpResult.class);
         if (syncUpResult.getResultCode() != 1) {
-            throw new Exception("[ERROR] EDT sync up PUProgress Error:" + puPostBody.getBody() );
+            throw new Exception("[ERROR] EDT sync up PUProgress Error:" + puPostBody.getBody());
         }
         return syncUpResult.getResultData().getLastSaveId();
     }
@@ -73,16 +73,17 @@ public class SyncUpService {
                                                 String productCode, String mediaItemId,
                                                 SyncUpDto syncUpDto) throws JsonProcessingException {
 
-        Map<String, SyncUpItem> edtSyncUpItems = syncUpDto.
-                toEdtPUSyncItems(customerId, subUserId, productCode, mediaItemId);
+        Map<String, SyncUpItem> edtSyncUpItems = syncUpDto
+            .toEdtPUSyncItems(customerId, subUserId, productCode, mediaItemId);
         return createPostBody(customerId, syncUpDto, edtSyncUpItems, "ss_pu");
 
     }
 
-    private HttpEntity<String> createPcmPostBody(String customerId, String productCode, String mediaItemId, SyncUpDto syncUpDto) throws JsonProcessingException {
+    private HttpEntity<String> createPcmPostBody(String customerId, String productCode,
+                                                 String mediaItemId, SyncUpDto syncUpDto) throws JsonProcessingException {
 
-        Map<String, SyncUpItem> edtSyncUpItems = syncUpDto.
-                toEdtPcmSyncItems(customerId, productCode, mediaItemId);
+        Map<String, SyncUpItem> edtSyncUpItems = syncUpDto
+            .toEdtPcmSyncItems(customerId, productCode, mediaItemId);
         return createPostBody(customerId, syncUpDto, edtSyncUpItems, "");
     }
 

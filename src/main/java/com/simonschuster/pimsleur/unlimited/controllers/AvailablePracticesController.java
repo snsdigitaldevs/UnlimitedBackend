@@ -46,7 +46,7 @@ public class AvailablePracticesController {
                                                       @RequestParam(value = "storeDomain", required = false) String storeDomain)
             throws IOException {
         PracticesUrls practicesUrls = puAvailablePracticesService.getPracticeUrls(productCode, storeDomain);
-        if(practicesUrls != null){
+        if (practicesUrls != null) {
             List<PracticesInUnit> speakEasies = csvToSpeakEasies(practicesUrls.getSpeakEasyUrl());
             List<PracticesInUnit> readings = csvToReadings(practicesUrls.getReadingUrl());
             List<PracticesInUnit> flashCards = csvToFlashCards(practicesUrls);
@@ -55,8 +55,9 @@ public class AvailablePracticesController {
             puAvailablePracticesService.handleForArabic(productCode, storeDomain, availablePractices.getPracticesInUnits());
             puAvailablePracticesService.handlePunctuatorForHebrew(productCode, storeDomain, availablePractices.getPracticesInUnits());
             return availablePractices;
-        }else {
-            return new AvailablePractices(mergeLists(Collections.emptyList(), Collections.emptyList(), Collections.emptyList(), Collections.emptyList()));
+        } else {
+            return new AvailablePractices(mergeLists(Collections.emptyList(),
+                Collections.emptyList(), Collections.emptyList(), Collections.emptyList()));
         }
     }
 

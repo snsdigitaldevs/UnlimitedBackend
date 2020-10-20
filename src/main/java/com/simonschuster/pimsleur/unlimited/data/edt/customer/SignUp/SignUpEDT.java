@@ -38,7 +38,7 @@ public class SignUpEDT {
         this.resultCode = resultCode;
     }
 
-    public SignUpDTO dataFormat(){
+    public SignUpDTO dataFormat() {
         return new SignUpDTO(this.getResultData().getCustomer().getCustomersAuth0UserId());
     }
 }

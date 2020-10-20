@@ -144,8 +144,8 @@ public class MediaItem {
 
     public boolean isLesson() {
         String title = this.getMediaItemTitle();
-        return this.getMediaItemTypeId() == MP3_MEDIA_TYPE
-                && (title.startsWith(KEY_UNIT) || title.startsWith(KEY_LESSON) || title.startsWith(ESL_SPANISH_PCM_LESSON));
+        return this.getMediaItemTypeId() == MP3_MEDIA_TYPE &&
+            (title.startsWith(KEY_UNIT) || title.startsWith(KEY_LESSON) || title.startsWith(ESL_SPANISH_PCM_LESSON));
     }
 
     public boolean isReading() {

@@ -211,9 +211,9 @@ public class QuickMatchUtil {
 
     private static String getHeaderInCsv(CSVParser csvRecords, String originHeader) {
         for (String key : csvRecords.getHeaderMap().keySet()) {
-            if (StringUtils.equalsIgnoreCase(key, originHeader) || (originHeader.equals(HEADER_ISBN)
-                && key.toUpperCase().contains(originHeader)) || (originHeader.equals(HEADER_QZ)
-                && key.toUpperCase().equals(HEADER_QUIZ))) {
+            if (StringUtils.equalsIgnoreCase(key, originHeader) || (originHeader.equals(HEADER_ISBN) &&
+                key.toUpperCase().contains(originHeader)) || (originHeader.equals(HEADER_QZ) &&
+                key.toUpperCase().equals(HEADER_QUIZ))) {
                 return key;
             }
         }

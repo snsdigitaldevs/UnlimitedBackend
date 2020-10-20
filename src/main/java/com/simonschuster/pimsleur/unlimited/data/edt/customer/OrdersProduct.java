@@ -211,7 +211,7 @@ public class OrdersProduct {
         return getProduct().getProductsLevel() != 0;
     }
 
-    public boolean isPUProduct(){
+    public boolean isPUProduct() {
         String productsMedia = getProduct().getProductsMedia();
         return productsMedia.equals("SW Boxed") ||
                 productsMedia.equals("SW Download") ||

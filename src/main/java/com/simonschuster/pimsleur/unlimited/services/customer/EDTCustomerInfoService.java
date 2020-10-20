@@ -63,7 +63,8 @@ public class EDTCustomerInfoService {
                 progresses,
                 registrant.getSubUsers());
         customerInfoDTO.setPcmLastSaveId(pcmSyncState.hasResultData() ? pcmSyncState.getResultData().getLastSaveId() : 0L);
-        customerInfoDTO.setUnlimitedLastSaveId(unlimitedSyncState.hasResultData() ? unlimitedSyncState.getResultData().getLastSaveId() : 0L);
+        customerInfoDTO.setUnlimitedLastSaveId(unlimitedSyncState.hasResultData() ?
+            unlimitedSyncState.getResultData().getLastSaveId() : 0L);
         customerInfoDTO.setCustomerId(customer.getCustomersId().toString());
         customerInfoDTO.setHasPendingAndroid(customer.hasPendingAndroid());
         customerInfoDTO.setHasPendingIos(customer.hasPendingIos());
@@ -78,15 +79,12 @@ public class EDTCustomerInfoService {
         //both
         if (pcmSyncState.hasResultData() && unlimitedSyncState.hasResultData()) {
             List<ProgressDTO> pcmProgressDTOs = pcmProgressToDto(pcmSyncState.getResultData().getUserAppStateData());
-            List<ProgressDTO> unlimitedProgressDTOs = UnlimitedSyncStateToDTO(unlimitedSyncState.getResultData().getUserAppStateData());
+            List<ProgressDTO> unlimitedProgressDTOs = UnlimitedSyncStateToDTO(unlimitedSyncState.getResultData()
+                .getUserAppStateData());
             return concat(pcmProgressDTOs.stream(), unlimitedProgressDTOs.stream()).collect(toList());
-        }
-        //only pcm
-        else if (pcmSyncState.hasResultData()) {
+        } else if (pcmSyncState.hasResultData()) { //only pcm
             return pcmProgressToDto(pcmSyncState.getResultData().getUserAppStateData());
-        }
-        //only unlimited
-        else if (unlimitedSyncState.hasResultData()) {
+        } else if (unlimitedSyncState.hasResultData()) { //only unlimited
             return UnlimitedSyncStateToDTO(unlimitedSyncState.getResultData().getUserAppStateData());
         }
         //neither
@@ -134,9 +132,8 @@ public class EDTCustomerInfoService {
             List<AuthDescriptor> authDescriptors = customerInfo.getResultData().getCustomer()
                 .getAuthDescriptors();
             for (AuthDescriptor authDescriptor : authDescriptors) {
-                if (authDescriptor.getResultCode() != EdtResponseCode.RESULT_OK
-                    && authDescriptor.getResultCode()
-                    != EdtResponseCode.RESULT_COULD_NOT_AUTHENTICATE) {
+                if (authDescriptor.getResultCode() != EdtResponseCode.RESULT_OK &&
+                    authDescriptor.getResultCode() != EdtResponseCode.RESULT_COULD_NOT_AUTHENTICATE) {
                     LOG.error("CustomerId is {}, AuthProvider {} is error, resultCode is {}",
                         authDescriptor.getCustomersId(), authDescriptor.getAuthProvidersId(),
                         authDescriptor.getResultCode());

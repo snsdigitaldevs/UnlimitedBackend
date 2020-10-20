@@ -35,7 +35,8 @@ public class AvailableProductDto {
         this.isPuProduct = isPu;
     }
 
-    public AvailableProductDto(String languageName, String productsLanguageName, String courseName, String productCode, boolean isPu, Integer level) {
+    public AvailableProductDto(String languageName, String productsLanguageName, String courseName,
+                               String productCode, boolean isPu, Integer level) {
         this(languageName, productsLanguageName, productCode, isPu);
 
         this.level = level;

@@ -20,8 +20,8 @@ import static java.util.Collections.frequency;
 public class UnlimitedPracticeUtil {
     public static final String QUOTE = "?";
     public static final String EXCLAMATION = "!";
-    private final static String NO_SUCH_KEY = "NoSuchKey";
-    private final static Logger logger = LoggerFactory.getLogger(UnlimitedPracticeUtil.class);
+    private static final String NO_SUCH_KEY = "NoSuchKey";
+    private static final Logger logger = LoggerFactory.getLogger(UnlimitedPracticeUtil.class);
     public static final String PERIOD = ".";
     private static final String ARABIC_PERIOD = ".\u200E";
     private static final String EXCLAMATION_MARK = "!";
@@ -118,8 +118,7 @@ public class UnlimitedPracticeUtil {
             csvString = replaceDuplicateHeaders(restTemplate.getForObject(url, String.class));
         } catch (RestClientException e) {
             logger.error("get csv string from the path: " + url + "failed", e);
-        }
-        finally {
+        } finally {
             if (csvString.contains("Italian 2")) {
                 csvString = specialCsvFiles(csvString);
             }

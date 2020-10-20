@@ -25,7 +25,8 @@ public class ActivateService {
     @Autowired
     private AppIdService appIdService;
 
-    public ActivateDTO active(String registrantId, String registrantName, String identityVerificationToken, List<String> isbns, String storeDomain) {
+    public ActivateDTO active(String registrantId, String registrantName,
+                              String identityVerificationToken, List<String> isbns, String storeDomain) {
         String url = applicationConfiguration.getProperty("edt.api.activate.url");
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
@@ -36,17 +37,15 @@ public class ActivateService {
                 .collect(Collectors.toList()));
     }
 
-    private ActivateResultDTO activateToEdt(String registrantId,
-                                            String registrantName,
-                                            String identityVerificationToken, String url, HttpHeaders headers, String isbn, String storeDomain) {
+    private ActivateResultDTO activateToEdt(String registrantId, String registrantName, String identityVerificationToken,
+                                            String url, HttpHeaders headers, String isbn, String storeDomain) {
         String appId = appIdService.getAppId(storeDomain);
         String format = String.format(
                 applicationConfiguration.getProperty("edt.api.activate.parameters.activate"),
                 identityVerificationToken, registrantId, isbn, appId, registrantName
         );
-        if(registrantName == null || registrantName.equals("")
-                || registrantName.equals("null")
-                || registrantName.equals("undefined")){
+        if (registrantName == null || registrantName.equals("") || registrantName.equals("null") ||
+            registrantName.equals("undefined")) {
             int index = format.indexOf("&nfua=");
             format = format.substring(0, index);
         }

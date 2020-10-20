@@ -24,6 +24,6 @@ public class BonusPacksController {
     @RequestMapping(value = "/puProduct/{productCode}/bonusPacksInfo", method = RequestMethod.GET)
     public List<BonusPackInUnit> getBonusPacksInUnit(@PathVariable("productCode") String productCode,
                   @RequestParam(value = "storeDomain", required = false) String storeDomain) throws IOException {
-            return bonusPacksService.getBonusPacksInUnit(productCode, storeDomain);
+        return bonusPacksService.getBonusPacksInUnit(productCode, storeDomain);
     }
 }

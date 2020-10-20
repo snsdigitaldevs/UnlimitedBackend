@@ -51,7 +51,7 @@ public class UpsellService {
             // find the item whose 'Other format ISBN' equals upsell ISBN
             FormatMapping withOtherFormatAs = formatMappingService.findISBNWithOtherFormatAs(
                     purchaseMapping.getUpsellInAppPurchaseISBN());
-            if(withOtherFormatAs != null && finalUpsellDto.getNextLevel() != null){
+            if (withOtherFormatAs != null && finalUpsellDto.getNextLevel() != null) {
                 finalUpsellDto.getNextLevel().setBaseISBN(withOtherFormatAs.getISBN());
             }
             return finalUpsellDto;

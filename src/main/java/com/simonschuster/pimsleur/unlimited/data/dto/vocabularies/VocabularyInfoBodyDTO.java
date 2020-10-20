@@ -2,7 +2,6 @@ package com.simonschuster.pimsleur.unlimited.data.dto.vocabularies;
 
 
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 
 public class VocabularyInfoBodyDTO {
 

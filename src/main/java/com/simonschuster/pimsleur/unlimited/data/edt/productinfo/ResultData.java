@@ -8,7 +8,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
-import java.io.UncheckedIOException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -21,7 +20,7 @@ public class ResultData {
     private Map<String, String> mediaSets;
 
     @JsonProperty("courseConfigs")
-    public Map<String, CourseConfig> getCourseConfigs() throws Exception{
+    public Map<String, CourseConfig> getCourseConfigs() throws Exception {
         ObjectMapper mapper = new ObjectMapper();
 
         HashMap<String, CourseConfig> formattedCourseConfigs = new HashMap<>();

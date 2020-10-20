@@ -51,7 +51,7 @@ public class FormatMappingService {
     private void updateNameDescriptionForUpsellItem(UpsellItem upsellItem) {
         if (upsellItem != null) {
             FormatMapping find = findFormatMappingFor(upsellItem.getIsbn());
-            if(find != null){
+            if (find != null) {
                 upsellItem.setName(find.getCourseName());
                 upsellItem.setDescription(find.getCourseDescription());
             }
@@ -78,8 +78,8 @@ public class FormatMappingService {
     private void updateWebCartLinkForItem(UpsellItem upsellItem, String link) {
         // cao suggest android and ios don't return webLink and pid
         String storeDomain = UnlimitedThreadLocalUtils.getRequestParameter("storeDomain");
-        if (upsellItem != null && (StoreDomainConstants.ANDROID_IN_APP.equalsIgnoreCase(storeDomain)
-            || StoreDomainConstants.IOS_IN_APP.equalsIgnoreCase(storeDomain))) {
+        if (upsellItem != null && (StoreDomainConstants.ANDROID_IN_APP.equalsIgnoreCase(storeDomain) ||
+            StoreDomainConstants.IOS_IN_APP.equalsIgnoreCase(storeDomain))) {
             upsellItem.setPid(null);
             upsellItem.setWebLink(null);
             return;
@@ -117,9 +117,9 @@ public class FormatMappingService {
 
     public FormatMapping findISBNWithOtherFormatAs(String isbn) {
         Stream<FormatMapping> formatMappingStream = formatMappings.stream().filter(
-                x -> x.getOtherFormat1ISBN().equals(isbn) ||
-                x.getOtherFormat2ISBN().equals(isbn) ||
-                x.getOtherFormat3ISBN().equals(isbn));
+            x -> x.getOtherFormat1ISBN().equals(isbn) ||
+            x.getOtherFormat2ISBN().equals(isbn) ||
+            x.getOtherFormat3ISBN().equals(isbn));
         return formatMappingStream.findFirst().orElse(null);
     }
 }

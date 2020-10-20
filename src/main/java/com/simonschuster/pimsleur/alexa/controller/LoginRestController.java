@@ -67,8 +67,8 @@ public class LoginRestController {
             signUpService.signUp(signUpBodyDto);
         } catch (ParamInvalidException e) {
             //if error message is caused by sign up -3011 or -1 error, then we ignore it
-            if (!e.getMessage().equals(EMAIL_ALREADY_REGISTERED_ERROR_MESSAGE)
-                    && !e.getMessage().equals(PASSWORD_INVALID_MESSAGE)) {
+            if (!e.getMessage().equals(EMAIL_ALREADY_REGISTERED_ERROR_MESSAGE) &&
+                !e.getMessage().equals(PASSWORD_INVALID_MESSAGE)) {
                 e.printStackTrace();
                 throw e;
             }

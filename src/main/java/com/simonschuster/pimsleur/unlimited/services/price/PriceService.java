@@ -1,7 +1,6 @@
 package com.simonschuster.pimsleur.unlimited.services.price;
 
 import com.simonschuster.pimsleur.unlimited.configs.ApplicationConfiguration;
-import com.simonschuster.pimsleur.unlimited.data.auth0.Auth0TokenInfo;
 import com.simonschuster.pimsleur.unlimited.data.dto.price.DemandwareShopInfo;
 import com.simonschuster.pimsleur.unlimited.data.dto.price.MG2Offer;
 import com.simonschuster.pimsleur.unlimited.data.dto.price.MG2ShopInfo;
@@ -11,14 +10,12 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
-import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
 import java.util.Objects;
 
 import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.getFromEdt;
-import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEdt;
 
 @Service
 public class PriceService {

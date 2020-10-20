@@ -69,7 +69,7 @@ public class SubUserController {
                                      @PathVariable String appUserId,
                                      @ApiParam(value = "only need the name of sub user")
                                      @RequestBody SubUserDto userDto,
-                                     @RequestParam(value="storeDomain", required = false) String storeDomain) {
+                                     @RequestParam(value = "storeDomain", required = false) String storeDomain) {
         SubUserInfo subUserInfo = subUserService.delete(customerId, appUserId, token, storeDomain);
         checkResultCode(subUserInfo);
         return subUserInfo.toDto(userDto.getName(), appUserId);

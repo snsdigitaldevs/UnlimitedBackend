@@ -44,7 +44,8 @@ public class VocabularyService {
     @Autowired
     private AppIdService appIdService;
 
-    public VocabularyInfoResponseDTO saveVocabularyToEdt(VocabularyInfoBodyDTO vocabularyInfoBodyDTO, String storeDomain) throws UnsupportedEncodingException {
+    public VocabularyInfoResponseDTO saveVocabularyToEdt(VocabularyInfoBodyDTO vocabularyInfoBodyDTO,
+                                                         String storeDomain) throws UnsupportedEncodingException {
         String appId = appIdService.getAppId(storeDomain);
         String vocabularySourceString = convertVocabularySourceString(vocabularyInfoBodyDTO);
 
@@ -91,7 +92,8 @@ public class VocabularyService {
 
     }
 
-    public VocabularyInfoResponseDTO deleteVocabularies(String customerId, String subUserId, String productCode, List<String> languageList, String storeDomain) throws UnsupportedEncodingException {
+    public VocabularyInfoResponseDTO deleteVocabularies(String customerId, String subUserId, String productCode,
+                                                        List<String> languageList, String storeDomain) throws UnsupportedEncodingException {
         String appId = appIdService.getAppId(storeDomain);
 
         String languageListString = JsonUtils.toJsonString(languageList);
@@ -110,7 +112,8 @@ public class VocabularyService {
 
     }
 
-    public VocabularyInfoResponseDTO saveVocabulariesToEdt(VocabularyListInfoDTO vocabularyListInfoDTO, String storeDomain) throws UnsupportedEncodingException {
+    public VocabularyInfoResponseDTO saveVocabulariesToEdt(VocabularyListInfoDTO vocabularyListInfoDTO,
+                                                           String storeDomain) throws UnsupportedEncodingException {
         String appId = appIdService.getAppId(storeDomain);
 
         String vocabularyItemsString = convertVocabularyListToString(vocabularyListInfoDTO.getVocabularyItemList());
@@ -153,7 +156,7 @@ public class VocabularyService {
                     .map(vocabularyItemFromEdt -> {
                         String subUserId = vocabularyItemFromEdt.getSubUserId();
                         String[] subUserIdArray = subUserId.split("_");
-                        if (subUserIdArray.length == 2){
+                        if (subUserIdArray.length == 2) {
                             vocabularyItemFromEdt.setSubUserId(subUserIdArray[1]);
                         }
                         return vocabularyItemFromEdt;
@@ -205,7 +208,7 @@ public class VocabularyService {
     }
 
     private String encodeString(String str) throws UnsupportedEncodingException {
-        if (str !=null) {
+        if (str != null) {
             return URLEncoder.encode(str, "UTF-8");
         }
         return "";

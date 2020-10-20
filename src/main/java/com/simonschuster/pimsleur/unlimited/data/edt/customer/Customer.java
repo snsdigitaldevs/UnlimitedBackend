@@ -12,7 +12,7 @@ public class Customer {
     private String identityVerificationToken;
     private String pendingPurchasesFromStoreDomains;
     private List<CustomersOrder> customersOrders = new ArrayList<>();
-    private List<AuthDescriptor> authDescriptors=new ArrayList<>();
+    private List<AuthDescriptor> authDescriptors = new ArrayList<>();
 
     public List<String> getProductCodes() {
         return this.getCustomersOrders().stream()

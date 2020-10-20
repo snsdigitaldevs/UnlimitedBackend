@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.stream.Stream;
 
 import static com.simonschuster.pimsleur.unlimited.utils.HardCodedProductsUtil.PU_FREE_LESSONS;
-import static java.util.Comparator.comparing;
 import static java.util.stream.Collectors.toList;
 import static java.util.stream.Stream.concat;
 

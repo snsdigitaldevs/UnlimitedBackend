@@ -51,7 +51,8 @@ public class PcmReadingsService {
         Stream<MediaItem> mediaItems = findReadingMediaItems(download.getMediaSet().getChildMediaSets());
 
         boolean isBatched = parseBoolean(config.getProperty("toggle.fetch.mp3.url.batch"));
-        Readings readings = isBatched ? batchGetPcmReadings(download, pcmProduct, mediaItems, storeDomain) : getPcmReadingsOneByOne(download, pcmProduct, mediaItems, storeDomain);
+        Readings readings = isBatched ? batchGetPcmReadings(download, pcmProduct, mediaItems, storeDomain) :
+            getPcmReadingsOneByOne(download, pcmProduct, mediaItems, storeDomain);
 
         List<ReadingAudio> audios = readings.getAudios();
         List<ReadingAudio> cultureNotesAudios = audios.stream().filter(ReadingAudio::isCultureNotes).collect(Collectors.toList());
@@ -92,7 +93,8 @@ public class PcmReadingsService {
         return readings;
     }
 
-    private Readings batchGetPcmReadings(OrdersProductsDownload download, PcmProduct pcmProduct, Stream<MediaItem> mediaItems, String storeDomain) {
+    private Readings batchGetPcmReadings(OrdersProductsDownload download,
+                                         PcmProduct pcmProduct, Stream<MediaItem> mediaItems, String storeDomain) {
         Readings readings = new Readings();
 
         BatchedMediaItemUrls batchedMediaItemUrls = pcmMediaItemUrlService.getBatchedMediaItemUrls(

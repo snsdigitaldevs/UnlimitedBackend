@@ -131,7 +131,7 @@ public class AggregatedProductInfo {
     private String getReadingIntroPdfUrl(MediaSet mediaSet) {
         List<MediaItem> mediaItems = mediaSet.getMediaItems()
                         .stream().filter(MediaItem::isReadingIntroduction).collect(toList());
-        if(!mediaItems.isEmpty()) {
+        if (!mediaItems.isEmpty()) {
             String readingIntroPdfName = mediaItems.get(0).getFilename();
             return installationFileList.getReadingPdfUrlByFileName(readingIntroPdfName);
         }
@@ -141,7 +141,7 @@ public class AggregatedProductInfo {
     private String getReadingAlphabetPdfUrl(MediaSet mediaSet) {
         List<MediaItem> mediaItems = mediaSet.getMediaItems()
                         .stream().filter(MediaItem::isReadingAlphabet).collect(toList());
-        if(!mediaItems.isEmpty()) {
+        if (!mediaItems.isEmpty()) {
             String readingAlphabetPdfName = mediaItems.get(0).getFilename();
             return this.installationFileList.getReadingPdfUrlByFileName(readingAlphabetPdfName);
         }
@@ -185,7 +185,7 @@ public class AggregatedProductInfo {
                 .stream()
                 .filter(OrdersProductAttribute::isDownload)
                 .collect(toMap(it -> it.getOrdersProductsDownloads().get(0).getMediaSet().getProduct().getProductsLevel(),
-                        it -> it.getOrdersProductsDownloads().get(0).getMediaSet().getProduct()));
+                    it -> it.getOrdersProductsDownloads().get(0).getMediaSet().getProduct()));
 
         Course course = new Course();
 

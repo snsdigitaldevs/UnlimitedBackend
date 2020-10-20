@@ -27,7 +27,7 @@ public class BonusPackUtil {
         String reviewAudioBaseUrl = bonusPacksUrls.getReviewAudioBaseUrl();
 
         List<CSVRecord> csvRecords = urlToCsv(bonusPackFileUrl);
-        if (csvRecords.size() != 0 ) {
+        if (csvRecords.size() != 0) {
             Map<String, String> csvRecordHeader = convertToUpperCSVRecordHeaderMap(csvRecords.get(0));
             String packGroupNumberKey = findRealHeaderName(csvRecordHeader, HEADER_FP, HEADER_BP);
 
@@ -41,20 +41,21 @@ public class BonusPackUtil {
         return bonusPacksInUnit;
     }
 
-    private static BonusPackInUnit groupToBonusPacksInUnit(Map.Entry<String, List<CSVRecord>> group, Map<String, String> csvRecordHeader, String reviewAudioBaseUrl) {
-            String packGroupNumber = group.getKey().trim();
-            if (isNumeric(packGroupNumber)) {
-                BonusPackInUnit bonusPackInUnit = new BonusPackInUnit();
-                List<BonusCard> bonusPack = group.getValue().stream()
-                        .map(csvRecord -> csvRecordToBonusCard(csvRecord, csvRecordHeader, reviewAudioBaseUrl))
-                        .collect(Collectors.toList());
-                bonusPackInUnit.setPackGroupNumber(parseInt(packGroupNumber));
-                bonusPackInUnit.setBonusPack(bonusPack);
-                return bonusPackInUnit;
-            }
-            return null;
+    private static BonusPackInUnit groupToBonusPacksInUnit(Map.Entry<String, List<CSVRecord>> group,
+                                                           Map<String, String> csvRecordHeader, String reviewAudioBaseUrl) {
+        String packGroupNumber = group.getKey().trim();
+        if (isNumeric(packGroupNumber)) {
+            BonusPackInUnit bonusPackInUnit = new BonusPackInUnit();
+            List<BonusCard> bonusPack = group.getValue().stream()
+                .map(csvRecord -> csvRecordToBonusCard(csvRecord, csvRecordHeader, reviewAudioBaseUrl))
+                .collect(Collectors.toList());
+            bonusPackInUnit.setPackGroupNumber(parseInt(packGroupNumber));
+            bonusPackInUnit.setBonusPack(bonusPack);
+            return bonusPackInUnit;
+        }
+        return null;
 
-}
+    }
 
     private static BonusCard csvRecordToBonusCard(CSVRecord csvRecord, Map<String, String> csvRecordHeader, String reviewAudioBaseUrl) {
         String transliterationKey = findRealHeaderName(csvRecordHeader, HEADER_TRANSLITERATION);

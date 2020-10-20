@@ -45,7 +45,8 @@ public class PCMProgressConverter {
             String mediaSetId = currentMediaSet.get().getValue().toString();
             String productCode = mediaSetId.substring(customerId.length());
             Optional<UserAppStateDatum> currentMediaItem = edtProgresses.stream()
-                    .filter(progress -> progress.getKey().contains(mediaSetId) && progress.getKey().contains(CURRENT_MEDIA_ITEM_HISTORY_ID))
+                    .filter(progress -> progress.getKey().contains(mediaSetId) &&
+                        progress.getKey().contains(CURRENT_MEDIA_ITEM_HISTORY_ID))
                     .findFirst();
             if (currentMediaItem.isPresent()) {
                 String mediaItemId = currentMediaItem.get().getValue().toString().substring(mediaSetId.length());

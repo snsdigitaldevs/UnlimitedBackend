@@ -17,7 +17,7 @@ public class LoginController {
 
 
     @GetMapping("/login")
-//  http://localhost:8080/login?state=abc&client_id=alexa-skill&scope=order_car%20basic_profile&response_type=code&redirect_uri=https%3A%2F%2Fpitangui.amazon.com%2Fspa%2Fskill%2Faccount-linking-status.html%3FvendorId%3DAAAAAAAAAAAAAA
+    //  http://localhost:8080/login?state=abc&client_id=alexa-skill&scope=order_car%20basic_profile&response_type=code&redirect_uri=https%3A%2F%2Fpitangui.amazon.com%2Fspa%2Fskill%2Faccount-linking-status.html%3FvendorId%3DAAAAAAAAAAAAAA
     public String login(HttpServletRequest request,
                         @RequestParam(name = "state", required = false) String state,
                         @RequestParam(name = "client_id", required = false) String clientId,

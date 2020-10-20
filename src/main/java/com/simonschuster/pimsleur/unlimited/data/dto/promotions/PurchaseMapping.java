@@ -78,6 +78,7 @@ public class PurchaseMapping {
     public String getISBN() {
         return iSBN;
     }
+
     public void setISBN(String iSBN) {
         this.iSBN = iSBN;
     }

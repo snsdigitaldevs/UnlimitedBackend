@@ -39,7 +39,8 @@ public class SpeakEasyAndReadingUtil {
         return getPracticesInUnits(csvUrl, HEADER_PREMIUM_RL_DAY, HEADER_ENGLISH_TRANSLATION, HEADER_LANGUAGE, HEADER_RL_ITEM, true);
     }
 
-    private static List<PracticesInUnit> getPracticesInUnits(String csvUrl, String alterKey, String text, String nativeText, String order, boolean isReading) throws IOException {
+    private static List<PracticesInUnit> getPracticesInUnits(String csvUrl, String alterKey, String text, String nativeText,
+                                                             String order, boolean isReading) throws IOException {
         if (csvUrl == null) {
             return emptyList();
         }

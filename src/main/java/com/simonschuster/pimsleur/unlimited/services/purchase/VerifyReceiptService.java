@@ -89,8 +89,8 @@ public class VerifyReceiptService {
         //if app is in apple evaluation process, purchase is verified by apple test environment
         boolean verifyPurchaseInAppleTestEnv =
             (appVersion.equals(activeAppVersion)) && storeDomain.toLowerCase().contains("ios");
-        if (StringUtils.equalsIgnoreCase(StoreDomainConstants.ANDROID_IN_APP, storeDomain)
-            && StringUtils.isBlank(verifyReceiptBody.getReceipt())) {
+        if (StringUtils.equalsIgnoreCase(StoreDomainConstants.ANDROID_IN_APP, storeDomain) &&
+            StringUtils.isBlank(verifyReceiptBody.getReceipt())) {
             receipt = "nothing";
         }
         if (verifyPurchaseInAppleTestEnv) {

@@ -54,7 +54,8 @@ public class AvailableProductsService {
                 .join();
     }
 
-    private AvailableProductsDto getAvailableProductsDto(List<AvailableProductDto> purchasedProducts, List<AvailableProductDto> pcmFreeLessons) {
+    private AvailableProductsDto getAvailableProductsDto(List<AvailableProductDto> purchasedProducts,
+                                                         List<AvailableProductDto> pcmFreeLessons) {
         List<AvailableProductDto> freeProducts = getFreeProducts(purchasedProducts, pcmFreeLessons);
         return new AvailableProductsDto(purchasedProducts, freeProducts);
     }
@@ -64,15 +65,13 @@ public class AvailableProductsService {
         return getAllAvailableProducts(sub, email, storeDomain);
     }
 
-    private List<AvailableProductDto> getAllAvailableProducts(String sub, String email, String storeDomain)
-    {
+    private List<AvailableProductDto> getAllAvailableProducts(String sub, String email, String storeDomain) {
         CustomerInfo customerInfo = customerInfoService.getPuAndPCMCustomerInfos(sub, storeDomain, email);
         ResultData resultData = customerInfo.getResultData();
         if (resultData != null) {
             List<AvailableProductDto> availableProductDto =
                     resultData.getCustomer().getAllOrdersProducts().stream()
-                            .flatMap(order ->
-                            {
+                            .flatMap(order -> {
                                 boolean puProduct = order.isPUProduct();
                                 Stream<AvailableProductDto> availableProductDtoStream =
                                         puProduct ?
@@ -117,8 +116,7 @@ public class AvailableProductsService {
                 dto.setProductCodeForUpsell(product.getProductCode());
                 return dto;
             });
-        }
-        else {
+        } else {
             AvailableProductDto dto =
                     new AvailableProductDto(
                             product.getProductsLanguageName(),
@@ -177,8 +175,8 @@ public class AvailableProductsService {
     }
 
     private boolean isInAppPurchase(String storeDomain) {
-        return StringUtils.equalsIgnoreCase(StoreDomainConstants.ANDROID_IN_APP, storeDomain)
-            || StringUtils.equalsIgnoreCase(StoreDomainConstants.IOS_IN_APP, storeDomain);
+        return StringUtils.equalsIgnoreCase(StoreDomainConstants.ANDROID_IN_APP, storeDomain) ||
+            StringUtils.equalsIgnoreCase(StoreDomainConstants.IOS_IN_APP, storeDomain);
     }
 
 

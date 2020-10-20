@@ -60,8 +60,8 @@ public class UnlimitedProgressConverter {
     private static void getCurrentForEachSubUser(List<ProgressDTO> result, HashMap<String, Long> currentLastPlayedDateMap) {
         for (String subUserID : currentLastPlayedDateMap.keySet()) {
             result.stream()
-                    .filter(progress -> progress.getSubUserID().equals(subUserID)
-                            && Objects.equals(progress.getLastPlayedDate(), currentLastPlayedDateMap.get(subUserID)))
+                    .filter(progress -> progress.getSubUserID().equals(subUserID) &&
+                        Objects.equals(progress.getLastPlayedDate(), currentLastPlayedDateMap.get(subUserID)))
                     .findFirst()
                     .get()
                     // there is one and only one item after filer
@@ -69,7 +69,8 @@ public class UnlimitedProgressConverter {
         }
     }
 
-    private static Consumer<UserAppStateDatum> getUserAppStateDatumConsumer(String subUserID, ProgressDTO progressDTO, HashMap<String, Long> currentLastPlayedDateMap) {
+    private static Consumer<UserAppStateDatum> getUserAppStateDatumConsumer(String subUserID, ProgressDTO progressDTO,
+                                                                            HashMap<String, Long> currentLastPlayedDateMap) {
         return progress -> {
             switch (progress.getKey().split("#")[1]) {
                 case COMPLETED:

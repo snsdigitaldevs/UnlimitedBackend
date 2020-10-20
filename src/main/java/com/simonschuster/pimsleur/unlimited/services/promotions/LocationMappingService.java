@@ -1,14 +1,10 @@
 package com.simonschuster.pimsleur.unlimited.services.promotions;
 
-import com.google.common.collect.Lists;
 import com.maxmind.geoip2.DatabaseReader;
 import com.maxmind.geoip2.exception.GeoIp2Exception;
 import com.maxmind.geoip2.model.CityResponse;
 import com.maxmind.geoip2.record.Country;
-import com.simonschuster.pimsleur.unlimited.constants.CommonConstants;
 import com.simonschuster.pimsleur.unlimited.data.dto.price.LocationInfoDTO;
-import java.util.List;
-import org.apache.commons.lang3.RandomUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -39,37 +39,36 @@ public class PcmMediaItemsFilterService {
         }
     }
 
-    private List<MediaItemsByLevel> filterItemIdsOfAllLevels(List<MediaSetByLevel> entitlementTokens, String productCode, Map<String, OrdersProduct> ordersProductList) {
+    private List<MediaItemsByLevel> filterItemIdsOfAllLevels(List<MediaSetByLevel> entitlementTokens, String productCode,
+                                                             Map<String, OrdersProduct> ordersProductList) {
         OrdersProduct orderProduct = ordersProductList.get(productCode);
 
         Optional<List<MediaItemsByLevel>> matchedMediaItemsAllLevelAllOrders = orderProduct.getOrdersProductsAttributes()
-                .stream()
-                .filter(OrdersProductAttribute::isDownload)
-                .map(attribute -> {
-                    List<MediaItemsByLevel> matchedMediaItemsByLevel = new ArrayList<>();
-                    attribute.getOrdersProductsDownloads()
-                            .stream()
-                            .peek(download -> {
-                                String level = download.getMediaSet().getProduct().getProductsLevel().toString();
-                                entitlementTokens.add(new MediaSetByLevel(level, download.getEntitlementToken(), download.getMediaSetId()));
-                            })
-                            .forEach(downloadInfo -> {
-                                List<MediaItem> matchedMediaItems = new ArrayList<>();
-
-                                String levelInDownload = downloadInfo.getMediaSet().getProduct().getProductsLevel().toString();
-                                downloadInfo.getMediaSet().getChildMediaSets().stream()
-                                        .filter(ChildMediaSet::isLesson)
-                                        .flatMap(childMediaSet -> childMediaSet.getMediaItems().stream())
-                                        .filter(MediaItem::isLesson)
-                                        .forEach(matchedMediaItems::add);
-                                matchedMediaItemsByLevel.add(new MediaItemsByLevel(levelInDownload, matchedMediaItems));
-                            });
-                    return matchedMediaItemsByLevel;
-                })
-                .reduce((result, matchedMediaItemsAllLevelForOneOrder) -> {
-                    result.addAll(matchedMediaItemsAllLevelForOneOrder);
-                    return result;
-                });
+            .stream()
+            .filter(OrdersProductAttribute::isDownload)
+            .map(attribute -> {
+                List<MediaItemsByLevel> matchedMediaItemsByLevel = new ArrayList<>();
+                attribute.getOrdersProductsDownloads().stream()
+                    .peek(download -> {
+                        String level = download.getMediaSet().getProduct().getProductsLevel().toString();
+                        entitlementTokens.add(new MediaSetByLevel(level, download.getEntitlementToken(), download.getMediaSetId()));
+                    })
+                    .forEach(downloadInfo -> {
+                        List<MediaItem> matchedMediaItems = new ArrayList<>();
+                        String levelInDownload = downloadInfo.getMediaSet().getProduct().getProductsLevel().toString();
+                        downloadInfo.getMediaSet().getChildMediaSets().stream()
+                            .filter(ChildMediaSet::isLesson)
+                            .flatMap(childMediaSet -> childMediaSet.getMediaItems().stream())
+                            .filter(MediaItem::isLesson)
+                            .forEach(matchedMediaItems::add);
+                        matchedMediaItemsByLevel.add(new MediaItemsByLevel(levelInDownload, matchedMediaItems));
+                    });
+                return matchedMediaItemsByLevel;
+            })
+            .reduce((result, matchedMediaItemsAllLevelForOneOrder) -> {
+                result.addAll(matchedMediaItemsAllLevelForOneOrder);
+                return result;
+            });
 
         return matchedMediaItemsAllLevelAllOrders.isPresent() ? matchedMediaItemsAllLevelAllOrders.get() : new ArrayList<>();
     }

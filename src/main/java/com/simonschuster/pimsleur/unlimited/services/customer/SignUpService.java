@@ -46,7 +46,8 @@ public class SignUpService {
 
         String template = applicationConfiguration.getProperty("edt.api.signUp.parameters.signUp").replace("wpc=%s&", "");
         String queryStrings = "/?" + String.format(template, userName, appId, email, storeDomain, countryCode);
-        MultiValueMap<String, String> params = new LinkedMultiValueMap<>(UriComponentsBuilder.fromUriString(queryStrings).build().getQueryParams());
+        MultiValueMap<String, String> params = new LinkedMultiValueMap<>(
+            UriComponentsBuilder.fromUriString(queryStrings).build().getQueryParams());
         params.add("wpc", password);
 
         HttpEntity<MultiValueMap<String, String>> entity = new HttpEntity<>(params, headers);

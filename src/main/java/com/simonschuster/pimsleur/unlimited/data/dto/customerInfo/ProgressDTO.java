@@ -51,7 +51,7 @@ public class ProgressDTO {
         return lastPlayedDate;
     }
 
-    public String computeIdentifier(){
+    public String computeIdentifier() {
         return productCode + "_" + mediaItemId;
     }
 

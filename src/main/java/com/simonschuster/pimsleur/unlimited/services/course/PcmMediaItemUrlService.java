@@ -35,8 +35,8 @@ public class PcmMediaItemUrlService {
                 MediaItemUrl.class);
     }
 
-    public BatchedMediaItemUrls getBatchedMediaItemUrls(Integer mediaSetId, String customerToken,
-                                                        String entitlementToken, Integer customersId, String storeDomain) {
+    public BatchedMediaItemUrls getBatchedMediaItemUrls(Integer mediaSetId, String customerToken, String entitlementToken,
+                                                        Integer customersId, String storeDomain) {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(APPLICATION_FORM_URLENCODED);
 

@@ -110,5 +110,13 @@
     "level": 1,
     "isSubscription": false,
     "puProduct": true
+  },
+  {
+    "languageName": "Hebrew",
+    "filterLanguageName": "Hebrew",
+    "productCode": "9781797115214",
+    "level": 1,
+    "isSubscription": false,
+    "puProduct": true
   }
 ]

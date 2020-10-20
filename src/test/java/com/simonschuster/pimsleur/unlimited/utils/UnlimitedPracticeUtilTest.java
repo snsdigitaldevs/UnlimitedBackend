@@ -35,4 +35,12 @@ public class UnlimitedPracticeUtilTest {
         assertThat(result.startsWith(UnlimitedPracticeUtil.EXCLAMATION), is(true));
     }
 
+    @Test
+    public void should_move_ellipses_three_to_left() {
+        String sentence ="אחרי הסרט ...";
+        String result = UnlimitedPracticeUtil.movePunctuatorToLeftForHebrew(sentence);
+
+        assertThat(result, not(sentence));
+        assertThat(result.startsWith("... "), is(true));
+    }
 }

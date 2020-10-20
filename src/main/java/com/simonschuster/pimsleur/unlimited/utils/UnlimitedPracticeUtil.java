@@ -25,7 +25,8 @@ public class UnlimitedPracticeUtil {
     public static final String PERIOD = ".";
     private static final String ARABIC_PERIOD = ".\u200E";
     private static final String EXCLAMATION_MARK = "!";
-    private static final String ELLIPSES_THREE = "...";
+    public static final String ELLIPSES_THREE = "...";
+    public static final String ELLIPSES_THREE_EMPTY = " ...";
     private static final String ELLIPSES_ONE = "…";
 
     public static String getUnitNumString(CSVRecord record, String unitNumKey) {
@@ -209,9 +210,9 @@ public class UnlimitedPracticeUtil {
     }
 
     public static String movePunctuatorToLeftForHebrew(String sentence) {
-        for (String punctuator : Arrays.asList(QUOTE, EXCLAMATION, PERIOD)) {
+        for (String punctuator : Arrays.asList(ELLIPSES_THREE_EMPTY, QUOTE, EXCLAMATION, PERIOD)) {
             if (sentence.endsWith(punctuator)) {
-                return punctuator + sentence.substring(0, sentence.length() - punctuator.length());
+                return new StringBuffer(punctuator).reverse() + sentence.substring(0, sentence.length() - punctuator.length());
             }
         }
         return sentence;

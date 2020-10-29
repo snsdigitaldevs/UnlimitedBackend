@@ -24,31 +24,4 @@ public class PuAvailablePracticesService {
 
         return installationFileList.collectPracticeUrls();
     }
-
-    public void handleForArabic(String productCode, String storeDomain,
-                                List<PracticesInUnit> allPracticesInUnits) {
-        if (CommonConstants.ARABIC_PU_ISBN.contains(productCode)) {
-            if (StringUtils.equalsIgnoreCase(StoreDomainConstants.WEB_DOMAIN, storeDomain)) {
-                movePeriodToLeftForArabic(allPracticesInUnits);
-            }
-        }
-    }
-
-    private void movePeriodToLeftForArabic(List<PracticesInUnit> allPracticesInUnits) {
-        allPracticesInUnits.forEach(practicesInUnit -> {
-            practicesInUnit.getQuickMatches().forEach(quickMatch -> {
-                quickMatch.getAnswer().setCue(
-                        UnlimitedPracticeUtil.moveEndToLeftIfNeed(quickMatch.getAnswer().getCue()));
-            });
-            practicesInUnit.getFlashCards().forEach(flashCard -> {
-                flashCard.setLanguage(UnlimitedPracticeUtil.moveEndToLeftIfNeed(flashCard.getLanguage()));
-            });
-            practicesInUnit.getSpeakEasies().forEach(speakEasy -> {
-                speakEasy.setNativeText(UnlimitedPracticeUtil.moveEndToLeftIfNeed(speakEasy.getNativeText()));
-            });
-            practicesInUnit.getReadings().forEach(reading -> {
-                reading.setNativeText(UnlimitedPracticeUtil.moveEndToLeftIfNeed(reading.getNativeText()));
-            });
-        });
-    }
 }

@@ -182,26 +182,4 @@ public class UnlimitedPracticeUtil {
                 })
                 .collect(Collectors.joining("\n"));
     }
-
-    public static String moveEndToLeftIfNeed(String translation) {
-        if (StringUtils.endsWith(translation, ELLIPSES_THREE)) {
-            return ELLIPSES_THREE + translation
-                .substring(0, translation.length() - ELLIPSES_THREE.length());
-        }
-        if (StringUtils.endsWith(translation, ELLIPSES_ONE)) {
-            return ELLIPSES_ONE + translation
-                .substring(0, translation.length() - ELLIPSES_ONE.length());
-        }
-        if (StringUtils.endsWith(translation, PERIOD)) {
-            return PERIOD + translation.substring(0, translation.length() - PERIOD.length());
-        }
-        if (StringUtils.endsWith(translation, ARABIC_PERIOD)) {
-            return PERIOD + translation.substring(0, translation.length() - ARABIC_PERIOD.length());
-        }
-        if (StringUtils.endsWith(translation, EXCLAMATION_MARK)) {
-            return EXCLAMATION_MARK + translation
-                .substring(0, translation.length() - EXCLAMATION_MARK.length());
-        }
-        return translation;
-    }
 }

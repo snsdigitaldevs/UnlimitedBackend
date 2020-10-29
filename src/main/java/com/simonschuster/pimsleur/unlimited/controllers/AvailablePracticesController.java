@@ -52,7 +52,6 @@ public class AvailablePracticesController {
             List<PracticesInUnit> flashCards = csvToFlashCards(practicesUrls);
             List<PracticesInUnit> quickMatches = getQuickMatchesByCsvUrl(practicesUrls);
             AvailablePractices availablePractices = new AvailablePractices(mergeLists(readings, speakEasies, flashCards, quickMatches));
-            puAvailablePracticesService.handleForArabic(productCode, storeDomain, availablePractices.getPracticesInUnits());
             return availablePractices;
         } else {
             return new AvailablePractices(mergeLists(Collections.emptyList(),

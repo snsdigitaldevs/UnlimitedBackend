@@ -34,15 +34,6 @@ public class PuAvailablePracticesService {
         }
     }
 
-    public void handlePunctuatorForHebrew(String productCode, String storeDomain, List<PracticesInUnit> allPracticesInUnits) {
-        if (CommonConstants.HEBREW_PU_ISBN.contains(productCode) && StringUtils.equalsIgnoreCase(StoreDomainConstants.WEB_DOMAIN, storeDomain)) {
-            allPracticesInUnits.stream().flatMap(practicesInUnit -> practicesInUnit.getQuickMatches().stream()).forEach(quickMatch -> quickMatch.getAnswer().setCue(UnlimitedPracticeUtil.movePunctuatorToLeftForHebrew(quickMatch.getAnswer().getCue())));
-            allPracticesInUnits.stream().flatMap(practicesInUnit -> practicesInUnit.getFlashCards().stream()).forEach(flashCard -> flashCard.setLanguage(UnlimitedPracticeUtil.movePunctuatorToLeftForHebrew(flashCard.getLanguage())));
-            allPracticesInUnits.stream().flatMap(practicesInUnit -> practicesInUnit.getSpeakEasies().stream()).forEach(speakEasy -> speakEasy.setNativeText(UnlimitedPracticeUtil.movePunctuatorToLeftForHebrew(speakEasy.getNativeText())));
-            allPracticesInUnits.stream().flatMap(practicesInUnit -> practicesInUnit.getReadings().stream()).forEach(reading -> reading.setNativeText(UnlimitedPracticeUtil.movePunctuatorToLeftForHebrew(reading.getNativeText())));
-        }
-    }
-
     private void movePeriodToLeftForArabic(List<PracticesInUnit> allPracticesInUnits) {
         allPracticesInUnits.forEach(practicesInUnit -> {
             practicesInUnit.getQuickMatches().forEach(quickMatch -> {

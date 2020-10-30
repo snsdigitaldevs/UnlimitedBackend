@@ -4,9 +4,9 @@
 3,HE,Hebrew 2,1 ,,02Q,N,I bought a lot of things.,,9781797114514_Hebrew_2_QZ_003.mp3,9781442330801,9781797114514,"11,14"
 4,HE,Hebrew 2,1 ,,02R,M,קניתי הרבה דברים.,Kaniti harbe dvarim.,9781797114514_Hebrew_2_QZ_004.mp3,9781442330801,9781797114514,"11,14"
 5,HE,Hebrew 2,1 ,,03Q,N,We went to the Wailing Wall.,,9781797114514_Hebrew_2_QZ_005.mp3,9781442330801,9781797114514,18
-6,HE,Hebrew 2,1 ,,03R,M,הלכנו לכותל המערבי,Halachnu laKotel Ha'ma’aravi.,9781797114514_Hebrew_2_QZ_006.mp3,9781442330801,9781797114514,18
-7,HE,Hebrew 2,1 ,,04Q,N,I bought a newspaper.,,9781797114514_Hebrew_2_QZ_007.mp3,9781442330801,9781797114514,14
-8,HE,Hebrew 2,1 ,,04R,M,קניתי עיתון.,Kaniti mashehu.,9781797114514_Hebrew_2_QZ_008.mp3,9781442330801,9781797114514,14
+6,HE,Hebrew 2,1 ,,03R,M,הלכנו לכותל המערבי.,Halachnu laKotel Ha'ma’aravi.,9781797114514_Hebrew_2_QZ_006.mp3,9781442330801,9781797114514,18
+7,HE,Hebrew 2,1 ,,04Q,N,I bought something.,,9781797114514_Hebrew_2_QZ_007.mp3,9781442330801,9781797114514,14
+8,HE,Hebrew 2,1 ,,04R,M,קניתי משהו.,Kaniti mashehu.,9781797114514_Hebrew_2_QZ_008.mp3,9781442330801,9781797114514,14
 9,HE,Hebrew 2,1 ,,05Q,N,I like Tel Aviv very much.,,9781797114514_Hebrew_2_QZ_009.mp3,9781442330801,9781797114514,18
 10,HE,Hebrew 2,1 ,,05R,M,תל אביב מאודמוצאת חן בעיני.,Tel Aviv meod motzet chen be’einai.,9781797114514_Hebrew_2_QZ_010.mp3,9781442330801,9781797114514,18
 11,HE,Hebrew 2,1 ,,06Q,N,Where are you going?  (on foot) (f),,9781797114514_Hebrew_2_QZ_011.mp3,9781442330801,9781797114514,"7,16"
@@ -56,7 +56,7 @@
 55,HE,Hebrew 2,3 ,,08Q,N,We want to see our son.,,9781797114514_Hebrew_2_QZ_055.mp3,9781442330801,9781797114514,5
 56,HE,Hebrew 2,3 ,,08R,F,אנחנו רוצים לראות את הבן שלנו.,Anachnu rotzim lir'ot et ha'ben shelanu.,9781797114514_Hebrew_2_QZ_056.mp3,9781442330801,9781797114514,5
 57,HE,Hebrew 2,3 ,,09Q,N,Our son didn’t stay in America.,,9781797114514_Hebrew_2_QZ_057.mp3,9781442330801,9781797114514,5
-58,HE,Hebrew 2,3 ,,09R,F,הבן שלנו לא נשאר באמריקה.,Ha'ben shelanu lo nish’ar be'America,9781797114514_Hebrew_2_QZ_058.mp3,9781442330801,9781797114514,5
+58,HE,Hebrew 2,3 ,,09R,F,הבן שלנו לא נשאר באמריקה.,p,9781797114514_Hebrew_2_QZ_058.mp3,9781442330801,9781797114514,5
 59,HE,Hebrew 2,3 ,,10Q,N,Yesterday morning I didn’t see anything.,,9781797114514_Hebrew_2_QZ_059.mp3,9781442330801,9781797114514,18
 60,HE,Hebrew 2,3 ,,10R,F,אתמול בבוקר לא ראיתי כלום.,Etmol ba'boker lo raeeti kloom.,9781797114514_Hebrew_2_QZ_060.mp3,9781442330801,9781797114514,18
 61,HE,Hebrew 2,4 ,,01Q,N,I’m familiar with Eilat. (m),,9781797114514_Hebrew_2_QZ_061.mp3,9781442330801,9781797114514,18
@@ -138,11 +138,11 @@
 137,HE,Hebrew 2,7 ,,08Q,N,The two of us can go on foot.,,9781797114514_Hebrew_2_QZ_137.mp3,9781442330801,9781797114514,12
 138,HE,Hebrew 2,7 ,,08R,F,שנינו יכולים ללכת ברגל.,Shneinu yecholim la'lechet baregel.,9781797114514_Hebrew_2_QZ_138.mp3,9781442330801,9781797114514,12
 139,HE,Hebrew 2,7 ,,09Q,N,They've lived in Eilat three years.,,9781797114514_Hebrew_2_QZ_139.mp3,9781442330801,9781797114514,"7,12,18"
-140,HE,Hebrew 2,7 ,,09R,F,הם גרים באילת שלוש שנים.,Hem garim be'Eilat shalosh shanim,9781797114514_Hebrew_2_QZ_140.mp3,9781442330801,9781797114514,"7,12,18"
+140,HE,Hebrew 2,7 ,,09R,F,הם גרים באילת שלוש שנים.,Hem garim be'Eilat shalosh shanim.,9781797114514_Hebrew_2_QZ_140.mp3,9781442330801,9781797114514,"7,12,18"
 141,HE,Hebrew 2,7 ,,10Q,N,We went there yesterday.,,9781797114514_Hebrew_2_QZ_141.mp3,9781442330801,9781797114514,18
 142,HE,Hebrew 2,7 ,,10R,F,הלכנו לשם אתמול.,Halachnu le’sham etmol.,9781797114514_Hebrew_2_QZ_142.mp3,9781442330801,9781797114514,18
-143,HE,Hebrew 2,8 ,,01Q,N,Until what time ...?,,9781797114514_Hebrew_2_QZ_143.mp3,9781442330801,9781797114514,17
-144,HE,Hebrew 2,8 ,,01R,M,עד איזה שעה ...?,Ad eize sha’a ...?,9781797114514_Hebrew_2_QZ_144.mp3,9781442330801,9781797114514,17
+143,HE,Hebrew 2,8 ,,01Q,N,Until what time?,,9781797114514_Hebrew_2_QZ_143.mp3,9781442330801,9781797114514,17
+144,HE,Hebrew 2,8 ,,01R,M,עד איזה שעה?,Ad eize sha’a?,9781797114514_Hebrew_2_QZ_144.mp3,9781442330801,9781797114514,17
 145,HE,Hebrew 2,8 ,,02Q,N,Everything’s OK.,,9781797114514_Hebrew_2_QZ_145.mp3,9781442330801,9781797114514,7
 146,HE,Hebrew 2,8 ,,02R,M,הכל בסדר.,Ha'kol bseder.,9781797114514_Hebrew_2_QZ_146.mp3,9781442330801,9781797114514,7
 147,HE,Hebrew 2,8 ,,03Q,N,My colleague is coming to visit us.,,9781797114514_Hebrew_2_QZ_147.mp3,9781442330801,9781797114514,7
@@ -165,8 +165,8 @@
 164,HE,Hebrew 2,9 ,,01R,M,בעשרה לחמש.,Be'asara le’chamesh.,9781797114514_Hebrew_2_QZ_164.mp3,9781442330801,9781797114514,12
 165,HE,Hebrew 2,9 ,,02Q,N,Of course.,,9781797114514_Hebrew_2_QZ_165.mp3,9781442330801,9781797114514,7
 166,HE,Hebrew 2,9 ,,02R,M,בודאי.,Be'vadai.,9781797114514_Hebrew_2_QZ_166.mp3,9781442330801,9781797114514,7
-167,HE,Hebrew 2,9 ,,03Q,N,On Monday or on Tuesday.,,9781797114514_Hebrew_2_QZ_167.mp3,9781442330801,9781797114514,14
-168,HE,Hebrew 2,9 ,,03R,M,ביום שני או ביום שלישי.,Be'yom sheni o be'yom shlishi.,9781797114514_Hebrew_2_QZ_168.mp3,9781442330801,9781797114514,14
+167,HE,Hebrew 2,9 ,,03Q,N,On Monday or on Tuesday.,,9781797114514_Hebrew_2_QZ_167.mp3,9781442330801,9781797114514,17
+168,HE,Hebrew 2,9 ,,03R,M,ביום שני או ביום שלישי.,Be'yom sheni o be'yom shlishi.,9781797114514_Hebrew_2_QZ_168.mp3,9781442330801,9781797114514,17
 169,HE,Hebrew 2,9 ,,04Q,N,How about going into town by bus?,,9781797114514_Hebrew_2_QZ_169.mp3,9781442330801,9781797114514,18
 170,HE,Hebrew 2,9 ,,04R,M,מה דעתך שניסע העירה באוטובוס?,Ma da’atech she nisa haeera be'otobus?,9781797114514_Hebrew_2_QZ_170.mp3,9781442330801,9781797114514,18
 171,HE,Hebrew 2,9 ,,05Q,N,Or going by car?,,9781797114514_Hebrew_2_QZ_171.mp3,9781442330801,9781797114514,18
@@ -185,7 +185,7 @@
 184,HE,Hebrew 2,10 ,,01R,M,אני צריך לקנות משהו בשבילו.,Ani tzarich liknot mashehu bishvilo.,9781797114514_Hebrew_2_QZ_184.mp3,9781442330801,9781797114514,14
 185,HE,Hebrew 2,10 ,,02Q,N,For whom?,,9781797114514_Hebrew_2_QZ_185.mp3,9781442330801,9781797114514,7
 186,HE,Hebrew 2,10 ,,02R,M,בשביל מי?,Bishvil mee?,9781797114514_Hebrew_2_QZ_186.mp3,9781442330801,9781797114514,7
-187,HE,Hebrew 2,10 ,,03Q,N,"Her son, too is coming.",,9781797114514_Hebrew_2_QZ_187.mp3,9781442330801,9781797114514,5
+187,HE,Hebrew 2,10 ,,03Q,N,Her son too is coming.,,9781797114514_Hebrew_2_QZ_187.mp3,9781442330801,9781797114514,5
 188,HE,Hebrew 2,10 ,,03R,M,גם הבן שלה בא.,Gam ha'ben shela ba.,9781797114514_Hebrew_2_QZ_188.mp3,9781442330801,9781797114514,5
 189,HE,Hebrew 2,10 ,,04Q,N,Her son isn’t coming.,,9781797114514_Hebrew_2_QZ_189.mp3,9781442330801,9781797114514,5
 190,HE,Hebrew 2,10 ,,04R,M,הבן שלה לא בא.,Ha'ben shela lo ba.,9781797114514_Hebrew_2_QZ_190.mp3,9781442330801,9781797114514,5
@@ -193,8 +193,8 @@
 192,HE,Hebrew 2,10 ,,05R,M,הם גרים במלון.,Hem garim ba'malon.,9781797114514_Hebrew_2_QZ_192.mp3,9781442330801,9781797114514,18
 193,HE,Hebrew 2,10 ,,06Q,N,He’s staying at my place.,,9781797114514_Hebrew_2_QZ_193.mp3,9781442330801,9781797114514,18
 194,HE,Hebrew 2,10 ,,06R,F,הוא גר אצלי.,Hu gar etzli.,9781797114514_Hebrew_2_QZ_194.mp3,9781442330801,9781797114514,18
-195,HE,Hebrew 2,10 ,,07Q,N,my husband and my son,,9781797114514_Hebrew_2_QZ_195.mp3,9781442330801,9781797114514,5
-196,HE,Hebrew 2,10 ,,07R,F,בעלי והבן שלי,ba’ali ve’ha'ben sheli,9781797114514_Hebrew_2_QZ_196.mp3,9781442330801,9781797114514,5
+195,HE,Hebrew 2,10 ,,07Q,N,My husband and my son.,,9781797114514_Hebrew_2_QZ_195.mp3,9781442330801,9781797114514,5
+196,HE,Hebrew 2,10 ,,07R,F,בעלי והבן שלי.,Ba’ali ve’ha'ben sheli.,9781797114514_Hebrew_2_QZ_196.mp3,9781442330801,9781797114514,5
 197,HE,Hebrew 2,10 ,,08Q,N,Let’s go there together. (f),,9781797114514_Hebrew_2_QZ_197.mp3,9781442330801,9781797114514,7
 198,HE,Hebrew 2,10 ,,08R,F,בוא ניסע לשם ביחד.,Bo nisa le'sham be'yachad.,9781797114514_Hebrew_2_QZ_198.mp3,9781442330801,9781797114514,7
 199,HE,Hebrew 2,10 ,,09Q,N,How about we go to the Garden Café?,,9781797114514_Hebrew_2_QZ_199.mp3,9781442330801,9781797114514,"1,6"
@@ -204,7 +204,7 @@
 203,HE,Hebrew 2,10 ,,11Q,N,Until when are they staying?,,9781797114514_Hebrew_2_QZ_203.mp3,9781442330801,9781797114514,18
 204,HE,Hebrew 2,10 ,,11R,F,עד מתי הם נשארים?,Ad matai hem nish’arim?,9781797114514_Hebrew_2_QZ_204.mp3,9781442330801,9781797114514,18
 205,HE,Hebrew 2,11 ,,01Q,N,"On Friday, but not on Saturday.",,9781797114514_Hebrew_2_QZ_205.mp3,9781442330801,9781797114514,17
-206,HE,Hebrew 2,11 ,,01R,M,"ביום שישי, אבל לא בשבת.","Be'yom shishi, aval lo be'shabat",9781797114514_Hebrew_2_QZ_206.mp3,9781442330801,9781797114514,17
+206,HE,Hebrew 2,11 ,,01R,M,"ביום שישי, אבל לא בשבת.","Be'yom shishi, aval lo be'shabat.",9781797114514_Hebrew_2_QZ_206.mp3,9781442330801,9781797114514,17
 207,HE,Hebrew 2,11 ,,02Q,N,She’s arriving with her son.,,9781797114514_Hebrew_2_QZ_207.mp3,9781442330801,9781797114514,"5,18"
 208,HE,Hebrew 2,11 ,,02R,M,היא מגיעה עם הבן שלה.,Hee mageeah im ha'ben shela.,9781797114514_Hebrew_2_QZ_208.mp3,9781442330801,9781797114514,"5,18"
 209,HE,Hebrew 2,11 ,,03Q,N,Here’s a letter from my friend. (f),,9781797114514_Hebrew_2_QZ_209.mp3,9781442330801,9781797114514,"3,5"
@@ -233,8 +233,8 @@
 232,HE,Hebrew 2,12 ,,04R,M,לקולנוע או לקונצרט?,La'kolnoa o la'kontzert?,9781797114514_Hebrew_2_QZ_232.mp3,9781442330801,9781797114514,1
 233,HE,Hebrew 2,12 ,,05Q,N,What’s your name? (m),,9781797114514_Hebrew_2_QZ_233.mp3,9781442330801,9781797114514,7
 234,HE,Hebrew 2,12 ,,05R,M,מה שמך?,Ma shimcha?,9781797114514_Hebrew_2_QZ_234.mp3,9781442330801,9781797114514,7
-235,HE,Hebrew 2,12 ,,06Q,N,When does the concert begin?,,9781797114514_Hebrew_2_QZ_235.mp3,9781442330801,9781797114514,"1,10,16"
-236,HE,Hebrew 2,12 ,,06R,F,מתי הקונצרט מתחיל?,Matai ha'kontzert matchil?,9781797114514_Hebrew_2_QZ_236.mp3,9781442330801,9781797114514,"1,10,16"
+235,HE,Hebrew 2,12 ,,06Q,N,When does the concert begin?,,9781797114514_Hebrew_2_QZ_235.mp3,9781442330801,9781797114514,"1,16"
+236,HE,Hebrew 2,12 ,,06R,F,מתי הקונצרט מתחיל?,Matai ha'kontzert matchil?,9781797114514_Hebrew_2_QZ_236.mp3,9781442330801,9781797114514,"1,16"
 237,HE,Hebrew 2,12 ,,07Q,N,"You’re staying in Tel Aviv, right? (m)",,9781797114514_Hebrew_2_QZ_237.mp3,9781442330801,9781797114514,18
 238,HE,Hebrew 2,12 ,,07R,F,"אתה גר בתל אביב, נכון?","Ata gar be'Tel Aviv, nachon?",9781797114514_Hebrew_2_QZ_238.mp3,9781442330801,9781797114514,18
 239,HE,Hebrew 2,12 ,,08Q,N,How about going to the concert? (on foot),,9781797114514_Hebrew_2_QZ_239.mp3,9781442330801,9781797114514,1
@@ -248,7 +248,7 @@
 247,HE,Hebrew 2,13 ,,02Q,N,The film begins at half past eight.,,9781797114514_Hebrew_2_QZ_247.mp3,9781442330801,9781797114514,"1,12"
 248,HE,Hebrew 2,13 ,,02R,M,הסרט מתחיל בשמונה וחצי.,Ha'seret matchil be'shmone vachetzi.,9781797114514_Hebrew_2_QZ_248.mp3,9781442330801,9781797114514,"1,12"
 249,HE,Hebrew 2,13 ,,03Q,N,I don’t know when I’m going on vacation. (m),,9781797114514_Hebrew_2_QZ_249.mp3,9781442330801,9781797114514,18
-250,HE,Hebrew 2,13 ,,03R,M,אני לא יודע מתי אני יוצא לחופשה.,Ani lo yodea matai ani yotze le'chufsha,9781797114514_Hebrew_2_QZ_250.mp3,9781442330801,9781797114514,18
+250,HE,Hebrew 2,13 ,,03R,M,אני לא יודע מתי אני יוצא לחופשה.,Ani lo yodea matai ani yotze le'chufsha.,9781797114514_Hebrew_2_QZ_250.mp3,9781442330801,9781797114514,18
 251,HE,Hebrew 2,13 ,,04Q,N,With sugar?,,9781797114514_Hebrew_2_QZ_251.mp3,9781442330801,9781797114514,6
 252,HE,Hebrew 2,13 ,,04R,M,עם סוכר?,Im sukar?,9781797114514_Hebrew_2_QZ_252.mp3,9781442330801,9781797114514,6
 253,HE,Hebrew 2,13 ,,05Q,N,I have to work in New York. (m),,9781797114514_Hebrew_2_QZ_253.mp3,9781442330801,9781797114514,20
@@ -259,8 +259,8 @@
 258,HE,Hebrew 2,13 ,,07R,F,אולי בינואר או בפברואר.,Ulai be'yanuar o be'februar.,9781797114514_Hebrew_2_QZ_258.mp3,9781442330801,9781797114514,17
 259,HE,Hebrew 2,13 ,,08Q,N,I prefer to go to the movies. (m),,9781797114514_Hebrew_2_QZ_259.mp3,9781442330801,9781797114514,1
 260,HE,Hebrew 2,13 ,,08R,M,אני מעדיף ללכת לקולנוע.,Ani ma’adif lalechet la'kolnoa.,9781797114514_Hebrew_2_QZ_260.mp3,9781442330801,9781797114514,1
-261,HE,Hebrew 2,13 ,,09Q,N,After the film ...,,9781797114514_Hebrew_2_QZ_261.mp3,9781442330801,9781797114514,1
-262,HE,Hebrew 2,13 ,,09R,F,אחרי הסרט ...,Acharey ha'seret ...,9781797114514_Hebrew_2_QZ_262.mp3,9781442330801,9781797114514,1
+261,HE,Hebrew 2,13 ,,09Q,N,after the film,,9781797114514_Hebrew_2_QZ_261.mp3,9781442330801,9781797114514,1
+262,HE,Hebrew 2,13 ,,09R,F,אחרי הסרט,acharey ha'seret,9781797114514_Hebrew_2_QZ_262.mp3,9781442330801,9781797114514,1
 263,HE,Hebrew 2,13 ,,10Q,N,When are you going on vacation? (m),,9781797114514_Hebrew_2_QZ_263.mp3,9781442330801,9781797114514,18
 264,HE,Hebrew 2,13 ,,10R,F,מתי אתה יוצא לחפשה?,Matai ata yotze le'chufsha?,9781797114514_Hebrew_2_QZ_264.mp3,9781442330801,9781797114514,18
 265,HE,Hebrew 2,14 ,,01Q,N,After you return from the trip to Cyprus. (f),,9781797114514_Hebrew_2_QZ_265.mp3,9781442330801,9781797114514,18
@@ -276,7 +276,7 @@
 275,HE,Hebrew 2,14 ,,06Q,N,I am leaving now. (f),,9781797114514_Hebrew_2_QZ_275.mp3,9781442330801,9781797114514,18
 276,HE,Hebrew 2,14 ,,06R,F,אני עוזבת עכשיו.,Ani ozevet achshav.,9781797114514_Hebrew_2_QZ_276.mp3,9781442330801,9781797114514,18
 277,HE,Hebrew 2,14 ,,07Q,N,That’s a shame!,,9781797114514_Hebrew_2_QZ_277.mp3,9781442330801,9781797114514,7
-278,HE,Hebrew 2,14 ,,07R,F,זה חבל.,Ze chaval.,9781797114514_Hebrew_2_QZ_278.mp3,9781442330801,9781797114514,7
+278,HE,Hebrew 2,14 ,,07R,F,זה חבל!,Ze chaval!,9781797114514_Hebrew_2_QZ_278.mp3,9781442330801,9781797114514,7
 279,HE,Hebrew 2,14 ,,08Q,N,There’s a good concert.,,9781797114514_Hebrew_2_QZ_279.mp3,9781442330801,9781797114514,1
 280,HE,Hebrew 2,14 ,,08R,F,יש קונצרט טוב.,Yesh kontzert tov.,9781797114514_Hebrew_2_QZ_280.mp3,9781442330801,9781797114514,1
 281,HE,Hebrew 2,14 ,,09Q,N,When are you leaving for Cyprus? (f),,9781797114514_Hebrew_2_QZ_281.mp3,9781442330801,9781797114514,18
@@ -316,7 +316,7 @@
 315,HE,Hebrew 2,16 ,,05Q,N,She is staying in London without her husband.,,9781797114514_Hebrew_2_QZ_315.mp3,9781442330801,9781797114514,"5,18"
 316,HE,Hebrew 2,16 ,,05R,M,היא נשארת בלונדון בלי בעלה.,Hee nisheret be'London bli ba’ala.,9781797114514_Hebrew_2_QZ_316.mp3,9781442330801,9781797114514,"5,18"
 317,HE,Hebrew 2,16 ,,06Q,N,Two years ago the trip was not expensive.,,9781797114514_Hebrew_2_QZ_317.mp3,9781442330801,9781797114514,"11,12,18"
-318,HE,Hebrew 2,16 ,,06R,F,לפני שנתיים הנסיעה לא היתה יקרה.,Lifney shnataim ha'nesi'a lo hay’ta ye'kara,9781797114514_Hebrew_2_QZ_318.mp3,9781442330801,9781797114514,"11,12,18"
+318,HE,Hebrew 2,16 ,,06R,F,לפני שנתיים הנסיעה לא היתה יקרה.,Lifney shnataim ha'nesi'a lo hay’ta ye'kara.,9781797114514_Hebrew_2_QZ_318.mp3,9781442330801,9781797114514,"11,12,18"
 319,HE,Hebrew 2,16 ,,07Q,N,I like Cyprus because it’s hot there.,,9781797114514_Hebrew_2_QZ_319.mp3,9781442330801,9781797114514,"18,19"
 320,HE,Hebrew 2,16 ,,07R,F,קפריסין מוצאת חן בעיני כי חם שם.,Kafrisin motzet chen be'einai kee cham sham.,9781797114514_Hebrew_2_QZ_320.mp3,9781442330801,9781797114514,"18,19"
 321,HE,Hebrew 2,16 ,,08Q,N,A trip to England is expensive.,,9781797114514_Hebrew_2_QZ_321.mp3,9781442330801,9781797114514,"11,18"
@@ -339,7 +339,7 @@
 338,HE,Hebrew 2,17 ,,06R,F,הוא בן עשרים ואחת.,Hu ben esrim ve'achat.,9781797114514_Hebrew_2_QZ_338.mp3,9781442330801,9781797114514,"5,12"
 339,HE,Hebrew 2,17 ,,07Q,N,Our daughter has a lot of work.,,9781797114514_Hebrew_2_QZ_339.mp3,9781442330801,9781797114514,"5,20"
 340,HE,Hebrew 2,17 ,,07R,F,לבת שלנו יש הרבה עבודה.,La'bat shelanu yesh harbe avoda.,9781797114514_Hebrew_2_QZ_340.mp3,9781442330801,9781797114514,"5,20"
-341,HE,Hebrew 2,17 ,,08Q,N,The weather isn’t so good in England..,,9781797114514_Hebrew_2_QZ_341.mp3,9781442330801,9781797114514,"18,19"
+341,HE,Hebrew 2,17 ,,08Q,N,The weather isn’t so good in England.,,9781797114514_Hebrew_2_QZ_341.mp3,9781442330801,9781797114514,"18,19"
 342,HE,Hebrew 2,17 ,,08R,F,מזג האויר לא כל כך טוב באנגליה.,Mezeg ha'avir lo kol kach tov be'Anglia.,9781797114514_Hebrew_2_QZ_342.mp3,9781442330801,9781797114514,"18,19"
 343,HE,Hebrew 2,17 ,,09Q,N,And also the trip is expensive.,,9781797114514_Hebrew_2_QZ_343.mp3,9781442330801,9781797114514,"11,18"
 344,HE,Hebrew 2,17 ,,09R,F,וגם הנסיעה יקרה.,Ve'gam ha'nesi'a ye'kara.,9781797114514_Hebrew_2_QZ_344.mp3,9781442330801,9781797114514,"11,18"
@@ -363,8 +363,8 @@
 362,HE,Hebrew 2,18 ,,08R,F,יש לה עבודה מעניינת.,Yesh la avoda me’anyenet.,9781797114514_Hebrew_2_QZ_362.mp3,9781442330801,9781797114514,20
 363,HE,Hebrew 2,18 ,,09Q,N,We haven’t seen our daughter since February.,,9781797114514_Hebrew_2_QZ_363.mp3,9781442330801,9781797114514,5
 364,HE,Hebrew 2,18 ,,09R,F,לא ראינו את הבת שלנו מפברואר.,Lo raeenu et ha'bat shelanu mi’februar.,9781797114514_Hebrew_2_QZ_364.mp3,9781442330801,9781797114514,5
-365,HE,Hebrew 2,18 ,,10Q,N,"This morning, the weather is bad.",,9781797114514_Hebrew_2_QZ_365.mp3,9781442330801,9781797114514,"17,19"
-366,HE,Hebrew 2,18 ,,10R,F,הבוקר מזג האויר גרוע.,"Ha'boker, mezeg ha’avir garu'a.",9781797114514_Hebrew_2_QZ_366.mp3,9781442330801,9781797114514,"17,19"
+365,HE,Hebrew 2,18 ,,10Q,N,This morning the weather is bad.,,9781797114514_Hebrew_2_QZ_365.mp3,9781442330801,9781797114514,"17,19"
+366,HE,Hebrew 2,18 ,,10R,F,הבוקר מזג האויר גרוע.,Ha'boker mezeg ha’avir garu'a.,9781797114514_Hebrew_2_QZ_366.mp3,9781442330801,9781797114514,"17,19"
 367,HE,Hebrew 2,19 ,,01Q,N,I want to try one more time. (m),,9781797114514_Hebrew_2_QZ_367.mp3,9781442330801,9781797114514,7
 368,HE,Hebrew 2,19 ,,01R,M,אני רוצה לנסות עוד פעם.,Ani rotze le'nasot od pa’am.,9781797114514_Hebrew_2_QZ_368.mp3,9781442330801,9781797114514,7
 369,HE,Hebrew 2,19 ,,02Q,N,My daughter is at the university.,,9781797114514_Hebrew_2_QZ_369.mp3,9781442330801,9781797114514,5
@@ -399,10 +399,10 @@
 398,HE,Hebrew 2,20 ,,06R,F,"אתה רואה את הרחוב שם, בצד ימין?","Ata ro'e et ha'rechov sham, be'tzad yamin?",9781797114514_Hebrew_2_QZ_398.mp3,9781442330801,9781797114514,4
 399,HE,Hebrew 2,20 ,,07Q,N,Do you know the address? (m),,9781797114514_Hebrew_2_QZ_399.mp3,9781442330801,9781797114514,"4,16"
 400,HE,Hebrew 2,20 ,,07R,F,אתה יודע את הכתובת?,Ata yodea et ha'ktovet?,9781797114514_Hebrew_2_QZ_400.mp3,9781442330801,9781797114514,"4,16"
-401,HE,Hebrew 2,20 ,,08Q,N,"This time, it’s the correct number.",,9781797114514_Hebrew_2_QZ_401.mp3,9781442330801,9781797114514,3
+401,HE,Hebrew 2,20 ,,08Q,N,This time it’s the correct number.,,9781797114514_Hebrew_2_QZ_401.mp3,9781442330801,9781797114514,3
 402,HE,Hebrew 2,20 ,,08R,F,הפעם זה המספר הנכון.,Ha'pa’am ze ha'mispar ha'nachon.,9781797114514_Hebrew_2_QZ_402.mp3,9781442330801,9781797114514,3
 403,HE,Hebrew 2,20 ,,09Q,N,Here’s the doctor’s e-mail address.,,9781797114514_Hebrew_2_QZ_403.mp3,9781442330801,9781797114514,"3,8,16"
-404,HE,Hebrew 2,20 ,,09R,F,הינה כתובת האי-מייל של הרופא.,hine ktovet ha-e-mail shel ha'rofe.,9781797114514_Hebrew_2_QZ_404.mp3,9781442330801,9781797114514,"3,8,16"
+404,HE,Hebrew 2,20 ,,09R,F,הינה כתובת האי-מייל של הרופא.,Hine ktovet ha-e-mail shel ha'rofe.,9781797114514_Hebrew_2_QZ_404.mp3,9781442330801,9781797114514,"3,8,16"
 405,HE,Hebrew 2,20 ,,10Q,N,I think that it’s the correct number. (f),,9781797114514_Hebrew_2_QZ_405.mp3,9781442330801,9781797114514,3
 406,HE,Hebrew 2,20 ,,10R,F,אני חושבת שזה המספר הנכון.,Ani choshevet she'ze ha'mispar ha'nachon.,9781797114514_Hebrew_2_QZ_406.mp3,9781442330801,9781797114514,3
 407,HE,Hebrew 2,20 ,,11Q,N,I have to try later. (m),,9781797114514_Hebrew_2_QZ_407.mp3,9781442330801,9781797114514,17
@@ -436,13 +436,13 @@
 435,HE,Hebrew 2,22 ,,04Q,N,Can you (m) help me?,,9781797114514_Hebrew_2_QZ_435.mp3,9781442330801,9781797114514,16
 436,HE,Hebrew 2,22 ,,04R,M,אתה יכול לעזור לי?,Ata yachol la’azor li?,9781797114514_Hebrew_2_QZ_436.mp3,9781442330801,9781797114514,16
 437,HE,Hebrew 2,22 ,,05Q,N,Do you know where there is an internet café? (m),,9781797114514_Hebrew_2_QZ_437.mp3,9781442330801,9781797114514,"3,16"
-438,HE,Hebrew 2,22 ,,05R,M,אתה יודע איפה יש קפה אינטרנט?,Ata yodea efo yesh kafe internet.,9781797114514_Hebrew_2_QZ_438.mp3,9781442330801,9781797114514,"3,16"
+438,HE,Hebrew 2,22 ,,05R,M,אתה יודע איפה יש קפה אינטרנט?,Ata yodea efo yesh kafe internet?,9781797114514_Hebrew_2_QZ_438.mp3,9781442330801,9781797114514,"3,16"
 439,HE,Hebrew 2,22 ,,06Q,N,Now I’m at an internet café.,,9781797114514_Hebrew_2_QZ_439.mp3,9781442330801,9781797114514,"3,16"
 440,HE,Hebrew 2,22 ,,06R,F,עכשיו אני בקפה אינטרנט.,Achshav ani be'kafe internet.,9781797114514_Hebrew_2_QZ_440.mp3,9781442330801,9781797114514,"3,16"
-441,HE,Hebrew 2,22 ,,07Q,N,It’s very good.,,9781797114514_Hebrew_2_QZ_441.mp3,9781442330801,9781797114514,7
-442,HE,Hebrew 2,22 ,,07R,F,זה טוב מאוד!,Ze tov meod.,9781797114514_Hebrew_2_QZ_442.mp3,9781442330801,9781797114514,7
+441,HE,Hebrew 2,22 ,,07Q,N,It’s very good!,,9781797114514_Hebrew_2_QZ_441.mp3,9781442330801,9781797114514,7
+442,HE,Hebrew 2,22 ,,07R,F,זה טוב מאוד!,Ze tov meod!,9781797114514_Hebrew_2_QZ_442.mp3,9781442330801,9781797114514,7
 443,HE,Hebrew 2,22 ,,08Q,N,I had to buy something at a pharmacy. (f),,9781797114514_Hebrew_2_QZ_443.mp3,9781442330801,9781797114514,"8,14,16"
-444,HE,Hebrew 2,22 ,,08R,F,הייתי צריכה לקנות משהו בבית מרקחת.,haeeti tzricha liknot mashehu be'beit-merkachat.,9781797114514_Hebrew_2_QZ_444.mp3,9781442330801,9781797114514,"8,14,16"
+444,HE,Hebrew 2,22 ,,08R,F,הייתי צריכה לקנות משהו בבית מרקחת.,Haeeti tzricha liknot mashehu be'beit-merkachat.,9781797114514_Hebrew_2_QZ_444.mp3,9781442330801,9781797114514,"8,14,16"
 445,HE,Hebrew 2,22 ,,09Q,N,I had to go to the doctor. (f),,9781797114514_Hebrew_2_QZ_445.mp3,9781442330801,9781797114514,"8,16"
 446,HE,Hebrew 2,22 ,,09R,F,הייתי צריכה ללכת לרופא.,Haeeti tzricha la'lechet la'rofe.,9781797114514_Hebrew_2_QZ_446.mp3,9781442330801,9781797114514,"8,16"
 447,HE,Hebrew 2,22 ,,10Q,N,I need something at the pharmacy.,,9781797114514_Hebrew_2_QZ_447.mp3,9781442330801,9781797114514,"8,16"
@@ -506,7 +506,7 @@
 505,HE,Hebrew 2,25 ,,09Q,N,I have an important meeting. (f),,9781797114514_Hebrew_2_QZ_505.mp3,9781442330801,9781797114514,"16,20"
 506,HE,Hebrew 2,25 ,,09R,F,יש לי פגישה חשובה.,Yesh li pgisha chashuva.,9781797114514_Hebrew_2_QZ_506.mp3,9781442330801,9781797114514,"16,20"
 507,HE,Hebrew 2,25 ,,10Q,N,I have an idea. (f),,9781797114514_Hebrew_2_QZ_507.mp3,9781442330801,9781797114514,7
-508,HE,Hebrew 2,25 ,,10R,F,יש לי רעיון.,Yesh li ra’ayon,9781797114514_Hebrew_2_QZ_508.mp3,9781442330801,9781797114514,7
+508,HE,Hebrew 2,25 ,,10R,F,יש לי רעיון.,Yesh li ra’ayon.,9781797114514_Hebrew_2_QZ_508.mp3,9781442330801,9781797114514,7
 509,HE,Hebrew 2,25 ,,11Q,N,I’m sorry. (f),,9781797114514_Hebrew_2_QZ_509.mp3,9781442330801,9781797114514,"13,16"
 510,HE,Hebrew 2,25 ,,11R,F,אני מצטערת.,Ani mitz’taeret.,9781797114514_Hebrew_2_QZ_510.mp3,9781442330801,9781797114514,"13,16"
 511,HE,Hebrew 2,26 ,,01Q,N,I need an important book. (m),,9781797114514_Hebrew_2_QZ_511.mp3,9781442330801,9781797114514,7
@@ -518,7 +518,7 @@
 517,HE,Hebrew 2,26 ,,04Q,N,The meeting is in Haifa.,,9781797114514_Hebrew_2_QZ_517.mp3,9781442330801,9781797114514,20
 518,HE,Hebrew 2,26 ,,04R,M,הפגישה בחיפה.,Hapgisha be'Chaifa.,9781797114514_Hebrew_2_QZ_518.mp3,9781442330801,9781797114514,20
 519,HE,Hebrew 2,26 ,,05Q,N,Have you ever been in Haifa? (m),,9781797114514_Hebrew_2_QZ_519.mp3,9781442330801,9781797114514,18
-520,HE,Hebrew 2,26 ,,05R,M,כבר היית פעם בחיפה?,Kvar haeeta pa’am be'Chaifa.?,9781797114514_Hebrew_2_QZ_520.mp3,9781442330801,9781797114514,18
+520,HE,Hebrew 2,26 ,,05R,M,כבר היית פעם בחיפה?,Kvar haeeta pa’am be'Chaifa?,9781797114514_Hebrew_2_QZ_520.mp3,9781442330801,9781797114514,18
 521,HE,Hebrew 2,26 ,,06Q,N,Often he has a meeting there.,,9781797114514_Hebrew_2_QZ_521.mp3,9781442330801,9781797114514,20
 522,HE,Hebrew 2,26 ,,06R,F,לעיתים קרובות יש לו פגישה שם.,Le’itim krovot yesh lo pgisha sham.,9781797114514_Hebrew_2_QZ_522.mp3,9781442330801,9781797114514,20
 523,HE,Hebrew 2,26 ,,07Q,N,He has an important meeting.,,9781797114514_Hebrew_2_QZ_523.mp3,9781442330801,9781797114514,20
@@ -594,7 +594,7 @@
 593,HE,Hebrew 2,30 ,,02Q,N,On Thursday afternoon?,,9781797114514_Hebrew_2_QZ_593.mp3,9781442330801,9781797114514,17
 594,HE,Hebrew 2,30 ,,02R,M,ביום חמישי אחרי הצהריים?,Be'yom chamishi acharey ha'tzohoraim?,9781797114514_Hebrew_2_QZ_594.mp3,9781442330801,9781797114514,17
 595,HE,Hebrew 2,30 ,,03Q,N,"Look, here’s a map.",,9781797114514_Hebrew_2_QZ_595.mp3,9781442330801,9781797114514,"4,16"
-596,HE,Hebrew 2,30 ,,03R,M,"תראה, הינה מפה של חיפה.","Tir’e, hine mapa.",9781797114514_Hebrew_2_QZ_596.mp3,9781442330801,9781797114514,"4,16"
+596,HE,Hebrew 2,30 ,,03R,M,"תראה, הינה מפה.","Tir’e, hine mapa.",9781797114514_Hebrew_2_QZ_596.mp3,9781442330801,9781797114514,"4,16"
 597,HE,Hebrew 2,30 ,,04Q,N,See you next weekend!,,9781797114514_Hebrew_2_QZ_597.mp3,9781442330801,9781797114514,17
 598,HE,Hebrew 2,30 ,,04R,M,להתראות בסוף השבוע הבא!,Lehitraot be'sof ha'shavua ha'ba!,9781797114514_Hebrew_2_QZ_598.mp3,9781442330801,9781797114514,17
 599,HE,Hebrew 2,30 ,,05Q,N,What are you doing? (f),,9781797114514_Hebrew_2_QZ_599.mp3,9781442330801,9781797114514,"7,16"

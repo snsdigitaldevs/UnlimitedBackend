@@ -42,7 +42,7 @@ public class AvailableProductsController {
                     item.setProductCode(withOtherFormatAs.getISBN());
                 }
                 updateCourseName(item);
-            }).sorted(comparing(AvailableProductDto::getCourseName))
+            }).sorted(comparing(AvailableProductDto::getFormatCourseName))
                 .filter(distinctByKey(AvailableProductDto::getProductCode))
                 .collect(Collectors.toList()));
         availableProducts.getFreeProducts().forEach(this::updateCourseName);

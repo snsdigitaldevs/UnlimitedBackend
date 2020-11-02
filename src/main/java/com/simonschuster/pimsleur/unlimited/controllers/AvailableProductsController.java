@@ -10,11 +10,8 @@ import com.simonschuster.pimsleur.unlimited.data.dto.promotions.FormatMapping;
 import com.simonschuster.pimsleur.unlimited.services.availableProducts.AvailableProductsService;
 import com.simonschuster.pimsleur.unlimited.services.promotions.FormatMappingService;
 import io.swagger.annotations.ApiOperation;
-
 import java.util.List;
-import java.util.function.Function;
 import java.util.stream.Collectors;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -36,27 +33,16 @@ public class AvailableProductsController {
                                                      @RequestParam(value = "email", required = false) String email,
                                                      @RequestParam(value = "storeDomain", required = false) String storeDomain) {
         AvailableProductsDto availableProducts = availableProductsService.getAvailableProducts(sub, email, storeDomain);
-
-        Function<AvailableProductDto, String> productComparator = productDto -> {
-            FormatMapping formatMappingFor = formatMappingService.findFormatMappingFor(productDto.getProductCode());
-            return formatMappingFor == null
-                    ? productDto.getLanguageName()
-                    : productDto.getCourseName();
-        };
-
         availableProducts
-                .setPurchasedProducts(availableProducts.getPurchasedProducts()
-                        .stream()
-                        .sorted(comparing(productComparator))
-                        .peek(item -> {
-                            String productCode = item.getProductCode();
-                            FormatMapping withOtherFormatAs = formatMappingService
-                                    .findISBNWithOtherFormatAs(productCode);
-                            if (withOtherFormatAs != null) {
-                                item.setProductCode(withOtherFormatAs.getISBN());
-                            }
-                            updateCourseName(item);
-                        })
+                .setPurchasedProducts(availableProducts.getPurchasedProducts().stream().peek(item -> {
+                    String productCode = item.getProductCode();
+                    FormatMapping withOtherFormatAs = formatMappingService
+                            .findISBNWithOtherFormatAs(productCode);
+                    if (withOtherFormatAs != null) {
+                        item.setProductCode(withOtherFormatAs.getISBN());
+                    }
+                    updateCourseName(item);
+                }).sorted(comparing(AvailableProductDto::getCourseName))
                         .filter(distinctByKey(AvailableProductDto::getProductCode))
                         .collect(Collectors.toList()));
         availableProducts.getFreeProducts().forEach(this::updateCourseName);

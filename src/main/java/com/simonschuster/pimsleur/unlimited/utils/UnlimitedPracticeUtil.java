@@ -28,7 +28,7 @@ public class UnlimitedPracticeUtil {
 
     public static String getUnitNumString(CSVRecord record, String unitNumKey) {
         if (record.isSet(unitNumKey)) {
-            return record.get(unitNumKey).replace("\"", "").trim();
+            return record.get(unitNumKey).replace("\"", "");
         }
         return NO_SUCH_KEY;
     }

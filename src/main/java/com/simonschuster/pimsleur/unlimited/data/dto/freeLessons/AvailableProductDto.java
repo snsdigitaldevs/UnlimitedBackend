@@ -136,6 +136,6 @@ public class AvailableProductDto {
     }
 
     public String getFormatCourseName(){
-        return this.getCourseName().replaceAll("(?<!\\d)\\d(?=\\D)", "0$0");
+        return this.getCourseName().replaceAll("(?<!\\d)\\d(?=\\D)|(?<!\\d)\\d$", "0$0");
     }
 }

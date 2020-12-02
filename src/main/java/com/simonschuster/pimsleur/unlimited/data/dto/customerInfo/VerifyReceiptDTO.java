@@ -3,12 +3,10 @@ package com.simonschuster.pimsleur.unlimited.data.dto.customerInfo;
 import com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode;
 import com.simonschuster.pimsleur.unlimited.data.edt.customer.verifyReceipt.VerifyReceiptResponse;
 
-import java.util.HashMap;
-
 public class VerifyReceiptDTO {
     private boolean shouldUpdateReceipt;
     private boolean purchaseStatusDidChange;
-    private HashMap<String, Object> purchaseRecord;
+    private Object purchaseRecord;
 
     public boolean isShouldUpdateReceipt() {
         return shouldUpdateReceipt;
@@ -26,11 +24,11 @@ public class VerifyReceiptDTO {
         this.purchaseStatusDidChange = purchaseStatusDidChange;
     }
 
-    public HashMap<String, Object> getPurchaseRecord() {
+    public Object getPurchaseRecord() {
         return purchaseRecord;
     }
 
-    public void setPurchaseRecord(HashMap<String, Object> purchaseRecord) {
+    public void setPurchaseRecord(Object purchaseRecord) {
         this.purchaseRecord = purchaseRecord;
     }
 

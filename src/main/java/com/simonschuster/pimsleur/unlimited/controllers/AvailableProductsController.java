@@ -34,17 +34,17 @@ public class AvailableProductsController {
                                                      @RequestParam(value = "storeDomain", required = false) String storeDomain) {
         AvailableProductsDto availableProducts = availableProductsService.getAvailableProducts(sub, email, storeDomain);
         availableProducts
-                .setPurchasedProducts(availableProducts.getPurchasedProducts().stream().peek(item -> {
-                    String productCode = item.getProductCode();
-                    FormatMapping withOtherFormatAs = formatMappingService
-                            .findISBNWithOtherFormatAs(productCode);
-                    if (withOtherFormatAs != null) {
-                        item.setProductCode(withOtherFormatAs.getISBN());
-                    }
-                    updateCourseName(item);
-                }).sorted(comparing(AvailableProductDto::getCourseName))
-                        .filter(distinctByKey(AvailableProductDto::getProductCode))
-                        .collect(Collectors.toList()));
+            .setPurchasedProducts(availableProducts.getPurchasedProducts().stream().peek(item -> {
+                String productCode = item.getProductCode();
+                FormatMapping withOtherFormatAs = formatMappingService
+                    .findISBNWithOtherFormatAs(productCode);
+                if (withOtherFormatAs != null) {
+                    item.setProductCode(withOtherFormatAs.getISBN());
+                }
+                updateCourseName(item);
+            }).sorted(comparing(AvailableProductDto::getFormatCourseName))
+                .filter(distinctByKey(AvailableProductDto::getProductCode))
+                .collect(Collectors.toList()));
         availableProducts.getFreeProducts().forEach(this::updateCourseName);
         availableProducts.getFreeProducts().sort(comparing(AvailableProductDto::getCourseName));
         return availableProducts;
@@ -59,8 +59,8 @@ public class AvailableProductsController {
     @ApiOperation(value = "get all isbn that purchase in app")
     @RequestMapping(value = "/purchaseInApp", method = RequestMethod.GET)
     public List<InAppProduct> purchaseInApp(@RequestParam(value = "sub", required = false) String sub,
-                                            @RequestParam(value = "email", required = false) String email,
-                                            @RequestParam(value = "storeDomain", required = false) String storeDomain) {
+        @RequestParam(value = "email", required = false) String email,
+        @RequestParam(value = "storeDomain", required = false) String storeDomain) {
         return availableProductsService.purchaseInApp(sub, email, storeDomain);
     }
 

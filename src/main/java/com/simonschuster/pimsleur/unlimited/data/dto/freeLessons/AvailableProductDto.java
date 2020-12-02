@@ -134,4 +134,8 @@ public class AvailableProductDto {
         }
         return languageName;
     }
+
+    public String getFormatCourseName(){
+        return this.getCourseName().replaceAll("(?<!\\d)\\d(?=\\D)|(?<!\\d)\\d$", "0$0");
+    }
 }

@@ -1,4 +1,4 @@
-﻿Rec #,Lang ,Course,Lesson,Cluster,Qz #,Spkr,Cue,Transliteration,MP3 Snippet File Name,MP3 Audio ISBN,Premium ISBN,Skills
+﻿Rec #,Lang,Course,Lesson,Cluster,Qz #,Spkr,Cue,Transliteration,MP3 Snippet File Name,MP3 Audio ISBN,Premium ISBN,Skills
 1,GK,Greek 2,1,,01Q,N,I bought something for the little one yesterday.,,9781797115382_Greek_2_QZ_001.mp3,9781442320246,9781797115382,"5,14"
 2,GK,Greek 2,1,,01R,F,Αγόρασα κάτι για τη μικρή χθες.,Agórasa káti gia ti mikrí chthes.,9781797115382_Greek_2_QZ_002.mp3,9781442320246,9781797115382,"5,14"
 3,GK,Greek 2,1,,02Q,N,"No, with our older daughter.",,9781797115382_Greek_2_QZ_003.mp3,9781442320246,9781797115382,5
@@ -19,8 +19,8 @@
 18,GK,Greek 2,1,,09R,M,Μου αρέσει πολύ η Αθήνα.,Mou arési polí i Athína.,9781797115382_Greek_2_QZ_018.mp3,9781442320246,9781797115382,18
 19,GK,Greek 2,1,,10Q,N,What did you do?,,9781797115382_Greek_2_QZ_019.mp3,9781442320246,9781797115382,7
 20,GK,Greek 2,1,,10R,M,Τι κάνατε;,Ti kánate?,9781797115382_Greek_2_QZ_020.mp3,9781442320246,9781797115382,7
-21,GK,Greek 2,2,,01Q,N,The younger one lives in Chania.,,9781797115382_Greek_2_QZ_021.mp3,9781442320246,9781797115382,"5,12"
-22,GK,Greek 2,2,,01R,F,Η μικρή μένει στα Χανιά.,I mikrí méni sta Chaniá.,9781797115382_Greek_2_QZ_022.mp3,9781442320246,9781797115382,"5,12"
+21,GK,Greek 2,2,,01Q,N,The younger one lives in Chania.,,9781797115382_Greek_2_QZ_021.mp3,9781442320246,9781797115382,5
+22,GK,Greek 2,2,,01R,F,Η μικρή μένει στα Χανιά.,I mikrí méni sta Chaniá.,9781797115382_Greek_2_QZ_022.mp3,9781442320246,9781797115382,5
 23,GK,Greek 2,2,,02Q,N,He rented a car.,,9781797115382_Greek_2_QZ_023.mp3,9781442320246,9781797115382,18
 24,GK,Greek 2,2,,02R,F,Νοίκιασε ένα αυτοκίνητο.,Nekiase éna aftokínito.,9781797115382_Greek_2_QZ_024.mp3,9781442320246,9781797115382,18
 25,GK,Greek 2,2,,03Q,N,Does your son have a car?,,9781797115382_Greek_2_QZ_025.mp3,9781442320246,9781797115382,"5,18"
@@ -58,7 +58,7 @@
 57,GK,Greek 2,3,,09Q,N,We spoke English with the waiter.,,9781797115382_Greek_2_QZ_057.mp3,9781442320246,9781797115382,15
 58,GK,Greek 2,3,,09R,M,Mιλήσαμε Αγγλικά με το σερβιτόρο.,Milísame Angliká me to servetóro.,9781797115382_Greek_2_QZ_058.mp3,9781442320246,9781797115382,15
 59,GK,Greek 2,3,,10Q,N,We didn’t have much time.,,9781797115382_Greek_2_QZ_059.mp3,9781442320246,9781797115382,17
-60,GK,Greek 2,3,,10R,M,Δεν είχαμε πολύ καιρό,Then échame polí keró.,9781797115382_Greek_2_QZ_060.mp3,9781442320246,9781797115382,17
+60,GK,Greek 2,3,,10R,M,Δεν είχαμε πολύ καιρό.,Then échame polí keró.,9781797115382_Greek_2_QZ_060.mp3,9781442320246,9781797115382,17
 61,GK,Greek 2,4,,01Q,N,Have you gone to Mykonos?,,9781797115382_Greek_2_QZ_061.mp3,9781442320246,9781797115382,18
 62,GK,Greek 2,4,,01R,F,Έχετε πάει στη Μύκονο;,Echete páe sti Mykono?,9781797115382_Greek_2_QZ_062.mp3,9781442320246,9781797115382,18
 63,GK,Greek 2,4,,02Q,N,He’s a friend of mine.,,9781797115382_Greek_2_QZ_063.mp3,9781442320246,9781797115382,5
@@ -72,7 +72,7 @@
 71,GK,Greek 2,4,,06Q,N,My name is Charles Hunt.,,9781797115382_Greek_2_QZ_071.mp3,9781442320246,9781797115382,"10,16"
 72,GK,Greek 2,4,,06R,M,Με λένε Τσαρλς Χαντ.,Me léne Charles Hunt.,9781797115382_Greek_2_QZ_072.mp3,9781442320246,9781797115382,"10,16"
 73,GK,Greek 2,4,,07Q,N,Charles is a friend of mine.,,9781797115382_Greek_2_QZ_073.mp3,9781442320246,9781797115382,5
-74,GK,Greek 2,4,,07R,M,Ο Τσαρλς είναι φίλος μου,O Charles íne fílos mou.,9781797115382_Greek_2_QZ_074.mp3,9781442320246,9781797115382,5
+74,GK,Greek 2,4,,07R,M,Ο Τσαρλς είναι φίλος μου.,O Charles íne fílos mou.,9781797115382_Greek_2_QZ_074.mp3,9781442320246,9781797115382,5
 75,GK,Greek 2,4,,08Q,N,Not yet.,,9781797115382_Greek_2_QZ_075.mp3,9781442320246,9781797115382,17
 76,GK,Greek 2,4,,08R,M,Όχι ακόμη.,Ochi akómi.,9781797115382_Greek_2_QZ_076.mp3,9781442320246,9781797115382,17
 77,GK,Greek 2,4,,09Q,N,I have to leave.,,9781797115382_Greek_2_QZ_077.mp3,9781442320246,9781797115382,18
@@ -150,7 +150,7 @@
 149,GK,Greek 2,8,,04Q,N,Until what time are the stores open?,,9781797115382_Greek_2_QZ_149.mp3,9781442320246,9781797115382,"14,16"
 150,GK,Greek 2,8,,04R,F,Μέχρι τι ώρα είναι ανοιχτά τα μαγαζιά;,Méchri ti óra íne anichtá ta magaziá?,9781797115382_Greek_2_QZ_150.mp3,9781442320246,9781797115382,"14,16"
 151,GK,Greek 2,8,,05Q,N,Where's your car?,,9781797115382_Greek_2_QZ_151.mp3,9781442320246,9781797115382,"16,18"
-152,GK,Greek 2,8,,05R,F,Που είναι το αυτοκίνητό σου?,Pou íne to aftokínito sou?,9781797115382_Greek_2_QZ_152.mp3,9781442320246,9781797115382,"16,18"
+152,GK,Greek 2,8,,05R,F,Που είναι το αυτοκίνητό σου;,Pou íne to aftokínito sou?,9781797115382_Greek_2_QZ_152.mp3,9781442320246,9781797115382,"16,18"
 153,GK,Greek 2,8,,06Q,N,A colleague is coming to visit us.,,9781797115382_Greek_2_QZ_153.mp3,9781442320246,9781797115382,20
 154,GK,Greek 2,8,,06R,M,Μία συνάδελφος έρχεται να μας επισκεφτεί.,Mia sináthelfos érchete na mas episkeftí.,9781797115382_Greek_2_QZ_154.mp3,9781442320246,9781797115382,20
 155,GK,Greek 2,8,,07Q,N,I think until eight.,,9781797115382_Greek_2_QZ_155.mp3,9781442320246,9781797115382,12
@@ -191,7 +191,7 @@
 190,GK,Greek 2,10,,04R,F,Προτιμάει να μείνει σπίτι.,Protimái na míni spíti.,9781797115382_Greek_2_QZ_190.mp3,9781442320246,9781797115382,5
 191,GK,Greek 2,10,,05Q,N,At twenty after eight is fine.,,9781797115382_Greek_2_QZ_191.mp3,9781442320246,9781797115382,12
 192,GK,Greek 2,10,,05R,F,Στις οκτώ και είκοσι είναι καλά.,Stis októ ke íkosi íne kalá.,9781797115382_Greek_2_QZ_192.mp3,9781442320246,9781797115382,12
-193,GK,Greek 2,10,,06Q,N,"At ten after eight,",,9781797115382_Greek_2_QZ_193.mp3,9781442320246,9781797115382,12
+193,GK,Greek 2,10,,06Q,N,At ten after eight.,,9781797115382_Greek_2_QZ_193.mp3,9781442320246,9781797115382,12
 194,GK,Greek 2,10,,06R,M,Στις οκτώ και δέκα.,Stis októ ke théka.,9781797115382_Greek_2_QZ_194.mp3,9781442320246,9781797115382,12
 195,GK,Greek 2,10,,07Q,N,Would you like that we go to the movies?,,9781797115382_Greek_2_QZ_195.mp3,9781442320246,9781797115382,"1,16"
 196,GK,Greek 2,10,,07R,M,Θα ήθελες να πάμε σινεμά;,Tha ítheles na páme sinemá?,9781797115382_Greek_2_QZ_196.mp3,9781442320246,9781797115382,"1,16"
@@ -215,7 +215,7 @@
 214,GK,Greek 2,11,,05R,F,Θα θέλατε να πάμε στη συναυλία μαζί;,Tha thélate na páme sti sinavlía mazí?,9781797115382_Greek_2_QZ_214.mp3,9781442320246,9781797115382,"1,16"
 215,GK,Greek 2,11,,06Q,N,She likes to go to the movies.,,9781797115382_Greek_2_QZ_215.mp3,9781442320246,9781797115382,1
 216,GK,Greek 2,11,,06R,M,Της αρέσει να πηγαίνει σινεμά.,Tis arési na pigéni sinemá.,9781797115382_Greek_2_QZ_216.mp3,9781442320246,9781797115382,1
-217,GK,Greek 2,11,,07Q,N,With your friend (f),,9781797115382_Greek_2_QZ_217.mp3,9781442320246,9781797115382,5
+217,GK,Greek 2,11,,07Q,N,With your friend. (f),,9781797115382_Greek_2_QZ_217.mp3,9781442320246,9781797115382,5
 218,GK,Greek 2,11,,07R,M,Με τη φίλη σας.,Me ti fíli sas.,9781797115382_Greek_2_QZ_218.mp3,9781442320246,9781797115382,5
 219,GK,Greek 2,11,,08Q,N,My friend likes to travel. (f),,9781797115382_Greek_2_QZ_219.mp3,9781442320246,9781797115382,5
 220,GK,Greek 2,11,,08R,M,Tης φίλης μου της αρέσει να ταξιδεύει.,Tis fílis mou tis arési na taksithévi.,9781797115382_Greek_2_QZ_220.mp3,9781442320246,9781797115382,5
@@ -231,8 +231,8 @@
 230,GK,Greek 2,12,,03R,F,Θα φύγει την Παρασκευή.,Tha fígi tin Paraskeví.,9781797115382_Greek_2_QZ_230.mp3,9781442320246,9781797115382,17
 231,GK,Greek 2,12,,04Q,N,Not at the moment.,,9781797115382_Greek_2_QZ_231.mp3,9781442320246,9781797115382,17
 232,GK,Greek 2,12,,04R,F,Όχι αυτή τη στιγμή.,Ochi aftí ti stigmí.,9781797115382_Greek_2_QZ_232.mp3,9781442320246,9781797115382,17
-233,GK,Greek 2,12,,05Q,N,… isn't that so?,,9781797115382_Greek_2_QZ_233.mp3,9781442320246,9781797115382,7
-234,GK,Greek 2,12,,05R,F,… έτσι δεν είναι;,… étsi then íne?,9781797115382_Greek_2_QZ_234.mp3,9781442320246,9781797115382,7
+233,GK,Greek 2,12,,05Q,N,Isn't that so?,,9781797115382_Greek_2_QZ_233.mp3,9781442320246,9781797115382,7
+234,GK,Greek 2,12,,05R,F,Έτσι δεν είναι;,Etsi then íne?,9781797115382_Greek_2_QZ_234.mp3,9781442320246,9781797115382,7
 235,GK,Greek 2,12,,06Q,N,"But a little sugar, please.",,9781797115382_Greek_2_QZ_235.mp3,9781442320246,9781797115382,6
 236,GK,Greek 2,12,,06R,M,"Αλλά λίγη ζάχαρη, παρακαλώ.","Allá lígi záchari, parakaló.",9781797115382_Greek_2_QZ_236.mp3,9781442320246,9781797115382,6
 237,GK,Greek 2,12,,07Q,N,Is Mr. Mános here?,,9781797115382_Greek_2_QZ_237.mp3,9781442320246,9781797115382,"10,20"
@@ -325,8 +325,8 @@
 324,GK,Greek 2,16,,09R,M,Η Αθήνα είναι ακριβή τώρα.,I Athína íne akriví tóra.,9781797115382_Greek_2_QZ_324.mp3,9781442320246,9781797115382,18
 325,GK,Greek 2,16,,10Q,N,"Yes, there’s really a lot to see here.",,9781797115382_Greek_2_QZ_325.mp3,9781442320246,9781797115382,18
 326,GK,Greek 2,16,,10R,M,"Ναι, έχει πραγματικά πολλά να δεις εδώ.","Ne, échi pragmatiká pollá na this ethó.",9781797115382_Greek_2_QZ_326.mp3,9781442320246,9781797115382,18
-327,GK,Greek 2,17,,01Q,N,A trip to New York is expensive.,,9781797115382_Greek_2_QZ_327.mp3,9781442320246,9781797115382,14
-328,GK,Greek 2,17,,01R,F,Ένα ταξίδι στην Νέα Υόρκη είναι ακριβό.,Ena taksíthi stin Néa Iórki íne akrivó.,9781797115382_Greek_2_QZ_328.mp3,9781442320246,9781797115382,14
+327,GK,Greek 2,17,,01Q,N,A trip to New York is expensive.,,9781797115382_Greek_2_QZ_327.mp3,9781442320246,9781797115382,18
+328,GK,Greek 2,17,,01R,F,Ένα ταξίδι στην Νέα Υόρκη είναι ακριβό.,Ena taksíthi stin Néa Iórki íne akrivó.,9781797115382_Greek_2_QZ_328.mp3,9781442320246,9781797115382,18
 329,GK,Greek 2,17,,02Q,N,He’s twenty-two years.,,9781797115382_Greek_2_QZ_329.mp3,9781442320246,9781797115382,"5,12"
 330,GK,Greek 2,17,,02R,F,Είναι είκοσι δύο χρονών.,Ine íkosi thío chronón.,9781797115382_Greek_2_QZ_330.mp3,9781442320246,9781797115382,"5,12"
 331,GK,Greek 2,17,,03Q,N,Both our children are going to stay here.,,9781797115382_Greek_2_QZ_331.mp3,9781442320246,9781797115382,5
@@ -405,8 +405,8 @@
 404,GK,Greek 2,20,,10R,M,"Ορίστε, τα γραμματόσημα.","Oríste, ta grammatósima.",9781797115382_Greek_2_QZ_404.mp3,9781442320246,9781797115382,3
 405,GK,Greek 2,20,,11Q,N,I work in a pharmacy.,,9781797115382_Greek_2_QZ_405.mp3,9781442320246,9781797115382,"8,20"
 406,GK,Greek 2,20,,11R,F,Δουλέυω σ’ένα φαρμακείο.,Thoulévo s’éna farmakío.,9781797115382_Greek_2_QZ_406.mp3,9781442320246,9781797115382,"8,20"
-407,GK,Greek 2,21,,01Q,N,Can you give me ---?,,9781797115382_Greek_2_QZ_407.mp3,9781442320246,9781797115382,16
-408,GK,Greek 2,21,,01R,F,Μπορείτε να μου δώσετε ---;,Boríte na mou thósete ---?,9781797115382_Greek_2_QZ_408.mp3,9781442320246,9781797115382,16
+407,GK,Greek 2,21,,01Q,N,Can you give me ...?,,9781797115382_Greek_2_QZ_407.mp3,9781442320246,9781797115382,16
+408,GK,Greek 2,21,,01R,F,Μπορείτε να μου δώσετε ...;,Boríte na mou thósete ...?,9781797115382_Greek_2_QZ_408.mp3,9781442320246,9781797115382,16
 409,GK,Greek 2,21,,02Q,N,Can I help you?,,9781797115382_Greek_2_QZ_409.mp3,9781442320246,9781797115382,16
 410,GK,Greek 2,21,,02R,F,Μπορώ να σας βοηθήσω;,Boró na sas voithíso?,9781797115382_Greek_2_QZ_410.mp3,9781442320246,9781797115382,16
 411,GK,Greek 2,21,,03Q,N,Do you see the pharmacy?,,9781797115382_Greek_2_QZ_411.mp3,9781442320246,9781797115382,8

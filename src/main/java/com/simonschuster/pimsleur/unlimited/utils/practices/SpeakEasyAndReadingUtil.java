@@ -93,30 +93,8 @@ public class SpeakEasyAndReadingUtil {
                         Jsoup.parse(getFromCsv(helpTextKey, csvRecord)).text(),
                         getOrder(orderKey, counter, csvRecord)))
                 .collect(toList());
-
-        if (isReading) {
-            int specialCaseUnitNum = specialCaseUnitNumberForReading(unitNumber, group.getValue().get(0));
-            return createWithReadings(specialCaseUnitNum, speakEasies);
-        } else {
-            return createWithSpeakEasies(unitNumber, speakEasies);
-        }
+        return isReading ? createWithReadings(unitNumber, speakEasies) : createWithSpeakEasies(unitNumber, speakEasies);
     }
-
-    private static int specialCaseUnitNumberForReading(int unitNumber, CSVRecord csvRecord) {
-        // for german level 5, the unit number in reading csv is wrong, should add 10 to all of them
-        // also for french 5 and italian 5, same thing
-
-        String courseKey = findRealHeaderName(csvRecord, HEADER_COURSE);
-        boolean hasCourseColumn = csvRecord.isSet(courseKey);
-        boolean isGerman5 = csvRecord.get(courseKey).contains("German 5");
-        boolean isFrench5 = csvRecord.get(courseKey).contains("Pimsleur French Level 5");
-        boolean isItalian5 = csvRecord.get(courseKey).contains("Italian Level 5");
-        if (hasCourseColumn && (isGerman5 || isFrench5 || isItalian5)) {
-            return unitNumber + 10;
-        }
-        return unitNumber;
-    }
-
 
     private static int getOrder(String orderKey, int[] counter, CSVRecord csvRecord) {
         int order;

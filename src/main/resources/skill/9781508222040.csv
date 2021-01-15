@@ -1,4 +1,4 @@
-Control #,Rec #,Lang,Source Audio ISBN-13,Course,Unit Num,QZ #,Speaker,Cue,Transliteration,#of words,Q or S,Course Name (Source),Snippet Name,Skills
+﻿Control #,Rec #,Lang,Source Audio ISBN-13,Course,Unit Num,QZ #,Speaker,Cue,Transliteration,#of words,Q or S,Course Name (Source),Snippet Name,Skills
 1,1,JP,9781442310599,Japanese 2,1,01Q,N,I didn't eat much.,,,,Pimsleur Japanese Level 2 MP3,9781508222040_Japanese_2_QZ_0001.mp3,"6,9"
 2,2,JP,9781442310599,Japanese 2,1,01R,M,あまり食べませんでした。,amari tabemasendeshita.,2,S,Pimsleur Japanese Level 2 MP3,9781508222040_Japanese_2_QZ_0002.mp3,"6,9"
 3,3,JP,9781442310599,Japanese 2,1,02Q,N,I did shopping.,,,,Pimsleur Japanese Level 2 MP3,9781508222040_Japanese_2_QZ_0003.mp3,"1,9,14"
@@ -259,8 +259,8 @@ Control #,Rec #,Lang,Source Audio ISBN-13,Course,Unit Num,QZ #,Speaker,Cue,Trans
 258,258,JP,9781442310599,Japanese 2,11,06R,F,出張もしません。,shucchoo mo shimasen.,3,S,Pimsleur Japanese Level 2 MP3,9781508222040_Japanese_2_QZ_0258.mp3,"1,18,20"
 259,259,JP,9781442310599,Japanese 2,11,07Q,N,When are you going to Osaka? (polite),,,,Pimsleur Japanese Level 2 MP3,9781508222040_Japanese_2_QZ_0259.mp3,"1,9,17,18"
 260,260,JP,9781442310599,Japanese 2,11,07R,F,いつ大阪へいらっしゃいますか。,itsu osaka e irasshaimasu ka.,5,Q,Pimsleur Japanese Level 2 MP3,9781508222040_Japanese_2_QZ_0260.mp3,"1,9,17,18"
-261,261,JP,9781442310599,Japanese 2,11,08Q,N,I'm leaving tomorrow.,,,,Pimsleur Japanese Level 2 MP3,9781508222040_Japanese_2_QZ_0261.mp3,"6,9,17,18"
-262,262,JP,9781442310599,Japanese 2,11,08R,M,明日出ます。,ashita demasu.,2,S,Pimsleur Japanese Level 2 MP3,9781508222040_Japanese_2_QZ_0262.mp3,"6,9,17,18"
+261,261,JP,9781442310599,Japanese 2,11,08Q,N,I'm leaving tomorrow.,,,,Pimsleur Japanese Level 2 MP3,9781508222040_Japanese_2_QZ_0261.mp3,"9,17,18"
+262,262,JP,9781442310599,Japanese 2,11,08R,M,明日出ます。,ashita demasu.,2,S,Pimsleur Japanese Level 2 MP3,9781508222040_Japanese_2_QZ_0262.mp3,"9,17,18"
 263,263,JP,9781442310599,Japanese 2,11,09Q,N,I'm leaving early Thursday morning.,,,,Pimsleur Japanese Level 2 MP3,9781508222040_Japanese_2_QZ_0263.mp3,"9,17,18"
 264,264,JP,9781442310599,Japanese 2,11,09R,M,木曜日の朝早く出ます。,moku yoobi no asa hayaku demasu.,6,S,Pimsleur Japanese Level 2 MP3,9781508222040_Japanese_2_QZ_0264.mp3,"9,17,18"
 265,265,JP,9781442310599,Japanese 2,11,10Q,N,Do you need sugar?,,,,Pimsleur Japanese Level 2 MP3,9781508222040_Japanese_2_QZ_0265.mp3,"6,9"

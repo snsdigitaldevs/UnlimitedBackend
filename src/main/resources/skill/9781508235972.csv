@@ -1,4 +1,4 @@
-Control #,Rec #,Lang,Source Audio ISBN_13,Course,Unit Num,QZ #,Speaker,Cue,Transliteration,#of words,_Q_or_S,Course Name _Source_,Snippet Name,Skills
+﻿Control #,Rec #,Lang,Source Audio ISBN_13,Course,Unit Num,QZ #,Speaker,Cue,Transliteration,#of words,_Q_or_S,Course Name _Source_,Snippet Name,Skills
 1,1,JP,9781508235958,Japanese 5,1,01Q,N,"Since after graduation, we haven't seen, for sure. [informal]",,,S,Pimsleur Japanese Level 5 MP3,9781508235972_Japanese_5_QZ_001.mp3,18
 2,2,JP,9781508235958,Japanese 5,1,01R,M,卒業してから会ってないよ。,sotsugyoo shite kara atte nai yo.,6,,Pimsleur Japanese Level 5 MP3,9781508235972_Japanese_5_QZ_002.mp3,18
 3,3,JP,9781508235958,Japanese 5,1,02Q,N,It’s my lawyer friend.,,,S,Pimsleur Japanese Level 5 MP3,9781508235972_Japanese_5_QZ_003.mp3,"5,9"
@@ -73,7 +73,7 @@ Control #,Rec #,Lang,Source Audio ISBN_13,Course,Unit Num,QZ #,Speaker,Cue,Trans
 72,72,JP,9781508235958,Japanese 5,4,05R,M,行ったことがあったね。,itta koto ga atta ne.,5,,Pimsleur Japanese Level 5 MP3,9781508235972_Japanese_5_QZ_072.mp3,1
 73,73,JP,9781508235958,Japanese 5,4,06Q,N,"We went to concerts also, didn’t we. [informal]",,,S,Pimsleur Japanese Level 5 MP3,9781508235972_Japanese_5_QZ_073.mp3,1
 74,74,JP,9781508235958,Japanese 5,4,06R,M,コンサートにも行ったね。,konsaato ni mo itta ne.,5,,Pimsleur Japanese Level 5 MP3,9781508235972_Japanese_5_QZ_074.mp3,1
-75,75,JP,9781508235958,Japanese 5,4,07Q,N,With Japanese friends.,,,S,Pimsleur Japanese Level 5 MP3,9781508235972_Japanese_5_QZ_075.mp3,5
+75,75,JP,9781508235958,Japanese 5,4,07Q,N,With Japanese students.,,,S,Pimsleur Japanese Level 5 MP3,9781508235972_Japanese_5_QZ_075.mp3,5
 76,76,JP,9781508235958,Japanese 5,4,07R,M,日本人の学生達と。,nihonjin no gakuseitachi to.,4,,Pimsleur Japanese Level 5 MP3,9781508235972_Japanese_5_QZ_076.mp3,5
 77,77,JP,9781508235958,Japanese 5,4,08Q,N,For that person's portion. [informal],,,S,Pimsleur Japanese Level 5 MP3,9781508235972_Japanese_5_QZ_077.mp3,9
 78,78,JP,9781508235958,Japanese 5,4,08R,M,その人の分を。,sono hito no bun o.,5,,Pimsleur Japanese Level 5 MP3,9781508235972_Japanese_5_QZ_078.mp3,9

@@ -23,7 +23,7 @@ def delExpirePkgs(SaveDir):
         for i in NeedDelPkgs:
             PkgPath = SaveDir + os.sep + i
             args = shlex.split("rm -f {}".format(pipes.quote(PkgPath)))
-            subprocess.Popen(args, shell=True)
+            subprocess.Popen(args)
 
 SaveDir = sys.argv[1]
 delExpirePkgs(SaveDir)

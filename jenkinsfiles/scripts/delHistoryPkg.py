@@ -4,6 +4,8 @@
 import os
 import sys
 import subprocess
+import pipes
+import shlex
 
 # reserve only the latest jar package for save space
 ReservePkgNum = 30
@@ -16,16 +18,12 @@ def delExpirePkgs(SaveDir):
 
     if len(jarslist) > ReservePkgNum:
 
-    	NeedDelPkgs = jarslist[ReservePkgNum::]
+        NeedDelPkgs = jarslist[ReservePkgNum::]
 
-    	for i in NeedDelPkgs:
-
-    		PkgPath = SaveDir + os.sep + i
-
-    		subprocess.call("rm -f %s"%PkgPath,shell=True)
+        for i in NeedDelPkgs:
+            PkgPath = SaveDir + os.sep + i
+            args = shlex.split("rm -f {}".format(pipes.quote(PkgPath)))
+            subprocess.Popen(args)
 
 SaveDir = sys.argv[1]
 delExpirePkgs(SaveDir)
-
-
-

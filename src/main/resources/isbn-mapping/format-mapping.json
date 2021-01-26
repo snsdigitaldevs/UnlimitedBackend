@@ -64,7 +64,7 @@
         "ISBN": 9781797115139,
         "Course name - Upsell Card & Library": "Arabic (Eastern)",
         "Course name - Learn Page": "Arabic (Eastern) Level 1",
-        "Course Description - Upsell Card": "The complete level of 30 lessons and access to all premium features",
+        "Course Description - Upsell Card": "",
         "Other format 1 (Upsell) ISBN": "",
         "Other format 2 (Upgrade) ISBN": "",
         "Other format 3 (DVD) ISBN": ""
@@ -4540,6 +4540,16 @@
         "Other format 3 (DVD) ISBN": ""
     },
     {
+        "Base Course Type": "Prem free lesson",
+        "ISBN": 9781797115399,
+        "Course name - Upsell Card & Library": "Greek (Modern)",
+        "Course name - Learn Page": "Greek (Modern) Level 1",
+        "Course Description - Upsell Card": "",
+        "Other format 1 (Upsell) ISBN": "",
+        "Other format 2 (Upgrade) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
         "Base Course Type": "Audio Level 1",
         "ISBN": 9781442319875,
         "Course name - Upsell Card & Library": "Greek (Modern) Level 1",
@@ -4610,6 +4620,16 @@
         "Other format 3 (DVD) ISBN": ""
     },
     {
+        "Base Course Type": "Prem Level 1",
+        "ISBN": 9781797115375,
+        "Course name - Upsell Card & Library": "Greek (Modern) Level 1 Premium",
+        "Course name - Learn Page": "Greek (Modern) Level 1",
+        "Course Description - Upsell Card": "• Purchase 30 lessons at a time\r\n• Purchased lessons never expire\r\n• Start with Level 1 today!",
+        "Other format 2 (Upgrade) ISBN": 9781797115412,
+        "Other format 1 (Upsell) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
         "Base Course Type": "Audio Level 2",
         "ISBN": 9781442320246,
         "Course name - Upsell Card & Library": "Greek (Modern) Level 2",
@@ -4676,6 +4696,36 @@
         "Course name - Learn Page": "Greek (Modern) Level 2",
         "Course Description - Upsell Card": "5 thirty-minute language lessons",
         "Other format 1 (Upsell) ISBN": 9781508271628,
+        "Other format 2 (Upgrade) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Prem Level 2",
+        "ISBN": 9781797115382,
+        "Course name - Upsell Card & Library": "Greek (Modern) Level 2 Premium",
+        "Course name - Learn Page": "Greek (Modern) Level 2",
+        "Course Description - Upsell Card": "The complete level of 30 lessons and access to all premium features",
+        "Other format 2 (Upgrade) ISBN": 9781797115429,
+        "Other format 1 (Upsell) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Prem Level 1-2",
+        "ISBN": 9781797106236,
+        "Course name - Upsell Card & Library": "Greek (Modern) Levels 1-2 Premium",
+        "Course name - Learn Page": "Greek (Modern) Levels 1-2",
+        "Course Description - Upsell Card": "Two complete levels totaling 60 lessons and access to all premium features",
+        "Other format 2 (Upgrade) ISBN": 9781797115467,
+        "Other format 1 (Upsell) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Subscription",
+        "ISBN": 9781797115405,
+        "Course name - Upsell Card & Library": "Greek (Modern) Premium Subscription",
+        "Course Description - Upsell Card": "• Unlimited access to all 60 lessons\r\n• Small monthly fee is easy on wallet\r\n• Full course access today!",
+        "Course name - Learn Page": "",
+        "Other format 1 (Upsell) ISBN": "",
         "Other format 2 (Upgrade) ISBN": "",
         "Other format 3 (DVD) ISBN": ""
     },

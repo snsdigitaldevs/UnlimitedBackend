@@ -21,7 +21,7 @@ import static com.simonschuster.pimsleur.unlimited.utils.EDTRequestUtil.postToEd
 @Service
 public class SignUpService {
     public static final String EMAIL_ALREADY_REGISTERED_ERROR_MESSAGE = "This email is already registered.";
-    public static final String PASSWORD_INVALID_MESSAGE = "Password must be at least 8 characters, including: lower case letters,  upper case letters,  numbers,  and special characters.";
+    public static final String PASSWORD_INVALID_MESSAGE = "Sign up failed, please try again with a different email account";
     @Autowired
     private ApplicationConfiguration applicationConfiguration;
 

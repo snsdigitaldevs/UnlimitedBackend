@@ -28,6 +28,6 @@ public class UpdateControllerTest extends TestCase {
                 .andExpect(jsonPath("$.releaseNote").value("Update app skills"))
                 .andExpect(jsonPath("$.hasUpdate").value(true))
                 .andExpect(jsonPath("$.forceUpdate").value(true))
-                .andExpect(jsonPath("$.latestVersion").value(2.1));
+                .andExpect(jsonPath("$.latestVersion").value(2.18));
     }
 }

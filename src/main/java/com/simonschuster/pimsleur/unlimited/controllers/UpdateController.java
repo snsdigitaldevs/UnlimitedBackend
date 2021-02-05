@@ -18,10 +18,11 @@ public class UpdateController {
     private CheckUpdateService checkUpdateService;
 
     @GetMapping("/checkUpdate")
-    public CheckUpdateDto checkUpdate(@RequestParam("version") Double version) {
+    public CheckUpdateDto checkUpdate(@RequestParam("version") String version,
+                                      @RequestParam("storeDomain") String storeDomain) {
         if (version == null) {
             throw new IllegalArgumentException("Version is not null");
         }
-        return checkUpdateService.checkUpdate(version);
+        return checkUpdateService.checkUpdate(version, storeDomain);
     }
 }

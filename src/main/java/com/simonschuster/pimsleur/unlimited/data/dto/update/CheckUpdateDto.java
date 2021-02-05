@@ -4,13 +4,23 @@ public class CheckUpdateDto {
     private String releaseNote;
     private boolean hasUpdate;
     private boolean forceUpdate;
-    private double latestVersion;
+    private String latestVersion;
+    private String updateURL;
 
-    public CheckUpdateDto(String releaseNote, boolean hasUpdate, boolean forceUpdate, double latestVersion) {
+    public CheckUpdateDto(String releaseNote, boolean hasUpdate, boolean forceUpdate, String latestVersion, String updateURL) {
         this.releaseNote = releaseNote;
         this.hasUpdate = hasUpdate;
         this.forceUpdate = forceUpdate;
         this.latestVersion = latestVersion;
+        this.updateURL = updateURL;
+    }
+
+    public String getUpdateURL() {
+        return updateURL;
+    }
+
+    public void setUpdateURL(String updateURL) {
+        this.updateURL = updateURL;
     }
 
     public String getReleaseNote() {
@@ -37,11 +47,11 @@ public class CheckUpdateDto {
         this.forceUpdate = forceUpdate;
     }
 
-    public double getLatestVersion() {
+    public String getLatestVersion() {
         return latestVersion;
     }
 
-    public void setLatestVersion(double latestVersion) {
+    public void setLatestVersion(String latestVersion) {
         this.latestVersion = latestVersion;
     }
 }

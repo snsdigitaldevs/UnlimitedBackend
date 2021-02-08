@@ -11,8 +11,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
-import static org.hamcrest.Matchers.equalTo;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -28,6 +28,7 @@ public class UpdateControllerTest extends TestCase {
                 .andExpect(jsonPath("$.releaseNote").value("Update app skills"))
                 .andExpect(jsonPath("$.hasUpdate").value(true))
                 .andExpect(jsonPath("$.updateURL").value("http://www.google.com"))
+                .andExpect(jsonPath("$.title").value("A new version is now available"))
                 .andExpect(jsonPath("$.forceUpdate").value(true))
                 .andExpect(jsonPath("$.latestVersion").value(2.18));
     }
@@ -38,6 +39,7 @@ public class UpdateControllerTest extends TestCase {
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.releaseNote").value("Update app skills"))
                 .andExpect(jsonPath("$.hasUpdate").value(true))
+                .andExpect(jsonPath("$.title").value("A new version is now available"))
                 .andExpect(jsonPath("$.updateURL").value("http://www.bing.com"))
                 .andExpect(jsonPath("$.forceUpdate").value(true))
                 .andExpect(jsonPath("$.latestVersion").value(2.18));

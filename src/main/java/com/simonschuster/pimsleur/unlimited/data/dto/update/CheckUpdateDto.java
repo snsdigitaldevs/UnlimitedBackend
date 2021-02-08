@@ -1,18 +1,28 @@
 package com.simonschuster.pimsleur.unlimited.data.dto.update;
 
 public class CheckUpdateDto {
+    private String title;
     private String releaseNote;
     private boolean hasUpdate;
     private boolean forceUpdate;
     private String latestVersion;
     private String updateURL;
 
-    public CheckUpdateDto(String releaseNote, boolean hasUpdate, boolean forceUpdate, String latestVersion, String updateURL) {
+    public CheckUpdateDto(String releaseNote, boolean hasUpdate, boolean forceUpdate, String latestVersion, String updateURL, String title) {
         this.releaseNote = releaseNote;
         this.hasUpdate = hasUpdate;
         this.forceUpdate = forceUpdate;
         this.latestVersion = latestVersion;
         this.updateURL = updateURL;
+        this.title = title;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getUpdateURL() {

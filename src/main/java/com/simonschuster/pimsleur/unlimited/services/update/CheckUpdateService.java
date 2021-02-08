@@ -8,6 +8,9 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class CheckUpdateService {
+
+    private static String TITLE = "A new version is now available";
+
     @Autowired
     private ApplicationConfiguration config;
 
@@ -18,7 +21,7 @@ public class CheckUpdateService {
         String leastSupportedAppVersion = config.getProperty("leastSupportedAppVersion");
         boolean isUpdate = compareVersion(version, currentAppVersion);
         boolean forceUpdate = compareVersion(version, leastSupportedAppVersion);
-        return new CheckUpdateDto(releaseNote, isUpdate, forceUpdate, currentAppVersion, updateURL);
+        return new CheckUpdateDto(releaseNote, isUpdate, forceUpdate, currentAppVersion, updateURL, TITLE);
     }
 
     public boolean compareVersion(String appVersion, String targetVersion) {

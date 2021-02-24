@@ -230,7 +230,6 @@ public class AggregatedProductInfo {
                 getImageAndAudioFromPU(lesson, mediaItem);
             } catch (Exception e) {
                 logger.error("Error occured when convert product info from PU EDT API.");
-                e.printStackTrace();
                 throw new PimsleurException("Error occured when convert product info from PU EDT API.");
             }
 

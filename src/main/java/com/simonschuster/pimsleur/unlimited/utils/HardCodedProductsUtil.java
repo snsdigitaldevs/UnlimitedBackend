@@ -3,6 +3,9 @@ package com.simonschuster.pimsleur.unlimited.utils;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.AvailableProductDto;
+import com.simonschuster.pimsleur.unlimited.services.promotions.LocationMappingService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -11,7 +14,8 @@ import java.util.List;
 import static java.util.stream.Collectors.toList;
 
 public class HardCodedProductsUtil {
-    public static List<AvailableProductDto> PU_FREE_LESSONS = readJsonFile();
+    private static final Logger logger = LoggerFactory.getLogger(LocationMappingService.class);
+    public static final List<AvailableProductDto> PU_FREE_LESSONS = readJsonFile();
 
     private static final List<String> nineBigLanguageNames = PU_FREE_LESSONS.stream()
             .map(AvailableProductDto::getLanguageName)
@@ -38,7 +42,7 @@ public class HardCodedProductsUtil {
             return objectMapper.readValue(fileStream, new TypeReference<List<AvailableProductDto>>() {
             });
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         }
         return null;
     }

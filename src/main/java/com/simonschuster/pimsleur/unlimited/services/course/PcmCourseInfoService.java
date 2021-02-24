@@ -48,7 +48,6 @@ public class PcmCourseInfoService {
             return pcmProduct;
         } catch (Exception exception) {
             logger.error("Exception occurred when get product info with PCM product code.");
-            exception.printStackTrace();
             throw new PimsleurException("Exception occurred when get product info with PCM product code.");
         }
     }

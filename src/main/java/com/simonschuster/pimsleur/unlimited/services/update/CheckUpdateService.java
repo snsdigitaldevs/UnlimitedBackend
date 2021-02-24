@@ -19,8 +19,11 @@ public class CheckUpdateService {
         String releaseNote = config.getProperty("releaseNote");
         String currentAppVersion = config.getProperty("currentAppVersion");
         String leastSupportedAppVersion = config.getProperty("leastSupportedAppVersion");
-        boolean isUpdate = compareVersion(version, currentAppVersion);
-        boolean forceUpdate = compareVersion(version, leastSupportedAppVersion);
+        // need to uncomment when need this fuction
+//        boolean isUpdate = compareVersion(version, currentAppVersion);
+//        boolean forceUpdate = compareVersion(version, leastSupportedAppVersion);
+        boolean isUpdate = false;
+        boolean forceUpdate = false;
         return new CheckUpdateDto(releaseNote, isUpdate, forceUpdate, currentAppVersion, updateURL, TITLE);
     }
 

@@ -1,613 +1,611 @@
 ﻿Rec #,Lang,Course,Lesson,Cluster,Qz #,Spkr,Cue,Transliteration,MP3 Snippet File Name,MP3 Audio ISBN,Premium ISBN,Skills
-1,KO,Korean 1,1,,01Q,N,"No, I can�t.",,9781508298205_Korean_Level_1_QM_001.mp3,9781508217916,9781508298205,"15,16"
-2,KO,Korean 1,1,,01R,F,"___, _ __","aniyo, mot haeyo.",9781508298205_Korean_Level_1_QM_002.mp3,9781508217916,9781508298205,"15,16"
+1,KO,Korean 1,1,,01Q,N,"No, I can’t.",,9781508298205_Korean_Level_1_QM_001.mp3,9781508217916,9781508298205,"15,16"
+2,KO,Korean 1,1,,01R,F,"아니요, 못 해요","aniyo, mot haeyo.",9781508298205_Korean_Level_1_QM_002.mp3,9781508217916,9781508298205,"15,16"
 3,KO,Korean 1,1,,02Q,N,Hello.,,9781508298205_Korean_Level_1_QM_003.mp3,9781508217916,9781508298205,"10,13,16"
-4,KO,Korean 1,1,,02R,F,_____.,annyong haseyo.,9781508298205_Korean_Level_1_QM_004.mp3,9781508217916,9781508298205,"10,13,16"
+4,KO,Korean 1,1,,02R,F,안녕하세요.,annyong haseyo.,9781508298205_Korean_Level_1_QM_004.mp3,9781508217916,9781508298205,"10,13,16"
 5,KO,Korean 1,1,,03Q,N,Do you speak Korean?,,9781508298205_Korean_Level_1_QM_005.mp3,9781508217916,9781508298205,"10,13,15,16"
-6,KO,Korean 1,1,,03R,F,___ ___?,hankuk mal haseyo?,9781508298205_Korean_Level_1_QM_006.mp3,9781508217916,9781508298205,"10,13,15,16"
+6,KO,Korean 1,1,,03R,F,한국말 하세요?,hankuk mal haseyo?,9781508298205_Korean_Level_1_QM_006.mp3,9781508217916,9781508298205,"10,13,15,16"
 7,KO,Korean 1,1,,04Q,N,Do you speak English?,,9781508298205_Korean_Level_1_QM_007.mp3,9781508217916,9781508298205,"10,13,15,16"
-8,KO,Korean 1,1,,04R,F,__ ___?,youngeo haseyo?,9781508298205_Korean_Level_1_QM_008.mp3,9781508217916,9781508298205,"10,13,15,16"
+8,KO,Korean 1,1,,04R,F,영어 하세요?,youngeo haseyo?,9781508298205_Korean_Level_1_QM_008.mp3,9781508217916,9781508298205,"10,13,15,16"
 9,KO,Korean 1,1,,05Q,N,A little.,,9781508298205_Korean_Level_1_QM_009.mp3,9781508217916,9781508298205,"7,15,16"
-10,KO,Korean 1,1,,05R,F,___.,jokeum yo.,9781508298205_Korean_Level_1_QM_010.mp3,9781508217916,9781508298205,"7,15,16"
-11,KO,Korean 1,1,,06Q,N,I can�t speak Korean.,,9781508298205_Korean_Level_1_QM_011.mp3,9781508217916,9781508298205,"15,16"
-12,KO,Korean 1,1,,06R,M,___ _ __.,hankuk mal mot haeyo.,9781508298205_Korean_Level_1_QM_012.mp3,9781508217916,9781508298205,"15,16"
-12,KO,Korean 1,1,,06R,M,___ _ __.,hankuk mal mot haeyo.,9781508298205_Korean_Level_1_QM_012.mp3,9781508217916,9781508298205,"15,16"
-12,KO,Korean 1,1,,06R,M,___ _ __.,hankuk mal mot haeyo.,9781508298205_Korean_Level_1_QM_012.mp3,9781508217916,9781508298205,"15,16"
-13,KO,Korean 1,1,,07Q,N,I can�t speak English.,,9781508298205_Korean_Level_1_QM_013.mp3,9781508217916,9781508298205,"15,16"
-14,KO,Korean 1,1,,07R,M,__ _ __.,youngeo mot haeyo.,9781508298205_Korean_Level_1_QM_014.mp3,9781508217916,9781508298205,"15,16"
-15,KO,Korean 1,1,,08Q,N,I�m glad to meet you.,,9781508298205_Korean_Level_1_QM_015.mp3,9781508217916,9781508298205,"10,13,16"
-16,KO,Korean 1,1,,08R,M,___ _____.,manna seo ban gap seum nita.,9781508298205_Korean_Level_1_QM_016.mp3,9781508217916,9781508298205,"10,13,16"
+10,KO,Korean 1,1,,05R,F,조금요.,jokeum yo.,9781508298205_Korean_Level_1_QM_010.mp3,9781508217916,9781508298205,"7,15,16"
+11,KO,Korean 1,1,,06Q,N,I can’t speak Korean.,,9781508298205_Korean_Level_1_QM_011.mp3,9781508217916,9781508298205,"15,16"
+12,KO,Korean 1,1,,06R,M,한국말 못 해요.,hankuk mal mot haeyo.,9781508298205_Korean_Level_1_QM_012.mp3,9781508217916,9781508298205,"15,16"
+13,KO,Korean 1,1,,07Q,N,I can’t speak English.,,9781508298205_Korean_Level_1_QM_013.mp3,9781508217916,9781508298205,"15,16"
+14,KO,Korean 1,1,,07R,M,영어 못 해요.,youngeo mot haeyo.,9781508298205_Korean_Level_1_QM_014.mp3,9781508217916,9781508298205,"15,16"
+15,KO,Korean 1,1,,08Q,N,I’m glad to meet you.,,9781508298205_Korean_Level_1_QM_015.mp3,9781508217916,9781508298205,"10,13,16"
+16,KO,Korean 1,1,,08R,M,만나서 반갑습니다.,manna seo ban gap seum nita.,9781508298205_Korean_Level_1_QM_016.mp3,9781508217916,9781508298205,"10,13,16"
 17,KO,Korean 1,1,,09Q,N,I came from America.,,9781508298205_Korean_Level_1_QM_017.mp3,9781508217916,9781508298205,10
-18,KO,Korean 1,1,,09R,M,____ ____.,mikuk eseo oass-seum nita.,9781508298205_Korean_Level_1_QM_018.mp3,9781508217916,9781508298205,10
+18,KO,Korean 1,1,,09R,M,미국에서 왔습니다.,mikuk eseo oass-seum nita.,9781508298205_Korean_Level_1_QM_018.mp3,9781508217916,9781508298205,10
 19,KO,Korean 1,1,,10Q,N,Did you come from America?,,9781508298205_Korean_Level_1_QM_019.mp3,9781508217916,9781508298205,10
-20,KO,Korean 1,1,,10R,M,____ ____?,mikuk eseo osyeoss eoyo?,9781508298205_Korean_Level_1_QM_020.mp3,9781508217916,9781508298205,10
+20,KO,Korean 1,1,,10R,M,미국에서 오셨어요?,mikuk eseo osyeoss eoyo?,9781508298205_Korean_Level_1_QM_020.mp3,9781508217916,9781508298205,10
 21,KO,Korean 1,2,,01Q,N,You speak very well.,,9781508298205_Korean_Level_1_QM_021.mp3,9781508217916,9781508298205,"13,15,16"
-22,KO,Korean 1,2,,01R,F,__ _ ___.,aju jal haseyo.,9781508298205_Korean_Level_1_QM_022.mp3,9781508217916,9781508298205,"13,15,16"
+22,KO,Korean 1,2,,01R,F,아주 잘 하세요.,aju jal haseyo.,9781508298205_Korean_Level_1_QM_022.mp3,9781508217916,9781508298205,"13,15,16"
 23,KO,Korean 1,2,,02Q,N,You speak Korean very well.,,9781508298205_Korean_Level_1_QM_023.mp3,9781508217916,9781508298205,"13,15,16"
-24,KO,Korean 1,2,,02R,F,___ __ _ ___.,hankuk mal aju jal haseyo.,9781508298205_Korean_Level_1_QM_024.mp3,9781508217916,9781508298205,"13,15,16"
-25,KO,Korean 1,2,,03Q,N,I can�t speak Korean well.,,9781508298205_Korean_Level_1_QM_025.mp3,9781508217916,9781508298205,"15,16"
-26,KO,Korean 1,2,,03R,F,___ _ _ __.,hankuk mal jal mot haeyo.,9781508298205_Korean_Level_1_QM_026.mp3,9781508217916,9781508298205,"15,16"
-27,KO,Korean 1,2,,04Q,N,I can�t speak well.,,9781508298205_Korean_Level_1_QM_027.mp3,9781508217916,9781508298205,"15,16"
-28,KO,Korean 1,2,,04R,F,_ _ __.,jal mot haeyo.,9781508298205_Korean_Level_1_QM_028.mp3,9781508217916,9781508298205,"15,16"
+24,KO,Korean 1,2,,02R,F,한국말 아주 잘 하세요.,hankuk mal aju jal haseyo.,9781508298205_Korean_Level_1_QM_024.mp3,9781508217916,9781508298205,"13,15,16"
+25,KO,Korean 1,2,,03Q,N,I can’t speak Korean well.,,9781508298205_Korean_Level_1_QM_025.mp3,9781508217916,9781508298205,"15,16"
+26,KO,Korean 1,2,,03R,F,한국말 잘 못 해요.,hankuk mal jal mot haeyo.,9781508298205_Korean_Level_1_QM_026.mp3,9781508217916,9781508298205,"15,16"
+27,KO,Korean 1,2,,04Q,N,I can’t speak well.,,9781508298205_Korean_Level_1_QM_027.mp3,9781508217916,9781508298205,"15,16"
+28,KO,Korean 1,2,,04R,F,잘 못 해요.,jal mot haeyo.,9781508298205_Korean_Level_1_QM_028.mp3,9781508217916,9781508298205,"15,16"
 29,KO,Korean 1,2,,05Q,N,"As for me, I speak Korean.",,9781508298205_Korean_Level_1_QM_029.mp3,9781508217916,9781508298205,"15,16"
-30,KO,Korean 1,2,,05R,F,__ ___ __.,jeo neun hankuk mal haeyo.,9781508298205_Korean_Level_1_QM_030.mp3,9781508217916,9781508298205,"15,16"
+30,KO,Korean 1,2,,05R,F,저는 한국말 해요.,jeo neun hankuk mal haeyo.,9781508298205_Korean_Level_1_QM_030.mp3,9781508217916,9781508298205,"15,16"
 31,KO,Korean 1,2,,06Q,N,"As for me, I speak a little Korean.",,9781508298205_Korean_Level_1_QM_031.mp3,9781508217916,9781508298205,"15,16"
-32,KO,Korean 1,2,,06R,M,__ ___ __ __.,jeo neun hankuk mal jokeum haeyo.,9781508298205_Korean_Level_1_QM_032.mp3,9781508217916,9781508298205,"15,16"
+32,KO,Korean 1,2,,06R,M,저는 한국말 조금 해요.,jeo neun hankuk mal jokeum haeyo.,9781508298205_Korean_Level_1_QM_032.mp3,9781508217916,9781508298205,"15,16"
 33,KO,Korean 1,2,,07Q,N,The weather is good.,,9781508298205_Korean_Level_1_QM_033.mp3,9781508217916,9781508298205,7
-34,KO,Korean 1,2,,07R,M,__ ____.,nalssi joseum nita.,9781508298205_Korean_Level_1_QM_034.mp3,9781508217916,9781508298205,7
+34,KO,Korean 1,2,,07R,M,날씨 좋습니다.,nalssi joseum nita.,9781508298205_Korean_Level_1_QM_034.mp3,9781508217916,9781508298205,7
 35,KO,Korean 1,2,,08Q,N,I speak a little English.,,9781508298205_Korean_Level_1_QM_035.mp3,9781508217916,9781508298205,"15,16"
-36,KO,Korean 1,2,,08R,M,__ __ __.,youngeo jokeum haeyo.,9781508298205_Korean_Level_1_QM_036.mp3,9781508217916,9781508298205,"15,16"
+36,KO,Korean 1,2,,08R,M,영어 조금 해요.,youngeo jokeum haeyo.,9781508298205_Korean_Level_1_QM_036.mp3,9781508217916,9781508298205,"15,16"
 37,KO,Korean 1,2,,09Q,N,I speak a little Korean.,,9781508298205_Korean_Level_1_QM_037.mp3,9781508217916,9781508298205,"15,16"
-38,KO,Korean 1,2,,09R,M,___ __ __.,hankuk mal jokeum haeyo.,9781508298205_Korean_Level_1_QM_038.mp3,9781508217916,9781508298205,"15,16"
-39,KO,Korean 1,2,,10Q,N,"As for me, I can�t speak English well.",,9781508298205_Korean_Level_1_QM_039.mp3,9781508217916,9781508298205,"15,16"
-40,KO,Korean 1,2,,10R,M,__ __ _ _ __.,jeo neun youngeo jal mot haeyo.,9781508298205_Korean_Level_1_QM_040.mp3,9781508217916,9781508298205,"15,16"
-41,KO,Korean 1,3,,01Q,N,I can�t speak well yet.,,9781508298205_Korean_Level_1_QM_041.mp3,9781508217916,9781508298205,"15,16"
-42,KO,Korean 1,3,,01R,F,__ _ ___.,ajik jal mot haeyo.,9781508298205_Korean_Level_1_QM_042.mp3,9781508217916,9781508298205,"15,16"
+38,KO,Korean 1,2,,09R,M,한국말 조금 해요.,hankuk mal jokeum haeyo.,9781508298205_Korean_Level_1_QM_038.mp3,9781508217916,9781508298205,"15,16"
+39,KO,Korean 1,2,,10Q,N,"As for me, I can’t speak English well.",,9781508298205_Korean_Level_1_QM_039.mp3,9781508217916,9781508298205,"15,16"
+40,KO,Korean 1,2,,10R,M,저는 영어 잘 못 해요.,jeo neun youngeo jal mot haeyo.,9781508298205_Korean_Level_1_QM_040.mp3,9781508217916,9781508298205,"15,16"
+41,KO,Korean 1,3,,01Q,N,I can’t speak well yet.,,9781508298205_Korean_Level_1_QM_041.mp3,9781508217916,9781508298205,"15,16"
+42,KO,Korean 1,3,,01R,F,아직 잘 못해요.,ajik jal mot haeyo.,9781508298205_Korean_Level_1_QM_042.mp3,9781508217916,9781508298205,"15,16"
 43,KO,Korean 1,3,,02Q,N,Did you eat?,,9781508298205_Korean_Level_1_QM_043.mp3,9781508217916,9781508298205,6
-44,KO,Korean 1,3,,02R,F,____?,deusyeoss eoyo?,9781508298205_Korean_Level_1_QM_044.mp3,9781508217916,9781508298205,6
-45,KO,Korean 1,3,,03Q,N,But I can�t speak well yet.,,9781508298205_Korean_Level_1_QM_045.mp3,9781508217916,9781508298205,"15,16"
-46,KO,Korean 1,3,,03R,F,___ __ _ ___.,hajiman ajik jal mot haeyo.,9781508298205_Korean_Level_1_QM_046.mp3,9781508217916,9781508298205,"15,16"
+44,KO,Korean 1,3,,02R,F,드셨어요?,deusyeoss eoyo?,9781508298205_Korean_Level_1_QM_044.mp3,9781508217916,9781508298205,6
+45,KO,Korean 1,3,,03Q,N,But I can’t speak well yet.,,9781508298205_Korean_Level_1_QM_045.mp3,9781508217916,9781508298205,"15,16"
+46,KO,Korean 1,3,,03R,F,하지만 아직 잘 못해요.,hajiman ajik jal mot haeyo.,9781508298205_Korean_Level_1_QM_046.mp3,9781508217916,9781508298205,"15,16"
 47,KO,Korean 1,3,,04Q,N,Did you eat lunch?,,9781508298205_Korean_Level_1_QM_047.mp3,9781508217916,9781508298205,6
-48,KO,Korean 1,3,,04R,F,__ ____?,jeomshim deusyeoss eoyo?,9781508298205_Korean_Level_1_QM_048.mp3,9781508217916,9781508298205,6
+48,KO,Korean 1,3,,04R,F,점심 드셨어요?,jeomshim deusyeoss eoyo?,9781508298205_Korean_Level_1_QM_048.mp3,9781508217916,9781508298205,6
 49,KO,Korean 1,3,,05Q,N,Have you had breakfast?,,9781508298205_Korean_Level_1_QM_049.mp3,9781508217916,9781508298205,6
-50,KO,Korean 1,3,,05R,F,__ ____?,achim deusyeoss eoyo?,9781508298205_Korean_Level_1_QM_050.mp3,9781508217916,9781508298205,6
+50,KO,Korean 1,3,,05R,F,아침 드셨어요?,achim deusyeoss eoyo?,9781508298205_Korean_Level_1_QM_050.mp3,9781508217916,9781508298205,6
 51,KO,Korean 1,3,,06Q,N,Thank you very much.,,9781508298205_Korean_Level_1_QM_051.mp3,9781508217916,9781508298205,"13,16"
-52,KO,Korean 1,3,,06R,M,__ _____.,jung mal kamsa ham nita.,9781508298205_Korean_Level_1_QM_052.mp3,9781508217916,9781508298205,"13,16"
+52,KO,Korean 1,3,,06R,M,정말 감사합니다.,jung mal kamsa ham nita.,9781508298205_Korean_Level_1_QM_052.mp3,9781508217916,9781508298205,"13,16"
 53,KO,Korean 1,3,,07Q,N,I learned in America.,,9781508298205_Korean_Level_1_QM_053.mp3,9781508217916,9781508298205,7
-54,KO,Korean 1,3,,07R,M,____ ____.,mikuk eseo baewoss eoyo.,9781508298205_Korean_Level_1_QM_054.mp3,9781508217916,9781508298205,7
-55,KO,Korean 1,3,,08Q,N,I don�t know.,,9781508298205_Korean_Level_1_QM_055.mp3,9781508217916,9781508298205,"7,16"
-56,KO,Korean 1,3,,08R,M,___.,molla yo.,9781508298205_Korean_Level_1_QM_056.mp3,9781508217916,9781508298205,"7,16"
+54,KO,Korean 1,3,,07R,M,미국에서 배웠어요.,mikuk eseo baewoss eoyo.,9781508298205_Korean_Level_1_QM_054.mp3,9781508217916,9781508298205,7
+55,KO,Korean 1,3,,08Q,N,I don’t know.,,9781508298205_Korean_Level_1_QM_055.mp3,9781508217916,9781508298205,"7,16"
+56,KO,Korean 1,3,,08R,M,몰라요.,molla yo.,9781508298205_Korean_Level_1_QM_056.mp3,9781508217916,9781508298205,"7,16"
 57,KO,Korean 1,3,,09Q,N,"Yes, thank you very much.",,9781508298205_Korean_Level_1_QM_057.mp3,9781508217916,9781508298205,"13,16"
-58,KO,Korean 1,3,,09R,M,"_, __ _____.","ne, jung mal kamsa ham nita.",9781508298205_Korean_Level_1_QM_058.mp3,9781508217916,9781508298205,"13,16"
-59,KO,Korean 1,3,,10Q,N,"No, I don�t speak well yet.",,9781508298205_Korean_Level_1_QM_059.mp3,9781508217916,9781508298205,"15,16"
-60,KO,Korean 1,3,,10R,M,"___, __ _ ___.","aniyo, ajik jal mot haeyo.",9781508298205_Korean_Level_1_QM_060.mp3,9781508217916,9781508298205,"15,16"
-61,KO,Korean 1,4,,01Q,N,"No, it�s not here.",,9781508298205_Korean_Level_1_QM_061.mp3,9781508217916,9781508298205,4
-62,KO,Korean 1,4,,01R,F,"___, ___ ____.","aniyo, yeoki ka anieyo.",9781508298205_Korean_Level_1_QM_062.mp3,9781508217916,9781508298205,4
+58,KO,Korean 1,3,,09R,M,"네, 정말 감사합니다.","ne, jung mal kamsa ham nita.",9781508298205_Korean_Level_1_QM_058.mp3,9781508217916,9781508298205,"13,16"
+59,KO,Korean 1,3,,10Q,N,"No, I don’t speak well yet.",,9781508298205_Korean_Level_1_QM_059.mp3,9781508217916,9781508298205,"15,16"
+60,KO,Korean 1,3,,10R,M,"아니요, 아직 잘 못해요.","aniyo, ajik jal mot haeyo.",9781508298205_Korean_Level_1_QM_060.mp3,9781508217916,9781508298205,"15,16"
+61,KO,Korean 1,4,,01Q,N,"No, it’s not here.",,9781508298205_Korean_Level_1_QM_061.mp3,9781508217916,9781508298205,4
+62,KO,Korean 1,4,,01R,F,"아니요, 여기가 아니에요.","aniyo, yeoki ka anieyo.",9781508298205_Korean_Level_1_QM_062.mp3,9781508217916,9781508298205,4
 63,KO,Korean 1,4,,02Q,N,"As for me, I ate.",,9781508298205_Korean_Level_1_QM_063.mp3,9781508217916,9781508298205,6
-64,KO,Korean 1,4,,02R,F,__ ____.,jeo neun meok eoss eoyo.,9781508298205_Korean_Level_1_QM_064.mp3,9781508217916,9781508298205,6
-65,KO,Korean 1,4,,03Q,N,It�s not over there.,,9781508298205_Korean_Level_1_QM_065.mp3,9781508217916,9781508298205,4
-66,KO,Korean 1,4,,03R,F,___ ____.,jeoki ka anieyo.,9781508298205_Korean_Level_1_QM_066.mp3,9781508217916,9781508298205,4
-67,KO,Korean 1,4,,04Q,N,It�s over there.,,9781508298205_Korean_Level_1_QM_067.mp3,9781508217916,9781508298205,4
-68,KO,Korean 1,4,,04R,F,____.,jeoki yeyo.,9781508298205_Korean_Level_1_QM_068.mp3,9781508217916,9781508298205,4
+64,KO,Korean 1,4,,02R,F,저는 먹었어요.,jeo neun meok eoss eoyo.,9781508298205_Korean_Level_1_QM_064.mp3,9781508217916,9781508298205,6
+65,KO,Korean 1,4,,03Q,N,It’s not over there.,,9781508298205_Korean_Level_1_QM_065.mp3,9781508217916,9781508298205,4
+66,KO,Korean 1,4,,03R,F,저기가 아니에요.,jeoki ka anieyo.,9781508298205_Korean_Level_1_QM_066.mp3,9781508217916,9781508298205,4
+67,KO,Korean 1,4,,04Q,N,It’s over there.,,9781508298205_Korean_Level_1_QM_067.mp3,9781508217916,9781508298205,4
+68,KO,Korean 1,4,,04R,F,저기예요.,jeoki yeyo.,9781508298205_Korean_Level_1_QM_068.mp3,9781508217916,9781508298205,4
 69,KO,Korean 1,4,,05Q,N,I ate lunch.,,9781508298205_Korean_Level_1_QM_069.mp3,9781508217916,9781508298205,6
-70,KO,Korean 1,4,,05R,F,______.,jeomshim meok eoss eoyo.,9781508298205_Korean_Level_1_QM_070.mp3,9781508217916,9781508298205,6
+70,KO,Korean 1,4,,05R,F,점심먹었어요.,jeomshim meok eoss eoyo.,9781508298205_Korean_Level_1_QM_070.mp3,9781508217916,9781508298205,6
 71,KO,Korean 1,4,,06Q,N,I speak a little.,,9781508298205_Korean_Level_1_QM_071.mp3,9781508217916,9781508298205,"15,16"
-72,KO,Korean 1,4,,06R,M,__ __.,jokeum haeyo.,9781508298205_Korean_Level_1_QM_072.mp3,9781508217916,9781508298205,"15,16"
+72,KO,Korean 1,4,,06R,M,조금 해요.,jokeum haeyo.,9781508298205_Korean_Level_1_QM_072.mp3,9781508217916,9781508298205,"15,16"
 73,KO,Korean 1,4,,07Q,N,Is it over there?,,9781508298205_Korean_Level_1_QM_073.mp3,9781508217916,9781508298205,"4,7,16"
-74,KO,Korean 1,4,,07R,M,____?,jeoki yeyo?,9781508298205_Korean_Level_1_QM_074.mp3,9781508217916,9781508298205,"4,7,16"
-75,KO,Korean 1,4,,08Q,N,It�s not here.,,9781508298205_Korean_Level_1_QM_075.mp3,9781508217916,9781508298205,4
-76,KO,Korean 1,4,,08R,M,___ ____.,yeoki ka anieyo.,9781508298205_Korean_Level_1_QM_076.mp3,9781508217916,9781508298205,4
+74,KO,Korean 1,4,,07R,M,저기예요?,jeoki yeyo?,9781508298205_Korean_Level_1_QM_074.mp3,9781508217916,9781508298205,"4,7,16"
+75,KO,Korean 1,4,,08Q,N,It’s not here.,,9781508298205_Korean_Level_1_QM_075.mp3,9781508217916,9781508298205,4
+76,KO,Korean 1,4,,08R,M,여기가 아니에요.,yeoki ka anieyo.,9781508298205_Korean_Level_1_QM_076.mp3,9781508217916,9781508298205,4
 77,KO,Korean 1,4,,09Q,N,Is it here?,,9781508298205_Korean_Level_1_QM_077.mp3,9781508217916,9781508298205,4
-78,KO,Korean 1,4,,09R,M,____?,yeoki yeyo?,9781508298205_Korean_Level_1_QM_078.mp3,9781508217916,9781508298205,4
+78,KO,Korean 1,4,,09R,M,여기예요?,yeoki yeyo?,9781508298205_Korean_Level_1_QM_078.mp3,9781508217916,9781508298205,4
 79,KO,Korean 1,4,,10Q,N,Where is Tapgol Park?,,9781508298205_Korean_Level_1_QM_079.mp3,9781508217916,9781508298205,4
-80,KO,Korean 1,4,,10R,M,_____ ____?,tapgol kongwoni eodi yeyo?,9781508298205_Korean_Level_1_QM_080.mp3,9781508217916,9781508298205,4
+80,KO,Korean 1,4,,10R,M,탑골공원이 어디예요?,tapgol kongwoni eodi yeyo?,9781508298205_Korean_Level_1_QM_080.mp3,9781508217916,9781508298205,4
 81,KO,Korean 1,5,,01Q,N,Are you going to eat breakfast?,,9781508298205_Korean_Level_1_QM_081.mp3,9781508217916,9781508298205,6
-82,KO,Korean 1,5,,01R,F,__ _____?,achim deusi kess eoyo?,9781508298205_Korean_Level_1_QM_082.mp3,9781508217916,9781508298205,6
-83,KO,Korean 1,5,,02Q,N,You�re not going to eat.,,9781508298205_Korean_Level_1_QM_083.mp3,9781508217916,9781508298205,6
-84,KO,Korean 1,5,,02R,F,_ _____.,an deusi kess eoyo.,9781508298205_Korean_Level_1_QM_084.mp3,9781508217916,9781508298205,6
-85,KO,Korean 1,5,,03Q,N,I�m going to drink.,,9781508298205_Korean_Level_1_QM_085.mp3,9781508217916,9781508298205,6
-86,KO,Korean 1,5,,03R,F,_____.,masi kess eoyo.,9781508298205_Korean_Level_1_QM_086.mp3,9781508217916,9781508298205,6
-87,KO,Korean 1,5,,04Q,N,I�m not going to drink.,,9781508298205_Korean_Level_1_QM_087.mp3,9781508217916,9781508298205,6
-88,KO,Korean 1,5,,04R,F,_ _____.,an masi kess eoyo.,9781508298205_Korean_Level_1_QM_088.mp3,9781508217916,9781508298205,6
+82,KO,Korean 1,5,,01R,F,아침 드시겠어요?,achim deusi kess eoyo?,9781508298205_Korean_Level_1_QM_082.mp3,9781508217916,9781508298205,6
+83,KO,Korean 1,5,,02Q,N,You’re not going to eat.,,9781508298205_Korean_Level_1_QM_083.mp3,9781508217916,9781508298205,6
+84,KO,Korean 1,5,,02R,F,안 드시겠어요.,an deusi kess eoyo.,9781508298205_Korean_Level_1_QM_084.mp3,9781508217916,9781508298205,6
+85,KO,Korean 1,5,,03Q,N,I’m going to drink.,,9781508298205_Korean_Level_1_QM_085.mp3,9781508217916,9781508298205,6
+86,KO,Korean 1,5,,03R,F,마시겠어요.,masi kess eoyo.,9781508298205_Korean_Level_1_QM_086.mp3,9781508217916,9781508298205,6
+87,KO,Korean 1,5,,04Q,N,I’m not going to drink.,,9781508298205_Korean_Level_1_QM_087.mp3,9781508217916,9781508298205,6
+88,KO,Korean 1,5,,04R,F,안 마시겠어요.,an masi kess eoyo.,9781508298205_Korean_Level_1_QM_088.mp3,9781508217916,9781508298205,6
 89,KO,Korean 1,5,,05Q,N,Do you know?,,9781508298205_Korean_Level_1_QM_089.mp3,9781508217916,9781508298205,7
-90,KO,Korean 1,5,,05R,F,___?,aseyo?,9781508298205_Korean_Level_1_QM_090.mp3,9781508217916,9781508298205,7
+90,KO,Korean 1,5,,05R,F,아세요?,aseyo?,9781508298205_Korean_Level_1_QM_090.mp3,9781508217916,9781508298205,7
 91,KO,Korean 1,5,,06Q,N,I know.,,9781508298205_Korean_Level_1_QM_091.mp3,9781508217916,9781508298205,7
-92,KO,Korean 1,5,,06R,M,___.,alayo.,9781508298205_Korean_Level_1_QM_092.mp3,9781508217916,9781508298205,7
-93,KO,Korean 1,5,,07Q,N,I�m going to eat Korean food.,,9781508298205_Korean_Level_1_QM_093.mp3,9781508217916,9781508298205,6
-94,KO,Korean 1,5,,07R,M,__ __ ____.,hankuk eumshik meok kess eoyo.,9781508298205_Korean_Level_1_QM_094.mp3,9781508217916,9781508298205,6
-95,KO,Korean 1,5,,08Q,N,"As for me, I�m going to eat.",,9781508298205_Korean_Level_1_QM_095.mp3,9781508217916,9781508298205,6
-96,KO,Korean 1,5,,08R,M,__ ____.,jeo neun meok kess eoyo.,9781508298205_Korean_Level_1_QM_096.mp3,9781508217916,9781508298205,6
-97,KO,Korean 1,5,,09Q,N,I�m going to eat.,,9781508298205_Korean_Level_1_QM_097.mp3,9781508217916,9781508298205,6
-98,KO,Korean 1,5,,09R,M,____.,meok kess eoyo.,9781508298205_Korean_Level_1_QM_098.mp3,9781508217916,9781508298205,6
-99,KO,Korean 1,5,,10Q,N,I�m going to eat something.,,9781508298205_Korean_Level_1_QM_099.mp3,9781508217916,9781508298205,6
-100,KO,Korean 1,5,,10R,M,_ _ ____.,muel jom meok kess eoyo.,9781508298205_Korean_Level_1_QM_100.mp3,9781508217916,9781508298205,6
-101,KO,Korean 1,5,,11Q,N,I�m going to drink something.,,9781508298205_Korean_Level_1_QM_101.mp3,9781508217916,9781508298205,6
-102,KO,Korean 1,5,,11R,M,_ _ _____.,muel jom masi kess eoyo.,9781508298205_Korean_Level_1_QM_102.mp3,9781508217916,9781508298205,6
+92,KO,Korean 1,5,,06R,M,알아요.,alayo.,9781508298205_Korean_Level_1_QM_092.mp3,9781508217916,9781508298205,7
+93,KO,Korean 1,5,,07Q,N,I’m going to eat Korean food.,,9781508298205_Korean_Level_1_QM_093.mp3,9781508217916,9781508298205,6
+94,KO,Korean 1,5,,07R,M,한국 음식 먹겠어요.,hankuk eumshik meok kess eoyo.,9781508298205_Korean_Level_1_QM_094.mp3,9781508217916,9781508298205,6
+95,KO,Korean 1,5,,08Q,N,"As for me, I’m going to eat.",,9781508298205_Korean_Level_1_QM_095.mp3,9781508217916,9781508298205,6
+96,KO,Korean 1,5,,08R,M,저는 먹겠어요.,jeo neun meok kess eoyo.,9781508298205_Korean_Level_1_QM_096.mp3,9781508217916,9781508298205,6
+97,KO,Korean 1,5,,09Q,N,I’m going to eat.,,9781508298205_Korean_Level_1_QM_097.mp3,9781508217916,9781508298205,6
+98,KO,Korean 1,5,,09R,M,먹겠어요.,meok kess eoyo.,9781508298205_Korean_Level_1_QM_098.mp3,9781508217916,9781508298205,6
+99,KO,Korean 1,5,,10Q,N,I’m going to eat something.,,9781508298205_Korean_Level_1_QM_099.mp3,9781508217916,9781508298205,6
+100,KO,Korean 1,5,,10R,M,뭘 좀 먹겠어요.,muel jom meok kess eoyo.,9781508298205_Korean_Level_1_QM_100.mp3,9781508217916,9781508298205,6
+101,KO,Korean 1,5,,11Q,N,I’m going to drink something.,,9781508298205_Korean_Level_1_QM_101.mp3,9781508217916,9781508298205,6
+102,KO,Korean 1,5,,11R,M,뭘 좀 마시겠어요.,muel jom masi kess eoyo.,9781508298205_Korean_Level_1_QM_102.mp3,9781508217916,9781508298205,6
 103,KO,Korean 1,6,,01Q,N,Where are you going to eat?,,9781508298205_Korean_Level_1_QM_103.mp3,9781508217916,9781508298205,6
-104,KO,Korean 1,6,,01R,F,____ _____?,eodi eseo deusi kess eoyo?,9781508298205_Korean_Level_1_QM_104.mp3,9781508217916,9781508298205,6
+104,KO,Korean 1,6,,01R,F,어디에서 드시겠어요?,eodi eseo deusi kess eoyo?,9781508298205_Korean_Level_1_QM_104.mp3,9781508217916,9781508298205,6
 105,KO,Korean 1,6,,02Q,N,When are you going to eat?,,9781508298205_Korean_Level_1_QM_105.mp3,9781508217916,9781508298205,6
-106,KO,Korean 1,6,,02R,F,__ _____?,eonje deusi kess eoyo?,9781508298205_Korean_Level_1_QM_106.mp3,9781508217916,9781508298205,6
+106,KO,Korean 1,6,,02R,F,언제 드시겠어요?,eonje deusi kess eoyo?,9781508298205_Korean_Level_1_QM_106.mp3,9781508217916,9781508298205,6
 107,KO,Korean 1,6,,03Q,N,I ate Korean food.,,9781508298205_Korean_Level_1_QM_107.mp3,9781508217916,9781508298205,6
-108,KO,Korean 1,6,,03R,F,__ __ ____.,hankuk eumshik meok eoss eoyo.,9781508298205_Korean_Level_1_QM_108.mp3,9781508217916,9781508298205,6
+108,KO,Korean 1,6,,03R,F,한국 음식 먹었어요.,hankuk eumshik meok eoss eoyo.,9781508298205_Korean_Level_1_QM_108.mp3,9781508217916,9781508298205,6
 109,KO,Korean 1,6,,04Q,N,At our place.,,9781508298205_Korean_Level_1_QM_109.mp3,9781508217916,9781508298205,"5,7"
-110,KO,Korean 1,6,,04R,F,__ ____.,jeohee jip eseo yo.,9781508298205_Korean_Level_1_QM_110.mp3,9781508217916,9781508298205,"5,7"
-111,KO,Korean 1,6,,05Q,N,I don�t know either.,,9781508298205_Korean_Level_1_QM_111.mp3,9781508217916,9781508298205,7
-112,KO,Korean 1,6,,05R,F,__ ___.,jeo do molla yo.,9781508298205_Korean_Level_1_QM_112.mp3,9781508217916,9781508298205,7
-113,KO,Korean 1,6,,06Q,N,I�m not going to drink now.,,9781508298205_Korean_Level_1_QM_113.mp3,9781508217916,9781508298205,6
-114,KO,Korean 1,6,,06R,M,__ _ _____.,jikeum an masi kess eoyo.,9781508298205_Korean_Level_1_QM_114.mp3,9781508217916,9781508298205,6
+110,KO,Korean 1,6,,04R,F,저희 집에서요.,jeohee jip eseo yo.,9781508298205_Korean_Level_1_QM_110.mp3,9781508217916,9781508298205,"5,7"
+111,KO,Korean 1,6,,05Q,N,I don’t know either.,,9781508298205_Korean_Level_1_QM_111.mp3,9781508217916,9781508298205,7
+112,KO,Korean 1,6,,05R,F,저도 몰라요.,jeo do molla yo.,9781508298205_Korean_Level_1_QM_112.mp3,9781508217916,9781508298205,7
+113,KO,Korean 1,6,,06Q,N,I’m not going to drink now.,,9781508298205_Korean_Level_1_QM_113.mp3,9781508217916,9781508298205,6
+114,KO,Korean 1,6,,06R,M,지금 안 마시겠어요.,jikeum an masi kess eoyo.,9781508298205_Korean_Level_1_QM_114.mp3,9781508217916,9781508298205,6
 115,KO,Korean 1,6,,07Q,N,All right?,,9781508298205_Korean_Level_1_QM_115.mp3,9781508217916,9781508298205,16
-116,KO,Korean 1,6,,07R,M,____?,joseum nikka?,9781508298205_Korean_Level_1_QM_116.mp3,9781508217916,9781508298205,16
-117,KO,Korean 1,6,,08Q,N,I�m sorry.,,9781508298205_Korean_Level_1_QM_117.mp3,9781508217916,9781508298205,13
-118,KO,Korean 1,6,,08R,M,_____.,mian ham nita.,9781508298205_Korean_Level_1_QM_118.mp3,9781508217916,9781508298205,13
-119,KO,Korean 1,6,,09Q,N,I�m going to eat later.,,9781508298205_Korean_Level_1_QM_119.mp3,9781508217916,9781508298205,"6,17"
-120,KO,Korean 1,6,,09R,M,___ ____.,najunge meok kess eoyo.,9781508298205_Korean_Level_1_QM_120.mp3,9781508217916,9781508298205,"6,17"
-121,KO,Korean 1,6,,10Q,N,I�m going to drink later.,,9781508298205_Korean_Level_1_QM_121.mp3,9781508217916,9781508298205,"6,17"
-122,KO,Korean 1,6,,10R,M,___ _____.,najunge masi kess eoyo.,9781508298205_Korean_Level_1_QM_122.mp3,9781508217916,9781508298205,"6,17"
-123,KO,Korean 1,7,,01Q,N,I don�t know yet.,,9781508298205_Korean_Level_1_QM_123.mp3,9781508217916,9781508298205,7
-124,KO,Korean 1,7,,01R,F,__ ___.,ajik molla yo.,9781508298205_Korean_Level_1_QM_124.mp3,9781508217916,9781508298205,7
-125,KO,Korean 1,7,,02Q,N,I�m not going to drink anything.,,9781508298205_Korean_Level_1_QM_125.mp3,9781508217916,9781508298205,6
-126,KO,Korean 1,7,,02R,F,____ _ _____.,amu keotdo an masi kess eoyo.,9781508298205_Korean_Level_1_QM_126.mp3,9781508217916,9781508298205,6
+116,KO,Korean 1,6,,07R,M,좋습니까?,joseum nikka?,9781508298205_Korean_Level_1_QM_116.mp3,9781508217916,9781508298205,16
+117,KO,Korean 1,6,,08Q,N,I’m sorry.,,9781508298205_Korean_Level_1_QM_117.mp3,9781508217916,9781508298205,13
+118,KO,Korean 1,6,,08R,M,미안합니다.,mian ham nita.,9781508298205_Korean_Level_1_QM_118.mp3,9781508217916,9781508298205,13
+119,KO,Korean 1,6,,09Q,N,I’m going to eat later.,,9781508298205_Korean_Level_1_QM_119.mp3,9781508217916,9781508298205,"6,17"
+120,KO,Korean 1,6,,09R,M,나중에 먹겠어요.,najunge meok kess eoyo.,9781508298205_Korean_Level_1_QM_120.mp3,9781508217916,9781508298205,"6,17"
+121,KO,Korean 1,6,,10Q,N,I’m going to drink later.,,9781508298205_Korean_Level_1_QM_121.mp3,9781508217916,9781508298205,"6,17"
+122,KO,Korean 1,6,,10R,M,나중에 마시겠어요.,najunge masi kess eoyo.,9781508298205_Korean_Level_1_QM_122.mp3,9781508217916,9781508298205,"6,17"
+123,KO,Korean 1,7,,01Q,N,I don’t know yet.,,9781508298205_Korean_Level_1_QM_123.mp3,9781508217916,9781508298205,7
+124,KO,Korean 1,7,,01R,F,아직 몰라요.,ajik molla yo.,9781508298205_Korean_Level_1_QM_124.mp3,9781508217916,9781508298205,7
+125,KO,Korean 1,7,,02Q,N,I’m not going to drink anything.,,9781508298205_Korean_Level_1_QM_125.mp3,9781508217916,9781508298205,6
+126,KO,Korean 1,7,,02R,F,아무것도 안 마시겠어요.,amu keotdo an masi kess eoyo.,9781508298205_Korean_Level_1_QM_126.mp3,9781508217916,9781508298205,6
 127,KO,Korean 1,7,,03Q,N,But green tea would be good.,,9781508298205_Korean_Level_1_QM_127.mp3,9781508217916,9781508298205,6
-128,KO,Korean 1,7,,03R,F,___ ___ ____.,hajiman nokcha ka jo kess eoyo.,9781508298205_Korean_Level_1_QM_128.mp3,9781508217916,9781508298205,6
+128,KO,Korean 1,7,,03R,F,하지만 녹차가 좋겠어요.,hajiman nokcha ka jo kess eoyo.,9781508298205_Korean_Level_1_QM_128.mp3,9781508217916,9781508298205,6
 129,KO,Korean 1,7,,04Q,N,But latte would be good.,,9781508298205_Korean_Level_1_QM_129.mp3,9781508217916,9781508298205,6
-130,KO,Korean 1,7,,04R,F,___ ___ ____.,hajiman ratte ka jo kess eoyo.,9781508298205_Korean_Level_1_QM_130.mp3,9781508217916,9781508298205,6
+130,KO,Korean 1,7,,04R,F,하지만 라떼가 좋겠어요.,hajiman ratte ka jo kess eoyo.,9781508298205_Korean_Level_1_QM_130.mp3,9781508217916,9781508298205,6
 131,KO,Korean 1,7,,05Q,N,What are you going to drink?,,9781508298205_Korean_Level_1_QM_131.mp3,9781508217916,9781508298205,6
-132,KO,Korean 1,7,,05R,F,_ _____?,muel deusi kess eoyo?,9781508298205_Korean_Level_1_QM_132.mp3,9781508217916,9781508298205,6
-133,KO,Korean 1,7,,06Q,N,I�m going to drink green tea.,,9781508298205_Korean_Level_1_QM_133.mp3,9781508217916,9781508298205,6
-134,KO,Korean 1,7,,06R,M,__ _____.,nokcha masi kess eoyo.,9781508298205_Korean_Level_1_QM_134.mp3,9781508217916,9781508298205,6
-135,KO,Korean 1,7,,07Q,N,I�m going to drink water.,,9781508298205_Korean_Level_1_QM_135.mp3,9781508217916,9781508298205,"6,16"
-136,KO,Korean 1,7,,07R,M,_ _____.,mul masi kess eoyo.,9781508298205_Korean_Level_1_QM_136.mp3,9781508217916,9781508298205,"6,16"
+132,KO,Korean 1,7,,05R,F,뭘 드시겠어요?,muel deusi kess eoyo?,9781508298205_Korean_Level_1_QM_132.mp3,9781508217916,9781508298205,6
+133,KO,Korean 1,7,,06Q,N,I’m going to drink green tea.,,9781508298205_Korean_Level_1_QM_133.mp3,9781508217916,9781508298205,6
+134,KO,Korean 1,7,,06R,M,녹차 마시겠어요.,nokcha masi kess eoyo.,9781508298205_Korean_Level_1_QM_134.mp3,9781508217916,9781508298205,6
+135,KO,Korean 1,7,,07Q,N,I’m going to drink water.,,9781508298205_Korean_Level_1_QM_135.mp3,9781508217916,9781508298205,"6,16"
+136,KO,Korean 1,7,,07R,M,물 마시겠어요.,mul masi kess eoyo.,9781508298205_Korean_Level_1_QM_136.mp3,9781508217916,9781508298205,"6,16"
 137,KO,Korean 1,7,,08Q,N,Would green tea be good?,,9781508298205_Korean_Level_1_QM_137.mp3,9781508217916,9781508298205,6
-138,KO,Korean 1,7,,08R,M,___ ____?,nokcha ka jo kess eoyo?,9781508298205_Korean_Level_1_QM_138.mp3,9781508217916,9781508298205,6
-139,KO,Korean 1,7,,09Q,N,I�m going to eat at a restaurant.,,9781508298205_Korean_Level_1_QM_139.mp3,9781508217916,9781508298205,6
-140,KO,Korean 1,7,,09R,M,______ ____.,reseutorang eseo meok kess eoyo.,9781508298205_Korean_Level_1_QM_140.mp3,9781508217916,9781508298205,6
+138,KO,Korean 1,7,,08R,M,녹차가 좋겠어요?,nokcha ka jo kess eoyo?,9781508298205_Korean_Level_1_QM_138.mp3,9781508217916,9781508298205,6
+139,KO,Korean 1,7,,09Q,N,I’m going to eat at a restaurant.,,9781508298205_Korean_Level_1_QM_139.mp3,9781508217916,9781508298205,6
+140,KO,Korean 1,7,,09R,M,레스토랑에서 먹겠어요.,reseutorang eseo meok kess eoyo.,9781508298205_Korean_Level_1_QM_140.mp3,9781508217916,9781508298205,6
 141,KO,Korean 1,7,,10Q,N,Green tea would be good.,,9781508298205_Korean_Level_1_QM_141.mp3,9781508217916,9781508298205,6
-142,KO,Korean 1,7,,10R,M,___ ____.,nokcha ka jo kess eoyo.,9781508298205_Korean_Level_1_QM_142.mp3,9781508217916,9781508298205,6
-143,KO,Korean 1,8,,01Q,N,I�m not going to buy anything.,,9781508298205_Korean_Level_1_QM_143.mp3,9781508217916,9781508298205,14
-144,KO,Korean 1,8,,01R,F,____ _ ____.,amu keotdo an sa kess eoyo.,9781508298205_Korean_Level_1_QM_144.mp3,9781508217916,9781508298205,14
-145,KO,Korean 1,8,,02Q,N,I�m going to eat with a friend.,,9781508298205_Korean_Level_1_QM_145.mp3,9781508217916,9781508298205,"5,6"
-146,KO,Korean 1,8,,02R,F,___ ____.,chingu wa meok kess eoyo.,9781508298205_Korean_Level_1_QM_146.mp3,9781508217916,9781508298205,"5,6"
+142,KO,Korean 1,7,,10R,M,녹차가 좋겠어요.,nokcha ka jo kess eoyo.,9781508298205_Korean_Level_1_QM_142.mp3,9781508217916,9781508298205,6
+143,KO,Korean 1,8,,01Q,N,I’m not going to buy anything.,,9781508298205_Korean_Level_1_QM_143.mp3,9781508217916,9781508298205,14
+144,KO,Korean 1,8,,01R,F,아무것도 안 사겠어요.,amu keotdo an sa kess eoyo.,9781508298205_Korean_Level_1_QM_144.mp3,9781508217916,9781508298205,14
+145,KO,Korean 1,8,,02Q,N,I’m going to eat with a friend.,,9781508298205_Korean_Level_1_QM_145.mp3,9781508217916,9781508298205,"5,6"
+146,KO,Korean 1,8,,02R,F,친구와 먹겠어요.,chingu wa meok kess eoyo.,9781508298205_Korean_Level_1_QM_146.mp3,9781508217916,9781508298205,"5,6"
 147,KO,Korean 1,8,,03Q,N,When are you going to eat lunch?,,9781508298205_Korean_Level_1_QM_147.mp3,9781508217916,9781508298205,6
-148,KO,Korean 1,8,,03R,F,__ __ _____?,eonje jeomshim deusi kess eoyo?,9781508298205_Korean_Level_1_QM_148.mp3,9781508217916,9781508298205,6
-149,KO,Korean 1,8,,04Q,N,I�m going to eat lunch.,,9781508298205_Korean_Level_1_QM_149.mp3,9781508217916,9781508298205,6
-150,KO,Korean 1,8,,04R,F,__ ____.,jeomshim meok kess eoyo.,9781508298205_Korean_Level_1_QM_150.mp3,9781508217916,9781508298205,6
+148,KO,Korean 1,8,,03R,F,언제 점심 드시겠어요?,eonje jeomshim deusi kess eoyo?,9781508298205_Korean_Level_1_QM_148.mp3,9781508217916,9781508298205,6
+149,KO,Korean 1,8,,04Q,N,I’m going to eat lunch.,,9781508298205_Korean_Level_1_QM_149.mp3,9781508217916,9781508298205,6
+150,KO,Korean 1,8,,04R,F,점심 먹겠어요.,jeomshim meok kess eoyo.,9781508298205_Korean_Level_1_QM_150.mp3,9781508217916,9781508298205,6
 151,KO,Korean 1,8,,05Q,N,What are you going to do now?,,9781508298205_Korean_Level_1_QM_151.mp3,9781508217916,9781508298205,1
-152,KO,Korean 1,8,,05R,F,__ _ _____?,jikeum muel hasi kess eoyo?,9781508298205_Korean_Level_1_QM_152.mp3,9781508217916,9781508298205,1
+152,KO,Korean 1,8,,05R,F,지금 뭘 하시겠어요?,jikeum muel hasi kess eoyo?,9781508298205_Korean_Level_1_QM_152.mp3,9781508217916,9781508298205,1
 153,KO,Korean 1,8,,06Q,N,Please give me two glasses of cola.,,9781508298205_Korean_Level_1_QM_153.mp3,9781508217916,9781508298205,"6,12,13"
-154,KO,Korean 1,8,,06R,M,__ _ _ ___.,kolla du jan juseyo.,9781508298205_Korean_Level_1_QM_154.mp3,9781508217916,9781508298205,"6,12,13"
+154,KO,Korean 1,8,,06R,M,콜라 두 잔 주세요.,kolla du jan juseyo.,9781508298205_Korean_Level_1_QM_154.mp3,9781508217916,9781508298205,"6,12,13"
 155,KO,Korean 1,8,,07Q,N,Are you going to drink cola or water?,,9781508298205_Korean_Level_1_QM_155.mp3,9781508217916,9781508298205,6
-156,KO,Korean 1,8,,07R,M,___ _ _____?,kolla na mul deusi kess eoyo?,9781508298205_Korean_Level_1_QM_156.mp3,9781508217916,9781508298205,6
+156,KO,Korean 1,8,,07R,M,콜라나 물 드시겠어요?,kolla na mul deusi kess eoyo?,9781508298205_Korean_Level_1_QM_156.mp3,9781508217916,9781508298205,6
 157,KO,Korean 1,8,,08Q,N,What are you going to do?,,9781508298205_Korean_Level_1_QM_157.mp3,9781508217916,9781508298205,1
-158,KO,Korean 1,8,,08R,M,_ _____?,muel hasi kess eoyo?,9781508298205_Korean_Level_1_QM_158.mp3,9781508217916,9781508298205,1
-159,KO,Korean 1,8,,09Q,N,I�m going to buy something.,,9781508298205_Korean_Level_1_QM_159.mp3,9781508217916,9781508298205,14
-160,KO,Korean 1,8,,09R,M,_ _ ____.,muel jom sa kess eoyo.,9781508298205_Korean_Level_1_QM_160.mp3,9781508217916,9781508298205,14
-161,KO,Korean 1,8,,10Q,N,I�m going to buy green tea.,,9781508298205_Korean_Level_1_QM_161.mp3,9781508217916,9781508298205,"6,14"
-162,KO,Korean 1,8,,10R,M,__ ____.,nokcha sa kess eoyo.,9781508298205_Korean_Level_1_QM_162.mp3,9781508217916,9781508298205,"6,14"
+158,KO,Korean 1,8,,08R,M,뭘 하시겠어요?,muel hasi kess eoyo?,9781508298205_Korean_Level_1_QM_158.mp3,9781508217916,9781508298205,1
+159,KO,Korean 1,8,,09Q,N,I’m going to buy something.,,9781508298205_Korean_Level_1_QM_159.mp3,9781508217916,9781508298205,14
+160,KO,Korean 1,8,,09R,M,뭘 좀 사겠어요.,muel jom sa kess eoyo.,9781508298205_Korean_Level_1_QM_160.mp3,9781508217916,9781508298205,14
+161,KO,Korean 1,8,,10Q,N,I’m going to buy green tea.,,9781508298205_Korean_Level_1_QM_161.mp3,9781508217916,9781508298205,"6,14"
+162,KO,Korean 1,8,,10R,M,녹차 사겠어요.,nokcha sa kess eoyo.,9781508298205_Korean_Level_1_QM_162.mp3,9781508217916,9781508298205,"6,14"
 163,KO,Korean 1,9,,01Q,N,I understand.,,9781508298205_Korean_Level_1_QM_163.mp3,9781508217916,9781508298205,"15,16"
-164,KO,Korean 1,9,,01R,F,____.,al kess eoyo.,9781508298205_Korean_Level_1_QM_164.mp3,9781508217916,9781508298205,"15,16"
-165,KO,Korean 1,9,,02Q,N,Or else at nine o�clock.,,9781508298205_Korean_Level_1_QM_165.mp3,9781508217916,9781508298205,"12,17"
-166,KO,Korean 1,9,,02R,F,___ __ ___.,animyeon ahop si eyo.,9781508298205_Korean_Level_1_QM_166.mp3,9781508217916,9781508298205,"12,17"
+164,KO,Korean 1,9,,01R,F,알겠어요.,al kess eoyo.,9781508298205_Korean_Level_1_QM_164.mp3,9781508217916,9781508298205,"15,16"
+165,KO,Korean 1,9,,02Q,N,Or else at nine o’clock.,,9781508298205_Korean_Level_1_QM_165.mp3,9781508217916,9781508298205,"12,17"
+166,KO,Korean 1,9,,02R,F,아니면 아홉 시에요.,animyeon ahop si eyo.,9781508298205_Korean_Level_1_QM_166.mp3,9781508217916,9781508298205,"12,17"
 167,KO,Korean 1,9,,03Q,N,"At the department store, we meet.",,9781508298205_Korean_Level_1_QM_167.mp3,9781508217916,9781508298205,14
-168,KO,Korean 1,9,,03R,F,_____ ___.,baekhwa jeom eseo manna yo.,9781508298205_Korean_Level_1_QM_168.mp3,9781508217916,9781508298205,14
-169,KO,Korean 1,9,,04Q,N,At one o�clock or two o�clock.,,9781508298205_Korean_Level_1_QM_169.mp3,9781508217916,9781508298205,"12,17"
-170,KO,Korean 1,9,,04R,F,_ __ _ ___.,han si na du si eyo.,9781508298205_Korean_Level_1_QM_170.mp3,9781508217916,9781508298205,"12,17"
+168,KO,Korean 1,9,,03R,F,백화점에서 만나요.,baekhwa jeom eseo manna yo.,9781508298205_Korean_Level_1_QM_168.mp3,9781508217916,9781508298205,14
+169,KO,Korean 1,9,,04Q,N,At one o’clock or two o’clock.,,9781508298205_Korean_Level_1_QM_169.mp3,9781508217916,9781508298205,"12,17"
+170,KO,Korean 1,9,,04R,F,한 시나 두 시에요.,han si na du si eyo.,9781508298205_Korean_Level_1_QM_170.mp3,9781508217916,9781508298205,"12,17"
 171,KO,Korean 1,9,,05Q,N,Where is the hotel?,,9781508298205_Korean_Level_1_QM_171.mp3,9781508217916,9781508298205,"4,16,18"
-172,KO,Korean 1,9,,05R,F,___ ____?,hoteli eodi yeyo?,9781508298205_Korean_Level_1_QM_172.mp3,9781508217916,9781508298205,"4,16,18"
-173,KO,Korean 1,9,,06Q,N,"As for me, I�m going to eat later.",,9781508298205_Korean_Level_1_QM_173.mp3,9781508217916,9781508298205,"6,17"
-174,KO,Korean 1,9,,06R,M,__ ___ ____.,jeo neun najunge meok kess eoyo.,9781508298205_Korean_Level_1_QM_174.mp3,9781508217916,9781508298205,"6,17"
-175,KO,Korean 1,9,,07Q,N,Won�t you have something with me?,,9781508298205_Korean_Level_1_QM_175.mp3,9781508217916,9781508298205,6
-176,KO,Korean 1,9,,07R,M,__ _ _ _ _____?,jeo wa muel jom an deusi kess eoyo?,9781508298205_Korean_Level_1_QM_176.mp3,9781508217916,9781508298205,6
+172,KO,Korean 1,9,,05R,F,호텔이 어디예요?,hoteli eodi yeyo?,9781508298205_Korean_Level_1_QM_172.mp3,9781508217916,9781508298205,"4,16,18"
+173,KO,Korean 1,9,,06Q,N,"As for me, I’m going to eat later.",,9781508298205_Korean_Level_1_QM_173.mp3,9781508217916,9781508298205,"6,17"
+174,KO,Korean 1,9,,06R,M,저는 나중에 먹겠어요.,jeo neun najunge meok kess eoyo.,9781508298205_Korean_Level_1_QM_174.mp3,9781508217916,9781508298205,"6,17"
+175,KO,Korean 1,9,,07Q,N,Won’t you have something with me?,,9781508298205_Korean_Level_1_QM_175.mp3,9781508217916,9781508298205,6
+176,KO,Korean 1,9,,07R,M,저와 뭘 좀 안 드시겠어요?,jeo wa muel jom an deusi kess eoyo?,9781508298205_Korean_Level_1_QM_176.mp3,9781508217916,9781508298205,6
 177,KO,Korean 1,9,,08Q,N,"OK, later.",,9781508298205_Korean_Level_1_QM_177.mp3,9781508217916,9781508298205,17
-178,KO,Korean 1,9,,08R,M,"____, ____.","joseum nita, najunge yo.",9781508298205_Korean_Level_1_QM_178.mp3,9781508217916,9781508298205,17
-179,KO,Korean 1,9,,09Q,N,I�m going to eat lunch later.,,9781508298205_Korean_Level_1_QM_179.mp3,9781508217916,9781508298205,"6,17"
-180,KO,Korean 1,9,,09R,M,___ __ ____.,najunge jeomshim meok kess eoyo.,9781508298205_Korean_Level_1_QM_180.mp3,9781508217916,9781508298205,"6,17"
-181,KO,Korean 1,9,,10Q,N,At eight o�clock or nine o�clock.,,9781508298205_Korean_Level_1_QM_181.mp3,9781508217916,9781508298205,"12,17"
-182,KO,Korean 1,9,,10R,M,__ __ __ ___,yeo deol si na ahop si eyo.,9781508298205_Korean_Level_1_QM_182.mp3,9781508217916,9781508298205,"12,17"
-183,KO,Korean 1,10,,01Q,N,"Or else, is it three o�clock?",,9781508298205_Korean_Level_1_QM_183.mp3,9781508217916,9781508298205,"12,17"
-184,KO,Korean 1,10,,01R,F,___ _ ___?,animyeon se si yeyo?,9781508298205_Korean_Level_1_QM_184.mp3,9781508217916,9781508298205,"12,17"
-185,KO,Korean 1,10,,02Q,N,"As for me, I�m going to eat lunch now.",,9781508298205_Korean_Level_1_QM_185.mp3,9781508217916,9781508298205,6
-186,KO,Korean 1,10,,02R,F,__ __ __ ____.,jeo neun jikeum jeomshim meok kess eoyo.,9781508298205_Korean_Level_1_QM_186.mp3,9781508217916,9781508298205,6
-187,KO,Korean 1,10,,03Q,N,Won�t you eat with me?,,9781508298205_Korean_Level_1_QM_187.mp3,9781508217916,9781508298205,6
-188,KO,Korean 1,10,,03R,F,__ _ _____?,jeo wa an deusi kess eoyo?,9781508298205_Korean_Level_1_QM_188.mp3,9781508217916,9781508298205,6
-189,KO,Korean 1,10,,04Q,N,I don�t want to drink now.,,9781508298205_Korean_Level_1_QM_189.mp3,9781508217916,9781508298205,6
-190,KO,Korean 1,10,,04R,F,__ ___ __ ___.,jikeum masi ko sip ji an ayo.,9781508298205_Korean_Level_1_QM_190.mp3,9781508217916,9781508298205,6
+178,KO,Korean 1,9,,08R,M,"좋습니다, 나중에요.","joseum nita, najunge yo.",9781508298205_Korean_Level_1_QM_178.mp3,9781508217916,9781508298205,17
+179,KO,Korean 1,9,,09Q,N,I’m going to eat lunch later.,,9781508298205_Korean_Level_1_QM_179.mp3,9781508217916,9781508298205,"6,17"
+180,KO,Korean 1,9,,09R,M,나중에 점심 먹겠어요.,najunge jeomshim meok kess eoyo.,9781508298205_Korean_Level_1_QM_180.mp3,9781508217916,9781508298205,"6,17"
+181,KO,Korean 1,9,,10Q,N,At eight o’clock or nine o’clock.,,9781508298205_Korean_Level_1_QM_181.mp3,9781508217916,9781508298205,"12,17"
+182,KO,Korean 1,9,,10R,M,여덟 시나 아홉 시에요,yeo deol si na ahop si eyo.,9781508298205_Korean_Level_1_QM_182.mp3,9781508217916,9781508298205,"12,17"
+183,KO,Korean 1,10,,01Q,N,"Or else, is it three o’clock?",,9781508298205_Korean_Level_1_QM_183.mp3,9781508217916,9781508298205,"12,17"
+184,KO,Korean 1,10,,01R,F,아니면 세 시예요?,animyeon se si yeyo?,9781508298205_Korean_Level_1_QM_184.mp3,9781508217916,9781508298205,"12,17"
+185,KO,Korean 1,10,,02Q,N,"As for me, I’m going to eat lunch now.",,9781508298205_Korean_Level_1_QM_185.mp3,9781508217916,9781508298205,6
+186,KO,Korean 1,10,,02R,F,저는 지금 점심 먹겠어요.,jeo neun jikeum jeomshim meok kess eoyo.,9781508298205_Korean_Level_1_QM_186.mp3,9781508217916,9781508298205,6
+187,KO,Korean 1,10,,03Q,N,Won’t you eat with me?,,9781508298205_Korean_Level_1_QM_187.mp3,9781508217916,9781508298205,6
+188,KO,Korean 1,10,,03R,F,저와 안 드시겠어요?,jeo wa an deusi kess eoyo?,9781508298205_Korean_Level_1_QM_188.mp3,9781508217916,9781508298205,6
+189,KO,Korean 1,10,,04Q,N,I don’t want to drink now.,,9781508298205_Korean_Level_1_QM_189.mp3,9781508217916,9781508298205,6
+190,KO,Korean 1,10,,04R,F,지금 마시고 싶지 않아요.,jikeum masi ko sip ji an ayo.,9781508298205_Korean_Level_1_QM_190.mp3,9781508217916,9781508298205,6
 191,KO,Korean 1,10,,05Q,N,What time is it now?,,9781508298205_Korean_Level_1_QM_191.mp3,9781508217916,9781508298205,17
-192,KO,Korean 1,10,,05R,F,__ _ ___?,jikeum myeot si yeyo?,9781508298205_Korean_Level_1_QM_192.mp3,9781508217916,9781508298205,17
-193,KO,Korean 1,10,,06Q,N,I don�t want to eat.,,9781508298205_Korean_Level_1_QM_193.mp3,9781508217916,9781508298205,6
-194,KO,Korean 1,10,,06R,F,__ __ ___.,meok ko sip ji an ayo.,9781508298205_Korean_Level_1_QM_194.mp3,9781508217916,9781508298205,6
+192,KO,Korean 1,10,,05R,F,지금 몇 시예요?,jikeum myeot si yeyo?,9781508298205_Korean_Level_1_QM_192.mp3,9781508217916,9781508298205,17
+193,KO,Korean 1,10,,06Q,N,I don’t want to eat.,,9781508298205_Korean_Level_1_QM_193.mp3,9781508217916,9781508298205,6
+194,KO,Korean 1,10,,06R,F,먹고 싶지 않아요.,meok ko sip ji an ayo.,9781508298205_Korean_Level_1_QM_194.mp3,9781508217916,9781508298205,6
 195,KO,Korean 1,10,,07Q,N,I want to eat.,,9781508298205_Korean_Level_1_QM_195.mp3,9781508217916,9781508298205,"6,16"
-196,KO,Korean 1,10,,07R,M,__ ___.,meok ko sipeo yo.,9781508298205_Korean_Level_1_QM_196.mp3,9781508217916,9781508298205,"6,16"
+196,KO,Korean 1,10,,07R,M,먹고 싶어요.,meok ko sipeo yo.,9781508298205_Korean_Level_1_QM_196.mp3,9781508217916,9781508298205,"6,16"
 197,KO,Korean 1,10,,08Q,N,What time is it?,,9781508298205_Korean_Level_1_QM_197.mp3,9781508217916,9781508298205,17
-198,KO,Korean 1,10,,08R,M,_ ___?,myeot si yeyo?,9781508298205_Korean_Level_1_QM_198.mp3,9781508217916,9781508298205,17
-199,KO,Korean 1,10,,09Q,N,How about three o�clock?,,9781508298205_Korean_Level_1_QM_199.mp3,9781508217916,9781508298205,"12,17"
-200,KO,Korean 1,10,,09R,M,"__, _ ___?","keurum, se si neun yo?",9781508298205_Korean_Level_1_QM_200.mp3,9781508217916,9781508298205,"12,17"
-201,KO,Korean 1,10,,10Q,N,It�s four o�clock.,,9781508298205_Korean_Level_1_QM_201.mp3,9781508217916,9781508298205,"12,17"
-202,KO,Korean 1,10,,10R,M,_ ___.,ne si yeyo.,9781508298205_Korean_Level_1_QM_202.mp3,9781508217916,9781508298205,"12,17"
-203,KO,Korean 1,10,,11Q,N,It�s five o�clock.,,9781508298205_Korean_Level_1_QM_203.mp3,9781508217916,9781508298205,"12,17"
-204,KO,Korean 1,10,,11R,M,__ ___.,daseot si yeyo.,9781508298205_Korean_Level_1_QM_204.mp3,9781508217916,9781508298205,"12,17"
+198,KO,Korean 1,10,,08R,M,몇 시예요?,myeot si yeyo?,9781508298205_Korean_Level_1_QM_198.mp3,9781508217916,9781508298205,17
+199,KO,Korean 1,10,,09Q,N,How about three o’clock?,,9781508298205_Korean_Level_1_QM_199.mp3,9781508217916,9781508298205,"12,17"
+200,KO,Korean 1,10,,09R,M,"그럼, 세 시는요?","keurum, se si neun yo?",9781508298205_Korean_Level_1_QM_200.mp3,9781508217916,9781508298205,"12,17"
+201,KO,Korean 1,10,,10Q,N,It’s four o’clock.,,9781508298205_Korean_Level_1_QM_201.mp3,9781508217916,9781508298205,"12,17"
+202,KO,Korean 1,10,,10R,M,네 시예요.,ne si yeyo.,9781508298205_Korean_Level_1_QM_202.mp3,9781508217916,9781508298205,"12,17"
+203,KO,Korean 1,10,,11Q,N,It’s five o’clock.,,9781508298205_Korean_Level_1_QM_203.mp3,9781508217916,9781508298205,"12,17"
+204,KO,Korean 1,10,,11R,M,다섯 시예요.,daseot si yeyo.,9781508298205_Korean_Level_1_QM_204.mp3,9781508217916,9781508298205,"12,17"
 205,KO,Korean 1,11,,01Q,N,I want to eat lunch with a friend.,,9781508298205_Korean_Level_1_QM_205.mp3,9781508217916,9781508298205,"5,6"
-206,KO,Korean 1,11,,01R,F,___ __ __ ___.,chingu wa jeomshim meok ko sipeo yo.,9781508298205_Korean_Level_1_QM_206.mp3,9781508217916,9781508298205,"5,6"
+206,KO,Korean 1,11,,01R,F,친구와 점심 먹고 싶어요.,chingu wa jeomshim meok ko sipeo yo.,9781508298205_Korean_Level_1_QM_206.mp3,9781508217916,9781508298205,"5,6"
 207,KO,Korean 1,11,,02Q,N,How about today?,,9781508298205_Korean_Level_1_QM_207.mp3,9781508217916,9781508298205,"1,17"
-208,KO,Korean 1,11,,02R,F,____?,oneul eun yo?,9781508298205_Korean_Level_1_QM_208.mp3,9781508217916,9781508298205,"1,17"
+208,KO,Korean 1,11,,02R,F,오늘은요?,oneul eun yo?,9781508298205_Korean_Level_1_QM_208.mp3,9781508217916,9781508298205,"1,17"
 209,KO,Korean 1,11,,03Q,N,When do you want to drink?,,9781508298205_Korean_Level_1_QM_209.mp3,9781508217916,9781508298205,6
-210,KO,Korean 1,11,,03R,F,__ ___ ___?,eonje deusi ko sipeo yo?,9781508298205_Korean_Level_1_QM_210.mp3,9781508217916,9781508298205,6
+210,KO,Korean 1,11,,03R,F,언제 드시고 싶어요?,eonje deusi ko sipeo yo?,9781508298205_Korean_Level_1_QM_210.mp3,9781508217916,9781508298205,6
 211,KO,Korean 1,11,,04Q,N,I want to eat at our place.,,9781508298205_Korean_Level_1_QM_211.mp3,9781508217916,9781508298205,6
-212,KO,Korean 1,11,,04R,F,_____ __ ___.,jeohee jip eseo meok ko sipeo yo.,9781508298205_Korean_Level_1_QM_212.mp3,9781508217916,9781508298205,6
+212,KO,Korean 1,11,,04R,F,저희집에서 먹고 싶어요.,jeohee jip eseo meok ko sipeo yo.,9781508298205_Korean_Level_1_QM_212.mp3,9781508217916,9781508298205,6
 213,KO,Korean 1,11,,05Q,N,How about tomorrow?,,9781508298205_Korean_Level_1_QM_213.mp3,9781508217916,9781508298205,17
-214,KO,Korean 1,11,,05R,F,____?,naeil eun yo?,9781508298205_Korean_Level_1_QM_214.mp3,9781508217916,9781508298205,17
-215,KO,Korean 1,11,,06Q,N,"This evening, I�m going to eat with a friend.",,9781508298205_Korean_Level_1_QM_215.mp3,9781508217916,9781508298205,"5,6,17"
-216,KO,Korean 1,11,,06R,M,__ ___ ___ ____.,oneul jeokyeoke chingu wa meok kess eoyo.,9781508298205_Korean_Level_1_QM_216.mp3,9781508217916,9781508298205,"5,6,17"
+214,KO,Korean 1,11,,05R,F,내일은요?,naeil eun yo?,9781508298205_Korean_Level_1_QM_214.mp3,9781508217916,9781508298205,17
+215,KO,Korean 1,11,,06Q,N,"This evening, I’m going to eat with a friend.",,9781508298205_Korean_Level_1_QM_215.mp3,9781508217916,9781508298205,"5,6,17"
+216,KO,Korean 1,11,,06R,M,오늘 저녁에 친구와 먹겠어요.,oneul jeokyeoke chingu wa meok kess eoyo.,9781508298205_Korean_Level_1_QM_216.mp3,9781508217916,9781508298205,"5,6,17"
 217,KO,Korean 1,11,,07Q,N,"This evening, I want to eat with a friend.",,9781508298205_Korean_Level_1_QM_217.mp3,9781508217916,9781508298205,"5,6,17"
-218,KO,Korean 1,11,,07R,M,__ ___ ___ __ ___.,oneul jeonyeoke chingu wa meok ko sipeo yo.,9781508298205_Korean_Level_1_QM_218.mp3,9781508217916,9781508298205,"5,6,17"
-219,KO,Korean 1,11,,08Q,N,Won�t you eat something at a restaurant?,,9781508298205_Korean_Level_1_QM_219.mp3,9781508217916,9781508298205,6
-220,KO,Korean 1,11,,08R,M,______ _ _ _ _____?,reseutorang eseo muel jom an deusi kess eoyo?,9781508298205_Korean_Level_1_QM_220.mp3,9781508217916,9781508298205,6
-221,KO,Korean 1,11,,09Q,N,Won�t you eat with us?,,9781508298205_Korean_Level_1_QM_221.mp3,9781508217916,9781508298205,6
-222,KO,Korean 1,11,,09R,M,___ _ _____?,woori wa an deusi kess eoyo?,9781508298205_Korean_Level_1_QM_222.mp3,9781508217916,9781508298205,6
-223,KO,Korean 1,11,,10Q,N,"At five o�clock, I want to eat.",,9781508298205_Korean_Level_1_QM_223.mp3,9781508217916,9781508298205,"6,12,17"
-224,KO,Korean 1,11,,10R,M,__ __ __ ___.,daseot si e meok ko sipeo yo.,9781508298205_Korean_Level_1_QM_224.mp3,9781508217916,9781508298205,"6,12,17"
-225,KO,Korean 1,12,,01Q,N,It�s a thousand won.,,9781508298205_Korean_Level_1_QM_225.mp3,9781508217916,9781508298205,11
-226,KO,Korean 1,12,,01R,F,_ ____.,cheon won i eyo.,9781508298205_Korean_Level_1_QM_226.mp3,9781508217916,9781508298205,11
+218,KO,Korean 1,11,,07R,M,오늘 저녁에 친구와 먹고 싶어요.,oneul jeonyeoke chingu wa meok ko sipeo yo.,9781508298205_Korean_Level_1_QM_218.mp3,9781508217916,9781508298205,"5,6,17"
+219,KO,Korean 1,11,,08Q,N,Won’t you eat something at a restaurant?,,9781508298205_Korean_Level_1_QM_219.mp3,9781508217916,9781508298205,6
+220,KO,Korean 1,11,,08R,M,레스토랑에서 뭘 좀 안 드시겠어요?,reseutorang eseo muel jom an deusi kess eoyo?,9781508298205_Korean_Level_1_QM_220.mp3,9781508217916,9781508298205,6
+221,KO,Korean 1,11,,09Q,N,Won’t you eat with us?,,9781508298205_Korean_Level_1_QM_221.mp3,9781508217916,9781508298205,6
+222,KO,Korean 1,11,,09R,M,우리와 안 드시겠어요?,woori wa an deusi kess eoyo?,9781508298205_Korean_Level_1_QM_222.mp3,9781508217916,9781508298205,6
+223,KO,Korean 1,11,,10Q,N,"At five o’clock, I want to eat.",,9781508298205_Korean_Level_1_QM_223.mp3,9781508217916,9781508298205,"6,12,17"
+224,KO,Korean 1,11,,10R,M,다섯 시에 먹고 싶어요.,daseot si e meok ko sipeo yo.,9781508298205_Korean_Level_1_QM_224.mp3,9781508217916,9781508298205,"6,12,17"
+225,KO,Korean 1,12,,01Q,N,It’s a thousand won.,,9781508298205_Korean_Level_1_QM_225.mp3,9781508217916,9781508298205,11
+226,KO,Korean 1,12,,01R,F,천 원이에요.,cheon won i eyo.,9781508298205_Korean_Level_1_QM_226.mp3,9781508217916,9781508298205,11
 227,KO,Korean 1,12,,02Q,N,How much is it?,,9781508298205_Korean_Level_1_QM_227.mp3,9781508217916,9781508298205,"11,14,16"
-228,KO,Korean 1,12,,02R,F,____?,eolma yeyo?,9781508298205_Korean_Level_1_QM_228.mp3,9781508217916,9781508298205,"11,14,16"
-229,KO,Korean 1,12,,03Q,N,"As for lunch, I�m not going to eat.",,9781508298205_Korean_Level_1_QM_229.mp3,9781508217916,9781508298205,6
-230,KO,Korean 1,12,,03R,F,___ _ ____.,jeomshim eun an meok kess eoyo.,9781508298205_Korean_Level_1_QM_230.mp3,9781508217916,9781508298205,6
+228,KO,Korean 1,12,,02R,F,얼마예요?,eolma yeyo?,9781508298205_Korean_Level_1_QM_228.mp3,9781508217916,9781508298205,"11,14,16"
+229,KO,Korean 1,12,,03Q,N,"As for lunch, I’m not going to eat.",,9781508298205_Korean_Level_1_QM_229.mp3,9781508217916,9781508298205,6
+230,KO,Korean 1,12,,03R,F,점심은 안 먹겠어요.,jeomshim eun an meok kess eoyo.,9781508298205_Korean_Level_1_QM_230.mp3,9781508217916,9781508298205,6
 231,KO,Korean 1,12,,04Q,N,See you tomorrow.,,9781508298205_Korean_Level_1_QM_231.mp3,9781508217916,9781508298205,17
-232,KO,Korean 1,12,,04R,F,__ ___.,naeil bopsita.,9781508298205_Korean_Level_1_QM_232.mp3,9781508217916,9781508298205,17
+232,KO,Korean 1,12,,04R,F,내일 봅시다.,naeil bopsita.,9781508298205_Korean_Level_1_QM_232.mp3,9781508217916,9781508298205,17
 233,KO,Korean 1,12,,05Q,N,"This evening, do you want to eat with us?",,9781508298205_Korean_Level_1_QM_233.mp3,9781508217916,9781508298205,"6,17"
-234,KO,Korean 1,12,,05R,F,__ ___ ___ ___ ___?,oneul jeonyeoke woori wa deusi ko sipeo yo?,9781508298205_Korean_Level_1_QM_234.mp3,9781508217916,9781508298205,"6,17"
+234,KO,Korean 1,12,,05R,F,오늘 저녁에 우리와 드시고 싶어요?,oneul jeonyeoke woori wa deusi ko sipeo yo?,9781508298205_Korean_Level_1_QM_234.mp3,9781508217916,9781508298205,"6,17"
 235,KO,Korean 1,12,,06Q,N,How much is it?,,9781508298205_Korean_Level_1_QM_235.mp3,9781508217916,9781508298205,"11,14,16"
-236,KO,Korean 1,12,,06R,M,____?,eolma yeyo?,9781508298205_Korean_Level_1_QM_236.mp3,9781508217916,9781508298205,"11,14,16"
-237,KO,Korean 1,12,,07Q,N,"At ten o�clock, I want to eat.",,9781508298205_Korean_Level_1_QM_237.mp3,9781508217916,9781508298205,"6,12,17"
-238,KO,Korean 1,12,,07R,M,_ __ __ ___.,yeol si e meok ko sipeo yo.,9781508298205_Korean_Level_1_QM_238.mp3,9781508217916,9781508298205,"6,12,17"
-239,KO,Korean 1,12,,08Q,N,"As for at ten o�clock, I don�t want to eat.",,9781508298205_Korean_Level_1_QM_239.mp3,9781508217916,9781508298205,"6,12,17"
-240,KO,Korean 1,12,,08R,M,_ ___ __ __ ___.,yeol si e neun meok ko sip ji an ayo.,9781508298205_Korean_Level_1_QM_240.mp3,9781508217916,9781508298205,"6,12,17"
-241,KO,Korean 1,12,,09Q,N,It�s thousand won.,,9781508298205_Korean_Level_1_QM_241.mp3,9781508217916,9781508298205,11
-242,KO,Korean 1,12,,09R,M,_____,cheon woni eyo.,9781508298205_Korean_Level_1_QM_242.mp3,9781508217916,9781508298205,11
+236,KO,Korean 1,12,,06R,M,얼마예요?,eolma yeyo?,9781508298205_Korean_Level_1_QM_236.mp3,9781508217916,9781508298205,"11,14,16"
+237,KO,Korean 1,12,,07Q,N,"At ten o’clock, I want to eat.",,9781508298205_Korean_Level_1_QM_237.mp3,9781508217916,9781508298205,"6,12,17"
+238,KO,Korean 1,12,,07R,M,열 시에 먹고 싶어요.,yeol si e meok ko sipeo yo.,9781508298205_Korean_Level_1_QM_238.mp3,9781508217916,9781508298205,"6,12,17"
+239,KO,Korean 1,12,,08Q,N,"As for at ten o’clock, I don’t want to eat.",,9781508298205_Korean_Level_1_QM_239.mp3,9781508217916,9781508298205,"6,12,17"
+240,KO,Korean 1,12,,08R,M,열 시에는 먹고 싶지 않아요.,yeol si e neun meok ko sip ji an ayo.,9781508298205_Korean_Level_1_QM_240.mp3,9781508217916,9781508298205,"6,12,17"
+241,KO,Korean 1,12,,09Q,N,It’s thousand won.,,9781508298205_Korean_Level_1_QM_241.mp3,9781508217916,9781508298205,11
+242,KO,Korean 1,12,,09R,M,천원이에요,cheon woni eyo.,9781508298205_Korean_Level_1_QM_242.mp3,9781508217916,9781508298205,11
 243,KO,Korean 1,12,,10Q,N,Is it two thousand won?,,9781508298205_Korean_Level_1_QM_243.mp3,9781508217916,9781508298205,11
-244,KO,Korean 1,12,,10R,M,__ ____?,i cheon won i eyo?,9781508298205_Korean_Level_1_QM_244.mp3,9781508217916,9781508298205,11
+244,KO,Korean 1,12,,10R,M,이천 원이에요?,i cheon won i eyo?,9781508298205_Korean_Level_1_QM_244.mp3,9781508217916,9781508298205,11
 245,KO,Korean 1,13,,01Q,N,How much do you have?,,9781508298205_Korean_Level_1_QM_245.mp3,9781508217916,9781508298205,11
-246,KO,Korean 1,13,,01R,F,__ ____?,eolma isseu seyo?,9781508298205_Korean_Level_1_QM_246.mp3,9781508217916,9781508298205,11
+246,KO,Korean 1,13,,01R,F,얼마 있으세요?,eolma isseu seyo?,9781508298205_Korean_Level_1_QM_246.mp3,9781508217916,9781508298205,11
 247,KO,Korean 1,13,,02Q,N,How much Korean money do you have?,,9781508298205_Korean_Level_1_QM_247.mp3,9781508217916,9781508298205,11
-248,KO,Korean 1,13,,02R,F,__ _ __ ____?,hankuk don eolma isseu seyo?,9781508298205_Korean_Level_1_QM_248.mp3,9781508217916,9781508298205,11
-249,KO,Korean 1,13,,03Q,N,I don�t have any Korean money.,,9781508298205_Korean_Level_1_QM_249.mp3,9781508217916,9781508298205,"11,16"
-250,KO,Korean 1,13,,03R,F,__ _ ___.,hankuk don eops eoyo.,9781508298205_Korean_Level_1_QM_250.mp3,9781508217916,9781508298205,"11,16"
+248,KO,Korean 1,13,,02R,F,한국 돈 얼마 있으세요?,hankuk don eolma isseu seyo?,9781508298205_Korean_Level_1_QM_248.mp3,9781508217916,9781508298205,11
+249,KO,Korean 1,13,,03Q,N,I don’t have any Korean money.,,9781508298205_Korean_Level_1_QM_249.mp3,9781508217916,9781508298205,"11,16"
+250,KO,Korean 1,13,,03R,F,한국 돈 없어요.,hankuk don eops eoyo.,9781508298205_Korean_Level_1_QM_250.mp3,9781508217916,9781508298205,"11,16"
 251,KO,Korean 1,13,,04Q,N,"As for Korean money, I have two thousand won.",,9781508298205_Korean_Level_1_QM_251.mp3,9781508217916,9781508298205,"11,12"
-252,KO,Korean 1,13,,04R,F,__ __ __ _ ___.,hankuk don eun i cheon won iss eoyo.,9781508298205_Korean_Level_1_QM_252.mp3,9781508217916,9781508298205,"11,12"
+252,KO,Korean 1,13,,04R,F,한국 돈은 이천 원 있어요.,hankuk don eun i cheon won iss eoyo.,9781508298205_Korean_Level_1_QM_252.mp3,9781508217916,9781508298205,"11,12"
 253,KO,Korean 1,13,,05Q,N,I have five thousand won.,,9781508298205_Korean_Level_1_QM_253.mp3,9781508217916,9781508298205,"11,12"
-254,KO,Korean 1,13,,05R,F,__ _ ___.,o cheon won iss eoyo.,9781508298205_Korean_Level_1_QM_254.mp3,9781508217916,9781508298205,"11,12"
+254,KO,Korean 1,13,,05R,F,오천 원 있어요.,o cheon won iss eoyo.,9781508298205_Korean_Level_1_QM_254.mp3,9781508217916,9781508298205,"11,12"
 255,KO,Korean 1,13,,06Q,N,I have a little.,,9781508298205_Korean_Level_1_QM_255.mp3,9781508217916,9781508298205,11
-256,KO,Korean 1,13,,06R,M,__ ___.,jokeum iss eoyo.,9781508298205_Korean_Level_1_QM_256.mp3,9781508217916,9781508298205,11
+256,KO,Korean 1,13,,06R,M,조금 있어요.,jokeum iss eoyo.,9781508298205_Korean_Level_1_QM_256.mp3,9781508217916,9781508298205,11
 257,KO,Korean 1,13,,07Q,N,"One bottle of beer, please.",,9781508298205_Korean_Level_1_QM_257.mp3,9781508217916,9781508298205,"6,12,13"
-258,KO,Korean 1,13,,07R,M,"__, __ _ _ ___.","keurum, maekju han byeong juseyo.",9781508298205_Korean_Level_1_QM_258.mp3,9781508217916,9781508298205,"6,12,13"
+258,KO,Korean 1,13,,07R,M,"그럼, 맥주 한 병 주세요.","keurum, maekju han byeong juseyo.",9781508298205_Korean_Level_1_QM_258.mp3,9781508217916,9781508298205,"6,12,13"
 259,KO,Korean 1,13,,08Q,N,We have soju.,,9781508298205_Korean_Level_1_QM_259.mp3,9781508217916,9781508298205,6
-260,KO,Korean 1,13,,08R,M,__ ___.,soju iss eoyo.,9781508298205_Korean_Level_1_QM_260.mp3,9781508217916,9781508298205,6
-261,KO,Korean 1,13,,09Q,N,We don�t have wine.,,9781508298205_Korean_Level_1_QM_261.mp3,9781508217916,9781508298205,6
-262,KO,Korean 1,13,,09R,M,__ ___.,wain eops eoyo.,9781508298205_Korean_Level_1_QM_262.mp3,9781508217916,9781508298205,6
-263,KO,Korean 1,13,,10Q,N,I don�t have six thousand won.,,9781508298205_Korean_Level_1_QM_263.mp3,9781508217916,9781508298205,"11,12"
-264,KO,Korean 1,13,,10R,M,__ _ ___.,yuk cheon won eops eoyo.,9781508298205_Korean_Level_1_QM_264.mp3,9781508217916,9781508298205,"11,12"
+260,KO,Korean 1,13,,08R,M,소주 있어요.,soju iss eoyo.,9781508298205_Korean_Level_1_QM_260.mp3,9781508217916,9781508298205,6
+261,KO,Korean 1,13,,09Q,N,We don’t have wine.,,9781508298205_Korean_Level_1_QM_261.mp3,9781508217916,9781508298205,6
+262,KO,Korean 1,13,,09R,M,와인 없어요.,wain eops eoyo.,9781508298205_Korean_Level_1_QM_262.mp3,9781508217916,9781508298205,6
+263,KO,Korean 1,13,,10Q,N,I don’t have six thousand won.,,9781508298205_Korean_Level_1_QM_263.mp3,9781508217916,9781508298205,"11,12"
+264,KO,Korean 1,13,,10R,M,육천 원 없어요.,yuk cheon won eops eoyo.,9781508298205_Korean_Level_1_QM_264.mp3,9781508217916,9781508298205,"11,12"
 265,KO,Korean 1,14,,01Q,N,How much money do you have?,,9781508298205_Korean_Level_1_QM_265.mp3,9781508217916,9781508298205,"11,16"
-266,KO,Korean 1,14,,01R,F,_ __ ____?,don eolma isseu seyo?,9781508298205_Korean_Level_1_QM_266.mp3,9781508217916,9781508298205,"11,16"
-267,KO,Korean 1,14,,02Q,N,I don�t have a lot of money.,,9781508298205_Korean_Level_1_QM_267.mp3,9781508217916,9781508298205,"11,16"
-268,KO,Korean 1,14,,02R,F,_ __ ___.,don mani eops eoyo.,9781508298205_Korean_Level_1_QM_268.mp3,9781508217916,9781508298205,"11,16"
+266,KO,Korean 1,14,,01R,F,돈 얼마 있으세요?,don eolma isseu seyo?,9781508298205_Korean_Level_1_QM_266.mp3,9781508217916,9781508298205,"11,16"
+267,KO,Korean 1,14,,02Q,N,I don’t have a lot of money.,,9781508298205_Korean_Level_1_QM_267.mp3,9781508217916,9781508298205,"11,16"
+268,KO,Korean 1,14,,02R,F,돈 많이 없어요.,don mani eops eoyo.,9781508298205_Korean_Level_1_QM_268.mp3,9781508217916,9781508298205,"11,16"
 269,KO,Korean 1,14,,03Q,N,I want to go to a store together.,,9781508298205_Korean_Level_1_QM_269.mp3,9781508217916,9781508298205,14
-270,KO,Korean 1,14,,03R,F,__ ___ __ ___.,gachi gage e ga ko sipeo yo.,9781508298205_Korean_Level_1_QM_270.mp3,9781508217916,9781508298205,14
+270,KO,Korean 1,14,,03R,F,같이 가게에 가고 싶어요.,gachi gage e ga ko sipeo yo.,9781508298205_Korean_Level_1_QM_270.mp3,9781508217916,9781508298205,14
 271,KO,Korean 1,14,,04Q,N,I want to drink wine together.,,9781508298205_Korean_Level_1_QM_271.mp3,9781508217916,9781508298205,6
-272,KO,Korean 1,14,,04R,F,__ __ ___ ___.,gachi wain masi ko sipeo yo.,9781508298205_Korean_Level_1_QM_272.mp3,9781508217916,9781508298205,6
+272,KO,Korean 1,14,,04R,F,같이 와인 마시고 싶어요.,gachi wain masi ko sipeo yo.,9781508298205_Korean_Level_1_QM_272.mp3,9781508217916,9781508298205,6
 273,KO,Korean 1,14,,05Q,N,"Tomorrow, I want to go to a store.",,9781508298205_Korean_Level_1_QM_273.mp3,9781508217916,9781508298205,"14,17"
-274,KO,Korean 1,14,,05R,F,__ ___ __ ___.,naeil gage e ga ko sipeo yo.,9781508298205_Korean_Level_1_QM_274.mp3,9781508217916,9781508298205,"14,17"
+274,KO,Korean 1,14,,05R,F,내일 가게에 가고 싶어요.,naeil gage e ga ko sipeo yo.,9781508298205_Korean_Level_1_QM_274.mp3,9781508217916,9781508298205,"14,17"
 275,KO,Korean 1,14,,06Q,N,"At a store, I want to buy something.",,9781508298205_Korean_Level_1_QM_275.mp3,9781508217916,9781508298205,14
-276,KO,Korean 1,14,,06R,M,____ _ _ __ ___.,gage eseo muel jom sa ko sipeo yo.,9781508298205_Korean_Level_1_QM_276.mp3,9781508217916,9781508298205,14
+276,KO,Korean 1,14,,06R,M,가게에서 뭘 좀 사고 싶어요.,gage eseo muel jom sa ko sipeo yo.,9781508298205_Korean_Level_1_QM_276.mp3,9781508217916,9781508298205,14
 277,KO,Korean 1,14,,07Q,N,Please give me some Korean money.,,9781508298205_Korean_Level_1_QM_277.mp3,9781508217916,9781508298205,"11,13"
-278,KO,Korean 1,14,,07R,M,__ _ ___.,hankuk don juseyo.,9781508298205_Korean_Level_1_QM_278.mp3,9781508217916,9781508298205,"11,13"
+278,KO,Korean 1,14,,07R,M,한국 돈 주세요.,hankuk don juseyo.,9781508298205_Korean_Level_1_QM_278.mp3,9781508217916,9781508298205,"11,13"
 279,KO,Korean 1,14,,08Q,N,I want to buy something.,,9781508298205_Korean_Level_1_QM_279.mp3,9781508217916,9781508298205,"14,16"
-280,KO,Korean 1,14,,08R,M,_ _ __ ___.,muel jom sa ko sipeo yo.,9781508298205_Korean_Level_1_QM_280.mp3,9781508217916,9781508298205,"14,16"
+280,KO,Korean 1,14,,08R,M,뭘 좀 사고 싶어요.,muel jom sa ko sipeo yo.,9781508298205_Korean_Level_1_QM_280.mp3,9781508217916,9781508298205,"14,16"
 281,KO,Korean 1,14,,09Q,N,I have a lot of Korean money.,,9781508298205_Korean_Level_1_QM_281.mp3,9781508217916,9781508298205,11
-282,KO,Korean 1,14,,09R,M,__ _ __ ___.,hankuk don mani iss eoyo.,9781508298205_Korean_Level_1_QM_282.mp3,9781508217916,9781508298205,11
+282,KO,Korean 1,14,,09R,M,한국 돈 많이 있어요.,hankuk don mani iss eoyo.,9781508298205_Korean_Level_1_QM_282.mp3,9781508217916,9781508298205,11
 283,KO,Korean 1,14,,10Q,N,I have a little Korean money.,,9781508298205_Korean_Level_1_QM_283.mp3,9781508217916,9781508298205,11
-284,KO,Korean 1,14,,10R,M,__ _ __ ___.,hankuk don jokeum iss eoyo.,9781508298205_Korean_Level_1_QM_284.mp3,9781508217916,9781508298205,11
-285,KO,Korean 1,15,,01Q,N,I can�t eat anything.,,9781508298205_Korean_Level_1_QM_285.mp3,9781508217916,9781508298205,6
-286,KO,Korean 1,15,,01R,F,__ __ __ _ ___.,amu keotdo meok eul su eops eoyo.,9781508298205_Korean_Level_1_QM_286.mp3,9781508217916,9781508298205,6
-287,KO,Korean 1,15,,02Q,N,I can�t buy anything.,,9781508298205_Korean_Level_1_QM_287.mp3,9781508217916,9781508298205,14
-288,KO,Korean 1,15,,02R,F,__ __ _ _ ___.,amu keotdo sal su eops eoyo.,9781508298205_Korean_Level_1_QM_288.mp3,9781508217916,9781508298205,14
+284,KO,Korean 1,14,,10R,M,한국 돈 조금 있어요.,hankuk don jokeum iss eoyo.,9781508298205_Korean_Level_1_QM_284.mp3,9781508217916,9781508298205,11
+285,KO,Korean 1,15,,01Q,N,I can’t eat anything.,,9781508298205_Korean_Level_1_QM_285.mp3,9781508217916,9781508298205,6
+286,KO,Korean 1,15,,01R,F,아무 것도 먹을 수 없어요.,amu keotdo meok eul su eops eoyo.,9781508298205_Korean_Level_1_QM_286.mp3,9781508217916,9781508298205,6
+287,KO,Korean 1,15,,02Q,N,I can’t buy anything.,,9781508298205_Korean_Level_1_QM_287.mp3,9781508217916,9781508298205,14
+288,KO,Korean 1,15,,02R,F,아무 것도 살 수 없어요.,amu keotdo sal su eops eoyo.,9781508298205_Korean_Level_1_QM_288.mp3,9781508217916,9781508298205,14
 289,KO,Korean 1,15,,03Q,N,"In dollars, how much is it?",,9781508298205_Korean_Level_1_QM_289.mp3,9781508217916,9781508298205,"11,16"
-290,KO,Korean 1,15,,03R,F,___ ____?,dalleo ro eolma yeyo?,9781508298205_Korean_Level_1_QM_290.mp3,9781508217916,9781508298205,"11,16"
-291,KO,Korean 1,15,,04Q,N,In dollars?  I don�t know.,,9781508298205_Korean_Level_1_QM_291.mp3,9781508217916,9781508298205,11
-292,KO,Korean 1,15,,04R,F,___? ___.,dalleo ro?  molla yo.,9781508298205_Korean_Level_1_QM_292.mp3,9781508217916,9781508298205,11
-293,KO,Korean 1,15,,05Q,N,"In dollars, it�s six dollars.",,9781508298205_Korean_Level_1_QM_293.mp3,9781508217916,9781508298205,"11,12"
-294,KO,Korean 1,15,,05R,F,___ _ ____.,dalleo ro yuk bul i eyo.,9781508298205_Korean_Level_1_QM_294.mp3,9781508217916,9781508298205,"11,12"
+290,KO,Korean 1,15,,03R,F,달러로 얼마예요?,dalleo ro eolma yeyo?,9781508298205_Korean_Level_1_QM_290.mp3,9781508217916,9781508298205,"11,16"
+291,KO,Korean 1,15,,04Q,N,In dollars?  I don’t know.,,9781508298205_Korean_Level_1_QM_291.mp3,9781508217916,9781508298205,11
+292,KO,Korean 1,15,,04R,F,달러로? 몰라요.,dalleo ro?  molla yo.,9781508298205_Korean_Level_1_QM_292.mp3,9781508217916,9781508298205,11
+293,KO,Korean 1,15,,05Q,N,"In dollars, it’s six dollars.",,9781508298205_Korean_Level_1_QM_293.mp3,9781508217916,9781508298205,"11,12"
+294,KO,Korean 1,15,,05R,F,달러로 육 불이에요.,dalleo ro yuk bul i eyo.,9781508298205_Korean_Level_1_QM_294.mp3,9781508217916,9781508298205,"11,12"
 295,KO,Korean 1,15,,06Q,N,Can you eat?,,9781508298205_Korean_Level_1_QM_295.mp3,9781508217916,9781508298205,6
-296,KO,Korean 1,15,,06R,M,__ _ ___?,deusil su iss eoyo?,9781508298205_Korean_Level_1_QM_296.mp3,9781508217916,9781508298205,6
-297,KO,Korean 1,15,,07Q,N,I don�t have any money.,,9781508298205_Korean_Level_1_QM_297.mp3,9781508217916,9781508298205,11
-298,KO,Korean 1,15,,07R,M,_ ___.,don eops eoyo.,9781508298205_Korean_Level_1_QM_298.mp3,9781508217916,9781508298205,11
+296,KO,Korean 1,15,,06R,M,드실 수 있어요?,deusil su iss eoyo?,9781508298205_Korean_Level_1_QM_296.mp3,9781508217916,9781508298205,6
+297,KO,Korean 1,15,,07Q,N,I don’t have any money.,,9781508298205_Korean_Level_1_QM_297.mp3,9781508217916,9781508298205,11
+298,KO,Korean 1,15,,07R,M,돈 없어요.,don eops eoyo.,9781508298205_Korean_Level_1_QM_298.mp3,9781508217916,9781508298205,11
 299,KO,Korean 1,15,,08Q,N,Can you eat something?,,9781508298205_Korean_Level_1_QM_299.mp3,9781508217916,9781508298205,6
-300,KO,Korean 1,15,,08R,M,_ _ __ _ ___?,muel jom deusil su iss eoyo?,9781508298205_Korean_Level_1_QM_300.mp3,9781508217916,9781508298205,6
+300,KO,Korean 1,15,,08R,M,뭘 좀 드실 수 있어요?,muel jom deusil su iss eoyo?,9781508298205_Korean_Level_1_QM_300.mp3,9781508217916,9781508298205,6
 301,KO,Korean 1,15,,09Q,N,I can buy something.,,9781508298205_Korean_Level_1_QM_301.mp3,9781508217916,9781508298205,14
-302,KO,Korean 1,15,,09R,M,_ _ _ _ ___.,muel jom sal su iss eoyo.,9781508298205_Korean_Level_1_QM_302.mp3,9781508217916,9781508298205,14
+302,KO,Korean 1,15,,09R,M,뭘 좀 살 수 있어요.,muel jom sal su iss eoyo.,9781508298205_Korean_Level_1_QM_302.mp3,9781508217916,9781508298205,14
 303,KO,Korean 1,15,,10Q,N,Can you buy something?,,9781508298205_Korean_Level_1_QM_303.mp3,9781508217916,9781508298205,14
-304,KO,Korean 1,15,,10R,M,_ _ _ _ ___?,muel jom sal su iss eoyo?,9781508298205_Korean_Level_1_QM_304.mp3,9781508217916,9781508298205,14
+304,KO,Korean 1,15,,10R,M,뭘 좀 살 수 있어요?,muel jom sal su iss eoyo?,9781508298205_Korean_Level_1_QM_304.mp3,9781508217916,9781508298205,14
 305,KO,Korean 1,15,,11Q,N,Here are sixteen dollars.,,9781508298205_Korean_Level_1_QM_305.mp3,9781508217916,9781508298205,"11,12"
-306,KO,Korean 1,15,,11R,M,__ __ _ ____.,yeoki sip yuk bul iss seum nita.,9781508298205_Korean_Level_1_QM_306.mp3,9781508217916,9781508298205,"11,12"
-307,KO,Korean 1,16,,01Q,N,"Thirty-five dollars, that�s enough.",,9781508298205_Korean_Level_1_QM_307.mp3,9781508217916,9781508298205,"11,12"
-308,KO,Korean 1,16,,01R,F,"___ _, ____.","sam sip o bul, chungbun haeyo.",9781508298205_Korean_Level_1_QM_308.mp3,9781508217916,9781508298205,"11,12"
-309,KO,Korean 1,16,,02Q,N,"No, I can�t buy it.",,9781508298205_Korean_Level_1_QM_309.mp3,9781508217916,9781508298205,14
-310,KO,Korean 1,16,,02R,F,"___, _ _ ___.","aniyo, sal su eops eoyo.",9781508298205_Korean_Level_1_QM_310.mp3,9781508217916,9781508298205,14
-311,KO,Korean 1,16,,03Q,N,It�s enough.,,9781508298205_Korean_Level_1_QM_311.mp3,9781508217916,9781508298205,11
-312,KO,Korean 1,16,,03R,F,____.,chungbun haeyo.,9781508298205_Korean_Level_1_QM_312.mp3,9781508217916,9781508298205,11
+306,KO,Korean 1,15,,11R,M,여기 십육 불 있습니다.,yeoki sip yuk bul iss seum nita.,9781508298205_Korean_Level_1_QM_306.mp3,9781508217916,9781508298205,"11,12"
+307,KO,Korean 1,16,,01Q,N,"Thirty-five dollars, that’s enough.",,9781508298205_Korean_Level_1_QM_307.mp3,9781508217916,9781508298205,"11,12"
+308,KO,Korean 1,16,,01R,F,"삼십오 불, 충분해요.","sam sip o bul, chungbun haeyo.",9781508298205_Korean_Level_1_QM_308.mp3,9781508217916,9781508298205,"11,12"
+309,KO,Korean 1,16,,02Q,N,"No, I can’t buy it.",,9781508298205_Korean_Level_1_QM_309.mp3,9781508217916,9781508298205,14
+310,KO,Korean 1,16,,02R,F,"아니요, 살 수 없어요.","aniyo, sal su eops eoyo.",9781508298205_Korean_Level_1_QM_310.mp3,9781508217916,9781508298205,14
+311,KO,Korean 1,16,,03Q,N,It’s enough.,,9781508298205_Korean_Level_1_QM_311.mp3,9781508217916,9781508298205,11
+312,KO,Korean 1,16,,03R,F,충분해요.,chungbun haeyo.,9781508298205_Korean_Level_1_QM_312.mp3,9781508217916,9781508298205,11
 313,KO,Korean 1,16,,04Q,N,Is that enough?,,9781508298205_Korean_Level_1_QM_313.mp3,9781508217916,9781508298205,"11,16"
-314,KO,Korean 1,16,,04R,F,____?,chungbun haeyo?,9781508298205_Korean_Level_1_QM_314.mp3,9781508217916,9781508298205,"11,16"
-315,KO,Korean 1,16,,05Q,N,I don�t have any at all.,,9781508298205_Korean_Level_1_QM_315.mp3,9781508217916,9781508298205,"11,16"
-316,KO,Korean 1,16,,05R,F,___ ___.,hanado eops eoyo.,9781508298205_Korean_Level_1_QM_316.mp3,9781508217916,9781508298205,"11,16"
-317,KO,Korean 1,16,,06Q,N,"For me, it�s too much.",,9781508298205_Korean_Level_1_QM_317.mp3,9781508217916,9781508298205,"11,14,16"
-318,KO,Korean 1,16,,06R,M,___ __ ___.,jeo eke neomu man ayo.,9781508298205_Korean_Level_1_QM_318.mp3,9781508217916,9781508298205,"11,14,16"
-319,KO,Korean 1,16,,07Q,N,"It�s a lot, isn�t it?",,9781508298205_Korean_Level_1_QM_319.mp3,9781508217916,9781508298205,11
-320,KO,Korean 1,16,,07R,M,__ ___?,mani iss neyo?,9781508298205_Korean_Level_1_QM_320.mp3,9781508217916,9781508298205,11
-321,KO,Korean 1,16,,08Q,N,It�s too much.,,9781508298205_Korean_Level_1_QM_321.mp3,9781508217916,9781508298205,"11,14,16"
-322,KO,Korean 1,16,,08R,M,__ ___.,neomu man ayo.,9781508298205_Korean_Level_1_QM_322.mp3,9781508217916,9781508298205,"11,14,16"
+314,KO,Korean 1,16,,04R,F,충분해요?,chungbun haeyo?,9781508298205_Korean_Level_1_QM_314.mp3,9781508217916,9781508298205,"11,16"
+315,KO,Korean 1,16,,05Q,N,I don’t have any at all.,,9781508298205_Korean_Level_1_QM_315.mp3,9781508217916,9781508298205,"11,16"
+316,KO,Korean 1,16,,05R,F,하나도 없어요.,hanado eops eoyo.,9781508298205_Korean_Level_1_QM_316.mp3,9781508217916,9781508298205,"11,16"
+317,KO,Korean 1,16,,06Q,N,"For me, it’s too much.",,9781508298205_Korean_Level_1_QM_317.mp3,9781508217916,9781508298205,"11,14,16"
+318,KO,Korean 1,16,,06R,M,저에게 너무 많아요.,jeo eke neomu man ayo.,9781508298205_Korean_Level_1_QM_318.mp3,9781508217916,9781508298205,"11,14,16"
+319,KO,Korean 1,16,,07Q,N,"It’s a lot, isn’t it?",,9781508298205_Korean_Level_1_QM_319.mp3,9781508217916,9781508298205,11
+320,KO,Korean 1,16,,07R,M,많이 있네요?,mani iss neyo?,9781508298205_Korean_Level_1_QM_320.mp3,9781508217916,9781508298205,11
+321,KO,Korean 1,16,,08Q,N,It’s too much.,,9781508298205_Korean_Level_1_QM_321.mp3,9781508217916,9781508298205,"11,14,16"
+322,KO,Korean 1,16,,08R,M,너무 많아요.,neomu man ayo.,9781508298205_Korean_Level_1_QM_322.mp3,9781508217916,9781508298205,"11,14,16"
 323,KO,Korean 1,16,,09Q,N,Is it too much?,,9781508298205_Korean_Level_1_QM_323.mp3,9781508217916,9781508298205,"11,14"
-324,KO,Korean 1,16,,09R,M,__ ___?,neomu man ayo?,9781508298205_Korean_Level_1_QM_324.mp3,9781508217916,9781508298205,"11,14"
-325,KO,Korean 1,16,,10Q,N,It�s a present.,,9781508298205_Korean_Level_1_QM_325.mp3,9781508217916,9781508298205,14
-326,KO,Korean 1,16,,10R,M,_____.,seonmul i eyo.,9781508298205_Korean_Level_1_QM_326.mp3,9781508217916,9781508298205,14
-327,KO,Korean 1,17,,01Q,N,I�m going to speak slowly.,,9781508298205_Korean_Level_1_QM_327.mp3,9781508217916,9781508298205,15
-328,KO,Korean 1,17,,01R,F,___ ____.,cheoncheon hi ha kess eoyo.,9781508298205_Korean_Level_1_QM_328.mp3,9781508217916,9781508298205,15
+324,KO,Korean 1,16,,09R,M,너무 많아요?,neomu man ayo?,9781508298205_Korean_Level_1_QM_324.mp3,9781508217916,9781508298205,"11,14"
+325,KO,Korean 1,16,,10Q,N,It’s a present.,,9781508298205_Korean_Level_1_QM_325.mp3,9781508217916,9781508298205,14
+326,KO,Korean 1,16,,10R,M,선물이에요.,seonmul i eyo.,9781508298205_Korean_Level_1_QM_326.mp3,9781508217916,9781508298205,14
+327,KO,Korean 1,17,,01Q,N,I’m going to speak slowly.,,9781508298205_Korean_Level_1_QM_327.mp3,9781508217916,9781508298205,15
+328,KO,Korean 1,17,,01R,F,천천히 하겠어요.,cheoncheon hi ha kess eoyo.,9781508298205_Korean_Level_1_QM_328.mp3,9781508217916,9781508298205,15
 329,KO,Korean 1,17,,02Q,N,You have enough.,,9781508298205_Korean_Level_1_QM_329.mp3,9781508217916,9781508298205,11
-330,KO,Korean 1,17,,02R,F,___ ___.,chungbun hi iss eoyo.,9781508298205_Korean_Level_1_QM_330.mp3,9781508217916,9781508298205,11
+330,KO,Korean 1,17,,02R,F,충분히 있어요.,chungbun hi iss eoyo.,9781508298205_Korean_Level_1_QM_330.mp3,9781508217916,9781508298205,11
 331,KO,Korean 1,17,,03Q,N,I have enough money.,,9781508298205_Korean_Level_1_QM_331.mp3,9781508217916,9781508298205,11
-332,KO,Korean 1,17,,03R,F,__ ___ ___.,don i chungbun hi iss eoyo.,9781508298205_Korean_Level_1_QM_332.mp3,9781508217916,9781508298205,11
+332,KO,Korean 1,17,,03R,F,돈이 충분히 있어요.,don i chungbun hi iss eoyo.,9781508298205_Korean_Level_1_QM_332.mp3,9781508217916,9781508298205,11
 333,KO,Korean 1,17,,04Q,N,Do you have enough money?,,9781508298205_Korean_Level_1_QM_333.mp3,9781508217916,9781508298205,11
-334,KO,Korean 1,17,,04R,F,__ ___ ____?,don i chungbun hi isseu seyo?,9781508298205_Korean_Level_1_QM_334.mp3,9781508217916,9781508298205,11
+334,KO,Korean 1,17,,04R,F,돈이 충분히 있으세요?,don i chungbun hi isseu seyo?,9781508298205_Korean_Level_1_QM_334.mp3,9781508217916,9781508298205,11
 335,KO,Korean 1,17,,05Q,N,Where to?,,9781508298205_Korean_Level_1_QM_335.mp3,9781508217916,9781508298205,"4,18"
-336,KO,Korean 1,17,,05R,F,____?,eodi ro yo?,9781508298205_Korean_Level_1_QM_336.mp3,9781508217916,9781508298205,"4,18"
-337,KO,Korean 1,17,,06Q,N,"For me, it�s too expensive.",,9781508298205_Korean_Level_1_QM_337.mp3,9781508217916,9781508298205,14
-338,KO,Korean 1,17,,06R,M,___ __ ___.,jeo eke neomu bissa yo,9781508298205_Korean_Level_1_QM_338.mp3,9781508217916,9781508298205,14
-339,KO,Korean 1,17,,07Q,N,"For me, that�s too fast.",,9781508298205_Korean_Level_1_QM_339.mp3,9781508217916,9781508298205,18
-340,KO,Korean 1,17,,07R,M,___ __ ___.,jeo eke neomu ppala yo.,9781508298205_Korean_Level_1_QM_340.mp3,9781508217916,9781508298205,18
+336,KO,Korean 1,17,,05R,F,어디로요?,eodi ro yo?,9781508298205_Korean_Level_1_QM_336.mp3,9781508217916,9781508298205,"4,18"
+337,KO,Korean 1,17,,06Q,N,"For me, it’s too expensive.",,9781508298205_Korean_Level_1_QM_337.mp3,9781508217916,9781508298205,14
+338,KO,Korean 1,17,,06R,M,저에게 너무 비싸요.,jeo eke neomu bissa yo,9781508298205_Korean_Level_1_QM_338.mp3,9781508217916,9781508298205,14
+339,KO,Korean 1,17,,07Q,N,"For me, that’s too fast.",,9781508298205_Korean_Level_1_QM_339.mp3,9781508217916,9781508298205,18
+340,KO,Korean 1,17,,07R,M,저에게 너무 빨라요.,jeo eke neomu ppala yo.,9781508298205_Korean_Level_1_QM_340.mp3,9781508217916,9781508298205,18
 341,KO,Korean 1,17,,08Q,N,I also have a card.,,9781508298205_Korean_Level_1_QM_341.mp3,9781508217916,9781508298205,"11,14,16"
-342,KO,Korean 1,17,,08R,M,___ ___.,kadeu do iss eoyo.,9781508298205_Korean_Level_1_QM_342.mp3,9781508217916,9781508298205,"11,14,16"
-343,KO,Korean 1,17,,09Q,N,That�s too expensive,,9781508298205_Korean_Level_1_QM_343.mp3,9781508217916,9781508298205,14
-344,KO,Korean 1,17,,09R,M,__ ___.,neomu bissa yo.,9781508298205_Korean_Level_1_QM_344.mp3,9781508217916,9781508298205,14
-345,KO,Korean 1,17,,10Q,N,That�s too fast.,,9781508298205_Korean_Level_1_QM_345.mp3,9781508217916,9781508298205,18
-346,KO,Korean 1,17,,10R,M,__ ___.,neomu ppala yo.,9781508298205_Korean_Level_1_QM_346.mp3,9781508217916,9781508298205,18
-347,KO,Korean 1,18,,01Q,N,It�s not expensive.,,9781508298205_Korean_Level_1_QM_347.mp3,9781508217916,9781508298205,14
-348,KO,Korean 1,18,,01R,F,_ ___.,an bissa yo.,9781508298205_Korean_Level_1_QM_348.mp3,9781508217916,9781508298205,14
+342,KO,Korean 1,17,,08R,M,카드도 있어요.,kadeu do iss eoyo.,9781508298205_Korean_Level_1_QM_342.mp3,9781508217916,9781508298205,"11,14,16"
+343,KO,Korean 1,17,,09Q,N,That’s too expensive,,9781508298205_Korean_Level_1_QM_343.mp3,9781508217916,9781508298205,14
+344,KO,Korean 1,17,,09R,M,너무 비싸요.,neomu bissa yo.,9781508298205_Korean_Level_1_QM_344.mp3,9781508217916,9781508298205,14
+345,KO,Korean 1,17,,10Q,N,That’s too fast.,,9781508298205_Korean_Level_1_QM_345.mp3,9781508217916,9781508298205,18
+346,KO,Korean 1,17,,10R,M,너무 빨라요.,neomu ppala yo.,9781508298205_Korean_Level_1_QM_346.mp3,9781508217916,9781508298205,18
+347,KO,Korean 1,18,,01Q,N,It’s not expensive.,,9781508298205_Korean_Level_1_QM_347.mp3,9781508217916,9781508298205,14
+348,KO,Korean 1,18,,01R,F,안 비싸요.,an bissa yo.,9781508298205_Korean_Level_1_QM_348.mp3,9781508217916,9781508298205,14
 349,KO,Korean 1,18,,02Q,N,Please give me tea and sandwich.,,9781508298205_Korean_Level_1_QM_349.mp3,9781508217916,9781508298205,"6,13,16"
-350,KO,Korean 1,18,,02R,F,___ ____ ___.,cha hako saendeuwichi juseyo.,9781508298205_Korean_Level_1_QM_350.mp3,9781508217916,9781508298205,"6,13,16"
+350,KO,Korean 1,18,,02R,F,차하고 샌드위치 주세요.,cha hako saendeuwichi juseyo.,9781508298205_Korean_Level_1_QM_350.mp3,9781508217916,9781508298205,"6,13,16"
 351,KO,Korean 1,18,,03Q,N,I want to drink tea.,,9781508298205_Korean_Level_1_QM_351.mp3,9781508217916,9781508298205,"6,16"
-352,KO,Korean 1,18,,03R,F,_ ___ ___.,cha masi ko sipeo yo.,9781508298205_Korean_Level_1_QM_352.mp3,9781508217916,9781508298205,"6,16"
+352,KO,Korean 1,18,,03R,F,차 마시고 싶어요.,cha masi ko sipeo yo.,9781508298205_Korean_Level_1_QM_352.mp3,9781508217916,9781508298205,"6,16"
 353,KO,Korean 1,18,,04Q,N,I want to buy a book.,,9781508298205_Korean_Level_1_QM_353.mp3,9781508217916,9781508298205,14
-354,KO,Korean 1,18,,04R,F,_ __ ___.,chaek sa ko sipeo yo.,9781508298205_Korean_Level_1_QM_354.mp3,9781508217916,9781508298205,14
-355,KO,Korean 1,18,,05Q,N,It�s more expensive.,,9781508298205_Korean_Level_1_QM_355.mp3,9781508217916,9781508298205,14
-356,KO,Korean 1,18,,05R,F,_ ___.,deo bissa yo.,9781508298205_Korean_Level_1_QM_356.mp3,9781508217916,9781508298205,14
+354,KO,Korean 1,18,,04R,F,책 사고 싶어요.,chaek sa ko sipeo yo.,9781508298205_Korean_Level_1_QM_354.mp3,9781508217916,9781508298205,14
+355,KO,Korean 1,18,,05Q,N,It’s more expensive.,,9781508298205_Korean_Level_1_QM_355.mp3,9781508217916,9781508298205,14
+356,KO,Korean 1,18,,05R,F,더 비싸요.,deo bissa yo.,9781508298205_Korean_Level_1_QM_356.mp3,9781508217916,9781508298205,14
 357,KO,Korean 1,18,,06Q,N,My husband wants to drink water.,,9781508298205_Korean_Level_1_QM_357.mp3,9781508217916,9781508298205,"5,6"
-358,KO,Korean 1,18,,06R,F,_ ___ __ ___ ____.,je nampyeon i mul eul masi ko sipeo haeyo,9781508298205_Korean_Level_1_QM_358.mp3,9781508217916,9781508298205,"5,6"
+358,KO,Korean 1,18,,06R,F,제 남편이 물을 마시고 싶어해요.,je nampyeon i mul eul masi ko sipeo haeyo,9781508298205_Korean_Level_1_QM_358.mp3,9781508217916,9781508298205,"5,6"
 359,KO,Korean 1,18,,07Q,N,He wants to drink.,,9781508298205_Korean_Level_1_QM_359.mp3,9781508217916,9781508298205,6
-360,KO,Korean 1,18,,07R,M,___ ____.,masi ko sipeo haeyo.,9781508298205_Korean_Level_1_QM_360.mp3,9781508217916,9781508298205,6
+360,KO,Korean 1,18,,07R,M,마시고 싶어해요.,masi ko sipeo haeyo.,9781508298205_Korean_Level_1_QM_360.mp3,9781508217916,9781508298205,6
 361,KO,Korean 1,18,,08Q,N,My wife wants to drink tea.,,9781508298205_Korean_Level_1_QM_361.mp3,9781508217916,9781508298205,"5,6"
-362,KO,Korean 1,18,,08R,M,_ ___ __ ___ ____.,je anae ka cha leul masi ko sipeo haeyo.,9781508298205_Korean_Level_1_QM_362.mp3,9781508217916,9781508298205,"5,6"
-363,KO,Korean 1,18,,09Q,N,I�m going to speak more slowly.,,9781508298205_Korean_Level_1_QM_363.mp3,9781508217916,9781508298205,15
-364,KO,Korean 1,18,,09R,M,_ ___ ____.,deo cheoncheon hi ha kess eoyo.,9781508298205_Korean_Level_1_QM_364.mp3,9781508217916,9781508298205,15
+362,KO,Korean 1,18,,08R,M,제 아내가 차를 마시고 싶어해요.,je anae ka cha leul masi ko sipeo haeyo.,9781508298205_Korean_Level_1_QM_362.mp3,9781508217916,9781508298205,"5,6"
+363,KO,Korean 1,18,,09Q,N,I’m going to speak more slowly.,,9781508298205_Korean_Level_1_QM_363.mp3,9781508217916,9781508298205,15
+364,KO,Korean 1,18,,09R,M,더 천천히 하겠어요.,deo cheoncheon hi ha kess eoyo.,9781508298205_Korean_Level_1_QM_364.mp3,9781508217916,9781508298205,15
 365,KO,Korean 1,18,,10Q,N,"Sandwich, how much is it?",,9781508298205_Korean_Level_1_QM_365.mp3,9781508217916,9781508298205,"6,14,16"
-366,KO,Korean 1,18,,10R,M,____ ____?,saendeuwichi eolma yeyo?,9781508298205_Korean_Level_1_QM_366.mp3,9781508217916,9781508298205,"6,14,16"
+366,KO,Korean 1,18,,10R,M,샌드위치 얼마예요?,saendeuwichi eolma yeyo?,9781508298205_Korean_Level_1_QM_366.mp3,9781508217916,9781508298205,"6,14,16"
 367,KO,Korean 1,19,,01Q,N,Would that be your wife?,,9781508298205_Korean_Level_1_QM_367.mp3,9781508217916,9781508298205,"5,10"
-368,KO,Korean 1,19,,01R,F,_____?,buin iseyo?,9781508298205_Korean_Level_1_QM_368.mp3,9781508217916,9781508298205,"5,10"
-369,KO,Korean 1,19,,02Q,N,That�s a colleague.,,9781508298205_Korean_Level_1_QM_369.mp3,9781508217916,9781508298205,"7,10,16"
-370,KO,Korean 1,19,,02R,F,____.,dong ryo yeyo.,9781508298205_Korean_Level_1_QM_370.mp3,9781508217916,9781508298205,"7,10,16"
-371,KO,Korean 1,19,,03Q,N,"As for my husband, he�s not here.",,9781508298205_Korean_Level_1_QM_371.mp3,9781508217916,9781508298205,5
-372,KO,Korean 1,19,,03R,F,_ ___ __ ___.,je nampyeon eun yeoki eops eoyo.,9781508298205_Korean_Level_1_QM_372.mp3,9781508217916,9781508298205,5
+368,KO,Korean 1,19,,01R,F,부인이세요?,buin iseyo?,9781508298205_Korean_Level_1_QM_368.mp3,9781508217916,9781508298205,"5,10"
+369,KO,Korean 1,19,,02Q,N,That’s a colleague.,,9781508298205_Korean_Level_1_QM_369.mp3,9781508217916,9781508298205,"7,10,16"
+370,KO,Korean 1,19,,02R,F,동료예요.,dong ryo yeyo.,9781508298205_Korean_Level_1_QM_370.mp3,9781508217916,9781508298205,"7,10,16"
+371,KO,Korean 1,19,,03Q,N,"As for my husband, he’s not here.",,9781508298205_Korean_Level_1_QM_371.mp3,9781508217916,9781508298205,5
+372,KO,Korean 1,19,,03R,F,제 남편은 여기 없어요.,je nampyeon eun yeoki eops eoyo.,9781508298205_Korean_Level_1_QM_372.mp3,9781508217916,9781508298205,5
 373,KO,Korean 1,19,,04Q,N,My husband wants to drink beer.,,9781508298205_Korean_Level_1_QM_373.mp3,9781508217916,9781508298205,"5,6"
-374,KO,Korean 1,19,,04R,F,_ ___ ___ ___ ____.,je nampyeon i maekju leul masi ko sipeo haeyo.,9781508298205_Korean_Level_1_QM_374.mp3,9781508217916,9781508298205,"5,6"
-375,KO,Korean 1,19,,05Q,N,That�s my wife.,,9781508298205_Korean_Level_1_QM_375.mp3,9781508217916,9781508298205,5
-376,KO,Korean 1,19,,05R,M,_ ____.,je anae yeyo.,9781508298205_Korean_Level_1_QM_376.mp3,9781508217916,9781508298205,5
+374,KO,Korean 1,19,,04R,F,제 남편이 맥주를 마시고 싶어해요.,je nampyeon i maekju leul masi ko sipeo haeyo.,9781508298205_Korean_Level_1_QM_374.mp3,9781508217916,9781508298205,"5,6"
+375,KO,Korean 1,19,,05Q,N,That’s my wife.,,9781508298205_Korean_Level_1_QM_375.mp3,9781508217916,9781508298205,5
+376,KO,Korean 1,19,,05R,M,제 아내예요.,je anae yeyo.,9781508298205_Korean_Level_1_QM_376.mp3,9781508217916,9781508298205,5
 377,KO,Korean 1,19,,06Q,N,My wife also is here.,,9781508298205_Korean_Level_1_QM_377.mp3,9781508217916,9781508298205,5
-378,KO,Korean 1,19,,06R,M,_ ___ __ ___.,je anae do yeoki iss eoyo.,9781508298205_Korean_Level_1_QM_378.mp3,9781508217916,9781508298205,5
+378,KO,Korean 1,19,,06R,M,제 아내도 여기 있어요.,je anae do yeoki iss eoyo.,9781508298205_Korean_Level_1_QM_378.mp3,9781508217916,9781508298205,5
 379,KO,Korean 1,19,,07Q,N,"As for me, I want to drink coffee.",,9781508298205_Korean_Level_1_QM_379.mp3,9781508217916,9781508298205,"6,16"
-380,KO,Korean 1,19,,07R,M,__ __ ___ ___.,jeo neun keopi masi ko sipeo yo.,9781508298205_Korean_Level_1_QM_380.mp3,9781508217916,9781508298205,"6,16"
+380,KO,Korean 1,19,,07R,M,저는 커피 마시고 싶어요.,jeo neun keopi masi ko sipeo yo.,9781508298205_Korean_Level_1_QM_380.mp3,9781508217916,9781508298205,"6,16"
 381,KO,Korean 1,19,,08Q,N,Who is that?,,9781508298205_Korean_Level_1_QM_381.mp3,9781508217916,9781508298205,10
-382,KO,Korean 1,19,,08R,M,____?,nuku yeyo?,9781508298205_Korean_Level_1_QM_382.mp3,9781508217916,9781508298205,10
+382,KO,Korean 1,19,,08R,M,누구예요?,nuku yeyo?,9781508298205_Korean_Level_1_QM_382.mp3,9781508217916,9781508298205,10
 383,KO,Korean 1,19,,09Q,N,Would that be your husband?,,9781508298205_Korean_Level_1_QM_383.mp3,9781508217916,9781508298205,"5,10"
-384,KO,Korean 1,19,,09R,M,_____?,nampyeon iseyo?,9781508298205_Korean_Level_1_QM_384.mp3,9781508217916,9781508298205,"5,10"
+384,KO,Korean 1,19,,09R,M,남편이세요?,nampyeon iseyo?,9781508298205_Korean_Level_1_QM_384.mp3,9781508217916,9781508298205,"5,10"
 385,KO,Korean 1,19,,10Q,N,He wants to drink water.,,9781508298205_Korean_Level_1_QM_385.mp3,9781508217916,9781508298205,6
-386,KO,Korean 1,19,,10R,F,__ ___ ____.,mul eul masi ko sipeo haeyo.,9781508298205_Korean_Level_1_QM_386.mp3,9781508217916,9781508298205,6
+386,KO,Korean 1,19,,10R,F,물을 마시고 싶어해요.,mul eul masi ko sipeo haeyo.,9781508298205_Korean_Level_1_QM_386.mp3,9781508217916,9781508298205,6
 387,KO,Korean 1,20,,01Q,N,We have three sons.,,9781508298205_Korean_Level_1_QM_387.mp3,9781508217916,9781508298205,"5,12"
-388,KO,Korean 1,20,,01R,F,___ _ _ ___.,adeul i se myeong iss eoyo.,9781508298205_Korean_Level_1_QM_388.mp3,9781508217916,9781508298205,"5,12"
+388,KO,Korean 1,20,,01R,F,아들이 세 명 있어요.,adeul i se myeong iss eoyo.,9781508298205_Korean_Level_1_QM_388.mp3,9781508217916,9781508298205,"5,12"
 389,KO,Korean 1,20,,02Q,N,"As for children, do you have any?",,9781508298205_Korean_Level_1_QM_389.mp3,9781508217916,9781508298205,5
-390,KO,Korean 1,20,,02R,F,____ ____?,ai deul eun isseu seyo?,9781508298205_Korean_Level_1_QM_390.mp3,9781508217916,9781508298205,5
+390,KO,Korean 1,20,,02R,F,아이들은 있으세요?,ai deul eun isseu seyo?,9781508298205_Korean_Level_1_QM_390.mp3,9781508217916,9781508298205,5
 391,KO,Korean 1,20,,03Q,N,Are the children grown-up?,,9781508298205_Korean_Level_1_QM_391.mp3,9781508217916,9781508298205,5
-392,KO,Korean 1,20,,03R,F,____ __?,ai deul i keo yo?,9781508298205_Korean_Level_1_QM_392.mp3,9781508217916,9781508298205,5
+392,KO,Korean 1,20,,03R,F,아이들이 커요?,ai deul i keo yo?,9781508298205_Korean_Level_1_QM_392.mp3,9781508217916,9781508298205,5
 393,KO,Korean 1,20,,04Q,N,We have three children.,,9781508298205_Korean_Level_1_QM_393.mp3,9781508217916,9781508298205,"5,12"
-394,KO,Korean 1,20,,04R,F,____ _ _ ___.,ai deul i se myeong iss eoyo.,9781508298205_Korean_Level_1_QM_394.mp3,9781508217916,9781508298205,"5,12"
+394,KO,Korean 1,20,,04R,F,아이들이 세 명 있어요.,ai deul i se myeong iss eoyo.,9781508298205_Korean_Level_1_QM_394.mp3,9781508217916,9781508298205,"5,12"
 395,KO,Korean 1,20,,05Q,N,Where do you live?,,9781508298205_Korean_Level_1_QM_395.mp3,9781508217916,9781508298205,10
-396,KO,Korean 1,20,,05R,F,__ ___?,eodi saseyo?,9781508298205_Korean_Level_1_QM_396.mp3,9781508217916,9781508298205,10
+396,KO,Korean 1,20,,05R,F,어디 사세요?,eodi saseyo?,9781508298205_Korean_Level_1_QM_396.mp3,9781508217916,9781508298205,10
 397,KO,Korean 1,20,,06Q,N,I have one dog.,,9781508298205_Korean_Level_1_QM_397.mp3,9781508217916,9781508298205,"2,12"
-398,KO,Korean 1,20,,06R,M,__ _ __ ___.,gae ka han mari iss eoyo.,9781508298205_Korean_Level_1_QM_398.mp3,9781508217916,9781508298205,"2,12"
+398,KO,Korean 1,20,,06R,M,개가 한 마리 있어요.,gae ka han mari iss eoyo.,9781508298205_Korean_Level_1_QM_398.mp3,9781508217916,9781508298205,"2,12"
 399,KO,Korean 1,20,,07Q,N,Do you have a dog?,,9781508298205_Korean_Level_1_QM_399.mp3,9781508217916,9781508298205,2
-400,KO,Korean 1,20,,07R,M,__ ____?,gae ka isseu seyo?,9781508298205_Korean_Level_1_QM_400.mp3,9781508217916,9781508298205,2
+400,KO,Korean 1,20,,07R,M,개가 있으세요?,gae ka isseu seyo?,9781508298205_Korean_Level_1_QM_400.mp3,9781508217916,9781508298205,2
 401,KO,Korean 1,20,,08Q,N,How many dogs do you have?,,9781508298205_Korean_Level_1_QM_401.mp3,9781508217916,9781508298205,2
-402,KO,Korean 1,20,,08R,M,__ _ __ ____.,gae ka myeot mari isseu seyo?,9781508298205_Korean_Level_1_QM_402.mp3,9781508217916,9781508298205,2
-403,KO,Korean 1,20,,09Q,N,"As for dogs, we don�t have any.",,9781508298205_Korean_Level_1_QM_403.mp3,9781508217916,9781508298205,2
-404,KO,Korean 1,20,,09R,M,__ ___.,gae neun eops eoyo.,9781508298205_Korean_Level_1_QM_404.mp3,9781508217916,9781508298205,2
+402,KO,Korean 1,20,,08R,M,개가 몇 마리 있으세요.,gae ka myeot mari isseu seyo?,9781508298205_Korean_Level_1_QM_402.mp3,9781508217916,9781508298205,2
+403,KO,Korean 1,20,,09Q,N,"As for dogs, we don’t have any.",,9781508298205_Korean_Level_1_QM_403.mp3,9781508217916,9781508298205,2
+404,KO,Korean 1,20,,09R,M,개는 없어요.,gae neun eops eoyo.,9781508298205_Korean_Level_1_QM_404.mp3,9781508217916,9781508298205,2
 405,KO,Korean 1,20,,10Q,N,"Yes, it is big.",,9781508298205_Korean_Level_1_QM_405.mp3,9781508217916,9781508298205,7
-406,KO,Korean 1,20,,10R,M,"_, __.","ne, keo yo.",9781508298205_Korean_Level_1_QM_406.mp3,9781508217916,9781508298205,7
+406,KO,Korean 1,20,,10R,M,"네, 커요.","ne, keo yo.",9781508298205_Korean_Level_1_QM_406.mp3,9781508217916,9781508298205,7
 407,KO,Korean 1,20,,11Q,N,"As for daughters, we have one.",,9781508298205_Korean_Level_1_QM_407.mp3,9781508217916,9781508298205,"5,12"
-408,KO,Korean 1,20,,11R,M,__ _ _ ___.,ttal eun han myeong iss eoyo.,9781508298205_Korean_Level_1_QM_408.mp3,9781508217916,9781508298205,"5,12"
+408,KO,Korean 1,20,,11R,M,딸은 한 명 있어요.,ttal eun han myeong iss eoyo.,9781508298205_Korean_Level_1_QM_408.mp3,9781508217916,9781508298205,"5,12"
 409,KO,Korean 1,21,,01Q,N,We have one son.,,9781508298205_Korean_Level_1_QM_409.mp3,9781508217916,9781508298205,"5,12"
-410,KO,Korean 1,21,,01R,F,___ _ _ ___.,adeul i han myeong iss eoyo.,9781508298205_Korean_Level_1_QM_410.mp3,9781508217916,9781508298205,"5,12"
+410,KO,Korean 1,21,,01R,F,아들이 한 명 있어요.,adeul i han myeong iss eoyo.,9781508298205_Korean_Level_1_QM_410.mp3,9781508217916,9781508298205,"5,12"
 411,KO,Korean 1,21,,02Q,N,"As for the children, where are they?",,9781508298205_Korean_Level_1_QM_411.mp3,9781508217916,9781508298205,5
-412,KO,Korean 1,21,,02R,F,____ __ ___?,ai deul eun eodi iss eoyo?,9781508298205_Korean_Level_1_QM_412.mp3,9781508217916,9781508298205,5
+412,KO,Korean 1,21,,02R,F,아이들은 어디 있어요?,ai deul eun eodi iss eoyo?,9781508298205_Korean_Level_1_QM_412.mp3,9781508217916,9781508298205,5
 413,KO,Korean 1,21,,03Q,N,I want to go to a bank.,,9781508298205_Korean_Level_1_QM_413.mp3,9781508217916,9781508298205,"11,16"
-414,KO,Korean 1,21,,03R,F,___ __ ___.,eun haeng e ga ko sipeo yo.,9781508298205_Korean_Level_1_QM_414.mp3,9781508217916,9781508298205,"11,16"
+414,KO,Korean 1,21,,03R,F,은행에 가고 싶어요.,eun haeng e ga ko sipeo yo.,9781508298205_Korean_Level_1_QM_414.mp3,9781508217916,9781508298205,"11,16"
 415,KO,Korean 1,21,,04Q,N,"As for the bank, where is it?",,9781508298205_Korean_Level_1_QM_415.mp3,9781508217916,9781508298205,"4,11,16"
-416,KO,Korean 1,21,,04R,F,___ ____?,eun haeng eun eodi yeyo?,9781508298205_Korean_Level_1_QM_416.mp3,9781508217916,9781508298205,"4,11,16"
+416,KO,Korean 1,21,,04R,F,은행은 어디예요?,eun haeng eun eodi yeyo?,9781508298205_Korean_Level_1_QM_416.mp3,9781508217916,9781508298205,"4,11,16"
 417,KO,Korean 1,21,,05Q,N,We have cats.,,9781508298205_Korean_Level_1_QM_417.mp3,9781508217916,9781508298205,2
-418,KO,Korean 1,21,,05R,F,____ ___.,go yang i ka iss eoyo.,9781508298205_Korean_Level_1_QM_418.mp3,9781508217916,9781508298205,2
+418,KO,Korean 1,21,,05R,F,고양이가 있어요.,go yang i ka iss eoyo.,9781508298205_Korean_Level_1_QM_418.mp3,9781508217916,9781508298205,2
 419,KO,Korean 1,21,,06Q,N,How many cats do you have?,,9781508298205_Korean_Level_1_QM_419.mp3,9781508217916,9781508298205,2
-420,KO,Korean 1,21,,06R,M,____ _ __ ____?,go yang i ka myeot mari isseu seyo?,9781508298205_Korean_Level_1_QM_420.mp3,9781508217916,9781508298205,2
+420,KO,Korean 1,21,,06R,M,고양이가 몇 마리 있으세요?,go yang i ka myeot mari isseu seyo?,9781508298205_Korean_Level_1_QM_420.mp3,9781508217916,9781508298205,2
 421,KO,Korean 1,21,,07Q,N,Where is the restroom?,,9781508298205_Korean_Level_1_QM_421.mp3,9781508217916,9781508298205,"4,16"
-422,KO,Korean 1,21,,07R,M,____ ____?,hwa jang sil i eodi yeyo?,9781508298205_Korean_Level_1_QM_422.mp3,9781508217916,9781508298205,"4,16"
-423,KO,Korean 1,21,,08Q,N,"As for the restroom, it�s over there.",,9781508298205_Korean_Level_1_QM_423.mp3,9781508217916,9781508298205,"4,16"
-424,KO,Korean 1,21,,08R,M,____ ____.,hwa jang sil eun jeoki yeyo.,9781508298205_Korean_Level_1_QM_424.mp3,9781508217916,9781508298205,"4,16"
-425,KO,Korean 1,21,,09Q,N,She�s very young.,,9781508298205_Korean_Level_1_QM_425.mp3,9781508217916,9781508298205,5
-426,KO,Korean 1,21,,09R,M,__ ___.,jung mal eoryeo yo.,9781508298205_Korean_Level_1_QM_426.mp3,9781508217916,9781508298205,5
+422,KO,Korean 1,21,,07R,M,화장실이 어디예요?,hwa jang sil i eodi yeyo?,9781508298205_Korean_Level_1_QM_422.mp3,9781508217916,9781508298205,"4,16"
+423,KO,Korean 1,21,,08Q,N,"As for the restroom, it’s over there.",,9781508298205_Korean_Level_1_QM_423.mp3,9781508217916,9781508298205,"4,16"
+424,KO,Korean 1,21,,08R,M,화장실은 저기예요.,hwa jang sil eun jeoki yeyo.,9781508298205_Korean_Level_1_QM_424.mp3,9781508217916,9781508298205,"4,16"
+425,KO,Korean 1,21,,09Q,N,She’s very young.,,9781508298205_Korean_Level_1_QM_425.mp3,9781508217916,9781508298205,5
+426,KO,Korean 1,21,,09R,M,정말 어려요.,jung mal eoryeo yo.,9781508298205_Korean_Level_1_QM_426.mp3,9781508217916,9781508298205,5
 427,KO,Korean 1,21,,10Q,N,The son is big.,,9781508298205_Korean_Level_1_QM_427.mp3,9781508217916,9781508298205,5
-428,KO,Korean 1,21,,10R,M,___ __.,adeul i keo yo.,9781508298205_Korean_Level_1_QM_428.mp3,9781508217916,9781508298205,5
-429,KO,Korean 1,22,,01Q,N,It�s not close.,,9781508298205_Korean_Level_1_QM_429.mp3,9781508217916,9781508298205,4
-430,KO,Korean 1,22,,01R,F,_ ____?,an gakka woyo.,9781508298205_Korean_Level_1_QM_430.mp3,9781508217916,9781508298205,4
+428,KO,Korean 1,21,,10R,M,아들이 커요.,adeul i keo yo.,9781508298205_Korean_Level_1_QM_428.mp3,9781508217916,9781508298205,5
+429,KO,Korean 1,22,,01Q,N,It’s not close.,,9781508298205_Korean_Level_1_QM_429.mp3,9781508217916,9781508298205,4
+430,KO,Korean 1,22,,01R,F,안 가까워요?,an gakka woyo.,9781508298205_Korean_Level_1_QM_430.mp3,9781508217916,9781508298205,4
 431,KO,Korean 1,22,,02Q,N,"As for the department store, is it far?",,9781508298205_Korean_Level_1_QM_431.mp3,9781508217916,9781508298205,"4,14"
-432,KO,Korean 1,22,,02R,F,____ ___?,baekhwa jeom eun meol eoyo?,9781508298205_Korean_Level_1_QM_432.mp3,9781508217916,9781508298205,"4,14"
+432,KO,Korean 1,22,,02R,F,백화점은 멀어요?,baekhwa jeom eun meol eoyo?,9781508298205_Korean_Level_1_QM_432.mp3,9781508217916,9781508298205,"4,14"
 433,KO,Korean 1,22,,03Q,N,Do you have a car?,,9781508298205_Korean_Level_1_QM_433.mp3,9781508217916,9781508298205,18
-434,KO,Korean 1,22,,03R,F,__ ____?,cha ka isseu seyo?,9781508298205_Korean_Level_1_QM_434.mp3,9781508217916,9781508298205,18
+434,KO,Korean 1,22,,03R,F,차가 있으세요?,cha ka isseu seyo?,9781508298205_Korean_Level_1_QM_434.mp3,9781508217916,9781508298205,18
 435,KO,Korean 1,22,,04Q,N,Where is the car?,,9781508298205_Korean_Level_1_QM_435.mp3,9781508217916,9781508298205,"4,16,18"
-436,KO,Korean 1,22,,04R,F,__ __ ___?,cha ka eodi iss eoyo?,9781508298205_Korean_Level_1_QM_436.mp3,9781508217916,9781508298205,"4,16,18"
+436,KO,Korean 1,22,,04R,F,차가 어디 있어요?,cha ka eodi iss eoyo?,9781508298205_Korean_Level_1_QM_436.mp3,9781508217916,9781508298205,"4,16,18"
 437,KO,Korean 1,22,,05Q,N,Is the car small?,,9781508298205_Korean_Level_1_QM_437.mp3,9781508217916,9781508298205,18
-438,KO,Korean 1,22,,05R,F,__ ___?,cha ka jak ayo?,9781508298205_Korean_Level_1_QM_438.mp3,9781508217916,9781508298205,18
-439,KO,Korean 1,22,,06Q,N,It�s close.,,9781508298205_Korean_Level_1_QM_439.mp3,9781508217916,9781508298205,4
-440,KO,Korean 1,22,,06R,M,____.,gakka woyo.,9781508298205_Korean_Level_1_QM_440.mp3,9781508217916,9781508298205,4
+438,KO,Korean 1,22,,05R,F,차가 작아요?,cha ka jak ayo?,9781508298205_Korean_Level_1_QM_438.mp3,9781508217916,9781508298205,18
+439,KO,Korean 1,22,,06Q,N,It’s close.,,9781508298205_Korean_Level_1_QM_439.mp3,9781508217916,9781508298205,4
+440,KO,Korean 1,22,,06R,M,가까워요.,gakka woyo.,9781508298205_Korean_Level_1_QM_440.mp3,9781508217916,9781508298205,4
 441,KO,Korean 1,22,,07Q,N,Please give me some gasoline.,,9781508298205_Korean_Level_1_QM_441.mp3,9781508217916,9781508298205,"13,18"
-442,KO,Korean 1,22,,07R,M,__ _ ___.,gireum jom juseyo.,9781508298205_Korean_Level_1_QM_442.mp3,9781508217916,9781508298205,"13,18"
-443,KO,Korean 1,22,,08Q,N,It�s a little bit far.,,9781508298205_Korean_Level_1_QM_443.mp3,9781508217916,9781508298205,4
-444,KO,Korean 1,22,,08R,M,_ ___.,jom meol eoyo.,9781508298205_Korean_Level_1_QM_444.mp3,9781508217916,9781508298205,4
+442,KO,Korean 1,22,,07R,M,기름 좀 주세요.,gireum jom juseyo.,9781508298205_Korean_Level_1_QM_442.mp3,9781508217916,9781508298205,"13,18"
+443,KO,Korean 1,22,,08Q,N,It’s a little bit far.,,9781508298205_Korean_Level_1_QM_443.mp3,9781508217916,9781508298205,4
+444,KO,Korean 1,22,,08R,M,좀 멀어요.,jom meol eoyo.,9781508298205_Korean_Level_1_QM_444.mp3,9781508217916,9781508298205,4
 445,KO,Korean 1,22,,09Q,N,We have a big family.,,9781508298205_Korean_Level_1_QM_445.mp3,9781508217916,9781508298205,5
-446,KO,Korean 1,22,,09R,M,___ __ ___.,kajok i mani iss eoyo.,9781508298205_Korean_Level_1_QM_446.mp3,9781508217916,9781508298205,5
+446,KO,Korean 1,22,,09R,M,가족이 많이 있어요.,kajok i mani iss eoyo.,9781508298205_Korean_Level_1_QM_446.mp3,9781508217916,9781508298205,5
 447,KO,Korean 1,22,,10Q,N,Please give me ten liters.,,9781508298205_Korean_Level_1_QM_447.mp3,9781508217916,9781508298205,"12,13,18"
-448,KO,Korean 1,22,,10R,M,_ __ ___.,sip liteo juseyo.,9781508298205_Korean_Level_1_QM_448.mp3,9781508217916,9781508298205,"12,13,18"
-449,KO,Korean 1,23,,01Q,N,It�s not far.,,9781508298205_Korean_Level_1_QM_449.mp3,9781508217916,9781508298205,4
-450,KO,Korean 1,23,,01R,F,_ ___.,an meol eoyo.,9781508298205_Korean_Level_1_QM_450.mp3,9781508217916,9781508298205,4
+448,KO,Korean 1,22,,10R,M,십 리터 주세요.,sip liteo juseyo.,9781508298205_Korean_Level_1_QM_448.mp3,9781508217916,9781508298205,"12,13,18"
+449,KO,Korean 1,23,,01Q,N,It’s not far.,,9781508298205_Korean_Level_1_QM_449.mp3,9781508217916,9781508298205,4
+450,KO,Korean 1,23,,01R,F,안 멀어요.,an meol eoyo.,9781508298205_Korean_Level_1_QM_450.mp3,9781508217916,9781508298205,4
 451,KO,Korean 1,23,,02Q,N,Are you going by bus?,,9781508298205_Korean_Level_1_QM_451.mp3,9781508217916,9781508298205,18
-452,KO,Korean 1,23,,02R,F,______?,beoseuro kaseyo?,9781508298205_Korean_Level_1_QM_452.mp3,9781508217916,9781508298205,18
+452,KO,Korean 1,23,,02R,F,버스로가세요?,beoseuro kaseyo?,9781508298205_Korean_Level_1_QM_452.mp3,9781508217916,9781508298205,18
 453,KO,Korean 1,23,,03Q,N,Please give me the bill.,,9781508298205_Korean_Level_1_QM_453.mp3,9781508217916,9781508298205,"6,13"
-454,KO,Korean 1,23,,03R,F,___ _ ___.,gesanseo jom juseyo.,9781508298205_Korean_Level_1_QM_454.mp3,9781508217916,9781508298205,"6,13"
-455,KO,Korean 1,23,,04Q,N,I�m going by train.,,9781508298205_Korean_Level_1_QM_455.mp3,9781508217916,9781508298205,18
-456,KO,Korean 1,23,,04R,F,___ __.,gicha ro kayo.,9781508298205_Korean_Level_1_QM_456.mp3,9781508217916,9781508298205,18
-457,KO,Korean 1,23,,05Q,N,She�s very small.,,9781508298205_Korean_Level_1_QM_457.mp3,9781508217916,9781508298205,5
-458,KO,Korean 1,23,,05R,F,__ ___.,jung mal jak ayo.,9781508298205_Korean_Level_1_QM_458.mp3,9781508217916,9781508298205,5
-459,KO,Korean 1,23,,06Q,N,It�s very far.,,9781508298205_Korean_Level_1_QM_459.mp3,9781508217916,9781508298205,4
-460,KO,Korean 1,23,,06R,M,__ ___.,jung mal meol eoyo.,9781508298205_Korean_Level_1_QM_460.mp3,9781508217916,9781508298205,4
+454,KO,Korean 1,23,,03R,F,계산서 좀 주세요.,gesanseo jom juseyo.,9781508298205_Korean_Level_1_QM_454.mp3,9781508217916,9781508298205,"6,13"
+455,KO,Korean 1,23,,04Q,N,I’m going by train.,,9781508298205_Korean_Level_1_QM_455.mp3,9781508217916,9781508298205,18
+456,KO,Korean 1,23,,04R,F,기차로 가요.,gicha ro kayo.,9781508298205_Korean_Level_1_QM_456.mp3,9781508217916,9781508298205,18
+457,KO,Korean 1,23,,05Q,N,She’s very small.,,9781508298205_Korean_Level_1_QM_457.mp3,9781508217916,9781508298205,5
+458,KO,Korean 1,23,,05R,F,정말 작아요.,jung mal jak ayo.,9781508298205_Korean_Level_1_QM_458.mp3,9781508217916,9781508298205,5
+459,KO,Korean 1,23,,06Q,N,It’s very far.,,9781508298205_Korean_Level_1_QM_459.mp3,9781508217916,9781508298205,4
+460,KO,Korean 1,23,,06R,M,정말 멀어요.,jung mal meol eoyo.,9781508298205_Korean_Level_1_QM_460.mp3,9781508217916,9781508298205,4
 461,KO,Korean 1,23,,07Q,N,We have a big car.,,9781508298205_Korean_Level_1_QM_461.mp3,9781508217916,9781508298205,18
-462,KO,Korean 1,23,,07R,M,_ __ ___.,keun cha ka iss eoyo.,9781508298205_Korean_Level_1_QM_462.mp3,9781508217916,9781508298205,18
+462,KO,Korean 1,23,,07R,M,큰 차가 있어요.,keun cha ka iss eoyo.,9781508298205_Korean_Level_1_QM_462.mp3,9781508217916,9781508298205,18
 463,KO,Korean 1,23,,08Q,N,"Fill it up, please.",,9781508298205_Korean_Level_1_QM_463.mp3,9781508217916,9781508298205,"13,18"
-464,KO,Korean 1,23,,08R,M,__ __ ___.,kadeuk chae weo juseyo.,9781508298205_Korean_Level_1_QM_464.mp3,9781508217916,9781508298205,"13,18"
+464,KO,Korean 1,23,,08R,M,가득 채워 주세요.,kadeuk chae weo juseyo.,9781508298205_Korean_Level_1_QM_464.mp3,9781508217916,9781508298205,"13,18"
 465,KO,Korean 1,23,,09Q,N,There are four hundred fifty kilometers.,,9781508298205_Korean_Level_1_QM_465.mp3,9781508217916,9781508298205,12
-466,KO,Korean 1,23,,09R,M,____ ____.,sa baek o sip kilo yeyo.,9781508298205_Korean_Level_1_QM_466.mp3,9781508217916,9781508298205,12
+466,KO,Korean 1,23,,09R,M,사백오십 킬로예요.,sa baek o sip kilo yeyo.,9781508298205_Korean_Level_1_QM_466.mp3,9781508217916,9781508298205,12
 467,KO,Korean 1,23,,10Q,N,Are you going by bus?,,9781508298205_Korean_Level_1_QM_467.mp3,9781508217916,9781508298205,18
-468,KO,Korean 1,23,,10R,M,___ ___?,beoseu ro kaseyo?,9781508298205_Korean_Level_1_QM_468.mp3,9781508217916,9781508298205,18
+468,KO,Korean 1,23,,10R,M,버스로 가세요?,beoseu ro kaseyo?,9781508298205_Korean_Level_1_QM_468.mp3,9781508217916,9781508298205,18
 469,KO,Korean 1,24,,01Q,N,Or else by train?,,9781508298205_Korean_Level_1_QM_469.mp3,9781508217916,9781508298205,18
-470,KO,Korean 1,24,,01R,F,___ ____?,animyeon gicha ro yo?,9781508298205_Korean_Level_1_QM_470.mp3,9781508217916,9781508298205,18
+470,KO,Korean 1,24,,01R,F,아니면 기차로요?,animyeon gicha ro yo?,9781508298205_Korean_Level_1_QM_470.mp3,9781508217916,9781508298205,18
 471,KO,Korean 1,24,,02Q,N,"Or else, is it straight ahead?",,9781508298205_Korean_Level_1_QM_471.mp3,9781508217916,9781508298205,4
-472,KO,Korean 1,24,,02R,F,___ _____?,animyeon ttokbaro yeyo?,9781508298205_Korean_Level_1_QM_472.mp3,9781508217916,9781508298205,4
+472,KO,Korean 1,24,,02R,F,아니면 똑바로예요?,animyeon ttokbaro yeyo?,9781508298205_Korean_Level_1_QM_472.mp3,9781508217916,9781508298205,4
 473,KO,Korean 1,24,,03Q,N,"As for gasoline, is it expensive?",,9781508298205_Korean_Level_1_QM_473.mp3,9781508217916,9781508298205,"14,18"
-474,KO,Korean 1,24,,03R,F,___ ___?,gireum eun bissa yo?,9781508298205_Korean_Level_1_QM_474.mp3,9781508217916,9781508298205,"14,18"
+474,KO,Korean 1,24,,03R,F,기름은 비싸요?,gireum eun bissa yo?,9781508298205_Korean_Level_1_QM_474.mp3,9781508217916,9781508298205,"14,18"
 475,KO,Korean 1,24,,04Q,N,You go by highway.,,9781508298205_Korean_Level_1_QM_475.mp3,9781508217916,9781508298205,18
-476,KO,Korean 1,24,,04R,F,_____ ___.,gosok doro ro kaseyo.,9781508298205_Korean_Level_1_QM_476.mp3,9781508217916,9781508298205,18
+476,KO,Korean 1,24,,04R,F,고속도로로 가세요.,gosok doro ro kaseyo.,9781508298205_Korean_Level_1_QM_476.mp3,9781508217916,9781508298205,18
 477,KO,Korean 1,24,,05Q,N,Is it this way?,,9781508298205_Korean_Level_1_QM_477.mp3,9781508217916,9781508298205,"4,16"
-478,KO,Korean 1,24,,05R,F,_ ____?,i kil i eyo?,9781508298205_Korean_Level_1_QM_478.mp3,9781508217916,9781508298205,"4,16"
-479,KO,Korean 1,24,,06Q,N,It�s in that direction.,,9781508298205_Korean_Level_1_QM_479.mp3,9781508217916,9781508298205,4
-480,KO,Korean 1,24,,06R,M,_____.,jeo jjok i eyo.,9781508298205_Korean_Level_1_QM_480.mp3,9781508217916,9781508298205,4
+478,KO,Korean 1,24,,05R,F,이 길이에요?,i kil i eyo?,9781508298205_Korean_Level_1_QM_478.mp3,9781508217916,9781508298205,"4,16"
+479,KO,Korean 1,24,,06Q,N,It’s in that direction.,,9781508298205_Korean_Level_1_QM_479.mp3,9781508217916,9781508298205,4
+480,KO,Korean 1,24,,06R,M,저쪽이에요.,jeo jjok i eyo.,9781508298205_Korean_Level_1_QM_480.mp3,9781508217916,9781508298205,4
 481,KO,Korean 1,24,,07Q,N,"As for the way, where is it?",,9781508298205_Korean_Level_1_QM_481.mp3,9781508217916,9781508298205,"4,16"
-482,KO,Korean 1,24,,07R,M,__ ____?,kil eun eodi yeyo?,9781508298205_Korean_Level_1_QM_482.mp3,9781508217916,9781508298205,"4,16"
+482,KO,Korean 1,24,,07R,M,길은 어디예요?,kil eun eodi yeyo?,9781508298205_Korean_Level_1_QM_482.mp3,9781508217916,9781508298205,"4,16"
 483,KO,Korean 1,24,,08Q,N,Is it on the left?,,9781508298205_Korean_Level_1_QM_483.mp3,9781508217916,9781508298205,"4,16"
-484,KO,Korean 1,24,,08R,M,_____?,oen jjok i eyo?,9781508298205_Korean_Level_1_QM_484.mp3,9781508217916,9781508298205,"4,16"
+484,KO,Korean 1,24,,08R,M,왼쪽이에요?,oen jjok i eyo?,9781508298205_Korean_Level_1_QM_484.mp3,9781508217916,9781508298205,"4,16"
 485,KO,Korean 1,24,,09Q,N,Is it on the right?,,9781508298205_Korean_Level_1_QM_485.mp3,9781508217916,9781508298205,"4,16"
-486,KO,Korean 1,24,,09R,M,______?,oreun jjok i eyo?,9781508298205_Korean_Level_1_QM_486.mp3,9781508217916,9781508298205,"4,16"
+486,KO,Korean 1,24,,09R,M,오른쪽이에요?,oreun jjok i eyo?,9781508298205_Korean_Level_1_QM_486.mp3,9781508217916,9781508298205,"4,16"
 487,KO,Korean 1,24,,10Q,N,Please go straight ahead.,,9781508298205_Korean_Level_1_QM_487.mp3,9781508217916,9781508298205,"4,13"
-488,KO,Korean 1,24,,10R,M,___ ___.,ttokbaro kaseyo.,9781508298205_Korean_Level_1_QM_488.mp3,9781508217916,9781508298205,"4,13"
-489,KO,Korean 1,25,,01Q,N,It�s not late.,,9781508298205_Korean_Level_1_QM_489.mp3,9781508217916,9781508298205,17
-490,KO,Korean 1,25,,01R,F,_ ____.,an neut eoss eoyo.,9781508298205_Korean_Level_1_QM_490.mp3,9781508217916,9781508298205,17
-491,KO,Korean 1,25,,02Q,N,Because it�s not late.,,9781508298205_Korean_Level_1_QM_491.mp3,9781508217916,9781508298205,17
-492,KO,Korean 1,25,,02R,F,_ ______.,an neut eoss eu nikka yo.,9781508298205_Korean_Level_1_QM_492.mp3,9781508217916,9781508298205,17
+488,KO,Korean 1,24,,10R,M,똑바로 가세요.,ttokbaro kaseyo.,9781508298205_Korean_Level_1_QM_488.mp3,9781508217916,9781508298205,"4,13"
+489,KO,Korean 1,25,,01Q,N,It’s not late.,,9781508298205_Korean_Level_1_QM_489.mp3,9781508217916,9781508298205,17
+490,KO,Korean 1,25,,01R,F,안 늦었어요.,an neut eoss eoyo.,9781508298205_Korean_Level_1_QM_490.mp3,9781508217916,9781508298205,17
+491,KO,Korean 1,25,,02Q,N,Because it’s not late.,,9781508298205_Korean_Level_1_QM_491.mp3,9781508217916,9781508298205,17
+492,KO,Korean 1,25,,02R,F,안 늦었으니까요.,an neut eoss eu nikka yo.,9781508298205_Korean_Level_1_QM_492.mp3,9781508217916,9781508298205,17
 493,KO,Korean 1,25,,03Q,N,Or else are they closed?,,9781508298205_Korean_Level_1_QM_493.mp3,9781508217916,9781508298205,14
-494,KO,Korean 1,25,,03R,F,___ ____?,animyeon tat ass eoyo?,9781508298205_Korean_Level_1_QM_494.mp3,9781508217916,9781508298205,14
-495,KO,Korean 1,25,,04Q,N,Because it�s already late.,,9781508298205_Korean_Level_1_QM_495.mp3,9781508217916,9781508298205,17
-496,KO,Korean 1,25,,04R,F,__ ______.,beol sseo neut eoss eu nikka yo.,9781508298205_Korean_Level_1_QM_496.mp3,9781508217916,9781508298205,17
-497,KO,Korean 1,25,,05Q,N,It�s already eight o�clock?,,9781508298205_Korean_Level_1_QM_497.mp3,9781508217916,9781508298205,"12,17"
-498,KO,Korean 1,25,,05R,F,__ __ ___?,beol sseo yeo deol si yeyo?,9781508298205_Korean_Level_1_QM_498.mp3,9781508217916,9781508298205,"12,17"
+494,KO,Korean 1,25,,03R,F,아니면 닫았어요?,animyeon tat ass eoyo?,9781508298205_Korean_Level_1_QM_494.mp3,9781508217916,9781508298205,14
+495,KO,Korean 1,25,,04Q,N,Because it’s already late.,,9781508298205_Korean_Level_1_QM_495.mp3,9781508217916,9781508298205,17
+496,KO,Korean 1,25,,04R,F,벌써 늦었으니까요.,beol sseo neut eoss eu nikka yo.,9781508298205_Korean_Level_1_QM_496.mp3,9781508217916,9781508298205,17
+497,KO,Korean 1,25,,05Q,N,It’s already eight o’clock?,,9781508298205_Korean_Level_1_QM_497.mp3,9781508217916,9781508298205,"12,17"
+498,KO,Korean 1,25,,05R,F,벌써 여덟 시예요?,beol sseo yeo deol si yeyo?,9781508298205_Korean_Level_1_QM_498.mp3,9781508217916,9781508298205,"12,17"
 499,KO,Korean 1,25,,06Q,N,The stores are closed.,,9781508298205_Korean_Level_1_QM_499.mp3,9781508217916,9781508298205,14
-500,KO,Korean 1,25,,06R,M,____ ____.,gage deul i tat ass eoyo.,9781508298205_Korean_Level_1_QM_500.mp3,9781508217916,9781508298205,14
+500,KO,Korean 1,25,,06R,M,가게들이 닫았어요.,gage deul i tat ass eoyo.,9781508298205_Korean_Level_1_QM_500.mp3,9781508217916,9781508298205,14
 501,KO,Korean 1,25,,07Q,N,It takes three hours by train.,,9781508298205_Korean_Level_1_QM_501.mp3,9781508217916,9781508298205,"12,17,18"
-502,KO,Korean 1,25,,07R,M,___ _ __ ___.,gicha ro se sigan geol lyeoyo.,9781508298205_Korean_Level_1_QM_502.mp3,9781508217916,9781508298205,"12,17,18"
-503,KO,Korean 1,25,,08Q,N,Now they�re open.,,9781508298205_Korean_Level_1_QM_503.mp3,9781508217916,9781508298205,14
-504,KO,Korean 1,25,,08R,M,____.,jikeum haeyo.,9781508298205_Korean_Level_1_QM_504.mp3,9781508217916,9781508298205,14
+502,KO,Korean 1,25,,07R,M,기차로 세 시간 걸려요.,gicha ro se sigan geol lyeoyo.,9781508298205_Korean_Level_1_QM_502.mp3,9781508217916,9781508298205,"12,17,18"
+503,KO,Korean 1,25,,08Q,N,Now they’re open.,,9781508298205_Korean_Level_1_QM_503.mp3,9781508217916,9781508298205,14
+504,KO,Korean 1,25,,08R,M,지금해요.,jikeum haeyo.,9781508298205_Korean_Level_1_QM_504.mp3,9781508217916,9781508298205,14
 505,KO,Korean 1,25,,09Q,N,The convenience stores are open.,,9781508298205_Korean_Level_1_QM_505.mp3,9781508217916,9781508298205,14
-506,KO,Korean 1,25,,09R,M,_____ __.,pyoneui jeom deul i haeyo.,9781508298205_Korean_Level_1_QM_506.mp3,9781508217916,9781508298205,14
+506,KO,Korean 1,25,,09R,M,편의점들이 해요.,pyoneui jeom deul i haeyo.,9781508298205_Korean_Level_1_QM_506.mp3,9781508217916,9781508298205,14
 507,KO,Korean 1,25,,10Q,N,Are the convenience stores closed?,,9781508298205_Korean_Level_1_QM_507.mp3,9781508217916,9781508298205,"14,16"
-508,KO,Korean 1,25,,10R,M,_____ ____?,pyoneui jeom deul i tat ass eoyo?,9781508298205_Korean_Level_1_QM_508.mp3,9781508217916,9781508298205,"14,16"
-509,KO,Korean 1,25,,11Q,N,You can�t buy anything here.,,9781508298205_Korean_Level_1_QM_509.mp3,9781508217916,9781508298205,14
-510,KO,Korean 1,25,,11R,M,___ _ _ ___.,yeoki seo sal su eops eoyo.,9781508298205_Korean_Level_1_QM_510.mp3,9781508217916,9781508298205,14
-511,KO,Korean 1,26,,01Q,N,Maybe I�m going by car.,,9781508298205_Korean_Level_1_QM_511.mp3,9781508217916,9781508298205,18
-512,KO,Korean 1,26,,01R,F,__ __ __.,ama cha ro kayo.,9781508298205_Korean_Level_1_QM_512.mp3,9781508217916,9781508298205,18
+508,KO,Korean 1,25,,10R,M,편의점들이 닫았어요?,pyoneui jeom deul i tat ass eoyo?,9781508298205_Korean_Level_1_QM_508.mp3,9781508217916,9781508298205,"14,16"
+509,KO,Korean 1,25,,11Q,N,You can’t buy anything here.,,9781508298205_Korean_Level_1_QM_509.mp3,9781508217916,9781508298205,14
+510,KO,Korean 1,25,,11R,M,여기서 살 수 없어요.,yeoki seo sal su eops eoyo.,9781508298205_Korean_Level_1_QM_510.mp3,9781508217916,9781508298205,14
+511,KO,Korean 1,26,,01Q,N,Maybe I’m going by car.,,9781508298205_Korean_Level_1_QM_511.mp3,9781508217916,9781508298205,18
+512,KO,Korean 1,26,,01R,F,아마 차로 가요.,ama cha ro kayo.,9781508298205_Korean_Level_1_QM_512.mp3,9781508217916,9781508298205,18
 513,KO,Korean 1,26,,02Q,N,Maybe for three days.,,9781508298205_Korean_Level_1_QM_513.mp3,9781508217916,9781508298205,"12,17"
-514,KO,Korean 1,26,,02R,F,__ __ __.,ama sam il dong an.,9781508298205_Korean_Level_1_QM_514.mp3,9781508217916,9781508298205,"12,17"
-515,KO,Korean 1,26,,03Q,N,It�s already late.,,9781508298205_Korean_Level_1_QM_515.mp3,9781508217916,9781508298205,17
-516,KO,Korean 1,26,,03R,F,__ ____.,beol sseo neut eoss eoyo.,9781508298205_Korean_Level_1_QM_516.mp3,9781508217916,9781508298205,17
+514,KO,Korean 1,26,,02R,F,아마 삼일 동안.,ama sam il dong an.,9781508298205_Korean_Level_1_QM_514.mp3,9781508217916,9781508298205,"12,17"
+515,KO,Korean 1,26,,03Q,N,It’s already late.,,9781508298205_Korean_Level_1_QM_515.mp3,9781508217916,9781508298205,17
+516,KO,Korean 1,26,,03R,F,벌써 늦었어요.,beol sseo neut eoss eoyo.,9781508298205_Korean_Level_1_QM_516.mp3,9781508217916,9781508298205,17
 517,KO,Korean 1,26,,04Q,N,I will probably see a few friends.,,9781508298205_Korean_Level_1_QM_517.mp3,9781508217916,9781508298205,5
-518,KO,Korean 1,26,,04R,F,"___ _, __ __ ___.","chingu deul du, se myeong mannal geo yeyo.",9781508298205_Korean_Level_1_QM_518.mp3,9781508217916,9781508298205,5
+518,KO,Korean 1,26,,04R,F,"친구들 두, 세명 만날 거예요.","chingu deul du, se myeong mannal geo yeyo.",9781508298205_Korean_Level_1_QM_518.mp3,9781508217916,9781508298205,5
 519,KO,Korean 1,26,,05Q,N,I will probably see a friend.,,9781508298205_Korean_Level_1_QM_519.mp3,9781508217916,9781508298205,5
-520,KO,Korean 1,26,,05R,F,___ __ ___.,chingu leul mannal geo yeyo.,9781508298205_Korean_Level_1_QM_520.mp3,9781508217916,9781508298205,5
+520,KO,Korean 1,26,,05R,F,친구를 만날 거예요.,chingu leul mannal geo yeyo.,9781508298205_Korean_Level_1_QM_520.mp3,9781508217916,9781508298205,5
 521,KO,Korean 1,26,,06Q,N,Will you likely see a friend?,,9781508298205_Korean_Level_1_QM_521.mp3,9781508217916,9781508298205,5
-522,KO,Korean 1,26,,06R,M,___ __ ___?,chingu leul mannal geo yeyo?,9781508298205_Korean_Level_1_QM_522.mp3,9781508217916,9781508298205,5
+522,KO,Korean 1,26,,06R,M,친구를 만날 거예요?,chingu leul mannal geo yeyo?,9781508298205_Korean_Level_1_QM_522.mp3,9781508217916,9781508298205,5
 523,KO,Korean 1,26,,07Q,N,I want to buy some drinks.,,9781508298205_Korean_Level_1_QM_523.mp3,9781508217916,9781508298205,"6,14"
-524,KO,Korean 1,26,,07R,M,___ _ __ ___.,eumlyo soo jom sa ko sipeo yo.,9781508298205_Korean_Level_1_QM_524.mp3,9781508217916,9781508298205,"6,14"
-525,KO,Korean 1,26,,08Q,N,You can�t buy drinks.,,9781508298205_Korean_Level_1_QM_525.mp3,9781508217916,9781508298205,"6,14"
-526,KO,Korean 1,26,,08R,M,___ _ _ ___.,eumlyo soo sal su eops eoyo.,9781508298205_Korean_Level_1_QM_526.mp3,9781508217916,9781508298205,"6,14"
+524,KO,Korean 1,26,,07R,M,음료수 좀 사고 싶어요.,eumlyo soo jom sa ko sipeo yo.,9781508298205_Korean_Level_1_QM_524.mp3,9781508217916,9781508298205,"6,14"
+525,KO,Korean 1,26,,08Q,N,You can’t buy drinks.,,9781508298205_Korean_Level_1_QM_525.mp3,9781508217916,9781508298205,"6,14"
+526,KO,Korean 1,26,,08R,M,음료수 살 수 없어요.,eumlyo soo sal su eops eoyo.,9781508298205_Korean_Level_1_QM_526.mp3,9781508217916,9781508298205,"6,14"
 527,KO,Korean 1,26,,09Q,N,Then you can buy drinks.,,9781508298205_Korean_Level_1_QM_527.mp3,9781508217916,9781508298205,"6,14"
-528,KO,Korean 1,26,,09R,M,__ ___ _ _ ___.,keurum eumlyo soo sal su iss eoyo.,9781508298205_Korean_Level_1_QM_528.mp3,9781508217916,9781508298205,"6,14"
+528,KO,Korean 1,26,,09R,M,그럼 음료수 살 수 있어요.,keurum eumlyo soo sal su iss eoyo.,9781508298205_Korean_Level_1_QM_528.mp3,9781508217916,9781508298205,"6,14"
 529,KO,Korean 1,26,,10Q,N,For how many days will you likely stay?,,9781508298205_Korean_Level_1_QM_529.mp3,9781508217916,9781508298205,17
-530,KO,Korean 1,26,,10R,M,__ __ __ ___?,myeot il dong an kesil geo yeyo?,9781508298205_Korean_Level_1_QM_530.mp3,9781508217916,9781508298205,17
-531,KO,Korean 1,27,,01Q,N,It�s not yet late.,,9781508298205_Korean_Level_1_QM_531.mp3,9781508217916,9781508298205,17
-532,KO,Korean 1,27,,01R,F,__ _ ____.,ajik an neut eoss eoyo.,9781508298205_Korean_Level_1_QM_532.mp3,9781508217916,9781508298205,17
-533,KO,Korean 1,27,,02Q,N,We don�t want to return yet.,,9781508298205_Korean_Level_1_QM_533.mp3,9781508217916,9781508298205,18
-534,KO,Korean 1,27,,02R,F,__ ____ __ ___.,ajik dol a ka ko sip ji an ayo.,9781508298205_Korean_Level_1_QM_534.mp3,9781508217916,9781508298205,18
+530,KO,Korean 1,26,,10R,M,며칠 동안 계실 거예요?,myeot il dong an kesil geo yeyo?,9781508298205_Korean_Level_1_QM_530.mp3,9781508217916,9781508298205,17
+531,KO,Korean 1,27,,01Q,N,It’s not yet late.,,9781508298205_Korean_Level_1_QM_531.mp3,9781508217916,9781508298205,17
+532,KO,Korean 1,27,,01R,F,아직 안 늦었어요.,ajik an neut eoss eoyo.,9781508298205_Korean_Level_1_QM_532.mp3,9781508217916,9781508298205,17
+533,KO,Korean 1,27,,02Q,N,We don’t want to return yet.,,9781508298205_Korean_Level_1_QM_533.mp3,9781508217916,9781508298205,18
+534,KO,Korean 1,27,,02R,F,아직 돌아가고 싶지 않아요.,ajik dol a ka ko sip ji an ayo.,9781508298205_Korean_Level_1_QM_534.mp3,9781508217916,9781508298205,18
 535,KO,Korean 1,27,,03Q,N,Maybe I will stay for a few days.,,9781508298205_Korean_Level_1_QM_535.mp3,9781508217916,9781508298205,17
-536,KO,Korean 1,27,,03R,F,"__ _, __ __ __ ___.","ama i, sam il dong an iss eul geo yeyo.",9781508298205_Korean_Level_1_QM_536.mp3,9781508217916,9781508298205,17
+536,KO,Korean 1,27,,03R,F,"아마 이, 삼일 동안 있을 거예요.","ama i, sam il dong an iss eul geo yeyo.",9781508298205_Korean_Level_1_QM_536.mp3,9781508217916,9781508298205,17
 537,KO,Korean 1,27,,04Q,N,Maybe I will do some work.,,9781508298205_Korean_Level_1_QM_537.mp3,9781508217916,9781508298205,7
-538,KO,Korean 1,27,,04R,F,__ __ ___.,ama il hal geo yeyo.,9781508298205_Korean_Level_1_QM_538.mp3,9781508217916,9781508298205,7
-539,KO,Korean 1,27,,05Q,N,I don�t want to return.,,9781508298205_Korean_Level_1_QM_539.mp3,9781508217916,9781508298205,18
-540,KO,Korean 1,27,,05R,F,____ __ ___.,dol a ka ko sip ji an ayo.,9781508298205_Korean_Level_1_QM_540.mp3,9781508217916,9781508298205,18
+538,KO,Korean 1,27,,04R,F,아마 일할 거예요.,ama il hal geo yeyo.,9781508298205_Korean_Level_1_QM_538.mp3,9781508217916,9781508298205,7
+539,KO,Korean 1,27,,05Q,N,I don’t want to return.,,9781508298205_Korean_Level_1_QM_539.mp3,9781508217916,9781508298205,18
+540,KO,Korean 1,27,,05R,F,돌아가고 싶지 않아요.,dol a ka ko sip ji an ayo.,9781508298205_Korean_Level_1_QM_540.mp3,9781508217916,9781508298205,18
 541,KO,Korean 1,27,,06Q,N,Will you go?,,9781508298205_Korean_Level_1_QM_541.mp3,9781508217916,9781508298205,18
-542,KO,Korean 1,27,,06R,M,__ ___?,kasil geo yeyo?,9781508298205_Korean_Level_1_QM_542.mp3,9781508217916,9781508298205,18
-543,KO,Korean 1,27,,07Q,N,We don�t want to return to America.,,9781508298205_Korean_Level_1_QM_543.mp3,9781508217916,9781508298205,18
-544,KO,Korean 1,27,,07R,M,____ ____ __ ___.,mikuk euro dol a ka ko sip ji an ayo.,9781508298205_Korean_Level_1_QM_544.mp3,9781508217916,9781508298205,18
+542,KO,Korean 1,27,,06R,M,가실 거예요?,kasil geo yeyo?,9781508298205_Korean_Level_1_QM_542.mp3,9781508217916,9781508298205,18
+543,KO,Korean 1,27,,07Q,N,We don’t want to return to America.,,9781508298205_Korean_Level_1_QM_543.mp3,9781508217916,9781508298205,18
+544,KO,Korean 1,27,,07R,M,미국으로 돌아가고 싶지 않아요.,mikuk euro dol a ka ko sip ji an ayo.,9781508298205_Korean_Level_1_QM_544.mp3,9781508217916,9781508298205,18
 545,KO,Korean 1,27,,08Q,N,Are you returning this evening?,,9781508298205_Korean_Level_1_QM_545.mp3,9781508217916,9781508298205,17
-546,KO,Korean 1,27,,08R,M,__ ___ _____?,oneul jeonyeoke dol a kaseyo?,9781508298205_Korean_Level_1_QM_546.mp3,9781508217916,9781508298205,17
-547,KO,Korean 1,27,,09Q,N,I�m looking for a gift.,,9781508298205_Korean_Level_1_QM_547.mp3,9781508217916,9781508298205,"14,16"
-548,KO,Korean 1,27,,09R,M,___ __ ___.,seonmul eul chat go iss eoyo.,9781508298205_Korean_Level_1_QM_548.mp3,9781508217916,9781508298205,"14,16"
-549,KO,Korean 1,27,,10Q,N,"As for us, we�re returning to America.",,9781508298205_Korean_Level_1_QM_549.mp3,9781508217916,9781508298205,18
-550,KO,Korean 1,27,,10R,M,___ ____ ____.,woori neun mikuk euro dol a kayo.,9781508298205_Korean_Level_1_QM_550.mp3,9781508217916,9781508298205,18
+546,KO,Korean 1,27,,08R,M,오늘 저녁에 돌아가세요?,oneul jeonyeoke dol a kaseyo?,9781508298205_Korean_Level_1_QM_546.mp3,9781508217916,9781508298205,17
+547,KO,Korean 1,27,,09Q,N,I’m looking for a gift.,,9781508298205_Korean_Level_1_QM_547.mp3,9781508217916,9781508298205,"14,16"
+548,KO,Korean 1,27,,09R,M,선물을 찾고 있어요.,seonmul eul chat go iss eoyo.,9781508298205_Korean_Level_1_QM_548.mp3,9781508217916,9781508298205,"14,16"
+549,KO,Korean 1,27,,10Q,N,"As for us, we’re returning to America.",,9781508298205_Korean_Level_1_QM_549.mp3,9781508217916,9781508298205,18
+550,KO,Korean 1,27,,10R,M,우리는 미국으로 돌아가요.,woori neun mikuk euro dol a kayo.,9781508298205_Korean_Level_1_QM_550.mp3,9781508217916,9781508298205,18
 551,KO,Korean 1,28,,01Q,N,Maybe I will go alone.,,9781508298205_Korean_Level_1_QM_551.mp3,9781508217916,9781508298205,18
-552,KO,Korean 1,28,,01R,F,__ __ _ ___.,ama honja kal geo yeyo.,9781508298205_Korean_Level_1_QM_552.mp3,9781508217916,9781508298205,18
+552,KO,Korean 1,28,,01R,F,아마 혼자 갈 거예요.,ama honja kal geo yeyo.,9781508298205_Korean_Level_1_QM_552.mp3,9781508217916,9781508298205,18
 553,KO,Korean 1,28,,02Q,N,Since when?,,9781508298205_Korean_Level_1_QM_553.mp3,9781508217916,9781508298205,17
-554,KO,Korean 1,28,,02R,F,____?,eonje buteo?,9781508298205_Korean_Level_1_QM_554.mp3,9781508217916,9781508298205,17
+554,KO,Korean 1,28,,02R,F,언제부터?,eonje buteo?,9781508298205_Korean_Level_1_QM_554.mp3,9781508217916,9781508298205,17
 555,KO,Korean 1,28,,03Q,N,I will probably return alone.,,9781508298205_Korean_Level_1_QM_555.mp3,9781508217916,9781508298205,18
-556,KO,Korean 1,28,,03R,F,__ ___ ___.,honja dol a kal geo yeyo.,9781508298205_Korean_Level_1_QM_556.mp3,9781508217916,9781508298205,18
+556,KO,Korean 1,28,,03R,F,혼자 돌아갈 거예요.,honja dol a kal geo yeyo.,9781508298205_Korean_Level_1_QM_556.mp3,9781508217916,9781508298205,18
 557,KO,Korean 1,28,,04Q,N,Are you alone?,,9781508298205_Korean_Level_1_QM_557.mp3,9781508217916,9781508298205,18
-558,KO,Korean 1,28,,04R,F,____?,honja yeyo?,9781508298205_Korean_Level_1_QM_558.mp3,9781508217916,9781508298205,18
+558,KO,Korean 1,28,,04R,F,혼자예요?,honja yeyo?,9781508298205_Korean_Level_1_QM_558.mp3,9781508217916,9781508298205,18
 559,KO,Korean 1,28,,05Q,N,We want to stay for a few days.,,9781508298205_Korean_Level_1_QM_559.mp3,9781508217916,9781508298205,17
-560,KO,Korean 1,28,,05R,F,"_, __ __ __ ___.","i, sam il dong an iss ko sipeo yo.",9781508298205_Korean_Level_1_QM_560.mp3,9781508217916,9781508298205,17
+560,KO,Korean 1,28,,05R,F,"이, 삼일 동안 있고 싶어요.","i, sam il dong an iss ko sipeo yo.",9781508298205_Korean_Level_1_QM_560.mp3,9781508217916,9781508298205,17
 561,KO,Korean 1,28,,06Q,N,Since a few days ago.,,9781508298205_Korean_Level_1_QM_561.mp3,9781508217916,9781508298205,17
-562,KO,Korean 1,28,,06R,M,"_, __ ___.","i, sam il jeon buteo.",9781508298205_Korean_Level_1_QM_562.mp3,9781508217916,9781508298205,17
+562,KO,Korean 1,28,,06R,M,"이, 삼일 전부터.","i, sam il jeon buteo.",9781508298205_Korean_Level_1_QM_562.mp3,9781508217916,9781508298205,17
 563,KO,Korean 1,28,,07Q,N,What does it mean?,,9781508298205_Korean_Level_1_QM_563.mp3,9781508217916,9781508298205,"15,16"
-564,KO,Korean 1,28,,07R,M,__ ____?,museun tteus i eyo?,9781508298205_Korean_Level_1_QM_564.mp3,9781508217916,9781508298205,"15,16"
+564,KO,Korean 1,28,,07R,M,무슨 뜻이에요?,museun tteus i eyo?,9781508298205_Korean_Level_1_QM_564.mp3,9781508217916,9781508298205,"15,16"
 565,KO,Korean 1,28,,08Q,N,Since how long?,,9781508298205_Korean_Level_1_QM_565.mp3,9781508217916,9781508298205,17
-566,KO,Korean 1,28,,08R,M,_ ___?,myeot si buteo?,9781508298205_Korean_Level_1_QM_566.mp3,9781508217916,9781508298205,17
-567,KO,Korean 1,28,,09Q,N,I don�t have time.,,9781508298205_Korean_Level_1_QM_567.mp3,9781508217916,9781508298205,"1,17"
-568,KO,Korean 1,28,,09R,M,___ ___.,sigan i eops eoyo.,9781508298205_Korean_Level_1_QM_568.mp3,9781508217916,9781508298205,"1,17"
+566,KO,Korean 1,28,,08R,M,몇 시부터?,myeot si buteo?,9781508298205_Korean_Level_1_QM_566.mp3,9781508217916,9781508298205,17
+567,KO,Korean 1,28,,09Q,N,I don’t have time.,,9781508298205_Korean_Level_1_QM_567.mp3,9781508217916,9781508298205,"1,17"
+568,KO,Korean 1,28,,09R,M,시간이 없어요.,sigan i eops eoyo.,9781508298205_Korean_Level_1_QM_568.mp3,9781508217916,9781508298205,"1,17"
 569,KO,Korean 1,28,,10Q,N,I want to stay here.,,9781508298205_Korean_Level_1_QM_569.mp3,9781508217916,9781508298205,18
-570,KO,Korean 1,28,,10R,M,___ __ ___.,yeoki e iss ko sipeo yo.,9781508298205_Korean_Level_1_QM_570.mp3,9781508217916,9781508298205,18
+570,KO,Korean 1,28,,10R,M,여기에 있고 싶어요.,yeoki e iss ko sipeo yo.,9781508298205_Korean_Level_1_QM_570.mp3,9781508217916,9781508298205,18
 571,KO,Korean 1,29,,01Q,N,Since yesterday.,,9781508298205_Korean_Level_1_QM_571.mp3,9781508217916,9781508298205,17
-572,KO,Korean 1,29,,01R,F,____.,eoje buteo.,9781508298205_Korean_Level_1_QM_572.mp3,9781508217916,9781508298205,17
-573,KO,Korean 1,29,,02Q,N,I�ve been here since yesterday.,,9781508298205_Korean_Level_1_QM_573.mp3,9781508217916,9781508298205,17
-574,KO,Korean 1,29,,02R,F,____ ___ ___.,eoje buteo yeoki e iss eoyo.,9781508298205_Korean_Level_1_QM_574.mp3,9781508217916,9781508298205,17
+572,KO,Korean 1,29,,01R,F,어제부터.,eoje buteo.,9781508298205_Korean_Level_1_QM_572.mp3,9781508217916,9781508298205,17
+573,KO,Korean 1,29,,02Q,N,I’ve been here since yesterday.,,9781508298205_Korean_Level_1_QM_573.mp3,9781508217916,9781508298205,17
+574,KO,Korean 1,29,,02R,F,어제부터 여기에 있어요.,eoje buteo yeoki e iss eoyo.,9781508298205_Korean_Level_1_QM_574.mp3,9781508217916,9781508298205,17
 575,KO,Korean 1,29,,03Q,N,I bought something yesterday.,,9781508298205_Korean_Level_1_QM_575.mp3,9781508217916,9781508298205,"14,17"
-576,KO,Korean 1,29,,03R,F,__ _ _ ___.,eoje muel jom sass eoyo.,9781508298205_Korean_Level_1_QM_576.mp3,9781508217916,9781508298205,"14,17"
+576,KO,Korean 1,29,,03R,F,어제 뭘 좀 샀어요.,eoje muel jom sass eoyo.,9781508298205_Korean_Level_1_QM_576.mp3,9781508217916,9781508298205,"14,17"
 577,KO,Korean 1,29,,04Q,N,What did you buy yesterday?,,9781508298205_Korean_Level_1_QM_577.mp3,9781508217916,9781508298205,"14,17"
-578,KO,Korean 1,29,,04R,F,__ _ ____?,eoje muel sasyeoss eoyo?,9781508298205_Korean_Level_1_QM_578.mp3,9781508217916,9781508298205,"14,17"
+578,KO,Korean 1,29,,04R,F,어제 뭘 사셨어요?,eoje muel sasyeoss eoyo?,9781508298205_Korean_Level_1_QM_578.mp3,9781508217916,9781508298205,"14,17"
 579,KO,Korean 1,29,,05Q,N,I came yesterday.,,9781508298205_Korean_Level_1_QM_579.mp3,9781508217916,9781508298205,"17,18"
-580,KO,Korean 1,29,,05R,F,__ ___.,eoje wass eoyo.,9781508298205_Korean_Level_1_QM_580.mp3,9781508217916,9781508298205,"17,18"
+580,KO,Korean 1,29,,05R,F,어제 왔어요.,eoje wass eoyo.,9781508298205_Korean_Level_1_QM_580.mp3,9781508217916,9781508298205,"17,18"
 581,KO,Korean 1,29,,06Q,N,When are you returning?,,9781508298205_Korean_Level_1_QM_581.mp3,9781508217916,9781508298205,18
-582,KO,Korean 1,29,,06R,M,__ __ ___?,eonje dol a kaseyo?,9781508298205_Korean_Level_1_QM_582.mp3,9781508217916,9781508298205,18
+582,KO,Korean 1,29,,06R,M,언제 돌아 가세요?,eonje dol a kaseyo?,9781508298205_Korean_Level_1_QM_582.mp3,9781508217916,9781508298205,18
 583,KO,Korean 1,29,,07Q,N,When are you returning to America?,,9781508298205_Korean_Level_1_QM_583.mp3,9781508217916,9781508298205,18
-584,KO,Korean 1,29,,07R,M,__ ____ __ ___?,eonje mikuk euro dol a kaseyo?,9781508298205_Korean_Level_1_QM_584.mp3,9781508217916,9781508298205,18
+584,KO,Korean 1,29,,07R,M,언제 미국으로 돌아 가세요?,eonje mikuk euro dol a kaseyo?,9781508298205_Korean_Level_1_QM_584.mp3,9781508217916,9781508298205,18
 585,KO,Korean 1,29,,08Q,N,I want to do sightseeing.,,9781508298205_Korean_Level_1_QM_585.mp3,9781508217916,9781508298205,"1,18"
-586,KO,Korean 1,29,,08R,M,____ ___.,guan guang ha ko sipeo yo.,9781508298205_Korean_Level_1_QM_586.mp3,9781508217916,9781508298205,"1,18"
+586,KO,Korean 1,29,,08R,M,관광하고 싶어요.,guan guang ha ko sipeo yo.,9781508298205_Korean_Level_1_QM_586.mp3,9781508217916,9781508298205,"1,18"
 587,KO,Korean 1,29,,09Q,N,Will you likely do sightseeing?,,9781508298205_Korean_Level_1_QM_587.mp3,9781508217916,9781508298205,1
-588,KO,Korean 1,29,,09R,M,____ ___?,guan guang hasil geo yeyo?,9781508298205_Korean_Level_1_QM_588.mp3,9781508217916,9781508298205,1
+588,KO,Korean 1,29,,09R,M,관광하실 거예요?,guan guang hasil geo yeyo?,9781508298205_Korean_Level_1_QM_588.mp3,9781508217916,9781508298205,1
 589,KO,Korean 1,29,,10Q,N,I bought a good book.,,9781508298205_Korean_Level_1_QM_589.mp3,9781508217916,9781508298205,"1,14"
-590,KO,Korean 1,29,,10R,M,__ __ ___.,joeun chaek eul sass eoyo.,9781508298205_Korean_Level_1_QM_590.mp3,9781508217916,9781508298205,"1,14"
-591,KO,Korean 1,30,,01Q,N,I didn�t eat anything.,,9781508298205_Korean_Level_1_QM_591.mp3,9781508217916,9781508298205,6
-592,KO,Korean 1,30,,01R,F,__ __ _ ____.,amu keotdo an meok eoss eoyo.,9781508298205_Korean_Level_1_QM_592.mp3,9781508217916,9781508298205,6
-593,KO,Korean 1,30,,02Q,N,I didn�t buy anything.,,9781508298205_Korean_Level_1_QM_593.mp3,9781508217916,9781508298205,14
-594,KO,Korean 1,30,,02R,F,__ __ _ ___.,amu keotdo an sass eoyo.,9781508298205_Korean_Level_1_QM_594.mp3,9781508217916,9781508298205,14
+590,KO,Korean 1,29,,10R,M,좋은 책을 샀어요.,joeun chaek eul sass eoyo.,9781508298205_Korean_Level_1_QM_590.mp3,9781508217916,9781508298205,"1,14"
+591,KO,Korean 1,30,,01Q,N,I didn’t eat anything.,,9781508298205_Korean_Level_1_QM_591.mp3,9781508217916,9781508298205,6
+592,KO,Korean 1,30,,01R,F,아무 것도 안 먹었어요.,amu keotdo an meok eoss eoyo.,9781508298205_Korean_Level_1_QM_592.mp3,9781508217916,9781508298205,6
+593,KO,Korean 1,30,,02Q,N,I didn’t buy anything.,,9781508298205_Korean_Level_1_QM_593.mp3,9781508217916,9781508298205,14
+594,KO,Korean 1,30,,02R,F,아무 것도 안 샀어요.,amu keotdo an sass eoyo.,9781508298205_Korean_Level_1_QM_594.mp3,9781508217916,9781508298205,14
 595,KO,Korean 1,30,,03Q,N,When did you go?,,9781508298205_Korean_Level_1_QM_595.mp3,9781508217916,9781508298205,18
-596,KO,Korean 1,30,,03R,F,__ ____?,eonje kasyeoss eoyo?,9781508298205_Korean_Level_1_QM_596.mp3,9781508217916,9781508298205,18
+596,KO,Korean 1,30,,03R,F,언제 가셨어요?,eonje kasyeoss eoyo?,9781508298205_Korean_Level_1_QM_596.mp3,9781508217916,9781508298205,18
 597,KO,Korean 1,30,,04Q,N,Where did you go?,,9781508298205_Korean_Level_1_QM_597.mp3,9781508217916,9781508298205,"1,18"
-598,KO,Korean 1,30,,04R,F,__ ____?,eodi kasyeoss eoyo?,9781508298205_Korean_Level_1_QM_598.mp3,9781508217916,9781508298205,"1,18"
+598,KO,Korean 1,30,,04R,F,어디 가셨어요?,eodi kasyeoss eoyo?,9781508298205_Korean_Level_1_QM_598.mp3,9781508217916,9781508298205,"1,18"
 599,KO,Korean 1,30,,05Q,N,We came yesterday.,,9781508298205_Korean_Level_1_QM_599.mp3,9781508217916,9781508298205,"17,18"
-600,KO,Korean 1,30,,05R,F,__ ___.,eoje wass eoyo.,9781508298205_Korean_Level_1_QM_600.mp3,9781508217916,9781508298205,"17,18"
+600,KO,Korean 1,30,,05R,F,어제 왔어요.,eoje wass eoyo.,9781508298205_Korean_Level_1_QM_600.mp3,9781508217916,9781508298205,"17,18"
 601,KO,Korean 1,30,,06Q,N,When did you arrive?,,9781508298205_Korean_Level_1_QM_601.mp3,9781508217916,9781508298205,18
-602,KO,Korean 1,30,,06R,M,__ ______?,eonje dochak hasyeoss eoyo?,9781508298205_Korean_Level_1_QM_602.mp3,9781508217916,9781508298205,18
+602,KO,Korean 1,30,,06R,M,언제 도착하셨어요?,eonje dochak hasyeoss eoyo?,9781508298205_Korean_Level_1_QM_602.mp3,9781508217916,9781508298205,18
 603,KO,Korean 1,30,,07Q,N,We want to do sightseeing.,,9781508298205_Korean_Level_1_QM_603.mp3,9781508217916,9781508298205,"1,18"
-604,KO,Korean 1,30,,07R,M,____ ___.,guan guang ha ko sipeo yo.,9781508298205_Korean_Level_1_QM_604.mp3,9781508217916,9781508298205,"1,18"
+604,KO,Korean 1,30,,07R,M,관광하고 싶어요.,guan guang ha ko sipeo yo.,9781508298205_Korean_Level_1_QM_604.mp3,9781508217916,9781508298205,"1,18"
 605,KO,Korean 1,30,,08Q,N,"In Korean, how do you say?",,9781508298205_Korean_Level_1_QM_605.mp3,9781508217916,9781508298205,"15,16"
-606,KO,Korean 1,30,,08R,M,____ ___ ___?,hankuk mal ro eotteoke mal haeyo?,9781508298205_Korean_Level_1_QM_606.mp3,9781508217916,9781508298205,"15,16"
+606,KO,Korean 1,30,,08R,M,한국말로 어떻게 말해요?,hankuk mal ro eotteoke mal haeyo?,9781508298205_Korean_Level_1_QM_606.mp3,9781508217916,9781508298205,"15,16"
 607,KO,Korean 1,30,,09Q,N,I went along with my wife.,,9781508298205_Korean_Level_1_QM_607.mp3,9781508217916,9781508298205,5
-608,KO,Korean 1,30,,09R,M,_ ____ __ ___.,je anae hako gachi kass eoyo.,9781508298205_Korean_Level_1_QM_608.mp3,9781508217916,9781508298205,5
+608,KO,Korean 1,30,,09R,M,제 아내하고 같이 갔어요.,je anae hako gachi kass eoyo.,9781508298205_Korean_Level_1_QM_608.mp3,9781508217916,9781508298205,5
 609,KO,Korean 1,30,,10Q,N,"Today, where did you go?",,9781508298205_Korean_Level_1_QM_609.mp3,9781508217916,9781508298205,"17,18"
-610,KO,Korean 1,30,,10R,M,__ __ ____?,oneul eodi kasyeoss eoyo?,9781508298205_Korean_Level_1_QM_610.mp3,9781508217916,9781508298205,"17,18"
+610,KO,Korean 1,30,,10R,M,오늘 어디 가셨어요?,oneul eodi kasyeoss eoyo?,9781508298205_Korean_Level_1_QM_610.mp3,9781508217916,9781508298205,"17,18"

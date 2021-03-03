@@ -18,11 +18,11 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 })
 public class FileListItem {
 
-    public static String FlashCard = "FC";
-    public static String SpeakEasy = "VC";
-    public static String Reading = "RL";
-    public static String QuickMatch = "QZ";
-    public static String BonusPack = "BP";
+    public static final String FlashCard = "FC";
+    public static final String SpeakEasy = "VC";
+    public static final String Reading = "RL";
+    public static final String QuickMatch = "QZ";
+    public static final String BonusPack = "BP";
 
     @JsonProperty("fileListItemId")
     private Integer fileListItemId;

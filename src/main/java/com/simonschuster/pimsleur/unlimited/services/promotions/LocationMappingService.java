@@ -44,7 +44,7 @@ public class LocationMappingService {
         try {
             dbReader = new DatabaseReader.Builder(stream).build();
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         }
     }
 

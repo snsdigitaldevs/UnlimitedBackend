@@ -31,7 +31,6 @@ public class ResultData {
                 });
             } catch (IOException e) {
                 logger.error("Exception when deserialize product info(courseconfig) from EDT, message Detail:" + e.getMessage());
-                e.printStackTrace();
                 throw new PimsleurException(e.getMessage());
             }
             formattedCourseConfigs.put(key, courseConfig);
@@ -51,7 +50,6 @@ public class ResultData {
                 formattedMediaSets.put(key, mediaSet);
             } catch (IOException e) {
                 logger.error("Exception when deserialize product info (mediasets) from EDT");
-                e.printStackTrace();
                 throw new PimsleurException(e.getMessage());
             }
         });

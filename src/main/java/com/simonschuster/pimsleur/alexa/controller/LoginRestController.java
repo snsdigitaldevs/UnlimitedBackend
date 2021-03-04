@@ -27,7 +27,7 @@ public class LoginRestController {
     @Autowired
     private SignUpService signUpService;
 
-    private static Logger logger = LoggerFactory.getLogger(LoginController.class);
+    private static final Logger logger = LoggerFactory.getLogger(LoginController.class);
 
     @RequestMapping(value = "/login", method = POST)
     public String loginSubmission(HttpServletRequest request,
@@ -36,19 +36,18 @@ public class LoginRestController {
                                   @RequestParam(name = "state") String state,
                                   @RequestParam(name = "redirect_uri") String redirectUri,
                                   Model model) {
-        String responseRedirectUrl = "";
+        String responseRedirectUrl;
         try {
             String authorizationSub = loginService.getAuthorizationSub(email, password);
             //Generate necessary data in EDT backend for user who signed up on auth0
             noticeEDTForNewUserInAuth0(email, password);
 
-            responseRedirectUrl = new StringBuilder().append(redirectUri).append("#")
-                    .append("state=").append(state).append("&")
-                    .append("access_token=").append(authorizationSub).append("&")
+            responseRedirectUrl = redirectUri + "#" +
+                    "state=" + state + "&" +
+                    "access_token=" + authorizationSub + "&" +
                     //Alexa document said token_type must be "Bear" which align with what we got from EDT API.
                     //token_type won't be used on alexa endpoint, it's included in access_token's value sub.
-                    .append("token_type=").append("Bear")
-                    .toString();
+                    "token_type=" + "Bear";
         } catch (Exception e) {
             responseRedirectUrl = "/login?loginStatus=fail";
             logger.error("Error when submit login on alexa.");
@@ -69,7 +68,7 @@ public class LoginRestController {
             //if error message is caused by sign up -3011 or -1 error, then we ignore it
             if (!e.getMessage().equals(EMAIL_ALREADY_REGISTERED_ERROR_MESSAGE) &&
                 !e.getMessage().equals(PASSWORD_INVALID_MESSAGE)) {
-                e.printStackTrace();
+                logger.error(e.getMessage());
                 throw e;
             }
         }

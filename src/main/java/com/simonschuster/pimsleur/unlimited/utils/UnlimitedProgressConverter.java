@@ -62,10 +62,8 @@ public class UnlimitedProgressConverter {
             result.stream()
                     .filter(progress -> progress.getSubUserID().equals(subUserID) &&
                         Objects.equals(progress.getLastPlayedDate(), currentLastPlayedDateMap.get(subUserID)))
-                    .findFirst()
-                    .get()
                     // there is one and only one item after filer
-                    .setCurrent(true);
+                    .findFirst().ifPresent(progress -> progress.setCurrent(true));
         }
     }
 

@@ -126,5 +126,13 @@
     "level": 1,
     "isSubscription": false,
     "puProduct": true
+  },
+  {
+    "languageName": "Spanish (Spain-Castilian)",
+    "filterLanguageName": "Spanish (Spain-Castilian)",
+    "productCode": "9781797129396",
+    "level": 1,
+    "isSubscription": false,
+    "puProduct": true
   }
 ]

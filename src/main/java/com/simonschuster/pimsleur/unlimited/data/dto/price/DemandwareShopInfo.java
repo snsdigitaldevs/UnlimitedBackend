@@ -17,9 +17,6 @@ public class DemandwareShopInfo {
     @JsonProperty("fault")
     private FaultMessage fault;
 
-    public DemandwareShopInfo() {
-    }
-
     public String getCurrency() {
         return currency;
     }

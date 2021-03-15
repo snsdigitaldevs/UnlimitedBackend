@@ -19,6 +19,8 @@ import static java.net.URLEncoder.encode;
 
 @Component
 public class SubUserService {
+    
+    private static final String EDT_CUSTOMER_INFO_API = "edt.api.customerInfo";
 
     @Autowired
     private ApplicationConfiguration applicationConfiguration;
@@ -30,7 +32,7 @@ public class SubUserService {
         if (CommonConstants.UNDEFINED.equals(customerId)) {
             throw new ParamInvalidException("Invalid Param customerId" + customerId);
         }
-        String url = applicationConfiguration.getProperty("edt.api.customerInfo");
+        String url = applicationConfiguration.getProperty(EDT_CUSTOMER_INFO_API);
         String appId = appIdService.getAppId(storeDomain);
         String parameters = format(applicationConfiguration.getApiParameter("createCustomerParameters"),
                 token, encode(name, "UTF-8"), customerId, appId);
@@ -41,7 +43,7 @@ public class SubUserService {
 
     public SubUserInfo update(String customerId, String appUserId, String name, String token, String storeDomain)
             throws UnsupportedEncodingException {
-        String url = applicationConfiguration.getProperty("edt.api.customerInfo");
+        String url = applicationConfiguration.getProperty(EDT_CUSTOMER_INFO_API);
 
         String appId = appIdService.getAppId(storeDomain);
         String parameters = format(applicationConfiguration.getApiParameter("updateCustomerParameters"),
@@ -53,7 +55,7 @@ public class SubUserService {
     }
 
     public SubUserInfo delete(String customerId, String appUserId, String token, String storeDomain) {
-        String url = applicationConfiguration.getProperty("edt.api.customerInfo");
+        String url = applicationConfiguration.getProperty(EDT_CUSTOMER_INFO_API);
         String appId = appIdService.getAppId(storeDomain);
         String parameters = format(applicationConfiguration.getApiParameter("deleteCustomerParameters"),
                 token, customerId + "_" + appUserId, customerId, appId);

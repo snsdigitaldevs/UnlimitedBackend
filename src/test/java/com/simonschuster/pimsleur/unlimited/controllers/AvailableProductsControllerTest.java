@@ -4,7 +4,6 @@ import com.simonschuster.pimsleur.unlimited.data.dto.availableProducts.Available
 import com.simonschuster.pimsleur.unlimited.data.dto.freeLessons.AvailableProductDto;
 import com.simonschuster.pimsleur.unlimited.services.availableProducts.AvailableProductsService;
 import junit.framework.TestCase;
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,55 +26,54 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest
 @AutoConfigureMockMvc
 public class AvailableProductsControllerTest extends TestCase {
-
-	@Autowired
-	private MockMvc mockMvc;
-	@MockBean
-	private AvailableProductsService availableProductsService;
-	private String sub;
-	private String email;
-	private String storeDomain;
-	private AvailableProductsDto availableProductsDto;
-
-	@Test
-	public void should_get_orderly_available_products_when_call_available_products_api_given_a_valid_sub_email_store() throws Exception {
-		mockData();
-		when(availableProductsService.getAvailableProducts(sub, email, storeDomain)).thenReturn(availableProductsDto);
-
-		mockMvc.perform(get("/availableProducts").param("sub", sub).param("email", email).param("storeDomain", storeDomain))
-				.andExpect(status().isOk())
-				.andExpect(jsonPath("$.purchasedProducts[1].productCode").value("978179788812511"))
-				.andExpect(jsonPath("$.purchasedProducts[1].courseName").value("English for Arabic Speakers Level 1 Lessons 6-10"));
-	}
-
-	@Test
-	public void should_get_orderly_available_products_when_have_end_with_number_course() throws Exception {
-		mockData();
-		AvailableProductDto availableProductDto1 = new AvailableProductDto("English for Arabic Speakers Level 1", "Arabic", "978179788812111", false);
-		availableProductsDto.getPurchasedProducts().add(availableProductDto1);
-		when(availableProductsService.getAvailableProducts(sub, email, storeDomain)).thenReturn(availableProductsDto);
-		mockMvc.perform(get("/availableProducts").param("sub", sub).param("email", email).param("storeDomain", storeDomain))
-				.andExpect(status().isOk())
-				.andExpect(jsonPath("$.purchasedProducts[1].courseName").value("English for Arabic Speakers Level 1"));
-
-
-	}
-
-
-	private AvailableProductsDto mockData() {
-		sub = "auth0|5f5f059c82c46c006cbc89f8";
-		email = "hebrew_prem_2@ss.com";
-		storeDomain = "webapp";
-		List<AvailableProductDto> purchasedProducts = new ArrayList<>();
-		AvailableProductDto availableProductDto1 = new AvailableProductDto("English for Arabic Speakers Level 1 Lessons 11-15", "Arabic", "978179788812111", false);
-		AvailableProductDto availableProductDto2 = new AvailableProductDto("English for Arabic Speakers Level 1 Lessons 6-10", "Arabic", "978179788812511", false);
-		AvailableProductDto availableProductDto3 = new AvailableProductDto("Dari Persian Subscription", "Dari", "978179788812911", false);
-		purchasedProducts.add(availableProductDto1);
-		purchasedProducts.add(availableProductDto2);
-		purchasedProducts.add(availableProductDto3);
-		List<AvailableProductDto> freeProducts = Collections.emptyList();
-		availableProductsDto = new AvailableProductsDto(purchasedProducts, freeProducts);
-		return availableProductsDto;
-	}
-
+    
+    @Autowired
+    private MockMvc mockMvc;
+    @MockBean
+    private AvailableProductsService availableProductsService;
+    private String sub;
+    private String email;
+    private String storeDomain;
+    private AvailableProductsDto availableProductsDto;
+    
+    @Test
+    public void should_get_orderly_available_products_when_call_available_products_api_given_a_valid_sub_email_store() throws Exception {
+        mockData();
+        when(availableProductsService.getAvailableProducts(sub, email, storeDomain)).thenReturn(availableProductsDto);
+        
+        mockMvc.perform(get("/availableProducts").param("sub", sub).param("email", email).param("storeDomain", storeDomain))
+            .andExpect(status().isOk())
+            .andExpect(jsonPath("$.purchasedProducts[1].productCode").value("978179788812511"))
+            .andExpect(jsonPath("$.purchasedProducts[1].courseName").value("English for Arabic Speakers Level 1 Lessons 6-10"));
+    }
+    
+    @Test
+    public void should_get_orderly_available_products_when_have_end_with_number_course() throws Exception {
+        mockData();
+        AvailableProductDto availableProductDto1 = new AvailableProductDto("English for Arabic Speakers Level 1", "Arabic", "978179788812111", false);
+        availableProductsDto.getPurchasedProducts().add(availableProductDto1);
+        when(availableProductsService.getAvailableProducts(sub, email, storeDomain)).thenReturn(availableProductsDto);
+        mockMvc.perform(get("/availableProducts").param("sub", sub).param("email", email).param("storeDomain", storeDomain))
+            .andExpect(status().isOk())
+            .andExpect(jsonPath("$.purchasedProducts[1].courseName").value("English for Arabic Speakers Level 1"));
+        
+        
+    }
+    
+    
+    private void mockData() {
+        sub = "auth0|5f5f059c82c46c006cbc89f8";
+        email = "hebrew_prem_2@ss.com";
+        storeDomain = "webapp";
+        List<AvailableProductDto> purchasedProducts = new ArrayList<>();
+        AvailableProductDto availableProductDto1 = new AvailableProductDto("English for Arabic Speakers Level 1 Lessons 11-15", "Arabic", "978179788812111", false);
+        AvailableProductDto availableProductDto2 = new AvailableProductDto("English for Arabic Speakers Level 1 Lessons 6-10", "Arabic", "978179788812511", false);
+        AvailableProductDto availableProductDto3 = new AvailableProductDto("Dari Persian Subscription", "Dari", "978179788812911", false);
+        purchasedProducts.add(availableProductDto1);
+        purchasedProducts.add(availableProductDto2);
+        purchasedProducts.add(availableProductDto3);
+        List<AvailableProductDto> freeProducts = Collections.emptyList();
+        availableProductsDto = new AvailableProductsDto(purchasedProducts, freeProducts);
+    }
+    
 }

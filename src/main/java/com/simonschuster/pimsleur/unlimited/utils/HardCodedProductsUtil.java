@@ -18,7 +18,7 @@ public class HardCodedProductsUtil {
     public static final List<AvailableProductDto> PU_FREE_LESSONS = readJsonFile();
 
     private static final List<String> nineBigLanguageNames = PU_FREE_LESSONS.stream()
-            .map(AvailableProductDto::getLanguageName)
+            .map(AvailableProductDto::getFilterLanguageName)
             .collect(toList());
 
     public static final List<String> puFreeIsbns = PU_FREE_LESSONS.stream()

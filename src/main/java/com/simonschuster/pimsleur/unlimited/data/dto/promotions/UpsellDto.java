@@ -13,9 +13,6 @@ public class UpsellDto {
     private UpsellItem nextVersion;
     private Map<String, UpsellItem> subscriptionMap;
 
-    public UpsellDto() {
-    }
-
     public static UpsellDto build(UpsellItem nextLevel, UpsellItem nextVersion,
         Map<String, UpsellItem> subscriptionMap) {
         UpsellDto upsellDto = new UpsellDto();

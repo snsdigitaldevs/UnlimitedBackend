@@ -62,9 +62,9 @@ public class GlobalExceptionHandler {
     private void recordLog(Exception e) {
         HttpServletRequest httpServletRequest = UnlimitedThreadLocalUtils.getHttpServletRequest();
         if (httpServletRequest != null) {
-            LOG.error("RequestId:{}, uri={} execute error",
+            LOG.error("RequestId:{}, uri={} execute error, error message detail is: {}",
                 UnlimitedThreadLocalUtils.getExtraInfo(UnlimitedThreadLocalUtils.REQUEST_ID),
-                httpServletRequest.getRequestURL().toString(), e);
+                httpServletRequest.getRequestURL(), e);
         } else {
             LOG.error(e.getMessage(), e);
         }

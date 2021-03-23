@@ -44,22 +44,22 @@ public class InstallationFileList extends EdtResponseCode {
         if (this.getResultData() != null) {
             List<FileListItem> list = this.getResultData().getFileList().getFileListItems();
 
-            FileListItem flashCardFile = getFileItemByFileType(list, FlashCard);
+            FileListItem flashCardFile = getFileItemByFileType(list, FLASH_CARD);
             if (flashCardFile != null) {
                 practicesUrls.setFlashCardUrl(flashCardFile.getFullUrl());
             }
 
-            FileListItem quickMatchFile = getFileItemByFileType(list, QuickMatch);
+            FileListItem quickMatchFile = getFileItemByFileType(list, QUICK_MATCH);
             if (quickMatchFile != null) {
                 practicesUrls.setQuickMatchUrl(quickMatchFile.getFullUrl());
             }
 
-            FileListItem speakEasyFile = getFileItemByFileType(list, SpeakEasy);
+            FileListItem speakEasyFile = getFileItemByFileType(list, SPEAK_EASY);
             if (speakEasyFile != null) {
                 practicesUrls.setSpeakEasyUrl(speakEasyFile.getFullUrl());
             }
 
-            FileListItem readingFile = getFileItemByFileType(list, Reading);
+            FileListItem readingFile = getFileItemByFileType(list, READING);
             if (readingFile != null) {
                 practicesUrls.setReadingUrl(readingFile.getFullUrl());
             }
@@ -169,7 +169,7 @@ public class InstallationFileList extends EdtResponseCode {
 
     private String getBonusPackFileUrl() {
         List<FileListItem> fileListItems = this.resultData.getFileList().getFileListItems();
-        FileListItem bonusPacksFile = getFileItemByFileType(fileListItems, BonusPack);
+        FileListItem bonusPacksFile = getFileItemByFileType(fileListItems, BONUS_PACK);
         if (bonusPacksFile != null) {
             return bonusPacksFile.getFullUrl();
         }

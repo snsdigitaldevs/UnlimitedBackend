@@ -5,6 +5,7 @@ import static com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode.RESU
 import static com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode.RESULT_OK;
 import static com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode.RESULT_USER_ID_ALREADY_EXISTS;
 
+import com.simonschuster.pimsleur.unlimited.aop.LogCostTimeAspect;
 import com.simonschuster.pimsleur.unlimited.common.exception.ParamInvalidException;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.SubUserDto;
 import com.simonschuster.pimsleur.unlimited.data.edt.customerinfo.SubUserInfo;
@@ -13,6 +14,9 @@ import com.simonschuster.pimsleur.unlimited.services.customer.SubUserService;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import java.io.UnsupportedEncodingException;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -27,6 +31,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class SubUserController {
+    private final Logger LOG = LoggerFactory.getLogger(LogCostTimeAspect.class);
 
     @Autowired
     SubUserService subUserService;
@@ -79,11 +84,13 @@ public class SubUserController {
         switch (subUserInfo.getResult_code()) {
             case RESULT_OK:
                 break;
+            case RESULT_USER_ID_ALREADY_EXISTS:
+                throw new ParamInvalidException("Duplicated Name");
             case NO_RESULT:
             case RESULT_GENERAL_ERROR:
                 throw new ParamInvalidException("Invalid parameters");
-            case RESULT_USER_ID_ALREADY_EXISTS:
-                throw new ParamInvalidException("Duplicated Name");
+            default:
+                LOG.error("Operate user failed, result code is " + subUserInfo.getResult_code());
         }
     }
 }

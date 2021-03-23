@@ -8,10 +8,10 @@ import java.util.Map;
 import static java.lang.String.format;
 
 public class SyncUpDto {
-    private static final String PU_Sync_Key = "com.ss.models::UserLessonHistory_%s_%s_%s_%s#%s";
-    private static final String PCM_Sync_Key = "com.edt.models::MediaItemHistory_%s%s%s#%s";
-    private static final String PCM_Sync_Media_Item_Key = "com.edt.models::MediaSetHistory_%s%s#%s";
-    private static final String PCM_Sync_Media_Set_Key = "com.edt.models::Customer_%s#currentMediaSetHistoryId";
+    private static final String PU_SYNC_KEY = "com.ss.models::UserLessonHistory_%s_%s_%s_%s#%s";
+    private static final String PCM_SYNC_KEY = "com.edt.models::MediaItemHistory_%s%s%s#%s";
+    private static final String PCM_SYNC_MEDIA_ITEM_KEY = "com.edt.models::MediaSetHistory_%s%s#%s";
+    private static final String PCM_SYNC_MEDIA_SET_KEY = "com.edt.models::Customer_%s#currentMediaSetHistoryId";
     private String deviceName;
     private String identityVerificationToken;
     private Long lastSaveId;
@@ -74,7 +74,7 @@ public class SyncUpDto {
                                   String productCode, String mediaItemId,
                                   HashMap<String, SyncUpItem> syncUpItemsMap,
                                   String field, Long value) {
-        String key = format(PU_Sync_Key, customerId, subUserId, productCode, mediaItemId, field);
+        String key = format(PU_SYNC_KEY, customerId, subUserId, productCode, mediaItemId, field);
         createSyncItem(customerId, syncUpItemsMap, value, key);
     }
 
@@ -82,20 +82,20 @@ public class SyncUpDto {
                                    String productCode, String mediaItemId,
                                    HashMap<String, SyncUpItem> syncUpItemsMap,
                                    String field, Long value) {
-        String key = format(PCM_Sync_Key, customerId, productCode, mediaItemId, field);
+        String key = format(PCM_SYNC_KEY, customerId, productCode, mediaItemId, field);
         createSyncItem(customerId, syncUpItemsMap, value, key);
     }
 
     private void createPcmSyncItem(String customerId, String productCode,
                                    HashMap<String, SyncUpItem> syncUpItemsMap, String value) {
-        String key = format(PCM_Sync_Media_Item_Key, customerId, productCode, "currentMediaItemHistoryId");
+        String key = format(PCM_SYNC_MEDIA_ITEM_KEY, customerId, productCode, "currentMediaItemHistoryId");
         createPcmSyncItem(customerId, syncUpItemsMap, value, key);
     }
 
     private void createPcmSyncItem(String customerId, String productCode, String mediaItemId,
                                    HashMap<String, SyncUpItem> syncUpItemsMap, Boolean value) {
         if (value != null) {
-            String key = format(PCM_Sync_Key, customerId, productCode, mediaItemId, "audioTrackComplete");
+            String key = format(PCM_SYNC_KEY, customerId, productCode, mediaItemId, "audioTrackComplete");
             SyncUpItem syncUpItem = new SyncUpItem(value, customerId, "3U", this.getProgress().getLastChangeTimestamp());
             syncUpItemsMap.put(key, syncUpItem);
         }
@@ -122,7 +122,7 @@ public class SyncUpDto {
         createPcmSyncItem(customerId, productCode, mediaItemId, syncUpItemsMap,
                 "lastAudioPosMillis", this.getProgress().getLastPlayHeadLocation());
         createPcmSyncItem(customerId, productCode, syncUpItemsMap, customerId + productCode + mediaItemId);
-        createPcmSyncItem(customerId, syncUpItemsMap, customerId + productCode, format(PCM_Sync_Media_Set_Key, customerId));
+        createPcmSyncItem(customerId, syncUpItemsMap, customerId + productCode, format(PCM_SYNC_MEDIA_SET_KEY, customerId));
         return syncUpItemsMap;
     }
 }

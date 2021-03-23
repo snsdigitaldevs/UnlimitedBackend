@@ -10,7 +10,7 @@ public class ParamInvalidException extends RuntimeException {
         super(message);
     }
 
-    public ParamInvalidException(int errorCode, String message, Throwable cause) {
+    public ParamInvalidException(String message, Throwable cause) {
         super(message, cause);
     }
 

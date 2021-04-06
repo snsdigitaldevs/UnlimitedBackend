@@ -5,7 +5,6 @@ import static com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode.RESU
 import static com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode.RESULT_OK;
 import static com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode.RESULT_USER_ID_ALREADY_EXISTS;
 
-import com.simonschuster.pimsleur.unlimited.aop.LogCostTimeAspect;
 import com.simonschuster.pimsleur.unlimited.common.exception.ParamInvalidException;
 import com.simonschuster.pimsleur.unlimited.data.dto.customerInfo.SubUserDto;
 import com.simonschuster.pimsleur.unlimited.data.edt.customerinfo.SubUserInfo;
@@ -31,7 +30,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class SubUserController {
-    private final Logger LOG = LoggerFactory.getLogger(LogCostTimeAspect.class);
+    private final Logger logger = LoggerFactory.getLogger(SubUserController.class);
 
     @Autowired
     SubUserService subUserService;
@@ -90,7 +89,7 @@ public class SubUserController {
             case RESULT_GENERAL_ERROR:
                 throw new ParamInvalidException("Invalid parameters");
             default:
-                LOG.error("Operate user failed, result code is " + subUserInfo.getResult_code());
+                logger.error("Operate user failed, result code is {}", subUserInfo.getResult_code());
         }
     }
 }

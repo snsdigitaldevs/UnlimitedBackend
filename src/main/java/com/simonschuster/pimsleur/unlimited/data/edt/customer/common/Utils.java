@@ -11,6 +11,9 @@ import java.io.IOException;
 import static com.fasterxml.jackson.core.JsonParser.Feature.ALLOW_SINGLE_QUOTES;
 
 public class Utils {
+    private Utils() {
+    }
+    
     private static final String PCM_IMAGE_DOMAIN = "https://public.pimsleur.cdn.edtnet.us";
     private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper()
             .configure(ALLOW_SINGLE_QUOTES, true);

@@ -271,20 +271,6 @@ public class AggregatedProductInfo {
         lesson.setAudioLink(installationFileList.getUrlByFileName(mediaItem.getFilename()));
     }
 
-    private CourseLevelDef findCourseLevelDef(MediaSet mediaSet) throws Exception {
-        String courseConfigKey = mediaSet.getCourseLanguageName().replace(" ", "_");
-        CourseConfig courseConfig = puProductInfo.getResultData().getCourseConfigs().get(courseConfigKey);
-
-        CourseLevelDef courseLevelDef = null;
-        for (CourseLevelDef levelDef : courseConfig.getCourseLevelDefs()) {
-            courseLevelDef = levelDef;
-            if (courseLevelDef.getIsbn13().equals(mediaSet.getIsbn13())) {
-                break;
-            }
-        }
-        return courseLevelDef;
-    }
-
     private void setPcmAudioInfo(List<Course> lessonAudioInfoFromPCM) {
         this.lessonAudioInfoFromPCM = lessonAudioInfoFromPCM;
     }

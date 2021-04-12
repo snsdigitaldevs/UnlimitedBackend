@@ -3,6 +3,7 @@ package com.simonschuster.pimsleur.unlimited.data.edt.installationFileList;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.simonschuster.pimsleur.unlimited.common.exception.PimsleurException;
 import com.simonschuster.pimsleur.unlimited.data.edt.EdtResponseCode;
 import com.simonschuster.pimsleur.unlimited.services.bonusPacks.BonusPacksUrls;
 import com.simonschuster.pimsleur.unlimited.services.practices.PracticesUrls;
@@ -121,7 +122,7 @@ public class InstallationFileList extends EdtResponseCode {
         if (!StringUtils.isEmpty(lastItem)) {
             productCode = lastItem.split("_")[0];
         } else {
-            throw new RuntimeException("error, can't parse the product code ");
+            throw new PimsleurException("error, can't parse the product code ");
         }
         String path = String.format("%s/%s/%s_REVIEW_AUDIO_SNIPPETS/", basePathItems[0], basePathItems[1], productCode);
         return audioFileListItem.getSourceURL() + path;

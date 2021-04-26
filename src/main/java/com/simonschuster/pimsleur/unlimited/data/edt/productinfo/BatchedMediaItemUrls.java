@@ -32,7 +32,7 @@ public class BatchedMediaItemUrls {
         //***subscription/9781508218036_Korean_Level_2/9781508218036_Reading_U05.mp3?*
         //for subscription, the product code isn't necessary the same,
         // so we can just check by unit number
-        String unit = fileName.substring(fileName.indexOf("_"));
+        String unit = fileName.substring(fileName.indexOf('_'));
         List<ResultDataBean.UrlsBean> urls = this.getResult_data().getUrls();
         Optional<ResultDataBean.UrlsBean> match = urls.stream()
                 .filter(x -> x.getUrl().contains(unit))

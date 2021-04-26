@@ -14,40 +14,45 @@ import com.simonschuster.pimsleur.unlimited.data.dto.promotions.FormatMapping;
 import com.simonschuster.pimsleur.unlimited.data.dto.promotions.UpsellDto;
 import com.simonschuster.pimsleur.unlimited.data.dto.promotions.UpsellItem;
 import com.simonschuster.pimsleur.unlimited.utils.UnlimitedThreadLocalUtils;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 import java.util.stream.Stream;
+
 import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class FormatMappingService {
-
+    private static final Logger logger = LoggerFactory.getLogger(FormatMappingService.class);
     private static List<FormatMapping> formatMappings;
-
+    
     @Autowired
     private ApplicationConfiguration config;
-
+    
     static {
         try {
             //only do this once per runtime
             formatMappings = readJsonFile();
         } catch (IOException ignored) {
+            logger.error("IOException {0}", ignored);
         }
     }
-
+    
     public UpsellDto updateNameDescriptionLink(UpsellDto upsellDto) {
         of(upsellDto.getNextLevel(), upsellDto.getNextVersion())
-                .forEach(this::updateNameDescriptionForUpsellItem);
+            .forEach(this::updateNameDescriptionForUpsellItem);
         if (upsellDto.getSubscriptionMap() != null) {
             upsellDto.getSubscriptionMap().values()
                 .forEach(this::updateNameDescriptionForUpsellItem);
         }
         return updateWebCartLink(upsellDto);
     }
-
+    
     private void updateNameDescriptionForUpsellItem(UpsellItem upsellItem) {
         if (upsellItem != null) {
             FormatMapping find = findFormatMappingFor(upsellItem.getIsbn());
@@ -57,7 +62,7 @@ public class FormatMappingService {
             }
         }
     }
-
+    
     private UpsellDto updateWebCartLink(UpsellDto upsellDto) {
         updateWebCartLinkForItem(upsellDto.getNextLevel(), config.getProperty("cart.api.purchase"));
         updateWebCartLinkForItem(upsellDto.getNextVersion(),
@@ -74,7 +79,7 @@ public class FormatMappingService {
         }
         return upsellDto;
     }
-
+    
     private void updateWebCartLinkForItem(UpsellItem upsellItem, String link) {
         // cao suggest android and ios don't return webLink and pid
         String storeDomain = UnlimitedThreadLocalUtils.getRequestParameter("storeDomain");
@@ -89,16 +94,16 @@ public class FormatMappingService {
             upsellItem.setWebLink(format(link, upsellItem.getWebLink()));
         }
     }
-
+    
     private static List<FormatMapping> readJsonFile() throws IOException {
         InputStream fileStream = UnlimitedApplication.class.getClassLoader()
-                .getResourceAsStream("isbn-mapping/format-mapping.json");
-
+            .getResourceAsStream("isbn-mapping/format-mapping.json");
+        
         ObjectMapper objectMapper = new ObjectMapper();
         return objectMapper.readValue(fileStream, new TypeReference<List<FormatMapping>>() {
         });
     }
-
+    
     public List<String> getAllFormatsOf(String isbn) {
         FormatMapping mapping = findFormatMappingFor(isbn);
         if (mapping == null) {
@@ -107,19 +112,19 @@ public class FormatMappingService {
             return mapping.getAllFormats();
         }
     }
-
+    
     public FormatMapping findFormatMappingFor(String isbn) {
         return formatMappings.stream()
-                .filter(x -> x.matches(isbn))
-                .findFirst()
-                .orElse(null);
+            .filter(x -> x.matches(isbn))
+            .findFirst()
+            .orElse(null);
     }
-
+    
     public FormatMapping findISBNWithOtherFormatAs(String isbn) {
         Stream<FormatMapping> formatMappingStream = formatMappings.stream().filter(
             x -> x.getOtherFormat1ISBN().equals(isbn) ||
-            x.getOtherFormat2ISBN().equals(isbn) ||
-            x.getOtherFormat3ISBN().equals(isbn));
+                x.getOtherFormat2ISBN().equals(isbn) ||
+                x.getOtherFormat3ISBN().equals(isbn));
         return formatMappingStream.findFirst().orElse(null);
     }
 }

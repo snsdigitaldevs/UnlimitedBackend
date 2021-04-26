@@ -6,6 +6,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.util.List;
@@ -17,6 +19,7 @@ import static org.apache.commons.lang3.StringUtils.isNumeric;
 
 @JsonInclude(NON_EMPTY)
 public class ReadingAudio {
+    private static final Logger LOG = LoggerFactory.getLogger(ReadingAudio.class);
     private static ObjectMapper mapper = new ObjectMapper();
 
     private static final String ESL_SPANISH_READING_LESSON = "Lectura lección";
@@ -88,7 +91,8 @@ public class ReadingAudio {
         try {
             readingMetaData = mapper.readValue(mediaItemIdMetadata, new TypeReference<ReadingMetaData>() {
             });
-        } catch (IOException ignored) {
+        } catch (IOException exception) {
+            LOG.warn(exception.getMessage());
         }
         if (!isNumeric(readingMetaData.getStartPage())) {
             readingMetaData.setStartPage("0");

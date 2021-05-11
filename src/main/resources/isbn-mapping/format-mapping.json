@@ -8250,13 +8250,93 @@
         "Other format 3 (DVD) ISBN": ""
     },
     {
+        "Base Course Type": "Audio Level 3",
+        "ISBN": 9781797124711,
+        "Course name - Upsell Card & Library": "Spanish (Spain-Castilian) Level 3",
+        "Course name - Learn Page": "Spanish (Spain-Castilian) Level 3",
+        "Course Description - Upsell Card": "The complete level of 30 lessons",
+        "Other format 1 (Upsell) ISBN": "",
+        "Other format 2 (Upgrade) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Audio 5 Lesson",
+        "ISBN": 9781797132051,
+        "Course name - Upsell Card & Library": "Spanish (Spain-Castilian) Level 3 Lessons 1-5",
+        "Course name - Learn Page": "Spanish (Spain-Castilian) Level 3",
+        "Course Description - Upsell Card": "5 thirty-minute language lessons",
+        "Other format 1 (Upsell) ISBN": "",
+        "Other format 2 (Upgrade) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Audio 5 Lesson",
+        "ISBN": 9781797132112,
+        "Course name - Upsell Card & Library": "Spanish (Spain-Castilian) Level 3 Lessons 11-15",
+        "Course name - Learn Page": "Spanish (Spain-Castilian) Level 3",
+        "Course Description - Upsell Card": "5 thirty-minute language lessons",
+        "Other format 1 (Upsell) ISBN": "",
+        "Other format 2 (Upgrade) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Audio 5 Lesson",
+        "ISBN": 9781797132129,
+        "Course name - Upsell Card & Library": "Spanish (Spain-Castilian) Level 3 Lessons 16-20",
+        "Course name - Learn Page": "Spanish (Spain-Castilian) Level 3",
+        "Course Description - Upsell Card": "5 thirty-minute language lessons",
+        "Other format 1 (Upsell) ISBN": "",
+        "Other format 2 (Upgrade) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Audio 5 Lesson",
+        "ISBN": 9781797132136,
+        "Course name - Upsell Card & Library": "Spanish (Spain-Castilian) Level 3 Lessons 21-25",
+        "Course name - Learn Page": "Spanish (Spain-Castilian) Level 3",
+        "Course Description - Upsell Card": "5 thirty-minute language lessons",
+        "Other format 1 (Upsell) ISBN": "",
+        "Other format 2 (Upgrade) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Audio 5 Lesson",
+        "ISBN": 9781797132143,
+        "Course name - Upsell Card & Library": "Spanish (Spain-Castilian) Level 3 Lessons 26-30",
+        "Course name - Learn Page": "Spanish (Spain-Castilian) Level 3",
+        "Course Description - Upsell Card": "5 thirty-minute language lessons",
+        "Other format 1 (Upsell) ISBN": "",
+        "Other format 2 (Upgrade) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Audio 5 Lesson",
+        "ISBN": 9781797132068,
+        "Course name - Upsell Card & Library": "Spanish (Spain-Castilian) Level 3 Lessons 6-10",
+        "Course name - Learn Page": "Spanish (Spain-Castilian) Level 3",
+        "Course Description - Upsell Card": "5 thirty-minute language lessons",
+        "Other format 1 (Upsell) ISBN": "",
+        "Other format 2 (Upgrade) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
         "Base Course Type": "Prem Level 2",
         "ISBN": 9781797129419,
         "Course name - Upsell Card & Library": "Spanish (Spain-Castilian) Level 2 Premium",
         "Course name - Learn Page": "Spanish (Spain-Castilian) Level 2",
         "Course Description - Upsell Card": "The complete level of 30 lessons and access to all premium features",
+        "Other format 2 (Upgrade) ISBN": 9781797129433,
         "Other format 1 (Upsell) ISBN": "",
-        "Other format 2 (Upgrade) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Prem Level 3",
+        "ISBN": 9781797131757,
+        "Course name - Upsell Card & Library": "Spanish (Spain-Castilian) Level 3 Premium",
+        "Course name - Learn Page": "Spanish (Spain-Castilian) Level 3",
+        "Course Description - Upsell Card": "The complete level of 30 lessons and access to all premium features",
+        "Other format 2 (Upgrade) ISBN": 9781797131900,
+        "Other format 1 (Upsell) ISBN": "",
         "Other format 3 (DVD) ISBN": ""
     },
     {
@@ -8265,7 +8345,17 @@
         "Course name - Upsell Card & Library": "Spanish (Spain-Castilian) Levels 1-2 Premium",
         "Course name - Learn Page": "Spanish (Spain-Castilian) Levels 1-2",
         "Course Description - Upsell Card": "Two complete levels totaling 60 lessons and access to all premium features",
-        "Other format 2 (Upgrade) ISBN": 9781797129433,
+        "Other format 2 (Upgrade) ISBN": 9781797129440,
+        "Other format 1 (Upsell) ISBN": "",
+        "Other format 3 (DVD) ISBN": ""
+    },
+    {
+        "Base Course Type": "Prem Level 1-3",
+        "ISBN": 9781797130477,
+        "Course name - Upsell Card & Library": "Spanish (Spain-Castilian) Levels 1-3 Premium",
+        "Course name - Learn Page": "Spanish (Spain-Castilian) Levels 1-3",
+        "Course Description - Upsell Card": "Three complete levels totaling 90 lessons and access to all premium features",
+        "Other format 2 (Upgrade) ISBN": 9781797131931,
         "Other format 1 (Upsell) ISBN": "",
         "Other format 3 (DVD) ISBN": ""
     },
@@ -8274,9 +8364,9 @@
         "ISBN": 9781797125794,
         "Course name - Upsell Card & Library": "Spanish (Spain-Castilian) Premium Subscription",
         "Course Description - Upsell Card": "• Unlimited access to all 60 lessons\r\n• Small monthly fee is easy on wallet\r\n• Full course access today!",
-        "Other format 2 (Upgrade) ISBN": 9781797129440,
         "Course name - Learn Page": "",
         "Other format 1 (Upsell) ISBN": "",
+        "Other format 2 (Upgrade) ISBN": "",
         "Other format 3 (DVD) ISBN": ""
     },
     {

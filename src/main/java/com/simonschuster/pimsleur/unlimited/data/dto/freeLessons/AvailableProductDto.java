@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.Objects;
+
 import org.apache.commons.lang3.StringUtils;
 
 import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL;
@@ -11,119 +12,119 @@ import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL;
 @JsonInclude(NON_NULL)
 public class AvailableProductDto {
     private String languageName;
-
+    
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String filterLanguageName;
     private String productCode;
     private String courseName;
     // this is the isbn you should use when calling the upsell api
     private String productCodeForUpsell;
-
+    
     private boolean isPuProduct = false;
     private Integer level = 1; // default level 1 for free lessons
-
+    
     private boolean isSubscription;
     private String storeDomain;
-
+    
     public AvailableProductDto() {
     }
-
+    
     public AvailableProductDto(String languageName, String productsLanguageName, String productCode, boolean isPu) {
         this.languageName = StringUtils.trim(languageName);
         this.filterLanguageName = StringUtils.trim(productsLanguageName);
         this.productCode = productCode;
         this.isPuProduct = isPu;
     }
-
+    
     public AvailableProductDto(String languageName, String productsLanguageName, String courseName,
                                String productCode, boolean isPu, Integer level) {
         this(languageName, productsLanguageName, productCode, isPu);
-
+        
         this.level = level;
         this.courseName = StringUtils.trim(courseName);
     }
-
+    
     public String getFilterLanguageName() {
         return filterLanguageName;
     }
-
+    
     public void setFilterLanguageName(String filterLanguageName) {
         this.filterLanguageName = filterLanguageName;
     }
-
+    
     public boolean getIsSubscription() {
         return isSubscription;
     }
-
+    
     public void setIsSubscription(boolean isSubscription) {
         this.isSubscription = isSubscription;
     }
-
+    
     public String getProductCode() {
         return productCode;
     }
-
+    
     public void setProductCode(String productCode) {
         this.productCode = productCode;
     }
-
+    
     public String getLanguageName() {
         return languageName;
     }
-
+    
     public void setLanguageName(String languageName) {
         this.languageName = languageName;
     }
-
+    
     public boolean isPuProduct() {
         return isPuProduct;
     }
-
+    
     public void setPuProduct(boolean puProduct) {
         isPuProduct = puProduct;
     }
-
+    
     public Integer getLevel() {
         return level;
     }
-
+    
     public void setLevel(Integer level) {
         this.level = level;
     }
-
+    
     public String getProductCodeForUpsell() {
         return productCodeForUpsell;
     }
-
+    
     public void setProductCodeForUpsell(String productCodeForUpsell) {
         this.productCodeForUpsell = productCodeForUpsell;
     }
-
+    
     public String getCourseName() {
         return courseName;
     }
-
+    
     public void setCourseName(String courseName) {
         this.courseName = courseName;
     }
-
+    
     public String getStoreDomain() {
         return storeDomain;
     }
-
+    
     public void setStoreDomain(String storeDomain) {
         this.storeDomain = storeDomain;
     }
-
+    
     public boolean isSameLevelSameLang(AvailableProductDto that) {
         return this.isSameLang(that) &&
-                Objects.equals(this.level, that.level);
+            Objects.equals(this.level, that.level);
     }
-
+    
     public boolean isSameLang(AvailableProductDto that) {
         return Objects.equals(normalizeLangName(this.filterLanguageName), normalizeLangName(that.filterLanguageName));
     }
-
+    
     private String normalizeLangName(String languageName) {
         if (Objects.equals(languageName, "Chinese Mandarin")) {
             // pcm lang name is CM, but pu lang name is MC
@@ -134,8 +135,9 @@ public class AvailableProductDto {
         }
         return languageName;
     }
-
-    public String getFormatCourseName(){
-        return this.getCourseName().replaceAll("(?<!\\d)\\d(?=\\D)|(?<!\\d)\\d$", "0$0");
+    
+    public String getFormatCourseName() {
+        return null != this.getCourseName() ?
+            this.getCourseName().replaceAll("(?<!\\d)\\d(?=\\D)|(?<!\\d)\\d$", "0$0") : "";
     }
 }
